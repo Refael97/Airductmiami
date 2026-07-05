@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { business } from '../../data/business';
+import { ui } from '../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+const title = `Gracias | ${business.name}`;
+const description = 'Gracias por contactar a Air Duct Florida. Le responderemos muy pronto.';
+---
+<BaseLayout title={title} description={description} noindex={true} lang={lang} altHref="/thank-you">
+  <section class="section">
+    <div class="container container-narrow text-center" style="padding-block: 3rem;">
+      <div style="font-size:3.5rem;">✅</div>
+      <h1>¡Gracias! Su solicitud ya está en camino.</h1>
+      <p class="lead">Recibimos su mensaje y un miembro de nuestro equipo en Florida lo contactará muy pronto, por lo general dentro de un día hábil.</p>
+      <p>¿Necesita ayuda antes? Llámenos ahora al <a href={`tel:${business.phoneHref}`}><strong>{business.phone}</strong></a>.</p>
+      <p style="margin-top:2rem;"><a href={t.home} class="btn btn-primary">Volver al inicio</a></p>
+    </div>
+  </section>
+</BaseLayout>
