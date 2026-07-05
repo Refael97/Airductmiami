@@ -69,6 +69,12 @@ If you can't remember your last cleaning, that's a sign in itself. Most homes sh
 | Year-round pests | Birds and insects nest in vent hoods |
 | Frequent laundry | Beach towels and swimwear add loads |
 
+## Why ignoring the signs is risky
+
+Each of these symptoms points back to the same root cause: restricted airflow from lint buildup. That restriction does more than slow your laundry. Trapped heat is the exact condition that leads to dryer fires, and lint is one of the most flammable materials in your home. A vent that's been neglected for two or three years can pack a dense, felt-like layer of lint along its entire length — fuel and heat sitting together in one place. The longer the warning signs go unaddressed, the greater the risk, which is why acting early is always cheaper and safer than waiting.
+
+There's also a quality-of-life cost. A dryer fighting against a clogged vent uses more energy per load and wears its heating components faster, shortening the life of the appliance. Restoring airflow protects both your safety and your dryer.
+
 ## What to do next
 
 If you recognize two or more of these signs, don't wait. A professional [dryer vent cleaning](/services/dryer-vent-cleaning) typically costs **$100–$200** and restores safe airflow. Cleaning often pairs well with [air duct cleaning](/services/air-duct-cleaning) for whole-home air quality.

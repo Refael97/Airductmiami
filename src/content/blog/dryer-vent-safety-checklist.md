@@ -74,6 +74,10 @@ Florida homes need a few extra considerations:
 - **Pests stay active year-round.** Check the outdoor vent hood for bird nests and install a proper cover with a flap (not a screen, which clogs).
 - **Condensation risk.** A blocked vent dumping humid air indoors can feed mold in Florida's climate.
 
+## Why each item earns its place
+
+It's tempting to treat the lint screen as the whole job, but the screen only catches part of the lint — the rest travels into the duct, which is where dangerous buildup and most dryer fires occur. That's why the every-few-months and annual items exist: they cover the parts of the system you can't see or reach during daily use. Feeling the outdoor airflow tells you whether the hidden duct is clear. Checking the duct material protects against the melt-and-ignite risk of plastic ducting. And the annual professional cleaning clears the full run that no lint screen or quick check ever touches. Skipping the deeper items is how a home ends up with a fire hazard hiding behind a spotless lint trap.
+
 ## When to call a professional
 
 Handle the every-load and every-few-months items yourself. Call a pro for the annual full-duct cleaning, for replacing unsafe ducting, and any time you notice warning signs you can't resolve. A professional [dryer vent cleaning](/services/dryer-vent-cleaning) typically runs **$100–$200** and clears the entire run — including the sections you can't reach.

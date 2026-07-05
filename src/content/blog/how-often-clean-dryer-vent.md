@@ -69,6 +69,12 @@ Move up your cleaning immediately if you notice:
 
 A pro uses rotary brushes and vacuums to clear the full length of the duct — not just the section you can reach. Cost typically runs **$100–$200**, and the service is quick. It's worth pairing with [HVAC system cleaning](/services/hvac-cleaning) if your whole system is due for attention.
 
+## Why guessing wrong costs you
+
+Cleaning too rarely is the obvious risk — lint accumulates, airflow drops, and both fire risk and dry times climb. But there's a real cost to neglect beyond safety. A dryer working against a restricted vent runs longer and hotter on every load, driving up energy use and wearing out its heating element sooner. Over the life of the appliance, that adds up to real money and a shorter lifespan.
+
+The right interval is the one that keeps lint from ever reaching a dangerous level. For most Florida homes, that's somewhere between six months and a year, adjusted for the factors above. When you're unsure, an inspection settles the question — a professional can measure airflow and tell you exactly where your buildup stands rather than leaving you to guess.
+
 ## The bottom line
 
 Clean **at least once a year**, shorten to **every 6 to 9 months** if you have heavy laundry, pets, or a long Florida roof run, and always act on the warning signs. Ready to get on a schedule? [Book a dryer vent cleaning](/services/dryer-vent-cleaning) or [contact our team](/contact) for advice tailored to your home.

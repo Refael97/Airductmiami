@@ -1,0 +1,116 @@
+# Air Duct Florida — Full Content Index
+
+> Complete index of all pages on airductflorida.com for AI and answer engines. Air Duct Florida provides air duct cleaning, dryer vent cleaning, HVAC/coil cleaning, mold remediation, sanitizing, UV installation, indoor air quality testing, and attic insulation across all of Florida (38+ cities). NADCA source-removal standards; licensed and insured.
+
+## Core pages
+- [Home](/): Statewide air duct & dryer vent cleaning.
+- [Services](/services): All services overview.
+- [Service Areas](/service-areas): All Florida cities served.
+- [Blog](/blog): Educational guides.
+- [About](/about): Company background.
+- [FAQ](/faq): Common questions.
+- [Contact](/contact): Free quote request.
+
+## Services
+- [/services/air-duct-cleaning](/services/air-duct-cleaning)
+- [/services/dryer-vent-cleaning](/services/dryer-vent-cleaning)
+- [/services/hvac-cleaning](/services/hvac-cleaning)
+- [/services/air-duct-repair](/services/air-duct-repair)
+- [/services/mold-remediation](/services/mold-remediation)
+- [/services/air-duct-sanitizing](/services/air-duct-sanitizing)
+- [/services/commercial-air-duct-cleaning](/services/commercial-air-duct-cleaning)
+- [/services/uv-light-installation](/services/uv-light-installation)
+- [/services/indoor-air-quality-testing](/services/indoor-air-quality-testing)
+- [/services/attic-insulation](/services/attic-insulation)
+
+## Service areas (Florida cities)
+- [/service-areas/miami](/service-areas/miami)
+- [/service-areas/miami-beach](/service-areas/miami-beach)
+- [/service-areas/hialeah](/service-areas/hialeah)
+- [/service-areas/coral-gables](/service-areas/coral-gables)
+- [/service-areas/kendall](/service-areas/kendall)
+- [/service-areas/homestead](/service-areas/homestead)
+- [/service-areas/pinecrest](/service-areas/pinecrest)
+- [/service-areas/north-miami](/service-areas/north-miami)
+- [/service-areas/aventura](/service-areas/aventura)
+- [/service-areas/fort-lauderdale](/service-areas/fort-lauderdale)
+- [/service-areas/hollywood](/service-areas/hollywood)
+- [/service-areas/pembroke-pines](/service-areas/pembroke-pines)
+- [/service-areas/miramar](/service-areas/miramar)
+- [/service-areas/pompano-beach](/service-areas/pompano-beach)
+- [/service-areas/plantation](/service-areas/plantation)
+- [/service-areas/davie](/service-areas/davie)
+- [/service-areas/sunrise](/service-areas/sunrise)
+- [/service-areas/coral-springs](/service-areas/coral-springs)
+- [/service-areas/coconut-creek](/service-areas/coconut-creek)
+- [/service-areas/deerfield-beach](/service-areas/deerfield-beach)
+- [/service-areas/boca-raton](/service-areas/boca-raton)
+- [/service-areas/delray-beach](/service-areas/delray-beach)
+- [/service-areas/boynton-beach](/service-areas/boynton-beach)
+- [/service-areas/west-palm-beach](/service-areas/west-palm-beach)
+- [/service-areas/tampa](/service-areas/tampa)
+- [/service-areas/st-petersburg](/service-areas/st-petersburg)
+- [/service-areas/clearwater](/service-areas/clearwater)
+- [/service-areas/orlando](/service-areas/orlando)
+- [/service-areas/kissimmee](/service-areas/kissimmee)
+- [/service-areas/winter-park](/service-areas/winter-park)
+- [/service-areas/lakeland](/service-areas/lakeland)
+- [/service-areas/jacksonville](/service-areas/jacksonville)
+- [/service-areas/fort-myers](/service-areas/fort-myers)
+- [/service-areas/cape-coral](/service-areas/cape-coral)
+- [/service-areas/naples](/service-areas/naples)
+- [/service-areas/bonita-springs](/service-areas/bonita-springs)
+- [/service-areas/sarasota](/service-areas/sarasota)
+- [/service-areas/bradenton](/service-areas/bradenton)
+
+## Blog articles
+- [Why Some Rooms Are Hotter Than Others (Duct Causes)](/blog/ac-not-cooling-evenly): Hot bedrooms and cold living rooms? Learn the duct and airflow causes of uneven cooling in Florida homes and how balancing fixes the temperature gap.
+- [Can Air Duct Cleaning Help With Allergies?](/blog/air-duct-cleaning-allergies): Air duct cleaning can reduce allergens like pollen, dust, and pet dander recirculating in your Florida home. Here's what it realistically can and can't do.
+- [How Much Does Air Duct Cleaning Cost in Florida? (2025 Price Guide)](/blog/air-duct-cleaning-cost-florida): A clear breakdown of air duct cleaning costs in Florida — average prices, what affects the cost, and how to avoid the '$49 whole-home' scam.
+- [Do New Construction Homes Need Air Duct Cleaning?](/blog/air-duct-cleaning-new-construction): New homes often hide drywall dust, sawdust, and debris in their ducts. Learn why new construction air duct cleaning matters — especially in humid Florida.
+- [Air Duct Cleaning Scams and How to Avoid Them](/blog/air-duct-cleaning-scams): How the $49 air duct cleaning scam works, the upsell tactics to watch for in Florida, and exactly how to protect yourself from bait-and-switch pricing.
+- [Air Duct Repair and Sealing Cost in Florida](/blog/air-duct-repair-cost-florida): What air duct repair and sealing costs in Florida, how to spot leaky or damaged ductwork, and when to repair versus replace to cut energy bills and improve airflow.
+- [The Benefits of Air Duct Sealing in Florida Homes](/blog/air-duct-sealing-benefits): Air duct sealing keeps the cool air you pay for inside the system. See the real benefits of mastic and aerosol duct sealing for Florida homes.
+- [Air Handler and Coil Cleaning: The Overlooked HVAC Fix](/blog/air-handler-coil-cleaning): The evaporator coil and blower are where efficiency is won or lost. Learn why air handler and coil cleaning matters so much in humid Florida homes.
+- [Air Purifiers vs Air Duct Cleaning: What Actually Works?](/blog/air-purifier-vs-duct-cleaning): A practical comparison of air purifiers and air duct cleaning for Florida homes, explaining what each does, its limits, and when you need both.
+- [How Attic Insulation Cuts Cooling Costs in Florida](/blog/attic-insulation-cooling-costs): Florida attics hit 130°F. Learn how the right attic insulation R-value slows heat gain, eases AC strain, and cuts cooling costs year-round.
+- [What MERV Rating Air Filter Is Best for Florida Homes?](/blog/best-air-filter-merv-rating): A clear guide to MERV ratings for Florida homes, including which rating balances pollen and mold filtration with airflow in humid AC systems.
+- [Black Mold Around Air Vents: What It Means and What to Do](/blog/black-mold-air-vents): Black mold around air vents in Florida signals a moisture problem inside your HVAC system. Learn what it means, whether it's dangerous, and how to act.
+- [Commercial Air Duct Cleaning Cost in Florida: What to Expect](/blog/commercial-air-duct-cleaning-cost): What commercial air duct cleaning costs in Florida, the factors that drive the price, and how to budget for offices, restaurants, and multi-unit properties.
+- [10 Common Indoor Air Pollutants (and How to Reduce Them)](/blog/common-indoor-air-pollutants): The 10 most common indoor air pollutants in Florida homes, where they come from, and practical steps to reduce each one in our humid climate.
+- [Why Your Air Ducts Sweat: Condensation Problems in Florida](/blog/condensation-air-ducts-florida): Sweating air ducts in Florida are caused by humid air hitting cold duct surfaces. Learn why it happens, the damage it causes, and how to fix it.
+- [Do You Need a Whole-House Dehumidifier in Florida?](/blog/dehumidifier-mold-prevention): Many Florida homes need a whole-house dehumidifier because AC alone can't hold humidity below 60%. Here's how to know if yours does.
+- [How Dirty Air Ducts Raise Your Energy Bills](/blog/dirty-ducts-energy-bills): Dirty air ducts force your AC to work harder and longer. Learn how dust, debris, and blockages quietly raise Florida energy bills — and how to fix it.
+- [DIY vs Professional Air Duct Cleaning: Which Is Worth It?](/blog/diy-vs-professional-air-duct-cleaning): Can you clean air ducts yourself? Here's what DIY handles, what it can't, and when professional source-removal cleaning is worth the cost for Florida homes.
+- [Why Your Dryer Takes Too Long to Dry (and How to Fix It)](/blog/dryer-takes-too-long-to-dry): If your dryer needs two cycles to dry a load, restricted airflow is usually the cause. Here's how to diagnose and fix a slow dryer in humid Florida homes.
+- [Dryer Vent Cleaning Cost in Florida (2025 Guide)](/blog/dryer-vent-cleaning-cost): What dryer vent cleaning costs in Florida in 2025, the factors that change the price, and why this inexpensive service is a serious fire-safety priority.
+- [Dryer Vent Installation and Routing Tips for Florida Homes](/blog/dryer-vent-installation-florida): Roof runs, wall vents, duct materials, and length limits: a Florida-focused guide to installing and routing a dryer vent for safe airflow and fast drying.
+- [Why Dryer Lint Is More Dangerous Than You Think](/blog/dryer-vent-lint-dangers): Dryer lint is a fire hazard, but it can also cause carbon monoxide backup and feed mold. Here's why lint is more dangerous than most Florida homeowners realize.
+- [The Complete Dryer Vent Safety Checklist](/blog/dryer-vent-safety-checklist): A room-by-room dryer vent safety checklist for Florida homeowners: clean the lint trap, inspect the duct, check the outdoor vent, and know the warning signs.
+- [How Dryer Vent Cleaning Prevents House Fires](/blog/how-dryer-vent-cleaning-prevents-fires): Lint buildup in dryer vents causes thousands of house fires a year. Learn how regular cleaning stops overheating and keeps your Florida home safe.
+- [How Often Should You Clean Your Air Ducts in Florida?](/blog/how-often-clean-air-ducts-florida): Florida's humidity means air ducts need cleaning more often than in drier states. Here's how often to clean, plus the signs that say it's time.
+- [How Often Should You Clean Your Dryer Vent?](/blog/how-often-clean-dryer-vent): Most homes need dryer vent cleaning at least once a year, but usage, pets, and long Florida roof runs can mean more often. Here's how to set your schedule.
+- [How to Choose a Trustworthy Air Duct Cleaning Company in Florida](/blog/how-to-choose-air-duct-cleaning-company): A step-by-step vetting guide to finding a reputable, honest air duct cleaning company in Florida — licenses, methods, red flags, and what to verify first.
+- [Hurricane Season and Indoor Air Quality in Florida](/blog/hurricane-season-indoor-air-quality): How hurricane season threatens indoor air quality in Florida through humidity, power loss, and flooding, plus how to protect your home and prevent mold.
+- [The Florida HVAC Maintenance Checklist (Season by Season)](/blog/hvac-maintenance-checklist-florida): A season-by-season HVAC maintenance checklist built for Florida's climate — keep your AC efficient, reliable, and ready for the long cooling season.
+- [HVAC UV Light Cost and Is It Worth It in Florida?](/blog/hvac-uv-light-cost): What HVAC UV light installation costs in Florida, how UV lights fight mold and mildew, and whether they're worth it in the state's humid, year-round-AC climate.
+- [What Is the Ideal Indoor Humidity Level in Florida?](/blog/ideal-indoor-humidity-florida): The ideal indoor humidity in Florida is 30-50%, and staying below 60% is critical to prevent mold. Here's how to hit that target year-round.
+- [How to Improve Indoor Air Quality in Your Florida Home](/blog/improve-indoor-air-quality-florida): Practical, proven steps to improve indoor air quality in your Florida home, from humidity control to duct cleaning, built for our heat and humidity.
+- [Indoor Air Quality and Allergies: The Florida Connection](/blog/indoor-air-quality-allergies): Why Florida's climate makes indoor allergies worse, the common triggers hiding in your home, and practical fixes to breathe easier year-round.
+- [Protecting Your Baby's Air: Indoor Air Quality for Florida Families](/blog/indoor-air-quality-babies-children): Why babies and young children are more vulnerable to poor indoor air, and how Florida families can create a cleaner, safer home environment.
+- [Is Air Duct Cleaning Worth It? An Honest Answer](/blog/is-air-duct-cleaning-worth-it): An honest look at when air duct cleaning is worth it and when it isn't — the real signs Florida homes need it, and when your money is better spent elsewhere.
+- [Leaky Air Ducts: How to Spot Them and Fix the Problem](/blog/leaky-air-ducts-signs-fixes): Leaky ducts waste the cool air you pay for. Learn the signs of duct leaks in Florida homes and the proven sealing methods that fix them for good.
+- [12 Ways to Lower Your AC Bills in Florida](/blog/lower-ac-bills-florida): Practical, proven ways to cut cooling costs in Florida — from duct sealing and coil cleaning to thermostat habits that ease the strain on your AC.
+- [Mold in Air Ducts: Signs, Causes, and How to Remove It](/blog/mold-in-air-ducts): Mold in air ducts is common in Florida's humid climate. Learn the warning signs, what causes it, and the right way to remove it for good.
+- [NADCA Standards Explained: What 'Done Right' Looks Like](/blog/nadca-standards-explained): NADCA sets the industry standard for air duct cleaning. Learn what source removal means, why it matters, and how to tell a NADCA-quality job from a shortcut.
+- [Air Duct Cleaning for Pet Owners: What You Need to Know](/blog/pet-owners-air-duct-cleaning): Pets fill your ducts with hair and dander that recirculate all year. Learn how often pet owners should clean air ducts in Florida and how to keep air fresh.
+- [How to Prevent Mold in Your HVAC System in Florida](/blog/prevent-mold-hvac-florida): Preventing HVAC mold in Florida comes down to controlling moisture. Here's a practical playbook to keep your ducts and coil mold-free year-round.
+- [10 Questions to Ask Before Hiring an Air Duct Cleaner](/blog/questions-to-ask-duct-cleaner): The 10 essential questions to ask any Florida air duct cleaning company before you hire — covering method, pricing, insurance, and how to avoid costly upsells.
+- [Should You Repair or Replace Your Ductwork?](/blog/repair-vs-replace-ductwork): A clear decision guide for Florida homeowners weighing duct repair vs. replacement — based on age, leakage, mold, and airflow, not guesswork.
+- [8 Warning Signs of a Clogged Dryer Vent](/blog/signs-of-clogged-dryer-vent): Long dry times, a hot laundry room, and burning smells all point to a clogged dryer vent. Here are 8 warning signs Florida homeowners should never ignore.
+- [7 Signs Your Air Ducts Need Cleaning](/blog/signs-your-air-ducts-need-cleaning): Musty smells, rising dust, allergy flare-ups? Here are the 7 clearest signs your Florida home's air ducts need a professional cleaning right now.
+- [Do UV Lights Really Stop Mold in Your AC?](/blog/uv-lights-hvac-mold): UV-C lights installed at the evaporator coil genuinely kill mold and bacteria in your AC. Here's how they work and their limits in Florida homes.
+- [What Does Indoor Air Quality Testing Actually Measure?](/blog/what-indoor-air-quality-testing-measures): A clear breakdown of what indoor air quality testing measures, from mold and VOCs to particulates and humidity, and when Florida homes should test.
+- [What Is Air Duct Cleaning and How Does It Work?](/blog/what-is-air-duct-cleaning): Air duct cleaning removes dust, mold, and debris from your HVAC system using negative-air and source-removal tools. Here's exactly how the process works.
+- [What to Expect During a Professional Air Duct Cleaning](/blog/what-to-expect-air-duct-cleaning): From inspection to final walkthrough, here's exactly what happens during a professional air duct cleaning visit in Florida — step by step, start to finish.
+- [Why Does My AC Smell Musty? (Dirty Sock Syndrome Explained)](/blog/why-ac-smells-musty): That musty, dirty-sock smell from your AC is usually mold on the evaporator coil. Here's what causes it in Florida and how to get rid of it.
