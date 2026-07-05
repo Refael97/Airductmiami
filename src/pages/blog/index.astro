@@ -20,7 +20,7 @@ const rest = posts.filter((p) => !featuredIds.has(p.id));
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} altHref="/es/blog">
   <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }]} />
   <section class="section">
     <div class="container">

@@ -10,10 +10,10 @@ const title = `${business.name} | Air Duct & Dryer Vent Cleaning Across Florida`
 const description = business.description;
 
 const homeFaq = [
-  { question: 'How often should I clean my air ducts in Florida?', answer: 'Most Florida homes should have their air ducts cleaned every 3–5 years, and more often with pets, allergies, recent renovations, or a history of mold. Florida’s humidity accelerates dust and mold buildup compared with drier climates.' },
-  { question: 'Do you serve my area?', answer: `Yes — we provide air duct and dryer vent services across all of Florida, including Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Fort Myers, Naples, Sarasota, and dozens more cities. Call ${business.phone} to confirm availability in your zip code.` },
+  { question: 'How often should I clean my air ducts in Florida?', answer: 'Most Florida homes should have their air ducts cleaned every 3 to 5 years, and more often with pets, allergies, recent renovations, or a history of mold. Florida’s humidity accelerates dust and mold buildup compared with drier climates.' },
+  { question: 'Do you serve my area?', answer: `Yes, we provide air duct and dryer vent services across all of Florida, including Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Fort Myers, Naples, Sarasota, and dozens more cities. Call ${business.phone} to confirm availability in your zip code.` },
   { question: 'Are you licensed and insured?', answer: 'Yes. Our technicians are licensed and insured, and we follow NADCA source-removal standards for air duct cleaning so the work is done safely and to industry best practices.' },
-  { question: 'How much does air duct cleaning cost?', answer: 'A typical single-system Florida home costs $300–$600 for a complete air duct cleaning. Dryer vent cleaning runs $100–$200. We provide free, upfront quotes with no hidden fees.' },
+  { question: 'How much does air duct cleaning cost?', answer: 'A typical single-system Florida home costs $300 to $600 for a complete air duct cleaning. Dryer vent cleaning runs $100 to $200. We provide free, upfront quotes with no hidden fees.' },
 ];
 
 const regions = citiesByRegion();
@@ -24,7 +24,7 @@ const stats = [
   { value: 'Same-week', label: 'Appointments statewide' },
 ];
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} altHref="/es/">
   <!-- Hero -->
   <section class="hero">
     <div class="container hero-inner">
@@ -32,7 +32,7 @@ const stats = [
         <span class="eyebrow">Serving all of Florida</span>
         <h1>Breathe Cleaner Air with Florida's Trusted Air Duct Experts</h1>
         <p class="lead">
-          Professional air duct cleaning, dryer vent cleaning, and mold prevention —
+          Professional air duct cleaning, dryer vent cleaning, and mold prevention, 
           done to NADCA standards by licensed, insured technicians. Lower your energy
           bills, protect your family's health, and eliminate that musty AC smell.
         </p>
@@ -42,7 +42,7 @@ const stats = [
         </div>
         <ul class="hero-trust check-list">
           <li>Licensed &amp; insured Florida technicians</li>
-          <li>Upfront pricing — no hidden fees</li>
+          <li>Upfront pricing, no hidden fees</li>
           <li>Same-week appointments statewide</li>
         </ul>
       </div>
@@ -92,19 +92,19 @@ const stats = [
     <div class="container why-grid">
       <div>
         <span class="eyebrow">Why Florida homeowners choose us</span>
-        <h2>Done right, at the source — not just blown around</h2>
+        <h2>Done right, at the source, not just blown around</h2>
         <p>Cut-rate "$49 duct cleaning" deals often just push dust around with a shop vac. We use professional negative-air, source-removal equipment that places your entire system under suction and captures every particle into a sealed HEPA unit.</p>
         <ul class="check-list">
-          <li><strong>NADCA source-removal standard</strong> — the method the industry recognizes as done correctly.</li>
-          <li><strong>Before &amp; after photos</strong> — you see exactly what we removed.</li>
-          <li><strong>Florida-specific expertise</strong> — we know how humidity drives coil mold and duct dust here.</li>
-          <li><strong>Transparent, upfront quotes</strong> — the price we quote is the price you pay.</li>
+          <li><strong>NADCA source-removal standard</strong>, the method the industry recognizes as done correctly.</li>
+          <li><strong>Before &amp; after photos</strong>, you see exactly what we removed.</li>
+          <li><strong>Florida-specific expertise</strong>, we know how humidity drives coil mold and duct dust here.</li>
+          <li><strong>Transparent, upfront quotes</strong>, the price we quote is the price you pay.</li>
         </ul>
         <a href="/about" class="btn btn-primary">More about our approach</a>
       </div>
       <div class="why-facts">
-        <div class="why-fact"><span class="wf-num">20–30%</span><span>of conditioned air is lost to leaky ducts in a typical home</span></div>
-        <div class="why-fact"><span class="wf-num">5–7×</span><span>your home's air recirculates through the ducts every day</span></div>
+        <div class="why-fact"><span class="wf-num">20 to 30%</span><span>of conditioned air is lost to leaky ducts in a typical home</span></div>
+        <div class="why-fact"><span class="wf-num">5 to 7×</span><span>your home's air recirculates through the ducts every day</span></div>
         <div class="why-fact"><span class="wf-num">#1</span><span>cause of dryer fires is lint buildup in the vent</span></div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 ---
 title: "NADCA Standards Explained: What 'Done Right' Looks Like"
 description: "NADCA sets the industry standard for air duct cleaning. Learn what source removal means, why it matters, and how to tell a NADCA-quality job from a shortcut."
-answer: "NADCA is the National Air Duct Cleaners Association, and its standard defines 'done right' as source removal — physically extracting all contaminants from the HVAC system under negative air pressure so nothing is left behind or blown back into your home."
+answer: "NADCA is the National Air Duct Cleaners Association, and its standard defines 'done right' as source removal, physically extracting all contaminants from the HVAC system under negative air pressure so nothing is left behind or blown back into your home."
 pubDate: 2025-03-06
 category: "Air Duct Cleaning"
 tags: ["nadca", "standards", "source removal", "quality"]
@@ -15,7 +15,7 @@ faq:
     answer: "Blow-and-go services vacuum near the registers without containing the system or agitating debris throughout the ducts. NADCA source removal seals the system under negative air and mechanically cleans every run and component."
 ---
 
-NADCA — the National Air Duct Cleaners Association — is the organization whose standards define what a proper air duct cleaning actually means. At its core, the NADCA standard requires **source removal**: physically extracting all contaminants from the HVAC system rather than just masking, coating, or displacing them. Everything is contained under negative air pressure so nothing is left in the ducts or pushed back into your home. Understanding this standard is the single best way to tell a quality [air duct cleaning](/services/air-duct-cleaning) from a shortcut.
+NADCA, the National Air Duct Cleaners Association, is the organization whose standards define what a proper air duct cleaning actually means. At its core, the NADCA standard requires **source removal**: physically extracting all contaminants from the HVAC system rather than just masking, coating, or displacing them. Everything is contained under negative air pressure so nothing is left in the ducts or pushed back into your home. Understanding this standard is the single best way to tell a quality [air duct cleaning](/services/air-duct-cleaning) from a shortcut.
 
 ## What "source removal" really means
 
@@ -38,11 +38,11 @@ A common misconception is that "duct cleaning" means only the ducts. The NADCA s
 | Evaporator coil | Damp surface where mold grows |
 | Drain pan | Standing water breeds bacteria |
 
-Skipping the coil and blower — the parts where Florida humidity drives mold growth — means the job is not done to standard, even if the ducts look clean.
+Skipping the coil and blower, the parts where Florida humidity drives mold growth, means the job is not done to standard, even if the ducts look clean.
 
 ## Why the standard matters more in Florida
 
-Florida's climate makes cutting corners especially costly. AC runs nearly year-round, so anything left in the system recirculates constantly. High humidity condenses on cool duct and coil surfaces, and that moisture plus leftover dust is exactly what mold needs. A NADCA-quality cleaning that removes the debris — and, when needed, adds [sanitizing](/services/air-duct-sanitizing) or [mold remediation](/services/mold-remediation) — actually solves the problem instead of postponing it.
+Florida's climate makes cutting corners especially costly. AC runs nearly year-round, so anything left in the system recirculates constantly. High humidity condenses on cool duct and coil surfaces, and that moisture plus leftover dust is exactly what mold needs. A NADCA-quality cleaning that removes the debris, and, when needed, adds [sanitizing](/services/air-duct-sanitizing) or [mold remediation](/services/mold-remediation), actually solves the problem instead of postponing it.
 
 ## How to tell if your job meets the standard
 
@@ -66,4 +66,4 @@ If a company cannot explain how they contain the dust they dislodge, they are no
 
 ## The bottom line
 
-The NADCA standard boils down to one idea: remove the contaminants at the source, contain them, and clean the whole system — not just the parts you can see. Holding your provider to that standard is how you make sure you are paying for a real cleaning. If you want work done the right way, [contact our Florida team](/contact) or read more common questions on our [FAQ page](/faq).
+The NADCA standard boils down to one idea: remove the contaminants at the source, contain them, and clean the whole system, not just the parts you can see. Holding your provider to that standard is how you make sure you are paying for a real cleaning. If you want work done the right way, [contact our Florida team](/contact) or read more common questions on our [FAQ page](/faq).

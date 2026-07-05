@@ -15,15 +15,15 @@ faq:
     answer: "An oversized or short-cycling AC cools the air quickly without running long enough to remove moisture, leaving indoor humidity high despite a comfortable temperature."
 ---
 
-The ideal indoor humidity level in Florida is between **30% and 50%**, and the hard ceiling you never want to cross is **60%**. That range keeps your home comfortable, protects your belongings, and — most importantly in our climate — stops mold before it can start. Because Florida's outdoor humidity regularly sits above 70% for months, hitting the indoor target takes active effort rather than opening a window.
+The ideal indoor humidity level in Florida is between **30% and 50%**, and the hard ceiling you never want to cross is **60%**. That range keeps your home comfortable, protects your belongings, and, most importantly in our climate, stops mold before it can start. Because Florida's outdoor humidity regularly sits above 70% for months, hitting the indoor target takes active effort rather than opening a window.
 
-## Why 30–50% is the sweet spot
+## Why 30 to 50% is the sweet spot
 
 Humidity that is too high or too low both cause problems. The ideal band balances the two:
 
 - **Below 30%:** air feels dry, causing irritated sinuses, dry skin, static, and cracking wood
-- **30–50%:** the comfort zone — healthy for people and hostile to mold and dust mites
-- **50–60%:** acceptable but climbing; the upper edge where you should take action
+- **30 to 50%:** the comfort zone, healthy for people and hostile to mold and dust mites
+- **50 to 60%:** acceptable but climbing; the upper edge where you should take action
 - **Above 60%:** the danger zone where mold, mildew, and dust mites flourish
 
 In Florida, the risk almost always runs high rather than low. Our challenge is pulling moisture *out* of indoor air, not adding it.
@@ -42,7 +42,7 @@ Every one of these is more common in Florida because our baseline humidity is so
 
 ## How to hit and hold the target
 
-**Run your AC as a dehumidifier.** Your air conditioner removes moisture whenever it runs. The key is that it runs *long enough* — a right-sized unit that cycles steadily pulls out far more water than an oversized one that blasts cold air and shuts off.
+**Run your AC as a dehumidifier.** Your air conditioner removes moisture whenever it runs. The key is that it runs *long enough*, a right-sized unit that cycles steadily pulls out far more water than an oversized one that blasts cold air and shuts off.
 
 **Add a dehumidifier when needed.** In much of Florida, the AC alone cannot hold humidity below 60% during the wettest months, especially in larger or leaky homes. A whole-house or portable dehumidifier closes the gap.
 
@@ -52,7 +52,7 @@ Every one of these is more common in Florida because our baseline humidity is so
 
 ## Why your AC alone may not be enough
 
-Many Florida homeowners assume that a cold house is a dry house — but temperature and humidity are different things. On mild spring and fall days, the thermostat is satisfied quickly, so the AC barely runs and moisture creeps up even though the house feels cool. This is when indoor humidity quietly climbs past 60% and mold gets its opening. Monitoring with a hygrometer catches these periods, and a dehumidifier or a longer AC fan cycle addresses them.
+Many Florida homeowners assume that a cold house is a dry house, but temperature and humidity are different things. On mild spring and fall days, the thermostat is satisfied quickly, so the AC barely runs and moisture creeps up even though the house feels cool. This is when indoor humidity quietly climbs past 60% and mold gets its opening. Monitoring with a hygrometer catches these periods, and a dehumidifier or a longer AC fan cycle addresses them.
 
 ## Keeping ducts dry matters too
 
@@ -60,4 +60,4 @@ Controlling room humidity also protects the hidden surfaces inside your HVAC sys
 
 ## The bottom line
 
-Aim for 30–50% indoor humidity and never let it climb above 60%. In Florida that means running a properly sized AC, adding a dehumidifier when the season demands it, sealing your ducts, and monitoring with a hygrometer. Struggling to keep humidity down no matter what you try? [Contact our Florida team](/contact) and we will find the source of the moisture.
+Aim for 30 to 50% indoor humidity and never let it climb above 60%. In Florida that means running a properly sized AC, adding a dehumidifier when the season demands it, sealing your ducts, and monitoring with a hygrometer. Struggling to keep humidity down no matter what you try? [Contact our Florida team](/contact) and we will find the source of the moisture.

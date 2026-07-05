@@ -1,9 +1,9 @@
 /**
  * Single source of truth for business / NAP (Name, Address, Phone) data.
  *
- * ⚠️ PLACEHOLDERS — replace every value marked `TODO` with the real business
+ * ⚠️ PLACEHOLDERS, replace every value marked `TODO` with the real business
  * details before launch. These values feed the header, footer, contact page,
- * and — critically — the LocalBusiness structured data that Google and AI
+ * and, critically, the LocalBusiness structured data that Google and AI
  * engines read. Consistent NAP across the whole site is a core local-SEO
  * ranking signal, so keep this file authoritative.
  */
@@ -62,11 +62,11 @@ export const business: BusinessInfo = {
     country: 'US',
   },
   geo: {
-    latitude: 25.7617, // Miami — TODO: real coordinates
+    latitude: 25.7617, // Miami, TODO: real coordinates
     longitude: -80.1918,
   },
   hours: [
-    { days: 'Monday–Friday', opens: '08:00', closes: '19:00' },
+    { days: 'Monday to Friday', opens: '08:00', closes: '19:00' },
     { days: 'Saturday', opens: '09:00', closes: '17:00' },
     { days: 'Sunday', opens: '10:00', closes: '16:00' },
   ],

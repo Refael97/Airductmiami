@@ -2,15 +2,20 @@
 import { business } from '../data/business';
 import { services } from '../data/services';
 import { cities } from '../data/cities';
+import { ui, serviceHref, cityHref, type Locale } from '../data/ui';
 
-const year = 2025; // static build — bump on redesign
+interface Props { lang?: Locale; }
+const { lang = 'en' } = Astro.props;
+const t = ui[lang];
+
+const year = 2025;
 const footerServices = services.slice(0, 8);
 const footerCities = cities.slice(0, 12);
 ---
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a href="/" class="brand">
+      <a href={t.home} class="brand">
         <span aria-hidden="true">🌬️</span> {business.name}
       </a>
       <p>{business.tagline}</p>
@@ -18,44 +23,44 @@ const footerCities = cities.slice(0, 12);
         <a href={`tel:${business.phoneHref}`}>📞 {business.phone}</a><br />
         <a href={`mailto:${business.email}`}>✉️ {business.email}</a>
       </p>
-      <p class="footer-badge">Licensed &amp; Insured · Serving all of Florida</p>
+      <p class="footer-badge">{t.licensedInsured}</p>
     </div>
 
     <div class="footer-col">
-      <h3>Services</h3>
+      <h3>{t.footerServices}</h3>
       <ul>
         {footerServices.map((s) => (
-          <li><a href={`/services/${s.slug}`}>{s.shortName}</a></li>
+          <li><a href={serviceHref(lang, s.slug)}>{s.shortName}</a></li>
         ))}
-        <li><a href="/services">All services →</a></li>
+        <li><a href={t.services}>{t.allServices} →</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3>Service Areas</h3>
+      <h3>{t.footerAreas}</h3>
       <ul>
         {footerCities.map((c) => (
-          <li><a href={`/service-areas/${c.slug}`}>{c.name}</a></li>
+          <li><a href={cityHref(lang, c.slug)}>{c.name}</a></li>
         ))}
-        <li><a href="/service-areas">All areas →</a></li>
+        <li><a href={t.serviceAreas}>{t.allAreas} →</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3>Company</h3>
+      <h3>{t.footerCompany}</h3>
       <ul>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/blog">Blog &amp; Guides</a></li>
-        <li><a href="/faq">FAQ</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href={t.about}>{t.nav[3].label}</a></li>
+        <li><a href={t.blog}>{t.nav[2].label}</a></li>
+        <li><a href={t.faq}>{t.nav[4].label}</a></li>
+        <li><a href={t.contact}>{t.nav[5].label}</a></li>
+        <li><a href={t.privacy}>{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a></li>
       </ul>
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container">
-      <p>© {year} {business.legalName}. All rights reserved. · Air duct &amp; dryer vent cleaning across Florida.</p>
+      <p>© {year} {business.legalName}. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'} · {t.servingFlorida}.</p>
     </div>
   </div>
 </footer>

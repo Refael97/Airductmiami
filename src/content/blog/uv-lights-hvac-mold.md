@@ -15,7 +15,7 @@ faq:
     answer: "Yes, when installed inside the sealed air handler the UV-C light is contained and never exposed to occupants, making it safe for the household."
 ---
 
-UV-C lights really do stop mold in your AC — but only where the light actually reaches. Installed directly at the evaporator coil, a germicidal UV-C lamp continuously kills the mold and bacteria growing on that cold, wet surface, which is exactly where Florida AC systems grow mold in the first place. Understanding what UV-C can and cannot do helps you use it as the powerful tool it is rather than expecting it to do the whole job.
+UV-C lights really do stop mold in your AC, but only where the light actually reaches. Installed directly at the evaporator coil, a germicidal UV-C lamp continuously kills the mold and bacteria growing on that cold, wet surface, which is exactly where Florida AC systems grow mold in the first place. Understanding what UV-C can and cannot do helps you use it as the powerful tool it is rather than expecting it to do the whole job.
 
 ## How UV-C light kills mold
 
@@ -28,7 +28,7 @@ The key phrase is **continuously**. Unlike a one-time cleaning, the light works 
 Florida's climate is what makes coil UV-C so worthwhile:
 
 - **The coil is wet almost year-round** because the AC runs constantly, giving mold a permanent home
-- **Cleanings alone don't last** in high humidity — the coil regrows mold within weeks
+- **Cleanings alone don't last** in high humidity, the coil regrows mold within weeks
 - **Dirty Sock Syndrome** (that musty AC smell) originates on the coil, exactly where UV-C works
 - **Continuous operation** matches Florida's continuous cooling season
 
@@ -56,7 +56,7 @@ For the best results in a Florida home, treat UV-C as one layer in a system:
 
 ## Are they worth the cost?
 
-For most Florida homes dealing with recurring musty smells or coil mold, a UV-C light pays for itself in fewer coil cleanings, better airflow, and cleaner air. It is not magic — it will not compensate for a soaking-wet home or filthy ducts — but as part of a maintained system it is one of the most effective long-term defenses against coil mold available. If your musty smell keeps returning after cleanings, UV-C is likely the missing piece, and [indoor air quality testing](/services/indoor-air-quality-testing) can confirm the improvement.
+For most Florida homes dealing with recurring musty smells or coil mold, a UV-C light pays for itself in fewer coil cleanings, better airflow, and cleaner air. It is not magic, it will not compensate for a soaking-wet home or filthy ducts, but as part of a maintained system it is one of the most effective long-term defenses against coil mold available. If your musty smell keeps returning after cleanings, UV-C is likely the missing piece, and [indoor air quality testing](/services/indoor-air-quality-testing) can confirm the improvement.
 
 ## The bottom line
 

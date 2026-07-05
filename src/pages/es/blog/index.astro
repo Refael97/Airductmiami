@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { getCollection } from 'astro:content';
+import { business } from '../../../data/business';
+import { ui, blogHref } from '../../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+const title = `Blog de ductos y calidad del aire | ${business.name}`;
+const description = 'Guías prácticas sobre limpieza de ductos, seguridad de la ventila del secador, prevención de moho, eficiencia del aire acondicionado y calidad del aire para hogares de Florida.';
+
+const posts = (await getCollection('blogEs')).sort(
+ (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const categories = [...new Set(posts.map((p) => p.data.category))].sort();
+
+const fmt = (d: Date) => d.toLocaleDateString('es-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+<BaseLayout title={title} description={description} lang={lang} altHref="/blog">
+ <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[2].label, href: t.blog }]} />
+ <section class="section">
+ <div class="container">
+ <div class="section-head">
+ <span class="eyebrow">Guías y recursos</span>
+ <h1>Blog de ductos y calidad del aire</h1>
+ <p class="lead">Consejos prácticos, enfocados en Florida, para mantener el aire de su casa limpio, el aire acondicionado eficiente y a su familia saludable.</p>
+ </div>
+
+ <div class="cat-bar">
+ {categories.map((c) => (<span class="cat-tag">{c}</span>))}
+ </div>
+
+ <div class="grid grid-3">
+ {posts.map((p) => (
+ <a href={blogHref(lang, p.id)} class="card post-card">
+ <span class="pill">{p.data.category}</span>
+ <h3>{p.data.title}</h3>
+ <p>{p.data.description}</p>
+ <span class="post-meta">{fmt(p.data.pubDate)}</span>
+ </a>
+ ))}
+ </div>
+ </div>
+ </section>
+ <CTABand lang={lang} />
+</BaseLayout>
+
+<style>
+  .post-card { display: flex; flex-direction: column; text-decoration: none; gap: 0.5rem; }
+  .post-card:hover { text-decoration: none; }
+  .post-card h3 { color: var(--c-ink); font-size: 1.15rem; margin: 0.3rem 0; }
+  .post-card p { color: var(--c-body); font-size: 0.92rem; margin: 0; flex-grow: 1; }
+  .post-meta { color: var(--c-muted); font-size: 0.82rem; margin-top: 0.4rem; }
+  .featured { margin-bottom: 2rem; }
+  .featured-card { border-color: #bfddf3; background: linear-gradient(180deg, #fff, var(--c-primary-light)); }
+  .cat-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
+  .cat-tag { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.82rem; font-weight: 600; color: var(--c-body); }
+</style>

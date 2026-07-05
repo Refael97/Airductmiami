@@ -23,7 +23,7 @@ Mold inside ductwork often hides where you cannot see it, so pay attention to th
 
 - **A musty, mildew smell** that gets stronger when the AC kicks on
 - **Visible black, green, or gray specks** around supply vents and register covers
-- **Allergy-like symptoms** — congestion, sneezing, itchy eyes — that ease when you leave the house
+- **Allergy-like symptoms**, congestion, sneezing, itchy eyes, that ease when you leave the house
 - **Increased humidity** or a damp feeling indoors even with the AC running
 - **Recurring respiratory irritation** among family members, especially in bedrooms
 

@@ -1,4 +1,4 @@
-# robots.txt — Air Duct Florida
+# robots.txt for Air Duct Florida
 # Allow all crawlers, including AI/answer engines.
 
 User-agent: *

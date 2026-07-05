@@ -15,7 +15,7 @@ faq:
     answer: "Yes. Proper insulation keeps the duct surface from getting cold enough to condense moisture, and sealing air leaks stops humid air from reaching the cold metal, which together usually resolve the sweating."
 ---
 
-Your air ducts sweat for the same reason a cold glass of iced tea drips on a Florida porch: warm, humid air touches a cold surface and the moisture in it condenses into liquid water. Inside your home, the cold surface is the ductwork carrying chilled air, and the humid air is either the moist attic surrounding it or air leaking into the system. Left alone, that condensation feeds mold and damages your home — but it is a fixable problem once you understand the cause.
+Your air ducts sweat for the same reason a cold glass of iced tea drips on a Florida porch: warm, humid air touches a cold surface and the moisture in it condenses into liquid water. Inside your home, the cold surface is the ductwork carrying chilled air, and the humid air is either the moist attic surrounding it or air leaking into the system. Left alone, that condensation feeds mold and damages your home, but it is a fixable problem once you understand the cause.
 
 ## The physics behind sweating ducts
 
@@ -23,10 +23,10 @@ Every batch of air can only hold so much moisture, and colder air holds less. Wh
 
 ## Why Florida makes it worse
 
-- **Extreme attic humidity** — Florida attics are hot and moist for most of the year
-- **Constant cooling** — ducts stay cold nearly year-round, so surfaces rarely warm up
-- **High baseline humidity** — outdoor dew points here are among the highest in the country
-- **Long cooling season** — more months of cold ducts meeting humid air
+- **Extreme attic humidity**, Florida attics are hot and moist for most of the year
+- **Constant cooling**, ducts stay cold nearly year-round, so surfaces rarely warm up
+- **High baseline humidity**, outdoor dew points here are among the highest in the country
+- **Long cooling season**, more months of cold ducts meeting humid air
 
 This combination is why sweating ducts are a routine complaint in Florida homes and far rarer in dry or seasonal climates.
 
@@ -57,7 +57,7 @@ The mold risk is the most important. A duct that sweats provides exactly the moi
 1. **Insulate properly.** The core fix is ensuring every duct has intact, adequate insulation so its surface never gets cold enough to hit the dew point.
 2. **Seal air leaks.** Sealing joints and connections stops humid air from infiltrating and condensing inside or on the ducts.
 3. **Control humidity.** Keeping indoor and attic humidity down raises the margin before condensation forms; keep indoor humidity below 60%.
-4. **Right-size the system.** An oversized AC keeps ducts colder and humidity higher — the worst combination for sweating.
+4. **Right-size the system.** An oversized AC keeps ducts colder and humidity higher, the worst combination for sweating.
 5. **Clean and treat existing mold.** Where condensation has already caused growth, a [air duct cleaning](/services/air-duct-cleaning) followed by [air duct sanitizing](/services/air-duct-sanitizing) removes it, and heavy contamination may call for [mold remediation](/services/mold-remediation).
 
 ## Don't ignore the warning sign
@@ -66,4 +66,4 @@ Sweating ducts are your home telling you that moisture is collecting where it sh
 
 ## The bottom line
 
-Air ducts sweat because cold surfaces meet Florida's humid air — a problem of insulation, air leaks, and humidity. Fix it by insulating and sealing the ducts, controlling humidity below 60%, and cleaning up any mold the moisture caused. Seeing damp ducts or ceiling stains? [Contact our Florida team](/contact) before condensation turns into a mold and water-damage problem.
+Air ducts sweat because cold surfaces meet Florida's humid air, a problem of insulation, air leaks, and humidity. Fix it by insulating and sealing the ducts, controlling humidity below 60%, and cleaning up any mold the moisture caused. Seeing damp ducts or ceiling stains? [Contact our Florida team](/contact) before condensation turns into a mold and water-damage problem.

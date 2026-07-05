@@ -15,13 +15,13 @@ faq:
     answer: "A blocked vent dumps warm, humid exhaust indoors instead of outside. In Florida's climate, that added moisture can condense and feed mold near the dryer."
 ---
 
-Most people think of dryer lint as harmless fuzz. In reality, the lint that escapes your lint screen and packs into the vent creates three distinct hazards — fire, carbon monoxide, and mold. Understanding all three explains why vent maintenance matters far more than it seems.
+Most people think of dryer lint as harmless fuzz. In reality, the lint that escapes your lint screen and packs into the vent creates three distinct hazards, fire, carbon monoxide, and mold. Understanding all three explains why vent maintenance matters far more than it seems.
 
 ## Danger 1: Fire
 
-This is the best-known risk, and for good reason. Lint is essentially dry, fluffy fiber — one of the most easily ignited materials in your home. When lint blocks the vent, airflow drops and the dryer's heat has nowhere to go. Temperatures climb inside the duct and cabinet until the trapped lint can ignite.
+This is the best-known risk, and for good reason. Lint is essentially dry, fluffy fiber, one of the most easily ignited materials in your home. When lint blocks the vent, airflow drops and the dryer's heat has nowhere to go. Temperatures climb inside the duct and cabinet until the trapped lint can ignite.
 
-The combination is what makes it dangerous: a highly flammable material sitting exactly where heat builds up. Dryer fires are among the most common — and most preventable — home appliance fires.
+The combination is what makes it dangerous: a highly flammable material sitting exactly where heat builds up. Dryer fires are among the most common, and most preventable, home appliance fires.
 
 ## Danger 2: Carbon monoxide (gas dryers)
 
@@ -31,7 +31,7 @@ Carbon monoxide is colorless and odorless, which makes it especially dangerous. 
 
 ## Danger 3: Mold and moisture
 
-Here's the risk most homeowners never consider — and it's amplified in Florida. Your dryer exhausts warm, moisture-laden air. When the vent is blocked, that humid air backs up into the laundry room instead of exiting outdoors.
+Here's the risk most homeowners never consider, and it's amplified in Florida. Your dryer exhausts warm, moisture-laden air. When the vent is blocked, that humid air backs up into the laundry room instead of exiting outdoors.
 
 In Florida's already-humid climate, adding that moisture indoors can lead to:
 
@@ -63,8 +63,8 @@ Florida's climate and home construction make each of these dangers more likely:
 
 The single fix that addresses fire, carbon monoxide, and mold is the same: keep the vent clear. That means cleaning the lint screen every load and having the full duct professionally cleaned **at least once a year**. Professional [dryer vent cleaning](/services/dryer-vent-cleaning) removes the packed lint you can't reach and restores proper airflow.
 
-If you've noticed musty smells or humidity beyond the laundry area, the moisture may have spread into your HVAC system — in which case [HVAC system cleaning](/services/hvac-cleaning) or [air duct cleaning](/services/air-duct-cleaning) may also be worthwhile.
+If you've noticed musty smells or humidity beyond the laundry area, the moisture may have spread into your HVAC system, in which case [HVAC system cleaning](/services/hvac-cleaning) or [air duct cleaning](/services/air-duct-cleaning) may also be worthwhile.
 
 ## The bottom line
 
-Dryer lint is far more than fuzz. It's a fire hazard, a carbon monoxide risk for gas dryers, and a moisture source that feeds mold — all made worse by Florida's climate. Keeping the vent clear neutralizes all three. If it's been over a year, [contact us](/contact) to schedule a cleaning and clear the risk.
+Dryer lint is far more than fuzz. It's a fire hazard, a carbon monoxide risk for gas dryers, and a moisture source that feeds mold, all made worse by Florida's climate. Keeping the vent clear neutralizes all three. If it's been over a year, [contact us](/contact) to schedule a cleaning and clear the risk.

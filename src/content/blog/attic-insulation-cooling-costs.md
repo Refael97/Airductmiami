@@ -15,7 +15,7 @@ faq:
     answer: "Yes. Most Florida ducts run through the attic. Better insulation keeps the attic cooler, so cool air traveling through the ducts absorbs less heat and arrives colder at your registers."
 ---
 
-Your attic is the hottest part of your Florida home — and it sits directly above everything you're trying to keep cool. On a summer afternoon, attic temperatures reach 130°F, and without enough insulation, that heat pours straight into your living space. Attic insulation is one of the most cost-effective ways to fight back.
+Your attic is the hottest part of your Florida home, and it sits directly above everything you're trying to keep cool. On a summer afternoon, attic temperatures reach 130°F, and without enough insulation, that heat pours straight into your living space. Attic insulation is one of the most cost-effective ways to fight back.
 
 ## The short answer
 
@@ -32,7 +32,7 @@ Two things suffer when insulation is inadequate:
 
 ## Understanding R-value
 
-R-value measures insulation's resistance to heat flow — higher is better. Florida attics are generally targeted at about **R-30 to R-38**.
+R-value measures insulation's resistance to heat flow, higher is better. Florida attics are generally targeted at about **R-30 to R-38**.
 
 | Attic insulation level | Heat resistance | Typical situation |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ R-value measures insulation's resistance to heat flow — higher is better. Flor
 | R-19 to R-30 | Moderate | Common but improvable |
 | R-30 to R-38 | Recommended | Good performance for Florida |
 
-The biggest savings come from the first improvements — going from very little insulation to an adequate level blocks the most heat, because those initial inches do the heaviest lifting.
+The biggest savings come from the first improvements, going from very little insulation to an adequate level blocks the most heat, because those initial inches do the heaviest lifting.
 
 ## Signs your attic needs more insulation
 
@@ -52,11 +52,11 @@ The biggest savings come from the first improvements — going from very little 
 
 ## How insulation works with your HVAC system
 
-Insulation isn't a standalone fix — it's part of a system. It delivers the most value when paired with healthy ductwork:
+Insulation isn't a standalone fix, it's part of a system. It delivers the most value when paired with healthy ductwork:
 
-- **Sealed ducts** so cool air isn't lost into the attic — see [air duct repair](/services/air-duct-repair).
-- **Clean ducts and coil** so airflow and heat transfer are at full strength — [HVAC cleaning](/services/hvac-cleaning) covers this.
-- **Adequate attic insulation** so the whole system isn't fighting 130°F heat — our [attic insulation](/services/attic-insulation) service brings your attic up to spec.
+- **Sealed ducts** so cool air isn't lost into the attic, see [air duct repair](/services/air-duct-repair).
+- **Clean ducts and coil** so airflow and heat transfer are at full strength, [HVAC cleaning](/services/hvac-cleaning) covers this.
+- **Adequate attic insulation** so the whole system isn't fighting 130°F heat, our [attic insulation](/services/attic-insulation) service brings your attic up to spec.
 
 Together, these reduce the total heat load, and each one makes the others more effective.
 

@@ -30,22 +30,22 @@ Many Florida homes route the dryer duct up and out through the roof because of i
 | Exterior wall (short) | Short, few bends, easy lint exit | Requires nearby outside wall |
 | Roof run | Works when no wall is close | Long, more elbows, traps lint faster |
 
-If a short wall vent is possible, choose it. If a roof run is your only option, keep it as short and straight as you can — and plan on more frequent cleaning.
+If a short wall vent is possible, choose it. If a roof run is your only option, keep it as short and straight as you can, and plan on more frequent cleaning.
 
 ## Respect the length limit
 
 There's a practical ceiling on how long a dryer vent should be. A common guideline is a **maximum equivalent length of about 35 feet**, with roughly **5 feet subtracted for each 90-degree elbow**. So a run with three elbows effectively uses up much of the allowance before you count a single straight foot.
 
-Longer runs don't just slow drying — they trap heat and lint, raising fire risk. Plan the route to stay well under the limit.
+Longer runs don't just slow drying, they trap heat and lint, raising fire risk. Plan the route to stay well under the limit.
 
 ## Use the right duct material
 
 Material choice is a safety decision:
 
-- **Rigid metal** — the best choice. Smooth interior walls let lint pass through instead of catching.
-- **Semi-rigid metal** — acceptable for short transition connections behind the dryer.
-- **Flexible foil accordion** — avoid. The ridged interior traps lint.
-- **Flexible plastic** — never use. It sags, traps lint, and can melt or ignite.
+- **Rigid metal**, the best choice. Smooth interior walls let lint pass through instead of catching.
+- **Semi-rigid metal**, acceptable for short transition connections behind the dryer.
+- **Flexible foil accordion**, avoid. The ridged interior traps lint.
+- **Flexible plastic**, never use. It sags, traps lint, and can melt or ignite.
 
 Never use screws that protrude into the duct at joints, since they snag lint. Use foil tape or proper clamps instead.
 
@@ -54,7 +54,7 @@ Never use screws that protrude into the duct at joints, since they snag lint. Us
 The exterior vent cover matters as much as the duct:
 
 - Use a **hooded vent cover with a movable flap** (a damper) that opens with airflow and closes when the dryer is off.
-- **Avoid screens or cages** over the opening — they clog with lint quickly and defeat the purpose.
+- **Avoid screens or cages** over the opening, they clog with lint quickly and defeat the purpose.
 - Position the termination where exhaust won't blow back against the house or into windows.
 
 ## Florida-specific installation tips
@@ -64,12 +64,12 @@ Florida's climate adds a few considerations:
 - **Plan for humidity.** Humid air lengthens dry times, so efficient, short routing pays off in every load.
 - **Guard against pests.** Warm vent hoods attract birds and insects year-round. A quality flapped cover keeps them out without clogging.
 - **Weather the termination.** Choose a cover that keeps out driving rain during storm season while still venting freely.
-- **Insulate long attic runs.** A roof run passing through a hot attic can promote condensation inside the duct — keep the run short and consider insulation.
+- **Insulate long attic runs.** A roof run passing through a hot attic can promote condensation inside the duct, keep the run short and consider insulation.
 
 ## When to call a professional
 
-Dryer vent routing affects fire safety, so professional installation is worth it — especially for roof runs or long routes through walls and attics. A pro will size the run correctly, choose safe materials, and terminate the vent properly. If you're upgrading unsafe ducting or planning a new laundry location, [contact our team](/contact) to get it done right.
+Dryer vent routing affects fire safety, so professional installation is worth it, especially for roof runs or long routes through walls and attics. A pro will size the run correctly, choose safe materials, and terminate the vent properly. If you're upgrading unsafe ducting or planning a new laundry location, [contact our team](/contact) to get it done right.
 
 ## The bottom line
 
-The best dryer vent is a **short, straight, rigid-metal run** out a nearby exterior wall, capped with a proper hooded cover. Keep the total run under the length limit, avoid flexible plastic and foil, and account for Florida's humidity and pests. Once installed, keep it clear with regular [dryer vent cleaning](/services/dryer-vent-cleaning) — even the best installation needs annual maintenance.
+The best dryer vent is a **short, straight, rigid-metal run** out a nearby exterior wall, capped with a proper hooded cover. Keep the total run under the length limit, avoid flexible plastic and foil, and account for Florida's humidity and pests. Once installed, keep it clear with regular [dryer vent cleaning](/services/dryer-vent-cleaning), even the best installation needs annual maintenance.

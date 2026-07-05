@@ -1,7 +1,7 @@
 ---
 title: "How to Choose a Trustworthy Air Duct Cleaning Company in Florida"
-description: "A step-by-step vetting guide to finding a reputable, honest air duct cleaning company in Florida — licenses, methods, red flags, and what to verify first."
-answer: "Choose a Florida air duct cleaning company that uses NADCA source-removal equipment, carries insurance, provides written per-vent quotes, and shows before-and-after photos — never one advertising a $49 whole-home special."
+description: "A step-by-step vetting guide to finding a reputable, honest air duct cleaning company in Florida, licenses, methods, red flags, and what to verify first."
+answer: "Choose a Florida air duct cleaning company that uses NADCA source-removal equipment, carries insurance, provides written per-vent quotes, and shows before-and-after photos, never one advertising a $49 whole-home special."
 pubDate: 2024-11-12
 category: "Costs & Buying Guides"
 tags: ["buying guide", "hiring", "florida", "vetting"]
@@ -12,10 +12,10 @@ faq:
   - question: "Are online reviews reliable for choosing a company?"
     answer: "Reviews help, but read the details. Favor companies with many reviews that mention specific technicians, before-and-after photos, and transparent pricing over those with only vague five-star ratings."
   - question: "Should I get more than one quote?"
-    answer: "Yes. Getting two or three written quotes helps you spot both lowball bait pricing and overpriced outliers. A fair single-system cleaning in Florida runs $300–$600."
+    answer: "Yes. Getting two or three written quotes helps you spot both lowball bait pricing and overpriced outliers. A fair single-system cleaning in Florida runs $300 to $600."
 ---
 
-Choosing the right air duct cleaning company in Florida comes down to one thing: verifying that the company does real, standards-based work at a fair price. The short answer is to hire a company that uses NADCA source-removal equipment, carries insurance, gives you a written per-vent quote, and can show before-and-after photos — and to walk away from anyone advertising a $49 whole-home special.
+Choosing the right air duct cleaning company in Florida comes down to one thing: verifying that the company does real, standards-based work at a fair price. The short answer is to hire a company that uses NADCA source-removal equipment, carries insurance, gives you a written per-vent quote, and can show before-and-after photos, and to walk away from anyone advertising a $49 whole-home special.
 
 ## Start with credentials and insurance
 
@@ -37,13 +37,13 @@ Get everything in writing before work begins. A fair Florida price sheet looks l
 
 | Service | Typical Florida price |
 | --- | --- |
-| Air duct cleaning (single system) | $300–$600 |
-| Each additional HVAC system | $250–$450 |
-| Dryer vent cleaning | $100–$200 |
-| Antimicrobial sanitizing (add-on) | $75–$200 |
-| Mold remediation (duct) | $500–$3,000+ |
+| Air duct cleaning (single system) | $300 to $600 |
+| Each additional HVAC system | $250 to $450 |
+| Dryer vent cleaning | $100 to $200 |
+| Antimicrobial sanitizing (add-on) | $75 to $200 |
+| Mold remediation (duct) | $500 to $3,000+ |
 
-If a quote comes in far below $300 for a whole home, treat it as bait. If it comes in far above these ranges without a clear reason — multiple systems, heavy mold, complex access — ask why.
+If a quote comes in far below $300 for a whole home, treat it as bait. If it comes in far above these ranges without a clear reason, multiple systems, heavy mold, complex access, ask why.
 
 ## Red flags to avoid
 

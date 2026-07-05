@@ -9,13 +9,13 @@ const title = `Air Duct Cleaning FAQ | ${business.name} Florida`;
 const description = 'Answers to the most common questions about air duct cleaning, dryer vent cleaning, costs, frequency, mold, and indoor air quality in Florida.';
 
 const faqs = [
-  { question: 'How often should air ducts be cleaned in Florida?', answer: 'Every 3–5 years for most Florida homes. Clean more often if you have pets, allergy or asthma sufferers, recent renovation or construction, or a history of mold. Florida’s year-round humidity accelerates dust and mold buildup compared with drier climates.' },
-  { question: 'How much does air duct cleaning cost in Florida?', answer: 'A complete single-system cleaning typically costs $300–$600. Larger homes, multiple systems, or heavy mold contamination cost more. Be wary of “$49 whole-home” ads — they usually rely on upsells or do not perform true source-removal cleaning.' },
-  { question: 'How much does dryer vent cleaning cost?', answer: 'Most Florida homes pay $100–$200 for professional dryer vent cleaning, depending on the length and complexity of the vent run.' },
-  { question: 'How long does air duct cleaning take?', answer: 'A typical single-system Florida home takes 2–4 hours, depending on the number of vents and the level of buildup.' },
-  { question: 'Does air duct cleaning really improve indoor air quality?', answer: 'Yes. Source-removal cleaning physically removes accumulated dust, pet dander, pollen, and mold spores from the ductwork so they are no longer recirculated into your living spaces 5–7 times a day.' },
-  { question: 'Why does my air conditioner smell musty?', answer: 'The musty “dirty sock” smell usually comes from mold and biofilm growing on the damp evaporator coil and inside the air handler. Cleaning and sanitizing these components — not just the ducts — removes the odor at its source.' },
-  { question: 'Can dirty air ducts affect my energy bills?', answer: 'Yes. Debris on the blower and coil, plus leaky ducts, force your system to work harder and run longer. Cleaning and sealing restore efficient airflow, which lowers cooling costs — a real factor given how hard Florida AC systems work.' },
+  { question: 'How often should air ducts be cleaned in Florida?', answer: 'Every 3 to 5 years for most Florida homes. Clean more often if you have pets, allergy or asthma sufferers, recent renovation or construction, or a history of mold. Florida’s year-round humidity accelerates dust and mold buildup compared with drier climates.' },
+  { question: 'How much does air duct cleaning cost in Florida?', answer: 'A complete single-system cleaning typically costs $300 to $600. Larger homes, multiple systems, or heavy mold contamination cost more. Be wary of “$49 whole-home” ads, they usually rely on upsells or do not perform true source-removal cleaning.' },
+  { question: 'How much does dryer vent cleaning cost?', answer: 'Most Florida homes pay $100 to $200 for professional dryer vent cleaning, depending on the length and complexity of the vent run.' },
+  { question: 'How long does air duct cleaning take?', answer: 'A typical single-system Florida home takes 2 to 4 hours, depending on the number of vents and the level of buildup.' },
+  { question: 'Does air duct cleaning really improve indoor air quality?', answer: 'Yes. Source-removal cleaning physically removes accumulated dust, pet dander, pollen, and mold spores from the ductwork so they are no longer recirculated into your living spaces 5 to 7 times a day.' },
+  { question: 'Why does my air conditioner smell musty?', answer: 'The musty “dirty sock” smell usually comes from mold and biofilm growing on the damp evaporator coil and inside the air handler. Cleaning and sanitizing these components, not just the ducts, removes the odor at its source.' },
+  { question: 'Can dirty air ducts affect my energy bills?', answer: 'Yes. Debris on the blower and coil, plus leaky ducts, force your system to work harder and run longer. Cleaning and sealing restore efficient airflow, which lowers cooling costs, a real factor given how hard Florida AC systems work.' },
   { question: 'How do I know if my dryer vent needs cleaning?', answer: 'Warning signs include clothes taking two cycles to dry, a hot dryer or laundry room, a burning smell, and a vent hood flap that no longer opens fully. Clogged vents are the leading cause of dryer fires, so clean at least once a year.' },
   { question: 'Is there mold in my air ducts?', answer: 'Common signs of duct mold are a musty smell that intensifies when the AC runs, visible black specks around vents, and allergy symptoms that improve when you leave home. Air quality testing can confirm it. Florida’s humidity makes duct mold especially common.' },
   { question: 'Are you licensed and insured?', answer: 'Yes. Our technicians are licensed and insured, and we follow NADCA source-removal standards so every job is done safely and correctly.' },
@@ -23,7 +23,7 @@ const faqs = [
   { question: 'What areas of Florida do you serve?', answer: `We serve homeowners and businesses statewide, including Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Fort Myers, Naples, Sarasota, and many more. Call ${business.phone} to confirm availability in your area.` },
 ];
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} altHref="/es/preguntas-frecuentes">
   <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'FAQ', href: '/faq' }]} />
   <section class="section">
     <div class="container container-narrow">

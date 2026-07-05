@@ -1,6 +1,6 @@
 ---
 title: "12 Ways to Lower Your AC Bills in Florida"
-description: "Practical, proven ways to cut cooling costs in Florida — from duct sealing and coil cleaning to thermostat habits that ease the strain on your AC."
+description: "Practical, proven ways to cut cooling costs in Florida, from duct sealing and coil cleaning to thermostat habits that ease the strain on your AC."
 answer: "You can lower Florida AC bills by sealing and cleaning ducts, cleaning the coil and blower, adding attic insulation, changing filters, and using smart thermostat settings to reduce runtime."
 pubDate: 2025-03-18
 category: "HVAC Efficiency"
@@ -8,7 +8,7 @@ tags: ["energy savings", "ac bills", "efficiency", "florida"]
 featured: false
 faq:
   - question: "What is the single biggest way to lower my AC bill?"
-    answer: "For most Florida homes it's fixing the ductwork — sealing leaks and clearing restrictions. Ducts commonly lose 20–30% of their air, so recovering that lost airflow delivers the largest, most reliable savings."
+    answer: "For most Florida homes it's fixing the ductwork, sealing leaks and clearing restrictions. Ducts commonly lose 20 to 30% of their air, so recovering that lost airflow delivers the largest, most reliable savings."
   - question: "What thermostat setting saves the most money?"
     answer: "Every degree higher on the thermostat reduces runtime and cost. Setting it a few degrees warmer when you're away or asleep, ideally with a programmable or smart thermostat, cuts cooling hours without sacrificing comfort when you're home."
   - question: "Does attic insulation really lower cooling bills in Florida?"
@@ -20,7 +20,7 @@ In Florida, air conditioning can account for nearly half of your electric bill d
 ## Start with the biggest levers
 
 ### 1. Seal your ducts
-Duct systems typically lose 20–30% of their air to leaks. Sealing joints with mastic or an aerosol sealant keeps the cool air you paid for inside the system. Our [air duct repair](/services/air-duct-repair) team handles this.
+Duct systems typically lose 20 to 30% of their air to leaks. Sealing joints with mastic or an aerosol sealant keeps the cool air you paid for inside the system. Our [air duct repair](/services/air-duct-repair) team handles this.
 
 ### 2. Clean the ducts
 Dust and debris restrict airflow, forcing longer run times. A source-removal [air duct cleaning](/services/air-duct-cleaning) restores the airway.
@@ -29,7 +29,7 @@ Dust and debris restrict airflow, forcing longer run times. A source-removal [ai
 A dust-coated evaporator coil can't transfer heat efficiently, and a dirty blower moves less air. [HVAC cleaning](/services/hvac-cleaning) restores both.
 
 ### 4. Improve attic insulation
-Florida attics hit 130°F. Bringing insulation up to roughly R-30 to R-38 slows heat gain into your home and ducts — see [attic insulation](/services/attic-insulation).
+Florida attics hit 130°F. Bringing insulation up to roughly R-30 to R-38 slows heat gain into your home and ducts, see [attic insulation](/services/attic-insulation).
 
 ## Easy habits and maintenance
 
@@ -40,7 +40,7 @@ A clogged filter starves the whole system. Check monthly during summer and repla
 Every degree warmer cuts runtime. Use a programmable or smart thermostat to ease back when you're away or asleep.
 
 ### 7. Use ceiling fans
-Fans let you stay comfortable at a higher thermostat setting by moving air across your skin. Turn them off in empty rooms — they cool people, not rooms.
+Fans let you stay comfortable at a higher thermostat setting by moving air across your skin. Turn them off in empty rooms, they cool people, not rooms.
 
 ### 8. Close blinds during peak sun
 Blocking direct sunlight reduces the heat your AC has to remove during the hottest hours.
@@ -68,8 +68,8 @@ Florida's humidity makes your AC work overtime. Fixing return-side duct leaks an
 | Attic insulation | Professional | High |
 | Filter changes | DIY | Medium |
 | Thermostat setbacks | DIY | Medium |
-| Fans & blinds | DIY | Low–Medium |
+| Fans & blinds | DIY | Low to Medium |
 
 ## Put it together
 
-The biggest, most dependable savings come from the ductwork and the coil — the parts of your system most homeowners never see. Layer the easy habits on top, and a typical Florida home can meaningfully cut its cooling costs. [Contact our team](/contact) for an efficiency inspection, or see service across [Tampa](/service-areas/tampa) and the rest of Florida.
+The biggest, most dependable savings come from the ductwork and the coil, the parts of your system most homeowners never see. Layer the easy habits on top, and a typical Florida home can meaningfully cut its cooling costs. [Contact our team](/contact) for an efficiency inspection, or see service across [Tampa](/service-areas/tampa) and the rest of Florida.

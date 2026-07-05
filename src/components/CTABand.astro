@@ -1,26 +1,27 @@
 ---
 import { business } from '../data/business';
+import { ui, type Locale } from '../data/ui';
 
 interface Props {
   heading?: string;
   text?: string;
+  lang?: Locale;
 }
-const {
-  heading = 'Ready for cleaner, healthier air?',
-  text = 'Get a fast, no-obligation quote from Florida’s trusted air duct professionals.',
-} = Astro.props;
+const { lang = 'en', heading, text } = Astro.props;
+const t = ui[lang];
+const h = heading ?? t.ctaHeading;
+const body = text ?? t.ctaText;
+const callLabel = lang === 'es' ? `Llame al ${business.phone}` : `Call ${business.phone}`;
 ---
 <section class="cta-band">
   <div class="container cta-inner">
     <div>
-      <h2>{heading}</h2>
-      <p>{text}</p>
+      <h2>{h}</h2>
+      <p>{body}</p>
     </div>
     <div class="cta-actions">
-      <a href={`tel:${business.phoneHref}`} class="btn btn-accent btn-lg">
-        📞 Call {business.phone}
-      </a>
-      <a href="/contact" class="btn btn-ghost-light btn-lg">Request a Quote</a>
+      <a href={`tel:${business.phoneHref}`} class="btn btn-accent btn-lg">📞 {callLabel}</a>
+      <a href={t.contact} class="btn btn-ghost-light btn-lg">{t.requestQuote}</a>
     </div>
   </div>
 </section>

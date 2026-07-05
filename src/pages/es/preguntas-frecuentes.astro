@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTABand from '../../components/CTABand.astro';
+import { business } from '../../data/business';
+import { ui } from '../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+const title = `Preguntas frecuentes sobre limpieza de ductos | ${business.name}`;
+const description = 'Respuestas a las preguntas más comunes sobre limpieza de ductos, ventila del secador, costos, frecuencia, moho y calidad del aire interior en Florida.';
+
+const faqs = [
+ { question: '¿Cada cuánto se deben limpiar los ductos en Florida?', answer: 'Cada 3 a 5 años en la mayoría de los hogares de Florida. Con más frecuencia si tiene mascotas, personas con alergias o asma, remodelaciones recientes o antecedentes de moho. La humedad de Florida acelera la acumulación de polvo y moho.' },
+ { question: '¿Cuánto cuesta la limpieza de ductos en Florida?', answer: 'Una limpieza completa de un solo sistema suele costar entre 300 y 600 dólares. Casas más grandes, varios sistemas o contaminación fuerte por moho cuestan más. Desconfíe de los anuncios de "casa completa por 49 dólares", casi siempre viven de ventas adicionales o no hacen una verdadera extracción por fuente.' },
+ { question: '¿Cuánto cuesta limpiar la ventila del secador?', answer: 'La mayoría de los hogares en Florida paga entre 100 y 200 dólares por una limpieza profesional de la ventila del secador, según el largo y la complejidad del conducto.' },
+ { question: '¿Cuánto tarda la limpieza de ductos?', answer: 'Un hogar típico de un solo sistema en Florida toma de 2 a 4 horas, según la cantidad de rejillas y el nivel de acumulación.' },
+ { question: '¿La limpieza de ductos de verdad mejora la calidad del aire?', answer: 'Sí. La limpieza por extracción quita el polvo, la caspa de mascota, el polen y las esporas de moho acumulados en los ductos, para que no vuelvan a circular por su casa varias veces al día.' },
+ { question: '¿Por qué mi aire acondicionado huele a humedad?', answer: 'Ese olor a humedad casi siempre viene del moho y la biopelícula que crecen en la serpentina fría y dentro de la manejadora. Limpiar y desinfectar esas piezas, no solo los ductos, elimina el olor desde la fuente.' },
+ { question: '¿Los ductos sucios afectan mi factura de electricidad?', answer: 'Sí. La suciedad en el soplador y la serpentina, junto con las fugas en los ductos, obligan al sistema a trabajar más y por más tiempo. Limpiar y sellar restaura el flujo de aire y baja el costo de enfriamiento, algo importante con lo duro que trabajan los equipos en Florida.' },
+ { question: '¿Cómo sé si mi ventila del secador necesita limpieza?', answer: 'Señales de alerta: la ropa tarda dos ciclos en secar, el secador o el cuarto de lavado se calientan, hay olor a quemado, y la tapa de la ventila exterior ya no abre bien. Las ventilas tapadas son la causa principal de incendios de secadora, así que límpiela al menos una vez al año.' },
+ { question: '¿Hay moho en mis ductos?', answer: 'Señales comunes de moho en los ductos: olor a humedad que aumenta cuando enciende el aire, puntos negros visibles alrededor de las rejillas, y síntomas de alergia que mejoran cuando sale de casa. Una prueba de calidad del aire lo confirma. La humedad de Florida hace que el moho en los ductos sea muy común.' },
+ { question: '¿Tienen licencia y seguro?', answer: 'Sí. Nuestros técnicos cuentan con licencia y seguro, y seguimos los estándares NADCA de extracción por fuente para que cada trabajo se haga de forma segura y correcta.' },
+ { question: '¿Ofrecen limpieza de ductos comercial?', answer: 'Sí. Atendemos oficinas, comercios, restaurantes, consultorios médicos y propiedades de varias unidades, con horarios fuera de hora y documentación completa para sus registros.' },
+ { question: '¿Qué zonas de Florida atienden?', answer: `Atendemos a familias y negocios en todo el estado, incluyendo Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Fort Myers, Naples, Sarasota y muchas más. Llame al ${business.phone} para confirmar disponibilidad en su zona.` },
+];
+---
+<BaseLayout title={title} description={description} lang={lang} altHref="/faq">
+ <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[4].label, href: t.faq }]} />
+ <section class="section">
+ <div class="container container-narrow">
+ <div class="section-head">
+ <span class="eyebrow">Respuestas</span>
+ <h1>Preguntas frecuentes</h1>
+ <p class="lead">Todo lo que las familias de Florida preguntan sobre limpieza de ductos, ventilas del secador, moho, costos y calidad del aire interior.</p>
+ </div>
+ <FAQ items={faqs} title="" />
+ </div>
+ </section>
+ <CTABand lang={lang} />
+</BaseLayout>

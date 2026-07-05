@@ -1,0 +1,123 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import FAQ from '../../../components/FAQ.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { cities, getCity } from '../../../data/cities';
+import { cityEsContent } from '../../../data/cities.es';
+import { services } from '../../../data/services';
+import { serviceEsContent } from '../../../data/services.es';
+import { business } from '../../../data/business';
+import { serviceSchema } from '../../../lib/schema';
+import { ui, serviceHref, cityHref } from '../../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+
+export const getStaticPaths = (() => {
+ return cities.map((c) => ({ params: { city: c.slug } }));
+}) satisfies GetStaticPaths;
+
+const { city: slug } = Astro.params;
+const city = getCity(slug!)!;
+const es = cityEsContent[slug!];
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}${cityHref(lang, city.slug)}`;
+
+const metaTitle = `Limpieza de ductos en ${city.name}, FL | ${business.name}`;
+const metaDescription = `Limpieza de ductos de aire y ventila del secador en ${city.name}, ${city.county}. Técnicos con licencia y seguro que atienden ${city.name} y áreas cercanas. Cotización gratis.`;
+
+const schema = serviceSchema(site, {
+ name: `Limpieza de ductos en ${city.name}, FL`,
+ description: metaDescription,
+ url: pageUrl,
+ slug: city.slug,
+});
+
+const cityFaq = [
+ { question: `¿Cuánto cuesta la limpieza de ductos en ${city.name}?`, answer: `En ${city.name}, una limpieza completa de ductos de un solo sistema suele costar entre 300 y 600 dólares, y la limpieza de la ventila del secador entre 100 y 200 dólares. Le damos una cotización clara y sin sorpresas.` },
+ { question: `¿Cada cuánto deben limpiar los ductos las familias de ${city.name}?`, answer: `Cada 3 a 5 años en la mayoría de los hogares de ${city.name}, y con más frecuencia si tiene mascotas, alergias o antecedentes de moho. ${es.local}` },
+ { question: `¿Ofrecen citas la misma semana en ${city.name}?`, answer: `Sí. Ofrecemos citas rápidas, muchas veces la misma semana, para ${city.name} y el área de ${city.county}. Llame al ${business.phone} para reservar.` },
+ { question: `¿Sus técnicos en ${city.name} tienen licencia y seguro?`, answer: `Sí. Cada técnico que atiende ${city.name} cuenta con licencia y seguro, y seguimos los estándares NADCA de extracción por fuente para una limpieza segura y a fondo.` },
+];
+
+const nearby = city.nearby
+ .map((n) => getCity(n))
+ .filter((c): c is NonNullable<typeof c> => Boolean(c));
+const topServices = services.slice(0, 6);
+const altHref = `/service-areas/${city.slug}`;
+---
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema} lang={lang} altHref={altHref}>
+ <Breadcrumbs
+ crumbs={[
+ { name: t.breadcrumbHome, href: t.home },
+ { name: t.nav[1].label, href: t.serviceAreas },
+ { name: city.name, href: cityHref(lang, city.slug) },
+ ]}
+ />
+
+ <section class="section">
+ <div class="container">
+ <div class="section-head">
+ <span class="eyebrow">{city.county} · Florida</span>
+ <h1>Limpieza de ductos en {city.name}, FL</h1>
+ </div>
+
+ <div class="answer-box">
+ <span class="answer-label">Atendemos {city.name}</span>
+ <p>{business.name} ofrece limpieza profesional de ductos de aire, limpieza de la ventila del secador y servicios de calidad del aire en todo {city.name} y {city.county}. {es.intro}</p>
+ </div>
+
+ <div class="prose">
+ <p>{es.local}</p>
+ <p>Nuestros técnicos con licencia y seguro llevan equipo NADCA de extracción por fuente a cada trabajo en {city.name}. Ponemos todo el sistema bajo succión para que el polvo, el polen y el moho se capturen y no se dispersen por su casa. Si nota un olor a humedad cuando enciende el aire, facturas altas de electricidad, alergias o simplemente le toca un mantenimiento, le ayudamos a respirar un aire más limpio.</p>
+
+ <h2>Servicios de ductos y aire acondicionado en {city.name}</h2>
+ <p>Todos estos servicios están disponibles para los residentes y negocios de {city.name}:</p>
+ </div>
+
+ <div class="grid grid-3">
+ {topServices.map((s) => {
+ const sc = serviceEsContent[s.slug];
+ return (
+ <a href={serviceHref(lang, s.slug)} class="card service-card">
+ <span class="icon" aria-hidden="true">{s.icon}</span>
+ <h3>{sc.shortName}</h3>
+ <p>{sc.answer.split('. ')[0]}.</p>
+ </a>
+ );
+ })}
+ </div>
+ <p style="margin-top:1rem;"><a href={t.services} class="btn btn-outline">Ver todos los servicios →</a></p>
+
+ <FAQ items={cityFaq} title={`Limpieza de ductos en ${city.name}: preguntas frecuentes`} />
+
+ {nearby.length > 0 && (
+ <div class="nearby">
+ <h2>{t.nearbyAreas}</h2>
+ <div class="city-chips">
+ {nearby.map((n) => (<a href={cityHref(lang, n.slug)} class="chip">{n.name}</a>))}
+ </div>
+ </div>
+ )}
+ </div>
+ </section>
+
+ <CTABand lang={lang} heading={`¿Limpieza de ductos en ${city.name}? Estamos listos para ayudar.`} />
+</BaseLayout>
+
+<style>
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card h3 { color: var(--c-ink); font-size: 1.1rem; }
+  .service-card p { color: var(--c-body); font-size: 0.9rem; margin: 0; }
+  .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+</style>

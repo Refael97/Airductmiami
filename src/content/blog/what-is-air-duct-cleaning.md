@@ -19,7 +19,7 @@ Air duct cleaning is the process of physically removing dust, pollen, mold, pet 
 
 ## Why the "negative-air" method matters
 
-The core of professional duct cleaning is a large vacuum unit — often truck-mounted or a high-powered portable HEPA collector — connected directly to your ductwork. Once sealed in, it puts the whole system under **negative air pressure**. That means any dust knocked loose anywhere in the ducts flows toward the collection unit instead of blowing into your living space.
+The core of professional duct cleaning is a large vacuum unit, often truck-mounted or a high-powered portable HEPA collector, connected directly to your ductwork. Once sealed in, it puts the whole system under **negative air pressure**. That means any dust knocked loose anywhere in the ducts flows toward the collection unit instead of blowing into your living space.
 
 Without negative air, agitating the ducts would just push contaminants into your rooms. That is why source removal is the method endorsed by the [National Air Duct Cleaners Association (NADCA)](/services/air-duct-cleaning) and why it works far better than the "blow-and-go" services that skip the containment step.
 

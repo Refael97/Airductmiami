@@ -30,8 +30,9 @@ const related = service.related
 
 // A handful of cities to reinforce statewide local relevance / internal links.
 const featuredCities = cities.slice(0, 8);
+const altHref = `/es/servicios/${service.slug}`;
 ---
-<BaseLayout title={service.metaTitle} description={service.metaDescription} schema={schema}>
+<BaseLayout title={service.metaTitle} description={service.metaDescription} schema={schema} altHref={altHref}>
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },

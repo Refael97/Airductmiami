@@ -1,4 +1,4 @@
-# Air Duct Florida — SEO & AI-Optimized Website
+# Air Duct Florida, SEO & AI-Optimized Website
 
 A fast, static, 100-page website for an air duct / dryer vent cleaning business
 serving **all of Florida**. Built with [Astro](https://astro.build) for maximum
@@ -23,7 +23,7 @@ SEO performance (zero JavaScript by default) and optimized for AI answer engines
 ```
 src/
   data/
-    business.ts   # ⚠️ business NAP (name, phone, address) — PLACEHOLDERS to replace
+    business.ts   # ⚠️ business NAP (name, phone, address), PLACEHOLDERS to replace
     services.ts   # 10 services (content + FAQ + facts)
     cities.ts     # 38 Florida cities (unique local copy)
   content/
@@ -48,21 +48,21 @@ npm run build    # static build to ./dist
 npm run preview  # preview the production build
 ```
 
-## Before launch — required customization
+## Before launch, required customization
 
-1. **Business details** — edit `src/data/business.ts` and replace every value
+1. **Business details**, edit `src/data/business.ts` and replace every value
    marked `TODO` (name, phone, email, address, coordinates, hours, social).
    This feeds the header, footer, contact page, and LocalBusiness schema, so
    accuracy matters for local SEO.
-2. **Domain** — set the real domain in `astro.config.mjs` (`SITE_URL`) and in
+2. **Domain**, set the real domain in `astro.config.mjs` (`SITE_URL`) and in
    `public/robots.txt` (the `Sitemap:` line). Canonical URLs, the sitemap, and
    structured data all derive from this.
-3. **Contact form** — the form in `src/pages/contact.astro` posts to `#`. Point
+3. **Contact form**, the form in `src/pages/contact.astro` posts to `#`. Point
    its `action` at a form handler (Formspree, Netlify Forms, Web3Forms, etc.).
-4. **OG image / favicon** — replace `public/og-image.svg` (1200×630) and
+4. **OG image / favicon**, replace `public/og-image.svg` (1200×630) and
    `public/favicon.svg` with branded assets. A PNG OG image renders more widely
    on social platforms.
-5. **Reviews / rating** — update `ratingValue` and `reviewCount` in
+5. **Reviews / rating**, update `ratingValue` and `reviewCount` in
    `business.ts` to real numbers (only claim real reviews).
 
 ## Adding content
@@ -76,7 +76,7 @@ npm run preview  # preview the production build
 
 ## Deployment
 
-The site is fully static — deploy the `dist/` folder anywhere. Recommended:
+The site is fully static, deploy the `dist/` folder anywhere. Recommended:
 
 - **Netlify / Vercel / Cloudflare Pages**: connect the repo, set build command
   `npm run build` and publish directory `dist`. No server or runtime needed.
@@ -87,6 +87,6 @@ The site is fully static — deploy the `dist/` folder anywhere. Recommended:
 
 - Every page ships answer-first copy and FAQ schema so answer engines can quote
   it directly.
-- Keep NAP (name, address, phone) identical everywhere — it all flows from
+- Keep NAP (name, address, phone) identical everywhere, it all flows from
   `business.ts`, so edit it in one place.
 - `llms.txt` at the site root gives LLMs a concise, structured overview.

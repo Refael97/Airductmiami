@@ -6,10 +6,10 @@ import { cities, citiesByRegion } from '../../data/cities';
 import { business } from '../../data/business';
 
 const title = `Florida Service Areas | Air Duct Cleaning Near You`;
-const description = `${business.name} provides air duct and dryer vent cleaning across ${cities.length}+ Florida cities — from Miami and Fort Lauderdale to Orlando, Tampa, Fort Myers, and beyond.`;
+const description = `${business.name} provides air duct and dryer vent cleaning across ${cities.length}+ Florida cities, from Miami and Fort Lauderdale to Orlando, Tampa, Fort Myers, and beyond.`;
 const regions = citiesByRegion();
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} altHref="/es/areas-de-servicio">
   <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Service Areas', href: '/service-areas' }]} />
   <section class="section">
     <div class="container">

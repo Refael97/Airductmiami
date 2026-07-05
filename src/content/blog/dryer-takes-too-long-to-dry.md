@@ -35,7 +35,7 @@ Work through these checks from easiest to hardest:
 
 ### 1. Clean the lint screen
 
-Pull the lint screen and clear it after every load. A screen coated in fabric softener residue can also block airflow even when it looks clean — wash it with soapy water occasionally.
+Pull the lint screen and clear it after every load. A screen coated in fabric softener residue can also block airflow even when it looks clean, wash it with soapy water occasionally.
 
 ### 2. Check the outdoor vent
 
@@ -47,7 +47,7 @@ The flexible hose behind the dryer is easily crushed when the appliance is pushe
 
 ### 4. Consider the full duct
 
-The section you can see is only part of the story. Lint accumulates along the entire run — and in Florida, that run is often long and routed through the roof. A [professional dryer vent cleaning](/services/dryer-vent-cleaning) clears the whole path.
+The section you can see is only part of the story. Lint accumulates along the entire run, and in Florida, that run is often long and routed through the roof. A [professional dryer vent cleaning](/services/dryer-vent-cleaning) clears the whole path.
 
 ### 5. Don't overload
 
@@ -63,8 +63,8 @@ Florida's climate works against fast drying in a few specific ways:
 
 ## When it's the appliance, not the vent
 
-If you've cleared the lint screen, confirmed strong outdoor airflow, and straightened the hose but clothes still dry slowly, the problem may be internal — a failing heating element, a bad thermostat, or a worn moisture sensor. At that point, an appliance technician is the right call.
+If you've cleared the lint screen, confirmed strong outdoor airflow, and straightened the hose but clothes still dry slowly, the problem may be internal, a failing heating element, a bad thermostat, or a worn moisture sensor. At that point, an appliance technician is the right call.
 
 ## The bottom line
 
-Long dry times usually trace back to restricted airflow, and the most common fix is clearing the lint trap and vent. A slow dryer isn't just an inconvenience — the same blockage that traps moisture also traps heat, which is a fire risk. If your clothes need two cycles, [schedule a vent cleaning](/services/dryer-vent-cleaning) or [contact us](/contact) for a diagnosis.
+Long dry times usually trace back to restricted airflow, and the most common fix is clearing the lint trap and vent. A slow dryer isn't just an inconvenience, the same blockage that traps moisture also traps heat, which is a fire risk. If your clothes need two cycles, [schedule a vent cleaning](/services/dryer-vent-cleaning) or [contact us](/contact) for a diagnosis.

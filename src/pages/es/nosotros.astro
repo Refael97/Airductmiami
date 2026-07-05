@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CTABand from '../../components/CTABand.astro';
+import { business } from '../../data/business';
+import { ui } from '../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+const title = `Sobre ${business.name} | Expertos en ductos de aire en Florida`;
+const description = `Conozca a ${business.name}, profesionales con licencia y seguro en limpieza de ductos y ventila del secador que atienden a familias y negocios en toda Florida desde ${business.foundingYear}.`;
+---
+<BaseLayout title={title} description={description} lang={lang} altHref="/about">
+ <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[3].label, href: t.about }]} />
+ <section class="section">
+ <div class="container container-narrow prose">
+ <span class="eyebrow">Sobre nosotros</span>
+ <h1>El equipo de confianza en ductos y calidad del aire en Florida</h1>
+ <p class="lead">Desde {business.foundingYear}, {business.name} ha ayudado a familias y negocios de Florida a respirar un aire más limpio y saludable, un sistema de ductos bien hecho a la vez.</p>
+
+ <p>Empezamos con una molestia sencilla. Demasiadas empresas de "limpieza de ductos" en Florida vendían trucos baratos, una aspiradora en la puerta, una foto rápida y una factura llena de cargos sorpresa. La gente merecía algo mejor. Por eso construimos una empresa alrededor de hacer el trabajo bien, siempre, y de decirle a cada cliente la verdad sobre lo que su sistema realmente necesita.</p>
+
+ <h2>Qué nos hace diferentes</h2>
+ <ul class="check-list">
+ <li><strong>Método NADCA de extracción por fuente.</strong> Usamos equipo profesional de presión negativa que pone todo su sistema bajo succión, el estándar que la industria reconoce como el correcto.</li>
+ <li><strong>Técnicos con licencia y seguro.</strong> Profesionales capacitados y verificados que respetan su hogar.</li>
+ <li><strong>Experiencia en Florida.</strong> Entendemos cómo la humedad del estado causa moho en la serpentina, condensación en los ductos y acumulación rápida de polvo, y cómo prevenirlo.</li>
+ <li><strong>Precios honestos y claros.</strong> La cotización es el precio. Sin gancho y cambio, sin tácticas de miedo.</li>
+ <li><strong>Fotos de antes y después.</strong> Usted ve exactamente lo que sacamos.</li>
+ </ul>
+
+ <h2>Nuestra misión</h2>
+ <p>El aire interior es algo en lo que casi nadie piensa, hasta que aparecen las alergias, suben las facturas o un olor a humedad no se va. Nuestra misión es hacer que el aire limpio y saludable sea simple y accesible para cada hogar y negocio de Florida, con un trabajo del que nos sentimos orgullosos y que documentamos.</p>
+
+ <h2>Servicio en toda Florida</h2>
+ <p>Desde las playas de Miami y Fort Lauderdale hasta Orlando, Tampa, Jacksonville, Fort Myers, Naples y decenas de comunidades más, nuestros equipos atienden a familias y negocios de todo el estado. <a href={t.serviceAreas}>Vea todas las áreas de servicio →</a></p>
+
+ <div class="about-stats">
+ <div><span>{business.foundingYear}</span><small>En Florida desde</small></div>
+ <div><span>{business.ratingValue}★</span><small>{business.reviewCount}+ reseñas</small></div>
+ <div><span>10,000+</span><small>Hogares atendidos</small></div>
+ </div>
+ </div>
+ </section>
+ <CTABand lang={lang} />
+</BaseLayout>
+
+<style>
+  .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; text-align: center; }
+  .about-stats > div { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.2rem; }
+  .about-stats span { display: block; font-size: 1.8rem; font-weight: 800; color: var(--c-primary); }
+  .about-stats small { color: var(--c-muted); }
+</style>

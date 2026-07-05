@@ -5,16 +5,18 @@ import Footer from '../components/Footer.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { localBusinessSchema, websiteSchema } from '../lib/schema';
 import { business } from '../data/business';
+import { ui, type Locale } from '../data/ui';
 
 interface Props {
   title: string;
   description: string;
-  /** Path-only canonical override; defaults to the current URL. */
   canonical?: string;
-  /** Optional page-specific structured data (Service, Article, FAQPage…). */
   schema?: Record<string, unknown> | Record<string, unknown>[];
   ogType?: string;
   noindex?: boolean;
+  lang?: Locale;
+  /** Path (no origin) of this same page in the other language, for hreflang + switcher. */
+  altHref?: string;
 }
 
 const {
@@ -24,19 +26,25 @@ const {
   schema,
   ogType = 'website',
   noindex = false,
+  lang = 'en',
+  altHref,
 } = Astro.props;
 
+const t = ui[lang];
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const canonicalURL = canonical
   ? `${site}${canonical}`
   : new URL(Astro.url.pathname, Astro.site).toString().replace(/\/$/, '') || site;
 const ogImage = `${site}/og-image.svg`;
 
-// Site-wide structured data present on every page.
+const currentPath = Astro.url.pathname;
+const enHref = lang === 'en' ? currentPath : altHref;
+const esHref = lang === 'es' ? currentPath : altHref;
+
 const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
 ---
 <!doctype html>
-<html lang="en">
+<html lang={t.htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,20 +54,23 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    {enHref && <link rel="alternate" hreflang="en" href={`${site}${enHref}`} />}
+    {esHref && <link rel="alternate" hreflang="es" href={`${site}${esHref}`} />}
+    {enHref && <link rel="alternate" hreflang="x-default" href={`${site}${enHref}`} />}
+
     <meta name="generator" content={Astro.generator} />
     <meta name="geo.region" content="US-FL" />
     <meta name="geo.placename" content="Florida" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content={business.name} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={t.ogLocale} />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -71,11 +82,11 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
     {schema && <JsonLd schema={schema} />}
   </head>
   <body>
-    <a href="#main" class="visually-hidden">Skip to content</a>
-    <Header />
+    <a href="#main" class="visually-hidden">{lang === 'es' ? 'Saltar al contenido' : 'Skip to content'}</a>
+    <Header lang={lang} switchHref={altHref} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>

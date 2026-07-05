@@ -30,8 +30,8 @@ const schema = serviceSchema(site, {
 });
 
 const cityFaq = [
-  { question: `How much does air duct cleaning cost in ${city.name}?`, answer: `In ${city.name}, a complete single-system air duct cleaning typically costs $300–$600, and dryer vent cleaning runs $100–$200. We provide free, upfront quotes with no hidden fees.` },
-  { question: `How often should ${city.name} homeowners clean their air ducts?`, answer: `Every 3–5 years for most ${city.name} homes, and more often with pets, allergies, or a history of mold. ${city.local}` },
+  { question: `How much does air duct cleaning cost in ${city.name}?`, answer: `In ${city.name}, a complete single-system air duct cleaning typically costs $300 to $600, and dryer vent cleaning runs $100 to $200. We provide free, upfront quotes with no hidden fees.` },
+  { question: `How often should ${city.name} homeowners clean their air ducts?`, answer: `Every 3 to 5 years for most ${city.name} homes, and more often with pets, allergies, or a history of mold. ${city.local}` },
   { question: `Do you offer same-week appointments in ${city.name}?`, answer: `Yes. We offer fast, often same-week scheduling for ${city.name} and the surrounding ${city.county} area. Call ${business.phone} to book.` },
   { question: `Are your ${city.name} technicians licensed and insured?`, answer: `Yes. Every technician serving ${city.name} is licensed and insured, and we follow NADCA source-removal standards for safe, thorough duct cleaning.` },
 ];
@@ -41,8 +41,9 @@ const nearby = city.nearby
   .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
 const topServices = services.slice(0, 6);
+const altHref = `/es/areas-de-servicio/${city.slug}`;
 ---
-<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema} altHref={altHref}>
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },
@@ -65,7 +66,7 @@ const topServices = services.slice(0, 6);
 
       <div class="prose">
         <p>{city.local}</p>
-        <p>Our licensed, insured technicians bring NADCA source-removal equipment to every {city.name} job — placing your entire HVAC system under suction so dust, pollen, and mold are captured, not scattered through your home. Whether you're dealing with a musty AC smell, high energy bills, allergy flare-ups, or simply overdue maintenance, we help {city.name} homeowners breathe cleaner air.</p>
+        <p>Our licensed, insured technicians bring NADCA source-removal equipment to every {city.name} job, placing your entire HVAC system under suction so dust, pollen, and mold are captured, not scattered through your home. Whether you're dealing with a musty AC smell, high energy bills, allergy flare-ups, or simply overdue maintenance, we help {city.name} homeowners breathe cleaner air.</p>
 
         <h2>Air Duct &amp; HVAC Services in {city.name}</h2>
         <p>Every service below is available to {city.name} residents and businesses:</p>

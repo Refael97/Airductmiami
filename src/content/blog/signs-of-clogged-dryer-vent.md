@@ -15,7 +15,7 @@ faq:
     answer: "If you notice a burning smell or the dryer is very hot to the touch, stop using it and have the vent inspected, since these indicate dangerous heat buildup."
 ---
 
-A clogged dryer vent rarely fails all at once — it sends signals for weeks or months first. Learning to read those signals lets you fix the problem before it becomes a safety hazard. Here are the eight warning signs to watch for.
+A clogged dryer vent rarely fails all at once, it sends signals for weeks or months first. Learning to read those signals lets you fix the problem before it becomes a safety hazard. Here are the eight warning signs to watch for.
 
 ## The quick checklist
 
@@ -34,7 +34,7 @@ This is the number-one early warning. When lint blocks the vent, moist air can't
 
 ## 2. The dryer or laundry room gets very hot
 
-A properly vented dryer pushes heat outdoors. When the vent is blocked, that heat stays inside — making the appliance hot to the touch and warming the whole room. Excess heat is the condition that leads to dryer fires.
+A properly vented dryer pushes heat outdoors. When the vent is blocked, that heat stays inside, making the appliance hot to the touch and warming the whole room. Excess heat is the condition that leads to dryer fires.
 
 ## 3. A burning smell
 
@@ -42,7 +42,7 @@ Lint is flammable. If you smell something burning, hot lint may be scorching ins
 
 ## 4. Weak airflow at the outdoor vent
 
-Turn the dryer on and step outside to the exhaust hood. You should feel a strong, warm stream of air and see the flap open fully. Weak airflow — or a flap that barely moves — means a blockage.
+Turn the dryer on and step outside to the exhaust hood. You should feel a strong, warm stream of air and see the flap open fully. Weak airflow, or a flap that barely moves, means a blockage.
 
 ## 5. Extra lint buildup
 
@@ -71,12 +71,12 @@ If you can't remember your last cleaning, that's a sign in itself. Most homes sh
 
 ## Why ignoring the signs is risky
 
-Each of these symptoms points back to the same root cause: restricted airflow from lint buildup. That restriction does more than slow your laundry. Trapped heat is the exact condition that leads to dryer fires, and lint is one of the most flammable materials in your home. A vent that's been neglected for two or three years can pack a dense, felt-like layer of lint along its entire length — fuel and heat sitting together in one place. The longer the warning signs go unaddressed, the greater the risk, which is why acting early is always cheaper and safer than waiting.
+Each of these symptoms points back to the same root cause: restricted airflow from lint buildup. That restriction does more than slow your laundry. Trapped heat is the exact condition that leads to dryer fires, and lint is one of the most flammable materials in your home. A vent that's been neglected for two or three years can pack a dense, felt-like layer of lint along its entire length, fuel and heat sitting together in one place. The longer the warning signs go unaddressed, the greater the risk, which is why acting early is always cheaper and safer than waiting.
 
 There's also a quality-of-life cost. A dryer fighting against a clogged vent uses more energy per load and wears its heating components faster, shortening the life of the appliance. Restoring airflow protects both your safety and your dryer.
 
 ## What to do next
 
-If you recognize two or more of these signs, don't wait. A professional [dryer vent cleaning](/services/dryer-vent-cleaning) typically costs **$100–$200** and restores safe airflow. Cleaning often pairs well with [air duct cleaning](/services/air-duct-cleaning) for whole-home air quality.
+If you recognize two or more of these signs, don't wait. A professional [dryer vent cleaning](/services/dryer-vent-cleaning) typically costs **$100 to $200** and restores safe airflow. Cleaning often pairs well with [air duct cleaning](/services/air-duct-cleaning) for whole-home air quality.
 
 Not sure how serious your symptoms are? [Contact our team](/contact) for a quick inspection and honest assessment.

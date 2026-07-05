@@ -15,7 +15,7 @@ faq:
     answer: "No. Leaving the AC off in a Florida summer lets indoor humidity climb quickly, which encourages mold, so it is safer to run the system and control humidity instead."
 ---
 
-Preventing mold in your HVAC system in Florida is entirely about controlling moisture. Mold cannot grow without water, so every effective prevention step either removes moisture or stops it from collecting on cold surfaces. In our climate — where the AC runs almost year-round and outdoor humidity is high for months at a time — that takes a deliberate playbook rather than luck. Here is exactly what works.
+Preventing mold in your HVAC system in Florida is entirely about controlling moisture. Mold cannot grow without water, so every effective prevention step either removes moisture or stops it from collecting on cold surfaces. In our climate, where the AC runs almost year-round and outdoor humidity is high for months at a time, that takes a deliberate playbook rather than luck. Here is exactly what works.
 
 ## Why Florida HVAC systems are mold magnets
 
@@ -37,7 +37,7 @@ Follow these measures in order of impact:
 
 | Task | Frequency | Why it matters in Florida |
 | --- | --- | --- |
-| Change air filter | Every 30–60 days | Reduces dust that feeds mold |
+| Change air filter | Every 30 to 60 days | Reduces dust that feeds mold |
 | Check indoor humidity | Weekly | Confirms you are staying below 60% |
 | Flush condensate drain | Monthly in summer | Prevents standing water in the pan |
 | Inspect for musty odors | Ongoing | Early sign of coil or duct growth |

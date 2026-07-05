@@ -13,7 +13,7 @@ export function orgId(siteUrl: string): string {
   return `${siteUrl.replace(/\/$/, '')}/#business`;
 }
 
-/** LocalBusiness / HVACBusiness node — emitted site-wide. */
+/** LocalBusiness / HVACBusiness node, emitted site-wide. */
 export function localBusinessSchema(siteUrl: string): Json {
   const base = siteUrl.replace(/\/$/, '');
   return {
@@ -137,7 +137,7 @@ export function breadcrumbSchema(
   };
 }
 
-/** WebSite node with SearchAction — helps establish the site entity. */
+/** WebSite node with SearchAction, helps establish the site entity. */
 export function websiteSchema(siteUrl: string): Json {
   const base = siteUrl.replace(/\/$/, '');
   return {

@@ -15,11 +15,11 @@ faq:
     answer: "No. Air fresheners only mask the odor while the mold keeps growing on the coil, so the smell always returns until the coil is cleaned and kept dry."
 ---
 
-If your air conditioner smells like a musty locker room or dirty gym socks — especially in the first few minutes after it turns on — you are almost certainly dealing with mold and bacteria on the evaporator coil. HVAC technicians nicknamed it **Dirty Sock Syndrome**, and in Florida it is one of the most frequent complaints we hear. The good news is that the cause is well understood and the fix is straightforward.
+If your air conditioner smells like a musty locker room or dirty gym socks, especially in the first few minutes after it turns on, you are almost certainly dealing with mold and bacteria on the evaporator coil. HVAC technicians nicknamed it **Dirty Sock Syndrome**, and in Florida it is one of the most frequent complaints we hear. The good news is that the cause is well understood and the fix is straightforward.
 
 ## What is actually causing the smell
 
-Inside your air handler sits the **evaporator coil**, the cold component that pulls heat and moisture out of your air. Because it runs cold and Florida air is loaded with humidity, water constantly condenses on it. That coil is dark, damp, and coated with the dust that slips past your filter — a perfect nursery for mold and bacteria.
+Inside your air handler sits the **evaporator coil**, the cold component that pulls heat and moisture out of your air. Because it runs cold and Florida air is loaded with humidity, water constantly condenses on it. That coil is dark, damp, and coated with the dust that slips past your filter, a perfect nursery for mold and bacteria.
 
 When those microbes grow on the coil, they release the sour, musty odor you smell. The moment your blower kicks on, it blows air straight across that contaminated coil and carries the smell into every room.
 
@@ -58,4 +58,4 @@ Sometimes a musty AC odor points beyond the coil. If the smell is strong, persis
 
 ## The bottom line
 
-A musty, dirty-sock smell from your AC is mold on the evaporator coil — a classic Florida problem driven by constant condensation. Clean the coil, sanitize the ducts, and install a UV-C light to stop it from coming back. Air fresheners only hide the problem. Tired of that smell every time the AC starts? [Contact our Florida team](/contact) and we will clear it at the source.
+A musty, dirty-sock smell from your AC is mold on the evaporator coil, a classic Florida problem driven by constant condensation. Clean the coil, sanitize the ducts, and install a UV-C light to stop it from coming back. Air fresheners only hide the problem. Tired of that smell every time the AC starts? [Contact our Florida team](/contact) and we will clear it at the source.

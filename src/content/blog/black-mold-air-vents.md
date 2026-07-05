@@ -15,20 +15,20 @@ faq:
     answer: "No. Painting over mold traps live growth underneath and it will bleed back through, so the mold must be removed and the moisture source corrected first."
 ---
 
-Black mold around your air vents is a visible warning sign that something is wrong inside your HVAC system — specifically, that cold surfaces are collecting moisture and mold has taken hold. In Florida, this is an extremely common sight because humid air condenses on cool metal register covers and the ducts behind them. Seeing it is actually useful: it tells you exactly where to look and that it is time to act.
+Black mold around your air vents is a visible warning sign that something is wrong inside your HVAC system, specifically, that cold surfaces are collecting moisture and mold has taken hold. In Florida, this is an extremely common sight because humid air condenses on cool metal register covers and the ducts behind them. Seeing it is actually useful: it tells you exactly where to look and that it is time to act.
 
 ## What black mold around vents actually means
 
 When you see dark staining or fuzzy black growth on or around a supply vent, one of two things is usually happening:
 
-- **Condensation on the register.** The metal cover is colder than the humid room air, so water condenses on it — just like a cold drink sweats — and mold grows in that moisture.
+- **Condensation on the register.** The metal cover is colder than the humid room air, so water condenses on it, just like a cold drink sweats, and mold grows in that moisture.
 - **Mold inside the duct.** Growth deeper in the ductwork gets pushed to the vent opening, staining the surrounding area as air flows out.
 
 Either way, the root cause is moisture meeting a cold surface in a humid environment. That is the defining condition of a Florida summer, which is why vent mold is so widespread here.
 
 ## Is it dangerous?
 
-You cannot tell whether black staining is the notorious *Stachybotrys* ("toxic black mold") just by looking — color is not a reliable identifier. What matters more is that **any** mold growing at a vent is being blown into your living space every time the AC runs. For people with asthma, allergies, or weakened immune systems, that circulating spore load can trigger real symptoms. The safe approach is to treat visible vent mold seriously regardless of species and, when in doubt, have it tested.
+You cannot tell whether black staining is the notorious *Stachybotrys* ("toxic black mold") just by looking, color is not a reliable identifier. What matters more is that **any** mold growing at a vent is being blown into your living space every time the AC runs. For people with asthma, allergies, or weakened immune systems, that circulating spore load can trigger real symptoms. The safe approach is to treat visible vent mold seriously regardless of species and, when in doubt, have it tested.
 
 ## What causes it in Florida homes
 
@@ -54,4 +54,4 @@ The reason vent mold frustrates homeowners is that it keeps returning after a wi
 
 ## The bottom line
 
-Black mold around your air vents means moisture is condensing on cold surfaces and mold is growing in your HVAC system. Do not just wipe it away — clean the ducts, sanitize the system, and fix the humidity and condensation that caused it. Seeing dark growth at your registers? [Contact our Florida team](/contact) for an inspection before it spreads further into your ductwork.
+Black mold around your air vents means moisture is condensing on cold surfaces and mold is growing in your HVAC system. Do not just wipe it away, clean the ducts, sanitize the system, and fix the humidity and condensation that caused it. Seeing dark growth at your registers? [Contact our Florida team](/contact) for an inspection before it spreads further into your ductwork.

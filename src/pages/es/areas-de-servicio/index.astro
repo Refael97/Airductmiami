@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { cities } from '../../../data/cities';
+import { cityEsContent } from '../../../data/cities.es';
+import { business } from '../../../data/business';
+import { ui, cityHref } from '../../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+const title = `Áreas de servicio en Florida | Limpieza de ductos cerca de usted`;
+const description = `${business.name} ofrece limpieza de ductos y ventila del secador en más de ${cities.length} ciudades de Florida, desde Miami y Fort Lauderdale hasta Orlando, Tampa, Fort Myers y más.`;
+
+// Group by Spanish region label.
+const regions: Record<string, typeof cities> = {};
+for (const c of cities) {
+ const r = cityEsContent[c.slug]?.region ?? 'Florida';
+ (regions[r] ??= []).push(c);
+}
+---
+<BaseLayout title={title} description={description} lang={lang} altHref="/service-areas">
+ <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[1].label, href: t.serviceAreas }]} />
+ <section class="section">
+ <div class="container">
+ <div class="section-head">
+ <span class="eyebrow">Cobertura en todo el estado</span>
+ <h1>Áreas de servicio de limpieza de ductos en Florida</h1>
+ <p class="lead">Atendemos con orgullo a familias y negocios en más de {cities.length} ciudades de Florida. Elija su ciudad para ver los servicios locales de ductos y ventila del secador.</p>
+ </div>
+ {Object.entries(regions).map(([region, list]) => (
+ <div class="region-block">
+ <h2>{region}</h2>
+ <div class="city-grid">
+ {list.map((c) => (
+ <a href={cityHref(lang, c.slug)} class="city-card">
+ <span class="city-name">{c.name}</span>
+ <span class="city-county">{c.county}</span>
+ </a>
+ ))}
+ </div>
+ </div>
+ ))}
+ </div>
+ </section>
+ <CTABand lang={lang} />
+</BaseLayout>
+
+<style>
+  .region-block { margin-bottom: 2.5rem; }
+  .region-block h2 { border-bottom: 2px solid var(--c-line); padding-bottom: 0.5rem; }
+  .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.9rem; }
+  .city-card {
+    display: flex; flex-direction: column;
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-sm);
+    padding: 0.9rem 1.1rem; text-decoration: none; box-shadow: var(--shadow-sm);
+    transition: transform 0.12s ease, border-color 0.2s ease;
+  }
+  .city-card:hover { transform: translateY(-2px); border-color: var(--c-primary); text-decoration: none; }
+  .city-name { font-weight: 700; color: var(--c-ink); }
+  .city-county { font-size: 0.82rem; color: var(--c-muted); }
+</style>

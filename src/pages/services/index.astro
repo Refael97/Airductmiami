@@ -8,14 +8,14 @@ import { business } from '../../data/business';
 const title = `Air Duct & HVAC Services in Florida | ${business.name}`;
 const description = 'Explore our full range of Florida air duct services: air duct cleaning, dryer vent cleaning, HVAC cleaning, mold remediation, sanitizing, UV light installation, and more.';
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} altHref="/es/servicios">
   <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services' }]} />
   <section class="section">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Our services</span>
         <h1>Air Duct &amp; Indoor Air Quality Services in Florida</h1>
-        <p class="lead">Whatever your home's air needs — routine cleaning, mold removal, dryer vent safety, or efficiency upgrades — we have a Florida-experienced crew for it. Every service is performed by licensed, insured technicians.</p>
+        <p class="lead">Whatever your home's air needs, routine cleaning, mold removal, dryer vent safety, or efficiency upgrades, we have a Florida-experienced crew for it. Every service is performed by licensed, insured technicians.</p>
       </div>
       <div class="grid grid-3">
         {services.map((s) => (

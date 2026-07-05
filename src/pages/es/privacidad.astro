@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { business } from '../../data/business';
+import { ui } from '../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+const title = `Política de privacidad | ${business.name}`;
+const description = `Política de privacidad de ${business.name}. Cómo recopilamos, usamos y protegemos la información que usted comparte con nosotros.`;
+---
+<BaseLayout title={title} description={description} lang={lang} altHref="/privacy" noindex={true}>
+ <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: 'Privacidad', href: t.privacy }]} />
+ <section class="section">
+ <div class="container container-narrow prose">
+ <h1>Política de privacidad</h1>
+ <p><em>Última actualización: 2025. Esta es una plantilla general. Pídale a un profesional que la revise antes de publicar.</em></p>
+
+ <p>{business.legalName} ("nosotros") respeta su privacidad. Esta política explica qué información recopilamos a través de {business.name} y cómo la usamos.</p>
+
+ <h2>Información que recopilamos</h2>
+ <p>Cuando usted nos contacta o pide una cotización, podemos recopilar su nombre, número de teléfono, correo electrónico, dirección del servicio y los detalles de su solicitud. También recopilamos datos básicos de analítica (como las páginas que visita) para mejorar nuestro sitio.</p>
+
+ <h2>Cómo usamos su información</h2>
+ <ul>
+ <li>Para responder sus consultas y darle cotizaciones y servicios.</li>
+ <li>Para programar y realizar el trabajo solicitado.</li>
+ <li>Para dar seguimiento a su servicio y enviarle ofertas relevantes, cuando esté permitido.</li>
+ <li>Para mejorar nuestro sitio y la experiencia del cliente.</li>
+ </ul>
+
+ <h2>Cómo compartimos su información</h2>
+ <p>No vendemos su información personal. Solo la compartimos con proveedores que nos ayudan a operar (como herramientas de agenda o comunicación) y cuando la ley lo exige.</p>
+
+ <h2>Sus opciones</h2>
+ <p>Puede darse de baja de las comunicaciones de marketing en cualquier momento. También puede pedir acceder, corregir o eliminar su información personal.</p>
+
+ <h2>Contáctenos</h2>
+ <p>¿Preguntas sobre esta política? Escriba a <a href={`mailto:${business.email}`}>{business.email}</a> o llame al <a href={`tel:${business.phoneHref}`}>{business.phone}</a>.</p>
+ </div>
+ </section>
+</BaseLayout>

@@ -1,7 +1,7 @@
 ---
 title: "How Often Should You Clean Your Dryer Vent?"
 description: "Most homes need dryer vent cleaning at least once a year, but usage, pets, and long Florida roof runs can mean more often. Here's how to set your schedule."
-answer: "You should clean your dryer vent at least once a year, and more often — every 6 to 9 months — if you do frequent laundry, own pets, or have a long roof vent run common in Florida homes."
+answer: "You should clean your dryer vent at least once a year, and more often, every 6 to 9 months, if you do frequent laundry, own pets, or have a long roof vent run common in Florida homes."
 pubDate: 2024-12-03
 category: "Dryer Vent Safety"
 tags: ["frequency", "maintenance", "florida", "safety"]
@@ -29,8 +29,8 @@ But several common factors mean you should clean more often.
 | --- | --- |
 | Average household, light laundry | Once a year |
 | Large family or frequent laundry | Every 6 months |
-| Pets that shed | Every 6–9 months |
-| Long or roof-routed vent | Every 6–9 months |
+| Pets that shed | Every 6 to 9 months |
+| Long or roof-routed vent | Every 6 to 9 months |
 | Gas dryer | Once a year, no longer |
 | Notice warning signs | Immediately |
 
@@ -44,7 +44,7 @@ Pet hair and dander add to the lint load. Homes with shedding dogs or cats typic
 
 ### Vent length and routing
 
-A short, straight vent through an exterior wall clears easily. A long duct with multiple elbows — or one that runs up and out through the roof — slows airflow and lets lint settle. This matters a lot in Florida.
+A short, straight vent through an exterior wall clears easily. A long duct with multiple elbows, or one that runs up and out through the roof, slows airflow and lets lint settle. This matters a lot in Florida.
 
 ## Why Florida homes often need more frequent cleaning
 
@@ -55,7 +55,7 @@ Florida's climate and construction push most homeowners toward the shorter end o
 - **Year-round laundry.** Beach towels, swimwear, and sweat-soaked clothing keep dryers busy in every season.
 - **Pests stay active.** Warm vent hoods attract birds and insects that build nests and block airflow.
 
-## Signs you should clean now — regardless of the calendar
+## Signs you should clean now, regardless of the calendar
 
 Move up your cleaning immediately if you notice:
 
@@ -67,13 +67,13 @@ Move up your cleaning immediately if you notice:
 
 ## What professional cleaning involves
 
-A pro uses rotary brushes and vacuums to clear the full length of the duct — not just the section you can reach. Cost typically runs **$100–$200**, and the service is quick. It's worth pairing with [HVAC system cleaning](/services/hvac-cleaning) if your whole system is due for attention.
+A pro uses rotary brushes and vacuums to clear the full length of the duct, not just the section you can reach. Cost typically runs **$100 to $200**, and the service is quick. It's worth pairing with [HVAC system cleaning](/services/hvac-cleaning) if your whole system is due for attention.
 
 ## Why guessing wrong costs you
 
-Cleaning too rarely is the obvious risk — lint accumulates, airflow drops, and both fire risk and dry times climb. But there's a real cost to neglect beyond safety. A dryer working against a restricted vent runs longer and hotter on every load, driving up energy use and wearing out its heating element sooner. Over the life of the appliance, that adds up to real money and a shorter lifespan.
+Cleaning too rarely is the obvious risk, lint accumulates, airflow drops, and both fire risk and dry times climb. But there's a real cost to neglect beyond safety. A dryer working against a restricted vent runs longer and hotter on every load, driving up energy use and wearing out its heating element sooner. Over the life of the appliance, that adds up to real money and a shorter lifespan.
 
-The right interval is the one that keeps lint from ever reaching a dangerous level. For most Florida homes, that's somewhere between six months and a year, adjusted for the factors above. When you're unsure, an inspection settles the question — a professional can measure airflow and tell you exactly where your buildup stands rather than leaving you to guess.
+The right interval is the one that keeps lint from ever reaching a dangerous level. For most Florida homes, that's somewhere between six months and a year, adjusted for the factors above. When you're unsure, an inspection settles the question, a professional can measure airflow and tell you exactly where your buildup stands rather than leaving you to guess.
 
 ## The bottom line
 

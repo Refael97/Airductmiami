@@ -3,7 +3,7 @@
  * /service-areas/{slug} (via src/pages/service-areas/[city].astro).
  *
  * The `intro` and `local` fields give every page genuinely unique, locally
- * relevant copy so the pages are not thin duplicates — a requirement for local
+ * relevant copy so the pages are not thin duplicates, a requirement for local
  * SEO. `region` groups cities for the service-areas hub.
  */
 
@@ -23,7 +23,7 @@ export const cities: City[] = [
   // ---- South Florida ----
   { slug: 'miami', name: 'Miami', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'Miami’s intense heat and coastal humidity keep air conditioners running nearly year-round, which makes clean, efficient ductwork essential for both comfort and health.',
-    local: 'From high-rise condos on Brickell to single-family homes in the suburbs, Miami’s salt air and humidity accelerate mold growth inside ducts and coils — one of the most common issues we treat here.',
+    local: 'From high-rise condos on Brickell to single-family homes in the suburbs, Miami’s salt air and humidity accelerate mold growth inside ducts and coils, one of the most common issues we treat here.',
     nearby: ['miami-beach', 'hialeah', 'coral-gables', 'north-miami'] },
   { slug: 'miami-beach', name: 'Miami Beach', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'Miami Beach’s oceanfront location means constant salt air and humidity that take a toll on HVAC systems and ductwork.',
@@ -39,7 +39,7 @@ export const cities: City[] = [
     nearby: ['miami', 'miami-beach', 'hialeah', 'kendall'] },
   { slug: 'kendall', name: 'Kendall', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'Kendall’s sprawling suburban neighborhoods rely on hard-working central AC systems that benefit from regular duct cleaning and maintenance.',
-    local: 'Family homes across Kendall often run their AC around the clock in summer, making coil mold and duct dust common — and duct efficiency a real factor in cooling bills.',
+    local: 'Family homes across Kendall often run their AC around the clock in summer, making coil mold and duct dust common, and duct efficiency a real factor in cooling bills.',
     nearby: ['miami', 'coral-gables', 'homestead', 'pinecrest'] },
   { slug: 'homestead', name: 'Homestead', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'Homestead’s agricultural surroundings and warm climate mean extra dust and pollen that settle into home ductwork over time.',
@@ -87,7 +87,7 @@ export const cities: City[] = [
     nearby: ['plantation', 'pembroke-pines', 'fort-lauderdale', 'sunrise'] },
   { slug: 'sunrise', name: 'Sunrise', county: 'Broward County', region: 'South Florida',
     intro: 'Sunrise’s suburban homes rely on constant air conditioning, making clean ducts and coils key to efficiency and air quality.',
-    local: 'Year-round AC use in Sunrise means air handlers stay damp and prone to coil mold — one of the top issues we address for local homeowners.',
+    local: 'Year-round AC use in Sunrise means air handlers stay damp and prone to coil mold, one of the top issues we address for local homeowners.',
     nearby: ['plantation', 'davie', 'fort-lauderdale', 'coral-springs'] },
   { slug: 'coral-springs', name: 'Coral Springs', county: 'Broward County', region: 'South Florida',
     intro: 'Coral Springs’ family neighborhoods and lush landscaping make routine duct cleaning a smart way to protect indoor air quality.',
@@ -99,7 +99,7 @@ export const cities: City[] = [
     nearby: ['coral-springs', 'pompano-beach', 'deerfield-beach', 'sunrise'] },
   { slug: 'deerfield-beach', name: 'Deerfield Beach', county: 'Broward County', region: 'South Florida',
     intro: 'Deerfield Beach’s oceanfront humidity and salt air make mold-free ductwork and clean coils especially important.',
-    local: 'Coastal condos and homes here contend with the salt and moisture that accelerate HVAC mold and corrosion along the Broward–Palm Beach line.',
+    local: 'Coastal condos and homes here contend with the salt and moisture that accelerate HVAC mold and corrosion along the Broward to Palm Beach line.',
     nearby: ['pompano-beach', 'boca-raton', 'coconut-creek', 'coral-springs'] },
   { slug: 'boca-raton', name: 'Boca Raton', county: 'Palm Beach County', region: 'South Florida',
     intro: 'Boca Raton’s upscale homes and coastal climate deserve meticulous duct care to protect air quality and system efficiency.',
@@ -158,7 +158,7 @@ export const cities: City[] = [
     nearby: ['cape-coral', 'naples', 'bonita-springs', 'estero'] },
   { slug: 'cape-coral', name: 'Cape Coral', county: 'Lee County', region: 'Southwest Florida',
     intro: 'Cape Coral’s canal-lined neighborhoods and Gulf humidity make mold-free ductwork essential for healthy indoor air.',
-    local: 'With more canals than any city in the world, Cape Coral’s waterfront humidity is relentless — ideal conditions for the HVAC mold we specialize in.',
+    local: 'With more canals than any city in the world, Cape Coral’s waterfront humidity is relentless, ideal conditions for the HVAC mold we specialize in.',
     nearby: ['fort-myers', 'naples', 'bonita-springs', 'estero'] },
   { slug: 'naples', name: 'Naples', county: 'Collier County', region: 'Southwest Florida',
     intro: 'Naples’ upscale coastal homes and warm, humid climate call for meticulous duct care to protect air quality and efficiency.',

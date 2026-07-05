@@ -1,21 +1,21 @@
 ---
 title: "How Dirty Air Ducts Raise Your Energy Bills"
-description: "Dirty air ducts force your AC to work harder and longer. Learn how dust, debris, and blockages quietly raise Florida energy bills — and how to fix it."
-answer: "Dirty air ducts restrict airflow and coat coils and blowers with dust, forcing your AC to run longer to reach the set temperature, which can raise cooling costs by 10–20% or more."
+description: "Dirty air ducts force your AC to work harder and longer. Learn how dust, debris, and blockages quietly raise Florida energy bills, and how to fix it."
+answer: "Dirty air ducts restrict airflow and coat coils and blowers with dust, forcing your AC to run longer to reach the set temperature, which can raise cooling costs by 10 to 20% or more."
 pubDate: 2024-11-12
 category: "HVAC Efficiency"
 tags: ["energy bills", "efficiency", "duct cleaning", "florida"]
 featured: false
 faq:
   - question: "Can dirty ducts really increase my electric bill?"
-    answer: "Yes. When dust and debris restrict airflow, your AC runs longer cycles to reach the thermostat setting. Combined with a dust-coated coil and blower, this can add 10–20% to your cooling costs."
+    answer: "Yes. When dust and debris restrict airflow, your AC runs longer cycles to reach the thermostat setting. Combined with a dust-coated coil and blower, this can add 10 to 20% to your cooling costs."
   - question: "How do I know if my ducts are hurting efficiency?"
     answer: "Warning signs include rising bills with no rate change, weak airflow at vents, rooms that never cool evenly, and visible dust blowing from registers. An airflow inspection confirms the cause."
   - question: "Will cleaning my ducts lower my bill?"
     answer: "Cleaning removes restrictions and helps restore designed airflow, but the biggest efficiency gains often come from also cleaning the coil and blower and sealing leaks. Together these steps recover lost efficiency."
 ---
 
-Your air conditioner is the single biggest energy user in most Florida homes, often 40–50% of the summer electric bill. When your ducts are dirty, that expensive equipment has to work harder for the same result — and you pay for the difference every month.
+Your air conditioner is the single biggest energy user in most Florida homes, often 40 to 50% of the summer electric bill. When your ducts are dirty, that expensive equipment has to work harder for the same result, and you pay for the difference every month.
 
 ## The short answer
 
@@ -28,17 +28,17 @@ Cooling your home depends on moving a specific volume of air across the evaporat
 - **Restricted airflow:** Layers of dust narrow the effective size of the ducts, so the blower moves less air per minute.
 - **Insulated coil:** A film of dust on the evaporator coil acts like a blanket, reducing heat transfer so the system removes less heat per cycle.
 - **Strained blower motor:** A dirty blower wheel moves less air and draws more current.
-- **Longer run times:** To compensate, the system simply runs longer — the meter keeps spinning the whole time.
+- **Longer run times:** To compensate, the system simply runs longer, the meter keeps spinning the whole time.
 
 ### A simple way to picture the loss
 
 | Condition | Airflow | Typical cooling cost impact |
 | --- | --- | --- |
 | Clean ducts, clean coil | Full designed airflow | Baseline |
-| Moderate dust buildup | Reduced airflow | +5–10% |
-| Heavy buildup + dirty coil | Significantly restricted | +10–20% or more |
+| Moderate dust buildup | Reduced airflow | +5 to 10% |
+| Heavy buildup + dirty coil | Significantly restricted | +10 to 20% or more |
 
-Industry testing consistently shows that duct systems can lose 20–30% of moving air to leaks and restrictions combined, and much of that shows up on your bill.
+Industry testing consistently shows that duct systems can lose 20 to 30% of moving air to leaks and restrictions combined, and much of that shows up on your bill.
 
 ## Why Florida makes it worse
 
@@ -63,10 +63,10 @@ If several of these sound familiar, restricted airflow is a strong suspect. A qu
 Cleaning the ducts helps, but the biggest savings usually come from addressing the whole airflow path:
 
 1. **Clean the ducts** to remove restrictions and improve airflow.
-2. **Clean the coil and blower** so heat transfer and air movement return to spec — see our [HVAC cleaning](/services/hvac-cleaning) service.
+2. **Clean the coil and blower** so heat transfer and air movement return to spec, see our [HVAC cleaning](/services/hvac-cleaning) service.
 3. **Seal leaks** so the cool air you paid for actually reaches your rooms instead of the attic; our [air duct repair](/services/air-duct-repair) team handles this.
-4. **Check attic insulation** so ducts aren't fighting a 130°F attic — proper [attic insulation](/services/attic-insulation) reduces the heat load on the whole system.
+4. **Check attic insulation** so ducts aren't fighting a 130°F attic, proper [attic insulation](/services/attic-insulation) reduces the heat load on the whole system.
 
 ## The bottom line
 
-Dirty ducts don't just move dust around — they quietly tax your electric bill month after month. In Florida's cooling-heavy climate, restoring proper airflow is one of the most reliable ways to stop overpaying. If your bills are creeping up, start with an airflow inspection. [Contact our team](/contact) for a straight answer on what your system needs, or read more common questions on our [FAQ page](/faq).
+Dirty ducts don't just move dust around, they quietly tax your electric bill month after month. In Florida's cooling-heavy climate, restoring proper airflow is one of the most reliable ways to stop overpaying. If your bills are creeping up, start with an airflow inspection. [Contact our team](/contact) for a straight answer on what your system needs, or read more common questions on our [FAQ page](/faq).

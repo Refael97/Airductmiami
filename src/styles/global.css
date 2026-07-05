@@ -1,14 +1,14 @@
 /* ============================================================
-   Air Duct Florida — Design System
+   Air Duct Florida to Design System
    Zero-JS, fast-loading, accessible. Mobile-first.
    ============================================================ */
 
 :root {
-  /* Brand palette — cool, clean, trustworthy (air / water) */
+  /* Brand palette, cool, clean, trustworthy (air / water) */
   --c-primary: #0a6ebd;      /* deep sky blue */
   --c-primary-dark: #07508a;
   --c-primary-light: #e7f2fb;
-  --c-accent: #14b8a6;       /* teal — freshness */
+  --c-accent: #14b8a6;       /* teal, freshness */
   --c-accent-dark: #0f8a7d;
   --c-ink: #0f2433;          /* near-black navy for text */
   --c-body: #33475b;         /* muted slate for body copy */

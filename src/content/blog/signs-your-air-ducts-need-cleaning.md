@@ -24,7 +24,7 @@ If you are wondering whether your air ducts need cleaning, watch for seven tellt
 - **Allergy or asthma symptoms** that ease when you leave the house
 - **Visible mold** on registers, grilles, or duct surfaces
 - **Rising energy bills** with no change in usage
-- **Uneven airflow** — some rooms cold, others stuffy
+- **Uneven airflow**, some rooms cold, others stuffy
 - **Pests or debris** discovered in or around the ductwork
 
 ## 1. Dust blows out of your vents
@@ -51,7 +51,7 @@ Dark spotting on or near your vent covers is a red flag. Because Florida humidit
 | Moderate buildup | Blower works harder, longer cycles |
 | Heavy buildup | Restricted airflow, higher bills, more wear |
 
-When debris restricts airflow, your AC runs longer to hit the same temperature — and in Florida's cooling-heavy climate, that adds up quickly.
+When debris restricts airflow, your AC runs longer to hit the same temperature, and in Florida's cooling-heavy climate, that adds up quickly.
 
 ## 6. Uneven airflow room to room
 
@@ -63,4 +63,4 @@ Droppings, nesting material, or insect activity mean contaminants are entering y
 
 ## What to do next
 
-Noticing these signs does not always mean an emergency, but it does mean an inspection is worthwhile. A professional can confirm what is actually happening inside your system — often with a camera — so you are not guessing. If you have spotted two or more of these signs, [reach out for an assessment](/contact) and get ahead of the problem before Florida's humidity makes it worse.
+Noticing these signs does not always mean an emergency, but it does mean an inspection is worthwhile. A professional can confirm what is actually happening inside your system, often with a camera, so you are not guessing. If you have spotted two or more of these signs, [reach out for an assessment](/contact) and get ahead of the problem before Florida's humidity makes it worse.

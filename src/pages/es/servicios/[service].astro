@@ -1,0 +1,177 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import FAQ from '../../../components/FAQ.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { services, getService } from '../../../data/services';
+import { serviceEsContent } from '../../../data/services.es';
+import { cities } from '../../../data/cities';
+import { serviceSchema } from '../../../lib/schema';
+import { ui, serviceHref, cityHref } from '../../../data/ui';
+
+const lang = 'es' as const;
+const t = ui[lang];
+
+export const getStaticPaths = (() => {
+ return services.map((s) => ({ params: { service: s.slug } }));
+}) satisfies GetStaticPaths;
+
+const { service: slug } = Astro.params;
+const base = getService(slug!)!;
+const es = serviceEsContent[slug!];
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}${serviceHref(lang, base.slug)}`;
+const schema = serviceSchema(site, {
+ name: es.name,
+ description: es.metaDescription,
+ url: pageUrl,
+ slug: base.slug,
+});
+
+const related = base.related
+ .map((r) => getService(r))
+ .filter((s): s is NonNullable<typeof s> => Boolean(s));
+const featuredCities = cities.slice(0, 8);
+const altHref = `/services/${base.slug}`;
+---
+<BaseLayout title={es.metaTitle} description={es.metaDescription} schema={schema} lang={lang} altHref={altHref}>
+ <Breadcrumbs
+ crumbs={[
+ { name: t.breadcrumbHome, href: t.home },
+ { name: t.nav[0].label, href: t.services },
+ { name: es.name, href: serviceHref(lang, base.slug) },
+ ]}
+ />
+
+ <article class="section">
+ <div class="container">
+ <div class="service-head">
+ <span class="icon-lg" aria-hidden="true">{base.icon}</span>
+ <div>
+ <span class="eyebrow">Servicio en Florida</span>
+ <h1>{es.name} en Florida</h1>
+ </div>
+ </div>
+
+ <div class="answer-box">
+ <span class="answer-label">{t.quickAnswer}</span>
+ <p>{es.answer}</p>
+ </div>
+
+ <div class="service-body">
+ <div class="service-main prose">
+ {es.intro.map((p) => <p>{p}</p>)}
+
+ <h2>Beneficios principales</h2>
+ <div class="grid grid-2">
+ {es.benefits.map((b) => (
+ <div class="mini-card">
+ <h3>{b.title}</h3>
+ <p>{b.text}</p>
+ </div>
+ ))}
+ </div>
+
+ <h2>Nuestro proceso</h2>
+ <ol class="process">
+ {es.process.map((step) => (
+ <li><strong>{step.title}.</strong> {step.text}</li>
+ ))}
+ </ol>
+
+ <FAQ items={es.faq} title={`${es.name}: preguntas frecuentes`} />
+ </div>
+
+ <aside class="service-aside">
+ <div class="facts-card">
+ <h3>Datos rápidos</h3>
+ <dl>
+ {es.quickFacts.map((f) => (
+ <div class="fact-row"><dt>{f.label}</dt><dd>{f.value}</dd></div>
+ ))}
+ </dl>
+ </div>
+ <div class="aside-cta">
+ <p><strong>Reciba una cotización gratis</strong></p>
+ <a href={t.contact} class="btn btn-primary" style="width:100%;justify-content:center;">{t.requestQuote}</a>
+ </div>
+ {related.length > 0 && (
+ <div class="related-card">
+ <h3>{t.relatedServices}</h3>
+ <ul>
+ {related.map((r) => (
+ <li><a href={serviceHref(lang, r.slug)}>{serviceEsContent[r.slug]?.shortName ?? r.shortName}</a></li>
+ ))}
+ </ul>
+ </div>
+ )}
+ </aside>
+ </div>
+ </div>
+ </article>
+
+ <section class="section section-alt">
+ <div class="container">
+ <div class="section-head center">
+ <h2>{es.shortName} en toda Florida</h2>
+ <p class="lead">Llevamos {es.name.toLowerCase()} a familias de todo el estado. Algunas de las áreas que atendemos:</p>
+ </div>
+ <div class="city-chips">
+ {featuredCities.map((c) => (
+ <a href={cityHref(lang, c.slug)} class="chip">{c.name}</a>
+ ))}
+ <a href={t.serviceAreas} class="chip chip-all">{t.allAreas} →</a>
+ </div>
+ </div>
+ </section>
+
+ <CTABand lang={lang} heading={`Reserve su ${es.shortName.toLowerCase()} hoy`} />
+</BaseLayout>
+
+<style>
+  .service-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .icon-lg { font-size: 3rem; line-height: 1; }
+  .service-body { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }
+  .mini-card { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: 1.1rem 1.2rem; }
+  .mini-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+  .mini-card p { margin: 0; font-size: 0.95rem; }
+  .process { counter-reset: step; list-style: none; padding: 0; }
+  .process li { position: relative; padding-left: 3rem; margin-bottom: 1rem; }
+  .process li::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; left: 0; top: 0;
+    width: 2rem; height: 2rem; border-radius: 50%;
+    background: var(--c-primary); color: #fff; font-weight: 800;
+    display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+  }
+  .service-aside { position: sticky; top: 90px; display: grid; gap: 1.2rem; }
+  .facts-card, .related-card, .aside-cta {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    padding: 1.3rem; box-shadow: var(--shadow-sm);
+  }
+  .facts-card h3, .related-card h3 { font-size: 1.05rem; margin-bottom: 0.8rem; }
+  .facts-card dl { margin: 0; }
+  .fact-row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--c-line); }
+  .fact-row:last-child { border-bottom: none; }
+  .fact-row dt { color: var(--c-muted); font-size: 0.85rem; }
+  .fact-row dd { margin: 0; font-weight: 700; color: var(--c-ink); font-size: 0.9rem; text-align: right; }
+  .aside-cta { background: var(--c-primary-light); border-color: #bfddf3; text-align: center; }
+  .related-card ul { list-style: none; padding: 0; margin: 0; }
+  .related-card li { margin-bottom: 0.4rem; }
+
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body);
+    text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .chip-all { background: var(--c-primary); color: #fff; border-color: var(--c-primary); }
+
+  @media (max-width: 860px) {
+    .service-body { grid-template-columns: 1fr; }
+    .service-aside { position: static; }
+  }
+</style>

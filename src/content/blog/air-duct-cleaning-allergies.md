@@ -15,7 +15,7 @@ faq:
     answer: "Cleaning removes moldy debris, and sanitizing treats surfaces, but if humidity keeps feeding growth you also need to fix the moisture source. In Florida that often means addressing indoor humidity directly."
 ---
 
-Yes, air duct cleaning can help with allergies — but it is important to have realistic expectations. Cleaning removes the pollen, dust, pet dander, and mold spores that have collected inside your ductwork and would otherwise be blown back into your rooms every time the AC runs. For allergy and asthma sufferers in Florida, where systems run nearly year-round and pollen seasons are long, that reduction in recirculated allergens can bring meaningful relief. What cleaning cannot do is stop new allergens from entering, so it works best alongside good filtration and humidity control.
+Yes, air duct cleaning can help with allergies, but it is important to have realistic expectations. Cleaning removes the pollen, dust, pet dander, and mold spores that have collected inside your ductwork and would otherwise be blown back into your rooms every time the AC runs. For allergy and asthma sufferers in Florida, where systems run nearly year-round and pollen seasons are long, that reduction in recirculated allergens can bring meaningful relief. What cleaning cannot do is stop new allergens from entering, so it works best alongside good filtration and humidity control.
 
 ## How ducts contribute to allergy symptoms
 
@@ -57,7 +57,7 @@ Duct cleaning is not a permanent allergy cure. It will not:
 | UV light installation | Limits microbial growth on the coil |
 | Regular filter changes | Keeps the system efficient |
 
-Controlling humidity is especially powerful in Florida — both mold and dust mites thrive in moist air, so keeping indoor humidity in check attacks two allergen sources at once. A [UV light installation](/services/uv-light-installation) at the coil adds another layer of defense against microbial growth.
+Controlling humidity is especially powerful in Florida, both mold and dust mites thrive in moist air, so keeping indoor humidity in check attacks two allergen sources at once. A [UV light installation](/services/uv-light-installation) at the coil adds another layer of defense against microbial growth.
 
 ## Should you get your air quality tested?
 
@@ -65,4 +65,4 @@ If symptoms persist even after cleaning, it is worth finding out exactly what yo
 
 ## The bottom line
 
-Air duct cleaning can genuinely reduce allergy triggers by clearing out the allergens your system recirculates, and many Florida homeowners breathe easier afterward. Treat it as one strong piece of a larger plan — cleaning, filtration, and humidity control together — rather than a one-time fix. If allergies are making your home uncomfortable, [get in touch](/contact) and we will help you build the right approach.
+Air duct cleaning can genuinely reduce allergy triggers by clearing out the allergens your system recirculates, and many Florida homeowners breathe easier afterward. Treat it as one strong piece of a larger plan, cleaning, filtration, and humidity control together, rather than a one-time fix. If allergies are making your home uncomfortable, [get in touch](/contact) and we will help you build the right approach.

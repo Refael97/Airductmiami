@@ -22,7 +22,7 @@ If you share your Florida home with pets, plan on cleaning your air ducts every 
 Pets add several things to your air that ductwork readily traps:
 
 - **Hair** that mats onto duct walls and around the coil
-- **Dander** — tiny flakes of skin that are a leading allergen
+- **Dander**, tiny flakes of skin that are a leading allergen
 - **Odor-causing particles** that cling to hair and dust
 - **Outdoor debris** tracked in on fur and paws
 
@@ -32,12 +32,12 @@ Your HVAC system pulls all of this through the returns, and the cool, sometimes 
 
 | Household | Suggested cleaning frequency |
 | --- | --- |
-| No pets | Every 3–5 years |
-| One pet | Every 2–3 years |
+| No pets | Every 3 to 5 years |
+| One pet | Every 2 to 3 years |
 | Multiple pets or heavy shedders | Every 2 years |
-| Pets plus allergy sufferers | Every 1–2 years |
+| Pets plus allergy sufferers | Every 1 to 2 years |
 
-If someone in the home has allergies or asthma, lean toward the shorter intervals — recirculated dander is a frequent trigger, and cleaning reduces that load. Our guide on whether [duct cleaning helps with allergies](/blog/air-duct-cleaning-allergies) goes deeper on the connection.
+If someone in the home has allergies or asthma, lean toward the shorter intervals, recirculated dander is a frequent trigger, and cleaning reduces that load. Our guide on whether [duct cleaning helps with allergies](/blog/air-duct-cleaning-allergies) goes deeper on the connection.
 
 ## The pet odor problem
 
@@ -51,7 +51,7 @@ Pet owners have a second hidden hotspot: the dryer vent. Washing pet bedding and
 
 Stretch the time between professional visits with simple habits:
 
-- **Change filters more often** — monthly if you have shedding pets
+- **Change filters more often**, monthly if you have shedding pets
 - **Consider a higher-MERV filter** to catch more dander
 - **Groom and bathe pets regularly** to reduce loose hair
 - **Vacuum near return vents** where hair collects
@@ -63,4 +63,4 @@ In a seasonal climate, an AC that runs a few months a year gives ducts time to s
 
 ## The bottom line
 
-Pets are family, but they load your ducts with hair and dander that recirculate through your home all year. Clean every 2 to 3 years — sooner with multiple pets or allergies — keep up with filters and grooming between visits, and add sanitizing to tackle odor. Ready to freshen the air for your whole household? [Get in touch with our Florida team](/contact).
+Pets are family, but they load your ducts with hair and dander that recirculate through your home all year. Clean every 2 to 3 years, sooner with multiple pets or allergies, keep up with filters and grooming between visits, and add sanitizing to tackle odor. Ready to freshen the air for your whole household? [Get in touch with our Florida team](/contact).

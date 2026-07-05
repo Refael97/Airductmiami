@@ -8,18 +8,18 @@ tags: ["duct leaks", "duct sealing", "repair", "florida"]
 featured: false
 faq:
   - question: "How much air do leaky ducts waste?"
-    answer: "Typical duct systems lose 20–30% of the air moving through them to leaks. That means up to a third of the cool air you pay for can escape into your attic instead of reaching your rooms."
+    answer: "Typical duct systems lose 20 to 30% of the air moving through them to leaks. That means up to a third of the cool air you pay for can escape into your attic instead of reaching your rooms."
   - question: "Can I find duct leaks myself?"
-    answer: "You can spot obvious signs — disconnected joints, torn insulation, or air hissing near accessible ductwork — but sealed-off runs in walls and attics usually require a technician's inspection or a pressure test to find every leak."
+    answer: "You can spot obvious signs, disconnected joints, torn insulation, or air hissing near accessible ductwork, but sealed-off runs in walls and attics usually require a technician's inspection or a pressure test to find every leak."
   - question: "Is duct sealing better than tape?"
     answer: "Yes. Cloth 'duct tape' dries out and fails in hot attics. Professional sealing uses mastic paste or an aerosol sealant that bonds to the metal and stays flexible, lasting far longer in Florida's 130°F attic heat."
 ---
 
-Leaky ducts are one of the most common and most expensive problems in Florida homes — and one of the easiest to overlook because the leaks are usually hidden in the attic or walls. Here's how to tell if your ducts are leaking and what it takes to fix them.
+Leaky ducts are one of the most common and most expensive problems in Florida homes, and one of the easiest to overlook because the leaks are usually hidden in the attic or walls. Here's how to tell if your ducts are leaking and what it takes to fix them.
 
 ## The short answer
 
-You spot leaky air ducts through their symptoms: uneven room temperatures, rising energy bills, excess dust, weak vent airflow, and hissing or whistling near the ductwork. The fix is professional sealing — mastic paste on accessible joints or an aerosol interior sealant for hidden leaks — plus repair of any damaged or disconnected sections.
+You spot leaky air ducts through their symptoms: uneven room temperatures, rising energy bills, excess dust, weak vent airflow, and hissing or whistling near the ductwork. The fix is professional sealing, mastic paste on accessible joints or an aerosol interior sealant for hidden leaks, plus repair of any damaged or disconnected sections.
 
 ## Why leaks matter so much in Florida
 
@@ -28,7 +28,7 @@ Most Florida ductwork runs through the attic, where summer temperatures reach 13
 - **It loses cool air** you already paid to condition, dumping it into a scorching attic.
 - **It pulls in hot, humid, dusty attic air** through return-side leaks, adding heat and moisture your AC then has to remove.
 
-Because duct systems commonly lose 20–30% of their airflow to leaks, a leaky system can waste roughly a quarter of your cooling energy year-round.
+Because duct systems commonly lose 20 to 30% of their airflow to leaks, a leaky system can waste roughly a quarter of your cooling energy year-round.
 
 ## Signs you have leaky ducts
 
@@ -59,7 +59,7 @@ A thick, paintable paste brushed over joints and seams. It bonds to the metal an
 For leaks buried in walls or hard-to-reach runs, a fog of sealant particles is blown through the pressurized duct system; the particles accumulate at the leak edges and seal from the inside.
 
 ### 3. Section repair or replacement
-Crushed flex duct, disconnected boots, or duct that has torn away from a register needs to be reconnected or replaced — sealing alone won't fix a physical break.
+Crushed flex duct, disconnected boots, or duct that has torn away from a register needs to be reconnected or replaced, sealing alone won't fix a physical break.
 
 ### Why not just use tape?
 Ordinary cloth "duct tape" is one of the few things you should never use on ducts. The adhesive dries and lets go quickly in a 130°F attic. Mastic and aerosol sealants are built to last for years in that heat.
