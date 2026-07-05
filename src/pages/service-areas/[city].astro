@@ -1,0 +1,113 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTABand from '../../components/CTABand.astro';
+import { cities, getCity } from '../../data/cities';
+import { services } from '../../data/services';
+import { business } from '../../data/business';
+import { serviceSchema } from '../../lib/schema';
+
+export const getStaticPaths = (() => {
+  return cities.map((c) => ({ params: { city: c.slug } }));
+}) satisfies GetStaticPaths;
+
+const { city: slug } = Astro.params;
+const city = getCity(slug!)!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}/service-areas/${city.slug}`;
+
+const metaTitle = `Air Duct Cleaning in ${city.name}, FL | ${business.name}`;
+const metaDescription = `Professional air duct & dryer vent cleaning in ${city.name}, ${city.county}. Licensed, insured, NADCA-standard technicians serving ${city.name} and nearby areas. Free quotes.`;
+
+const schema = serviceSchema(site, {
+  name: `Air Duct Cleaning in ${city.name}, FL`,
+  description: metaDescription,
+  url: pageUrl,
+  slug: city.slug,
+});
+
+const cityFaq = [
+  { question: `How much does air duct cleaning cost in ${city.name}?`, answer: `In ${city.name}, a complete single-system air duct cleaning typically costs $300–$600, and dryer vent cleaning runs $100–$200. We provide free, upfront quotes with no hidden fees.` },
+  { question: `How often should ${city.name} homeowners clean their air ducts?`, answer: `Every 3–5 years for most ${city.name} homes, and more often with pets, allergies, or a history of mold. ${city.local}` },
+  { question: `Do you offer same-week appointments in ${city.name}?`, answer: `Yes. We offer fast, often same-week scheduling for ${city.name} and the surrounding ${city.county} area. Call ${business.phone} to book.` },
+  { question: `Are your ${city.name} technicians licensed and insured?`, answer: `Yes. Every technician serving ${city.name} is licensed and insured, and we follow NADCA source-removal standards for safe, thorough duct cleaning.` },
+];
+
+const nearby = city.nearby
+  .map((n) => getCity(n))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
+
+const topServices = services.slice(0, 6);
+---
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Service Areas', href: '/service-areas' },
+      { name: city.name, href: `/service-areas/${city.slug}` },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{city.county} · Florida</span>
+        <h1>Air Duct Cleaning in {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">Serving {city.name}</span>
+        <p>{business.name} provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services throughout {city.name} and {city.county}. {city.intro}</p>
+      </div>
+
+      <div class="prose">
+        <p>{city.local}</p>
+        <p>Our licensed, insured technicians bring NADCA source-removal equipment to every {city.name} job — placing your entire HVAC system under suction so dust, pollen, and mold are captured, not scattered through your home. Whether you're dealing with a musty AC smell, high energy bills, allergy flare-ups, or simply overdue maintenance, we help {city.name} homeowners breathe cleaner air.</p>
+
+        <h2>Air Duct &amp; HVAC Services in {city.name}</h2>
+        <p>Every service below is available to {city.name} residents and businesses:</p>
+      </div>
+
+      <div class="grid grid-3">
+        {topServices.map((s) => (
+          <a href={`/services/${s.slug}`} class="card service-card">
+            <span class="icon" aria-hidden="true">{s.icon}</span>
+            <h3>{s.shortName}</h3>
+            <p>{s.answer.split('. ')[0]}.</p>
+          </a>
+        ))}
+      </div>
+      <p style="margin-top:1rem;"><a href="/services" class="btn btn-outline">See all services →</a></p>
+
+      <FAQ items={cityFaq} title={`Air Duct Cleaning in ${city.name}: FAQs`} />
+
+      {nearby.length > 0 && (
+        <div class="nearby">
+          <h2>Nearby Areas We Serve</h2>
+          <div class="city-chips">
+            {nearby.map((n) => (<a href={`/service-areas/${n.slug}`} class="chip">{n.name}</a>))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand heading={`Air duct cleaning in ${city.name}? We're ready to help.`} />
+</BaseLayout>
+
+<style>
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card h3 { color: var(--c-ink); font-size: 1.1rem; }
+  .service-card p { color: var(--c-body); font-size: 0.9rem; margin: 0; }
+  .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+</style>

@@ -1,0 +1,174 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTABand from '../../components/CTABand.astro';
+import { services, getService } from '../../data/services';
+import { cities } from '../../data/cities';
+import { serviceSchema } from '../../lib/schema';
+
+export const getStaticPaths = (() => {
+  return services.map((s) => ({ params: { service: s.slug } }));
+}) satisfies GetStaticPaths;
+
+const { service: slug } = Astro.params;
+const service = getService(slug!)!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}/services/${service.slug}`;
+const schema = serviceSchema(site, {
+  name: service.name,
+  description: service.metaDescription,
+  url: pageUrl,
+  slug: service.slug,
+});
+
+const related = service.related
+  .map((r) => getService(r))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s));
+
+// A handful of cities to reinforce statewide local relevance / internal links.
+const featuredCities = cities.slice(0, 8);
+---
+<BaseLayout title={service.metaTitle} description={service.metaDescription} schema={schema}>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Services', href: '/services' },
+      { name: service.name, href: `/services/${service.slug}` },
+    ]}
+  />
+
+  <article class="section">
+    <div class="container">
+      <div class="service-head">
+        <span class="icon-lg" aria-hidden="true">{service.icon}</span>
+        <div>
+          <span class="eyebrow">Florida service</span>
+          <h1>{service.name} in Florida</h1>
+        </div>
+      </div>
+
+      <!-- Answer-first callout for AEO -->
+      <div class="answer-box">
+        <span class="answer-label">Quick answer</span>
+        <p>{service.answer}</p>
+      </div>
+
+      <div class="service-body">
+        <div class="service-main prose">
+          {service.intro.map((p) => <p>{p}</p>)}
+
+          <h2>Key benefits</h2>
+          <div class="grid grid-2">
+            {service.benefits.map((b) => (
+              <div class="mini-card">
+                <h3>{b.title}</h3>
+                <p>{b.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2>Our process</h2>
+          <ol class="process">
+            {service.process.map((step) => (
+              <li>
+                <strong>{step.title}.</strong> {step.text}
+              </li>
+            ))}
+          </ol>
+
+          <FAQ items={service.faq} title={`${service.name}: FAQs`} />
+        </div>
+
+        <aside class="service-aside">
+          <div class="facts-card">
+            <h3>At a glance</h3>
+            <dl>
+              {service.quickFacts.map((f) => (
+                <div class="fact-row"><dt>{f.label}</dt><dd>{f.value}</dd></div>
+              ))}
+            </dl>
+          </div>
+          <div class="aside-cta">
+            <p><strong>Get a free quote today</strong></p>
+            <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Request a Quote</a>
+          </div>
+          {related.length > 0 && (
+            <div class="related-card">
+              <h3>Related services</h3>
+              <ul>
+                {related.map((r) => (<li><a href={`/services/${r.slug}`}>{r.shortName}</a></li>))}
+              </ul>
+            </div>
+          )}
+        </aside>
+      </div>
+    </div>
+  </article>
+
+  <!-- Local availability -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center">
+        <h2>{service.shortName} Available Across Florida</h2>
+        <p class="lead">We bring {service.name.toLowerCase()} to homeowners statewide. A few of the areas we serve:</p>
+      </div>
+      <div class="city-chips">
+        {featuredCities.map((c) => (
+          <a href={`/service-areas/${c.slug}`} class="chip">{c.name}</a>
+        ))}
+        <a href="/service-areas" class="chip chip-all">All areas →</a>
+      </div>
+    </div>
+  </section>
+
+  <CTABand heading={`Book your ${service.shortName.toLowerCase()} today`} />
+</BaseLayout>
+
+<style>
+  .service-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .icon-lg { font-size: 3rem; line-height: 1; }
+  .service-body { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }
+  .mini-card { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: 1.1rem 1.2rem; }
+  .mini-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+  .mini-card p { margin: 0; font-size: 0.95rem; }
+  .process { counter-reset: step; list-style: none; padding: 0; }
+  .process li { position: relative; padding-left: 3rem; margin-bottom: 1rem; }
+  .process li::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; left: 0; top: 0;
+    width: 2rem; height: 2rem; border-radius: 50%;
+    background: var(--c-primary); color: #fff; font-weight: 800;
+    display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+  }
+  .service-aside { position: sticky; top: 90px; display: grid; gap: 1.2rem; }
+  .facts-card, .related-card, .aside-cta {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    padding: 1.3rem; box-shadow: var(--shadow-sm);
+  }
+  .facts-card h3, .related-card h3 { font-size: 1.05rem; margin-bottom: 0.8rem; }
+  .facts-card dl { margin: 0; }
+  .fact-row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--c-line); }
+  .fact-row:last-child { border-bottom: none; }
+  .fact-row dt { color: var(--c-muted); font-size: 0.85rem; }
+  .fact-row dd { margin: 0; font-weight: 700; color: var(--c-ink); font-size: 0.9rem; text-align: right; }
+  .aside-cta { background: var(--c-primary-light); border-color: #bfddf3; text-align: center; }
+  .related-card ul { list-style: none; padding: 0; margin: 0; }
+  .related-card li { margin-bottom: 0.4rem; }
+
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body);
+    text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .chip-all { background: var(--c-primary); color: #fff; border-color: var(--c-primary); }
+
+  @media (max-width: 860px) {
+    .service-body { grid-template-columns: 1fr; }
+    .service-aside { position: static; }
+  }
+</style>

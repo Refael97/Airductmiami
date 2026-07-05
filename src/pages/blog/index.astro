@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CTABand from '../../components/CTABand.astro';
+import { getCollection } from 'astro:content';
+import { business } from '../../data/business';
+
+const title = `Air Duct & Indoor Air Quality Blog | ${business.name}`;
+const description = 'Expert guides on air duct cleaning, dryer vent safety, mold prevention, HVAC efficiency, and indoor air quality for Florida homeowners.';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const categories = [...new Set(posts.map((p) => p.data.category))].sort();
+const featured = posts.filter((p) => p.data.featured).slice(0, 3);
+const featuredIds = new Set(featured.map((p) => p.id));
+const rest = posts.filter((p) => !featuredIds.has(p.id));
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }]} />
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Guides &amp; resources</span>
+        <h1>Air Duct &amp; Indoor Air Quality Blog</h1>
+        <p class="lead">Practical, Florida-focused advice on keeping your home's air clean, your HVAC efficient, and your family healthy.</p>
+      </div>
+
+      {featured.length > 0 && (
+        <div class="grid grid-3 featured">
+          {featured.map((p) => (
+            <a href={`/blog/${p.id}`} class="card post-card featured-card">
+              <span class="pill">{p.data.category}</span>
+              <h3>{p.data.title}</h3>
+              <p>{p.data.description}</p>
+              <span class="post-meta">{fmt(p.data.pubDate)}</span>
+            </a>
+          ))}
+        </div>
+      )}
+
+      <div class="cat-bar">
+        {categories.map((c) => (<span class="cat-tag">{c}</span>))}
+      </div>
+
+      <div class="grid grid-3">
+        {rest.map((p) => (
+          <a href={`/blog/${p.id}`} class="card post-card">
+            <span class="pill">{p.data.category}</span>
+            <h3>{p.data.title}</h3>
+            <p>{p.data.description}</p>
+            <span class="post-meta">{fmt(p.data.pubDate)}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CTABand />
+</BaseLayout>
+
+<style>
+  .post-card { display: flex; flex-direction: column; text-decoration: none; gap: 0.5rem; }
+  .post-card:hover { text-decoration: none; }
+  .post-card h3 { color: var(--c-ink); font-size: 1.15rem; margin: 0.3rem 0; }
+  .post-card p { color: var(--c-body); font-size: 0.92rem; margin: 0; flex-grow: 1; }
+  .post-meta { color: var(--c-muted); font-size: 0.82rem; margin-top: 0.4rem; }
+  .featured { margin-bottom: 2rem; }
+  .featured-card { border-color: #bfddf3; background: linear-gradient(180deg, #fff, var(--c-primary-light)); }
+  .cat-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
+  .cat-tag { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.82rem; font-weight: 600; color: var(--c-body); }
+</style>

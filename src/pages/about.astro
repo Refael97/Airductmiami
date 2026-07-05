@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CTABand from '../components/CTABand.astro';
+import { business } from '../data/business';
+
+const title = `About ${business.name} | Florida Air Duct Experts`;
+const description = `Learn about ${business.name} — licensed, insured, NADCA-standard air duct and dryer vent cleaning professionals serving homeowners and businesses across Florida since ${business.foundingYear}.`;
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]} />
+  <section class="section">
+    <div class="container container-narrow prose">
+      <span class="eyebrow">About us</span>
+      <h1>Florida's Trusted Air Duct &amp; Indoor Air Quality Team</h1>
+      <p class="lead">Since {business.foundingYear}, {business.name} has helped Florida families and businesses breathe cleaner, healthier air — one honestly-cleaned duct system at a time.</p>
+
+      <p>We started with a simple frustration: too many "air duct cleaning" companies in Florida were selling cheap gimmicks — a shop vac at the register, a quick photo, and a bill padded with surprise fees. Homeowners deserved better. So we built a company around doing the job the right way, every time, and telling customers the truth about what their system actually needs.</p>
+
+      <h2>What makes us different</h2>
+      <ul class="check-list">
+        <li><strong>NADCA source-removal method.</strong> We use professional negative-air equipment that puts your whole system under suction — the standard the industry recognizes as done correctly.</li>
+        <li><strong>Licensed &amp; insured technicians.</strong> Trained, background-checked professionals who respect your home.</li>
+        <li><strong>Florida expertise.</strong> We understand how the state's humidity drives coil mold, duct condensation, and fast dust buildup — and how to prevent it.</li>
+        <li><strong>Honest, upfront pricing.</strong> The quote is the price. No bait-and-switch, no scare tactics.</li>
+        <li><strong>Before &amp; after documentation.</strong> You see exactly what we removed.</li>
+      </ul>
+
+      <h2>Our mission</h2>
+      <p>Indoor air is something most people never think about — until allergies flare, bills climb, or a musty smell won't go away. Our mission is to make clean, healthy indoor air simple and accessible for every Florida home and business, backed by workmanship we're proud to document.</p>
+
+      <h2>Serving all of Florida</h2>
+      <p>From the beaches of Miami and Fort Lauderdale to Orlando, Tampa, Jacksonville, Fort Myers, Naples, and dozens of communities in between, our crews serve homeowners and businesses across the state. <a href="/service-areas">See all service areas →</a></p>
+
+      <div class="about-stats">
+        <div><span>{business.foundingYear}</span><small>Serving Florida since</small></div>
+        <div><span>{business.ratingValue}★</span><small>{business.reviewCount}+ reviews</small></div>
+        <div><span>10,000+</span><small>Homes served</small></div>
+      </div>
+    </div>
+  </section>
+  <CTABand />
+</BaseLayout>
+
+<style>
+  .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; text-align: center; }
+  .about-stats > div { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.2rem; }
+  .about-stats span { display: block; font-size: 1.8rem; font-weight: 800; color: var(--c-primary); }
+  .about-stats small { color: var(--c-muted); }
+</style>

@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { business } from '../data/business';
+
+const title = `Contact ${business.name} | Free Florida Air Duct Quote`;
+const description = `Contact ${business.name} for a free air duct or dryer vent cleaning quote anywhere in Florida. Call ${business.phone} or request a quote online.`;
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact' }]} />
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <span class="eyebrow">Get in touch</span>
+        <h1>Request Your Free Quote</h1>
+        <p class="lead">Fast, friendly, no-obligation quotes for air duct and dryer vent services anywhere in Florida. Call us or send a message and we'll get right back to you.</p>
+
+        <div class="contact-methods">
+          <a href={`tel:${business.phoneHref}`} class="contact-method">
+            <span class="cm-icon">📞</span>
+            <span><small>Call or text</small><strong>{business.phone}</strong></span>
+          </a>
+          <a href={`mailto:${business.email}`} class="contact-method">
+            <span class="cm-icon">✉️</span>
+            <span><small>Email</small><strong>{business.email}</strong></span>
+          </a>
+          <div class="contact-method">
+            <span class="cm-icon">📍</span>
+            <span><small>Serving</small><strong>All of Florida</strong></span>
+          </div>
+        </div>
+
+        <h3>Hours</h3>
+        <ul class="hours">
+          {business.hours.map((h) => (
+            <li><span>{h.days}</span><span>{h.opens}–{h.closes}</span></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <h2>Send us a message</h2>
+        <p class="form-note">Replace the <code>action</code> below with your form handler (Formspree, Netlify Forms, etc.) before launch.</p>
+        <form action="#" method="POST" class="quote-form">
+          <label>Name<input type="text" name="name" required autocomplete="name" /></label>
+          <label>Phone<input type="tel" name="phone" required autocomplete="tel" /></label>
+          <label>Email<input type="email" name="email" autocomplete="email" /></label>
+          <label>City<input type="text" name="city" placeholder="e.g. Orlando" /></label>
+          <label>Service needed
+            <select name="service">
+              <option>Air Duct Cleaning</option>
+              <option>Dryer Vent Cleaning</option>
+              <option>HVAC / Coil Cleaning</option>
+              <option>Mold Remediation</option>
+              <option>Other / Not sure</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="4"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Request Free Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+  .contact-methods { display: grid; gap: 0.8rem; margin: 1.5rem 0; }
+  .contact-method {
+    display: flex; align-items: center; gap: 1rem;
+    background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius);
+    padding: 1rem 1.2rem; text-decoration: none; color: var(--c-ink);
+  }
+  .contact-method:hover { border-color: var(--c-primary); text-decoration: none; }
+  .cm-icon { font-size: 1.6rem; }
+  .contact-method small { display: block; color: var(--c-muted); font-size: 0.8rem; }
+  .contact-method strong { font-size: 1.05rem; }
+  .hours { list-style: none; padding: 0; margin: 0; max-width: 340px; }
+  .hours li { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid var(--c-line); }
+  .form-card { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); }
+  .form-note { font-size: 0.82rem; color: var(--c-muted); background: var(--c-bg-alt); padding: 0.6rem 0.8rem; border-radius: var(--radius-sm); }
+  .quote-form { display: grid; gap: 0.9rem; }
+  .quote-form label { display: grid; gap: 0.3rem; font-weight: 600; font-size: 0.9rem; color: var(--c-ink); }
+  .quote-form input, .quote-form select, .quote-form textarea {
+    font: inherit; padding: 0.65rem 0.8rem; border: 1px solid var(--c-line);
+    border-radius: var(--radius-sm); background: #fff; color: var(--c-ink);
+  }
+  .quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus {
+    outline: 2px solid var(--c-primary); border-color: var(--c-primary);
+  }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTABand from '../components/CTABand.astro';
+import FAQ from '../components/FAQ.astro';
+import { business } from '../data/business';
+import { services } from '../data/services';
+import { cities, citiesByRegion } from '../data/cities';
+
+const title = `${business.name} | Air Duct & Dryer Vent Cleaning Across Florida`;
+const description = business.description;
+
+const homeFaq = [
+  { question: 'How often should I clean my air ducts in Florida?', answer: 'Most Florida homes should have their air ducts cleaned every 3–5 years, and more often with pets, allergies, recent renovations, or a history of mold. Florida’s humidity accelerates dust and mold buildup compared with drier climates.' },
+  { question: 'Do you serve my area?', answer: `Yes — we provide air duct and dryer vent services across all of Florida, including Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Fort Myers, Naples, Sarasota, and dozens more cities. Call ${business.phone} to confirm availability in your zip code.` },
+  { question: 'Are you licensed and insured?', answer: 'Yes. Our technicians are licensed and insured, and we follow NADCA source-removal standards for air duct cleaning so the work is done safely and to industry best practices.' },
+  { question: 'How much does air duct cleaning cost?', answer: 'A typical single-system Florida home costs $300–$600 for a complete air duct cleaning. Dryer vent cleaning runs $100–$200. We provide free, upfront quotes with no hidden fees.' },
+];
+
+const regions = citiesByRegion();
+const stats = [
+  { value: '4.9★', label: `${business.reviewCount}+ reviews` },
+  { value: '10,000+', label: 'Florida homes served' },
+  { value: 'NADCA', label: 'Source-removal standard' },
+  { value: 'Same-week', label: 'Appointments statewide' },
+];
+---
+<BaseLayout title={title} description={description}>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Serving all of Florida</span>
+        <h1>Breathe Cleaner Air with Florida's Trusted Air Duct Experts</h1>
+        <p class="lead">
+          Professional air duct cleaning, dryer vent cleaning, and mold prevention —
+          done to NADCA standards by licensed, insured technicians. Lower your energy
+          bills, protect your family's health, and eliminate that musty AC smell.
+        </p>
+        <div class="hero-actions">
+          <a href={`tel:${business.phoneHref}`} class="btn btn-accent btn-lg">📞 Call {business.phone}</a>
+          <a href="/contact" class="btn btn-outline btn-lg">Get a Free Quote</a>
+        </div>
+        <ul class="hero-trust check-list">
+          <li>Licensed &amp; insured Florida technicians</li>
+          <li>Upfront pricing — no hidden fees</li>
+          <li>Same-week appointments statewide</li>
+        </ul>
+      </div>
+      <div class="hero-card" aria-hidden="false">
+        <div class="hero-card-inner">
+          <span class="hero-card-icon">🌬️</span>
+          <p class="hero-card-title">Florida's humidity is hard on your air.</p>
+          <p class="hero-card-text">Dust, pollen, and mold build up fast in Florida ductwork. We remove it at the source and keep it from coming back.</p>
+          <a href="/services/air-duct-cleaning" class="btn btn-primary">See how it works →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      {stats.map((s) => (
+        <div class="stat"><span class="stat-value">{s.value}</span><span class="stat-label">{s.label}</span></div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">What we do</span>
+        <h2>Complete Air Duct &amp; Indoor Air Quality Services</h2>
+        <p class="lead">From routine duct cleaning to mold remediation and dryer vent safety, we handle every part of your home's air system.</p>
+      </div>
+      <div class="grid grid-3">
+        {services.map((s) => (
+          <a href={`/services/${s.slug}`} class="card service-card">
+            <span class="icon" aria-hidden="true">{s.icon}</span>
+            <h3>{s.name}</h3>
+            <p>{s.answer.split('. ')[0]}.</p>
+            <span class="card-link">Learn more →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section class="section section-alt">
+    <div class="container why-grid">
+      <div>
+        <span class="eyebrow">Why Florida homeowners choose us</span>
+        <h2>Done right, at the source — not just blown around</h2>
+        <p>Cut-rate "$49 duct cleaning" deals often just push dust around with a shop vac. We use professional negative-air, source-removal equipment that places your entire system under suction and captures every particle into a sealed HEPA unit.</p>
+        <ul class="check-list">
+          <li><strong>NADCA source-removal standard</strong> — the method the industry recognizes as done correctly.</li>
+          <li><strong>Before &amp; after photos</strong> — you see exactly what we removed.</li>
+          <li><strong>Florida-specific expertise</strong> — we know how humidity drives coil mold and duct dust here.</li>
+          <li><strong>Transparent, upfront quotes</strong> — the price we quote is the price you pay.</li>
+        </ul>
+        <a href="/about" class="btn btn-primary">More about our approach</a>
+      </div>
+      <div class="why-facts">
+        <div class="why-fact"><span class="wf-num">20–30%</span><span>of conditioned air is lost to leaky ducts in a typical home</span></div>
+        <div class="why-fact"><span class="wf-num">5–7×</span><span>your home's air recirculates through the ducts every day</span></div>
+        <div class="why-fact"><span class="wf-num">#1</span><span>cause of dryer fires is lint buildup in the vent</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service areas -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Statewide coverage</span>
+        <h2>Air Duct Cleaning Across Florida</h2>
+        <p class="lead">We serve homeowners and businesses in {cities.length}+ Florida cities. Find yours:</p>
+      </div>
+      <div class="areas-grid">
+        {Object.entries(regions).map(([region, list]) => (
+          <div class="area-col">
+            <h3>{region}</h3>
+            <ul>
+              {list.map((c) => (<li><a href={`/service-areas/${c.slug}`}>{c.name}</a></li>))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p class="text-center" style="margin-top:1.5rem;"><a href="/service-areas" class="btn btn-outline">View all service areas →</a></p>
+    </div>
+  </section>
+
+  <CTABand />
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container container-narrow">
+      <div class="section-head center"><span class="eyebrow">Good to know</span><h2>Frequently Asked Questions</h2></div>
+      <FAQ items={homeFaq} title="" />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { background: linear-gradient(160deg, #f5f9fc 0%, #e7f2fb 100%); padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+  .hero-inner { display: grid; grid-template-columns: 1.35fr 1fr; gap: 2.5rem; align-items: center; }
+  .hero-copy h1 { margin-bottom: 0.6rem; }
+  .hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.4rem 0; }
+  .hero-trust { margin-top: 1rem; }
+  .hero-trust li { font-weight: 600; color: var(--c-ink); }
+  .hero-card { display: flex; }
+  .hero-card-inner {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-lg); padding: 2rem; text-align: center;
+  }
+  .hero-card-icon { font-size: 3rem; display: block; margin-bottom: 0.6rem; }
+  .hero-card-title { font-weight: 800; color: var(--c-ink); font-size: 1.2rem; margin-bottom: 0.5rem; }
+  .hero-card-text { color: var(--c-body); margin-bottom: 1.2rem; }
+
+  .stats-band { background: var(--c-bg-deep); }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-block: 1.6rem; }
+  .stat { text-align: center; color: #cfe0ec; }
+  .stat-value { display: block; font-size: 1.7rem; font-weight: 800; color: #fff; }
+  .stat-label { font-size: 0.85rem; }
+
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card h3 { color: var(--c-ink); }
+  .service-card p { color: var(--c-body); font-size: 0.95rem; }
+  .card-link { color: var(--c-primary); font-weight: 700; font-size: 0.9rem; }
+
+  .why-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: center; }
+  .why-facts { display: grid; gap: 1rem; }
+  .why-fact {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    padding: 1.2rem 1.4rem; box-shadow: var(--shadow-sm);
+    display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center;
+  }
+  .wf-num { font-size: 1.8rem; font-weight: 800; color: var(--c-primary); }
+
+  .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+  .area-col h3 { font-size: 1.05rem; color: var(--c-primary-dark); border-bottom: 2px solid var(--c-line); padding-bottom: 0.4rem; margin-bottom: 0.7rem; }
+  .area-col ul { list-style: none; padding: 0; margin: 0; }
+  .area-col li { margin-bottom: 0.35rem; }
+  .area-col a { font-size: 0.92rem; color: var(--c-body); }
+
+  @media (max-width: 860px) {
+    .hero-inner, .why-grid { grid-template-columns: 1fr; }
+    .hero-card { order: -1; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
