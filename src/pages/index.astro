@@ -57,6 +57,10 @@ const stats = [
     </div>
   </section>
 
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 44" preserveAspectRatio="none"><path fill="#0c1f30" d="M0,44 L0,20 C240,44 480,4 720,10 C960,16 1200,44 1440,18 L1440,44 Z"></path></svg>
+  </div>
+
   <!-- Stats -->
   <section class="stats-band">
     <div class="container stats-grid">
@@ -144,7 +148,8 @@ const stats = [
 </BaseLayout>
 
 <style>
-  .hero { background: linear-gradient(160deg, #f5f9fc 0%, #e7f2fb 100%); padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+  .hero { background: var(--grad-hero); padding-block: clamp(2.5rem, 6vw, 4.5rem); position: relative; }
+  .wave-divider { margin-top: -1px; background: #fff; }
   .hero-inner { display: grid; grid-template-columns: 1.35fr 1fr; gap: 2.5rem; align-items: center; }
   .hero-copy h1 { margin-bottom: 0.6rem; }
   .hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.4rem 0; }
