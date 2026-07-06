@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTABand from '../../components/CTABand.astro';
 import FAQ from '../../components/FAQ.astro';
+import BeforeAfter from '../../components/BeforeAfter.astro';
 import { business } from '../../data/business';
 import { services } from '../../data/services';
 import { serviceEsContent } from '../../data/services.es';
@@ -123,7 +124,41 @@ const stats = [
  </div>
  </section>
 
- <section class="section">
+ <section class="section section-ba">
+ <div class="container">
+ <div class="section-head center">
+ <span class="eyebrow">Vea la diferencia</span>
+ <h2>Antes y Después</h2>
+ <p class="lead">Deslice el control para ver exactamente lo que quita una limpieza profesional. Documentamos resultados reales en cada trabajo de Florida Breeze.</p>
+ </div>
+ <div class="ba-grid">
+ <div>
+ <BeforeAfter
+ beforeSrc="/images/ba-vent-before.svg"
+ afterSrc="/images/ba-vent-after.svg"
+ beforeAlt="Rejilla de ventilación antes de la limpieza"
+ afterAlt="Rejilla de ventilación después de la limpieza"
+ beforeLabel="Antes"
+ afterLabel="Después"
+ />
+ <p class="ba-cap">Rejilla de techo</p>
+ </div>
+ <div>
+ <BeforeAfter
+ beforeSrc="/images/ba-duct-before.svg"
+ afterSrc="/images/ba-duct-after.svg"
+ beforeAlt="Interior del ducto antes de la limpieza"
+ afterAlt="Interior del ducto después de la limpieza"
+ beforeLabel="Antes"
+ afterLabel="Después"
+ />
+ <p class="ba-cap">Interior del ducto</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="section section-alt">
  <div class="container">
  <div class="section-head center">
  <span class="eyebrow">Cobertura estatal</span>
@@ -157,6 +192,9 @@ const stats = [
 <style>
   .hero { background: var(--grad-hero); padding-block: clamp(2.5rem, 6vw, 4.5rem); position: relative; }
   .wave-divider { margin-top: -1px; background: #fff; }
+  .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .ba-cap { text-align: center; margin: 0.7rem 0 0; font-weight: 700; color: var(--c-ink); }
+  @media (max-width: 760px) { .ba-grid { grid-template-columns: 1fr; } }
   .hero-inner { display: grid; grid-template-columns: 1.35fr 1fr; gap: 2.5rem; align-items: center; }
   .hero-copy h1 { margin-bottom: 0.6rem; }
   .hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.4rem 0; }

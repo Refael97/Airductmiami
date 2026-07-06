@@ -46,14 +46,14 @@ export interface BusinessInfo {
 }
 
 export const business: BusinessInfo = {
-  name: 'Air Duct Florida', // TODO: real brand name
-  legalName: 'Air Duct Florida LLC', // TODO
+  name: 'Florida Breeze Air Duct',
+  legalName: 'Florida Breeze Air Duct LLC', // TODO: confirm legal entity name
   tagline: "Florida's Trusted Air Duct & Dryer Vent Cleaning Experts",
   description:
-    'Air Duct Florida provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services across Florida. NADCA-standard equipment, licensed and insured technicians, and same-week appointments statewide.',
+    'Florida Breeze Air Duct provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services across Florida. NADCA-standard equipment, licensed and insured technicians, and same-week appointments statewide.',
   phone: '(800) 555-0123', // TODO: real phone
   phoneHref: '+18005550123', // TODO
-  email: 'info@airductflorida.com', // TODO
+  email: 'info@floridabreezeairduct.com', // TODO: confirm inbox exists
   address: {
     street: '123 Biscayne Blvd, Suite 100', // TODO
     city: 'Miami',

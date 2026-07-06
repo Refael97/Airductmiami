@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Dirty air duct interior (sample)">
+  <defs>
+    <radialGradient id="dbw" cx="50%" cy="45%" r="65%">
+      <stop offset="0" stop-color="#4b463f"/><stop offset="1" stop-color="#211d18"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#5a5249"/>
+  <g transform="translate(400 300)">
+    <ellipse cx="0" cy="0" rx="260" ry="220" fill="#6d655a"/>
+    <ellipse cx="0" cy="0" rx="210" ry="176" fill="url(#dbw)"/>
+    <g stroke="#3a352d" stroke-width="8" fill="none" opacity="0.7">
+      <ellipse cx="0" cy="0" rx="170" ry="142"/><ellipse cx="0" cy="0" rx="120" ry="100"/>
+    </g>
+    <g fill="#2c2820" opacity="0.7">
+      <circle cx="-60" cy="-40" r="9"/><circle cx="40" cy="30" r="12"/><circle cx="90" cy="-60" r="7"/>
+      <circle cx="-100" cy="40" r="8"/><circle cx="10" cy="-90" r="6"/><circle cx="120" cy="60" r="9"/>
+      <path d="M-150 10 q80 30 150-10 q-70 60 -150 10Z"/>
+    </g>
+  </g>
+  <rect width="800" height="600" fill="#1a1610" opacity="0.15"/>
+  <g transform="translate(20 560)"><rect width="118" height="26" rx="6" fill="#000" opacity="0.4"/><text x="59" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#fff">SAMPLE</text></g>
+</svg>

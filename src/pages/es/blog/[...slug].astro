@@ -39,7 +39,7 @@ const related = (await getCollection('blogEs'))
  .filter((p) => p.data.category === d.category && p.id !== post.id)
  .slice(0, 3);
 ---
-<BaseLayout title={`${d.title} | ${'Air Duct Florida'}`} description={d.description} schema={schema} ogType="article" lang={lang}>
+<BaseLayout title={`${d.title} | ${'Florida Breeze Air Duct'}`} description={d.description} schema={schema} ogType="article" lang={lang}>
  <Breadcrumbs
  crumbs={[
  { name: t.breadcrumbHome, href: t.home },

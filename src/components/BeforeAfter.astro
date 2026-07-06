@@ -1,0 +1,136 @@
+---
+/**
+ * Interactive before/after comparison slider. Drag the handle (or use arrow
+ * keys) to wipe between the two images. Uses a native range input for
+ * accessibility + touch/keyboard support, with a tiny script to sync the
+ * reveal position. Swap the placeholder images for real before/after photos.
+ */
+interface Props {
+  beforeSrc: string;
+  afterSrc: string;
+  beforeAlt: string;
+  afterAlt: string;
+  beforeLabel?: string;
+  afterLabel?: string;
+  start?: number; // initial reveal %, 0-100
+}
+const {
+  beforeSrc,
+  afterSrc,
+  beforeAlt,
+  afterAlt,
+  beforeLabel = 'Before',
+  afterLabel = 'After',
+  start = 50,
+} = Astro.props;
+---
+<figure class="ba" style={`--pos:${start}%`}>
+  <img class="ba-img ba-after" src={afterSrc} alt={afterAlt} loading="lazy" decoding="async" width="800" height="600" />
+  <img class="ba-img ba-before" src={beforeSrc} alt={beforeAlt} loading="lazy" decoding="async" width="800" height="600" />
+  <span class="ba-tag ba-tag--before">{beforeLabel}</span>
+  <span class="ba-tag ba-tag--after">{afterLabel}</span>
+  <span class="ba-line" aria-hidden="true"><span class="ba-knob">⟷</span></span>
+  <input
+    class="ba-range"
+    type="range"
+    min="0"
+    max="100"
+    value={start}
+    aria-label={`Reveal ${beforeLabel} versus ${afterLabel}`}
+  />
+</figure>
+
+<style>
+  .ba {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    background: var(--c-bg-alt);
+    touch-action: pan-y;
+  }
+  .ba-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  /* The "before" layer is clipped from the right down to the reveal position */
+  .ba-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+
+  .ba-tag {
+    position: absolute;
+    top: 0.7rem;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    color: #fff;
+    pointer-events: none;
+    z-index: 3;
+  }
+  .ba-tag--before { left: 0.7rem; background: rgba(15, 36, 51, 0.78); }
+  .ba-tag--after { right: 0.7rem; background: var(--c-accent-dark); }
+
+  .ba-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--pos);
+    width: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .ba-knob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--c-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    font-weight: 700;
+    box-shadow: var(--shadow);
+  }
+  /* Invisible full-surface range drives --pos; keyboard + touch accessible */
+  .ba-range {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: ew-resize;
+    z-index: 4;
+  }
+  .ba-range:focus-visible + .ba-line,
+  .ba-range:focus-visible ~ .ba-line { outline: none; }
+  .ba-range:focus-visible ~ .ba-line .ba-knob { box-shadow: var(--shadow), var(--ring); }
+</style>
+
+<script>
+  for (const r of document.querySelectorAll('.ba-range')) {
+    const fig = r.closest('.ba');
+    if (!fig) continue;
+    const update = () => fig.style.setProperty('--pos', r.value + '%');
+    r.addEventListener('input', update);
+    update();
+  }
+</script>

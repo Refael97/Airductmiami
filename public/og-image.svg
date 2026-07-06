@@ -10,7 +10,7 @@
     <path d="M-40 160c120-90 260 90 380 0s260 90 380 0 260 90 380 0 260 90 380 0"/>
     <path d="M-40 470c120-90 260 90 380 0s260 90 380 0 260 90 380 0 260 90 380 0"/>
   </g>
-  <text x="80" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">Air Duct Florida</text>
+  <text x="80" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="60" font-weight="800" fill="#ffffff">Florida Breeze Air Duct</text>
   <text x="82" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="38" fill="#bfe0f7">Air Duct &amp; Dryer Vent Cleaning · Statewide</text>
   <g transform="translate(82 430)">
     <rect width="360" height="64" rx="32" fill="#14b8a6"/>

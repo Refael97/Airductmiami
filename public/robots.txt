@@ -1,4 +1,4 @@
-# robots.txt for Air Duct Florida
+# robots.txt for Florida Breeze Air Duct
 # Allow all crawlers, including AI/answer engines.
 
 User-agent: *
@@ -32,4 +32,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://www.airductflorida.com/sitemap-index.xml
+Sitemap: https://floridabreezeairduct.com/sitemap-index.xml

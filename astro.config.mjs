@@ -5,7 +5,7 @@ import mdx from '@astrojs/mdx';
 
 // The production URL. Update this to the real domain before launch.
 // Used for canonical URLs, sitemap, and structured data.
-const SITE_URL = 'https://www.airductflorida.com';
+const SITE_URL = 'https://floridabreezeairduct.com';
 
 // https://astro.build/config
 export default defineConfig({

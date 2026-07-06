@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Clean ceiling air vent (sample)">
+  <defs>
+    <linearGradient id="vaw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf4fd"/><stop offset="1" stop-color="#cfe6f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#vaw)"/>
+  <g transform="translate(230 150)">
+    <rect x="-20" y="-20" width="380" height="320" rx="14" fill="#ffffff" stroke="#bcd6ea" stroke-width="6"/>
+    <rect x="0" y="0" width="340" height="280" rx="8" fill="#f4fafe"/>
+    <g stroke="#9cc2df" stroke-width="10">
+      <line x1="10" y1="34" x2="330" y2="34"/><line x1="10" y1="74" x2="330" y2="74"/>
+      <line x1="10" y1="114" x2="330" y2="114"/><line x1="10" y1="154" x2="330" y2="154"/>
+      <line x1="10" y1="194" x2="330" y2="194"/><line x1="10" y1="234" x2="330" y2="234"/>
+    </g>
+  </g>
+  <g fill="#ffffff">
+    <path d="M120 110 l6 16 16 6 -16 6 -6 16 -6-16 -16-6 16-6Z" opacity="0.95"/>
+    <path d="M690 130 l4 11 11 4 -11 4 -4 11 -4-11 -11-4 11-4Z" opacity="0.9"/>
+    <path d="M660 480 l5 13 13 5 -13 5 -5 13 -5-13 -13-5 13-5Z" opacity="0.9"/>
+  </g>
+  <g transform="translate(20 560)"><rect width="118" height="26" rx="6" fill="#0a6ebd" opacity="0.85"/><text x="59" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#fff">SAMPLE</text></g>
+</svg>
