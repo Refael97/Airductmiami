@@ -67,8 +67,9 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
   }
   .header-inner {
     display: flex;
+    flex-wrap: wrap; /* lets the nav drop to its own full-width row on mobile */
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem 1rem;
     min-height: 68px;
   }
   .brand {
@@ -77,6 +78,7 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
     gap: 0.5rem;
     font-weight: 800;
     font-size: 1.15rem;
+    white-space: nowrap; /* never let the brand break into lines */
     color: var(--c-ink);
     text-decoration: none;
     margin-right: auto;
@@ -136,11 +138,16 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
   .nav-toggle, .nav-toggle-label { display: none; }
 
   @media (max-width: 1040px) {
+    .site-header { background: rgba(255, 255, 255, 0.99); }
+    .header-inner { min-height: 56px; }
+    .brand { font-size: 1rem; }
+    .brand-mark { font-size: 1.25rem; }
     .header-cta { display: none; }
     .nav-toggle-label {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       gap: 5px;
       width: 44px; height: 44px;
       cursor: pointer;
@@ -157,12 +164,25 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
       overflow: hidden;
       transition: max-height 0.25s ease;
     }
-    .nav-toggle:checked ~ .site-nav { max-height: 600px; }
-    .site-nav ul { flex-direction: column; align-items: stretch; padding-bottom: 1rem; }
-    .site-nav a { padding: 0.8rem 0.5rem; }
+    .nav-toggle:checked ~ .site-nav { max-height: 640px; }
+    .site-nav ul {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      padding-bottom: 0.8rem;
+    }
+    .site-nav li { margin: 0; }
+    .site-nav a {
+      padding: 0.7rem 0.4rem;
+      font-size: 1rem;
+      border-bottom: 1px solid var(--c-line);
+      border-radius: 0;
+    }
     .dropdown {
       position: static; opacity: 1; visibility: visible; transform: none;
-      box-shadow: none; border: none; padding-left: 1rem; min-width: 0;
+      box-shadow: none; border: none; padding: 0 0 0 1rem; min-width: 0;
     }
+    .dropdown a { font-size: 0.92rem; color: var(--c-muted); }
+    .lang-switch a { border-bottom: none; }
   }
 </style>

@@ -93,6 +93,17 @@ a:hover { text-decoration: underline; }
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* Form controls must never force layout wider than their container
+   (selects with long options have a large intrinsic min-width). */
+input, select, textarea { max-width: 100%; min-width: 0; }
+.quote-form input, .quote-form select, .quote-form textarea { width: 100%; }
+.contact-grid > * { min-width: 0; }
+/* Long unbreakable tokens (email addresses) must wrap instead of
+   inflating the min-content width of their column on small screens. */
+.contact-method { min-width: 0; }
+.contact-method > span { min-width: 0; }
+.contact-method strong { overflow-wrap: anywhere; }
+
 ul, ol { padding-left: 1.3em; }
 li { margin-bottom: 0.4em; }
 
@@ -207,6 +218,9 @@ li { margin-bottom: 0.4em; }
   border-collapse: collapse;
   margin: 1.5em 0;
   font-size: 0.95rem;
+  /* Wide article tables scroll inside themselves instead of breaking the page */
+  display: block;
+  overflow-x: auto;
 }
 .prose th, .prose td {
   border: 1px solid var(--c-line);
