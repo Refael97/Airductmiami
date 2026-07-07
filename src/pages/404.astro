@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { business } from '../data/business';
+
+const title = `Page Not Found | ${business.name}`;
+const description = 'Sorry, that page does not exist. Find air duct and dryer vent cleaning services across Florida.';
+---
+<BaseLayout title={title} description={description} noindex={true}>
+  <section class="section">
+    <div class="container container-narrow text-center" style="padding-block: 3rem;">
+      <div style="font-size:4rem;">🌬️</div>
+      <h1>Oops, this page blew away.</h1>
+      <p class="lead">The page you are looking for does not exist or has moved. Here are some helpful places to go instead:</p>
+      <div class="nf-links">
+        <a href="/" class="btn btn-primary">Home</a>
+        <a href="/services" class="btn btn-outline">Our Services</a>
+        <a href="/service-areas" class="btn btn-outline">Service Areas</a>
+        <a href="/contact" class="btn btn-outline">Get a Free Quote</a>
+      </div>
+      <p style="margin-top:2rem;">¿Habla español? <a href="/es/">Visite nuestro sitio en español →</a></p>
+      <p>Or call us at <a href={`tel:${business.phoneHref}`}><strong>{business.phone}</strong></a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf-links { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+</style>

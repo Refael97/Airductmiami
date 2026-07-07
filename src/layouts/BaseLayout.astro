@@ -32,14 +32,15 @@ const {
 
 const t = ui[lang];
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
-const canonicalURL = canonical
-  ? `${site}${canonical}`
-  : new URL(Astro.url.pathname, Astro.site).toString().replace(/\/$/, '') || site;
-const ogImage = `${site}/og-image.svg`;
+/** Normalize to a trailing-slash URL so canonical, hreflang, and the sitemap
+ *  all agree on one URL form (Netlify serves directory-style pretty URLs). */
+const withSlash = (p: string) => (p.endsWith('/') || /\.\w+$/.test(p) ? p : `${p}/`);
+const canonicalURL = `${site}${withSlash(canonical ?? Astro.url.pathname)}`;
+const ogImage = `${site}/og-image.png`;
 
-const currentPath = Astro.url.pathname;
-const enHref = lang === 'en' ? currentPath : altHref;
-const esHref = lang === 'es' ? currentPath : altHref;
+const currentPath = withSlash(Astro.url.pathname);
+const enHref = lang === 'en' ? currentPath : altHref && withSlash(altHref);
+const esHref = lang === 'es' ? currentPath : altHref && withSlash(altHref);
 
 const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
 ---

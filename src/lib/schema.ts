@@ -28,8 +28,8 @@ export function localBusinessSchema(siteUrl: string): Json {
     email: business.email,
     priceRange: business.priceRange,
     foundingDate: String(business.foundingYear),
-    image: `${base}/og-image.svg`,
-    logo: `${base}/og-image.svg`,
+    image: `${base}/og-image.png`,
+    logo: `${base}/og-image.png`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: business.address.street,
@@ -53,11 +53,9 @@ export function localBusinessSchema(siteUrl: string): Json {
       opens: h.opens,
       closes: h.closes,
     })),
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: business.ratingValue,
-      reviewCount: business.reviewCount,
-    },
+    // NOTE: aggregateRating intentionally omitted until real review data exists.
+    // Marking up placeholder ratings violates Google structured-data policy.
+    // Re-add with real values: { '@type': 'AggregateRating', ratingValue, reviewCount }
     sameAs: Object.values(business.social).filter(Boolean),
   };
 }
@@ -77,7 +75,7 @@ export function serviceSchema(
     serviceType: opts.name,
     provider: { '@id': orgId(siteUrl) },
     areaServed: { '@type': 'State', name: 'Florida' },
-    image: `${base}/og-image.svg`,
+    image: `${base}/og-image.png`,
   };
 }
 
@@ -102,7 +100,7 @@ export function articleSchema(
     mainEntityOfPage: opts.url,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
-    image: `${base}/og-image.svg`,
+    image: `${base}/og-image.png`,
     author: { '@type': 'Organization', name: business.name, '@id': orgId(siteUrl) },
     publisher: { '@id': orgId(siteUrl) },
   };

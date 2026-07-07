@@ -24,6 +24,11 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
+      // Keep noindex utility pages out of the sitemap (they contradict noindex).
+      filter: (page) =>
+        !['/thank-you/', '/es/gracias/', '/privacy/', '/es/privacidad/'].some(
+          (p) => page.endsWith(p)
+        ),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en-US', es: 'es-US' },
