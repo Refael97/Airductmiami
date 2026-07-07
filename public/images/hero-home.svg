@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="800" height="620" role="img" aria-label="Bright Florida living room with clean fresh air">
+  <defs>
+    <linearGradient id="hWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf7fc"/><stop offset="1" stop-color="#d8eff8"/>
+    </linearGradient>
+    <linearGradient id="hSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe9f7"/><stop offset="0.7" stop-color="#e8f8f4"/><stop offset="1" stop-color="#d4f1ea"/>
+    </linearGradient>
+    <linearGradient id="hFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6fbfd"/><stop offset="1" stop-color="#e4eff5"/>
+    </linearGradient>
+    <linearGradient id="hWind" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14c8b4"/><stop offset="1" stop-color="#5fe6d6"/>
+    </linearGradient>
+    <linearGradient id="hSofa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e9f1f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- room -->
+  <rect width="800" height="620" rx="24" fill="url(#hWall)"/>
+  <rect y="470" width="800" height="150" rx="24" fill="url(#hFloor)"/>
+  <rect y="462" width="800" height="10" fill="#cfe4ef"/>
+
+  <!-- window with ocean sky and palms -->
+  <g>
+    <rect x="440" y="70" width="300" height="330" rx="14" fill="url(#hSky)" stroke="#ffffff" stroke-width="10"/>
+    <circle cx="670" cy="140" r="34" fill="#ffe9a8"/>
+    <path d="M440 330 h300 v40 a14 14 0 0 1 0 0 h-300 Z" fill="#9fdbeb" opacity="0.7"/>
+    <!-- palm -->
+    <path d="M520 400 C516 340 520 290 540 250" fill="none" stroke="#2e9d8f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M540 250 C520 236 496 238 480 252 C502 250 522 256 540 250 Z" fill="#35b7a4"/>
+    <path d="M540 250 C534 226 516 212 496 210 C516 222 530 236 540 250 Z" fill="#2aa393"/>
+    <path d="M540 250 C556 230 578 224 598 230 C578 236 558 244 540 250 Z" fill="#35b7a4"/>
+    <path d="M540 250 C562 244 584 250 596 266 C576 260 556 256 540 250 Z" fill="#2aa393"/>
+    <!-- window mullions -->
+    <line x1="590" y1="70" x2="590" y2="400" stroke="#ffffff" stroke-width="8"/>
+    <line x1="440" y1="235" x2="740" y2="235" stroke="#ffffff" stroke-width="8"/>
+  </g>
+
+  <!-- wall art -->
+  <rect x="120" y="110" width="150" height="110" rx="10" fill="#ffffff"/>
+  <path d="M138 190 l34-42 26 30 20-24 34 36 Z" fill="#8fd4e8"/>
+  <circle cx="235" cy="140" r="10" fill="#ffd98e"/>
+
+  <!-- ceiling vent with clean air swirls -->
+  <rect x="150" y="34" width="120" height="26" rx="8" fill="#ffffff" stroke="#c9dfec" stroke-width="3"/>
+  <line x1="166" y1="42" x2="254" y2="42" stroke="#c9dfec" stroke-width="3" stroke-linecap="round"/>
+  <line x1="166" y1="52" x2="254" y2="52" stroke="#c9dfec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 74 C176 96 182 112 196 124" fill="none" stroke="url(#hWind)" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M214 74 C214 100 220 118 236 132 C246 140 244 154 232 156" fill="none" stroke="url(#hWind)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M246 72 C252 92 266 104 284 108 C296 111 298 126 288 130" fill="none" stroke="url(#hWind)" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- sofa -->
+  <g>
+    <rect x="70" y="320" width="330" height="150" rx="26" fill="url(#hSofa)"/>
+    <rect x="90" y="290" width="290" height="70" rx="22" fill="#ffffff"/>
+    <rect x="96" y="352" width="140" height="64" rx="14" fill="#f3f8fb"/>
+    <rect x="238" y="352" width="140" height="64" rx="14" fill="#f3f8fb"/>
+    <!-- teal pillows -->
+    <rect x="104" y="308" width="64" height="58" rx="12" fill="#2fc4b2" transform="rotate(-6 136 337)"/>
+    <rect x="300" y="308" width="64" height="58" rx="12" fill="#7fd8cc" transform="rotate(6 332 337)"/>
+    <rect x="200" y="316" width="58" height="52" rx="12" fill="#bfeee7"/>
+    <!-- legs -->
+    <rect x="96" y="468" width="14" height="22" rx="5" fill="#c3d6e2"/>
+    <rect x="360" y="468" width="14" height="22" rx="5" fill="#c3d6e2"/>
+  </g>
+
+  <!-- plant -->
+  <g>
+    <path d="M660 470 C650 430 654 396 672 372 C676 402 672 436 668 470 Z" fill="#35b7a4"/>
+    <path d="M676 470 C690 434 702 410 726 398 C716 428 698 452 684 470 Z" fill="#2aa393"/>
+    <path d="M668 470 C660 444 644 428 622 422 C636 444 652 460 664 470 Z" fill="#48c9b6"/>
+    <path d="M648 470 h52 l-8 60 a10 10 0 0 1-10 9 h-16 a10 10 0 0 1-10-9 Z" fill="#e8f2f7" stroke="#cfe2ee" stroke-width="3"/>
+  </g>
+
+  <!-- rug -->
+  <ellipse cx="330" cy="540" rx="230" ry="42" fill="#dceef6"/>
+  <ellipse cx="330" cy="540" rx="170" ry="28" fill="#eaf6fb"/>
+</svg>

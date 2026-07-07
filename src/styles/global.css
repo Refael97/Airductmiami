@@ -4,31 +4,31 @@
    ============================================================ */
 
 :root {
-  /* Brand palette, cool, clean, trustworthy (air / water) */
-  --c-primary: #0a6ebd;      /* deep sky blue */
-  --c-primary-dark: #07508a;
-  --c-primary-light: #e7f2fb;
-  --c-primary-deep: #063a63;
-  --c-accent: #14b8a6;       /* teal, freshness */
-  --c-accent-dark: #0f8a7d;
-  --c-cta: #ff7a1a;          /* warm orange, urgency for call/quote */
-  --c-cta-dark: #e8620a;
-  --c-ink: #0f2433;          /* near-black navy for text */
-  --c-body: #33475b;         /* muted slate for body copy */
-  --c-muted: #6b7c8c;
-  --c-line: #e2e8ef;
+  /* Florida Breeze brand palette: vivid ocean blue -> aqua, deep navy */
+  --c-primary: #0e86ca;      /* vivid ocean blue */
+  --c-primary-dark: #0a5f96;
+  --c-primary-light: #e3f5fb;
+  --c-primary-deep: #083c60;
+  --c-accent: #14c8b4;       /* bright aqua breeze */
+  --c-accent-dark: #0da393;
+  --c-cta: #00b4d8;
+  --c-cta-dark: #0096b7;
+  --c-ink: #0b2740;          /* deep navy for text */
+  --c-body: #35506b;         /* slate blue for body copy */
+  --c-muted: #6b7f92;
+  --c-line: #dfeaf2;
   --c-bg: #ffffff;
-  --c-bg-alt: #f5f9fc;
-  --c-bg-deep: #0c1f30;
+  --c-bg-alt: #f3fafc;
+  --c-bg-deep: #0b2740;
   --c-warn: #d9822b;
   --c-success: #16a34a;
   --c-star: #f5b301;
 
-  /* Gradients */
-  --grad-primary: linear-gradient(135deg, #0a6ebd 0%, #0f8ec9 100%);
-  --grad-cta: linear-gradient(135deg, #ff8a2b 0%, #f26a12 100%);
-  --grad-hero: radial-gradient(1200px 500px at 15% -10%, #eaf4fd 0%, #f5f9fc 55%, #ffffff 100%);
-  --grad-deep: linear-gradient(160deg, #0c1f30 0%, #10314b 100%);
+  /* Gradients (brand board: primary / ocean breeze / night breeze) */
+  --grad-primary: linear-gradient(135deg, #0b3f66 0%, #0e6ea8 100%);
+  --grad-cta: linear-gradient(135deg, #00a9dc 0%, #12ccb2 100%);
+  --grad-hero: radial-gradient(1100px 520px at 12% -8%, #dcf3fa 0%, #eefafc 45%, #ffffff 100%);
+  --grad-deep: linear-gradient(160deg, #0b2740 0%, #0e3a5c 100%);
 
   --radius: 14px;
   --radius-sm: 9px;
@@ -41,10 +41,10 @@
   --maxw: 1160px;
   --maxw-narrow: 760px;
 
-  --font-sans: 'Inter var', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif;
-  --font-head: 'Inter var', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
-    sans-serif;
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-head: 'Inter Variable', 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
 
   --step-fs: clamp(1rem, 0.95rem + 0.25vw, 1.075rem);
 }
@@ -79,8 +79,16 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem); }
-h2 { font-size: clamp(1.55rem, 1.2rem + 1.6vw, 2.25rem); }
+/* Display headings use the brand serif (Playfair Display, per brand board) */
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.18;
+}
+
+h1 { font-size: clamp(2.05rem, 1.4rem + 2.6vw, 3.3rem); }
+h2 { font-size: clamp(1.6rem, 1.25rem + 1.6vw, 2.3rem); }
 h3 { font-size: clamp(1.2rem, 1.05rem + 0.7vw, 1.45rem); font-weight: 700; }
 
 p { margin: 0 0 1.1em; }

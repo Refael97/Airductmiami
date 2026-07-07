@@ -6,6 +6,7 @@ import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
 import { services, getService } from '../../data/services';
 import { cities } from '../../data/cities';
+import ServiceIcon from '../../components/ServiceIcon.astro';
 import { serviceSchema } from '../../lib/schema';
 
 export const getStaticPaths = (() => {
@@ -44,7 +45,7 @@ const altHref = `/es/servicios/${service.slug}`;
   <article class="section">
     <div class="container">
       <div class="service-head">
-        <span class="icon-lg" aria-hidden="true">{service.icon}</span>
+        <span class="icon-lg" aria-hidden="true"><ServiceIcon slug={service.slug} size={44} /></span>
         <div>
           <span class="eyebrow">Florida service</span>
           <h1>{service.name} in Florida</h1>
@@ -130,7 +131,7 @@ const altHref = `/es/servicios/${service.slug}`;
 
 <style>
   .service-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
-  .icon-lg { font-size: 3rem; line-height: 1; }
+  .icon-lg { display: inline-flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; border-radius: 18px; background: var(--grad-cta); color: #fff; box-shadow: var(--shadow); flex-shrink: 0; }
   .service-body { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }
   .mini-card { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: 1.1rem 1.2rem; }
   .mini-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }

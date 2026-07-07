@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTABand from '../../components/CTABand.astro';
 import FAQ from '../../components/FAQ.astro';
 import BeforeAfter from '../../components/BeforeAfter.astro';
+import ServiceIcon from '../../components/ServiceIcon.astro';
 import { business } from '../../data/business';
 import { services } from '../../data/services';
 import { serviceEsContent } from '../../data/services.es';
@@ -47,7 +48,9 @@ const stats = [
  proteja la salud de su familia y elimine ese olor a humedad del aire acondicionado.
  </p>
  <div class="hero-actions">
- <a href={`tel:${business.phoneHref}`} class="btn btn-accent btn-lg">📞 Llame al {business.phone}</a>
+ <a href={`tel:${business.phoneHref}`} class="btn btn-accent btn-lg">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+ Llame al {business.phone}</a>
  <a href={t.contact} class="btn btn-outline btn-lg">{t.quoteLabel}</a>
  </div>
  <ul class="hero-trust check-list">
@@ -56,9 +59,9 @@ const stats = [
  <li>Citas la misma semana en todo el estado</li>
  </ul>
  </div>
- <div class="hero-card">
+ <div class="hero-visual">
+ <img class="hero-img" src="/images/hero-home.svg" alt="Sala de estar luminosa en Florida con aire limpio y fresco" width="800" height="620" fetchpriority="high" />
  <div class="hero-card-inner">
- <span class="hero-card-icon">🌬️</span>
  <p class="hero-card-title">La humedad de Florida es dura con su aire.</p>
  <p class="hero-card-text">El polvo, el polen y el moho se acumulan rápido en los ductos de Florida. Los quitamos desde la fuente y evitamos que regresen.</p>
  <a href={serviceHref(lang, 'air-duct-cleaning')} class="btn btn-primary">Vea cómo funciona →</a>
@@ -68,7 +71,7 @@ const stats = [
  </section>
 
   <div class="wave-divider" aria-hidden="true">
-    <svg viewBox="0 0 1440 44" preserveAspectRatio="none"><path fill="#0c1f30" d="M0,44 L0,20 C240,44 480,4 720,10 C960,16 1200,44 1440,18 L1440,44 Z"></path></svg>
+    <svg viewBox="0 0 1440 44" preserveAspectRatio="none"><path fill="#0b2740" d="M0,44 L0,20 C240,44 480,4 720,10 C960,16 1200,44 1440,18 L1440,44 Z"></path></svg>
   </div>
 
  <section class="stats-band">
@@ -91,7 +94,7 @@ const stats = [
  const es = serviceEsContent[s.slug];
  return (
  <a href={serviceHref(lang, s.slug)} class="card service-card">
- <span class="icon" aria-hidden="true">{s.icon}</span>
+ <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
  <h3>{es.name}</h3>
  <p>{es.answer.split('. ')[0]}.</p>
  <span class="card-link">{t.learnMore} →</span>
@@ -194,14 +197,18 @@ const stats = [
   .hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.4rem 0; }
   .hero-trust { margin-top: 1rem; }
   .hero-trust li { font-weight: 600; color: var(--c-ink); }
-  .hero-card { display: flex; }
+  .hero-visual { position: relative; }
+  .hero-img { width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); display: block; }
   .hero-card-inner {
-    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
-    box-shadow: var(--shadow-lg); padding: 2rem; text-align: center;
+    position: absolute; left: 1rem; right: 1rem; bottom: -1.2rem;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.1rem 1.3rem;
   }
-  .hero-card-icon { font-size: 3rem; display: block; margin-bottom: 0.6rem; }
-  .hero-card-title { font-weight: 800; color: var(--c-ink); font-size: 1.2rem; margin-bottom: 0.5rem; }
-  .hero-card-text { color: var(--c-body); margin-bottom: 1.2rem; }
+  .hero-card-title { font-weight: 800; color: var(--c-ink); font-size: 1.05rem; margin-bottom: 0.3rem; }
+  .hero-card-text { color: var(--c-body); font-size: 0.92rem; margin-bottom: 0.8rem; }
+  .hero-card-inner .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
 
   .stats-band { background: var(--c-bg-deep); }
   .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-block: 1.6rem; }
@@ -232,6 +239,7 @@ const stats = [
 
   @media (max-width: 860px) {
     .hero-inner, .why-grid { grid-template-columns: 1fr; }
+    .hero-card-inner { position: static; margin-top: 0.9rem; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>

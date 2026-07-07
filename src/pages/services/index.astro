@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABand from '../../components/CTABand.astro';
 import { services } from '../../data/services';
+import ServiceIcon from '../../components/ServiceIcon.astro';
 import { business } from '../../data/business';
 
 const title = `Air Duct & HVAC Services in Florida | ${business.name}`;
@@ -20,7 +21,7 @@ const description = 'Explore our full range of Florida air duct services: air du
       <div class="grid grid-3">
         {services.map((s) => (
           <a href={`/services/${s.slug}`} class="card service-card">
-            <span class="icon" aria-hidden="true">{s.icon}</span>
+            <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
             <h3>{s.name}</h3>
             <p>{s.answer.split('. ')[0]}.</p>
             <span class="card-link">Learn more →</span>

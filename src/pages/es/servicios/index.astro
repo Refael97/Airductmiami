@@ -5,6 +5,7 @@ import CTABand from '../../../components/CTABand.astro';
 import { services } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
 import { business } from '../../../data/business';
+import ServiceIcon from '../../../components/ServiceIcon.astro';
 import { ui, serviceHref } from '../../../data/ui';
 
 const lang = 'es' as const;
@@ -26,7 +27,7 @@ const description = 'Conozca nuestros servicios en Florida: limpieza de ductos d
  const es = serviceEsContent[s.slug];
  return (
  <a href={serviceHref(lang, s.slug)} class="card service-card">
- <span class="icon" aria-hidden="true">{s.icon}</span>
+ <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
  <h3>{es.name}</h3>
  <p>{es.answer.split('. ')[0]}.</p>
  <span class="card-link">{t.learnMore} →</span>

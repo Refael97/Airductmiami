@@ -7,6 +7,7 @@ import CTABand from '../../components/CTABand.astro';
 import { cities, getCity } from '../../data/cities';
 import { services } from '../../data/services';
 import { business } from '../../data/business';
+import ServiceIcon from '../../components/ServiceIcon.astro';
 import { serviceSchema } from '../../lib/schema';
 
 export const getStaticPaths = (() => {
@@ -75,7 +76,7 @@ const altHref = `/es/areas-de-servicio/${city.slug}`;
       <div class="grid grid-3">
         {topServices.map((s) => (
           <a href={`/services/${s.slug}`} class="card service-card">
-            <span class="icon" aria-hidden="true">{s.icon}</span>
+            <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
             <h3>{s.shortName}</h3>
             <p>{s.answer.split('. ')[0]}.</p>
           </a>

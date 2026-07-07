@@ -8,6 +8,7 @@ import { services, getService } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
 import { cities } from '../../../data/cities';
 import { serviceSchema } from '../../../lib/schema';
+import ServiceIcon from '../../../components/ServiceIcon.astro';
 import { ui, serviceHref, cityHref } from '../../../data/ui';
 
 const lang = 'es' as const;
@@ -48,7 +49,7 @@ const altHref = `/services/${base.slug}`;
  <article class="section">
  <div class="container">
  <div class="service-head">
- <span class="icon-lg" aria-hidden="true">{base.icon}</span>
+ <span class="icon-lg" aria-hidden="true"><ServiceIcon slug={base.slug} size={44} /></span>
  <div>
  <span class="eyebrow">Servicio en Florida</span>
  <h1>{es.name} en Florida</h1>
@@ -132,7 +133,7 @@ const altHref = `/services/${base.slug}`;
 
 <style>
   .service-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
-  .icon-lg { font-size: 3rem; line-height: 1; }
+  .icon-lg { display: inline-flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; border-radius: 18px; background: var(--grad-cta); color: #fff; box-shadow: var(--shadow); flex-shrink: 0; }
   .service-body { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }
   .mini-card { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: 1.1rem 1.2rem; }
   .mini-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
