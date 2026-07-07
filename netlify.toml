@@ -1,4 +1,4 @@
-# Netlify configuration for Air Duct Florida (Astro static site)
+# Netlify configuration for Florida Breeze Air Duct (Astro static site)
 
 [build]
   command = "npm run build"
@@ -7,16 +7,6 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Ensure the no-trailing-slash thank-you URLs always resolve to the built pages,
-# so a form redirect (or a manually typed URL) never 404s.
-[[redirects]]
-  from = "/thank-you"
-  to = "/thank-you/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/es/gracias"
-  to = "/es/gracias/"
-  status = 301
-  force = true
+# Note: no manual trailing-slash redirects here. Netlify normalizes
+# /page <-> /page/ on its own; forced self-redirects create an infinite
+# redirect loop because rule matching ignores the trailing slash.
