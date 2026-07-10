@@ -1,0 +1,393 @@
+---
+/**
+ * Site-wide promo popup. Opens 3 seconds after page load, once per browser
+ * session (sessionStorage). Submits to a Netlify form via fetch and shows an
+ * inline success state.
+ *
+ * The offer copy lives in the OFFER block below so changing the promotion is
+ * a one-place edit. Current offer: $99 dryer vent cleaning. The site's own
+ * scam-awareness article warns readers that "$99 whole-home air duct
+ * cleaning" ads are bait, so keep any future offer consistent with the real
+ * price ranges published across the site.
+ */
+import { business } from '../data/business';
+import type { Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+}
+const { lang = 'en' } = Astro.props;
+const isEs = lang === 'es';
+
+const OFFER = {
+  en: {
+    badgeTop: 'Limited time special',
+    price: '$99',
+    badgeBottom: 'Dryer vent cleaning',
+    headline1: 'Your home could be',
+    headline2: 'breathing better',
+    headline3: 'today',
+    sub: 'Professional dryer vent cleaning for only $99.',
+    body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct.',
+    trust: ['Free estimate', 'Same-week service', 'Licensed & insured', 'Local Florida experts'],
+    name: 'Your Name',
+    phone: 'Phone Number',
+    zip: 'Zip Code',
+    cta: 'Claim my $99 special',
+    fine: 'No obligation. Free estimate. Fast response.',
+    close: 'Close',
+    successTitle: 'You got it!',
+    successBody: `We received your request. We will call you shortly to schedule your $99 dryer vent cleaning. In a hurry? Call ${business.phone}.`,
+  },
+  es: {
+    badgeTop: 'Oferta por tiempo limitado',
+    price: '$99',
+    badgeBottom: 'Limpieza de ducto de secadora',
+    headline1: 'Su casa podría',
+    headline2: 'respirar mejor',
+    headline3: 'hoy',
+    sub: 'Limpieza profesional del ducto de secadora por solo $99.',
+    body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct.',
+    trust: ['Cotización gratis', 'Servicio en la misma semana', 'Licencia y seguro', 'Expertos locales de Florida'],
+    name: 'Su nombre',
+    phone: 'Teléfono',
+    zip: 'Código postal',
+    cta: 'Quiero mi oferta de $99',
+    fine: 'Sin compromiso. Cotización gratis. Respuesta rápida.',
+    close: 'Cerrar',
+    successTitle: '¡Listo!',
+    successBody: `Recibimos su solicitud. Le llamaremos en breve para agendar su limpieza de $99. ¿Tiene prisa? Llame al ${business.phone}.`,
+  },
+}[lang];
+
+// Skip pages where a popup would compete with the page's own goal.
+const path = Astro.url.pathname;
+const excluded = ['/contact', '/es/contacto', '/thank-you', '/es/gracias', '/privacy', '/es/privacidad']
+  .some((p) => path.startsWith(p));
+
+const formName = 'popup-special';
+---
+{!excluded && (
+<div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
+  <div class="promo-card">
+    <button type="button" class="promo-close" id="promo-close" aria-label={OFFER.close}>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+
+    <div class="promo-content">
+      <div class="promo-brand">
+        <img src="/logo.svg" alt="" width="42" height="42" loading="lazy" />
+        <span class="promo-brand-word">Florida <em>Breeze</em><small>Air Duct</small></span>
+      </div>
+
+      <h2 class="promo-headline" id="promo-title">
+        {OFFER.headline1}{' '}<span class="hl">{OFFER.headline2}</span>{' '}{OFFER.headline3}
+      </h2>
+      <p class="promo-sub">{OFFER.sub}</p>
+      <p class="promo-body">{OFFER.body}</p>
+
+      <ul class="promo-trust">
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4.5"/></svg>
+          <span>{OFFER.trust[0]}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><circle cx="13" cy="12" r="7.5"/><path d="M13 8v4l2.8 1.8"/><path d="M2.5 9h4M2.5 12.5h3M2.5 16h4"/></svg>
+          <span>{OFFER.trust[1]}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3Z"/><circle cx="12" cy="10.5" r="2.2"/><path d="M8.5 16c.8-1.6 2-2.4 3.5-2.4s2.7.8 3.5 2.4"/></svg>
+          <span>{OFFER.trust[2]}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 21V9"/><path d="M12 9c-.5-3-2.5-4.8-5.5-5C7 6.5 9 8.5 12 9Z"/><path d="M12 9c.5-3 2.5-4.8 5.5-5C17 6.5 15 8.5 12 9Z"/><path d="M12 9c-3-1-5.8-.4-7.5 1.5 2.8 1 5.3.5 7.5-1.5Z"/><path d="M12 9c3-1 5.8-.4 7.5 1.5-2.8 1-5.3.5-7.5-1.5Z"/><path d="M8 21h8"/></svg>
+          <span>{OFFER.trust[3]}</span>
+        </li>
+      </ul>
+
+      <form class="promo-form" id="promo-form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value={formName} />
+        <input type="hidden" name="page" value={path} />
+        <p class="visually-hidden" aria-hidden="true">
+          <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8.2" r="3.6"/><path d="M5 20c1.3-3.2 3.7-4.8 7-4.8s5.7 1.6 7 4.8"/></svg>
+          <input type="text" name="name" placeholder={OFFER.name} required autocomplete="name" />
+        </label>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24"><path d="M6 3h4l1.5 4.5L9 9.5c1 2.5 3 4.5 5.5 5.5l2-2.5L21 14v4a2 2 0 0 1-2 2C10.7 19.4 4.6 13.3 4 5a2 2 0 0 1 2-2Z"/></svg>
+          <input type="tel" name="phone" placeholder={OFFER.phone} required autocomplete="tel" inputmode="tel" />
+        </label>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <input type="text" name="zip" placeholder={OFFER.zip} required autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" />
+        </label>
+        <button type="submit" class="promo-cta">
+          {OFFER.cta}
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="promo-fine">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>
+          {OFFER.fine}
+        </p>
+      </form>
+
+      <div class="promo-success" id="promo-success" hidden>
+        <svg viewBox="0 0 24 24" width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.8 2.8L16.5 9"/></svg>
+        <h3>{OFFER.successTitle}</h3>
+        <p>{OFFER.successBody}</p>
+      </div>
+    </div>
+
+    <div class="promo-visual" aria-hidden="true">
+      <span class="swirl s1"></span>
+      <span class="swirl s2"></span>
+      <span class="swirl s3"></span>
+      <div class="promo-badge">
+        <span class="badge-top">{OFFER.badgeTop}</span>
+        <span class="badge-price">{OFFER.price}</span>
+        <span class="badge-bottom">{OFFER.badgeBottom}</span>
+      </div>
+    </div>
+  </div>
+</div>
+)}
+
+<style>
+  .promo-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem;
+    background: rgba(6, 26, 43, 0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .promo-overlay[hidden] { display: none; }
+
+  .promo-card {
+    position: relative;
+    display: grid; grid-template-columns: 1.25fr 1fr;
+    width: min(880px, 100%);
+    max-height: min(92vh, 720px);
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(4, 20, 35, 0.5);
+    animation: promo-pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.15);
+  }
+  @keyframes promo-pop {
+    from { opacity: 0; transform: translateY(18px) scale(0.97); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .promo-card { animation: none; }
+  }
+
+  .promo-close {
+    position: absolute; top: 0.9rem; right: 0.9rem; z-index: 3;
+    width: 2.4rem; height: 2.4rem;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 255, 255, 0.9); color: var(--c-ink);
+    border: none; border-radius: 50%; cursor: pointer;
+    box-shadow: var(--shadow-sm);
+  }
+  .promo-close:hover { color: var(--c-primary); }
+
+  .promo-content {
+    padding: 2rem 2.2rem;
+    overflow-y: auto;
+  }
+  .promo-brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
+  .promo-brand-word {
+    display: flex; flex-direction: column; line-height: 1.05;
+    font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--c-ink);
+  }
+  .promo-brand-word em { font-style: normal; color: var(--c-primary); display: inline; }
+  .promo-brand-word small {
+    font-family: var(--font-body, inherit); font-weight: 700; font-size: 0.62rem;
+    letter-spacing: 0.28em; text-transform: uppercase; color: var(--c-muted);
+  }
+
+  .promo-headline {
+    font-family: inherit; font-weight: 800; text-transform: uppercase;
+    font-size: clamp(1.45rem, 3.2vw, 1.9rem); line-height: 1.12;
+    color: var(--c-ink); letter-spacing: 0.01em; margin: 0 0 0.7rem;
+  }
+  .promo-headline .hl { color: var(--c-primary); }
+  .promo-sub { font-weight: 700; color: var(--c-ink); margin: 0 0 0.4rem; }
+  .promo-body { color: var(--c-body); font-size: 0.95rem; margin: 0 0 1.1rem; }
+
+  .promo-trust {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem;
+    list-style: none; padding: 0.9rem 0; margin: 0 0 1.2rem;
+    border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+  }
+  .promo-trust li {
+    display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+    text-align: center; font-size: 0.68rem; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--c-ink);
+  }
+  .promo-trust svg {
+    width: 30px; height: 30px; fill: none; stroke: var(--c-primary);
+    stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .promo-form { display: grid; gap: 0.7rem; }
+  .promo-field {
+    display: flex; align-items: center; gap: 0.6rem;
+    border: 1px solid var(--c-line); border-radius: 12px;
+    padding: 0 0.9rem; background: #fff;
+  }
+  .promo-field:focus-within { border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(14, 134, 202, 0.12); }
+  .promo-field svg {
+    width: 19px; height: 19px; flex-shrink: 0;
+    fill: none; stroke: var(--c-muted); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+  }
+  .promo-field input {
+    width: 100%; border: none; outline: none; background: transparent;
+    padding: 0.78rem 0; font: inherit; font-size: 0.95rem; color: var(--c-ink);
+  }
+
+  .promo-cta {
+    display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+    width: 100%; padding: 0.95rem 1rem; margin-top: 0.2rem;
+    background: var(--grad-cta); color: #fff;
+    border: none; border-radius: 14px; cursor: pointer;
+    font: inherit; font-weight: 800; font-size: 1.02rem; text-transform: uppercase; letter-spacing: 0.03em;
+    box-shadow: 0 10px 24px rgba(18, 204, 178, 0.35);
+    transition: transform 0.12s ease, box-shadow 0.2s ease;
+  }
+  .promo-cta:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(18, 204, 178, 0.45); }
+  .promo-cta:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+  .promo-fine {
+    display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+    margin: 0.4rem 0 0; font-size: 0.8rem; color: var(--c-muted);
+  }
+
+  .promo-success { text-align: center; padding: 2rem 0.5rem; color: var(--c-ink); }
+  .promo-success svg { stroke: var(--c-accent); margin-bottom: 0.6rem; }
+  .promo-success h3 { font-size: 1.4rem; margin: 0 0 0.5rem; }
+  .promo-success p { color: var(--c-body); margin: 0; }
+
+  /* Right visual panel */
+  .promo-visual {
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    background:
+      radial-gradient(120% 90% at 80% 10%, rgba(255, 255, 255, 0.25), transparent 55%),
+      linear-gradient(160deg, #0e86ca 0%, #0b3f66 55%, #0b2740 100%);
+  }
+  .swirl {
+    position: absolute; border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    border-right-color: transparent; border-top-color: transparent;
+    transform: rotate(-25deg);
+  }
+  .s1 { width: 240px; height: 240px; top: -70px; right: -60px; }
+  .s2 { width: 340px; height: 340px; bottom: -120px; left: -100px; border-width: 3px; }
+  .s3 { width: 130px; height: 130px; top: 46%; right: -40px; }
+
+  .promo-badge {
+    position: relative; z-index: 1;
+    width: 230px; height: 230px; border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; gap: 0.15rem; padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.22), 0 22px 45px rgba(4, 20, 35, 0.45);
+  }
+  .badge-top {
+    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--c-accent);
+  }
+  .badge-price {
+    font-size: 4.2rem; font-weight: 800; line-height: 1; color: var(--c-primary);
+    letter-spacing: -0.02em;
+  }
+  .badge-bottom {
+    font-size: 0.82rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--c-ink);
+    border-top: 2px solid var(--c-line); padding-top: 0.45rem; margin-top: 0.3rem;
+  }
+
+  @media (max-width: 760px) {
+    .promo-overlay { padding: 0.7rem; align-items: flex-start; }
+    .promo-card {
+      grid-template-columns: 1fr;
+      max-height: 94vh;
+      margin-top: max(2vh, 0.5rem);
+    }
+    .promo-visual { order: -1; min-height: 205px; padding: 1.4rem 0; }
+    .promo-badge { width: 165px; height: 165px; padding: 0.8rem; }
+    .badge-price { font-size: 2.7rem; }
+    .badge-top { font-size: 0.56rem; }
+    .badge-bottom { font-size: 0.6rem; padding-top: 0.3rem; }
+    .promo-content { padding: 1.3rem 1.2rem 1.6rem; }
+    .promo-trust { grid-template-columns: repeat(4, 1fr); gap: 0.2rem; }
+    .promo-trust li { font-size: 0.58rem; }
+    .promo-trust svg { width: 24px; height: 24px; }
+    .promo-headline { font-size: 1.3rem; }
+  }
+</style>
+
+<script>
+  const overlay = document.getElementById('promo-overlay');
+  if (overlay) {
+    const KEY = 'fbPromoShown';
+    const closeBtn = document.getElementById('promo-close');
+    const form = document.getElementById('promo-form') as HTMLFormElement | null;
+    const success = document.getElementById('promo-success');
+
+    const close = () => {
+      overlay.hidden = true;
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') close();
+    };
+
+    try {
+      if (!sessionStorage.getItem(KEY)) {
+        setTimeout(() => {
+          sessionStorage.setItem(KEY, '1');
+          overlay.hidden = false;
+          document.body.style.overflow = 'hidden';
+          document.addEventListener('keydown', onKey);
+          (closeBtn as HTMLElement | null)?.focus();
+        }, 3000);
+      }
+    } catch {
+      /* sessionStorage unavailable (private mode edge cases): skip the popup */
+    }
+
+    closeBtn?.addEventListener('click', close);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) close();
+    });
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+      if (btn) btn.disabled = true;
+      try {
+        const data = new FormData(form);
+        const body = new URLSearchParams(data as unknown as Record<string, string>).toString();
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        if (success) success.hidden = false;
+      } catch {
+        // Network hiccup: fall back to a normal POST so the lead is not lost.
+        form.submit();
+      } finally {
+        if (btn) btn.disabled = false;
+      }
+    });
+  }
+</script>
