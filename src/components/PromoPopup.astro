@@ -197,6 +197,8 @@ const formName = 'popup-special';
   .promo-content {
     padding: 1.5rem 2.2rem 1.6rem;
     overflow-y: auto;
+    min-height: 0;
+    -webkit-overflow-scrolling: touch;
   }
   .promo-brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; }
   .promo-brand-word {
@@ -316,7 +318,10 @@ const formName = 'popup-special';
     .promo-overlay { padding: 0.7rem; align-items: flex-start; }
     .promo-card {
       grid-template-columns: 1fr;
-      max-height: 94vh;
+      /* Visual banner keeps its natural height; the content row is capped so
+         it scrolls inside the card instead of being clipped on short screens. */
+      grid-template-rows: auto minmax(0, 1fr);
+      max-height: 94dvh;
       margin-top: max(2vh, 0.5rem);
     }
     .promo-visual { order: -1; min-height: 205px; padding: 1.4rem 0; }
