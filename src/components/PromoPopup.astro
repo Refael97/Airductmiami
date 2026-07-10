@@ -28,13 +28,13 @@ const OFFER = {
     headline2: 'breathing better',
     headline3: 'today',
     sub: 'Professional dryer vent cleaning for only $99.',
-    body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct.',
+    body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct. The special covers one dryer exhaust vent, cleaned end to end with an airflow test included.',
     trust: ['Free estimate', 'Same-week service', 'Licensed & insured', 'Local Florida experts'],
     name: 'Your Name',
     phone: 'Phone Number',
     zip: 'Zip Code',
     cta: 'Claim my $99 special',
-    fine: 'No obligation. Free estimate. Fast response.',
+    fine: 'No obligation. Free estimate. Price applies to one dryer vent.',
     close: 'Close',
     successTitle: 'You got it!',
     successBody: `We received your request. We will call you shortly to schedule your $99 dryer vent cleaning. In a hurry? Call ${business.phone}.`,
@@ -47,13 +47,13 @@ const OFFER = {
     headline2: 'respirar mejor',
     headline3: 'hoy',
     sub: 'Limpieza profesional del ducto de secadora por solo $99.',
-    body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct.',
+    body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct. La oferta cubre un ducto de secadora, limpiado de punta a punta con prueba de flujo de aire incluida.',
     trust: ['Cotización gratis', 'Servicio en la misma semana', 'Licencia y seguro', 'Expertos locales de Florida'],
     name: 'Su nombre',
     phone: 'Teléfono',
     zip: 'Código postal',
     cta: 'Quiero mi oferta de $99',
-    fine: 'Sin compromiso. Cotización gratis. Respuesta rápida.',
+    fine: 'Sin compromiso. Cotización gratis. Aplica a un ducto de secadora.',
     close: 'Cerrar',
     successTitle: '¡Listo!',
     successBody: `Recibimos su solicitud. Le llamaremos en breve para agendar su limpieza de $99. ¿Tiene prisa? Llame al ${business.phone}.`,
@@ -195,10 +195,10 @@ const formName = 'popup-special';
   .promo-close:hover { color: var(--c-primary); }
 
   .promo-content {
-    padding: 2rem 2.2rem;
+    padding: 1.5rem 2.2rem 1.6rem;
     overflow-y: auto;
   }
-  .promo-brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
+  .promo-brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; }
   .promo-brand-word {
     display: flex; flex-direction: column; line-height: 1.05;
     font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--c-ink);
@@ -215,12 +215,12 @@ const formName = 'popup-special';
     color: var(--c-ink); letter-spacing: 0.01em; margin: 0 0 0.7rem;
   }
   .promo-headline .hl { color: var(--c-primary); }
-  .promo-sub { font-weight: 700; color: var(--c-ink); margin: 0 0 0.4rem; }
-  .promo-body { color: var(--c-body); font-size: 0.95rem; margin: 0 0 1.1rem; }
+  .promo-sub { font-weight: 700; color: var(--c-ink); margin: 0 0 0.35rem; }
+  .promo-body { color: var(--c-body); font-size: 0.9rem; line-height: 1.5; margin: 0 0 0.8rem; }
 
   .promo-trust {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem;
-    list-style: none; padding: 0.9rem 0; margin: 0 0 1.2rem;
+    list-style: none; padding: 0.7rem 0; margin: 0 0 0.9rem;
     border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
   }
   .promo-trust li {
@@ -233,7 +233,7 @@ const formName = 'popup-special';
     stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
   }
 
-  .promo-form { display: grid; gap: 0.7rem; }
+  .promo-form { display: grid; gap: 0.6rem; }
   .promo-field {
     display: flex; align-items: center; gap: 0.6rem;
     border: 1px solid var(--c-line); border-radius: 12px;
@@ -246,7 +246,7 @@ const formName = 'popup-special';
   }
   .promo-field input {
     width: 100%; border: none; outline: none; background: transparent;
-    padding: 0.78rem 0; font: inherit; font-size: 0.95rem; color: var(--c-ink);
+    padding: 0.68rem 0; font: inherit; font-size: 0.95rem; color: var(--c-ink);
   }
 
   .promo-cta {
@@ -263,8 +263,9 @@ const formName = 'popup-special';
 
   .promo-fine {
     display: flex; align-items: center; justify-content: center; gap: 0.4rem;
-    margin: 0.4rem 0 0; font-size: 0.8rem; color: var(--c-muted);
+    margin: 0.4rem 0 0; font-size: 0.76rem; color: var(--c-muted); text-align: center;
   }
+  .promo-fine svg { flex-shrink: 0; }
 
   .promo-success { text-align: center; padding: 2rem 0.5rem; color: var(--c-ink); }
   .promo-success svg { stroke: var(--c-accent); margin-bottom: 0.6rem; }
