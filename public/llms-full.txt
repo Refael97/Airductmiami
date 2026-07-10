@@ -23,6 +23,7 @@
 ## Services (EN /services/{slug} · ES /es/servicios/{slug})
 - /services/air-duct-cleaning | /es/servicios/air-duct-cleaning
 - /services/dryer-vent-cleaning | /es/servicios/dryer-vent-cleaning
+- /services/dryer-vent-installation | /es/servicios/dryer-vent-installation
 - /services/hvac-cleaning | /es/servicios/hvac-cleaning
 - /services/air-duct-repair | /es/servicios/air-duct-repair
 - /services/mold-remediation | /es/servicios/mold-remediation
@@ -31,6 +32,11 @@
 - /services/uv-light-installation | /es/servicios/uv-light-installation
 - /services/indoor-air-quality-testing | /es/servicios/indoor-air-quality-testing
 - /services/attic-insulation | /es/servicios/attic-insulation
+
+## Regional guides
+- /service-areas/south-florida | /es/areas-de-servicio/sur-de-florida
+- /service-areas/broward-county | /es/areas-de-servicio/condado-de-broward
+- /service-areas/palm-beach-county | /es/areas-de-servicio/condado-de-palm-beach
 
 ## Service areas (EN /service-areas/{slug} · ES /es/areas-de-servicio/{slug})
 - miami

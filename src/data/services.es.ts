@@ -94,6 +94,45 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  { question: 'Cuánto cuesta la limpieza del ducto de secadora en Florida?', answer: 'La mayoría de las casas paga entre $100 y $200, según la longitud y la complejidad del tramo del ducto.' },
  ],
  },
+ 'dryer-vent-installation': {
+ name: 'Instalación de Ducto de Secadora',
+ shortName: 'Instalación de Ducto de Secadora',
+ metaTitle: 'Instalación de Ducto de Secadora en Florida | Ductos Nuevos y Reubicación',
+ metaDescription:
+ 'Instalación profesional de ductos de secadora en toda Florida. Ducto de metal rígido, salidas seguras por pared o techo y reparación de tramos aplastados o con fugas. Cotización gratis.',
+ answer:
+ 'La instalación del ducto de secadora es el diseño y montaje profesional del conducto de escape que lleva el aire caliente y húmedo desde su secadora hasta el exterior de la casa. Una instalación correcta usa ducto de metal rígido en la ruta más corta posible, con una salida exterior adecuada. Mantiene el secado rápido, previene incendios por pelusa y en Florida suele costar entre $200 y $600 según la ruta.',
+ intro: [
+ 'Una secadora es tan segura como el ducto que tiene detrás. Manguera plástica flexible, tramos largos hacia el techo con demasiados codos y salidas cubiertas con malla son de los problemas más comunes que encontramos en los cuartos de lavado de Florida, y cada uno de ellos alarga el secado y aumenta el riesgo de incendio.',
+ 'Instalamos y reubicamos ductos de secadora conforme al código mecánico vigente: ducto de metal rígido o semirrígido, uniones selladas con cinta de aluminio en lugar de tornillos que atrapan pelusa, un tramo total dentro de la longitud equivalente permitida y una salida exterior con campana y compuerta funcional que bloquea la lluvia y las plagas.',
+ 'El servicio cubre instalaciones nuevas para cuartos de lavado y remodelaciones, reemplazo de ductos inseguros de plástico o aluminio flexible, reubicación de tramos largos o aplastados y reparación de ductos desconectados ocultos en paredes, áticos y garajes. Cada trabajo termina con una prueba de flujo de aire para que usted vea el resultado.',
+ ],
+ benefits: [
+ { title: 'Menor riesgo de incendio', text: 'Un ducto de metal rígido y liso en una ruta corta no le deja lugar a la pelusa para acumularse, y así se elimina la causa principal de incendios de secadora.' },
+ { title: 'Secado en un solo ciclo', text: 'Un tramo bien dimensionado y sellado recupera todo el flujo de aire, la ropa se seca en un ciclo y la secadora deja de recalentarse.' },
+ { title: 'Trabajo conforme al código', text: 'Los materiales, la longitud y la salida cumplen el código mecánico vigente, algo que importa para el seguro y para la venta de la casa.' },
+ { title: 'Sin daños por humedad', text: 'Un tramo sellado que termina en el exterior mantiene el aire caliente y húmedo fuera de sus paredes y su ático, donde alimenta el moho.' },
+ ],
+ process: [
+ { title: 'Planeación de la ruta', text: 'Medimos el espacio y elegimos la ruta más corta posible hacia una pared exterior o, cuando hace falta, hacia el techo.' },
+ { title: 'Instalación del ducto', text: 'El ducto de metal rígido se corta, se ajusta y se sella con cinta de aluminio, con la menor cantidad de codos posible.' },
+ { title: 'Salida exterior', text: 'Instalamos una campana de ventilación con compuerta de giro libre y sellamos la penetración contra el clima.' },
+ { title: 'Verificación del flujo', text: 'Una prueba final de flujo de aire confirma que el tramo nuevo mueve el aire como lo especifica el fabricante de la secadora.' },
+ ],
+ quickFacts: [
+ { label: 'Precio típico', value: '$200 a $600' },
+ { label: 'Longitud equivalente máxima', value: 'Unos 35 pies, menos 5 por codo' },
+ { label: 'Tiempo en sitio', value: '1 a 3 horas' },
+ { label: 'Material recomendado', value: 'Ducto de metal rígido' },
+ ],
+ faq: [
+ { question: 'Cuánto cuesta instalar un ducto de secadora en Florida?', answer: 'La mayoría de las instalaciones cuesta entre $200 y $600. Una salida corta por la pared queda en el extremo bajo, mientras que reubicar un tramo largo hacia el techo o abrir paredes para reemplazar ducto oculto cuesta más. Le damos el precio completo por adelantado.' },
+ { question: 'Puede un ducto de secadora salir por el techo?', answer: 'Sí. Las salidas por el techo son comunes en casas de Florida donde no hay una pared exterior cerca del cuarto de lavado. Funcionan, pero el tramo más largo atrapa pelusa más rápido, así que conviene limpiarlo al menos una vez al año.' },
+ { question: 'Quién instala ductos de secadora?', answer: 'Especialistas en ductos de aire y de secadora como nuestro equipo se encargan de la instalación, la reubicación y la reparación. El trabajo involucra código mecánico, seguridad contra incendios y penetraciones en techo o pared, así que no es un trabajo típico de mantenimiento general.' },
+ { question: 'Qué tipo de ducto exige el código para la secadora?', answer: 'Ducto de metal rígido o semirrígido. La manguera flexible de plástico o de aluminio tipo acordeón no cumple el código en tramos ocultos porque atrapa pelusa, se cuelga y puede encenderse.' },
+ { question: 'Cómo sé si mi ducto actual necesita reemplazo?', answer: 'Manguera de plástico o de aluminio en cualquier parte del tramo, ropa que necesita dos ciclos, un cuarto de lavado caliente o un ducto visiblemente aplastado detrás de la secadora son señales de que el tramo debe reemplazarse o reubicarse.' },
+ ],
+ },
  'hvac-cleaning': {
  name: 'Limpieza del Aire Acondicionado (Sistema HVAC)',
  shortName: 'Limpieza de AC',

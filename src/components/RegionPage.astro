@@ -1,0 +1,130 @@
+---
+/**
+ * Shared template for the regional (multi-city) landing pages driven by
+ * src/data/regions.ts. Rendered once per region per language from thin pages
+ * under /service-areas/ and /es/areas-de-servicio/.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import FAQ from './FAQ.astro';
+import CTABand from './CTABand.astro';
+import ServiceIcon from './ServiceIcon.astro';
+import { services } from '../data/services';
+import { serviceEsContent } from '../data/services.es';
+import { regionPages, citiesForRegionPage, type RegionPageContent } from '../data/regions';
+import { serviceSchema } from '../lib/schema';
+import { ui, serviceHref, cityHref, type Locale } from '../data/ui';
+
+interface Props {
+  region: RegionPageContent;
+  lang: Locale;
+}
+const { region, lang } = Astro.props;
+const t = ui[lang];
+const isEs = lang === 'es';
+
+const name = isEs ? region.esName : region.name;
+const metaTitle = isEs ? region.esMetaTitle : region.metaTitle;
+const metaDescription = isEs ? region.esMetaDescription : region.metaDescription;
+const answer = isEs ? region.esAnswer : region.answer;
+const body = isEs ? region.esBody : region.body;
+const faqItems = isEs ? region.esFaq : region.faq;
+
+const path = isEs ? `/es/areas-de-servicio/${region.esSlug}` : `/service-areas/${region.slug}`;
+const altHref = isEs ? `/service-areas/${region.slug}` : `/es/areas-de-servicio/${region.esSlug}`;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const h1 = isEs ? `Limpieza de ductos en ${name}` : `Air Duct Cleaning in ${name}`;
+const schema = serviceSchema(site, {
+  name: h1,
+  description: metaDescription,
+  url: `${site}${path}`,
+  slug: region.slug,
+});
+
+const regionCities = citiesForRegionPage(region);
+const otherRegions = regionPages.filter((r) => r.slug !== region.slug);
+const topServices = services.slice(0, 6);
+---
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema} lang={lang} altHref={altHref}>
+  <Breadcrumbs
+    crumbs={[
+      { name: t.breadcrumbHome, href: t.home },
+      { name: t.nav[1].label, href: t.serviceAreas },
+      { name, href: path },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Florida</span>
+        <h1>{h1}</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">{isEs ? `Atendemos ${name}` : `Serving ${name}`}</span>
+        <p>{answer}</p>
+      </div>
+
+      <div class="prose">
+        {body.map((p) => <p>{p}</p>)}
+
+        <h2>{isEs ? `Servicios de ductos y aire acondicionado en ${name}` : `Air Duct & HVAC Services in ${name}`}</h2>
+      </div>
+
+      <div class="grid grid-3">
+        {topServices.map((s) => {
+          const label = isEs ? serviceEsContent[s.slug]?.shortName ?? s.shortName : s.shortName;
+          const blurb = isEs ? serviceEsContent[s.slug]?.answer ?? s.answer : s.answer;
+          return (
+            <a href={serviceHref(lang, s.slug)} class="card service-card">
+              <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
+              <h3>{label}</h3>
+              <p>{blurb.split('. ')[0]}.</p>
+            </a>
+          );
+        })}
+      </div>
+      <p style="margin-top:1rem;"><a href={t.services} class="btn btn-outline">{isEs ? 'Ver todos los servicios →' : 'See all services →'}</a></p>
+
+      <div class="cities-block">
+        <h2>{isEs ? `Ciudades que atendemos en ${name}` : `Cities We Serve in ${name}`}</h2>
+        <div class="city-chips">
+          {regionCities.map((c) => (<a href={cityHref(lang, c.slug)} class="chip">{c.name}</a>))}
+          <a href={t.serviceAreas} class="chip chip-all">{t.allAreas} →</a>
+        </div>
+      </div>
+
+      <FAQ items={faqItems} title={isEs ? `Limpieza de ductos en ${name}: preguntas frecuentes` : `Air Duct Cleaning in ${name}: FAQs`} />
+
+      <div class="other-regions">
+        <h2>{isEs ? 'Otras guías regionales' : 'More Regional Guides'}</h2>
+        <div class="city-chips">
+          {otherRegions.map((r) => (
+            <a href={isEs ? `/es/areas-de-servicio/${r.esSlug}` : `/service-areas/${r.slug}`} class="chip">
+              {isEs ? r.esName : r.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTABand lang={lang} heading={isEs ? `¿Limpieza de ductos en ${name}? Estamos listos para ayudar.` : `Air duct cleaning in ${name}? We're ready to help.`} />
+</BaseLayout>
+
+<style>
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card h3 { color: var(--c-ink); font-size: 1.1rem; }
+  .service-card p { color: var(--c-body); font-size: 0.9rem; margin: 0; }
+  .cities-block, .other-regions { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .chip-all { background: var(--c-primary); color: #fff; border-color: var(--c-primary); }
+</style>

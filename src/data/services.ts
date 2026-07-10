@@ -112,7 +112,49 @@ export const services: Service[] = [
       { question: 'Can a clogged dryer vent really cause a fire?', answer: 'Yes. Lint is highly flammable and restricted airflow makes the dryer overheat; clogged vents cause thousands of house fires every year.' },
       { question: 'How much does dryer vent cleaning cost in Florida?', answer: 'Most homes pay $100 to $200, depending on the length and complexity of the vent run.' },
     ],
-    related: ['air-duct-cleaning', 'commercial-air-duct-cleaning', 'indoor-air-quality-testing'],
+    related: ['air-duct-cleaning', 'dryer-vent-installation', 'indoor-air-quality-testing'],
+  },
+  {
+    slug: 'dryer-vent-installation',
+    name: 'Dryer Vent Installation',
+    shortName: 'Dryer Vent Installation',
+    icon: '🛠️',
+    metaTitle: 'Dryer Vent Installation in Florida | New Vents, Rerouting & Repair',
+    metaDescription:
+      'Professional dryer vent installation and rerouting across Florida. Rigid metal ducting, safe wall or roof terminations, and repair of crushed or leaking runs. Free quotes, same-week service.',
+    answer:
+      'Dryer vent installation is the professional design and fitting of the exhaust duct that carries hot, moist air from your clothes dryer to the outside of your home. A correct installation uses rigid metal ducting on the shortest practical route with a proper exterior termination, keeps drying fast, prevents lint fires, and typically costs $200 to $600 in Florida depending on the route.',
+    intro: [
+      'A dryer is only as safe as the duct behind it. Flexible plastic hose, long roof runs with too many elbows, and screened vent covers are some of the most common problems we find in Florida laundry rooms, and every one of them slows drying and raises fire risk.',
+      'We install and reroute dryer vents to current mechanical code: rigid or semi-rigid metal ducting, joints sealed with foil tape instead of screws that snag lint, a total run within the allowed equivalent length, and a hooded exterior termination with a working damper that keeps out rain and pests.',
+      'The service covers new installations for laundry rooms and remodels, replacement of unsafe plastic or foil ducting, rerouting long or crushed runs, and repair of disconnected ducts hidden in walls, attics, and garages. Every job ends with an airflow test so you can see the result.',
+    ],
+    benefits: [
+      { title: 'Lower fire risk', text: 'Smooth rigid metal duct on a short route gives lint nowhere to build up, removing the main cause of dryer fires.' },
+      { title: 'One-cycle drying', text: 'A properly sized, sealed run restores full airflow, so clothes dry in one cycle and the dryer stops overheating.' },
+      { title: 'Code-compliant work', text: 'Materials, length, and termination all follow current mechanical code, which matters for insurance and home sales.' },
+      { title: 'No moisture damage', text: 'A sealed run that terminates outdoors keeps hot, humid exhaust out of your walls and attic, where it feeds mold.' },
+    ],
+    process: [
+      { title: 'Route planning', text: 'We measure the space and choose the shortest practical route to an exterior wall or, when needed, the roof.' },
+      { title: 'Ducting installation', text: 'Rigid metal duct is cut, fitted, and sealed with foil tape, with elbows kept to a minimum.' },
+      { title: 'Exterior termination', text: 'We install a hooded vent cover with a free-swinging damper and weather-seal the penetration.' },
+      { title: 'Airflow verification', text: 'A final airflow test confirms the new run moves air the way the dryer manufacturer intended.' },
+    ],
+    quickFacts: [
+      { label: 'Typical price', value: '$200 to $600' },
+      { label: 'Max equivalent length', value: 'About 35 feet, minus 5 per elbow' },
+      { label: 'Time on site', value: '1 to 3 hours' },
+      { label: 'Recommended material', value: 'Rigid metal ducting' },
+    ],
+    faq: [
+      { question: 'How much does dryer vent installation cost in Florida?', answer: 'Most installations run $200 to $600. A short wall vent sits at the low end, while rerouting a long roof run or opening walls to replace hidden ducting costs more. We quote the full price up front.' },
+      { question: 'Can a dryer vent go through the roof?', answer: 'Yes, roof terminations are common in Florida homes where no exterior wall is close to the laundry. They work, but the longer run traps lint faster, so plan on cleaning at least once a year.' },
+      { question: 'Who installs dryer vents?', answer: 'Air duct and dryer vent specialists like our team handle installation, rerouting, and repair. The work involves mechanical code, fire safety, and roof or wall penetrations, so it is not a typical handyman job.' },
+      { question: 'What kind of duct is code for a dryer vent?', answer: 'Rigid or semi-rigid metal duct. Flexible plastic and foil accordion hose are not code-compliant for concealed runs because they trap lint, sag, and can ignite.' },
+      { question: 'How do I know my current vent needs replacing?', answer: 'Plastic or foil hose anywhere in the run, clothes that need two cycles, a hot laundry room, or visible crushing behind the dryer are all signs the run should be replaced or rerouted.' },
+    ],
+    related: ['dryer-vent-cleaning', 'air-duct-repair', 'attic-insulation'],
   },
   {
     slug: 'hvac-cleaning',

@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABand from '../../components/CTABand.astro';
 import { cities, citiesByRegion } from '../../data/cities';
+import { regionPages } from '../../data/regions';
 import { business } from '../../data/business';
 
 const title = `Florida Service Areas | Air Duct Cleaning Near You`;
@@ -17,6 +18,12 @@ const regions = citiesByRegion();
         <span class="eyebrow">Statewide coverage</span>
         <h1>Air Duct Cleaning Service Areas in Florida</h1>
         <p class="lead">We proudly serve homeowners and businesses in {cities.length}+ cities across Florida. Select your city for local air duct and dryer vent services.</p>
+      </div>
+      <div class="region-guides">
+        <span class="guides-label">Regional guides:</span>
+        {regionPages.map((r) => (
+          <a href={`/service-areas/${r.slug}`} class="chip">{r.name}</a>
+        ))}
       </div>
       {Object.entries(regions).map(([region, list]) => (
         <div class="region-block">
@@ -37,6 +44,13 @@ const regions = citiesByRegion();
 </BaseLayout>
 
 <style>
+  .region-guides { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 2.2rem; }
+  .guides-label { font-weight: 700; color: var(--c-muted); font-size: 0.9rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
   .region-block { margin-bottom: 2.5rem; }
   .region-block h2 { border-bottom: 2px solid var(--c-line); padding-bottom: 0.5rem; }
   .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.9rem; }

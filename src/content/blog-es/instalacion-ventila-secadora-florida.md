@@ -64,4 +64,4 @@ Un profesional puede evaluar su instalación durante una [limpieza de la ventila
 
 ## Lo esencial
 
-Un buen trazado de la ventila del secador es corto, recto, de metal rígido y con salida bien protegida. La pared exterior suele ganarle al techo, y el metal siempre le gana al plástico. Si su secador tarda por más que lo limpie, o no sabe qué tiene instalado, [comuníquese con nosotros](/es/contacto) para revisar el trazado y dejarlo seguro.
+Un buen trazado de la ventila del secador es corto, recto, de metal rígido y con salida bien protegida. La pared exterior suele ganarle al techo, y el metal siempre le gana al plástico. Nuestro servicio de [instalación de ducto de secadora](/es/servicios/dryer-vent-installation/) cubre instalaciones nuevas, reubicaciones y reemplazo de ductos inseguros en toda Florida. Si su secador tarda por más que lo limpie, o no sabe qué tiene instalado, [comuníquese con nosotros](/es/contacto) para revisar el trazado y dejarlo seguro.

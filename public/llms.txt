@@ -11,6 +11,7 @@ Key facts:
 ## Services
 - [Air Duct Cleaning](/services/air-duct-cleaning): Source-removal (negative-air) cleaning of HVAC ductwork.
 - [Dryer Vent Cleaning](/services/dryer-vent-cleaning): Removes flammable lint to prevent fires and speed drying.
+- [Dryer Vent Installation](/services/dryer-vent-installation): New vents, rerouting, and replacement of unsafe ducting ($200 to $600).
 - [HVAC System Cleaning](/services/hvac-cleaning): Cleans the evaporator coil, blower, air handler, and drain line.
 - [Air Duct Repair & Replacement](/services/air-duct-repair): Seals leaks and replaces damaged ductwork.
 - [Air Duct Mold Remediation](/services/mold-remediation): Identifies, removes, and prevents duct/HVAC mold.
@@ -24,6 +25,9 @@ Key facts:
 - [Home](/)
 - [All Services](/services)
 - [Service Areas (all Florida cities)](/service-areas)
+- [South Florida (tri-county)](/service-areas/south-florida)
+- [Broward County](/service-areas/broward-county)
+- [Palm Beach County](/service-areas/palm-beach-county)
 - [Blog & Guides](/blog)
 - [FAQ](/faq)
 - [About](/about)

@@ -7,6 +7,10 @@ category: "Mold & Humidity"
 tags: ["uv light", "uv-c", "coil", "mold prevention", "florida"]
 featured: false
 faq:
+  - question: "Does a UV light kill mold?"
+    answer: "Yes. UV-C light destroys the DNA of mold spores on surfaces it shines on directly and continuously, which is why a lamp mounted at the AC coil keeps that surface mold free. It does not remove existing mold colonies deeper in the ducts, which need physical cleaning."
+  - question: "Will a UV light kill black mold?"
+    answer: "UV-C kills black mold spores the same way it kills other mold, but only on directly lit surfaces. Established black mold growth inside ductwork should be physically removed with source-removal cleaning first, then a UV light helps prevent regrowth."
   - question: "Do UV lights clean the whole duct system?"
     answer: "No. A coil UV-C light disinfects the coil and the air passing directly by it, but it does not sterilize the entire length of your ductwork, so cleaning is still needed."
   - question: "How long do HVAC UV bulbs last?"

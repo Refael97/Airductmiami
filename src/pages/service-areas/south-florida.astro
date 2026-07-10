@@ -1,0 +1,6 @@
+---
+import RegionPage from '../../components/RegionPage.astro';
+import { getRegionPage } from '../../data/regions';
+const region = getRegionPage('south-florida')!;
+---
+<RegionPage region={region} lang="en" />

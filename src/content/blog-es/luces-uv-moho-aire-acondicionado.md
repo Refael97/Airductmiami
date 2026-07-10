@@ -7,6 +7,10 @@ category: "Moho y Humedad"
 tags: ["luces UV", "UV-C", "serpentina", "moho", "Florida"]
 featured: false
 faq:
+  - question: "¿La luz UV mata el moho?"
+    answer: "Sí. La luz UV-C destruye el ADN de las esporas de moho en las superficies que ilumina de manera directa y continua, por eso mantiene libre de moho la serpentina. No retira las colonias ya formadas dentro de los ductos, que necesitan limpieza física."
+  - question: "¿La luz UV mata el moho negro?"
+    answer: "La UV-C mata las esporas del moho negro igual que las de otros mohos, pero solo en superficies iluminadas directamente. El moho negro ya establecido dentro de los ductos debe retirarse primero con limpieza por extracción en la fuente, y después la luz UV ayuda a evitar que regrese."
   - question: "¿La luz UV limpia todo el aire de la casa?"
     answer: "No del todo; su mayor efecto está en la serpentina y la bandeja, donde crece el moho, no en cada partícula que pasa a gran velocidad por el ducto."
   - question: "¿Cada cuánto se cambia la lámpara UV?"

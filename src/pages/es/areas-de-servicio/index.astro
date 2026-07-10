@@ -4,6 +4,7 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import CTABand from '../../../components/CTABand.astro';
 import { cities } from '../../../data/cities';
 import { cityEsContent } from '../../../data/cities.es';
+import { regionPages } from '../../../data/regions';
 import { business } from '../../../data/business';
 import { ui, cityHref } from '../../../data/ui';
 
@@ -28,6 +29,12 @@ for (const c of cities) {
  <h1>Áreas de servicio de limpieza de ductos en Florida</h1>
  <p class="lead">Atendemos con orgullo a familias y negocios en más de {cities.length} ciudades de Florida. Elija su ciudad para ver los servicios locales de ductos y ventila del secador.</p>
  </div>
+ <div class="region-guides">
+ <span class="guides-label">Guías regionales:</span>
+ {regionPages.map((r) => (
+ <a href={`/es/areas-de-servicio/${r.esSlug}`} class="chip">{r.esName}</a>
+ ))}
+ </div>
  {Object.entries(regions).map(([region, list]) => (
  <div class="region-block">
  <h2>{region}</h2>
@@ -47,6 +54,13 @@ for (const c of cities) {
 </BaseLayout>
 
 <style>
+  .region-guides { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 2.2rem; }
+  .guides-label { font-weight: 700; color: var(--c-muted); font-size: 0.9rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
   .region-block { margin-bottom: 2.5rem; }
   .region-block h2 { border-bottom: 2px solid var(--c-line); padding-bottom: 0.5rem; }
   .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.9rem; }
