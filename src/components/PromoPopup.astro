@@ -345,10 +345,19 @@ const formName = 'popup-special';
     const form = document.getElementById('promo-form') as HTMLFormElement | null;
     const success = document.getElementById('promo-success');
 
+    const track = (name: string, params?: Record<string, string>) => {
+      try {
+        (window as any).gtag?.('event', name, params);
+      } catch {
+        /* analytics blocked: ignore */
+      }
+    };
+
     const close = () => {
       overlay.hidden = true;
       document.body.style.overflow = '';
       document.removeEventListener('keydown', onKey);
+      track('popup_close');
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') close();
@@ -362,6 +371,7 @@ const formName = 'popup-special';
           document.body.style.overflow = 'hidden';
           document.addEventListener('keydown', onKey);
           (closeBtn as HTMLElement | null)?.focus();
+          track('popup_view');
         }, 3000);
       }
     } catch {
@@ -388,6 +398,7 @@ const formName = 'popup-special';
         if (!res.ok) throw new Error(String(res.status));
         form.hidden = true;
         if (success) success.hidden = false;
+        track('generate_lead', { form_type: 'popup_special' });
       } catch {
         // Network hiccup: fall back to a normal POST so the lead is not lost.
         form.submit();
