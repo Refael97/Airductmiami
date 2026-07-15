@@ -7,6 +7,9 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Note: no manual trailing-slash redirects here. Netlify normalizes
-# /page <-> /page/ on its own; forced self-redirects create an infinite
-# redirect loop because rule matching ignores the trailing slash.
+# Note: no [[redirects]] trailing-slash rules here. Netlify's redirect
+# matcher ignores trailing slashes, so a forced /page -> /page/ rule
+# matches its own target and loops forever (this broke /thank-you/ once).
+# Trailing-slash normalization is handled by
+# netlify/edge-functions/trailing-slash.ts instead, which compares the raw
+# pathname and therefore cannot loop.

@@ -238,8 +238,8 @@ export const services: Service[] = [
   },
   {
     slug: 'mold-remediation',
-    name: 'Air Duct Mold Remediation',
-    shortName: 'Mold Remediation',
+    name: 'Air Duct Mold Removal & Remediation',
+    shortName: 'Mold Removal',
     icon: '🦠',
     metaTitle: 'Air Duct Mold Removal & Remediation in Florida',
     metaDescription:

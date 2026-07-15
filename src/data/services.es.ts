@@ -208,8 +208,8 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  ],
  },
  'mold-remediation': {
- name: 'Remediación de Moho en Conductos de Aire',
- shortName: 'Remediación de Moho',
+ name: 'Eliminación de Moho en Ductos de Aire',
+ shortName: 'Eliminación de Moho',
  metaTitle: 'Eliminación y Remediación de Moho en Conductos de Aire en Florida',
  metaDescription:
  'Remediación de moho en conductos de aire en toda Florida. Identificamos, eliminamos y prevenimos el moho en ductos y sistemas HVAC con antimicrobianos registrados por la EPA. Inspecciones gratis.',
