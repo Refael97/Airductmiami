@@ -1,5 +1,5 @@
 ---
-title: "What Is the Ideal Indoor Humidity Level in Florida?"
+title: "What Is the Ideal Indoor Humidity in Florida? The 30% to 50% Rule"
 description: "The ideal indoor humidity in Florida is 30-50%, and staying below 60% is critical to prevent mold. Here's how to hit that target year-round."
 answer: "The ideal indoor humidity level in Florida is between 30% and 50%, and keeping it below 60% at all times is essential to prevent mold growth in your home and HVAC system."
 pubDate: 2024-12-12

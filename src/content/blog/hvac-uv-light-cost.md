@@ -1,5 +1,5 @@
 ---
-title: "HVAC UV Light Cost and Is It Worth It in Florida?"
+title: "HVAC UV Light Cost in Florida: $300 to $700, and When It's Worth It"
 description: "What HVAC UV light installation costs in Florida, how UV lights fight mold and mildew, and whether they're worth it in the state's humid, year-round-AC climate."
 answer: "HVAC UV light installation in Florida typically costs $300 to $700 installed, and it's often worth it here because the state's humidity and constant AC use make coil mold and mildew a persistent problem UV light helps control."
 pubDate: 2025-05-06
