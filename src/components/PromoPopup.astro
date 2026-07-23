@@ -5,12 +5,12 @@
  * page, whichever comes first. Submits to a Netlify form via fetch and shows
  * an inline success state.
  *
- * The offer is context-aware: dryer-related pages pitch the $99 single-vent
- * special, everything else pitches $50 off a full air duct cleaning. Copy
- * lives in the OFFERS block below so changing a promotion is a one-place
- * edit. The site's own scam-awareness article warns readers that "$99
- * whole-home air duct cleaning" ads are bait, so keep any future offer
- * consistent with the real price ranges published across the site.
+ * The offer is context-aware: dryer-related pages pitch $25 off a dryer vent
+ * cleaning, everything else pitches $50 off a full air duct cleaning. Both
+ * are framed as discounts, never as a low fixed price: the site's own
+ * scam-awareness article warns readers that "$99 whole-home cleaning" ads
+ * are bait, and a cheap fixed price pattern-matches to those ads even when
+ * honest. Copy lives in the OFFERS block below, one place per promotion.
  */
 import { business } from '../data/business';
 import type { Locale } from '../data/ui';
@@ -28,24 +28,24 @@ const offerKey = /dryer|secadora|ventila/.test(path) ? 'dryer' : 'duct';
 const OFFERS = {
   dryer: {
     en: {
-      badgeTop: 'Limited time special',
-      price: '$99',
-      badgeBottom: 'Dryer vent cleaning',
-      sub: 'Professional dryer vent cleaning for only $99.',
-      body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct. The special covers one dryer exhaust vent, cleaned end to end with an airflow test included.',
-      cta: 'Claim my $99 special',
-      fine: 'No obligation. Free estimate. Price applies to one dryer vent.',
-      successBody: `We received your request. We will call you shortly to schedule your $99 dryer vent cleaning. In a hurry? Call ${business.phone}.`,
+      badgeTop: 'Limited time offer',
+      price: '$25',
+      badgeBottom: 'Off dryer vent cleaning',
+      sub: 'Get $25 off professional dryer vent cleaning.',
+      body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct. Full cleaning of the exhaust run with an airflow test included, and the discount is locked in when we call you back.',
+      cta: 'Claim my $25 off',
+      fine: 'No obligation. Free estimate. Discount applies to one dryer vent cleaning.',
+      successBody: `We received your request and your $25 discount is locked in. We will call you shortly to schedule your dryer vent cleaning. In a hurry? Call ${business.phone}.`,
     },
     es: {
       badgeTop: 'Oferta por tiempo limitado',
-      price: '$99',
-      badgeBottom: 'Limpieza de ducto de secadora',
-      sub: 'Limpieza profesional del ducto de secadora por solo $99.',
-      body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct. La oferta cubre un ducto de secadora, limpiado de punta a punta con prueba de flujo de aire incluida.',
-      cta: 'Quiero mi oferta de $99',
-      fine: 'Sin compromiso. Cotización gratis. Aplica a un ducto de secadora.',
-      successBody: `Recibimos su solicitud. Le llamaremos en breve para agendar su limpieza de $99. ¿Tiene prisa? Llame al ${business.phone}.`,
+      price: '$25',
+      badgeBottom: 'De descuento en ducto de secadora',
+      sub: 'Reciba $25 de descuento en la limpieza del ducto de secadora.',
+      body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct. Limpieza completa del tramo de escape con prueba de flujo de aire incluida, y el descuento queda asegurado cuando le llamemos.',
+      cta: 'Quiero mis $25 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a la limpieza de un ducto de secadora.',
+      successBody: `Recibimos su solicitud y su descuento de $25 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
     },
   },
   duct: {
