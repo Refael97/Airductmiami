@@ -1,14 +1,16 @@
 ---
 /**
- * Site-wide promo popup. Opens 3 seconds after page load, once per browser
- * session (sessionStorage). Submits to a Netlify form via fetch and shows an
- * inline success state.
+ * Site-wide promo popup, once per browser session (sessionStorage). Opens on
+ * engagement rather than a fixed delay: 45% scroll depth or 25 seconds on
+ * page, whichever comes first. Submits to a Netlify form via fetch and shows
+ * an inline success state.
  *
- * The offer copy lives in the OFFER block below so changing the promotion is
- * a one-place edit. Current offer: $99 dryer vent cleaning. The site's own
- * scam-awareness article warns readers that "$99 whole-home air duct
- * cleaning" ads are bait, so keep any future offer consistent with the real
- * price ranges published across the site.
+ * The offer is context-aware: dryer-related pages pitch the $99 single-vent
+ * special, everything else pitches $50 off a full air duct cleaning. Copy
+ * lives in the OFFERS block below so changing a promotion is a one-place
+ * edit. The site's own scam-awareness article warns readers that "$99
+ * whole-home air duct cleaning" ads are bait, so keep any future offer
+ * consistent with the real price ranges published across the site.
  */
 import { business } from '../data/business';
 import type { Locale } from '../data/ui';
@@ -19,49 +21,85 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const isEs = lang === 'es';
 
-const OFFER = {
+const path = Astro.url.pathname;
+/** Dryer cluster (EN 'dryer', ES 'secadora'/'ventila'): keep the $99 vent special there. */
+const offerKey = /dryer|secadora|ventila/.test(path) ? 'dryer' : 'duct';
+
+const OFFERS = {
+  dryer: {
+    en: {
+      badgeTop: 'Limited time special',
+      price: '$99',
+      badgeBottom: 'Dryer vent cleaning',
+      sub: 'Professional dryer vent cleaning for only $99.',
+      body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct. The special covers one dryer exhaust vent, cleaned end to end with an airflow test included.',
+      cta: 'Claim my $99 special',
+      fine: 'No obligation. Free estimate. Price applies to one dryer vent.',
+      successBody: `We received your request. We will call you shortly to schedule your $99 dryer vent cleaning. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$99',
+      badgeBottom: 'Limpieza de ducto de secadora',
+      sub: 'Limpieza profesional del ducto de secadora por solo $99.',
+      body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct. La oferta cubre un ducto de secadora, limpiado de punta a punta con prueba de flujo de aire incluida.',
+      cta: 'Quiero mi oferta de $99',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a un ducto de secadora.',
+      successBody: `Recibimos su solicitud. Le llamaremos en breve para agendar su limpieza de $99. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+  duct: {
+    en: {
+      badgeTop: 'Limited time offer',
+      price: '$50',
+      badgeBottom: 'Off air duct cleaning',
+      sub: 'Get $50 off a full air duct cleaning.',
+      body: 'NADCA standard source removal cleaning for your whole system, with upfront pricing before any work starts. Leave your details and the $50 discount is locked in when we call you back.',
+      cta: 'Claim my $50 off',
+      fine: 'No obligation. Free quote. Discount applies to a full single-system cleaning.',
+      successBody: `We received your request and your $50 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$50',
+      badgeBottom: 'De descuento en limpieza de ductos',
+      sub: 'Reciba $50 de descuento en la limpieza completa de ductos.',
+      body: 'Limpieza por extracción en la fuente bajo norma NADCA para todo su sistema, con precio claro antes de empezar. Deje sus datos y el descuento de $50 queda asegurado cuando le llamemos.',
+      cta: 'Quiero mis $50 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a la limpieza completa de un sistema.',
+      successBody: `Recibimos su solicitud y su descuento de $50 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+}[offerKey][lang];
+
+const SHARED = {
   en: {
-    badgeTop: 'Limited time special',
-    price: '$99',
-    badgeBottom: 'Dryer vent cleaning',
     headline1: 'Your home could be',
     headline2: 'breathing better',
     headline3: 'today',
-    sub: 'Professional dryer vent cleaning for only $99.',
-    body: 'Prevent dryer fires, cut drying time, and help your home feel fresher with Florida Breeze Air Duct. The special covers one dryer exhaust vent, cleaned end to end with an airflow test included.',
     trust: ['Free estimate', 'Same-week service', 'Licensed & insured', 'Local Florida experts'],
     name: 'Your Name',
     phone: 'Phone Number',
     zip: 'Zip Code',
-    cta: 'Claim my $99 special',
-    fine: 'No obligation. Free estimate. Price applies to one dryer vent.',
     close: 'Close',
     successTitle: 'You got it!',
-    successBody: `We received your request. We will call you shortly to schedule your $99 dryer vent cleaning. In a hurry? Call ${business.phone}.`,
   },
   es: {
-    badgeTop: 'Oferta por tiempo limitado',
-    price: '$99',
-    badgeBottom: 'Limpieza de ducto de secadora',
     headline1: 'Su casa podría',
     headline2: 'respirar mejor',
     headline3: 'hoy',
-    sub: 'Limpieza profesional del ducto de secadora por solo $99.',
-    body: 'Prevenga incendios de secadora, acorte el secado y sienta su casa más fresca con Florida Breeze Air Duct. La oferta cubre un ducto de secadora, limpiado de punta a punta con prueba de flujo de aire incluida.',
     trust: ['Cotización gratis', 'Servicio en la misma semana', 'Licencia y seguro', 'Expertos locales de Florida'],
     name: 'Su nombre',
     phone: 'Teléfono',
     zip: 'Código postal',
-    cta: 'Quiero mi oferta de $99',
-    fine: 'Sin compromiso. Cotización gratis. Aplica a un ducto de secadora.',
     close: 'Cerrar',
     successTitle: '¡Listo!',
-    successBody: `Recibimos su solicitud. Le llamaremos en breve para agendar su limpieza de $99. ¿Tiene prisa? Llame al ${business.phone}.`,
   },
 }[lang];
 
+const OFFER = { ...SHARED, ...OFFERS };
+
 // Skip pages where a popup would compete with the page's own goal.
-const path = Astro.url.pathname;
 const excluded = ['/contact', '/es/contacto', '/thank-you', '/es/gracias', '/privacy', '/es/privacidad']
   .some((p) => path.startsWith(p));
 
@@ -108,6 +146,7 @@ const formName = 'popup-special';
       <form class="promo-form" id="promo-form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value={formName} />
         <input type="hidden" name="page" value={path} />
+        <input type="hidden" name="offer" value={offerKey} />
         <p class="visually-hidden" aria-hidden="true">
           <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
         </p>
@@ -363,16 +402,32 @@ const formName = 'popup-special';
       if (e.key === 'Escape') close();
     };
 
+    const offer = (document.getElementById('promo-form')?.querySelector('input[name="offer"]') as HTMLInputElement | null)?.value ?? '';
+
+    // Engagement trigger: open at 45% scroll depth or after 25 seconds on the
+    // page, whichever comes first. An instant popup interrupted readers before
+    // they saw a single line; an engaged reader converts far better.
     try {
       if (!sessionStorage.getItem(KEY)) {
-        setTimeout(() => {
+        let opened = false;
+        const open = () => {
+          if (opened) return;
+          opened = true;
+          clearTimeout(timer);
+          removeEventListener('scroll', onScroll);
           sessionStorage.setItem(KEY, '1');
           overlay.hidden = false;
           document.body.style.overflow = 'hidden';
           document.addEventListener('keydown', onKey);
           (closeBtn as HTMLElement | null)?.focus();
-          track('popup_view');
-        }, 3000);
+          track('popup_view', { offer });
+        };
+        const timer = setTimeout(open, 25000);
+        const onScroll = () => {
+          const max = document.documentElement.scrollHeight - innerHeight;
+          if (max <= 0 || scrollY / max >= 0.45) open();
+        };
+        addEventListener('scroll', onScroll, { passive: true });
       }
     } catch {
       /* sessionStorage unavailable (private mode edge cases): skip the popup */
@@ -398,7 +453,7 @@ const formName = 'popup-special';
         if (!res.ok) throw new Error(String(res.status));
         form.hidden = true;
         if (success) success.hidden = false;
-        track('generate_lead', { form_type: 'popup_special' });
+        track('generate_lead', { form_type: 'popup_special', offer });
       } catch {
         // Network hiccup: fall back to a normal POST so the lead is not lost.
         form.submit();
