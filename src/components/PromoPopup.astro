@@ -13,6 +13,7 @@
  * honest. Copy lives in the OFFERS block below, one place per promotion.
  */
 import { business } from '../data/business';
+import LeadMeta from './LeadMeta.astro';
 import type { Locale } from '../data/ui';
 
 interface Props {
@@ -145,7 +146,7 @@ const formName = 'popup-special';
 
       <form class="promo-form" id="promo-form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value={formName} />
-        <input type="hidden" name="page" value={path} />
+        <LeadMeta lang={lang} source="popup" />
         <input type="hidden" name="offer" value={offerKey} />
         <p class="visually-hidden" aria-hidden="true">
           <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>

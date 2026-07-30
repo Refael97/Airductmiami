@@ -9,6 +9,16 @@
  */
 
 export interface BusinessInfo {
+  /**
+   * Network identity. Every site in the network sets these, and every lead
+   * carries them, so one shared pipeline and one AI agent can serve many
+   * brands, verticals, and regions without per-site logic.
+   * See docs/LEAD-PIPELINE.md.
+   */
+  siteId: string; // stable slug, e.g. 'fl-airduct'
+  vertical: string; // e.g. 'air-duct-cleaning', 'garage-door-repair'
+  serviceArea: string; // human-readable, e.g. 'Florida'
+  timezone: string; // IANA, drives call-back hours, e.g. 'America/New_York'
   name: string;
   legalName: string;
   tagline: string;
@@ -46,6 +56,10 @@ export interface BusinessInfo {
 }
 
 export const business: BusinessInfo = {
+  siteId: 'fl-airduct',
+  vertical: 'air-duct-cleaning',
+  serviceArea: 'Florida',
+  timezone: 'America/New_York',
   name: 'Florida Breeze Air Duct',
   legalName: 'Florida Breeze Air Duct LLC', // TODO: confirm legal entity name
   tagline: "Florida's Trusted Air Duct & Dryer Vent Cleaning Experts",
