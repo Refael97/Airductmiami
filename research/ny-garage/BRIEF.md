@@ -200,6 +200,21 @@ Queens · Brooklyn · Westchester.
 
 ## 9c. Voice of customer
 
+> Full deep dive in `VOICE-OF-CUSTOMER.md`: verbatim review language,
+> the documented scam pattern with the numbers that expose it, the 15
+> questions customers actually ask, and headline candidates.
+
+**Headline finding**: every competitor already claims "upfront pricing, no
+hidden fees", and then says "call for a quote". The claim is table stakes;
+publishing actual numbers is the open lane, and it is why the directories
+own every cost query.
+
+**Second finding**: every established local competitor leads with age
+(since 1983, since 1988, 70+ years, family owned). A new brand cannot
+compete there and will not fake it, so the trust block is built from
+published prices, written estimates before work, licensed and insured, real
+arrival windows, and a published warranty.
+
 **What gets sold**: spring replacement (the volume driver), opener
 install/repair, cable and roller work, off-track correction, panel
 replacement, full door replacement (the value driver), tune-ups.
