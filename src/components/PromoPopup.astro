@@ -404,33 +404,46 @@ const formName = 'popup-special';
 
     const offer = (document.getElementById('promo-form')?.querySelector('input[name="offer"]') as HTMLInputElement | null)?.value ?? '';
 
-    // Engagement trigger: open at 45% scroll depth or after 25 seconds on the
-    // page, whichever comes first. An instant popup interrupted readers before
-    // they saw a single line; an engaged reader converts far better.
+    const showPopup = (trigger: string) => {
+      if (!overlay.hidden) return;
+      try {
+        sessionStorage.setItem(KEY, '1');
+      } catch {
+        /* private mode: still show, just no once-per-session memory */
+      }
+      overlay.hidden = false;
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', onKey);
+      (closeBtn as HTMLElement | null)?.focus();
+      track('popup_view', { offer, trigger });
+    };
+
+    // Explicit open from the sticky quote bar: always allowed, even if the
+    // auto popup already fired (or was closed) this session.
+    window.addEventListener('fb:open-promo', () => showPopup('quote_bar'));
+
+    // Auto engagement trigger: open at 45% scroll depth or after 25 seconds
+    // on the page, whichever comes first, once per session. An instant popup
+    // interrupted readers before they saw a single line.
     try {
       if (!sessionStorage.getItem(KEY)) {
-        let opened = false;
-        const open = () => {
-          if (opened) return;
-          opened = true;
+        let fired = false;
+        const auto = () => {
+          if (fired) return;
+          fired = true;
           clearTimeout(timer);
           removeEventListener('scroll', onScroll);
-          sessionStorage.setItem(KEY, '1');
-          overlay.hidden = false;
-          document.body.style.overflow = 'hidden';
-          document.addEventListener('keydown', onKey);
-          (closeBtn as HTMLElement | null)?.focus();
-          track('popup_view', { offer });
+          showPopup('auto');
         };
-        const timer = setTimeout(open, 25000);
+        const timer = setTimeout(auto, 25000);
         const onScroll = () => {
           const max = document.documentElement.scrollHeight - innerHeight;
-          if (max <= 0 || scrollY / max >= 0.45) open();
+          if (max <= 0 || scrollY / max >= 0.45) auto();
         };
         addEventListener('scroll', onScroll, { passive: true });
       }
     } catch {
-      /* sessionStorage unavailable (private mode edge cases): skip the popup */
+      /* sessionStorage unavailable: skip the auto popup, bar still works */
     }
 
     closeBtn?.addEventListener('click', close);

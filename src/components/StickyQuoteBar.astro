@@ -1,0 +1,84 @@
+---
+/**
+ * Mobile-only sticky quote bar. The business currently prefers form leads
+ * over phone calls, so the bar opens the promo popup's lead form instead of
+ * dialing. Appears after 300px of scroll so it never covers the hero on
+ * landing. Clicking dispatches 'fb:open-promo', which PromoPopup listens
+ * for.
+ */
+import type { Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+}
+const { lang = 'en' } = Astro.props;
+const isEs = lang === 'es';
+
+const path = Astro.url.pathname;
+// Same exclusions as the popup: pages whose own goal is the form.
+const excluded = ['/contact', '/es/contacto', '/thank-you', '/es/gracias', '/privacy', '/es/privacidad']
+  .some((p) => path.startsWith(p));
+
+const label = isEs ? 'Cotización gratis en 30 segundos' : 'Get a free quote in 30 seconds';
+---
+{!excluded && (
+<button type="button" class="quote-bar" id="quote-bar" hidden>
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H8l-4 4V6a1 1 0 0 1 1-1Z"/>
+    <path d="M8 9.5h8M8 12.5h5"/>
+  </svg>
+  <span class="quote-bar-text">{label}</span>
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M5 12h13M12 6l6 6-6 6"/>
+  </svg>
+</button>
+)}
+
+<style>
+  .quote-bar {
+    position: fixed;
+    left: 0.7rem; right: 0.7rem;
+    bottom: calc(0.7rem + env(safe-area-inset-bottom, 0px));
+    z-index: 900;
+    display: none;
+    align-items: center; justify-content: center; gap: 0.55rem;
+    padding: 0.9rem 1rem;
+    background: var(--grad-cta);
+    color: #fff;
+    border: none; cursor: pointer;
+    font: inherit; font-weight: 800; font-size: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(11, 39, 64, 0.35);
+    animation: quote-bar-in 0.3s ease;
+  }
+  .quote-bar-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  @keyframes quote-bar-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .quote-bar { animation: none; }
+  }
+
+  @media (max-width: 760px) {
+    .quote-bar:not([hidden]) { display: flex; }
+  }
+</style>
+
+<script>
+  const bar = document.getElementById('quote-bar');
+  if (bar) {
+    const reveal = () => {
+      if (scrollY > 300) {
+        bar.hidden = false;
+        removeEventListener('scroll', reveal);
+      }
+    };
+    addEventListener('scroll', reveal, { passive: true });
+    reveal();
+
+    bar.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('fb:open-promo', { detail: { trigger: 'quote_bar' } }));
+    });
+  }
+</script>
