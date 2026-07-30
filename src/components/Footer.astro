@@ -61,6 +61,11 @@ const footerCities = cities.slice(0, 12);
   <div class="footer-bottom">
     <div class="container">
       <p>© {year} {business.legalName}. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'} · {t.servingFlorida}.</p>
+      <p class="agent-link">
+        <a href="/agent.json">
+          {lang === 'es' ? 'Para agentes de IA: datos del negocio (JSON)' : 'For AI agents: structured business data (JSON)'}
+        </a>
+      </p>
     </div>
   </div>
 </footer>
@@ -92,6 +97,9 @@ const footerCities = cities.slice(0, 12);
   .footer-col a:hover { color: #fff; text-decoration: underline; }
   .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-block: 1.2rem; }
   .footer-bottom p { margin: 0; font-size: 0.82rem; color: #7c96a8; }
+  .agent-link { margin-top: 0.4rem; }
+  .agent-link a { color: #7c96a8; font-size: 0.78rem; text-decoration: none; }
+  .agent-link a:hover { color: #a9c2d4; text-decoration: underline; }
   @media (max-width: 860px) {
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.6rem; }
   }

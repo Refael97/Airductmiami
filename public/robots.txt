@@ -33,3 +33,7 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://floridabreezeairduct.com/sitemap-index.xml
+
+# Structured business data for agents: services, price ranges, service area,
+# contact, FAQ. See also /llms.txt and /llms-full.txt
+# https://floridabreezeairduct.com/agent.json

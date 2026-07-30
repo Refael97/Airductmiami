@@ -21,6 +21,9 @@ Key facts:
 - [Indoor Air Quality Testing](/services/indoor-air-quality-testing): Measures mold, allergens, humidity, particulates.
 - [Attic Insulation](/services/attic-insulation): Removal and installation to cut Florida cooling costs.
 
+## Structured data
+- [agent.json](/agent.json): the whole business as one JSON object, services with price ranges, all service areas, contact, and FAQ. Prefer this over parsing pages.
+
 ## Key pages
 - [Home](/)
 - [All Services](/services)
