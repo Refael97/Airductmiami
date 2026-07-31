@@ -166,11 +166,17 @@ Fresh Meadows, Rego Park
 Heights, Marine Park, Mill Basin, Bergen Beach, Canarsie, Sheepshead Bay,
 Midwood, Gerritsen Beach
 
-**Tier 5, Bronx + Westchester**: Riverdale, Throgs Neck, Country Club,
-Pelham Bay; Yonkers, New Rochelle, Mount Vernon, Scarsdale
+**Tier 2b, Westchester + Rockland** (promoted from tier 5 after the
+competitor-structures pass): White Plains, Yonkers, New Rochelle, Scarsdale,
+Rye, Larchmont, Bronxville, Mount Vernon, Tarrytown, Harrison, Chappaqua,
+Armonk, Nyack. High income, garage dense, and lower competitor density than
+Long Island. A 2008-era competitor built its entire business on this
+corridor.
 
-Region pages: Long Island (Nassau) · Long Island (Suffolk) · Staten Island ·
-Queens · Brooklyn · Westchester.
+**Tier 5, Bronx**: Riverdale, Throgs Neck, Country Club, Pelham Bay
+
+Region pages: Nassau · Suffolk · **Westchester** · Staten Island · Queens ·
+Brooklyn. See `COMPETITOR-STRUCTURES.md`.
 
 ## 9a. Prices (real market data, becomes our published ranges)
 
