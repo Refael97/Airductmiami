@@ -117,7 +117,16 @@ panels · borough or county coverage lists.
   duct, but 2 to 4x the job value and an emergency trigger that converts
   faster.
 
-## 6. Keywords (clusters, to be volume-validated)
+## 6. Keywords
+
+> **Validated with Google Trends data for New York state.** Full analysis in
+> `KEYWORD-DATA.md`. Headlines: the emergency cluster is up 5 to 7x year over
+> year and is the hottest thing on the board; `overpriced garage door repair
+> invoice` is up **1,250%**, which is our differentiator showing up as live
+> search behavior; the product/opener market is as large as repair and
+> rising faster; smart and WiFi openers are the fastest-growing product
+> segment; and Syracuse outranks Brooklyn and Long Island, making upstate a
+> phase-2 target.
 
 | Cluster | Examples | Target page |
 |---|---|---|
@@ -307,9 +316,10 @@ final price sight unseen.
    policy. To close: allowlist outbound HTTP for research in the environment
    settings, or paste 3 to 5 competitor homepages and a city page as text.
    Needed to finalize homepage section order and page-depth benchmarks.
-2. **Keyword volumes** unverified. Semrush MCP access is not on the current
-   plan. Clusters above are directionally right; exact volume and difficulty
-   need a keyword export.
+2. ~~Keyword volumes unverified.~~ **Closed** by Google Trends exports for
+   New York, analyzed in `KEYWORD-DATA.md`. Absolute volumes and keyword
+   difficulty would still be useful, but every architecture decision is now
+   backed by relative demand and trend direction.
 3. **Brand name and domain** not chosen.
 4. **Fulfillment partner in New York** not identified. Per the launch
    checklist this blocks launch, not build.
