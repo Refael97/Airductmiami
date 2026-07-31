@@ -258,11 +258,21 @@ Positioning line to develop: fast when it breaks, honest when it is quoted.
 | Services | 9 | Spring replacement, cable repair, opener install, opener repair, off-track, panel/section, roller/track, new door install, maintenance tune-up |
 | Cities | 40 | Per tiers above, garage-density weighted, not population weighted |
 | Regions | 6 | Nassau, Suffolk, Staten Island, Queens, Brooklyn, Westchester |
-| Articles | 45 | Cost guides, symptom guides, lifespan/maintenance, safety, trust/scams |
+| **Products: door materials** | 5 | Steel, aluminum, wood, fiberglass, vinyl. See `PRODUCT-TAXONOMY.md` |
+| **Products: opener types** | 5 | Chain, belt, screw, direct, jackshaft/wall mount |
+| **Buyer's guide hub** | 1 | Entry point for the replace-buyer cluster |
+| **Brand service pages** | 3 to 5 | LiftMaster, Genie, Chamberlain, Clopay, Amarr |
+| Articles | 55 | Cost guides, symptom guides, lifespan/maintenance, safety, trust/scams, +10 product comparison guides |
 | Spanish | full mirror | Every page above |
 
 Emergency framing gets a dedicated slot in the header, hero, and every city
 page, because the trigger is breakage.
+
+**Two buyers, not one** (added after the product-taxonomy pass): the repair
+buyer converts today at $170 to $700; the replace buyer researches for weeks
+and converts at $1,000 to $4,600. The service and city pages serve the
+first, the product and buyer's guide cluster serves the second. Brief v1
+only planned for the first.
 
 ## Content clusters
 
