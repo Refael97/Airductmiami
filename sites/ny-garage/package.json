@@ -1,0 +1,23 @@
+{
+  "name": "ny-garage",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "SEO and AI-optimized garage door services website for the New York metro area",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/sitemap": "^3.2.1",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource/manrope": "^5.2.5",
+    "astro": "^5.2.5"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.61.1"
+  }
+}

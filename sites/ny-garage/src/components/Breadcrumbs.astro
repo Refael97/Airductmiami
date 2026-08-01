@@ -1,0 +1,27 @@
+---
+import JsonLd from './JsonLd.astro';
+import { breadcrumbSchema } from '../lib/schema';
+
+interface Crumb { name: string; href: string; }
+interface Props { crumbs: Crumb[]; }
+const { crumbs } = Astro.props;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const schema = breadcrumbSchema(
+  crumbs.map((c) => ({ name: c.name, url: `${site}${c.href}` }))
+);
+---
+<nav class="breadcrumbs container" aria-label="Breadcrumb">
+  <ol>
+    {crumbs.map((c, i) => (
+      <li>
+        {i < crumbs.length - 1 ? (
+          <a href={c.href}>{c.name}</a>
+        ) : (
+          <span aria-current="page">{c.name}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+<JsonLd schema={schema} />

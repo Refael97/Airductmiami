@@ -1,0 +1,14 @@
+# Netlify configuration for the New York garage door site (Astro static).
+# Deployed from the sites/ny-garage base directory of the network monorepo.
+
+[build]
+  base = "sites/ny-garage"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# No [[redirects]] trailing-slash rules: Netlify's matcher ignores trailing
+# slashes, so a forced /page -> /page/ rule matches its own target and loops.
+# Normalization is handled by netlify/edge-functions/trailing-slash.ts.
