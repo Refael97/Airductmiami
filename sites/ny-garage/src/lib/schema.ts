@@ -1,128 +1,97 @@
 /**
- * Structured-data (JSON-LD) builders. These produce schema.org objects that
- * Google and AI answer engines read to understand the business, services,
- * articles, FAQs, and site hierarchy. Emitted via the <JsonLd> component.
+ * JSON-LD builders. Service Area Business: no postal address is published,
+ * areaServed carries the coverage instead. No aggregateRating until real
+ * reviews exist (docs/TRUST-AND-CLAIMS.md).
  */
-import { business, openingHoursSpec } from '../data/business';
-import { cities } from '../data/cities';
+import { business, scheduleDays } from '../data/business';
 
-type Json = Record<string, unknown>;
-
-/** Stable @id for the organization, referenced by other nodes. */
-export function orgId(siteUrl: string): string {
-  return `${siteUrl.replace(/\/$/, '')}/#business`;
-}
-
-/** LocalBusiness / HVACBusiness node, emitted site-wide. */
-export function localBusinessSchema(siteUrl: string): Json {
-  const base = siteUrl.replace(/\/$/, '');
+export function localBusinessSchema(site: string) {
   return {
     '@context': 'https://schema.org',
-    '@type': ['HVACBusiness', 'LocalBusiness'],
-    '@id': orgId(siteUrl),
+    '@type': 'HomeAndConstructionBusiness',
+    '@id': `${site}/#business`,
     name: business.name,
     legalName: business.legalName,
     description: business.description,
-    url: base,
-    telephone: business.phoneHref,
+    url: site,
+    telephone: business.phone,
     email: business.email,
     priceRange: business.priceRange,
-    foundingDate: String(business.foundingYear),
-    image: `${base}/og-image.png`,
-    logo: `${base}/og-image.png`,
+    image: `${site}/og-image.png`,
+    areaServed: business.area.counties.map((c) => ({
+      '@type': 'AdministrativeArea',
+      name: c,
+    })),
     address: {
       '@type': 'PostalAddress',
-      streetAddress: business.address.street,
-      addressLocality: business.address.city,
-      addressRegion: business.address.region,
-      postalCode: business.address.postalCode,
-      addressCountry: business.address.country,
+      addressRegion: business.area.region,
+      addressCountry: business.area.country,
     },
     geo: {
       '@type': 'GeoCoordinates',
       latitude: business.geo.latitude,
       longitude: business.geo.longitude,
     },
-    areaServed: cities.map((c) => ({
-      '@type': 'City',
-      name: `${c.name}, FL`,
-    })),
-    openingHoursSpecification: openingHoursSpec.map((h) => ({
+    openingHoursSpecification: business.hours.map((h, i) => ({
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: h.days,
+      dayOfWeek: scheduleDays[i],
       opens: h.opens,
       closes: h.closes,
     })),
-    // NOTE: aggregateRating intentionally omitted until real review data exists.
-    // Marking up placeholder ratings violates Google structured-data policy.
-    // Re-add with real values: { '@type': 'AggregateRating', ratingValue, reviewCount }
     sameAs: Object.values(business.social).filter(Boolean),
   };
 }
 
-/** Service node for a service page. */
-export function serviceSchema(
-  siteUrl: string,
-  opts: { name: string; description: string; url: string; slug: string }
-): Json {
-  const base = siteUrl.replace(/\/$/, '');
+export function websiteSchema(site: string) {
   return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${site}/#website`,
+    name: business.name,
+    url: site,
+    inLanguage: 'en-US',
+  };
+}
+
+export function serviceSchema(
+  site: string,
+  s: { name: string; description: string; url: string; slug: string; priceLow?: number; priceHigh?: number },
+) {
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: opts.name,
-    description: opts.description,
-    url: opts.url,
-    serviceType: opts.name,
-    provider: { '@id': orgId(siteUrl) },
-    areaServed: { '@type': 'State', name: 'Florida' },
-    image: `${base}/og-image.png`,
+    '@id': `${s.url}#service`,
+    name: s.name,
+    description: s.description,
+    url: s.url,
+    serviceType: s.name,
+    provider: { '@id': `${site}/#business` },
+    areaServed: business.area.counties.map((c) => ({ '@type': 'AdministrativeArea', name: c })),
   };
-}
-
-/** Article node for a blog post. */
-export function articleSchema(
-  siteUrl: string,
-  opts: {
-    headline: string;
-    description: string;
-    url: string;
-    datePublished: string;
-    dateModified?: string;
+  if (s.priceLow && s.priceHigh) {
+    schema.offers = {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: s.priceLow,
+      highPrice: s.priceHigh,
+    };
   }
-): Json {
-  const base = siteUrl.replace(/\/$/, '');
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: opts.headline,
-    description: opts.description,
-    url: opts.url,
-    mainEntityOfPage: opts.url,
-    datePublished: opts.datePublished,
-    dateModified: opts.dateModified ?? opts.datePublished,
-    image: `${base}/og-image.png`,
-    author: { '@type': 'Organization', name: business.name, '@id': orgId(siteUrl) },
-    publisher: { '@id': orgId(siteUrl) },
-  };
+  return schema;
 }
 
-/** FAQPage node from a list of Q&As. */
-export function faqSchema(faq: { question: string; answer: string }[]): Json {
+export function faqSchema(items: { question: string; answer: string }[]) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faq.map((f) => ({
+    mainEntity: items.map((i) => ({
       '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      name: i.question,
+      acceptedAnswer: { '@type': 'Answer', text: i.answer },
     })),
   };
 }
 
-/** BreadcrumbList node from [{name,url}] crumbs. */
-export function breadcrumbSchema(
-  crumbs: { name: string; url: string }[]
-): Json {
+export function breadcrumbSchema(site: string, crumbs: { name: string; href: string }[]) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -130,19 +99,7 @@ export function breadcrumbSchema(
       '@type': 'ListItem',
       position: i + 1,
       name: c.name,
-      item: c.url,
+      item: `${site}${c.href}`,
     })),
-  };
-}
-
-/** WebSite node with SearchAction, helps establish the site entity. */
-export function websiteSchema(siteUrl: string): Json {
-  const base = siteUrl.replace(/\/$/, '');
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: business.name,
-    url: base,
-    publisher: { '@id': orgId(siteUrl) },
   };
 }

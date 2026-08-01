@@ -1,0 +1,95 @@
+---
+import { business } from '../data/business';
+
+const nav = [
+  { label: 'Services', href: '/services/' },
+  { label: 'Prices', href: '/prices/' },
+  { label: 'Doors & Openers', href: '/buyers-guide/' },
+  { label: 'Service Areas', href: '/service-areas/' },
+  { label: 'Guides', href: '/blog/' },
+  { label: 'Contact', href: '/contact/' },
+];
+---
+<header class="site-header">
+  <div class="emergency-strip">
+    <div class="container">
+      <span class="strip-dot" aria-hidden="true"></span>
+      <span>Broken spring or car trapped? Same-day service, seven days a week.</span>
+    </div>
+  </div>
+
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label={`${business.name} home`}>
+      <svg class="brand-mark" viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+        <rect x="2" y="2" width="36" height="36" rx="9" fill="var(--c-primary)" />
+        <path d="M8 14h24M8 20h24M8 26h24" stroke="#fff" stroke-width="2.4" stroke-linecap="round" />
+        <path d="M8 11.5V9.5a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v2" stroke="var(--c-accent)" stroke-width="2.4" stroke-linecap="round" fill="none" />
+      </svg>
+      <span class="brand-word">
+        <span class="bw-top">{business.name}</span>
+        <span class="bw-sub">Garage Door Service</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+    </nav>
+
+    <a href="/contact/" class="btn btn-accent header-cta">Free quote</a>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky; top: 0; z-index: 500;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--c-line);
+  }
+  .emergency-strip {
+    background: var(--c-ink); color: #e7edf5;
+    font-size: 0.82rem; font-weight: 600;
+    padding: 0.45rem 0;
+  }
+  .emergency-strip .container { display: flex; align-items: center; gap: 0.5rem; justify-content: center; text-align: center; }
+  .strip-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--c-accent); flex-shrink: 0;
+    box-shadow: 0 0 0 3px rgba(245, 165, 36, 0.25);
+  }
+
+  .header-inner {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
+    padding-block: 0.7rem;
+  }
+  .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; flex-shrink: 0; }
+  .brand:hover { text-decoration: none; }
+  .brand-word { display: flex; flex-direction: column; line-height: 1.1; }
+  .bw-top {
+    font-family: var(--font-display); font-weight: 800; font-size: 1.16rem;
+    color: var(--c-ink); letter-spacing: -0.01em;
+  }
+  .bw-sub {
+    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--c-muted);
+  }
+
+  .site-nav { display: flex; gap: 1.35rem; margin-left: auto; }
+  .site-nav a {
+    color: var(--c-body); font-weight: 600; font-size: 0.94rem; text-decoration: none;
+    padding-block: 0.3rem; border-bottom: 2px solid transparent;
+  }
+  .site-nav a:hover { color: var(--c-primary); border-bottom-color: var(--c-accent); text-decoration: none; }
+
+  .header-cta { flex-shrink: 0; }
+
+  @media (max-width: 960px) {
+    .site-nav { order: 3; width: 100%; margin-left: 0; gap: 0; flex-wrap: wrap; }
+    .site-nav a {
+      flex: 1 1 33%; text-align: center; padding: 0.55rem 0.3rem;
+      border-bottom: 1px solid var(--c-line); font-size: 0.88rem;
+    }
+    .header-cta { margin-left: auto; }
+    .emergency-strip { font-size: 0.75rem; }
+  }
+</style>
