@@ -20,16 +20,16 @@ faq:
 | Job | New York range | Average |
 |---|---|---|
 | One torsion spring, installed | $170 to $400 | ~$282 |
-| Two springs, installed together | $320 to $700 | — |
+| Two springs, installed together | $320 to $700 | n/a |
 | Cable repair | $100 to $350 | ~$225 |
-| Cable and drum | $250 to $425 | — |
-| Cable tension adjustment | $95 to $150 | — |
-| Opener repair | $100 to $350 | — |
+| Cable and drum | $250 to $425 | n/a |
+| Cable tension adjustment | $95 to $150 | n/a |
+| Opener repair | $100 to $350 | n/a |
 | Opener installed | $281 to $630 | ~$453 |
-| Off-track correction | $150 to $700 | — |
-| Section replacement | $250 to $800 | — |
-| New door installed | $1,056 to $4,620 | — |
-| Emergency call-out premium | $200 to $350 | — |
+| Off-track correction | $150 to $700 | n/a |
+| Section replacement | $250 to $800 | n/a |
+| New door installed | $1,056 to $4,620 | n/a |
+| Emergency call-out premium | $200 to $350 | n/a |
 
 ## The three questions that settle it
 
