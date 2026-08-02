@@ -1,0 +1,72 @@
+---
+/**
+ * The starting-price disclaimer. Must appear wherever prices appear.
+ *
+ * Publishing prices is this site's differentiator, but a published number
+ * creates an obligation: the customer must not walk away thinking one price
+ * covers every door and every fault. A single door and a double door are
+ * different jobs, and so are a slipped cable and a snapped one.
+ *
+ * `variant="inline"` is the short asterisk line for tables and cards.
+ * `variant="block"` is the fuller explanation for service and price pages.
+ */
+interface Props {
+  variant?: 'inline' | 'block';
+}
+const { variant = 'inline' } = Astro.props;
+---
+{variant === 'inline' ? (
+  <p class="price-note-inline">
+    <span aria-hidden="true">*</span> Starting prices for a standard single door.
+    Your final price depends on the door, the model and what we find. You get a
+    written quote before any work starts.
+  </p>
+) : (
+  <aside class="price-note-block" aria-label="How our pricing works">
+    <h3><span aria-hidden="true">*</span> How to read these prices</h3>
+    <p>
+      Every number on this site is a <strong>starting price</strong> for a
+      standard single garage door in normal condition. It is a real number, not
+      a teaser, and it is where a straightforward job begins.
+    </p>
+    <p>What moves your price above the starting point:</p>
+    <ul>
+      <li><strong>Door size.</strong> A double door is a bigger job than a single door, with more parts and more weight.</li>
+      <li><strong>Door type and model.</strong> Materials, brands and discontinued models change what the parts cost and whether they are even available.</li>
+      <li><strong>Condition.</strong> A failure rarely happens alone. Cables, drums, rollers and brackets that failed alongside are quoted before we replace anything.</li>
+      <li><strong>Access and timing.</strong> Difficult access, and emergency or after-hours calls, carry their own cost, stated up front.</li>
+    </ul>
+    <p class="price-note-promise">
+      What does not change: you get a written quote before any work begins, and
+      that quote is the price you pay. We do not name a low number to get in the
+      door and then raise it once the door is apart.
+    </p>
+  </aside>
+)}
+
+<style>
+  .price-note-inline {
+    font-size: 0.8rem; line-height: 1.5; color: var(--c-muted);
+    margin: 0.7rem 0 0;
+  }
+  .price-note-inline span { color: var(--c-accent-dark); font-weight: 800; }
+
+  .price-note-block {
+    background: var(--c-bg-alt);
+    border: 1px solid var(--c-line);
+    border-left: 4px solid var(--c-accent);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem 1.3rem;
+    margin: 1.6rem 0;
+  }
+  .price-note-block h3 { font-size: 1.02rem; margin-bottom: 0.6rem; }
+  .price-note-block h3 span { color: var(--c-accent-dark); }
+  .price-note-block p { font-size: 0.92rem; margin-bottom: 0.7rem; }
+  .price-note-block ul { margin: 0 0 0.8rem; padding-left: 1.1rem; }
+  .price-note-block li { font-size: 0.92rem; margin-bottom: 0.4rem; }
+  .price-note-promise {
+    margin-bottom: 0; padding-top: 0.7rem;
+    border-top: 1px solid var(--c-line);
+    font-weight: 600; color: var(--c-ink);
+  }
+</style>

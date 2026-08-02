@@ -1,11 +1,16 @@
 /**
  * The 9 repair services. Each drives one page at /services/{slug}.
  *
- * Every price range here is real New York market data from
+ * Every price here is real New York market data from
  * research/ny-garage/BRIEF.md section 9a. These same numbers appear on the
  * homepage price table, in agent.json, and in the AI agent's script. They
  * must never diverge: publishing prices is this site's whole differentiator,
  * and a contradiction destroys it.
+ *
+ * Prices are published as STARTING prices ("From $X"), always accompanied by
+ * the disclaimer in components/PriceDisclaimer.astro and by the per-service
+ * priceFactors list. A single door and a double door are not the same job,
+ * and the site must never let a customer assume otherwise.
  *
  * Content is answer-first: `answer` is a quotable definition an AI engine can
  * lift, followed by depth, benefits, process, extractable facts, and an FAQ
@@ -23,10 +28,17 @@ export interface Service {
   shortName: string;
   metaTitle: string;
   metaDescription: string;
-  /** Published price range. Shown on the page and in the price table. */
+  /**
+   * Published starting price. Displayed as "From $priceLow" everywhere, with
+   * priceHigh giving the typical upper end on the service page itself.
+   * Never shown without the starting-price disclaimer: a customer must never
+   * think one number covers every door and every fault.
+   */
   priceLow: number;
   priceHigh: number;
   priceNote: string;
+  /** What can push this job above the starting price. Shown on the page. */
+  priceFactors: string[];
   /** True for the services that drive the emergency cluster. */
   emergency: boolean;
   answer: string;
@@ -49,6 +61,12 @@ export const services: Service[] = [
     priceLow: 170,
     priceHigh: 400,
     priceNote: 'per spring installed; both springs together adds $150 to $300',
+    priceFactors: [
+      'A double or oversized door usually carries two springs and heavier gauge, which raises the parts cost',
+      'High-cycle springs, which last far longer, cost more than standard',
+      'Cables, drums or bearings that failed with the spring add to the job',
+      'Emergency and after-hours calls carry the call-out premium',
+    ],
     emergency: true,
     answer:
       'Garage door spring replacement is the removal and installation of the torsion or extension springs that carry the weight of your door. In New York it costs $170 to $400 per spring installed, and replacing both springs at once adds $150 to $300. It is the most common garage door repair and the one that most often traps a car inside.',
@@ -94,6 +112,12 @@ export const services: Service[] = [
     priceLow: 100,
     priceHigh: 350,
     priceNote: 'cable repair or replacement; with drum replacement $250 to $425',
+    priceFactors: [
+      'Whether the cable only slipped or actually failed, which are different jobs',
+      'A damaged drum or bottom bracket found during the repair',
+      'Double doors with two cable runs rather than one',
+      'Rust or seizure that makes removal slow',
+    ],
     emergency: true,
     answer:
       'Garage door cable repair covers the steel lift cables that connect the bottom of the door to the spring drums. In New York it costs $100 to $350, or $250 to $425 when a damaged drum has to be replaced as well. A cable that slips off its drum leaves the door hanging crooked and stuck.',
@@ -138,6 +162,12 @@ export const services: Service[] = [
     priceLow: 100,
     priceHigh: 350,
     priceNote: 'most opener repairs; full replacement is quoted separately',
+    priceFactors: [
+      'The part that failed, from a $0 sensor realignment to a logic board',
+      'Whether your model still has parts available',
+      'Older units where the repair is close to the cost of replacement',
+      'Emergency and after-hours calls carry the call-out premium',
+    ],
     emergency: false,
     answer:
       'Garage door opener repair covers the motor unit and its accessories: safety sensors, remotes and keypads, circuit boards, gears, and travel limits. Most opener repairs in New York cost $100 to $350. Misaligned safety sensors are the single most common cause of a door that refuses to close, and they are often a fast fix.',
@@ -182,6 +212,12 @@ export const services: Service[] = [
     priceLow: 281,
     priceHigh: 630,
     priceNote: 'installed, including haul away of the old unit',
+    priceFactors: [
+      'Drive type: chain is the entry point, belt and wall-mount jackshaft cost more',
+      'Horsepower needed for a heavy, insulated or double door',
+      'Extras such as battery backup, keypads and smart control',
+      'Electrical work if there is no outlet at the ceiling',
+    ],
     emergency: false,
     answer:
       'Garage door opener installation is the removal of your old unit and the fitting, wiring, and programming of a new one. In New York it costs $281 to $630 installed. The right drive type depends mostly on your garage: belt drive for an attached garage with a room above it, chain for a detached garage, wall-mount jackshaft where headroom is tight.',
@@ -226,6 +262,12 @@ export const services: Service[] = [
     priceLow: 150,
     priceHigh: 700,
     priceNote: 'retrofit controller from $150; full smart opener $350 to $700 installed',
+    priceFactors: [
+      'Whether your existing opener accepts a retrofit controller or needs replacing',
+      'The unit chosen and its feature set',
+      'A WiFi extender if the garage has weak signal',
+      'Battery backup added alongside',
+    ],
     emergency: false,
     answer:
       'A smart garage door opener connects to your home WiFi so you can open, close, and monitor the door from your phone, and get an alert when it has been left open. In New York a full smart opener runs $350 to $700 installed, and a retrofit controller added to an existing opener starts around $150.',
@@ -270,6 +312,12 @@ export const services: Service[] = [
     priceLow: 150,
     priceHigh: 700,
     priceNote: 'severe cases with bent tracks or damaged sections can exceed $1,000',
+    priceFactors: [
+      'Whether the track can be realigned or has to be replaced',
+      'Damaged sections, rollers, hinges or brackets found once the door is secured',
+      'Double doors with two full track runs',
+      'Emergency and after-hours calls carry the call-out premium',
+    ],
     emergency: true,
     answer:
       'Off track garage door repair puts a door that has jumped its rollers out of the track back into alignment, and replaces whatever bent or broke in the process. In New York it costs $150 to $700, and severe cases with bent tracks or damaged sections can exceed $1,000.',
@@ -314,6 +362,12 @@ export const services: Service[] = [
     priceLow: 250,
     priceHigh: 900,
     priceNote: 'per section installed, depending on material and whether the model is still made',
+    priceFactors: [
+      'The number of damaged sections',
+      'Material: a steel section and a wood section are far apart on price',
+      'Whether your door model is still in production, which decides availability',
+      'Painting or finishing to match the rest of the door',
+    ],
     emergency: false,
     answer:
       'Garage door panel replacement swaps a single damaged section of the door rather than replacing the entire door. In New York it costs $250 to $900 per section installed. It is usually the right call when one or two sections are damaged and the rest of the door is sound, and it saves thousands compared to full replacement.',
@@ -358,6 +412,13 @@ export const services: Service[] = [
     priceLow: 1056,
     priceHigh: 4620,
     priceNote: 'installed, depending on material, size and insulation',
+    priceFactors: [
+      'Material: steel, aluminum, vinyl, fiberglass and wood span a wide range',
+      'Single door versus double door, which is the single biggest factor',
+      'Insulation level and R-value, which adds $600 to $3,000',
+      'Windows, hardware, custom finishes and non-standard openings',
+      'Whether new springs, track or an opener are needed with it',
+    ],
     emergency: false,
     answer:
       'New garage door installation covers removing the old door, fitting the new door, tracks, springs and hardware, and setting up the opener. In New York it costs $1,056 to $4,620 installed. Steel is the value choice at $800 to $2,000 for the door, insulated doors add $600 to $3,000, and an insulated door genuinely pays back on an attached garage in this climate.',
@@ -402,6 +463,11 @@ export const services: Service[] = [
     priceLow: 200,
     priceHigh: 350,
     priceNote: 'emergency call-out premium; the repair itself is quoted at its normal published range',
+    priceFactors: [
+      'This is the call-out premium only. The repair itself is quoted at its own published starting price',
+      'Time of day and day of week',
+      'Whether parts must be sourced before the permanent repair',
+    ],
     emergency: true,
     answer:
       'Emergency garage door repair is same-day service for a door that has failed in a way you cannot wait out: a snapped spring with the car trapped inside, a door stuck open overnight, or a door off its track. In New York the emergency call-out runs $200 to $350, and the repair itself is quoted at its normal published price on top of that.',
@@ -446,6 +512,11 @@ export const services: Service[] = [
     priceLow: 95,
     priceHigh: 180,
     priceNote: 'annual service visit; parts quoted separately if anything is found',
+    priceFactors: [
+      'Double doors and multi-door garages',
+      'Any parts found worn during the service, quoted separately before replacement',
+      'Doors that have gone many years without service',
+    ],
     emergency: false,
     answer:
       'A garage door tune-up is an annual service that checks and adjusts the parts that wear: spring balance, rollers, hinges, cables, tracks, safety sensors and opener settings. In New York it costs $95 to $180 and its real value is catching a fatigued spring or a fraying cable before it fails on the coldest morning of the year.',

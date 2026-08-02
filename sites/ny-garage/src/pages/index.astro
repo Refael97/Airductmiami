@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FAQ from '../components/FAQ.astro';
+import PriceDisclaimer from '../components/PriceDisclaimer.astro';
 import { business } from '../data/business';
 import { services, getService, priceTableOrder } from '../data/services';
 
 const title = `Garage Door Repair in New York | Published Prices | ${business.name}`;
-const description = `Same-day garage door repair across Long Island, Westchester, Staten Island, Queens and Brooklyn. We publish our prices: springs $170 to $400, openers $281 to $630. Written estimate before any work.`;
+const description = `Same-day garage door repair across Long Island, Westchester, Staten Island, Queens and Brooklyn. We publish our starting prices: spring replacement from $170, opener installation from $281. Written estimate before any work.`;
 
 const priceRows = priceTableOrder
   .map((slug) => getService(slug))
@@ -14,7 +15,7 @@ const priceRows = priceTableOrder
 const emergencyServices = services.filter((s) => s.emergency);
 
 const homeFaq = [
-  { question: 'How much does garage door repair cost in New York?', answer: 'Spring replacement runs $170 to $400 per spring, cable repair $100 to $350, opener repair $100 to $350, and opener installation $281 to $630. Our full price list is published on the site, which is unusual in this trade and deliberate.' },
+  { question: 'How much does garage door repair cost in New York?', answer: 'Spring replacement starts at $170 per spring, cable repair at $100, opener repair at $100, and opener installation at $281. Those are starting prices for a standard single door. A double door, an unusual model, or additional worn parts will cost more, and you get a written quote before any work starts.' },
   { question: 'Do you offer same-day garage door repair?', answer: 'Yes, seven days a week across the metro area. You get a real arrival window and the pricing before we dispatch, including the emergency call-out cost of $200 to $350.' },
   { question: 'Can I still use my garage door with a broken spring?', answer: 'No. Do not run the opener, because it will strain the motor, bend panels, and can drop the door. Leave it and call us.' },
   { question: 'Do you charge a service call fee to come out?', answer: 'We quote before we dispatch and the number does not change on arrival. We do not use a low advertised call-out fee as a way to get in the door and then inflate the bill.' },
@@ -30,8 +31,8 @@ const homeFaq = [
         <h1>Here is what it costs.<br /><span class="hl">Before you call.</span></h1>
         <p class="lead">
           Garage door repair across Long Island, Westchester, Staten Island, Queens and
-          Brooklyn. Same-day service, a written estimate before anything is touched, and
-          the price we quote is the price you pay.
+          Brooklyn. Starting prices published up front, a written estimate before
+          anything is touched, and the price we quote is the price you pay.
         </p>
         <div class="hero-actions">
           <a href="/contact/" class="btn btn-accent btn-lg">Get a free quote</a>
@@ -48,18 +49,19 @@ const homeFaq = [
       <aside class="hero-panel" aria-labelledby="price-panel-title">
         <div class="panel-head">
           <h2 id="price-panel-title">What repairs actually cost</h2>
-          <p>Real New York ranges. No "call for pricing".</p>
+          <p>Real New York starting prices. No "call for pricing".</p>
         </div>
         <table class="price-table">
           <tbody>
             {priceRows.slice(0, 5).map((s) => (
               <tr>
                 <th scope="row"><a href={`/services/${s.slug}/`}>{s.shortName}</a></th>
-                <td>${s.priceLow} to ${s.priceHigh.toLocaleString()}</td>
+                <td>from ${s.priceLow}</td>
               </tr>
             ))}
           </tbody>
         </table>
+        <PriceDisclaimer />
         <a href="/prices/" class="panel-link">Full price list, every service →</a>
       </aside>
     </div>
@@ -93,17 +95,18 @@ const homeFaq = [
       <div class="section-head center">
         <span class="eyebrow">What we do</span>
         <h2>Garage door repair and installation</h2>
-        <p class="lead">Every service below has its price range published on its own page.</p>
+        <p class="lead">Every service below has its starting price published on its own page, with what changes it.</p>
       </div>
       <div class="grid grid-3">
         {services.map((s) => (
           <a href={`/services/${s.slug}/`} class="card service-card">
             <h3>{s.name}</h3>
             <p>{s.answer.split('. ')[0]}.</p>
-            <span class="card-price">${s.priceLow} to ${s.priceHigh.toLocaleString()}</span>
+            <span class="card-price">from ${s.priceLow}</span>
           </a>
         ))}
       </div>
+      <div class="narrow"><PriceDisclaimer variant="block" /></div>
     </div>
   </section>
 
