@@ -3,6 +3,22 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # Skip the build when nothing this site is made of has changed.
+  #
+  # Every site in the network lives in this one repo on one branch, so
+  # without this, a commit touching only sites/ny-garage rebuilds Florida
+  # too. At two sites that is waste. At the scale this network is heading
+  # for it is one build per site per commit, which exhausts any build
+  # allowance almost immediately.
+  #
+  # Netlify's semantics are inverted and easy to get backwards: exit 0
+  # means SKIP the build, non-zero means PROCEED. So git diff --quiet,
+  # which exits 0 when there are no differences, is exactly right.
+  #
+  # On the very first build CACHED_COMMIT_REF is empty, git diff errors,
+  # the exit is non-zero and the build proceeds. Failing towards building
+  # is the safe direction.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- src public netlify astro.config.mjs tsconfig.json package.json package-lock.json netlify.toml"
 
 [build.environment]
   NODE_VERSION = "20"
