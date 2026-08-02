@@ -82,7 +82,8 @@ const homeFaq = [
     </div>
   </section>
 
-  <!-- Emergency band -->
+  <!-- Emergency band. The photograph sits behind a heavy navy wash: it is
+       atmosphere, not evidence, and the text must stay readable over it. -->
   <section class="emergency-band">
     <div class="container">
       <div class="band-copy">
@@ -132,6 +133,75 @@ const homeFaq = [
     </div>
   </section>
 
+  <!-- The doors we work on.
+       These are illustrations of the door types common to each part of the
+       metro area, not photographs of our own jobs. The caption says so.
+       Per docs/MEDIA-STANDARD.md, generated imagery may illustrate and may
+       not impersonate: the day a real job produces photos, they go in a
+       gallery of their own and are labelled as ours. -->
+  <section class="section section-alt doors-band">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Every kind of door</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h2>New York does not have one kind of garage</h2>
+        <p class="lead">
+          A narrow single under a Brooklyn stoop and a carriage house door on a
+          Westchester colonial are different jobs with different parts and
+          different prices. That is why the price list says "starting at".
+        </p>
+      </div>
+
+      <div class="door-grid">
+        <a href="/service-areas/brooklyn/" class="door-card" data-anim="fade-up">
+          <img
+            src="/images/brooklyn-under-house-single-door.webp"
+            width="1200" height="896" loading="lazy" decoding="async"
+            alt="Narrow single garage door under the living space of an attached brick house, the typical arrangement in Bay Ridge and Marine Park"
+          />
+          <div class="door-meta">
+            <h3>Under-house singles</h3>
+            <p>Brooklyn and Staten Island. Low headroom, which usually means a wall mounted opener.</p>
+          </div>
+        </a>
+
+        <a href="/service-areas/westchester-county/" class="door-card" data-anim="fade-up" data-anim-delay="90">
+          <img
+            src="/images/westchester-carriage-doors.webp"
+            width="1200" height="896" loading="lazy" decoding="async"
+            alt="Carriage house style wooden garage doors with strap hinges on a detached three-bay garage, common in Westchester County"
+          />
+          <div class="door-meta">
+            <h3>Carriage and wood</h3>
+            <p>Westchester and Garden City. Heavier than steel, so the spring specification changes.</p>
+          </div>
+        </a>
+
+        <a href="/service-areas/nassau-county/" class="door-card" data-anim="fade-up" data-anim-delay="180">
+          <img
+            src="/images/long-island-split-level-door.webp"
+            width="1200" height="896" loading="lazy" decoding="async"
+            alt="Modern flush panel white steel garage door on the attached garage of a 1960s Long Island split level house"
+          />
+          <div class="door-meta">
+            <h3>Postwar Long Island</h3>
+            <p>Nassau and Suffolk. Mostly doors installed once in the 1990s and never serviced since.</p>
+          </div>
+        </a>
+      </div>
+
+      <p class="media-note">
+        Images above illustrate the door types common to each area. They are not
+        photographs of our own work. When our jobs produce real before and after
+        photos, they will appear here with the city and the service named.
+      </p>
+
+      <p class="text-center" style="margin-top:1.2rem;">
+        <a href="/buyers-guide/" class="btn btn-outline">Compare doors and openers</a>
+      </p>
+    </div>
+  </section>
+
   <!-- Why we publish prices -->
   <section class="section section-alt">
     <div class="container narrow">
@@ -160,7 +230,7 @@ const homeFaq = [
           as the first and usually follows within months.
         </p>
       </div>
-      <p class="center" style="margin-top:1.4rem;">
+      <p class="text-center" style="margin-top:1.4rem;">
         <a href="/blog/garage-door-repair-scams/" class="btn btn-outline">How to spot a bait quote</a>
       </p>
     </div>
@@ -236,8 +306,24 @@ const homeFaq = [
   .panel-link { display: inline-block; margin-top: 0.9rem; font-weight: 700; font-size: 0.9rem; color: var(--c-primary); text-decoration: none; }
   .panel-link:hover { text-decoration: underline; }
 
-  .emergency-band { background: var(--grad-deep); color: #e7edf5; padding-block: 2.4rem; }
-  .emergency-band .container { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 2rem; align-items: center; }
+  /* The photograph is atmosphere behind a heavy navy wash. If the file is
+     missing the gradient alone still renders, so nothing breaks. */
+  .emergency-band {
+    background-color: var(--c-primary);
+    background-image:
+      linear-gradient(100deg, rgba(15, 39, 71, 0.97) 0%, rgba(15, 39, 71, 0.9) 45%, rgba(15, 39, 71, 0.72) 100%),
+      url('/images/ny-colonial-double-door.webp');
+    background-size: cover;
+    background-position: center 62%;
+    color: #e7edf5;
+    padding-block: 2.6rem;
+    position: relative;
+  }
+  .emergency-band::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--stripe-brand);
+  }
+  .emergency-band .container { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 2rem; align-items: center; position: relative; }
   .emergency-band h2 { color: #fff; font-size: 1.6rem; margin-bottom: 0.5rem; }
   .emergency-band p { margin: 0; font-size: 0.96rem; color: #c3cede; }
   .band-actions { display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-start; }
@@ -254,6 +340,39 @@ const homeFaq = [
     display: inline-block; font-weight: 800; font-size: 0.88rem;
     color: var(--c-primary); background: var(--c-primary-light);
     padding: 0.25rem 0.6rem; border-radius: 999px;
+  }
+
+  /* ---------- Door type illustrations ---------- */
+  .door-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.4rem;
+  }
+  .door-card {
+    display: block; text-decoration: none; background: #fff;
+    border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .door-card:hover {
+    text-decoration: none; transform: translateY(-3px);
+    box-shadow: var(--shadow-card-hover); border-color: #d5dae1;
+  }
+  /* Fixed ratio so a slow or missing image cannot shift the layout */
+  .door-card img {
+    width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+    display: block; background: var(--c-bg-alt);
+  }
+  .door-meta { padding: 1.1rem 1.2rem 1.3rem; }
+  .door-meta h3 { font-size: 1.02rem; color: var(--c-ink); margin-bottom: 0.3rem; }
+  .door-meta p { font-size: 0.9rem; color: var(--c-body); margin: 0; }
+
+  .media-note {
+    font-size: 0.8rem; color: var(--c-muted); line-height: 1.55;
+    max-width: 46rem; margin: 1.4rem auto 0; text-align: center;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .door-card:hover { transform: none; }
   }
 
   .cta-band { background: var(--grad-primary); color: #fff; padding-block: 3rem; text-align: center; }
