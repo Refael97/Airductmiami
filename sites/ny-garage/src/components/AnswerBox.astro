@@ -1,0 +1,16 @@
+---
+/**
+ * Answer-first block. Every page opens with one concise, quotable,
+ * self-contained answer before any depth, so an answer engine has
+ * something to lift and a reader has something to act on.
+ */
+interface Props {
+  label?: string;
+  text: string;
+}
+const { label = 'Quick answer', text } = Astro.props;
+---
+<div class="answer-box">
+  <span class="answer-label">{label}</span>
+  <p>{text}</p>
+</div>

@@ -1,0 +1,290 @@
+---
+/**
+ * One route serves both region pages and city pages, because they share a
+ * URL namespace (/service-areas/nassau-county/ and /service-areas/hempstead/)
+ * and no slug collides between the two sets.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import PriceDisclaimer from '../../components/PriceDisclaimer.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Icon from '../../components/Icon.astro';
+import { regions, getRegion } from '../../data/regions';
+import { cities, getCity, citiesByRegion } from '../../data/cities';
+import { services, getService, priceTableOrder } from '../../data/services';
+import { iconFor } from '../../data/serviceIcons';
+import { serviceSchema } from '../../lib/schema';
+import { business } from '../../data/business';
+
+export function getStaticPaths() {
+  const regionPaths = regions.map((r) => ({
+    params: { area: r.slug },
+    props: { kind: 'region' as const, region: r },
+  }));
+  const cityPaths = cities.map((c) => ({
+    params: { area: c.slug },
+    props: { kind: 'city' as const, city: c },
+  }));
+  return [...regionPaths, ...cityPaths];
+}
+
+const props = Astro.props as
+  | { kind: 'region'; region: (typeof regions)[number] }
+  | { kind: 'city'; city: (typeof cities)[number] };
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+
+const isRegion = props.kind === 'region';
+const region = isRegion ? props.region : getRegion(props.city.region)!;
+const city = isRegion ? null : props.city;
+
+const name = isRegion ? region.name : city!.name;
+const slug = isRegion ? region.slug : city!.slug;
+const inPhrase = isRegion ? region.inPhrase : `in ${city!.name}`;
+const metaTitle = isRegion ? region.metaTitle : city!.metaTitle;
+const metaDescription = isRegion ? region.metaDescription : city!.metaDescription;
+const answer = isRegion ? region.answer : city!.answer;
+const intro = isRegion ? region.intro : city!.intro;
+const notes = isRegion ? region.doorProfile : city!.localNotes;
+const notesHeading = isRegion
+  ? `What the doors are like ${region.inPhrase}`
+  : `What we see in ${city!.name}`;
+
+const crumbs = isRegion
+  ? [
+      { name: 'Home', href: '/' },
+      { name: 'Service Areas', href: '/service-areas/' },
+      { name: region.name, href: `/service-areas/${region.slug}/` },
+    ]
+  : [
+      { name: 'Home', href: '/' },
+      { name: 'Service Areas', href: '/service-areas/' },
+      { name: region.name, href: `/service-areas/${region.slug}/` },
+      { name: city!.name, href: `/service-areas/${city!.slug}/` },
+    ];
+
+const regionCities = citiesByRegion(region.slug);
+const nearby = isRegion
+  ? regionCities.slice(0, 8)
+  : city!.nearby.map((s) => getCity(s)).filter((c): c is NonNullable<typeof c> => Boolean(c));
+
+const priceRows = priceTableOrder
+  .map((s) => getService(s))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s));
+
+const topServices = services.slice(0, 6);
+
+/** Region and city pages both describe the same service, scoped to a place. */
+const schema = serviceSchema(site, {
+  name: `Garage Door Repair ${inPhrase}`,
+  description: metaDescription,
+  url: `${site}/service-areas/${slug}/`,
+  slug,
+  priceLow: 100,
+  priceHigh: 4620,
+});
+
+const localFaq = isRegion
+  ? [
+      {
+        question: `How much does garage door repair cost ${region.inPhrase}?`,
+        answer:
+          'Spring replacement starts at $170 per spring, cable repair at $100, opener repair at $100 and opener installation at $281. Prices are the same across our whole service area. What changes the final number is the door itself, not the town.',
+      },
+      {
+        question: `Do you offer same-day service ${region.inPhrase}?`,
+        answer:
+          'Yes, seven days a week. You get a real arrival window before we dispatch, along with the emergency call-out premium of $200 to $350 if it applies.',
+      },
+      {
+        question: `Which communities ${region.inPhrase} do you cover?`,
+        answer: `We work throughout ${region.name}, and we publish dedicated pages for ${regionCities
+          .map((c) => c.name)
+          .join(', ')}. If your town is not listed, send us the address and we will confirm.`,
+      },
+      {
+        question: 'Are you licensed and insured?',
+        answer:
+          'Yes, and every job comes with a written estimate before work starts plus a one year warranty on parts and labor.',
+      },
+    ]
+  : city!.faq.concat([
+      {
+        question: `How much does garage door repair cost in ${city!.name}?`,
+        answer:
+          'Spring replacement starts at $170 per spring, cable repair at $100, opener repair at $100 and opener installation at $281. These are starting prices for a standard single door, and you get a written quote before any work begins.',
+      },
+      {
+        question: 'Are you licensed and insured?',
+        answer:
+          'Yes, with a written estimate before work starts and a one year warranty on parts and labor.',
+      },
+    ]);
+---
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="area-hero">
+    <div class="container area-hero-inner">
+      <div>
+        <span class="eyebrow">{isRegion ? 'Region' : `${region.name}`}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>Garage door repair {inPhrase}</h1>
+        <p class="lead">{metaDescription}</p>
+        <div class="hero-actions">
+          <a href="/contact/" class="btn btn-accent btn-lg">Get a free quote</a>
+          <a href="/prices/" class="btn btn-outline btn-lg">See the price list</a>
+        </div>
+        <ul class="hero-trust">
+          <li>Same-day service</li>
+          <li>Written estimate first</li>
+          <li>Licensed &amp; insured</li>
+        </ul>
+      </div>
+
+      <aside class="price-panel" data-anim="fade-up">
+        <h2 class="pp-title">Prices {inPhrase}</h2>
+        <table class="mini-prices">
+          <tbody>
+            {priceRows.slice(0, 6).map((s) => (
+              <tr>
+                <th scope="row"><a href={`/services/${s.slug}/`}>{s.shortName}</a></th>
+                <td>from ${s.priceLow}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <PriceDisclaimer />
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container area-body">
+      <article class="prose">
+        <AnswerBox text={answer} />
+
+        {intro.map((p) => <p>{p}</p>)}
+
+        <h2>{notesHeading}</h2>
+        <ul class="check-list">
+          {notes.map((n) => <li>{n}</li>)}
+        </ul>
+
+        <h2>Services we provide {inPhrase}</h2>
+        <div class="svc-grid">
+          {topServices.map((s) => (
+            <a href={`/services/${s.slug}/`} class="svc-mini">
+              <span class="svc-ico"><Icon name={iconFor(s.slug)} size={22} /></span>
+              <span class="svc-name">{s.shortName}</span>
+              <span class="svc-price">from ${s.priceLow}</span>
+            </a>
+          ))}
+        </div>
+        <p class="all-link"><a href="/services/">All services and what each one costs →</a></p>
+
+        <PriceDisclaimer variant="block" />
+
+        <FAQ items={localFaq} title={`Garage door questions ${inPhrase}`} />
+      </article>
+
+      <aside class="area-aside">
+        {!isRegion && (
+          <div class="card aside-card">
+            <h3>Nearby areas</h3>
+            <ul class="area-links">
+              {nearby.map((c) => (
+                <li><a href={`/service-areas/${c.slug}/`}>{c.name}</a></li>
+              ))}
+            </ul>
+            <a href={`/service-areas/${region.slug}/`} class="aside-more">All of {region.name} →</a>
+          </div>
+        )}
+        {isRegion && (
+          <div class="card aside-card">
+            <h3>Communities in {region.name}</h3>
+            <ul class="area-links">
+              {regionCities.map((c) => (
+                <li><a href={`/service-areas/${c.slug}/`}>{c.name}</a></li>
+              ))}
+            </ul>
+            <a href="/service-areas/" class="aside-more">All service areas →</a>
+          </div>
+        )}
+        <div class="card aside-card">
+          <h3>Emergency?</h3>
+          <p class="aside-note">
+            Car trapped or door stuck open? Same-day service seven days a week. The
+            call-out premium is $200 to $350 and it is stated before we dispatch.
+          </p>
+          <a href="/services/emergency-garage-door-repair/" class="btn btn-accent btn-sm">Emergency service</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand
+    heading={`Get a garage door quote ${inPhrase}`}
+    text={`Tell us what happened and we will give you the number before we send anyone. Serving ${business.serviceArea}.`}
+  />
+</BaseLayout>
+
+<style>
+  .area-hero { background: var(--grad-hero); padding-block: 2.4rem 2.8rem; }
+  .area-hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.5rem; align-items: center; }
+  .area-hero h1 { margin-bottom: 0.7rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1.3rem 0 1.1rem; }
+  .hero-trust {
+    display: flex; flex-wrap: wrap; gap: 0.4rem 1.3rem; list-style: none; padding: 0; margin: 0;
+    font-size: 0.86rem; font-weight: 700; color: var(--c-body);
+  }
+  .hero-trust li::before { content: '✓'; color: #177841; font-weight: 800; margin-right: 0.35rem; }
+
+  .price-panel {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); padding: 1.5rem 1.6rem;
+    position: relative; overflow: hidden;
+  }
+  .price-panel::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 5px; background: var(--stripe-brand);
+  }
+  .pp-title { font-size: 1.1rem; margin-bottom: 0.8rem; }
+  .mini-prices { width: 100%; border-collapse: collapse; }
+  .mini-prices th, .mini-prices td {
+    padding: 0.5rem 0; border-bottom: 1px solid var(--c-line); text-align: left; font-size: 0.9rem;
+  }
+  .mini-prices th { font-weight: 600; }
+  .mini-prices th a { color: var(--c-ink); text-decoration: none; }
+  .mini-prices th a:hover { color: var(--c-primary); }
+  .mini-prices td { text-align: right; font-weight: 800; color: var(--c-primary); white-space: nowrap; }
+
+  .area-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .area-body .prose { max-width: none; }
+
+  .svc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.8rem; margin: 1.2rem 0 0.8rem; }
+  .svc-mini {
+    display: flex; align-items: center; gap: 0.6rem; text-decoration: none;
+    border: 1px solid var(--c-line); border-radius: 10px; padding: 0.7rem 0.85rem;
+    background: #fff; transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .svc-mini:hover { text-decoration: none; border-color: var(--c-primary); box-shadow: var(--shadow-card); }
+  .svc-ico { color: var(--c-primary); display: inline-flex; flex-shrink: 0; }
+  .svc-name { font-weight: 700; font-size: 0.9rem; color: var(--c-ink); }
+  .svc-price { margin-left: auto; font-size: 0.82rem; font-weight: 800; color: var(--c-primary); white-space: nowrap; }
+  .all-link { font-weight: 700; font-size: 0.92rem; }
+
+  .area-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
+  .aside-card h3 { font-size: 1rem; margin-bottom: 0.7rem; }
+  .aside-note { font-size: 0.88rem; margin-bottom: 0.9rem; }
+  .area-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
+  .area-links a { font-size: 0.9rem; }
+  .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
+
+  @media (max-width: 960px) {
+    .area-hero-inner { grid-template-columns: 1fr; gap: 1.8rem; }
+    .area-body { grid-template-columns: 1fr; }
+    .area-aside { position: static; }
+  }
+</style>

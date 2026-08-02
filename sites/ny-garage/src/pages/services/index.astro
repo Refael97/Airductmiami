@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import PriceDisclaimer from '../../components/PriceDisclaimer.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
+import FAQ from '../../components/FAQ.astro';
+import { services } from '../../data/services';
+import { iconFor } from '../../data/serviceIcons';
+import { business } from '../../data/business';
+
+const title = `Garage Door Services in New York | Published Prices | ${business.name}`;
+const description =
+  'Every garage door service we offer in the New York metro area, with the starting price published for each one: springs from $170, cables from $100, openers from $281, new doors from $1,056.';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/services/' },
+];
+
+const repairs = services.filter((s) => !['new-garage-door-installation', 'garage-door-tune-up'].includes(s.slug));
+const other = services.filter((s) => ['new-garage-door-installation', 'garage-door-tune-up'].includes(s.slug));
+
+const faq = [
+  {
+    question: 'What garage door services do you offer in New York?',
+    answer:
+      'Spring replacement, cable and drum repair, opener repair, opener installation, smart and WiFi opener installation, off-track correction, panel and section replacement, new door installation, annual tune-ups, and same-day emergency service. Every one has its starting price published on this site.',
+  },
+  {
+    question: 'Which repair is most common?',
+    answer:
+      'Torsion spring replacement, by a wide margin. A standard spring is rated for about 10,000 cycles, which is seven to ten years of normal use, and cold weather is what usually finishes off a spring that is already near the end of its life.',
+  },
+  {
+    question: 'Do you charge to come out and look?',
+    answer:
+      'We quote before we dispatch, based on what you describe, and the number does not change on arrival unless we find something you did not know about, in which case we tell you before doing anything. We do not use a low advertised call-out fee to get in the door.',
+  },
+  {
+    question: 'Do you work on commercial garage doors?',
+    answer:
+      'Our published prices cover residential doors. We do take commercial enquiries, but a rolling steel or high-cycle commercial door is a different job with different parts, so it is quoted individually rather than from this list.',
+  },
+];
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>Garage door services in New York</h1>
+        <p class="lead">
+          Every service below has its starting price published, and every service
+          page explains what pushes a job above that starting point. That is the
+          whole idea: you should know roughly what this costs before you pick up
+          the phone.
+        </p>
+      </div>
+
+      <AnswerBox
+        text="We repair and install garage doors and openers across Long Island, Westchester, Staten Island, Queens and Brooklyn. Spring replacement starts at $170 per spring, cable repair at $100, opener repair at $100, opener installation at $281, section replacement at $250, and a new door installed at $1,056. Every job is quoted in writing before work begins."
+      />
+
+      <h2 class="group-head">Repairs</h2>
+      <div class="grid grid-3">
+        {repairs.map((s, i) => (
+          <a href={`/services/${s.slug}/`} class="card service-card" data-anim="fade-up" data-anim-delay={String((i % 3) * 80)}>
+            <span class="icon"><Icon name={iconFor(s.slug)} size={30} /></span>
+            <h3>{s.name}</h3>
+            <p>{s.answer.split('. ')[0]}.</p>
+            <span class="card-price">from ${s.priceLow}</span>
+          </a>
+        ))}
+      </div>
+
+      <h2 class="group-head">Installation and maintenance</h2>
+      <div class="grid grid-3">
+        {other.map((s, i) => (
+          <a href={`/services/${s.slug}/`} class="card service-card" data-anim="fade-up" data-anim-delay={String((i % 3) * 80)}>
+            <span class="icon"><Icon name={iconFor(s.slug)} size={30} /></span>
+            <h3>{s.name}</h3>
+            <p>{s.answer.split('. ')[0]}.</p>
+            <span class="card-price">from ${s.priceLow}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="narrow"><PriceDisclaimer variant="block" /></div>
+
+      <div class="narrow"><FAQ items={faq} title="About our services" /></div>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>
+
+<style>
+  .group-head { margin: 2.6rem 0 1.2rem; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+  .group-head:first-of-type { margin-top: 2rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card:hover .icon { background: var(--c-primary); color: #fff; }
+  .service-card .icon { transition: background 0.2s ease, color 0.2s ease; }
+  .service-card h3 { color: var(--c-ink); font-size: 1.06rem; margin-bottom: 0.35rem; }
+  .service-card p { color: var(--c-body); font-size: 0.9rem; margin-bottom: 0.6rem; }
+  .card-price {
+    display: inline-block; font-weight: 800; font-size: 0.88rem;
+    color: var(--c-primary); background: var(--c-primary-light);
+    padding: 0.25rem 0.6rem; border-radius: 999px;
+  }
+</style>

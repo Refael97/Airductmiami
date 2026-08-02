@@ -1,0 +1,18 @@
+---
+/**
+ * Extractable fact table. Answer engines lift these directly, which is the
+ * point: short label, short value, no prose around it.
+ */
+interface Props {
+  facts: { label: string; value: string }[];
+}
+const { facts } = Astro.props;
+---
+<div class="facts">
+  {facts.map((f) => (
+    <div class="fact">
+      <span class="label">{f.label}</span>
+      <span class="value">{f.value}</span>
+    </div>
+  ))}
+</div>

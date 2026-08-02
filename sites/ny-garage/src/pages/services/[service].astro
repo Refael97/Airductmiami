@@ -1,0 +1,203 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import QuickFacts from '../../components/QuickFacts.astro';
+import PriceDisclaimer from '../../components/PriceDisclaimer.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Icon from '../../components/Icon.astro';
+import { services, getService } from '../../data/services';
+import { iconFor } from '../../data/serviceIcons';
+import { citiesByPotential } from '../../data/cities';
+import { serviceSchema } from '../../lib/schema';
+
+export function getStaticPaths() {
+  return services.map((s) => ({ params: { service: s.slug }, props: { service: s } }));
+}
+
+const { service } = Astro.props;
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const url = `${site}/services/${service.slug}/`;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/services/' },
+  { name: service.shortName, href: `/services/${service.slug}/` },
+];
+
+const related = service.related
+  .map((slug) => getService(slug))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s));
+
+const topCities = citiesByPotential().slice(0, 12);
+
+const schema = serviceSchema(site, {
+  name: service.name,
+  description: service.metaDescription,
+  url,
+  slug: service.slug,
+  priceLow: service.priceLow,
+  priceHigh: service.priceHigh,
+});
+---
+<BaseLayout title={service.metaTitle} description={service.metaDescription} schema={schema}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="svc-hero">
+    <div class="container svc-hero-inner">
+      <div>
+        <span class="eyebrow">Service</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>{service.name}</h1>
+        <p class="lead">{service.metaDescription}</p>
+        <div class="hero-actions">
+          <a href="/contact/" class="btn btn-accent btn-lg">Get a free quote</a>
+          <a href="/prices/" class="btn btn-outline btn-lg">Full price list</a>
+        </div>
+      </div>
+      <aside class="price-card" data-anim="fade-up">
+        <span class="pc-icon"><Icon name={iconFor(service.slug)} size={34} /></span>
+        <span class="pc-label">Starting price</span>
+        <span class="pc-price">from ${service.priceLow}</span>
+        <span class="pc-range">Typical range ${service.priceLow} to ${service.priceHigh}</span>
+        <p class="pc-note">{service.priceNote}</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container svc-body">
+      <article class="prose">
+        <AnswerBox text={service.answer} />
+
+        {service.intro.map((p) => <p>{p}</p>)}
+
+        <h2>What moves this price</h2>
+        <p>
+          The starting price above is for a standard single garage door in normal
+          condition. These are the things that put a job above it, and we tell you
+          which ones apply before we start rather than after.
+        </p>
+        <ul class="check-list">
+          {service.priceFactors.map((f) => <li>{f}</li>)}
+        </ul>
+
+        <QuickFacts facts={service.quickFacts} />
+
+        <h2>Why customers pick us for this</h2>
+        <div class="benefit-grid">
+          {service.benefits.map((b) => (
+            <div class="benefit">
+              <h3>{b.title}</h3>
+              <p>{b.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2>How the job runs</h2>
+        <ol class="process">
+          {service.process.map((p) => (
+            <li>
+              <strong>{p.title}.</strong> {p.text}
+            </li>
+          ))}
+        </ol>
+
+        <PriceDisclaimer variant="block" />
+
+        <FAQ items={service.faq} title={`${service.shortName} questions`} />
+      </article>
+
+      <aside class="svc-aside">
+        <div class="card aside-card">
+          <h3>Related services</h3>
+          <ul class="plain">
+            {related.map((r) => (
+              <li>
+                <a href={`/services/${r.slug}/`}>{r.name}</a>
+                <span>from ${r.priceLow}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="card aside-card">
+          <h3>Where we work</h3>
+          <p class="aside-note">Same-day service across the metro area.</p>
+          <ul class="area-links">
+            {topCities.map((c) => (
+              <li><a href={`/service-areas/${c.slug}/`}>{c.name}</a></li>
+            ))}
+          </ul>
+          <a href="/service-areas/" class="aside-more">All service areas →</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>
+
+<style>
+  .svc-hero { background: var(--grad-hero); padding-block: 2.4rem 2.8rem; }
+  .svc-hero-inner { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2.5rem; align-items: center; }
+  .svc-hero h1 { margin-bottom: 0.8rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.4rem; }
+
+  .price-card {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); padding: 1.75rem; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .price-card::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 5px;
+    background: var(--stripe-brand);
+  }
+  .pc-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 3.6rem; height: 3.6rem; border-radius: 12px;
+    background: var(--c-primary-light); color: var(--c-primary);
+    margin-bottom: 0.8rem;
+  }
+  .pc-label {
+    display: block; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--c-muted);
+  }
+  .pc-price {
+    display: block; font-family: var(--font-display); font-weight: 400;
+    font-size: 2.8rem; line-height: 1.05; color: var(--c-primary); margin: 0.2rem 0;
+  }
+  .pc-range { display: block; font-size: 0.88rem; font-weight: 700; color: var(--c-body); }
+  .pc-note { font-size: 0.84rem; color: var(--c-muted); margin: 0.7rem 0 0; }
+
+  .svc-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .svc-body .prose { max-width: none; }
+
+  .benefit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin: 1.4rem 0 0; }
+  .benefit h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+  .benefit p { font-size: 0.93rem; margin: 0; }
+
+  .process { padding-left: 1.2rem; }
+  .process li { margin-bottom: 0.7rem; }
+  .process strong { color: var(--c-ink); }
+
+  .svc-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
+  .aside-card h3 { font-size: 1rem; margin-bottom: 0.8rem; }
+  .aside-note { font-size: 0.86rem; color: var(--c-muted); margin-bottom: 0.7rem; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li {
+    display: flex; justify-content: space-between; gap: 0.6rem;
+    padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem;
+  }
+  .plain li:last-child { border-bottom: 0; }
+  .plain span { color: var(--c-primary); font-weight: 700; white-space: nowrap; }
+  .area-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
+  .area-links a { font-size: 0.88rem; }
+  .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
+
+  @media (max-width: 960px) {
+    .svc-hero-inner { grid-template-columns: 1fr; gap: 1.8rem; }
+    .svc-body { grid-template-columns: 1fr; }
+    .svc-aside { position: static; }
+  }
+</style>

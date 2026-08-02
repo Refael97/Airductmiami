@@ -7,9 +7,7 @@ interface Props { crumbs: Crumb[]; }
 const { crumbs } = Astro.props;
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
-const schema = breadcrumbSchema(
-  crumbs.map((c) => ({ name: c.name, url: `${site}${c.href}` }))
-);
+const schema = breadcrumbSchema(site, crumbs);
 ---
 <nav class="breadcrumbs container" aria-label="Breadcrumb">
   <ol>

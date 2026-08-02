@@ -1,0 +1,218 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import PriceDisclaimer from '../components/PriceDisclaimer.astro';
+import CtaBand from '../components/CtaBand.astro';
+import FAQ from '../components/FAQ.astro';
+import Icon from '../components/Icon.astro';
+import { services } from '../data/services';
+import { business } from '../data/business';
+
+const title = `Garage Door Repair Prices in New York | ${business.name}`;
+const description =
+  'Our published garage door prices for the New York metro area. Spring replacement from $170, cable repair from $100, opener installation from $281, new door from $1,056. Starting prices, explained.';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Prices', href: '/prices/' },
+];
+
+/** Extra line items that are not services in their own right. */
+const addOns = [
+  {
+    name: 'Both springs replaced together',
+    price: 'Adds $150 to $300',
+    note: 'Rather than doubling, because most of the labor is shared',
+  },
+  {
+    name: 'Cable and drum together',
+    price: '$250 to $425',
+    note: 'When the drum is damaged as well as the cable',
+  },
+  {
+    name: 'Cable tension adjustment only',
+    price: '$95 to $150',
+    note: 'When the cable slipped off the drum but is not damaged',
+  },
+  {
+    name: 'Emergency or after-hours call-out',
+    price: '$200 to $350',
+    note: 'Stated before we dispatch, never added afterwards',
+  },
+  {
+    name: 'Labor, where quoted hourly',
+    price: '$50 to $150 per hour',
+    note: 'New York market rate, used only for non-standard work',
+  },
+];
+
+const faq = [
+  {
+    question: 'Are these your real prices or an advertisement?',
+    answer:
+      'They are real starting prices for a standard single garage door in normal condition. The final number depends on the door, the model and what we find, and you get it in writing before any work starts. What we will not do is name a low number to get in the door and raise it once the door is apart.',
+  },
+  {
+    question: 'Why does nobody else publish prices?',
+    answer:
+      'Because a published price is a commitment and a quote given on site is not. It is also why cost searches are dominated by directories rather than by garage door companies: the question gets asked constantly and almost nobody in the trade answers it.',
+  },
+  {
+    question: 'What is a fair price for two garage door springs in New York?',
+    answer:
+      'Roughly $320 to $700 installed for a standard door. Quotes well above that for two standard springs are worth a second opinion. High-cycle springs and oversized doors legitimately cost more, and anyone quoting them should say which one applies.',
+  },
+  {
+    question: 'Do you charge a service call fee?',
+    answer:
+      'Not as a separate bait fee. We quote the job before we dispatch based on what you describe. Genuine emergency and after-hours dispatch carries a call-out premium of $200 to $350, and it is stated before we send anyone.',
+  },
+  {
+    question: 'Is the emergency premium charged on top of the repair?',
+    answer:
+      'Yes, and only for genuine after-hours or same-day emergency dispatch. The repair itself is quoted at the same published price it would carry on any other day. We do not raise repair prices because it is an emergency.',
+  },
+  {
+    question: 'Do you offer a warranty?',
+    answer:
+      'One year on parts and one year on labor for the work we do. The warranty is written on the invoice rather than promised verbally.',
+  },
+];
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="price-hero">
+    <div class="container">
+      <span class="eyebrow">Published prices</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>What garage door repair costs in New York</h1>
+      <p class="lead">
+        Every price we charge is on this page. It is the thing this company was
+        built to do differently, so it is not buried in a form or held back until
+        a technician is standing in your driveway.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="narrow">
+        <AnswerBox
+          text="Garage door repair in New York starts at $170 per spring, $100 for cable repair, $100 for opener repair, $281 for opener installation, $150 for off-track correction, $250 for section replacement and $1,056 for a new door installed. Emergency and after-hours dispatch adds $200 to $350. These are starting prices for a standard single door, and every job is quoted in writing before work begins."
+        />
+      </div>
+
+      <div class="table-wrap" data-anim="fade-up">
+        <table class="price-list">
+          <caption class="visually-hidden">Published starting prices by service</caption>
+          <thead>
+            <tr>
+              <th scope="col">Service</th>
+              <th scope="col">Starting price</th>
+              <th scope="col">Typical range</th>
+              <th scope="col">What the price covers</th>
+            </tr>
+          </thead>
+          <tbody>
+            {services.map((s) => (
+              <tr>
+                <th scope="row"><a href={`/services/${s.slug}/`}>{s.name}</a></th>
+                <td class="num">from ${s.priceLow}</td>
+                <td class="num muted">${s.priceLow} to ${s.priceHigh}</td>
+                <td class="note">{s.priceNote}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="sub">Common additions</h2>
+      <div class="table-wrap">
+        <table class="price-list">
+          <caption class="visually-hidden">Additional line items</caption>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Price</th>
+              <th scope="col">When it applies</th>
+            </tr>
+          </thead>
+          <tbody>
+            {addOns.map((a) => (
+              <tr>
+                <th scope="row">{a.name}</th>
+                <td class="num">{a.price}</td>
+                <td class="note">{a.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="narrow"><PriceDisclaimer variant="block" /></div>
+
+      <div class="promise-grid">
+        <div class="card promise" data-anim="fade-up">
+          <span class="icon"><Icon name="quote" size={30} /></span>
+          <h3>Written before, not after</h3>
+          <p>You get the price in writing before anything is touched, and that number is what the invoice says.</p>
+        </div>
+        <div class="card promise" data-anim="fade-up" data-anim-delay="80">
+          <span class="icon"><Icon name="warning" size={30} /></span>
+          <h3>No bait call-out fee</h3>
+          <p>We do not advertise a $29 visit and make the money on parts quoted once your door is in pieces.</p>
+        </div>
+        <div class="card promise" data-anim="fade-up" data-anim-delay="160">
+          <span class="icon"><Icon name="shield" size={30} /></span>
+          <h3>The failed part, shown</h3>
+          <p>If we say a part failed we show it to you. A recommendation you cannot see is a recommendation you cannot check.</p>
+        </div>
+      </div>
+
+      <div class="narrow"><FAQ items={faq} title="Questions about pricing" /></div>
+    </div>
+  </section>
+
+  <CtaBand
+    heading="Describe the problem and we will give you the number"
+    text="No obligation, and no technician sent before you know what it costs."
+  />
+</BaseLayout>
+
+<style>
+  .price-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .price-hero .lead { max-width: 46rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .sub { margin: 2.6rem 0 1rem; }
+
+  /* Wide tables scroll inside themselves so the page never scrolls sideways */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--c-line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    background: #fff;
+  }
+  .price-list { width: 100%; border-collapse: collapse; min-width: 640px; }
+  .price-list thead th {
+    background: var(--c-primary); color: #fff; text-align: left;
+    font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 0.8rem 1rem; font-weight: 800;
+  }
+  .price-list tbody th, .price-list tbody td {
+    padding: 0.85rem 1rem; border-bottom: 1px solid var(--c-line);
+    text-align: left; vertical-align: top; font-size: 0.93rem;
+  }
+  .price-list tbody tr:last-child th, .price-list tbody tr:last-child td { border-bottom: 0; }
+  .price-list tbody tr:nth-child(even) { background: var(--c-bg-alt); }
+  .price-list tbody th { font-weight: 700; color: var(--c-ink); }
+  .price-list .num { font-weight: 800; color: var(--c-primary); white-space: nowrap; }
+  .price-list .num.muted { font-weight: 600; color: var(--c-body); }
+  .price-list .note { color: var(--c-body); }
+
+  .promise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.4rem; margin-top: 2rem; }
+  .promise h3 { font-size: 1.02rem; margin-bottom: 0.3rem; }
+  .promise p { font-size: 0.93rem; margin: 0; }
+</style>
