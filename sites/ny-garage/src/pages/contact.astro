@@ -1,0 +1,257 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadMeta from '../components/LeadMeta.astro';
+import PriceDisclaimer from '../components/PriceDisclaimer.astro';
+import Icon from '../components/Icon.astro';
+import FAQ from '../components/FAQ.astro';
+import { business } from '../data/business';
+import { services } from '../data/services';
+import { regions } from '../data/regions';
+
+const title = `Get a Garage Door Quote in New York | ${business.name}`;
+const description =
+  'Tell us what happened and we will give you the price before we send anyone. Same-day service across Long Island, Westchester, Staten Island, Queens and Brooklyn.';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Contact', href: '/contact/' },
+];
+
+const symptoms = [
+  'Spring snapped, loud bang',
+  'Door will not open',
+  'Door will not close',
+  'Door is off the track',
+  'Door stuck halfway',
+  'Cable came off',
+  'Opener runs but door does not move',
+  'Door is noisy',
+  'Damaged or dented panel',
+  'I want a new door',
+  'I want a new opener',
+  'Something else',
+];
+
+const faq = [
+  {
+    question: 'What happens after I send this?',
+    answer:
+      'We read what you wrote, come back to you with a price range for that specific problem, and give you an arrival window. Nobody is dispatched and nothing is charged until you have the number and have said yes.',
+  },
+  {
+    question: 'How quickly will you reply?',
+    answer:
+      'Within business hours, quickly. Outside them, first thing the next morning unless you have marked it as an emergency, in which case we treat it as one.',
+  },
+  {
+    question: 'Do I have to phone?',
+    answer:
+      'No. This form is enough. Leave a number if you would rather talk it through, and leave an email if you would rather have the quote in writing to read at your own pace.',
+  },
+];
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="form-col">
+        <span class="eyebrow">Free quote</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>Tell us what happened</h1>
+        <p class="lead">
+          The more you tell us, the closer the number we can give you before anyone
+          leaves the yard. There is no obligation and no technician is dispatched
+          until you have agreed the price.
+        </p>
+
+        <form
+          name="quote"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you/"
+          class="quote-form card"
+        >
+          <input type="hidden" name="form-name" value="quote" />
+          <p class="hp">
+            <label>Do not fill this in: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+          <LeadMeta source="contact_form" />
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="zip">ZIP code <span aria-hidden="true">*</span></label>
+              <input type="text" id="zip" name="zip" required inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="area">Area</label>
+              <select id="area" name="area">
+                <option value="">Select your area</option>
+                {regions.map((r) => <option value={r.name}>{r.name}</option>)}
+                <option value="Other">Somewhere else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="urgency">How urgent</label>
+              <select id="urgency" name="urgency">
+                <option value="Emergency, car trapped or door open">Emergency, car trapped or door open</option>
+                <option value="Today if possible" selected>Today if possible</option>
+                <option value="This week">This week</option>
+                <option value="Just getting a price">Just getting a price</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="symptom">What is wrong</label>
+            <select id="symptom" name="symptom">
+              {symptoms.map((s) => <option value={s}>{s}</option>)}
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="service">Service you think you need</label>
+            <select id="service" name="service">
+              <option value="Not sure">Not sure, tell me</option>
+              {services.map((s) => <option value={s.name}>{s.name}</option>)}
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Anything else</label>
+            <textarea id="message" name="message" rows="4" placeholder="Single or double door? Roughly how old? What did it sound like when it failed?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-lg full">Send and get my price</button>
+          <p class="form-note">
+            We use these details to quote your job and nothing else. No marketing
+            lists, no sharing with third parties.
+          </p>
+        </form>
+      </div>
+
+      <aside class="info-col">
+        <div class="card info-card">
+          <h2>What we will send back</h2>
+          <ul class="check-list">
+            <li>A price range for your specific problem</li>
+            <li>An arrival window, not a whole day</li>
+            <li>The emergency premium up front if it applies</li>
+            <li>A written estimate before any work starts</li>
+          </ul>
+        </div>
+
+        <div class="card info-card">
+          <h2>Contact</h2>
+          <p class="contact-method">
+            <span class="cm-ico"><Icon name="phone" size={18} /></span>
+            <span><strong>{business.phone}</strong><br />Seven days a week</span>
+          </p>
+          <p class="contact-method">
+            <span class="cm-ico"><Icon name="quote" size={18} /></span>
+            <span><strong>{business.email}</strong></span>
+          </p>
+          <p class="contact-method">
+            <span class="cm-ico"><Icon name="pin" size={18} /></span>
+            <span>
+              <strong>{business.serviceArea}</strong><br />
+              We travel to you. There is no walk-in location, so we do not publish a
+              street address we do not receive customers at.
+            </span>
+          </p>
+        </div>
+
+        <div class="card info-card">
+          <h2>Hours</h2>
+          <ul class="hours">
+            {business.hours.map((h) => (
+              <li><span>{h.days}</span><span>{h.opens} to {h.closes}</span></li>
+            ))}
+          </ul>
+          <p class="hours-note">Emergency service outside these hours carries a $200 to $350 call-out premium, stated before we dispatch.</p>
+        </div>
+
+        <PriceDisclaimer />
+      </aside>
+    </div>
+
+    <div class="container narrow">
+      <FAQ items={faq} title="About getting a quote" />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr); gap: 2.5rem; align-items: start; }
+  .narrow { max-width: var(--maxw-narrow); }
+
+  .quote-form { margin-top: 1.5rem; }
+  .hp { position: absolute; left: -9999px; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .field { margin-bottom: 1rem; }
+  .field label {
+    display: block; font-size: 0.85rem; font-weight: 700; color: var(--c-ink);
+    margin-bottom: 0.3rem;
+  }
+  .field label span { color: var(--c-accent); }
+  .field input, .field select, .field textarea {
+    width: 100%; padding: 0.7rem 0.85rem; font: inherit; font-size: 0.95rem;
+    border: 1px solid var(--c-line); border-radius: 10px; background: #fff;
+    color: var(--c-ink);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: none; border-color: var(--c-primary); box-shadow: var(--ring);
+  }
+  .field textarea { resize: vertical; }
+  .full { width: 100%; }
+  .form-note { font-size: 0.8rem; color: var(--c-muted); margin: 0.9rem 0 0; }
+
+  .info-col { display: grid; gap: 1.2rem; position: sticky; top: 6.5rem; }
+  .info-card h2 { font-size: 1.05rem; margin-bottom: 0.8rem; }
+  .info-card .check-list li { font-size: 0.92rem; margin-bottom: 0.5rem; }
+
+  .contact-method { display: flex; gap: 0.7rem; align-items: flex-start; font-size: 0.9rem; margin-bottom: 0.9rem; }
+  .contact-method:last-child { margin-bottom: 0; }
+  .cm-ico {
+    display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+    width: 2rem; height: 2rem; border-radius: 8px;
+    background: var(--c-primary-light); color: var(--c-primary);
+  }
+  .contact-method strong { color: var(--c-ink); }
+
+  .hours { list-style: none; padding: 0; margin: 0; }
+  .hours li {
+    display: flex; justify-content: space-between; gap: 0.8rem;
+    font-size: 0.9rem; padding: 0.35rem 0; border-bottom: 1px solid var(--c-line);
+  }
+  .hours li:last-child { border-bottom: 0; }
+  .hours-note { font-size: 0.82rem; color: var(--c-muted); margin: 0.7rem 0 0; }
+
+  @media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .info-col { position: static; }
+  }
+  @media (max-width: 520px) {
+    .field-row { grid-template-columns: 1fr; gap: 0; }
+  }
+</style>

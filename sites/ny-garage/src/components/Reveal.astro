@@ -37,6 +37,22 @@
     );
     for (var k = 0; k < anims.length; k++) reveal.observe(anims[k]);
 
+    /* Fail open. Content must never stay invisible because a viewport never
+       reached it: crawlers, screenshot tools and printed pages do not scroll.
+       If nobody has scrolled within 2.5 seconds, reveal everything. A visitor
+       who is scrolling still gets the animation, because the observer fires
+       long before this does. */
+    var scrolled = false;
+    var onScroll = function () {
+      scrolled = true;
+      window.removeEventListener('scroll', onScroll);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    setTimeout(function () {
+      if (scrolled) return;
+      for (var n = 0; n < anims.length; n++) anims[n].classList.add('is-in');
+    }, 2500);
+
     /* Counters: data-count holds the final string, e.g. "24/7" or "1,200".
        Only the numeric part animates, so suffixes survive. */
     var counter = new IntersectionObserver(

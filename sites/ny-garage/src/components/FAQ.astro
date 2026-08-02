@@ -12,8 +12,13 @@ interface Props {
 const { items, title = 'Frequently Asked Questions', emitSchema = true } = Astro.props;
 ---
 {items.length > 0 && (
-  <section class="faq-section" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">{title}</h2>
+  <section
+    class="faq-section"
+    aria-label={title ? undefined : 'Frequently asked questions'}
+    aria-labelledby={title ? 'faq-heading' : undefined}
+  >
+    {/* An empty title means the page supplies its own heading above. */}
+    {title && <h2 id="faq-heading">{title}</h2>}
     <div class="faq-list">
       {items.map((item, i) => (
         <details class="faq-item" open={i === 0}>
