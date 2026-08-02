@@ -106,6 +106,52 @@ Russian is the second candidate, and the geographic overlap with
 garage-owning neighborhoods around Sheepshead Bay and Brighton Beach is
 unusually clean. Phase two.
 
+## Hosting: Netlify or Cloudflare Pages
+
+The site runs on either. The form is what used to tie it to Netlify, and
+no longer does.
+
+Leave `PUBLIC_FORM_ENDPOINT` unset and the form uses Netlify Forms, which
+is how site one works. Set it to a URL, in the host's environment
+variables, and the form posts straight there instead, carrying the same
+eight network lead fields. Point it at a Make webhook and any host works.
+
+It is `PUBLIC_` because the value ends up in the HTML. That is fine for a
+webhook address, which is not a credential. Never put a signing secret in
+it.
+
+### Cloudflare Pages settings
+
+```
+Root directory:   sites/ny-garage
+Build command:    npm run build
+Output directory: dist
+```
+
+Cloudflare Pages is free with no site limit, and the domain already lives
+in the same Cloudflare account, so connecting it is one click rather than
+two DNS records.
+
+**Two things to check the moment a Cloudflare deploy is up**, because
+neither is a Netlify concern and both are easy to miss:
+
+1. **Trailing slashes.** This site canonicalises to the slash form:
+   `/prices/`, not `/prices`. Every canonical tag, the sitemap and every
+   internal link assume it, and on Netlify it is enforced by
+   `netlify/edge-functions/trailing-slash.ts`, which Cloudflare will not
+   run. Cloudflare Pages applies its own normalisation to static output,
+   and if it strips the slash instead of adding it, the canonical tags
+   and the served URLs disagree, which is the exact duplicate-URL problem
+   that cost site one thirty page pairs in Search Console. Load `/prices`
+   and `/prices/` and see which one wins before pointing the domain at
+   it. If Cloudflare strips the slash, the fix is `trailingSlash` and
+   `build.format` in `astro.config.mjs` plus dropping the trailing
+   slashes from internal links, not fighting the platform.
+
+2. **The edge function.** `netlify/edge-functions/trailing-slash.ts` is
+   Netlify-only and is dead code on Cloudflare. Whatever the check above
+   concludes replaces it.
+
 ## Running it
 
 ```

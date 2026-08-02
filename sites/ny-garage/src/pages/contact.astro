@@ -50,6 +50,22 @@ const faq = [
       'No. This form is enough. Leave a number if you would rather talk it through, and leave an email if you would rather have the quote in writing to read at your own pace.',
   },
 ];
+
+/**
+ * Where the form posts.
+ *
+ * Unset: Netlify Forms handles it, via the data-netlify attributes below.
+ * Set: the form posts straight to that URL, which is how this site runs on
+ * any host that has no forms product of its own, Cloudflare Pages included.
+ * Point it at the Make webhook and the eight network lead fields arrive
+ * there unchanged.
+ *
+ * Set PUBLIC_FORM_ENDPOINT in the host's environment variables. It is
+ * PUBLIC_ because it ends up in the HTML, which is fine: a webhook URL is
+ * an address, not a credential. Never put a signing secret in it.
+ */
+const formEndpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const usesNetlifyForms = formEndpoint === '';
 ---
 <BaseLayout title={title} description={description}>
   <Breadcrumbs crumbs={crumbs} />
@@ -69,12 +85,15 @@ const faq = [
         <form
           name="quote"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you/"
+          data-netlify={usesNetlifyForms ? 'true' : undefined}
+          netlify-honeypot={usesNetlifyForms ? 'bot-field' : undefined}
+          action={usesNetlifyForms ? '/thank-you/' : formEndpoint}
           class="quote-form card"
         >
-          <input type="hidden" name="form-name" value="quote" />
+          {usesNetlifyForms && <input type="hidden" name="form-name" value="quote" />}
+          {/* Where the submission should land when the host does not
+              redirect for us. Make reads this and 302s the visitor. */}
+          {!usesNetlifyForms && <input type="hidden" name="redirect_to" value="/thank-you/" />}
           <p class="hp">
             <label>Do not fill this in: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
           </p>
