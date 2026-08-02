@@ -46,4 +46,4 @@ Allow: /
 Disallow: /thank-you/
 Disallow: /privacy/
 
-Sitemap: https://garagedoorfixers.com/sitemap-index.xml
+Sitemap: https://garage-door-fixers.com/sitemap-index.xml

@@ -55,7 +55,7 @@ export const business: BusinessInfo = {
   // TODO: provision a real number with a local area code and inbound routing.
   phone: '(516) 000-0000',
   phoneHref: '+15160000000',
-  email: 'info@garagedoorfixers.com',
+  email: 'info@garage-door-fixers.com',
 
   area: {
     region: 'NY',

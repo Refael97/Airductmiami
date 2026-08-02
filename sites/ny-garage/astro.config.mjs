@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
-// TODO: replace with the real domain once it is registered.
-const SITE_URL = 'https://garagedoorfixers.com';
+// Registered at Cloudflare, 2026-08-02.
+const SITE_URL = 'https://garage-door-fixers.com';
 
 export default defineConfig({
   site: SITE_URL,

@@ -28,10 +28,29 @@ this site's entire differentiator.
 
 ## Blocked on you
 
-**1. The domain.** `astro.config.mjs` and `public/robots.txt` both assume
-`garagedoorfixers.com`. Buy it, then those two values are the only thing
-to change. Cloudflare through Composio can create the zone and the DNS
-records once the domain exists; it cannot register one.
+**1. The domain.** Done. `garage-door-fixers.com`, registered at
+Cloudflare on 2026-08-02. `astro.config.mjs`, `public/robots.txt` and the
+business email in `src/data/business.ts` all point at it.
+
+What is left on the domain is the connection, and it has to happen in
+this order:
+
+1. Create the Netlify site from this repo with `base = "sites/ny-garage"`
+2. Take the Netlify DNS target it gives you
+3. Point Cloudflare at it: a CNAME on `www` to the Netlify target, and an
+   apex record. Cloudflare's CNAME flattening handles the apex, so a
+   CNAME on the root works
+4. Set the Cloudflare proxy to DNS only, not proxied. Netlify issues its
+   own certificate and the orange cloud fights with it
+5. Let Netlify provision the certificate, then verify both
+   `garage-door-fixers.com` and `www.garage-door-fixers.com` resolve and
+   that one 301s to the other rather than both serving
+
+One thing worth knowing about this domain: hyphens are fine for search,
+Google reads the words either way. Where they cost you is anything spoken
+aloud, because "garage hyphen door hyphen fixers dot com" is hard to say
+on a phone call. If you ever buy the unhyphenated version, point it at
+the same site with a 301 rather than duplicating anything.
 
 **2. A real phone number.** `src/data/business.ts` carries
 `(516) 000-0000` as a placeholder and it appears in the footer, the
