@@ -2,8 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FAQ from '../components/FAQ.astro';
 import PriceDisclaimer from '../components/PriceDisclaimer.astro';
+import Icon from '../components/Icon.astro';
 import { business } from '../data/business';
 import { services, getService, priceTableOrder } from '../data/services';
+import { iconFor } from '../data/serviceIcons';
 
 const title = `Garage Door Repair in New York | Published Prices | ${business.name}`;
 const description = `Same-day garage door repair across Long Island, Westchester, Staten Island, Queens and Brooklyn. We publish our starting prices: spring replacement from $170, opener installation from $281. Written estimate before any work.`;
@@ -26,8 +28,9 @@ const homeFaq = [
   <!-- Hero -->
   <section class="hero">
     <div class="container hero-inner">
-      <div class="hero-copy">
+      <div class="hero-copy" data-anim="slide-left">
         <span class="eyebrow">Serving {business.serviceArea}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
         <h1>Here is what it costs.<br /><span class="hl">Before you call.</span></h1>
         <p class="lead">
           Garage door repair across Long Island, Westchester, Staten Island, Queens and
@@ -46,7 +49,7 @@ const homeFaq = [
         </ul>
       </div>
 
-      <aside class="hero-panel" aria-labelledby="price-panel-title">
+      <aside class="hero-panel" aria-labelledby="price-panel-title" data-anim="fade-up" data-anim-delay="120">
         <div class="panel-head">
           <h2 id="price-panel-title">What repairs actually cost</h2>
           <p>Real New York starting prices. No "call for pricing".</p>
@@ -64,6 +67,18 @@ const homeFaq = [
         <PriceDisclaimer />
         <a href="/prices/" class="panel-link">Full price list, every service →</a>
       </aside>
+    </div>
+  </section>
+
+  <!-- Trust strip. Every claim here is verifiable. No rating and no review
+       count until real reviews exist, per docs/TRUST-AND-CLAIMS.md. -->
+  <section class="trust-band">
+    <div class="container trust-strip" data-anim="fade-up">
+      <span class="trust-badge"><span class="tb-ico"><Icon name="shield" size={16} /></span>Licensed &amp; insured</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="truck" size={16} /></span>Same-day service</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="quote" size={16} /></span>Written estimate first</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="pin" size={16} /></span>Local NY technicians</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="check" size={16} /></span>1 year parts &amp; labor</span>
     </div>
   </section>
 
@@ -94,12 +109,19 @@ const homeFaq = [
     <div class="container">
       <div class="section-head center">
         <span class="eyebrow">What we do</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
         <h2>Garage door repair and installation</h2>
         <p class="lead">Every service below has its starting price published on its own page, with what changes it.</p>
       </div>
       <div class="grid grid-3">
-        {services.map((s) => (
-          <a href={`/services/${s.slug}/`} class="card service-card">
+        {services.map((s, i) => (
+          <a
+            href={`/services/${s.slug}/`}
+            class="card service-card"
+            data-anim="fade-up"
+            data-anim-delay={String((i % 3) * 90)}
+          >
+            <span class="icon"><Icon name={iconFor(s.slug)} size={30} /></span>
             <h3>{s.name}</h3>
             <p>{s.answer.split('. ')[0]}.</p>
             <span class="card-price">from ${s.priceLow}</span>
@@ -162,7 +184,23 @@ const homeFaq = [
 </BaseLayout>
 
 <style>
-  .hero { background: var(--grad-hero); padding-block: 3.2rem 3.6rem; }
+  .hero {
+    background: var(--grad-hero);
+    padding-block: 3.2rem 3.6rem;
+    position: relative;
+    isolation: isolate;
+  }
+  /* Steel panel texture, faded out towards the bottom so it reads as a
+     surface behind the copy rather than as ruled lines across it. */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--texture-steel);
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 62%);
+    mask-image: linear-gradient(180deg, #000 0%, transparent 62%);
+  }
   .hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
   .hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); line-height: 1.08; margin-bottom: 1rem; }
   .hero h1 .hl { color: var(--c-accent-dark); }
@@ -173,11 +211,19 @@ const homeFaq = [
     list-style: none; padding: 0; margin: 0;
     font-size: 0.88rem; font-weight: 700; color: var(--c-body);
   }
-  .hero-trust li::before { content: '✓'; color: var(--c-accent-dark); font-weight: 800; margin-right: 0.35rem; }
+  .hero-trust li::before { content: '✓'; color: #177841; font-weight: 800; margin-right: 0.35rem; }
+
+  .trust-band { border-bottom: 1px solid var(--c-line); background: #fff; }
+  .trust-band .trust-strip { padding-block: 1.05rem; justify-content: space-between; row-gap: 0.8rem; }
 
   .hero-panel {
-    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-lg);
-    padding: 1.5rem 1.6rem; box-shadow: var(--shadow-lg);
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    padding: 1.75rem; box-shadow: var(--shadow-card-hover);
+    position: relative; overflow: hidden;
+  }
+  .hero-panel::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 5px;
+    background: var(--stripe-brand);
   }
   .panel-head h2 { font-size: 1.18rem; margin-bottom: 0.2rem; }
   .panel-head p { font-size: 0.86rem; color: var(--c-muted); margin-bottom: 1rem; }
@@ -200,6 +246,8 @@ const homeFaq = [
 
   .service-card { display: block; text-decoration: none; }
   .service-card:hover { text-decoration: none; }
+  .service-card:hover .icon { background: var(--c-primary); color: #fff; }
+  .service-card .icon { transition: background 0.2s ease, color 0.2s ease; }
   .service-card h3 { color: var(--c-ink); font-size: 1.06rem; margin-bottom: 0.35rem; }
   .service-card p { color: var(--c-body); font-size: 0.9rem; margin-bottom: 0.6rem; }
   .card-price {

@@ -1,38 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Garage Door Fixers">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Garage Door Fixers">
   <title>Garage Door Fixers</title>
-  <!-- Arch over the skyline -->
-  <path d="M18 62a42 42 0 0 1 84 0" fill="none" stroke="#16294d" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Skyline behind: simplified NYC towers -->
-  <g fill="#3a5a8c">
-    <rect x="20" y="60" width="9" height="30"/>
-    <rect x="31" y="52" width="8" height="38"/>
-    <path d="M45 90V44l4-10 4 10v46z"/>
-    <rect x="86" y="56" width="8" height="34"/>
-    <path d="M96 90V50l4-9 4 9v40z"/>
+  <!-- Simplified mark: the logo has too much detail to read at 16px, so the
+       favicon keeps only the roof, the panelled door and the red signal bar. -->
+  <rect width="64" height="64" rx="13" fill="#0F2747"/>
+  <path d="M32 11 11 27h42z" fill="#FFFFFF"/>
+  <rect x="16" y="29" width="32" height="20" rx="2" fill="#FFFFFF"/>
+  <g stroke="#0F2747" stroke-width="2.4">
+    <path d="M16 35.5h32M16 42.5h32"/>
   </g>
-  <g fill="#16294d">
-    <path d="M41 90V38l3-8 3 8v52z"/>
-    <rect x="78" y="46" width="9" height="44"/>
-  </g>
-
-  <!-- Garage: roof and body -->
-  <path d="M60 44 30 66h60z" fill="#16294d"/>
-  <rect x="34" y="66" width="52" height="26" fill="#1d3663"/>
-
-  <!-- Garage door panels -->
-  <rect x="41" y="70" width="38" height="22" rx="1.5" fill="#e8ecf2"/>
-  <g fill="#16294d">
-    <rect x="45" y="73.5" width="7" height="3.5" rx="0.8"/>
-    <rect x="56.5" y="73.5" width="7" height="3.5" rx="0.8"/>
-    <rect x="68" y="73.5" width="7" height="3.5" rx="0.8"/>
-  </g>
-  <g stroke="#b9c2ce" stroke-width="1">
-    <path d="M41 80h38M41 85h38"/>
-  </g>
-
-  <!-- Ground line -->
-  <rect x="16" y="92" width="88" height="3.5" rx="1.75" fill="#16294d"/>
-  <!-- Red accent bar, the brand's signal colour -->
-  <rect x="38" y="99" width="44" height="4" rx="2" fill="#c1121f"/>
+  <rect x="19" y="53" width="26" height="4" rx="2" fill="#D62828"/>
 </svg>

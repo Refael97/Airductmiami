@@ -1,0 +1,74 @@
+---
+/**
+ * Scroll reveal for anything carrying data-anim, plus odometer counters
+ * for [data-count]. Roughly 1KB, runs once per element, and does nothing
+ * at all when the visitor has asked for reduced motion.
+ *
+ * Included once from BaseLayout, so pages only need the attributes.
+ */
+---
+<script is:inline>
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var anims = document.querySelectorAll('[data-anim]');
+    var counts = document.querySelectorAll('[data-count]');
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      for (var i = 0; i < anims.length; i++) anims[i].classList.add('is-in');
+      for (var j = 0; j < counts.length; j++) {
+        counts[j].textContent = counts[j].getAttribute('data-count');
+      }
+      return;
+    }
+
+    var reveal = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var el = e.target;
+          var delay = parseInt(el.getAttribute('data-anim-delay') || '0', 10);
+          setTimeout(function () {
+            el.classList.add('is-in');
+          }, delay);
+          reveal.unobserve(el);
+        });
+      },
+      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+    );
+    for (var k = 0; k < anims.length; k++) reveal.observe(anims[k]);
+
+    /* Counters: data-count holds the final string, e.g. "24/7" or "1,200".
+       Only the numeric part animates, so suffixes survive. */
+    var counter = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var el = e.target;
+          counter.unobserve(el);
+          var target = el.getAttribute('data-count') || '';
+          var num = parseFloat(target.replace(/[^0-9.]/g, ''));
+          if (!isFinite(num)) {
+            el.textContent = target;
+            return;
+          }
+          var prefix = target.slice(0, target.search(/[0-9]/));
+          var suffix = target.slice(target.search(/[0-9]/)).replace(/^[0-9.,]+/, '');
+          var start = null;
+          var dur = 1100;
+          var step = function (ts) {
+            if (start === null) start = ts;
+            var p = Math.min((ts - start) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            var val = Math.round(num * eased);
+            el.textContent = prefix + val.toLocaleString('en-US') + suffix;
+            if (p < 1) requestAnimationFrame(step);
+            else el.textContent = target;
+          };
+          requestAnimationFrame(step);
+        });
+      },
+      { threshold: 0.3 }
+    );
+    for (var m = 0; m < counts.length; m++) counter.observe(counts[m]);
+  })();
+</script>

@@ -1,44 +1,54 @@
-/* ============================================================
-   New York garage door site · Design System
-   Zero-JS, fast-loading, accessible. Mobile-first.
-   Palette from the brand logo: NYC navy with a signal red accent.
-   Deliberately unlike the Florida site: this is an emergency trade,
-   not a comfort service.
-   ============================================================ */
-
 :root {
-  /* Brand palette from the logo: NYC navy + signal red */
-  --c-primary: #16294d;      /* logo navy */
-  --c-primary-dark: #0e1b35;
-  --c-primary-light: #e9edf5;
-  --c-primary-deep: #0a1428;
-  --c-accent: #c1121f;       /* logo red, the urgency colour */
-  --c-accent-dark: #9d0e19;
-  --c-cta: #c1121f;
-  --c-cta-dark: #9d0e19;
-  --c-ink: #0f1c33;
-  --c-body: #3c4a5c;
-  --c-muted: #6c7a8a;
-  --c-line: #e2e7ee;
-  --c-bg: #ffffff;
-  --c-bg-alt: #f6f8fb;
-  --c-bg-deep: #111a26;
+  /* Brand book palette */
+  --c-primary: #0F2747;      /* Primary Navy */
+  --c-primary-dark: #0a1c33;
+  --c-primary-light: #e8edf4;
+  --c-primary-deep: #071426;
+  --c-accent: #D62828;       /* Construction Red, CTA only */
+  --c-accent-dark: #b01f1f;
+  --c-cta: #D62828;
+  --c-cta-dark: #b01f1f;
+  --c-ink: #0F2747;
+  --c-body: #5E6874;         /* Steel Gray */
+  --c-muted: #7b8593;
+  --c-line: #E5E7EB;
+  --c-bg: #FFFFFF;
+  --c-bg-alt: #F4F5F7;       /* Light Gray */
+  --c-bg-deep: #0F2747;
   --c-warn: #d9822b;
-  --c-success: #16a34a;
+  --c-success: #22A35A;      /* Success Green */
   --c-star: #f5b301;
 
-  --grad-primary: linear-gradient(135deg, #0e1b35 0%, #21406e 100%);
-  --grad-cta: linear-gradient(135deg, #c1121f 0%, #9d0e19 100%);
-  --grad-hero: radial-gradient(1100px 520px at 10% -10%, #eef2f8 0%, #f7f9fc 45%, #ffffff 100%);
-  --grad-deep: linear-gradient(160deg, #0f1c33 0%, #1d3663 100%);
+  --grad-primary: linear-gradient(135deg, #0a1c33 0%, #1c3f6b 100%);
+  --grad-cta: linear-gradient(135deg, #D62828 0%, #b01f1f 100%);
+  --grad-hero: linear-gradient(180deg, #FFFFFF 0%, #F4F5F7 100%);
+  --grad-deep: linear-gradient(160deg, #0F2747 0%, #16365f 100%);
 
-  --radius: 14px;
-  --radius-sm: 9px;
+  /* Garage-door inspired diagonal stripe, used sparingly as an accent rule */
+  --stripe-brand: repeating-linear-gradient(
+    -45deg,
+    #0F2747 0 10px,
+    #D62828 10px 20px,
+    #5E6874 20px 30px
+  );
+  /* Horizontal metal lines, the garage door texture. Kept very faint:
+     it should read as a surface, never as ruled paper. */
+  --texture-steel: repeating-linear-gradient(
+    180deg,
+    rgba(15, 39, 71, 0.028) 0 1px,
+    transparent 1px 14px
+  );
+
+  --radius: 16px;            /* card corner, per brand book */
+  --radius-btn: 10px;        /* button corner, per brand book */
+  --radius-sm: 10px;
   --radius-lg: 22px;
-  --shadow-sm: 0 1px 3px rgba(15, 36, 51, 0.07), 0 1px 2px rgba(15, 36, 51, 0.04);
-  --shadow: 0 8px 28px rgba(15, 36, 51, 0.10);
-  --shadow-lg: 0 24px 60px rgba(9, 60, 99, 0.20);
-  --ring: 0 0 0 4px rgba(10, 110, 189, 0.14);
+  --shadow-sm: 0 1px 3px rgba(15, 39, 71, 0.07), 0 1px 2px rgba(15, 39, 71, 0.04);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 16px 40px rgba(0, 0, 0, 0.11);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.11);
+  --ring: 0 0 0 4px rgba(15, 39, 71, 0.18);
 
   --maxw: 1160px;
   --maxw-narrow: 760px;
@@ -46,7 +56,7 @@
   --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif;
   --font-head: 'Inter Variable', 'Inter', system-ui, sans-serif;
-  --font-display: 'Manrope Variable', 'Inter Variable', system-ui, sans-serif;
+  --font-display: 'Bebas Neue', 'Oswald', 'Inter Variable', system-ui, sans-serif;
 
   --step-fs: clamp(1rem, 0.95rem + 0.25vw, 1.075rem);
 }
@@ -81,17 +91,24 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-/* Display headings use the brand serif (Playfair Display, per brand board) */
+/* Brand book: display headings are large, bold and set in capitals.
+   Bebas Neue ships a single weight and is drawn as uppercase, so the
+   weight comes from its own drawing rather than from font-weight. */
 h1, h2 {
   font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.18;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.012em;
+  line-height: 1.06;
 }
 
-h1 { font-size: clamp(2.05rem, 1.4rem + 2.6vw, 3.3rem); }
-h2 { font-size: clamp(1.6rem, 1.25rem + 1.6vw, 2.3rem); }
+h1 { font-size: clamp(2.5rem, 1.6rem + 3.4vw, 4.1rem); }
+h2 { font-size: clamp(1.95rem, 1.4rem + 2.1vw, 2.9rem); }
 h3 { font-size: clamp(1.2rem, 1.05rem + 0.7vw, 1.45rem); font-weight: 700; }
+
+/* Card and list headings stay in the body face so long service names
+   remain readable at small sizes. */
+h3, h4 { font-family: var(--font-head); }
 
 p { margin: 0 0 1.1em; }
 
@@ -148,32 +165,71 @@ li { margin-bottom: 0.4em; }
   line-height: 1.6;
 }
 
-/* ---------- Buttons ---------- */
+/* ---------- Buttons ----------
+   Brand book: primary is red, 54px tall, 10px corners, white bold text,
+   small shadow, and lifts to a darker red at scale 1.03 on hover.
+   Secondary is white with a navy border and navy text. */
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
+  min-height: 54px;
+  padding: 0 1.75rem;
+  font-family: var(--font-head);
   font-weight: 700;
   font-size: 1rem;
-  padding: 0.85rem 1.6rem;
-  border-radius: 999px;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: transform 0.12s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.14s ease, box-shadow 0.2s ease, background 0.2s ease,
+    color 0.2s ease, border-color 0.2s ease;
   text-decoration: none;
-  line-height: 1;
+  line-height: 1.15;
+  text-align: center;
 }
-.btn:hover { text-decoration: none; transform: translateY(-2px); }
+.btn:hover { text-decoration: none; transform: scale(1.03); }
+.btn:active { transform: scale(0.99); }
 .btn:focus-visible { outline: none; box-shadow: var(--ring); }
-.btn-primary { background: var(--grad-primary); color: #fff; box-shadow: 0 6px 18px rgba(10,110,189,0.28); }
-.btn-primary:hover { box-shadow: 0 10px 26px rgba(10,110,189,0.38); }
-.btn-accent { background: var(--grad-cta); color: #fff; box-shadow: 0 6px 18px rgba(242,106,18,0.32); }
-.btn-accent:hover { box-shadow: 0 10px 28px rgba(242,106,18,0.44); color: #fff; }
-.btn-outline { background: #fff; color: var(--c-primary); border-color: var(--c-primary); }
-.btn-outline:hover { background: var(--c-primary); color: #fff; }
-.btn-ghost-light { background: rgba(255,255,255,0.14); color: #fff; border-color: rgba(255,255,255,0.55); }
-.btn-ghost-light:hover { background: #fff; color: var(--c-primary-dark); }
-.btn-lg { padding: 1rem 2.1rem; font-size: 1.08rem; }
+
+/* Primary CTA. Red is reserved for actions, roughly 10 percent of the page. */
+.btn-accent {
+  background: var(--c-accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(214, 40, 40, 0.28);
+}
+.btn-accent:hover {
+  background: var(--c-accent-dark);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(214, 40, 40, 0.34);
+}
+
+/* Secondary: white face, navy border, navy text. */
+.btn-primary,
+.btn-outline {
+  background: #fff;
+  color: var(--c-primary);
+  border-color: var(--c-primary);
+  box-shadow: 0 2px 6px rgba(15, 39, 71, 0.08);
+}
+.btn-primary:hover,
+.btn-outline:hover {
+  background: var(--c-primary);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(15, 39, 71, 0.24);
+}
+
+/* Secondary on a navy background. */
+.btn-ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,0.7); }
+.btn-ghost-light:hover { background: #fff; color: var(--c-primary); border-color: #fff; }
+
+.btn-lg { min-height: 60px; padding: 0 2.2rem; font-size: 1.08rem; }
+.btn-sm { min-height: 44px; padding: 0 1.2rem; font-size: 0.92rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover, .btn:active { transform: none; }
+}
 
 /* ---------- Cards & grids ---------- */
 .grid { display: grid; gap: clamp(1rem, 2.5vw, 1.6rem); }
@@ -181,42 +237,69 @@ li { margin-bottom: 0.4em; }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
+/* Brand book card: white, 16px corners, 32px padding, hairline #E5E7EB
+   border, soft drop shadow that deepens a little on hover. */
 .card {
-  background: var(--c-bg);
+  background: #fff;
   border: 1px solid var(--c-line);
   border-radius: var(--radius);
-  padding: 1.6rem;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.18s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   height: 100%;
   position: relative;
 }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: #bfddf3; }
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: #d5dae1;
+}
 .card h3 { margin-bottom: 0.4rem; }
-/* Emoji icon inside a soft tinted tile */
+
+@media (max-width: 560px) {
+  .card { padding: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card:hover { transform: none; }
+}
+
+/* Outline icon tile: navy line art on a pale navy square, per brand book. */
 .card .icon {
-  font-size: 1.7rem;
-  line-height: 1;
-  margin-bottom: 0.9rem;
+  line-height: 0;
+  margin-bottom: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3.1rem;
-  height: 3.1rem;
-  border-radius: 14px;
-  background: linear-gradient(135deg, var(--c-primary-light), #d7ebfb);
-  box-shadow: inset 0 0 0 1px rgba(10,110,189,0.10);
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 12px;
+  background: var(--c-primary-light);
+  color: var(--c-primary);
+  font-size: 1.6rem;
+}
+.card .icon svg { width: 1.85rem; height: 1.85rem; display: block; }
+
+/* Standalone outline icon, used outside cards */
+.icon-outline {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  color: var(--c-primary);
 }
 
 .pill {
   display: inline-block;
   background: var(--c-primary-light);
-  color: var(--c-primary-dark);
+  color: var(--c-primary);
   font-size: 0.78rem;
   font-weight: 700;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
 }
+.pill-accent { background: rgba(214, 40, 40, 0.09); color: var(--c-accent-dark); }
+.pill-success { background: rgba(34, 163, 90, 0.12); color: #177841; }
 
 /* ---------- Prose (articles) ---------- */
 .prose { max-width: var(--maxw-narrow); }
@@ -249,9 +332,9 @@ li { margin-bottom: 0.4em; }
 
 /* Answer-first callout box (AEO) */
 .answer-box {
-  background: var(--c-primary-light);
-  border: 1px solid #bfddf3;
-  border-left: 5px solid var(--c-primary);
+  background: var(--c-bg-alt);
+  border: 1px solid var(--c-line);
+  border-left: 5px solid var(--c-accent);
   border-radius: var(--radius-sm);
   padding: 1.2rem 1.4rem;
   margin-bottom: 1.6rem;
@@ -263,7 +346,7 @@ li { margin-bottom: 0.4em; }
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--c-primary-dark);
+  color: var(--c-primary);
   margin-bottom: 0.4rem;
 }
 
@@ -340,11 +423,14 @@ li { margin-bottom: 0.4em; }
   content: '✓'; position: absolute; left: 0; top: 0.05em;
   display: inline-flex; align-items: center; justify-content: center;
   width: 1.3rem; height: 1.3rem; border-radius: 50%;
-  background: rgba(20,184,166,0.15); color: var(--c-accent-dark);
+  background: rgba(34, 163, 90, 0.14); color: #177841;
   font-size: 0.8rem; font-weight: 800;
 }
+.section-deep .check-list li::before { background: rgba(34, 163, 90, 0.3); color: #7ee2a8; }
 
-/* ---------- Trust badges ---------- */
+/* ---------- Trust badges ----------
+   Licensed, insured, same day, local, guaranteed. Nothing here claims a
+   rating or a review count. See docs/TRUST-AND-CLAIMS.md. */
 .trust-strip {
   display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem;
   align-items: center;
@@ -356,15 +442,56 @@ li { margin-bottom: 0.4em; }
 .trust-badge .tb-ico {
   display: inline-flex; align-items: center; justify-content: center;
   width: 1.7rem; height: 1.7rem; border-radius: 8px;
-  background: var(--c-primary-light); color: var(--c-primary-dark);
-  font-size: 0.95rem;
+  background: var(--c-primary-light); color: var(--c-primary);
+  font-size: 0.95rem; flex-shrink: 0;
 }
-.trust-badge.stars { color: var(--c-star); letter-spacing: 1px; }
-.trust-badge.stars b { color: var(--c-ink); margin-left: 0.2rem; letter-spacing: 0; }
+.trust-badge .tb-ico svg { width: 1rem; height: 1rem; display: block; }
+.section-deep .trust-badge { color: #fff; }
+.section-deep .trust-badge .tb-ico { background: rgba(255,255,255,0.12); color: #fff; }
 
-/* ---------- Wave divider (air / duct motif) ---------- */
-.wave-divider { display: block; width: 100%; height: 44px; line-height: 0; }
-.wave-divider svg { display: block; width: 100%; height: 100%; }
+/* ---------- Brand graphic elements ---------- */
+/* Diagonal garage-door stripe, used as a thin rule under section heads
+   and along the top of deep sections. Decorative only. */
+.stripe-rule {
+  height: 6px;
+  width: 92px;
+  border-radius: 3px;
+  background: var(--stripe-brand);
+  margin-bottom: 1.1rem;
+}
+.section-head.center .stripe-rule { margin-inline: auto; }
+
+/* Horizontal steel lines, the garage door panel texture. */
+.texture-steel { background-image: var(--texture-steel); }
+
+/* ---------- Motion ----------
+   Fade up and slide in, triggered once when the element scrolls into
+   view. Honours prefers-reduced-motion. */
+/* Scoped to .js so that with scripting off nothing is ever hidden. */
+.js [data-anim] {
+  opacity: 0;
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.js [data-anim='fade-up'] { transform: translateY(22px); }
+.js [data-anim='slide-left'] { transform: translateX(-28px); }
+.js [data-anim='slide-right'] { transform: translateX(28px); }
+.js [data-anim].is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-anim] { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- Counter ---------- */
+.counter {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 1.6rem + 2vw, 3rem);
+  line-height: 1;
+  color: var(--c-primary);
+  font-variant-numeric: tabular-nums;
+}
+.section-deep .counter { color: #fff; }
 
 /* Softer, larger section headings baseline */
 .section-head .lead { margin-top: 0.4rem; }
