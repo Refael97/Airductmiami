@@ -31,4 +31,4 @@ never stops improving.
 | Site | Vertical | Area | Locales | Status |
 |---|---|---|---|---|
 | `fl-airduct` — Florida Breeze Air Duct | air-duct-cleaning | Florida | en, es | Live, in maintenance |
-| `ny-garage` — TBD | garage-door-repair | New York | TBD by research | Research phase |
+| `ny-garage` — Garage Door Fixers | garage-door-repair | New York metro | en (es planned) | In build |

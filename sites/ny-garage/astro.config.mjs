@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
 // TODO: replace with the real domain once it is registered.
-const SITE_URL = 'https://clearquotedoors.com';
+const SITE_URL = 'https://garagedoorfixers.com';
 
 export default defineConfig({
   site: SITE_URL,

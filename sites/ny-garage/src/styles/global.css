@@ -1,21 +1,22 @@
 /* ============================================================
    New York garage door site · Design System
    Zero-JS, fast-loading, accessible. Mobile-first.
-   Palette: industrial steel and safety amber. Deliberately unlike
-   the Florida site: this is an emergency trade, not a comfort service.
+   Palette from the brand logo: NYC navy with a signal red accent.
+   Deliberately unlike the Florida site: this is an emergency trade,
+   not a comfort service.
    ============================================================ */
 
 :root {
-  /* Brand palette: graphite steel + safety amber */
-  --c-primary: #1f3a5f;      /* deep steel blue */
-  --c-primary-dark: #16293f;
-  --c-primary-light: #eaf0f7;
-  --c-primary-deep: #0f1c2e;
-  --c-accent: #f5a524;       /* safety amber, the urgency colour */
-  --c-accent-dark: #d98a0b;
-  --c-cta: #f5a524;
-  --c-cta-dark: #d98a0b;
-  --c-ink: #111a26;
+  /* Brand palette from the logo: NYC navy + signal red */
+  --c-primary: #16294d;      /* logo navy */
+  --c-primary-dark: #0e1b35;
+  --c-primary-light: #e9edf5;
+  --c-primary-deep: #0a1428;
+  --c-accent: #c1121f;       /* logo red, the urgency colour */
+  --c-accent-dark: #9d0e19;
+  --c-cta: #c1121f;
+  --c-cta-dark: #9d0e19;
+  --c-ink: #0f1c33;
   --c-body: #3c4a5c;
   --c-muted: #6c7a8a;
   --c-line: #e2e7ee;
@@ -26,10 +27,10 @@
   --c-success: #16a34a;
   --c-star: #f5b301;
 
-  --grad-primary: linear-gradient(135deg, #16293f 0%, #2a4d78 100%);
-  --grad-cta: linear-gradient(135deg, #f5a524 0%, #e08b0a 100%);
+  --grad-primary: linear-gradient(135deg, #0e1b35 0%, #21406e 100%);
+  --grad-cta: linear-gradient(135deg, #c1121f 0%, #9d0e19 100%);
   --grad-hero: radial-gradient(1100px 520px at 10% -10%, #eef2f8 0%, #f7f9fc 45%, #ffffff 100%);
-  --grad-deep: linear-gradient(160deg, #111a26 0%, #1f3a5f 100%);
+  --grad-deep: linear-gradient(160deg, #0f1c33 0%, #1d3663 100%);
 
   --radius: 14px;
   --radius-sm: 9px;

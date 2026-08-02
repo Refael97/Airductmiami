@@ -46,17 +46,16 @@ export const business: BusinessInfo = {
   serviceArea: 'New York metro',
   timezone: 'America/New_York',
 
-  // TODO: working name. Swapping the brand is a change to this file only.
-  name: 'ClearQuote Doors',
-  legalName: 'ClearQuote Doors LLC',
-  tagline: 'Here is what it costs. Before you call.',
+  name: 'Garage Door Fixers',
+  legalName: 'Garage Door Fixers LLC',
+  tagline: 'Reliable. Local. Professional.',
   description:
-    'ClearQuote Doors provides garage door repair, spring replacement, opener installation, and new door installation across Long Island, Westchester, Staten Island, Queens, and Brooklyn. Published prices, a written estimate before any work, licensed and insured.',
+    'Garage Door Fixers provides garage door repair, spring replacement, opener installation, and new door installation across Long Island, Westchester, Staten Island, Queens, and Brooklyn. Published prices, a written estimate before any work, licensed and insured.',
 
   // TODO: provision a real number with a local area code and inbound routing.
   phone: '(516) 000-0000',
   phoneHref: '+15160000000',
-  email: 'info@clearquotedoors.com',
+  email: 'info@garagedoorfixers.com',
 
   area: {
     region: 'NY',
