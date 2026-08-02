@@ -1,0 +1,11 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--no-sandbox'] });
+const p = await b.newPage();
+p.on('console', m => console.log('  console:', m.text()));
+await p.goto('http://127.0.0.1:4321/', { waitUntil: 'domcontentloaded' });
+await p.waitForTimeout(500);
+console.log('hostname:', await p.evaluate(() => location.hostname));
+console.log('typeof gtag:', await p.evaluate(() => typeof window.gtag));
+console.log('gtag source:', await p.evaluate(() => (window.gtag ? String(window.gtag).slice(0, 90) : 'n/a')));
+console.log('dataLayer:', await p.evaluate(() => (window.dataLayer ? window.dataLayer.length : 'undefined')));
+await b.close();

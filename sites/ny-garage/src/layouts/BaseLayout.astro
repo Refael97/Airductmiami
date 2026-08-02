@@ -65,6 +65,34 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
 
     <JsonLd schema={siteSchema} />
     {schema && <JsonLd schema={schema} />}
+
+    <!-- GA4. Loaded async so it never blocks rendering, and skipped entirely
+         on localhost so development traffic does not pollute the property. -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${business.ga4Id}`}></script>
+    <script is:inline define:vars={{ gaId: business.ga4Id }}>
+      (function () {
+        var host = location.hostname;
+        if (host === 'localhost' || host === '127.0.0.1' || host === '') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', gaId);
+
+        /* Phone taps, captured by delegation so the listener survives any
+           number of tel: links being added to any page later. Capture phase,
+           because the click navigates away immediately. */
+        document.addEventListener(
+          'click',
+          function (e) {
+            var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+            if (a) gtag('event', 'phone_call', { page_path: location.pathname });
+          },
+          true
+        );
+      })();
+    </script>
   </head>
   <body>
     <a href="#main" class="visually-hidden">Skip to content</a>

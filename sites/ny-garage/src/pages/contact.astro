@@ -218,6 +218,28 @@ const usesNetlifyForms = formEndpoint === '';
       <FAQ items={faq} title="About getting a quote" />
     </div>
   </section>
+
+  {/* Fires once, the first time someone actually touches the form. Paired
+      with generate_lead on the thank-you page this gives a real funnel:
+      how many people start the form against how many finish it. Site one
+      had no way to tell those apart, which is why 30 popup views and zero
+      leads was impossible to diagnose. */}
+  <script is:inline>
+    (function () {
+      var form = document.querySelector('form[name="quote"]');
+      if (!form) return;
+      var fired = false;
+      form.addEventListener(
+        'focusin',
+        function () {
+          if (fired || typeof window.gtag !== 'function') return;
+          fired = true;
+          window.gtag('event', 'quote_start', { page_path: location.pathname });
+        },
+        { once: false }
+      );
+    })();
+  </script>
 </BaseLayout>
 
 <style>

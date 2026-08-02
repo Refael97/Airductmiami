@@ -34,6 +34,8 @@ export interface BusinessInfo {
   geo: { latitude: number; longitude: number };
   hours: { days: string; opens: string; closes: string }[];
   priceRange: string;
+  /** GA4 measurement ID for this site. One property per site in the network. */
+  ga4Id: string;
   emergencyAvailable: boolean;
   credentials: string[];
   warranty: { labor: string; parts: string };
@@ -81,6 +83,9 @@ export const business: BusinessInfo = {
   ],
 
   priceRange: '$$',
+  // Garage Door Fixers has its own GA4 property. Do not reuse the Florida
+  // site's ID: mixed properties make every per-site number meaningless.
+  ga4Id: 'G-B1T6H15GFN',
   emergencyAvailable: true,
   credentials: ['Licensed', 'Insured'],
   warranty: { labor: '1 year', parts: '1 year' },

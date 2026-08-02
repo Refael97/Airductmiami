@@ -44,6 +44,19 @@ const guides = services.slice(0, 4);
       </ul>
     </div>
   </section>
+
+  {/* The conversion event fires here rather than on form submit. A submit
+      handler races the navigation and drops events; this page is only ever
+      reached after a submission has actually gone through. */}
+  <script is:inline>
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', {
+        currency: 'USD',
+        source: 'contact_form',
+        page_path: location.pathname,
+      });
+    }
+  </script>
 </BaseLayout>
 
 <style>
