@@ -31,4 +31,4 @@ never stops improving.
 | Site | Vertical | Area | Locales | Status |
 |---|---|---|---|---|
 | `fl-airduct` — Florida Breeze Air Duct | air-duct-cleaning | Florida | en, es | Live, in maintenance |
-| `ny-garage` — Garage Door Fixers | garage-door-repair | New York metro | en (es planned) | In build |
+| `ny-garage` — Garage Door Fixers | garage-door-repair | New York metro | en (es planned) | Built, 131 pages, blocked on domain and phone. See `sites/ny-garage/HANDOVER.md` |

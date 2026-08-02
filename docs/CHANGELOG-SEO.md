@@ -4,6 +4,7 @@ One line per change: date, what, why, what to watch. Newest first.
 
 | Date | Change | Why | Watch |
 |---|---|---|---|
+| 2026-08-02 | `ny-garage` built: 131 pages, brand book applied, agent surface live | Site two of the network. Published prices are the differentiator in a market where directories own every cost query because contractors will not answer them | Nothing yet, blocked on domain and phone. First thing to watch after launch is whether the cost cluster takes any of the directory positions |
 | 2026-07-31 | Air duct mold removal cost guide (EN+ES) | 'air duct mold removal' 92 impressions at position 91, cost sub-queries had no page. Cost cluster is our lane | Position on the mold cost queries, and whether it passes equity to the service page |
 | 2026-07-30 | Network lead contract (`LeadMeta.astro`) on all forms | One pipeline and one AI agent for every site | Test lead carries `site_id`, `locale`, `vertical` |
 | 2026-07-30 | Sticky mobile bar switched from call to quote form | Form leads preferred over calls right now | `generate_lead` from `quote_bar` trigger |
