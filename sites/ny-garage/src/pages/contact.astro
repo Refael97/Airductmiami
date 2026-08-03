@@ -117,7 +117,12 @@ const usesNetlifyForms = formEndpoint === '';
             </div>
             <div class="field">
               <label for="zip">ZIP code <span aria-hidden="true">*</span></label>
-              <input type="text" id="zip" name="zip" required inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" />
+              <input
+                type="text" id="zip" name="zip" required
+                inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+                title="Five digits, for example 11550"
+                autocomplete="postal-code"
+              />
             </div>
           </div>
 
@@ -161,6 +166,7 @@ const usesNetlifyForms = formEndpoint === '';
             <textarea id="message" name="message" rows="4" placeholder="Single or double door? Roughly how old? What did it sound like when it failed?"></textarea>
           </div>
 
+          <p class="form-error" id="form-error" role="alert" hidden></p>
           <button type="submit" class="btn btn-accent btn-lg full">Send and get my price</button>
           <p class="form-note">
             We use these details to quote your job and nothing else. No marketing
@@ -232,25 +238,76 @@ const usesNetlifyForms = formEndpoint === '';
     </div>
   </section>
 
-  {/* Fires once, the first time someone actually touches the form. Paired
-      with generate_lead on the thank-you page this gives a real funnel:
-      how many people start the form against how many finish it. Site one
-      had no way to tell those apart, which is why 30 popup views and zero
-      leads was impossible to diagnose. */}
   <script is:inline>
     (function () {
       var form = document.querySelector('form[name="quote"]');
       if (!form) return;
+
+      /* quote_start fires once, the first time anyone touches the form.
+         Paired with generate_lead on the thank-you page this gives a real
+         funnel: how many people start against how many finish. */
       var fired = false;
+      form.addEventListener('focusin', function () {
+        if (fired || typeof window.gtag !== 'function') return;
+        fired = true;
+        window.gtag('event', 'quote_start', { page_path: location.pathname });
+      });
+
+      /* The browser blocks submit on an invalid required field and focuses
+         it. On a form this long the offending field is usually scrolled off
+         screen, so from the visitor's position the button appears to do
+         nothing at all. On a lead form that is the worst possible failure:
+         they conclude the site is broken and leave.
+
+         The hook is the "invalid" event, not "submit". The browser runs
+         constraint validation BEFORE dispatching submit, and when it fails
+         it never dispatches submit at all, so a submit handler never sees
+         it. invalid does not bubble either, hence the capture phase.
+
+         Native validation still does all the checking, so this degrades to
+         normal browser behaviour with scripting off. We only fix where the
+         visitor is looking. */
+      var box = document.getElementById('form-error');
+      var reporting = false;
+
       form.addEventListener(
-        'focusin',
-        function () {
-          if (fired || typeof window.gtag !== 'function') return;
-          fired = true;
-          window.gtag('event', 'quote_start', { page_path: location.pathname });
+        'invalid',
+        function (e) {
+          /* Fires once per invalid control. Only act on the first. */
+          if (reporting) return;
+          reporting = true;
+          setTimeout(function () { reporting = false; }, 0);
+
+          var bad = e.target;
+          var label = form.querySelector('label[for="' + bad.id + '"]');
+          var name = label
+            ? label.textContent.replace('*', '').trim()
+            : 'a required field';
+
+          if (box) {
+            box.textContent = bad.validity.patternMismatch
+              ? name + ': ' + (bad.title || 'please check the format.')
+              : 'Please fill in ' + name + ' before sending.';
+            box.hidden = false;
+          }
+
+          bad.scrollIntoView({ block: 'center', behavior: 'smooth' });
+
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'quote_blocked', { field: bad.name });
+          }
         },
-        { once: false }
+        true
       );
+
+      form.addEventListener('submit', function () {
+        if (box) box.hidden = true;
+      });
+
+      /* Clear the message as soon as they start fixing it. */
+      form.addEventListener('input', function () {
+        if (box && !box.hidden && form.checkValidity()) box.hidden = true;
+      });
     })();
   </script>
 </BaseLayout>
@@ -278,6 +335,19 @@ const usesNetlifyForms = formEndpoint === '';
   }
   .field textarea { resize: vertical; }
   .full { width: 100%; }
+  .form-error {
+    background: rgba(214, 40, 40, 0.08);
+    border: 1px solid rgba(214, 40, 40, 0.35);
+    border-left: 4px solid var(--c-accent);
+    border-radius: var(--radius-sm);
+    color: var(--c-accent-dark);
+    font-size: 0.9rem; font-weight: 600;
+    padding: 0.7rem 0.9rem; margin: 0 0 0.9rem;
+  }
+  .field :global(input:invalid:not(:placeholder-shown)),
+  .field :global(select:invalid:not(:placeholder-shown)) {
+    border-color: rgba(214, 40, 40, 0.6);
+  }
   .form-note { font-size: 0.8rem; color: var(--c-muted); margin: 0.9rem 0 0; }
 
   .info-col { display: grid; gap: 1.2rem; position: sticky; top: 6.5rem; }
