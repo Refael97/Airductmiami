@@ -13,6 +13,7 @@ Read in this order.
 | 5 | `BUILD-PIPELINE.md` | Domain, build, deploy, forms, phone, analytics, CRM |
 | 6 | `LAUNCH-CHECKLIST.md` | Phase-gated checklist with a launch gate |
 | 7 | `LEAD-PIPELINE.md` | The shared lead contract and the one AI agent |
+| 7a | `agents/` | Voice agent briefs, one per site, built on that contract |
 | 8 | `MAINTENANCE.md` | The weekly and monthly improvement loop |
 | — | `CHANGELOG-SEO.md` | Running log of every change and its result |
 | — | `templates/RESEARCH-BRIEF.md` | The template phase 1 fills in |
