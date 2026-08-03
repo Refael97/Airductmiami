@@ -26,8 +26,11 @@ export const GET: APIRoute = ({ site }) => {
       tagline: business.tagline,
       description: business.description,
       url: base,
-      phone: business.phone,
-      email: business.email,
+      /* Null when the channel is not provisioned. An agent must not be
+         handed a number nobody answers. */
+      phone: business.phoneLive ? business.phone : null,
+      email: business.emailLive ? business.email : null,
+      contact_channel: business.phoneLive || business.emailLive ? 'phone_and_form' : 'form_only',
       /* Service area business: we travel to the customer and do not receive
          customers at a location, so no street address is published. */
       location_type: 'service_area_business',

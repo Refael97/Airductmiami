@@ -14,8 +14,11 @@ export function localBusinessSchema(site: string) {
     legalName: business.legalName,
     description: business.description,
     url: site,
-    telephone: business.phone,
-    email: business.email,
+    // A contact channel that does not work is omitted rather than published.
+    // A telephone property carrying a placeholder is a false claim to every
+    // consumer of this schema, search engines included.
+    ...(business.phoneLive ? { telephone: business.phone } : {}),
+    ...(business.emailLive ? { email: business.email } : {}),
     priceRange: business.priceRange,
     image: `${site}/og-image.png`,
     areaServed: business.area.counties.map((c) => ({

@@ -24,6 +24,19 @@ export interface BusinessInfo {
   phone: string;
   phoneHref: string;
   email: string;
+  /**
+   * Whether each contact channel actually works yet.
+   *
+   * A channel that is not live is not rendered anywhere: not on the page,
+   * not in the schema, not in agent.json, not in the llms files. Publishing
+   * a number nobody answers or an address that bounces is a false claim
+   * about the business, the same category of problem as a fabricated
+   * review. See docs/TRUST-AND-CLAIMS.md.
+   *
+   * Flip these to true the moment the channel is provisioned and tested.
+   */
+  phoneLive: boolean;
+  emailLive: boolean;
   /** Service Area Business: region only, no street address. */
   area: {
     region: string; // "NY"
@@ -54,10 +67,16 @@ export const business: BusinessInfo = {
   description:
     'Garage Door Fixers provides garage door repair, spring replacement, opener installation, and new door installation across Long Island, Westchester, Staten Island, Queens, and Brooklyn. Published prices, a written estimate before any work, licensed and insured.',
 
-  // TODO: provision a real number with a local area code and inbound routing.
+  // TODO: provision a real number with a local area code (516, 631, 718,
+  // 347 or 914) and inbound routing, then set phoneLive to true.
   phone: '(516) 000-0000',
   phoneHref: '+15160000000',
   email: 'info@garage-door-fixers.com',
+  // Both false: the number is a placeholder and the mailbox does not exist
+  // yet. Until they do, the quote form is the only contact channel the site
+  // offers, and it says so rather than showing a number nobody answers.
+  phoneLive: false,
+  emailLive: false,
 
   area: {
     region: 'NY',

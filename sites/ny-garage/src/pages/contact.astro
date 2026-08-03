@@ -182,14 +182,27 @@ const usesNetlifyForms = formEndpoint === '';
 
         <div class="card info-card">
           <h2>Contact</h2>
-          <p class="contact-method">
-            <span class="cm-ico"><Icon name="phone" size={18} /></span>
-            <span><strong>{business.phone}</strong><br />Seven days a week</span>
-          </p>
-          <p class="contact-method">
-            <span class="cm-ico"><Icon name="quote" size={18} /></span>
-            <span><strong>{business.email}</strong></span>
-          </p>
+          {business.phoneLive ? (
+            <p class="contact-method">
+              <span class="cm-ico"><Icon name="phone" size={18} /></span>
+              <span><strong>{business.phone}</strong><br />Seven days a week</span>
+            </p>
+          ) : (
+            <p class="contact-method">
+              <span class="cm-ico"><Icon name="quote" size={18} /></span>
+              <span>
+                <strong>This form is the way to reach us</strong><br />
+                We read every request and come back with a price and an
+                arrival window, seven days a week.
+              </span>
+            </p>
+          )}
+          {business.emailLive && (
+            <p class="contact-method">
+              <span class="cm-ico"><Icon name="quote" size={18} /></span>
+              <span><strong>{business.email}</strong></span>
+            </p>
+          )}
           <p class="contact-method">
             <span class="cm-ico"><Icon name="pin" size={18} /></span>
             <span>

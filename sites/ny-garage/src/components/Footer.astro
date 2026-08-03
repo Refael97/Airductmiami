@@ -22,9 +22,16 @@ const footerServices = services.slice(0, 6);
         {business.name}
       </span>
       <p>{business.tagline}</p>
+      {/* Only channels that actually work are shown. See business.ts. */}
       <p class="footer-contact">
-        <a href={`tel:${business.phoneHref}`}>{business.phone}</a><br />
-        <a href={`mailto:${business.email}`}>{business.email}</a>
+        {business.phoneLive && (
+          <><a href={`tel:${business.phoneHref}`}>{business.phone}</a><br /></>
+        )}
+        {business.emailLive ? (
+          <a href={`mailto:${business.email}`}>{business.email}</a>
+        ) : (
+          <a href="/contact/">Request a free quote</a>
+        )}
       </p>
       <span class="footer-badge">Licensed &amp; insured</span>
     </div>

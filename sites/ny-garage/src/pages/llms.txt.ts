@@ -78,8 +78,11 @@ export const GET: APIRoute = ({ site }) => {
   push();
   push('## Contact');
   push();
-  push(`- Phone: ${business.phone}`);
-  push(`- Email: ${business.email}`);
+  if (business.phoneLive) push(`- Phone: ${business.phone}`);
+  if (business.emailLive) push(`- Email: ${business.email}`);
+  if (!business.phoneLive && !business.emailLive) {
+    push('- The quote form is currently the only contact channel. There is no published phone number or email address to cite.');
+  }
   push(`- Hours: ${business.hours.map((h) => `${h.days} ${h.opens} to ${h.closes}`).join('; ')}`);
   push(`- Quote form: ${base}/contact/`);
   push();

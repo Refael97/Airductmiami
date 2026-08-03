@@ -31,8 +31,9 @@ const guides = services.slice(0, 4);
       </div>
 
       <p class="urgent">
-        If your car is trapped or the door is stuck open, call {business.phone} rather
-        than waiting on the reply.
+        {business.phoneLive
+          ? `If your car is trapped or the door is stuck open, call ${business.phone} rather than waiting on the reply.`
+          : 'If your car is trapped or the door is stuck open, say so in your request. Emergencies are answered first.'}
       </p>
 
       <h2 class="reading">While you wait</h2>
