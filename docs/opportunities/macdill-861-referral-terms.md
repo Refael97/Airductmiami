@@ -160,3 +160,93 @@ the point to have a lawyer paper the relationship properly.
 Point 6 is not boilerplate. It is the sentence that keeps us out of the
 liability chain in sections 4.4, 5.2 and 5.4 of the statement of work. Do not
 drop it to make the email shorter.
+
+---
+
+# Their response, and the reply
+
+911 Restoration came back offering to draft the referral agreement, send it
+with their signature, and give live CMS access to notes, documents and
+financials on the job. They cited 20 plus years in business and a model built
+on partnerships, trust and integrity.
+
+## Three things to notice
+
+**It is not Tomas writing.** The message says "As Tomas mentioned on your
+intro call", so this is someone else at the company, probably operations or a
+partner. That is a good sign: it means the opportunity is moving through a
+process rather than sitting in one person's head. Confirm that whoever signs
+has authority to bind the company.
+
+**The rate is not mentioned. At all.** Read the message again. There is
+willingness to draft, willingness to sign, transparency, and twenty years of
+integrity. There is no number.
+
+Answering "yes please draft it" without naming a rate means the draft arrives
+with 5 percent in it, and the negotiation moves from a conversation to
+marking up a signed document. **Name the number in the same message that says
+yes.**
+
+**The CMS access is worth more than it looks.** He listed notes, documents
+and **financials**. Visibility into the financial side is exactly what
+verifies the base the percentage is calculated on. That is not a courtesy, it
+is a control. It belongs in the agreement rather than being left as a
+favour that can quietly stop once the relationship cools.
+
+## The trade that gets the clause
+
+Do not haggle over the rate. Offer a choice:
+
+**7.5 percent with the continuation clause, or 10 percent without it.**
+
+It is genuinely fair, it hands them control of the decision, and the cheaper
+immediate option is almost always taken. The cheaper immediate option is the
+one that includes the clause, which is the part worth more.
+
+## Reply
+
+Yes please, draft it and send it over with your signature. I will sign the
+same day and the full package goes out the moment it is executed: the
+statement of work, the prime contact, the government point of contact and the
+site visit details.
+
+To save a round trip, here is what I need in it.
+
+1. The fee applies to any work you perform for this prime contractor, or at this installation, for 24 months. Not only this contract.
+2. The percentage is calculated on the total amount invoiced to the customer, including change orders, scope modifications and any option periods the government exercises. This scope assigns site condition validation to the contractor after award, so change orders are likely rather than hypothetical.
+3. Payment within 15 days of you receiving payment from the customer, for each payment received.
+4. If you do not win the work, no fee is due and I am free to take the opportunity elsewhere.
+5. 911 Restoration is the performing and contracting party. Florida Breeze Air Duct is not a party to the contract, performs no work and carries no contractual obligation to the customer.
+6. The CMS access you described, covering notes, documents and financials, referenced in the agreement rather than left as a courtesy.
+
+On the rate, give me whichever you prefer: 7.5 percent with point 1 included,
+or 10 percent without it.
+
+I have no doubt about your integrity, and that is not why I am asking for
+paper. It is so that neither of us has to rely on remembering a phone call in
+eight months.
+
+One practical note. The site visit is Thursday before 2:00 PM EDT and the
+base needs attendee names in advance, so I would like to have this closed
+today. Please also send the exact legal entity name, address and licence or
+CAGE number you want on the attendee list, since that goes to a government
+point of contact.
+
+Proposal is due 16 August, so there is time to build it properly once we are
+past the walkthrough.
+
+## When their draft arrives
+
+Read it against the six points above before signing. A draft written by the
+paying party is written in the paying party's favour, which is normal and not
+sinister. Specific things to check:
+
+- Does the fee survive if the contract is awarded to a related entity, a parent, or a differently named subsidiary?
+- Is the percentage on invoiced value, or on some reduced figure such as net of subcontractors or net of materials?
+- Is there an expiry that kills the fee if award takes longer than expected? Federal award timelines slip routinely.
+- Is there an exclusivity clause that ties us up even if they lose or withdraw?
+- Does it try to make us responsible for anything at all regarding performance, access or the customer relationship? Point 5 exists to keep us out of sections 4.4, 5.2 and 5.4 of the statement of work. Do not let it be softened.
+
+**Do not send the lead details before signature.** They asked for them, which
+is reasonable, but they also offered to sign first. "Same day, on signature"
+is the answer, and it should be honoured the same day.
