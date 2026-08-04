@@ -19,11 +19,13 @@ const homeFaq = [
 ];
 
 const regions = citiesByRegion();
+/* Every figure here has to be one we can point at. No rating and no job
+   count until there are real ones to publish. See docs/TRUST-AND-CLAIMS.md. */
 const stats = [
-  { value: '4.9★', label: `${business.reviewCount}+ reviews` },
-  { value: '10,000+', label: 'Florida homes served' },
+  { value: `${cities.length}`, label: 'Florida communities covered' },
   { value: 'NADCA', label: 'Source-removal standard' },
   { value: 'Same-week', label: 'Appointments statewide' },
+  { value: 'Free', label: 'Written quote, no hidden fees' },
 ];
 ---
 <BaseLayout title={title} description={description} altHref="/es/">

@@ -29,11 +29,13 @@ for (const c of cities) {
  (regions[r] ??= []).push(c);
 }
 
+/* Cada cifra aquí tiene que ser verificable. Sin calificación y sin
+   número de trabajos hasta que existan datos reales. */
 const stats = [
- { value: '4.9★', label: `${business.reviewCount}+ reseñas` },
- { value: '10,000+', label: 'Hogares en Florida' },
+ { value: `${cities.length}`, label: 'Comunidades en Florida' },
  { value: 'NADCA', label: 'Extracción por fuente' },
  { value: 'Rápido', label: 'Citas la misma semana' },
+ { value: 'Gratis', label: 'Presupuesto por escrito' },
 ];
 ---
 <BaseLayout title={title} description={description} lang={lang} altHref="/">

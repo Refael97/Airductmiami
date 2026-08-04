@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABand from '../../components/CTABand.astro';
 import { business } from '../../data/business';
+import { cities } from '../../data/cities';
 import { ui } from '../../data/ui';
 
 const lang = 'es' as const;
@@ -35,10 +36,12 @@ const description = `Conozca a ${business.name}, profesionales con licencia y se
  <h2>Servicio en toda Florida</h2>
  <p>Desde las playas de Miami y Fort Lauderdale hasta Orlando, Tampa, Jacksonville, Fort Myers, Naples y decenas de comunidades más, nuestros equipos atienden a familias y negocios de todo el estado. <a href={t.serviceAreas}>Vea todas las áreas de servicio →</a></p>
 
+ <!-- Solo cifras verificables. Sin calificación, sin número de trabajos
+      y sin año de fundación hasta poder documentar cada uno. -->
  <div class="about-stats">
- <div><span>{business.foundingYear}</span><small>En Florida desde</small></div>
- <div><span>{business.ratingValue}★</span><small>{business.reviewCount}+ reseñas</small></div>
- <div><span>10,000+</span><small>Hogares atendidos</small></div>
+ <div><span>{cities.length}</span><small>Comunidades en Florida</small></div>
+ <div><span>NADCA</span><small>Extracción por fuente</small></div>
+ <div><span>Gratis</span><small>Presupuesto por escrito</small></div>
  </div>
  </div>
  </section>

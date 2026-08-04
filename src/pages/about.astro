@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CTABand from '../components/CTABand.astro';
 import { business } from '../data/business';
+import { cities } from '../data/cities';
 
 const title = `About ${business.name} | Florida Air Duct Experts`;
 const description = `Learn about ${business.name}, licensed, insured, NADCA-standard air duct and dryer vent cleaning professionals serving homeowners and businesses across Florida since ${business.foundingYear}.`;
@@ -32,10 +33,12 @@ const description = `Learn about ${business.name}, licensed, insured, NADCA-stan
       <h2>Serving all of Florida</h2>
       <p>From the beaches of Miami and Fort Lauderdale to Orlando, Tampa, Jacksonville, Fort Myers, Naples, and dozens of communities in between, our crews serve homeowners and businesses across the state. <a href="/service-areas">See all service areas →</a></p>
 
+      <!-- Verifiable figures only. No rating, no job count and no founding
+           year until each one can be evidenced. -->
       <div class="about-stats">
-        <div><span>{business.foundingYear}</span><small>Serving Florida since</small></div>
-        <div><span>{business.ratingValue}★</span><small>{business.reviewCount}+ reviews</small></div>
-        <div><span>10,000+</span><small>Homes served</small></div>
+        <div><span>{cities.length}</span><small>Florida communities covered</small></div>
+        <div><span>NADCA</span><small>Source-removal standard</small></div>
+        <div><span>Free</span><small>Written quote before work</small></div>
       </div>
     </div>
   </section>

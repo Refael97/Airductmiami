@@ -85,9 +85,15 @@ export const business: BusinessInfo = {
     { days: 'Sunday', opens: '10:00', closes: '16:00' },
   ],
   priceRange: '$$',
-  foundingYear: 2012,
-  ratingValue: 4.9,
-  reviewCount: 487,
+  foundingYear: 2012, // TODO: confirm. Rendered as "Since 2012" on /about and /es/nosotros, and as foundingDate in schema.
+  /* Zeroed on 4 Aug 2026. The previous 4.9 / 487 were placeholders from the
+     initial build and were being rendered as real figures on the home and
+     about pages in both languages. The site's first Search Console
+     impression was recorded in July 2026, so the numbers were not
+     survivable. No rating is published until real reviews exist.
+     See docs/TRUST-AND-CLAIMS.md. */
+  ratingValue: 0,
+  reviewCount: 0,
   social: {
     facebook: 'https://www.facebook.com/', // TODO
     instagram: 'https://www.instagram.com/', // TODO
