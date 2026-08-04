@@ -93,11 +93,53 @@ the prime or the POC is named. Not a handshake on a call. In writing.
 
 ---
 
+## What Maria answered, and what she did not
+
+She came back on two of the questions.
+
+**Proposal due date: 16 August.** That is a Sunday, which is unusual for a
+federal submission and often means the practical cut off is close of business
+Friday 14 August. Confirm the exact time and time zone. In federal
+procurement a late submission is non-responsive and is rejected
+automatically, with no discretion and no appeal.
+
+**Restricted areas: not answered.** She restated the SOW back, correctly
+noting that it identifies no specific area of Building 861 as controlled or
+restricted and only requires compliance where unescorted entry into such an
+area is needed. She closed by saying it should be confirmed with the
+Contracting Officer.
+
+**Technical drawings: no response at all.** The section 3.6 request went
+unanswered.
+
+### What that tells us
+
+Her signature block reads "Federal Sales & Acquisitions". She is business
+development, not technical. She passes opportunities along, she does not
+administer them. That is not evasion, it is the honest answer of someone who
+does not have the information.
+
+**So stop routing technical questions through her.** Luis Lopez-Rosales is
+the `.mil` address, he is organising the walkthrough, and the drawings sit on
+the government side rather than with GovCrest. Maria pointed there herself.
+Both open questions go to Luis, in the RSVP email that was already going to
+him.
+
 ## Timeline
 
 Today is Tuesday 4 August. The site visit is Thursday 6 August before 2:00 PM
 EDT. Base access requires attendee names in advance, and the SOW warns that
 many installations need this days ahead.
+
+**The proposal is due 16 August, which is ten days after the walkthrough.**
+That is comfortable. A contractor holding a GSA schedule already has past
+performance and a capability statement on file, and the technical proposal is
+the only document written from scratch.
+
+This matters for one reason. **Do not accept poor referral terms out of time
+pressure.** The two day squeeze is on the site visit alone, not on the
+proposal. If Tomas will not move off 5 percent and will not take the
+continuation clause, there is still room to bring in Service-Tech.
 
 | When | What |
 |---|---|
@@ -152,9 +194,27 @@ info@floridabreezeairduct.com
 [CONTRACTOR LICENCE OR CAGE, if held]
 [CONTRACTOR POC EMAIL AND PHONE]
 
-Please advise on the reporting location and gate, and on any identification
-or vehicle documentation required for entry beyond a valid state driver's
-licence, current vehicle registration and proof of insurance.
+Three questions ahead of Thursday.
+
+First, reporting location and gate, and any identification or vehicle
+documentation required beyond a valid state driver's licence, current vehicle
+registration and proof of insurance.
+
+Second, restricted areas. Section 4.2 of the Statement of Work references 6th
+Security Forces Squadron restricted area access procedures where unescorted
+entry is required. Is any part of Building 861 a controlled or restricted
+area, and will escorts be provided for the walkthrough or during performance?
+If escorts are required in any space, knowing that before Thursday rather
+than at the gate would help us plan the visit properly. If this is a question
+for the Contracting Officer, I would be grateful if you could point me to the
+right person.
+
+Third, technical drawings. Section 3.6 of the Statement of Work states that
+technical drawings are available outlining equipment locations, duct runs and
+VAV boxes. If those can be provided before the site visit, we can verify duct
+linear footage and VAV box count against the drawings while on site rather
+than estimating afterwards. That would produce a more accurate proposal for
+you.
 
 Thank you,
 
@@ -178,6 +238,46 @@ Please let me know the deadline and I will work to it.
 ---
 
 ## Email two, reply to Maria
+
+Short. The technical questions now go to Luis, so this only acknowledges the
+due date and pins down the deadline.
+
+Subject: `Re: Bldg 861 HVAC/Air Conveyance Cleaning, MacDill AFB`
+
+Hi Maria,
+
+Thank you, that is helpful. Noted on the 16 August due date.
+
+Two quick things.
+
+16 August falls on a Sunday. Could you confirm the exact deadline time and
+time zone, and whether submissions are accepted on the Sunday or whether the
+practical cut off is close of business Friday 14 August?
+
+On the restricted area question, I will put it to Mr. Lopez-Rosales directly
+ahead of the walkthrough, as you suggested. I have also asked him about the
+technical drawings referenced in section 3.6, since those sit on the
+government side.
+
+Best regards,
+
+[NAME]
+Florida Breeze Air Duct
+info@floridabreezeairduct.com
+
+### On the wording of the deadline question
+
+Not "is that date correct", which implies she made a mistake. Asking for the
+time and time zone, and whether Sunday submissions are accepted, gets the
+same answer without putting her on the spot. If Friday was the real intent,
+she will say so.
+
+## Superseded draft, kept for the record
+
+The original reply below was written before Maria answered. It asked about
+the site visit, which is now scheduled, and routed the drawings and
+restricted area questions through her, which is the wrong channel. Use the
+version above.
 
 Send on the existing thread.
 
