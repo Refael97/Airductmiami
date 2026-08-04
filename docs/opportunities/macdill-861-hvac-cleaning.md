@@ -4,8 +4,17 @@ Inbound commercial opportunity that arrived at info@floridabreezeairduct.com.
 Not a residential lead. This file is the working record: what the scope
 document says, what it does not say, who does what, and what goes out next.
 
-**Status:** scope document received, not yet quotable. Waiting on technical
-drawings.
+**Status:** scope document received. Site visit scheduled Thursday 6 August
+2026 before 2:00 PM EDT. Three mandatory proposal documents required, which
+rules us out as the submitting entity. See
+`macdill-861-site-visit-and-proposal.md`, which supersedes parts of this
+file and is the current working document.
+
+Two things below are now out of date and left in place for the record. The
+reply to Maria asks whether a site visit can be arranged: it has been. And
+the fee expectation of 10 to 20 percent assumed sitting inside the
+transaction, which the proposal requirements make impossible. A pure
+referral runs 5 to 10 percent.
 
 ---
 
