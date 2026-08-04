@@ -197,7 +197,7 @@ is the contractor's number plus margin, not an estimate produced here.
 ## Next actions
 
 1. Reply to Maria requesting the drawings and the clarifications below. Draft is in `macdill-861-reply-to-maria.md`.
-2. Approach Tampa area NADCA commercial contractors with the SOW for a budgetary range, firm after drawings and walkthrough. Draft is in `macdill-861-contractor-outreach.md`. First calls: Service-Tech Corporation, EnviroAir Systems. Neither advertises military installation experience, so that is the opening question.
+2. Approach Service-Tech Corporation. They hold GSA Federal Supply Schedule GS-21F-0032U, have roughly 60 years in government facilities including DoD sites, worked Wright-Patterson AFB, are NADCA, IKECA and IAQA certified, and run a service centre in Clearwater about 30 minutes from MacDill. **Agree referral terms in writing before naming the base or the prime to them.** They can buy off their own schedule and GovCrest is SAM registered, so the two parties do not need us once they know each other. Detail and backups in `macdill-861-contractor-outreach.md`.
 3. On receipt of drawings, forward to the selected contractor for a firm price.
 4. Contractor number plus margin goes back to GovCrest, with the assumptions and exclusions schedule attached.
 
