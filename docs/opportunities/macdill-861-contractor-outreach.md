@@ -35,6 +35,53 @@ not a process they would have to invent for us.
 The concern was never going to be whether a firm like this can do the work.
 It is whether they need us.
 
+### 911 Restoration, inbound
+
+Came to us, not the other way round. Tomas, who describes himself as the
+owner, made contact through an Israeli community group in Miami and gave a
+direct number: **954-274-3325**. His claim is capability across Florida and
+Maryland on large scale office work.
+
+What is verified about the brand. 911 Restoration is a legitimate national
+franchise network founded by Peleg Lindenberg and Idan Shpizear, which
+explains the route the lead arrived by. Services are water, fire, mold,
+sewage and storm damage, reconstruction, sanitization and crime scene
+cleanup. Certification is **IICRC**. The South Florida operation covers
+Miami-Dade, Broward, Palm Beach and St. Lucie.
+
+Genuine advantages over a large firm:
+
+- An owner made contact directly and gave a personal number. He can agree terms on a call. Reaching someone at Service-Tech with authority to set a referral fee will take weeks of getting past a service coordinator.
+- Shared language and community, which makes the referral negotiation a different conversation.
+- HVAC cleaning is not foreign to restoration work. Post fire and post mold remediation both require it. It is simply not their standalone product.
+- **A second bidder is worth having regardless of who wins.** Two independent numbers tell us whether the price is right. That was the open risk in pricing this job and this closes it.
+
+Three specific gaps to test:
+
+1. **IICRC is not NADCA.** IICRC is the damage restoration standard. The SOW requires work to industry standard, which in duct cleaning means NADCA ACR. Ask whether they hold NADCA and whether a certified ASCS would be on site.
+2. **Geography, and this is the pricing problem.** 954 is Broward. The franchise footprint is the east coast. MacDill is Tampa, west coast, roughly four hours each way. On a multi day six system job that puts lodging and travel into the number, and a Clearwater firm beats him on logistics before anyone touches a duct. "All over Florida" is a claim to test, not to accept.
+3. **No trace of federal registration.** No SAM, no CAGE, no government contract history surfaced. Not disqualifying, because GovCrest holds prime and a subcontractor does not strictly need its own SAM registration. But every piece of base access paperwork would be a first for him rather than a routine, and that is schedule risk on a job where access has to be arranged days in advance.
+
+Note also that "owner of 911 Restoration" almost certainly means owner of a
+franchise territory rather than the brand. He mentioned Florida and Maryland,
+which suggests two territories. Worth establishing precisely which.
+
+**The sequencing rule applies to him unchanged.** Referral terms in writing
+before the base or the prime is named. The leak risk is lower than with a GSA
+schedule holder, who could be bought from directly, but the principle does
+not change.
+
+Five questions, in this order:
+
+1. What is your structure for referred work?
+2. Do you hold NADCA certification, and would a certified ASCS be on site?
+3. Have you worked on a military installation, and are you SAM registered with a CAGE code?
+4. What are your general liability limits, and can you name additional insureds?
+5. How do you price a Tampa job out of Broward? Is travel and lodging inside the number or billed separately?
+
+Question 1 first. Question 5 last, because it is the one that reveals whether
+statewide coverage is a capability or an ambition.
+
 ### Backups, in order
 
 | Firm | Strength | Unknown |
