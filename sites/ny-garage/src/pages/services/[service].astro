@@ -11,6 +11,7 @@ import { services, getService } from '../../data/services';
 import { iconFor } from '../../data/serviceIcons';
 import { citiesByPotential } from '../../data/cities';
 import { serviceSchema } from '../../lib/schema';
+import { guidesForService } from '../../lib/relatedContent';
 
 export function getStaticPaths() {
   return services.map((s) => ({ params: { service: s.slug }, props: { service: s } }));
@@ -31,6 +32,7 @@ const related = service.related
   .filter((s): s is NonNullable<typeof s> => Boolean(s));
 
 const topCities = citiesByPotential().slice(0, 12);
+const guides = await guidesForService(service.slug);
 
 const schema = serviceSchema(site, {
   name: service.name,
@@ -121,6 +123,17 @@ const schema = serviceSchema(site, {
             ))}
           </ul>
         </div>
+        {guides.length > 0 && (
+          <div class="card aside-card">
+            <h3>Guides on this</h3>
+            <ul class="plain guide-links">
+              {guides.map((g) => (
+                <li><a href={`/blog/${g.slug}/`}>{g.data.title}</a></li>
+              ))}
+            </ul>
+            <a href="/blog/" class="aside-more">All guides →</a>
+          </div>
+        )}
         <div class="card aside-card">
           <h3>Where we work</h3>
           <p class="aside-note">Same-day service across the metro area.</p>
@@ -191,6 +204,9 @@ const schema = serviceSchema(site, {
   }
   .plain li:last-child { border-bottom: 0; }
   .plain span { color: var(--c-primary); font-weight: 700; white-space: nowrap; }
+  /* Guide titles are full sentences, so they wrap. Undo the flex row that
+     .plain uses for the name-and-price pattern. */
+  .guide-links li { display: block; line-height: 1.4; }
   .area-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
   .area-links a { font-size: 0.88rem; }
   .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }

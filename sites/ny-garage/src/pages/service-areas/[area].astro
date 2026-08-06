@@ -16,6 +16,7 @@ import { cities, getCity, citiesByRegion } from '../../data/cities';
 import { services, getService, priceTableOrder } from '../../data/services';
 import { iconFor } from '../../data/serviceIcons';
 import { serviceSchema } from '../../lib/schema';
+import { guidesForCity } from '../../lib/relatedContent';
 import { business } from '../../data/business';
 
 export function getStaticPaths() {
@@ -66,6 +67,8 @@ const crumbs = isRegion
     ];
 
 const regionCities = citiesByRegion(region.slug);
+const guides = await guidesForCity();
+
 const nearby = isRegion
   ? regionCities.slice(0, 8)
   : city!.nearby.map((s) => getCity(s)).filter((c): c is NonNullable<typeof c> => Boolean(c));
@@ -213,6 +216,21 @@ const localFaq = isRegion
             <a href="/service-areas/" class="aside-more">All service areas →</a>
           </div>
         )}
+        {guides.length > 0 && (
+          <div class="card aside-card">
+            <h3>Before you call anyone</h3>
+            <p class="aside-note">
+              Work out what has actually failed, and what it should cost, before
+              you pick up the phone.
+            </p>
+            <ul class="guide-links">
+              {guides.map((g) => (
+                <li><a href={`/blog/${g.slug}/`}>{g.data.title}</a></li>
+              ))}
+            </ul>
+            <a href="/blog/" class="aside-more">All guides →</a>
+          </div>
+        )}
         <div class="card aside-card">
           <h3>Emergency?</h3>
           <p class="aside-note">
@@ -278,6 +296,11 @@ const localFaq = isRegion
   .area-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
   .aside-card h3 { font-size: 1rem; margin-bottom: 0.7rem; }
   .aside-note { font-size: 0.88rem; margin-bottom: 0.9rem; }
+  /* Guide titles wrap, so they get their own list rather than the inline
+     chip layout .area-links uses for place names. */
+  .guide-links { list-style: none; padding: 0; margin: 0; }
+  .guide-links li { padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem; line-height: 1.4; }
+  .guide-links li:last-child { border-bottom: 0; }
   .area-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
   .area-links a { font-size: 0.9rem; }
   .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
