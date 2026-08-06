@@ -157,19 +157,75 @@ traffic, and it should be judged as authority and internal-link fuel for the
 opener services rather than as a lead source. Added
 `how-to-program-a-garage-door-remote`.
 
-**5. "Technician" and "company" framing. Partially open.**
+**5. "Technician" and "company" framing. Fixed.**
 
 `garage door technician` and `garage door tech` are 22,200 each at $59.84.
 `garage door company` 18,100 at $36.02, `garage door companies` 18,100 at
 $32.39, `garage door companies near me` 27,100 at $27.52.
 
-The intent is identical to "repair near me", so this needs the vocabulary
-present on pages that already serve that intent rather than a new page. A
-thin page built to catch the word would be worse than nothing. The word
-appears in 17 files already; the open question is whether it appears in
-titles and headings on the pages that matter.
+No title on the site contained the word. The three existing trust articles
+cover choosing a *company*, which is a different question from what a
+*technician* is and does.
 
-**Not done. Next pass.**
+Added `garage-door-technician-what-they-do`, covering licensing in New York
+honestly (there is no dedicated state licence), what happens step by step on
+a service call, what a stocked van carries, and the technician versus
+salesman distinction. It opens by saying plainly that tech, technician,
+expert, specialist, doctor and vendor all describe the same person and none
+of them is a qualification, which serves the whole synonym cluster without
+keyword stuffing and is also true.
+
+## Second pass, systematic audit
+
+The first pass was a spot check of nine terms. This is the real thing: every
+keyword carrying volume or CPC, matched token by token against the full
+published corpus.
+
+| | Before this session | After |
+|---|---|---|
+| Keywords with data | 306 | 306 |
+| Covered | 212 | 208 |
+| Value covered, excluding typos | 87% | **98.3%** |
+| Remaining real gap value | 15.5M | 2.0M |
+
+Clustering the full 3,956 keywords surfaced four gaps the spot check missed.
+
+**Sizes and dimensions.** 127 keywords, 68,390 volume, 82 uncovered, and no
+coverage at all. Low CPC at $2.60 because much of it is retail shopping, but
+this is somebody measuring an opening before replacing a door, which is a
+$1,056 to $4,620 job here. One guide covers 82 keywords at once, which is
+the best coverage-per-article ratio in the whole dataset. Added
+`standard-garage-door-sizes`.
+
+**Dead opener.** `garage door opener quit working` 2,900 at $19.59,
+uncovered. Added `garage-door-opener-quit-working`, built around the point
+that most dead openers were killed by an unbalanced door, so replacing the
+opener without touching the spring just kills the new one.
+
+**The jamb cluster.** `garage door jamb` 1,600, `jamb replacement` 320 at
+$10.21, `jamb wraps` 590, `jamb trim` 590. Zero coverage, and rotted jambs
+are a genuine recurring New York job because of road salt. Added
+`garage-door-jamb-replacement`.
+
+**Locks and security.** `garage door locks` 8,100 at $4.71 plus a 48 keyword
+cluster, almost entirely uncovered. Added `garage-door-locks-and-security`,
+leading with the manual lock engaged against a powered opener, which is one
+of the most expensive avoidable repairs in the trade.
+
+## What remains uncovered, and why it stays that way
+
+`garage door for sale` 12,100, `garage door lowes` 12,100, `garage door usa`
+2,900, `garage door with screen` 27,100, `garage door for barn` 3,600.
+Retail and product shopping intent. We install doors, we do not sell them
+over a counter, and writing for a Lowes shopper produces traffic that never
+converts.
+
+`garage door weatherstripping` 27,100 at $1.02, `gasket replacement` 8,100
+at $4.43, `lube` 22,200 at $0.64, `trim` 6,600 at $0.56. The DIY parts
+cluster. Combined volume is large and combined CPC is under $1.60.
+
+Seasonal decor: 84 keywords, 32,940 volume, $1.44 average CPC. Christmas and
+Halloween door covers, magnets, wreaths. Not this business.
 
 ## Deliberately not pursued
 
