@@ -506,9 +506,12 @@ export const services: Service[] = [
     slug: 'garage-door-tune-up',
     name: 'Garage Door Tune-Up & Maintenance',
     shortName: 'Tune-Up',
-    metaTitle: 'Garage Door Tune-Up in New York | $95 to $180 Annual Service',
+    /* Title leads with "maintenance" deliberately. "garage door maintenance
+       near me" carries a $45.89 CPC, one of the highest in the vertical,
+       while almost nobody searches "tune-up". See docs/KEYWORD-RESEARCH.md. */
+    metaTitle: 'Garage Door Maintenance & Tune-Up in New York | From $95',
     metaDescription:
-      'Annual garage door maintenance across the New York metro: balance, rollers, hinges, cables, sensors and lubrication. $95 to $180, and it catches the failures before winter.',
+      'Garage door maintenance across the New York metro: balance, rollers, hinges, cables, sensors and lubrication. From $95, and it catches the failures before winter.',
     priceLow: 95,
     priceHigh: 180,
     priceNote: 'annual service visit; parts quoted separately if anything is found',
