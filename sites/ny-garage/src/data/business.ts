@@ -24,6 +24,8 @@ export interface BusinessInfo {
   phone: string;
   phoneHref: string;
   email: string;
+  /** Second mailbox. Different kind of message, not a different department. */
+  emailSupport: string;
   /**
    * Whether each contact channel actually works yet.
    *
@@ -74,11 +76,15 @@ export const business: BusinessInfo = {
   phone: '(516) 000-0000',
   phoneHref: '+15160000000',
   email: 'info@garage-door-fixers.com',
-  // Both false: the number is a placeholder and the mailbox does not exist
-  // yet. Until they do, the quote form is the only contact channel the site
-  // offers, and it says so rather than showing a number nobody answers.
+  emailSupport: 'support@garage-door-fixers.com',
+  // The number is still a placeholder. Both mailboxes are provisioned, so
+  // email is now a real channel and is published everywhere: page copy,
+  // LocalBusiness schema, agent.json and the llms files.
+  //
+  // If mail ever stops being received, set this back to false rather than
+  // leaving a dead address up. That is the whole reason this flag exists.
   phoneLive: false,
-  emailLive: false,
+  emailLive: true,
 
   area: {
     region: 'NY',

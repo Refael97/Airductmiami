@@ -22,6 +22,8 @@ faq:
     answer: "That is the moment the whole model is built around, and it is why the number should be agreed before anyone is dispatched. You are still allowed to stop. Ask for the door to be put back in the state it was found in, pay the agreed call-out fee, and get another quote."
 ---
 
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. These are the parts a service call gets quoted against.](/images/garage-door-parts-overview.webp)
+
 ## The arithmetic
 
 Start with what a visit costs the company that sends it.

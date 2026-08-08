@@ -63,7 +63,7 @@ const crumbs = [
       <p>
         Quote requests and job records are kept for as long as we need them for
         service history, warranty claims and tax records. If you want your details
-        removed sooner, {business.emailLive ? `email ${business.email}` : 'send a request through our contact form'} and we will do it.
+        removed sooner, {business.emailLive ? `email ${business.emailSupport}` : 'send a request through our contact form'} and we will do it.
       </p>
 
       <h2>Cookies</h2>
@@ -76,13 +76,13 @@ const crumbs = [
       <h2>Your choices</h2>
       <p>
         You can ask us what we hold about you, ask us to correct it, or ask us to
-        delete it. {business.emailLive ? `Email ${business.email}` : 'Send the request through our contact form'} and we will respond.
+        delete it. {business.emailLive ? `Email ${business.emailSupport}` : 'Send the request through our contact form'} and we will respond.
       </p>
 
       <h2>Contact</h2>
       <p>
         {business.emailLive
-          ? `Questions about this policy go to ${business.email}.`
+          ? `Questions about this policy go to ${business.emailSupport}.`
           : 'Questions about this policy, or a request to see or delete what we hold about you, can be sent through the form on our contact page.'}
       </p>
     </div>

@@ -24,6 +24,8 @@ faq:
     answer: "The county Consumer Affairs office that licensed them, Nassau on 516-571-2600 or Suffolk on 631-853-4600. Also file with BBB Scam Tracker so the next person searching that company name finds your account. If you paid by card, ask your issuer about a dispute and be specific about what was agreed and when the number changed."
 ---
 
+![A snapped garage door torsion spring, showing the gap where the coil separated and the splayed ends either side of the break. This is the failure most bait priced service calls are dispatched to.](/images/broken-torsion-spring.webp)
+
 ## The pattern
 
 It is consistent enough to describe as a script.

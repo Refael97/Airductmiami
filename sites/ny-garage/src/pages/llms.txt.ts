@@ -79,7 +79,10 @@ export const GET: APIRoute = ({ site }) => {
   push('## Contact');
   push();
   if (business.phoneLive) push(`- Phone: ${business.phone}`);
-  if (business.emailLive) push(`- Email: ${business.email}`);
+  if (business.emailLive) {
+    push(`- Email, quotes and new enquiries: ${business.email}`);
+    push(`- Email, existing jobs and warranty: ${business.emailSupport}`);
+  }
   if (!business.phoneLive && !business.emailLive) {
     push('- The quote form is currently the only contact channel. There is no published phone number or email address to cite.');
   }

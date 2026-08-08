@@ -30,7 +30,12 @@ export const GET: APIRoute = ({ site }) => {
          handed a number nobody answers. */
       phone: business.phoneLive ? business.phone : null,
       email: business.emailLive ? business.email : null,
-      contact_channel: business.phoneLive || business.emailLive ? 'phone_and_form' : 'form_only',
+      email_support: business.emailLive ? business.emailSupport : null,
+      contact_channel: business.phoneLive
+        ? 'phone_email_and_form'
+        : business.emailLive
+          ? 'email_and_form'
+          : 'form_only',
       /* Service area business: we travel to the customer and do not receive
          customers at a location, so no street address is published. */
       location_type: 'service_area_business',

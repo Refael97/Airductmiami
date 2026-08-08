@@ -28,7 +28,12 @@ const footerServices = services.slice(0, 6);
           <><a href={`tel:${business.phoneHref}`}>{business.phone}</a><br /></>
         )}
         {business.emailLive ? (
-          <a href={`mailto:${business.email}`}>{business.email}</a>
+          <>
+            <a href={`mailto:${business.email}`}>{business.email}</a>
+            <span class="mail-note">quotes and new enquiries</span>
+            <a href={`mailto:${business.emailSupport}`}>{business.emailSupport}</a>
+            <span class="mail-note">existing jobs, warranty and scheduling</span>
+          </>
         ) : (
           <a href="/contact/">Request a free quote</a>
         )}
@@ -118,7 +123,14 @@ const footerServices = services.slice(0, 6);
     font-size: 1.55rem; line-height: 1; color: #fff; margin-bottom: 0.7rem;
   }
   .footer-about p { font-size: 0.9rem; margin-bottom: 0.7rem; }
-  .footer-contact a { color: #d8e2ee; }
+  .footer-contact a { color: #d8e2ee; display: block; }
+  /* Two mailboxes, split by what the message is about rather than by
+     department. Saying which is which stops quote requests landing in the
+     warranty queue and back again. */
+  .mail-note {
+    display: block; font-size: 0.76rem; color: #8c9aab;
+    margin: 0.1rem 0 0.5rem;
+  }
   .footer-badge {
     display: inline-block; font-size: 0.78rem; color: #ff9b9b;
     font-weight: 700; border: 1px solid rgba(214, 40, 40, 0.65);

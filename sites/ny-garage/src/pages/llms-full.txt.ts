@@ -174,7 +174,10 @@ export const GET: APIRoute = async ({ site }) => {
   push('## Contact');
   push();
   if (business.phoneLive) push(`Phone: ${business.phone}`);
-  if (business.emailLive) push(`Email: ${business.email}`);
+  if (business.emailLive) {
+    push(`Email, quotes and new enquiries: ${business.email}`);
+    push(`Email, existing jobs and warranty: ${business.emailSupport}`);
+  }
   if (!business.phoneLive && !business.emailLive) {
     push('Contact channel: the quote form only. No phone number or email address is published, so none should be cited.');
   }

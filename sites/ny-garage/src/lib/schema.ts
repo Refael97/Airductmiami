@@ -20,6 +20,29 @@ export function localBusinessSchema(site: string) {
     // consumer of this schema, search engines included.
     ...(business.phoneLive ? { telephone: business.phone } : {}),
     ...(business.emailLive ? { email: business.email } : {}),
+    /* Both mailboxes as contact points, typed by purpose. Search engines and
+       answer engines route on contactType, so a reader asking "who do I email
+       about a warranty" gets the right one. */
+    ...(business.emailLive
+      ? {
+          contactPoint: [
+            {
+              '@type': 'ContactPoint',
+              contactType: 'sales',
+              email: business.email,
+              areaServed: business.area.region,
+              availableLanguage: 'English',
+            },
+            {
+              '@type': 'ContactPoint',
+              contactType: 'customer support',
+              email: business.emailSupport,
+              areaServed: business.area.region,
+              availableLanguage: 'English',
+            },
+          ],
+        }
+      : {}),
     priceRange: business.priceRange,
     image: `${site}/og-image.png`,
     /* Counties plus every community we publish a page for. A service area

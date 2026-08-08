@@ -204,10 +204,23 @@ const usesNetlifyForms = formEndpoint === '';
             </p>
           )}
           {business.emailLive && (
-            <p class="contact-method">
-              <span class="cm-ico"><Icon name="quote" size={18} /></span>
-              <span><strong>{business.email}</strong></span>
-            </p>
+            <>
+              <p class="contact-method">
+                <span class="cm-ico"><Icon name="quote" size={18} /></span>
+                <span>
+                  <a href={`mailto:${business.email}`}><strong>{business.email}</strong></a><br />
+                  Quotes and new enquiries. The form above is faster, because
+                  it asks for the ZIP and the symptom up front.
+                </span>
+              </p>
+              <p class="contact-method">
+                <span class="cm-ico"><Icon name="quote" size={18} /></span>
+                <span>
+                  <a href={`mailto:${business.emailSupport}`}><strong>{business.emailSupport}</strong></a><br />
+                  Existing jobs, warranty claims and rescheduling.
+                </span>
+              </p>
+            </>
           )}
           <p class="contact-method">
             <span class="cm-ico"><Icon name="pin" size={18} /></span>
