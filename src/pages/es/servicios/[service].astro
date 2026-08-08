@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { guidesForServiceEs } from '../../../lib/relatedContent';
+import { serviceImages, hasImage } from '../../../data/pageImages';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
 import CTABand from '../../../components/CTABand.astro';
@@ -23,6 +24,7 @@ const { service: slug } = Astro.params;
 const base = getService(slug!)!;
 const es = serviceEsContent[slug!];
 const guides = await guidesForServiceEs(base.slug);
+const pageImg = serviceImages[base.slug];
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const pageUrl = `${site}${serviceHref(lang, base.slug)}`;
@@ -66,6 +68,16 @@ const altHref = `/services/${base.slug}`;
 
  <div class="service-body">
  <div class="service-main prose">
+ {hasImage(pageImg) && (
+   <figure class="page-figure">
+     <img
+       src={`/images/${pageImg!.file}`}
+       width="1200" height="900" loading="lazy" decoding="async"
+       alt={pageImg!.altEs}
+     />
+     <figcaption>Imagen ilustrativa de la condición descrita. No es una fotografía de nuestro propio trabajo.</figcaption>
+   </figure>
+ )}
  {es.intro.map((p) => <p>{p}</p>)}
 
  <h2>Beneficios principales</h2>
@@ -144,6 +156,19 @@ const altHref = `/services/${base.slug}`;
 </BaseLayout>
 
 <style>
+  /* Illustration, not evidence. The caption says so on every page that
+     shows one. The only proof-of-work images on this site are the customer's
+     real before and after photographs on the home page. */
+  .page-figure { margin: 1.5rem 0 1.7rem; }
+  .page-figure img {
+    width: 100%; height: auto; border-radius: 12px; display: block;
+    border: 1px solid var(--c-border, #e5e7eb);
+  }
+  .page-figure figcaption {
+    font-size: 0.8rem; color: var(--c-muted, #6b7280); margin-top: 0.55rem;
+    line-height: 1.5;
+  }
+
   .service-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
   .icon-lg { display: inline-flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; border-radius: 18px; background: var(--grad-cta); color: #fff; box-shadow: var(--shadow); flex-shrink: 0; }
   .service-body { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }

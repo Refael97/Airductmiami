@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { guidesForService } from '../../lib/relatedContent';
+import { serviceImages, hasImage } from '../../data/pageImages';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
@@ -34,6 +35,7 @@ const related = service.related
 const featuredCities = cities.slice(0, 8);
 const altHref = `/es/servicios/${service.slug}`;
 const guides = await guidesForService(service.slug);
+const pageImg = serviceImages[service.slug];
 ---
 <BaseLayout title={service.metaTitle} description={service.metaDescription} schema={schema} altHref={altHref}>
   <Breadcrumbs
@@ -62,6 +64,16 @@ const guides = await guidesForService(service.slug);
 
       <div class="service-body">
         <div class="service-main prose">
+          {hasImage(pageImg) && (
+            <figure class="page-figure">
+              <img
+                src={`/images/${pageImg!.file}`}
+                width="1200" height="900" loading="lazy" decoding="async"
+                alt={pageImg!.alt}
+              />
+              <figcaption>Illustration of the condition described. Not a photograph of our own work.</figcaption>
+            </figure>
+          )}
           {service.intro.map((p) => <p>{p}</p>)}
 
           <h2>Key benefits</h2>
@@ -141,6 +153,19 @@ const guides = await guidesForService(service.slug);
 </BaseLayout>
 
 <style>
+  /* Illustration, not evidence. The caption says so on every page that
+     shows one. The only proof-of-work images on this site are the customer's
+     real before and after photographs on the home page. */
+  .page-figure { margin: 1.5rem 0 1.7rem; }
+  .page-figure img {
+    width: 100%; height: auto; border-radius: 12px; display: block;
+    border: 1px solid var(--c-border, #e5e7eb);
+  }
+  .page-figure figcaption {
+    font-size: 0.8rem; color: var(--c-muted, #6b7280); margin-top: 0.55rem;
+    line-height: 1.5;
+  }
+
   .service-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
   .icon-lg { display: inline-flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; border-radius: 18px; background: var(--grad-cta); color: #fff; box-shadow: var(--shadow); flex-shrink: 0; }
   .service-body { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }
