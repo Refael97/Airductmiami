@@ -13,6 +13,7 @@ import CtaBand from '../../components/CtaBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import { doorMaterials, openerTypes } from '../../data/products';
 import { serviceSchema } from '../../lib/schema';
+import { productImages, hasImage } from '../../data/pageImages';
 
 export function getStaticPaths() {
   return [
@@ -28,6 +29,7 @@ export function getStaticPaths() {
 }
 
 const { kind, item } = Astro.props;
+const pageImg = productImages[item.slug];
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const url = `${site}/buyers-guide/${item.slug}/`;
 
@@ -85,6 +87,17 @@ const schema = serviceSchema(site, {
       <article class="prose">
         <AnswerBox text={item.answer} />
 
+        {hasImage(pageImg) && (
+          <figure class="page-figure">
+            <img
+              src={`/images/${pageImg!.file}`}
+              width="1200" height="900" loading="lazy" decoding="async"
+              alt={pageImg!.alt}
+            />
+            <figcaption>Illustration of the type described. Not a photograph of our own work.</figcaption>
+          </figure>
+        )}
+
         {item.intro.map((p) => <p>{p}</p>)}
 
         <div class="pro-con">
@@ -135,6 +148,18 @@ const schema = serviceSchema(site, {
 </BaseLayout>
 
 <style>
+  /* Illustration, not evidence. The caption says so on every page that
+     shows one, in the same voice as the note under the homepage grids. */
+  .page-figure { margin: 1.6rem 0 1.8rem; }
+  .page-figure img {
+    width: 100%; height: auto; border-radius: 12px; display: block;
+    border: 1px solid var(--c-line);
+  }
+  .page-figure figcaption {
+    font-size: 0.8rem; color: var(--c-muted); margin-top: 0.55rem;
+    line-height: 1.5;
+  }
+
   .p-hero { background: var(--grad-hero); padding-block: 2.4rem 2.8rem; }
   .p-hero-inner { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2.5rem; align-items: center; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.4rem; }

@@ -12,6 +12,7 @@ import { iconFor } from '../../data/serviceIcons';
 import { citiesByPotential } from '../../data/cities';
 import { serviceSchema } from '../../lib/schema';
 import { guidesForService } from '../../lib/relatedContent';
+import { serviceImages, hasImage } from '../../data/pageImages';
 
 export function getStaticPaths() {
   return services.map((s) => ({ params: { service: s.slug }, props: { service: s } }));
@@ -33,6 +34,7 @@ const related = service.related
 
 const topCities = citiesByPotential().slice(0, 12);
 const guides = await guidesForService(service.slug);
+const pageImg = serviceImages[service.slug];
 
 const schema = serviceSchema(site, {
   name: service.name,
@@ -72,6 +74,17 @@ const schema = serviceSchema(site, {
     <div class="container svc-body">
       <article class="prose">
         <AnswerBox text={service.answer} />
+
+        {hasImage(pageImg) && (
+          <figure class="page-figure">
+            <img
+              src={`/images/${pageImg!.file}`}
+              width="1200" height="900" loading="lazy" decoding="async"
+              alt={pageImg!.alt}
+            />
+            <figcaption>Illustration of the fault described. Not a photograph of our own work.</figcaption>
+          </figure>
+        )}
 
         {service.intro.map((p) => <p>{p}</p>)}
 
@@ -206,6 +219,17 @@ const schema = serviceSchema(site, {
   .plain span { color: var(--c-primary); font-weight: 700; white-space: nowrap; }
   /* Guide titles are full sentences, so they wrap. Undo the flex row that
      .plain uses for the name-and-price pattern. */
+  /* Illustration, not evidence. The caption says so on every page that
+     shows one, in the same voice as the note under the homepage grids. */
+  .page-figure { margin: 1.6rem 0 1.8rem; }
+  .page-figure img {
+    width: 100%; height: auto; border-radius: 12px; display: block;
+    border: 1px solid var(--c-line);
+  }
+  .page-figure figcaption {
+    font-size: 0.8rem; color: var(--c-muted); margin-top: 0.55rem;
+    line-height: 1.5;
+  }
   .guide-links li { display: block; line-height: 1.4; }
   .area-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
   .area-links a { font-size: 0.88rem; }
