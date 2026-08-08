@@ -23,7 +23,7 @@ Los contaminantes más comunes del aire interior en Florida son moho, ácaros de
 
 ### 1. Moho
 
-El campeón indiscutible en Florida. Crece donde hay humedad: baños, ductos, alrededor de las ventanas y en cualquier gotera. Sus esporas disparan alergias y problemas respiratorios. Contrólelo manteniendo la humedad por debajo del 50% y atendiendo las goteras de inmediato. Cuando ya se instaló, la [remediación de moho](/es/servicios/mold-remediation) es la solución.
+El campeón indiscutible en Florida. Crece donde hay humedad: baños, ductos, alrededor de las ventanas y en cualquier gotera. Sus esporas disparan alergias y problemas respiratorios. Contrólelo manteniendo la humedad por debajo del 50% y atendiendo las goteras de inmediato. Cuando ya se instaló, la [remediación de moho](/es/servicios/mold-remediation/) es la solución.
 
 ### 2. Ácaros del polvo
 
@@ -55,7 +55,7 @@ Un gas natural que sube desde el suelo. Puede acumularse en casas selladas. La �
 
 ### 9. Bacterias y virus
 
-Circulan por el aire y se acumulan en el serpentín húmedo del AC. Una [luz UV en el sistema](/es/servicios/uv-light-installation) ayuda a neutralizarlos donde más se concentran.
+Circulan por el aire y se acumulan en el serpentín húmedo del AC. Una [luz UV en el sistema](/es/servicios/uv-light-installation/) ayuda a neutralizarlos donde más se concentran.
 
 ### 10. Polvo común
 
@@ -80,6 +80,6 @@ En lugar de perseguir cada contaminante por separado, concéntrese en estas tres
 
 1. **Humedad bajo control (40-50%):** frena moho, ácaros y bacterias de un solo golpe.
 2. **Filtración al día:** atrapa polen, polvo, caspa y humo.
-3. **Ductos limpios:** una [limpieza de ductos](/es/servicios/air-duct-cleaning) evita que todo lo anterior se recicle por la casa.
+3. **Ductos limpios:** una [limpieza de ductos](/es/servicios/air-duct-cleaning/) evita que todo lo anterior se recicle por la casa.
 
-Si quiere saber cuáles de estos contaminantes están presentes en su hogar, una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) se lo dice con datos. Y si prefiere que lo revisemos nosotros, solo tiene que [escribirnos](/es/contacto).
+Si quiere saber cuáles de estos contaminantes están presentes en su hogar, una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) se lo dice con datos. Y si prefiere que lo revisemos nosotros, solo tiene que [escribirnos](/es/contacto/).

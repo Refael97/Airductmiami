@@ -32,7 +32,7 @@ Cada camino tiene su lugar. Esta tabla lo resume:
 | Fugas en muchos puntos | Evaluar reemplazo parcial | Sube según alcance |
 | Ductos viejos con moho extendido | Reemplazar | El más alto |
 
-La reparación puntual casi siempre es la opción sensata cuando el sistema en general está bien. Puede ver nuestro enfoque en la página de [reparación de ductos](/es/servicios/air-duct-repair).
+La reparación puntual casi siempre es la opción sensata cuando el sistema en general está bien. Puede ver nuestro enfoque en la página de [reparación de ductos](/es/servicios/air-duct-repair/).
 
 ## Señales de que hay un problema
 
@@ -52,10 +52,10 @@ Sellar los ductos consiste en cerrar las fugas de las uniones y grietas para que
 
 ## El factor Florida
 
-Aquí el aire acondicionado trabaja casi todo el año, así que una fuga cuesta más que en un estado con clima suave. En zonas como [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale) y el resto del sur de Florida, sellar los ductos se nota rápido en la factura. Además, si hay humedad entrando por las fugas, puede aparecer moho, y ahí ya hablaríamos de una [remediación de moho](/es/servicios/mold-remediation) aparte.
+Aquí el aire acondicionado trabaja casi todo el año, así que una fuga cuesta más que en un estado con clima suave. En zonas como [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale/) y el resto del sur de Florida, sellar los ductos se nota rápido en la factura. Además, si hay humedad entrando por las fugas, puede aparecer moho, y ahí ya hablaríamos de una [remediación de moho](/es/servicios/mold-remediation/) aparte.
 
-Un buen momento para revisar el estado de los conductos es justo cuando hace una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning), porque el técnico ya tiene el sistema abierto y a la vista.
+Un buen momento para revisar el estado de los conductos es justo cuando hace una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/), porque el técnico ya tiene el sistema abierto y a la vista.
 
 ## En resumen
 
-Entre reparar y reemplazar, la respuesta correcta depende del estado general de sus ductos. Si el daño es puntual, reparar y sellar es lo más lógico y lo más económico. Si el sistema ya cumplió su ciclo, reemplazar evita gastar dos veces. Lo importante es que alguien lo inspeccione con honestidad antes de decidir. Escríbanos por la página de [contacto](/es/contacto) y le damos una evaluación clara.
+Entre reparar y reemplazar, la respuesta correcta depende del estado general de sus ductos. Si el daño es puntual, reparar y sellar es lo más lógico y lo más económico. Si el sistema ya cumplió su ciclo, reemplazar evita gastar dos veces. Lo importante es que alguien lo inspeccione con honestidad antes de decidir. Escríbanos por la página de [contacto](/es/contacto/) y le damos una evaluación clara.

@@ -60,8 +60,8 @@ El clima y la construcción de las casas de aquí empeoran los tres peligros. La
 
 ## Cómo neutralizar los tres
 
-La solución para el fuego, el moho y los gases es la misma: mantenga la ventila despejada. Eso significa limpiar el filtro en cada carga y programar una [limpieza profesional del ducto](/es/servicios/dryer-vent-cleaning) al menos una vez al año, con un costo típico de 100 a 200 dólares. Si el olor a humedad ya se extendió más allá del lavado, quizá convenga revisar la [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+La solución para el fuego, el moho y los gases es la misma: mantenga la ventila despejada. Eso significa limpiar el filtro en cada carga y programar una [limpieza profesional del ducto](/es/servicios/dryer-vent-cleaning/) al menos una vez al año, con un costo típico de 100 a 200 dólares. Si el olor a humedad ya se extendió más allá del lavado, quizá convenga revisar la [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Lo esencial
 
-La pelusa es mucho más que pelusa. Es un riesgo de incendio, una fuente de humedad que alimenta moho y un peligro de gases en secadores de gas, todo agravado por el clima de Florida. Mantener la ventila limpia neutraliza los tres. Si pasó más de un año, [comuníquese con nosotros](/es/contacto) y quítese el problema de encima.
+La pelusa es mucho más que pelusa. Es un riesgo de incendio, una fuente de humedad que alimenta moho y un peligro de gases en secadores de gas, todo agravado por el clima de Florida. Mantener la ventila limpia neutraliza los tres. Si pasó más de un año, [comuníquese con nosotros](/es/contacto/) y quítese el problema de encima.

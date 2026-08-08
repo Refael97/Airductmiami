@@ -68,8 +68,8 @@ Florida's climate adds a few considerations:
 
 ## When to call a professional
 
-Dryer vent routing affects fire safety, so professional installation is worth it, especially for roof runs or long routes through walls and attics. A pro will size the run correctly, choose safe materials, and terminate the vent properly. Our [dryer vent installation service](/services/dryer-vent-installation/) covers new installs, rerouting, and replacement of unsafe ducting anywhere in Florida. If you're upgrading unsafe ducting or planning a new laundry location, [contact our team](/contact) to get it done right.
+Dryer vent routing affects fire safety, so professional installation is worth it, especially for roof runs or long routes through walls and attics. A pro will size the run correctly, choose safe materials, and terminate the vent properly. Our [dryer vent installation service](/services/dryer-vent-installation/) covers new installs, rerouting, and replacement of unsafe ducting anywhere in Florida. If you're upgrading unsafe ducting or planning a new laundry location, [contact our team](/contact/) to get it done right.
 
 ## The bottom line
 
-The best dryer vent is a **short, straight, rigid-metal run** out a nearby exterior wall, capped with a proper hooded cover. Keep the total run under the length limit, avoid flexible plastic and foil, and account for Florida's humidity and pests. Once installed, keep it clear with regular [dryer vent cleaning](/services/dryer-vent-cleaning), even the best installation needs annual maintenance.
+The best dryer vent is a **short, straight, rigid-metal run** out a nearby exterior wall, capped with a proper hooded cover. Keep the total run under the length limit, avoid flexible plastic and foil, and account for Florida's humidity and pests. Once installed, keep it clear with regular [dryer vent cleaning](/services/dryer-vent-cleaning/), even the best installation needs annual maintenance.

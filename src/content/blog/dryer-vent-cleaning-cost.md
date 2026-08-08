@@ -41,7 +41,7 @@ Rooftop vents, common in some Florida homes, require safe roof access and cost m
 A vent cleaned yearly clears quickly. One neglected for years, or blocked by a bird nest, takes longer.
 
 ### 4. Bundling
-Booking dryer vent cleaning alongside [air duct cleaning](/services/air-duct-cleaning) often earns a discount, since the crew is already on-site.
+Booking dryer vent cleaning alongside [air duct cleaning](/services/air-duct-cleaning/) often earns a discount, since the crew is already on-site.
 
 ## Why this cheap service matters so much
 
@@ -64,7 +64,7 @@ In other words, a $100 to $200 cleaning often pays for itself through efficiency
 
 ## The Florida angle
 
-Florida's humidity means dryers often run frequently, and lint accumulates steadily. Homes in coastal areas like [Fort Lauderdale](/service-areas/fort-lauderdale) may also see debris or nesting in exterior vents. Regular cleaning keeps everything flowing safely.
+Florida's humidity means dryers often run frequently, and lint accumulates steadily. Homes in coastal areas like [Fort Lauderdale](/service-areas/fort-lauderdale/) may also see debris or nesting in exterior vents. Regular cleaning keeps everything flowing safely.
 
 ## Avoid the lowball trap
 
@@ -72,4 +72,4 @@ As with duct cleaning, be wary of prices that seem too good to be true. A genuin
 
 ## The bottom line
 
-At $100 to $200, professional dryer vent cleaning is inexpensive insurance against fire and wasted energy. Once a year is right for most Florida households. To schedule a thorough cleaning, see our [dryer vent cleaning service](/services/dryer-vent-cleaning) or [contact us](/contact), and ask about bundling it with a duct cleaning to save.
+At $100 to $200, professional dryer vent cleaning is inexpensive insurance against fire and wasted energy. Once a year is right for most Florida households. To schedule a thorough cleaning, see our [dryer vent cleaning service](/services/dryer-vent-cleaning/) or [contact us](/contact/), and ask about bundling it with a duct cleaning to save.

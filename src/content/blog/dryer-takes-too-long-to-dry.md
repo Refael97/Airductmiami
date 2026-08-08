@@ -47,7 +47,7 @@ The flexible hose behind the dryer is easily crushed when the appliance is pushe
 
 ### 4. Consider the full duct
 
-The section you can see is only part of the story. Lint accumulates along the entire run, and in Florida, that run is often long and routed through the roof. A [professional dryer vent cleaning](/services/dryer-vent-cleaning) clears the whole path.
+The section you can see is only part of the story. Lint accumulates along the entire run, and in Florida, that run is often long and routed through the roof. A [professional dryer vent cleaning](/services/dryer-vent-cleaning/) clears the whole path.
 
 ### 5. Don't overload
 
@@ -67,4 +67,4 @@ If you've cleared the lint screen, confirmed strong outdoor airflow, and straigh
 
 ## The bottom line
 
-Long dry times usually trace back to restricted airflow, and the most common fix is clearing the lint trap and vent. A slow dryer isn't just an inconvenience, the same blockage that traps moisture also traps heat, which is a fire risk. If your clothes need two cycles, [schedule a vent cleaning](/services/dryer-vent-cleaning) or [contact us](/contact) for a diagnosis.
+Long dry times usually trace back to restricted airflow, and the most common fix is clearing the lint trap and vent. A slow dryer isn't just an inconvenience, the same blockage that traps moisture also traps heat, which is a fire risk. If your clothes need two cycles, [schedule a vent cleaning](/services/dryer-vent-cleaning/) or [contact us](/contact/) for a diagnosis.

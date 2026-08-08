@@ -46,16 +46,16 @@ With the AC running almost constantly and attics hitting 130°F, summer is about
 After a long summer of runtime, fall is the time to assess wear and address anything the season exposed.
 
 - Book a **fall inspection** to catch worn parts
-- Have the **ductwork inspected for leaks**, duct systems commonly lose 20 to 30% of their air, and summer heat stresses seals; our [air duct repair](/services/air-duct-repair) team can seal them
-- Consider **duct cleaning** if airflow has weakened, see [air duct cleaning](/services/air-duct-cleaning)
+- Have the **ductwork inspected for leaks**, duct systems commonly lose 20 to 30% of their air, and summer heat stresses seals; our [air duct repair](/services/air-duct-repair/) team can seal them
+- Consider **duct cleaning** if airflow has weakened, see [air duct cleaning](/services/air-duct-cleaning/)
 - Replace the filter again
 
 ## Winter: humidity, ducts, and insulation
 
 Florida winters are mild, so the AC still runs on warm days. Use the lighter load to tackle bigger improvements.
 
-- Address any lingering **humidity or musty odor** issues, including [air duct sanitizing](/services/air-duct-sanitizing) if needed
-- Evaluate and top up **attic insulation** (around R-30 to R-38) with our [attic insulation](/services/attic-insulation) service
+- Address any lingering **humidity or musty odor** issues, including [air duct sanitizing](/services/air-duct-sanitizing/) if needed
+- Evaluate and top up **attic insulation** (around R-30 to R-38) with our [attic insulation](/services/attic-insulation/) service
 - Seal windows and doors while you're thinking about the building envelope
 - Plan and budget any duct or equipment work for the coming year
 
@@ -73,4 +73,4 @@ Florida winters are mild, so the AC still runs on warm days. Use the lighter loa
 
 ## Why the schedule pays off
 
-Consistent maintenance keeps airflow strong, humidity controlled, and small problems from turning into expensive breakdowns during the worst heat. In a climate that demands so much from your AC, a little seasonal attention protects both your comfort and your equipment. [Contact us](/contact) to set up a maintenance plan for your Florida home.
+Consistent maintenance keeps airflow strong, humidity controlled, and small problems from turning into expensive breakdowns during the worst heat. In a climate that demands so much from your AC, a little seasonal attention protects both your comfort and your equipment. [Contact us](/contact/) to set up a maintenance plan for your Florida home.

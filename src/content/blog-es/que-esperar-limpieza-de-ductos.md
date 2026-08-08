@@ -31,7 +31,7 @@ Luego sella las rejillas que no se van a usar en ese momento. Esto es clave para
 
 ## Paso 3: La aspiradora de presión negativa
 
-Aquí empieza el trabajo pesado. El técnico conecta una aspiradora potente al sistema, casi siempre cerca del manejador de aire, y crea presión negativa en todos los conductos. Esta máquina es la que va a arrastrar toda la suciedad hacia un contenedor sellado con filtro. Es la parte más ruidosa, parecida a una aspiradora industrial. Puede leer más del principio detrás de esto en nuestra página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+Aquí empieza el trabajo pesado. El técnico conecta una aspiradora potente al sistema, casi siempre cerca del manejador de aire, y crea presión negativa en todos los conductos. Esta máquina es la que va a arrastrar toda la suciedad hacia un contenedor sellado con filtro. Es la parte más ruidosa, parecida a una aspiradora industrial. Puede leer más del principio detrás de esto en nuestra página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Paso 4: Cepillado y aire comprimido
 
@@ -39,11 +39,11 @@ Con la succión activa, el técnico va conducto por conducto despegando la mugre
 
 ## Paso 5: Limpieza del manejador y las rejillas
 
-Los conductos no son lo único. El equipo también atiende el corazón del sistema: la bandeja de condensado, el serpentín y el ventilador del manejador de aire. En Florida esta parte junta mucha humedad y moho. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) completa incluye estos componentes, no solo los tubos.
+Los conductos no son lo único. El equipo también atiende el corazón del sistema: la bandeja de condensado, el serpentín y el ventilador del manejador de aire. En Florida esta parte junta mucha humedad y moho. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) completa incluye estos componentes, no solo los tubos.
 
 ## Paso 6: Desinfección opcional
 
-Si usted lo pide o si aparece moho, muchos equipos aplican un tratamiento antimicrobiano al final. Esto no reemplaza la limpieza física, la complementa. Vea el detalle en [desinfección de ductos](/es/servicios/air-duct-sanitizing).
+Si usted lo pide o si aparece moho, muchos equipos aplican un tratamiento antimicrobiano al final. Esto no reemplaza la limpieza física, la complementa. Vea el detalle en [desinfección de ductos](/es/servicios/air-duct-sanitizing/).
 
 ## Paso 7: Revisión final y prueba
 
@@ -61,4 +61,4 @@ Al terminar, el técnico quita los sellos, vuelve a colocar las rejillas y encie
 
 En total, cuente entre 2 y 4 horas para una casa promedio. Al final debería notar el aire más fresco y, con suerte, ese olor a humedad desaparecido.
 
-Si tiene preguntas antes de agendar, escríbanos por la página de [contacto](/es/contacto). Preferimos que llegue el día sabiendo exactamente qué va a pasar.
+Si tiene preguntas antes de agendar, escríbanos por la página de [contacto](/es/contacto/). Preferimos que llegue el día sabiendo exactamente qué va a pasar.

@@ -30,7 +30,7 @@ La mayoría de los problemas de ductos en Florida se resuelven con reparación. 
 - Aislamiento dañado en una sección específica.
 - Una rejilla o registro suelto.
 
-Estos arreglos son rápidos y devuelven mucho aire por poco dinero. Puede ver cómo se hacen en la página de [reparación de ductos de aire](/es/servicios/air-duct-repair).
+Estos arreglos son rápidos y devuelven mucho aire por poco dinero. Puede ver cómo se hacen en la página de [reparación de ductos de aire](/es/servicios/air-duct-repair/).
 
 ## Cuándo conviene reemplazar
 
@@ -63,8 +63,8 @@ Un sistema nuevo bien sellado deja de perder ese 20 a 30 por ciento de aire típ
 
 ## No olvide el ático
 
-Antes de decidir, mire también el aislamiento. De poco sirve reemplazar ductos si el ático los va a hornear igual. Muchas veces conviene combinar el trabajo de ductos con una mejora del [aislamiento del ático](/es/servicios/attic-insulation) para que el sistema nuevo rinda de verdad. Y si va a reparar, una [limpieza de ductos](/es/servicios/air-duct-cleaning) previa deja todo listo.
+Antes de decidir, mire también el aislamiento. De poco sirve reemplazar ductos si el ático los va a hornear igual. Muchas veces conviene combinar el trabajo de ductos con una mejora del [aislamiento del ático](/es/servicios/attic-insulation/) para que el sistema nuevo rinda de verdad. Y si va a reparar, una [limpieza de ductos](/es/servicios/air-duct-cleaning/) previa deja todo listo.
 
 ## En resumen
 
-Reparar o reemplazar no es adivinanza. Mire la edad, la extensión del daño y cuánto aire pierde. Daño puntual, repare; daño generalizado o sistema viejo, reemplace. Si quiere una opinión honesta sobre su caso, escríbanos por la página de [contacto](/es/contacto) y le decimos con franqueza qué le conviene.
+Reparar o reemplazar no es adivinanza. Mire la edad, la extensión del daño y cuánto aire pierde. Daño puntual, repare; daño generalizado o sistema viejo, reemplace. Si quiere una opinión honesta sobre su caso, escríbanos por la página de [contacto](/es/contacto/) y le decimos con franqueza qué le conviene.

@@ -63,10 +63,10 @@ No todo el mundo la necesita, pero conviene considerarla si:
 - Compró o va a comprar una casa y quiere estar seguro.
 - Alguien vulnerable vive en casa (bebés, mayores, personas con asma).
 
-Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) traduce todas esas dudas en datos concretos. Y si detecta moho, el paso siguiente suele ser una [remediación de moho](/es/servicios/mold-remediation) o una [limpieza de ductos](/es/servicios/air-duct-cleaning) según dónde esté el problema.
+Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) traduce todas esas dudas en datos concretos. Y si detecta moho, el paso siguiente suele ser una [remediación de moho](/es/servicios/mold-remediation/) o una [limpieza de ductos](/es/servicios/air-duct-cleaning/) según dónde esté el problema.
 
 ## De los resultados a la acción
 
 Una prueba por sí sola no limpia nada. Su valor está en dirigir el esfuerzo al lugar correcto. Si el moho sale alto, se ataca la humedad y su origen. Si las partículas son el problema, se mejora la filtración. Si los COV dominan, se revisa qué productos y materiales los emiten.
 
-Así deja de gastar en soluciones al azar y ataca lo que de verdad afecta su aire. Si quiere empezar por saber qué respira su familia, [contáctenos](/es/contacto) y coordinamos una evaluación de su hogar.
+Así deja de gastar en soluciones al azar y ataca lo que de verdad afecta su aire. Si quiere empezar por saber qué respira su familia, [contáctenos](/es/contacto/) y coordinamos una evaluación de su hogar.

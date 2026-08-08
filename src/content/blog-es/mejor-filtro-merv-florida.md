@@ -51,10 +51,10 @@ Para un hogar típico en el sur o centro de Florida, un **MERV 8 a MERV 11** es 
 - **Dejar el mismo filtro por meses.** Un filtro tapado filtra mal y esfuerza el motor.
 - **Ignorar el tamaño exacto.** Un filtro mal ajustado deja pasar aire sin filtrar por los bordes.
 
-Recuerde también que ningún filtro limpia lo que ya está pegado dentro de los conductos. Si sus ductos acumularon años de polvo, un buen filtro ayuda, pero conviene una [limpieza de ductos](/es/servicios/air-duct-cleaning) para empezar de cero.
+Recuerde también que ningún filtro limpia lo que ya está pegado dentro de los conductos. Si sus ductos acumularon años de polvo, un buen filtro ayuda, pero conviene una [limpieza de ductos](/es/servicios/air-duct-cleaning/) para empezar de cero.
 
 ## Un filtro no lo resuelve todo
 
-El filtro es la primera línea de defensa, pero trabaja mejor acompañado. La [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) mantiene el serpentín y el ventilador libres de suciedad, y una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) le dice si lo que respira necesita filtración más fina.
+El filtro es la primera línea de defensa, pero trabaja mejor acompañado. La [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) mantiene el serpentín y el ventilador libres de suciedad, y una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) le dice si lo que respira necesita filtración más fina.
 
-Si no está seguro de qué MERV aguanta su equipo, [escríbanos](/es/contacto) y le orientamos según su sistema. En Florida, elegir bien el filtro es tan importante como cambiarlo a tiempo.
+Si no está seguro de qué MERV aguanta su equipo, [escríbanos](/es/contacto/) y le orientamos según su sistema. En Florida, elegir bien el filtro es tan importante como cambiarlo a tiempo.

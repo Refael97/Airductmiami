@@ -30,13 +30,13 @@ Once these settle inside the ducts, the moving air keeps stirring them up. If yo
 
 ## What cleaning realistically does
 
-A thorough source-removal [air duct cleaning](/services/air-duct-cleaning) physically hauls the accumulated allergens out of the system. That means:
+A thorough source-removal [air duct cleaning](/services/air-duct-cleaning/) physically hauls the accumulated allergens out of the system. That means:
 
 - Less visible dust settling on surfaces
 - Fewer spores and pollen grains recirculating
 - A cleaner starting point for your filter to maintain
 
-Pairing cleaning with [air duct sanitizing](/services/air-duct-sanitizing) can also neutralize mold and bacteria on duct surfaces, which helps with the musty odors that often accompany allergy flare-ups in humid climates.
+Pairing cleaning with [air duct sanitizing](/services/air-duct-sanitizing/) can also neutralize mold and bacteria on duct surfaces, which helps with the musty odors that often accompany allergy flare-ups in humid climates.
 
 ## What cleaning can't do alone
 
@@ -57,12 +57,12 @@ Duct cleaning is not a permanent allergy cure. It will not:
 | UV light installation | Limits microbial growth on the coil |
 | Regular filter changes | Keeps the system efficient |
 
-Controlling humidity is especially powerful in Florida, both mold and dust mites thrive in moist air, so keeping indoor humidity in check attacks two allergen sources at once. A [UV light installation](/services/uv-light-installation) at the coil adds another layer of defense against microbial growth.
+Controlling humidity is especially powerful in Florida, both mold and dust mites thrive in moist air, so keeping indoor humidity in check attacks two allergen sources at once. A [UV light installation](/services/uv-light-installation/) at the coil adds another layer of defense against microbial growth.
 
 ## Should you get your air quality tested?
 
-If symptoms persist even after cleaning, it is worth finding out exactly what you are reacting to. [Indoor air quality testing](/services/indoor-air-quality-testing) can identify elevated mold spores, particulates, or humidity issues so you treat the real cause rather than guessing.
+If symptoms persist even after cleaning, it is worth finding out exactly what you are reacting to. [Indoor air quality testing](/services/indoor-air-quality-testing/) can identify elevated mold spores, particulates, or humidity issues so you treat the real cause rather than guessing.
 
 ## The bottom line
 
-Air duct cleaning can genuinely reduce allergy triggers by clearing out the allergens your system recirculates, and many Florida homeowners breathe easier afterward. Treat it as one strong piece of a larger plan, cleaning, filtration, and humidity control together, rather than a one-time fix. If allergies are making your home uncomfortable, [get in touch](/contact) and we will help you build the right approach.
+Air duct cleaning can genuinely reduce allergy triggers by clearing out the allergens your system recirculates, and many Florida homeowners breathe easier afterward. Treat it as one strong piece of a larger plan, cleaning, filtration, and humidity control together, rather than a one-time fix. If allergies are making your home uncomfortable, [get in touch](/contact/) and we will help you build the right approach.

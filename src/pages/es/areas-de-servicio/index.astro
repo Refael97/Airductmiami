@@ -20,7 +20,7 @@ for (const c of cities) {
  (regions[r] ??= []).push(c);
 }
 ---
-<BaseLayout title={title} description={description} lang={lang} altHref="/service-areas">
+<BaseLayout title={title} description={description} lang={lang} altHref="/service-areas/">
  <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[1].label, href: t.serviceAreas }]} />
  <section class="section">
  <div class="container">
@@ -32,7 +32,7 @@ for (const c of cities) {
  <div class="region-guides">
  <span class="guides-label">Guías regionales:</span>
  {regionPages.map((r) => (
- <a href={`/es/areas-de-servicio/${r.esSlug}`} class="chip">{r.esName}</a>
+ <a href={`/es/areas-de-servicio/${r.esSlug}/`} class="chip">{r.esName}</a>
  ))}
  </div>
  {Object.entries(regions).map(([region, list]) => (

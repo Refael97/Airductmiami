@@ -65,11 +65,11 @@ Florida runs air conditioning nearly year-round, so every leak means paying to c
 - Reduces dust and allergens pulled in through gaps
 - Eases strain on your AC, extending its life
 
-For homes in [Miami](/service-areas/miami) and across the state, sealed ducts can meaningfully cut summer bills, which is why the upfront cost often pays back over time.
+For homes in [Miami](/service-areas/miami/) and across the state, sealed ducts can meaningfully cut summer bills, which is why the upfront cost often pays back over time.
 
 ## Don't overlook mold
 
-In Florida, duct damage and moisture often go together. If an inspection reveals mold inside compromised ductwork, sealing alone won't solve it, you may need proper [mold remediation](/services/mold-remediation) alongside repair or replacement. Address the moisture source, not just the symptom.
+In Florida, duct damage and moisture often go together. If an inspection reveals mold inside compromised ductwork, sealing alone won't solve it, you may need proper [mold remediation](/services/mold-remediation/) alongside repair or replacement. Address the moisture source, not just the symptom.
 
 ## Getting an accurate quote
 
@@ -80,4 +80,4 @@ In Florida, duct damage and moisture often go together. If an inspection reveals
 
 ## The bottom line
 
-Air duct repair costs range from a few hundred dollars for sealing to several thousand for replacement, and in Florida the energy savings frequently justify the investment. The right move is an honest inspection that tells you whether to seal or replace. To get one, see our [air duct repair service](/services/air-duct-repair) or [contact us](/contact) for a written, no-pressure assessment.
+Air duct repair costs range from a few hundred dollars for sealing to several thousand for replacement, and in Florida the energy savings frequently justify the investment. The right move is an honest inspection that tells you whether to seal or replace. To get one, see our [air duct repair service](/services/air-duct-repair/) or [contact us](/contact/) for a written, no-pressure assessment.

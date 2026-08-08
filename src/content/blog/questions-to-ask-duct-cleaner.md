@@ -38,7 +38,7 @@ Reputable companies document the inside of your ducts. This request alone filter
 Get the full number in writing before work starts, so surprise fees can't appear at the end.
 
 ### 7. How do you handle mold if you find it?
-In humid Florida, moisture and mold are common. A good answer involves photos, a written scope, and proper [mold remediation](/services/mold-remediation), not a vague, same-day upsell.
+In humid Florida, moisture and mold are common. A good answer involves photos, a written scope, and proper [mold remediation](/services/mold-remediation/), not a vague, same-day upsell.
 
 ### 8. How long will the job take?
 A thorough single-system cleaning generally takes a few hours. A crew promising to be done in 20 minutes is not doing source-removal work.
@@ -67,4 +67,4 @@ If someone answers question 6 with "$49," you already have your answer, that pri
 
 Each question targets a common way homeowners get shortchanged. Questions 1, 2, and 8 confirm the work is real. Questions 3 and 4 confirm accountability. Questions 5 and 10 confirm documentation. Questions 6, 7, and 9 confirm honest pricing and no surprise upsells.
 
-A quality company welcomes these questions. Evasiveness is itself an answer. When you're ready to compare honest quotes for [air duct cleaning](/services/air-duct-cleaning) or [dryer vent cleaning](/services/dryer-vent-cleaning), [contact our Florida team](/contact) and ask us all ten, we're happy to answer every one.
+A quality company welcomes these questions. Evasiveness is itself an answer. When you're ready to compare honest quotes for [air duct cleaning](/services/air-duct-cleaning/) or [dryer vent cleaning](/services/dryer-vent-cleaning/), [contact our Florida team](/contact/) and ask us all ten, we're happy to answer every one.

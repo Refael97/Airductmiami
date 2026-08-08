@@ -25,7 +25,7 @@ Un sistema de ductos típico pierde entre un 20 y un 30 por ciento del aire que 
 
 Aquí hay un error muy común. Mucha gente cree que la cinta plateada, esa que llaman "duct tape", sirve para sellar ductos. Ironías del nombre, es de lo peor para eso. En el calor del ático de Florida, que llega a pasar los 130 grados, esa cinta se seca, el pegamento se cristaliza y se despega en cuestión de meses.
 
-El mastique es distinto. Es una pasta espesa que se aplica con brocha sobre las uniones. Al secarse queda como una goma flexible que sella la unión y aguanta el calor, la humedad y el movimiento durante años. Por eso es el estándar para un trabajo bien hecho de [reparación de ductos de aire](/es/servicios/air-duct-repair).
+El mastique es distinto. Es una pasta espesa que se aplica con brocha sobre las uniones. Al secarse queda como una goma flexible que sella la unión y aguanta el calor, la humedad y el movimiento durante años. Por eso es el estándar para un trabajo bien hecho de [reparación de ductos de aire](/es/servicios/air-duct-repair/).
 
 ## Los beneficios, uno por uno
 
@@ -47,11 +47,11 @@ Las fugas suelen castigar más a los cuartos lejanos, que ya reciben poco aire. 
 
 ### Aire más limpio
 
-Un ducto con fugas no solo pierde aire, también chupa aire sucio del ático: polvo, aislamiento suelto, humedad. Sellar cierra esa entrada. Si a eso le suma una [limpieza de ductos](/es/servicios/air-duct-cleaning), el sistema queda entregando aire mucho más limpio.
+Un ducto con fugas no solo pierde aire, también chupa aire sucio del ático: polvo, aislamiento suelto, humedad. Sellar cierra esa entrada. Si a eso le suma una [limpieza de ductos](/es/servicios/air-duct-cleaning/), el sistema queda entregando aire mucho más limpio.
 
 ## El combo que rinde el doble
 
-Sellar los ductos funciona todavía mejor cuando el ático está bien aislado. De poco sirve sellar un conducto si el ático lo hornea a 130 grados y le pasa calor a través del material. Por eso muchos combinan el sellado con una mejora del [aislamiento del ático](/es/servicios/attic-insulation). Uno detiene las fugas, el otro frena el calor, y juntos alivian de verdad al aire acondicionado.
+Sellar los ductos funciona todavía mejor cuando el ático está bien aislado. De poco sirve sellar un conducto si el ático lo hornea a 130 grados y le pasa calor a través del material. Por eso muchos combinan el sellado con una mejora del [aislamiento del ático](/es/servicios/attic-insulation/). Uno detiene las fugas, el otro frena el calor, y juntos alivian de verdad al aire acondicionado.
 
 ## Cómo se hace un buen sellado
 
@@ -59,4 +59,4 @@ Un trabajo serio no es solo untar pasta al azar. El técnico primero encuentra l
 
 ## En resumen
 
-Sellar los ductos es de esas cosas que no se ven pero se sienten en el recibo y en el confort. Recupera el aire que estaba perdiendo, empareja la temperatura y protege la calidad del aire de su casa. En Florida, con el equipo trabajando casi sin parar, es de las mejores decisiones que puede tomar. Si quiere saber cuánto aire están perdiendo sus ductos, escríbanos por la página de [contacto](/es/contacto) y lo revisamos.
+Sellar los ductos es de esas cosas que no se ven pero se sienten en el recibo y en el confort. Recupera el aire que estaba perdiendo, empareja la temperatura y protege la calidad del aire de su casa. En Florida, con el equipo trabajando casi sin parar, es de las mejores decisiones que puede tomar. Si quiere saber cuánto aire están perdiendo sus ductos, escríbanos por la página de [contacto](/es/contacto/) y lo revisamos.

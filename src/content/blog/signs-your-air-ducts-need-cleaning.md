@@ -33,15 +33,15 @@ If you see a little puff of dust every time the system starts, that debris has b
 
 ## 2. A musty smell that gets worse with the AC
 
-A stale, mildewy odor that strengthens when air is moving usually points to mold or bacteria growing on damp duct surfaces or the evaporator coil. This is one of the most common complaints in Florida homes and often calls for [air duct sanitizing](/services/air-duct-sanitizing) alongside cleaning.
+A stale, mildewy odor that strengthens when air is moving usually points to mold or bacteria growing on damp duct surfaces or the evaporator coil. This is one of the most common complaints in Florida homes and often calls for [air duct sanitizing](/services/air-duct-sanitizing/) alongside cleaning.
 
 ## 3. Allergies that flare indoors
 
-If family members sneeze, cough, or get itchy eyes at home but feel better when they leave, your ducts may be recirculating pollen, dander, and spores. Learn more about the connection in our guide to whether [air duct cleaning helps with allergies](/blog/air-duct-cleaning-allergies).
+If family members sneeze, cough, or get itchy eyes at home but feel better when they leave, your ducts may be recirculating pollen, dander, and spores. Learn more about the connection in our guide to whether [air duct cleaning helps with allergies](/blog/air-duct-cleaning-allergies/).
 
 ## 4. Visible mold around registers
 
-Dark spotting on or near your vent covers is a red flag. Because Florida humidity condenses on cool metal, register grilles are often the first place mold appears. If growth is widespread, you may need [mold remediation](/services/mold-remediation), not just a routine cleaning.
+Dark spotting on or near your vent covers is a red flag. Because Florida humidity condenses on cool metal, register grilles are often the first place mold appears. If growth is widespread, you may need [mold remediation](/services/mold-remediation/), not just a routine cleaning.
 
 ## 5. Energy bills creeping up
 
@@ -55,7 +55,7 @@ When debris restricts airflow, your AC runs longer to hit the same temperature, 
 
 ## 6. Uneven airflow room to room
 
-If one bedroom never cools while another is freezing, blockages or leaks in the ducts may be the cause. Sometimes cleaning solves it; other times you need [air duct repair](/services/air-duct-repair) to seal or reconnect a run.
+If one bedroom never cools while another is freezing, blockages or leaks in the ducts may be the cause. Sometimes cleaning solves it; other times you need [air duct repair](/services/air-duct-repair/) to seal or reconnect a run.
 
 ## 7. Pests or debris in the ductwork
 
@@ -63,4 +63,4 @@ Droppings, nesting material, or insect activity mean contaminants are entering y
 
 ## What to do next
 
-Noticing these signs does not always mean an emergency, but it does mean an inspection is worthwhile. A professional can confirm what is actually happening inside your system, often with a camera, so you are not guessing. If you have spotted two or more of these signs, [reach out for an assessment](/contact) and get ahead of the problem before Florida's humidity makes it worse.
+Noticing these signs does not always mean an emergency, but it does mean an inspection is worthwhile. A professional can confirm what is actually happening inside your system, often with a camera, so you are not guessing. If you have spotted two or more of these signs, [reach out for an assessment](/contact/) and get ahead of the problem before Florida's humidity makes it worse.

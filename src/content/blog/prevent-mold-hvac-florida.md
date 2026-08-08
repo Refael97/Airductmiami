@@ -46,12 +46,12 @@ Follow these measures in order of impact:
 
 ## The role of professional cleaning and UV-C
 
-Even a well-maintained Florida system benefits from periodic professional attention. A thorough [HVAC cleaning](/services/hvac-cleaning) removes the coil grime and duct dust that home maintenance cannot reach, and [air duct sanitizing](/services/air-duct-sanitizing) treats surfaces to knock down existing spores. To hold the line between cleanings, a [UV-C light at the coil](/services/uv-light-installation) is the closest thing to a set-and-forget defense, because it works every time the blower runs.
+Even a well-maintained Florida system benefits from periodic professional attention. A thorough [HVAC cleaning](/services/hvac-cleaning/) removes the coil grime and duct dust that home maintenance cannot reach, and [air duct sanitizing](/services/air-duct-sanitizing/) treats surfaces to knock down existing spores. To hold the line between cleanings, a [UV-C light at the coil](/services/uv-light-installation/) is the closest thing to a set-and-forget defense, because it works every time the blower runs.
 
 ## Watch out for storm season
 
-Florida's storm season deserves special attention. Power outages shut off the AC, and within hours indoor humidity can soar past 70%, letting mold explode inside a warm, still system. After any prolonged outage or flooding, run the AC to dry things out, check for musty smells, and consider [indoor air quality testing](/services/indoor-air-quality-testing) if you suspect growth took hold while the power was down.
+Florida's storm season deserves special attention. Power outages shut off the AC, and within hours indoor humidity can soar past 70%, letting mold explode inside a warm, still system. After any prolonged outage or flooding, run the AC to dry things out, check for musty smells, and consider [indoor air quality testing](/services/indoor-air-quality-testing/) if you suspect growth took hold while the power was down.
 
 ## The bottom line
 
-Mold prevention in a Florida HVAC system is moisture management: keep humidity below 60%, keep the coil and drain dry, seal your ducts, change filters, and let UV-C guard the coil. Do these consistently and mold rarely gets a foothold. Want a professional to set your system up for a mold-free summer? [Contact our Florida team](/contact) to build your prevention plan.
+Mold prevention in a Florida HVAC system is moisture management: keep humidity below 60%, keep the coil and drain dry, seal your ducts, change filters, and let UV-C guard the coil. Do these consistently and mold rarely gets a foothold. Want a professional to set your system up for a mold-free summer? [Contact our Florida team](/contact/) to build your prevention plan.

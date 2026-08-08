@@ -44,7 +44,7 @@ Estas son las tareas rápidas que hacen la mayor diferencia:
 
 ## Lista anual
 
-- Programe una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning).
+- Programe una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning/).
 - Pida que inspeccionen las conexiones y el estado del ducto.
 - Reemplace cualquier manguera de plástico o de aluminio flexible tipo acordeón por conducto metálico rígido, que es mucho más seguro.
 
@@ -69,7 +69,7 @@ El clima de aquí pide un poco más de atención:
 
 ## Qué materiales evitar
 
-La manguera importa tanto como la limpieza. Evite el conducto de plástico y el de lámina de aluminio flexible tipo acordeón, porque atrapan pelusa en cada pliegue y se queman con más facilidad. El conducto metálico rígido o semirrígido es la opción segura, ya que su pared lisa deja pasar el aire sin retener fibra. Si no está seguro de qué tiene instalado, un técnico puede revisarlo durante la limpieza anual. Puede ver más detalles en nuestras [preguntas frecuentes](/es/preguntas-frecuentes).
+La manguera importa tanto como la limpieza. Evite el conducto de plástico y el de lámina de aluminio flexible tipo acordeón, porque atrapan pelusa en cada pliegue y se queman con más facilidad. El conducto metálico rígido o semirrígido es la opción segura, ya que su pared lisa deja pasar el aire sin retener fibra. Si no está seguro de qué tiene instalado, un técnico puede revisarlo durante la limpieza anual. Puede ver más detalles en nuestras [preguntas frecuentes](/es/preguntas-frecuentes/).
 
 ## Errores comunes que conviene evitar
 
@@ -85,4 +85,4 @@ Corregir estos hábitos cuesta muy poco y baja el riesgo de forma notable.
 
 ## Lo esencial
 
-La seguridad de la secadora es una rutina, no un evento. Filtro en cada carga, rejilla cada mes, ducto una vez al año. Si le falta la parte anual o no recuerda la última limpieza profesional, [comuníquese con nosotros](/es/contacto) y complete la lista antes de que la pelusa se convierta en un problema.
+La seguridad de la secadora es una rutina, no un evento. Filtro en cada carga, rejilla cada mes, ducto una vez al año. Si le falta la parte anual o no recuerda la última limpieza profesional, [comuníquese con nosotros](/es/contacto/) y complete la lista antes de que la pelusa se convierta en un problema.

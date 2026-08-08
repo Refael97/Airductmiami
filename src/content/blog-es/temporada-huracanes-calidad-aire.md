@@ -60,7 +60,7 @@ El olor a humedad o a "tierra mojada" es la primera señal de moho, muchas veces
 
 ### 4. Revise los ductos
 
-Si entró agua o hubo inundación, los conductos pueden haber acumulado humedad, escombros o moho. Una [limpieza de ductos](/es/servicios/air-duct-cleaning) evita que el sistema reparta esporas por toda la casa cada vez que vuelva a encender.
+Si entró agua o hubo inundación, los conductos pueden haber acumulado humedad, escombros o moho. Una [limpieza de ductos](/es/servicios/air-duct-cleaning/) evita que el sistema reparta esporas por toda la casa cada vez que vuelva a encender.
 
 ## Cuándo llamar a un profesional
 
@@ -71,8 +71,8 @@ Algunas situaciones no se resuelven con un ventilador y buena voluntad:
 - Agua que estuvo estancada más de dos días.
 - Síntomas respiratorios que aparecieron después de la tormenta.
 
-En esos casos conviene una [remediación de moho](/es/servicios/mold-remediation) hecha por profesionales, y una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) para confirmar que el aire volvió a ser seguro. Si vive en la zona de [Miami](/es/areas-de-servicio/miami) u [Orlando](/es/areas-de-servicio/orlando), podemos evaluar los daños tras la tormenta.
+En esos casos conviene una [remediación de moho](/es/servicios/mold-remediation/) hecha por profesionales, y una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) para confirmar que el aire volvió a ser seguro. Si vive en la zona de [Miami](/es/areas-de-servicio/miami/) u [Orlando](/es/areas-de-servicio/orlando/), podemos evaluar los daños tras la tormenta.
 
 ## Prepararse vale la pena
 
-La temporada de huracanes se repite cada año, así que anticiparse ahorra dolores de cabeza. Tenga un plan para la humedad, sepa dónde suele entrar agua y actúe rápido cuando pase la tormenta. Si quiere revisar su sistema antes de que empiece la temporada, [contáctenos](/es/contacto) y lo dejamos listo.
+La temporada de huracanes se repite cada año, así que anticiparse ahorra dolores de cabeza. Tenga un plan para la humedad, sepa dónde suele entrar agua y actúe rápido cuando pase la tormenta. Si quiere revisar su sistema antes de que empiece la temporada, [contáctenos](/es/contacto/) y lo dejamos listo.

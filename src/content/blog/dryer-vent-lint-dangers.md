@@ -61,10 +61,10 @@ Florida's climate and home construction make each of these dangers more likely:
 
 ## How to eliminate all three
 
-The single fix that addresses fire, carbon monoxide, and mold is the same: keep the vent clear. That means cleaning the lint screen every load and having the full duct professionally cleaned **at least once a year**. Professional [dryer vent cleaning](/services/dryer-vent-cleaning) removes the packed lint you can't reach and restores proper airflow.
+The single fix that addresses fire, carbon monoxide, and mold is the same: keep the vent clear. That means cleaning the lint screen every load and having the full duct professionally cleaned **at least once a year**. Professional [dryer vent cleaning](/services/dryer-vent-cleaning/) removes the packed lint you can't reach and restores proper airflow.
 
-If you've noticed musty smells or humidity beyond the laundry area, the moisture may have spread into your HVAC system, in which case [HVAC system cleaning](/services/hvac-cleaning) or [air duct cleaning](/services/air-duct-cleaning) may also be worthwhile.
+If you've noticed musty smells or humidity beyond the laundry area, the moisture may have spread into your HVAC system, in which case [HVAC system cleaning](/services/hvac-cleaning/) or [air duct cleaning](/services/air-duct-cleaning/) may also be worthwhile.
 
 ## The bottom line
 
-Dryer lint is far more than fuzz. It's a fire hazard, a carbon monoxide risk for gas dryers, and a moisture source that feeds mold, all made worse by Florida's climate. Keeping the vent clear neutralizes all three. If it's been over a year, [contact us](/contact) to schedule a cleaning and clear the risk.
+Dryer lint is far more than fuzz. It's a fire hazard, a carbon monoxide risk for gas dryers, and a moisture source that feeds mold, all made worse by Florida's climate. Keeping the vent clear neutralizes all three. If it's been over a year, [contact us](/contact/) to schedule a cleaning and clear the risk.

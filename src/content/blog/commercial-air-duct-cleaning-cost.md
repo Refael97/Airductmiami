@@ -68,8 +68,8 @@ These are illustrative Florida ranges. A precise figure requires a walkthrough o
 
 ## The Florida factor
 
-Year-round cooling and high humidity make commercial systems in [Miami](/service-areas/miami), [Orlando](/service-areas/orlando), and across the state prone to moisture and mold. Restaurants and healthcare facilities in particular benefit from regular attention. When mold is found, proper [mold remediation](/services/mold-remediation) should be scoped separately with photos, not bundled into a vague upsell.
+Year-round cooling and high humidity make commercial systems in [Miami](/service-areas/miami/), [Orlando](/service-areas/orlando/), and across the state prone to moisture and mold. Restaurants and healthcare facilities in particular benefit from regular attention. When mold is found, proper [mold remediation](/services/mold-remediation/) should be scoped separately with photos, not bundled into a vague upsell.
 
 ## Budgeting wisely
 
-For most Florida businesses, commercial duct cleaning is a maintenance investment that improves air quality, protects equipment, and supports compliance. The key is a transparent, itemized quote based on an actual assessment. To get one for your property, explore our [commercial air duct cleaning service](/services/commercial-air-duct-cleaning) or [contact us](/contact) to schedule a walkthrough.
+For most Florida businesses, commercial duct cleaning is a maintenance investment that improves air quality, protects equipment, and supports compliance. The key is a transparent, itemized quote based on an actual assessment. To get one for your property, explore our [commercial air duct cleaning service](/services/commercial-air-duct-cleaning/) or [contact us](/contact/) to schedule a walkthrough.

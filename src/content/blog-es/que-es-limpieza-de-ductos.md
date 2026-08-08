@@ -21,7 +21,7 @@ Cuando alguien le habla de "limpieza de ductos", muchas veces imagina a una pers
 
 La limpieza de ductos es sacar todo lo que se acumula dentro de la red de conductos que lleva el aire frío por toda su casa. Con los años ahí se junta polvo, pelusa, polen, esporas de moho y hasta pelo de mascota. En Florida el problema se agrava porque el aire acondicionado trabaja casi todo el año y la humedad ayuda a que el moho encuentre un hogar cómodo dentro de esos conductos oscuros.
 
-El objetivo no es solo que "se vea limpio". Es devolverle al aire que usted respira la calidad que debería tener. Puede leer más sobre nuestro proceso completo en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+El objetivo no es solo que "se vea limpio". Es devolverle al aire que usted respira la calidad que debería tener. Puede leer más sobre nuestro proceso completo en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Cómo funciona la presión negativa
 
@@ -50,14 +50,14 @@ Buena pregunta. La succión sola arrastra el polvo suelto, pero mucha mugre se q
 | Manejador de aire | Se limpia la bandeja, el serpentín y el ventilador |
 | Caja de retorno (plenum) | Se aspira y se revisa por moho |
 
-Si durante la inspección aparece moho visible, eso ya no es solo limpieza. Ahí conviene hablar de [remediación de moho](/es/servicios/mold-remediation), que es un tratamiento distinto y más profundo.
+Si durante la inspección aparece moho visible, eso ya no es solo limpieza. Ahí conviene hablar de [remediación de moho](/es/servicios/mold-remediation/), que es un tratamiento distinto y más profundo.
 
 ## ¿Vale la pena en Florida?
 
 En un estado seco tal vez uno se limpia los ductos cada tantos años sin apuro. Aquí la cosa cambia. El calor constante, la humedad alta y el aire acondicionado funcionando sin parar hacen que el interior de los conductos sea un ambiente perfecto para el moho y los ácaros. Por eso muchos hogares en Miami, Orlando y Tampa notan olores raros o más polvo del normal.
 
-La regla general aceptada es limpiar cada 3 a 5 años, pero si hay mascotas, alergias o alguien fumó en la casa antes, quizás toque antes. Un buen servicio también incluye la opción de [desinfección de ductos](/es/servicios/air-duct-sanitizing) para tratar bacterias y hongos después de la limpieza física.
+La regla general aceptada es limpiar cada 3 a 5 años, pero si hay mascotas, alergias o alguien fumó en la casa antes, quizás toque antes. Un buen servicio también incluye la opción de [desinfección de ductos](/es/servicios/air-duct-sanitizing/) para tratar bacterias y hongos después de la limpieza física.
 
 ## En resumen
 
-La limpieza de ductos no es magia ni es solo pasar un trapo. Es un proceso mecánico donde la presión negativa succiona mientras los cepillos despegan, y todo termina atrapado en un contenedor sellado. Bien hecho, deja su sistema respirando mejor y su aire más limpio. Si tiene dudas sobre el estado de sus conductos, lo más sensato es pedir una inspección. Puede escribirnos por la página de [contacto](/es/contacto) y con gusto le orientamos.
+La limpieza de ductos no es magia ni es solo pasar un trapo. Es un proceso mecánico donde la presión negativa succiona mientras los cepillos despegan, y todo termina atrapado en un contenedor sellado. Bien hecho, deja su sistema respirando mejor y su aire más limpio. Si tiene dudas sobre el estado de sus conductos, lo más sensato es pedir una inspección. Puede escribirnos por la página de [contacto](/es/contacto/) y con gusto le orientamos.

@@ -29,7 +29,7 @@ Their limitation is reach. A purifier only treats the air in the room where it s
 
 ### Air Duct Cleaning
 
-[Air duct cleaning](/services/air-duct-cleaning) removes the dust, pollen, and mold that accumulate inside your duct system over years of humid Florida operation. This matters because your ducts are the delivery system for all your indoor air. Contaminated ducts recirculate whatever is inside them to every room, every cycle.
+[Air duct cleaning](/services/air-duct-cleaning/) removes the dust, pollen, and mold that accumulate inside your duct system over years of humid Florida operation. This matters because your ducts are the delivery system for all your indoor air. Contaminated ducts recirculate whatever is inside them to every room, every cycle.
 
 Cleaning addresses the source of recirculated pollution rather than chasing particles after they are already airborne.
 
@@ -68,12 +68,12 @@ This is why we generally recommend cleaning first when ducts are contaminated. O
 
 ## Do Not Forget the Coil and Humidity
 
-Neither solution works in a vacuum. Pairing duct cleaning with [HVAC cleaning](/services/hvac-cleaning) addresses the coil and blower, the parts most likely to harbor mold in humid conditions. And controlling humidity below 50 percent prevents the mold that makes cleaning necessary in the first place. For recurring coil growth, a [UV light installation](/services/uv-light-installation) helps keep it in check.
+Neither solution works in a vacuum. Pairing duct cleaning with [HVAC cleaning](/services/hvac-cleaning/) addresses the coil and blower, the parts most likely to harbor mold in humid conditions. And controlling humidity below 50 percent prevents the mold that makes cleaning necessary in the first place. For recurring coil growth, a [UV light installation](/services/uv-light-installation/) helps keep it in check.
 
 ## How to Decide
 
-If you are unsure which your home needs, the honest answer is often testing. [Indoor air quality testing](/services/indoor-air-quality-testing) shows whether your problem is airborne particles a purifier can handle or contamination inside the system that requires cleaning. That data keeps you from spending on the wrong fix.
+If you are unsure which your home needs, the honest answer is often testing. [Indoor air quality testing](/services/indoor-air-quality-testing/) shows whether your problem is airborne particles a purifier can handle or contamination inside the system that requires cleaning. That data keeps you from spending on the wrong fix.
 
 ## Bottom Line
 
-Purifiers and duct cleaning are partners, not rivals. Clean the ducts to remove the source of recirculated pollution, then let a purifier handle the daily particle load. In Florida's humid climate, skipping the duct cleaning step often means a purifier is quietly fighting a source it can never reach. To find out what your home needs, [contact us](/contact) for an assessment.
+Purifiers and duct cleaning are partners, not rivals. Clean the ducts to remove the source of recirculated pollution, then let a purifier handle the daily particle load. In Florida's humid climate, skipping the duct cleaning step often means a purifier is quietly fighting a source it can never reach. To find out what your home needs, [contact us](/contact/) for an assessment.

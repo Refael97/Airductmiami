@@ -39,7 +39,7 @@ Un sistema muy sucio, con años sin limpiarse, exige más esfuerzo que uno que s
 
 ### Presencia de moho
 
-Si durante la inspección aparece moho, eso ya no es limpieza normal. Se trata con una [remediación de moho](/es/servicios/mold-remediation) aparte, con su propio precio.
+Si durante la inspección aparece moho, eso ya no es limpieza normal. Se trata con una [remediación de moho](/es/servicios/mold-remediation/) aparte, con su propio precio.
 
 ## Tabla de precios 2025 en Florida
 
@@ -51,7 +51,7 @@ Si durante la inspección aparece moho, eso ya no es limpieza normal. Se trata c
 | Instalación de luz UV | 300 a 700 dólares |
 | Remediación de moho | 500 a 3000 dólares o más |
 
-Puede ver el detalle de lo que incluye el servicio en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+Puede ver el detalle de lo que incluye el servicio en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Cuidado con los cargos escondidos
 
@@ -59,12 +59,12 @@ El truco más común es cotizar barato por teléfono y luego sumar cobros: tanto
 
 ## Servicios que suelen combinarse
 
-Muchos hogares aprovechan la visita para sumar otros servicios y ahorrar en el traslado. La [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning) es la combinación más común, y algunos añaden desinfección o una luz UV. Combinar servicios en una sola visita casi siempre sale mejor que llamar por separado.
+Muchos hogares aprovechan la visita para sumar otros servicios y ahorrar en el traslado. La [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning/) es la combinación más común, y algunos añaden desinfección o una luz UV. Combinar servicios en una sola visita casi siempre sale mejor que llamar por separado.
 
 ## El factor Florida
 
-Nuestro clima influye en la frecuencia más que en el precio unitario. La humedad alta y el aire funcionando casi todo el año hacen que los conductos se ensucien más rápido que en estados secos. Por eso en zonas como [Miami](/es/areas-de-servicio/miami) conviene revisar cada 3 a 5 años, o antes si hay mascotas o alergias.
+Nuestro clima influye en la frecuencia más que en el precio unitario. La humedad alta y el aire funcionando casi todo el año hacen que los conductos se ensucien más rápido que en estados secos. Por eso en zonas como [Miami](/es/areas-de-servicio/miami/) conviene revisar cada 3 a 5 años, o antes si hay mascotas o alergias.
 
 ## En resumen
 
-En 2025, cuente con 300 a 600 dólares por sistema para una limpieza de ductos honesta en Florida. El tamaño de la casa, las rejillas y el estado de los conductos mueven el número dentro de ese rango. Huya de los 99 dólares, pregunte siempre qué incluye la cotización y combine servicios si puede. Para un precio claro y sin trucos, escríbanos por la página de [contacto](/es/contacto) o revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes).
+En 2025, cuente con 300 a 600 dólares por sistema para una limpieza de ductos honesta en Florida. El tamaño de la casa, las rejillas y el estado de los conductos mueven el número dentro de ese rango. Huya de los 99 dólares, pregunte siempre qué incluye la cotización y combine servicios si puede. Para un precio claro y sin trucos, escríbanos por la página de [contacto](/es/contacto/) o revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes/).

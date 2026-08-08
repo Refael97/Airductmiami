@@ -56,17 +56,17 @@ A few local realities magnify the problem:
 - Visible dust puffing out when the system starts
 - The AC seeming to "run constantly"
 
-If several of these sound familiar, restricted airflow is a strong suspect. A quick [air duct cleaning](/services/air-duct-cleaning) inspection can confirm whether buildup is the culprit.
+If several of these sound familiar, restricted airflow is a strong suspect. A quick [air duct cleaning](/services/air-duct-cleaning/) inspection can confirm whether buildup is the culprit.
 
 ## What actually restores efficiency
 
 Cleaning the ducts helps, but the biggest savings usually come from addressing the whole airflow path:
 
 1. **Clean the ducts** to remove restrictions and improve airflow.
-2. **Clean the coil and blower** so heat transfer and air movement return to spec, see our [HVAC cleaning](/services/hvac-cleaning) service.
-3. **Seal leaks** so the cool air you paid for actually reaches your rooms instead of the attic; our [air duct repair](/services/air-duct-repair) team handles this.
-4. **Check attic insulation** so ducts aren't fighting a 130°F attic, proper [attic insulation](/services/attic-insulation) reduces the heat load on the whole system.
+2. **Clean the coil and blower** so heat transfer and air movement return to spec, see our [HVAC cleaning](/services/hvac-cleaning/) service.
+3. **Seal leaks** so the cool air you paid for actually reaches your rooms instead of the attic; our [air duct repair](/services/air-duct-repair/) team handles this.
+4. **Check attic insulation** so ducts aren't fighting a 130°F attic, proper [attic insulation](/services/attic-insulation/) reduces the heat load on the whole system.
 
 ## The bottom line
 
-Dirty ducts don't just move dust around, they quietly tax your electric bill month after month. In Florida's cooling-heavy climate, restoring proper airflow is one of the most reliable ways to stop overpaying. If your bills are creeping up, start with an airflow inspection. [Contact our team](/contact) for a straight answer on what your system needs, or read more common questions on our [FAQ page](/faq).
+Dirty ducts don't just move dust around, they quietly tax your electric bill month after month. In Florida's cooling-heavy climate, restoring proper airflow is one of the most reliable ways to stop overpaying. If your bills are creeping up, start with an airflow inspection. [Contact our team](/contact/) for a straight answer on what your system needs, or read more common questions on our [FAQ page](/faq/).

@@ -42,7 +42,7 @@ UV lights make more sense in Florida than in almost any other state:
 - **Year-round air conditioning** means the coil is almost always in use.
 - **Musty AC smells**, a frequent Florida complaint, often come from coil mold that UV helps prevent.
 
-In drier climates a UV light is a nice-to-have. In [Miami](/service-areas/miami) or [Orlando](/service-areas/orlando), it addresses a problem most homes actually face.
+In drier climates a UV light is a nice-to-have. In [Miami](/service-areas/miami/) or [Orlando](/service-areas/orlando/), it addresses a problem most homes actually face.
 
 ## Is it worth it? An honest take
 
@@ -55,7 +55,7 @@ In drier climates a UV light is a nice-to-have. In [Miami](/service-areas/miami)
 - Your system is new, dry, and problem-free.
 - Your real issue is airborne dust, which better filtration solves more cheaply.
 
-A smart time to add a UV light is right after an [air duct cleaning](/services/air-duct-cleaning), you've removed existing buildup, and the lamp helps keep new growth from returning.
+A smart time to add a UV light is right after an [air duct cleaning](/services/air-duct-cleaning/), you've removed existing buildup, and the lamp helps keep new growth from returning.
 
 ## Ongoing costs to remember
 
@@ -63,4 +63,4 @@ The bulb isn't forever. UV-C lamps lose effectiveness and typically need replaci
 
 ## The bottom line
 
-For a Florida home fighting humidity and coil mold, a UV light at $300 to $700 is one of the better-value air-quality upgrades available, especially paired with a clean system. If you want to know whether it fits your setup, see our [UV light installation service](/services/uv-light-installation) or [contact us](/contact) for a straight recommendation based on your actual system.
+For a Florida home fighting humidity and coil mold, a UV light at $300 to $700 is one of the better-value air-quality upgrades available, especially paired with a clean system. If you want to know whether it fits your setup, see our [UV light installation service](/services/uv-light-installation/) or [contact us](/contact/) for a straight recommendation based on your actual system.

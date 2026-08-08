@@ -55,10 +55,10 @@ Don't wait for a date on the calendar if you notice any of these:
 
 ## What about the air handler and coil?
 
-Remember that the ducts are only part of the system. In Florida, the damp evaporator coil and air handler are where mold most often takes hold. If you have a musty "dirty sock" smell, the fix is usually [HVAC system cleaning](/services/hvac-cleaning), cleaning the coil and blower, not just the ducts.
+Remember that the ducts are only part of the system. In Florida, the damp evaporator coil and air handler are where mold most often takes hold. If you have a musty "dirty sock" smell, the fix is usually [HVAC system cleaning](/services/hvac-cleaning/), cleaning the coil and blower, not just the ducts.
 
 ## The bottom line
 
 Clean every **3 to 5 years** as a baseline, shorten to **every 2 to 3 years** if you have pets, allergies, or humidity issues, and always act on the warning signs above. When in doubt, a professional inspection will tell you whether your system actually needs service, no guesswork required.
 
-Ready to check your ducts? [Get a free quote](/contact) from our Florida team.
+Ready to check your ducts? [Get a free quote](/contact/) from our Florida team.

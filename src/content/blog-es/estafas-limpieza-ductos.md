@@ -43,7 +43,7 @@ Compare lo que promete el gancho contra lo que cuesta el trabajo de verdad:
 | Desinfección | "regalo" que luego cobran | 75 a 200 dólares |
 | Remediación de moho | urgencia inventada de miles | 500 a 3000 dólares solo si de verdad hay moho |
 
-Cuando alguien le ofrece por 99 dólares algo que cuesta 500, la diferencia sale de su bolsillo de otra forma. Puede ver lo que realmente incluye una limpieza en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+Cuando alguien le ofrece por 99 dólares algo que cuesta 500, la diferencia sale de su bolsillo de otra forma. Puede ver lo que realmente incluye una limpieza en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Señales inconfundibles de estafa
 
@@ -55,7 +55,7 @@ Ponga atención a estas banderas rojas:
 - Un precio final que no tiene nada que ver con el del anuncio.
 - Negativa a darle todo por escrito.
 
-Si de verdad hay moho, un profesional se lo muestra en sus conductos, no en una pantalla borrosa, y le explica que la [remediación de moho](/es/servicios/mold-remediation) es un servicio aparte con su propio precio justo.
+Si de verdad hay moho, un profesional se lo muestra en sus conductos, no en una pantalla borrosa, y le explica que la [remediación de moho](/es/servicios/mold-remediation/) es un servicio aparte con su propio precio justo.
 
 ## Qué hacer si ya lo tiene en casa
 
@@ -63,4 +63,4 @@ No pasa nada por decir que no. Usted no firmó por adelantado ningún tratamient
 
 ## En resumen
 
-El gancho de los 99 dólares es la estafa más vieja del oficio, y sigue funcionando porque el precio engaña. Recuerde el rango real, desconfíe de la urgencia y nunca firme bajo presión. Con eso ya está protegido. Si quiere una cotización clara y sin trucos desde el primer momento, escríbanos por la página de [contacto](/es/contacto) o revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes).
+El gancho de los 99 dólares es la estafa más vieja del oficio, y sigue funcionando porque el precio engaña. Recuerde el rango real, desconfíe de la urgencia y nunca firme bajo presión. Con eso ya está protegido. Si quiere una cotización clara y sin trucos desde el primer momento, escríbanos por la página de [contacto](/es/contacto/) o revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes/).

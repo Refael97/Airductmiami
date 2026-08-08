@@ -32,7 +32,7 @@ Significa que la suciedad se saca desde su origen mientras todo el sistema está
 1. **Presión negativa.** Se conecta una aspiradora potente que pone todo el sistema bajo succión constante, jalando el aire hacia adentro de la máquina.
 2. **Agitación.** Con cepillos y aire comprimido se despega la mugre pegada a las paredes, y esa suciedad suelta viaja de inmediato a la aspiradora.
 
-La clave es que las dos pasan juntas. La agitación suelta, la presión negativa se lleva. Así nada queda flotando en su hogar. Puede ver este principio aplicado en nuestra página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+La clave es que las dos pasan juntas. La agitación suelta, la presión negativa se lleva. Así nada queda flotando en su hogar. Puede ver este principio aplicado en nuestra página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Por qué "solo soplar aire" no cuenta
 
@@ -51,7 +51,7 @@ Por eso el estándar insiste en contención total: sellar, succionar y luego agi
 | Componentes | Limpiar también serpentín, bandeja y ventilador |
 | Verificación | Mostrar el sistema limpio al terminar |
 
-Ese último punto sobre componentes es importante. Un trabajo según norma no limpia solo los tubos, también atiende el manejador de aire. Por eso una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) completa va más allá de los conductos.
+Ese último punto sobre componentes es importante. Un trabajo según norma no limpia solo los tubos, también atiende el manejador de aire. Por eso una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) completa va más allá de los conductos.
 
 ## Qué preguntar para saber si lo hacen bien
 
@@ -62,10 +62,10 @@ No hace falta ser experto para filtrar. Con estas preguntas se dará cuenta ráp
 - ¿Me muestran fotos o video del antes y el después?
 - ¿Qué pasa si encuentran moho durante el trabajo?
 
-Sobre lo último, si aparece moho, un equipo serio le hablará de [remediación de moho](/es/servicios/mold-remediation) como un paso aparte, no lo va a barrer bajo la alfombra.
+Sobre lo último, si aparece moho, un equipo serio le hablará de [remediación de moho](/es/servicios/mold-remediation/) como un paso aparte, no lo va a barrer bajo la alfombra.
 
 ## Por qué esto pesa más en Florida
 
 Nuestra humedad hace que un trabajo mediocre se note antes. Si quedan restos de suciedad húmeda en los conductos, el moho vuelve rápido. Hacerlo según norma, con extracción por fuente de verdad, es lo que hace que la limpieza dure y que el aire se mantenga sano más tiempo.
 
-Al final, los estándares no son burocracia, son su garantía de que pagó por resultados reales. Si quiere una limpieza hecha con este método, escríbanos por la página de [contacto](/es/contacto) y con gusto le explicamos cada paso.
+Al final, los estándares no son burocracia, son su garantía de que pagó por resultados reales. Si quiere una limpieza hecha con este método, escríbanos por la página de [contacto](/es/contacto/) y con gusto le explicamos cada paso.

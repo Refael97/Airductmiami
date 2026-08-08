@@ -27,7 +27,7 @@ Con el tiempo, ese acumulado se vuelve un depósito que el aire vuelve a reparti
 
 El pelo se ve y molesta, pero la caspa es la verdadera protagonista para la salud. Son escamitas microscópicas de piel que sueltan los animales, y son uno de los alérgenos más comunes que existen. A diferencia del pelo, la caspa es tan fina que se cuela por todos lados y se queda flotando mucho tiempo.
 
-Si en casa hay alguien sensible, esa caspa circulando marca la diferencia entre respirar tranquilo y andar congestionado. Una [prueba de calidad del aire interior](/es/servicios/indoor-air-quality-testing) puede mostrarle cuánta carga hay realmente en su aire.
+Si en casa hay alguien sensible, esa caspa circulando marca la diferencia entre respirar tranquilo y andar congestionado. Una [prueba de calidad del aire interior](/es/servicios/indoor-air-quality-testing/) puede mostrarle cuánta carga hay realmente en su aire.
 
 ## Cada cuánto limpiar con mascotas
 
@@ -53,7 +53,7 @@ Estas costumbres estiran el tiempo entre limpiezas profesionales y mantienen el 
 
 ## El factor humedad y olor a mascota
 
-Aquí Florida agrega su toque. La humedad hace que los olores de mascota se peguen más al polvo dentro de los conductos. Por eso a veces, aunque bañe al perro, la casa sigue oliendo a él. Ese olor muchas veces vive en el sistema de aire. Una [desinfección de ductos](/es/servicios/air-duct-sanitizing) después de la limpieza física ayuda a neutralizar esos olores atrapados, no solo a taparlos.
+Aquí Florida agrega su toque. La humedad hace que los olores de mascota se peguen más al polvo dentro de los conductos. Por eso a veces, aunque bañe al perro, la casa sigue oliendo a él. Ese olor muchas veces vive en el sistema de aire. Una [desinfección de ductos](/es/servicios/air-duct-sanitizing/) después de la limpieza física ayuda a neutralizar esos olores atrapados, no solo a taparlos.
 
 ## Cuándo notará que ya toca
 
@@ -64,6 +64,6 @@ Aquí Florida agrega su toque. La humedad hace que los olores de mascota se pegu
 
 ## Vale la pena por ellos y por usted
 
-Nadie va a renunciar a su mascota por el aire, ni tiene por qué. Limpiar los ductos un poco más seguido es el precio justo por tenerlos en casa y respirar bien al mismo tiempo. Una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning) hecha bien deja el aire notablemente más fresco.
+Nadie va a renunciar a su mascota por el aire, ni tiene por qué. Limpiar los ductos un poco más seguido es el precio justo por tenerlos en casa y respirar bien al mismo tiempo. Una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/) hecha bien deja el aire notablemente más fresco.
 
-Si convive con animales y quiere saber cómo está su sistema, escríbanos por la página de [contacto](/es/contacto). Entendemos la vida con mascotas y le damos una recomendación honesta.
+Si convive con animales y quiere saber cómo está su sistema, escríbanos por la página de [contacto](/es/contacto/). Entendemos la vida con mascotas y le damos una recomendación honesta.

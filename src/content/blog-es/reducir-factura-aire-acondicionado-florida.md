@@ -51,10 +51,10 @@ No todos los pasos rinden igual. Esta tabla le da una idea de qué esperar:
 
 ## Empiece por lo estructural
 
-Si quiere el mayor golpe al recibo, mire primero los ductos y el ático. Sellar las fugas con [reparación de ductos de aire](/es/servicios/air-duct-repair) evita que usted enfríe el ático por accidente. Sumarle un buen [aislamiento del ático](/es/servicios/attic-insulation) mantiene la casa fresca por más tiempo con menos esfuerzo del equipo.
+Si quiere el mayor golpe al recibo, mire primero los ductos y el ático. Sellar las fugas con [reparación de ductos de aire](/es/servicios/air-duct-repair/) evita que usted enfríe el ático por accidente. Sumarle un buen [aislamiento del ático](/es/servicios/attic-insulation/) mantiene la casa fresca por más tiempo con menos esfuerzo del equipo.
 
-Después vienen la limpieza y el mantenimiento. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) quita la capa de polvo que le roba capacidad al aire acondicionado. Con eso, el equipo alcanza la temperatura más rápido y descansa más seguido.
+Después vienen la limpieza y el mantenimiento. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) quita la capa de polvo que le roba capacidad al aire acondicionado. Con eso, el equipo alcanza la temperatura más rápido y descansa más seguido.
 
 ## En resumen
 
-La factura de aire acondicionado en Florida no tiene por qué doler tanto. Combine los hábitos pequeños con los arreglos estructurales, y verá la diferencia en pocos meses. Si no sabe por dónde empezar, escríbanos por la página de [contacto](/es/contacto) y le ayudamos a priorizar según el estado de su casa.
+La factura de aire acondicionado en Florida no tiene por qué doler tanto. Combine los hábitos pequeños con los arreglos estructurales, y verá la diferencia en pocos meses. Si no sabe por dónde empezar, escríbanos por la página de [contacto](/es/contacto/) y le ayudamos a priorizar según el estado de su casa.

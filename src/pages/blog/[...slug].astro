@@ -44,8 +44,8 @@ const related = (await getCollection('blog'))
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },
-      { name: 'Blog', href: '/blog' },
-      { name: d.title, href: `/blog/${post.id}` },
+      { name: 'Blog', href: '/blog/' },
+      { name: d.title, href: `/blog/${post.id}/` },
     ]}
   />
 
@@ -81,7 +81,7 @@ const related = (await getCollection('blog'))
         <div class="related-posts">
           <h2>Related guides</h2>
           <ul>
-            {related.map((r) => (<li><a href={`/blog/${r.id}`}>{r.data.title}</a></li>))}
+            {related.map((r) => (<li><a href={`/blog/${r.id}/`}>{r.data.title}</a></li>))}
           </ul>
         </div>
       )}

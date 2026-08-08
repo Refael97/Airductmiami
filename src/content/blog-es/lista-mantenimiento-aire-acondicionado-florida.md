@@ -31,7 +31,7 @@ Esta es la temporada más importante. Antes de que lleguen los días de 90 grado
 - Revise que la línea de drenaje no esté tapada.
 - Selle cualquier fuga en los ductos antes del uso intenso.
 
-Este es el momento perfecto para atender los [ductos de aire](/es/servicios/air-duct-repair), porque van a trabajar sin parar los próximos meses.
+Este es el momento perfecto para atender los [ductos de aire](/es/servicios/air-duct-repair/), porque van a trabajar sin parar los próximos meses.
 
 ## Verano: vigile mientras el equipo pelea
 
@@ -56,8 +56,8 @@ Cuando afloja el calor, el equipo ya trabajó un montón. Es el momento de mirar
 
 En Florida el invierno es suave, así que el aire descansa un poco. Es la mejor ventana para los trabajos grandes que en verano estorbarían:
 
-- Mejore el [aislamiento del ático](/es/servicios/attic-insulation) mientras el equipo no trabaja tanto.
-- Haga la [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) con calma.
+- Mejore el [aislamiento del ático](/es/servicios/attic-insulation/) mientras el equipo no trabaja tanto.
+- Haga la [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) con calma.
 - Planee reemplazos de ductos si ya están viejos.
 
 ## Tabla rápida por temporada
@@ -73,4 +73,4 @@ En Florida el invierno es suave, así que el aire descansa un poco. Es la mejor 
 
 Un equipo con mantenimiento al día consume menos, dura más y falla mucho menos en el peor momento, que en Florida siempre es un día de calor extremo. Además, conserva la garantía del fabricante, que casi siempre exige revisión anual.
 
-No hace falta ser experto para llevar la parte fácil. Lo demás, déjelo en manos de alguien que sepa. Si quiere armar un plan según su casa y su equipo, escríbanos por la página de [contacto](/es/contacto) y le ayudamos a organizarlo.
+No hace falta ser experto para llevar la parte fácil. Lo demás, déjelo en manos de alguien que sepa. Si quiere armar un plan según su casa y su equipo, escríbanos por la página de [contacto](/es/contacto/) y le ayudamos a organizarlo.

@@ -47,10 +47,10 @@ Aquí hay un detalle que la gente ignora. Para que entre aire frío a un cuarto,
 
 ## Cómo se arregla de verdad
 
-El primer paso es revisar los ductos. Sellar las fugas con mastique recupera el aire que se está escapando al ático. Puede ver ese trabajo en la página de [reparación de ductos de aire](/es/servicios/air-duct-repair). Si los conductos están llenos de polvo, una [limpieza de ductos](/es/servicios/air-duct-cleaning) mejora el flujo hacia los cuartos lejanos.
+El primer paso es revisar los ductos. Sellar las fugas con mastique recupera el aire que se está escapando al ático. Puede ver ese trabajo en la página de [reparación de ductos de aire](/es/servicios/air-duct-repair/). Si los conductos están llenos de polvo, una [limpieza de ductos](/es/servicios/air-duct-cleaning/) mejora el flujo hacia los cuartos lejanos.
 
-Cuando el problema es el calor que baja del ático, la clave está en el [aislamiento del ático](/es/servicios/attic-insulation). Un ático que no pasa de temperaturas extremas alivia justo a esos cuartos que siempre pelean.
+Cuando el problema es el calor que baja del ático, la clave está en el [aislamiento del ático](/es/servicios/attic-insulation/). Un ático que no pasa de temperaturas extremas alivia justo a esos cuartos que siempre pelean.
 
 ## En resumen
 
-Una casa que enfría pareja no es suerte, es equilibrio. Fugas selladas, ductos limpios, retornos suficientes y un ático bien aislado hacen que el frío llegue a todas partes por igual. Si tiene un cuarto que nunca coopera, no suba más el termostato. Escríbanos por la página de [contacto](/es/contacto) y revisamos dónde se está quedando su aire.
+Una casa que enfría pareja no es suerte, es equilibrio. Fugas selladas, ductos limpios, retornos suficientes y un ático bien aislado hacen que el frío llegue a todas partes por igual. Si tiene un cuarto que nunca coopera, no suba más el termostato. Escríbanos por la página de [contacto](/es/contacto/) y revisamos dónde se está quedando su aire.

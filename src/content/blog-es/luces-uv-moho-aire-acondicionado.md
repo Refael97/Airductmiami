@@ -59,8 +59,8 @@ La UV da su mejor resultado como parte de un plan, no sola. El orden ideal es as
 3. Instalar la lámpara UV para mantener el sistema limpio.
 4. Reemplazar la lámpara cada uno o dos años.
 
-Instalar UV sobre una serpentina sucia es empezar al revés. Por eso conviene comenzar con una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning) o un [mantenimiento del sistema HVAC](/es/servicios/hvac-cleaning), y luego colocar la [lámpara UV](/es/servicios/uv-light-installation) para proteger el trabajo. Si el moho ya está avanzado, la [remediación de moho](/es/servicios/mold-remediation) va primero.
+Instalar UV sobre una serpentina sucia es empezar al revés. Por eso conviene comenzar con una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/) o un [mantenimiento del sistema HVAC](/es/servicios/hvac-cleaning/), y luego colocar la [lámpara UV](/es/servicios/uv-light-installation/) para proteger el trabajo. Si el moho ya está avanzado, la [remediación de moho](/es/servicios/mold-remediation/) va primero.
 
 ## Vale la inversión, con las expectativas correctas
 
-Una lámpara UV-C es una herramienta útil y de bajo mantenimiento que ayuda a mantener el moho a raya en el corazón del sistema. No sustituye la limpieza ni el control de la humedad, pero los complementa muy bien. Si quiere saber si su equipo es buen candidato, escríbanos por la página de [contacto](/es/contacto) o revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes). Con la serpentina protegida y la humedad bajo control, el moho lo tiene mucho más difícil.
+Una lámpara UV-C es una herramienta útil y de bajo mantenimiento que ayuda a mantener el moho a raya en el corazón del sistema. No sustituye la limpieza ni el control de la humedad, pero los complementa muy bien. Si quiere saber si su equipo es buen candidato, escríbanos por la página de [contacto](/es/contacto/) o revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes/). Con la serpentina protegida y la humedad bajo control, el moho lo tiene mucho más difícil.

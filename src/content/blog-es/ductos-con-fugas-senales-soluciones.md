@@ -31,7 +31,7 @@ En Florida los ductos viven en el ático, y ahí el calor los castiga sin piedad
 - Mucho polvo, sobre todo cerca de los registros de retorno.
 - El aire acondicionado prende y apaga demasiado seguido.
 
-Si reconoce dos o tres de estas, vale la pena una inspección de sus [ductos de aire](/es/servicios/air-duct-repair).
+Si reconoce dos o tres de estas, vale la pena una inspección de sus [ductos de aire](/es/servicios/air-duct-repair/).
 
 ## Cómo se detectan de verdad
 
@@ -60,10 +60,10 @@ Cuando un conducto flexible está aplastado, perforado por un animal o con el ai
 
 ### Reforzar el aislamiento
 
-De poco sirve sellar un ducto si el ático lo hornea a más de 130 grados. Un buen [aislamiento del ático](/es/servicios/attic-insulation) mantiene la temperatura más pareja y ayuda a que el aire llegue frío a las habitaciones.
+De poco sirve sellar un ducto si el ático lo hornea a más de 130 grados. Un buen [aislamiento del ático](/es/servicios/attic-insulation/) mantiene la temperatura más pareja y ayuda a que el aire llegue frío a las habitaciones.
 
 ## Por qué importa tanto aquí
 
-En un clima donde el aire acondicionado trabaja casi todo el año, cada fuga se paga muchas veces. Un sistema con fugas también deja entrar polvo y humedad, lo que puede terminar en olores y hasta moho dentro de los conductos. Si a la reparación le suma una [limpieza de ductos](/es/servicios/air-duct-cleaning), el sistema queda respirando como nuevo.
+En un clima donde el aire acondicionado trabaja casi todo el año, cada fuga se paga muchas veces. Un sistema con fugas también deja entrar polvo y humedad, lo que puede terminar en olores y hasta moho dentro de los conductos. Si a la reparación le suma una [limpieza de ductos](/es/servicios/air-duct-cleaning/), el sistema queda respirando como nuevo.
 
-Detectar y sellar fugas es de las cosas más rentables que puede hacer por su casa en Florida. Si quiere una revisión honesta, escríbanos por la página de [contacto](/es/contacto) y con gusto le decimos qué necesita y qué no.
+Detectar y sellar fugas es de las cosas más rentables que puede hacer por su casa en Florida. Si quiere una revisión honesta, escríbanos por la página de [contacto](/es/contacto/) y con gusto le decimos qué necesita y qué no.

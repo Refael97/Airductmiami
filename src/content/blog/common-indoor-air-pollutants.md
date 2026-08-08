@@ -34,7 +34,7 @@ Indoor air can carry a surprising number of pollutants, and in Florida's sealed,
 
 ## 1. Mold Spores
 
-Florida's humidity makes mold the signature indoor pollutant here. Spores settle and grow anywhere moisture lingers, including AC coils and inside ducts. Keep humidity between 40 and 50 percent, fix leaks, and schedule [air duct cleaning](/services/air-duct-cleaning) to remove buildup. Confirmed growth calls for [mold remediation](/services/mold-remediation).
+Florida's humidity makes mold the signature indoor pollutant here. Spores settle and grow anywhere moisture lingers, including AC coils and inside ducts. Keep humidity between 40 and 50 percent, fix leaks, and schedule [air duct cleaning](/services/air-duct-cleaning/) to remove buildup. Confirmed growth calls for [mold remediation](/services/mold-remediation/).
 
 ## 2. Dust Mites
 
@@ -81,8 +81,8 @@ Notice how many of these pollutants share the same enablers: humidity and recirc
 - Use and regularly change a MERV 11-13 filter.
 - Clean ductwork and the coil so pollutants are not recirculated.
 
-Pairing [HVAC cleaning](/services/hvac-cleaning) with duct cleaning addresses the coil and blower where mold and dust concentrate most.
+Pairing [HVAC cleaning](/services/hvac-cleaning/) with duct cleaning addresses the coil and blower where mold and dust concentrate most.
 
 ## When to Test
 
-If you are unsure which pollutants are elevated in your home, [indoor air quality testing](/services/indoor-air-quality-testing) measures mold, particulates, and VOCs so you can target the real problems. This is especially valuable if you have persistent symptoms or musty odors. To get started, [contact us](/contact) or review our [FAQ](/faq) for more detail on each pollutant.
+If you are unsure which pollutants are elevated in your home, [indoor air quality testing](/services/indoor-air-quality-testing/) measures mold, particulates, and VOCs so you can target the real problems. This is especially valuable if you have persistent symptoms or musty odors. To get started, [contact us](/contact/) or review our [FAQ](/faq/) for more detail on each pollutant.

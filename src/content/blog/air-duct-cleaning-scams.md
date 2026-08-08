@@ -30,7 +30,7 @@ Either way, you don't get the thorough cleaning you thought you were buying.
 
 Once inside, scam operators lean on a predictable script:
 
-- **Surprise "mold."** Dust or normal debris gets called toxic mold, priced for immediate payment. Real mold findings should be documented with photos and a written scope before any [mold remediation](/services/mold-remediation) is quoted.
+- **Surprise "mold."** Dust or normal debris gets called toxic mold, priced for immediate payment. Real mold findings should be documented with photos and a written scope before any [mold remediation](/services/mold-remediation/) is quoted.
 - **Per-vent surcharges.** The "$49" covers one vent; each additional register suddenly costs extra.
 - **Unnecessary sanitizing.** A fog treatment is pushed as mandatory. Sanitizing has its place, but it's an optional add-on, not a requirement.
 - **"System decontamination" packages.** Vague, high-margin bundles that inflate the total without adding real value.
@@ -58,6 +58,6 @@ If the advertised number is far below the honest range, the difference gets made
 
 ## If you've already been targeted
 
-If a crew is in your home pressuring you, you can stop the job and decline add-ons. Pay only for what was actually agreed in writing. For Florida homeowners in [Miami](/service-areas/miami), [Orlando](/service-areas/orlando), and beyond, the best defense is a transparent provider from the start.
+If a crew is in your home pressuring you, you can stop the job and decline add-ons. Pay only for what was actually agreed in writing. For Florida homeowners in [Miami](/service-areas/miami/), [Orlando](/service-areas/orlando/), and beyond, the best defense is a transparent provider from the start.
 
-Our [air duct cleaning service](/services/air-duct-cleaning) uses flat, written pricing with no surprise add-ons. If you want an honest assessment of whether your ducts even need cleaning, [contact us](/contact), we'll tell you straight.
+Our [air duct cleaning service](/services/air-duct-cleaning/) uses flat, written pricing with no surprise add-ons. If you want an honest assessment of whether your ducts even need cleaning, [contact us](/contact/), we'll tell you straight.

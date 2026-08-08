@@ -15,7 +15,7 @@ faq:
     answer: "Most Florida homes fall in the $300 to $600 range depending on system size, number of vents, and whether add-ons like sanitizing are included. Very large or heavily contaminated systems cost more."
 ---
 
-A professional air duct cleaning follows a predictable sequence: inspection, setup, sealing, agitation and extraction, component cleaning, optional sanitizing, and a final walkthrough. For a typical Florida single-family home the whole visit takes two to four hours. Knowing what each step looks like helps you tell a thorough source-removal job from a rushed "blow-and-go" service, and lets you spot whether you are getting the [air duct cleaning](/services/air-duct-cleaning) you paid for.
+A professional air duct cleaning follows a predictable sequence: inspection, setup, sealing, agitation and extraction, component cleaning, optional sanitizing, and a final walkthrough. For a typical Florida single-family home the whole visit takes two to four hours. Knowing what each step looks like helps you tell a thorough source-removal job from a rushed "blow-and-go" service, and lets you spot whether you are getting the [air duct cleaning](/services/air-duct-cleaning/) you paid for.
 
 ## Before the visit
 
@@ -53,15 +53,15 @@ Ducts are only part of the system. A thorough visit also addresses the parts whe
 | Registers and grilles | Visible dust and spotting |
 | Drain pan | Standing water breeds bacteria |
 
-If the coil and blower need deeper work, that falls under [HVAC system cleaning](/services/hvac-cleaning).
+If the coil and blower need deeper work, that falls under [HVAC system cleaning](/services/hvac-cleaning/).
 
 ## Step 6: Optional sanitizing
 
-If the technician finds mold, bacteria, or lingering odor, they may recommend an EPA-registered [sanitizing fog](/services/air-duct-sanitizing) applied through the now-clean ducts. In humid Florida homes this is a common and worthwhile add-on.
+If the technician finds mold, bacteria, or lingering odor, they may recommend an EPA-registered [sanitizing fog](/services/air-duct-sanitizing/) applied through the now-clean ducts. In humid Florida homes this is a common and worthwhile add-on.
 
 ## Step 7: The final walkthrough
 
-A reputable company finishes by showing you the results, before-and-after photos, camera footage, or the collected debris. They confirm airflow is restored and answer your questions. If anything was found that needs follow-up, such as a disconnected duct requiring [repair](/services/air-duct-repair), this is when you will hear about it.
+A reputable company finishes by showing you the results, before-and-after photos, camera footage, or the collected debris. They confirm airflow is restored and answer your questions. If anything was found that needs follow-up, such as a disconnected duct requiring [repair](/services/air-duct-repair/), this is when you will hear about it.
 
 ## What a good job looks like
 
@@ -73,4 +73,4 @@ A reputable company finishes by showing you the results, before-and-after photos
 
 ## The bottom line
 
-A professional air duct cleaning is a methodical, contained process, not a quick vacuum at the vent. Knowing the steps helps you hold your provider to a real source-removal standard. Ready to schedule? [Contact our Florida team](/contact) and we will walk you through exactly what your home needs.
+A professional air duct cleaning is a methodical, contained process, not a quick vacuum at the vent. Knowing the steps helps you hold your provider to a real source-removal standard. Ready to schedule? [Contact our Florida team](/contact/) and we will walk you through exactly what your home needs.

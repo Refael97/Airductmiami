@@ -44,14 +44,14 @@ You cannot tell whether black staining is the notorious *Stachybotrys* ("toxic b
 
 1. **Do not just wipe and forget.** Cleaning the cover removes the visible mold but not the cause. It will return within weeks in Florida humidity.
 2. **Inspect behind the vent.** Pull the register cover and look into the duct with a flashlight. Growth inside the duct means the problem extends beyond the surface.
-3. **Get the system professionally cleaned.** A [air duct cleaning](/services/air-duct-cleaning) removes mold and the dust that feeds it from inside the ductwork, and [air duct sanitizing](/services/air-duct-sanitizing) treats the surfaces to kill remaining spores.
-4. **Handle heavy contamination correctly.** When mold has spread into insulation or porous materials, professional [mold remediation](/services/mold-remediation) safely removes and replaces the affected sections.
+3. **Get the system professionally cleaned.** A [air duct cleaning](/services/air-duct-cleaning/) removes mold and the dust that feeds it from inside the ductwork, and [air duct sanitizing](/services/air-duct-sanitizing/) treats the surfaces to kill remaining spores.
+4. **Handle heavy contamination correctly.** When mold has spread into insulation or porous materials, professional [mold remediation](/services/mold-remediation/) safely removes and replaces the affected sections.
 5. **Fix the moisture.** Lower indoor humidity below 60%, seal duct leaks, and improve insulation so cold surfaces stop sweating.
 
 ## Stopping it from coming back
 
-The reason vent mold frustrates homeowners is that it keeps returning after a wipe-down. The cure is breaking the condensation cycle. Keep indoor humidity between 30% and 50%, insulate ducts and registers so they no longer run cold enough to sweat, and consider a [UV-C light near the coil](/services/uv-light-installation) to suppress mold upstream before it ever reaches the vents. If growth persists, [indoor air quality testing](/services/indoor-air-quality-testing) confirms whether spore levels are back to normal after treatment.
+The reason vent mold frustrates homeowners is that it keeps returning after a wipe-down. The cure is breaking the condensation cycle. Keep indoor humidity between 30% and 50%, insulate ducts and registers so they no longer run cold enough to sweat, and consider a [UV-C light near the coil](/services/uv-light-installation/) to suppress mold upstream before it ever reaches the vents. If growth persists, [indoor air quality testing](/services/indoor-air-quality-testing/) confirms whether spore levels are back to normal after treatment.
 
 ## The bottom line
 
-Black mold around your air vents means moisture is condensing on cold surfaces and mold is growing in your HVAC system. Do not just wipe it away, clean the ducts, sanitize the system, and fix the humidity and condensation that caused it. Seeing dark growth at your registers? [Contact our Florida team](/contact) for an inspection before it spreads further into your ductwork.
+Black mold around your air vents means moisture is condensing on cold surfaces and mold is growing in your HVAC system. Do not just wipe it away, clean the ducts, sanitize the system, and fix the humidity and condensation that caused it. Seeing dark growth at your registers? [Contact our Florida team](/contact/) for an inspection before it spreads further into your ductwork.

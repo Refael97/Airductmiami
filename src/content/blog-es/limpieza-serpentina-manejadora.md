@@ -42,9 +42,9 @@ El soplador tiene su propio problema. Cuando sus paletas se llenan de polvo, mue
 
 ## La conexión con la humedad y el moho
 
-Aquí hay algo muy de Florida. La serpentina está siempre húmeda porque condensa el agua del aire. Si encima tiene polvo, se vuelve el lugar perfecto para el moho. Ese moho luego suelta olor y esporas que viajan por los ductos a toda la casa. Por eso una buena [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) no es solo eficiencia, también es aire más sano.
+Aquí hay algo muy de Florida. La serpentina está siempre húmeda porque condensa el agua del aire. Si encima tiene polvo, se vuelve el lugar perfecto para el moho. Ese moho luego suelta olor y esporas que viajan por los ductos a toda la casa. Por eso una buena [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) no es solo eficiencia, también es aire más sano.
 
-Si ya hay olor a humedad, muchas veces conviene sumar una [desinfección de ductos](/es/servicios/air-duct-sanitizing) para tratar los hongos después de la limpieza física.
+Si ya hay olor a humedad, muchas veces conviene sumar una [desinfección de ductos](/es/servicios/air-duct-sanitizing/) para tratar los hongos después de la limpieza física.
 
 ## Qué incluye una limpieza completa
 
@@ -58,6 +58,6 @@ Un servicio serio de la manejadora suele cubrir:
 
 ## Vale la pena en Florida
 
-Este es un arreglo de bajo costo con un impacto grande. Un equipo con la serpentina limpia alcanza la temperatura más rápido, descansa más y dura más años. Si además sus [ductos están limpios](/es/servicios/air-duct-cleaning), el aire llega fresco de punta a punta.
+Este es un arreglo de bajo costo con un impacto grande. Un equipo con la serpentina limpia alcanza la temperatura más rápido, descansa más y dura más años. Si además sus [ductos están limpios](/es/servicios/air-duct-cleaning/), el aire llega fresco de punta a punta.
 
-Muchos dueños de casa gastan en cosas visibles y olvidan estas dos piezas escondidas que hacen el trabajo pesado. Si nota que su aire ya no enfría como antes, revise ahí primero. Escríbanos por la página de [contacto](/es/contacto) y le decimos si su manejadora necesita una buena limpieza.
+Muchos dueños de casa gastan en cosas visibles y olvidan estas dos piezas escondidas que hacen el trabajo pesado. Si nota que su aire ya no enfría como antes, revise ahí primero. Escríbanos por la página de [contacto](/es/contacto/) y le decimos si su manejadora necesita una buena limpieza.

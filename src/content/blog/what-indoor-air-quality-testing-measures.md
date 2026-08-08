@@ -23,7 +23,7 @@ Florida's climate hides air quality problems in plain sight. Constant humidity f
 
 ## What the Test Measures
 
-A professional [indoor air quality testing](/services/indoor-air-quality-testing) visit typically covers several categories.
+A professional [indoor air quality testing](/services/indoor-air-quality-testing/) visit typically covers several categories.
 
 ### Mold Spores
 
@@ -70,12 +70,12 @@ Consider testing if any of these apply:
 
 ## What Testing Does Not Do
 
-Testing tells you what is in the air, not how to fix it by itself. If results show elevated mold spores, the source still needs to be located and removed, which is where [mold remediation](/services/mold-remediation) comes in. If particulate and mold levels point to a contaminated system, [air duct cleaning](/services/air-duct-cleaning) and [HVAC cleaning](/services/hvac-cleaning) remove the buildup that keeps recirculating. Testing is the diagnosis; these services are the treatment.
+Testing tells you what is in the air, not how to fix it by itself. If results show elevated mold spores, the source still needs to be located and removed, which is where [mold remediation](/services/mold-remediation/) comes in. If particulate and mold levels point to a contaminated system, [air duct cleaning](/services/air-duct-cleaning/) and [HVAC cleaning](/services/hvac-cleaning/) remove the buildup that keeps recirculating. Testing is the diagnosis; these services are the treatment.
 
 ## After the Test
 
-Good results guide a targeted plan. High humidity means adding dehumidification and running AC more consistently. Elevated VOCs mean better ventilation and removing sources. High mold counts mean finding and eliminating the moisture and growth, and often adding a [UV light installation](/services/uv-light-installation) at the coil to prevent regrowth. Retesting later confirms the fix worked.
+Good results guide a targeted plan. High humidity means adding dehumidification and running AC more consistently. Elevated VOCs mean better ventilation and removing sources. High mold counts mean finding and eliminating the moisture and growth, and often adding a [UV light installation](/services/uv-light-installation/) at the coil to prevent regrowth. Retesting later confirms the fix worked.
 
 ## The Value of Knowing
 
-The biggest benefit of testing is that it stops the cycle of guessing and buying products that do not address the real issue. With clear data, you spend your money on the fix that matters. If you have unexplained symptoms or odors, [contact us](/contact) to schedule testing, or read our [FAQ](/faq) for more on what to expect.
+The biggest benefit of testing is that it stops the cycle of guessing and buying products that do not address the real issue. With clear data, you spend your money on the fix that matters. If you have unexplained symptoms or odors, [contact us](/contact/) to schedule testing, or read our [FAQ](/faq/) for more on what to expect.

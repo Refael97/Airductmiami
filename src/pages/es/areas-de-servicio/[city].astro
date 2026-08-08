@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { guidesForCityEs } from '../../../lib/relatedContent';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
 import CTABand from '../../../components/CTABand.astro';
@@ -49,6 +50,7 @@ const nearby = city.nearby
  .filter((c): c is NonNullable<typeof c> => Boolean(c));
 const topServices = services.slice(0, 6);
 const altHref = `/service-areas/${city.slug}`;
+const guides = await guidesForCityEs();
 ---
 <BaseLayout title={metaTitle} description={metaDescription} schema={schema} lang={lang} altHref={altHref}>
  <Breadcrumbs
@@ -95,6 +97,16 @@ const altHref = `/service-areas/${city.slug}`;
 
  <FAQ items={cityFaq} title={`Limpieza de ductos en ${city.name}: preguntas frecuentes`} />
 
+ {guides.length > 0 && (
+ <div class="city-guides">
+ <h2>Antes de contratar a nadie</h2>
+ <p>Cuánto cuesta el trabajo, cada cuánto hace falta de verdad, y cómo reconocer un precio gancho.</p>
+ <ul>
+ {guides.map((g) => (<li><a href={`/es/blog/${g.id.replace(/\.md$/, '')}/`}>{g.data.title}</a></li>))}
+ </ul>
+ </div>
+ )}
+
  {nearby.length > 0 && (
  <div class="nearby">
  <h2>{t.nearbyAreas}</h2>
@@ -114,6 +126,10 @@ const altHref = `/service-areas/${city.slug}`;
   .service-card:hover { text-decoration: none; }
   .service-card h3 { color: var(--c-ink); font-size: 1.1rem; }
   .service-card p { color: var(--c-body); font-size: 0.9rem; margin: 0; }
+  .city-guides { margin-top: 2.5rem; }
+  .city-guides ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
+  .city-guides li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-border, #e5e7eb); line-height: 1.45; }
+  .city-guides li:last-child { border-bottom: 0; }
   .nearby { margin-top: 2.5rem; }
   .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
   .chip {

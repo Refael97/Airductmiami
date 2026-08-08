@@ -53,12 +53,12 @@ Set a reminder tied to your utility bill so it becomes routine. If you have pets
 
 Here is the limitation people miss: a filter only cleans the air passing through it right now. It does nothing about dust, pollen, and mold that has already settled inside your ducts and on your coil over the years. That buildup gets stirred up and recirculated every time the system runs.
 
-If your home has musty odors or you are upgrading filters because of allergies, pair the new filter with professional [air duct cleaning](/services/air-duct-cleaning) and [HVAC cleaning](/services/hvac-cleaning) so your system starts clean. A fresh MERV 13 filter behind dirty ducts is fighting a losing battle.
+If your home has musty odors or you are upgrading filters because of allergies, pair the new filter with professional [air duct cleaning](/services/air-duct-cleaning/) and [HVAC cleaning](/services/hvac-cleaning/) so your system starts clean. A fresh MERV 13 filter behind dirty ducts is fighting a losing battle.
 
 ## When to Investigate Further
 
-If symptoms persist even with a good filter and clean ducts, [indoor air quality testing](/services/indoor-air-quality-testing) can reveal whether mold or elevated VOCs are the real culprit. In homes with recurring coil mold, a [UV light installation](/services/uv-light-installation) adds a layer of protection right where moisture collects.
+If symptoms persist even with a good filter and clean ducts, [indoor air quality testing](/services/indoor-air-quality-testing/) can reveal whether mold or elevated VOCs are the real culprit. In homes with recurring coil mold, a [UV light installation](/services/uv-light-installation/) adds a layer of protection right where moisture collects.
 
 ## Bottom Line
 
-Choose a MERV 11-13 filter for the best balance of filtration and airflow in Florida's climate, and change it every 30 to 60 days. Skip the temptation to go higher unless your system is specifically rated for it. Combine the right filter with clean ductwork and controlled humidity, and you get the full benefit. Questions about your specific system? [Contact us](/contact) and we will help you choose.
+Choose a MERV 11-13 filter for the best balance of filtration and airflow in Florida's climate, and change it every 30 to 60 days. Skip the temptation to go higher unless your system is specifically rated for it. Combine the right filter with clean ductwork and controlled humidity, and you get the full benefit. Questions about your specific system? [Contact us](/contact/) and we will help you choose.

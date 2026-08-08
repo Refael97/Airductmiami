@@ -46,17 +46,17 @@ In Florida, the biggest driver is almost always condensation combined with high 
 
 Getting rid of duct mold is a multi-step job, not a single spray:
 
-1. **Inspection and testing.** A technician inspects the ducts, often with a camera, and may recommend [indoor air quality testing](/services/indoor-air-quality-testing) to measure spore levels.
-2. **Source removal cleaning.** Using negative-air suction and agitation, the [air duct cleaning](/services/air-duct-cleaning) crew physically removes mold-laden dust from every branch.
-3. **Antimicrobial treatment.** An EPA-registered [sanitizing fog](/services/air-duct-sanitizing) is applied to kill remaining spores on duct surfaces.
-4. **Remediation of heavy growth.** When porous materials or insulation are contaminated, full [mold remediation](/services/mold-remediation) removes and replaces the affected sections.
+1. **Inspection and testing.** A technician inspects the ducts, often with a camera, and may recommend [indoor air quality testing](/services/indoor-air-quality-testing/) to measure spore levels.
+2. **Source removal cleaning.** Using negative-air suction and agitation, the [air duct cleaning](/services/air-duct-cleaning/) crew physically removes mold-laden dust from every branch.
+3. **Antimicrobial treatment.** An EPA-registered [sanitizing fog](/services/air-duct-sanitizing/) is applied to kill remaining spores on duct surfaces.
+4. **Remediation of heavy growth.** When porous materials or insulation are contaminated, full [mold remediation](/services/mold-remediation/) removes and replaces the affected sections.
 5. **Moisture control.** The team addresses the humidity, drainage, or condensation issue so mold cannot return.
 
 ## Why you cannot skip the moisture fix
 
 Here is the mistake many homeowners make: they pay to clean the ducts, feel relief for a few weeks, then smell mustiness again. That happens because the underlying moisture was never corrected. Cleaning removes the mold that exists today, but Florida's humidity will regrow it within weeks if the coil keeps sweating and indoor humidity stays high.
 
-Keeping indoor humidity below 60% is the single most important defense. That may mean a dehumidifier, a correctly sized AC unit, sealed ductwork, or a [UV-C light installed near the coil](/services/uv-light-installation) to suppress regrowth on the wettest surface in the system.
+Keeping indoor humidity below 60% is the single most important defense. That may mean a dehumidifier, a correctly sized AC unit, sealed ductwork, or a [UV-C light installed near the coil](/services/uv-light-installation/) to suppress regrowth on the wettest surface in the system.
 
 ## Is duct mold dangerous?
 
@@ -64,4 +64,4 @@ For most healthy people, mold spores cause allergy-type irritation. But for anyo
 
 ## The bottom line
 
-Mold in air ducts is a moisture problem first and a cleaning problem second. Remove the growth with professional source removal, sanitize the system, and then control the humidity that caused it. If you smell must every time the AC turns on, [contact our Florida team](/contact) for an inspection before the colony spreads through your ductwork.
+Mold in air ducts is a moisture problem first and a cleaning problem second. Remove the growth with professional source removal, sanitize the system, and then control the humidity that caused it. If you smell must every time the AC turns on, [contact our Florida team](/contact/) for an inspection before the colony spreads through your ductwork.

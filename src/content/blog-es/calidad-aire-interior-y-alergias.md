@@ -44,7 +44,7 @@ Si sus síntomas siguen un patrón, preste atención. Estas señales apuntan al 
 | Tos al encender el AC | Polvo o moho en los ductos |
 | Ojos irritados en zonas húmedas | Moho en baños o clósets |
 
-Si nota que empeora adentro y mejora afuera, es una pista fuerte de que el problema está en su hogar. Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) puede confirmar qué está flotando exactamente.
+Si nota que empeora adentro y mejora afuera, es una pista fuerte de que el problema está en su hogar. Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) puede confirmar qué está flotando exactamente.
 
 ## Qué hacer para respirar mejor
 
@@ -54,7 +54,7 @@ Es la raíz de casi todo. Mantenga la humedad entre 40% y 50% con el AC o un des
 
 ### Filtre y limpie los conductos
 
-Los ductos son el sistema circulatorio de su casa. Si están llenos de polvo, caspa y esporas, cada arranque del aire reparte alérgenos por todos lados. Una [limpieza de ductos](/es/servicios/air-duct-cleaning) corta ese ciclo. En casos con moho visible dentro del sistema, puede hacer falta un [tratamiento de remediación](/es/servicios/mold-remediation).
+Los ductos son el sistema circulatorio de su casa. Si están llenos de polvo, caspa y esporas, cada arranque del aire reparte alérgenos por todos lados. Una [limpieza de ductos](/es/servicios/air-duct-cleaning/) corta ese ciclo. En casos con moho visible dentro del sistema, puede hacer falta un [tratamiento de remediación](/es/servicios/mold-remediation/).
 
 ### Reduzca los reservorios en casa
 
@@ -65,6 +65,6 @@ Los ductos son el sistema circulatorio de su casa. Si están llenos de polvo, ca
 
 ## Cuándo buscar ayuda profesional
 
-Si ya controla la humedad y limpia con cuidado pero los síntomas siguen, el problema puede estar donde no ve: dentro de los conductos o en el serpentín del AC. Una [desinfección de ductos](/es/servicios/air-duct-sanitizing) elimina lo que la limpieza mecánica no alcanza.
+Si ya controla la humedad y limpia con cuidado pero los síntomas siguen, el problema puede estar donde no ve: dentro de los conductos o en el serpentín del AC. Una [desinfección de ductos](/es/servicios/air-duct-sanitizing/) elimina lo que la limpieza mecánica no alcanza.
 
-No tiene que resignarse a vivir con alergias en su propia casa. [Contáctenos](/es/contacto) y evaluamos qué está desencadenando sus síntomas para atacarlo de raíz.
+No tiene que resignarse a vivir con alergias en su propia casa. [Contáctenos](/es/contacto/) y evaluamos qué está desencadenando sus síntomas para atacarlo de raíz.

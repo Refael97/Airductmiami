@@ -9,8 +9,8 @@ import { business } from '../../data/business';
 const title = `Air Duct & HVAC Services in Florida | ${business.name}`;
 const description = 'Explore our full range of Florida air duct services: air duct cleaning, dryer vent cleaning, HVAC cleaning, mold remediation, sanitizing, UV light installation, and more.';
 ---
-<BaseLayout title={title} description={description} altHref="/es/servicios">
-  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services' }]} />
+<BaseLayout title={title} description={description} altHref="/es/servicios/">
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Services', href: '/services/' }]} />
   <section class="section">
     <div class="container">
       <div class="section-head">
@@ -20,7 +20,7 @@ const description = 'Explore our full range of Florida air duct services: air du
       </div>
       <div class="grid grid-3">
         {services.map((s) => (
-          <a href={`/services/${s.slug}`} class="card service-card">
+          <a href={`/services/${s.slug}/`} class="card service-card">
             <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
             <h3>{s.name}</h3>
             <p>{s.answer.split('. ')[0]}.</p>

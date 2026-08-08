@@ -44,7 +44,7 @@ Use a MERV 11-13 filter in your HVAC system and change it every 30 to 60 days. F
 
 ### Keep the System Clean
 
-If ducts harbor mold, dust, or pollen, every AC cycle delivers those particles to the nursery. Professional [air duct cleaning](/services/air-duct-cleaning) removes that reservoir, and [HVAC cleaning](/services/hvac-cleaning) addresses the coil where mold tends to grow in humid conditions. For homes with recurring growth, a [UV light installation](/services/uv-light-installation) helps keep the coil clear.
+If ducts harbor mold, dust, or pollen, every AC cycle delivers those particles to the nursery. Professional [air duct cleaning](/services/air-duct-cleaning/) removes that reservoir, and [HVAC cleaning](/services/hvac-cleaning/) addresses the coil where mold tends to grow in humid conditions. For homes with recurring growth, a [UV light installation](/services/uv-light-installation/) helps keep the coil clear.
 
 ### Reduce Chemical Exposure
 
@@ -62,8 +62,8 @@ New cribs, mattresses, paint, and carpet all off-gas VOCs. When setting up a nur
 
 ## When to Test the Air
 
-If your child has persistent congestion, coughing, or irritation that eases when you leave the house, or if you notice a musty odor, [indoor air quality testing](/services/indoor-air-quality-testing) can identify whether mold, particulates, or VOCs are elevated. Testing is especially worthwhile for families with a newborn or a child who has asthma or allergies. If results reveal active mold, [mold remediation](/services/mold-remediation) removes the source before it can affect your child's air again.
+If your child has persistent congestion, coughing, or irritation that eases when you leave the house, or if you notice a musty odor, [indoor air quality testing](/services/indoor-air-quality-testing/) can identify whether mold, particulates, or VOCs are elevated. Testing is especially worthwhile for families with a newborn or a child who has asthma or allergies. If results reveal active mold, [mold remediation](/services/mold-remediation/) removes the source before it can affect your child's air again.
 
 ## Peace of Mind for Your Family
 
-You cannot see most indoor air pollutants, which is exactly why a proactive approach matters for the people least able to tolerate them. Control the humidity, filter and clean the system, and keep chemicals out of your child's space, and you give those developing lungs the cleanest possible start. To assess your home, [contact us](/contact) or explore our [FAQ](/faq) for more family-focused guidance.
+You cannot see most indoor air pollutants, which is exactly why a proactive approach matters for the people least able to tolerate them. Control the humidity, filter and clean the system, and keep chemicals out of your child's space, and you give those developing lungs the cleanest possible start. To assess your home, [contact us](/contact/) or explore our [FAQ](/faq/) for more family-focused guidance.

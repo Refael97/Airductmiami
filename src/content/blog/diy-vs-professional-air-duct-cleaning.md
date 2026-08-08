@@ -15,7 +15,7 @@ faq:
     answer: "You can change filters monthly, vacuum and wipe register grilles, keep the area around the air handler clean, and watch for signs of mold or airflow problems between professional cleanings."
 ---
 
-Here is the honest answer: DIY air duct maintenance is genuinely useful for keeping the surface of your system clean, but it cannot replace professional cleaning. A homeowner can change filters, vacuum register grilles, and wipe down vents, all worthwhile. What a homeowner cannot do is put the entire duct system under negative air pressure and scrub debris from every run, coil, and blower. That deep [source-removal cleaning](/services/air-duct-cleaning) is what actually removes the buildup that matters, especially in humid Florida where that buildup feeds mold.
+Here is the honest answer: DIY air duct maintenance is genuinely useful for keeping the surface of your system clean, but it cannot replace professional cleaning. A homeowner can change filters, vacuum register grilles, and wipe down vents, all worthwhile. What a homeowner cannot do is put the entire duct system under negative air pressure and scrub debris from every run, coil, and blower. That deep [source-removal cleaning](/services/air-duct-cleaning/) is what actually removes the buildup that matters, especially in humid Florida where that buildup feeds mold.
 
 ## What you can do yourself
 
@@ -48,7 +48,7 @@ A household vacuum reaches only a few inches into each vent. Without a truck-mou
 
 ## Why the difference matters in Florida
 
-In a drier climate, the gap between DIY and professional cleaning is smaller. In Florida it is significant. Year-round AC use means debris recirculates constantly, and high humidity lets mold colonize any dust left on cool duct and coil surfaces. Professional cleaning removes the food source mold needs; DIY simply cannot reach where the problem lives. When mold is already established, you may need [sanitizing](/services/air-duct-sanitizing) or full [mold remediation](/services/mold-remediation), well beyond any DIY scope.
+In a drier climate, the gap between DIY and professional cleaning is smaller. In Florida it is significant. Year-round AC use means debris recirculates constantly, and high humidity lets mold colonize any dust left on cool duct and coil surfaces. Professional cleaning removes the food source mold needs; DIY simply cannot reach where the problem lives. When mold is already established, you may need [sanitizing](/services/air-duct-sanitizing/) or full [mold remediation](/services/mold-remediation/), well beyond any DIY scope.
 
 ## The cost comparison
 
@@ -69,4 +69,4 @@ Skip the DIY debate and book a professional if you notice:
 
 ## The bottom line
 
-DIY keeps your system tidy between visits; professional cleaning does the deep work DIY physically cannot. Do the easy maintenance yourself, and bring in the pros every few years for true source removal, that combination gives Florida homes the best air quality for the money. Curious what your system needs? [Get a free assessment](/contact).
+DIY keeps your system tidy between visits; professional cleaning does the deep work DIY physically cannot. Do the easy maintenance yourself, and bring in the pros every few years for true source removal, that combination gives Florida homes the best air quality for the money. Curious what your system needs? [Get a free assessment](/contact/).

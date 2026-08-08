@@ -49,14 +49,14 @@ A **whole-house dehumidifier** installs alongside your air handler and ties into
 
 ## How a dehumidifier protects your HVAC system
 
-Lowering indoor humidity does more than make the house comfortable, it protects the hidden surfaces inside your air conditioning system. When the air your system pulls in is drier, less moisture condenses on cold coils and duct walls, which is exactly where mold likes to grow. A dehumidifier works hand in hand with clean ducts: keeping humidity below 60% means a [air duct cleaning](/services/air-duct-cleaning) lasts far longer before mold has a chance to return.
+Lowering indoor humidity does more than make the house comfortable, it protects the hidden surfaces inside your air conditioning system. When the air your system pulls in is drier, less moisture condenses on cold coils and duct walls, which is exactly where mold likes to grow. A dehumidifier works hand in hand with clean ducts: keeping humidity below 60% means a [air duct cleaning](/services/air-duct-cleaning/) lasts far longer before mold has a chance to return.
 
-For homes already fighting recurring mold, combining a dehumidifier with [air duct sanitizing](/services/air-duct-sanitizing) and a [UV-C coil light](/services/uv-light-installation) creates a layered defense: the dehumidifier removes the moisture, sanitizing clears existing spores, and UV-C suppresses regrowth on the wettest surface.
+For homes already fighting recurring mold, combining a dehumidifier with [air duct sanitizing](/services/air-duct-sanitizing/) and a [UV-C coil light](/services/uv-light-installation/) creates a layered defense: the dehumidifier removes the moisture, sanitizing clears existing spores, and UV-C suppresses regrowth on the wettest surface.
 
 ## Before you buy: verify the problem
 
-The smartest first step is measuring. Place a hygrometer in a central room and track humidity over a week, especially on mild days and after rain. If it repeatedly reads above 60%, you have confirmed the need. For a fuller picture, [indoor air quality testing](/services/indoor-air-quality-testing) measures humidity alongside mold spore levels so you know whether moisture has already caused a problem.
+The smartest first step is measuring. Place a hygrometer in a central room and track humidity over a week, especially on mild days and after rain. If it repeatedly reads above 60%, you have confirmed the need. For a fuller picture, [indoor air quality testing](/services/indoor-air-quality-testing/) measures humidity alongside mold spore levels so you know whether moisture has already caused a problem.
 
 ## The bottom line
 
-If your Florida home reads above 60% humidity, smells musty, or keeps growing mold despite a cool thermostat, your AC is not keeping up, and a whole-house dehumidifier is likely worth it. It fills the gap the AC leaves and protects both your home and your ductwork. Not sure whether you need one? [Contact our Florida team](/contact) and we will help you measure and decide.
+If your Florida home reads above 60% humidity, smells musty, or keeps growing mold despite a cool thermostat, your AC is not keeping up, and a whole-house dehumidifier is likely worth it. It fills the gap the AC leaves and protects both your home and your ductwork. Not sure whether you need one? [Contact our Florida team](/contact/) and we will help you measure and decide.

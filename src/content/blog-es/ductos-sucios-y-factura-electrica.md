@@ -25,13 +25,13 @@ Cuando los ductos están sucios y tienen fugas, el aire frío no llega bien a la
 
 Dentro de un conducto, el polvo, la pelusa y las esporas de moho se van pegando a las paredes. Poco a poco el espacio por donde pasa el aire se hace más estrecho. El soplador tiene que empujar con más fuerza para mover la misma cantidad de aire, y eso se traduce en más consumo.
 
-Hay otro detalle que la gente olvida: la serpentina del evaporador. Si el aire llega sucio, ese polvo se pega a la serpentina y forma una capa que actúa como un abrigo. El equipo pierde capacidad de enfriar y trabaja el doble para lograr la mitad. Una buena [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) resuelve justo ese cuello de botella.
+Hay otro detalle que la gente olvida: la serpentina del evaporador. Si el aire llega sucio, ese polvo se pega a la serpentina y forma una capa que actúa como un abrigo. El equipo pierde capacidad de enfriar y trabaja el doble para lograr la mitad. Una buena [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) resuelve justo ese cuello de botella.
 
 ## Las fugas: el enemigo silencioso
 
 En Florida los ductos suelen correr por el ático, y ahí el calor llega a pasar los 130 grados Fahrenheit en pleno verano. Cuando un conducto tiene una fuga, no solo pierde aire frío. También chupa ese aire caliente del ático hacia adentro del sistema. O sea, usted enfría su casa y de paso enfría un poco el ático, gratis para el ático y carísimo para usted.
 
-Las conexiones flojas, el cinta adhesiva vieja que se despegó y las uniones mal selladas son los culpables más comunes. Sellarlas con mastique es de los arreglos con mejor retorno. Puede ver cómo trabajamos eso en la página de [reparación de ductos de aire](/es/servicios/air-duct-repair).
+Las conexiones flojas, el cinta adhesiva vieja que se despegó y las uniones mal selladas son los culpables más comunes. Sellarlas con mastique es de los arreglos con mejor retorno. Puede ver cómo trabajamos eso en la página de [reparación de ductos de aire](/es/servicios/air-duct-repair/).
 
 ## Cuánto se pierde, en números
 
@@ -54,6 +54,6 @@ No hace falta un medidor especial para sospechar. Estas señales suelen apuntar 
 
 ## Qué hacer al respecto
 
-Lo primero es una inspección honesta. A veces basta con limpiar y sellar; otras veces el aislamiento del ático está tan gastado que el ático recalienta todo. En ese caso conviene mirar el [aislamiento del ático](/es/servicios/attic-insulation), porque un ático fresco alivia mucho el trabajo de los ductos.
+Lo primero es una inspección honesta. A veces basta con limpiar y sellar; otras veces el aislamiento del ático está tan gastado que el ático recalienta todo. En ese caso conviene mirar el [aislamiento del ático](/es/servicios/attic-insulation/), porque un ático fresco alivia mucho el trabajo de los ductos.
 
-La cuenta es sencilla. Un sistema que respira libre, con ductos limpios y sellados, alcanza la temperatura más rápido y descansa. Menos horas encendido significa menos kilovatios y una factura más amable. Si quiere saber en qué estado están sus conductos, escríbanos por la página de [contacto](/es/contacto) y le damos una orientación clara, sin adornos.
+La cuenta es sencilla. Un sistema que respira libre, con ductos limpios y sellados, alcanza la temperatura más rápido y descansa. Menos horas encendido significa menos kilovatios y una factura más amable. Si quiere saber en qué estado están sus conductos, escríbanos por la página de [contacto](/es/contacto/) y le damos una orientación clara, sin adornos.

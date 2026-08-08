@@ -20,16 +20,16 @@ In Florida, air conditioning can account for nearly half of your electric bill d
 ## Start with the biggest levers
 
 ### 1. Seal your ducts
-Duct systems typically lose 20 to 30% of their air to leaks. Sealing joints with mastic or an aerosol sealant keeps the cool air you paid for inside the system. Our [air duct repair](/services/air-duct-repair) team handles this.
+Duct systems typically lose 20 to 30% of their air to leaks. Sealing joints with mastic or an aerosol sealant keeps the cool air you paid for inside the system. Our [air duct repair](/services/air-duct-repair/) team handles this.
 
 ### 2. Clean the ducts
-Dust and debris restrict airflow, forcing longer run times. A source-removal [air duct cleaning](/services/air-duct-cleaning) restores the airway.
+Dust and debris restrict airflow, forcing longer run times. A source-removal [air duct cleaning](/services/air-duct-cleaning/) restores the airway.
 
 ### 3. Clean the coil and blower
-A dust-coated evaporator coil can't transfer heat efficiently, and a dirty blower moves less air. [HVAC cleaning](/services/hvac-cleaning) restores both.
+A dust-coated evaporator coil can't transfer heat efficiently, and a dirty blower moves less air. [HVAC cleaning](/services/hvac-cleaning/) restores both.
 
 ### 4. Improve attic insulation
-Florida attics hit 130°F. Bringing insulation up to roughly R-30 to R-38 slows heat gain into your home and ducts, see [attic insulation](/services/attic-insulation).
+Florida attics hit 130°F. Bringing insulation up to roughly R-30 to R-38 slows heat gain into your home and ducts, see [attic insulation](/services/attic-insulation/).
 
 ## Easy habits and maintenance
 
@@ -72,4 +72,4 @@ Florida's humidity makes your AC work overtime. Fixing return-side duct leaks an
 
 ## Put it together
 
-The biggest, most dependable savings come from the ductwork and the coil, the parts of your system most homeowners never see. Layer the easy habits on top, and a typical Florida home can meaningfully cut its cooling costs. [Contact our team](/contact) for an efficiency inspection, or see service across [Tampa](/service-areas/tampa) and the rest of Florida.
+The biggest, most dependable savings come from the ductwork and the coil, the parts of your system most homeowners never see. Layer the easy habits on top, and a typical Florida home can meaningfully cut its cooling costs. [Contact our team](/contact/) for an efficiency inspection, or see service across [Tampa](/service-areas/tampa/) and the rest of Florida.

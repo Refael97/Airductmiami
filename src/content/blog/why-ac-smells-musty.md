@@ -48,14 +48,14 @@ A one-time cleaning helps, but in Florida the smell often returns because the co
 
 ## The two-part fix that actually lasts
 
-**First, clean it properly.** A technician cleans the coil, clears the drain pan and line, and performs [air duct sanitizing](/services/air-duct-sanitizing) so odor and spores are not lingering downstream in the ducts. If growth has spread beyond the coil, a full [HVAC cleaning](/services/hvac-cleaning) addresses the blower and interior components too.
+**First, clean it properly.** A technician cleans the coil, clears the drain pan and line, and performs [air duct sanitizing](/services/air-duct-sanitizing/) so odor and spores are not lingering downstream in the ducts. If growth has spread beyond the coil, a full [HVAC cleaning](/services/hvac-cleaning/) addresses the blower and interior components too.
 
-**Second, keep the coil from regrowing mold.** The single most effective long-term measure is a [UV-C light installed at the coil](/services/uv-light-installation). It shines germicidal light directly on the wettest surface in your system, continuously killing mold and bacteria before they can produce odor. Keeping your indoor humidity below 60% and changing filters on schedule further starves the growth.
+**Second, keep the coil from regrowing mold.** The single most effective long-term measure is a [UV-C light installed at the coil](/services/uv-light-installation/). It shines germicidal light directly on the wettest surface in your system, continuously killing mold and bacteria before they can produce odor. Keeping your indoor humidity below 60% and changing filters on schedule further starves the growth.
 
 ## When the smell means something bigger
 
-Sometimes a musty AC odor points beyond the coil. If the smell is strong, persistent, and paired with visible growth at the vents or allergy symptoms throughout the house, the mold may have spread into the ductwork. In that case, [indoor air quality testing](/services/indoor-air-quality-testing) can confirm how far it has traveled and whether you need broader remediation.
+Sometimes a musty AC odor points beyond the coil. If the smell is strong, persistent, and paired with visible growth at the vents or allergy symptoms throughout the house, the mold may have spread into the ductwork. In that case, [indoor air quality testing](/services/indoor-air-quality-testing/) can confirm how far it has traveled and whether you need broader remediation.
 
 ## The bottom line
 
-A musty, dirty-sock smell from your AC is mold on the evaporator coil, a classic Florida problem driven by constant condensation. Clean the coil, sanitize the ducts, and install a UV-C light to stop it from coming back. Air fresheners only hide the problem. Tired of that smell every time the AC starts? [Contact our Florida team](/contact) and we will clear it at the source.
+A musty, dirty-sock smell from your AC is mold on the evaporator coil, a classic Florida problem driven by constant condensation. Clean the coil, sanitize the ducts, and install a UV-C light to stop it from coming back. Air fresheners only hide the problem. Tired of that smell every time the AC starts? [Contact our Florida team](/contact/) and we will clear it at the source.

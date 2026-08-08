@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { guidesForCity } from '../../lib/relatedContent';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
@@ -43,13 +44,14 @@ const nearby = city.nearby
 
 const topServices = services.slice(0, 6);
 const altHref = `/es/areas-de-servicio/${city.slug}`;
+const guides = await guidesForCity();
 ---
 <BaseLayout title={metaTitle} description={metaDescription} schema={schema} altHref={altHref}>
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },
-      { name: 'Service Areas', href: '/service-areas' },
-      { name: city.name, href: `/service-areas/${city.slug}` },
+      { name: 'Service Areas', href: '/service-areas/' },
+      { name: city.name, href: `/service-areas/${city.slug}/` },
     ]}
   />
 
@@ -75,22 +77,32 @@ const altHref = `/es/areas-de-servicio/${city.slug}`;
 
       <div class="grid grid-3">
         {topServices.map((s) => (
-          <a href={`/services/${s.slug}`} class="card service-card">
+          <a href={`/services/${s.slug}/`} class="card service-card">
             <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
             <h3>{s.shortName}</h3>
             <p>{s.answer.split('. ')[0]}.</p>
           </a>
         ))}
       </div>
-      <p style="margin-top:1rem;"><a href="/services" class="btn btn-outline">See all services →</a></p>
+      <p style="margin-top:1rem;"><a href="/services/" class="btn btn-outline">See all services →</a></p>
 
       <FAQ items={cityFaq} title={`Air Duct Cleaning in ${city.name}: FAQs`} />
+
+      {guides.length > 0 && (
+        <div class="city-guides">
+          <h2>Before You Book Anyone</h2>
+          <p>What the work costs, how often it is actually needed, and how to spot a bait price.</p>
+          <ul>
+            {guides.map((g) => (<li><a href={`/blog/${g.id.replace(/\.md$/, '')}/`}>{g.data.title}</a></li>))}
+          </ul>
+        </div>
+      )}
 
       {nearby.length > 0 && (
         <div class="nearby">
           <h2>Nearby Areas We Serve</h2>
           <div class="city-chips">
-            {nearby.map((n) => (<a href={`/service-areas/${n.slug}`} class="chip">{n.name}</a>))}
+            {nearby.map((n) => (<a href={`/service-areas/${n.slug}/`} class="chip">{n.name}</a>))}
           </div>
         </div>
       )}
@@ -105,6 +117,10 @@ const altHref = `/es/areas-de-servicio/${city.slug}`;
   .service-card:hover { text-decoration: none; }
   .service-card h3 { color: var(--c-ink); font-size: 1.1rem; }
   .service-card p { color: var(--c-body); font-size: 0.9rem; margin: 0; }
+  .city-guides { margin-top: 2.5rem; }
+  .city-guides ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
+  .city-guides li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-border, #e5e7eb); line-height: 1.45; }
+  .city-guides li:last-child { border-bottom: 0; }
   .nearby { margin-top: 2.5rem; }
   .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
   .chip {

@@ -41,7 +41,7 @@ Because duct systems commonly lose 20 to 30% of their airflow to leaks, a leaky 
 | Hissing or whistling sounds | Air escaping a gap or disconnected joint |
 | Hot, stuffy rooms far from the unit | Long duct runs losing air to leaks |
 
-If several of these apply, your ducts are a strong suspect. A professional [air duct repair](/services/air-duct-repair) inspection can confirm and locate the leaks.
+If several of these apply, your ducts are a strong suspect. A professional [air duct repair](/services/air-duct-repair/) inspection can confirm and locate the leaks.
 
 ## How professionals find the leaks
 
@@ -71,8 +71,8 @@ Ordinary cloth "duct tape" is one of the few things you should never use on duct
 - Less dust and humidity pulled in from the attic
 - Reduced strain and longer life for your AC equipment
 
-Combining duct sealing with good [attic insulation](/services/attic-insulation) gives the biggest efficiency payoff, since both reduce the heat load your system fights.
+Combining duct sealing with good [attic insulation](/services/attic-insulation/) gives the biggest efficiency payoff, since both reduce the heat load your system fights.
 
 ## Don't let paid-for air escape
 
-If your bills are high and your rooms won't cool evenly, hidden duct leaks are one of the first things worth checking. [Contact our Florida team](/contact) for a duct inspection, or serving the [Miami area](/service-areas/miami) and beyond, we'll show you exactly where your air is going.
+If your bills are high and your rooms won't cool evenly, hidden duct leaks are one of the first things worth checking. [Contact our Florida team](/contact/) for a duct inspection, or serving the [Miami area](/service-areas/miami/) and beyond, we'll show you exactly where your air is going.

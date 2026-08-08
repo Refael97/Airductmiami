@@ -53,26 +53,26 @@ export function localizedPaths(locale: Locale) {
  const p = locale === 'es' ? '/es' : '';
  return {
  home: `${p}/` || '/',
- services: locale === 'es' ? '/es/servicios' : '/services',
- serviceAreas: locale === 'es' ? '/es/areas-de-servicio' : '/service-areas',
- blog: `${p}/blog`,
- about: locale === 'es' ? '/es/nosotros' : '/about',
- faq: locale === 'es' ? '/es/preguntas-frecuentes' : '/faq',
- contact: locale === 'es' ? '/es/contacto' : '/contact',
- privacy: locale === 'es' ? '/es/privacidad' : '/privacy',
+ services: locale === 'es' ? '/es/servicios/' : '/services/',
+ serviceAreas: locale === 'es' ? '/es/areas-de-servicio/' : '/service-areas/',
+ blog: `${p}/blog/`,
+ about: locale === 'es' ? '/es/nosotros/' : '/about/',
+ faq: locale === 'es' ? '/es/preguntas-frecuentes/' : '/faq/',
+ contact: locale === 'es' ? '/es/contacto/' : '/contact/',
+ privacy: locale === 'es' ? '/es/privacidad/' : '/privacy/',
  };
 }
 
 export function serviceHref(locale: Locale, slug: string) {
- return locale === 'es' ? `/es/servicios/${slug}` : `/services/${slug}`;
+ return locale === 'es' ? `/es/servicios/${slug}/` : `/services/${slug}/`;
 }
 export function cityHref(locale: Locale, slug: string) {
  return locale === 'es'
- ? `/es/areas-de-servicio/${slug}`
- : `/service-areas/${slug}`;
+ ? `/es/areas-de-servicio/${slug}/`
+ : `/service-areas/${slug}/`;
 }
 export function blogHref(locale: Locale, slug: string) {
- return locale === 'es' ? `/es/blog/${slug}` : `/blog/${slug}`;
+ return locale === 'es' ? `/es/blog/${slug}/` : `/blog/${slug}/`;
 }
 
 export const ui: Record<Locale, LocaleStrings> = {
@@ -80,20 +80,20 @@ export const ui: Record<Locale, LocaleStrings> = {
  htmlLang: 'en',
  ogLocale: 'en_US',
  home: '/',
- services: '/services',
- serviceAreas: '/service-areas',
- blog: '/blog',
- about: '/about',
- faq: '/faq',
- contact: '/contact',
- privacy: '/privacy',
+ services: '/services/',
+ serviceAreas: '/service-areas/',
+ blog: '/blog/',
+ about: '/about/',
+ faq: '/faq/',
+ contact: '/contact/',
+ privacy: '/privacy/',
  nav: [
- { label: 'Services', href: '/services' },
- { label: 'Service Areas', href: '/service-areas' },
- { label: 'Blog', href: '/blog' },
- { label: 'About', href: '/about' },
- { label: 'FAQ', href: '/faq' },
- { label: 'Contact', href: '/contact' },
+ { label: 'Services', href: '/services/' },
+ { label: 'Service Areas', href: '/service-areas/' },
+ { label: 'Blog', href: '/blog/' },
+ { label: 'About', href: '/about/' },
+ { label: 'FAQ', href: '/faq/' },
+ { label: 'Contact', href: '/contact/' },
  ],
  callLabel: (phone) => phone,
  quoteLabel: 'Get a Free Quote',
@@ -120,20 +120,20 @@ export const ui: Record<Locale, LocaleStrings> = {
  htmlLang: 'es',
  ogLocale: 'es_US',
  home: '/es/',
- services: '/es/servicios',
- serviceAreas: '/es/areas-de-servicio',
- blog: '/es/blog',
- about: '/es/nosotros',
- faq: '/es/preguntas-frecuentes',
- contact: '/es/contacto',
- privacy: '/es/privacidad',
+ services: '/es/servicios/',
+ serviceAreas: '/es/areas-de-servicio/',
+ blog: '/es/blog/',
+ about: '/es/nosotros/',
+ faq: '/es/preguntas-frecuentes/',
+ contact: '/es/contacto/',
+ privacy: '/es/privacidad/',
  nav: [
- { label: 'Servicios', href: '/es/servicios' },
- { label: 'Áreas de Servicio', href: '/es/areas-de-servicio' },
- { label: 'Blog', href: '/es/blog' },
- { label: 'Nosotros', href: '/es/nosotros' },
- { label: 'Preguntas', href: '/es/preguntas-frecuentes' },
- { label: 'Contacto', href: '/es/contacto' },
+ { label: 'Servicios', href: '/es/servicios/' },
+ { label: 'Áreas de Servicio', href: '/es/areas-de-servicio/' },
+ { label: 'Blog', href: '/es/blog/' },
+ { label: 'Nosotros', href: '/es/nosotros/' },
+ { label: 'Preguntas', href: '/es/preguntas-frecuentes/' },
+ { label: 'Contacto', href: '/es/contacto/' },
  ],
  callLabel: (phone) => phone,
  quoteLabel: 'Cotización Gratis',

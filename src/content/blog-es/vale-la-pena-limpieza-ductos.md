@@ -32,7 +32,7 @@ Estas son las señales de que ya es momento:
 - Acaba de hacer una remodelación o construcción.
 - Se mudó a una casa y no sabe cuándo se limpiaron por última vez.
 
-En cualquiera de estos casos, el gasto se justifica solo. Puede ver el detalle del servicio en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+En cualquiera de estos casos, el gasto se justifica solo. Puede ver el detalle del servicio en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Cuándo puede esperar
 
@@ -51,10 +51,10 @@ Y ahora la parte honesta que pocos le dicen. Si su sistema tiene pocos años, no
 
 ## El factor Florida
 
-Aquí el clima cambia un poco la ecuación. La humedad alta y el aire acondicionado funcionando casi todo el año hacen que el moho encuentre condiciones cómodas dentro de los conductos. Por eso en Florida el intervalo tiende a acortarse frente a estados más secos. Si vive en una zona muy húmeda como [Miami](/es/areas-de-servicio/miami), vigile más de cerca los olores y el polvo.
+Aquí el clima cambia un poco la ecuación. La humedad alta y el aire acondicionado funcionando casi todo el año hacen que el moho encuentre condiciones cómodas dentro de los conductos. Por eso en Florida el intervalo tiende a acortarse frente a estados más secos. Si vive en una zona muy húmeda como [Miami](/es/areas-de-servicio/miami/), vigile más de cerca los olores y el polvo.
 
-Cuando de verdad aparece moho, eso ya no es limpieza normal. Ahí conviene una [remediación de moho](/es/servicios/mold-remediation), que trata el problema de raíz y cuesta según la extensión, desde 500 hasta 3000 dólares o más.
+Cuando de verdad aparece moho, eso ya no es limpieza normal. Ahí conviene una [remediación de moho](/es/servicios/mold-remediation/), que trata el problema de raíz y cuesta según la extensión, desde 500 hasta 3000 dólares o más.
 
 ## En resumen
 
-¿Vale la pena? Depende, y está bien que así sea. Cuando hay moho, plagas, olores o alergias, el dinero se justifica solo. Cuando no hay síntomas y el sistema es reciente, puede esperar con tranquilidad. Lo importante es decidir con información, no con miedo. Si quiere que revisemos su caso sin compromiso, escríbanos por la página de [contacto](/es/contacto).
+¿Vale la pena? Depende, y está bien que así sea. Cuando hay moho, plagas, olores o alergias, el dinero se justifica solo. Cuando no hay síntomas y el sistema es reciente, puede esperar con tranquilidad. Lo importante es decidir con información, no con miedo. Si quiere que revisemos su caso sin compromiso, escríbanos por la página de [contacto](/es/contacto/).

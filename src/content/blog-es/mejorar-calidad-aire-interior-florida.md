@@ -49,7 +49,7 @@ Es la batalla número uno en Florida. Un higrómetro barato le dice cuánta hume
 
 ### 2. Filtre bien y con frecuencia
 
-Un filtro sucio no limpia y encima ahoga el sistema. Elija un filtro con clasificación MERV adecuada para su equipo y cámbielo a tiempo. Si nota más polvo del normal en las rejillas, tal vez sea hora de una [limpieza profesional de ductos](/es/servicios/air-duct-cleaning).
+Un filtro sucio no limpia y encima ahoga el sistema. Elija un filtro con clasificación MERV adecuada para su equipo y cámbielo a tiempo. Si nota más polvo del normal en las rejillas, tal vez sea hora de una [limpieza profesional de ductos](/es/servicios/air-duct-cleaning/).
 
 ### 3. Ventile los puntos húmedos
 
@@ -57,7 +57,7 @@ Prenda el extractor del baño durante la ducha y déjelo unos minutos después. 
 
 ### 4. Considere ayuda extra
 
-Si alguien en casa tiene alergias o asma, vale la pena revisar el sistema completo. Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) muestra qué está flotando realmente en su hogar, y una [luz UV en el sistema HVAC](/es/servicios/uv-light-installation) ayuda a frenar el moho dentro del serpentín.
+Si alguien en casa tiene alergias o asma, vale la pena revisar el sistema completo. Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) muestra qué está flotando realmente en su hogar, y una [luz UV en el sistema HVAC](/es/servicios/uv-light-installation/) ayuda a frenar el moho dentro del serpentín.
 
 ## Señales de que el aire de su casa necesita atención
 
@@ -70,4 +70,4 @@ Si reconoce dos o más de estas señales, no lo deje pasar. En este clima los pr
 
 ## En resumen
 
-Respirar mejor en su casa de Florida no requiere una remodelación. Requiere constancia: humedad bajo control, filtros al día, ductos limpios y buena ventilación en las zonas húmedas. Si quiere una evaluación de su hogar, puede [ponerse en contacto](/es/contacto) con nuestro equipo y le decimos por dónde empezar.
+Respirar mejor en su casa de Florida no requiere una remodelación. Requiere constancia: humedad bajo control, filtros al día, ductos limpios y buena ventilación en las zonas húmedas. Si quiere una evaluación de su hogar, puede [ponerse en contacto](/es/contacto/) con nuestro equipo y le decimos por dónde empezar.

@@ -58,12 +58,12 @@ The mold risk is the most important. A duct that sweats provides exactly the moi
 2. **Seal air leaks.** Sealing joints and connections stops humid air from infiltrating and condensing inside or on the ducts.
 3. **Control humidity.** Keeping indoor and attic humidity down raises the margin before condensation forms; keep indoor humidity below 60%.
 4. **Right-size the system.** An oversized AC keeps ducts colder and humidity higher, the worst combination for sweating.
-5. **Clean and treat existing mold.** Where condensation has already caused growth, a [air duct cleaning](/services/air-duct-cleaning) followed by [air duct sanitizing](/services/air-duct-sanitizing) removes it, and heavy contamination may call for [mold remediation](/services/mold-remediation).
+5. **Clean and treat existing mold.** Where condensation has already caused growth, a [air duct cleaning](/services/air-duct-cleaning/) followed by [air duct sanitizing](/services/air-duct-sanitizing/) removes it, and heavy contamination may call for [mold remediation](/services/mold-remediation/).
 
 ## Don't ignore the warning sign
 
-Sweating ducts are your home telling you that moisture is collecting where it should not. Because the water is often hidden in the attic, many homeowners only discover it after a ceiling stain appears or a musty smell develops. If you notice damp spots near vents, water stains on the ceiling, or that telltale mildew odor, it is worth having the ductwork inspected. [Indoor air quality testing](/services/indoor-air-quality-testing) can also reveal whether the condensation has already led to a mold problem.
+Sweating ducts are your home telling you that moisture is collecting where it should not. Because the water is often hidden in the attic, many homeowners only discover it after a ceiling stain appears or a musty smell develops. If you notice damp spots near vents, water stains on the ceiling, or that telltale mildew odor, it is worth having the ductwork inspected. [Indoor air quality testing](/services/indoor-air-quality-testing/) can also reveal whether the condensation has already led to a mold problem.
 
 ## The bottom line
 
-Air ducts sweat because cold surfaces meet Florida's humid air, a problem of insulation, air leaks, and humidity. Fix it by insulating and sealing the ducts, controlling humidity below 60%, and cleaning up any mold the moisture caused. Seeing damp ducts or ceiling stains? [Contact our Florida team](/contact) before condensation turns into a mold and water-damage problem.
+Air ducts sweat because cold surfaces meet Florida's humid air, a problem of insulation, air leaks, and humidity. Fix it by insulating and sealing the ducts, controlling humidity below 60%, and cleaning up any mold the moisture caused. Seeing damp ducts or ceiling stains? [Contact our Florida team](/contact/) before condensation turns into a mold and water-damage problem.

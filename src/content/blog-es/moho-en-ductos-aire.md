@@ -55,14 +55,14 @@ Quitar una mancha visible con un trapo no resuelve nada, porque las esporas sigu
 4. Corrección de la fuente de humedad (drenaje, aislamiento, fugas).
 5. Plan de control de humedad para que no regrese.
 
-Nuestro equipo aborda estos casos con un servicio de [remediación de moho](/es/servicios/mold-remediation) cuando la colonia ya está establecida, y con [limpieza de ductos de aire](/es/servicios/air-duct-cleaning) para dejar el sistema libre de residuos. Si el olor y las esporas persisten, la [sanitización de ductos](/es/servicios/air-duct-sanitizing) añade una capa extra de protección.
+Nuestro equipo aborda estos casos con un servicio de [remediación de moho](/es/servicios/mold-remediation/) cuando la colonia ya está establecida, y con [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/) para dejar el sistema libre de residuos. Si el olor y las esporas persisten, la [sanitización de ductos](/es/servicios/air-duct-sanitizing/) añade una capa extra de protección.
 
 ### Prevención después de la limpieza
 
-Una vez limpio el sistema, la meta es no volver a empezar. Mantenga la humedad interior entre 30 y 50 por ciento, cambie el filtro cada uno o dos meses, revise que la línea de condensado drene bien y programe un mantenimiento del [sistema HVAC](/es/servicios/hvac-cleaning) al menos una vez al año. En casas con problemas recurrentes, una lámpara UV sobre la serpentina ayuda a frenar el crecimiento.
+Una vez limpio el sistema, la meta es no volver a empezar. Mantenga la humedad interior entre 30 y 50 por ciento, cambie el filtro cada uno o dos meses, revise que la línea de condensado drene bien y programe un mantenimiento del [sistema HVAC](/es/servicios/hvac-cleaning/) al menos una vez al año. En casas con problemas recurrentes, una lámpara UV sobre la serpentina ayuda a frenar el crecimiento.
 
 ## Cuándo llamar a un profesional
 
-Si ve moho visible en más de un metro cuadrado, si el olor no desaparece o si alguien en casa tiene síntomas respiratorios constantes, no espere. El moho crece rápido con el calor de Florida. Puede escribirnos por la página de [contacto](/es/contacto) para una evaluación, o revisar las dudas frecuentes en nuestra sección de [preguntas frecuentes](/es/preguntas-frecuentes).
+Si ve moho visible en más de un metro cuadrado, si el olor no desaparece o si alguien en casa tiene síntomas respiratorios constantes, no espere. El moho crece rápido con el calor de Florida. Puede escribirnos por la página de [contacto](/es/contacto/) para una evaluación, o revisar las dudas frecuentes en nuestra sección de [preguntas frecuentes](/es/preguntas-frecuentes/).
 
 Actuar temprano cuesta mucho menos que reemplazar ductos dañados o tratar problemas de salud. El moho en los ductos tiene solución, siempre que ataque la humedad y la fuente al mismo tiempo.

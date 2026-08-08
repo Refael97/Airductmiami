@@ -54,9 +54,9 @@ The biggest savings come from the first improvements, going from very little ins
 
 Insulation isn't a standalone fix, it's part of a system. It delivers the most value when paired with healthy ductwork:
 
-- **Sealed ducts** so cool air isn't lost into the attic, see [air duct repair](/services/air-duct-repair).
-- **Clean ducts and coil** so airflow and heat transfer are at full strength, [HVAC cleaning](/services/hvac-cleaning) covers this.
-- **Adequate attic insulation** so the whole system isn't fighting 130°F heat, our [attic insulation](/services/attic-insulation) service brings your attic up to spec.
+- **Sealed ducts** so cool air isn't lost into the attic, see [air duct repair](/services/air-duct-repair/).
+- **Clean ducts and coil** so airflow and heat transfer are at full strength, [HVAC cleaning](/services/hvac-cleaning/) covers this.
+- **Adequate attic insulation** so the whole system isn't fighting 130°F heat, our [attic insulation](/services/attic-insulation/) service brings your attic up to spec.
 
 Together, these reduce the total heat load, and each one makes the others more effective.
 
@@ -68,4 +68,4 @@ Together, these reduce the total heat load, and each one makes the others more e
 
 ## The bottom line
 
-If your attic is under-insulated, you're paying to cool your home against a constant flood of 130°F heat. Topping up to the recommended R-30 to R-38 range is one of the most dependable ways to cut Florida cooling costs and take strain off your AC. [Contact us](/contact) for an attic assessment, or explore service across [Tampa](/service-areas/tampa) and the rest of Florida.
+If your attic is under-insulated, you're paying to cool your home against a constant flood of 130°F heat. Topping up to the recommended R-30 to R-38 range is one of the most dependable ways to cut Florida cooling costs and take strain off your AC. [Contact us](/contact/) for an attic assessment, or explore service across [Tampa](/service-areas/tampa/) and the rest of Florida.

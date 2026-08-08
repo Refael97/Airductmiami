@@ -35,7 +35,7 @@ Lint is essentially dry, fluffy fiber, one of the easiest household materials to
 
 ## How cleaning breaks the chain
 
-Professional [dryer vent cleaning](/services/dryer-vent-cleaning) attacks the problem from both directions at once:
+Professional [dryer vent cleaning](/services/dryer-vent-cleaning/) attacks the problem from both directions at once:
 
 | What cleaning removes | Why it matters |
 | --- | --- |
@@ -68,4 +68,4 @@ Don't wait for a scheduled service if you notice any of these:
 
 For most homes, cleaning the dryer vent **at least once a year** keeps buildup from reaching dangerous levels. Households that do frequent laundry, have long vent runs, or own pets should consider more often. Professional cleaning typically runs **$100 to $200**, a small price against the cost and danger of a fire.
 
-Regular [dryer vent cleaning](/services/dryer-vent-cleaning) is one of the most cost-effective safety steps a homeowner can take. If it's been more than a year, [schedule an inspection](/contact) and clear the risk before it builds. You can also review common questions on our [FAQ page](/faq).
+Regular [dryer vent cleaning](/services/dryer-vent-cleaning/) is one of the most cost-effective safety steps a homeowner can take. If it's been more than a year, [schedule an inspection](/contact/) and clear the risk before it builds. You can also review common questions on our [FAQ page](/faq/).

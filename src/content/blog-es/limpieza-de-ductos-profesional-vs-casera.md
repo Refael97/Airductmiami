@@ -32,11 +32,11 @@ Todo esto lo puede hacer un fin de semana y marca una diferencia real en el polv
 
 Aquí es donde muchos se meten en problemas. El interior de los conductos, que puede tener metros y metros de recorrido con curvas, no se limpia con una aspiradora de casa ni con una escoba amarrada a un palo. Sin presión negativa, en lugar de sacar la suciedad, la empuja más adentro o la suelta al aire de su casa.
 
-Y ni hablar del serpentín, la bandeja de condensado y el ventilador del manejador de aire. Esas piezas son delicadas y en Florida acumulan moho por la humedad. Meterles mano sin saber puede dañar el equipo o esparcir esporas. Para eso está la [limpieza del sistema HVAC](/es/servicios/hvac-cleaning), que trata esas partes con cuidado.
+Y ni hablar del serpentín, la bandeja de condensado y el ventilador del manejador de aire. Esas piezas son delicadas y en Florida acumulan moho por la humedad. Meterles mano sin saber puede dañar el equipo o esparcir esporas. Para eso está la [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/), que trata esas partes con cuidado.
 
 ## Por qué el equipo profesional marca la diferencia
 
-La clave está en la máquina de presión negativa. Sella el sistema y succiona todo hacia un contenedor con filtro HEPA, así la mugre nunca vuelve al aire. Un kit casero de taladro puede raspar, pero no tiene a dónde mandar lo que raspa. Esa es la gran diferencia técnica. Puede ver cómo funciona en detalle en nuestra página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+La clave está en la máquina de presión negativa. Sella el sistema y succiona todo hacia un contenedor con filtro HEPA, así la mugre nunca vuelve al aire. Un kit casero de taladro puede raspar, pero no tiene a dónde mandar lo que raspa. Esa es la gran diferencia técnica. Puede ver cómo funciona en detalle en nuestra página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Comparación lado a lado
 
@@ -51,10 +51,10 @@ La clave está en la máquina de presión negativa. Sella el sistema y succiona 
 
 ## El tema del moho es aparte
 
-Si en su casa hay moho, esto deja de ser una decisión de ahorro y pasa a ser de salud. El moho no se "limpia" con cloro y un trapo, porque las esporas se dispersan. Necesita [remediación de moho](/es/servicios/mold-remediation) hecha por gente con equipo y protección. Intentarlo solo suele empeorar el problema.
+Si en su casa hay moho, esto deja de ser una decisión de ahorro y pasa a ser de salud. El moho no se "limpia" con cloro y un trapo, porque las esporas se dispersan. Necesita [remediación de moho](/es/servicios/mold-remediation/) hecha por gente con equipo y protección. Intentarlo solo suele empeorar el problema.
 
 ## ¿Cuánto cuesta y cuándo compensa?
 
 Una limpieza profesional en Florida suele costar entre 300 y 600 dólares por sistema. Suena a dinero, sí, pero considere lo que evita: aire más limpio, menos alergias, un equipo que gasta menos electricidad y que dura más. Comparado con reemplazar un manejador de aire dañado por moho, es una ganga.
 
-La fórmula que le recomendamos es sencilla. Haga usted el mantenimiento fácil todo el año, y deje la limpieza a fondo en manos profesionales cada 3 a 5 años. Así no gasta de más ni se queda corto. Si quiere una opinión sobre el estado de sus ductos, escríbanos por la página de [contacto](/es/contacto) y con gusto le orientamos sin compromiso.
+La fórmula que le recomendamos es sencilla. Haga usted el mantenimiento fácil todo el año, y deje la limpieza a fondo en manos profesionales cada 3 a 5 años. Así no gasta de más ni se queda corto. Si quiere una opinión sobre el estado de sus ductos, escríbanos por la página de [contacto](/es/contacto/) y con gusto le orientamos sin compromiso.

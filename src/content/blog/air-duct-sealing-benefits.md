@@ -55,7 +55,7 @@ Sealing return leaks stops humid attic air from entering the system, helping you
 | Aerosol sealing | Hidden leaks in walls/ceilings | Sealant particles blown through pressurized ducts accumulate at leak edges and seal from inside |
 | Section repair | Crushed or disconnected runs | Damaged duct is reconnected or replaced before sealing |
 
-Our [air duct repair](/services/air-duct-repair) team uses the right method, or a combination, for your system.
+Our [air duct repair](/services/air-duct-repair/) team uses the right method, or a combination, for your system.
 
 ### Why not duct tape?
 Ordinary cloth "duct tape" is the one thing you should never rely on for sealing. Its adhesive dries out and fails quickly in a 130°F attic. Mastic and aerosol sealants are built to hold up in that heat for years.
@@ -64,10 +64,10 @@ Ordinary cloth "duct tape" is the one thing you should never rely on for sealing
 
 Duct sealing works best as part of a healthy system:
 
-- Pair it with [air duct cleaning](/services/air-duct-cleaning) so restored airflow isn't lost to buildup.
-- Combine it with good [attic insulation](/services/attic-insulation) so ducts aren't fighting attic heat.
-- Address any mold or musty odor with [air duct sanitizing](/services/air-duct-sanitizing) before sealing everything up.
+- Pair it with [air duct cleaning](/services/air-duct-cleaning/) so restored airflow isn't lost to buildup.
+- Combine it with good [attic insulation](/services/attic-insulation/) so ducts aren't fighting attic heat.
+- Address any mold or musty odor with [air duct sanitizing](/services/air-duct-sanitizing/) before sealing everything up.
 
 ## The bottom line
 
-If your bills are high, your rooms cool unevenly, or your home feels dusty and humid, hidden duct leaks are a likely cause, and sealing is one of the most reliable fixes in Florida's punishing climate. [Contact us](/contact) for a duct-sealing assessment, or serving [Orlando](/service-areas/orlando) and all of Florida, we'll show you exactly where your air is going.
+If your bills are high, your rooms cool unevenly, or your home feels dusty and humid, hidden duct leaks are a likely cause, and sealing is one of the most reliable fixes in Florida's punishing climate. [Contact us](/contact/) for a duct-sealing assessment, or serving [Orlando](/service-areas/orlando/) and all of Florida, we'll show you exactly where your air is going.

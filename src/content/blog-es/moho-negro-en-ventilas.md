@@ -50,10 +50,10 @@ Limpiar la rejilla es solo el primer paso. Si el moho sale de dentro del ducto, 
 
 ## Cuándo llamar a un profesional
 
-Si el moho cubre un área grande, si regresa rápido o si ve manchas de agua en el techo, es hora de una evaluación. El moho dentro de los ductos necesita una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning) para retirar el polvo y las esporas, seguida de una [sanitización de ductos](/es/servicios/air-duct-sanitizing) que neutraliza lo que quede. Cuando la colonia ya es visible y persistente, la [remediación de moho](/es/servicios/mold-remediation) trata el problema de raíz.
+Si el moho cubre un área grande, si regresa rápido o si ve manchas de agua en el techo, es hora de una evaluación. El moho dentro de los ductos necesita una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/) para retirar el polvo y las esporas, seguida de una [sanitización de ductos](/es/servicios/air-duct-sanitizing/) que neutraliza lo que quede. Cuando la colonia ya es visible y persistente, la [remediación de moho](/es/servicios/mold-remediation/) trata el problema de raíz.
 
 ### Para que no regrese
 
-Después de limpiar, la clave es la prevención. Mantenga la humedad interior entre 30 y 50 por ciento, revise el aislamiento de los ductos y considere una [lámpara UV](/es/servicios/uv-light-installation) sobre la serpentina para frenar el moho de forma continua. Un ambiente seco y un sistema limpio son la mejor garantía.
+Después de limpiar, la clave es la prevención. Mantenga la humedad interior entre 30 y 50 por ciento, revise el aislamiento de los ductos y considere una [lámpara UV](/es/servicios/uv-light-installation/) sobre la serpentina para frenar el moho de forma continua. Un ambiente seco y un sistema limpio son la mejor garantía.
 
-Si el moho en sus ventilas no se va o no está seguro de la causa, escríbanos por la página de [contacto](/es/contacto). Esa mancha negra es una advertencia temprana, y atenderla a tiempo evita daños mayores en el sistema y en el aire que respira.
+Si el moho en sus ventilas no se va o no está seguro de la causa, escríbanos por la página de [contacto](/es/contacto/). Esa mancha negra es una advertencia temprana, y atenderla a tiempo evita daños mayores en el sistema y en el aire que respira.

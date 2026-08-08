@@ -33,7 +33,7 @@ Piénselo así: limpiar los ductos baja el volumen del problema dentro de casa, 
 
 Nuestra humedad es el gran villano aquí. El moho ama la combinación de conductos oscuros, húmedos y con aire acondicionado corriendo todo el día. Y el moho es uno de los alérgenos más molestos que existen. Por eso en Florida la limpieza tiene un peso extra: no solo quita polvo, muchas veces ataca el moho que agrava las alergias respiratorias.
 
-Si sospecha que hay moho activo, conviene ir más allá de la limpieza básica y considerar la [remediación de moho](/es/servicios/mold-remediation). Y para saber qué está flotando realmente, una [prueba de calidad del aire interior](/es/servicios/indoor-air-quality-testing) le da números en lugar de suposiciones.
+Si sospecha que hay moho activo, conviene ir más allá de la limpieza básica y considerar la [remediación de moho](/es/servicios/mold-remediation/). Y para saber qué está flotando realmente, una [prueba de calidad del aire interior](/es/servicios/indoor-air-quality-testing/) le da números en lugar de suposiciones.
 
 ## Los alérgenos más comunes en ductos de Florida
 
@@ -46,7 +46,7 @@ Si sospecha que hay moho activo, conviene ir más allá de la limpieza básica y
 
 ## La combinación que sí funciona
 
-La limpieza de ductos da su mejor resultado cuando la acompaña de otras costumbres sencillas. Cambie el filtro del aire cada mes o dos, sobre todo en temporada de polen. Mantenga la humedad de la casa por debajo del 50 por ciento con el aire o un deshumidificador. Y después de una limpieza física, una [desinfección de ductos](/es/servicios/air-duct-sanitizing) ayuda a tratar bacterias y hongos que el cepillo solo no elimina.
+La limpieza de ductos da su mejor resultado cuando la acompaña de otras costumbres sencillas. Cambie el filtro del aire cada mes o dos, sobre todo en temporada de polen. Mantenga la humedad de la casa por debajo del 50 por ciento con el aire o un deshumidificador. Y después de una limpieza física, una [desinfección de ductos](/es/servicios/air-duct-sanitizing/) ayuda a tratar bacterias y hongos que el cepillo solo no elimina.
 
 Juntas, estas medidas hacen mucho más que cualquiera por separado.
 
@@ -54,4 +54,4 @@ Juntas, estas medidas hacen mucho más que cualquiera por separado.
 
 Si en su casa hay alguien que estornuda sin parar, que amanece congestionado o que empeora al entrar, sí, vale la pena. No espere un milagro, espere un alivio. Para alergias, muchos especialistas sugieren acortar el intervalo a cada 2 o 3 años en vez de los 3 a 5 años normales.
 
-Si quiere empezar por saber qué respira su familia, escríbanos por la página de [contacto](/es/contacto) y le ayudamos a armar un plan que tenga sentido para su hogar y su presupuesto.
+Si quiere empezar por saber qué respira su familia, escríbanos por la página de [contacto](/es/contacto/) y le ayudamos a armar un plan que tenga sentido para su hogar y su presupuesto.

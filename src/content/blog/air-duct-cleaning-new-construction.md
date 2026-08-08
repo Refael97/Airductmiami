@@ -15,7 +15,7 @@ faq:
     answer: "Yes. Much of the persistent dust in a new home comes from construction debris in the ducts. A source-removal cleaning removes it so surfaces stay cleaner and the air feels fresher."
 ---
 
-Yes, new construction homes very often need air duct cleaning, and many homeowners are surprised to learn it. Ductwork is installed early in the building process and then sits open while drywall is cut, lumber is sawed, insulation is blown, and paint is sprayed. All that fine debris settles inside the duct runs. The first time you turn on the system, it starts circulating through your brand-new home. A [source-removal air duct cleaning](/services/air-duct-cleaning) clears it out before it becomes a year-round dust problem.
+Yes, new construction homes very often need air duct cleaning, and many homeowners are surprised to learn it. Ductwork is installed early in the building process and then sits open while drywall is cut, lumber is sawed, insulation is blown, and paint is sprayed. All that fine debris settles inside the duct runs. The first time you turn on the system, it starts circulating through your brand-new home. A [source-removal air duct cleaning](/services/air-duct-cleaning/) clears it out before it becomes a year-round dust problem.
 
 ## What ends up in new construction ducts
 
@@ -43,7 +43,7 @@ Many builders run the HVAC system during construction and may vacuum registers b
 | Long pollen seasons | Adds to the load already in new ducts |
 | Sealed, efficient homes | Less natural ventilation to clear dust |
 
-In Florida, that construction dust does not just sit quietly. It gets stirred up every time the AC cycles, and if humidity condenses on the dusty duct surfaces, you have the beginnings of a mold problem in a home that is only months old. That is why a first-year cleaning is a smart baseline, and why some homeowners pair it with [indoor air quality testing](/services/indoor-air-quality-testing).
+In Florida, that construction dust does not just sit quietly. It gets stirred up every time the AC cycles, and if humidity condenses on the dusty duct surfaces, you have the beginnings of a mold problem in a home that is only months old. That is why a first-year cleaning is a smart baseline, and why some homeowners pair it with [indoor air quality testing](/services/indoor-air-quality-testing/).
 
 ## The best time to clean
 
@@ -57,10 +57,10 @@ A proper first cleaning is the same rigorous process any home should get:
 - Negative-air containment on the whole system
 - Agitation and extraction of every duct run
 - Cleaning of the registers, blower, and coil area
-- Optional [sanitizing](/services/air-duct-sanitizing) if any moisture or odor is present
+- Optional [sanitizing](/services/air-duct-sanitizing/) if any moisture or odor is present
 
-If the inspection turns up a poorly connected or crushed duct from the build, that is also the moment to catch it and arrange [air duct repair](/services/air-duct-repair).
+If the inspection turns up a poorly connected or crushed duct from the build, that is also the moment to catch it and arrange [air duct repair](/services/air-duct-repair/).
 
 ## The bottom line
 
-A new home does not guarantee clean ducts, often the opposite. Construction leaves fine drywall dust and debris throughout the system, and in Florida's climate it recirculates and can even feed mold. A one-time source-removal cleaning in your first few months clears the slate and lets you enjoy genuinely fresh air. Just moved into a new build? [Contact us](/contact) to schedule your first cleaning.
+A new home does not guarantee clean ducts, often the opposite. Construction leaves fine drywall dust and debris throughout the system, and in Florida's climate it recirculates and can even feed mold. A one-time source-removal cleaning in your first few months clears the slate and lets you enjoy genuinely fresh air. Just moved into a new build? [Contact us](/contact/) to schedule your first cleaning.

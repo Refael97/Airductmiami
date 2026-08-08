@@ -21,7 +21,7 @@ Air duct cleaning is the process of physically removing dust, pollen, mold, pet 
 
 The core of professional duct cleaning is a large vacuum unit, often truck-mounted or a high-powered portable HEPA collector, connected directly to your ductwork. Once sealed in, it puts the whole system under **negative air pressure**. That means any dust knocked loose anywhere in the ducts flows toward the collection unit instead of blowing into your living space.
 
-Without negative air, agitating the ducts would just push contaminants into your rooms. That is why source removal is the method endorsed by the [National Air Duct Cleaners Association (NADCA)](/services/air-duct-cleaning) and why it works far better than the "blow-and-go" services that skip the containment step.
+Without negative air, agitating the ducts would just push contaminants into your rooms. That is why source removal is the method endorsed by the [National Air Duct Cleaners Association (NADCA)](/services/air-duct-cleaning/) and why it works far better than the "blow-and-go" services that skip the containment step.
 
 ## The step-by-step process
 
@@ -32,8 +32,8 @@ Here is what a proper source-removal cleaning looks like:
 3. **Seal the registers.** Supply and return vents are temporarily covered so suction concentrates inside the ducts.
 4. **Agitate each run.** Using brushes, compressed-air whips, or rotary tools, the technician dislodges debris from the duct walls one branch at a time.
 5. **Capture and collect.** All the loosened material flows to the vacuum's HEPA-filtered collection chamber.
-6. **Clean the components.** The blower, coil area, and registers are addressed as part of a full [HVAC system cleaning](/services/hvac-cleaning).
-7. **Optional sanitizing.** If mold or odor is present, an EPA-registered [sanitizing treatment](/services/air-duct-sanitizing) is fogged through the clean ducts.
+6. **Clean the components.** The blower, coil area, and registers are addressed as part of a full [HVAC system cleaning](/services/hvac-cleaning/).
+7. **Optional sanitizing.** If mold or odor is present, an EPA-registered [sanitizing treatment](/services/air-duct-sanitizing/) is fogged through the clean ducts.
 
 ## What gets removed
 
@@ -47,12 +47,12 @@ Here is what a proper source-removal cleaning looks like:
 
 ## Why Florida homes benefit especially
 
-Florida's climate is uniquely hard on ductwork. Air conditioners run nearly year-round, so whatever is inside the ducts gets circulated far more than in seasonal climates. High humidity lets condensation form on cool duct surfaces, and that moisture plus settled dust is all mold needs to grow. Cleaning removes the food source and the visible growth, and pairing it with [indoor air quality testing](/services/indoor-air-quality-testing) tells you whether the problem is solved.
+Florida's climate is uniquely hard on ductwork. Air conditioners run nearly year-round, so whatever is inside the ducts gets circulated far more than in seasonal climates. High humidity lets condensation form on cool duct surfaces, and that moisture plus settled dust is all mold needs to grow. Cleaning removes the food source and the visible growth, and pairing it with [indoor air quality testing](/services/indoor-air-quality-testing/) tells you whether the problem is solved.
 
 ## What duct cleaning is not
 
-Duct cleaning is not a cure for a home with an active moisture leak, and it will not permanently fix a system that keeps growing mold because of a humidity problem. In those cases you may need [air duct repair](/services/air-duct-repair) or a whole-home humidity fix alongside the cleaning. A good technician will tell you honestly which you need.
+Duct cleaning is not a cure for a home with an active moisture leak, and it will not permanently fix a system that keeps growing mold because of a humidity problem. In those cases you may need [air duct repair](/services/air-duct-repair/) or a whole-home humidity fix alongside the cleaning. A good technician will tell you honestly which you need.
 
 ## The bottom line
 
-Real air duct cleaning is a mechanical, source-removal process: seal the system, put it under negative air, agitate every branch, and capture the debris. If a company cannot explain how they contain the dust they dislodge, they are not cleaning your ducts the right way. Ready to see the difference? [Contact our Florida team](/contact) for a straightforward assessment.
+Real air duct cleaning is a mechanical, source-removal process: seal the system, put it under negative air, agitate every branch, and capture the debris. If a company cannot explain how they contain the dust they dislodge, they are not cleaning your ducts the right way. Ready to see the difference? [Contact our Florida team](/contact/) for a straightforward assessment.

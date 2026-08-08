@@ -68,12 +68,12 @@ Muchos secadores modernos tienen un sensor que los apaga cuando se sobrecalienta
 
 ## Por qué en Florida aparecen antes
 
-La humedad hace que el secador trabaje más horas por carga, así que suelta más pelusa y se tapa más rápido. Además, muchas casas tienen ductos largos que suben hacia el techo, un recorrido difícil donde la pelusa se junta lejos de la vista. Si vive en el área de [Miami](/es/areas-de-servicio/miami) o [Tampa](/es/areas-de-servicio/tampa), estas señales aparecen más seguido de lo que la gente cree.
+La humedad hace que el secador trabaje más horas por carga, así que suelta más pelusa y se tapa más rápido. Además, muchas casas tienen ductos largos que suben hacia el techo, un recorrido difícil donde la pelusa se junta lejos de la vista. Si vive en el área de [Miami](/es/areas-de-servicio/miami/) o [Tampa](/es/areas-de-servicio/tampa/), estas señales aparecen más seguido de lo que la gente cree.
 
 ## Qué hacer
 
-Empiece por lo fácil, limpie el filtro cada carga y revise la rejilla exterior. Si aun así ve dos o más de estas señales, el ducto ya tiene pelusa compacta que usted no alcanza. Ahí conviene una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning), que suele costar entre 100 y 200 dólares.
+Empiece por lo fácil, limpie el filtro cada carga y revise la rejilla exterior. Si aun así ve dos o más de estas señales, el ducto ya tiene pelusa compacta que usted no alcanza. Ahí conviene una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning/), que suele costar entre 100 y 200 dólares.
 
 ## Lo esencial
 
-Su secadora le habla con señales pequeñas mucho antes de fallar por completo. Ropa húmeda, ciclos largos, calor y olor a quemado son avisos de una ventila tapada. Si reconoce varias, [comuníquese con nosotros](/es/contacto) y programe una limpieza antes de que el problema crezca.
+Su secadora le habla con señales pequeñas mucho antes de fallar por completo. Ropa húmeda, ciclos largos, calor y olor a quemado son avisos de una ventila tapada. Si reconoce varias, [comuníquese con nosotros](/es/contacto/) y programe una limpieza antes de que el problema crezca.

@@ -55,10 +55,10 @@ Aquí la humedad ya de por sí alarga el secado. Si a eso le suma un ducto tapad
 
 ## Cómo arreglarlo
 
-Empiece por lo que está a su alcance: limpie el filtro, enderece la manguera y revise que la rejilla exterior esté libre. Si después de eso el secador sigue lento, la pelusa compacta está en el fondo del ducto, donde usted no llega. Una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning) restaura el flujo de aire y suele devolver los tiempos normales enseguida. El costo típico va de 100 a 200 dólares, mucho menos que un secador nuevo.
+Empiece por lo que está a su alcance: limpie el filtro, enderece la manguera y revise que la rejilla exterior esté libre. Si después de eso el secador sigue lento, la pelusa compacta está en el fondo del ducto, donde usted no llega. Una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning/) restaura el flujo de aire y suele devolver los tiempos normales enseguida. El costo típico va de 100 a 200 dólares, mucho menos que un secador nuevo.
 
-Si nota humedad y olor más allá del cuarto de lavado, el aire húmedo podría estar afectando otras zonas, y quizá convenga revisar la [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+Si nota humedad y olor más allá del cuarto de lavado, el aire húmedo podría estar afectando otras zonas, y quizá convenga revisar la [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Lo esencial
 
-Una secadora lenta casi nunca es una secadora rota. Es aire que no puede salir. Haga el diagnóstico rápido, arregle lo sencillo y, si el ducto sigue tapado, [comuníquese con nosotros](/es/contacto) para restaurar el flujo de aire y dejar de correr dos ciclos por cada carga.
+Una secadora lenta casi nunca es una secadora rota. Es aire que no puede salir. Haga el diagnóstico rápido, arregle lo sencillo y, si el ducto sigue tapado, [comuníquese con nosotros](/es/contacto/) para restaurar el flujo de aire y dejar de correr dos ciclos por cada carga.

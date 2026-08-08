@@ -46,12 +46,12 @@ Value depends partly on price. Here are realistic Florida ranges:
 | Mold remediation (duct) | $500 to $3,000+ |
 | UV light installation | $300 to $700 |
 
-For a home with pets, allergies, or a musty smell, $400 to $500 for cleaner air is usually money well spent. For a spotless, odor-free system, that same money might do more as an air-quality upgrade like a [UV light](/services/uv-light-installation) that helps prevent mold from returning.
+For a home with pets, allergies, or a musty smell, $400 to $500 for cleaner air is usually money well spent. For a spotless, odor-free system, that same money might do more as an air-quality upgrade like a [UV light](/services/uv-light-installation/) that helps prevent mold from returning.
 
 ## The Florida factor
 
-Florida changes the math. Year-round air conditioning, high humidity, and coastal moisture make mold and biological growth far more likely here than in drier states. That's why a musty-smelling system in [Miami](/service-areas/miami) or [Fort Lauderdale](/service-areas/fort-lauderdale) is more often a real problem, and cleaning more often worth it, than the same complaint up north.
+Florida changes the math. Year-round air conditioning, high humidity, and coastal moisture make mold and biological growth far more likely here than in drier states. That's why a musty-smelling system in [Miami](/service-areas/miami/) or [Fort Lauderdale](/service-areas/fort-lauderdale/) is more often a real problem, and cleaning more often worth it, than the same complaint up north.
 
 ## An honest bottom line
 
-Air duct cleaning is worth it when your home shows real signs of contamination, and it's optional when it doesn't. Don't let a rigid schedule or a lowball ad make the decision for you. If you want a straight answer about whether your specific home needs it, [contact us](/contact) for an honest inspection, or read more on our [air duct cleaning service](/services/air-duct-cleaning) page. We'd rather tell you that you don't need it than sell you something you don't.
+Air duct cleaning is worth it when your home shows real signs of contamination, and it's optional when it doesn't. Don't let a rigid schedule or a lowball ad make the decision for you. If you want a straight answer about whether your specific home needs it, [contact us](/contact/) for an honest inspection, or read more on our [air duct cleaning service](/services/air-duct-cleaning/) page. We'd rather tell you that you don't need it than sell you something you don't.

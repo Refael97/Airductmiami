@@ -39,7 +39,7 @@ El precio honesto se cotiza por sistema de aire acondicionado, no por "rejilla" 
 | Instalación de luz UV | 300 a 700 dólares |
 | Remediación de moho | 500 a 3000 dólares o más |
 
-Si el número que le dan cae dentro de estos rangos y viene con una explicación clara, va por buen camino. Puede ver el detalle de nuestro proceso en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+Si el número que le dan cae dentro de estos rangos y viene con una explicación clara, va por buen camino. Puede ver el detalle de nuestro proceso en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Señales de alerta que no debe ignorar
 
@@ -54,12 +54,12 @@ Ninguna de estas cosas es normal. Un profesional le da su tiempo, le explica y l
 
 ## Pida ver el trabajo
 
-Los equipos serios documentan lo que hacen. Le muestran fotos o video de cómo estaban sus conductos antes y cómo quedaron después. Eso no es un lujo, es la prueba de que el dinero se convirtió en algo real. Si detectan moho de verdad durante la inspección, deben explicárselo con calma y ofrecerle una [remediación de moho](/es/servicios/mold-remediation) por separado, sin dramatismos.
+Los equipos serios documentan lo que hacen. Le muestran fotos o video de cómo estaban sus conductos antes y cómo quedaron después. Eso no es un lujo, es la prueba de que el dinero se convirtió en algo real. Si detectan moho de verdad durante la inspección, deben explicárselo con calma y ofrecerle una [remediación de moho](/es/servicios/mold-remediation/) por separado, sin dramatismos.
 
 ## Reputación local, no solo estrellas
 
-Las reseñas ayudan, pero lea el contenido, no solo el número. Fíjese si los clientes mencionan puntualidad, limpieza y precios que coincidieron con lo cotizado. Una empresa arraigada en su zona, como en [Miami](/es/areas-de-servicio/miami) o [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale), cuida su nombre porque depende de que los vecinos la recomienden.
+Las reseñas ayudan, pero lea el contenido, no solo el número. Fíjese si los clientes mencionan puntualidad, limpieza y precios que coincidieron con lo cotizado. Una empresa arraigada en su zona, como en [Miami](/es/areas-de-servicio/miami/) o [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale/), cuida su nombre porque depende de que los vecinos la recomienden.
 
 ## En resumen
 
-Elegir bien no es complicado si sabe qué mirar. Licencia y seguro primero, un precio dentro del rango justo, cero presión y pruebas del trabajo hecho. Con esos cuatro filtros deja fuera a la mayoría de los oportunistas. Si quiere una cotización honesta y sin trucos, escríbanos por la página de [contacto](/es/contacto) y con gusto le orientamos.
+Elegir bien no es complicado si sabe qué mirar. Licencia y seguro primero, un precio dentro del rango justo, cero presión y pruebas del trabajo hecho. Con esos cuatro filtros deja fuera a la mayoría de los oportunistas. Si quiere una cotización honesta y sin trucos, escríbanos por la página de [contacto](/es/contacto/) y con gusto le orientamos.

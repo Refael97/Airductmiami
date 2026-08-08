@@ -60,8 +60,8 @@ En Florida, la rejilla exterior es un imán para nidos durante casi todo el año
 
 Si su secador nunca seca bien por más que limpie la ventila, quizá el trazado sea el problema de fondo. Ductos demasiado largos, con muchos codos o con material equivocado nunca van a funcionar bien, sin importar cuántas limpiezas les haga. En esos casos, mejorar el recorrido o cambiar el material resuelve el problema de raíz.
 
-Un profesional puede evaluar su instalación durante una [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning) y decirle si el trazado necesita ajustes. Si vive en el área de [Miami](/es/areas-de-servicio/miami), donde muchas casas tienen ductos largos hacia el techo, esta revisión vale mucho la pena.
+Un profesional puede evaluar su instalación durante una [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning/) y decirle si el trazado necesita ajustes. Si vive en el área de [Miami](/es/areas-de-servicio/miami/), donde muchas casas tienen ductos largos hacia el techo, esta revisión vale mucho la pena.
 
 ## Lo esencial
 
-Un buen trazado de la ventila del secador es corto, recto, de metal rígido y con salida bien protegida. La pared exterior suele ganarle al techo, y el metal siempre le gana al plástico. Nuestro servicio de [instalación de ducto de secadora](/es/servicios/dryer-vent-installation/) cubre instalaciones nuevas, reubicaciones y reemplazo de ductos inseguros en toda Florida. Si su secador tarda por más que lo limpie, o no sabe qué tiene instalado, [comuníquese con nosotros](/es/contacto) para revisar el trazado y dejarlo seguro.
+Un buen trazado de la ventila del secador es corto, recto, de metal rígido y con salida bien protegida. La pared exterior suele ganarle al techo, y el metal siempre le gana al plástico. Nuestro servicio de [instalación de ducto de secadora](/es/servicios/dryer-vent-installation/) cubre instalaciones nuevas, reubicaciones y reemplazo de ductos inseguros en toda Florida. Si su secador tarda por más que lo limpie, o no sabe qué tiene instalado, [comuníquese con nosotros](/es/contacto/) para revisar el trazado y dejarlo seguro.

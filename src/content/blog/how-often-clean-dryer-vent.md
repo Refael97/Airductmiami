@@ -67,7 +67,7 @@ Move up your cleaning immediately if you notice:
 
 ## What professional cleaning involves
 
-A pro uses rotary brushes and vacuums to clear the full length of the duct, not just the section you can reach. Cost typically runs **$100 to $200**, and the service is quick. It's worth pairing with [HVAC system cleaning](/services/hvac-cleaning) if your whole system is due for attention.
+A pro uses rotary brushes and vacuums to clear the full length of the duct, not just the section you can reach. Cost typically runs **$100 to $200**, and the service is quick. It's worth pairing with [HVAC system cleaning](/services/hvac-cleaning/) if your whole system is due for attention.
 
 ## Why guessing wrong costs you
 
@@ -77,4 +77,4 @@ The right interval is the one that keeps lint from ever reaching a dangerous lev
 
 ## The bottom line
 
-Clean **at least once a year**, shorten to **every 6 to 9 months** if you have heavy laundry, pets, or a long Florida roof run, and always act on the warning signs. Ready to get on a schedule? [Book a dryer vent cleaning](/services/dryer-vent-cleaning) or [contact our team](/contact) for advice tailored to your home.
+Clean **at least once a year**, shorten to **every 6 to 9 months** if you have heavy laundry, pets, or a long Florida roof run, and always act on the warning signs. Ready to get on a schedule? [Book a dryer vent cleaning](/services/dryer-vent-cleaning/) or [contact our team](/contact/) for advice tailored to your home.

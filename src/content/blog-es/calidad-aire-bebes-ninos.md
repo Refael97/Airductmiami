@@ -49,7 +49,7 @@ Mantenga la habitación del bebé entre 40% y 50% de humedad. Un higrómetro eco
 
 ### Cuide la filtración y los ductos
 
-El aire que llega al cuarto pasa antes por los conductos. Si están llenos de polvo o esporas, el bebé respira eso cada vez que enciende el AC. Una [limpieza de ductos](/es/servicios/air-duct-cleaning) rompe ese ciclo. Cambie el filtro del sistema a tiempo y, si hay antecedentes de alergias en la familia, considere un MERV más alto que su equipo soporte.
+El aire que llega al cuarto pasa antes por los conductos. Si están llenos de polvo o esporas, el bebé respira eso cada vez que enciende el AC. Una [limpieza de ductos](/es/servicios/air-duct-cleaning/) rompe ese ciclo. Cambie el filtro del sistema a tiempo y, si hay antecedentes de alergias en la familia, considere un MERV más alto que su equipo soporte.
 
 ### Reduzca las fuentes químicas
 
@@ -57,10 +57,10 @@ Elija productos de limpieza suaves y sin fragancias fuertes. Evite ambientadores
 
 ### Añada protección extra si hace falta
 
-Si alguien en casa tiene asma o alergias, vale la pena reforzar. Una [luz UV en el sistema HVAC](/es/servicios/uv-light-installation) reduce el moho y las bacterias en el serpentín, y una [desinfección de ductos](/es/servicios/air-duct-sanitizing) elimina lo que la limpieza mecánica no alcanza.
+Si alguien en casa tiene asma o alergias, vale la pena reforzar. Una [luz UV en el sistema HVAC](/es/servicios/uv-light-installation/) reduce el moho y las bacterias en el serpentín, y una [desinfección de ductos](/es/servicios/air-duct-sanitizing/) elimina lo que la limpieza mecánica no alcanza.
 
 ## Cuándo hacer una evaluación
 
-Si su bebé tose más adentro que afuera, si tiene congestión persistente sin resfriado o si hubo humedad reciente en casa, conviene revisar el aire. Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) le dice con datos qué está respirando su familia, sin adivinar.
+Si su bebé tose más adentro que afuera, si tiene congestión persistente sin resfriado o si hubo humedad reciente en casa, conviene revisar el aire. Una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) le dice con datos qué está respirando su familia, sin adivinar.
 
-Proteger el aire de su hijo no requiere volverse experto. Requiere atacar lo básico bien hecho: humedad, filtración y ductos limpios. Si quiere que revisemos su hogar antes de que llegue el bebé o después, solo tiene que [contactarnos](/es/contacto).
+Proteger el aire de su hijo no requiere volverse experto. Requiere atacar lo básico bien hecho: humedad, filtración y ductos limpios. Si quiere que revisemos su hogar antes de que llegue el bebé o después, solo tiene que [contactarnos](/es/contacto/).

@@ -47,7 +47,7 @@ Su límite es claro: trata el aire de donde está colocado, nada más. Un purifi
 
 ## Cuándo elige limpieza de ductos
 
-La [limpieza de ductos](/es/servicios/air-duct-cleaning) es la respuesta cuando el problema viene del propio sistema:
+La [limpieza de ductos](/es/servicios/air-duct-cleaning/) es la respuesta cuando el problema viene del propio sistema:
 
 - El polvo vuelve a las superficies a los pocos días de limpiar.
 - Sale olor a humedad o a "cerrado" cuando enciende el AC.
@@ -61,11 +61,11 @@ En Florida esto es especialmente relevante. La humedad hace que el polvo se pegu
 La mejor estrategia casi siempre es hacer las dos cosas en el orden correcto. Primero limpie la fuente, después mantenga el aire.
 
 1. **Limpie los ductos** para eliminar lo acumulado y frenar la recirculación de suciedad.
-2. **Refuerce el sistema** con una [limpieza del HVAC](/es/servicios/hvac-cleaning) o una [luz UV](/es/servicios/uv-light-installation) que controle el moho en el serpentín.
+2. **Refuerce el sistema** con una [limpieza del HVAC](/es/servicios/hvac-cleaning/) o una [luz UV](/es/servicios/uv-light-installation/) que controle el moho en el serpentín.
 3. **Añada un purificador** en los cuartos donde alguien pasa más tiempo o sufre de alergias.
 
 Así ataca el problema desde la raíz y mantiene el resultado. Usar solo un purificador cuando los ductos están sucios es como perfumar un cuarto sin sacar la basura.
 
 ## En conclusión
 
-Ninguno de los dos es "mejor" en abstracto. Depende de dónde está su problema. Si no sabe por dónde empezar, una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing) le muestra qué está pasando, o puede [contactarnos](/es/contacto) y le recomendamos la ruta más efectiva para su casa.
+Ninguno de los dos es "mejor" en abstracto. Depende de dónde está su problema. Si no sabe por dónde empezar, una [prueba de calidad del aire](/es/servicios/indoor-air-quality-testing/) le muestra qué está pasando, o puede [contactarnos](/es/contacto/) y le recomendamos la ruta más efectiva para su casa.

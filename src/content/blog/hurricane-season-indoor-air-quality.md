@@ -62,19 +62,19 @@ If your home flooded, lost power for an extended period, or stayed humid for day
 
 ## Cleaning and Recovery
 
-When a storm has compromised your system, professional [air duct cleaning](/services/air-duct-cleaning) removes mold and debris before it recirculates, and [HVAC cleaning](/services/hvac-cleaning) addresses the coil and blower where moisture collects. If water sat long enough for growth to establish, [mold remediation](/services/mold-remediation) removes the source, and [air duct sanitizing](/services/air-duct-sanitizing) treats surfaces to slow regrowth.
+When a storm has compromised your system, professional [air duct cleaning](/services/air-duct-cleaning/) removes mold and debris before it recirculates, and [HVAC cleaning](/services/hvac-cleaning/) addresses the coil and blower where moisture collects. If water sat long enough for growth to establish, [mold remediation](/services/mold-remediation/) removes the source, and [air duct sanitizing](/services/air-duct-sanitizing/) treats surfaces to slow regrowth.
 
-To know exactly what you are dealing with, [indoor air quality testing](/services/indoor-air-quality-testing) confirms whether mold spores or particulates are elevated after the storm. This is especially wise before running your AC heavily again.
+To know exactly what you are dealing with, [indoor air quality testing](/services/indoor-air-quality-testing/) confirms whether mold spores or particulates are elevated after the storm. This is especially wise before running your AC heavily again.
 
 ## Building Storm Resilience
 
 You can reduce your risk before the next storm:
 
 - Service your HVAC system so it runs efficiently and drains properly.
-- Consider a [UV light installation](/services/uv-light-installation) at the coil to fight moisture-driven growth.
+- Consider a [UV light installation](/services/uv-light-installation/) at the coil to fight moisture-driven growth.
 - Keep a plan for backup power to run fans or a dehumidifier.
 - Seal gaps and maintain your roof to limit water intrusion.
 
 ## The Bottom Line
 
-Hurricanes threaten your indoor air most in the humid, powerless hours after the storm passes. Dry your home within the critical 24-to-48-hour window, inspect your system for moisture, and clean the ducts before recirculating air if there is any sign of contamination. Fast action is what keeps a storm from turning into a lasting mold problem. If you need a post-storm assessment, [contact us](/contact) or visit our [FAQ](/faq) for more recovery guidance.
+Hurricanes threaten your indoor air most in the humid, powerless hours after the storm passes. Dry your home within the critical 24-to-48-hour window, inspect your system for moisture, and clean the ducts before recirculating air if there is any sign of contamination. Fast action is what keeps a storm from turning into a lasting mold problem. If you need a post-storm assessment, [contact us](/contact/) or visit our [FAQ](/faq/) for more recovery guidance.

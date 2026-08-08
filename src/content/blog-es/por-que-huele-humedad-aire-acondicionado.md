@@ -56,12 +56,12 @@ Rociar desinfectante en la rejilla no llega a la serpentina, que está dentro de
 4. Cambiar el filtro por uno de mejor calidad.
 5. Controlar la humedad para que el moho no regrese.
 
-Para el moho ya visible o persistente, la [remediación de moho](/es/servicios/mold-remediation) trata la colonia en la fuente. Cuando el olor viaja por los conductos, la [sanitización de ductos](/es/servicios/air-duct-sanitizing) neutraliza las esporas, y un buen [mantenimiento del sistema HVAC](/es/servicios/hvac-cleaning) evita que la serpentina vuelva a ensuciarse.
+Para el moho ya visible o persistente, la [remediación de moho](/es/servicios/mold-remediation/) trata la colonia en la fuente. Cuando el olor viaja por los conductos, la [sanitización de ductos](/es/servicios/air-duct-sanitizing/) neutraliza las esporas, y un buen [mantenimiento del sistema HVAC](/es/servicios/hvac-cleaning/) evita que la serpentina vuelva a ensuciarse.
 
 ### Prevención en clima de Florida
 
-Con el aire encendido casi todo el año, la prevención es clave. Mantenga la humedad interior entre 30 y 50 por ciento, nunca sobre 60. Cambie el filtro cada mes o dos. Deje el ventilador en modo automático para que la serpentina se seque entre ciclos. Y considere una [lámpara UV](/es/servicios/uv-light-installation) instalada sobre la serpentina, que reduce el moho de forma constante.
+Con el aire encendido casi todo el año, la prevención es clave. Mantenga la humedad interior entre 30 y 50 por ciento, nunca sobre 60. Cambie el filtro cada mes o dos. Deje el ventilador en modo automático para que la serpentina se seque entre ciclos. Y considere una [lámpara UV](/es/servicios/uv-light-installation/) instalada sobre la serpentina, que reduce el moho de forma constante.
 
 ## Cuándo pedir ayuda
 
-Si el olor no desaparece tras cambiar el filtro, si ve manchas en las ventilas o si alguien en casa tiene tos y congestión frecuentes, conviene una revisión profesional. Escríbanos por la página de [contacto](/es/contacto) y le decimos qué está pasando. Ese olor es la manera en que su equipo le avisa que hay humedad y moho trabajando por dentro.
+Si el olor no desaparece tras cambiar el filtro, si ve manchas en las ventilas o si alguien en casa tiene tos y congestión frecuentes, conviene una revisión profesional. Escríbanos por la página de [contacto](/es/contacto/) y le decimos qué está pasando. Ese olor es la manera en que su equipo le avisa que hay humedad y moho trabajando por dentro.

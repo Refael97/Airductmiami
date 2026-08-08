@@ -39,13 +39,13 @@ La mayoría de los constructores tapan las rejillas con plástico durante la obr
 
 ## El factor Florida
 
-En nuestro clima, hay un ingrediente extra. La humedad. Si la construcción terminó en temporada húmeda, ese polvo dentro de los conductos puede mezclarse con la humedad y volverse el punto de partida perfecto para el moho. Empezar la vida en su casa nueva con ductos limpios evita ese problema desde el día uno. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) completa también revisa que el manejador de aire no haya recogido residuos de obra.
+En nuestro clima, hay un ingrediente extra. La humedad. Si la construcción terminó en temporada húmeda, ese polvo dentro de los conductos puede mezclarse con la humedad y volverse el punto de partida perfecto para el moho. Empezar la vida en su casa nueva con ductos limpios evita ese problema desde el día uno. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) completa también revisa que el manejador de aire no haya recogido residuos de obra.
 
 ## Cuándo conviene hacerlo
 
 El momento ideal es en los primeros meses después de mudarse, cuando ya está seguro de que no habrá más trabajos que levanten polvo. Si tiene planeado colgar cuadros, instalar closets o cualquier obra menor, espere a terminar eso primero. No tiene sentido limpiar y volver a ensuciar.
 
-Si en su familia hay bebés, personas mayores o alguien con alergias, no lo posponga. El polvo de construcción es especialmente irritante para las vías respiratorias, y una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning) le da tranquilidad.
+Si en su familia hay bebés, personas mayores o alguien con alergias, no lo posponga. El polvo de construcción es especialmente irritante para las vías respiratorias, y una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/) le da tranquilidad.
 
 ## Señales de que su casa nueva los necesita ya
 
@@ -58,4 +58,4 @@ Si en su familia hay bebés, personas mayores o alguien con alergias, no lo posp
 
 Una casa nueva es una inversión grande y una ilusión enorme. Arrancar con el aire limpio de verdad, no solo por fuera sino por dentro del sistema, es una forma sencilla de cuidar esa inversión y la salud de su familia. El costo, entre 300 y 600 dólares por sistema, es pequeño comparado con todo lo que ya invirtió en la casa.
 
-Si acaba de mudarse y quiere revisar el estado de sus ductos, escríbanos por la página de [contacto](/es/contacto). Le decimos con honestidad si hace falta o si puede esperar.
+Si acaba de mudarse y quiere revisar el estado de sus ductos, escríbanos por la página de [contacto](/es/contacto/). Le decimos con honestidad si hace falta o si puede esperar.

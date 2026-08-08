@@ -62,16 +62,16 @@ That combination is why coil and blower buildup is one of the most common effici
 | Drain pan & line | Cleared and treated | Prevents overflow and mold |
 | Air handler cabinet | Wiped and inspected | Removes debris and biofilm |
 
-This is the core of our [HVAC cleaning](/services/hvac-cleaning) service. For homes with mold or musty odors, pairing it with [air duct sanitizing](/services/air-duct-sanitizing) treats the contamination throughout the system, not just at the coil.
+This is the core of our [HVAC cleaning](/services/hvac-cleaning/) service. For homes with mold or musty odors, pairing it with [air duct sanitizing](/services/air-duct-sanitizing/) treats the contamination throughout the system, not just at the coil.
 
 ## How it fits with the rest of your system
 
 Coil and blower cleaning delivers the most value when the whole airflow path is healthy:
 
-- **Clean ducts** so restored airflow isn't lost to buildup, see [air duct cleaning](/services/air-duct-cleaning).
+- **Clean ducts** so restored airflow isn't lost to buildup, see [air duct cleaning](/services/air-duct-cleaning/).
 - **Sealed ducts** so the air the blower moves actually reaches your rooms.
 - **A fresh filter** so the coil stays clean longer.
 
 ## The overlooked fix worth doing
 
-Because it's hidden inside the air handler, coil and blower cleaning gets skipped, even though it's often the single most impactful thing you can do for a struggling Florida AC. If your system runs long, smells musty, or just isn't cooling like it used to, start here. [Contact us](/contact) for an air handler inspection, or check our [FAQ](/faq) for more.
+Because it's hidden inside the air handler, coil and blower cleaning gets skipped, even though it's often the single most impactful thing you can do for a struggling Florida AC. If your system runs long, smells musty, or just isn't cooling like it used to, start here. [Contact us](/contact/) for an air handler inspection, or check our [FAQ](/faq/) for more.

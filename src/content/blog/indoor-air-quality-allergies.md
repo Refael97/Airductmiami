@@ -50,7 +50,7 @@ Keep your home between 40 and 50 percent by running AC consistently, using exhau
 
 Here is what many allergy sufferers overlook. Even if you dust, vacuum, and wash bedding faithfully, your ductwork may be the reservoir feeding your symptoms. Years of humid operation let dust, pollen, and mold accumulate inside ducts and on the coil. Every time the system kicks on, it blows that material back into your living space.
 
-Professional [air duct cleaning](/services/air-duct-cleaning) removes this hidden buildup, and [HVAC cleaning](/services/hvac-cleaning) addresses the coil and blower where allergens concentrate. For homes with a history of moisture, [air duct sanitizing](/services/air-duct-sanitizing) treats surfaces after cleaning to slow regrowth.
+Professional [air duct cleaning](/services/air-duct-cleaning/) removes this hidden buildup, and [HVAC cleaning](/services/hvac-cleaning/) addresses the coil and blower where allergens concentrate. For homes with a history of moisture, [air duct sanitizing](/services/air-duct-sanitizing/) treats surfaces after cleaning to slow regrowth.
 
 ## A Practical Allergy-Reduction Plan
 
@@ -64,10 +64,10 @@ Layer these steps for the best relief:
 
 ## When to Test Your Air
 
-If symptoms persist despite these measures, stop guessing. [Indoor air quality testing](/services/indoor-air-quality-testing) identifies exactly which allergens are elevated, whether that is mold, high particulate counts, or something else. Testing is especially worthwhile if you smell must or if symptoms improve when you leave the house, both strong signs of an indoor source.
+If symptoms persist despite these measures, stop guessing. [Indoor air quality testing](/services/indoor-air-quality-testing/) identifies exactly which allergens are elevated, whether that is mold, high particulate counts, or something else. Testing is especially worthwhile if you smell must or if symptoms improve when you leave the house, both strong signs of an indoor source.
 
-If testing confirms active mold, [mold remediation](/services/mold-remediation) removes the source before it recontaminates your ducts, and a [UV light installation](/services/uv-light-installation) at the coil helps prevent regrowth in the wettest part of the system.
+If testing confirms active mold, [mold remediation](/services/mold-remediation/) removes the source before it recontaminates your ducts, and a [UV light installation](/services/uv-light-installation/) at the coil helps prevent regrowth in the wettest part of the system.
 
 ## The Takeaway
 
-Florida's humidity and pollen make indoor allergies stubborn, but they are far from unbeatable. Attack the moisture, filter the air, and clean the ductwork that recirculates allergens, and most people feel a meaningful difference. To pinpoint your specific triggers, [contact us](/contact) to schedule testing, or browse our [FAQ](/faq) for more guidance.
+Florida's humidity and pollen make indoor allergies stubborn, but they are far from unbeatable. Attack the moisture, filter the air, and clean the ductwork that recirculates allergens, and most people feel a meaningful difference. To pinpoint your specific triggers, [contact us](/contact/) to schedule testing, or browse our [FAQ](/faq/) for more guidance.

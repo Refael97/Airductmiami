@@ -40,7 +40,7 @@ Your filter is the cheapest air quality upgrade you can make. In Florida, a filt
 
 ## Step 3: Clean the Ducts and HVAC System
 
-Over years of humid operation, dust, pollen, and mold build up inside ductwork and on the coil. Professional [air duct cleaning](/services/air-duct-cleaning) removes that buildup so your system stops blowing contaminants into your rooms. Pairing it with [HVAC cleaning](/services/hvac-cleaning) of the coil and blower keeps the whole system moving clean air. If you have had past moisture problems, ask about [air duct sanitizing](/services/air-duct-sanitizing) to treat surfaces after cleaning.
+Over years of humid operation, dust, pollen, and mold build up inside ductwork and on the coil. Professional [air duct cleaning](/services/air-duct-cleaning/) removes that buildup so your system stops blowing contaminants into your rooms. Pairing it with [HVAC cleaning](/services/hvac-cleaning/) of the coil and blower keeps the whole system moving clean air. If you have had past moisture problems, ask about [air duct sanitizing](/services/air-duct-sanitizing/) to treat surfaces after cleaning.
 
 ## Step 4: Ventilate and Reduce Sources
 
@@ -57,11 +57,11 @@ Also reduce sources at the point they enter: use doormats, keep pets groomed, an
 
 ## Step 5: Know When to Test
 
-If someone in the home has ongoing allergy or respiratory symptoms, or you smell a persistent musty odor, professional [indoor air quality testing](/services/indoor-air-quality-testing) tells you exactly what you are dealing with, whether that is mold, high particulate levels, or elevated VOCs. Testing removes the guesswork so you fix the real problem instead of masking symptoms.
+If someone in the home has ongoing allergy or respiratory symptoms, or you smell a persistent musty odor, professional [indoor air quality testing](/services/indoor-air-quality-testing/) tells you exactly what you are dealing with, whether that is mold, high particulate levels, or elevated VOCs. Testing removes the guesswork so you fix the real problem instead of masking symptoms.
 
 ## Consider Long-Term Protection
 
-For homes prone to recurring mold, a [UV light installation](/services/uv-light-installation) at the coil helps stop microbial growth on the wettest part of your system. If testing reveals an active mold problem, [mold remediation](/services/mold-remediation) addresses the source before it spreads through the ductwork again.
+For homes prone to recurring mold, a [UV light installation](/services/uv-light-installation/) at the coil helps stop microbial growth on the wettest part of your system. If testing reveals an active mold problem, [mold remediation](/services/mold-remediation/) addresses the source before it spreads through the ductwork again.
 
 ## Putting It Together
 
@@ -73,4 +73,4 @@ The most effective approach layers these steps rather than relying on any single
 4. Ventilate and cut pollutant sources.
 5. Test when symptoms or odors persist.
 
-Do these consistently and your Florida home will feel fresher, smell cleaner, and put less strain on both your lungs and your AC system. If you are ready to start, [contact us](/contact) to schedule an assessment, or read more common questions on our [FAQ page](/faq).
+Do these consistently and your Florida home will feel fresher, smell cleaner, and put less strain on both your lungs and your AC system. If you are ready to start, [contact us](/contact/) to schedule an assessment, or read more common questions on our [FAQ page](/faq/).

@@ -39,9 +39,9 @@ Aquí el ático no es un lugar templado. Bajo el sol de verano, la temperatura a
 
 ## La relación con los ductos
 
-Aquí hay una conexión que mucha gente no ve. Sus ductos suelen correr por ese mismo ático caliente. Si el ático está a 130 grados, el aire frío que viaja por los conductos se calienta en el camino, sobre todo si el ducto tiene fugas o poco aislamiento. Un ático bien aislado protege también a los ductos. Por eso conviene mirar el [aislamiento del ático](/es/servicios/attic-insulation) junto con el estado de la red de conductos.
+Aquí hay una conexión que mucha gente no ve. Sus ductos suelen correr por ese mismo ático caliente. Si el ático está a 130 grados, el aire frío que viaja por los conductos se calienta en el camino, sobre todo si el ducto tiene fugas o poco aislamiento. Un ático bien aislado protege también a los ductos. Por eso conviene mirar el [aislamiento del ático](/es/servicios/attic-insulation/) junto con el estado de la red de conductos.
 
-Si los ductos además tienen fugas, ese aire caliente del ático se cuela dentro del sistema. Sellarlos con [reparación de ductos de aire](/es/servicios/air-duct-repair) y aislar bien el ático es una combinación que rinde el doble.
+Si los ductos además tienen fugas, ese aire caliente del ático se cuela dentro del sistema. Sellarlos con [reparación de ductos de aire](/es/servicios/air-duct-repair/) y aislar bien el ático es una combinación que rinde el doble.
 
 ## Cuánto se puede ahorrar
 
@@ -56,4 +56,4 @@ El aislamiento no da un número fijo igual para todos, porque depende de cómo e
 
 ## En resumen
 
-En Florida, aislar bien el ático es de las inversiones más lógicas que existen. Frena el calor en la puerta, protege sus ductos y alivia al aire acondicionado. Combinado con ductos sellados, es una de las formas más efectivas de bajar el gasto de enfriamiento. Si no sabe qué valor R tiene hoy su ático, escríbanos por la página de [contacto](/es/contacto) y lo revisamos.
+En Florida, aislar bien el ático es de las inversiones más lógicas que existen. Frena el calor en la puerta, protege sus ductos y alivia al aire acondicionado. Combinado con ductos sellados, es una de las formas más efectivas de bajar el gasto de enfriamiento. Si no sabe qué valor R tiene hoy su ático, escríbanos por la página de [contacto](/es/contacto/) y lo revisamos.

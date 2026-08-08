@@ -45,16 +45,16 @@ Muchos anuncios muestran cifras como 89 o 99 dólares "por toda la casa". El pro
 | Desinfección | 75 a 200 dólares |
 | Luz UV instalada | 300 a 700 dólares |
 
-Cuando usted pregunta el total por adelantado, cierra la puerta a los cobros escondidos. Puede conocer nuestro alcance en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning).
+Cuando usted pregunta el total por adelantado, cierra la puerta a los cobros escondidos. Puede conocer nuestro alcance en la página de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/).
 
 ## Escuche cómo responden, no solo qué responden
 
-El tono dice mucho. Una empresa que se irrita porque usted pregunta por el seguro o por el precio total probablemente tiene algo que ocultar. La que responde con paciencia y hasta le agradece el interés suele ser la que hace el trabajo bien. Si además atienden su zona, sea [Miami](/es/areas-de-servicio/miami) u otra parte del sur de Florida, mejor todavía, porque conocen el clima y sus efectos.
+El tono dice mucho. Una empresa que se irrita porque usted pregunta por el seguro o por el precio total probablemente tiene algo que ocultar. La que responde con paciencia y hasta le agradece el interés suele ser la que hace el trabajo bien. Si además atienden su zona, sea [Miami](/es/areas-de-servicio/miami/) u otra parte del sur de Florida, mejor todavía, porque conocen el clima y sus efectos.
 
 ## Un extra: la ventila de la secadora
 
-Ya que el técnico está en casa, pregunte por la [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning). Es un servicio distinto pero muy importante en Florida por el tema de la humedad y el riesgo de incendio. Combinar ambos en una sola visita a veces le sale más a cuenta.
+Ya que el técnico está en casa, pregunte por la [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning/). Es un servicio distinto pero muy importante en Florida por el tema de la humedad y el riesgo de incendio. Combinar ambos en una sola visita a veces le sale más a cuenta.
 
 ## En resumen
 
-Diez preguntas, cinco minutos, cientos de dólares protegidos. No hay nada de exagerado en interrogar a quien va a trabajar en su casa. Al contrario, es lo más sensato que puede hacer. Si prefiere hablar directamente y que le respondamos cada una de estas dudas, escríbanos por la página de [contacto](/es/contacto).
+Diez preguntas, cinco minutos, cientos de dólares protegidos. No hay nada de exagerado en interrogar a quien va a trabajar en su casa. Al contrario, es lo más sensato que puede hacer. Si prefiere hablar directamente y que le respondamos cada una de estas dudas, escríbanos por la página de [contacto](/es/contacto/).

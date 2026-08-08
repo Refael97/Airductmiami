@@ -46,9 +46,9 @@ Every one of these is more common in Florida because our baseline humidity is so
 
 **Add a dehumidifier when needed.** In much of Florida, the AC alone cannot hold humidity below 60% during the wettest months, especially in larger or leaky homes. A whole-house or portable dehumidifier closes the gap.
 
-**Seal and maintain the system.** Duct leaks pull humid attic air inside, and a clogged condensate drain leaves standing water. A professional [HVAC cleaning](/services/hvac-cleaning) and duct inspection keep the system working efficiently and dry.
+**Seal and maintain the system.** Duct leaks pull humid attic air inside, and a clogged condensate drain leaves standing water. A professional [HVAC cleaning](/services/hvac-cleaning/) and duct inspection keep the system working efficiently and dry.
 
-**Verify your air quality.** If you already smell mustiness or suspect a moisture problem, [indoor air quality testing](/services/indoor-air-quality-testing) measures both humidity and mold spore levels so you know where you stand.
+**Verify your air quality.** If you already smell mustiness or suspect a moisture problem, [indoor air quality testing](/services/indoor-air-quality-testing/) measures both humidity and mold spore levels so you know where you stand.
 
 ## Why your AC alone may not be enough
 
@@ -56,8 +56,8 @@ Many Florida homeowners assume that a cold house is a dry house, but temperature
 
 ## Keeping ducts dry matters too
 
-Controlling room humidity also protects the hidden surfaces inside your HVAC system. When indoor air stays below 60%, there is less moisture available to condense on cold coils and ducts. Pairing good humidity control with periodic [air duct sanitizing](/services/air-duct-sanitizing) keeps the whole system inhospitable to mold.
+Controlling room humidity also protects the hidden surfaces inside your HVAC system. When indoor air stays below 60%, there is less moisture available to condense on cold coils and ducts. Pairing good humidity control with periodic [air duct sanitizing](/services/air-duct-sanitizing/) keeps the whole system inhospitable to mold.
 
 ## The bottom line
 
-Aim for 30 to 50% indoor humidity and never let it climb above 60%. In Florida that means running a properly sized AC, adding a dehumidifier when the season demands it, sealing your ducts, and monitoring with a hygrometer. Struggling to keep humidity down no matter what you try? [Contact our Florida team](/contact) and we will find the source of the moisture.
+Aim for 30 to 50% indoor humidity and never let it climb above 60%. In Florida that means running a properly sized AC, adding a dehumidifier when the season demands it, sealing your ducts, and monitoring with a hygrometer. Struggling to keep humidity down no matter what you try? [Contact our Florida team](/contact/) and we will find the source of the moisture.

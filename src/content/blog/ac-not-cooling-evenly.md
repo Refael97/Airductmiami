@@ -30,7 +30,7 @@ Duct systems commonly lose 20 to 30% of their air to leaks. The rooms at the end
 The farther air has to travel, and the more twists and crushed sections it passes, the more it slows down. Rooms at the end of long flex-duct runs frequently run hot.
 
 ### 3. Blocked or dirty ducts
-Dust buildup, debris, or a collapsed flex duct narrows the airway. Less air arrives, so the room never catches up. An [air duct cleaning](/services/air-duct-cleaning) inspection can reveal these restrictions.
+Dust buildup, debris, or a collapsed flex duct narrows the airway. Less air arrives, so the room never catches up. An [air duct cleaning](/services/air-duct-cleaning/) inspection can reveal these restrictions.
 
 ### 4. Poor duct balancing
 Every branch should be tuned so each room gets airflow proportional to its cooling need. Without balancing, nearby rooms hog the air and distant rooms are starved.
@@ -59,12 +59,12 @@ In Florida, ducts snake through attics that hit 130°F. Air that starts cool at 
 
 Balancing an unbalanced system usually involves several coordinated steps:
 
-1. **Seal leaks** so air actually reaches the registers, handled by our [air duct repair](/services/air-duct-repair) team.
+1. **Seal leaks** so air actually reaches the registers, handled by our [air duct repair](/services/air-duct-repair/) team.
 2. **Clear blockages** and clean restricted runs.
 3. **Adjust dampers** to redirect airflow toward starved rooms.
 4. **Repair or resize** crushed or undersized ducts.
-5. **Improve attic insulation** so traveling air stays cool, see [attic insulation](/services/attic-insulation).
+5. **Improve attic insulation** so traveling air stays cool, see [attic insulation](/services/attic-insulation/).
 
 ## Stop chasing the thermostat
 
-If you're constantly nudging the thermostat to make one room comfortable while freezing another, the ducts, not your AC, are almost certainly to blame. A professional airflow assessment can pinpoint exactly which cause is at work. [Contact us](/contact) to balance your system, or explore service in [Orlando](/service-areas/orlando) and across Florida.
+If you're constantly nudging the thermostat to make one room comfortable while freezing another, the ducts, not your AC, are almost certainly to blame. A professional airflow assessment can pinpoint exactly which cause is at work. [Contact us](/contact/) to balance your system, or explore service in [Orlando](/service-areas/orlando/) and across Florida.

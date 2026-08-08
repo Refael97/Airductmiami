@@ -44,7 +44,7 @@ Cada uno de estos empuja la limpieza hacia intervalos más cortos:
 
 En un clima húmedo la ropa tarda más en secar. El secador compensa corriendo más tiempo por carga, así que suelta más pelusa y consume más energía. Ese trabajo extra tapa la ventila antes que en un clima seco.
 
-Súmele que muchas casas del sur de Florida tienen el cuarto de lavado en el centro de la casa, lejos de una pared exterior. Eso obliga a ductos largos que suben al techo, justo el tipo de recorrido donde la pelusa se acumula sin que nadie lo note. Si vive en el área de [Tampa](/es/areas-de-servicio/tampa), esta combinación de humedad y ductos largos es muy común.
+Súmele que muchas casas del sur de Florida tienen el cuarto de lavado en el centro de la casa, lejos de una pared exterior. Eso obliga a ductos largos que suben al techo, justo el tipo de recorrido donde la pelusa se acumula sin que nadie lo note. Si vive en el área de [Tampa](/es/areas-de-servicio/tampa/), esta combinación de humedad y ductos largos es muy común.
 
 ## Cómo saber que ya toca antes de tiempo
 
@@ -59,14 +59,14 @@ Cualquiera de estas quiere decir que la ventila ya está tapada, sin importar cu
 
 ## Lo que usted puede hacer entre limpiezas
 
-Limpiar el filtro de pelusa cada carga es el hábito más importante y no cuesta nada. Revise también la rejilla exterior cada mes para asegurarse de que nada la tape. No sobrecargue el tambor, porque cuando la ropa va apretada el aire no circula bien y el secado se alarga, lo que hace trabajar de más al aparato. Aun así, la pelusa compacta del fondo del ducto necesita una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning), que suele costar entre 100 y 200 dólares.
+Limpiar el filtro de pelusa cada carga es el hábito más importante y no cuesta nada. Revise también la rejilla exterior cada mes para asegurarse de que nada la tape. No sobrecargue el tambor, porque cuando la ropa va apretada el aire no circula bien y el secado se alarga, lo que hace trabajar de más al aparato. Aun así, la pelusa compacta del fondo del ducto necesita una [limpieza profesional de la ventila del secador](/es/servicios/dryer-vent-cleaning/), que suele costar entre 100 y 200 dólares.
 
 ## Un pequeño registro ayuda
 
 Anote la fecha de cada limpieza en el calendario del teléfono o pegue una notita dentro de la puerta del cuarto de lavado. Suena simple, pero es la forma más fácil de no perder la cuenta. Si el año pasa y no recuerda la última vez, esa es su respuesta: ya toca. Con un registro claro también nota antes si el ducto se está tapando más rápido de lo normal, lo que puede indicar un trazado largo o una rejilla exterior que necesita atención.
 
-Si tiene dudas sobre su situación específica, revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes) o pregúntenos directamente.
+Si tiene dudas sobre su situación específica, revise nuestras [preguntas frecuentes](/es/preguntas-frecuentes/) o pregúntenos directamente.
 
 ## Lo esencial
 
-Una vez al año es el mínimo. Su casa puede pedir más si tiene familia grande, mascotas, ductos largos o el clima húmedo de Florida haciendo que el secador trabaje de más. Cuando note las señales de una ventila tapada, no espere al calendario. [Comuníquese con nosotros](/es/contacto) y programe la limpieza que su hogar realmente necesita.
+Una vez al año es el mínimo. Su casa puede pedir más si tiene familia grande, mascotas, ductos largos o el clima húmedo de Florida haciendo que el secador trabaje de más. Cuando note las señales de una ventila tapada, no espere al calendario. [Comuníquese con nosotros](/es/contacto/) y programe la limpieza que su hogar realmente necesita.

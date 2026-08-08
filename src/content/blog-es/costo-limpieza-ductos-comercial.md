@@ -52,16 +52,16 @@ Aunque cada proyecto es único, esta tabla le da un punto de partida para conver
 | Restaurante con cocina | Mayor por grasa y normas de higiene |
 | Edificio o nave grande | Proyecto completo, requiere inspección |
 
-Puede conocer nuestro enfoque en la página de [limpieza de ductos comercial](/es/servicios/commercial-air-duct-cleaning).
+Puede conocer nuestro enfoque en la página de [limpieza de ductos comercial](/es/servicios/commercial-air-duct-cleaning/).
 
 ## Por qué la inspección es clave
 
-Un buen proveedor no le teme a ir a verlo. Al contrario, esa visita le permite cotizar con precisión, evitarle sorpresas y planear el trabajo sin frenar su operación. Si alguien le da un precio cerrado sin conocer su espacio, o es adivinanza o es un gancho para inflar después. En negocios grandes, la inspección también revela si hay moho, lo que llevaría a una [remediación de moho](/es/servicios/mold-remediation) por separado.
+Un buen proveedor no le teme a ir a verlo. Al contrario, esa visita le permite cotizar con precisión, evitarle sorpresas y planear el trabajo sin frenar su operación. Si alguien le da un precio cerrado sin conocer su espacio, o es adivinanza o es un gancho para inflar después. En negocios grandes, la inspección también revela si hay moho, lo que llevaría a una [remediación de moho](/es/servicios/mold-remediation/) por separado.
 
 ## El factor Florida en lo comercial
 
-El clima del estado no perdona ni a los negocios. La humedad constante hace que restaurantes, clínicas y hoteles del sur de Florida, sea en [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale) u otras zonas, tengan que vigilar sus sistemas más de cerca. Un ambiente limpio también protege su reputación con los clientes.
+El clima del estado no perdona ni a los negocios. La humedad constante hace que restaurantes, clínicas y hoteles del sur de Florida, sea en [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale/) u otras zonas, tengan que vigilar sus sistemas más de cerca. Un ambiente limpio también protege su reputación con los clientes.
 
 ## En resumen
 
-El costo de la limpieza comercial se construye a la medida de su negocio, no de una tabla genérica. Tamaño, giro, acceso y frecuencia son los ejes que lo determinan, y la inspección en sitio es lo que convierte una adivinanza en un precio serio. Si administra un local o edificio y quiere una cotización real, escríbanos por la página de [contacto](/es/contacto) y coordinamos una visita.
+El costo de la limpieza comercial se construye a la medida de su negocio, no de una tabla genérica. Tamaño, giro, acceso y frecuencia son los ejes que lo determinan, y la inspección en sitio es lo que convierte una adivinanza en un precio serio. Si administra un local o edificio y quiere una cotización real, escríbanos por la página de [contacto](/es/contacto/) y coordinamos una visita.

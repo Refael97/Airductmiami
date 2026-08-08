@@ -18,7 +18,7 @@ const categories = [...new Set(posts.map((p) => p.data.category))].sort();
 
 const fmt = (d: Date) => d.toLocaleDateString('es-US', { year: 'numeric', month: 'short', day: 'numeric' });
 ---
-<BaseLayout title={title} description={description} lang={lang} altHref="/blog">
+<BaseLayout title={title} description={description} lang={lang} altHref="/blog/">
  <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[2].label, href: t.blog }]} />
  <section class="section">
  <div class="container">

@@ -30,7 +30,7 @@ Most duct problems are repairable, and repair is usually the smart, cost-effecti
 - **Airflow is restricted by dirt.** Cleaning clears the airway without replacement.
 - **The ducts are relatively young and well-installed.** Good bones are worth preserving.
 
-Our [air duct repair](/services/air-duct-repair) team handles sealing, reconnection, and section repairs that solve these issues at a fraction of replacement cost.
+Our [air duct repair](/services/air-duct-repair/) team handles sealing, reconnection, and section repairs that solve these issues at a fraction of replacement cost.
 
 ## When replacement makes more sense
 
@@ -67,9 +67,9 @@ These conditions shorten duct life here compared with milder climates, which is 
 
 1. **Get an inspection.** A technician checks for leaks, mold, sagging, crushing, and sizing.
 2. **Weigh the leakage.** If the system loses far more than the typical 20 to 30% and the ducts are old, replacement often wins.
-3. **Factor in health.** Persistent mold and musty odors tip the scales toward replacement, or at least [air duct sanitizing](/services/air-duct-sanitizing) alongside repair.
-4. **Consider the whole system.** Replacing ducts is a good time to also improve [attic insulation](/services/attic-insulation) so new ducts aren't fighting attic heat.
+3. **Factor in health.** Persistent mold and musty odors tip the scales toward replacement, or at least [air duct sanitizing](/services/air-duct-sanitizing/) alongside repair.
+4. **Consider the whole system.** Replacing ducts is a good time to also improve [attic insulation](/services/attic-insulation/) so new ducts aren't fighting attic heat.
 
 ## The bottom line
 
-Localized problems on a sound, reasonably young system point to repair. Widespread deterioration, extensive mold, or bad design point to replacement. An honest inspection is the only way to know which describes your home. [Contact us](/contact) for a straight assessment, or serving [Miami](/service-areas/miami) and all of Florida, we'll tell you what your ducts actually need.
+Localized problems on a sound, reasonably young system point to repair. Widespread deterioration, extensive mold, or bad design point to replacement. An honest inspection is the only way to know which describes your home. [Contact us](/contact/) for a straight assessment, or serving [Miami](/service-areas/miami/) and all of Florida, we'll tell you what your ducts actually need.

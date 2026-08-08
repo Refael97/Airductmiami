@@ -77,6 +77,6 @@ There's also a quality-of-life cost. A dryer fighting against a clogged vent use
 
 ## What to do next
 
-If you recognize two or more of these signs, don't wait. A professional [dryer vent cleaning](/services/dryer-vent-cleaning) typically costs **$100 to $200** and restores safe airflow. Cleaning often pairs well with [air duct cleaning](/services/air-duct-cleaning) for whole-home air quality.
+If you recognize two or more of these signs, don't wait. A professional [dryer vent cleaning](/services/dryer-vent-cleaning/) typically costs **$100 to $200** and restores safe airflow. Cleaning often pairs well with [air duct cleaning](/services/air-duct-cleaning/) for whole-home air quality.
 
-Not sure how serious your symptoms are? [Contact our team](/contact) for a quick inspection and honest assessment.
+Not sure how serious your symptoms are? [Contact our team](/contact/) for a quick inspection and honest assessment.

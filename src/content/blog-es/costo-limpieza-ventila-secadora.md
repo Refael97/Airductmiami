@@ -50,7 +50,7 @@ Un conducto que no se limpia hace años está mucho más tapado y cuesta un poco
 | Salida en techo o segundo piso | Hacia 200 dólares |
 | Combinado con limpieza de ductos | A veces sale mejor juntos |
 
-Puede ver el detalle del servicio en la página de [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning).
+Puede ver el detalle del servicio en la página de [limpieza de la ventila del secador](/es/servicios/dryer-vent-cleaning/).
 
 ## Por qué importa tanto en Florida
 
@@ -63,8 +63,8 @@ La pelusa que suelta la ropa es material altamente inflamable. Cuando se acumula
 - Hay olor a quemado o a pelusa recalentada.
 - El cuarto de lavado se pone más caliente y húmedo de lo normal.
 
-Si nota cualquiera de estas señales, no lo deje pasar. Ya que el técnico va a su casa, muchos aprovechan para combinarlo con una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning) y ahorrar en la visita.
+Si nota cualquiera de estas señales, no lo deje pasar. Ya que el técnico va a su casa, muchos aprovechan para combinarlo con una [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/) y ahorrar en la visita.
 
 ## En resumen
 
-Por 100 a 200 dólares, limpiar la ventila del secador es de los gastos más inteligentes para su hogar. Protege contra incendios, baja su factura y alarga la vida del aparato. Una vez al año es lo ideal, más seguido si usa mucho la secadora. Si quiere agendarlo o combinarlo con otro servicio, escríbanos por la página de [contacto](/es/contacto).
+Por 100 a 200 dólares, limpiar la ventila del secador es de los gastos más inteligentes para su hogar. Protege contra incendios, baja su factura y alarga la vida del aparato. Una vez al año es lo ideal, más seguido si usa mucho la secadora. Si quiere agendarlo o combinarlo con otro servicio, escríbanos por la página de [contacto](/es/contacto/).

@@ -27,15 +27,15 @@ Este es clásico en Florida. Enciende el aire acondicionado y sale un olorcito a
 
 ## 3. Sus alergias empeoran dentro de casa
 
-Si estornuda más adentro que afuera, algo anda al revés. Los conductos sucios acumulan polen, caspa de mascota y esporas, y los reparten justo donde usted pasa más tiempo. Le contamos más sobre esto en el artículo de [limpieza de ductos y alergias](/es/servicios/indoor-air-quality-testing), donde una prueba de calidad del aire ayuda a confirmar qué está flotando.
+Si estornuda más adentro que afuera, algo anda al revés. Los conductos sucios acumulan polen, caspa de mascota y esporas, y los reparten justo donde usted pasa más tiempo. Le contamos más sobre esto en el artículo de [limpieza de ductos y alergias](/es/servicios/indoor-air-quality-testing/), donde una prueba de calidad del aire ayuda a confirmar qué está flotando.
 
 ## 4. Rejillas con manchas negras o grises
 
-Acérquese a una rejilla de suministro y mírela bien. Si ve puntitos negros, verdosos o una capa gris pegajosa alrededor, eso puede ser moho. En ese caso ya no hablamos solo de limpieza, sino posiblemente de [remediación de moho](/es/servicios/mold-remediation).
+Acérquese a una rejilla de suministro y mírela bien. Si ve puntitos negros, verdosos o una capa gris pegajosa alrededor, eso puede ser moho. En ese caso ya no hablamos solo de limpieza, sino posiblemente de [remediación de moho](/es/servicios/mold-remediation/).
 
 ## 5. La factura de electricidad sube sin razón
 
-Cuando los conductos y el serpentín están tapados de mugre, el aire acondicionado tiene que esforzarse más para enfriar lo mismo. Ese esfuerzo se paga en la factura. Si su consumo subió y no cambió nada más, revise el sistema. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning) muchas veces recupera parte de esa eficiencia.
+Cuando los conductos y el serpentín están tapados de mugre, el aire acondicionado tiene que esforzarse más para enfriar lo mismo. Ese esfuerzo se paga en la factura. Si su consumo subió y no cambió nada más, revise el sistema. Una [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/) muchas veces recupera parte de esa eficiencia.
 
 ## 6. Flujo de aire débil o desigual
 
@@ -59,4 +59,4 @@ A veces la señal más honesta es el calendario. Si no recuerda cuándo se limpi
 
 ## Qué hacer si reconoce varias de estas
 
-Una señal suelta puede tener mil explicaciones. Pero si marca tres o cuatro de esta lista, la conversación cambia. Lo más práctico es pedir una inspección para ver el estado real por dentro. Puede agendarla desde la página de [contacto](/es/contacto), y si quiere entender mejor el proceso antes, vea nuestro servicio de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning). Su nariz y su factura se lo van a agradecer.
+Una señal suelta puede tener mil explicaciones. Pero si marca tres o cuatro de esta lista, la conversación cambia. Lo más práctico es pedir una inspección para ver el estado real por dentro. Puede agendarla desde la página de [contacto](/es/contacto/), y si quiere entender mejor el proceso antes, vea nuestro servicio de [limpieza de ductos de aire](/es/servicios/air-duct-cleaning/). Su nariz y su factura se lo van a agradecer.

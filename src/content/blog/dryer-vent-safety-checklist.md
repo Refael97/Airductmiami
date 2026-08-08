@@ -80,8 +80,8 @@ It's tempting to treat the lint screen as the whole job, but the screen only cat
 
 ## When to call a professional
 
-Handle the every-load and every-few-months items yourself. Call a pro for the annual full-duct cleaning, for replacing unsafe ducting, and any time you notice warning signs you can't resolve. A professional [dryer vent cleaning](/services/dryer-vent-cleaning) typically runs **$100 to $200** and clears the entire run, including the sections you can't reach.
+Handle the every-load and every-few-months items yourself. Call a pro for the annual full-duct cleaning, for replacing unsafe ducting, and any time you notice warning signs you can't resolve. A professional [dryer vent cleaning](/services/dryer-vent-cleaning/) typically runs **$100 to $200** and clears the entire run, including the sections you can't reach.
 
 ## The bottom line
 
-Most dryer fires are preventable with the habits on this checklist. Clean the lint screen every load, inspect the vent regularly, use metal ducting, and schedule a professional cleaning **at least once a year**. Want a full inspection to start fresh? [Contact our team](/contact) or review our [FAQ](/faq) for more guidance.
+Most dryer fires are preventable with the habits on this checklist. Clean the lint screen every load, inspect the vent regularly, use metal ducting, and schedule a professional cleaning **at least once a year**. Want a full inspection to start fresh? [Contact our team](/contact/) or review our [FAQ](/faq/) for more guidance.

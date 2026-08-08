@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { guidesForServiceEs } from '../../../lib/relatedContent';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
 import CTABand from '../../../components/CTABand.astro';
@@ -21,6 +22,7 @@ export const getStaticPaths = (() => {
 const { service: slug } = Astro.params;
 const base = getService(slug!)!;
 const es = serviceEsContent[slug!];
+const guides = await guidesForServiceEs(base.slug);
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const pageUrl = `${site}${serviceHref(lang, base.slug)}`;
@@ -36,6 +38,7 @@ const related = base.related
  .filter((s): s is NonNullable<typeof s> => Boolean(s));
 const featuredCities = cities.slice(0, 8);
 const altHref = `/services/${base.slug}`;
+
 ---
 <BaseLayout title={es.metaTitle} description={es.metaDescription} schema={schema} lang={lang} altHref={altHref}>
  <Breadcrumbs
@@ -108,6 +111,15 @@ const altHref = `/services/${base.slug}`;
  </ul>
  </div>
  )}
+ {guides.length > 0 && (
+ <div class="guides-card">
+ <h3>Guías sobre esto</h3>
+ <ul>
+ {guides.map((g) => (<li><a href={`/es/blog/${g.id.replace(/\.md$/, '')}/`}>{g.data.title}</a></li>))}
+ </ul>
+ <a href="/es/blog/" class="guides-more">Todas las guías &rarr;</a>
+ </div>
+ )}
  </aside>
  </div>
  </div>
@@ -147,6 +159,12 @@ const altHref = `/services/${base.slug}`;
     background: var(--c-primary); color: #fff; font-weight: 800;
     display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
   }
+  .guides-card { background: #fff; border: 1px solid var(--c-border, #e5e7eb); border-radius: 12px; padding: 1.1rem 1.2rem; }
+  .guides-card h3 { font-size: 1rem; margin-bottom: 0.7rem; }
+  .guides-card ul { list-style: none; padding: 0; margin: 0; }
+  .guides-card li { padding: 0.45rem 0; border-bottom: 1px solid var(--c-border, #e5e7eb); font-size: 0.9rem; line-height: 1.4; }
+  .guides-card li:last-child { border-bottom: 0; }
+  .guides-more { display: inline-block; margin-top: 0.8rem; font-size: 0.88rem; font-weight: 700; }
   .service-aside { position: sticky; top: 90px; display: grid; gap: 1.2rem; }
   .facts-card, .related-card, .aside-cta {
     background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);

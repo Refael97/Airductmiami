@@ -10,8 +10,8 @@ const title = `Florida Service Areas | Air Duct Cleaning Near You`;
 const description = `${business.name} provides air duct and dryer vent cleaning across ${cities.length}+ Florida cities, from Miami and Fort Lauderdale to Orlando, Tampa, Fort Myers, and beyond.`;
 const regions = citiesByRegion();
 ---
-<BaseLayout title={title} description={description} altHref="/es/areas-de-servicio">
-  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Service Areas', href: '/service-areas' }]} />
+<BaseLayout title={title} description={description} altHref="/es/areas-de-servicio/">
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Service Areas', href: '/service-areas/' }]} />
   <section class="section">
     <div class="container">
       <div class="section-head">
@@ -22,7 +22,7 @@ const regions = citiesByRegion();
       <div class="region-guides">
         <span class="guides-label">Regional guides:</span>
         {regionPages.map((r) => (
-          <a href={`/service-areas/${r.slug}`} class="chip">{r.name}</a>
+          <a href={`/service-areas/${r.slug}/`} class="chip">{r.name}</a>
         ))}
       </div>
       {Object.entries(regions).map(([region, list]) => (
@@ -30,7 +30,7 @@ const regions = citiesByRegion();
           <h2>{region}</h2>
           <div class="city-grid">
             {list.map((c) => (
-              <a href={`/service-areas/${c.slug}`} class="city-card">
+              <a href={`/service-areas/${c.slug}/`} class="city-card">
                 <span class="city-name">{c.name}</span>
                 <span class="city-county">{c.county}</span>
               </a>

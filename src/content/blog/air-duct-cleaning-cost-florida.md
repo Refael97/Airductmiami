@@ -69,4 +69,4 @@ A legitimate, NADCA-standard **source-removal** cleaning, the kind that puts you
 
 For Florida homes dealing with pets, allergies, musty AC smells, or visible dust, air duct cleaning delivers real value: cleaner air, better airflow, and, when mold is involved, a genuine health improvement. The key is paying a fair price for work that's actually done correctly.
 
-Want a transparent, upfront quote with no surprise fees? [Contact our Florida team](/contact) today.
+Want a transparent, upfront quote with no surprise fees? [Contact our Florida team](/contact/) today.

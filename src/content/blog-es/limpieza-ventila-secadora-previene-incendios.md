@@ -60,14 +60,14 @@ Cualquiera de estas señales significa que el aire no está saliendo bien.
 | Limpiar el ducto completo | Al menos una vez al año | Profesional |
 | Inspeccionar conexiones | Una vez al año | Profesional |
 
-El filtro es fácil, hágalo siempre. Pero la pelusa compacta que se pega en el fondo del ducto, sobre todo en esos tramos largos hacia el techo, necesita equipo que usted no tiene en casa. Ahí es donde entra la [limpieza de ventila del secador](/es/servicios/dryer-vent-cleaning) profesional.
+El filtro es fácil, hágalo siempre. Pero la pelusa compacta que se pega en el fondo del ducto, sobre todo en esos tramos largos hacia el techo, necesita equipo que usted no tiene en casa. Ahí es donde entra la [limpieza de ventila del secador](/es/servicios/dryer-vent-cleaning/) profesional.
 
 ## Cuánto cuesta la tranquilidad
 
 Una limpieza profesional de la ventila del secador suele costar entre 100 y 200 dólares. Comparado con el daño de un incendio, o con reemplazar el secador quemado, es una de las inversiones de seguridad más razonables para su casa.
 
-Si además ha notado olor a humedad más allá del cuarto de lavado, es posible que la humedad se haya metido en el sistema de aire, y quizá convenga revisar la [limpieza del sistema HVAC](/es/servicios/hvac-cleaning).
+Si además ha notado olor a humedad más allá del cuarto de lavado, es posible que la humedad se haya metido en el sistema de aire, y quizá convenga revisar la [limpieza del sistema HVAC](/es/servicios/hvac-cleaning/).
 
 ## Lo esencial
 
-La pelusa más el calor atrapado es la receta de un incendio de secadora, y en Florida la humedad y los ductos largos empeoran las dos cosas. Limpie el filtro cada carga y programe una limpieza profesional al menos una vez al año. Si ya pasó más de un año, [comuníquese con nosotros](/es/contacto) y quítese ese riesgo de encima.
+La pelusa más el calor atrapado es la receta de un incendio de secadora, y en Florida la humedad y los ductos largos empeoran las dos cosas. Limpie el filtro cada carga y programe una limpieza profesional al menos una vez al año. Si ya pasó más de un año, [comuníquese con nosotros](/es/contacto/) y quítese ese riesgo de encima.

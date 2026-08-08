@@ -20,8 +20,8 @@ const rest = posts.filter((p) => !featuredIds.has(p.id));
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 ---
-<BaseLayout title={title} description={description} altHref="/es/blog">
-  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog' }]} />
+<BaseLayout title={title} description={description} altHref="/es/blog/">
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog/' }]} />
   <section class="section">
     <div class="container">
       <div class="section-head">
@@ -33,7 +33,7 @@ const fmt = (d: Date) =>
       {featured.length > 0 && (
         <div class="grid grid-3 featured">
           {featured.map((p) => (
-            <a href={`/blog/${p.id}`} class="card post-card featured-card">
+            <a href={`/blog/${p.id}/`} class="card post-card featured-card">
               <span class="pill">{p.data.category}</span>
               <h3>{p.data.title}</h3>
               <p>{p.data.description}</p>
@@ -49,7 +49,7 @@ const fmt = (d: Date) =>
 
       <div class="grid grid-3">
         {rest.map((p) => (
-          <a href={`/blog/${p.id}`} class="card post-card">
+          <a href={`/blog/${p.id}/`} class="card post-card">
             <span class="pill">{p.data.category}</span>
             <h3>{p.data.title}</h3>
             <p>{p.data.description}</p>

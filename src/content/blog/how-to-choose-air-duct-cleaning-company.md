@@ -56,12 +56,12 @@ If a quote comes in far below $300 for a whole home, treat it as bait. If it com
 
 Reputable companies document their work. Ask for **before-and-after photos** of the interior of your ducts. This single request filters out most low-effort operators, because a "blow and go" crew has nothing worth photographing.
 
-In Florida's humid climate, also ask whether they inspect for moisture and mold along the way. Our [air duct cleaning service](/services/air-duct-cleaning) includes inspection, and when a problem is found we recommend proper [mold remediation](/services/mold-remediation) rather than a rushed upsell.
+In Florida's humid climate, also ask whether they inspect for moisture and mold along the way. Our [air duct cleaning service](/services/air-duct-cleaning/) includes inspection, and when a problem is found we recommend proper [mold remediation](/services/mold-remediation/) rather than a rushed upsell.
 
 ## Match the company to your area
 
-Local knowledge matters. A company familiar with coastal humidity in [Miami](/service-areas/miami) or [Fort Lauderdale](/service-areas/fort-lauderdale) understands why Florida ducts collect moisture and mold differently than in drier states.
+Local knowledge matters. A company familiar with coastal humidity in [Miami](/service-areas/miami/) or [Fort Lauderdale](/service-areas/fort-lauderdale/) understands why Florida ducts collect moisture and mold differently than in drier states.
 
 ## The bottom line
 
-A trustworthy Florida air duct cleaning company is transparent about its method, its insurance, and its pricing. Verify credentials, insist on a written per-vent quote, and ask for photos. If you'd like a straightforward, upfront estimate with no surprise fees, [contact our team](/contact) and we'll walk you through exactly what your home needs.
+A trustworthy Florida air duct cleaning company is transparent about its method, its insurance, and its pricing. Verify credentials, insist on a written per-vent quote, and ask for photos. If you'd like a straightforward, upfront estimate with no surprise fees, [contact our team](/contact/) and we'll walk you through exactly what your home needs.
