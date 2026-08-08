@@ -41,6 +41,8 @@ export interface BusinessInfo {
   area: {
     region: string; // "NY"
     country: string; // "US"
+    /** County the operation centres on. Published, unlike a street address. */
+    primaryCounty: string;
     counties: string[];
   };
   /** Approximate center of the service area, for schema geo hints. */
@@ -81,6 +83,12 @@ export const business: BusinessInfo = {
   area: {
     region: 'NY',
     country: 'US',
+    /* The county the operation centres on, published in the footer and as
+       addressLocality in schema. Nassau holds eight of the sixteen tier one
+       communities and the geo point below sits inside it. No street line and
+       no ZIP anywhere: a service area business does not publish one, and an
+       invented one is grounds for permanent Business Profile suspension. */
+    primaryCounty: 'Nassau County',
     counties: [
       'Nassau County',
       'Suffolk County',

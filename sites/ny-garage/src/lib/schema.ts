@@ -4,6 +4,7 @@
  * reviews exist (docs/TRUST-AND-CLAIMS.md).
  */
 import { business, scheduleDays } from '../data/business';
+import { cities } from '../data/cities';
 
 export function localBusinessSchema(site: string) {
   return {
@@ -21,12 +22,36 @@ export function localBusinessSchema(site: string) {
     ...(business.emailLive ? { email: business.email } : {}),
     priceRange: business.priceRange,
     image: `${site}/og-image.png`,
-    areaServed: business.area.counties.map((c) => ({
-      '@type': 'AdministrativeArea',
-      name: c,
-    })),
+    /* Counties plus every community we publish a page for. A service area
+       business is judged on how specifically it declares its coverage, and
+       eight county names alone are far vaguer than the forty one towns the
+       work is actually done in. */
+    areaServed: [
+      ...business.area.counties.map((c) => ({
+        '@type': 'AdministrativeArea',
+        name: c,
+        containedInPlace: {
+          '@type': 'State',
+          name: 'New York',
+        },
+      })),
+      ...cities.map((c) => ({
+        '@type': 'City',
+        name: c.name,
+        containedInPlace: {
+          '@type': 'AdministrativeArea',
+          name: c.county,
+        },
+      })),
+    ],
+    /* No streetAddress and no postalCode. This is a service area business,
+       and an invented street line is the fastest route to a permanently
+       suspended Google Business Profile. addressLocality carries the county
+       the operation centres on, which is true and is what Google reads for
+       a location signal. */
     address: {
       '@type': 'PostalAddress',
+      addressLocality: business.area.primaryCounty,
       addressRegion: business.area.region,
       addressCountry: business.area.country,
     },
