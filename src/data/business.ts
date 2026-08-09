@@ -94,11 +94,13 @@ export const business: BusinessInfo = {
      See docs/TRUST-AND-CLAIMS.md. */
   ratingValue: 0,
   reviewCount: 0,
+  /* Only profiles that actually exist. These are emitted as sameAs in the
+     LocalBusiness schema, which tells search engines "this entity is also
+     that entity", so a placeholder here claimed the business was the same
+     thing as facebook.com and yelp.com on all 230 pages. Add a platform the
+     day the profile is real, not before. */
   social: {
-    facebook: 'https://www.facebook.com/', // TODO
-    instagram: 'https://www.instagram.com/', // TODO
-    google: 'https://www.google.com/maps', // TODO
-    yelp: 'https://www.yelp.com/', // TODO
+    facebook: 'https://www.facebook.com/FloridaBreezeAirDuctservices',
   },
 };
 
