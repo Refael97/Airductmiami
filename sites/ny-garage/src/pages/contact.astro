@@ -97,6 +97,9 @@ const usesNetlifyForms = formEndpoint === '';
           <p class="hp">
             <label>Do not fill this in: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
           </p>
+          {/* Stamped on load, read on submit. Nobody fills this form in four
+              seconds; a script does it instantly. See the guard below. */}
+          <input type="hidden" name="loaded_at" id="loaded-at" value="" />
           <LeadMeta source="contact_form" />
 
           <div class="field-row">
@@ -321,6 +324,96 @@ const usesNetlifyForms = formEndpoint === '';
       form.addEventListener('input', function () {
         if (box && !box.hidden && form.checkValidity()) box.hidden = true;
       });
+
+      /* Spam guard. Three checks, none of which a real visitor can trip by
+         accident, all of which the honeypot alone was missing. The first
+         submission that got through was an SEO agency pitch with a
+         California ZIP on a New York service area and a keyboard pattern
+         for a phone number.
+
+         Everything here is client side, so it stops volume rather than a
+         determined attacker. That is the right trade: it costs a real
+         visitor nothing and it removes the noise that makes a genuine lead
+         easy to miss. */
+      var loadedAt = document.getElementById('loaded-at');
+      if (loadedAt) loadedAt.value = String(Date.now());
+
+      /* ZIP prefixes for the counties we actually serve: NYC and the Bronx,
+         Westchester and Rockland, Queens, Brooklyn, Staten Island, Nassau
+         and Suffolk. */
+      function zipInArea(zip) {
+        var n = parseInt(String(zip).slice(0, 3), 10);
+        if (isNaN(n)) return false;
+        return (n >= 100 && n <= 119) || n === 124 || n === 125;
+      }
+
+      /* Two or more of these in the free text field means a sales pitch, not
+         a garage door. One alone is allowed, so a customer who happens to
+         write "audit" or "call" is never blocked. */
+      var PITCH = [
+        'seo', 'backlink', 'ranking', 'rankings', 'digital marketing',
+        'web design', 'website design', 'audit', 'visibility', 'leads for',
+        'crypto', 'guest post', 'link building', 'outreach',
+        'partnership opportunity', 'increase your sales', 'grow your business',
+        'quick call', 'minute call', 'chatgpt', 'ai seo'
+      ];
+
+      function pitchScore(text) {
+        var t = (text || '').toLowerCase();
+        var hits = 0;
+        for (var i = 0; i < PITCH.length; i++) {
+          if (t.indexOf(PITCH[i]) !== -1) hits++;
+        }
+        return hits;
+      }
+
+      function reject(message, field) {
+        if (box) {
+          box.textContent = message;
+          box.hidden = false;
+          box.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        }
+        if (field) field.focus({ preventScroll: true });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'quote_blocked_spam', { reason: message.slice(0, 60) });
+        }
+      }
+
+      form.addEventListener('submit', function (e) {
+        var zip = form.querySelector('[name="zip"]');
+        var msg = form.querySelector('[name="message"]');
+        var elapsed = loadedAt && loadedAt.value
+          ? Date.now() - parseInt(loadedAt.value, 10)
+          : 99999;
+
+        if (elapsed < 4000) {
+          e.preventDefault();
+          reject(
+            'That went through faster than a form can be filled in. Give it a moment and press send again.',
+            null
+          );
+          return;
+        }
+
+        if (zip && zip.value && !zipInArea(zip.value)) {
+          e.preventDefault();
+          reject(
+            'That ZIP code is outside the New York metro area we cover. Check it, or tell us in the message where the door actually is.',
+            zip
+          );
+          return;
+        }
+
+        if (msg && pitchScore(msg.value) >= 2) {
+          e.preventDefault();
+          reject(
+            'This form is for garage door work only. For anything else, use the email address in the footer.',
+            msg
+          );
+          return;
+        }
+      });
+
     })();
   </script>
 </BaseLayout>
