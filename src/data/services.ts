@@ -37,9 +37,9 @@ export const services: Service[] = [
     name: 'Air Duct Cleaning',
     shortName: 'Air Duct Cleaning',
     icon: '🌬️',
-    metaTitle: 'Air Duct Cleaning in Florida | Professional HVAC Duct Cleaning',
+    metaTitle: 'Air Duct Cleaning in Florida | From $300',
     metaDescription:
-      'Professional air duct cleaning across Florida. NADCA-standard negative-air equipment removes dust, mold, and allergens from your HVAC system. Free quotes, same-week service.',
+      'Air duct cleaning across Florida from $300, to NADCA source-removal standard. You get the price before we book, not after. Licensed and insured.',
     answer:
       'Air duct cleaning is the professional removal of dust, debris, mold, and allergens from the supply and return ductwork of your HVAC system using negative-air (source-removal) equipment. In Florida, it is typically recommended every 3 to 5 years to protect indoor air quality and system efficiency.',
     intro: [
@@ -78,9 +78,9 @@ export const services: Service[] = [
     name: 'Dryer Vent Cleaning',
     shortName: 'Dryer Vent Cleaning',
     icon: '🔥',
-    metaTitle: 'Dryer Vent Cleaning in Florida | Prevent Dryer Fires',
+    metaTitle: 'Dryer Vent Cleaning in Florida | From $100',
     metaDescription:
-      'Professional dryer vent cleaning across Florida. Remove trapped lint to prevent fires, cut drying times, and lower energy use. Licensed, insured, same-week service.',
+      'Dryer vent cleaning across Florida from $100. Trapped lint is the number one cause of dryer fires. Upfront price, licensed and insured.',
     answer:
       'Dryer vent cleaning removes flammable lint and debris from the exhaust duct that runs from your clothes dryer to the outside of your home. It is the single most effective way to prevent dryer fires and should be done at least once a year.',
     intro: [
@@ -119,9 +119,9 @@ export const services: Service[] = [
     name: 'Dryer Vent Installation',
     shortName: 'Dryer Vent Installation',
     icon: '🛠️',
-    metaTitle: 'Dryer Vent Installation in Florida | New Vents, Rerouting & Repair',
+    metaTitle: 'Dryer Vent Installation in Florida',
     metaDescription:
-      'Professional dryer vent installation and rerouting across Florida. Rigid metal ducting, safe wall or roof terminations, and repair of crushed or leaking runs. Free quotes, same-week service.',
+      'Dryer vent installation across Florida: rigid metal duct, shortest safe route, sealed joints. Price agreed before we book, not after.',
     answer:
       'Dryer vent installation is the professional design and fitting of the exhaust duct that carries hot, moist air from your clothes dryer to the outside of your home. A correct installation uses rigid metal ducting on the shortest practical route with a proper exterior termination, keeps drying fast, prevents lint fires, and typically costs $200 to $600 in Florida depending on the route.',
     intro: [
@@ -161,9 +161,9 @@ export const services: Service[] = [
     name: 'AC & HVAC System Cleaning',
     shortName: 'AC / HVAC Cleaning',
     icon: '❄️',
-    metaTitle: 'AC & HVAC Cleaning in Florida | Air Conditioning Coil & Blower',
+    metaTitle: 'AC Coil & Air Handler Cleaning in Florida',
     metaDescription:
-      'Professional air conditioning (AC) and HVAC cleaning in Florida. We clean the evaporator coil, blower, air handler, and drain line to restore efficiency and stop mold. Licensed and insured.',
+      'Coil and air handler cleaning across Florida. Humidity fouls the evaporator coil here faster than anywhere. Upfront price before we book.',
     answer:
       'AC and HVAC system cleaning is the deep cleaning of the parts that move and cool your air (the evaporator coil, blower wheel, air handler, and condensate drain), not just the ducts. In humid Florida it prevents mold, restores airflow, and keeps your air conditioner running efficiently.',
     intro: [
@@ -201,9 +201,9 @@ export const services: Service[] = [
     name: 'Air Duct Repair & Replacement',
     shortName: 'Duct Repair',
     icon: '🛠️',
-    metaTitle: 'Air Duct Repair & Replacement in Florida | Sealing & Insulation',
+    metaTitle: 'Air Duct Repair & Sealing in Florida',
     metaDescription:
-      'Air duct repair, sealing, and replacement across Florida. Fix leaks, crushed runs, and failed insulation to stop energy loss and improve airflow. Free assessments.',
+      'Air duct repair and sealing across Florida: disconnected runs, torn flex, failed insulation. You get the price before work starts.',
     answer:
       'Air duct repair and replacement fixes leaks, disconnected joints, crushed runs, and failed insulation in your ductwork. Sealing leaky ducts is one of the highest-return home efficiency upgrades, because leaks in hot Florida attics waste cooled air before it ever reaches a room.',
     intro: [
@@ -243,7 +243,7 @@ export const services: Service[] = [
     icon: '🦠',
     metaTitle: 'Air Duct Mold Removal & Remediation in Florida',
     metaDescription:
-      'Air duct mold remediation across Florida. We identify, remove, and prevent mold in ductwork and HVAC systems with EPA-registered antimicrobials. Free inspections.',
+      'Duct and air handler mold removal across Florida, with containment and source removal. Upfront price, nothing invented on site.',
     answer:
       'Air duct mold remediation is the identification, removal, and prevention of mold growth inside ductwork and HVAC components. Florida’s year-round humidity makes duct and coil mold especially common, and it should be addressed promptly because spores are circulated into the air you breathe.',
     intro: [
@@ -283,7 +283,7 @@ export const services: Service[] = [
     icon: '✨',
     metaTitle: 'Air Duct Sanitizing & Deodorizing in Florida',
     metaDescription:
-      'Air duct sanitizing and deodorizing in Florida using EPA-registered antimicrobial fog to kill bacteria, mold, and odors after cleaning. Safe for families and pets.',
+      'Air duct sanitizing across Florida after cleaning, applied to manufacturer specification. Price agreed before we book the visit.',
     answer:
       'Air duct sanitizing applies an EPA-registered antimicrobial fog throughout cleaned ductwork to kill bacteria, mold spores, and odor-causing microbes. It is done after mechanical cleaning to treat what brushing alone cannot reach and to leave the system fresh.',
     intro: [
@@ -320,9 +320,9 @@ export const services: Service[] = [
     name: 'Commercial Air Duct Cleaning',
     shortName: 'Commercial',
     icon: '🏢',
-    metaTitle: 'Commercial Air Duct Cleaning in Florida | Offices, Retail & More',
+    metaTitle: 'Commercial Air Duct Cleaning in Florida',
     metaDescription:
-      'Commercial air duct cleaning across Florida for offices, restaurants, retail, medical, and multi-unit properties. After-hours scheduling, NADCA standards, full documentation.',
+      'Commercial duct cleaning across Florida for offices, restaurants, condos and medical. Written quote before anything is scheduled.',
     answer:
       'Commercial air duct cleaning services larger and more complex HVAC systems in offices, restaurants, retail spaces, medical facilities, and multi-unit properties. It improves occupant health, meets indoor-air-quality compliance expectations, and is scheduled after-hours to avoid disrupting operations.',
     intro: [
@@ -361,7 +361,7 @@ export const services: Service[] = [
     icon: '💡',
     metaTitle: 'HVAC UV Light Installation in Florida | Air Purification',
     metaDescription:
-      'HVAC UV light installation across Florida. UV-C purification kills mold and bacteria on the coil and in the airstream, ideal for humid Florida homes. Free quotes.',
+      'HVAC UV light installation across Florida from $300. It targets mold on the coil, which is where it starts in this climate.',
     answer:
       'HVAC UV light installation places a UV-C lamp inside your air handler to continuously kill mold, bacteria, and viruses on the evaporator coil and in the moving air. In humid Florida, UV-C is one of the most effective ways to keep the coil mold-free between cleanings.',
     intro: [
@@ -398,9 +398,9 @@ export const services: Service[] = [
     name: 'Indoor Air Quality Testing',
     shortName: 'Air Quality Testing',
     icon: '🔬',
-    metaTitle: 'Indoor Air Quality Testing in Florida | Mold & Allergen Testing',
+    metaTitle: 'Indoor Air Quality Testing in Florida',
     metaDescription:
-      'Indoor air quality testing across Florida. Measure mold, allergens, humidity, and particulates so you know what is in your air and how to fix it. Fast lab results.',
+      'Indoor air quality testing across Florida: mold, allergens, humidity and particulates, with results explained. Upfront price.',
     answer:
       'Indoor air quality (IAQ) testing measures the mold spores, allergens, humidity, and fine particulates in your home’s air and ductwork so you can identify problems and verify solutions. It is the objective way to know whether your air is healthy and whether a cleaning worked.',
     intro: [
@@ -440,7 +440,7 @@ export const services: Service[] = [
     icon: '🏠',
     metaTitle: 'Attic Insulation Removal & Installation in Florida',
     metaDescription:
-      'Attic insulation removal and installation across Florida. Remove contaminated insulation and add energy-saving insulation to cut cooling bills in Florida heat. Free quotes.',
+      'Attic insulation across Florida, blown to the right depth. It is the single biggest lever on a Florida cooling bill. Upfront price.',
     answer:
       'Attic insulation services include removing old, contaminated, or inadequate insulation and installing new insulation to the proper R-value. In Florida, well-insulated attics dramatically reduce cooling costs because they keep 130°F attic heat from radiating into your living space.',
     intro: [

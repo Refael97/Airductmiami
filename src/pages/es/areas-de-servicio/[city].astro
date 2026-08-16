@@ -11,6 +11,7 @@ import { services } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
 import { business } from '../../../data/business';
 import { serviceSchema } from '../../../lib/schema';
+import { cityMetaEs } from '../../../lib/meta';
 import ServiceIcon from '../../../components/ServiceIcon.astro';
 import { ui, serviceHref, cityHref } from '../../../data/ui';
 
@@ -28,8 +29,7 @@ const es = cityEsContent[slug!];
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const pageUrl = `${site}${cityHref(lang, city.slug)}`;
 
-const metaTitle = `Limpieza de ductos en ${city.name}, FL | ${business.name}`;
-const metaDescription = `Limpieza de ductos de aire y ventila del secador en ${city.name}, ${city.county}. Técnicos con licencia y seguro que atienden ${city.name} y áreas cercanas. Cotización gratis.`;
+const { title: metaTitle, description: metaDescription } = cityMetaEs(city);
 
 const schema = serviceSchema(site, {
  name: `Limpieza de ductos en ${city.name}, FL`,

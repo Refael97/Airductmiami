@@ -5,6 +5,7 @@
  * under /service-areas/ and /es/areas-de-servicio/.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { regionMeta, regionMetaEs } from '../lib/meta';
 import Breadcrumbs from './Breadcrumbs.astro';
 import FAQ from './FAQ.astro';
 import CTABand from './CTABand.astro';
@@ -24,8 +25,13 @@ const t = ui[lang];
 const isEs = lang === 'es';
 
 const name = isEs ? region.esName : region.name;
-const metaTitle = isEs ? region.esMetaTitle : region.metaTitle;
-const metaDescription = isEs ? region.esMetaDescription : region.metaDescription;
+/* Meta comes from the shared builder rather than the hand written strings
+   in regions.ts, which ran 69 to 74 characters on titles and 178 to 185 on
+   descriptions and were therefore truncated in every result. The builder
+   fits the limits and leads with the published price. */
+const { title: metaTitle, description: metaDescription } = isEs
+  ? regionMetaEs(region.name)
+  : regionMeta(region.name);
 const answer = isEs ? region.esAnswer : region.answer;
 const body = isEs ? region.esBody : region.body;
 const faqItems = isEs ? region.esFaq : region.faq;

@@ -13,8 +13,10 @@ import { ui, serviceHref, cityHref } from '../../data/ui';
 
 const lang = 'es' as const;
 const t = ui[lang];
-const title = `Limpieza de Ductos de Aire en Florida | Cotización Gratis | ${business.name}`;
-const description = 'Limpieza profesional de ductos de aire, ventila del secador y prevención de moho en toda Florida. Técnicos con licencia y seguro, estándares NADCA. Cotización gratis.';
+/* Precio en el título. Todos los competidores prometen cotización gratis,
+   así que deja de diferenciar en cuanto todos lo dicen. */
+const title = `Limpieza de Ductos en Florida | Desde $300, Precio por Adelantado`;
+const description = 'Limpieza de ductos en toda Florida desde $300 y ventila de secadora desde $100. Le damos el precio antes de agendar. Con licencia y seguro.';
 
 const homeFaq = [
  { question: '¿Cada cuánto debo limpiar los ductos de aire en Florida?', answer: 'La mayoría de los hogares en Florida deben limpiar los ductos cada 3 a 5 años, y con más frecuencia si hay mascotas, alergias, remodelaciones recientes o antecedentes de moho. La humedad de Florida acelera la acumulación de polvo y moho.' },

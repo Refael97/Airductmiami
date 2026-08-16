@@ -39,8 +39,14 @@ const fmt = (date: Date) =>
 const related = (await getCollection('blog'))
   .filter((p) => p.data.category === d.category && p.id !== post.id)
   .slice(0, 3);
+
+/* Google renders about 60 characters and appends the site name on its own,
+   so a hard coded brand suffix on an already long headline only buys a
+   truncation. Add it when it fits, drop it when it does not. */
+const brandedTitle =
+  d.title.length + 26 <= 60 ? `${d.title} | Florida Breeze Air Duct` : d.title;
 ---
-<BaseLayout title={`${d.title} | Florida Breeze Air Duct`} description={d.description} schema={schema} ogType="article">
+<BaseLayout title={brandedTitle} description={d.description} schema={schema} ogType="article">
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },

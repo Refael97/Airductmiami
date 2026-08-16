@@ -21,9 +21,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'air-duct-cleaning': {
  name: 'Limpieza de Conductos de Aire',
  shortName: 'Limpieza de Conductos',
- metaTitle: 'Limpieza de Conductos de Aire en Florida | Limpieza Profesional de Ductos HVAC',
+ metaTitle: 'Limpieza de Ductos en Florida | Desde $300',
  metaDescription:
- 'Limpieza profesional de conductos de aire en toda Florida. Con equipo de aire negativo bajo norma NADCA retiramos polvo, moho y alérgenos de su sistema HVAC. Cotizaciones gratis y servicio en la misma semana.',
+ 'Limpieza de ductos en Florida desde $300, con equipo de presión negativa y estándar NADCA. Le damos el precio antes de agendar. Con licencia y seguro.',
  answer:
  'La limpieza de conductos de aire es la extracción profesional de polvo, residuos, moho y alérgenos de los ductos de suministro y retorno de su sistema HVAC mediante equipo de aire negativo (extracción en la fuente). En Florida suele recomendarse cada 3 a 5 años para proteger la calidad del aire interior y la eficiencia del sistema.',
  intro: [
@@ -61,7 +61,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  shortName: 'Limpieza de Ductos de Secadora',
  metaTitle: 'Limpieza de Ductos de Secadora en Florida | Prevenga Incendios',
  metaDescription:
- 'Limpieza profesional de ductos de secadora en toda Florida. Retiramos la pelusa atrapada para prevenir incendios, reducir el tiempo de secado y bajar el consumo de energía. Con licencia, asegurados y servicio en la misma semana.',
+ 'Limpieza de la ventila de la secadora en Florida desde $100. La pelusa acumulada es la causa número uno de incendios de secadora. Precio por adelantado.',
  answer:
  'La limpieza del ducto de secadora retira la pelusa inflamable y los residuos del conducto de escape que va desde su secadora de ropa hasta el exterior de la casa. Es la forma más eficaz de prevenir incendios de secadora y debe hacerse al menos una vez al año.',
  intro: [
@@ -97,9 +97,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'dryer-vent-installation': {
  name: 'Instalación de Ducto de Secadora',
  shortName: 'Instalación de Ducto de Secadora',
- metaTitle: 'Instalación de Ducto de Secadora en Florida | Ductos Nuevos y Reubicación',
+ metaTitle: 'Instalación de Ducto de Secadora en Florida',
  metaDescription:
- 'Instalación profesional de ductos de secadora en toda Florida. Ducto de metal rígido, salidas seguras por pared o techo y reparación de tramos aplastados o con fugas. Cotización gratis.',
+ 'Instalación de ventila de secadora en Florida con ducto rígido de pared lisa, la salida más corta posible y sellado correcto. Precio antes de agendar.',
  answer:
  'La instalación del ducto de secadora es el diseño y montaje profesional del conducto de escape que lleva el aire caliente y húmedo desde su secadora hasta el exterior de la casa. Una instalación correcta usa ducto de metal rígido en la ruta más corta posible, con una salida exterior adecuada. Mantiene el secado rápido, previene incendios por pelusa y en Florida suele costar entre $200 y $600 según la ruta.',
  intro: [
@@ -136,9 +136,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'hvac-cleaning': {
  name: 'Limpieza del Aire Acondicionado (Sistema HVAC)',
  shortName: 'Limpieza de AC',
- metaTitle: 'Limpieza del Aire Acondicionado en Florida | Serpentín y Manejadora',
+ metaTitle: 'Limpieza de Serpentina y Manejadora en Florida',
  metaDescription:
- 'Limpieza profesional del aire acondicionado (AC) y sistema HVAC en Florida: serpentín evaporador, ventilador, manejadora y línea de drenaje. Recupere la eficiencia y detenga el moho. Con licencia y seguro.',
+ 'Limpieza de serpentina y manejadora en Florida. La humedad del estado ensucia la serpentina y le quita eficiencia al equipo. Precio por adelantado.',
  answer:
  'La limpieza del aire acondicionado y del sistema HVAC es la limpieza profunda de las piezas que mueven y enfrían su aire (el serpentín evaporador, la turbina del ventilador, la manejadora y el drenaje de condensado), no solo los ductos. En el clima húmedo de Florida previene el moho, recupera el flujo de aire y mantiene su aire acondicionado funcionando con eficiencia.',
  intro: [
@@ -173,9 +173,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'air-duct-repair': {
  name: 'Reparación y Reemplazo de Conductos de Aire',
  shortName: 'Reparación de Ductos',
- metaTitle: 'Reparación y Reemplazo de Conductos de Aire en Florida | Sellado y Aislamiento',
+ metaTitle: 'Reparación de Ductos en Florida | Sellado y Fugas',
  metaDescription:
- 'Reparación, sellado y reemplazo de conductos de aire en toda Florida. Corregimos fugas, tramos aplastados y aislamiento dañado para detener la pérdida de energía y mejorar el flujo de aire. Evaluaciones gratis.',
+ 'Reparación y sellado de ductos en Florida: ductos desprendidos, rasgados o con fugas en el ático. Le damos el precio antes de empezar el trabajo.',
  answer:
  'La reparación y el reemplazo de conductos de aire corrigen fugas, uniones desconectadas, tramos aplastados y aislamiento dañado en sus ductos. Sellar los ductos con fugas es una de las mejoras del hogar con mayor retorno, porque las fugas en los áticos calientes de Florida desperdician aire frío antes de que llegue a una habitación.',
  intro: [
@@ -210,9 +210,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'mold-remediation': {
  name: 'Eliminación de Moho en Ductos de Aire',
  shortName: 'Eliminación de Moho',
- metaTitle: 'Eliminación y Remediación de Moho en Conductos de Aire en Florida',
+ metaTitle: 'Eliminación de Moho en Ductos en Florida',
  metaDescription:
- 'Remediación de moho en conductos de aire en toda Florida. Identificamos, eliminamos y prevenimos el moho en ductos y sistemas HVAC con antimicrobianos registrados por la EPA. Inspecciones gratis.',
+ 'Eliminación de moho en ductos y manejadora en Florida, con contención y extracción por fuente. Precio por adelantado, sin cargos inventados en sitio.',
  answer:
  'La remediación de moho en conductos de aire es la identificación, eliminación y prevención del crecimiento de moho dentro de los ductos y los componentes del HVAC. La humedad de todo el año en Florida hace que el moho en ductos y serpentines sea especialmente común, y debe atenderse pronto porque las esporas circulan hacia el aire que usted respira.',
  intro: [
@@ -247,9 +247,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'air-duct-sanitizing': {
  name: 'Desinfección y Desodorización de Conductos de Aire',
  shortName: 'Desinfección',
- metaTitle: 'Desinfección y Desodorización de Conductos de Aire en Florida',
+ metaTitle: 'Sanitización de Ductos de Aire en Florida',
  metaDescription:
- 'Desinfección y desodorización de conductos de aire en Florida con niebla antimicrobiana registrada por la EPA para eliminar bacterias, moho y olores después de la limpieza. Segura para familias y mascotas.',
+ 'Sanitización de ductos en Florida después de la limpieza, con producto aprobado y aplicación según especificación. Precio antes de agendar.',
  answer:
  'La desinfección de conductos de aire aplica una niebla antimicrobiana registrada por la EPA en todos los ductos ya limpios para eliminar bacterias, esporas de moho y microbios que causan olores. Se hace después de la limpieza mecánica para tratar lo que el cepillado por sí solo no alcanza y dejar el sistema fresco.',
  intro: [
@@ -283,9 +283,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'commercial-air-duct-cleaning': {
  name: 'Limpieza Comercial de Conductos de Aire',
  shortName: 'Comercial',
- metaTitle: 'Limpieza Comercial de Conductos de Aire en Florida | Oficinas, Comercios y Más',
+ metaTitle: 'Limpieza Comercial de Ductos en Florida',
  metaDescription:
- 'Limpieza comercial de conductos de aire en toda Florida para oficinas, restaurantes, comercios, centros médicos y propiedades de varias unidades. Horarios fuera de operación, normas NADCA y documentación completa.',
+ 'Limpieza de ductos comercial en Florida: oficinas, restaurantes, condominios y edificios. Cotización por escrito antes de programar el trabajo.',
  answer:
  'La limpieza comercial de conductos de aire atiende sistemas HVAC más grandes y complejos en oficinas, restaurantes, comercios, centros médicos y propiedades de varias unidades. Mejora la salud de los ocupantes, cumple con las expectativas de calidad del aire interior y se programa fuera del horario de operación para no interrumpir el funcionamiento.',
  intro: [
@@ -319,9 +319,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'uv-light-installation': {
  name: 'Instalación de Luz UV',
  shortName: 'Purificación de Aire UV',
- metaTitle: 'Instalación de Luz UV para HVAC en Florida | Purificación de Aire',
+ metaTitle: 'Instalación de Luz UV para el Aire en Florida',
  metaDescription:
- 'Instalación de luz UV para HVAC en toda Florida. La purificación UV-C elimina moho y bacterias en el serpentín y en el aire en movimiento, ideal para las casas húmedas de Florida. Cotizaciones gratis.',
+ 'Instalación de luz UV germicida en la manejadora, desde $300 en Florida. Ataca el moho en la serpentina, que es donde empieza en este clima.',
  answer:
  'La instalación de luz UV para HVAC coloca una lámpara UV-C dentro de su manejadora de aire para eliminar de forma continua moho, bacterias y virus en el serpentín evaporador y en el aire en movimiento. En la húmeda Florida, la UV-C es una de las formas más eficaces de mantener el serpentín libre de moho entre limpiezas.',
  intro: [
@@ -355,9 +355,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'indoor-air-quality-testing': {
  name: 'Pruebas de Calidad del Aire Interior',
  shortName: 'Pruebas de Calidad del Aire',
- metaTitle: 'Pruebas de Calidad del Aire Interior en Florida | Análisis de Moho y Alérgenos',
+ metaTitle: 'Prueba de Calidad del Aire Interior en Florida',
  metaDescription:
- 'Pruebas de calidad del aire interior en toda Florida. Medimos moho, alérgenos, humedad y partículas para que sepa qué hay en su aire y cómo corregirlo. Resultados de laboratorio rápidos.',
+ 'Prueba de calidad del aire interior en Florida: muestreo de partículas y moho con resultados que se explican. Precio antes de agendar la visita.',
  answer:
  'Las pruebas de calidad del aire interior miden las esporas de moho, los alérgenos, la humedad y las partículas finas en el aire y los ductos de su casa para que pueda identificar problemas y verificar soluciones. Es la forma objetiva de saber si su aire es saludable y si una limpieza dio resultado.',
  intro: [
@@ -394,7 +394,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  shortName: 'Aislamiento de Ático',
  metaTitle: 'Retiro e Instalación de Aislamiento de Ático en Florida',
  metaDescription:
- 'Retiro e instalación de aislamiento de ático en toda Florida. Retiramos el aislamiento contaminado y agregamos aislamiento que ahorra energía para reducir las facturas de enfriamiento en el calor de Florida. Cotizaciones gratis.',
+ 'Aislamiento de ático en Florida, soplado a la profundidad correcta. Es lo que más baja la factura del aire acondicionado. Precio por adelantado.',
  answer:
  'Los servicios de aislamiento de ático incluyen retirar el aislamiento viejo, contaminado o insuficiente e instalar aislamiento nuevo con el valor R adecuado. En Florida, los áticos bien aislados reducen mucho los costos de enfriamiento porque impiden que el calor de 130 grados del ático irradie hacia su espacio habitado.',
  intro: [
