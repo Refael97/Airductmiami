@@ -59,7 +59,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'dryer-vent-cleaning': {
  name: 'Limpieza de Ductos de Secadora',
  shortName: 'Limpieza de Ductos de Secadora',
- metaTitle: 'Limpieza de Ductos de Secadora en Florida | Prevenga Incendios',
+ metaTitle: 'Limpieza de Ventila de Secadora en Florida | Desde $100',
  metaDescription:
  'Limpieza de la ventila de la secadora en Florida desde $100. La pelusa acumulada es la causa número uno de incendios de secadora. Precio por adelantado.',
  answer:

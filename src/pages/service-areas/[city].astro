@@ -47,7 +47,7 @@ const detail = cityDetail[city.slug] ?? { neighborhoods: [] };
 const hasDryerVentPage = Boolean(detail.dryerVent);
 
 const topServices = services.slice(0, 6);
-const altHref = `/es/areas-de-servicio/${city.slug}`;
+const altHref = `/es/areas-de-servicio/${city.slug}/`;
 const guides = await guidesForCity();
 ---
 <BaseLayout title={metaTitle} description={metaDescription} schema={schema} altHref={altHref}>

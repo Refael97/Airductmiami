@@ -8,8 +8,8 @@ import { ui, blogHref } from '../../../data/ui';
 
 const lang = 'es' as const;
 const t = ui[lang];
-const title = `Blog de ductos y calidad del aire | ${business.name}`;
-const description = 'Guías prácticas sobre limpieza de ductos, seguridad de la ventila del secador, prevención de moho, eficiencia del aire acondicionado y calidad del aire para hogares de Florida.';
+const title = 'Blog: ductos, secadora y calidad del aire en Florida';
+const description = 'Guías con precios reales sobre limpieza de ductos, seguridad de la ventila del secador, moho y calidad del aire en casas de Florida.';
 
 const posts = (await getCollection('blogEs')).sort(
  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()

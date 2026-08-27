@@ -43,8 +43,19 @@ const canonicalURL = `${site}${withSlash(canonical ?? Astro.url.pathname)}`;
 const ogImage = `${site}/og-image.png`;
 
 const currentPath = withSlash(Astro.url.pathname);
-const enHref = lang === 'en' ? currentPath : altHref && withSlash(altHref);
-const esHref = lang === 'es' ? currentPath : altHref && withSlash(altHref);
+/* The header language switcher was being handed the raw altHref while
+   hreflang and the canonical got the normalised one, so every city and
+   region page shipped a slashless link to its own translation. Each one is
+   a 301 hop the crawler has to take and a second URL form for Google to
+   consider, which is exactly the duplication the edge function was added to
+   stop. Normalise once, here, and pass that everywhere. */
+const altPath = altHref ? withSlash(altHref) : undefined;
+/* A noindexed page has no business declaring hreflang. The 404 was pointing
+   at /404/, which is not a URL that exists, so Search Console had a broken
+   alternate to complain about on a page nobody should be indexing anyway. */
+const emitHreflang = !noindex;
+const enHref = lang === 'en' ? currentPath : altPath;
+const esHref = lang === 'es' ? currentPath : altPath;
 
 const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
 ---
@@ -60,9 +71,9 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
     <link rel="canonical" href={canonicalURL} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
 
-    {enHref && <link rel="alternate" hreflang="en" href={`${site}${enHref}`} />}
-    {esHref && <link rel="alternate" hreflang="es" href={`${site}${esHref}`} />}
-    {enHref && <link rel="alternate" hreflang="x-default" href={`${site}${enHref}`} />}
+    {emitHreflang && enHref && <link rel="alternate" hreflang="en" href={`${site}${enHref}`} />}
+    {emitHreflang && esHref && <link rel="alternate" hreflang="es" href={`${site}${esHref}`} />}
+    {emitHreflang && enHref && <link rel="alternate" hreflang="x-default" href={`${site}${enHref}`} />}
 
     <meta name="generator" content={Astro.generator} />
     <meta name="geo.region" content="US-FL" />
@@ -109,7 +120,7 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
   </head>
   <body>
     <a href="#main" class="visually-hidden">{lang === 'es' ? 'Saltar al contenido' : 'Skip to content'}</a>
-    <Header lang={lang} switchHref={altHref} />
+    <Header lang={lang} switchHref={altPath} />
     <main id="main">
       <slot />
     </main>

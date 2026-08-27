@@ -8,8 +8,8 @@ import { ui } from '../../data/ui';
 
 const lang = 'es' as const;
 const t = ui[lang];
-const title = `Sobre ${business.name} | Expertos en ductos de aire en Florida`;
-const description = `Conozca a ${business.name}, profesionales con licencia y seguro en limpieza de ductos y ventila del secador que atienden a familias y negocios en toda Florida desde ${business.foundingYear}.`;
+const title = `Sobre nosotros | ${business.name}`;
+const description = 'Por qué publicamos precios cuando este oficio no lo hace, cómo trabajamos con el estándar NADCA y qué no vamos a afirmar sobre nosotros mismos.';
 ---
 <BaseLayout title={title} description={description} lang={lang} altHref="/about/">
  <Breadcrumbs crumbs={[{ name: t.breadcrumbHome, href: t.home }, { name: t.nav[3].label, href: t.about }]} />

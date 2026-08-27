@@ -5,7 +5,7 @@ import CTABand from '../../components/CTABand.astro';
 import { getCollection } from 'astro:content';
 import { business } from '../../data/business';
 
-const title = `Air Duct & Indoor Air Quality Blog | ${business.name}`;
+const title = 'Air Duct and Indoor Air Quality Guides for Florida';
 const description = 'Expert guides on air duct cleaning, dryer vent safety, mold prevention, HVAC efficiency, and indoor air quality for Florida homeowners.';
 
 const posts = (await getCollection('blog')).sort(

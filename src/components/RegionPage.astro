@@ -37,7 +37,7 @@ const body = isEs ? region.esBody : region.body;
 const faqItems = isEs ? region.esFaq : region.faq;
 
 const path = isEs ? `/es/areas-de-servicio/${region.esSlug}` : `/service-areas/${region.slug}`;
-const altHref = isEs ? `/service-areas/${region.slug}` : `/es/areas-de-servicio/${region.esSlug}`;
+const altHref = isEs ? `/service-areas/${region.slug}/` : `/es/areas-de-servicio/${region.esSlug}/`;
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const h1 = isEs ? `Limpieza de ductos en ${name}` : `Air Duct Cleaning in ${name}`;
@@ -108,7 +108,7 @@ const topServices = services.slice(0, 6);
         <h2>{isEs ? 'Otras guías regionales' : 'More Regional Guides'}</h2>
         <div class="city-chips">
           {otherRegions.map((r) => (
-            <a href={isEs ? `/es/areas-de-servicio/${r.esSlug}` : `/service-areas/${r.slug}`} class="chip">
+            <a href={isEs ? `/es/areas-de-servicio/${r.esSlug}/` : `/service-areas/${r.slug}/`} class="chip">
               {isEs ? r.esName : r.name}
             </a>
           ))}
