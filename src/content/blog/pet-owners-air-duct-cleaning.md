@@ -1,6 +1,6 @@
 ---
-title: "Air Duct Cleaning for Pet Owners: What You Need to Know"
-description: "Pets fill your ducts with hair and dander that recirculate all year. Learn how often pet owners should clean air ducts in Florida and how to keep air fresh."
+title: "Air Ducts and Pets: Every 2 to 3 Years, Not 5"
+description: "A dog or cat loads the system far faster with hair and dander. How often to clean, and which filter genuinely helps in between."
 answer: "Pet owners should have their air ducts cleaned every 2 to 3 years because pet hair and dander accumulate quickly in the ductwork and recirculate through the home, and Florida's year-round AC use makes that buildup happen even faster."
 pubDate: 2025-06-04
 category: "Air Duct Cleaning"

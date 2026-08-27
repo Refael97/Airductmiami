@@ -1,6 +1,6 @@
 ---
-title: "Qué esperar durante una limpieza profesional de ductos"
-description: "Un recorrido paso a paso de cómo es una visita de limpieza de ductos: inspección, sellado, cepillado, succión y revisión final, sin sorpresas."
+title: "Limpieza de ductos: qué pasa el día de la cita"
+description: "Paso a paso lo que hace el técnico, cuánto dura, qué debe preparar usted y qué debería poder verificar antes de que se vaya."
 answer: "Durante una limpieza profesional de ductos, el técnico inspecciona el sistema, sella las rejillas, conecta una aspiradora de presión negativa, cepilla el interior de los conductos y hace una revisión final, todo en unas 2 a 4 horas."
 pubDate: 2025-01-16
 category: "Limpieza de Ductos"

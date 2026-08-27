@@ -1,6 +1,6 @@
 ---
-title: "¿Cada cuánto se deben limpiar los ductos en Florida?"
-description: "La frecuencia ideal para limpiar ductos en Florida y los factores que la cambian: humedad, mascotas, alergias, remodelaciones y el aire acondicionado sin descanso."
+title: "Limpieza de ductos: cada 3 a 5 años en Florida"
+description: "Cada 3 a 5 años en la mayoría de las casas, y antes si hay mascotas, alergias o moho. La humedad de Florida cambia la respuesta y le explicamos por qué."
 answer: "En Florida se recomienda limpiar los ductos cada 3 a 5 años, pero ese intervalo baja a cada 2 o 3 años si hay mascotas, alergias, moho reciente o una remodelación de por medio."
 pubDate: 2025-03-09
 category: "Limpieza de Ductos"

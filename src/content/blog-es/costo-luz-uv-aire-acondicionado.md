@@ -1,6 +1,6 @@
 ---
-title: "Costo de la luz UV para aire acondicionado: ¿vale la pena en Florida?"
-description: "Cuánto cuesta instalar una luz UV en el aire acondicionado y si de verdad vale la pena en el clima húmedo de Florida. Análisis honesto."
+title: "Luz UV para el aire: $300 a $700, ¿vale la pena?"
+description: "De 300 a 700 dólares instalada. Contra qué sirve de verdad en la humedad de Florida, contra qué no sirve, y en qué casos no la recomendamos."
 answer: "Instalar una luz UV en el aire acondicionado cuesta entre 300 y 700 dólares en Florida, y vale la pena sobre todo por la humedad, que favorece el moho en el serpentín y la bandeja."
 pubDate: 2025-04-14
 category: "Costos y Guías"

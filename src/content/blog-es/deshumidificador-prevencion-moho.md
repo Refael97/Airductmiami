@@ -1,6 +1,6 @@
 ---
-title: "¿Necesita un deshumidificador para toda la casa en Florida?"
-description: "Un deshumidificador para toda la casa puede ser clave en Florida cuando el aire acondicionado no basta. Le explicamos cuándo vale la pena y cómo previene el moho."
+title: "Deshumidificador para toda la casa: ¿lo necesita?"
+description: "En Florida el aire acondicionado solo no siempre baja la humedad debajo del 60 por ciento. Cuándo hace falta un deshumidificador y cuándo es gasto de más."
 answer: "Un deshumidificador para toda la casa vale la pena en Florida cuando el aire acondicionado por sí solo no mantiene la humedad interior por debajo de 60 por ciento, ya que un ambiente seco es la mejor defensa contra el moho."
 pubDate: 2025-03-06
 category: "Moho y Humedad"

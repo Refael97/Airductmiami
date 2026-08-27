@@ -1,6 +1,6 @@
 ---
-title: "Por qué sudan sus ductos: problemas de condensación en Florida"
-description: "Los ductos que sudan en Florida son señal de condensación por mal aislamiento y humedad alta. Le explicamos la causa y cómo evitar el goteo y el moho."
+title: "Ductos que sudan en Florida: por qué y cómo pararlo"
+description: "El goteo en los ductos es condensación, no una fuga. Le explicamos la causa exacta, cómo evitar el moho que viene después y qué cuesta corregirlo."
 answer: "Los ductos sudan cuando el aire frío de su interior enfría la superficie y el vapor húmedo de Florida se condensa por fuera; se corrige mejorando el aislamiento y bajando la humedad interior por debajo del 60 por ciento."
 pubDate: 2025-05-20
 category: "Moho y Humedad"

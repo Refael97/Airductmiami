@@ -1,6 +1,6 @@
 ---
-title: "Lista completa de seguridad para la ventila del secador"
-description: "Una lista accionable para mantener segura la ventila de su secadora en Florida: tareas diarias, mensuales y anuales que previenen incendios."
+title: "Ventila del secador: lista de seguridad completa"
+description: "Qué revisar por carga, cada semana, cada mes y cada año, más los materiales que conviene evitar en casas de Florida. Sin herramientas especiales."
 answer: "Una buena lista de seguridad para la ventila del secador incluye limpiar el filtro cada carga, revisar la rejilla exterior cada mes y programar una limpieza profesional del ducto al menos una vez al año."
 pubDate: 2025-03-22
 category: "Seguridad del Secador"

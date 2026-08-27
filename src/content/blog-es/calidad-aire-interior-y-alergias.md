@@ -1,6 +1,6 @@
 ---
-title: "Calidad del aire interior y alergias: la conexión en Florida"
-description: "Por qué las alergias empeoran dentro de casa en Florida y qué desencadenantes controlar: polen, ácaros, moho y caspa de mascota."
+title: "Alergias en casa: cuando el problema está en el aire"
+description: "Si sus alergias mejoran al salir de casa, el problema está adentro. Las causas más comunes en Florida y cuáles se resuelven sin medicamentos."
 answer: "En Florida las alergias suelen empeorar dentro de casa porque el aire acondicionado recircula polen, ácaros del polvo, esporas de moho y caspa de mascota; controlar humedad, filtración y ductos limpios reduce los síntomas."
 pubDate: 2024-11-22
 category: "Calidad del Aire Interior"

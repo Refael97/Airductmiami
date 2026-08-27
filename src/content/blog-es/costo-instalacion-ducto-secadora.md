@@ -1,6 +1,6 @@
 ---
-title: "¿Cuánto cuesta instalar un ducto de secadora en Florida? (Guía 2026)"
-description: "Precios reales de instalación de ducto de secadora en Florida: rangos por tipo de ruta, qué incluye un trabajo bien hecho y cuándo conviene reubicar en vez de limpiar."
+title: "Instalar ducto de secadora en Florida: $200 a $600"
+description: "Una salida corta por la pared queda en 200 dólares y un tramo largo al techo llega a 600. Qué mueve el precio y cuándo conviene reemplazar."
 answer: "Instalar o reemplazar un ducto de secadora en Florida cuesta entre $200 y $600. Una salida corta por la pared queda en el extremo bajo del rango, mientras que un tramo largo hacia el techo o el reemplazo de ducto oculto dentro de paredes cuesta más."
 pubDate: 2026-07-09
 category: "Costos y Guías"

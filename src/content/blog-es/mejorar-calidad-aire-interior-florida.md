@@ -1,6 +1,6 @@
 ---
-title: "Cómo mejorar la calidad del aire interior en su casa de Florida"
-description: "Guía práctica para respirar mejor en casa: control de humedad, filtros, ductos limpios y ventilación adaptada al clima húmedo de Florida."
+title: "Mejorar el aire de su casa en Florida: por dónde empezar"
+description: "Los cambios que de verdad rinden en este clima, ordenados de lo que no cuesta nada a lo que sí vale la pena pagar, y las señales de que hace falta."
 answer: "Para mejorar la calidad del aire interior en Florida, controle la humedad por debajo del 50%, cambie los filtros del AC cada 30 a 60 días, limpie los ductos cada 3 a 5 años y ventile la cocina y los baños."
 pubDate: 2024-10-14
 category: "Calidad del Aire Interior"

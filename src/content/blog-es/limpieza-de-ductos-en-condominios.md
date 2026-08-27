@@ -1,6 +1,6 @@
 ---
-title: "Limpieza de ductos en condominios y apartamentos de Florida"
-description: "Cómo funciona la limpieza de ductos en un condominio de Florida: qué parte es suya y qué parte es del edificio, permisos de la asociación y por qué los pisos altos crían moho."
+title: "Limpieza de ductos en condominios: qué le toca a usted"
+description: "Qué parte del sistema es suya y cuál es de la asociación, por qué importa la diferencia y qué hacer cuando el problema viene del vecino."
 answer: "En un condominio de Florida, el aire acondicionado y los ductos dentro de su unidad son responsabilidad del propietario y sí se pueden limpiar de forma independiente. La limpieza toma 2 a 3 horas, no requiere obra y solo los sistemas centrales compartidos dependen de la asociación."
 pubDate: 2026-07-11
 category: "Limpieza de Ductos"

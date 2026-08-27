@@ -1,6 +1,6 @@
 ---
-title: "Why Dryer Lint Is More Dangerous Than You Think"
-description: "Dryer lint is a fire hazard, but it can also cause carbon monoxide backup and feed mold. Here's why lint is more dangerous than most Florida homeowners realize."
+title: "Dryer Lint: More Dangerous Than Most People Think"
+description: "Lint ignites at temperatures a restricted dryer reaches easily. Where it collects, how fast, and the warning signs that come first."
 answer: "Dryer lint is dangerous because it is highly flammable and fuels dryer fires, and a lint-blocked vent can also cause carbon monoxide backup from gas dryers and trap humidity that feeds mold."
 pubDate: 2025-04-15
 category: "Dryer Vent Safety"

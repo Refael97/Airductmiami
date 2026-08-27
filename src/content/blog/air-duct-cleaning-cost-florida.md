@@ -1,8 +1,9 @@
 ---
-title: "How Much Does Air Duct Cleaning Cost in Florida? (2025 Price Guide)"
-description: "A clear breakdown of air duct cleaning costs in Florida, average prices, what affects the cost, and how to avoid the '$49 whole-home' scam."
+title: "Air Duct Cleaning Cost in Florida: $300 to $600 in 2026"
+description: "$300 to $600 per system in 2026. What moves the number, what a complete job includes, and why the $49 whole home ad is never $49."
 answer: "Air duct cleaning in Florida typically costs $300 to $600 for a single-system home. Prices rise with more vents, multiple HVAC systems, mold contamination, or add-ons like sanitizing."
 pubDate: 2025-01-20
+updatedDate: 2026-08-27
 category: "Costs & Buying Guides"
 tags: ["cost", "pricing", "florida", "buying guide"]
 featured: true

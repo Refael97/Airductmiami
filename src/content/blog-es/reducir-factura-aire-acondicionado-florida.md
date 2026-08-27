@@ -1,6 +1,6 @@
 ---
-title: "12 maneras de bajar su factura de aire acondicionado en Florida"
-description: "Doce trucos prácticos y realistas para reducir el gasto del aire acondicionado en Florida sin pasar calor, desde el termostato hasta los ductos y el ático."
+title: "12 formas de bajar su factura de aire en Florida"
+description: "Doce cambios ordenados por ahorro real, desde el termostato hasta las fugas de ductos que se llevan un tercio del aire frío."
 answer: "Para bajar la factura del aire acondicionado en Florida, selle los ductos, cambie el filtro, ajuste el termostato con criterio, mejore el aislamiento del ático y dé mantimiento al equipo."
 pubDate: 2024-12-03
 category: "Eficiencia del Aire Acondicionado"

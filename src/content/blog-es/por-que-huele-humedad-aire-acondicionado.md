@@ -1,6 +1,6 @@
 ---
-title: "¿Por qué mi aire acondicionado huele a humedad?"
-description: "Si su aire acondicionado huele a humedad o a tierra mojada en Florida, casi siempre es moho en la serpentina. Aquí le explicamos por qué pasa y cómo resolverlo."
+title: "Olor a humedad en el aire: casi siempre es la serpentina"
+description: "Ese olor al encender el aire viene del moho en la serpentina y la bandeja. Por qué pasa tanto en Florida y qué lo elimina de verdad."
 answer: "El olor a humedad casi siempre viene del moho que crece en la serpentina fría del aire acondicionado, donde la condensación de Florida se junta con el polvo y alimenta a las esporas."
 pubDate: 2024-11-05
 category: "Moho y Humedad"

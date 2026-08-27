@@ -1,6 +1,6 @@
 ---
-title: "Cómo el aislamiento del ático reduce los costos de enfriamiento en Florida"
-description: "El ático es la puerta por donde entra el calor a su casa. Le explicamos cómo el valor R correcto reduce el gasto de enfriamiento en el clima de Florida."
+title: "Aislar el ático en Florida: cuánto baja su factura"
+description: "Cuánto ahorra realmente aislar el ático en Florida, cuánto aislamiento necesita esta zona climática y cómo saber si el suyo ya no sirve."
 answer: "Un buen aislamiento del ático frena el calor que baja desde arriba, y en Florida subir el valor R hasta el rango R-30 a R-38 puede reducir de forma notable el gasto de enfriamiento."
 pubDate: 2025-04-08
 category: "Eficiencia del Aire Acondicionado"

@@ -1,6 +1,6 @@
 ---
-title: "Por qué la pelusa del secador es más peligrosa de lo que cree"
-description: "La pelusa del secador no es solo pelusa: causa incendios, atrapa humedad que alimenta moho y, en secadores de gas, retiene gases peligrosos."
+title: "Pelusa del secador: más peligrosa de lo que parece"
+description: "La pelusa se enciende a temperaturas que un secador tapado alcanza fácil. Dónde se acumula, cuánto tarda y las señales que aparecen antes."
 answer: "La pelusa del secador es peligrosa porque es muy inflamable y provoca incendios, y una ventila tapada de pelusa también atrapa humedad que alimenta moho y puede retener gases en secadores de gas."
 pubDate: 2025-05-10
 category: "Seguridad del Secador"

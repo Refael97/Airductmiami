@@ -1,6 +1,6 @@
 ---
-title: "¿Cada cuánto limpiar la ventila del secador?"
-description: "Al menos una vez al año, pero en Florida muchos casos piden más. Vea qué factores deciden la frecuencia de limpieza de su ventila de secadora."
+title: "Ventila del secador: límpiela una vez al año, mínimo"
+description: "Una vez al año como mínimo, y cada seis meses si lava a diario o tiene mascotas. Las señales de que ya se pasó y por qué importa contra incendios."
 answer: "Debe limpiar la ventila del secador al menos una vez al año, y con más frecuencia si tiene familia grande, mascotas, ductos largos hacia el techo o usa el secador casi a diario."
 pubDate: 2024-12-08
 category: "Seguridad del Secador"

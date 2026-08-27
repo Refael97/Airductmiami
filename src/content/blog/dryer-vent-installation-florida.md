@@ -1,6 +1,6 @@
 ---
-title: "Dryer Vent Installation in Florida: Routing, Materials, and Safety"
-description: "Roof runs, wall vents, duct materials, and the 35-foot length limit: a Florida guide to installing and routing a dryer vent for safe airflow and fast drying."
+title: "Dryer Vent Installation in Florida: The 35 Foot Limit"
+description: "Correct routing, the materials to use, and the 35 foot equivalent length rule that explains half the blockages we get called out to."
 answer: "The safest dryer vent uses rigid metal ducting on the shortest practical route, ideally out a nearby exterior wall rather than a long roof run, with a proper hooded vent cover to keep out pests and rain."
 pubDate: 2025-06-10
 category: "Dryer Vent Safety"

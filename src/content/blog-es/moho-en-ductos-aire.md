@@ -1,6 +1,6 @@
 ---
-title: "Moho en los ductos de aire: señales, causas y cómo eliminarlo"
-description: "Guía práctica sobre el moho en los ductos de aire en Florida: cómo detectarlo, por qué aparece con tanta humedad y qué hacer para eliminarlo bien."
+title: "Moho en los ductos: cómo saberlo y cómo eliminarlo"
+description: "Las señales reales de moho en los ductos, por qué aparece tanto en Florida y qué hace falta para que no vuelva en seis meses."
 answer: "El moho en los ductos aparece cuando la humedad de Florida se combina con polvo y superficies frías; se elimina con limpieza profesional del sistema y control constante de la humedad interior por debajo del 60 por ciento."
 pubDate: 2024-10-14
 category: "Moho y Humedad"

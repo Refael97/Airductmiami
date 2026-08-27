@@ -1,6 +1,6 @@
 ---
-title: "Costo de reparación y sellado de ductos en Florida"
-description: "Reparar o reemplazar los ductos: qué cuesta cada opción en Florida, cuándo conviene sellar y cómo saber cuál es la decisión correcta para su casa."
+title: "Reparar o sellar ductos en Florida: qué cuesta cada uno"
+description: "Cuándo reparar sale mucho más barato que reemplazar, cuánto cuesta cada opción y las señales de que ya pasó el punto de repararlos."
 answer: "Reparar y sellar fugas en los ductos suele costar mucho menos que reemplazarlos, y conviene reparar cuando el daño es puntual y los conductos aún están en buen estado general."
 pubDate: 2025-06-16
 category: "Costos y Guías"

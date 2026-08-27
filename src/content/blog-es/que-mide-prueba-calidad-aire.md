@@ -1,6 +1,6 @@
 ---
-title: "¿Qué mide una prueba de calidad del aire interior?"
-description: "Qué detecta realmente una prueba de calidad del aire interior: moho, compuestos orgánicos volátiles, partículas y humedad, con enfoque en Florida."
+title: "Prueba de calidad del aire: qué mide y qué no mide"
+description: "Qué detecta realmente una prueba de aire interior, qué no detecta, y cuándo vale la pena pagarla en vez de resolver lo evidente."
 answer: "Una prueba de calidad del aire interior mide moho y esporas, compuestos orgánicos volátiles, partículas finas, humedad relativa y a veces gases como monóxido de carbono o radón, para identificar qué está afectando el aire de su casa."
 pubDate: 2025-02-03
 category: "Calidad del Aire Interior"

@@ -1,6 +1,6 @@
 ---
 title: "10 preguntas antes de contratar un limpiador de ductos"
-description: "Las 10 preguntas clave que debe hacer antes de contratar una limpieza de ductos en Florida para evitar sorpresas de precio y trabajos mal hechos."
+description: "Las diez preguntas que separan a una empresa seria de una estafa, y las respuestas que deberían hacerle colgar el teléfono."
 answer: "Antes de contratar, pregunte por la licencia, el seguro, el precio total por sistema, el método de limpieza y si le entregarán fotos del antes y el después."
 pubDate: 2025-01-12
 category: "Costos y Guías"

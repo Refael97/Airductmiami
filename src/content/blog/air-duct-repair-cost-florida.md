@@ -1,6 +1,6 @@
 ---
-title: "Air Duct Repair and Sealing Cost in Florida"
-description: "What air duct repair and sealing costs in Florida, how to spot leaky or damaged ductwork, and when to repair versus replace to cut energy bills and improve airflow."
+title: "Air Duct Repair Cost in Florida: Attic Runs and Sealing"
+description: "What duct repair and sealing costs in Florida, how to spot a leaking attic run, and when repairing beats replacing. Repair is usually far cheaper."
 answer: "Air duct repair in Florida varies widely by scope, sealing a few leaks may run a few hundred dollars, while sections of replacement or full resealing can reach into the thousands, but the energy savings often offset the cost."
 pubDate: 2024-10-22
 category: "Costs & Buying Guides"

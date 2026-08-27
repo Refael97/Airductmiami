@@ -1,6 +1,6 @@
 ---
-title: "Por qué unas habitaciones son más calientes que otras"
-description: "Si un cuarto de su casa siempre está caliente y otro helado, el problema suele ser el equilibrio del aire. Le explicamos las causas y las soluciones en Florida."
+title: "Una habitación caliente y el resto fría: por qué pasa"
+description: "Si un cuarto nunca se enfría, casi nunca es culpa del equipo. Le explicamos las causas reales en los ductos y cuáles se arreglan sin cambiar nada."
 answer: "Las habitaciones desiguales casi siempre se deben a un mal equilibrio del aire: ductos con fugas, registros mal ajustados, retornos insuficientes o un ático que recalienta ciertos cuartos."
 pubDate: 2024-11-19
 category: "Eficiencia del Aire Acondicionado"

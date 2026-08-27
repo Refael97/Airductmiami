@@ -1,6 +1,6 @@
 ---
-title: "Por qué su secadora tarda mucho en secar (y cómo arreglarlo)"
-description: "Si su secadora necesita dos ciclos, casi siempre es problema de flujo de aire. Vea cómo diagnosticar y arreglar una secadora lenta en Florida."
+title: "Secadora que tarda dos ciclos: la causa casi siempre"
+description: "Si necesita dos ciclos, el problema casi nunca es el secador. Cómo confirmarlo en cinco minutos y qué cuesta arreglarlo."
 answer: "Su secadora tarda mucho en secar casi siempre por falta de flujo de aire: una ventila tapada de pelusa impide que salga el aire húmedo, así que la ropa nunca termina de secarse."
 pubDate: 2025-02-14
 category: "Seguridad del Secador"

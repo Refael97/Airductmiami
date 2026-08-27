@@ -1,6 +1,6 @@
 ---
-title: "¿Cada cuánto se deben limpiar los ductos de ventilación de la cocina?"
-description: "Guía práctica para Florida: con qué frecuencia limpiar el extractor y el ducto de la cocina en casa, cómo hacerlo bien y cuándo llamar a un profesional."
+title: "Ductos de la campana de cocina: cada cuánto limpiarlos"
+description: "La grasa acumulada en el ducto de la campana es un riesgo de incendio distinto al del secador. Cada cuánto limpiarlo en una casa y en un negocio."
 answer: "En una casa, el filtro del extractor de cocina se limpia cada 1 a 3 meses y el ducto de salida se revisa y limpia una vez al año. Si cocina a diario con mucha grasa o fritura, acorte esos plazos a la mitad."
 pubDate: 2026-07-08
 category: "Limpieza de Ductos"

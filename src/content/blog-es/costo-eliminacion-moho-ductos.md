@@ -1,6 +1,6 @@
 ---
-title: "Cuánto cuesta eliminar el moho de los ductos en Florida (Guía 2026)"
-description: "Lo que realmente cuesta la eliminación de moho en ductos de aire en Florida, qué cambia el precio y cómo distinguir una cotización justa de una inflada."
+title: "Eliminar moho de los ductos: $500 a $3,000 en Florida"
+description: "Superficial en la serpentina: 500 a 900 dólares. Sistema completo contaminado: 1,200 a 3,000. Qué cambia el precio y cómo saber en qué caso está."
 answer: "Eliminar el moho de los ductos en Florida cuesta entre $500 y $3,000, según qué tanto se haya extendido. Un crecimiento superficial en la serpentina va de $500 a $900, un sistema completo contaminado de $1,200 a $3,000, y los casos severos que requieren reemplazo de ducto cuestan más."
 pubDate: 2026-07-31
 category: "Costos y Guías"

@@ -1,6 +1,6 @@
 ---
-title: "¿Qué es la limpieza de ductos de aire y cómo funciona?"
-description: "Le explicamos en palabras sencillas qué es la limpieza de ductos, cómo funciona la presión negativa y por qué importa tanto en el clima de Florida."
+title: "Qué es la limpieza de ductos y cómo se hace bien"
+description: "En qué consiste una limpieza real con equipo de presión negativa, cuánto dura, qué debe incluir y cómo se ve un trabajo mal hecho."
 answer: "La limpieza de ductos es el proceso de extraer polvo, moho y residuos del sistema de conductos usando una aspiradora de presión negativa que sella el sistema y arrastra la suciedad hacia un contenedor sellado."
 pubDate: 2024-10-14
 category: "Limpieza de Ductos"

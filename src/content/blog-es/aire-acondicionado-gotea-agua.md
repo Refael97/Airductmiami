@@ -1,6 +1,6 @@
 ---
-title: "¿Por qué mi aire acondicionado gotea agua? Causas y soluciones en Florida"
-description: "Las 5 causas de un aire acondicionado que gotea agua en Florida, qué puede revisar usted mismo hoy y cuándo el goteo avisa de un problema de moho o de ductos."
+title: "¿Su aire acondicionado gotea agua? 5 causas y qué hacer"
+description: "Las 5 causas del goteo de agua en el aire acondicionado, cuál puede resolver usted mismo y cuándo el goteo avisa de un problema serio de humedad."
 answer: "Un aire acondicionado gotea casi siempre por el drenaje de condensado tapado con algas y suciedad, algo muy común en Florida. Otras causas son el filtro sucio que congela la serpentina, la bandeja oxidada o mal nivelada y las fugas en ductos que condensan humedad."
 pubDate: 2026-07-13
 category: "Eficiencia del Aire Acondicionado"

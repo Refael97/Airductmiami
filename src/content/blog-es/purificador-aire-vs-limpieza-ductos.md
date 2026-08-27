@@ -1,6 +1,6 @@
 ---
-title: "Purificador de aire vs limpieza de ductos: ¿qué funciona?"
-description: "Comparación honesta entre un purificador de aire y la limpieza de ductos para casas en Florida, y por qué no siempre resuelven lo mismo."
+title: "Purificador de aire o limpieza de ductos: cuál primero"
+description: "Resuelven dos problemas distintos y uno no reemplaza al otro. Cuál conviene según lo que le está pasando en casa."
 answer: "Un purificador de aire filtra partículas que ya flotan en una habitación, mientras que la limpieza de ductos elimina la suciedad acumulada dentro del sistema; en Florida lo ideal suele ser combinar ambos según el problema."
 pubDate: 2024-12-10
 category: "Calidad del Aire Interior"

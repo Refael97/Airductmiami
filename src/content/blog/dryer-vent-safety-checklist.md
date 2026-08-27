@@ -1,6 +1,6 @@
 ---
 title: "The Complete Dryer Vent Safety Checklist"
-description: "A room-by-room dryer vent safety checklist for Florida homeowners: clean the lint trap, inspect the duct, check the outdoor vent, and know the warning signs."
+description: "What to check per load, weekly, monthly and yearly, plus the duct materials worth avoiding in a Florida home. No special tools needed."
 answer: "A safe dryer setup requires cleaning the lint screen every load, inspecting the vent and duct regularly, using rigid metal ducting, and having the full vent professionally cleaned at least once a year."
 pubDate: 2025-03-22
 category: "Dryer Vent Safety"

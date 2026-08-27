@@ -1,6 +1,6 @@
 ---
-title: "Mi secadora huele a quemado: qué hacer ahora mismo"
-description: "Olor a quemado en la secadora: las causas en orden de urgencia, qué revisar antes de volver a usarla y cuándo el olor avisa de un ducto tapado con pelusa."
+title: "Secadora con olor a quemado: apáguela y haga esto"
+description: "Desconéctela ahora mismo. Las causas en orden de urgencia, qué revisar antes de volver a usarla y cuándo el olor avisa de un ducto tapado."
 answer: "Si la secadora huele a quemado, deténgala de inmediato y desconéctela. La causa más común es pelusa acumulada tocando el elemento de calor o un ducto de salida tapado que sobrecalienta la máquina. No la use de nuevo hasta identificar el origen del olor."
 pubDate: 2026-07-14
 category: "Seguridad del Secador"

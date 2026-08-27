@@ -1,6 +1,6 @@
 ---
-title: "How to Choose a Trustworthy Air Duct Cleaning Company in Florida"
-description: "A step-by-step vetting guide to finding a reputable, honest air duct cleaning company in Florida, licenses, methods, red flags, and what to verify first."
+title: "How to Choose an Air Duct Cleaning Company in Florida"
+description: "License and insurance first, price second. What a real company can show you, and the red flags that should end the call."
 answer: "Choose a Florida air duct cleaning company that uses NADCA source-removal equipment, carries insurance, provides written per-vent quotes, and shows before-and-after photos, never one advertising a $49 whole-home special."
 pubDate: 2024-11-12
 category: "Costs & Buying Guides"

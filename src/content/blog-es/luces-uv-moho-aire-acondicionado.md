@@ -1,6 +1,6 @@
 ---
-title: "¿Las luces UV realmente detienen el moho en el aire acondicionado?"
-description: "Las luces UV-C sobre la serpentina sí ayudan a frenar el moho en el aire acondicionado de Florida. Le explicamos cómo funcionan y qué esperar de verdad."
+title: "¿Las luces UV detienen el moho? Sí, pero no en todo"
+description: "Funcionan sobre la serpentina y la bandeja, no sobre el polvo que ya está en los ductos. La diferencia importa antes de pagar la instalación."
 answer: "Las luces UV-C instaladas sobre la serpentina sí ayudan a detener el moho en el aire acondicionado, porque destruyen las esporas en la superficie más húmeda del sistema, aunque funcionan mejor junto con el control de la humedad."
 pubDate: 2025-04-08
 category: "Moho y Humedad"

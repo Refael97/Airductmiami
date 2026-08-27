@@ -1,6 +1,6 @@
 ---
-title: "Cómo la limpieza de la ventila del secador previene incendios"
-description: "La pelusa acumulada y el sobrecalentamiento causan incendios de secadora. Vea cómo limpiar la ventila protege su casa en el clima húmedo de Florida."
+title: "Ventila del secador: así empieza un incendio en casa"
+description: "Cómo la pelusa acumulada llega a la temperatura de ignición, qué señales aparecen antes y por qué el filtro de pelusa no protege el tramo del ducto."
 answer: "Limpiar la ventila del secador previene incendios porque elimina la pelusa inflamable que atrapa el calor y provoca sobrecalentamiento, la causa principal de los incendios de secadora."
 pubDate: 2024-11-12
 category: "Seguridad del Secador"

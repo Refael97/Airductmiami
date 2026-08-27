@@ -1,6 +1,6 @@
 ---
 title: "7 señales de que sus ductos necesitan limpieza"
-description: "Polvo que vuelve rápido, olores raros, alergias que empeoran: conozca las 7 señales claras de que sus ductos de aire piden una limpieza en Florida."
+description: "Siete señales concretas que puede revisar hoy, y cuáles de ellas significan que el problema ya pasó de polvo a moho."
 answer: "Sus ductos necesitan limpieza si nota polvo que regresa muy rápido, olor a humedad al encender el aire, alergias que empeoran en casa, rejillas con moho visible o una factura eléctrica que sube sin explicación."
 pubDate: 2024-11-08
 category: "Limpieza de Ductos"

@@ -1,6 +1,6 @@
 ---
 title: "8 señales de una ventila de secadora tapada"
-description: "Ropa caliente y húmeda, olor a quemado, cuarto de lavado sofocante: 8 señales claras de que la ventila de su secadora está tapada en Florida."
+description: "Las ocho señales con su nivel de urgencia, cuáles significan dejar de usar el secador hoy mismo y por qué en Florida aparecen antes."
 answer: "Las señales de una ventila de secadora tapada incluyen ropa que sale caliente y húmeda, ciclos más largos, un secador muy caliente por fuera, olor a quemado y poco aire saliendo por la rejilla exterior."
 pubDate: 2025-01-20
 category: "Seguridad del Secador"

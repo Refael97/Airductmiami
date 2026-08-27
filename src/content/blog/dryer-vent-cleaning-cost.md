@@ -1,8 +1,9 @@
 ---
-title: "Dryer Vent Cleaning Cost in Florida (2025 Guide)"
-description: "What dryer vent cleaning costs in Florida in 2025, the factors that change the price, and why this inexpensive service is a serious fire-safety priority."
+title: "Dryer Vent Cleaning Cost in Florida: $100 to $200"
+description: "$100 to $200 in 2026, set by the length of the run and where it ends. What changes the price, and why this is the cheapest fire safety you can buy."
 answer: "Dryer vent cleaning in Florida typically costs $100 to $200, with price rising for long, rooftop, or heavily clogged vents, a small expense that meaningfully reduces the risk of a lint fire."
 pubDate: 2025-06-10
+updatedDate: 2026-08-27
 category: "Costs & Buying Guides"
 tags: ["dryer vent", "cost", "florida", "fire safety"]
 featured: false
@@ -15,7 +16,7 @@ faq:
     answer: "Yes. Lint is highly flammable, and clogged vents are a leading cause of home dryer fires. Cleaning also shortens drying time and reduces energy use, so it pays for itself in efficiency and safety."
 ---
 
-Dryer vent cleaning is one of the least expensive and most worthwhile services a Florida homeowner can schedule. The short answer: it typically costs $100 to $200, and it directly reduces the risk of a lint fire while making your dryer run more efficiently. Here's the full 2025 pricing picture.
+Dryer vent cleaning is one of the least expensive and most worthwhile services a Florida homeowner can schedule. The short answer: it typically costs $100 to $200, and it directly reduces the risk of a lint fire while making your dryer run more efficiently. Here's the full 2026 pricing picture.
 
 ## Dryer vent cleaning cost in Florida
 

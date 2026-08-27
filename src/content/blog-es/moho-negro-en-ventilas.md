@@ -1,6 +1,6 @@
 ---
-title: "Moho negro alrededor de las ventilas: qué significa y qué hacer"
-description: "Ver moho negro alrededor de las ventilas del aire suele indicar condensación y humedad dentro del sistema. Le explicamos qué significa y cómo actuar en Florida."
+title: "Moho negro en las ventilas: qué significa de verdad"
+description: "No todo lo negro alrededor de una ventila es moho, y no todo el moho negro es peligroso. Cómo distinguirlo y qué hacer en cada caso."
 answer: "El moho negro alrededor de las ventilas significa que hay condensación y humedad dentro del sistema de aire, y hay que limpiar las rejillas, tratar la fuente en los ductos y controlar la humedad interior."
 pubDate: 2025-02-11
 category: "Moho y Humedad"

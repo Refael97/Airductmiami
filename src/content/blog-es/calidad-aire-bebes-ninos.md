@@ -1,6 +1,6 @@
 ---
-title: "Proteger el aire de su bebé: calidad del aire para familias en Florida"
-description: "Cómo cuidar el aire que respiran los bebés y niños en Florida, por qué son más vulnerables y qué medidas realmente protegen su salud."
+title: "Calidad del aire para bebés y niños en Florida"
+description: "Los niños respiran más aire por su peso que los adultos. Qué revisar en casa, qué cambiar primero y qué no vale la pena comprar."
 answer: "Los bebés y niños son más vulnerables a la mala calidad del aire porque respiran más rápido y sus pulmones están en desarrollo, así que en Florida conviene controlar la humedad, filtrar bien y mantener los ductos limpios en su hogar."
 pubDate: 2025-03-12
 category: "Calidad del Aire Interior"

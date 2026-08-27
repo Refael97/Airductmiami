@@ -1,6 +1,6 @@
 ---
-title: "¿Cuál es el nivel de humedad interior ideal en Florida?"
-description: "El nivel de humedad interior ideal en Florida es de 30 a 50 por ciento. Le explicamos por qué esa meta importa tanto y cómo lograrla con el clima húmedo del estado."
+title: "Humedad ideal en Florida: 30 a 50 por ciento"
+description: "Entre 30 y 50 por ciento, y nunca arriba de 60, que es donde empieza el moho. Cómo medirla, qué la sube en Florida y cómo bajarla sin gastar de más."
 answer: "El nivel de humedad interior ideal en Florida es de 30 a 50 por ciento, y siempre por debajo de 60, porque encima de ese punto el moho empieza a crecer en superficies frías y ductos."
 pubDate: 2025-01-16
 category: "Moho y Humedad"

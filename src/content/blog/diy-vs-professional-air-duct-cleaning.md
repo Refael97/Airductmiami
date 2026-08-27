@@ -1,6 +1,6 @@
 ---
-title: "DIY vs Professional Air Duct Cleaning: Which Is Worth It?"
-description: "Can you clean air ducts yourself? Here's what DIY handles, what it can't, and when professional source-removal cleaning is worth the cost for Florida homes."
+title: "Cleaning Your Own Air Ducts: How Far You Actually Get"
+description: "What a shop vac genuinely reaches, what it never will, and the point at which the DIY attempt costs more than the job would have."
 answer: "DIY air duct cleaning can handle surface maintenance like changing filters and vacuuming register grilles, but only professional negative-air source removal can clean deep inside the duct system and the coil, making the pros worth it every few years."
 pubDate: 2025-04-02
 category: "Air Duct Cleaning"

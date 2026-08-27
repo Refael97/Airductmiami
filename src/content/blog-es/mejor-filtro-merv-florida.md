@@ -1,6 +1,6 @@
 ---
-title: "¿Qué filtro MERV es mejor para casas en Florida?"
-description: "Explicación clara del sistema MERV y cuál conviene para el clima húmedo de Florida sin ahogar su aire acondicionado ni disparar el consumo."
+title: "Filtro MERV en Florida: el 8 al 11 es el punto justo"
+description: "Un MERV muy alto ahoga el sistema y le sube la factura. Cuál conviene en Florida, cada cuánto cambiarlo y cuándo un filtro caro es dinero perdido."
 answer: "Para la mayoría de las casas en Florida, un filtro MERV 8 a MERV 11 ofrece el mejor equilibrio entre buena filtración y flujo de aire; los MERV 13 o más altos solo si su sistema fue diseñado para soportarlos."
 pubDate: 2024-11-05
 category: "Calidad del Aire Interior"

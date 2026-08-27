@@ -1,6 +1,6 @@
 ---
-title: "Limpieza de ductos para dueños de mascotas"
-description: "El pelo y la caspa de perros y gatos terminan en sus ductos. Vea cómo afecta el aire de su casa y cada cuánto limpiar si tiene mascotas en Florida."
+title: "Ductos y mascotas: cada 2 a 3 años, no cada 5"
+description: "Con perro o gato el pelo y la caspa cargan el sistema mucho más rápido. Cada cuánto conviene limpiar y qué filtro ayuda de verdad entre limpiezas."
 answer: "Si tiene mascotas, conviene limpiar los ductos cada 2 a 3 años en lugar de los 3 a 5 habituales, porque el pelo y la caspa se acumulan rápido y circulan por toda la casa con el aire acondicionado."
 pubDate: 2025-05-05
 category: "Limpieza de Ductos"

@@ -1,6 +1,6 @@
 ---
-title: "Estándares NADCA: qué significa hacerlo bien"
-description: "Qué es NADCA y por qué su método de limpieza por extracción por fuente separa un trabajo profesional de uno improvisado. Guía clara para hogares de Florida."
+title: "Estándares NADCA: qué es hacer el trabajo bien"
+description: "Qué exige el estándar NADCA de extracción por fuente, en qué se diferencia de pasar una aspiradora y cómo verificar que se lo están cumpliendo."
 answer: "NADCA es la asociación que fija los estándares de la industria, y su método clave es la extracción por fuente: sellar el sistema, poner los conductos bajo presión negativa y agitar la suciedad hacia una aspiradora con filtro, en lugar de solo soplar aire."
 pubDate: 2025-06-02
 category: "Limpieza de Ductos"

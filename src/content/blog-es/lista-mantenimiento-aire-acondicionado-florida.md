@@ -1,6 +1,6 @@
 ---
-title: "Lista de mantenimiento del aire acondicionado en Florida"
-description: "Una guía por temporada para mantener su aire acondicionado en forma en el clima de Florida, con tareas claras para antes, durante y después del verano."
+title: "Mantenimiento del aire en Florida: lista mes a mes"
+description: "Qué revisar cada mes, cada temporada y cada año en un sistema que trabaja casi todo el año. Lo que puede hacer usted y lo que no."
 answer: "El mantenimiento del aire acondicionado en Florida se organiza por temporada: preparar el equipo antes del verano, vigilarlo durante los meses de más calor y revisarlo a fondo al terminar la temporada."
 pubDate: 2025-02-06
 category: "Eficiencia del Aire Acondicionado"

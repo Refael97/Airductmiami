@@ -1,6 +1,6 @@
 ---
 title: "Is Air Duct Cleaning Worth It? An Honest Answer"
-description: "An honest look at when air duct cleaning is worth it and when it isn't, the real signs Florida homes need it, and when your money is better spent elsewhere."
+description: "When it is worth the money, when it is not, and why we tell people no. The real signs a Florida home needs it."
 answer: "Air duct cleaning is worth it when you have mold, pests, heavy dust, allergies, or a musty AC smell, common in humid Florida, but it isn't necessary on a fixed schedule for a clean, problem-free system."
 pubDate: 2025-03-14
 category: "Costs & Buying Guides"

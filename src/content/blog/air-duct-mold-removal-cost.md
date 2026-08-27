@@ -1,6 +1,6 @@
 ---
-title: "Air Duct Mold Removal Cost in Florida (2026 Price Guide)"
-description: "What air duct mold removal actually costs in Florida, what changes the price, and how to tell a fair quote from an inflated one. Real ranges, no call-for-pricing."
+title: "Air Duct Mold Removal Cost in Florida: $500 to $3,000"
+description: "Surface growth on the coil runs $500 to $900, a fully contaminated system $1,200 to $3,000. What moves the number and how to spot an inflated quote."
 answer: "Air duct mold removal in Florida typically costs $500 to $3,000, depending on how far the mold has spread. Light surface growth on the coil runs $500 to $900, a full system with contaminated ductwork runs $1,200 to $3,000, and severe cases needing duct replacement go higher."
 pubDate: 2026-07-31
 category: "Costs & Buying Guides"

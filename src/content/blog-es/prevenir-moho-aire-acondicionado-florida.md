@@ -1,6 +1,6 @@
 ---
-title: "Cómo prevenir el moho en su aire acondicionado en Florida"
-description: "Plan práctico para evitar el moho en su aire acondicionado en Florida: control de humedad, mantenimiento de la serpentina y hábitos que sí funcionan todo el año."
+title: "Prevenir el moho en el aire acondicionado en Florida"
+description: "El moho vuelve si no baja la humedad debajo del 60 por ciento. Qué hacer después de una limpieza para que no regrese el próximo verano."
 answer: "Para prevenir el moho en el aire acondicionado en Florida hay que mantener la humedad interior entre 30 y 50 por ciento, cambiar el filtro cada mes o dos, revisar el drenaje y dar mantenimiento regular a la serpentina."
 pubDate: 2024-12-03
 category: "Moho y Humedad"

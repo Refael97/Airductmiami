@@ -1,6 +1,6 @@
 ---
-title: "Limpieza de la serpentina y la manejadora: el arreglo que muchos olvidan"
-description: "La serpentina y el soplador de la manejadora acumulan polvo que le roba eficiencia al aire acondicionado. Le explicamos por qué limpiarlos importa tanto en Florida."
+title: "La serpentina sucia: el arreglo que casi todos olvidan"
+description: "La mayor parte del moho de un sistema en Florida está en la serpentina, no en los ductos. Por qué se pasa por alto y qué cuesta limpiarla bien."
 answer: "Limpiar la serpentina del evaporador y el soplador de la manejadora restaura la capacidad de enfriamiento del aire acondicionado y baja el consumo, un arreglo que muchos pasan por alto."
 pubDate: 2025-01-14
 category: "Eficiencia del Aire Acondicionado"

@@ -1,6 +1,6 @@
 ---
-title: "Protecting Your Baby's Air: Indoor Air Quality for Florida Families"
-description: "Why babies and young children are more vulnerable to poor indoor air, and how Florida families can create a cleaner, safer home environment."
+title: "Indoor Air Quality for Babies and Young Children"
+description: "Children breathe more air per pound of body weight than adults do. What to check at home, what to change first, and what is not worth buying."
 answer: "Babies and young children breathe faster and are more vulnerable to indoor air pollutants than adults, so Florida families should prioritize humidity control, clean filtration, clean ductwork, and low-VOC products to protect developing lungs."
 pubDate: 2025-03-12
 category: "Indoor Air Quality"

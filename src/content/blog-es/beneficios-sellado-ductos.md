@@ -1,6 +1,6 @@
 ---
-title: "Los beneficios de sellar los ductos en casas de Florida"
-description: "Sellar los ductos con mastique recupera el aire perdido, baja la factura y mejora el confort. Vea por qué es tan efectivo en el clima de Florida."
+title: "Sellar los ductos: cuánto aire pierde su casa ahora"
+description: "Una casa típica de Florida pierde entre 20 y 30 por ciento del aire frío por fugas en los ductos. Qué cuesta sellarlos y cuánto recupera al hacerlo."
 answer: "Sellar los ductos con mastique detiene la pérdida del 20 al 30 por ciento de aire que sufre un sistema típico, lo que baja la factura, empareja la temperatura y mejora el aire de la casa."
 pubDate: 2025-05-20
 category: "Eficiencia del Aire Acondicionado"

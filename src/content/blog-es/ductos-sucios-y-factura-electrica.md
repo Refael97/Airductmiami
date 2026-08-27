@@ -1,6 +1,6 @@
 ---
-title: "Cómo los ductos sucios aumentan su factura eléctrica"
-description: "Los ductos llenos de polvo y con fugas obligan al aire acondicionado a trabajar de más. Le contamos cómo eso se refleja en su recibo de la luz en Florida."
+title: "Ductos sucios: cuánto le suben la factura de luz"
+description: "Cómo un sistema restringido hace que el aire acondicionado trabaje más horas, cuánto se nota en la factura y cuánto de eso se recupera."
 answer: "Los ductos sucios y con fugas obligan al aire acondicionado a trabajar más horas para enfriar la casa, y en Florida eso puede subir la factura eléctrica entre un 20 y un 30 por ciento."
 pubDate: 2024-10-22
 category: "Eficiencia del Aire Acondicionado"

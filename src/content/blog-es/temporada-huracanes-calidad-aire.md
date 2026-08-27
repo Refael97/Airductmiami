@@ -1,6 +1,6 @@
 ---
-title: "Temporada de huracanes y calidad del aire interior en Florida"
-description: "Cómo la temporada de huracanes afecta el aire de su casa en Florida: humedad, cortes de luz y moho tras las tormentas, con pasos para protegerse."
+title: "Después del huracán: humedad, moho y su sistema de aire"
+description: "Qué revisar en el sistema después de una tormenta, por qué el moho aparece semanas más tarde y qué hacer si entró agua."
 answer: "Durante la temporada de huracanes en Florida el aire interior empeora por la humedad extrema, los cortes de luz que apagan el AC y las filtraciones de agua, lo que dispara el moho; controlar la humedad rápido tras la tormenta es la mejor defensa."
 pubDate: 2025-06-18
 category: "Calidad del Aire Interior"

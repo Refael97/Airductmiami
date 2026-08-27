@@ -1,6 +1,6 @@
 ---
-title: "Estafas de limpieza de ductos y cómo evitarlas"
-description: "El famoso gancho de los 99 dólares y otras estafas de limpieza de ductos en Florida. Aprenda a reconocerlas y a proteger su dinero."
+title: "Estafas de limpieza de ductos: las 5 señales claras"
+description: "Cómo funciona el gancho paso a paso, las cinco señales inconfundibles y qué hacer si ya tiene al técnico dentro de la casa."
 answer: "La estafa más común es el anuncio de limpieza de ductos por 99 dólares o menos, un gancho para entrar a su casa y venderle a presión servicios inflados que usted no necesita."
 pubDate: 2024-12-03
 category: "Costos y Guías"

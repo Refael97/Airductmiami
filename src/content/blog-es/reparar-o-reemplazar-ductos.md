@@ -1,6 +1,6 @@
 ---
-title: "¿Debe reparar o reemplazar sus ductos?"
-description: "Una guía clara para decidir entre reparar o reemplazar los ductos de su casa en Florida, según la edad, el estado y cuánto aire están perdiendo."
+title: "¿Reparar o reemplazar los ductos? Cómo decidir"
+description: "Las señales de que reparar ya no sirve, cuánto cuesta cada camino en Florida y qué preguntar antes de aceptar un reemplazo completo."
 answer: "Repare los ductos cuando el daño es local, como fugas o tramos sueltos, y reemplácelos cuando el sistema es viejo, tiene daño extenso o pierde demasiado aire para justificar remiendos."
 pubDate: 2025-03-11
 category: "Eficiencia del Aire Acondicionado"

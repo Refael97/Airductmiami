@@ -1,6 +1,6 @@
 ---
-title: "10 contaminantes comunes del aire interior y cómo reducirlos"
-description: "Los 10 contaminantes que más ensucian el aire de las casas en Florida y pasos concretos para reducir cada uno en el clima húmedo del estado."
+title: "10 contaminantes del aire en casa y cómo reducirlos"
+description: "Los 10 contaminantes que de verdad están en el aire de una casa en Florida, de dónde vienen y cuál conviene atacar primero."
 answer: "Los contaminantes más comunes del aire interior en Florida son moho, ácaros del polvo, polen, caspa de mascota, compuestos orgánicos volátiles, humo, monóxido de carbono, radón, bacterias y polvo, y se reducen con humedad controlada, filtración y ductos limpios."
 pubDate: 2025-01-08
 category: "Calidad del Aire Interior"

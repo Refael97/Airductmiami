@@ -1,6 +1,6 @@
 ---
-title: "Instalación y trazado de la ventila del secador en casas de Florida"
-description: "Techo o pared, ducto rígido o flexible: cómo el trazado y los materiales de la ventila del secador afectan la seguridad en casas de Florida."
+title: "Ventila del secador: cómo debe ir instalada en Florida"
+description: "El trazado correcto, el largo máximo que aguanta un secador y los errores de instalación que provocan la mitad de los bloqueos que atendemos."
 answer: "En casas de Florida conviene una ventila del secador con el recorrido más corto posible, ducto metálico rígido, salida por pared exterior cuando se pueda y una rejilla con protección contra pájaros y bichos."
 pubDate: 2025-06-18
 category: "Seguridad del Secador"

@@ -1,6 +1,6 @@
 ---
-title: "¿Las casas nuevas necesitan limpieza de ductos?"
-description: "Aunque parezca raro, las casas nuevas suelen tener ductos llenos de polvo de construcción. Le explicamos por qué y cuándo conviene limpiarlos en Florida."
+title: "¿Casa nueva necesita limpieza de ductos? Casi siempre"
+description: "El polvo de construcción queda dentro de los ductos y el primer verano lo reparte por toda la casa. Cuándo hacerlo y qué debe incluir."
 answer: "Sí, las casas nuevas suelen necesitar limpieza de ductos porque durante la construcción se acumula polvo de yeso, aserrín y residuos dentro del sistema que luego circulan por toda la casa."
 pubDate: 2025-04-07
 category: "Limpieza de Ductos"

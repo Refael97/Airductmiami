@@ -1,6 +1,6 @@
 ---
-title: "10 Questions to Ask Before Hiring an Air Duct Cleaner"
-description: "The 10 essential questions to ask any Florida air duct cleaning company before you hire, covering method, pricing, insurance, and how to avoid costly upsells."
+title: "10 Questions to Ask Before Hiring a Duct Cleaner"
+description: "The ten questions that separate a real company from a bait price, and the answers that should make you hang up the phone."
 answer: "Before hiring an air duct cleaner in Florida, ask about their cleaning method, whether the quote covers every vent and trunk line, their insurance, before-and-after photos, and the total written price, vague answers are a red flag."
 pubDate: 2025-02-08
 category: "Costs & Buying Guides"

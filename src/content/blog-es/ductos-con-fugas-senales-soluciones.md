@@ -1,6 +1,6 @@
 ---
-title: "Ductos con fugas: cómo detectarlos y solucionarlos"
-description: "Aprenda a reconocer las señales de ductos con fugas en su casa de Florida y conozca las soluciones reales, desde el sellado con mastique hasta el reemplazo."
+title: "Ductos con fugas: 5 señales que puede ver hoy mismo"
+description: "Cinco señales de fuga que puede revisar usted mismo en diez minutos, cómo se confirman de verdad y las soluciones de la más simple a la más grande."
 answer: "Los ductos con fugas se detectan por facturas altas, habitaciones desiguales y más polvo, y se solucionan sellando las uniones con mastique o reemplazando los tramos dañados."
 pubDate: 2024-11-08
 category: "Eficiencia del Aire Acondicionado"

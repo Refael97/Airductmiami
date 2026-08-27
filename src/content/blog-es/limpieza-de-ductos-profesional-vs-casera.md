@@ -1,6 +1,6 @@
 ---
-title: "Limpieza de ductos casera vs profesional: ¿cuál conviene?"
-description: "Qué sí puede limpiar usted mismo en sus ductos y qué exige equipo profesional. Una guía honesta para no gastar de más ni quedarse corto en Florida."
+title: "Limpiar los ductos usted mismo: hasta dónde llega"
+description: "Qué sí puede hacer usted con una aspiradora, qué no alcanza nunca, y en qué punto el intento casero termina costando más que el trabajo profesional."
 answer: "Usted mismo puede limpiar rejillas y cambiar filtros en casa, pero limpiar el interior de los conductos, el serpentín y tratar moho requiere equipo profesional de presión negativa que no se consigue en la ferretería."
 pubDate: 2025-02-11
 category: "Limpieza de Ductos"
