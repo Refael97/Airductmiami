@@ -108,3 +108,27 @@ export function regionMetaEs(name: string) {
     ),
   };
 }
+
+/**
+ * Dryer vent city page meta.
+ *
+ * Built for a cluster the site was showing up for and losing. In Deerfield
+ * Beach alone, "dryer vent cleaning deerfield" carried 318 impressions at
+ * position 48.3 and "deerfield dryer vent cleaning" 170 at 50.8, against an
+ * air duct cleaning page that mentions dryer vents in passing. The title
+ * leads with the exact phrase people type, then the price, because in this
+ * cluster the competing results are almost all "call for a free estimate".
+ *
+ * "$100" rather than "$100 to $200" in the title: the range costs eleven
+ * characters and buys nothing at a glance, and the full range is in the
+ * description and on the page itself.
+ */
+export function dryerVentCityMeta({ name, county }: CityMetaInput) {
+  const title = fit(`Dryer Vent Cleaning in ${name}, FL | From $${PRICES.ventLow}`, LIMITS.title);
+  const description = fit(
+    `Dryer vent cleaning in ${name}, ${county} from $${PRICES.ventLow}. ` +
+      `Clogged vents cause fires and double your drying time. Price before we book.`,
+    LIMITS.description,
+  );
+  return { title, description };
+}

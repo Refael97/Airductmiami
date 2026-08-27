@@ -1,0 +1,218 @@
+---
+/**
+ * Dedicated dryer vent cleaning page per city.
+ *
+ * Built after the 26 August 2026 Search Console export showed the dryer vent
+ * queries as the site's largest wasted cluster: roughly 1,100 impressions a
+ * month in Deerfield Beach alone, at average positions between 26 and 51,
+ * with zero clicks. The only page competing for those queries was the city's
+ * air duct cleaning page, which mentions dryer vents in a list. Position 48
+ * is what Google does with a page that is nearly but not actually about the
+ * query.
+ *
+ * These pages exist only for the cities in cityDetail that carry a hand
+ * written dryerVent block. Generating one for all 38 cities from a template
+ * would be a doorway pattern, and Google is explicitly good at detecting
+ * exactly that.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import FAQ from '../../../components/FAQ.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { getCity } from '../../../data/cities';
+import { cityDetail, dryerVentCities } from '../../../data/cityDetail';
+import { business } from '../../../data/business';
+import { serviceSchema } from '../../../lib/schema';
+import { dryerVentCityMeta, PRICES } from '../../../lib/meta';
+
+export const getStaticPaths = (() => {
+  return dryerVentCities.map((slug) => ({ params: { city: slug } }));
+}) satisfies GetStaticPaths;
+
+const { city: slug } = Astro.params;
+const city = getCity(slug!)!;
+const detail = cityDetail[slug!];
+const dv = detail.dryerVent!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}/service-areas/${city.slug}/dryer-vent-cleaning/`;
+
+const { title: metaTitle, description: metaDescription } = dryerVentCityMeta(city);
+
+const schema = serviceSchema(site, {
+  name: `Dryer Vent Cleaning in ${city.name}, FL`,
+  description: metaDescription,
+  url: pageUrl,
+  slug: 'dryer-vent-cleaning',
+});
+
+const faq = [
+  {
+    question: `How much does dryer vent cleaning cost in ${city.name}?`,
+    answer: `Most ${city.name} homes pay $${PRICES.ventLow} to $${PRICES.ventHigh} for a full dryer vent cleaning. The figure depends on the length of the run and where it terminates, so a short wall vent sits at the bottom of that range and a long attic run to a roof cap sits at the top. You get the price before we book, not after the technician is standing in your laundry room.`,
+  },
+  {
+    question: `How do I know my dryer vent in ${city.name} needs cleaning?`,
+    answer: `The reliable signs are a load that needs two cycles to dry, a dryer or laundry room that is hot to the touch after a load, a burning smell, and an exterior vent flap that no longer swings open freely while the dryer runs. Any one of those means the run is restricted.`,
+  },
+  {
+    question: `How often should ${city.name} homeowners clean the dryer vent?`,
+    answer: `Once a year for a typical household. More often if you run several loads a day, if anyone in the house sheds a lot of pet hair, or if you have one of the long attic or roof runs that are common in ${city.county}.`,
+  },
+  {
+    question: `Is a blocked dryer vent actually a fire risk?`,
+    answer: `Yes, and it is not a marketing line. Lint is highly flammable, and a restricted vent makes the dryer run hotter than it was designed to. The US Fire Administration attributes thousands of residential fires a year to clothes dryers, with failure to clean them the leading cause.`,
+  },
+  {
+    question: `Do you clean vents in ${city.name} condos and apartments?`,
+    answer: `We clean the portion you own, from the machine to the wall connection, in any building. Where the run joins a shared riser serving other units, that riser belongs to the association and we will tell you plainly if that is what we find, rather than cleaning your six feet and calling the problem solved.`,
+  },
+];
+
+const otherCities = dryerVentCities
+  .filter((s) => s !== slug)
+  .map((s) => getCity(s))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .filter((c) => c.region === city.region)
+  .slice(0, 6);
+---
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Service Areas', href: '/service-areas/' },
+      { name: city.name, href: `/service-areas/${city.slug}/` },
+      { name: 'Dryer Vent Cleaning', href: `/service-areas/${city.slug}/dryer-vent-cleaning/` },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{city.county} · Florida</span>
+        <h1>Dryer Vent Cleaning in {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">The short answer</span>
+        <p>
+          Dryer vent cleaning in {city.name} costs ${PRICES.ventLow} to ${PRICES.ventHigh} for a typical home and takes
+          45 to 90 minutes. We clear the whole run from the machine to the exterior termination, not just the
+          reachable end, and we test airflow before and after so you can see the difference rather than take our
+          word for it.
+        </p>
+      </div>
+
+      <div class="prose">
+        <h2>What dryer vents are actually like in {city.name}</h2>
+        {dv.local.map((p) => (<p>{p}</p>))}
+
+        <div class="callout">
+          <strong>What we find most often in {city.name}:</strong>
+          <p>{dv.common}</p>
+        </div>
+
+        <h2>The four signs worth acting on</h2>
+        <p>
+          You do not need an inspection to know whether this applies to you. Any one of these means the run is
+          restricted, and they get worse in the order listed.
+        </p>
+        <ul class="check-list">
+          <li><strong>Two cycles to dry one load.</strong> The most common first symptom, and the one people live with longest. A dryer that cannot exhaust cannot remove moisture, so it just keeps running.</li>
+          <li><strong>The top of the dryer is hot to the touch.</strong> Heat that should be leaving the house is staying in the machine. This is the point at which the appliance starts wearing out early.</li>
+          <li><strong>The laundry room feels humid.</strong> A dryer moves several liters of water out of your clothes per load. If the room is damp, that water is not reaching the outside.</li>
+          <li><strong>A burning or hot-lint smell.</strong> Stop using the dryer. This is lint reaching a temperature it should never reach, and it is the last warning you get.</li>
+        </ul>
+
+        <h2>What the job involves</h2>
+        <ol class="numbered">
+          <li><strong>Airflow reading at the termination.</strong> We measure what is actually coming out before touching anything, so the improvement is a number and not an opinion.</li>
+          <li><strong>Pull and inspect the transition.</strong> The flexible hose behind the machine is where a surprising share of blockages sit, crushed flat by a dryer pushed back to fit the space.</li>
+          <li><strong>Rotating brush and compressed air through the full run.</strong> Worked from both ends where the configuration allows, so lint is carried out rather than pushed into a corner.</li>
+          <li><strong>Clear the exterior hood and free the damper.</strong> Nests, paint, leaf debris and corroded flaps are cleared here. A clean duct with a blocked exit is still a blocked vent.</li>
+          <li><strong>Second airflow reading.</strong> Same instrument, same place. If the number has not moved, the job is not finished.</li>
+        </ol>
+
+        {detail.neighborhoods.length > 0 && (
+          <>
+            <h2>Where in {city.name} we work</h2>
+            <p>
+              We cover all of {city.name} and the surrounding {city.county} area, including
+              {' '}{detail.neighborhoods.slice(0, -1).join(', ')} and {detail.neighborhoods.slice(-1)[0]}.
+              Call {business.phone} and we will tell you the price for your run before we book anything.
+            </p>
+          </>
+        )}
+
+        <h2>What it costs</h2>
+        <table class="price-table">
+          <thead>
+            <tr><th>Job</th><th>Typical {city.name} price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dryer vent cleaning, standard wall or short run</td><td>From ${PRICES.ventLow}*</td></tr>
+            <tr><td>Dryer vent cleaning, long attic or roof run</td><td>${PRICES.ventLow} to ${PRICES.ventHigh}*</td></tr>
+            <tr><td>Combined with air duct cleaning</td><td>Bundled, quoted together</td></tr>
+            <tr><td>Vent rerouting or replacement</td><td>Quoted after inspection</td></tr>
+          </tbody>
+        </table>
+        <p class="footnote">
+          * A starting point, not a flat rate. The final figure depends on the length of the run, the number of
+          bends and where it terminates. You get that figure before we book the appointment.
+        </p>
+      </div>
+
+      <FAQ items={faq} title={`Dryer Vent Cleaning in ${city.name}: FAQs`} />
+
+      <div class="related-links">
+        <h2>Related</h2>
+        <ul>
+          <li><a href={`/service-areas/${city.slug}/`}>Air duct cleaning in {city.name}</a></li>
+          <li><a href="/services/dryer-vent-cleaning/">How dryer vent cleaning works</a></li>
+          <li><a href="/blog/dryer-vent-cleaning-cost/">What dryer vent cleaning costs in Florida</a></li>
+          <li><a href="/blog/signs-of-clogged-dryer-vent/">The signs of a clogged dryer vent</a></li>
+          <li><a href="/blog/how-dryer-vent-cleaning-prevents-fires/">How cleaning the vent prevents a fire</a></li>
+          <li><a href="/blog/dryer-takes-too-long-to-dry/">Why your dryer takes two cycles</a></li>
+        </ul>
+      </div>
+
+      {otherCities.length > 0 && (
+        <div class="nearby">
+          <h2>Dryer Vent Cleaning Nearby</h2>
+          <div class="city-chips">
+            {otherCities.map((c) => (
+              <a href={`/service-areas/${c.slug}/dryer-vent-cleaning/`} class="chip">{c.name}</a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand heading={`Dryer taking two cycles in ${city.name}? Let's fix that.`} />
+</BaseLayout>
+
+<style>
+  .callout {
+    background: var(--c-bg-alt); border-left: 4px solid var(--c-primary);
+    border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .callout p { margin: 0.4rem 0 0; }
+  .numbered { padding-left: 1.2rem; display: grid; gap: 0.6rem; }
+  .price-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  .price-table th, .price-table td { text-align: left; padding: 0.7rem 0.6rem; border-bottom: 1px solid var(--c-line); }
+  .price-table th { font-weight: 700; }
+  .footnote { font-size: 0.85rem; color: var(--c-muted); }
+  .related-links { margin-top: 2.5rem; }
+  .related-links ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
+  .related-links li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-line); }
+  .related-links li:last-child { border-bottom: 0; }
+  .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+</style>

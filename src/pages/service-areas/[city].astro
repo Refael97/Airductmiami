@@ -10,7 +10,8 @@ import { services } from '../../data/services';
 import { business } from '../../data/business';
 import ServiceIcon from '../../components/ServiceIcon.astro';
 import { serviceSchema } from '../../lib/schema';
-import { cityMeta } from '../../lib/meta';
+import { cityMeta, PRICES } from '../../lib/meta';
+import { cityDetail } from '../../data/cityDetail';
 
 export const getStaticPaths = (() => {
   return cities.map((c) => ({ params: { city: c.slug } }));
@@ -42,6 +43,9 @@ const nearby = city.nearby
   .map((n) => getCity(n))
   .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
+const detail = cityDetail[city.slug] ?? { neighborhoods: [] };
+const hasDryerVentPage = Boolean(detail.dryerVent);
+
 const topServices = services.slice(0, 6);
 const altHref = `/es/areas-de-servicio/${city.slug}`;
 const guides = await guidesForCity();
@@ -71,6 +75,42 @@ const guides = await guidesForCity();
         <p>{city.local}</p>
         <p>Our licensed, insured technicians bring NADCA source-removal equipment to every {city.name} job, placing your entire HVAC system under suction so dust, pollen, and mold are captured, not scattered through your home. Whether you're dealing with a musty AC smell, high energy bills, allergy flare-ups, or simply overdue maintenance, we help {city.name} homeowners breathe cleaner air.</p>
 
+        {(detail.depth ?? []).map((block) => (
+          <>
+            <h2>{block.heading}</h2>
+            {block.body.map((para) => (<p>{para}</p>))}
+          </>
+        ))}
+
+        <h2>What Air Duct Cleaning Costs in {city.name}</h2>
+        <table class="price-table">
+          <thead>
+            <tr><th>Job</th><th>Typical {city.name} price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Air duct cleaning, single system</td><td>From ${PRICES.ductLow}*</td></tr>
+            <tr><td>Air duct cleaning, larger or multi system home</td><td>${PRICES.ductLow} to ${PRICES.ductHigh}*</td></tr>
+            <tr><td>Dryer vent cleaning</td><td>${PRICES.ventLow} to ${PRICES.ventHigh}*</td></tr>
+            <tr><td>Air handler and coil cleaning</td><td>Quoted with the duct work</td></tr>
+          </tbody>
+        </table>
+        <p class="footnote">
+          * A starting point, not a flat rate. The number moves with the size of the home, the number of systems
+          and what we find when we look. You get the actual figure before we book, not after the van arrives.
+        </p>
+
+        {detail.neighborhoods.length > 0 && (
+          <>
+            <h2>Neighborhoods We Cover in {city.name}</h2>
+            <p>
+              We work across {city.name} and the wider {city.county} area, including
+              {' '}{detail.neighborhoods.slice(0, -1).join(', ')} and {detail.neighborhoods.slice(-1)[0]}.
+              If your street is not on that list it does not mean we do not come to it. Call {business.phone}
+              and we will tell you either way, along with the price, before anything is booked.
+            </p>
+          </>
+        )}
+
         <h2>Air Duct &amp; HVAC Services in {city.name}</h2>
         <p>Every service below is available to {city.name} residents and businesses:</p>
       </div>
@@ -85,6 +125,22 @@ const guides = await guidesForCity();
         ))}
       </div>
       <p style="margin-top:1rem;"><a href="/services/" class="btn btn-outline">See all services →</a></p>
+
+      {hasDryerVentPage && (
+        <div class="cross-service">
+          <h2>Here for the dryer, not the ducts?</h2>
+          <p>
+            Dryer vent cleaning in {city.name} is a different job with a different price, and we have written it
+            up separately: what the vent runs are actually like here, the four signs worth acting on, and what it
+            costs.
+          </p>
+          <p>
+            <a href={`/service-areas/${city.slug}/dryer-vent-cleaning/`} class="btn btn-outline">
+              Dryer vent cleaning in {city.name} &rarr;
+            </a>
+          </p>
+        </div>
+      )}
 
       <FAQ items={cityFaq} title={`Air Duct Cleaning in ${city.name}: FAQs`} />
 
@@ -117,6 +173,15 @@ const guides = await guidesForCity();
   .service-card:hover { text-decoration: none; }
   .service-card h3 { color: var(--c-ink); font-size: 1.1rem; }
   .service-card p { color: var(--c-body); font-size: 0.9rem; margin: 0; }
+  .price-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  .price-table th, .price-table td { text-align: left; padding: 0.7rem 0.6rem; border-bottom: 1px solid var(--c-line); }
+  .price-table th { font-weight: 700; }
+  .footnote { font-size: 0.85rem; color: var(--c-muted); }
+  .cross-service {
+    margin-top: 2.5rem; background: var(--c-bg-alt); border: 1px solid var(--c-line);
+    border-radius: var(--radius); padding: 1.4rem 1.5rem;
+  }
+  .cross-service h2 { margin-top: 0; }
   .city-guides { margin-top: 2.5rem; }
   .city-guides ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
   .city-guides li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-border, #e5e7eb); line-height: 1.45; }
