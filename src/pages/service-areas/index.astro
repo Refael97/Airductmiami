@@ -4,11 +4,15 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABand from '../../components/CTABand.astro';
 import { cities, citiesByRegion } from '../../data/cities';
 import { regionPages } from '../../data/regions';
+import { dryerVentCities } from '../../data/cityDetail';
 import { business } from '../../data/business';
 
 const title = `Florida Service Areas | Air Duct Cleaning Near You`;
 const description = `Air duct cleaning from $300 in ${cities.length} Florida cities, from Miami and Fort Lauderdale to Orlando, Tampa and Fort Myers. Price before you book.`;
 const regions = citiesByRegion();
+const dvCities = dryerVentCities
+  .map((slug) => cities.find((c) => c.slug === slug))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
 ---
 <BaseLayout title={title} description={description} altHref="/es/areas-de-servicio/">
   <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Service Areas', href: '/service-areas/' }]} />
@@ -38,6 +42,19 @@ const regions = citiesByRegion();
           </div>
         </div>
       ))}
+      <div class="region-block">
+        <h2>Dryer Vent Cleaning by City</h2>
+        <p>
+          Dryer vent cleaning is a different job from duct cleaning, with a different price and a different set
+          of things that go wrong. For these cities we have written it up on its own page, including what the
+          vent runs are actually like there:
+        </p>
+        <div class="city-grid">
+          {dvCities.map((c) => (
+            <a href={`/service-areas/${c.slug}/dryer-vent-cleaning/`} class="city-link">{c.name}</a>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
   <CTABand />

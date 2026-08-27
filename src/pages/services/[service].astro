@@ -7,7 +7,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
 import { services, getService } from '../../data/services';
-import { cities } from '../../data/cities';
+import { cities, getCity } from '../../data/cities';
+import { dryerVentCities } from '../../data/cityDetail';
 import ServiceIcon from '../../components/ServiceIcon.astro';
 import { serviceSchema } from '../../lib/schema';
 
@@ -33,6 +34,15 @@ const related = service.related
 
 // A handful of cities to reinforce statewide local relevance / internal links.
 const featuredCities = cities.slice(0, 8);
+
+/* The dryer vent city pages need a route in from the service hub. Without it
+   they are reachable only from their own city page, which is the weakest
+   possible internal link position for pages built to win a cluster that was
+   pulling roughly a thousand impressions a month at position 40 plus. */
+const dryerVentPages =
+  service.slug === 'dryer-vent-cleaning'
+    ? dryerVentCities.map((slug) => getCity(slug)).filter((c): c is NonNullable<typeof c> => Boolean(c))
+    : [];
 const altHref = `/es/servicios/${service.slug}`;
 const guides = await guidesForService(service.slug);
 const pageImg = serviceImages[service.slug];
@@ -146,6 +156,21 @@ const pageImg = serviceImages[service.slug];
         ))}
         <a href="/service-areas/" class="chip chip-all">All areas →</a>
       </div>
+
+      {dryerVentPages.length > 0 && (
+        <div class="city-pages">
+          <h3>Dryer vent cleaning, city by city</h3>
+          <p>
+            What the vent runs are actually like where you live, the failure we find there most often, and
+            the price:
+          </p>
+          <div class="city-chips">
+            {dryerVentPages.map((c) => (
+              <a href={`/service-areas/${c.slug}/dryer-vent-cleaning/`} class="chip">{c.name}</a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </section>
 
@@ -188,6 +213,9 @@ const pageImg = serviceImages[service.slug];
   .guides-card li:last-child { border-bottom: 0; }
   .guides-more { display: inline-block; margin-top: 0.8rem; font-size: 0.88rem; font-weight: 700; }
   .service-aside { position: sticky; top: 90px; display: grid; gap: 1.2rem; }
+  .city-pages { margin-top: 2.5rem; text-align: center; }
+  .city-pages h3 { margin-bottom: 0.4rem; }
+  .city-pages p { margin-bottom: 1rem; }
   .facts-card, .related-card, .aside-cta {
     background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
     padding: 1.3rem; box-shadow: var(--shadow-sm);
