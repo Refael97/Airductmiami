@@ -1,8 +1,9 @@
 ---
 title: "How Dryer Vent Cleaning Prevents House Fires"
-description: "Lint buildup in dryer vents causes thousands of house fires a year. Learn how regular cleaning stops overheating and keeps your Florida home safe."
+description: "The US Fire Administration counts about 2,900 residential dryer fires a year and names failure to clean as the leading cause. Here is the mechanism."
 answer: "Dryer vent cleaning prevents house fires by removing highly flammable lint that restricts airflow and traps heat, the two conditions that let a dryer overheat and ignite."
 pubDate: 2024-10-08
+updatedDate: 2026-08-28
 category: "Dryer Vent Safety"
 tags: ["fire prevention", "lint", "safety", "florida"]
 featured: false
@@ -16,6 +17,14 @@ faq:
 ---
 
 A dryer fire almost never starts without warning, it starts with lint. Understanding how that lint turns a routine appliance into a fire hazard is the key to preventing it, and the fix is simpler than most homeowners expect.
+
+## What the numbers actually say
+
+This is a subject the cleaning trade routinely exaggerates, so it is worth being precise. The [US Fire Administration](https://www.usfa.fema.gov/statistics/reports/fire-causes/) reports an estimated **2,900 clothes dryer fires in residential buildings each year**, causing an annual average of 5 deaths, 100 injuries and $35 million in property loss. **Failure to clean is the leading contributing factor, at 34 percent** of those fires.
+
+You will see much larger figures quoted, usually somewhere around 13,000. That number comes from a different measurement: home structure fires involving clothes dryers *and* washing machines together, from a different body, and it is not all attributable to lint. We use the smaller, narrower figure because it is the one that actually describes the risk being discussed here.
+
+2,900 is not a large number against roughly 130 million American households. What makes it worth acting on is that it is close to entirely preventable, the prevention costs $100 to $200, and the same blockage that causes the fire is also the reason your laundry takes two cycles.
 
 ## How a dryer vent causes a fire
 

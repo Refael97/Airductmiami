@@ -65,7 +65,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  answer:
  'La limpieza del ducto de secadora retira la pelusa inflamable y los residuos del conducto de escape que va desde su secadora de ropa hasta el exterior de la casa. Es la forma más eficaz de prevenir incendios de secadora y debe hacerse al menos una vez al año.',
  intro: [
- 'Los ductos de secadora tapados causan un estimado de más de 13,000 incendios domésticos al año en Estados Unidos. La pelusa es muy inflamable y, cuando restringe el flujo de aire, la secadora se recalienta. Es un riesgo serio que la mayoría de las personas nunca ve porque la acumulación queda oculta dentro de la pared o del tramo del techo.',
+ 'La Administración de Bomberos de Estados Unidos reporta unos 2,900 incendios al año por secadoras en edificios residenciales, y señala la falta de limpieza como el factor principal, en el 34 por ciento de los casos. La pelusa es muy inflamable y, cuando restringe el flujo de aire, la secadora se recalienta. Es un riesgo que la mayoría nunca ve porque la acumulación queda oculta dentro de la pared o del tramo del techo.',
  'Las casas de Florida a menudo tienen tramos de ducto largos y con muchas curvas hacia el techo, que atrapan la pelusa más rápido. Si su ropa tarda dos ciclos en secarse, si la parte superior de la secadora está caliente al tacto o si el cuarto de lavado se siente húmedo, es probable que el ducto esté restringido.',
  'Desconectamos la secadora, pasamos un cepillo giratorio y aire a alta presión por todo el tramo hasta la salida al exterior, limpiamos la campana de ventilación exterior y confirmamos un buen flujo de aire antes de terminar.',
  ],

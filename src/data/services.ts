@@ -84,7 +84,7 @@ export const services: Service[] = [
     answer:
       'Dryer vent cleaning removes flammable lint and debris from the exhaust duct that runs from your clothes dryer to the outside of your home. It is the single most effective way to prevent dryer fires and should be done at least once a year.',
     intro: [
-      'Clogged dryer vents cause an estimated 13,000+ home fires in the U.S. each year. Lint is highly flammable, and when it restricts airflow the dryer overheats, a serious risk that most homeowners never see because the buildup is hidden inside the wall or roof run.',
+      'The US Fire Administration puts clothes dryer fires in residential buildings at about 2,900 a year, and names failure to clean as the leading contributing factor at 34 percent of them. Lint is highly flammable, and when it restricts airflow the dryer overheats, a risk most homeowners never see because the buildup is hidden inside the wall or roof run.',
       "Florida homes often have long, twisting vent runs to the roof, which trap lint faster. If your clothes take two cycles to dry, the top of the dryer is hot to the touch, or the laundry room feels humid, your vent is likely restricted.",
       'We disconnect the dryer, run a rotating brush and high-pressure air through the entire run to the exterior termination, clear the outside vent hood, and confirm strong airflow before we finish.',
     ],
