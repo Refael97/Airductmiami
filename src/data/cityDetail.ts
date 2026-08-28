@@ -87,6 +87,13 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'miami-beach': {
+    dryerVent: {
+      local: [
+        'Almost every dryer on Miami Beach is in a building rather than a house, which means the run behind your machine joins a riser serving the units above and below you. When that riser loads up, every apartment on the stack starts drying slowly at once, and cleaning your own six feet changes nothing.',
+        'The oceanfront position makes the terminations worse than anywhere inland. Salt corrodes roof stacks and damper flaps quickly, and a damper stuck open lets humid Atlantic air sit in the duct all night.',
+      ],
+      common: 'A crushed transition hose in a laundry closet built to the minimum dimension, combined with a riser the association has not touched in years.',
+    },
     neighborhoods: ['South Beach', 'Mid-Beach', 'North Beach', 'Sunset Islands', 'Venetian Islands'],
   },
   hialeah: {
@@ -259,6 +266,13 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   davie: {
+    dryerVent: {
+      local: [
+        'Davie has more large lot and equestrian property than anywhere else in Broward, and the houses on them are wide single storey builds. A wide house with the laundry near the middle produces the worst case run: long, horizontal, in the attic, terminating at the far end through the roof.',
+        'The rural setting adds something the coastal cities do not have. Gable and roof terminations out here collect nesting far more often, and a wasp or bird nest in a termination blocks the flap completely.',
+      ],
+      common: 'Nesting in gable and roof terminations, which is the most common single cause of a dryer that worked last week and does not this week.',
+    },
     neighborhoods: ['Forest Ridge', 'Ivanhoe', 'Long Lake Estates', 'Shenandoah', 'Orange Park'],
   },
   sunrise: {
@@ -351,6 +365,30 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'boynton-beach': {
+    dryerVent: {
+      local: [
+        'The fifty five plus communities that make up much of Boynton are low rise and villa construction from the seventies and eighties, where laundry closets are compact and the dryer is usually pushed back hard against the wall to fit. That crushes the flexible transition hose behind the machine, which chokes the run before it has left the room.',
+        'East of Federal, the coastal properties have the salt problem on the terminations: dampers corrode, stop sealing, and let humid outside air travel back down the duct overnight.',
+      ],
+      common: 'A flattened transition hose behind the machine. It is the cheapest thing on the whole run to fix and the one that most often causes the symptom.',
+    },
+    depth: [
+      {
+        heading: 'Boynton is largely a fifty five plus city, and that shapes the work',
+        body: [
+          'Hunters Run, Leisureville and the communities around them account for a very large share of Boynton Beach housing, and they share a profile: built between the seventies and the nineties, single storey or low rise, compact systems, and residents who have often been in the same unit for a long time.',
+          'Long tenancy is the relevant part. A system that has run for twenty five years under one owner has usually had the equipment replaced and the distribution left alone, because equipment fails visibly and ductwork does not. We regularly find original ducting connected to a third generation air handler.',
+          'It is also the group most exposed to the scare tactics this trade is known for. We publish our prices for that reason, and the technician who comes out is not paid on what he sells.',
+        ],
+      },
+      {
+        heading: 'Coastal and inland Boynton are not the same job',
+        body: [
+          'East of Federal, the barrier island properties and the older beachside housing get salt on every exterior component and through every gap in the return path. West of the turnpike, the newer communities are conventional slab construction with attic runs and roof terminations.',
+          'The failure modes diverge accordingly: corroded terminations and dampers that no longer seal on the coast, and heat degraded joints in the attic inland.',
+        ],
+      },
+    ],
     neighborhoods: ['Hunters Run', 'Leisureville', 'Quantum Village', 'Chapel Hill', 'Renaissance Commons'],
   },
   'west-palm-beach': {
@@ -366,6 +404,24 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Tampa Bay ----
   tampa: {
+    depth: [
+      {
+        heading: 'Tampa\'s bungalows put the ductwork under the house, not above it',
+        body: [
+          'Seminole Heights, parts of Hyde Park, Tampa Heights and Ybor are raised wood frame houses on piers, and that single structural fact changes everything about their duct systems. Instead of running through an attic, the ducts run in the crawl space under the floor.',
+          'A crawl space is cooler than an attic, which sounds like an improvement and is not. It is also damper, it is unsealed to the ground in most of these houses, and anything that has been under there over the last eighty years has been in contact with the ductwork. We find runs that have separated at a joint and spent years discharging into the crawl space, and runs that have been crushed by storage or by a previous trade working under the house.',
+          'The tell from inside is a floor register that delivers noticeably less than the others, or a persistent musty note that gets stronger in the room nearest the access hatch.',
+        ],
+      },
+      {
+        heading: 'The slab half of the city, and what storms leave behind',
+        body: [
+          'Westchase, Carrollwood, New Tampa and the northern suburbs are conventional slab construction with attic ducting, the same configuration as most of South Florida and with the same attic heat problem.',
+          'What is specific to Tampa Bay is water. South Tampa and the low lying areas near the bay take surge and flooding in a way inland Florida does not, and the duct consequence shows up weeks later rather than during the storm. Insulation that got wet does not dry out inside a sealed duct jacket. It grows, and the first sign is usually a smell in a house that otherwise looks fine.',
+          'If your house has taken water at any point, the ductwork is worth inspecting even if the floors were dealt with. It is the part of the building nobody opens.',
+        ],
+      },
+    ],
     neighborhoods: ['South Tampa', 'Hyde Park', 'Seminole Heights', 'Westchase', 'Carrollwood', 'New Tampa'],
     dryerVent: {
       local: [
@@ -376,14 +432,78 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'st-petersburg': {
+    dryerVent: {
+      local: [
+        'The bungalow districts, Old Northeast and Historic Kenwood, are raised houses where the laundry was added later and the vent frequently drops into the crawl space rather than rising into an attic. A run under the floor is out of sight, usually unsupported, and takes damage from anything that has been under there.',
+        'The downtown condominium towers are the opposite case: short runs joining a shared riser that serves every unit on the stack, where the portion you own ends at the wall.',
+      ],
+      common: 'Crawl space runs that have separated at a joint and are discharging warm damp lint under the house rather than outside it.',
+    },
+    depth: [
+      {
+        heading: 'Water on three sides, and a housing stock that predates air conditioning',
+        body: [
+          'St Petersburg sits on a peninsula with the Gulf on one side and the bay on the other, which keeps humidity high day and night and keeps it high overnight in particular. Overnight is when it matters for ductwork: the system has been running all day, duct surfaces are cold, and when it cycles off and warm damp air reaches them, they sweat.',
+          'The Old Northeast and Historic Kenwood are full of twenties and thirties bungalows where the air conditioning was added long after construction, with the same improvised routing that produces leaks and dust intake. Shore Acres and the low lying neighborhoods add flood exposure to the same picture.',
+        ],
+      },
+      {
+        heading: 'The downtown towers are a different building entirely',
+        body: [
+          'The condominium buildings along the waterfront and through downtown are sealed envelopes with compact air handlers in closets and short duct runs. The whole system can be cleaned properly in a few hours, and the improvement is usually more noticeable than in a house simply because there is less system to dilute it.',
+          'What those buildings do have is shared infrastructure, and where your run joins something serving other units, that part is the association\'s. We will say so rather than clean your six feet and call the problem solved.',
+        ],
+      },
+    ],
     neighborhoods: ['Old Northeast', 'Historic Kenwood', 'Snell Isle', 'Jungle Terrace', 'Shore Acres'],
   },
   clearwater: {
+    dryerVent: {
+      local: [
+        'Clearwater\'s condominium and villa stock puts most dryers on short runs to an exterior wall or into a shared riser, and short runs are the ones people assume are fine. They usually are not: a short duct never warms along its whole length, so the last foot before the hood stays damp and lint sticks to it instead of passing through.',
+        'On the barrier island, Clearwater Beach and Sand Key, salt seizes the damper flaps within a few seasons, and a damper that will not close lets humid Gulf air back down the duct every night.',
+      ],
+      common: 'The last twelve inches before an exterior hood packed solid, on a run that looks far too short to have a problem.',
+    },
+    depth: [
+      {
+        heading: 'A barrier island and a mainland, with different problems',
+        body: [
+          'Clearwater Beach, Sand Key and Island Estates are on the sand, and everything about their HVAC is shaped by salt. Salt reaches the outdoor equipment, the roof terminations and anything with a metal flap, and it reaches the indoor coil too, carried in through any gap in the return path. A coil carrying a salt and dust layer holds moisture longer, which is the condition mold needs.',
+          'Countryside and the mainland neighborhoods are conventional inland construction with attic ducting, and their issue is the ordinary Florida one: a duct system in a space that runs above 120 degrees for half the year.',
+        ],
+      },
+      {
+        heading: 'The condominium question in Pinellas',
+        body: [
+          'Clearwater has a very high proportion of condominium and villa housing, much of it from the seventies and eighties, and condominium systems raise a question single family homes do not: what is yours.',
+          'In most buildings the air handler, the ductwork inside your walls and the filter are yours, while risers, corridors and anything shared belong to the association. That boundary is where problems go unowned for years, because each side reasonably assumes the other is handling it. We will tell you which side of the line your problem is on before quoting anything, including when the answer is that you should be talking to your board rather than to us.',
+        ],
+      },
+    ],
     neighborhoods: ['Countryside', 'Island Estates', 'Clearwater Beach', 'Feather Sound', 'Sand Key'],
   },
 
   // ---- Central Florida ----
   orlando: {
+    depth: [
+      {
+        heading: 'Orlando has a duct problem the coasts do not: the vacation rental',
+        body: [
+          'Central Florida holds tens of thousands of short term rental homes, concentrated south and west of the city toward Kissimmee and Davenport, and they age their air conditioning differently from anything else in the state. A rental turns over every few days, the thermostat gets set wherever the last guest left it, and between bookings the house sits closed with the system idling at 78 or 80 degrees.',
+          'That is the exact condition that grows mold. The system is not running long enough to pull humidity down, the house is sealed, and there is nobody in it to notice the smell. Owners usually find out from a review rather than from the equipment.',
+          'The practical consequence is that a rental needs the coil and the ducts looked at on a much shorter cycle than an owner occupied house, and the reason is occupancy pattern rather than square footage. We treat them as a different job because they are one.',
+        ],
+      },
+      {
+        heading: 'Pollen, new construction, and the old Orlando neighborhoods',
+        body: [
+          'Away from the rentals, Orlando splits in two. Lake Nona, Horizon West and the newer eastern growth are homes under fifteen years old, and the duct problem there is construction debris. Drywall dust, sawdust and insulation fibre get into the ductwork before the house is finished, and no builder cleans it out. The first full cooling season redistributes all of it.',
+          'College Park, Delaney Park and Colonialtown are the other end: twenties through fifties houses under a heavy oak canopy, with air conditioning fitted decades after the house was built. Ducting in those homes was routed through whatever space existed, and the oak canopy means a spring pollen load that inland Florida takes seriously and the coasts do not.',
+          'Neither problem is the one people expect. Orlando homeowners tend to assume humidity is the whole story because that is what they hear about Florida. Here it is genuinely secondary to pollen and to construction dust.',
+        ],
+      },
+    ],
     neighborhoods: ['Baldwin Park', 'College Park', 'Dr. Phillips', 'Lake Nona', 'Conway', 'Delaney Park'],
     dryerVent: {
       local: [
@@ -397,6 +517,30 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Celebration', 'Buenaventura Lakes', 'Poinciana', 'Kissimmee Bay'],
   },
   'winter-park': {
+    dryerVent: {
+      local: [
+        'Winter Park\'s older housing puts the laundry wherever it fitted when it was added, which in a ninety year old house is usually not against an exterior wall. Runs through interior walls and up into the attic are the norm here rather than the exception, and each of those runs is longer and turns more corners than the manufacturer intended.',
+        'The oak canopy adds the second problem. Roof and gable terminations under mature trees collect leaf litter and seed debris on top of the flap, so the duct can be perfectly clear while the exit is not.',
+      ],
+      common: 'Roof terminations obstructed from outside by leaf and seed debris, on runs that are already longer than they should be.',
+    },
+    depth: [
+      {
+        heading: 'Ninety year old houses with air conditioning added later',
+        body: [
+          'Winter Park\'s older housing predates residential air conditioning entirely. The houses around Hannibal Square, Orwin Manor and the lakes were built in the twenties and thirties, and every duct system in them has been fitted afterwards, often more than once, into a structure that was not designed to carry one.',
+          'That produces routing you do not see in newer construction: runs through closets, through dropped soffits, through knee walls, and occasionally through spaces that are not conditioned and not sealed. Each of those transitions is a place air escapes and dust enters.',
+          'It also produces systems where the equipment is modern and the distribution is not. A high efficiency air handler moving air through ducting laid out in 1974 will underperform its rating, and the fault is almost never in the equipment.',
+        ],
+      },
+      {
+        heading: 'The oak canopy is the other half of the story',
+        body: [
+          'Winter Park\'s tree cover is denser than almost anywhere in Central Florida, and mature live oaks put out a heavy spring pollen load along with a constant fall of fine organic debris. That reaches the system two ways: through the return, and through any leak in the attic portion of the duct run.',
+          'Households here often describe a seasonal pattern, where allergy symptoms rise in spring and stay elevated indoors long after the outdoor count has dropped. That lag is the tell. Outdoor pollen falls when the season ends; pollen that has settled inside a duct system does not, and gets redistributed every time the system runs.',
+        ],
+      },
+    ],
     neighborhoods: ['Hannibal Square', 'Windsong', 'Orwin Manor', 'Lake Killarney'],
   },
   lakeland: {
@@ -408,6 +552,24 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Southwest Florida ----
   'fort-myers': {
+    depth: [
+      {
+        heading: 'Lee County housing is still working through what the storms did',
+        body: [
+          'A large share of the housing stock in and around Fort Myers has been repaired, remediated or rebuilt in the last few years, and duct systems are the part of that work most often skipped. A house gets new floors, new drywall and a new kitchen, and the ductwork that was in the attic or the wall during the water event is still the ductwork in the attic.',
+          'Wet duct insulation is the specific problem. It is sealed inside a jacket, it does not dry, and the growth it supports is invisible until the system runs. Homeowners often describe it as the house smelling fine for months and then not.',
+          'If your home was affected and the duct system was not inspected as part of the restoration, that is worth closing. It is not an upsell, it is the most commonly missed item on a remediation.',
+        ],
+      },
+      {
+        heading: 'Half the year empty, and what that does to a system',
+        body: [
+          'Fort Myers has one of the highest seasonal residency rates in the state. A house closed from May to November sits through the entire wet season with the thermostat held around 80 and the system barely cycling.',
+          'A system that barely cycles does not dehumidify. Indoor humidity climbs past 60 percent and stays there for months, which is all mold needs on a coil, in a drain pan, or on the inside surface of a duct. Returning owners describe it as the house smelling closed up, and assume it will air out. It does not, because the source is inside the system.',
+          'A humidistat set properly, or a dehumidifier on a timer, prevents most of this. It is worth more than any cleaning we could sell you, and we would rather you did that than call us every November.',
+        ],
+      },
+    ],
     neighborhoods: ['McGregor', 'Whiskey Creek', 'Gateway', 'Pelican Preserve', 'Iona'],
   },
   'cape-coral': {
@@ -417,6 +579,30 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Old Naples', 'Park Shore', 'Pelican Bay', 'Golden Gate', 'Vineyards'],
   },
   'bonita-springs': {
+    dryerVent: {
+      local: [
+        'Bonita Springs is largely single storey construction in gated communities, with the laundry off the garage or in an interior utility room and the vent taken up into the attic and out through the roof. Those attic runs sit in a space that holds heat well into the evening for most of the year.',
+        'The seasonal pattern matters here as much as it does for the air conditioning. A dryer that is unused from April to November leaves a duct full of lint sitting in humid air for six months, and the lint that was loose in April is a damp mat by the time anyone runs a load in November.',
+      ],
+      common: 'Compacted lint in runs that have sat unused through a wet season, which behaves nothing like the loose lint a monthly user would have.',
+    },
+    depth: [
+      {
+        heading: 'A seasonal city, and a seasonal failure mode',
+        body: [
+          'Bonita Springs empties out for the summer more completely than almost anywhere in Southwest Florida. Bonita Bay, Pelican Landing and the gated communities around them hold a very high proportion of part year residences, and a house closed from April to November behaves nothing like one that is lived in.',
+          'The system runs just enough to hold 80 degrees and no more, which means short cycles, which means it never runs long enough to dehumidify. Indoor humidity sits above 60 percent for six months. That is not a marginal condition, it is the textbook one for growth on the coil, in the drain pan and on the inner surface of the supply duct.',
+          'Owners come back in November, turn the thermostat down, and get a smell they did not leave behind. The house did not do that in a week. It did it over the summer, quietly.',
+        ],
+      },
+      {
+        heading: 'What to do about it, including the parts we do not sell',
+        body: [
+          'The most effective fix here is not a cleaning. It is a humidistat set to hold humidity rather than temperature, or a whole house dehumidifier on a timer, so the system actually removes moisture while you are away. That prevents the problem instead of treating it, and we would rather tell you that than clean the same system every November.',
+          'Where growth is already established, cleaning the coil, the pan and the ducts removes it. But if the house goes back to sitting at 80 with the humidity uncontrolled, it will be back the following season. The two go together.',
+        ],
+      },
+    ],
     neighborhoods: ['Bonita Bay', 'Pelican Landing', 'Spanish Wells', 'Bonita Farms'],
   },
   sarasota: {
