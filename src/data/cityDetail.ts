@@ -56,6 +56,18 @@ export interface CityDetail {
     /** The single failure mode that comes up most in this city. */
     common: string;
   };
+  /**
+   * Present only for cities that get a dedicated repair page at
+   * /service-areas/{slug}/air-duct-repair/. Roughly 450 impressions of city
+   * plus repair queries were landing on nothing: "ductwork repair bradenton"
+   * at 113 impressions and position 32.1, "duct services and repair in
+   * deerfield beach" at 79, Winter Park at 55. Same rule as dryerVent, a page
+   * exists only where there is evidence and something specific to say.
+   */
+  ductRepair?: {
+    local: string[];
+    common: string;
+  };
 }
 
 export const cityDetail: Record<string, CityDetail> = {
@@ -139,6 +151,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Keys Gate', 'Silver Palm', 'Malibu Bay', 'Waterstone'],
   },
   pinecrest: {
+    ductRepair: {
+      local: [
+        'Pinecrest houses sit on large lots and are wide rather than tall, which produces the run nobody wants: long, horizontal, in the attic, with the furthest bedroom sixty feet or more from the air handler.',
+        'At that length the losses compound. The run leaks, the insulation is working against a 75 degree gradient the whole way, and the air arriving at the far register is nothing like the air that left. Homeowners read that as an undersized system and replace equipment that was fine.',
+      ],
+      common: 'Long horizontal attic runs sagging between joists, where every low point is both a restriction and a place condensation collects.',
+    },
     neighborhoods: ['Pinecrest Village', 'Suniland', 'Evergreen', 'High Pines'],
   },
   'north-miami': {
@@ -183,6 +202,13 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   hollywood: {
+    ductRepair: {
+      local: [
+        'Hollywood covers three eras of housing and each fails differently. The Hollywood Lakes bungalows from the twenties and thirties have entirely retrofitted systems routed through whatever space existed. The Driftwood and Boulevard Heights ranch homes have original attic ducting from the fifties and sixties, now well past its service life. The beachside condominiums have short runs in a sealed envelope.',
+        'Within a mile of the ocean, add salt to all three. Salt reaches the indoor coil through any gap in the return path, and a coil carrying salt and dust stays wet longer than a clean one.',
+      ],
+      common: 'Sixty year old flexible duct with a jacket that has gone brittle and split, which is a replacement rather than a repair.',
+    },
     depth: [
       {
         heading: 'Three eras of Hollywood housing, three different duct systems',
@@ -315,6 +341,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Winston Park', 'Wynmoor', 'Regency Lakes', 'Cocobay', 'Township'],
   },
   'deerfield-beach': {
+    ductRepair: {
+      local: [
+        'Deerfield splits between Century Village condominium systems, where the ducting is short, shared and original to the seventies, and the coastal single family homes east of Federal where salt reaches everything with a metal component.',
+        'In the condominiums the repair question is usually about the boundary: which part is yours and which belongs to the association. On the coastal side it is corrosion, and specifically terminations and dampers that no longer seal, which lets humid air travel back into the system every night.',
+      ],
+      common: 'In the condominiums, a return or filter housing that no longer seals, which is why the coil keeps getting dirty after it has been cleaned.',
+    },
     depth: [
       {
         heading: 'Deerfield Beach: condominium systems and coastal systems are different jobs',
@@ -365,6 +398,13 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'boynton-beach': {
+    ductRepair: {
+      local: [
+        'Boynton\'s fifty five plus communities share a pattern: equipment that has been replaced two or three times connected to ductwork that has never been touched. Equipment fails visibly and ductwork does not, so the distribution quietly ages past the point where the equipment can compensate.',
+        'The result is systems where a modern, correctly sized air handler underperforms badly, and the owner has been told the unit is the problem. Frequently it is not.',
+      ],
+      common: 'Original seventies or eighties ducting connected to a third generation air handler, where the new equipment cannot deliver through the old distribution.',
+    },
     dryerVent: {
       local: [
         'The fifty five plus communities that make up much of Boynton are low rise and villa construction from the seventies and eighties, where laundry closets are compact and the dryer is usually pushed back hard against the wall to fit. That crushes the flexible transition hose behind the machine, which chokes the run before it has left the room.',
@@ -404,6 +444,13 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Tampa Bay ----
   tampa: {
+    ductRepair: {
+      local: [
+        'Tampa\'s raised bungalow districts put the ductwork in the crawl space, and crawl space repair is a different job from attic repair. The runs are unsupported over long spans, they are within reach of anything that has been under the house, and they are in permanently damper air than an attic.',
+        'The slab neighborhoods north of the city have conventional attic ducting with conventional attic failures. What is specific to Tampa Bay is flood exposure: if a house has taken water, the duct system is the part of the building nobody opens, and wet insulation inside a jacket does not dry.',
+      ],
+      common: 'Crawl space runs that have separated at a joint and spent years discharging under the house, which the homeowner experiences only as one cold room.',
+    },
     depth: [
       {
         heading: 'Tampa\'s bungalows put the ductwork under the house, not above it',
@@ -432,6 +479,13 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'st-petersburg': {
+    ductRepair: {
+      local: [
+        'The Old Northeast and Historic Kenwood bungalows have air conditioning that was added decades after the houses were built, with runs that frequently drop into the crawl space rather than rising into an attic. Those runs are out of sight, usually unsupported, and take damage from anything that has been under there.',
+        'Shore Acres and the low lying neighborhoods add flood exposure. A duct that took water has insulation that cannot dry, and that is a replacement rather than a seal.',
+      ],
+      common: 'Unsupported crawl space runs sagging between piers, where each low point holds moisture and eventually opens at a joint.',
+    },
     dryerVent: {
       local: [
         'The bungalow districts, Old Northeast and Historic Kenwood, are raised houses where the laundry was added later and the vent frequently drops into the crawl space rather than rising into an attic. A run under the floor is out of sight, usually unsupported, and takes damage from anything that has been under there.',
@@ -458,6 +512,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Old Northeast', 'Historic Kenwood', 'Snell Isle', 'Jungle Terrace', 'Shore Acres'],
   },
   clearwater: {
+    ductRepair: {
+      local: [
+        'Clearwater\'s high proportion of condominium and villa housing makes the first repair question an ownership question. In most buildings the air handler, the ducting inside your walls and the filter housing are yours, while risers and anything shared belong to the association.',
+        'That boundary is where problems sit unowned for years, because both sides reasonably assume the other is handling it. On the barrier island, Clearwater Beach and Sand Key, add salt: terminations corrode, dampers stop sealing, and the system draws salt laden air through every gap in the return.',
+      ],
+      common: 'A return path that is not sealed, letting the system pull unfiltered air from a wall cavity or a corridor rather than through the filter.',
+    },
     dryerVent: {
       local: [
         'Clearwater\'s condominium and villa stock puts most dryers on short runs to an exterior wall or into a shared riser, and short runs are the ones people assume are fine. They usually are not: a short duct never warms along its whole length, so the last foot before the hood stays damp and lint sticks to it instead of passing through.',
@@ -486,6 +547,13 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Central Florida ----
   orlando: {
+    ductRepair: {
+      local: [
+        'Orlando\'s duct repair work divides between two housing types that fail for opposite reasons. The newer subdivisions east and west of the city were built fast, and speed shows up in the distribution rather than the equipment: runs that were kinked during construction and never straightened, joints taped rather than sealed, and boots that were never properly fastened to the ceiling.',
+        'The older neighborhoods, College Park, Delaney Park and Colonialtown, have the opposite problem. The systems are retrofits into twenties through fifties houses, and the ducting has been added to and worked around by several generations of trades.',
+      ],
+      common: 'In the newer builds, boots that were never properly sealed to the ceiling, which shows as grey fanning marks on the paint around the register.',
+    },
     depth: [
       {
         heading: 'Orlando has a duct problem the coasts do not: the vacation rental',
@@ -517,6 +585,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Celebration', 'Buenaventura Lakes', 'Poinciana', 'Kissimmee Bay'],
   },
   'winter-park': {
+    ductRepair: {
+      local: [
+        'Every duct system in Winter Park\'s older housing is a retrofit. The houses around Hannibal Square, Orwin Manor and the lakes were built before residential air conditioning existed, so the ducting was routed afterwards through closets, soffits and knee walls rather than designed into the structure.',
+        'Improvised routing produces improvised joints, and improvised joints are what fail. We find runs passing through unconditioned space with no insulation, runs that turn more corners than the length allows, and connections that were taped rather than mechanically fastened and have worked loose over decades of thermal cycling.',
+      ],
+      common: 'Runs passing through unconditioned or semi conditioned space, which both leak and sweat, and which no amount of cleaning improves.',
+    },
     dryerVent: {
       local: [
         'Winter Park\'s older housing puts the laundry wherever it fitted when it was added, which in a ninety year old house is usually not against an exterior wall. Runs through interior walls and up into the attic are the norm here rather than the exception, and each of those runs is longer and turns more corners than the manufacturer intended.',
@@ -552,6 +627,13 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Southwest Florida ----
   'fort-myers': {
+    ductRepair: {
+      local: [
+        'A large share of Lee County housing has been restored in the last few years, and duct systems are the item most often left out of that work. The floors, the drywall and the kitchen get replaced; the ductwork that was in the attic or the wall during the water event stays.',
+        'Wet duct insulation is the specific failure. It sits sealed inside a jacket where it cannot dry, and it supports growth that is invisible until the system runs. That is a replacement question rather than a repair question, and we would rather tell you that plainly than seal a run that needs to come out.',
+      ],
+      common: 'Duct insulation that took water during a storm event and was never opened up, inside a house that was otherwise fully restored.',
+    },
     depth: [
       {
         heading: 'Lee County housing is still working through what the storms did',
@@ -609,6 +691,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Downtown Sarasota', 'Gulf Gate', 'Palmer Ranch', 'Siesta Key', 'Arlington Park'],
   },
   bradenton: {
+    ductRepair: {
+      local: [
+        'Bradenton generates more duct repair searches than any other city we serve, and the housing stock explains it. West Bradenton, Bayshore Gardens and Samoset are largely fifties through seventies construction, and a great deal of the original ductwork is still in service well past the fifteen years flexible duct realistically lasts in this climate.',
+        'What that means in practice is that a lot of Bradenton systems are past the point where sealing a joint solves anything. The jacket has gone brittle, the insulation inside has absorbed moisture from decades of Manatee County humidity, and the run leaks along its length rather than at one identifiable place.',
+      ],
+      common: 'Return air paths built from the wall cavity or the joist bay rather than sealed duct, where the closing panel has come loose and the system is drawing straight from the crawl space.',
+    },
     depth: [
       {
         heading: 'Why Bradenton ductwork loads up faster than it should',
@@ -646,3 +735,6 @@ export function detailFor(slug: string): CityDetail {
 
 /** Slugs that have a dedicated dryer vent page. Drives getStaticPaths. */
 export const dryerVentCities = Object.keys(cityDetail).filter((s) => cityDetail[s].dryerVent);
+
+/** Slugs that have a dedicated air duct repair page. Drives getStaticPaths. */
+export const ductRepairCities = Object.keys(cityDetail).filter((s) => cityDetail[s].ductRepair);

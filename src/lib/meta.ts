@@ -132,3 +132,29 @@ export function dryerVentCityMeta({ name, county }: CityMetaInput) {
   );
   return { title, description };
 }
+
+/**
+ * Air duct repair city page meta.
+ *
+ * Built for a cluster that had no page at all. Roughly 450 impressions a
+ * month of city plus repair queries, led by "ductwork repair bradenton" at
+ * 113 impressions and position 32.1 and "duct services and repair in
+ * deerfield beach" at 79. The nearest thing the site offered was a statewide
+ * repair service page, which is why the ranked position for every one of
+ * them sat in the thirties and eighties.
+ *
+ * The title leads with repair rather than cleaning because the two are
+ * different purchases, and a searcher whose duct has come apart is not
+ * shopping for a cleaning. No price in the title: repair genuinely varies
+ * from a few hundred to a full replacement, and a "from" figure on this one
+ * would be the bait pricing the site argues against everywhere else.
+ */
+export function ductRepairCityMeta({ name, county }: CityMetaInput) {
+  const title = fit(`Air Duct Repair in ${name}, FL | Leaks and Sealing`, LIMITS.title);
+  const description = fit(
+    `Duct repair and sealing in ${name}, ${county}. We find the failures, show you them, ` +
+      `and quote repair alongside replacement. Airflow tested before and after.`,
+    LIMITS.description,
+  );
+  return { title, description };
+}

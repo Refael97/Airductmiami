@@ -8,7 +8,7 @@ import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
 import { services, getService } from '../../data/services';
 import { cities, getCity } from '../../data/cities';
-import { dryerVentCities } from '../../data/cityDetail';
+import { dryerVentCities, ductRepairCities } from '../../data/cityDetail';
 import ServiceIcon from '../../components/ServiceIcon.astro';
 import { serviceSchema } from '../../lib/schema';
 
@@ -39,10 +39,20 @@ const featuredCities = cities.slice(0, 8);
    they are reachable only from their own city page, which is the weakest
    possible internal link position for pages built to win a cluster that was
    pulling roughly a thousand impressions a month at position 40 plus. */
-const dryerVentPages =
+const citySubPages = (
   service.slug === 'dryer-vent-cleaning'
-    ? dryerVentCities.map((slug) => getCity(slug)).filter((c): c is NonNullable<typeof c> => Boolean(c))
-    : [];
+    ? dryerVentCities
+    : service.slug === 'air-duct-repair'
+      ? ductRepairCities
+      : []
+)
+  .map((slug) => getCity(slug))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c));
+const citySubPath = service.slug === 'dryer-vent-cleaning' ? 'dryer-vent-cleaning' : 'air-duct-repair';
+const citySubBlurb =
+  service.slug === 'dryer-vent-cleaning'
+    ? 'What the vent runs are actually like where you live, the failure we find there most often, and the price:'
+    : 'What fails in the ductwork where you live, how we identify it by measurement, and the repair against replace decision:';
 const altHref = `/es/servicios/${service.slug}`;
 const guides = await guidesForService(service.slug);
 const pageImg = serviceImages[service.slug];
@@ -157,16 +167,13 @@ const pageImg = serviceImages[service.slug];
         <a href="/service-areas/" class="chip chip-all">All areas →</a>
       </div>
 
-      {dryerVentPages.length > 0 && (
+      {citySubPages.length > 0 && (
         <div class="city-pages">
-          <h3>Dryer vent cleaning, city by city</h3>
-          <p>
-            What the vent runs are actually like where you live, the failure we find there most often, and
-            the price:
-          </p>
+          <h3>{service.shortName}, city by city</h3>
+          <p>{citySubBlurb}</p>
           <div class="city-chips">
-            {dryerVentPages.map((c) => (
-              <a href={`/service-areas/${c.slug}/dryer-vent-cleaning/`} class="chip">{c.name}</a>
+            {citySubPages.map((c) => (
+              <a href={`/service-areas/${c.slug}/${citySubPath}/`} class="chip">{c.name}</a>
             ))}
           </div>
         </div>

@@ -1,0 +1,232 @@
+---
+/**
+ * Air duct repair page per city.
+ *
+ * The Search Console export of 28 August 2026 showed a repair cluster the
+ * site had no page for anywhere: "ductwork repair bradenton" at 113
+ * impressions and position 32.1, "duct services and repair in deerfield
+ * beach" at 79, plus Winter Park 55, Fort Myers 27, Clearwater 20, Orlando
+ * 18 and Pinecrest 17. Roughly 450 impressions a month with the statewide
+ * service page as the only thing competing.
+ *
+ * Repair is a different purchase from cleaning, and the honest version of
+ * this page has to include the case for replacement and the case for doing
+ * nothing, or it is just a cleaning page with a different heading.
+ *
+ * Deliberately no "from $X" here, unlike the cleaning and dryer vent pages.
+ * Duct repair genuinely runs from sealing a few joints to replacing a whole
+ * system, and a starting price on this one would be exactly the bait figure
+ * the site argues against in its own scam guide.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import FAQ from '../../../components/FAQ.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { getCity } from '../../../data/cities';
+import { cityDetail, ductRepairCities } from '../../../data/cityDetail';
+import { business } from '../../../data/business';
+import { serviceSchema } from '../../../lib/schema';
+import { ductRepairCityMeta } from '../../../lib/meta';
+
+export const getStaticPaths = (() => {
+  return ductRepairCities.map((slug) => ({ params: { city: slug } }));
+}) satisfies GetStaticPaths;
+
+const { city: slug } = Astro.params;
+const city = getCity(slug!)!;
+const detail = cityDetail[slug!];
+const dr = detail.ductRepair!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}/service-areas/${city.slug}/air-duct-repair/`;
+const { title: metaTitle, description: metaDescription } = ductRepairCityMeta(city);
+
+const schema = serviceSchema(site, {
+  name: `Air Duct Repair in ${city.name}, FL`,
+  description: metaDescription,
+  url: pageUrl,
+  slug: 'air-duct-repair',
+});
+
+const faq = [
+  {
+    question: `How much does air duct repair cost in ${city.name}?`,
+    answer: `Sealing a set of leaking joints or reconnecting a dropped run is typically a few hundred dollars. Replacing one or two failed runs sits above that. A full duct replacement for an average single system home runs into the thousands. We do not publish a starting price on repair because the honest range is that wide, and a low number here would be the bait pricing we warn people about. You get the actual figure after an inspection, before any work is booked.`,
+  },
+  {
+    question: `How do I know if my ducts need repair rather than cleaning?`,
+    answer: `Cleaning solves restriction. Repair solves loss. If the symptom is dust around the registers and a musty smell, that is usually cleaning. If one room never reaches temperature, the bill has climbed without your habits changing, or the system runs constantly, air is escaping before it arrives and cleaning will not change that.`,
+  },
+  {
+    question: `Should I repair or replace ductwork in ${city.name}?`,
+    answer: `Repair when the failures are in a few identifiable places and the outer jacket is intact along most of the run. Replace when the jacket has degraded throughout, when insulation is saturated or mold contaminated, or when you have paid for repairs on the same system three times in three years. There is also a middle answer that gets offered too rarely: replacing the worst runs and sealing the rest is often correct and is a fraction of a full system.`,
+  },
+  {
+    question: `How long does ductwork last in ${city.county}?`,
+    answer: `Flexible duct realistically lasts 10 to 15 years in a Florida attic, at the low end of its rating, because heat and humidity age the jacket faster than anywhere else in the country. Well installed rigid metal lasts considerably longer, though its joints and insulation wrap age on the same timescale.`,
+  },
+  {
+    question: `Will you show me the problem before quoting?`,
+    answer: `Yes, and you should insist on it from anyone. An inspection worth acting on includes airflow readings at the registers so the failing runs are identified by measurement, photographs of the specific failures in your own attic or crawl space, and a repair option quoted alongside the replacement option. A replacement quote with nothing shown is not a diagnosis.`,
+  },
+];
+
+const others = ductRepairCities
+  .filter((s) => s !== slug)
+  .map((s) => getCity(s))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .slice(0, 8);
+
+const hasDryerVent = Boolean(detail.dryerVent);
+---
+<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Service Areas', href: '/service-areas/' },
+      { name: city.name, href: `/service-areas/${city.slug}/` },
+      { name: 'Air Duct Repair', href: `/service-areas/${city.slug}/air-duct-repair/` },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{city.county} · Florida</span>
+        <h1>Air Duct Repair in {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">The short answer</span>
+        <p>
+          Ductwork in {city.name} fails at the joints and the outer jacket rather than in the middle of a run.
+          We measure airflow at the registers first so the failing runs are identified by number, show you the
+          failures in your own attic or crawl space, and quote repair alongside replacement so you can see the
+          difference. Repair is the right answer more often than this trade admits.
+        </p>
+      </div>
+
+      <div class="prose">
+        <h2>What fails in {city.name}, and why</h2>
+        {dr.local.map((p) => (<p>{p}</p>))}
+
+        <div class="callout">
+          <strong>What we find most often in {city.name}:</strong>
+          <p>{dr.common}</p>
+        </div>
+
+        <h2>The signs, and what each one means</h2>
+        <p>Most of these are identifiable from inside the house, without going into the attic.</p>
+        <ul class="check-list">
+          <li><strong>One room that never reaches temperature.</strong> The most common symptom and the most often misdiagnosed. If every other room is comfortable, the system is not undersized. The run serving that room is.</li>
+          <li><strong>The bill climbed without your habits changing.</strong> A duct leaking into the attic is air conditioning the attic. You paid to cool that air and no room received it.</li>
+          <li><strong>Grey fanning marks on the ceiling around a register.</strong> Air is being pulled past the edge of the boot rather than through it, carrying attic dust with it. The boot is not sealed to the ceiling.</li>
+          <li><strong>The system runs and runs and never satisfies.</strong> Supply losses on a long run, most often.</li>
+          <li><strong>The return or the air handler closet feels humid.</strong> A return side leak pulls in attic air and its humidity, and the system then has to condition it. Return leaks cost more than supply leaks.</li>
+        </ul>
+
+        <h2>Repair, replace, or leave it</h2>
+        <p>
+          All three are real answers and you should get all three considered. This is the part of the
+          conversation that most often does not happen.
+        </p>
+        <div class="grid grid-3 decision">
+          <div class="card">
+            <h3>Repair</h3>
+            <p>Failures are in identifiable places, the jacket is intact along most of the run, insulation is dry, and the system is under roughly twelve years old.</p>
+          </div>
+          <div class="card">
+            <h3>Replace</h3>
+            <p>The jacket has degraded throughout, insulation is saturated or contaminated, the duct is badly routed so repair preserves the original mistake, or you have paid for repairs three times in three years.</p>
+          </div>
+          <div class="card">
+            <h3>Partial</h3>
+            <p>Replace the worst runs, seal the rest. Frequently the correct answer, rarely offered, and a fraction of a full system. Ask for it specifically.</p>
+          </div>
+        </div>
+
+        <h2>How we inspect, and what you should demand from anyone</h2>
+        <ol class="numbered">
+          <li><strong>Airflow readings at every register.</strong> The underperforming runs get identified by measurement rather than by opinion. This is the step that separates a diagnosis from a sales call.</li>
+          <li><strong>Photographs of the actual failures.</strong> In your attic or crawl space, of the specific joint or run being described. If a contractor tells you the ducts are gone and shows you nothing, ask to see it.</li>
+          <li><strong>Supply and return assessed separately.</strong> They cost you differently and they fail differently.</li>
+          <li><strong>Two quotes, repair and replacement.</strong> With a plain explanation of what each buys and how long each is likely to last.</li>
+          <li><strong>Airflow retested after the work.</strong> Same instrument, same registers. If the numbers have not moved, the work is not finished.</li>
+        </ol>
+
+        {detail.neighborhoods.length > 0 && (
+          <>
+            <h2>Where in {city.name} we work</h2>
+            <p>
+              We cover {city.name} and the surrounding {city.county} area, including
+              {' '}{detail.neighborhoods.slice(0, -1).join(', ')} and {detail.neighborhoods.slice(-1)[0]}.
+              Call {business.phone} to arrange an inspection.
+            </p>
+          </>
+        )}
+
+        <div class="callout warn">
+          <strong>One thing worth knowing before anyone quotes you.</strong>
+          <p>
+            "You need all new ductwork" is easy to say and expensive to check. It is also sometimes true. The
+            difference is whether you were shown the failures. A contractor who has genuinely found the problem
+            will be glad to walk you to it, and one who will not should not be given the job.
+          </p>
+        </div>
+      </div>
+
+      <FAQ items={faq} title={`Air Duct Repair in ${city.name}: FAQs`} />
+
+      <div class="related-links">
+        <h2>Related</h2>
+        <ul>
+          <li><a href={`/service-areas/${city.slug}/`}>Air duct cleaning in {city.name}</a></li>
+          {hasDryerVent && (<li><a href={`/service-areas/${city.slug}/dryer-vent-cleaning/`}>Dryer vent cleaning in {city.name}</a></li>)}
+          <li><a href="/services/air-duct-repair/">Our air duct repair service</a></li>
+          <li><a href="/blog/attic-ductwork-repair-florida/">Attic duct repair in Florida: signs, cost, when to replace</a></li>
+          <li><a href="/blog/air-duct-repair-cost-florida/">What duct repair and sealing costs</a></li>
+          <li><a href="/blog/repair-vs-replace-ductwork/">Repair or replace: how to decide</a></li>
+          <li><a href="/blog/leaky-air-ducts-signs-fixes/">Leaky ducts: the signs and the fixes</a></li>
+        </ul>
+      </div>
+
+      {others.length > 0 && (
+        <div class="nearby">
+          <h2>Duct Repair Nearby</h2>
+          <div class="city-chips">
+            {others.map((c) => (
+              <a href={`/service-areas/${c.slug}/air-duct-repair/`} class="chip">{c.name}</a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand heading={`One room in ${city.name} that never cools? Let's find out why.`} />
+</BaseLayout>
+
+<style>
+  .callout {
+    background: var(--c-bg-alt); border-left: 4px solid var(--c-primary);
+    border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .callout.warn { border-left-color: #c2410c; }
+  .callout p { margin: 0.4rem 0 0; }
+  .numbered { padding-left: 1.2rem; display: grid; gap: 0.6rem; }
+  .decision { margin: 1.2rem 0; }
+  .decision h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+  .decision p { font-size: 0.92rem; margin: 0; }
+  .related-links { margin-top: 2.5rem; }
+  .related-links ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
+  .related-links li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-line); }
+  .related-links li:last-child { border-bottom: 0; }
+  .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+</style>

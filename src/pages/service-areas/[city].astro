@@ -45,6 +45,7 @@ const nearby = city.nearby
 
 const detail = cityDetail[city.slug] ?? { neighborhoods: [] };
 const hasDryerVentPage = Boolean(detail.dryerVent);
+const hasRepairPage = Boolean(detail.ductRepair);
 
 const topServices = services.slice(0, 6);
 const altHref = `/es/areas-de-servicio/${city.slug}/`;
@@ -137,6 +138,22 @@ const guides = await guidesForCity();
           <p>
             <a href={`/service-areas/${city.slug}/dryer-vent-cleaning/`} class="btn btn-outline">
               Dryer vent cleaning in {city.name} &rarr;
+            </a>
+          </p>
+        </div>
+      )}
+
+      {hasRepairPage && (
+        <div class="cross-service">
+          <h2>Is it dirty, or is it broken?</h2>
+          <p>
+            Cleaning solves restriction. Repair solves loss. If one room in your {city.name} home never reaches
+            temperature, or the bill has climbed without your habits changing, air is escaping before it arrives
+            and no cleaning changes that. We have written the repair side up separately.
+          </p>
+          <p>
+            <a href={`/service-areas/${city.slug}/air-duct-repair/`} class="btn btn-outline">
+              Air duct repair in {city.name} &rarr;
             </a>
           </p>
         </div>
