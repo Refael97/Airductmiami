@@ -44,6 +44,7 @@ export const services: Service[] = [
       'Air duct cleaning is the professional removal of dust, debris, mold, and allergens from the supply and return ductwork of your HVAC system using negative-air (source-removal) equipment. In Florida, it is typically recommended every 3 to 5 years to protect indoor air quality and system efficiency.',
     intro: [
       "Over time, Florida's humidity, pollen, and fine construction dust settle inside your ductwork. Because the same air recirculates through your home 5 to 7 times a day, contaminated ducts continuously redistribute those particles into the rooms where your family breathes.",
+      'If you searched for AC duct cleaning, AC vent cleaning, air vent cleaning or ductwork cleaning, this is the same service. Florida homeowners usually say "AC" because almost nobody here has a furnace, so the ducts get thought of as belonging to the air conditioner. The one phrase that means something genuinely different is dryer vent cleaning, which is a separate duct and a separate job.',
       'Our technicians use truck-mounted or portable negative-air machines that place the entire duct system under suction, then agitate each run with rotary brushes and compressed-air whips so debris is captured, not scattered, and pulled into a sealed HEPA-filtered collection unit.',
       'A complete visit covers every supply and return register, the main trunk lines, the plenum, and the blower compartment, finishing with an optional EPA-registered antimicrobial fog to treat mold and odor at the source.',
     ],
