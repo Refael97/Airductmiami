@@ -10,6 +10,8 @@
  * src/components/RegionPage.astro.
  */
 
+import { business } from './business';
+
 import type { FAQ } from './services';
 import { cities, type City } from './cities';
 
@@ -104,13 +106,13 @@ export const regionPages: RegionPageContent[] = [
       { question: 'How much does air duct cleaning cost in Broward County?', answer: 'Most Broward homes pay $300 to $600 for a complete single-system cleaning and $100 to $200 for dryer vent cleaning. You get the exact price up front, with no add-ons invented on site.' },
       { question: 'Which Broward County cities do you cover?', answer: 'All of them, including Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Pompano Beach, Plantation, Davie, Sunrise, Coral Springs, Coconut Creek, and Deerfield Beach.' },
       { question: 'Are your Broward technicians licensed and insured?', answer: 'Yes. Every technician working in Broward County is licensed and insured, and every cleaning follows NADCA source-removal standards.' },
-      { question: 'How fast can you get to a Broward County home?', answer: 'Crews are in Broward daily, so most appointments land within the same week. Call (561) 897-9930 and we will give you the next available window for your city.' },
+      { question: 'How fast can you get to a Broward County home?', answer: `Crews are in Broward daily, so most appointments land within the same week. Call ${business.phone} and we will give you the next available window for your city.` },
     ],
     esFaq: [
       { question: 'Cuánto cuesta la limpieza de ductos en el condado de Broward?', answer: 'La mayoría de las casas de Broward paga entre $300 y $600 por la limpieza completa de un sistema y entre $100 y $200 por la limpieza del ducto de secadora. Le damos el precio exacto por adelantado, sin cargos inventados en sitio.' },
       { question: 'Qué ciudades del condado de Broward cubren?', answer: 'Todas, incluidas Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Pompano Beach, Plantation, Davie, Sunrise, Coral Springs, Coconut Creek y Deerfield Beach.' },
       { question: 'Sus técnicos en Broward tienen licencia y seguro?', answer: 'Sí. Cada técnico que trabaja en el condado de Broward cuenta con licencia y seguro, y cada limpieza sigue las normas NADCA de extracción en la fuente.' },
-      { question: 'Qué tan rápido pueden llegar a una casa en Broward?', answer: 'Tenemos cuadrillas en Broward todos los días, así que la mayoría de las citas queda dentro de la misma semana. Llame al (561) 897-9930 y le damos la próxima ventana disponible para su ciudad.' },
+      { question: 'Qué tan rápido pueden llegar a una casa en Broward?', answer: `Tenemos cuadrillas en Broward todos los días, así que la mayoría de las citas queda dentro de la misma semana. Llame al ${business.phone} y le damos la próxima ventana disponible para su ciudad.` },
     ],
   },
   {
