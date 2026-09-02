@@ -47,6 +47,20 @@ export interface CityDetail {
    */
   depth?: { heading: string; body: string[] }[];
   /**
+   * The same, in Spanish, for /es/areas-de-servicio/{slug}.
+   *
+   * Added 30 August 2026 after a week where four of the five pages that
+   * received a click were Spanish, and /es/areas-de-servicio/kissimmee/ took
+   * 2 clicks from 5 impressions. The Spanish pages are the ones converting
+   * and they were the ones running 300 to 470 words shorter than their
+   * English equivalents, because the depth written for the English city
+   * pages was never given a Spanish counterpart.
+   *
+   * Written for the language, not translated. A reader in Hialeah and a
+   * reader in Bradenton do not recognise the same examples.
+   */
+  depthEs?: { heading: string; body: string[] }[];
+  /**
    * Present only for cities that get a dedicated dryer vent page at
    * /service-areas/{slug}/dryer-vent-cleaning/. Absence means no page.
    */
@@ -73,6 +87,22 @@ export interface CityDetail {
 export const cityDetail: Record<string, CityDetail> = {
   // ---- Miami-Dade ----
   miami: {
+    depthEs: [
+      {
+        heading: 'Un condominio y una casa no son el mismo trabajo',
+        body: [
+          'Miami es la ciudad más vertical del estado, y el sistema de un edificio no se parece en nada al de una casa. En una torre de Brickell o Edgewater la manejadora está en un clóset, los tramos de ducto son cortos, y el aire de renovación viene del edificio y no de sus propias paredes. Todo el sistema se limpia bien en unas horas, y en un espacio pequeño y sellado la mejora se nota de inmediato.',
+          'En Coral Way, Coconut Grove o las partes viejas de La Pequeña Habana hay ático, tramos largos, y una casa que respira. Ahí las fugas sí importan, porque una fuga en el ático mete aire a 130 grados con todo lo que trae.',
+        ],
+      },
+      {
+        heading: 'Sal, humedad, y por qué el serpentín en Miami cría moho',
+        body: [
+          'Miami pasa buena parte del año con humedad arriba del 70 por ciento, y el serpentín de un sistema que corre casi todo el día está mojado de forma prácticamente continua. Mojado, oscuro, en el paso del aire, y con polvo orgánico llegando sin parar: esa es la descripción de las condiciones ideales de crecimiento, y es la razón por la que el olor a humedad al encender el aire es la queja número uno que recibimos en esta ciudad.',
+          'El olor importa no porque sea peligroso en sí, sino porque es una señal confiable. Significa que hay crecimiento biológico sobre una superficie mojada dentro de su sistema. Limpiar el serpentín y la bandeja lo quita. Bajar la humedad interior de 60 por ciento es lo que evita que regrese.',
+        ],
+      },
+    ],
     depth: [
       {
         heading: 'Condo towers and single family homes are not the same job',
@@ -109,6 +139,22 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['South Beach', 'Mid-Beach', 'North Beach', 'Sunset Islands', 'Venetian Islands'],
   },
   hialeah: {
+    depthEs: [
+      {
+        heading: 'La lavandería quedó en la pared equivocada',
+        body: [
+          'Buena parte de Hialeah se construyó entre finales de los sesenta y principios de los ochenta, y en esas casas la conexión de lavandería quedó muchas veces en una pared interior en lugar de una exterior. Esa sola decisión convierte lo que debería ser un tramo de cuatro pies en uno de veinte o treinta con dos o tres codos, y cada codo es un lugar donde la pelusa se detiene.',
+          'En los dúplex y edificios pequeños hay un segundo problema. Donde dos clósets de lavandería comparten pared, las dos salidas frecuentemente se unen antes de salir, así que la obstrucción del vecino se vuelve la suya.',
+        ],
+      },
+      {
+        heading: 'Equipo nuevo sobre ductos viejos',
+        body: [
+          'Es el patrón que más vemos en Hialeah. La manejadora se ha cambiado dos o tres veces, y el ducto al que se conecta es el original. El equipo falla de forma visible y el ducto no, así que la distribución envejece en silencio hasta pasar el punto donde el equipo puede compensar.',
+          'El resultado son casas donde un equipo moderno y bien dimensionado rinde mal, y al dueño le han dicho tres veces que el problema es la unidad. Frecuentemente no lo es, y vale la pena medir el flujo en las rejillas antes de gastar en equipo otra vez.',
+        ],
+      },
+    ],
     neighborhoods: ['West Hialeah', 'Palm Springs North', 'Amelia', 'Hialeah Acres'],
     dryerVent: {
       local: [
@@ -122,6 +168,22 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Coral Gables Riviera', 'Old Cutler', 'Ponce Davis', 'Coral Bay', 'Golden Gate'],
   },
   kendall: {
+    depthEs: [
+      {
+        heading: 'En Kendall el aire acondicionado trabaja más que en casi todo Miami-Dade',
+        body: [
+          'Kendall está tierra adentro, lo que suena a menos humedad que la costa. En la práctica significa menos brisa marina, y menos brisa significa que el aire corre más horas para llegar a la misma temperatura. En The Hammocks y Country Walk es normal que un sistema trabaje quince o dieciséis horas al día en agosto.',
+          'Un sistema que corre así mueve un volumen enorme de aire por el ducto, y todo lo que ese aire trae se va depositando en el camino. Ese es el mecanismo que la gente no ve: el ducto no se ensucia porque le caiga tierra, se ensucia porque su sistema empuja miles de pies cúbicos por minuto contra sus superficies.',
+        ],
+      },
+      {
+        heading: 'El segundo piso y los townhouses',
+        body: [
+          'Gran parte de Kendall al oeste del turnpike son townhouses de dos pisos, y dos pisos traen un problema que una casa de una planta no tiene. Arriba y abajo los sirve la misma manejadora, normalmente por un tronco vertical dentro de un ducto de registro, y el aire caliente sube sin importar lo que diga el termostato.',
+          'Balancear eso es una pregunta de ductos antes que de equipo. Si el segundo piso está siempre tres o cuatro grados más caliente, lo primero que hay que revisar es si las salidas de arriba están realmente abiertas, si el retorno de arriba alcanza, y si el tronco vertical se separó dentro del registro donde nadie lo ve.',
+        ],
+      },
+    ],
     depth: [
       {
         heading: 'Kendall runs its air conditioning harder than almost anywhere in Miami-Dade',
@@ -148,6 +210,22 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   homestead: {
+    depthEs: [
+      {
+        heading: 'El polvo aquí no es el polvo de una ciudad',
+        body: [
+          'Homestead está rodeado de campo agrícola, y eso cambia lo que entra al sistema. El polvo fino de los campos y el polen de temporada llegan en volúmenes que una casa en Miami no ve, y se acumulan alrededor de las rejillas mucho más rápido.',
+          'Las familias que se mudan aquí desde el norte del condado casi siempre lo notan en los primeros meses: el mismo hábito de limpieza y el doble de polvo sobre las superficies. No es imaginación, y no se resuelve limpiando más seguido adentro de la casa.',
+        ],
+      },
+      {
+        heading: 'Casas nuevas, ductos con escombro de obra',
+        body: [
+          'Keys Gate, Malibu Bay y Waterstone son desarrollos relativamente nuevos, y en construcción nueva el problema no es el desgaste. Es el polvo de drywall, el aserrín y la fibra de aislamiento que entraron al ducto antes de que la casa se entregara.',
+          'La primera temporada de aire acondicionado reparte todo eso por la casa. Es la razón por la que una familia que se acaba de mudar a una casa nueva empieza con alergias que no tenía, y la razón por la que una limpieza en casa nueva sí vale la pena aunque el sistema tenga dos años.',
+        ],
+      },
+    ],
     neighborhoods: ['Keys Gate', 'Silver Palm', 'Malibu Bay', 'Waterstone'],
   },
   pinecrest: {
@@ -202,6 +280,23 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   hollywood: {
+    depthEs: [
+      {
+        heading: 'Tres épocas de vivienda, tres sistemas distintos',
+        body: [
+          'Hollywood cubre más historia de construcción que la mayoría de las ciudades del sur de Florida. Los bungalows de Hollywood Lakes de los años veinte y treinta se construyeron antes de que existiera el aire acondicionado central, así que todo sistema en ellos es una adaptación posterior, con el ducto pasando por donde había espacio y no por donde debía.',
+          'Las casas de los cincuenta y sesenta en Driftwood y Boulevard Heights sí se construyeron con ductos, casi siempre en el ático, y buena parte de ese ducto original sigue ahí. Un ducto flexible de sesenta años tiene la cubierta quebradiza, y las cubiertas quebradizas se rompen.',
+          'Las torres al este de Federal son un tercer caso: manejadoras en clóset, tramos cortos, y un edificio donde el aire de afuera solo entra por el equipo.',
+        ],
+      },
+      {
+        heading: 'Lo que la sal le hace a un sistema en Hollywood',
+        body: [
+          'Todo lo que está a una milla de la playa recibe sal, y la sal no es solo un problema de corrosión para el condensador de afuera. El aire que entra por cualquier hueco en el retorno la trae, y se deposita sobre el serpentín junto con el polvo. Un serpentín con una capa de sal y polvo transfiere calor peor y se queda mojado más tiempo, que es exactamente la condición que cría moho.',
+          'Esa es la razón honesta por la que un sistema en la costa necesita atención más seguido que uno tierra adentro. Un condominio frente al mar en Hollywood con limpieza cada tres años no está siendo sobre atendido. El mismo apartamento en Weston probablemente sí.',
+        ],
+      },
+    ],
     ductRepair: {
       local: [
         'Hollywood covers three eras of housing and each fails differently. The Hollywood Lakes bungalows from the twenties and thirties have entirely retrofitted systems routed through whatever space existed. The Driftwood and Boulevard Heights ranch homes have original attic ducting from the fifties and sixties, now well past its service life. The beachside condominiums have short runs in a sealed envelope.',
@@ -444,6 +539,24 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Tampa Bay ----
   tampa: {
+    depthEs: [
+      {
+        heading: 'En Tampa el ducto va debajo de la casa, no arriba',
+        body: [
+          'Seminole Heights, partes de Hyde Park, Tampa Heights y Ybor son casas de madera levantadas sobre pilotes, y ese solo dato cambia todo. En lugar de correr por un ático, el ducto corre en el espacio bajo el piso.',
+          'Ese espacio es más fresco que un ático, lo cual suena a ventaja y no lo es. También es más húmedo, en la mayoría de estas casas no está sellado del terreno, y todo lo que ha pasado por debajo en ochenta años ha estado en contacto con el ducto. Encontramos tramos separados en una unión que llevan años descargando ahí abajo, y tramos aplastados por almacenamiento o por algún oficio anterior.',
+          'La señal desde adentro es una rejilla de piso que entrega notablemente menos que las demás, o un olor a humedad que se hace más fuerte en el cuarto más cercano a la trampilla.',
+        ],
+      },
+      {
+        heading: 'La otra mitad de la ciudad, y lo que dejan las tormentas',
+        body: [
+          'Westchase, Carrollwood y New Tampa son construcción sobre losa con ducto en el ático, la misma configuración que casi todo el sur de Florida y con el mismo problema de calor.',
+          'Lo específico de la bahía de Tampa es el agua. El sur de Tampa y las zonas bajas reciben marea de tormenta e inundación, y la consecuencia en el ducto aparece semanas después, no durante la tormenta. El aislamiento que se mojó no se seca dentro de una cubierta sellada. Crece, y la primera señal suele ser un olor en una casa que por fuera se ve perfecta.',
+          'Si su casa se inundó alguna vez, vale la pena revisar el ducto aunque los pisos ya se hayan resuelto. Es la parte de la casa que nadie abre.',
+        ],
+      },
+    ],
     ductRepair: {
       local: [
         'Tampa\'s raised bungalow districts put the ductwork in the crawl space, and crawl space repair is a different job from attic repair. The runs are unsupported over long spans, they are within reach of anything that has been under the house, and they are in permanently damper air than an attic.',
@@ -547,6 +660,23 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Central Florida ----
   orlando: {
+    depthEs: [
+      {
+        heading: 'Las casas de renta corta son el caso especial de Orlando',
+        body: [
+          'Al sur y al oeste de la ciudad, hacia Kissimmee y Davenport, hay decenas de miles de casas de renta vacacional, y su aire acondicionado se desgasta distinto. La casa se ocupa unos días, se desocupa, y entre reservaciones se queda cerrada con el termostato en 78 u 80.',
+          'Un sistema que apenas enciende no deshumidifica. La humedad interior se queda arriba del 60 por ciento durante meses, que es todo lo que el moho necesita en el serpentín, en la bandeja de condensado y en la superficie interior del ducto.',
+        ],
+      },
+      {
+        heading: 'Polen, construcción nueva, y el Orlando viejo',
+        body: [
+          'Fuera del negocio de renta, Orlando se divide en dos. Lake Nona y Horizon West son casas de menos de quince años, y ahí el problema es el escombro de construcción que quedó dentro del ducto.',
+          'College Park, Delaney Park y Colonialtown son lo contrario: casas de los años veinte a los cincuenta bajo robles maduros, con aire acondicionado instalado décadas después de construida la casa. El roble suelta una carga de polen en primavera que la costa no tiene.',
+          'Ninguno de los dos es el problema que la gente espera. En Orlando la humedad es real pero es secundaria frente al polen y al polvo de obra.',
+        ],
+      },
+    ],
     ductRepair: {
       local: [
         'Orlando\'s duct repair work divides between two housing types that fail for opposite reasons. The newer subdivisions east and west of the city were built fast, and speed shows up in the distribution rather than the equipment: runs that were kinked during construction and never straightened, joints taped rather than sealed, and boots that were never properly fastened to the ceiling.',
@@ -582,6 +712,42 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   kissimmee: {
+    depth: [
+      {
+        heading: 'Kissimmee has a duct problem the rest of Florida does not',
+        body: [
+          'The corridor running from Kissimmee through Celebration to Poinciana holds tens of thousands of short term rental homes, and they age their air conditioning in a way an owner occupied house never does. The house turns over every few days, the thermostat ends up wherever the last guest left it, and between bookings it sits closed with the system idling at 78 or 80 degrees.',
+          'That is the exact condition that grows mold. The system is not running long enough to pull humidity down, the house is sealed, and there is nobody in it to notice the smell. Owners find out from a review rather than from the equipment.',
+          'The practical consequence is that a rental needs the coil and the ducts looked at on a much shorter cycle than a family home, and the driver is the occupancy pattern rather than the square footage. We treat them as a different job because they are one.',
+        ],
+      },
+      {
+        heading: 'Buenaventura Lakes, Poinciana, and the new builds',
+        body: [
+          'The other Kissimmee is the one where people live year round. Buenaventura Lakes is seventies and eighties construction with interior laundry rooms and ductwork now past its service life, and much of Poinciana is under twenty years old.',
+          'In the newer homes the problem is not wear, it is what was left behind. Drywall dust, sawdust and insulation fibre get into the ductwork before the house is finished, and no builder removes it. The first full cooling season distributes all of it through the house.',
+          'It is why families who have just moved into a brand new home call us about allergies. The house is clean. The ductwork is not.',
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: 'Kissimmee tiene un problema de ductos que el resto de Florida no tiene',
+        body: [
+          'El corredor entre Kissimmee, Celebration y Poinciana concentra decenas de miles de casas de renta corta, y esas casas envejecen el aire acondicionado de una manera completamente distinta a una casa donde vive una familia. La casa cambia de huéspedes cada pocos días, el termostato queda donde lo dejó el último, y entre reservaciones la casa se queda cerrada con el sistema apenas encendiendo a 78 u 80 grados.',
+          'Esa es exactamente la condición que produce moho. El equipo no corre lo suficiente para bajar la humedad, la casa está sellada, y no hay nadie adentro que note el olor. Los dueños se enteran por una reseña, no por el equipo.',
+          'En la práctica significa que una casa de renta necesita revisión del serpentín y de los ductos mucho más seguido que una casa habitada, y la razón es el patrón de ocupación, no el tamaño. Lo tratamos como un trabajo distinto porque lo es.',
+        ],
+      },
+      {
+        heading: 'Buenaventura Lakes, Poinciana y las casas nuevas',
+        body: [
+          'Del otro lado están los barrios donde sí vive gente todo el año. Buenaventura Lakes es de los años setenta y ochenta, con lavandería interior y ductos que ya pasaron su vida útil, y en Poinciana buena parte de la construcción tiene menos de veinte años.',
+          'En las casas nuevas el problema no es el desgaste sino lo que quedó adentro. El polvo de construcción, el aserrín y la fibra del aislamiento entran al ducto antes de que la casa se termine, y ninguna constructora los saca. La primera temporada completa de aire acondicionado los reparte por toda la casa.',
+          'Es la razón por la que familias que se acaban de mudar a una casa nueva nos llaman por alergias. La casa está limpia. El ducto no.',
+        ],
+      },
+    ],
     neighborhoods: ['Celebration', 'Buenaventura Lakes', 'Poinciana', 'Kissimmee Bay'],
   },
   'winter-park': {

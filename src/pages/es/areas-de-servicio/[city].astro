@@ -11,7 +11,7 @@ import { services } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
 import { business } from '../../../data/business';
 import { serviceSchema } from '../../../lib/schema';
-import { cityMetaEs } from '../../../lib/meta';
+import { cityMetaEs, PRICES } from '../../../lib/meta';
 import { cityDetail } from '../../../data/cityDetail';
 import ServiceIcon from '../../../components/ServiceIcon.astro';
 import { ui, serviceHref, cityHref } from '../../../data/ui';
@@ -79,6 +79,30 @@ const guides = await guidesForCityEs();
  <div class="prose">
  <p>{es.local}</p>
  <p>Nuestros técnicos con licencia y seguro llevan equipo NADCA de extracción por fuente a cada trabajo en {city.name}. Ponemos todo el sistema bajo succión para que el polvo, el polen y el moho se capturen y no se dispersen por su casa. Si nota un olor a humedad cuando enciende el aire, facturas altas de electricidad, alergias o simplemente le toca un mantenimiento, le ayudamos a respirar un aire más limpio.</p>
+
+ {(detail.depthEs ?? []).map((block) => (
+ <>
+ <h2>{block.heading}</h2>
+ {block.body.map((para) => (<p>{para}</p>))}
+ </>
+ ))}
+
+ <h2>Cuánto cuesta la limpieza de ductos en {city.name}</h2>
+ <table class="price-table">
+ <thead>
+ <tr><th>Servicio</th><th>Precio típico en {city.name}</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Limpieza de ductos, un sistema</td><td>Desde ${PRICES.ductLow}*</td></tr>
+ <tr><td>Limpieza de ductos, casa grande o varios sistemas</td><td>${PRICES.ductLow} a ${PRICES.ductHigh}*</td></tr>
+ <tr><td>Limpieza de la ventila del secador</td><td>${PRICES.ventLow} a ${PRICES.ventHigh}*</td></tr>
+ <tr><td>Limpieza del serpentín y la manejadora</td><td>Se cotiza junto con los ductos</td></tr>
+ </tbody>
+ </table>
+ <p class="footnote">
+ * Es un punto de partida, no una tarifa fija. El número se mueve según el tamaño de la casa, cuántos
+ sistemas hay y lo que encontremos. Le damos la cifra real antes de agendar, no después.
+ </p>
 
  {detail.neighborhoods.length > 0 && (
  <>
@@ -152,4 +176,8 @@ const guides = await guidesForCityEs();
     padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
   }
   .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .price-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  .price-table th, .price-table td { text-align: left; padding: 0.7rem 0.6rem; border-bottom: 1px solid var(--c-line); }
+  .price-table th { font-weight: 700; }
+  .footnote { font-size: 0.85rem; color: var(--c-muted); }
 </style>
