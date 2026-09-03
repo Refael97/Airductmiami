@@ -91,3 +91,41 @@ export const serviceImages: Record<string, PageImage> = {
     altEs: 'Aislamiento soplado nuevo cubriendo las viguetas de un ático en Florida en una capa gruesa y pareja, con un marcador de profundidad y barrera radiante en el techo',
   },
 };
+
+/**
+ * The home page hero.
+ *
+ * The hero shipped as a flat SVG illustration, which read as a placeholder
+ * next to the photographic illustrations on every service page. Same
+ * existence guard as everything else here: until the webp lands in
+ * public/images the page keeps the SVG, so a missing file never produces a
+ * broken hero on the site's most important page.
+ *
+ * Slot is 800x620 in the layout, so the file should be roughly 4:3 and about
+ * 1600px wide before compression.
+ */
+export const heroImage: PageImage & { fallback: string } = {
+  file: 'hero-florida-living-room.webp',
+  fallback: 'hero-home.svg',
+  alt: 'Bright Florida living room in late morning light, sliding doors open onto a palm-shaded patio, a ceiling supply register above delivering clean cool air',
+  altEs: 'Sala luminosa de una casa en Florida a media mañana, con puertas corredizas abiertas hacia un patio con palmeras y una rejilla de techo entregando aire limpio y fresco',
+};
+
+/**
+ * The promo popup's desktop side panel.
+ *
+ * Desktop only by design. On mobile the visual collapses to a short banner
+ * above the form, where a portrait crop would either be unreadable or would
+ * push the form below the fold, and the form is the entire point of the
+ * popup.
+ *
+ * The overlaid $50 badge stays HTML rather than being part of the image, so
+ * it stays translatable for the Spanish popup and stays selectable text.
+ * Anything dropped in here should therefore have no lettering baked in.
+ * See docs/MEDIA-STANDARD.md.
+ */
+export const promoAsideImage: PageImage = {
+  file: 'promo-aside.webp',
+  alt: '',
+  altEs: '',
+};

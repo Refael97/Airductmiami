@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { heroImage, hasImage } from '../data/pageImages';
 import CTABand from '../components/CTABand.astro';
 import FAQ from '../components/FAQ.astro';
 import BeforeAfter from '../components/BeforeAfter.astro';
@@ -22,6 +23,8 @@ const homeFaq = [
 ];
 
 const regions = citiesByRegion();
+/* Falls back to the SVG until the photograph is in public/images. */
+const heroSrc = hasImage(heroImage) ? `/images/${heroImage.file}` : `/images/${heroImage.fallback}`;
 /* Every figure here has to be one we can point at. No rating and no job
    count until there are real ones to publish. See docs/TRUST-AND-CLAIMS.md. */
 const stats = [
@@ -56,7 +59,7 @@ const stats = [
         </ul>
       </div>
       <div class="hero-visual">
-        <img class="hero-img" src="/images/hero-home.svg" alt="Bright Florida living room with clean, fresh air" width="800" height="620" fetchpriority="high" />
+        <img class="hero-img" src={heroSrc} alt={heroImage.alt} width="800" height="620" fetchpriority="high" />
         <div class="hero-card-inner">
           <p class="hero-card-title">Florida's humidity is hard on your air.</p>
           <p class="hero-card-text">Dust, pollen, and mold build up fast in Florida ductwork. We remove it at the source and keep it from coming back.</p>

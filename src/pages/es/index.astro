@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { heroImage, hasImage } from '../../data/pageImages';
 import CTABand from '../../components/CTABand.astro';
 import FAQ from '../../components/FAQ.astro';
 import BeforeAfter from '../../components/BeforeAfter.astro';
@@ -13,6 +14,8 @@ import { ui, serviceHref, cityHref } from '../../data/ui';
 
 const lang = 'es' as const;
 const t = ui[lang];
+/* Igual que en inglés: usa el SVG hasta que la foto exista en public/images. */
+const heroSrc = hasImage(heroImage) ? `/images/${heroImage.file}` : `/images/${heroImage.fallback}`;
 /* Precio en el título. Todos los competidores prometen cotización gratis,
    así que deja de diferenciar en cuanto todos lo dicen. */
 const title = `Limpieza de Ductos en Florida | Desde $300`;
@@ -64,7 +67,7 @@ const stats = [
  </ul>
  </div>
  <div class="hero-visual">
- <img class="hero-img" src="/images/hero-home.svg" alt="Sala de estar luminosa en Florida con aire limpio y fresco" width="800" height="620" fetchpriority="high" />
+ <img class="hero-img" src={heroSrc} alt={heroImage.altEs} width="800" height="620" fetchpriority="high" />
  <div class="hero-card-inner">
  <p class="hero-card-title">La humedad de Florida es dura con su aire.</p>
  <p class="hero-card-text">El polvo, el polen y el moho se acumulan rápido en los ductos de Florida. Los quitamos desde la fuente y evitamos que regresen.</p>

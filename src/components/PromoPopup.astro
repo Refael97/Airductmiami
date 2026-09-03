@@ -13,6 +13,7 @@
  * honest. Copy lives in the OFFERS block below, one place per promotion.
  */
 import { business } from '../data/business';
+import { promoAsideImage, hasImage } from '../data/pageImages';
 import LeadMeta from './LeadMeta.astro';
 import type { Locale } from '../data/ui';
 
@@ -105,6 +106,11 @@ const excluded = ['/contact', '/es/contacto', '/thank-you', '/es/gracias', '/pri
   .some((p) => path.startsWith(p));
 
 const formName = 'popup-special';
+
+/* Desktop only side image. Renders only when the file is in public/images,
+   so a missing file degrades to the gradient panel the popup shipped with
+   rather than to a broken image on top of the lead form. */
+const asideSrc = hasImage(promoAsideImage) ? `/images/${promoAsideImage.file}` : null;
 ---
 {!excluded && (
 <div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
@@ -181,6 +187,7 @@ const formName = 'popup-special';
     </div>
 
     <div class="promo-visual" aria-hidden="true">
+      {asideSrc && <img class="promo-aside" src={asideSrc} alt="" width="620" height="800" loading="lazy" decoding="async" />}
       <span class="swirl s1"></span>
       <span class="swirl s2"></span>
       <span class="swirl s3"></span>
@@ -322,6 +329,21 @@ const formName = 'popup-special';
       radial-gradient(120% 90% at 80% 10%, rgba(255, 255, 255, 0.25), transparent 55%),
       linear-gradient(160deg, #0e86ca 0%, #0b3f66 55%, #0b2740 100%);
   }
+  /* Covers the gradient panel on desktop. The badge sits above it, and the
+     scrim keeps the badge legible whatever the photograph is doing behind. */
+  .promo-aside {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+    z-index: 0;
+  }
+  .promo-visual:has(.promo-aside)::after {
+    content: ''; position: absolute; inset: 0; z-index: 0;
+    background: linear-gradient(180deg, rgba(11, 39, 64, 0) 35%, rgba(11, 39, 64, 0.55) 100%);
+  }
+  /* With a photograph in place the decorative rings only add noise. */
+  .promo-visual:has(.promo-aside) .swirl { display: none; }
+
   .swirl {
     position: absolute; border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.28);
@@ -333,7 +355,7 @@ const formName = 'popup-special';
   .s3 { width: 130px; height: 130px; top: 46%; right: -40px; }
 
   .promo-badge {
-    position: relative; z-index: 1;
+    position: relative; z-index: 2;
     width: 230px; height: 230px; border-radius: 50%;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; gap: 0.15rem; padding: 1rem;
@@ -365,6 +387,11 @@ const formName = 'popup-special';
       margin-top: max(2vh, 0.5rem);
     }
     .promo-visual { order: -1; min-height: 205px; padding: 1.4rem 0; }
+    /* Desktop only. On a phone this panel is a short banner above the form,
+       and a portrait crop here would push the form off screen. */
+    .promo-aside { display: none; }
+    .promo-visual:has(.promo-aside)::after { display: none; }
+    .promo-visual:has(.promo-aside) .swirl { display: block; }
     .promo-badge { width: 165px; height: 165px; padding: 0.8rem; }
     .badge-price { font-size: 2.7rem; }
     .badge-top { font-size: 0.56rem; }
