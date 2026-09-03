@@ -107,8 +107,8 @@ export const serviceImages: Record<string, PageImage> = {
 export const heroImage: PageImage & { fallback: string } = {
   file: 'hero-florida-living-room.webp',
   fallback: 'hero-home.svg',
-  alt: 'Bright Florida living room in late morning light, sliding doors open onto a palm-shaded patio, a ceiling supply register above delivering clean cool air',
-  altEs: 'Sala luminosa de una casa en Florida a media mañana, con puertas corredizas abiertas hacia un patio con palmeras y una rejilla de techo entregando aire limpio y fresco',
+  alt: 'Bright Florida living room with sliding doors and palm shadows across a pale oak floor, a coiled blue negative-air hose and stainless nozzle beside a lifted white floor register',
+  altEs: 'Sala luminosa de una casa en Florida con puertas corredizas y sombras de palmeras sobre el piso de roble claro, con la manguera azul de presión negativa enrollada y una rejilla blanca levantada del piso',
 };
 
 /**
@@ -126,6 +126,9 @@ export const heroImage: PageImage & { fallback: string } = {
  */
 export const promoAsideImage: PageImage = {
   file: 'promo-aside.webp',
+  /* Decorative: the popup already carries its offer and its trust points as
+     text, so a screen reader gains nothing from describing the photograph
+     and the panel is marked aria-hidden. */
   alt: '',
   altEs: '',
 };

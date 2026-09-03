@@ -23,6 +23,30 @@ A generated before/after is a fabricated proof of work. It is the same
 category of problem as a fake review, and it is the single easiest thing for
 a competitor to expose.
 
+## Standing exception, recorded 3 September 2026
+
+The promo popup on the Florida site carries a generated photograph of a
+technician in Florida Breeze uniform beside branded equipment. That sits in
+the "real only" row above, and it ships at the owner's explicit direction
+after the conflict was raised.
+
+Recording it here rather than quietly amending the rule, because a standard
+the site does not follow is worse than no standard. The rule stands. This is
+a known exception to it, and the risks it carries are the ones the rule
+exists to prevent:
+
+- It is a claim that the business has a uniformed technician and that
+  equipment. If a customer books on the strength of it and something else
+  arrives, the gap is the complaint.
+- It must never be uploaded to Google Business Profile, Yelp or any
+  directory, where photographs are read as documentation of the business
+  rather than as decoration. That is a listing suspension.
+- It should be replaced with a real photograph of the actual crew the first
+  week one exists. That photo will outperform it anyway.
+
+Nothing else moves. No generated before/after, no generated review, no
+generated certificate, no generated rating.
+
 ## What a site launches with
 
 Launch does not wait for real photos. The launch set is:
