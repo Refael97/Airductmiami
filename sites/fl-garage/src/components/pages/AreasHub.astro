@@ -14,7 +14,16 @@ interface Props { lang: Locale }
 const { lang } = Astro.props;
 const t = ui[lang];
 const p = paths[lang];
-const c = copy(lang).areasHub;
+/* The city count has one source of truth: the data. Both the lead and the
+   meta description carry a {count} placeholder so neither can go stale
+   when a city is added. */
+const raw = copy(lang).areasHub;
+const withCount = (t: string) => t.replace('{count}', String(cities.length));
+const c = {
+  ...raw,
+  metaDescription: withCount(raw.metaDescription),
+  lead: withCount(raw.lead),
+};
 
 const crumbs = [
   { name: t.breadcrumbHome, href: p.home },
@@ -31,7 +40,7 @@ const ordered = [...regions].sort((a, b) => a.order - b.order).map((r) => region
       <span class="eyebrow">{t.eyebrowAreas}</span>
       <div class="stripe-rule" aria-hidden="true"></div>
       <h1>{c.h1}</h1>
-      <p class="lead">{c.lead.replace('{count}', String(cities.length))}</p>
+      <p class="lead">{c.lead}</p>
     </div>
   </section>
 

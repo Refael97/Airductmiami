@@ -194,10 +194,10 @@ export const copyEn: PageCopy = {
   areasHub: {
     metaTitle: 'Garage Door Service Areas in Florida | Garage Door Fixers',
     metaDescription:
-      'Where we work: 52 cities across seven Florida regions, from Miami-Dade to Tampa Bay, Orlando, Fort Myers and Jacksonville. Same-day repair with published prices.',
+      'Where we work: {count} cities across seven Florida regions, from Miami-Dade to Tampa Bay, Orlando, Fort Myers and Jacksonville. Same-day repair with published prices.',
     h1: 'Where we work',
     lead:
-      '52 cities across seven regions. The list is weighted by where garages actually are and where doors actually fail, which is why Fort Myers and Kendall sit alongside Miami, Tampa and Orlando.',
+      '{count} cities across seven regions. The list is weighted by where garages actually are and where doors actually fail, which is why Fort Myers and Kendall sit alongside Miami, Tampa and Orlando.',
     answer:
       'Garage Door Fixers covers Florida in seven regions: Miami-Dade County, Broward County, Palm Beach and the Treasure Coast, Tampa Bay, Central Florida, Southwest Florida and North Florida. Same-day garage door repair is available in all seven, with the same published starting prices everywhere: $150 per spring, $95 for cable repair and $275 for opener installation.',
     faq: [
