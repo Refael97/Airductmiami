@@ -220,11 +220,24 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
     text-transform: uppercase; color: var(--c-muted);
   }
 
-  .site-nav { display: flex; align-items: center; gap: 1.1rem; margin-left: auto; }
+  /* min-width: 0 lets the nav give ground before the row wraps. Without
+     it the nav holds its full intrinsic width, the CTA is pushed onto a
+     second line, and the header grows a stray row. That happens in
+     Spanish and not in English, because "Áreas de servicio" and
+     "Cotización gratis" are simply longer than their English
+     equivalents, so it is a bug you only see in one language. */
+  /* The gap is set for the longer language. The container is capped at
+     --maxw, so a wider viewport never gives the header more room, which
+     means a media query cannot rescue this: the spacing has to fit the
+     Spanish labels at every width or the CTA drops to a second row. */
+  .site-nav {
+    display: flex; align-items: center; gap: 0.8rem;
+    margin-left: auto; min-width: 0; flex-shrink: 1;
+  }
   .nav-item { display: flex; }
   .nav-link {
     display: inline-flex; align-items: center; gap: 0.2rem;
-    color: var(--c-body); font-weight: 600; font-size: 0.94rem; text-decoration: none;
+    color: var(--c-body); font-weight: 600; font-size: 0.9rem; text-decoration: none;
     padding-block: 0.3rem; border-bottom: 2px solid transparent;
     white-space: nowrap;
   }
@@ -324,7 +337,7 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
     color: var(--c-muted); white-space: nowrap;
   }
 
-  .header-cta { flex-shrink: 0; min-height: 46px; padding-inline: 1.3rem; }
+  .header-cta { flex-shrink: 0; min-height: 46px; padding-inline: 1.05rem; white-space: nowrap; }
 
   /* ---------- Narrow screens ----------
      The panels are switched off entirely. Every top-level item is already a
@@ -333,6 +346,16 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
   .mega-areas { grid-template-columns: repeat(7, minmax(0, 1fr)) 1.3fr; }
   .mega-areas .mega-head { font-size: 0.8rem; }
   .mega-areas .city-list a { font-size: 0.82rem; padding: 0.25rem 0.3rem; }
+
+  /* Below --maxw the container starts shrinking, so the header loses room
+     for the first time and the longer language needs another step down.
+     The mega panels stay until 1080px; this step is spacing only. */
+  @media (max-width: 1160px) {
+    .site-nav { gap: 0.6rem; }
+    .nav-link { font-size: 0.86rem; }
+    .header-cta { padding-inline: 0.85rem; font-size: 0.9rem; }
+    .bw-sub { display: none; }
+  }
 
   @media (max-width: 1080px) {
     .mega { display: none; }
