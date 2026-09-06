@@ -31,7 +31,7 @@ the record of how the template was designed. The Florida brief at
 | Cities | 52 | 52 | `/service-areas/{city}/` |
 | Buyer's guide | 10 + hub | 10 + hub | `/buyers-guide/`, `/es/guia-de-compra/` |
 | Brands | 6 | 6 | `/brands/`, `/es/marcas/` |
-| Guides | 68 | pending | `/blog/`, `/es/blog/` |
+| Guides | 68 | 68 | `/blog/`, `/es/blog/` |
 | Core | 5 | 5 | About, FAQ, Contact, Thank you, Privacy |
 | Agent surface | 3 | shared | `/agent.json`, `/llms.txt`, `/llms-full.txt` |
 
@@ -57,6 +57,8 @@ English is canonical and lives at the site root. Spanish lives under
   breaking the build.** That is deliberate: it lets the mirror land
   region by region. It also means a missing translation is invisible, so
   check what is actually translated before claiming the mirror is done.
+  The mirror is complete as of 6 September 2026, so any English text
+  appearing on an `/es/` page now is a regression, not a gap.
 - Slugs are identical across languages for services, cities, regions,
   products and brands. Only articles get their own Spanish slug, and
   they declare `enSlug` in frontmatter to pair up for hreflang.
@@ -133,12 +135,40 @@ Generate per `docs/MEDIA-STANDARD.md`, at 2x display size, then convert
 to WebP. Alt text for all three is already written in `pageImages.ts` in
 both languages.
 
+## Checks before any push
+
+Three scripts gate this site. Run all three after `npm run build`; each
+exits non-zero on failure.
+
+```
+node .check-links.mjs     # broken links, missing trailing slashes, hreflang
+node .check-parity.mjs    # Spanish guides under-linking against English
+npm run preview &         # the layout check needs a server
+node .check-layout.mjs    # horizontal overflow at 375, 390 and 1280
+```
+
+`.check-links.mjs` exists because a green build hides a link to a page
+that was never built, and it caught two real ones: the Spanish home page
+linking to an English article slug, and two hurricane guides pointing at
+a storm damage slug that two agents had each named differently.
+
+`.check-parity.mjs` exists because the Spanish mirror was written in
+parallel and each writer dropped cross-article links rather than guess
+at a slug a peer was still creating. That left Spanish at 296 links
+against 446 in English. It is now at parity, with one deliberate
+exception recorded in the script with its reason.
+
+`.check-layout.mjs` exists because the Spanish header wrapped onto a
+second row at every desktop width while the English one looked fine. The
+language you build in is the one you look at.
+
 ## Next content
 
-The Spanish article mirror is the largest remaining piece: 68 English
-guides, none translated yet. The market research says to prioritise the
-cost, symptom and hurricane clusters, because no Florida garage door
-company has published a word of Spanish on any of them outside Miami.
+The Spanish mirror is complete. The next content decisions come from
+Search Console rather than from this file, per `docs/MAINTENANCE.md`.
+The one thing the market research recommends doing before any data
+arrives is requesting indexing for the Spanish city pages outside
+Miami-Dade first, since that is where Spanish has no competition at all.
 
 ## Running it
 
