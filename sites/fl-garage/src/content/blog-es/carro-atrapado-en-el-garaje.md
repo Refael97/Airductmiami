@@ -24,7 +24,7 @@ faq:
 
 En Florida, la razón más común de que una puerta no abra con el carro adentro no es la puerta. Es un motor sin corriente. Una tormenta de la tarde se lleva la luz, o el pico al volver bota el GFCI donde está enchufado el motor, y la puerta se queda ahí sin hacer nada mientras usted aprieta el botón.
 
-Mire la luz del motor. Apriete el botón de pared. Si no hay luz ni sonido, el motor está muerto y la puerta en sí probablemente esté bien. Esa es la versión fácil de este problema: jale la liberación manual, levante la puerta a mano y salga. Los motores con batería de respaldo siguen trabajando durante un apagón, y por eso recomendamos uno en cada instalación aquí.
+Mire la luz del motor. Apriete el botón de pared. Si no hay luz ni sonido, el motor está muerto y la puerta en sí probablemente esté bien. Esa es la versión fácil de este problema: jale la liberación manual, levante la puerta a mano y salga. Los motores con [batería de respaldo](/es/blog/respaldo-de-bateria-apagones/) siguen trabajando durante un apagón, y por eso recomendamos uno en cada instalación aquí.
 
 Si el motor tiene corriente y corre pero la puerta no se mueve, o si zumba y se esfuerza, siga leyendo, porque ahora la pregunta es la puerta.
 
@@ -34,14 +34,14 @@ Párese adentro con la puerta cerrada y mire el eje que cruza arriba del vano. U
 
 ![Un resorte de torsión reventado que muestra la separación donde se partió la espiral. La puerta que cuelga de eso pesa todo lo que está hecha, y el motor no la puede levantar.](/images/broken-torsion-spring.webp)
 
-Los resortes en Florida no se rompen por frío. Se rompen por conteo de ciclos, y una puerta de garaje de Florida trabaja duro porque es la puerta principal para casi toda la familia, el paso a la bodega y al taller, y en las comunidades de carritos de golf puede correr varias veces al día. Un resorte estándar está calculado para unos 10,000 ciclos, que a cuatro ciclos diarios son unos siete años. La humedad y el aire salino a pocas millas de cualquiera de las dos costas acortan eso, porque pican el acero.
+Los resortes en Florida no se rompen por frío. Se rompen por conteo de ciclos, y una puerta de garaje de Florida trabaja duro porque es la puerta principal para casi toda la familia, el paso a la bodega y al taller, y en las comunidades de carritos de golf puede correr varias veces al día. Un resorte estándar está calculado para [unos 10,000 ciclos](/es/blog/cuanto-duran-resortes-puerta-garaje/), que a cuatro ciclos diarios son unos siete años. La humedad y el aire salino a pocas millas de cualquiera de las dos costas acortan eso, porque pican el acero.
 
 Si los resortes se ven enteros, el problema es más probablemente el motor, y la puerta va a levantar normal a mano una vez desconectada.
 
 ## Si los resortes están enteros
 
 1. Asegúrese de que la puerta esté totalmente cerrada.
-2. Jale la manija roja de liberación manual hacia abajo y hacia atrás, en dirección al motor. Debe hacer clic cuando el carro se desconecte.
+2. Jale la [manija roja de liberación manual](/es/blog/liberacion-manual-puerta-garaje/) hacia abajo y hacia atrás, en dirección al motor. Debe hacer clic cuando el carro se desconecte.
 3. Levante la puerta a mano. Con resortes buenos debe sentirse como veinte o treinta libras, no como doscientas.
 4. Debe quedarse arriba sola. Si se queda, saque el carro.
 5. Ciérrela a mano, despacio, y deje el motor desconectado hasta que lo arreglen. Aquí no hay problema de resortes, pero una puerta que baja rápido igual lastima.
@@ -50,7 +50,7 @@ Si los resortes se ven enteros, el problema es más probablemente el motor, y la
 
 Esta es la situación que pide cuidado, porque no hay nada sosteniendo la puerta salvo usted.
 
-Casi todos los garajes de Florida tienen una puerta doble de 16 por 7 pies, y una puerta doble de acero sin apoyo de resorte pesa de 200 a 350 libras. Una sencilla, de 130 a 200.
+Casi todos los garajes de Florida tienen una puerta doble de 16 por 7 pies, y una [puerta doble de acero](/es/blog/cuanto-pesa-una-puerta-de-garaje/) sin apoyo de resorte pesa de 200 a 350 libras. Una sencilla, de 130 a 200.
 
 1. **No use el motor.** Ni una vez, ni para ver si ayuda.
 2. Consiga una segunda persona. Dos personas pueden levantar una puerta sencilla con un resorte roto. Una puerta doble es trabajo de tres personas, y si no son tres, aquí se detiene.
@@ -86,8 +86,8 @@ Cada precio de este sitio es un precio desde para una puerta sencilla estándar 
 
 ## Cuándo vale la pena el recargo de emergencia
 
-Si la puerta quedó cerrada de forma segura y usted puede pasar sin el carro hasta la mañana, esperar al horario normal le ahorra el recargo de despacho de $150 a $300, y abrimos los siete días de la semana, domingo incluido. Si necesita el carro para trabajar, o si la puerta quedó trabada abierta y la casa está expuesta, páguelo.
+Si la puerta quedó cerrada de forma segura y usted puede pasar sin el carro hasta la mañana, esperar al horario normal le ahorra el [recargo de despacho](/es/blog/costo-reparacion-emergencia-puerta-garaje/) de $150 a $300, y abrimos los siete días de la semana, domingo incluido. Si necesita el carro para trabajar, o si la puerta quedó trabada abierta y la casa está expuesta, páguelo.
 
-Una nota de Florida. Si viene una tormenta con nombre, una puerta que no cierra es un problema estructural de la casa y no una incomodidad, porque la puerta del garaje es la abertura más grande de la casa y de ella depende el techo. Tratamos una puerta trabada abierta antes de una tormenta como emergencia, y usted también debería.
+Una nota de Florida. Si viene [una tormenta con nombre](/es/blog/preparar-puerta-garaje-huracan/), una puerta que no cierra es un problema estructural de la casa y no una incomodidad, porque la puerta del garaje es la abertura más grande de la casa y de ella depende el techo. Tratamos una puerta trabada abierta antes de una tormenta como emergencia, y usted también debería.
 
 Atendemos todo el estado, desde [Miami-Dade County](/es/areas-de-servicio/miami-dade-county/) hasta [Tampa Bay](/es/areas-de-servicio/tampa-bay/) y [Central Florida](/es/areas-de-servicio/central-florida/). Cuéntenos qué vio cuando llame y le decimos, antes de salir, cuánto va a costar la visita.

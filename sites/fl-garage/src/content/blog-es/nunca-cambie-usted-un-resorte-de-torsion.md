@@ -50,7 +50,7 @@ Después está el óxido. La humedad todo el año, y el aire salino a pocas mill
 - Un prisionero oxidado se barre o se corta en lugar de soltarse, y un cono que no suelta no se puede desenrollar bajo control.
 - Un tornillo oxidado del soporte inferior puede cortarse al moverlo, y ese soporte está sosteniendo la tensión del cable.
 
-Cada una de esas cosas hace que un trabajo que ya es peligroso en una puerta limpia sea más peligroso en una puerta de Florida. La corrosión se come el resto de los herrajes al mismo ritmo, y por eso revisamos cables y soportes en cada visita.
+Cada una de esas cosas hace que un trabajo que ya es peligroso en una puerta limpia sea más peligroso en una puerta de Florida. Nuestra guía sobre [el óxido y la humedad de Florida](/es/blog/oxido-puerta-garaje-humedad-florida/) cubre qué le hace la corrosión al resto de los herrajes.
 
 ## La parte que la gente subestima
 
@@ -75,13 +75,13 @@ Si la especificación queda mal, la puerta queda permanentemente fuera de balanc
 | Cable y tambor junto con el resorte | $225 a $400 | Cable fuera del tambor, puerta fuera del riel | $140 a $600 |
 | Prueba de balance, prueba de reversa, un año de garantía | incluido | Llamada de emergencia en fin de semana | $150 a $300 de prima encima |
 
-Nuestra guía sobre el [costo de cambio de resortes](/es/blog/costo-cambio-resortes-puerta-garaje/) explica qué mueve el número.
+Nuestra guía sobre el [costo de cambio de resortes](/es/blog/costo-cambio-resortes-puerta-garaje/) explica qué mueve el número, y [resortes de torsión frente a resortes de extensión](/es/blog/resortes-torsion-vs-extension/) explica cuál tipo tiene su puerta.
 
 ## Qué sí puede hacer usted
 
 Bastante, y vale la pena hacerlo:
 
-- Lubricar bisagras, rodillos, resortes y baleros dos veces al año.
+- Lubricar bisagras, rodillos, resortes y baleros dos veces al año. Nuestra guía sobre [cómo lubricar una puerta de garaje](/es/blog/como-lubricar-puerta-garaje/) tiene los pasos.
 - Enjuagar la sal de los herrajes con agua dulce si vive cerca de la costa, luego secar y lubricar.
 - Apretar herrajes.
 - Limpiar y alinear los sensores de fotocelda.

@@ -47,7 +47,7 @@ Las tres existen porque las puertas de garaje han matado niños. Las reglas fede
 | Control de pared | Mida del piso al botón | Cinco pies o más | Un niño lo alcanza |
 | Cordón de liberación | Mida del piso a la manija | Seis pies o más | Cuelga más abajo |
 
-Use un objeto para la prueba de sensores, nunca una mano ni un pie. Haga las dos pruebas con la puerta en movimiento dos veces al año, junto con la prueba de balance. Abril o mayo, antes de la temporada de tormentas, es buen momento para una de ellas, porque también es cuando un [mantenimiento](/es/servicios/garage-door-tune-up/) rinde más.
+Use un objeto para la prueba de sensores, nunca una mano ni un pie. Haga las dos pruebas con la puerta en movimiento dos veces al año, junto con la prueba de balance de nuestra [lista de mantenimiento](/es/blog/lista-mantenimiento-puerta-garaje/). Abril o mayo, antes de la temporada de tormentas, es buen momento para una de ellas, porque también es cuando un [mantenimiento](/es/servicios/garage-door-tune-up/) rinde más.
 
 ## Los errores que apagan todo esto
 

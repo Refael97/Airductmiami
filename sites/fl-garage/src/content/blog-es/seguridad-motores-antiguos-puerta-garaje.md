@@ -49,7 +49,7 @@ Un garaje cerrado en Kendall, Brandon o Cape Coral pasa de 100°F casi todas las
 - **Los engranes de plástico se vuelven quebradizos.** Las unidades viejas de cadena y de tornillo usan un engrane de nailon. El calor lo vuelve quebradizo, y un día el motor corre y la puerta no se mueve. Nuestra guía sobre un [motor que funciona y una puerta que no se mueve](/es/blog/motor-funciona-puerta-no-se-mueve/) cubre esa falla.
 - **La grasa se vuelve barniz.** Las tracciones de cadena y de tornillo corren duras, el motor trabaja más y la tarjeta corre más caliente.
 
-Nada de esto es fatal en una unidad de diez años con piezas en el anaquel. En una unidad de los años noventa es una serie de reparaciones sin final.
+Nada de esto es fatal en una unidad de diez años con piezas en el anaquel. En una unidad de los años noventa es una serie de reparaciones sin final. Nuestra guía sobre [el calor del verano y los problemas de la puerta de garaje](/es/blog/calor-verano-problemas-puerta-garaje/) cubre qué más ataca el calor.
 
 ## La línea de disponibilidad de piezas
 
@@ -75,13 +75,13 @@ Un motor nuevo instalado cuesta de $275 a $600 según el tipo de tracción. Nues
 
 ## Qué conviene poner en su lugar
 
-**Tracción por banda**, $350 a $600, si hay espacio habitable arriba o al lado del garaje. La mayoría de las casas de Florida son de una planta con una recámara compartiendo pared con el garaje, así que esta es la elección habitual.
+**Tracción por banda**, $350 a $600, si hay espacio habitable arriba o al lado del garaje. La mayoría de las casas de Florida son de una planta con una recámara compartiendo pared con el garaje, así que esta es la elección habitual. Nuestra guía sobre [motor de correa o de cadena](/es/blog/motor-de-correa-o-de-cadena/) los compara.
 
 **Tracción por cadena**, $275 a $450, para un garaje separado o un taller donde el ruido no importa. La más barata y duradera.
 
-**Motor de pared tipo jackshaft**, $450 a $800, si no hay altura libre suficiente para un carril. Común en garajes de puerta sencilla de los años cincuenta a setenta en Hialeah, Hollywood al este de la I-95 y St. Petersburg.
+**Motor de pared tipo jackshaft**, $450 a $800, si no hay altura libre suficiente para un carril. Común en garajes de puerta sencilla de los años cincuenta a setenta en Hialeah, Hollywood al este de la I-95 y St. Petersburg. Nuestra guía de [motores para techo bajo](/es/blog/motores-para-techo-bajo/) cubre las opciones.
 
-**Batería de respaldo**, $60 a $150 agregados a cualquiera de ellos. Los apagones después de las tormentas son la razón por la que esto existe en Florida.
+**Batería de respaldo**, $60 a $150 agregados a cualquiera de ellos. Los apagones después de las tormentas son la razón por la que esto existe en Florida, y nuestra guía sobre [batería de respaldo y apagones](/es/blog/respaldo-de-bateria-apagones/) explica cuánto dura una.
 
 **WiFi**, si usted pasa parte del año fuera de la casa. Los residentes de temporada en Naples o Sarasota que quieren saber que la puerta está cerrada en julio sacan más provecho de un [motor inteligente](/es/servicios/smart-garage-door-opener-installation/), de $350 a $750, que de cualquier otra opción de esta lista.
 

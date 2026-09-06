@@ -51,7 +51,7 @@ Una respuesta desglosada. Piezas, mano de obra, visita, permiso, desecho. Un sol
 
 **2. ¿Qué especificación tienen las piezas?**
 
-Para resortes: calibre de alambre, diámetro interior, largo y clasificación de ciclos. Un resorte de 20,000 ciclos genuinamente cuesta más que uno de 10,000 y debe ser una elección deliberada de la que le avisaron. En un garaje de Florida que abre ocho veces al día eso tiene sentido más seguido de lo que uno pensaría.
+Para resortes: calibre de alambre, diámetro interior, largo y clasificación de ciclos. Un resorte de 20,000 ciclos genuinamente cuesta más que uno de 10,000 y debe ser una elección deliberada de la que le avisaron. Nuestro artículo sobre [resortes de alto ciclaje](/es/blog/resortes-alto-ciclaje-vale-la-pena/) explica cuándo valen la pena, que en un garaje de Florida que abre ocho veces al día es más seguido de lo que uno pensaría.
 
 Para una puerta: el material, el calibre, el aislamiento y, sobre todo, la certificación. Una puerta con aprobación de producto de Florida y una puerta con NOA de Miami-Dade son productos distintos a precios distintos, y la cotización debe decir cuál le están dando.
 
@@ -69,7 +69,7 @@ Sencilla o doble, acero o madera, aislada o no, certificada contra viento o resi
 
 **Resortes de alto ciclaje.** Clasificados para 20,000 ciclos o más en lugar de 10,000. Valen la pena en una puerta que se usa muchas veces al día, y deben presentarse como opción y no darse por hecho.
 
-**Herrajes corroídos cerca de la costa.** A pocas millas de cualquiera de las dos costas, el aire salino se lleva los cables, los soportes inferiores y los tambores juntos. Un técnico que le muestra óxido en el cable y le cotiza cable y tambor de $225 a $400 en lugar de solo cable de $95 a $300 normalmente tiene razón.
+**Herrajes corroídos cerca de la costa.** A pocas millas de cualquiera de las dos costas, el aire salino se lleva los cables, los soportes inferiores y los tambores juntos. Un técnico que le muestra óxido en el cable y le cotiza cable y tambor de $225 a $400 en lugar de solo cable de $95 a $300 normalmente tiene razón. Nuestro artículo sobre [la corrosión por aire salino](/es/blog/aire-salino-corrosion-puerta-garaje/) cubre qué esperar.
 
 **Falló más de una cosa.** Genuinamente común en una puerta vieja. Cada pieza cotizada debe mostrársela.
 

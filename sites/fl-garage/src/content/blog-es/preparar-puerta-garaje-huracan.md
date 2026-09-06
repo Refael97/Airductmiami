@@ -34,7 +34,7 @@ Toda puerta certificada carga una etiqueta de fábrica, casi siempre en el inter
 
 Si no hay etiqueta, revise si el condado tiene un permiso registrado para la puerta. Una puerta con permiso tiene su certificación anotada en él. Sin etiqueta y sin permiso casi siempre significa una puerta sin certificación, algo común en casas construidas antes del código moderno y en puertas cambiadas sin permiso desde entonces.
 
-Una puerta sin certificación es el punto débil más grande de una casa de Florida, y vale la pena saberlo en marzo en lugar de descubrirlo en septiembre. La [instalación de puerta para huracanes](/es/servicios/hurricane-rated-garage-door-installation/) va de $1,800 a $6,500 instalada con el permiso incluido, y el mejor momento para hacerla es de marzo a mayo, cuando los tiempos de entrega son más cortos.
+Una puerta sin certificación es el punto débil más grande de una casa de Florida, y vale la pena saberlo en marzo en lugar de descubrirlo en septiembre. La [instalación de puerta para huracanes](/es/servicios/hurricane-rated-garage-door-installation/) va de $1,800 a $6,500 instalada con el permiso incluido, y el [mejor momento para hacerla es de marzo a mayo](/es/blog/mejor-momento-cambiar-puerta-garaje-florida/), cuando los tiempos de entrega son más cortos.
 
 ## Paso 2: refuerzos, solo donde estén aprobados para su zona
 
@@ -71,7 +71,7 @@ Desconectar el motor importa porque una tormenta puede disparar el motor, y porq
 
 Una vez que la puerta está cerrada y trabada, así se queda hasta que la tormenta pase. Ni para revisar el carro, ni para ver el patio, ni para dejar entrar al vecino. En el momento en que la puerta está abierta, la abertura más grande de la casa está abierta.
 
-Si se va la luz durante la tormenta, el motor no va a funcionar. Está bien, porque de todos modos usted no va a abrir la puerta. Aquí es donde una batería de respaldo gana sus $60 a $150: no durante la tormenta, sino en los días después, cuando todavía no hay luz y usted necesita entrar y salir varias veces al día.
+Si se va la luz durante la tormenta, el motor no va a funcionar. Está bien, porque de todos modos usted no va a abrir la puerta. Aquí es donde una [batería de respaldo](/es/blog/respaldo-de-bateria-apagones/) gana sus $60 a $150: no durante la tormenta, sino en los días después, cuando todavía no hay luz y usted necesita entrar y salir varias veces al día.
 
 ## Paso 6: la liberación manual, después
 
@@ -96,11 +96,12 @@ Una puerta que se ve bien pero tiene un riel doblado o una sección superior mar
 
 **Dejar la puerta un poco abierta "para que salga la presión".** Este es el mal consejo más persistente de Florida y es lo contrario de lo que supone el código. Ciérrela.
 
-**Confiar en una puerta porque nunca ha fallado.** Muchas puertas en Kendall, Homestead y Fort Myers se cambiaron después de una tormenta y hoy tienen la edad en que resortes, cables y soportes están al final de su vida. Una puerta que aguantó un huracán con herrajes nuevos no es la misma puerta con herrajes oxidados.
+**Confiar en una puerta porque nunca ha fallado.** Muchas puertas en Kendall, Homestead y Fort Myers se cambiaron después de una tormenta y hoy tienen la edad en que resortes, cables y soportes están al final de su vida. Una puerta que aguantó un huracán con herrajes nuevos no es la misma puerta con herrajes oxidados. La edad y la corrosión están en [óxido en la puerta de garaje por la humedad de Florida](/es/blog/oxido-puerta-garaje-humedad-florida/).
 
 ## Para seguir leyendo
 
 - [Puerta certificada contra viento frente a resistente a impactos](/es/blog/certificada-viento-vs-resistente-impactos/)
 - [Crédito de seguro por mitigación de viento](/es/blog/credito-seguro-mitigacion-viento/)
 - [Costo de puerta de garaje para huracanes](/es/blog/costo-puerta-garaje-para-huracanes/)
+- [Lista de mantenimiento de la puerta de garaje](/es/blog/lista-mantenimiento-puerta-garaje/)
 - [Lista de precios](/es/precios/)

@@ -78,9 +78,9 @@ Buena respuesta: la empresa le dice si su dirección está en la zona de vientos
 
 ## Preguntas sobre el trabajo mismo
 
-Para un **resorte**: ¿qué calibre de alambre, qué diámetro interior y qué largo, y qué clasificación de ciclos? Una empresa que pone un resorte de 20,000 ciclos está haciendo algo distinto de una que pone uno de 10,000, y el precio debe reflejarlo. Las puertas de Florida trabajan duro, porque el garaje es la puerta de entrada de la casa, así que pregunte si los resortes de alto ciclaje tienen sentido para la suya.
+Para un **resorte**: ¿qué calibre de alambre, qué diámetro interior y qué largo, y qué clasificación de ciclos? Una empresa que pone un resorte de 20,000 ciclos está haciendo algo distinto de una que pone uno de 10,000, y el precio debe reflejarlo. Las puertas de Florida trabajan duro, porque el garaje es la puerta de entrada de la casa, así que pregunte si los [resortes de alto ciclaje](/es/blog/resortes-alto-ciclaje-vale-la-pena/) tienen sentido para la suya.
 
-Para un **motor**: ¿qué tipo de tracción, y por qué esa para mi garaje? La banda contra la cadena es sobre todo cuestión de si hay una recámara al lado o arriba del garaje. Después pregunte por la batería de respaldo, que agrega de $60 a $150 y es la diferencia entre abrir la puerta después de una tormenta y no abrirla.
+Para un **motor**: ¿qué tipo de tracción, y por qué esa para mi garaje? [La banda contra la cadena](/es/blog/motor-de-correa-o-de-cadena/) es sobre todo cuestión de si hay una recámara al lado o arriba del garaje. Después pregunte por la batería de respaldo, que agrega de $60 a $150 y es la diferencia entre abrir la puerta después de una tormenta y no abrirla.
 
 Para una **puerta nueva**: ¿qué calibre tiene el acero, cuál es el valor R, cuál es la presión de diseño, cuál es el número de aprobación y cuál es el tiempo de entrega? "Aislada" sin un número no es una respuesta, y "certificada contra huracanes" sin un número de aprobación tampoco. Nuestra guía sobre [puerta certificada contra viento frente a resistente a impactos](/es/blog/certificada-viento-vs-resistente-impactos/) explica la diferencia en términos claros.
 

@@ -76,7 +76,7 @@ El segundo problema de Florida es una película. Humedad, polvo fino, polen en p
 
 Un paño de microfibra seco lo arregla. No use nada abrasivo y no rocíe limpiador dentro de la carcasa.
 
-El aire salino además corroe las terminales pequeñas donde el cable llega al sensor y donde aterriza en el motor. Una costra verde o blanca en una terminal es una mala conexión esperando a pasar.
+El aire salino además corroe las terminales pequeñas donde el cable llega al sensor y donde aterriza en el motor. Una costra verde o blanca en una terminal es una mala conexión esperando a pasar. Nuestra guía sobre [el aire salino y la corrosión de la puerta de garaje](/es/blog/aire-salino-corrosion-puerta-garaje/) cubre qué más ataca.
 
 ## El cable
 

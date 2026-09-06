@@ -60,7 +60,7 @@ Los arreglos son de conducta y una pieza de hardware:
 
 - **Cierre la puerta cuando no esté en el garaje.** La caseta no es una cerradura.
 - **Un temporizador de cierre.** Casi todos los motores de la última década se pueden configurar para cerrar la puerta solos después de cierto número de minutos. Pídanos que lo activemos, o pídalo en su próximo [mantenimiento](/es/servicios/garage-door-tune-up/).
-- **Un motor inteligente.** Le avisa al teléfono que la puerta lleva una hora abierta y la cierra desde donde usted esté. La [instalación de motor inteligente](/es/servicios/smart-garage-door-opener-installation/) va de $350 a $750.
+- **Un motor inteligente.** Le avisa al teléfono que la puerta lleva una hora abierta y la cierra desde donde usted esté. La [instalación de motor inteligente](/es/servicios/smart-garage-door-opener-installation/) va de $350 a $750, y nuestra guía sobre [si un motor inteligente vale la pena](/es/blog/motor-inteligente-vale-la-pena/) cubre qué más obtiene.
 
 ## Por dónde entran de verdad a los garajes
 
@@ -88,7 +88,7 @@ Todos los motores fabricados desde entonces usan código rodante que cambia en c
 
 ## Si acaba de mudarse, o de regresar
 
-Borre la memoria del motor. Sostenga el botón Learn de la unidad hasta que la luz se apague y se borre cada control y teclado guardado, luego programe solo los controles que tiene en la mano.
+Borre la memoria del motor. Sostenga el botón Learn de la unidad hasta que la luz se apague y se borre cada control y teclado guardado, luego programe solo los controles que tiene en la mano. Los pasos están en nuestra guía sobre [cómo programar un control remoto](/es/blog/como-programar-control-remoto/).
 
 Usted no tiene idea de cuántos controles repartió el dueño anterior. Los residentes de temporada deberían hacer lo mismo al regresar en noviembre, porque por la casa pasó un verano entero de servicio de piscina, control de plagas y contratistas.
 

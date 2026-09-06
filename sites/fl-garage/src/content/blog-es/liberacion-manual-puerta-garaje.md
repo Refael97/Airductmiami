@@ -80,6 +80,8 @@ Si su puerta tiene liberación de emergencia exterior, un pequeño cilindro con 
 
 Una batería de respaldo en el motor mueve la puerta durante un apagón. Agrega de $60 a $150 a un motor nuevo, y cada [motor inteligente](/es/servicios/smart-garage-door-opener-installation/) que instalamos, de $350 a $750, tiene la batería de respaldo como opción. Después de una tormenta, cuando no hay luz y usted necesita llegar a una gasolinera o a un refugio, es la diferencia entre apretar un botón y hacer los seis pasos de arriba.
 
+Explicamos qué hace la batería, cuánto dura y qué motores la aceptan en nuestra guía sobre [batería de respaldo y apagones](/es/blog/respaldo-de-bateria-apagones/).
+
 ## Qué observar mientras está ahí abajo
 
 Cada vez que use la liberación, tómese diez segundos para revisar el balance: levante la puerta a la altura de la cintura y suéltela. Si se queda, los resortes están bien. Si se hunde o se cae, no lo están.

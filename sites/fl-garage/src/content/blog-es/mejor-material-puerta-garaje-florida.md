@@ -44,7 +44,7 @@ En Florida hay dos números que importan en una puerta de acero.
 
 **El calibre.** Calibre 24 o 25 para una casa de familia. Las puertas de constructora suelen ser calibre 27 o 28, y por eso tantas puertas de diez años en Riverview, Winter Garden y Lehigh Acres tienen una abolladura a la altura de la defensa y se flexionan a la vista con una racha fuerte. Número más bajo, acero más grueso.
 
-**El galvanizado.** El acero se galvaniza por inmersión antes de pintarse, y esa capa de zinc es la que detiene el óxido cuando la pintura se raya. Pregunte qué galvanizado trae la puerta y si el acabado es imprimante y esmalte horneados. Después trátela bien: enjuague con agua dulce la puerta de una casa costera cada pocas semanas, y retoque las peladuras el mes en que aparecen, no al año siguiente.
+**El galvanizado.** El acero se galvaniza por inmersión antes de pintarse, y esa capa de zinc es la que [detiene el óxido](/es/blog/oxido-puerta-garaje-humedad-florida/) cuando la pintura se raya. Pregunte qué galvanizado trae la puerta y si el acabado es imprimante y esmalte horneados. Después trátela bien: enjuague con agua dulce la puerta de una casa costera cada pocas semanas, y retoque las peladuras el mes en que aparecen, no al año siguiente.
 
 La [guía de puertas de acero](/es/guia-de-compra/steel-garage-doors/) entra en detalle. [Clopay](/es/marcas/clopay/) y [Amarr](/es/marcas/amarr/) fabrican líneas de acero resistentes a impactos con aprobación de producto de Florida y opciones con NOA de Miami-Dade.
 
@@ -56,7 +56,7 @@ Si usted huele el mar desde su casa, el enemigo principal es el óxido y no las 
 
 **El aluminio** no se oxida y es liviano, lo que resulta más suave para los resortes y para el motor. Se abolla más fácil que el acero. También es el marco de las puertas panorámicas de vidrio que se ven en las remodelaciones modernas de Boca Raton, Naples y Palmetto Bay, y en Florida esas puertas se construyen con vidrio laminado resistente a impactos, que es lo que las hace certificables. Una panorámica de aluminio resistente a impactos llega a $8,000 y más, instalada. Vea la [guía de puertas de aluminio](/es/guia-de-compra/aluminium-garage-doors/).
 
-En cualquier caso, los herrajes importan tanto como el panel. Pida rodillos de nylon sellados y tornillería galvanizada o inoxidable, porque eso, los cables y los soportes inferiores se corroen mucho antes que la puerta.
+En cualquier caso, los herrajes importan tanto como el panel. Pida rodillos de nylon sellados y tornillería galvanizada o inoxidable, porque eso, los cables y los soportes inferiores [se corroen mucho antes](/es/blog/aire-salino-corrosion-puerta-garaje/) que la puerta.
 
 ## La madera, con honestidad
 
@@ -107,4 +107,5 @@ Una puerta certificada pesa más que la puerta de constructora que reemplaza, y 
 - [Costo de una puerta de garaje nueva en Florida](/es/blog/costo-puerta-garaje-nueva-florida/)
 - [Costo de puerta de garaje para huracanes](/es/blog/costo-puerta-garaje-para-huracanes/)
 - [Medidas estándar de puertas de garaje](/es/blog/medidas-estandar-puertas-garaje/)
+- [Cuándo conviene cambiar la puerta del garaje en Florida](/es/blog/mejor-momento-cambiar-puerta-garaje-florida/)
 - [Reparar o reemplazar la puerta del garaje](/es/blog/reparar-o-reemplazar-puerta-garaje/)
