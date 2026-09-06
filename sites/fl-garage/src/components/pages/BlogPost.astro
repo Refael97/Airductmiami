@@ -1,0 +1,141 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import { getService } from '../../data/services';
+import type { Service } from '../../data/types';
+import { business } from '../../data/business';
+import { articleSchema } from '../../lib/schema';
+import { guidesInCluster, translationOf, type AnyPost } from '../../lib/relatedContent';
+import { ui, paths, blogHref, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { svc } from '../../lib/i18n';
+
+interface Props { lang: Locale; post: AnyPost }
+const { lang, post } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const { Content } = await render(post);
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const href = blogHref(lang, post.id);
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbGuides, href: p.blog },
+  { name: post.data.title, href },
+];
+
+const related = post.data.relatedServices
+  .map((s) => getService(s))
+  .filter((s): s is Service => Boolean(s))
+  .map((s) => svc(lang, s));
+
+const siblings = await guidesInCluster(lang, post.data.cluster, post.id);
+const other = await translationOf(lang, post);
+const altHref = other ? blogHref(otherLocale(lang), other) : undefined;
+
+const fmt = (d: Date) => d.toLocaleDateString(t.dateLocale, { year: 'numeric', month: 'long', day: 'numeric' });
+
+const schema = articleSchema(site, {
+  headline: post.data.title,
+  description: post.data.description,
+  url: `${site}${href}`,
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+  lang,
+});
+
+/** Price articles must carry the starting-price disclaimer. */
+const showPriceNote = ['cost', 'product', 'hurricane'].includes(post.data.cluster);
+
+/* Google renders about 60 characters and appends the site name on its own,
+   so the brand suffix is added only when it fits. */
+const brandedTitle =
+  post.data.title.length + business.name.length + 3 <= 60 ? `${post.data.title} | ${business.name}` : post.data.title;
+---
+<BaseLayout title={brandedTitle} description={post.data.description} schema={schema} ogType="article" lang={lang} altHref={altHref}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container post-grid">
+      <article class="prose post">
+        <span class="eyebrow">{t.clusterLabels[post.data.cluster]}</span>
+        <h1>{post.data.title}</h1>
+        <p class="byline">
+          {t.published} {fmt(post.data.pubDate)}
+          {post.data.updatedDate && <> · {t.updated} {fmt(post.data.updatedDate)}</>}
+        </p>
+
+        <AnswerBox text={post.data.answer} lang={lang} />
+
+        <Content />
+
+        {showPriceNote && <PriceDisclaimer variant="block" lang={lang} />}
+
+        {post.data.faq.length > 0 && <FAQ items={post.data.faq} title={t.relatedQuestions} lang={lang} />}
+      </article>
+
+      <aside class="post-aside">
+        {related.length > 0 && (
+          <div class="card aside-card">
+            <h2>{t.servicesInGuide}</h2>
+            <ul class="plain">
+              {related.map((s) => (
+                <li>
+                  <a href={serviceHref(lang, s.slug)}>{s.shortName}</a>
+                  <span>{t.from} {money(s.priceLow)}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={p.prices} class="aside-more">{t.fullPriceListArrow}</a>
+          </div>
+        )}
+
+        <div class="card aside-card">
+          <h2>{t.needThisFixed}</h2>
+          <p class="aside-note">{t.needThisFixedText}</p>
+          <a href={p.contact} class="btn btn-accent btn-sm">{t.getFreeQuote}</a>
+        </div>
+
+        {siblings.length > 0 && (
+          <div class="card aside-card">
+            <h2>{t.moreLikeThis}</h2>
+            <ul class="link-list">
+              {siblings.map((s) => (
+                <li><a href={blogHref(lang, s.id)}>{s.data.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .post-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .post { max-width: none; }
+  .post h1 { margin-bottom: 0.3rem; }
+  .byline { font-size: 0.84rem; color: var(--c-muted); margin-bottom: 1.4rem; }
+
+  .post-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
+  .aside-card h2 { font-size: 1rem; margin-bottom: 0.8rem; }
+  .aside-note { font-size: 0.88rem; margin-bottom: 0.9rem; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li { display: flex; justify-content: space-between; gap: 0.6rem; padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem; }
+  .plain li:last-child { border-bottom: 0; }
+  .plain span { color: var(--c-primary); font-weight: 700; white-space: nowrap; }
+  .link-list { list-style: none; padding: 0; margin: 0; }
+  .link-list li { margin-bottom: 0.5rem; font-size: 0.9rem; }
+  .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
+
+  @media (max-width: 960px) {
+    .post-grid { grid-template-columns: 1fr; }
+    .post-aside { position: static; }
+  }
+</style>

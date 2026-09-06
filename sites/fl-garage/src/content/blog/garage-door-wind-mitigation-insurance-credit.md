@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Wind Mitigation Insurance Credit in Florida"
-description: "How the OIR-B1-1802 wind mitigation inspection records your garage door, what a rated door may do for your premium, and the paperwork to keep after an installation."
+description: "How the OIR-B1-1802 wind mitigation inspection records your garage door, what a rated door may do for your premium, and which papers to keep after the job."
 answer: "Florida's wind mitigation inspection, form OIR-B1-1802, records whether every opening in the house, including the garage door, has rated protection. A garage door with a Florida Product Approval or a Miami-Dade NOA may qualify you for a premium credit under the state's mitigation discount rules; the amount is set by your insurer's credit schedule, not by us. A hurricane-rated door installed with a permit runs $1,800 to $6,500, and the permit and the door label are what the inspector looks for."
 pubDate: 2026-08-27
 cluster: hurricane

@@ -8,10 +8,8 @@
  * phone the panels are hidden and a tap goes to the hub, which lists the
  * same links in a readable layout. Nothing is reachable only by hovering.
  *
- * The panels are absolutely positioned against .site-header rather than
- * against the nav item, so they can be full width, and they sit inside the
- * item in the DOM so moving the mouse into a panel still counts as
- * hovering the item.
+ * Bilingual: every string comes from data/ui.ts and every name from the
+ * localised data helpers, so the Spanish header is the same component.
  */
 import { business } from '../data/business';
 import { services } from '../data/services';
@@ -20,6 +18,18 @@ import { regions } from '../data/regions';
 import { citiesByRegion } from '../data/cities';
 import Icon from './Icon.astro';
 import { iconFor } from '../data/serviceIcons';
+import { ui, paths, serviceHref, areaHref, productHref, brandHref, money, type Locale } from '../data/ui';
+import { svc, region as regionOf, city as cityOf, material, opener, brand } from '../lib/i18n';
+
+interface Props {
+  lang?: Locale;
+  /** URL of the same page in the other language. */
+  switchHref?: string;
+}
+const { lang = 'en', switchHref } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const other = lang === 'en' ? 'es' : 'en';
 
 const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
 ---
@@ -27,96 +37,97 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
   <div class="emergency-strip">
     <div class="container">
       <span class="strip-dot" aria-hidden="true"></span>
-      <span>Broken spring or car trapped? Same-day service, seven days a week.</span>
+      <span>{t.strip}</span>
+      <a
+        href={switchHref ?? paths[other].home}
+        class="lang-switch"
+        hreflang={other}
+        rel="alternate"
+        lang={other}
+      >{t.langSwitch}</a>
     </div>
   </div>
 
   <div class="container header-inner">
-    <a href="/" class="brand" aria-label={`${business.name} home`}>
+    <a href={p.home} class="brand" aria-label={`${business.name} home`}>
       <img src="/logo.svg" alt="" width="44" height="44" class="brand-mark" />
       <span class="brand-word">
         <span class="bw-top">{business.name}</span>
-        <span class="bw-sub">Reliable · Local · Professional</span>
+        <span class="bw-sub">{t.brandSub}</span>
       </span>
     </a>
 
     <nav class="site-nav" aria-label="Main">
       <!-- Services -->
       <div class="nav-item has-menu">
-        <a href="/services/" class="nav-link">
-          Services
+        <a href={p.services} class="nav-link">
+          {t.navServices}
           <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
         </a>
         <div class="mega">
           <div class="container mega-inner">
             <div class="mega-col mega-wide">
-              <h2 class="mega-head">Repairs and installation</h2>
+              <h2 class="mega-head">{t.megaRepairs}</h2>
               <ul class="svc-list">
-                {services.map((s) => (
+                {services.map((s0) => { const s = svc(lang, s0); return (
                   <li>
-                    <a href={`/services/${s.slug}/`}>
+                    <a href={serviceHref(lang, s.slug)}>
                       <span class="sl-ico"><Icon name={iconFor(s.slug)} size={20} /></span>
                       <span class="sl-name">{s.shortName}</span>
-                      <span class="sl-price">from ${s.priceLow.toLocaleString('en-US')}</span>
+                      <span class="sl-price">{t.from} {money(s.priceLow)}</span>
                     </a>
                   </li>
-                ))}
+                ); })}
               </ul>
             </div>
             <div class="mega-col mega-aside">
-              <h2 class="mega-head">Every price, published</h2>
-              <p class="mega-note">
-                We publish our starting prices instead of saying "call for a
-                quote". Written estimate before any work begins.
-              </p>
-              <a href="/prices/" class="btn btn-accent btn-sm">See the price list</a>
-              <a href="/services/" class="mega-more">All services →</a>
+              <h2 class="mega-head">{t.megaEveryPrice}</h2>
+              <p class="mega-note">{t.megaEveryPriceNote}</p>
+              <a href={p.prices} class="btn btn-accent btn-sm">{t.megaSeePriceList}</a>
+              <a href={p.services} class="mega-more">{t.megaAllServices}</a>
             </div>
           </div>
         </div>
       </div>
 
-      <a href="/prices/" class="nav-link nav-solo">Prices</a>
+      <a href={p.prices} class="nav-link nav-solo">{t.navPrices}</a>
 
       <!-- Doors and openers -->
       <div class="nav-item has-menu">
-        <a href="/buyers-guide/" class="nav-link">
-          Doors &amp; Openers
+        <a href={p.buyersGuide} class="nav-link">
+          {t.navDoorsOpeners}
           <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
         </a>
         <div class="mega">
           <div class="container mega-inner">
             <div class="mega-col">
-              <h2 class="mega-head">Door materials</h2>
+              <h2 class="mega-head">{t.megaMaterials}</h2>
               <ul class="plain-list">
-                {doorMaterials.map((m) => (
-                  <li><a href={`/buyers-guide/${m.slug}/`}>{m.shortName}<span>from ${m.priceLow.toLocaleString('en-US')}</span></a></li>
-                ))}
+                {doorMaterials.map((m0) => { const m = material(lang, m0); return (
+                  <li><a href={productHref(lang, m.slug)}>{m.shortName}<span>{t.from} {money(m.priceLow)}</span></a></li>
+                ); })}
               </ul>
             </div>
             <div class="mega-col">
-              <h2 class="mega-head">Opener drive types</h2>
+              <h2 class="mega-head">{t.megaOpenerTypes}</h2>
               <ul class="plain-list">
-                {openerTypes.map((o) => (
-                  <li><a href={`/buyers-guide/${o.slug}/`}>{o.shortName}<span>{o.noise}</span></a></li>
-                ))}
+                {openerTypes.map((o0) => { const o = opener(lang, o0); return (
+                  <li><a href={productHref(lang, o.slug)}>{o.shortName}<span>{o.noise}</span></a></li>
+                ); })}
               </ul>
             </div>
             <div class="mega-col">
-              <h2 class="mega-head">Brands we service</h2>
+              <h2 class="mega-head">{t.megaBrands}</h2>
               <ul class="plain-list">
-                {brands.map((b) => (
-                  <li><a href={`/brands/${b.slug}/`}>{b.name}<span>{b.kind === 'opener' ? 'Openers' : 'Doors'}</span></a></li>
-                ))}
+                {brands.map((b0) => { const b = brand(lang, b0); return (
+                  <li><a href={brandHref(lang, b.slug)}>{b.name}<span>{b.kind === 'opener' ? t.openers : t.doors}</span></a></li>
+                ); })}
               </ul>
             </div>
             <div class="mega-col mega-aside">
-              <h2 class="mega-head">Not sure what fits?</h2>
-              <p class="mega-note">
-                Headroom, door weight and salt air all narrow the choice more
-                than the showroom does.
-              </p>
-              <a href="/buyers-guide/" class="btn btn-outline btn-sm">Buyer's guide</a>
+              <h2 class="mega-head">{t.megaNotSure}</h2>
+              <p class="mega-note">{t.megaNotSureNote}</p>
+              <a href={p.buyersGuide} class="btn btn-outline btn-sm">{t.megaBuyersGuide}</a>
             </div>
           </div>
         </div>
@@ -124,43 +135,38 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
 
       <!-- Service areas -->
       <div class="nav-item has-menu">
-        <a href="/service-areas/" class="nav-link">
-          Service Areas
+        <a href={p.serviceAreas} class="nav-link">
+          {t.navAreas}
           <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
         </a>
         <div class="mega">
           <div class="container mega-inner mega-areas">
-            {orderedRegions.map((r) => (
+            {orderedRegions.map((r0) => { const r = regionOf(lang, r0); return (
               <div class="mega-col">
-                {/* "Westchester County" wraps to two lines and pushes its
-                    list out of line with the others, so the column heading
-                    drops the word County. The link still goes to the full
-                    region page. */}
-                <h2 class="mega-head"><a href={`/service-areas/${r.slug}/`}>{r.name.replace(' County', '')}</a></h2>
+                {/* Column headings drop the word County so the seven columns
+                    stay on one line. The link still goes to the region page. */}
+                <h2 class="mega-head"><a href={areaHref(lang, r.slug)}>{r.name.replace(/ County$| Condado$/, '').replace(/^Condado de /, '')}</a></h2>
                 <ul class="city-list">
-                  {citiesByRegion(r.slug).slice(0, 6).map((c) => (
-                    <li><a href={`/service-areas/${c.slug}/`}>{c.name}</a></li>
-                  ))}
+                  {citiesByRegion(r.slug).slice(0, 5).map((c0) => { const c = cityOf(lang, c0); return (
+                    <li><a href={areaHref(lang, c.slug)}>{c.name}</a></li>
+                  ); })}
                 </ul>
               </div>
-            ))}
+            ); })}
             <div class="mega-col mega-aside">
-              <h2 class="mega-head">Same-day, seven days</h2>
-              <p class="mega-note">
-                Prices are identical everywhere we work. The door changes the
-                number, not the town.
-              </p>
-              <a href="/service-areas/" class="mega-more">All service areas →</a>
+              <h2 class="mega-head">{t.megaSameDay}</h2>
+              <p class="mega-note">{t.megaSameDayNote}</p>
+              <a href={p.serviceAreas} class="mega-more">{t.megaAllAreas}</a>
             </div>
           </div>
         </div>
       </div>
 
-      <a href="/blog/" class="nav-link nav-solo">Guides</a>
-      <a href="/faq/" class="nav-link nav-solo">FAQ</a>
+      <a href={p.blog} class="nav-link nav-solo">{t.navGuides}</a>
+      <a href={p.faq} class="nav-link nav-solo">{t.navFaq}</a>
     </nav>
 
-    <a href="/contact/" class="btn btn-accent header-cta">Free quote</a>
+    <a href={p.contact} class="btn btn-accent header-cta">{t.headerCta}</a>
   </div>
 </header>
 
@@ -183,6 +189,14 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
     background: var(--stripe-brand);
   }
   .emergency-strip .container { display: flex; align-items: center; gap: 0.5rem; justify-content: center; text-align: center; }
+  .lang-switch {
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    color: #fff; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.04em;
+    text-decoration: none; padding: 0.15rem 0.6rem; border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 999px;
+  }
+  .lang-switch:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
+  .emergency-strip .container { position: relative; padding-right: 5.5rem; }
   .strip-dot {
     width: 8px; height: 8px; border-radius: 50%;
     background: var(--c-accent); flex-shrink: 0;
@@ -316,6 +330,10 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
      The panels are switched off entirely. Every top-level item is already a
      link to a hub page that lists the same things in a layout built for a
      phone, so nothing becomes unreachable. */
+  .mega-areas { grid-template-columns: repeat(7, minmax(0, 1fr)) 1.3fr; }
+  .mega-areas .mega-head { font-size: 0.8rem; }
+  .mega-areas .city-list a { font-size: 0.82rem; padding: 0.25rem 0.3rem; }
+
   @media (max-width: 1080px) {
     .mega { display: none; }
     .chev { display: none; }

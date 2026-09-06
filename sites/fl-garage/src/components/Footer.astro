@@ -1,17 +1,30 @@
 ---
 import { business } from '../data/business';
 import { services } from '../data/services';
+import { ui, paths, serviceHref, type Locale } from '../data/ui';
+import { svc } from '../lib/i18n';
+
+interface Props { lang?: Locale }
+const { lang = 'en' } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
 
 const year = new Date().getFullYear();
-const footerServices = services.slice(0, 6);
+const footerServices = services.slice(0, 6).map((s) => svc(lang, s));
+const regionLabel = lang === 'es' ? 'Florida' : business.area.regionName;
 ---
 <footer class="site-footer">
-  <!-- New York skyline, drawn as a decorative band along the top of the
-       footer. Purely graphic, so it is hidden from assistive tech. -->
+  <!-- A Florida horizon, drawn as a decorative band along the top of the
+       footer: low flat-roofed houses, two palms, a water line. Purely
+       graphic, so it is hidden from assistive tech. -->
   <svg class="skyline" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
     <path
       fill="currentColor"
-      d="M0 90V62h34V44h20v18h26V30h14V16h6V30h14v32h30V50h26V34h16v16h24v40h22V54h30V38h12V22h5V38h12v16h28v36h26V46h34V60h24V40h18V26h6V40h18v20h26v30h30V52h28V36h14V18h6V36h14v16h26v38h24V58h32V42h20v16h26v32h28V48h22V32h12V14h6v18h12v16h24v42h30V56h26V40h18V24h6v16h18v16h26v34h30V50h28V34h16V18h6v16h16v16h24v40h34V58h26V44h20v14h26v32h32V52h24V36h14V20h6v16h14v16h26v38h20z"
+      d="M0 90V70h40V52h12V44h6V52h60V58h8V46h40V58h50V50h14V42h6V50h44V60h30V48h48V60h20V52h60V44h10V52h50V60h24V50h14V40h6V50h40V60h60V46h50V60h30V52h56V44h8V52h58V60h26V48h44V60h48V54h62V46h12V54h50V60h30V50h60V40h6V50h44V62h20V54h64v36z"
+    />
+    <path
+      fill="currentColor"
+      d="M300 90V62h-6V90zm-3-30c-8-2-14-8-16-14 8 0 14 4 16 10-1-6 2-12 8-15 1 7-2 13-8 17 6-3 13-2 18 3-6 4-12 4-18 1 5 3 8 9 7 15-6-3-9-8-9-15-1 7-5 12-11 14 0-6 4-11 9-14zM880 90V60h-6V90zm-3-32c-9-2-15-9-17-16 9 0 16 5 17 12-1-7 3-14 9-17 1 8-2 15-9 19 7-3 15-2 20 4-7 4-14 4-20 1 5 4 9 10 8 17-7-3-10-9-10-17-1 8-5 13-12 16 0-7 4-12 10-16z"
     />
   </svg>
 
@@ -30,69 +43,64 @@ const footerServices = services.slice(0, 6);
         {business.emailLive ? (
           <>
             <a href={`mailto:${business.email}`}>{business.email}</a>
-            <span class="mail-note">quotes and new enquiries</span>
+            <span class="mail-note">{t.footerMailQuotes}</span>
             <a href={`mailto:${business.emailSupport}`}>{business.emailSupport}</a>
-            <span class="mail-note">existing jobs, warranty and scheduling</span>
+            <span class="mail-note">{t.footerMailSupport}</span>
           </>
         ) : (
-          <a href="/contact/">Request a free quote</a>
+          <a href={p.contact}>{t.footerRequestQuote}</a>
         )}
       </p>
-      <span class="footer-badge">Licensed &amp; insured</span>
+      <span class="footer-badge">{t.footerLicensed}</span>
 
       {/* Locality block. A service area business publishes where it works,
-          not a street address, and Google reads a semantic <address> in the
-          footer as a location signal. Nassau County leads because it holds
-          eight of the sixteen highest-potential communities on the site and
-          the dispatch centre sits in that corridor. No street line and no
-          ZIP: inventing either is what gets a Business Profile suspended,
-          and that profile is how the "near me" cluster gets won. */}
+          not a street address. No street line and no ZIP: inventing either
+          is what gets a Business Profile suspended. */}
       <address class="footer-address">
         <strong>{business.name}</strong><br />
-        Mobile garage door service across {business.serviceArea}<br />
-        Based in {business.area.primaryCounty}, {business.area.region}, {business.area.country}
+        {t.footerMobile(regionLabel)}<br />
+        {t.footerBased(business.area.primaryCounty, business.area.region, business.area.country)}
       </address>
       <p class="footer-areas">
-        Serving {business.area.counties.join(' · ')}
+        {t.footerServing} {business.area.counties.join(' · ')}
       </p>
-      <p class="footer-areas-note">
-        We travel to the customer. There is no walk-in location.
-      </p>
+      <p class="footer-areas-note">{t.footerNoWalkIn}</p>
     </div>
 
     <div class="footer-col">
-      <h3>Services</h3>
+      <h3>{t.footerServices}</h3>
       <ul>
-        {footerServices.map((s) => (<li><a href={`/services/${s.slug}/`}>{s.shortName}</a></li>))}
-        <li><a href="/services/">All services →</a></li>
+        {footerServices.map((s) => (<li><a href={serviceHref(lang, s.slug)}>{s.shortName}</a></li>))}
+        <li><a href={p.services}>{t.allServicesArrow}</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3>Prices &amp; guides</h3>
+      <h3>{t.footerPricesGuides}</h3>
       <ul>
-        <li><a href="/prices/">Published price list</a></li>
-        <li><a href="/buyers-guide/">Doors &amp; openers guide</a></li>
-        <li><a href="/blog/">Guides &amp; costs</a></li>
-        <li><a href="/faq/">Questions answered</a></li>
+        <li><a href={p.prices}>{t.footerPriceList}</a></li>
+        <li><a href={p.buyersGuide}>{t.footerDoorsGuide}</a></li>
+        <li><a href={p.blog}>{t.footerGuides}</a></li>
+        <li><a href={p.faq}>{t.footerFaq}</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3>Company</h3>
+      <h3>{t.footerCompany}</h3>
       <ul>
-        <li><a href="/service-areas/">All service areas</a></li>
-        <li><a href="/about/">About us</a></li>
-        <li><a href="/contact/">Request a quote</a></li>
-        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href={p.serviceAreas}>{t.footerAllAreas}</a></li>
+        <li><a href={p.about}>{t.footerAbout}</a></li>
+        <li><a href={p.contact}>{t.footerQuote}</a></li>
+        <li><a href={p.privacy}>{t.footerPrivacy}</a></li>
+        <li><a href={paths[lang === 'en' ? 'es' : 'en'].home} hreflang={lang === 'en' ? 'es' : 'en'} rel="alternate">{t.langSwitch}</a></li>
       </ul>
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container">
-      <p>© {year} {business.legalName}. All rights reserved. · Serving {business.serviceArea}.</p>
-      <p class="agent-link"><a href="/agent.json">For AI agents: structured business data (JSON)</a></p>
+      <p>© {year} {business.legalName}. {t.footerRights} · {t.footerServingArea(regionLabel)}</p>
+      <p class="agent-link"><a href="/agent.json">{t.footerAgent}</a></p>
     </div>
   </div>
 </footer>

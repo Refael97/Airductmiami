@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import Icon from '../Icon.astro';
+import { doorMaterials, openerTypes, brands } from '../../data/products';
+import { ui, paths, productHref, brandHref, money, otherLocale, type Locale } from '../../data/ui';
+import { material, opener, brand, copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).buyersGuide;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbDoorsOpeners, href: p.buyersGuide },
+];
+
+const materialIcon: Record<string, string> = {
+  'wood-garage-doors': 'install',
+};
+const openerIcon: Record<string, string> = {
+  'screw-drive-openers': 'wrench',
+  'jackshaft-wall-mount-openers': 'remote',
+};
+
+const materials = doorMaterials.map((m) => material(lang, m));
+const openers = openerTypes.map((o) => opener(lang, o));
+const brandList = brands.map((b) => brand(lang, b));
+const to = lang === 'es' ? 'a' : 'to';
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].buyersGuide}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="guide-hero">
+    <div class="container">
+      <span class="eyebrow">{t.eyebrowBuyersGuide}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{c.h1}</h1>
+      <p class="lead">{c.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="narrow">
+        <AnswerBox text={c.answer} lang={lang} />
+      </div>
+
+      <h2 class="sub" id="materials">{t.materialsHeading}</h2>
+      <p class="sub-lead">{t.materialsLead}</p>
+      <div class="grid grid-3">
+        {materials.map((m, i) => (
+          <a href={productHref(lang, m.slug)} class="card p-card" data-anim="fade-up" data-anim-delay={String((i % 3) * 80)}>
+            <span class="icon"><Icon name={materialIcon[m.slug] ?? 'door'} size={30} /></span>
+            <h3>{m.shortName}</h3>
+            <p>{m.bestFor}</p>
+            <span class="card-price">{money(m.priceLow)} {to} {money(m.priceHigh)} {t.installed}</span>
+          </a>
+        ))}
+      </div>
+
+      <h2 class="sub" id="openers">{t.openersHeading}</h2>
+      <p class="sub-lead">{t.openersLead}</p>
+      <div class="grid grid-3">
+        {openers.map((o, i) => (
+          <a href={productHref(lang, o.slug)} class="card p-card" data-anim="fade-up" data-anim-delay={String((i % 3) * 80)}>
+            <span class="icon"><Icon name={openerIcon[o.slug] ?? 'opener'} size={30} /></span>
+            <h3>{o.shortName}</h3>
+            <p>{o.bestFor}</p>
+            <span class="card-meta">{o.noise}</span>
+            <span class="card-price">{money(o.priceLow)} {to} {money(o.priceHigh)} {t.installed}</span>
+          </a>
+        ))}
+      </div>
+
+      <h2 class="sub" id="brands">{t.brandsHeading}</h2>
+      <p class="sub-lead">{t.brandsLead}</p>
+      <ul class="brand-list">
+        {brandList.map((b) => (
+          <li>
+            <a href={brandHref(lang, b.slug)}>
+              <strong>{b.name}</strong>
+              <span>{b.kind === 'opener' ? t.openers : t.doors}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="narrow"><PriceDisclaimer variant="block" lang={lang} /></div>
+      <div class="narrow"><FAQ items={c.faq} title={t.choosingQuestions} lang={lang} /></div>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} heading={t.buyersCtaHeading} text={t.buyersCtaText} />
+</BaseLayout>
+
+<style>
+  .guide-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .guide-hero .lead { max-width: 46rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .sub { margin: 2.6rem 0 0.4rem; }
+  .sub-lead { color: var(--c-body); margin-bottom: 1.4rem; max-width: 46rem; }
+
+  .p-card { display: block; text-decoration: none; }
+  .p-card:hover { text-decoration: none; }
+  .p-card:hover .icon { background: var(--c-primary); color: #fff; }
+  .p-card .icon { transition: background 0.2s ease, color 0.2s ease; }
+  .p-card h3 { color: var(--c-ink); font-size: 1.08rem; margin-bottom: 0.35rem; }
+  .p-card p { color: var(--c-body); font-size: 0.9rem; margin-bottom: 0.7rem; }
+  .card-meta {
+    display: inline-block; font-size: 0.76rem; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--c-muted); margin-right: 0.5rem;
+  }
+  .card-price {
+    display: inline-block; font-weight: 800; font-size: 0.84rem;
+    color: var(--c-primary); background: var(--c-primary-light);
+    padding: 0.25rem 0.6rem; border-radius: 999px;
+  }
+
+  .brand-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.8rem; }
+  .brand-list li { margin: 0; }
+  .brand-list a {
+    display: flex; flex-direction: column; gap: 0.15rem;
+    border: 1px solid var(--c-line); border-radius: 10px; padding: 0.85rem 1rem;
+    background: #fff; text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .brand-list a:hover { text-decoration: none; border-color: var(--c-primary); box-shadow: var(--shadow-card); }
+  .brand-list strong { color: var(--c-ink); font-size: 1rem; }
+  .brand-list span { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--c-muted); font-weight: 700; }
+</style>

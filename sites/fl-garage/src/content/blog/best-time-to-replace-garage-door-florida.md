@@ -67,7 +67,7 @@ Ours does not move. The prices on [our price list](/prices/) are the prices in A
 
 The published prices: [new door installation](/services/new-garage-door-installation/) from $950 to $4,200 for a standard wind-rated steel single, permit included in the quote. [Hurricane-rated door installation](/services/hurricane-rated-garage-door-installation/) from $1,800 to $6,500 for an impact-rated or HVHZ door, permit included. By material, installed: steel $950 to $3,000, aluminum $1,300 to $4,000, wood $2,200 to $9,000, fiberglass $1,400 to $3,800, vinyl $1,100 to $2,800, with hurricane-rated versions of any of them starting around $1,800 and impact-rated glass doors running to $8,000 and above.
 
-December to February is also a good window. Manufacturers are quiet, lead times are short, and seasonal residents who come back in November and find a failed door in Naples or Venice are often better served by ordering in December than by waiting for spring. The one thing winter does not give you is the pre-season tune-up timing, which is why we still say March to May for most people.
+December to February is also a good window. Manufacturers are quiet, lead times are short, and seasonal residents who come back in November and find a failed door in Naples or Venice are often better served by ordering in December than by waiting for spring. The one thing those months do not give you is the pre-season tune-up timing, which is why we still say March to May for most people.
 
 ## Which doors should be replaced before the season
 

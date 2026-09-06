@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import { business } from '../../data/business';
+import { ui, paths, type Locale } from '../../data/ui';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbPrivacy, href: p.privacy },
+];
+
+const mailbox = business.emailSupport;
+---
+<BaseLayout title={`${t.privacyTitle} | ${business.name}`} description={t.privacyDescription} noindex={true} lang={lang}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container prose">
+      <h1>{t.privacyH1}</h1>
+      <p class="lead">{t.privacyLead}</p>
+
+      {t.privacySections.map((s) => (
+        <>
+          <h2>{s.heading}</h2>
+          <p>{s.text}</p>
+        </>
+      ))}
+
+      <h2>{lang === 'es' ? 'Cuánto tiempo la conservamos' : 'How long we keep it'}</h2>
+      <p>{t.privacyRemoval(mailbox)}</p>
+
+      <h2>{lang === 'es' ? 'Sus opciones' : 'Your choices'}</h2>
+      <p>{t.privacyChoices(mailbox)}</p>
+
+      <h2>{lang === 'es' ? 'Contacto' : 'Contact'}</h2>
+      <p>{t.privacyContact(mailbox)}</p>
+    </div>
+  </section>
+</BaseLayout>

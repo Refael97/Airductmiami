@@ -1,0 +1,10 @@
+---
+import BrandPage from '../../../components/pages/BrandPage.astro';
+import { brands } from '../../../data/products';
+
+export function getStaticPaths() {
+  return brands.map((b) => ({ params: { brand: b.slug }, props: { base: b } }));
+}
+const { base } = Astro.props;
+---
+<BrandPage lang="es" base={base} />

@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Spring Replacement Cost in Florida: $150 to $350"
-description: "What a broken garage door spring costs to replace in Florida, why quotes vary so widely, why springs fail here from cycles and salt rather than cold, and when to get a second opinion."
+description: "What a broken garage door spring costs to replace in Florida, why quotes vary so widely, why springs fail here from cycles and salt, and the number to question."
 answer: "Garage door spring replacement in Florida costs $150 to $350 per spring installed. Replacing both springs at the same time adds $120 to $250 rather than doubling, because most of the labor is shared, so a pair runs $270 to $600. A standard spring lasts about 10,000 cycles, roughly 7 to 10 years on a Florida door. A quote well above $700 for two standard springs is worth checking against a second opinion."
 pubDate: 2026-09-02
 cluster: cost

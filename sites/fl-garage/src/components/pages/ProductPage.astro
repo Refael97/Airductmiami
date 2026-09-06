@@ -1,0 +1,188 @@
+---
+/**
+ * One page for a door material or an opener drive type. They share the
+ * same page shape (answer, depth, pros, cons, facts, FAQ) and the same
+ * URL namespace, and no slug collides between the two sets.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import QuickFacts from '../QuickFacts.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import { doorMaterials, openerTypes } from '../../data/products';
+import type { DoorMaterial, OpenerType } from '../../data/types';
+import { serviceSchema } from '../../lib/schema';
+import { productImages, hasImage, altFor } from '../../data/pageImages';
+import { ui, paths, productHref, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { material, opener } from '../../lib/i18n';
+
+type Props =
+  | { lang: Locale; kind: 'material'; item: DoorMaterial }
+  | { lang: Locale; kind: 'opener'; item: OpenerType };
+const props = Astro.props as Props;
+const { lang, kind } = props;
+const t = ui[lang];
+const p = paths[lang];
+
+const isMaterial = kind === 'material';
+const item = isMaterial ? material(lang, props.item as DoorMaterial) : opener(lang, props.item as OpenerType);
+const pageImg = productImages[item.slug];
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const href = productHref(lang, item.slug);
+const url = `${site}${href}`;
+
+const others = isMaterial
+  ? doorMaterials.filter((s) => s.slug !== item.slug).map((m) => material(lang, m))
+  : openerTypes.filter((s) => s.slug !== item.slug).map((o) => opener(lang, o));
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbDoorsOpeners, href: p.buyersGuide },
+  { name: item.shortName, href },
+];
+
+const relatedService = isMaterial
+  ? { slug: 'new-garage-door-installation', label: t.newDoorInstall }
+  : { slug: 'garage-door-opener-installation', label: t.openerInstall };
+
+const schema = serviceSchema(site, {
+  name: item.name,
+  description: item.metaDescription,
+  url,
+  slug: item.slug,
+  priceLow: item.priceLow,
+  priceHigh: item.priceHigh,
+});
+const to = lang === 'es' ? 'a' : 'to';
+---
+<BaseLayout title={item.metaTitle} description={item.metaDescription} schema={schema} lang={lang} altHref={productHref(otherLocale(lang), item.slug)}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="p-hero">
+    <div class="container p-hero-inner">
+      <div>
+        <span class="eyebrow">{isMaterial ? t.eyebrowMaterial : t.eyebrowOpener}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>{item.name}</h1>
+        <p class="lead">{item.metaDescription}</p>
+        <div class="hero-actions">
+          <a href={p.contact} class="btn btn-accent btn-lg">{t.getFreeQuote}</a>
+          <a href={p.buyersGuide} class="btn btn-outline btn-lg">{t.compareAll}</a>
+        </div>
+      </div>
+      <aside class="p-price" data-anim="fade-up">
+        <span class="pp-label">{t.installedPrice}</span>
+        <span class="pp-value">{money(item.priceLow)} {to} {money(item.priceHigh)}</span>
+        {!isMaterial && <span class="pp-noise">{t.noise}: {(item as OpenerType).noise}</span>}
+        <p class="pp-best"><strong>{t.bestFor}:</strong> {item.bestFor}</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container p-body">
+      <article class="prose">
+        <AnswerBox text={item.answer} lang={lang} />
+
+        {hasImage(pageImg) && (
+          <figure class="page-figure">
+            <img
+              src={`/images/${pageImg!.file}`}
+              width="1200" height="900" loading="lazy" decoding="async"
+              alt={altFor(lang, pageImg!)}
+            />
+            <figcaption>{t.illustrationNoteType}</figcaption>
+          </figure>
+        )}
+
+        {item.intro.map((para) => <p>{para}</p>)}
+
+        <div class="pro-con">
+          <div class="pc-col pros">
+            <h2>{t.goodAt}</h2>
+            <ul>{item.pros.map((x) => <li>{x}</li>)}</ul>
+          </div>
+          <div class="pc-col cons">
+            <h2>{t.badAt}</h2>
+            <ul>{item.cons.map((x) => <li>{x}</li>)}</ul>
+          </div>
+        </div>
+
+        <QuickFacts facts={item.facts} />
+
+        <PriceDisclaimer variant="block" lang={lang} />
+
+        <FAQ items={item.faq} title={t.serviceQuestions(item.shortName)} lang={lang} />
+      </article>
+
+      <aside class="p-aside">
+        <div class="card aside-card">
+          <h3>{isMaterial ? t.otherMaterials : t.otherDriveTypes}</h3>
+          <ul class="plain">
+            {others.map((o) => (
+              <li>
+                <a href={productHref(lang, o.slug)}>{o.shortName}</a>
+                <span>{t.from} {money(o.priceLow)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="card aside-card">
+          <h3>{t.readyToFit}</h3>
+          <p class="aside-note">{t.readyToFitNote}</p>
+          <a href={serviceHref(lang, relatedService.slug)} class="btn btn-outline btn-sm">{relatedService.label}</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .page-figure { margin: 1.6rem 0 1.8rem; }
+  .page-figure img { width: 100%; height: auto; border-radius: 12px; display: block; border: 1px solid var(--c-line); }
+  .page-figure figcaption { font-size: 0.8rem; color: var(--c-muted); margin-top: 0.55rem; line-height: 1.5; }
+
+  .p-hero { background: var(--grad-hero); padding-block: 2.4rem 2.8rem; }
+  .p-hero-inner { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2.5rem; align-items: center; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.4rem; }
+
+  .p-price {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); padding: 1.75rem; position: relative; overflow: hidden;
+  }
+  .p-price::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 5px; background: var(--stripe-brand); }
+  .pp-label { display: block; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-muted); }
+  .pp-value { display: block; font-family: var(--font-display); font-weight: 400; font-size: 2rem; line-height: 1.1; color: var(--c-primary); margin: 0.25rem 0 0.4rem; }
+  .pp-noise { display: inline-block; font-size: 0.8rem; font-weight: 700; background: var(--c-primary-light); color: var(--c-primary); padding: 0.2rem 0.6rem; border-radius: 999px; }
+  .pp-best { font-size: 0.88rem; margin: 0.8rem 0 0; color: var(--c-body); }
+  .pp-best strong { color: var(--c-ink); }
+
+  .p-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .p-body .prose { max-width: none; }
+
+  .pro-con { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin: 2rem 0 0; }
+  .pc-col h2 { margin-top: 0; font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem); }
+  .pc-col ul { list-style: none; padding: 0; }
+  .pc-col li { position: relative; padding-left: 1.6rem; font-size: 0.94rem; margin-bottom: 0.6rem; }
+  .pros li::before { content: '✓'; position: absolute; left: 0; color: #177841; font-weight: 800; }
+  .cons li::before { content: '✕'; position: absolute; left: 0; color: var(--c-accent); font-weight: 800; }
+
+  .p-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
+  .aside-card h3 { font-size: 1rem; margin-bottom: 0.8rem; }
+  .aside-note { font-size: 0.88rem; margin-bottom: 0.9rem; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li { display: flex; justify-content: space-between; gap: 0.6rem; padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem; }
+  .plain li:last-child { border-bottom: 0; }
+  .plain span { color: var(--c-primary); font-weight: 700; white-space: nowrap; }
+
+  @media (max-width: 960px) {
+    .p-hero-inner { grid-template-columns: 1fr; gap: 1.8rem; }
+    .p-body { grid-template-columns: 1fr; }
+    .p-aside { position: static; }
+  }
+  @media (max-width: 620px) { .pro-con { grid-template-columns: 1fr; gap: 1rem; } }
+</style>

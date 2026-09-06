@@ -1,6 +1,6 @@
 ---
 title: "HVHZ Garage Doors Explained: Miami-Dade and Broward"
-description: "What the High Velocity Hurricane Zone means for your garage door, why a Miami-Dade NOA is required there, why a door approved elsewhere is not approved here, and what it costs."
+description: "What the High Velocity Hurricane Zone means for a garage door in Miami-Dade or Broward, why a Miami-Dade NOA is required there, and what a door costs."
 answer: "Miami-Dade and Broward counties are Florida's High Velocity Hurricane Zone, and a garage door installed there must carry a Miami-Dade Notice of Acceptance (NOA). A door with only a Florida Product Approval, which is what the rest of the state uses, will not be permitted in the HVHZ, and retrofit bracing kits are not the accepted route there. An HVHZ door installed with the permit included runs $1,800 to $6,500."
 pubDate: 2026-08-25
 cluster: hurricane

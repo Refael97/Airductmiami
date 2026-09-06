@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Cable Repair Cost in Florida: $95 to $300"
-description: "What a broken, rusted or slipped garage door cable costs to fix in Florida, the difference between an $85 adjustment and a $400 cable and drum job, and why cables fail here."
+description: "What a broken, rusted or slipped garage door cable costs to fix in Florida, the difference between an $85 adjustment and a $400 cable and drum job, and why cables fail."
 answer: "Garage door cable repair in Florida costs $95 to $300 for a pair of cables installed. If the cable slipped off the drum but is undamaged, a tension adjustment is $85 to $140. If the drum is scored and needs replacing too, the job runs $225 to $400. Both cables are normally replaced together, and in coastal Florida rust at the bottom bracket is the most common reason they fail."
 pubDate: 2026-08-28
 cluster: cost

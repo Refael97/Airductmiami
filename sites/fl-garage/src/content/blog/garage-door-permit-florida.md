@@ -1,6 +1,6 @@
 ---
 title: "Do You Need a Permit for a Garage Door in Florida?"
-description: "Replacing a garage door in Florida needs a building permit pulled by a licensed contractor. Replacing an opener normally does not. Who pulls it, what it costs, and why it matters."
+description: "Replacing a garage door in Florida needs a permit pulled by a licensed contractor; an opener normally does not. Who pulls it, what it costs, why it matters."
 answer: "Yes. Replacing a garage door in Florida requires a building permit, pulled by a licensed contractor, with the door's wind rating documented on the permit. Replacing only the opener normally does not need one. We include the permit fee and the paperwork in the written quote: a wind-rated steel door runs $950 to $4,200 installed and an impact-rated or HVHZ door $1,800 to $6,500."
 pubDate: 2026-09-01
 cluster: trust

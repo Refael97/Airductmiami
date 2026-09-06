@@ -1,0 +1,415 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FAQ from '../FAQ.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import Icon from '../Icon.astro';
+import { business } from '../../data/business';
+import { services, getService, priceTableOrder } from '../../data/services';
+import type { Service } from '../../data/types';
+import { iconFor } from '../../data/serviceIcons';
+import { homeImages, serviceImages, hasImage, altFor } from '../../data/pageImages';
+import { ui, paths, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { svc, copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).home;
+
+const priceRows = priceTableOrder
+  .map((slug) => getService(slug))
+  .filter((s): s is Service => Boolean(s))
+  .map((s) => svc(lang, s));
+
+const all = services.map((s) => svc(lang, s));
+const hurricaneServices = all.filter((s) => s.hurricane);
+const storm = svc(lang, getService('hurricane-rated-garage-door-installation')!);
+
+/** The four failures that cover most calls, each with its illustration. */
+const faults = ['garage-door-spring-replacement', 'garage-door-off-track-repair', 'garage-door-cable-repair', 'garage-door-tune-up']
+  .map((slug) => svc(lang, getService(slug)!));
+const faultBlurb: Record<string, Record<Locale, { title: string; text: string }>> = {
+  'garage-door-spring-replacement': {
+    en: { title: 'Broken torsion spring', text: 'A loud bang, then a door too heavy to lift. The most common call we take.' },
+    es: { title: 'Resorte de torsión roto', text: 'Un golpe fuerte y luego una puerta demasiado pesada para levantar. La llamada más común que recibimos.' },
+  },
+  'garage-door-off-track-repair': {
+    en: { title: 'Off the track', text: 'The door binds, leans, or jams halfway. Do not run the opener again.' },
+    es: { title: 'Fuera del riel', text: 'La puerta se traba, se inclina o se atasca a mitad de camino. No vuelva a accionar el motor.' },
+  },
+  'garage-door-cable-repair': {
+    en: { title: 'Frayed or snapped cable', text: 'Salt air frays a cable months before it goes. Worth catching early.' },
+    es: { title: 'Cable deshilachado o roto', text: 'El aire salino deshilacha un cable meses antes de que se rompa. Vale la pena detectarlo a tiempo.' },
+  },
+  'garage-door-tune-up': {
+    en: { title: 'Worn rollers and hinges', text: 'Grinding, rattling, a door that shudders. This is what a pre-season tune-up catches.' },
+    es: { title: 'Rodillos y bisagras desgastados', text: 'Rechinidos, traqueteo, una puerta que tiembla. Esto es lo que detecta la revisión antes de la temporada.' },
+  },
+};
+---
+<BaseLayout
+  title={c.metaTitle}
+  description={c.metaDescription}
+  lang={lang}
+  altHref={paths[otherLocale(lang)].home}
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy" data-anim="slide-left">
+        <span class="eyebrow">{t.footerServingArea(lang === 'es' ? 'Florida' : business.serviceArea).replace(/\.$/, '')}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>{c.h1Line1}<br /><span class="hl">{c.h1Line2}</span></h1>
+        <p class="lead">{c.lead}</p>
+        <div class="hero-actions">
+          <a href={p.contact} class="btn btn-accent btn-lg">{t.getFreeQuote}</a>
+          <a href={p.prices} class="btn btn-outline btn-lg">{t.seePriceList}</a>
+        </div>
+        <ul class="hero-trust">
+          <li>{t.sameDay}</li>
+          <li>{t.writtenEstimateFirst}</li>
+          <li>{t.licensedInsured}</li>
+          <li>{t.oneYearWarranty}</li>
+        </ul>
+      </div>
+
+      <aside class="hero-panel" aria-labelledby="price-panel-title" data-anim="fade-up" data-anim-delay="120">
+        <div class="panel-head">
+          <h2 id="price-panel-title">{c.panelTitle}</h2>
+          <p>{c.panelSub}</p>
+        </div>
+        <table class="price-table">
+          <tbody>
+            {priceRows.slice(0, 6).map((s) => (
+              <tr>
+                <th scope="row"><a href={serviceHref(lang, s.slug)}>{s.shortName}</a></th>
+                <td>{t.from} {money(s.priceLow)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <PriceDisclaimer lang={lang} />
+        <a href={p.prices} class="panel-link">{t.fullPriceListArrow}</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Trust strip. Every claim here is verifiable. No rating and no review
+       count until real reviews exist, per docs/TRUST-AND-CLAIMS.md. -->
+  <section class="trust-band">
+    <div class="container trust-strip" data-anim="fade-up">
+      <span class="trust-badge"><span class="tb-ico"><Icon name="shield" size={16} /></span>{t.licensedInsured}</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="truck" size={16} /></span>{t.sameDay}</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="quote" size={16} /></span>{t.writtenEstimateFirst}</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="pin" size={16} /></span>{t.localTechs}</span>
+      <span class="trust-badge"><span class="tb-ico"><Icon name="check" size={16} /></span>{t.oneYearWarranty}</span>
+    </div>
+  </section>
+
+  <!-- Storm band. Replaces the emergency band of the New York build: in
+       Florida the door's rating is the question every homeowner has. The
+       photograph sits behind a heavy navy wash; it is atmosphere, not
+       evidence. -->
+  <section class="storm-band">
+    <div class="container">
+      <div class="band-copy">
+        <h2>{c.stormHeading}</h2>
+        <p>{c.stormText}</p>
+      </div>
+      <div class="band-actions">
+        <a href={serviceHref(lang, storm.slug)} class="btn btn-accent">{c.stormCta}</a>
+        <div class="band-services">
+          {hurricaneServices.filter((s) => s.slug !== storm.slug).map((s) => (
+            <a href={serviceHref(lang, s.slug)}>{s.shortName}</a>
+          ))}
+          <a href={serviceHref(lang, 'emergency-garage-door-repair')}>{svc(lang, getService('emergency-garage-door-repair')!).shortName}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">{t.eyebrowServices}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h2>{lang === 'es' ? 'Reparación e instalación de puertas de garaje' : 'Garage door repair and installation'}</h2>
+        <p class="lead">{lang === 'es' ? 'Cada servicio tiene su precio inicial publicado en su propia página, junto con lo que lo cambia.' : 'Every service below has its starting price published on its own page, with what changes it.'}</p>
+      </div>
+      <div class="grid grid-3">
+        {all.map((s, i) => (
+          <a
+            href={serviceHref(lang, s.slug)}
+            class="card service-card"
+            data-anim="fade-up"
+            data-anim-delay={String((i % 3) * 90)}
+          >
+            <span class="icon"><Icon name={iconFor(s.slug)} size={30} /></span>
+            <h3>{s.name}</h3>
+            <p>{s.answer.split('. ')[0]}.</p>
+            <span class="card-price">{t.from} {money(s.priceLow)}</span>
+          </a>
+        ))}
+      </div>
+      <div class="narrow"><PriceDisclaimer variant="block" lang={lang} /></div>
+    </div>
+  </section>
+
+  <!-- The doors we work on. Illustrations of the door types common to
+       each part of the state, not photographs of our own jobs. -->
+  <section class="section section-alt doors-band">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">{lang === 'es' ? 'Todo tipo de puerta' : 'Every kind of door'}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h2>{c.doorsHeading}</h2>
+        <p class="lead">{c.doorsLead}</p>
+      </div>
+
+      <div class="door-grid">
+        {c.doorCards.map((card, i) => {
+          const img = homeImages[card.img];
+          return (
+            <a href={card.href} class="door-card" data-anim="fade-up" data-anim-delay={String(i * 90)}>
+              {hasImage(img) ? (
+                <img
+                  src={`/images/${img.file}`}
+                  width="1200" height="900" loading="lazy" decoding="async"
+                  alt={altFor(lang, img)}
+                />
+              ) : (
+                <div class="door-placeholder" aria-hidden="true"><Icon name="door" size={44} /></div>
+              )}
+              <div class="door-meta">
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+
+      <p class="media-note">
+        {lang === 'es'
+          ? 'Las imágenes ilustran los tipos de puerta comunes en cada zona. No son fotografías de nuestro trabajo. Cuando nuestros trabajos produzcan fotos reales de antes y después, aparecerán aquí con la ciudad y el servicio indicados.'
+          : 'Images above illustrate the door types common to each area. They are not photographs of our own work. When our jobs produce real before and after photos, they will appear here with the city and the service named.'}
+      </p>
+
+      <p class="text-center" style="margin-top:1.2rem;">
+        <a href={p.buyersGuide} class="btn btn-outline">{lang === 'es' ? 'Comparar puertas y motores' : 'Compare doors and openers'}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- What actually breaks. Serves repair intent, which is most of the
+       search volume. Each card links to the service and carries its
+       published starting price. -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">{lang === 'es' ? 'Lo que realmente se rompe' : 'What actually breaks'}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h2>{c.faultsHeading}</h2>
+        <p class="lead">{c.faultsLead}</p>
+      </div>
+
+      <div class="fault-grid">
+        {faults.map((s, i) => {
+          const img = serviceImages[s.slug];
+          const b = faultBlurb[s.slug][lang];
+          return (
+            <a href={serviceHref(lang, s.slug)} class="door-card" data-anim="fade-up" data-anim-delay={String(i * 90)}>
+              {hasImage(img) && (
+                <img
+                  src={`/images/${img.file}`}
+                  width="1200" height="900" loading="lazy" decoding="async"
+                  alt={altFor(lang, img)}
+                />
+              )}
+              <div class="door-meta">
+                <h3>{b.title}</h3>
+                <p>{b.text}</p>
+                <span class="fault-price">{t.from} {money(s.priceLow)}</span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+
+      <p class="media-note">
+        {lang === 'es'
+          ? 'Las imágenes ilustran las fallas descritas. No son fotografías de nuestro trabajo y no se sugiere ningún antes y después.'
+          : 'Images above illustrate the failures described. They are not photographs of our own work, and no before and after is implied.'}
+      </p>
+
+      <p class="text-center" style="margin-top:1.2rem;">
+        <a href={p.prices} class="btn btn-outline">{lang === 'es' ? 'Ver todos los precios publicados' : 'See every published price'}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Why we publish prices -->
+  <section class="section section-alt">
+    <div class="container narrow">
+      <div class="section-head center">
+        <span class="eyebrow">{c.whyEyebrow}</span>
+        <h2>{c.whyHeading}</h2>
+      </div>
+      <div class="prose">
+        {c.whyParagraphs.map((para) => <p>{para}</p>)}
+      </div>
+      <p class="text-center" style="margin-top:1.4rem;">
+        <a href={`${p.blog}garage-door-repair-scams/`} class="btn btn-outline">{lang === 'es' ? 'Cómo detectar una cotización engañosa' : 'How to spot a bait quote'}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container narrow">
+      <FAQ items={c.faq} title={lang === 'es' ? 'Preguntas comunes' : 'Common questions'} lang={lang} />
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>{t.ctaHeading}</h2>
+      <p>{t.ctaText}</p>
+      <a href={p.contact} class="btn btn-accent btn-lg">{t.ctaButton}</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    background: var(--grad-hero);
+    padding-block: 3.2rem 3.6rem;
+    position: relative;
+    isolation: isolate;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--texture-steel);
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 62%);
+    mask-image: linear-gradient(180deg, #000 0%, transparent 62%);
+  }
+  .hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
+  .hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); line-height: 1.08; margin-bottom: 1rem; }
+  .hero h1 .hl { color: var(--c-accent-dark); }
+  .hero .lead { max-width: 34rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1.6rem 0 1.4rem; }
+  .hero-trust {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem;
+    list-style: none; padding: 0; margin: 0;
+    font-size: 0.88rem; font-weight: 700; color: var(--c-body);
+  }
+  .hero-trust li::before { content: '✓'; color: #177841; font-weight: 800; margin-right: 0.35rem; }
+
+  .trust-band { border-bottom: 1px solid var(--c-line); background: #fff; }
+  .trust-band .trust-strip { padding-block: 1.05rem; justify-content: space-between; row-gap: 0.8rem; }
+
+  .hero-panel {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    padding: 1.75rem; box-shadow: var(--shadow-card-hover);
+    position: relative; overflow: hidden;
+  }
+  .hero-panel::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 5px;
+    background: var(--stripe-brand);
+  }
+  .panel-head h2 { font-size: 1.18rem; margin-bottom: 0.2rem; }
+  .panel-head p { font-size: 0.86rem; color: var(--c-muted); margin-bottom: 1rem; }
+  .price-table { width: 100%; border-collapse: collapse; }
+  .price-table th, .price-table td { padding: 0.62rem 0; border-bottom: 1px solid var(--c-line); text-align: left; }
+  .price-table th { font-weight: 600; font-size: 0.92rem; }
+  .price-table th a { color: var(--c-ink); text-decoration: none; }
+  .price-table th a:hover { color: var(--c-primary); }
+  .price-table td { text-align: right; font-weight: 800; color: var(--c-primary); font-size: 0.92rem; white-space: nowrap; }
+  .panel-link { display: inline-block; margin-top: 0.9rem; font-weight: 700; font-size: 0.9rem; color: var(--c-primary); text-decoration: none; }
+  .panel-link:hover { text-decoration: underline; }
+
+  /* The photograph is atmosphere behind a heavy navy wash. If the file is
+     missing the gradient alone still renders, so nothing breaks. */
+  .storm-band {
+    background-color: var(--c-primary);
+    background-image:
+      linear-gradient(100deg, rgba(15, 39, 71, 0.97) 0%, rgba(15, 39, 71, 0.9) 45%, rgba(15, 39, 71, 0.72) 100%),
+      url('/images/coastal-impact-garage-door.webp');
+    background-size: cover;
+    background-position: center 62%;
+    color: #e7edf5;
+    padding-block: 2.6rem;
+    position: relative;
+  }
+  .storm-band::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--stripe-brand);
+  }
+  .storm-band .container { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 2rem; align-items: center; position: relative; }
+  .storm-band h2 { color: #fff; font-size: 1.6rem; margin-bottom: 0.5rem; }
+  .storm-band p { margin: 0; font-size: 0.96rem; color: #c3cede; }
+  .band-actions { display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-start; }
+  .band-services { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; }
+  .band-services a { color: #a9b6c6; font-size: 0.86rem; }
+
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card:hover .icon { background: var(--c-primary); color: #fff; }
+  .service-card .icon { transition: background 0.2s ease, color 0.2s ease; }
+  .service-card h3 { color: var(--c-ink); font-size: 1.06rem; margin-bottom: 0.35rem; }
+  .service-card p { color: var(--c-body); font-size: 0.9rem; margin-bottom: 0.6rem; }
+  .card-price {
+    display: inline-block; font-weight: 800; font-size: 0.88rem;
+    color: var(--c-primary); background: var(--c-primary-light);
+    padding: 0.25rem 0.6rem; border-radius: 999px;
+  }
+
+  .door-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.4rem;
+  }
+  .door-card {
+    display: block; text-decoration: none; background: #fff;
+    border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .door-card:hover {
+    text-decoration: none; transform: translateY(-3px);
+    box-shadow: var(--shadow-card-hover); border-color: #d5dae1;
+  }
+  .door-card img, .door-placeholder {
+    width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+    display: block; background: var(--c-bg-alt);
+  }
+  .door-placeholder { display: flex; align-items: center; justify-content: center; color: var(--c-primary); }
+  .door-meta { padding: 1.1rem 1.2rem 1.3rem; }
+  .door-meta h3 { font-size: 1.02rem; color: var(--c-ink); margin-bottom: 0.3rem; }
+  .door-meta p { font-size: 0.9rem; color: var(--c-body); margin: 0; }
+
+  .fault-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.3rem; }
+  .fault-price { display: inline-block; margin-top: 0.6rem; font-weight: 700; color: var(--c-primary); font-size: 0.92rem; }
+  @media (max-width: 1000px) { .fault-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .fault-grid { grid-template-columns: 1fr; } }
+  .media-note {
+    font-size: 0.8rem; color: var(--c-muted); line-height: 1.55;
+    max-width: 46rem; margin: 1.4rem auto 0; text-align: center;
+  }
+
+  @media (prefers-reduced-motion: reduce) { .door-card:hover { transform: none; } }
+
+  .cta-band { background: var(--grad-primary); color: #fff; padding-block: 3rem; text-align: center; }
+  .cta-band h2 { color: #fff; margin-bottom: 0.5rem; }
+  .cta-band p { color: #d3dded; margin-bottom: 1.3rem; }
+
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .storm-band .container { grid-template-columns: 1fr; }
+  }
+</style>

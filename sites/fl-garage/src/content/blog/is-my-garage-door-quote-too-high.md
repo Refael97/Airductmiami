@@ -1,6 +1,6 @@
 ---
 title: "Is My Garage Door Quote Too High? How to Check"
-description: "A quote in your hand and no idea whether it is fair. Here are the Florida market ranges to compare it against, the reasons a high quote can be honest, and the three questions that settle it."
+description: "A quote in your hand and no idea whether it is fair. The Florida ranges to compare it against, when a high quote is honest, and the questions that settle it."
 answer: "Compare the quote against the Florida market: $150 to $350 per spring installed, $270 to $600 for both springs, $95 to $300 for cables, $275 to $600 for an opener installed, $950 to $4,200 for a wind-rated steel door and $1,800 to $6,500 for a hurricane-rated door, permit included. If a quote sits well above those ranges, ask what specific parts, rating or access justify it before agreeing. An emergency premium of $150 to $300 is legitimate only if it was stated before dispatch."
 pubDate: 2026-08-28
 cluster: trust

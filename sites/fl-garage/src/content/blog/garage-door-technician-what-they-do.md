@@ -1,80 +1,73 @@
 ---
 title: "Garage Door Technician: What They Actually Do on a Call"
-description: "What a garage door technician is trained to do, what happens step by step on a service call, what a real one carries on the van, and how to tell a technician from a salesman."
-answer: "A garage door technician is a specialist tradesperson who diagnoses and repairs door hardware, springs, cables, tracks and openers. There is no state licence for garage door work in New York, so training is manufacturer based and on the job. A real technician diagnoses before quoting, carries common parts on the van, and can explain why a part failed. A salesman quotes a full door replacement from the driveway."
-pubDate: 2026-08-06
+description: "What a garage door technician is trained to do, what happens step by step on a Florida service call, what is on a real one's van, and how to spot a salesman."
+answer: "A garage door technician is a specialist tradesperson who diagnoses and repairs door hardware, springs, cables, tracks and openers. In Florida a full door replacement needs a permit pulled by a licensed contractor, while most repairs do not, so the company's license and insurance are what you check. A real technician tests the door balance by hand before quoting, carries common parts on the van and can explain why a part failed. A salesman quotes a new door from the driveway."
+pubDate: 2026-09-02
 cluster: trust
 tags: ["hiring", "technician", "trust", "what to expect"]
-relatedServices: ["garage-door-spring-replacement", "garage-door-opener-repair", "emergency-garage-door-repair"]
+relatedServices: ["garage-door-spring-replacement", "garage-door-opener-repair", "emergency-garage-door-repair", "new-garage-door-installation"]
 faq:
-  - question: "Do garage door technicians need a licence in New York?"
-    answer: "There is no dedicated state licence for garage door repair in New York. Some counties and cities require a general home improvement contractor licence, which Nassau, Suffolk, New York City and Westchester all operate in some form. Ask which licence a company holds and in which jurisdiction, and check it, because the answer is public and takes two minutes to verify."
+  - question: "Do garage door technicians need a license in Florida?"
+    answer: "A garage door replacement requires a building permit, and the permit is pulled by a licensed contractor, so the company doing the replacement must hold a license you can look up on the Department of Business and Professional Regulation site at myfloridalicense.com. Most repairs, springs, cables and openers, do not need a permit. Either way, ask for the license and the certificate of insurance and check both."
   - question: "How long does a garage door repair take?"
-    answer: "A spring replacement on a standard single door takes about an hour to ninety minutes. Cables run similar. An opener installation is two to three hours. A full door replacement is most of a day. If someone quotes twenty minutes for a spring, they are either not replacing both springs or they are not doing it properly."
+    answer: "A spring replacement on a standard single door takes about an hour to ninety minutes. Cables run similar. An opener installation is two to three hours. A full door replacement is most of a day, plus the permit and inspection around it. If someone quotes twenty minutes for a spring, they are either not replacing both springs or not doing it properly."
   - question: "What is the difference between a technician and a salesman?"
     answer: "A technician looks at the door before quoting, tests the balance by hand, and can tell you which part failed and why. A salesman arrives with a tablet, does not disconnect the opener, and steers every conversation toward a new door. The tell is whether the person touches the door before naming a number."
   - question: "Should I get more than one quote?"
-    answer: "For anything above a few hundred dollars, yes, and any honest company expects it. For an emergency where the door is stuck open and the house is exposed, getting three quotes is not realistic and nobody should pretend otherwise. That is exactly why we publish our prices, so you can sanity check a number at two in the morning without making three phone calls."
+    answer: "For anything above a few hundred dollars, yes, and any honest company expects it. For an emergency where the door is stuck open or the car is trapped, three quotes are not realistic. That is exactly why we publish our prices, so you can sanity check a number at two in the morning without making three calls."
+  - question: "What should I have ready when the technician arrives?"
+    answer: "The opener brand and model if you know it, whether the door is a single or a double, what you heard or saw when it failed, and whether anyone has worked on it before. Clear the car and anything stored under the tracks. If the door is stuck and the car is inside, say so on the phone so we bring what a trapped car needs."
 ---
 
 ## The names all mean the same thing
 
-People search for a garage door tech, a garage door technician, garage door
-experts, garage door specialists, a garage door doctor, and garage door
-vendors. In this trade they all describe the same person: someone who comes
-out, works out what broke, and fixes it.
+People search for a garage door tech, a garage door technician, garage door experts, garage door specialists and a garage door doctor. In this trade they all describe the same person: someone who comes out, works out what broke, and fixes it.
 
-None of those words is a qualification. There is no exam that makes somebody
-a garage door expert and no register of garage door doctors. They are
-marketing terms, which is worth knowing before you assume one company is
-more qualified than another because of what it calls its staff.
+None of those words is a qualification. There is no exam that makes somebody a garage door expert and no register of garage door doctors. They are marketing terms, which is worth knowing before you assume one company is more qualified than another because of what it calls its staff.
 
-What actually distinguishes people in this trade is below.
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. These are the parts a service call gets quoted against.](/images/garage-door-parts-overview.webp)
 
 ## What the job actually is
 
 Garage door work sits in an odd corner of the trades. It is part mechanical, part electrical, part carpentry, and the mechanical part involves the single most dangerous residential component most people own.
 
-A technician on a normal week deals with:
+A technician on a normal Florida week deals with:
 
 - Torsion and extension springs, and the winding that makes them safe or lethal
-- Cables, drums and the shaft that connects them
+- Cables, drums and the shaft that connects them, and the rust that eats all three near the coast
 - Track alignment, rollers, hinges and bearings
-- Opener motors, logic boards, safety sensors, limits and force settings
-- Panel and section replacement
-- The jamb, the weatherstrip and the seal against the weather
-- Door balance, which is the thing that governs whether everything else lasts
+- Opener motors, logic boards cooked by summer heat, safety sensors, limits and force settings
+- Panel and section replacement, including storm damage
+- The bottom seal, which takes an afternoon storm every day for half the year
+- Door balance, which governs whether everything else lasts
 
-The skill that separates people in this trade is diagnosis, not installation. Almost anyone can fit a part. Knowing **why** the part failed, and whether the thing that killed it is still there, is the job.
+The skill that separates people in this trade is diagnosis, not installation. Almost anyone can fit a part. Knowing why the part failed, and whether the thing that killed it is still there, is the job. In Florida that usually means knowing the difference between a spring that reached its cycle count and one that rusted through at half its life, because the second one means the cables and brackets are next.
 
-## Licensing in New York, honestly
+## Licensing in Florida, honestly
 
-There is **no dedicated state licence for garage door repair** in New York. Anyone can buy a van and print a magnet.
+The line that matters is the permit. Replacing a garage door in Florida requires a building permit, pulled by a licensed contractor, with the door's wind rating documented on it. Replacing an opener, a spring or a cable normally does not.
 
-What does exist:
+So for a door replacement, the company's license is not optional and you can check it in two minutes on the [Department of Business and Professional Regulation](https://www.myfloridalicense.com/) license search. For a repair, the same lookup tells you whether the company is a real business with a record, which is still worth knowing.
 
-- **Home improvement contractor licences** at county and city level. Nassau, Suffolk, New York City and Westchester all run some version of these, with their own registration and requirements.
-- **Manufacturer training and certification.** LiftMaster, Chamberlain, Clopay and others run programmes. These are real and worth something, but they are commercial training rather than a public licence.
-- **IDEA certification**, from the International Door Association. Voluntary, genuine, and not held by most companies.
-- **General liability insurance.** Not a qualification, but the one thing you should never skip checking. If somebody is injured or your property is damaged, this is what stands between you and the bill.
+What else exists:
 
-**The practical position.** Ask which licence the company holds and in which jurisdiction, then check it. County licence registers are public and searchable in a couple of minutes. Ask for a certificate of insurance and expect it without friction. A company that gets defensive about either question has told you what you needed to know.
+- **Manufacturer training.** Opener and door manufacturers run programs for installers. Real and worth something, but commercial training rather than a public license.
+- **General liability insurance.** Not a qualification, but the one thing never to skip. If somebody is injured in your garage or your door is damaged, this is what stands between you and the bill.
+
+Ask for the license and a certificate of insurance and expect both without friction. A company that gets defensive about either has told you what you needed to know. Our guide on [garage door permits in Florida](/blog/garage-door-permit-florida/) covers what the permit involves and why it protects you at inspection time and at resale.
 
 ## What happens on a normal service call
 
-Worth knowing so you can tell when something is off.
+| Step | What the technician does | Why it matters |
+|---|---|---|
+| 1. Look before quoting | Opens and closes the door, listens, checks both sides | Nothing should be priced from the driveway |
+| 2. Balance test | Pulls the release, lifts the door to waist height, lets go | Separates a spring problem from an opener problem in thirty seconds |
+| 3. Diagnosis out loud | Says what failed, why, and what else is near the end of its life | Not a list of everything that could be replaced |
+| 4. Written estimate | Itemized parts and labor, before any work starts | The number you pay |
+| 5. The work | An hour to ninety minutes for a spring, two to three hours for an opener, most of a day for a door | Anything much quicker is a corner cut |
+| 6. Test and handover | Balance rechecked, sensors tested, reversal shown against an obstruction | You watch it work, not hear about it |
 
-**1. The technician looks before quoting.** Nothing should be priced from the driveway. Expect them to open and close the door, listen to it, and look at both sides.
-
-**2. The balance test.** Close the door, pull the manual release, lift by hand to waist height, let go. A balanced door stays roughly put. This takes thirty seconds and it is the most informative thing anybody does on a garage door. **If nobody does this on your call, that is a flag.** It is how you separate a spring problem from an opener problem, and getting that wrong means replacing the wrong thing.
-
-**3. Diagnosis, out loud.** You should be told what failed, why it failed, and what else is near the end of its life. Not a list of everything that could be replaced.
-
-**4. A written estimate before work starts.** Itemised, with parts and labour, and it should be the number you pay.
-
-**5. The work.** An hour to ninety minutes for a spring on a standard single door. Similar for cables. Two to three hours for an opener installation. Most of a day for a full door.
-
-**6. Testing and handover.** Balance rechecked, safety sensors tested, auto reverse tested against an obstruction, force settings verified. You should be shown the auto reverse working, not told about it.
+If nobody does the balance test on your call, that is a flag. It is the most informative thing anyone does on a garage door, and skipping it is how the wrong part gets replaced.
 
 ## What a real technician has on the van
 
@@ -82,25 +75,25 @@ You can learn a lot from the back of the vehicle.
 
 **Springs in a range of sizes.** Torsion springs vary by wire gauge, inside diameter and length, and a stocked van carries the common combinations. A technician who has to order a standard spring for a standard door is not really in this trade.
 
-**Winding bars.** Two solid steel bars, sized to the cones. If somebody winds a torsion spring with a screwdriver, stop the job. That is how people lose fingers and eyes, and it is the clearest possible signal about everything else they do.
+**Winding bars.** Two solid steel bars, sized to the cones. If somebody winds a torsion spring with a screwdriver, stop the job. That is how people lose fingers and eyes, and it tells you about everything else they do.
 
-**Cables, drums, rollers, hinges, bearing plates.** Consumables that should never require a second visit.
+**Cables, drums, rollers, hinges, bottom brackets and bearing plates.** Consumables that should never require a second visit, and in Florida the cables and bottom brackets go on the van in stainless or galvanized versions for coastal doors.
 
-**Opener parts.** Sensor pairs, gear kits, capacitors, remotes, wall controls.
+**Opener parts.** Sensor pairs, gear kits, capacitors, logic boards for the common brands, remotes, wall controls.
 
-**A door balance and force gauge, or the experience to do it by hand.**
+**Bracing hardware and a way to secure an opening.** After a storm, a door that cannot be repaired that day still needs to be closed and held so the house is not open to the weather.
 
 ## Technician or salesman
 
 The distinction that costs people the most money.
 
-**A technician** disconnects the opener and lifts the door by hand. Tells you which part failed. Quotes the repair. Mentions the door replacement only if the door is genuinely finished, and explains why.
+**A technician** disconnects the opener and lifts the door by hand. Tells you which part failed. Quotes the repair. Mentions a new door only if the door is genuinely finished, or if it has no wind rating and you have asked about a hurricane-rated replacement, and explains why.
 
-**A salesman** arrives with a tablet, does not disconnect anything, and has a full door replacement priced before understanding what broke. The opening move is often a very low advertised call-out fee, and the number climbs steeply once they are in your driveway.
+**A salesman** arrives with a tablet, does not disconnect anything, and has a full door replacement priced before understanding what broke. The opening move is often a very low advertised call-out fee, and the number climbs once they are in your driveway. After a hurricane the same person arrives on foot and asks for a deposit.
 
-**The single tell:** did the person touch the door before naming a number?
+The single tell: did the person touch the door before naming a number?
 
-The [bait pricing pattern](/blog/garage-door-repair-scams/) is the reason this trade has the reputation it has, and it is why every price on this site is published in advance. You should not need a technician in your garage to find out roughly what a spring costs.
+The [bait pricing pattern](/blog/garage-door-repair-scams/) is the reason this trade has the reputation it has, and it is why every price on this site is published in advance.
 
 ## Questions worth asking on the phone
 
@@ -108,27 +101,21 @@ Before anyone is dispatched:
 
 - Is the price you have quoted the price I pay, or is it a call-out fee?
 - Are you replacing both springs or one?
-- What licence do you hold and in which county?
-- Are you insured, and will you send the certificate?
-- What is the warranty on parts and on labour?
+- Are you licensed and insured, and will you send the certificate?
+- If this becomes a door replacement, do you pull the permit?
+- What is the warranty on parts and on labor?
 - Is the technician employed by you or subcontracted?
 
 Our guide on [what to ask before hiring](/blog/questions-to-ask-garage-door-company/) goes through what each answer tells you, and [how to choose a company](/blog/how-to-choose-garage-door-company/) covers the checks worth doing on the company itself.
 
 ## The one thing never to attempt yourself
 
-Torsion springs.
+Torsion springs. They hold enough stored energy to break bones, and they release all of it instantly if a winding bar slips. Cables, drums and anything on the shaft belong in the same category, because they are under the same load, and a rusted Florida bracket makes the job worse rather than easier.
 
-They hold enough stored energy to break bones and to kill, and they release all of it instantly if a winding bar slips. Every year in the United States people are seriously injured doing this, and a meaningful number of those are experienced DIYers who did everything right except one thing.
-
-Cables, drums and anything that involves the shaft belong in the same category, because they are all under the same load.
-
-We have written about [why nobody should DIY a torsion spring](/blog/why-never-diy-torsion-spring/) at length. If you take one thing from this page, take that one.
+We have written about [why nobody should replace a torsion spring themselves](/blog/why-never-diy-torsion-spring/) at length. If you take one thing from this page, take that one.
 
 ## What we charge
 
-Every service on this site carries a published starting price, and you get a written estimate before any work begins. Spring replacement starts at $170. Cable repair starts at $100. Opener repair starts at $100. Emergency dispatch carries a $200 to $350 premium, and that premium applies to the dispatch only, never to the repair, which is quoted at the same published price it would carry on any other day.
+Every service on this site carries a published starting price, and you get a written estimate before any work begins. [Spring replacement](/services/garage-door-spring-replacement/) starts at $150 per spring. [Cable repair](/services/garage-door-cable-repair/) starts at $95. [Opener repair](/services/garage-door-opener-repair/) starts at $95. A [new wind-rated door](/services/new-garage-door-installation/) is $950 to $4,200 installed with the permit included in the quote. [Emergency dispatch](/services/emergency-garage-door-repair/) carries a $150 to $300 premium, stated before we leave, and it applies to the dispatch only, never to the repair. One year on parts and one year on labor, written on the invoice.
 
-There is no low advertised call-out fee here, because that number exists to get somebody into your driveway and it is not how we want to work.
-
-Every price is a starting price for a standard single door.
+There is no low advertised call-out fee here, because that number exists to get somebody into your driveway. Every price is a starting price for a standard single door, listed on [our price list](/prices/), and we cover the whole state from [Miami-Dade County](/service-areas/miami-dade-county/) to [North Florida](/service-areas/north-florida/).

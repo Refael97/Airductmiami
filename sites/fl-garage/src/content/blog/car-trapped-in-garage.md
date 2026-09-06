@@ -1,6 +1,6 @@
 ---
 title: "Car Trapped in the Garage in Florida: How to Get It Out Safely"
-description: "Your garage door will not open and the car is inside. What to check first, how to lift the door safely by hand, what not to do, and what the repair costs in Florida."
+description: "Your garage door will not open and the car is inside. What to check first, how to lift the door safely by hand, what not to do, and what the repair costs."
 answer: "If your car is trapped behind a garage door that will not open, check the opener for power first, then pull the red manual release with the door closed and lift the door by hand with a second person. If the door is very heavy or will not budge, a spring has broken and the door has to be propped, not held. Never run the opener on a broken spring. Spring replacement in Florida is $150 to $350 per spring, and same-day or after-hours dispatch adds $150 to $300."
 pubDate: 2026-08-26
 cluster: symptom

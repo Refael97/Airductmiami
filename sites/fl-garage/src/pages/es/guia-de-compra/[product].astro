@@ -1,0 +1,15 @@
+---
+import ProductPage from '../../../components/pages/ProductPage.astro';
+import { doorMaterials, openerTypes } from '../../../data/products';
+
+export function getStaticPaths() {
+  return [
+    ...doorMaterials.map((m) => ({ params: { product: m.slug }, props: { kind: 'material' as const, item: m } })),
+    ...openerTypes.map((o) => ({ params: { product: o.slug }, props: { kind: 'opener' as const, item: o } })),
+  ];
+}
+const props = Astro.props;
+---
+{props.kind === 'material'
+  ? <ProductPage lang="es" kind="material" item={props.item} />
+  : <ProductPage lang="es" kind="opener" item={props.item} />}

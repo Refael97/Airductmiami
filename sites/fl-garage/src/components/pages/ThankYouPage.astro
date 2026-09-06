@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../Icon.astro';
+import { business } from '../../data/business';
+import { services } from '../../data/services';
+import { ui, paths, serviceHref, money, type Locale } from '../../data/ui';
+import { svc } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+
+const guides = services.slice(0, 4).map((s) => svc(lang, s));
+---
+<BaseLayout title={`${t.thanksTitle} | ${business.name}`} description={t.thanksDescription} noindex={true} lang={lang}>
+  <section class="section">
+    <div class="container narrow center">
+      <span class="tick" aria-hidden="true"><Icon name="check" size={44} /></span>
+      <h1>{t.thanksH1}</h1>
+      <p class="lead">{t.thanksLead}</p>
+
+      <div class="next card">
+        <h2>{t.thanksNext}</h2>
+        <ol>
+          {t.thanksSteps.map((s) => <li>{s}</li>)}
+        </ol>
+      </div>
+
+      <p class="urgent">{t.thanksUrgent(business.phone)}</p>
+
+      <h2 class="reading">{t.thanksWhileYouWait}</h2>
+      <ul class="links">
+        {guides.map((s) => (
+          <li><a href={serviceHref(lang, s.slug)}>{s.name}, {t.from} {money(s.priceLow)}</a></li>
+        ))}
+        <li><a href={p.prices}>{t.thanksFullList}</a></li>
+      </ul>
+    </div>
+  </section>
+
+  {/* The conversion event fires here rather than on form submit. A submit
+      handler races the navigation and drops events; this page is only ever
+      reached after a submission has actually gone through. */}
+  <script is:inline define:vars={{ lang }}>
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', {
+        currency: 'USD',
+        source: 'contact_form',
+        page_path: location.pathname,
+        site_language: lang,
+      });
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: var(--maxw-narrow); }
+  .center { text-align: center; }
+  .tick {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 5rem; height: 5rem; border-radius: 50%;
+    background: rgba(34, 163, 90, 0.12); color: #177841; margin-bottom: 1rem;
+  }
+  .lead { margin-inline: auto; max-width: 40rem; }
+  .next { text-align: left; margin: 2rem auto; max-width: 34rem; }
+  .next h2 { font-size: 1.1rem; margin-bottom: 0.7rem; }
+  .next ol { padding-left: 1.2rem; margin: 0; }
+  .next li { font-size: 0.94rem; margin-bottom: 0.5rem; }
+  .urgent { font-weight: 700; color: var(--c-ink); }
+  .reading { margin-top: 2.5rem; font-size: 1.4rem; }
+  .links { list-style: none; padding: 0; display: grid; gap: 0.5rem; justify-content: center; }
+</style>

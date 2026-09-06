@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ui, paths } from '../data/ui';
+
+/* The 404 is served for both languages, so it speaks both. Neither half
+   claims to be a translation of the other, and the page is noindex, so no
+   hreflang is emitted. */
+const en = ui.en;
+const es = ui.es;
+---
+<BaseLayout title={`${en.notFoundTitle} | ${es.notFoundTitle}`} description={en.notFoundText} noindex={true} lang="en">
+  <section class="section">
+    <div class="container narrow center">
+      <p class="code" aria-hidden="true">404</p>
+
+      <h1>{en.notFoundTitle}</h1>
+      <p class="lead">{en.notFoundText}</p>
+      <p class="links">
+        <a href={paths.en.prices}>{en.footerPriceList}</a> ·
+        <a href={paths.en.services}>{en.footerServices}</a> ·
+        <a href={paths.en.serviceAreas}>{en.footerAllAreas}</a> ·
+        <a href={paths.en.contact}>{en.getFreeQuote}</a>
+      </p>
+
+      <hr />
+
+      <h2 lang="es">{es.notFoundTitle}</h2>
+      <p class="lead" lang="es">{es.notFoundText}</p>
+      <p class="links" lang="es">
+        <a href={paths.es.prices}>{es.footerPriceList}</a> ·
+        <a href={paths.es.services}>{es.footerServices}</a> ·
+        <a href={paths.es.serviceAreas}>{es.footerAllAreas}</a> ·
+        <a href={paths.es.contact}>{es.getFreeQuote}</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: var(--maxw-narrow); }
+  .center { text-align: center; }
+  .code {
+    font-family: var(--font-display); font-size: 5rem; line-height: 1;
+    color: var(--c-primary-light); margin: 0 0 0.5rem;
+  }
+  .links { font-weight: 700; font-size: 0.95rem; }
+  hr { border: 0; border-top: 1px solid var(--c-line); margin: 2.5rem auto; max-width: 20rem; }
+</style>

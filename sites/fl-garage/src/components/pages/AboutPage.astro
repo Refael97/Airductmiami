@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import CtaBand from '../CtaBand.astro';
+import Icon from '../Icon.astro';
+import { ui, paths, otherLocale, type Locale } from '../../data/ui';
+import { copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).about;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbAbout, href: p.about },
+];
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].about}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow">{t.eyebrowAbout}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{c.h1}</h1>
+      <p class="lead">{c.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <AnswerBox text={c.answer} lang={lang} />
+
+      <div class="prose">
+        {c.sections.map((s) => (
+          <>
+            <h2>{s.heading}</h2>
+            {s.paragraphs.map((para) => <p>{para}</p>)}
+          </>
+        ))}
+      </div>
+
+      <h2 class="promise-head">{t.whatYouGet}</h2>
+      <div class="promise-grid">
+        {c.promises.map((pr, i) => (
+          <div class="card promise" data-anim="fade-up" data-anim-delay={String((i % 3) * 70)}>
+            <span class="icon"><Icon name={pr.icon} size={28} /></span>
+            <h3>{pr.title}</h3>
+            <p>{pr.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .about-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .about-hero .lead { max-width: 46rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .promise-head { margin: 2.8rem 0 1.4rem; }
+  .promise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.3rem; }
+  .promise h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+  .promise p { font-size: 0.92rem; margin: 0; }
+</style>

@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import CtaBand from '../CtaBand.astro';
+import { livePosts } from '../../lib/relatedContent';
+import { ui, paths, blogHref, otherLocale, type Locale } from '../../data/ui';
+import { copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).blogHub;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbGuides, href: p.blog },
+];
+
+const posts = await livePosts(lang);
+/* Hurricane first: it is the cluster nobody else in Florida has written. */
+const order = ['hurricane', 'cost', 'symptom', 'maintenance', 'safety', 'trust', 'product'];
+
+const fmt = (d: Date) => d.toLocaleDateString(t.dateLocale, { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].blog}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="blog-hero">
+    <div class="container">
+      <span class="eyebrow">{t.eyebrowGuides}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{c.h1}</h1>
+      <p class="lead">{c.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {order.map((key) => {
+        const list = posts.filter((post) => post.data.cluster === key);
+        if (list.length === 0) return null;
+        const meta = t.clusterBlurbs[key];
+        return (
+          <div class="cluster" data-anim="fade-up">
+            <div class="cluster-head">
+              <h2>{meta.label}</h2>
+              <p>{meta.blurb}</p>
+            </div>
+            <div class="grid grid-3">
+              {list.map((post) => (
+                <a href={blogHref(lang, post.id)} class="card post-card">
+                  <h3>{post.data.title}</h3>
+                  <p>{post.data.description}</p>
+                  <span class="meta">{fmt(post.data.pubDate)}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .blog-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .cluster { margin-bottom: 2.8rem; }
+  .cluster-head { margin-bottom: 1.2rem; }
+  .cluster-head h2 { margin-bottom: 0.2rem; }
+  .cluster-head p { color: var(--c-body); margin: 0; }
+  .post-card { display: block; text-decoration: none; }
+  .post-card:hover { text-decoration: none; }
+  .post-card h3 { color: var(--c-ink); font-size: 1.05rem; margin-bottom: 0.4rem; }
+  .post-card p { color: var(--c-body); font-size: 0.9rem; margin-bottom: 0.7rem; }
+  .meta { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--c-muted); font-weight: 700; }
+</style>

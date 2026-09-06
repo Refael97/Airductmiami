@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import JsonLd from '../JsonLd.astro';
+import { faqSchema } from '../../lib/schema';
+import { ui, paths, otherLocale, type Locale } from '../../data/ui';
+import { copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).faqPage;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbFaq, href: p.faq },
+];
+
+/** One FAQPage schema for the page, built from every group. */
+const allItems = c.groups.flatMap((g) => g.items);
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].faq}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="faq-hero">
+    <div class="container">
+      <span class="eyebrow">{t.eyebrowQuestions}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{c.h1}</h1>
+      <p class="lead">{c.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      {c.groups.map((g) => (
+        <div class="faq-group">
+          <h2>{g.title}</h2>
+          <FAQ items={g.items} title="" emitSchema={false} lang={lang} />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <JsonLd schema={faqSchema(allItems)} />
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .faq-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .faq-group { margin-bottom: 2.2rem; }
+  .faq-group h2 { margin-bottom: 0.4rem; }
+</style>

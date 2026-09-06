@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Making Noise: What Each Sound Means in Florida"
-description: "Grinding, squealing, banging, popping and rattling each point at a different garage door part. What each sound means, what Florida humidity does to it, and what a fix costs."
+description: "Grinding, squealing, popping and rattling point at different parts of the door. What each sound means, what Florida humidity does to it, and what a fix costs."
 answer: "Grinding usually means a rusted or dry roller bearing. Squealing means dry hinges or rollers, which Florida humidity and heat bring on faster than anywhere else. A single bang is a spring or cable letting go. Popping is section hinges binding. Rattling is loose hardware. Most noise is silenced by a tune-up at $85 to $160, and most of it gets expensive if ignored."
 pubDate: 2026-08-29
 cluster: symptom

@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Closes Then Reopens: Florida Causes and Fixes"
-description: "The door touches the floor and comes straight back up. The settings and sensors behind it, why Florida rain, afternoon sun and heat trigger it, and what a fix costs."
+description: "The door touches the floor and comes straight back up. The settings and sensors behind it, why Florida rain, sun and heat trigger it, and what a fix costs."
 answer: "A garage door that closes and immediately reopens is the opener deciding it has hit something. The usual causes are a down travel limit set too far so the door presses into the slab, photo eye sensors misaligned or washed out by afternoon sun, or a door that has grown stiff and trips the force setting. Adjusting limits and sensors is part of a tune-up at $85 to $160, and opener repair runs $95 to $300 if a part has failed."
 pubDate: 2026-08-27
 cluster: symptom

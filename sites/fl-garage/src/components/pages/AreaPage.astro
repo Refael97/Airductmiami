@@ -1,0 +1,299 @@
+---
+/**
+ * One region or city page, either language. Regions and cities share a
+ * URL namespace (/service-areas/tampa-bay/ and /service-areas/tampa/) and
+ * no slug collides between the two sets.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import Icon from '../Icon.astro';
+import { getRegion } from '../../data/regions';
+import { getCity, citiesByRegion } from '../../data/cities';
+import { services, getService, priceTableOrder } from '../../data/services';
+import type { City, Region, Service } from '../../data/types';
+import { iconFor } from '../../data/serviceIcons';
+import { serviceSchema } from '../../lib/schema';
+import { guidesForCity } from '../../lib/relatedContent';
+import { business } from '../../data/business';
+import { ui, paths, serviceHref, areaHref, blogHref, money, otherLocale, type Locale } from '../../data/ui';
+import { svc, region as regionOf, city as cityOf } from '../../lib/i18n';
+
+type Props =
+  | { lang: Locale; kind: 'region'; region: Region }
+  | { lang: Locale; kind: 'city'; city: City };
+const props = Astro.props as Props;
+const { lang } = props;
+const t = ui[lang];
+const p = paths[lang];
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+
+const isRegion = props.kind === 'region';
+const region = regionOf(lang, isRegion ? props.region : getRegion(props.city.region)!);
+const city = isRegion ? null : cityOf(lang, props.city);
+
+const name = isRegion ? region.name : city!.name;
+const slug = isRegion ? region.slug : city!.slug;
+const inPhrase = isRegion ? region.inPhrase : lang === 'es' ? `en ${city!.name}` : `in ${city!.name}`;
+const metaTitle = isRegion ? region.metaTitle : city!.metaTitle;
+const metaDescription = isRegion ? region.metaDescription : city!.metaDescription;
+const answer = isRegion ? region.answer : city!.answer;
+const intro = isRegion ? region.intro : city!.intro;
+const notes = isRegion ? region.doorProfile : city!.localNotes;
+const notesHeading = isRegion ? t.doorsLike(region.inPhrase) : t.whatWeSee(city!.name);
+const href = areaHref(lang, slug);
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbAreas, href: p.serviceAreas },
+  { name: region.name, href: areaHref(lang, region.slug) },
+  ...(isRegion ? [] : [{ name: city!.name, href }]),
+];
+
+const regionCities = citiesByRegion(region.slug).map((c) => cityOf(lang, c));
+const guides = await guidesForCity(lang);
+
+const nearby = isRegion
+  ? regionCities.slice(0, 8)
+  : city!.nearby
+      .map((s) => getCity(s))
+      .filter((c): c is City => Boolean(c))
+      .map((c) => cityOf(lang, c));
+
+const priceRows = priceTableOrder
+  .map((s) => getService(s))
+  .filter((s): s is Service => Boolean(s))
+  .map((s) => svc(lang, s));
+
+const topServices = services.slice(0, 6).map((s) => svc(lang, s));
+const emergency = svc(lang, getService('emergency-garage-door-repair')!);
+
+/** Region and city pages both describe the same service, scoped to a place. */
+const schema = serviceSchema(site, {
+  name: t.areaH1(inPhrase),
+  description: metaDescription,
+  url: `${site}${href}`,
+  slug,
+  priceLow: 85,
+  priceHigh: 6500,
+});
+
+const spring = svc(lang, getService('garage-door-spring-replacement')!);
+const cable = svc(lang, getService('garage-door-cable-repair')!);
+const openerRepair = svc(lang, getService('garage-door-opener-repair')!);
+const openerInstall = svc(lang, getService('garage-door-opener-installation')!);
+
+/* Region pages carry their own hand written FAQ; city pages add the two
+   universal questions after their local ones. */
+const universal =
+  lang === 'es'
+    ? [
+        {
+          question: `¿Cuánto cuesta reparar una puerta de garaje ${inPhrase}?`,
+          answer: `El reemplazo de resortes empieza en ${money(spring.priceLow)} por resorte, la reparación de cables en ${money(cable.priceLow)}, la reparación del motor en ${money(openerRepair.priceLow)} y la instalación de motor en ${money(openerInstall.priceLow)}. Son precios iniciales para una puerta sencilla estándar, y recibe un presupuesto por escrito antes de empezar cualquier trabajo.`,
+        },
+        {
+          question: '¿Tienen licencia y seguro?',
+          answer: 'Sí, con presupuesto por escrito antes de empezar y un año de garantía en piezas y mano de obra.',
+        },
+      ]
+    : [
+        {
+          question: `How much does garage door repair cost ${inPhrase}?`,
+          answer: `Spring replacement starts at ${money(spring.priceLow)} per spring, cable repair at ${money(cable.priceLow)}, opener repair at ${money(openerRepair.priceLow)} and opener installation at ${money(openerInstall.priceLow)}. These are starting prices for a standard single door, and you get a written quote before any work begins.`,
+        },
+        {
+          question: 'Are you licensed and insured?',
+          answer: 'Yes, with a written estimate before work starts and a one year warranty on parts and labor.',
+        },
+      ];
+const localFaq = isRegion ? region.faq : city!.faq.concat(universal);
+---
+<BaseLayout
+  title={metaTitle}
+  description={metaDescription}
+  schema={schema}
+  lang={lang}
+  altHref={areaHref(otherLocale(lang), slug)}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="area-hero">
+    <div class="container area-hero-inner">
+      <div>
+        <span class="eyebrow">{isRegion ? t.eyebrowRegion : region.name}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>{t.areaH1(inPhrase)}</h1>
+        <p class="lead">{metaDescription}</p>
+        <div class="hero-actions">
+          <a href={p.contact} class="btn btn-accent btn-lg">{t.getFreeQuote}</a>
+          <a href={p.prices} class="btn btn-outline btn-lg">{t.seePriceList}</a>
+        </div>
+        <ul class="hero-trust">
+          <li>{t.sameDay}</li>
+          <li>{t.writtenEstimateFirst}</li>
+          <li>{t.licensedInsured}</li>
+        </ul>
+      </div>
+
+      <aside class="price-panel" data-anim="fade-up">
+        <h2 class="pp-title">{t.pricesIn(inPhrase)}</h2>
+        <table class="mini-prices">
+          <tbody>
+            {priceRows.slice(0, 6).map((s) => (
+              <tr>
+                <th scope="row"><a href={serviceHref(lang, s.slug)}>{s.shortName}</a></th>
+                <td>{t.from} {money(s.priceLow)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <PriceDisclaimer lang={lang} />
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container area-body">
+      <article class="prose">
+        <AnswerBox text={answer} lang={lang} />
+
+        {intro.map((para) => <p>{para}</p>)}
+
+        <h2>{notesHeading}</h2>
+        <ul class="check-list">
+          {notes.map((n) => <li>{n}</li>)}
+        </ul>
+
+        <h2>{t.servicesWeProvide(inPhrase)}</h2>
+        <div class="svc-grid">
+          {topServices.map((s) => (
+            <a href={serviceHref(lang, s.slug)} class="svc-mini">
+              <span class="svc-ico"><Icon name={iconFor(s.slug)} size={22} /></span>
+              <span class="svc-name">{s.shortName}</span>
+              <span class="svc-price">{t.from} {money(s.priceLow)}</span>
+            </a>
+          ))}
+        </div>
+        <p class="all-link"><a href={p.services}>{t.allServicesCost}</a></p>
+
+        <PriceDisclaimer variant="block" lang={lang} />
+
+        <FAQ items={localFaq} title={t.areaQuestions(inPhrase)} lang={lang} />
+      </article>
+
+      <aside class="area-aside">
+        {!isRegion && (
+          <div class="card aside-card">
+            <h3>{t.nearbyAreas}</h3>
+            <ul class="area-links">
+              {nearby.map((c) => (
+                <li><a href={areaHref(lang, c.slug)}>{c.name}</a></li>
+              ))}
+            </ul>
+            <a href={areaHref(lang, region.slug)} class="aside-more">{t.allOf(region.name)}</a>
+          </div>
+        )}
+        {isRegion && (
+          <div class="card aside-card">
+            <h3>{t.communitiesIn(region.name)}</h3>
+            <ul class="area-links">
+              {regionCities.map((c) => (
+                <li><a href={areaHref(lang, c.slug)}>{c.name}</a></li>
+              ))}
+            </ul>
+            <a href={p.serviceAreas} class="aside-more">{t.allAreasArrow}</a>
+          </div>
+        )}
+        {guides.length > 0 && (
+          <div class="card aside-card">
+            <h3>{t.beforeYouCall}</h3>
+            <p class="aside-note">{t.beforeYouCallNote}</p>
+            <ul class="guide-links">
+              {guides.map((g) => (
+                <li><a href={blogHref(lang, g.id)}>{g.data.title}</a></li>
+              ))}
+            </ul>
+            <a href={p.blog} class="aside-more">{t.allGuidesArrow}</a>
+          </div>
+        )}
+        <div class="card aside-card">
+          <h3>{t.emergencyQ}</h3>
+          <p class="aside-note">{t.emergencyNote}</p>
+          <a href={serviceHref(lang, emergency.slug)} class="btn btn-accent btn-sm">{t.emergencyService}</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand
+    lang={lang}
+    heading={t.areaCtaHeading(inPhrase)}
+    text={t.areaCtaText(lang === 'es' ? 'Florida' : business.serviceArea)}
+  />
+</BaseLayout>
+
+<style>
+  .area-hero { background: var(--grad-hero); padding-block: 2.4rem 2.8rem; }
+  .area-hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.5rem; align-items: center; }
+  .area-hero h1 { margin-bottom: 0.7rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1.3rem 0 1.1rem; }
+  .hero-trust {
+    display: flex; flex-wrap: wrap; gap: 0.4rem 1.3rem; list-style: none; padding: 0; margin: 0;
+    font-size: 0.86rem; font-weight: 700; color: var(--c-body);
+  }
+  .hero-trust li::before { content: '✓'; color: #177841; font-weight: 800; margin-right: 0.35rem; }
+
+  .price-panel {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); padding: 1.5rem 1.6rem;
+    position: relative; overflow: hidden;
+  }
+  .price-panel::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 5px; background: var(--stripe-brand);
+  }
+  .pp-title { font-size: 1.1rem; margin-bottom: 0.8rem; }
+  .mini-prices { width: 100%; border-collapse: collapse; }
+  .mini-prices th, .mini-prices td {
+    padding: 0.5rem 0; border-bottom: 1px solid var(--c-line); text-align: left; font-size: 0.9rem;
+  }
+  .mini-prices th { font-weight: 600; }
+  .mini-prices th a { color: var(--c-ink); text-decoration: none; }
+  .mini-prices th a:hover { color: var(--c-primary); }
+  .mini-prices td { text-align: right; font-weight: 800; color: var(--c-primary); white-space: nowrap; }
+
+  .area-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .area-body .prose { max-width: none; }
+
+  .svc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.8rem; margin: 1.2rem 0 0.8rem; }
+  .svc-mini {
+    display: flex; align-items: center; gap: 0.6rem; text-decoration: none;
+    border: 1px solid var(--c-line); border-radius: 10px; padding: 0.7rem 0.85rem;
+    background: #fff; transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .svc-mini:hover { text-decoration: none; border-color: var(--c-primary); box-shadow: var(--shadow-card); }
+  .svc-ico { color: var(--c-primary); display: inline-flex; flex-shrink: 0; }
+  .svc-name { font-weight: 700; font-size: 0.9rem; color: var(--c-ink); }
+  .svc-price { margin-left: auto; font-size: 0.82rem; font-weight: 800; color: var(--c-primary); white-space: nowrap; }
+  .all-link { font-weight: 700; font-size: 0.92rem; }
+
+  .area-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
+  .aside-card h3 { font-size: 1rem; margin-bottom: 0.7rem; }
+  .aside-note { font-size: 0.88rem; margin-bottom: 0.9rem; }
+  .guide-links { list-style: none; padding: 0; margin: 0; }
+  .guide-links li { padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem; line-height: 1.4; }
+  .guide-links li:last-child { border-bottom: 0; }
+  .area-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
+  .area-links a { font-size: 0.9rem; }
+  .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
+
+  @media (max-width: 960px) {
+    .area-hero-inner { grid-template-columns: 1fr; gap: 1.8rem; }
+    .area-body { grid-template-columns: 1fr; }
+    .area-aside { position: static; }
+  }
+</style>

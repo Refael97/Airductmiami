@@ -1,6 +1,6 @@
 ---
 title: "Best Garage Door Material for a Florida Home"
-description: "Steel, aluminum, wood, fiberglass or vinyl for a Florida garage. What salt air, termites, UV and heat do to each, what each costs installed, and which ones come in a rated version."
+description: "Steel, aluminum, wood, fiberglass or vinyl for a Florida garage. What salt air, termites, UV and heat do to each, what each costs, and which come rated."
 answer: "For most Florida homes the right choice is 24 or 25 gauge galvanized steel in a wind-rated or impact-rated version, installed from $950 to $3,000. Within a few miles of the coast, aluminum with impact glass ($1,300 to $4,000, more with full glazing) or fiberglass ($1,400 to $3,800) avoids rust. Wood ($2,200 to $9,000) belongs on a house that calls for it and an owner who will refinish it and watch for termites. Vinyl ($1,100 to $2,800) suits a garage that takes abuse. Every material is sold in a rated version, and hurricane-rated doors start around $1,800."
 pubDate: 2026-09-01
 cluster: product
@@ -93,7 +93,7 @@ Every material above is sold wind-rated. Steel and aluminum have the widest impa
 
 ## Insulation, separately
 
-Insulation is a choice you make on top of material, not instead of it. In Florida the reason is heat, not cold: get it if the garage shares a wall or a floor with a bedroom, or holds the air handler or a freezer. It also makes a steel door stiffer, and the stiffer construction is often the one that carries the higher rating. Our article on [insulated versus uninsulated doors](/blog/insulated-vs-uninsulated-garage-door/) covers when it pays.
+Insulation is a choice you make on top of material, not instead of it. In Florida the reason is heat: get it if the garage shares a wall or a floor with a bedroom, or holds the air handler or a freezer. It also makes a steel door stiffer, and the stiffer construction is often the one that carries the higher rating. Our article on [insulated versus uninsulated doors](/blog/insulated-vs-uninsulated-garage-door/) covers when it pays.
 
 ## The one thing to check in any quote
 

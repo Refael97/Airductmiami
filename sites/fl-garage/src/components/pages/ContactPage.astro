@@ -1,0 +1,413 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import LeadMeta from '../LeadMeta.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import Icon from '../Icon.astro';
+import FAQ from '../FAQ.astro';
+import { business } from '../../data/business';
+import { services } from '../../data/services';
+import { regions } from '../../data/regions';
+import { ui, paths, otherLocale, type Locale } from '../../data/ui';
+import { svc, region as regionOf, copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).contact;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbContact, href: p.contact },
+];
+
+const serviceOptions = services.map((s) => svc(lang, s));
+const regionOptions = [...regions].sort((a, b) => a.order - b.order).map((r) => regionOf(lang, r));
+
+/**
+ * Where the form posts.
+ *
+ * Unset: Netlify Forms handles it, via the data-netlify attributes below.
+ * Set: the form posts straight to that URL, which is how this site runs on
+ * any host that has no forms product of its own, Cloudflare Pages included.
+ * Point it at the Make webhook and the eight network lead fields arrive
+ * there unchanged.
+ *
+ * It is PUBLIC_ because it ends up in the HTML, which is fine: a webhook
+ * URL is an address, not a credential. Never put a signing secret in it.
+ */
+const formEndpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const usesNetlifyForms = formEndpoint === '';
+/* One Netlify form definition serves both languages; `locale` on the
+   submission says which one it came from. */
+const formName = 'quote';
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].contact}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="form-col">
+        <span class="eyebrow">{t.eyebrowFreeQuote}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>{c.h1}</h1>
+        <p class="lead">{c.lead}</p>
+
+        <form
+          name={formName}
+          method="POST"
+          data-netlify={usesNetlifyForms ? 'true' : undefined}
+          netlify-honeypot={usesNetlifyForms ? 'bot-field' : undefined}
+          action={usesNetlifyForms ? p.thankYou : formEndpoint}
+          class="quote-form card"
+        >
+          {usesNetlifyForms && <input type="hidden" name="form-name" value={formName} />}
+          {/* Where the submission should land when the host does not
+              redirect for us. Make reads this and 302s the visitor. */}
+          {!usesNetlifyForms && <input type="hidden" name="redirect_to" value={p.thankYou} />}
+          <p class="hp">
+            <label>{t.formHoneypot} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+          {/* Stamped on load, read on submit. Nobody fills this form in four
+              seconds; a script does it instantly. See the guard below. */}
+          <input type="hidden" name="loaded_at" id="loaded-at" value="" />
+          <LeadMeta source="contact_form" lang={lang} />
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">{t.formName} <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="phone">{t.formPhone} <span aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">{t.formEmail}</label>
+              <input type="email" id="email" name="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="zip">{t.formZip} <span aria-hidden="true">*</span></label>
+              <input
+                type="text" id="zip" name="zip" required
+                inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+                title={t.formZipTitle}
+                autocomplete="postal-code"
+              />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="area">{t.formArea}</label>
+              <select id="area" name="area">
+                <option value="">{t.formAreaSelect}</option>
+                {regionOptions.map((r) => <option value={r.name}>{r.name}</option>)}
+                <option value="Other">{t.formAreaOther}</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="urgency">{t.formUrgency}</label>
+              <select id="urgency" name="urgency">
+                {c.urgency.map((u, i) => <option value={u} selected={i === 1}>{u}</option>)}
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="symptom">{t.formSymptom}</label>
+            <select id="symptom" name="symptom">
+              {c.symptoms.map((s) => <option value={s}>{s}</option>)}
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="service">{t.formService}</label>
+            <select id="service" name="service">
+              <option value="Not sure">{t.formServiceNotSure}</option>
+              {serviceOptions.map((s) => <option value={s.name}>{s.name}</option>)}
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">{t.formMessage}</label>
+            <textarea id="message" name="message" rows="4" placeholder={t.formMessagePlaceholder}></textarea>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-accent btn-lg full">{t.formSubmit}</button>
+          <p class="form-note">{t.formNote}</p>
+        </form>
+      </div>
+
+      <aside class="info-col">
+        <div class="card info-card">
+          <h2>{t.whatWeSendBack}</h2>
+          <ul class="check-list">
+            {t.sendBack.map((s) => <li>{s}</li>)}
+          </ul>
+        </div>
+
+        <div class="card info-card">
+          <h2>{t.contactHeading}</h2>
+          {business.phoneLive && (
+            <p class="contact-method">
+              <span class="cm-ico"><Icon name="phone" size={18} /></span>
+              <span><strong><a href={`tel:${business.phoneHref}`}>{business.phone}</a></strong><br />{t.contactSevenDays}</span>
+            </p>
+          )}
+          {business.emailLive && (
+            <>
+              <p class="contact-method">
+                <span class="cm-ico"><Icon name="quote" size={18} /></span>
+                <span>
+                  <a href={`mailto:${business.email}`}><strong>{business.email}</strong></a><br />
+                  {t.contactEmailNote}
+                </span>
+              </p>
+              <p class="contact-method">
+                <span class="cm-ico"><Icon name="quote" size={18} /></span>
+                <span>
+                  <a href={`mailto:${business.emailSupport}`}><strong>{business.emailSupport}</strong></a><br />
+                  {t.contactSupportNote}
+                </span>
+              </p>
+            </>
+          )}
+          <p class="contact-method">
+            <span class="cm-ico"><Icon name="pin" size={18} /></span>
+            <span>
+              <strong>{lang === 'es' ? 'Florida' : business.serviceArea}</strong><br />
+              {t.contactAreaNote}
+            </span>
+          </p>
+        </div>
+
+        <div class="card info-card">
+          <h2>{t.hoursHeading}</h2>
+          <ul class="hours">
+            {business.hours.map((h) => (
+              <li><span>{h.days}</span><span>{h.opens} {lang === 'es' ? 'a' : 'to'} {h.closes}</span></li>
+            ))}
+          </ul>
+          <p class="hours-note">{t.hoursNote}</p>
+        </div>
+
+        <PriceDisclaimer lang={lang} />
+      </aside>
+    </div>
+
+    <div class="container narrow">
+      <FAQ items={c.faq} title={t.aboutGettingQuote} lang={lang} />
+    </div>
+  </section>
+
+  <script is:inline define:vars={{ msgFill: t.errFill('%s'), msgFormat: t.errFormat, msgFast: t.errFast, msgZip: t.errZip, msgPitch: t.errPitch, requiredField: t.requiredField, lang }}>
+    (function () {
+      var form = document.querySelector('form[name="quote"]');
+      if (!form) return;
+
+      /* quote_start fires once, the first time anyone touches the form.
+         Paired with generate_lead on the thank-you page this gives a real
+         funnel: how many people start against how many finish. */
+      var fired = false;
+      form.addEventListener('focusin', function () {
+        if (fired || typeof window.gtag !== 'function') return;
+        fired = true;
+        window.gtag('event', 'quote_start', { page_path: location.pathname, site_language: lang });
+      });
+
+      /* The browser blocks submit on an invalid required field and focuses
+         it. On a form this long the offending field is usually scrolled off
+         screen, so from the visitor's position the button appears to do
+         nothing at all. On a lead form that is the worst possible failure.
+
+         The hook is the "invalid" event, not "submit". The browser runs
+         constraint validation BEFORE dispatching submit, and when it fails
+         it never dispatches submit at all. invalid does not bubble either,
+         hence the capture phase. */
+      var box = document.getElementById('form-error');
+      var reporting = false;
+
+      form.addEventListener(
+        'invalid',
+        function (e) {
+          if (reporting) return;
+          reporting = true;
+          setTimeout(function () { reporting = false; }, 0);
+
+          var bad = e.target;
+          var label = form.querySelector('label[for="' + bad.id + '"]');
+          var name = label ? label.textContent.replace('*', '').trim() : requiredField;
+
+          if (box) {
+            box.textContent = bad.validity.patternMismatch
+              ? name + ': ' + (bad.title || msgFormat)
+              : msgFill.replace('%s', name);
+            box.hidden = false;
+          }
+
+          bad.scrollIntoView({ block: 'center', behavior: 'smooth' });
+
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'quote_blocked', { field: bad.name });
+          }
+        },
+        true
+      );
+
+      form.addEventListener('submit', function () {
+        if (box) box.hidden = true;
+      });
+
+      form.addEventListener('input', function () {
+        if (box && !box.hidden && form.checkValidity()) box.hidden = true;
+      });
+
+      /* Spam guard. Three checks, none of which a real visitor can trip by
+         accident. Everything here is client side, so it stops volume rather
+         than a determined attacker. That is the right trade: it costs a real
+         visitor nothing and removes the noise that makes a genuine lead easy
+         to miss. */
+      var loadedAt = document.getElementById('loaded-at');
+      if (loadedAt) loadedAt.value = String(Date.now());
+
+      /* Florida ZIP codes run 32000 to 34999, with 320 to 349 as the
+         three digit prefixes. Nothing outside that is in our service area. */
+      function zipInArea(zip) {
+        var n = parseInt(String(zip).slice(0, 3), 10);
+        if (isNaN(n)) return false;
+        return n >= 320 && n <= 349;
+      }
+
+      /* Two or more of these in the free text field means a sales pitch, not
+         a garage door. One alone is allowed, so a customer who happens to
+         write "audit" or "call" is never blocked. */
+      var PITCH = [
+        'seo', 'backlink', 'ranking', 'rankings', 'digital marketing',
+        'web design', 'website design', 'audit', 'visibility', 'leads for',
+        'crypto', 'guest post', 'link building', 'outreach',
+        'partnership opportunity', 'increase your sales', 'grow your business',
+        'quick call', 'minute call', 'chatgpt', 'ai seo',
+        'posicionamiento', 'marketing digital', 'diseno web', 'diseño web'
+      ];
+
+      function pitchScore(text) {
+        var t = (text || '').toLowerCase();
+        var hits = 0;
+        for (var i = 0; i < PITCH.length; i++) {
+          if (t.indexOf(PITCH[i]) !== -1) hits++;
+        }
+        return hits;
+      }
+
+      function reject(message, field) {
+        if (box) {
+          box.textContent = message;
+          box.hidden = false;
+          box.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        }
+        if (field) field.focus({ preventScroll: true });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'quote_blocked_spam', { reason: message.slice(0, 60) });
+        }
+      }
+
+      form.addEventListener('submit', function (e) {
+        var zip = form.querySelector('[name="zip"]');
+        var msg = form.querySelector('[name="message"]');
+        var elapsed = loadedAt && loadedAt.value ? Date.now() - parseInt(loadedAt.value, 10) : 99999;
+
+        if (elapsed < 4000) {
+          e.preventDefault();
+          reject(msgFast, null);
+          return;
+        }
+
+        if (zip && zip.value && !zipInArea(zip.value)) {
+          e.preventDefault();
+          reject(msgZip, zip);
+          return;
+        }
+
+        if (msg && pitchScore(msg.value) >= 2) {
+          e.preventDefault();
+          reject(msgPitch, msg);
+          return;
+        }
+      });
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .contact-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr); gap: 2.5rem; align-items: start; }
+  .narrow { max-width: var(--maxw-narrow); }
+
+  .quote-form { margin-top: 1.5rem; }
+  .hp { position: absolute; left: -9999px; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .field { margin-bottom: 1rem; }
+  .field label {
+    display: block; font-size: 0.85rem; font-weight: 700; color: var(--c-ink);
+    margin-bottom: 0.3rem;
+  }
+  .field label span { color: var(--c-accent); }
+  .field input, .field select, .field textarea {
+    width: 100%; padding: 0.7rem 0.85rem; font: inherit; font-size: 0.95rem;
+    border: 1px solid var(--c-line); border-radius: 10px; background: #fff;
+    color: var(--c-ink);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: none; border-color: var(--c-primary); box-shadow: var(--ring);
+  }
+  .field textarea { resize: vertical; }
+  .full { width: 100%; }
+  .form-error {
+    background: rgba(214, 40, 40, 0.08);
+    border: 1px solid rgba(214, 40, 40, 0.35);
+    border-left: 4px solid var(--c-accent);
+    border-radius: var(--radius-sm);
+    color: var(--c-accent-dark);
+    font-size: 0.9rem; font-weight: 600;
+    padding: 0.7rem 0.9rem; margin: 0 0 0.9rem;
+  }
+  .field :global(input:invalid:not(:placeholder-shown)),
+  .field :global(select:invalid:not(:placeholder-shown)) {
+    border-color: rgba(214, 40, 40, 0.6);
+  }
+  .form-note { font-size: 0.8rem; color: var(--c-muted); margin: 0.9rem 0 0; }
+
+  .info-col { display: grid; gap: 1.2rem; position: sticky; top: 6.5rem; }
+  .info-card h2 { font-size: 1.05rem; margin-bottom: 0.8rem; }
+  .info-card .check-list li { font-size: 0.92rem; margin-bottom: 0.5rem; }
+
+  .contact-method { display: flex; gap: 0.7rem; align-items: flex-start; font-size: 0.9rem; margin-bottom: 0.9rem; }
+  .contact-method:last-child { margin-bottom: 0; }
+  .cm-ico {
+    display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+    width: 2rem; height: 2rem; border-radius: 8px;
+    background: var(--c-primary-light); color: var(--c-primary);
+  }
+  .contact-method strong { color: var(--c-ink); }
+
+  .hours { list-style: none; padding: 0; margin: 0; }
+  .hours li {
+    display: flex; justify-content: space-between; gap: 0.8rem;
+    font-size: 0.9rem; padding: 0.35rem 0; border-bottom: 1px solid var(--c-line);
+  }
+  .hours li:last-child { border-bottom: 0; }
+  .hours-note { font-size: 0.82rem; color: var(--c-muted); margin: 0.7rem 0 0; }
+
+  @media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .info-col { position: static; }
+  }
+  @media (max-width: 520px) {
+    .field-row { grid-template-columns: 1fr; gap: 0; }
+  }
+</style>

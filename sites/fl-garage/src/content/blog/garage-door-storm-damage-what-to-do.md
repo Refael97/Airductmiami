@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Storm Damage: What to Do First"
-description: "Bent panels, twisted track, a door pushed off its rollers. What to touch, what to leave, how to secure the opening, and the photos that make an insurance claim go through."
+description: "Bent panels, twisted track, a door pushed off its rollers. What to leave alone, how to secure the opening, and the photos an insurance claim needs."
 answer: "After a storm, do not run the opener on a damaged garage door. Photograph everything from inside and outside before anyone touches it, then secure the opening and call for an assessment. Storm damage repair starts at $150 for assessment and securing the opening and runs to $1,500 for bracing, panel or track work; a full replacement is quoted separately in writing, and the price does not go up because a hurricane just went through."
 pubDate: 2026-08-31
 cluster: symptom

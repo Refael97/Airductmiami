@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import Icon from '../Icon.astro';
+import { regions } from '../../data/regions';
+import { citiesByRegion, cities } from '../../data/cities';
+import { ui, paths, areaHref, otherLocale, type Locale } from '../../data/ui';
+import { region as regionOf, city as cityOf, copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).areasHub;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbAreas, href: p.serviceAreas },
+];
+
+const ordered = [...regions].sort((a, b) => a.order - b.order).map((r) => regionOf(lang, r));
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].serviceAreas}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="areas-hero">
+    <div class="container">
+      <span class="eyebrow">{t.eyebrowAreas}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{c.h1}</h1>
+      <p class="lead">{c.lead.replace('{count}', String(cities.length))}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="narrow">
+        <AnswerBox text={c.answer} lang={lang} />
+      </div>
+
+      {ordered.map((r) => {
+        const list = citiesByRegion(r.slug).map((ct) => cityOf(lang, ct));
+        return (
+          <div class="region-block" data-anim="fade-up">
+            <div class="region-head">
+              <span class="rh-icon"><Icon name="pin" size={26} /></span>
+              <div>
+                <h2><a href={areaHref(lang, r.slug)}>{r.name}</a></h2>
+                <p>{r.answer.split('. ')[0]}.</p>
+              </div>
+              <a href={areaHref(lang, r.slug)} class="btn btn-outline btn-sm">{t.regionPage}</a>
+            </div>
+            <ul class="city-grid">
+              {list.map((ct) => (
+                <li><a href={areaHref(lang, ct.slug)}>{ct.name}</a></li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+
+      <div class="narrow"><FAQ items={c.faq} title={t.coverageQuestions} lang={lang} /></div>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .areas-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+
+  .region-block {
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); padding: 1.6rem 1.75rem; margin-bottom: 1.4rem;
+  }
+  .region-head { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.1rem; }
+  .rh-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.8rem; height: 2.8rem; border-radius: 10px; flex-shrink: 0;
+    background: var(--c-primary-light); color: var(--c-primary);
+  }
+  .region-head h2 { font-size: 1.55rem; margin-bottom: 0.2rem; }
+  .region-head h2 a { color: var(--c-ink); text-decoration: none; }
+  .region-head h2 a:hover { color: var(--c-primary); }
+  .region-head p { font-size: 0.9rem; color: var(--c-body); margin: 0; }
+  .region-head .btn { margin-left: auto; flex-shrink: 0; }
+
+  .city-grid {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.4rem 1rem;
+  }
+  .city-grid li { margin: 0; }
+  .city-grid a { font-size: 0.93rem; font-weight: 600; }
+
+  @media (max-width: 620px) {
+    .region-head { flex-wrap: wrap; }
+    .region-head .btn { margin-left: 0; width: 100%; }
+  }
+</style>

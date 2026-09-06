@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Crooked or Uneven: Causes and Cost in Florida"
-description: "One side of the garage door touches down before the other. The cable, drum and track faults behind it, why Florida humidity causes most of them, and what a fix costs."
+description: "One side of the door touches down before the other. The cable, drum and track faults behind it, why Florida humidity causes most of them, and what a fix costs."
 answer: "A garage door that closes crooked usually has a cable problem: one cable has rusted, stretched, slipped off its drum, or is fraying. It can also be a bent track, a cracked end hinge, or drums out of sync. Treat it as urgent, because the next stage is the door coming off its track. Cable repair in Florida runs $95 to $300, cable and drum together $225 to $400, and off-track repair $140 to $600."
 pubDate: 2026-08-28
 cluster: symptom

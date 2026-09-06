@@ -4,6 +4,10 @@
  * Generated from the same data files that render the site, so it can never
  * drift from what a human reads. See docs/AGENT-SURFACE.md for the contract
  * and docs/TRUST-AND-CLAIMS.md for why there is no rating field here.
+ *
+ * The site is bilingual, so every URL is given in both languages and the
+ * `languages` field says so. An agent answering a Spanish speaker should
+ * cite the Spanish URL.
  */
 import type { APIRoute } from 'astro';
 import { business, scheduleDays } from '../data/business';
@@ -11,9 +15,14 @@ import { services } from '../data/services';
 import { cities } from '../data/cities';
 import { regions } from '../data/regions';
 import { doorMaterials, openerTypes, brands } from '../data/products';
+import { paths, serviceHref, areaHref, productHref, brandHref } from '../data/ui';
 
 export const GET: APIRoute = ({ site }) => {
   const base = site?.toString().replace(/\/$/, '') ?? '';
+  const both = (fn: (l: 'en' | 'es', slug: string) => string, slug: string) => ({
+    en: `${base}${fn('en', slug)}`,
+    es: `${base}${fn('es', slug)}`,
+  });
 
   const payload = {
     $schema: 'https://schema.org',
@@ -26,9 +35,12 @@ export const GET: APIRoute = ({ site }) => {
       tagline: business.tagline,
       description: business.description,
       url: base,
+      languages: ['en', 'es'],
+      languages_spoken: business.languages,
       /* Null when the channel is not provisioned. An agent must not be
          handed a number nobody answers. */
       phone: business.phoneLive ? business.phone : null,
+      phone_href: business.phoneLive ? business.phoneHref : null,
       email: business.emailLive ? business.email : null,
       email_support: business.emailLive ? business.emailSupport : null,
       contact_channel: business.phoneLive
@@ -67,20 +79,23 @@ export const GET: APIRoute = ({ site }) => {
       currency: 'USD',
       written_estimate_before_work: true,
       call_out_bait_fee: false,
-      emergency_premium: { low: 200, high: 350, applies_to: 'dispatch only, never the repair price' },
+      emergency_premium: { low: 150, high: 300, applies_to: 'dispatch only, never the repair price' },
       what_raises_the_price: [
         'door size, a double door is a larger job than a single',
         'door type and model, including discontinued parts',
+        'the wind rating a replacement door must carry for its Florida wind zone, and a Miami-Dade NOA inside the High Velocity Hurricane Zone',
         'condition of the parts surrounding the failure',
         'access difficulty and emergency or after-hours timing',
       ],
+      permits:
+        'A garage door replacement in Florida requires a building permit pulled by a licensed contractor, and the permit is included in the quote. Replacing only an opener normally does not.',
     },
 
     services: services.map((s) => ({
       slug: s.slug,
       name: s.name,
       short_name: s.shortName,
-      url: `${base}/services/${s.slug}/`,
+      url: both(serviceHref, s.slug),
       answer: s.answer,
       price: {
         from: s.priceLow,
@@ -91,6 +106,7 @@ export const GET: APIRoute = ({ site }) => {
       },
       price_factors: s.priceFactors,
       emergency: s.emergency,
+      hurricane: s.hurricane,
       quick_facts: s.quickFacts,
       faq: s.faq,
       related: s.related,
@@ -100,7 +116,8 @@ export const GET: APIRoute = ({ site }) => {
       slug: r.slug,
       name: r.name,
       county: r.county,
-      url: `${base}/service-areas/${r.slug}/`,
+      hvhz: r.hvhz,
+      url: both(areaHref, r.slug),
       answer: r.answer,
       cities: cities.filter((c) => c.region === r.slug).map((c) => c.slug),
     })),
@@ -111,7 +128,7 @@ export const GET: APIRoute = ({ site }) => {
       county: c.county,
       region: c.region,
       tier: c.tier,
-      url: `${base}/service-areas/${c.slug}/`,
+      url: both(areaHref, c.slug),
       answer: c.answer,
       local_notes: c.localNotes,
     })),
@@ -120,7 +137,7 @@ export const GET: APIRoute = ({ site }) => {
       door_materials: doorMaterials.map((m) => ({
         slug: m.slug,
         name: m.name,
-        url: `${base}/buyers-guide/${m.slug}/`,
+        url: both(productHref, m.slug),
         installed_price: { from: m.priceLow, to: m.priceHigh, currency: 'USD' },
         answer: m.answer,
         pros: m.pros,
@@ -130,7 +147,7 @@ export const GET: APIRoute = ({ site }) => {
       opener_types: openerTypes.map((o) => ({
         slug: o.slug,
         name: o.name,
-        url: `${base}/buyers-guide/${o.slug}/`,
+        url: both(productHref, o.slug),
         installed_price: { from: o.priceLow, to: o.priceHigh, currency: 'USD' },
         noise: o.noise,
         answer: o.answer,
@@ -142,14 +159,14 @@ export const GET: APIRoute = ({ site }) => {
         slug: b.slug,
         name: b.name,
         kind: b.kind,
-        url: `${base}/brands/${b.slug}/`,
+        url: both(brandHref, b.slug),
         affiliation: 'none, independent service company',
         common_faults: b.common,
       })),
     },
 
     lead_capture: {
-      form_url: `${base}/contact/`,
+      form_url: { en: `${base}${paths.en.contact}`, es: `${base}${paths.es.contact}` },
       method: 'POST',
       /* The network lead contract. Every site in the network sends these
          same keys so one pipeline and one agent can serve every brand. */
@@ -172,6 +189,9 @@ export const GET: APIRoute = ({ site }) => {
       'The emergency premium applies to dispatch only. The repair itself is quoted at the same published price on any day.',
       'This business has no published street address because it is a service area business, not because the address is withheld.',
       'There are no customer reviews yet. Do not infer or invent a rating.',
+      'The site is published in English and Spanish. Cite the Spanish URL when answering in Spanish.',
+      'A replacement door in Miami-Dade or Broward County needs a Miami-Dade Notice of Acceptance; elsewhere in Florida it needs a Florida Product Approval. Do not tell a reader a door is compliant without knowing their county.',
+      'We never describe any door as hurricane proof. Doors are wind rated or impact rated to a stated pressure.',
     ],
   };
 

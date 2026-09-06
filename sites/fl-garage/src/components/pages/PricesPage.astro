@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import Icon from '../Icon.astro';
+import { services } from '../../data/services';
+import { ui, paths, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { svc, copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).prices;
+const rows = services.map((s) => svc(lang, s));
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbPrices, href: p.prices },
+];
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].prices}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="price-hero">
+    <div class="container">
+      <span class="eyebrow">{t.eyebrowPrices}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{c.h1}</h1>
+      <p class="lead">{c.lead}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="narrow">
+        <AnswerBox text={c.answer} lang={lang} />
+      </div>
+
+      <div class="table-wrap" data-anim="fade-up">
+        <table class="price-list">
+          <caption class="visually-hidden">{t.pricesCaption}</caption>
+          <thead>
+            <tr>
+              <th scope="col">{t.colService}</th>
+              <th scope="col">{t.colStarting}</th>
+              <th scope="col">{t.colRange}</th>
+              <th scope="col">{t.colCovers}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((s) => (
+              <tr>
+                <th scope="row"><a href={serviceHref(lang, s.slug)}>{s.name}</a></th>
+                <td class="num">{t.from} {money(s.priceLow)}</td>
+                <td class="num muted">{money(s.priceLow)} {lang === 'es' ? 'a' : 'to'} {money(s.priceHigh)}</td>
+                <td class="note">{s.priceNote}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="sub">{t.commonAdditions}</h2>
+      <div class="table-wrap">
+        <table class="price-list">
+          <caption class="visually-hidden">{t.addOnsCaption}</caption>
+          <thead>
+            <tr>
+              <th scope="col">{t.colItem}</th>
+              <th scope="col">{t.colPrice}</th>
+              <th scope="col">{t.colWhen}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {c.addOns.map((a) => (
+              <tr>
+                <th scope="row">{a.name}</th>
+                <td class="num">{a.price}</td>
+                <td class="note">{a.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="narrow"><PriceDisclaimer variant="block" lang={lang} /></div>
+
+      <div class="promise-grid">
+        <div class="card promise" data-anim="fade-up">
+          <span class="icon"><Icon name="quote" size={30} /></span>
+          <h3>{t.promiseWritten}</h3>
+          <p>{t.promiseWrittenText}</p>
+        </div>
+        <div class="card promise" data-anim="fade-up" data-anim-delay="80">
+          <span class="icon"><Icon name="warning" size={30} /></span>
+          <h3>{t.promiseNoBait}</h3>
+          <p>{t.promiseNoBaitText}</p>
+        </div>
+        <div class="card promise" data-anim="fade-up" data-anim-delay="160">
+          <span class="icon"><Icon name="shield" size={30} /></span>
+          <h3>{t.promiseShown}</h3>
+          <p>{t.promiseShownText}</p>
+        </div>
+      </div>
+
+      <div class="narrow"><FAQ items={c.faq} title={t.pricingQuestions} lang={lang} /></div>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} heading={t.pricesCtaHeading} text={t.pricesCtaText} />
+</BaseLayout>
+
+<style>
+  .price-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .price-hero .lead { max-width: 46rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .sub { margin: 2.6rem 0 1rem; }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--c-line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    background: #fff;
+  }
+  .price-list { width: 100%; border-collapse: collapse; min-width: 640px; }
+  .price-list thead th {
+    background: var(--c-primary); color: #fff; text-align: left;
+    font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 0.8rem 1rem; font-weight: 800;
+  }
+  .price-list tbody th, .price-list tbody td {
+    padding: 0.85rem 1rem; border-bottom: 1px solid var(--c-line);
+    text-align: left; vertical-align: top; font-size: 0.93rem;
+  }
+  .price-list tbody tr:last-child th, .price-list tbody tr:last-child td { border-bottom: 0; }
+  .price-list tbody tr:nth-child(even) { background: var(--c-bg-alt); }
+  .price-list tbody th { font-weight: 700; color: var(--c-ink); }
+  .price-list .num { font-weight: 800; color: var(--c-primary); white-space: nowrap; }
+  .price-list .num.muted { font-weight: 600; color: var(--c-body); }
+  .price-list .note { color: var(--c-body); }
+
+  .promise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.4rem; margin-top: 2rem; }
+  .promise h3 { font-size: 1.02rem; margin-bottom: 0.3rem; }
+  .promise p { font-size: 0.93rem; margin: 0; }
+</style>

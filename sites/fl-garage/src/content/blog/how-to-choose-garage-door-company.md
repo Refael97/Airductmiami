@@ -1,6 +1,6 @@
 ---
 title: "How to Choose a Garage Door Company in Florida"
-description: "What separates garage door companies in Florida, how to verify a license at myfloridalicense.com, how to spot a storm chaser, and the two minute check before you book."
+description: "What separates garage door companies in Florida, how to verify a license at myfloridalicense.com, how to spot a storm chaser, and the two minute check."
 answer: "Choose a garage door company in Florida on a written estimate before dispatch, published prices, a contractor license you can verify at myfloridalicense.com, a real arrival window and a warranty printed on the invoice. For a new door, the company must pull the building permit and name the wind rating on it. A spring should be quoted at $150 to $350 installed and a wind-rated steel single door at $950 to $4,200 with the permit included."
 pubDate: 2026-08-27
 cluster: trust

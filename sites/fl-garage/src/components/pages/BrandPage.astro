@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import Icon from '../Icon.astro';
+import { brands } from '../../data/products';
+import type { Brand } from '../../data/types';
+import { getService } from '../../data/services';
+import { serviceSchema } from '../../lib/schema';
+import { ui, paths, brandHref, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { brand as brandOf, svc } from '../../lib/i18n';
+
+interface Props { lang: Locale; base: Brand }
+const { lang, base } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const brand = brandOf(lang, base);
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const href = brandHref(lang, brand.slug);
+const url = `${site}${href}`;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbDoorsOpeners, href: p.buyersGuide },
+  { name: brand.name, href },
+];
+
+const isOpener = brand.kind === 'opener';
+const repair = svc(lang, getService(isOpener ? 'garage-door-opener-repair' : 'garage-door-panel-replacement')!);
+const install = svc(lang, getService(isOpener ? 'garage-door-opener-installation' : 'new-garage-door-installation')!);
+const others = brands.filter((b) => b.slug !== brand.slug).map((b) => brandOf(lang, b));
+
+const schema = serviceSchema(site, {
+  name: t.brandH1(brand.name, isOpener),
+  description: brand.metaDescription,
+  url,
+  slug: brand.slug,
+  priceLow: repair.priceLow,
+  priceHigh: install.priceHigh,
+});
+---
+<BaseLayout title={brand.metaTitle} description={brand.metaDescription} schema={schema} lang={lang} altHref={brandHref(otherLocale(lang), brand.slug)}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="b-hero">
+    <div class="container">
+      <span class="eyebrow">{isOpener ? t.eyebrowOpenerBrand : t.eyebrowDoorBrand}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{t.brandH1(brand.name, isOpener)}</h1>
+      <p class="lead">{brand.metaDescription}</p>
+      <div class="hero-actions">
+        <a href={p.contact} class="btn btn-accent btn-lg">{t.getFreeQuote}</a>
+        <a href={p.prices} class="btn btn-outline btn-lg">{t.seePriceList}</a>
+      </div>
+      <p class="disclosure">{t.brandDisclosure(brand.name)}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container b-body">
+      <article class="prose">
+        <AnswerBox text={brand.answer} lang={lang} />
+
+        {brand.intro.map((para) => <p>{para}</p>)}
+
+        <h2>{t.brandUsuallyWrong(brand.name)}</h2>
+        <ul class="check-list">
+          {brand.common.map((x) => <li>{x}</li>)}
+        </ul>
+
+        <h2>{t.whatItCosts}</h2>
+        <div class="two-prices">
+          <a href={serviceHref(lang, repair.slug)} class="price-tile">
+            <span class="pt-ico"><Icon name="wrench" size={26} /></span>
+            <span class="pt-label">{repair.shortName}</span>
+            <span class="pt-price">{t.from} {money(repair.priceLow)}</span>
+          </a>
+          <a href={serviceHref(lang, install.slug)} class="price-tile">
+            <span class="pt-ico"><Icon name="install" size={26} /></span>
+            <span class="pt-label">{install.shortName}</span>
+            <span class="pt-price">{t.from} {money(install.priceLow)}</span>
+          </a>
+        </div>
+
+        <PriceDisclaimer variant="block" lang={lang} />
+
+        <FAQ items={brand.faq} title={t.brandQuestions(brand.name)} lang={lang} />
+      </article>
+
+      <aside class="b-aside">
+        <div class="card aside-card">
+          <h3>{t.otherBrands}</h3>
+          <ul class="plain">
+            {others.map((b) => (
+              <li>
+                <a href={brandHref(lang, b.slug)}>{b.name}</a>
+                <span>{b.kind === 'opener' ? t.openers : t.doors}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={p.buyersGuide} class="aside-more">{t.buyersGuideArrow}</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .b-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .b-hero .lead { max-width: 46rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.3rem; }
+  .disclosure { font-size: 0.82rem; color: var(--c-muted); margin: 1.1rem 0 0; max-width: 46rem; }
+
+  .b-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .b-body .prose { max-width: none; }
+
+  .two-prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin: 1.2rem 0 0; }
+  .price-tile {
+    display: flex; flex-direction: column; gap: 0.25rem; text-decoration: none;
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: var(--shadow-card); padding: 1.2rem 1.3rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .price-tile:hover { text-decoration: none; border-color: var(--c-primary); box-shadow: var(--shadow-card-hover); }
+  .pt-ico { display: inline-flex; align-items: center; justify-content: center; width: 2.6rem; height: 2.6rem; border-radius: 10px; background: var(--c-primary-light); color: var(--c-primary); margin-bottom: 0.4rem; }
+  .pt-label { font-weight: 700; color: var(--c-ink); font-size: 0.95rem; }
+  .pt-price { font-family: var(--font-display); font-size: 1.7rem; line-height: 1.1; color: var(--c-primary); }
+
+  .b-aside { position: sticky; top: 6.5rem; }
+  .aside-card h3 { font-size: 1rem; margin-bottom: 0.8rem; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li { display: flex; justify-content: space-between; gap: 0.6rem; padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem; }
+  .plain li:last-child { border-bottom: 0; }
+  .plain span { color: var(--c-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+  .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
+
+  @media (max-width: 960px) {
+    .b-body { grid-template-columns: 1fr; }
+    .b-aside { position: static; }
+  }
+</style>

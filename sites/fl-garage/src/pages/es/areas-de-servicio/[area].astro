@@ -1,0 +1,16 @@
+---
+import AreaPage from '../../../components/pages/AreaPage.astro';
+import { regions } from '../../../data/regions';
+import { cities } from '../../../data/cities';
+
+export function getStaticPaths() {
+  return [
+    ...regions.map((r) => ({ params: { area: r.slug }, props: { kind: 'region' as const, region: r } })),
+    ...cities.map((c) => ({ params: { area: c.slug }, props: { kind: 'city' as const, city: c } })),
+  ];
+}
+const props = Astro.props;
+---
+{props.kind === 'region'
+  ? <AreaPage lang="es" kind="region" region={props.region} />
+  : <AreaPage lang="es" kind="city" city={props.city} />}

@@ -1,252 +1,125 @@
 ---
-title: "Garage Door Repair Scams and How to Spot One"
-description: "The bait pricing pattern that gave this trade its reputation, the specific numbers that expose it, what the BBB and the FTC say about it, and the questions that stop it before anyone reaches your driveway."
-answer: "The standard garage door scam is bait pricing: a very low advertised service charge, often $29 or a $49 repair, followed by a technician who finds several hundred dollars of parts once the door is apart. The Better Business Bureau publishes a standing scam alert on exactly this pattern. The defence is to ask for the full price of the finished repair, in writing, before anyone is dispatched."
-pubDate: 2026-08-02
-updatedDate: 2026-08-08
+title: "Garage Door Repair Scams in Florida and How to Spot One"
+description: "The bait pricing pattern, the storm chaser who knocks after a hurricane, the unlicensed contractor with no permit, the prices that expose it, and how to check."
+answer: "The standard garage door scam is bait pricing: a $29 or $49 advertised service call followed by several hundred dollars of parts once the door is apart. Florida adds a second pattern after every hurricane, the storm chaser who knocks on doors, takes a deposit and either vanishes or fits a door with no permit and no wind rating. The defense is the same for both: the full price in writing before anyone is dispatched, and a license you have checked yourself on myfloridalicense.com."
+pubDate: 2026-09-01
 cluster: trust
-tags: ["trust", "scams", "pricing"]
-relatedServices: ["garage-door-spring-replacement", "garage-door-cable-repair", "emergency-garage-door-repair"]
+tags: ["trust", "scams", "pricing", "storm chasers", "permits"]
+relatedServices: ["garage-door-spring-replacement", "storm-damage-garage-door-repair", "hurricane-rated-garage-door-installation", "emergency-garage-door-repair"]
 faq:
   - question: "Is a $29 service call always a scam?"
     answer: "Not always, but treat it as a flag rather than a bargain. The number is too low to cover a van, a technician and an hour of time, which means the money is being made somewhere else in the visit. The test is whether the company will also quote the finished repair before dispatch."
-  - question: "What should two springs cost?"
-    answer: "In the New York market, roughly $320 to $700 installed for a standard residential door. Quotes well above that for standard springs are worth challenging, and a quote near $1,200 is a different business model rather than a different opinion about your door."
-  - question: "What if the technician is already here and the price jumped?"
-    answer: "You are allowed to say no. Pay the agreed call-out fee if there was one, decline the work, and get a second quote. A technician who becomes aggressive at that point has told you everything."
-  - question: "How do I check whether a garage door company is licensed in New York?"
-    answer: "Home improvement contractors must hold a county licence. Nassau County Consumer Affairs on 516-571-2600 and Suffolk County Consumer Affairs on 631-853-4600 will both confirm whether a licence is on file and whether the firm has a complaint history. Operating without one is illegal in both counties."
-  - question: "Why do so many garage door companies have similar generic names?"
-    answer: "The BBB flags generic, unclear company names as a warning sign, particularly when the name is not registered with the state. A name that is hard to pin down is also hard to leave a review against, hard to sue, and easy to abandon and replace."
-  - question: "Is the extra work they find always invented?"
-    answer: "No, and that is what makes the pattern effective. A door that broke a spring frequently does have worn rollers and a fraying cable, because everything aged together. Genuine additional wear is common. The question is never whether the parts are worn, it is whether the price was agreed before the door came apart."
+  - question: "What should two springs cost in Florida?"
+    answer: "$150 to $350 per spring installed, and doing both together adds $120 to $250 to the first, so a pair on a standard door lands between about $270 and $600. Quotes well above that for standard springs are worth challenging, and a quote near $1,200 is a different business model rather than a different opinion about your door."
+  - question: "How do I check whether a garage door company is licensed in Florida?"
+    answer: "Look the company up on the Florida Department of Business and Professional Regulation license search at myfloridalicense.com. It shows whether the license is current and whether there is a discipline history. A garage door replacement needs a permit pulled by a licensed contractor, so a company that cannot be found there cannot legally replace your door."
+  - question: "Someone knocked on my door after the storm offering to fix the garage door. Is that legitimate?"
+    answer: "Rarely. Established companies are working through a backlog of their own calls after a hurricane and do not have people free to canvass streets. Ask for the license and check it, refuse to pay a deposit in cash, and do not sign anything that assigns your insurance claim to them. Unlicensed contracting is a crime in Florida, and the penalty is heavier during a declared state of emergency."
+  - question: "Do I need a permit to replace a garage door?"
+    answer: "Yes. The Florida Building Code treats the garage door as a structural opening, a replacement needs a building permit pulled by a licensed contractor, and the door's wind rating is documented on it. Replacing only the opener normally does not need one. A door fitted without a permit can fail a wind mitigation inspection and cause trouble when you sell."
   - question: "Where do I report a garage door company that overcharged me?"
-    answer: "The county Consumer Affairs office that licensed them, Nassau on 516-571-2600 or Suffolk on 631-853-4600. Also file with BBB Scam Tracker so the next person searching that company name finds your account. If you paid by card, ask your issuer about a dispute and be specific about what was agreed and when the number changed."
+    answer: "The Florida Department of Agriculture and Consumer Services on 1-800-HELP-FLA takes consumer complaints, and DBPR takes complaints about licensed contractors and about unlicensed activity. Also file with BBB Scam Tracker so the next person searching that name finds your account. If you paid by card, ask your issuer about a dispute."
 ---
 
-![A snapped garage door torsion spring, showing the gap where the coil separated and the splayed ends either side of the break. This is the failure most bait priced service calls are dispatched to.](/images/broken-torsion-spring.webp)
+![A snapped garage door torsion spring, showing the gap where the coil separated. This is the failure most bait priced service calls are dispatched to.](/images/broken-torsion-spring.webp)
 
 ## The pattern
 
 It is consistent enough to describe as a script.
 
-**Step one.** A very low number is advertised. $29 service call. $49 repair.
-Sometimes it is not a price at all but a promise, "lowest price guaranteed",
-which commits to nothing.
+**Step one.** A very low number is advertised. $29 service call. $49 repair. Sometimes it is not a price at all but a promise, "lowest price guaranteed", which commits to nothing.
 
-**Step two.** A technician arrives quickly. Speed is genuinely part of the
-product here, because the model depends on reaching you while you are still
-in the situation rather than after you have had an evening to make calls.
+**Step two.** A technician arrives quickly, because the model depends on reaching you while you are still stuck.
 
 **Step three.** The door comes apart. This is the hinge of the whole thing.
 
-**Step four.** The number changes. Springs are the wrong gauge. The cables are
-fraying. The bearing plate is shot. The opener is old. Sometimes one of these
-is true. Sometimes several are. The total lands well north of anything you
-would have agreed to over the phone.
+**Step four.** The number changes. Springs are the wrong gauge. The cables are fraying. The opener is old. Sometimes one of these is true. The total lands well north of anything you would have agreed to over the phone.
 
-**Step five.** You agree, because the alternative is a garage door in pieces
-and an evening spent finding somebody else.
+**Step five.** You agree, because the alternative is a garage door in pieces.
 
-Nothing in that sequence requires anyone to lie. That is what makes it
-durable.
+Nothing in that sequence requires anyone to lie. Our guide on [the $29 service call](/blog/29-dollar-service-call-explained/) goes through the arithmetic behind the number.
 
-## What the consumer agencies actually say
+## What the consumer agencies say
 
-This is not a local complaint or an opinion we hold about competitors.
+The Better Business Bureau publishes a standing [scam alert on garage door repair](https://www.bbb.org/article/scams/29292-bbb-scam-alert-garage-door-repair-scams). It describes companies that advertise emergency repair, then inflate the work or the parts once on site, and it lists the warning signs: generic company names, often several of them and not registered with the state; no real premises; a phone number and an email as the only contact route; and pressure to decide immediately.
 
-The Better Business Bureau publishes a standing [scam alert specifically on
-garage door
-repair](https://www.bbb.org/article/scams/29292-bbb-scam-alert-garage-door-repair-scams),
-built on complaints filed to its Scam Tracker. It describes companies that
-advertise emergency repair, then inflate either the amount of work needed or
-the parts required, and it notes that many of these operations advertise a
-low service call fee and then demand more for additional repairs once on
-site.
+Moneywise reported a [Florida homeowner billed around $12,000 for garage door work worth roughly $1,500](https://moneywise.com/news/news/home-repair-scam-garage-door-overcharge-florida). Same script, volume turned up.
 
-Its stated warning signs are worth memorising, because most of them are
-checkable before anyone arrives:
+On the advertising itself, the Federal Trade Commission's [Guides Against Bait Advertising](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-238), 16 CFR Part 238, address offers made not to be fulfilled but to switch the customer to something else. The deception occurs at first contact, so revealing the real price after arriving is not the cure people assume.
 
-- **Generic, unclear company names**, often several of them, and often not registered as a legal business with the state
-- **No genuine showroom or physical premises**, or an address that does not correspond to anything real
-- **A phone number and an email as the only contact route**
-- **High pressure tactics** designed to convince you the repair must happen immediately and expensively
+## The Florida pattern: storm chasers
 
-Regional BBB offices reissue this warning on a cycle. Wisconsin ran one in
-[March 2026](https://www.wsaw.com/2026/03/02/wisconsin-bbb-warns-homeowners-garage-door-repair-scams/).
-The reissuing is the tell: the pattern persists because it works.
+After every named storm a second script runs alongside the first, and it runs on the streets rather than in search results.
 
-Individual cases get extreme. Moneywise reported a [Florida homeowner billed
-around $12,000 for garage door work worth roughly
-$1,500](https://moneywise.com/news/news/home-repair-scam-garage-door-overcharge-florida),
-which is the same script with the volume turned up.
+Trucks with out-of-state plates appear in the neighborhoods that took the worst of it. Someone knocks, points at the bent door, and offers to fix or replace it this week. The pitch has three parts: a deposit now to "hold the materials", a promise that "insurance will cover it", and a form that turns out to assign your insurance claim to the contractor. Then the deposit leaves with the truck, or a door goes in with no permit, no wind rating and no inspection, or a repair worth a few hundred dollars is billed at several thousand against the claim.
 
-On the advertising itself, the Federal Trade Commission's [Guides Against
-Bait Advertising](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-238),
-16 CFR Part 238, issued under Section 5 of the FTC Act, address offers made
-not to be fulfilled but to generate leads and switch the customer to
-something else. The guides treat the deception as occurring at the point of
-first contact, which means telling the customer the real price after arriving
-is not the cure people assume it is.
+What to know:
 
-Whether a particular advertisement crosses that line is a regulator's call,
-not ours. But it is useful to know the pattern has a name in federal
-regulation, and that the name is not a flattering one.
+- **Unlicensed contracting is a crime in Florida**, and the penalty is heavier during a declared state of emergency. That is the state's response to exactly this pattern.
+- **Established companies are not canvassing.** After a hurricane we are working a backlog of our own calls. Nobody legitimate has staff free to walk streets.
+- **The insurance claim is yours.** We provide photos and documentation for it. We do not take it over, and we do not inflate storm repairs to fit it, because that is the complaint people have after every hurricane.
+- **A deposit before a written quote is the tell.** So is cash only.
+
+Our guide on [what to do after storm damage](/blog/garage-door-storm-damage-what-to-do/) covers the first 48 hours, and [storm damage repair](/services/storm-damage-garage-door-repair/) is $150 to $1,500 for assessment, bracing and panel or track work, with a full replacement quoted separately in writing.
+
+## The permit a legitimate replacement carries
+
+This is the easiest way to tell a real door replacement from a bad one, and almost nobody asks.
+
+The Florida Building Code treats the garage door as a structural opening, because when it fails the house pressurizes and the roof is at risk. A replacement needs a building permit, pulled by a licensed contractor, and the door's rating is documented on it: a Florida Product Approval number in most of the state, a Miami-Dade Notice of Acceptance in Miami-Dade and Broward. An inspector signs it off.
+
+A door fitted without one may not be rated for the wind pressure at your address, can fail a wind mitigation inspection, and surfaces when you sell. Our guides on [garage door permits in Florida](/blog/garage-door-permit-florida/) and [Miami-Dade NOA versus Florida Product Approval](/blog/miami-dade-noa-vs-florida-product-approval/) explain what the paperwork looks like. Replacing only an opener normally needs no permit, so a company that refuses to pull one for a door, or offers to skip it to save you money, has told you what you need to know.
 
 ## The numbers that expose it
 
-The single most useful thing you can carry into one of these conversations is
-a sense of the real range. New York metro, standard residential door:
-
-| Work | Realistic installed price |
+| Work | Realistic installed price in Florida |
 |---|---|
-| One torsion spring | $170 to $400 |
-| Both springs | $320 to $700 |
-| Cable repair or replacement | $100 to $350 |
-| Rollers, full set | $150 to $250 |
-| Off track repair | $150 to $700 |
-| Opener repair | $100 to $350 |
-| New opener, installed | $281 to $630 |
-| New door, installed | $1,056 to $4,620 |
+| One torsion spring | $150 to $350 |
+| Both springs together | first spring plus $120 to $250 |
+| Cable repair | $95 to $300 |
+| Off-track repair | $140 to $600 |
+| Opener repair | $95 to $300 |
+| New opener, installed | $275 to $600 |
+| Storm damage repair | $150 to $1,500 |
+| New wind-rated door, installed, permit included | $950 to $4,200 |
+| Hurricane-rated door, installed, permit included | $1,800 to $6,500 |
 
-These are our published numbers and they are on [our price list](/prices/).
-
-A double door costs more than a single. A discontinued model costs more than
-a common one. Emergency dispatch carries a $200 to $350 premium and that
-premium applies to the dispatch, never to the repair. Everything else that
-moves a quote well outside the ranges above deserves a specific explanation
-you can understand.
+These are our published numbers and they are on [our price list](/prices/). A double door costs more than a single. Emergency dispatch carries a $150 to $300 premium that applies to the dispatch, never to the repair.
 
 ## The five questions that end it before it starts
 
-Every one of these is asked on the phone, before anyone is dispatched, which
-is the only moment you hold any leverage at all.
+Ask on the phone, before anyone is dispatched, which is the only moment you hold any leverage.
 
-**1. If it is a broken spring, what will I pay in total?**
-The single most useful question in the trade. A company that publishes prices
-answers in one sentence. A company running the bait model will explain why
-the question cannot be answered. It can be. We answer it every day.
-
-**2. Is that a call-out fee or the price of the repair?**
-Forces the distinction the model depends on blurring.
-
-**3. Is the call-out credited against the work?**
-A legitimate diagnostic fee comes off the bill. A bait fee does not.
-
-**4. Are you replacing one spring or both?**
-Springs on a two spring door are the same age and have taken the same
-cycles. Replacing one is a return visit waiting to happen, and quoting one
-while intending to sell two is how a low number becomes a high one.
-
-**5. What licence do you hold, and in which county?**
-Home improvement contractors need a county licence in both Nassau and
-Suffolk, and operating without one is illegal. The answer is verifiable in
-two minutes, which is exactly why the question works.
+1. **If it is a broken spring, what will I pay in total?** A company that publishes prices answers in one sentence.
+2. **Is that a call-out fee or the price of the repair?**
+3. **Is the call-out credited against the work?** A legitimate diagnostic fee comes off the bill.
+4. **Are you replacing one spring or both?** Quoting one while intending to sell two is how a low number becomes a high one.
+5. **What is the company name on your license, and will you pull the permit?** For a door replacement, verifiable in two minutes.
 
 ## Verify it yourself, in two minutes
 
-Almost nobody does this, and it filters out more bad actors than anything
-else on this page.
+**License.** The [Florida Department of Business and Professional Regulation](https://www.myfloridalicense.com/) license search shows whether a contractor's license is current and whether there is a complaint history. Search the exact company name on the quote.
 
-**Nassau County.** [Office of Consumer
-Affairs](https://www.nassaucountyny.gov/1547/Consumer-Affairs), **516-571-2600**.
-They will tell you whether a home improvement licence is on file and whether
-the firm has a complaint history. Licensing is mandated under the Nassau
-County Administrative Code.
+**Permit.** Most county building departments have an online permit search. A company that has replaced doors in your county has permits on file.
 
-**Suffolk County.** [Office of Consumer
-Affairs](https://suffolkcountyny.gov/Departments/Consumer-Affairs),
-**631-853-4600**. Same two answers. Suffolk also publishes a [home
-improvement fact
-sheet](https://suffolkcountyny.gov/Portals/0/formsdocs/consumeraffairs/CA%20Home%20Improvement%20Fact%20Sheet%202.pdf)
-covering what a contract must contain.
-
-**New York City.** Home improvement contractors are licensed by the
-Department of Consumer and Worker Protection, and licences are searchable
-online.
-
-**Anywhere.** Search the company name plus the word complaint. Search it on
-[BBB Scam Tracker](https://www.bbb.org/scamtracker). If a name returns
-nothing at all in a trade this old, that is information too.
+**Complaints.** The Florida Department of Agriculture and Consumer Services on 1-800-HELP-FLA takes consumer complaints. [BBB Scam Tracker](https://www.bbb.org/scamtracker) shows what others have reported under that name.
 
 ## The part nobody tells you: the extra work is often real
 
-This is where most scam advice goes wrong, and getting it wrong makes you
-easier to take advantage of, not harder.
-
-A door that has just broken a spring very often does have worn rollers, a
-fraying cable, and hinges at the end of their life. They all went into
-service on the same day and they have all taken the same number of cycles.
-A technician who points at three worn parts is frequently telling you the
-truth.
-
-So "they found more problems" is not evidence of a scam. If you treat it as
-evidence, you will refuse honest work and end up back where you started in
-four months.
-
-**The distinction that actually matters is the sequence, not the substance.**
-An honest company tells you about the worn rollers, prices them separately,
-and lets you decide, having already given you the price of the main repair
-before it dispatched anyone. A bait operation reveals everything at once, at
-the moment your door is in pieces, and treats the whole thing as a single
-take it or leave it number.
-
-Same parts. Same wear. Completely different transaction.
-
-## Red flags ranked by how much they should worry you
-
-**Serious.**
-A price that changes materially after arrival, when the original was
-presented as the price. Refusal to put a number in writing before dispatch.
-Pressure to decide immediately. Cash only. No licence number, or one that
-does not check out. Aggression when you say no.
-
-**Worth a second look.**
-A call-out fee under $50. A company name so generic it could be any of forty.
-An address that turns out to be a mailbox. Reviews that all arrived in the
-same week and all read alike.
-
-**Not by themselves a problem.**
-Finding additional worn parts. A price above the cheapest quote you got, if
-it is explained. Not being able to come the same hour. Charging an emergency
-premium, provided it is stated before dispatch and applies to the dispatch
-rather than to the repair.
+A door that has just broken a spring very often does have worn rollers, a rusting cable and tired hinges. They all went into service on the same day and have sat in the same humidity. A technician who points at three worn parts is frequently telling the truth, so "they found more problems" is not evidence of a scam. The distinction that matters is the sequence. An honest company gives you the price of the main repair before dispatch, then tells you about the worn rollers, prices them separately and lets you decide. A bait operation reveals everything at once, with the door in pieces, as one take it or leave it number.
 
 ## Where we stand on it
 
-We publish every price on this site, in advance, including the emergency
-premium. We do not charge a call-out fee. You get a written estimate before
-anything is touched, and that estimate is the number you pay.
+We publish every price on this site in advance, including the emergency premium. We do not charge a call-out fee. You get a written estimate before anything is touched, and that estimate is the number you pay. We are licensed and insured, and the permit on a door replacement is pulled by a licensed contractor and included in the quote.
 
-**Publishing prices costs us the advantage of arriving with an unknown
-number.** That is deliberate. If you can check our figure against somebody
-else's from your kitchen table at eleven at night, before anyone comes near
-your garage, then the price is doing the work instead of the pressure.
-
-We also publish no customer rating and no review count anywhere on this site,
-because we do not yet have real ones and we will not manufacture them. If
-that seems like an odd thing to volunteer on a page about scams, it is the
-same principle: the claims we make are the ones we can stand behind.
+We also publish no rating and no review count, because we do not yet have real ones and we will not manufacture them. The claims we make are the ones we can stand behind.
 
 ## If it already happened to you
 
-**Work not started.** Pay the agreed fee, decline the work, get a second
-quote. Nothing further is owed.
+**Work not started.** Pay the agreed fee, decline the work, get a second quote.
 
-**Work done at an inflated price.** File with the county Consumer Affairs
-office that licensed them. Nassau 516-571-2600, Suffolk 631-853-4600. File
-with BBB Scam Tracker. If you paid by card, ask your issuer about a dispute
-and be precise about what was agreed and when the number changed.
+**Work done at an inflated price, or a door fitted with no permit.** File with FDACS on 1-800-HELP-FLA, and with DBPR if the company is licensed or claimed to be. File with BBB Scam Tracker. If you paid by card, ask your issuer about a dispute and be precise about what was agreed and when the number changed.
 
-**Keep the evidence.** The advertisement or listing you called from. Texts
-and emails. The invoice. Photographs of the parts that came off. Complaints
-with documentation go somewhere. Complaints without it usually do not.
+**Keep the evidence.** The listing you called from, texts, the invoice, photographs of the parts that came off, and any form you signed. Complaints with documentation go somewhere.
 
-## Related reading
-
-- [The $29 garage door service call, explained](/blog/29-dollar-service-call-explained/)
-- [Is my garage door quote too high?](/blog/is-my-garage-door-quote-too-high/)
-- [What a fair quote includes](/blog/what-a-fair-quote-includes/)
-- [Questions to ask before hiring a garage door company](/blog/questions-to-ask-garage-door-company/)
-- [How to choose a garage door company in New York](/blog/how-to-choose-garage-door-company/)
-- [What a garage door technician actually does on a call](/blog/garage-door-technician-what-they-do/)
+Before you hire anyone, our guides on [questions to ask a garage door company](/blog/questions-to-ask-garage-door-company/), [what a fair quote includes](/blog/what-a-fair-quote-includes/) and [what a technician actually does on a call](/blog/garage-door-technician-what-they-do/) cover the rest.

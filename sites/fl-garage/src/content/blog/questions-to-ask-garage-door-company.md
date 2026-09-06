@@ -1,6 +1,6 @@
 ---
 title: "Questions to Ask Before Hiring a Garage Door Company"
-description: "Ten questions to ask a Florida garage door company on the phone before anyone is dispatched, including the wind rating and permit question, and what each evasive answer means."
+description: "Ten questions to ask a Florida garage door company before dispatch, including the wind rating and permit question, and what each evasive answer means."
 answer: "Ask for the full price of the finished repair rather than the visit, whether that includes parts and labor, what happens if more is found once the door is apart, whether there is a separate trip fee, the warranty terms, the name on the license, the arrival window, and whether the estimate will be in writing before work starts. For a new door in Florida add two more: is this door rated for my wind zone, and who pulls the permit. A spring should come back at $150 to $350 installed and a wind-rated steel door at $950 to $4,200 with the permit included."
 pubDate: 2026-08-29
 cluster: trust

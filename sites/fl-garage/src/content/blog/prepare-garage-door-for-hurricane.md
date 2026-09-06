@@ -44,7 +44,7 @@ Two limits, and they matter:
 - **The kit has to be approved for your door and your wind zone.** An approval is specific to door sizes and pressures. A kit that is approved for a 16 foot door in an inland zone is not automatically approved for the same door near the coast.
 - **In the HVHZ, the accepted route is a rated door.** Miami-Dade and Broward do not use bracing kits as the path to compliance. If you are in [Miami-Dade County](/service-areas/miami-dade-county/) or [Broward County](/service-areas/broward-county/), read [HVHZ garage doors explained](/blog/hvhz-garage-doors-explained/) before spending anything on a kit.
 
-Kits also need to be installed the way the approval describes, with the right anchors in the slab and the header, and it takes time. Fitting one the evening before landfall with whatever screws are in the drawer is not protection. Nothing makes a door hurricane proof, and a kit that is not approved for your door does not make it stronger in any way an inspector or an insurer will recognize. We cover the options in [garage door hurricane bracing kits](/blog/garage-door-hurricane-bracing-kits/).
+Kits also need to be installed the way the approval describes, with the right anchors in the slab and the header, and it takes time. Fitting one the evening before landfall with whatever screws are in the drawer is not protection. No kit makes a door immune to a storm, and a kit that is not approved for your door does not make it stronger in any way an inspector or an insurer will recognize. We cover the options in [garage door hurricane bracing kits](/blog/garage-door-hurricane-bracing-kits/).
 
 ## Step 3: the pre-season tune-up
 

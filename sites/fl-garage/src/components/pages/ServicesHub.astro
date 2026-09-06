@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import CtaBand from '../CtaBand.astro';
+import Icon from '../Icon.astro';
+import FAQ from '../FAQ.astro';
+import { services } from '../../data/services';
+import { iconFor } from '../../data/serviceIcons';
+import { ui, paths, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { svc, copy } from '../../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const c = copy(lang).servicesHub;
+
+const all = services.map((s) => svc(lang, s));
+const installSlugs = ['new-garage-door-installation', 'garage-door-tune-up', 'garage-door-opener-installation', 'smart-garage-door-opener-installation'];
+const hurricane = all.filter((s) => s.hurricane);
+const install = all.filter((s) => installSlugs.includes(s.slug));
+const repairs = all.filter((s) => !s.hurricane && !installSlugs.includes(s.slug));
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbServices, href: p.services },
+];
+---
+<BaseLayout title={c.metaTitle} description={c.metaDescription} lang={lang} altHref={paths[otherLocale(lang)].services}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{t.eyebrowServices}</span>
+        <div class="stripe-rule" aria-hidden="true"></div>
+        <h1>{c.h1}</h1>
+        <p class="lead">{c.lead}</p>
+      </div>
+
+      <AnswerBox text={c.answer} lang={lang} />
+
+      {[
+        { title: t.repairsHeading, list: repairs },
+        { title: t.hurricaneHeading, list: hurricane },
+        { title: t.installMaintenanceHeading, list: install },
+      ].map((group) => (
+        <>
+          <h2 class="group-head">{group.title}</h2>
+          <div class="grid grid-3">
+            {group.list.map((s, i) => (
+              <a href={serviceHref(lang, s.slug)} class="card service-card" data-anim="fade-up" data-anim-delay={String((i % 3) * 80)}>
+                <span class="icon"><Icon name={iconFor(s.slug)} size={30} /></span>
+                <h3>{s.name}</h3>
+                <p>{s.answer.split('. ')[0]}.</p>
+                <span class="card-price">{t.from} {money(s.priceLow)}</span>
+              </a>
+            ))}
+          </div>
+        </>
+      ))}
+
+      <div class="narrow"><PriceDisclaimer variant="block" lang={lang} /></div>
+
+      <div class="narrow"><FAQ items={c.faq} title={t.aboutOurServices} lang={lang} /></div>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .group-head { margin: 2.6rem 0 1.2rem; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+  .group-head:first-of-type { margin-top: 2rem; }
+  .narrow { max-width: var(--maxw-narrow); }
+  .service-card { display: block; text-decoration: none; }
+  .service-card:hover { text-decoration: none; }
+  .service-card:hover .icon { background: var(--c-primary); color: #fff; }
+  .service-card .icon { transition: background 0.2s ease, color 0.2s ease; }
+  .service-card h3 { color: var(--c-ink); font-size: 1.06rem; margin-bottom: 0.35rem; }
+  .service-card p { color: var(--c-body); font-size: 0.9rem; margin-bottom: 0.6rem; }
+  .card-price {
+    display: inline-block; font-weight: 800; font-size: 0.88rem;
+    color: var(--c-primary); background: var(--c-primary-light);
+    padding: 0.25rem 0.6rem; border-radius: 999px;
+  }
+</style>

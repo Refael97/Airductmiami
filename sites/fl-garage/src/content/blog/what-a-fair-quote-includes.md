@@ -1,6 +1,6 @@
 ---
 title: "What a Fair Garage Door Quote Actually Includes"
-description: "The nine things a real garage door quote contains in Florida, including the wind rating and the permit, what each one protects you from, and what it means when any of them is missing."
+description: "The nine things a real garage door quote contains in Florida, including the wind rating and permit, what each protects you from, and what a missing one means."
 answer: "A fair garage door quote states the total price of the finished repair, itemises parts and labor separately, names the part specification, states any call-out fee separately, gives the warranty on parts and labor, gives an arrival window, says what happens if more is found once the door is apart, and exists in writing before work starts. For a new door in Florida it also names the wind rating, the approval number and who pulls the permit. A spring quote should land at $150 to $350 installed and a wind-rated steel door at $950 to $4,200 with the permit included."
 pubDate: 2026-08-30
 cluster: trust

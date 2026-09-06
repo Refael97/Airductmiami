@@ -36,9 +36,6 @@ Wesley Chapel to Brandon on I-75 at five in the afternoon is an hour of a
 working day gone before anyone has touched a door.
 
 So the question answers itself. **A $29 call-out does not cover the drive.**
-It does not cover the fuel. It does not cover the fifteen minutes of
-paperwork afterwards.
-
 That is not a criticism of the number. It is a description of it. Nobody sets
 a price below cost by accident, and no company in this trade is running a
 charity for Florida homeowners. **The number is not the product. Getting into
@@ -47,16 +44,12 @@ buy that.
 
 ## What the fee is actually buying
 
-For the company, three things.
+For the company, two things.
 
 **Access.** A technician standing in your garage is in a completely different
 commercial position from a voice on the phone. You have already waited in for
 the appointment. Your car may be trapped. The comparison shopping you would
 have done at a keyboard is now much harder to do with somebody watching.
-
-**Commitment.** You have made a decision, however small. Behavioural research
-on commitment and consistency is not controversial, and the trade knows it
-without needing to read the literature.
 
 **Disassembly.** This is the important one. Once the door is apart, the choice
 is no longer "this company or another company". It is "say yes to this
@@ -166,12 +159,6 @@ an advertised low service fee, an inflated assessment of what the door needs,
 and pressure applied at the moment the customer is least able to compare
 prices.
 
-The BBB's warning signs are worth knowing because several of them are
-checkable before anyone arrives. Generic company names that are not
-registered with the state. No genuine physical premises, or an address that
-does not correspond to anything. A phone number and an email as the only
-contact route. High pressure framing that the repair must happen now.
-
 Its core advice is the same as ours and is worth more than any of the rest:
 **get more than one quote**, because the second number is what makes the
 first one legible.
@@ -195,12 +182,6 @@ dispatch carries a premium of $150 to $300, that premium is stated before we
 dispatch, and it applies to the dispatch only. **The repair itself is quoted
 at the same published price it would carry on any other day of the year.**
 
-Publishing the numbers costs us the negotiating advantage that arriving with
-an unknown price would give us. That is the point. If you can check our
-number against a competitor's from your kitchen table at eleven at night,
-without letting anyone into your garage first, then the price is doing the
-work rather than the pressure.
-
 You get a written estimate before anything is touched, and that estimate is
 what you pay.
 
@@ -209,7 +190,9 @@ what you pay.
 **Work not started.** Pay the agreed fee, decline, and get a second quote.
 You owe nothing further.
 
-**Work already done and the price was inflated.** File a complaint with the
+**Work already done and the price was inflated.** Keep the advertisement you
+called from, any text or email, the invoice and photographs of the parts
+removed, because complaints with documentation get somewhere. File it with the
 Florida Department of Agriculture and Consumer Services at 1-800-HELP-FLA
 (1-800-435-7352). If the company holds a state license, a complaint can also
 go to the Department of Business and Professional Regulation. If you paid by
@@ -217,11 +200,6 @@ card, ask your issuer about a dispute, and be specific about what was agreed
 and when the number changed. Report it to the
 [BBB Scam Tracker](https://www.bbb.org/scamtracker) so the next person
 searching the company name finds it.
-
-**Keep everything.** The advertisement or listing you called from. Any text
-or email. The invoice. Photographs of the parts removed, if you still have
-them. Complaints with documentation get somewhere. Complaints without it
-usually do not.
 
 ## Related reading
 
