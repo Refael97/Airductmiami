@@ -694,8 +694,8 @@ export const ui: Record<Locale, Strings> = {
     brandSub: 'Precios publicados · Florida',
     navServices: 'Servicios',
     navPrices: 'Precios',
-    navDoorsOpeners: 'Puertas y Motores',
-    navAreas: 'Áreas de Servicio',
+    navDoorsOpeners: 'Puertas y motores',
+    navAreas: 'Áreas de servicio',
     navGuides: 'Guías',
     navFaq: 'Preguntas',
     headerCta: 'Cotización gratis',
@@ -710,7 +710,7 @@ export const ui: Record<Locale, Strings> = {
     megaBrands: 'Marcas que atendemos',
     megaNotSure: '¿No sabe cuál le conviene?',
     megaNotSureNote:
-      'La zona de viento, el espacio sobre la puerta, el aire salino y la asociación de vecinos reducen las opciones más que cualquier catálogo.',
+      'La zona de viento, el espacio sobre la puerta, el aire salino y la asociación de propietarios reducen las opciones más que cualquier catálogo.',
     megaBuyersGuide: 'Guía de compra',
     megaSameDay: 'El mismo día, los siete días',
     megaSameDayNote:
@@ -817,8 +817,8 @@ export const ui: Record<Locale, Strings> = {
     noise: 'Ruido',
     bestFor: 'Ideal para',
     compareAll: 'Comparar todas las opciones',
-    goodAt: 'En qué es bueno',
-    badAt: 'En qué es malo',
+    goodAt: 'Lo que hace bien',
+    badAt: 'Lo que hace mal',
     otherMaterials: 'Otros materiales',
     otherDriveTypes: 'Otros tipos de motor',
     readyToFit: '¿Listo para instalar uno?',
@@ -828,12 +828,12 @@ export const ui: Record<Locale, Strings> = {
     openerInstall: 'Instalación de motor',
     materialsHeading: 'Materiales de puertas de garaje',
     materialsLead: 'Cinco materiales, ordenados según la frecuencia con que son la respuesta correcta en Florida.',
-    openersHeading: 'Tipos de motor',
+    openersHeading: 'Tipos de motor de puerta de garaje',
     openersLead:
-      'El tipo de transmisión decide qué tan ruidoso es el motor y cómo aguanta un garaje de Florida en agosto.',
+      'El tipo de transmisión decide qué tan ruidoso es el motor y cómo aguanta el calor de un garaje de Florida en agosto.',
     brandsHeading: 'Marcas que atendemos',
     brandsLead: 'Las marcas que más vemos en los garajes de Florida, y lo que suele fallar en cada una.',
-    installed: 'instalada',
+    installed: 'con instalación',
     choosingQuestions: 'Preguntas para elegir',
     buyersCtaHeading: '¿No sabe cuál le queda a su garaje?',
     buyersCtaText:
@@ -898,7 +898,7 @@ export const ui: Record<Locale, Strings> = {
     },
     clusterBlurbs: {
       hurricane: {
-        label: 'Huracanes, código e seguro',
+        label: 'Huracanes, código y seguro',
         blurb: 'Puertas certificadas, permisos, refuerzos, daños por tormenta y el crédito de mitigación de viento, explicados con claridad.',
       },
       cost: { label: 'Cuánto cuestan las cosas', blurb: 'Números reales de Florida, no promedios nacionales.' },
@@ -956,7 +956,7 @@ export const ui: Record<Locale, Strings> = {
     aboutGettingQuote: 'Sobre cómo obtener una cotización',
     errFill: (field) => `Por favor complete ${field} antes de enviar.`,
     errFormat: 'revise el formato.',
-    errFast: 'Eso se envió más rápido de lo que se puede llenar un formulario. Espere un momento y vuelva a presionar enviar.',
+    errFast: 'Ese envío fue demasiado rápido para un formulario llenado a mano. Espere un momento y vuelva a presionar enviar.',
     errZip:
       'Ese código postal está fuera de Florida. Revíselo, o díganos en el mensaje dónde está la puerta realmente.',
     errPitch: 'Este formulario es solo para trabajos de puertas de garaje. Para cualquier otra cosa, use el correo del pie de página.',
