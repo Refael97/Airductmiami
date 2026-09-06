@@ -32,4 +32,10 @@ never stops improving.
 | Site | Vertical | Area | Locales | Status |
 |---|---|---|---|---|
 | `fl-airduct` — Florida Breeze Air Duct | air-duct-cleaning | Florida | en, es | Live, in maintenance |
-| `ny-garage` — Garage Door Fixers | garage-door-repair | New York metro | en (es planned) | Built, 131 pages, blocked on domain and phone. See `sites/ny-garage/HANDOVER.md` |
+| `fl-garage` — Garage Door Fixers | garage-door-repair | Florida | en, es | Rebuilt for Florida 6 Sep 2026, 265 pages. Blocked on the Netlify base directory and a brand name check. See `sites/fl-garage/HANDOVER.md` |
+
+### Retired
+
+| Site | What happened |
+|---|---|
+| `ny-garage` — Garage Door Fixers, New York metro | Launched August 2026, one click in three months. Re-pointed at Florida on 6 September 2026 on the same domain, because Florida had proven demand and fulfillment partners and New York had neither. The template survived; every local word was rewritten. Its research brief is kept at `research/ny-garage/BRIEF.md` as the record of how the template was designed |
