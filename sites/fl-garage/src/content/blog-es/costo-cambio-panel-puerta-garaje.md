@@ -1,6 +1,6 @@
 ---
 title: "Cambiar un panel de puerta de garaje: $250 a $800"
-description: "Lo que cuesta cambiar una sección dañada de puerta de garaje en Florida, por qué tiene que coincidir con la certificación de viento y cuándo conviene una puerta nueva."
+description: "Lo que cuesta cambiar una sección dañada en Florida, por qué tiene que coincidir con la certificación de viento y cuándo conviene una puerta nueva."
 answer: "Cambiar un panel de puerta de garaje en Florida cuesta de $250 a $800 por sección instalada, según la puerta, el material y si el perfil se sigue fabricando. En una puerta certificada para viento o resistente a impactos, la sección de repuesto tiene que ser la del fabricante para que la certificación siga siendo válida. Si el modelo está descontinuado, una puerta completa desde $950 suele ser mejor resultado que un panel que no combina."
 pubDate: 2026-08-30
 enSlug: "garage-door-panel-replacement-cost"

@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje nueva en Florida: $950 a $4,200 instalada"
-description: "Precios de puertas de garaje nuevas instaladas en Florida por material y certificación, viento contra impacto, qué significan HVHZ y NOA, y por qué el permiso va incluido."
+description: "Precios de puertas de garaje nuevas instaladas en Florida por material y certificación, viento contra impacto, y por qué el permiso va incluido."
 answer: "Una puerta de garaje nueva instalada en Florida cuesta de $950 a $4,200 si es una puerta sencilla de acero certificada para viento, con el permiso incluido en la cotización. Una puerta resistente a impactos, o cualquier puerta dentro de la Zona de Huracanes de Alta Velocidad de Miami-Dade y Broward, va de $1,800 a $6,500. Toda puerta nueva en Florida debe estar certificada para la presión de viento del sitio, así que no existe una opción sin certificar más barata. El retiro de la puerta vieja va incluido, el motor nuevo no."
 pubDate: 2026-09-04
 enSlug: "new-garage-door-cost-florida"

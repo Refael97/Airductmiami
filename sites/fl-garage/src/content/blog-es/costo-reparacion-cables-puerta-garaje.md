@@ -1,6 +1,6 @@
 ---
 title: "Costo de reparar cables de puerta de garaje: $95 a $300"
-description: "Lo que cuesta arreglar un cable roto, oxidado o salido en Florida, la diferencia entre un ajuste de $85 y un trabajo de cable y tambor de $400, y por qué fallan los cables."
+description: "Lo que cuesta arreglar un cable roto, oxidado o salido en Florida, la diferencia entre un ajuste de $85 y un cable con tambor de $400, y por qué fallan."
 answer: "Reparar los cables de una puerta de garaje en Florida cuesta de $95 a $300 por el par instalado. Si el cable se salió del tambor pero no está dañado, el ajuste de tensión cuesta de $85 a $140. Si el tambor está rayado y también hay que cambiarlo, el trabajo va de $225 a $400. Los dos cables se cambian normalmente juntos, y en la Florida costera el óxido en el soporte inferior es la razón más común de falla."
 pubDate: 2026-08-28
 enSlug: "garage-door-cable-repair-cost"

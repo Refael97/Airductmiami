@@ -83,7 +83,7 @@ Si su puerta es de esa época, un [mantenimiento](/es/servicios/garage-door-tune
 
 ## Después de una tormenta
 
-Cuando una puerta de la zona HVHZ falla en una tormenta, el reemplazo tiene que ser una puerta con NOA y con permiso, y las puertas certificadas escasean durante meses después de un huracán mayor. La [reparación por daño de tormenta](/es/servicios/storm-damage-garage-door-repair/) empieza en $150 para la evaluación y el aseguramiento de la abertura, y el reemplazo se cotiza aparte por escrito, con el tiempo de entrega declarado. Qué hacer en las primeras horas está en [daño de tormenta en la puerta de garaje: qué hacer](/es/blog/dano-tormenta-puerta-garaje-que-hacer/).
+Cuando una puerta de la zona HVHZ falla en una tormenta, el reemplazo tiene que ser una puerta con NOA y con permiso, y las puertas certificadas escasean durante meses después de un huracán mayor. La [reparación por daño de tormenta](/es/servicios/storm-damage-garage-door-repair/) empieza en $150 para la evaluación y el aseguramiento de la abertura, y el reemplazo se cotiza aparte por escrito, con el tiempo de entrega declarado. Qué hacer en las primeras horas está en [daño de tormenta en la puerta de garaje: qué hacer](/es/blog/dano-por-tormenta-que-hacer/).
 
 ## Para seguir leyendo
 

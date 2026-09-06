@@ -1,6 +1,6 @@
 ---
 title: "La visita de $29 para su puerta de garaje, explicada"
-description: "Por qué una visita de $29 no alcanza a cubrir el viaje, dónde se hace de verdad el dinero y cómo revisar a una empresa en Florida antes de que desarme su puerta."
+description: "Por qué una visita de $29 no cubre el viaje, dónde se hace de verdad el dinero y cómo revisar a una empresa en Florida antes de que desarme su puerta."
 answer: "Una visita de servicio de $29 o $49 no cubre lo que cuesta la visita. Una camioneta, la gasolina, el seguro y una hora de un técnico cuestan mucho más que eso, así que el número existe para poner a alguien en su entrada. El margen se hace en las piezas que se cotizan después, cuando la puerta ya está desarmada y usted ya está comprometido. Nosotros no cobramos cargo de visita, y la reparación se cotiza a su precio publicado antes de que salga el técnico."
 pubDate: 2026-08-26
 enSlug: "29-dollar-service-call-explained"

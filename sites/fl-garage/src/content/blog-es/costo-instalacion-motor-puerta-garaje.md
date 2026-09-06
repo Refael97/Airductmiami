@@ -1,6 +1,6 @@
 ---
 title: "Instalar un motor de puerta de garaje: $275 a $600"
-description: "Lo que cuesta un motor de puerta de garaje nuevo instalado en Florida, cómo se comparan cadena, banda, tornillo, directo y jackshaft, y por qué importa la batería."
+description: "Lo que cuesta un motor de puerta de garaje nuevo instalado en Florida, cómo se comparan cadena, banda, tornillo y jackshaft, y por qué importa la batería."
 answer: "Instalar un motor de puerta de garaje en Florida cuesta de $275 a $600 por un equipo estándar sobre riel estándar, ya instalado. El de cadena es el más económico, de $275 a $450, el de banda va de $350 a $600, y un jackshaft de pared para garajes de poca altura va de $450 a $800. La batería de respaldo agrega $60 a $150 y vale la pena en un estado donde los apagones por tormenta son rutina. El retiro del equipo viejo va incluido."
 pubDate: 2026-08-29
 enSlug: "garage-door-opener-installation-cost"

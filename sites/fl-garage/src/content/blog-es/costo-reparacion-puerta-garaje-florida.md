@@ -1,6 +1,6 @@
 ---
 title: "Reparación de puerta de garaje en Florida: $95 a $600"
-description: "Cada reparación común de puerta de garaje con su precio en Florida, qué sube cada número y cómo el código de huracanes, los permisos y el salitre cambian la cuenta."
+description: "Cada reparación común de puerta de garaje con su precio en Florida, qué sube cada número y cómo el código de huracanes y el salitre cambian la cuenta."
 answer: "Reparar una puerta de garaje en Florida cuesta entre $95 y $600 en la mayoría de los trabajos. El cambio de resortes va de $150 a $350 por resorte, la reparación de cables de $95 a $300, la reparación del motor de $95 a $300, la corrección de una puerta fuera del riel de $140 a $600 y el cambio de un panel de $250 a $800. Una puerta nueva certificada para viento cuesta de $950 a $4,200 instalada con el permiso incluido, y una puerta resistente a impactos de $1,800 a $6,500. La visita de emergencia agrega $150 a $300."
 pubDate: 2026-09-01
 enSlug: "garage-door-repair-cost-florida"

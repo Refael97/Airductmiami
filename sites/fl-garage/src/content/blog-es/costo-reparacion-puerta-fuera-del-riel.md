@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje fuera del riel: $140 a $600 en Florida"
-description: "Lo que cuesta regresar una puerta de garaje a su riel en Florida, por qué el rango es tan amplio, cómo influyen las tormentas y el óxido, y por qué forzarla sale más caro."
+description: "Lo que cuesta regresar una puerta de garaje a su riel en Florida, por qué el rango es tan amplio y por qué seguir forzándola sale mucho más caro."
 answer: "Regresar una puerta de garaje a su riel en Florida cuesta de $140 a $600. Una puerta que se salió limpia, sin nada doblado, queda en la parte baja del rango. Una puerta que se siguió forzando con el motor después de salirse, doblando riel y paneles, llega a la parte alta, y una que necesita panel nuevo cuesta más. En Florida la causa habitual es un cable oxidado que se revienta, el golpe de un vehículo o la presión del viento durante una tormenta."
 pubDate: 2026-09-05
 enSlug: "off-track-garage-door-repair-cost"

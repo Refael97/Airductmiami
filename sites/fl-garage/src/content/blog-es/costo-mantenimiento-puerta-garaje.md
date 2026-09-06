@@ -1,6 +1,6 @@
 ---
 title: "Mantenimiento de puerta de garaje en Florida: $85 a $160"
-description: "Lo que cuesta el mantenimiento anual de una puerta de garaje en Florida, la lista completa de lo que se revisa, por qué abril o mayo es el mes, y qué le ahorra después."
+description: "Lo que cuesta el mantenimiento anual de una puerta de garaje en Florida, la lista completa de lo que se revisa y por qué abril o mayo es el mes."
 answer: "El mantenimiento anual de una puerta de garaje en Florida cuesta de $85 a $160. Debe incluir prueba de balance, revisión de cables y tambores, revisión de rodillos y bisagras, apriete de herrajes, alineación del riel, lubricación, alineación de sensores de seguridad, revisión del sello inferior y ajuste correcto de la fuerza y los límites de recorrido del motor. Agéndelo en abril o mayo, antes de que empiece la temporada de huracanes el 1 de junio, y dos veces al año a pocas millas de la costa."
 pubDate: 2026-09-03
 enSlug: "garage-door-tune-up-cost"

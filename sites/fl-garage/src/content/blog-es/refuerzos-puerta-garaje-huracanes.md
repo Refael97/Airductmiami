@@ -91,7 +91,7 @@ Los anclajes se ponen en un día normal, semanas o meses antes de que algo tenga
 
 Practique una vez. Coloque los postes en una tarde seca de mayo, con la puerta cerrada y el motor desconectado en liberación manual, y tome el tiempo. Confirme que los postes libran el riel del motor y el sello inferior, y guárdelos donde los pueda alcanzar a oscuras. Nuestra guía sobre [cómo preparar la puerta de garaje para un huracán](/es/blog/preparar-puerta-garaje-huracan/) trae la lista completa, incluida la [liberación manual](/es/blog/liberacion-manual-puerta-garaje/) y dónde dejar el carro.
 
-Después de la tormenta, retire los postes antes de usar el motor. Una puerta que aguantó presión se revisa antes de que vuelva a ciclar: lea [qué hacer con el daño de tormenta](/es/blog/dano-tormenta-puerta-garaje-que-hacer/) y llámenos si las secciones están arqueadas o el riel está doblado.
+Después de la tormenta, retire los postes antes de usar el motor. Una puerta que aguantó presión se revisa antes de que vuelva a ciclar: lea [qué hacer con el daño de tormenta](/es/blog/dano-por-tormenta-que-hacer/) y llámenos si las secciones están arqueadas o el riel está doblado.
 
 ## Lo que no le vamos a decir
 

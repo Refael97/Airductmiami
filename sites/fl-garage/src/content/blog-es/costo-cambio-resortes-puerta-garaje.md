@@ -1,6 +1,6 @@
 ---
 title: "Cambio de resortes en Florida: $150 a $350 por resorte"
-description: "Lo que cuesta cambiar un resorte roto de puerta de garaje en Florida, por qué varían tanto las cotizaciones, por qué fallan aquí por ciclos y salitre, y qué número dudar."
+description: "Lo que cuesta cambiar un resorte roto en Florida, por qué varían tanto las cotizaciones, por qué fallan aquí por ciclos y salitre, y qué número dudar."
 answer: "Cambiar un resorte de puerta de garaje en Florida cuesta de $150 a $350 por resorte instalado. Hacer los dos al mismo tiempo agrega $120 a $250 en lugar de duplicar el precio, porque casi toda la mano de obra se comparte, así que el par sale entre $270 y $600. Un resorte estándar dura cerca de 10,000 ciclos, entre 7 y 10 años en una puerta de Florida. Una cotización muy por encima de $700 por dos resortes estándar vale la pena confirmarla con una segunda opinión."
 pubDate: 2026-09-02
 enSlug: "garage-door-spring-replacement-cost"
