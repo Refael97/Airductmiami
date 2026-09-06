@@ -1,6 +1,6 @@
 ---
 title: "Cerraduras y seguridad de la puerta de garaje en Florida"
-description: "Pasador corredizo, manija en T, modo vacaciones y cerrojo automático, el error que arruina un motor, garajes abiertos en comunidades cerradas y temporada de tormentas."
+description: "Pasador corredizo, manija en T y modo vacaciones, el error que arruina un motor, y por qué un pasador no hace nada contra la presión del viento."
 answer: "Si tiene motor automático, el motor es su cerradura: el trole mantiene la puerta abajo y una puerta motorizada no se puede levantar desde afuera. Los pasadores corredizos manuales son para puertas sin motor, y poner uno con el motor conectado dobla paneles y truena el brazo la primera vez que alguien presiona el control. En Florida los problemas reales de seguridad son la puerta que se queda abierta todo el día en una comunidad cerrada y la puerta que hay que asegurar antes de una tormenta."
 pubDate: 2026-08-31
 enSlug: garage-door-locks-and-security

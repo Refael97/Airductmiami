@@ -72,9 +72,9 @@ Un supresor de picos en el contacto del motor es barato y vale la pena ponerlo e
 
 Después de una tormenta se va la luz, y una puerta de garaje sin batería de respaldo es una pared. Aquí es donde Florida se distingue del resto: el apagón no es un evento raro, es una temporada.
 
-**Pruebe la liberación manual en mayo**, no durante el apagón. Con la puerta cerrada, jale el cordón rojo y levante la puerta con la mano. Si sube fácil y se queda donde la deja, los resortes están balanceados y usted puede salir. Si pesa o se cae, los resortes están débiles, y eso hay que saberlo ahora y no con un huracán encima. Cuando regrese la luz, reconecte jalando el cordón hacia el motor y corriendo la puerta una vez.
+**Pruebe la liberación manual en mayo**, no durante el apagón. Con la puerta cerrada, jale el cordón rojo y levante la puerta con la mano. Si sube fácil y se queda donde la deja, los resortes están balanceados y usted puede salir. Si pesa o se cae, los resortes están débiles, y eso hay que saberlo ahora y no con un huracán encima. Nuestra guía sobre [cómo usar la liberación manual](/es/blog/liberacion-manual-puerta-garaje/) explica cómo reconectar después.
 
-**La batería de respaldo** agrega de $60 a $150 a cualquier motor nuevo y corre la puerta un par de días de uso normal sin luz. En un [motor inteligente](/es/servicios/smart-garage-door-opener-installation/) de $350 a $750 casi siempre viene integrada, junto con una aplicación de teléfono que le dice si la puerta está cerrada cuando usted está evacuado a tres condados de distancia.
+**La batería de respaldo** agrega de $60 a $150 a cualquier motor nuevo y corre la puerta un par de días de uso normal sin luz. En un [motor inteligente](/es/servicios/smart-garage-door-opener-installation/) de $350 a $750 casi siempre viene integrada, junto con una aplicación de teléfono que le dice si la puerta está cerrada cuando usted está evacuado a tres condados de distancia. Nuestra guía sobre [la batería de respaldo para apagones](/es/blog/respaldo-de-bateria-apagones/) explica qué buscar.
 
 ## Resortes: más ciclos, no más calor
 
@@ -91,7 +91,7 @@ Todo lo de abajo toma media hora y previene casi todo lo anterior, y además sir
 - **Apriete los herrajes.** Bisagras, soportes del riel, montaje del motor.
 - **Pruebe la liberación manual.**
 - **Supresor de picos** en el contacto del motor.
-- **Confirme que la puerta esté certificada.** Si no lo está, nuestra guía sobre los [refuerzos para puerta de garaje](/es/blog/refuerzos-puerta-garaje-huracanes/) es lo siguiente que conviene leer.
+- **Confirme que la puerta esté certificada.** Si no lo está, nuestra guía sobre [cómo preparar la puerta de garaje para un huracán](/es/blog/preparar-puerta-garaje-huracan/) es lo siguiente que conviene leer.
 
 O agende un [mantenimiento](/es/servicios/garage-door-tune-up/) de $85 a $160 y lo hacemos todo nosotros, más los ajustes de fuerza y de límites del motor. Cubrimos el estado, de [Palm Beach y la Treasure Coast](/es/areas-de-servicio/palm-beach-treasure-coast/) a [Tampa Bay](/es/areas-de-servicio/tampa-bay/), y mayo se llena.
 

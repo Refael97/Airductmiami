@@ -90,7 +90,7 @@ Cerca de cualquiera de las dos costas, pida herrajes galvanizados o de acero ino
 
 ## Lo que nunca debe tocar
 
-Los resortes de torsión, los cables de levante y los soportes inferiores. Cargan toda la tensión del sistema de resortes incluso con la puerta cerrada, y cada año lesionan gente. Mire, no toque, y llame si lo que ve se ve mal. Nuestra guía sobre [qué hacer cuando se rompe un resorte](/es/blog/que-hacer-resorte-roto/) explica qué pasa realmente cuando eso sale mal.
+Los resortes de torsión, los cables de levante y los soportes inferiores. Cargan toda la tensión del sistema de resortes incluso con la puerta cerrada, y cada año lesionan gente. Mire, no toque, y llame si lo que ve se ve mal. Nuestra guía sobre [por qué nunca debe cambiar usted mismo un resorte de torsión](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/) explica qué pasa realmente cuando eso sale mal.
 
 ## Qué agrega un mantenimiento profesional
 

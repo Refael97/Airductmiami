@@ -1,6 +1,6 @@
 ---
 title: "¿Cuándo un motor de puerta de garaje ya está muy viejo?"
-description: "La línea de 1993 que más importa, qué le hace el calor de Florida a las tarjetas y engranes viejos, cómo fechar el suyo y cuándo repararlo deja de tener sentido."
+description: "La línea de 1993, qué le hace el calor de Florida a las tarjetas y engranes viejos, cómo fechar el suyo y cuándo repararlo deja de tener sentido."
 answer: "Un motor de puerta de garaje fabricado antes de enero de 1993 no tiene sensores de fotocelda y debe cambiarse funcione o no. Pasados unos quince años en un garaje de Florida, donde el verano supera los 100°F y cocina tarjetas lógicas y engranes de plástico, la disponibilidad de piezas decide la pregunta. Cualquier reparación que pase de la mitad del precio de una unidad nueva, que cuesta de $275 a $600 instalada, no vale la pena."
 pubDate: 2026-08-29
 enSlug: old-garage-door-opener-safety

@@ -102,7 +102,7 @@ Vaya en este orden.
 
 Una cosa vale la pena hacerla mientras la escalera está afuera.
 
-**Borre todo si acaba de mudarse.** En Florida hay muchas mudanzas, y usted no tiene idea de cuántos controles repartió el dueño anterior con los años, ni cuáles limpiadores, jardineros y empresas de piscina todavía tienen uno. Deje Learn apretado seis segundos, borre todo y programe solo los controles que tenga en la mano. Esto toma diez minutos y es la mejor acción de seguridad disponible para quien acaba de comprar una casa.
+**Borre todo si acaba de mudarse.** En Florida hay muchas mudanzas, y usted no tiene idea de cuántos controles repartió el dueño anterior con los años, ni cuáles limpiadores, jardineros y empresas de piscina todavía tienen uno. Deje Learn apretado seis segundos, borre todo y programe solo los controles que tenga en la mano. Esto toma diez minutos y es la mejor acción de seguridad disponible para quien acaba de comprar una casa. Nuestra guía sobre [cerraduras y seguridad de la puerta de garaje](/es/blog/cerraduras-y-seguridad-puerta-garaje/) cubre el resto.
 
 ## Cuando esto no es un problema de programación
 

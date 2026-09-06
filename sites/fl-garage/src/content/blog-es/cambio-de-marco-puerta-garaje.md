@@ -98,7 +98,7 @@ Una puerta de garaje nueva se instala en el vano que usted tiene. Sus soportes d
 - La certificación anotada en el permiso describe una puerta que ya no existe tal como quedó instalada
 - El burlete no puede sellar, y el agua sigue entrando alrededor de una puerta que usted acaba de pagar
 
-Preferimos cotizar el marco y la puerta juntos y que usted entienda por qué, a montar una buena puerta sobre mala madera y regresar antes del año. El permiso de la puerta lo tramita un contratista con licencia y el inspector revisa la instalación terminada, incluidos los anclajes.
+Preferimos cotizar el marco y la puerta juntos y que usted entienda por qué, a montar una buena puerta sobre mala madera y regresar antes del año. Nuestra guía sobre el [permiso de puerta de garaje en Florida](/es/blog/permiso-puerta-garaje-florida/) explica qué revisa el inspector.
 
 ## Qué cuesta
 

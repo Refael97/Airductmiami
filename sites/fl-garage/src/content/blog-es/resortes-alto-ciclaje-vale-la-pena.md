@@ -66,7 +66,7 @@ En una puerta ocupada, esto es aritmética simple.
 
 **Comunidades de carritos de golf y de 55 y más.** Varios ciclos al día, todos los días, todo el año.
 
-**Puertas pesadas.** La madera, el vidrio resistente a impactos y las puertas de acero certificadas contra huracanes, más pesadas y comunes en el [condado de Miami-Dade](/es/areas-de-servicio/miami-dade-county/) y el [condado de Broward](/es/areas-de-servicio/broward-county/), hacen trabajar más a sus resortes.
+**Puertas pesadas.** La madera, el vidrio resistente a impactos y las puertas de acero certificadas contra huracanes, más pesadas y comunes en el [condado de Miami-Dade](/es/areas-de-servicio/miami-dade-county/) y el [condado de Broward](/es/areas-de-servicio/broward-county/), hacen trabajar más a sus resortes. Nuestra guía sobre [cuánto pesa una puerta de garaje](/es/blog/cuanto-pesa-una-puerta-de-garaje/) explica por qué.
 
 **Puertas que piensa conservar.** Si a la puerta le quedan quince años, un resorte que dura nueve tiene sentido.
 
@@ -78,7 +78,7 @@ Si su puerta corre dos veces al día, un resorte estándar dura alrededor de tre
 
 Si el espacio libre en el tubo de torsión es de verdad justo, el tamaño físico puede descartarlo. Los garajes de puerta sencilla con poca altura libre de los años cincuenta a setenta son donde sale este tema.
 
-Si la puerta ya está al final de su vida, gaste el dinero en la [instalación de puerta nueva](/es/servicios/new-garage-door-installation/) y no en resortes que la van a sobrevivir.
+Si la puerta ya está al final de su vida, gaste el dinero en la [puerta nueva](/es/blog/reparar-o-reemplazar-puerta-garaje/) y no en resortes que la van a sobrevivir.
 
 ## El aire salino cambia el número
 

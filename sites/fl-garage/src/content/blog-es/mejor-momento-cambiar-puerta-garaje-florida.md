@@ -42,7 +42,7 @@ Cada año el 1 de junio abre la temporada, el noticiero lo cubre y el teléfono 
 
 Nada de eso es una crisis. Una puerta pedida en junio todavía llega bastante antes de las semanas más ocupadas de la temporada, que históricamente son de agosto a octubre. Pero usted espera más por la misma puerta y paga el mismo precio, y si se forma una tormenta en el Golfo mientras su puerta viene en camino, su fecha de instalación se mueve.
 
-El lado del [mantenimiento](/es/servicios/garage-door-tune-up/) es más fácil. A $85 a $160 es una sola visita, y abril o mayo es el mes correcto para hacerla.
+El lado del [mantenimiento](/es/servicios/garage-door-tune-up/) es más fácil. A $85 a $160 es una sola visita, y abril o mayo es el mes correcto para hacerla. La lista previa a la temporada está en [cómo preparar la puerta de garaje para un huracán](/es/blog/preparar-puerta-garaje-huracan/), armada alrededor de esa visita.
 
 ## Qué le hace una tormenta al mercado
 
@@ -79,11 +79,11 @@ No toda puerta hay que cambiarla antes de junio. Las que sí:
 - **Puertas con dos o más secciones dañadas.** El cambio de panel va de $250 a $800 por sección cuando el perfil se sigue fabricando. Dos secciones y riel doblado normalmente es un reemplazo.
 - **Puertas en la zona HVHZ sin NOA.** En Miami-Dade y Broward la vía aceptada para una abertura certificada es una puerta certificada, no un kit de refuerzos. Vea [puertas de garaje en la zona HVHZ](/es/blog/puertas-garaje-hvhz-explicado/).
 
-Las puertas que no necesitan cambio antes de junio son las certificadas con herrajes sanos. Esas reciben un mantenimiento.
+Las puertas que no necesitan cambio antes de junio son las certificadas con herrajes sanos. Esas reciben un mantenimiento, y [reparar o reemplazar](/es/blog/reparar-o-reemplazar-puerta-garaje/) cubre la decisión con más detalle.
 
 ## El permiso y el calendario
 
-Cambiar una puerta de garaje en Florida requiere un permiso de construcción tramitado por un contratista con licencia, con la certificación documentada en el permiso, y el condado inspecciona la instalación terminada. En primavera todo el ciclo, de la solicitud al permiso cerrado, cabe dentro del tiempo de entrega de la puerta. Después de una tormenta no siempre, y un permiso abierto esperando inspección es una cosa más que administrar. Nosotros tramitamos el permiso y va incluido en la cotización.
+Cambiar una puerta de garaje en Florida requiere un permiso de construcción tramitado por un contratista con licencia, con la certificación documentada en el permiso, y el condado inspecciona la instalación terminada. En primavera todo el ciclo, de la solicitud al permiso cerrado, cabe dentro del tiempo de entrega de la puerta. Después de una tormenta no siempre, y un permiso abierto esperando inspección es una cosa más que administrar. Nosotros tramitamos el permiso y va incluido en la cotización. El proceso está en [permiso de puerta de garaje en Florida](/es/blog/permiso-puerta-garaje-florida/).
 
 ## Qué hacer esta semana
 
@@ -97,5 +97,5 @@ Si acaba de pasar una tormenta y la puerta está dañada, la [reparación por da
 
 - [Costo de una puerta de garaje nueva en Florida](/es/blog/costo-puerta-garaje-nueva-florida/)
 - [Costo de puerta de garaje para huracanes](/es/blog/costo-puerta-garaje-para-huracanes/)
-- [Certificada contra viento frente a resistente a impactos](/es/blog/certificada-viento-vs-resistente-impactos/)
+- [Mejor material de puerta de garaje para Florida](/es/blog/mejor-material-puerta-garaje-florida/)
 - [Costo del mantenimiento de puerta de garaje](/es/blog/costo-mantenimiento-puerta-garaje/)

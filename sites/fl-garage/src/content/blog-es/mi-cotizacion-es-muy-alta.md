@@ -1,6 +1,6 @@
 ---
 title: "¿Mi cotización de puerta de garaje es muy alta?"
-description: "Una cotización en la mano y ninguna idea de si es justa. Los rangos de Florida contra los que compararla, cuándo un precio alto es honesto y qué preguntas lo resuelven."
+description: "Una cotización en la mano y ninguna idea de si es justa. Los rangos de Florida para compararla, cuándo un precio alto es honesto y qué preguntas lo resuelven."
 answer: "Compare la cotización contra el mercado de Florida: $150 a $350 por resorte instalado, $270 a $600 por los dos, $95 a $300 por cables, $275 a $600 por un motor instalado, $950 a $4,200 por una puerta certificada contra viento y $1,800 a $6,500 por una puerta para huracanes, con permiso incluido. Si una cotización queda muy arriba de esos rangos, pregunte qué piezas, qué certificación o qué acceso concretos la justifican antes de aceptar. Una prima de emergencia de $150 a $300 es legítima solo si se la dijeron antes de mandar al técnico."
 pubDate: 2026-08-28
 enSlug: is-my-garage-door-quote-too-high

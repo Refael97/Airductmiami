@@ -73,7 +73,7 @@ La sal no necesita llegar a la puerta como rocío. El viento del mar la carga va
 
 **Resortes galvanizados o recubiertos.** Resisten la corrosión en las espiras por poco dinero extra, y aquí importan más que la calificación de ciclos en la mayoría de las puertas. Nuestra guía sobre [cuánto duran los resortes de una puerta de garaje en Florida](/es/blog/cuanto-duran-resortes-puerta-garaje/) explica por qué.
 
-**Un acabado de fábrica intacto.** En una puerta de acero, el recubrimiento es la protección. Retoque los rayones pronto con pintura del mismo color en lugar de dejar acero expuesto. Para una puerta nueva cerca del agua, el aluminio o la fibra de vidrio sacan al panel del problema, y nuestra [guía de compra](/es/guia-de-compra/) los compara.
+**Un acabado de fábrica intacto.** En una puerta de acero, el recubrimiento es la protección. Retoque los rayones pronto con pintura del mismo color en lugar de dejar acero expuesto. Para una puerta nueva cerca del agua, el aluminio o la fibra de vidrio sacan al panel del problema, y nuestra guía sobre el [mejor material de puerta de garaje para Florida](/es/blog/mejor-material-puerta-garaje-florida/) los compara.
 
 **Un sello inferior en buen estado.** Mantiene el agua fuera de la sección de abajo y lejos de los soportes.
 

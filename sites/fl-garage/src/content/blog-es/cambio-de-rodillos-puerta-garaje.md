@@ -81,6 +81,6 @@ Un mantenimiento con rodillos nuevos incluye la revisión del riel de arriba, la
 
 Los rodillos de abajo van en los soportes inferiores, en las dos esquinas bajas de la puerta. Esos soportes anclan los cables de levante y están bajo toda la tensión del resorte incluso con la puerta cerrada. Aflojar el tornillo de un soporte inferior con los resortes cargados es la forma en que la gente pierde dedos.
 
-Cambie usted mismo los rodillos de en medio si quiere, uno por uno, con la puerta cerrada y el motor desconectado. El par de abajo déjenoslo a nosotros. Nuestra guía sobre [qué hacer cuando se rompe un resorte](/es/blog/que-hacer-resorte-roto/) explica el mismo principio para el resto del sistema de tensión.
+Cambie usted mismo los rodillos de en medio si quiere, uno por uno, con la puerta cerrada y el motor desconectado. El par de abajo déjenoslo a nosotros. Nuestra guía sobre [por qué nunca debe trabajar usted mismo en un resorte de torsión](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/) explica el mismo principio para el resto del sistema de tensión.
 
 Todos los precios de este sitio son precios de inicio para una puerta sencilla estándar, y usted recibe una cotización escrita antes de empezar cualquier trabajo. La lista completa está en nuestra [página de precios](/es/precios/).

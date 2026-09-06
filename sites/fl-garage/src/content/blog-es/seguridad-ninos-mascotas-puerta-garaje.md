@@ -1,6 +1,6 @@
 ---
 title: "Seguridad de la puerta de garaje con niños y mascotas"
-description: "Las tres protecciones que necesita toda puerta de garaje en Florida, una prueba de cinco minutos para cada una, y los hábitos que las apagan sin que nadie lo note."
+description: "Las tres protecciones que necesita toda puerta de garaje en Florida, una prueba de cinco minutos para cada una, y los hábitos que las apagan sin avisar."
 answer: "Toda puerta de garaje automática debe tener sensores de fotocelda montados a no más de seis pulgadas del piso, una fuerza de bajada ajustada para que la puerta regrese al contacto, y un control de pared a por lo menos cinco pies de altura donde un niño no lo alcance. En Florida el garaje es la segunda puerta de entrada, así que la puerta trabaja más y las pruebas importan más. Pruebe los sensores y la reversa dos veces al año, y cambie cualquier motor fabricado antes de 1993 sin importar lo bien que siga funcionando."
 pubDate: 2026-08-26
 enSlug: garage-door-child-pet-safety

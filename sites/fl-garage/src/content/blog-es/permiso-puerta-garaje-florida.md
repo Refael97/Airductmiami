@@ -1,6 +1,6 @@
 ---
 title: "¿Se necesita permiso para una puerta de garaje en Florida?"
-description: "Cambiar una puerta de garaje en Florida requiere permiso tramitado por un contratista con licencia; el motor normalmente no. Quién lo saca, qué cuesta y por qué importa."
+description: "Cambiar una puerta de garaje en Florida requiere permiso tramitado por un contratista con licencia; el motor normalmente no. Quién lo saca y por qué importa."
 answer: "Sí. Cambiar una puerta de garaje en Florida requiere un permiso de construcción, tramitado por un contratista con licencia y con la certificación de viento de la puerta documentada en el permiso. Cambiar solo el motor normalmente no lo necesita. Nosotros incluimos el costo del permiso y el papeleo en la cotización escrita: una puerta de acero certificada contra viento cuesta de $950 a $4,200 instalada, y una resistente a impactos o para la zona HVHZ de $1,800 a $6,500."
 pubDate: 2026-09-01
 enSlug: garage-door-permit-florida
