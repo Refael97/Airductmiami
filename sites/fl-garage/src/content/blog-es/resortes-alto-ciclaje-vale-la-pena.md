@@ -1,6 +1,6 @@
 ---
 title: "¿Valen la pena los resortes de alto ciclaje en Florida?"
-description: "Qué es un resorte de alto ciclaje, la cuenta de 10,000 contra 25,000 ciclos para una familia de Florida que usa el garaje como puerta principal, y quién no lo necesita."
+description: "Qué es un resorte de alto ciclaje y la cuenta de 10,000 contra 25,000 ciclos para una familia de Florida que usa el garaje como puerta principal todos los días."
 answer: "Un resorte de alto ciclaje para puerta de garaje está calificado para 25,000 ciclos de apertura y cierre o más, contra unos 10,000 de un resorte estándar. Para una familia de Florida que corre la puerta ocho veces al día, esa es la diferencia entre resortes que duran alrededor de tres años y medio y resortes que duran alrededor de ocho y medio. El cambio de resortes cuesta de $150 a $350 por resorte instalado, con el de alto ciclaje hacia la parte alta de ese rango, y en una puerta ocupada el extra se paga solo al ahorrarse una visita completa."
 pubDate: 2026-08-28
 enSlug: high-cycle-springs-worth-it

@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje aislada o sin aislar en Florida"
-description: "Cuándo vale la pena una puerta de garaje aislada en el calor de Florida, qué significa el valor R, por qué la aislada suele ser la que carga la certificación y cuánto cuesta."
+description: "Cuándo vale la pena una puerta de garaje aislada en el calor de Florida, qué significa el valor R, por qué la aislada suele ser la que carga la certificación."
 answer: "En Florida una puerta de garaje aislada vale la pena cuando el garaje comparte pared o piso con una recámara o un área de estar, cuando guarda el manejador de aire o un congelador, o cuando se usa como taller. Para un garaje separado donde usted solo estaciona, no. Las puertas aisladas cuestan aproximadamente de $300 a $800 más que la puerta equivalente sin aislar, dentro del rango de $950 a $3,000 de una sencilla de acero instalada, y la construcción de poliuretano es más rígida, más silenciosa y muchas veces la que carga la certificación de viento más alta."
 pubDate: 2026-09-03
 enSlug: insulated-vs-uninsulated-garage-door

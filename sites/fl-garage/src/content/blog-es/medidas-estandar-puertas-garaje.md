@@ -1,6 +1,6 @@
 ---
 title: "Medidas estándar de puertas de garaje en Florida: 16x7, 9x7"
-description: "Las medidas de puerta de garaje que de verdad tienen las casas de Florida, de la doble de 16 por 7 a las de carrito de golf y de casa rodante, y cómo medir su abertura."
+description: "Las medidas de puerta de garaje que de verdad tienen las casas de Florida, de la doble de 16 por 7 a las de carrito de golf, y cómo medir su abertura."
 answer: "La puerta de garaje más común en Florida es la doble de 16 por 7 pies de un garaje de dos carros. Las sencillas son de 8 por 7 en casas de los años cincuenta a setenta y de 9 por 7 en las más nuevas, los garajes de tres carros suelen combinar una doble de 16 por 7 o de 18 por 8 con una sencilla de 9 por 7, las puertas de carrito de golf miden de 5 a 6 pies de ancho y las de casa rodante de 10 a 12 pies de ancho por 12 a 14 de alto. Una puerta nueva certificada contra viento se instala de $950 a $4,200 y una para huracanes de $1,800 a $6,500, y el precio sube con el tamaño porque una puerta más grande necesita más refuerzo para sostener la misma carga de viento."
 pubDate: 2026-09-02
 enSlug: standard-garage-door-sizes

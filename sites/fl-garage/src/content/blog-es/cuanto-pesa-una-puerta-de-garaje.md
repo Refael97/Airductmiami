@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto pesa una puerta de garaje?"
-description: "Pesos reales de puertas de garaje por tamaño y material, por qué las resistentes a impactos de Florida pesan más y cambian el resorte, y la prueba de balance de diez segundos."
+description: "Pesos reales de puertas de garaje por tamaño y material, por qué las resistentes a impactos de Florida pesan más y cambian el resorte, y la prueba de balance."
 answer: "Una puerta de garaje residencial pesa entre 130 y 450 libras. Una sencilla de acero estándar va de 130 a 180 libras, una sencilla aislada de 180 a 220, una doble estándar de 200 a 250, una doble aislada de 250 a 320, y una doble resistente a impactos de Florida de 300 a 400 libras o más, y las de madera y las de vidrio resistente a impactos pesan todavía más. El tamaño del resorte se calcula con ese peso, por eso una puerta certificada nueva necesita resortes nuevos de $150 a $350 cada uno, y nunca los viejos."
 pubDate: 2026-09-02
 enSlug: how-much-does-a-garage-door-weigh

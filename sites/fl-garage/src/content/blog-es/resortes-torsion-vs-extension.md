@@ -1,6 +1,6 @@
 ---
 title: "Resortes de torsión o de extensión: ¿cuál tiene su puerta?"
-description: "Cómo saber en treinta segundos qué sistema de resortes tiene, por qué la torsión es el mejor sistema en un garaje de Florida y cuándo conviene convertir desde extensión."
+description: "Cómo saber en treinta segundos qué sistema de resortes tiene, por qué la torsión es el mejor sistema en un garaje de Florida y cuándo conviene convertir."
 answer: "Los resortes de torsión van montados sobre un eje horizontal arriba de la abertura de la puerta. Los de extensión se estiran a lo largo de los rieles horizontales de cada lado. La torsión es más segura, dura más, balancea mejor la puerta y viene de serie en las puertas nuevas de Florida, incluida cada puerta para huracanes que instalamos. Cualquiera de los dos tipos se cambia por $150 a $350 por resorte instalado, y hacer los dos juntos agrega de $120 a $250 en lugar de duplicar."
 pubDate: 2026-08-26
 enSlug: torsion-vs-extension-springs

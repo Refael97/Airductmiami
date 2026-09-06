@@ -1,6 +1,6 @@
 ---
 title: "Motor de correa o de cadena para el garaje en Florida"
-description: "La pregunta que decide entre correa y cadena en un garaje de Florida, qué les hacen el calor y la humedad, por qué importa el respaldo de batería y qué compra el extra."
+description: "La pregunta que decide entre correa y cadena en un garaje de Florida, qué les hacen el calor y la humedad, por qué importa el respaldo de batería."
 answer: "Elija un motor de correa si hay una recámara o un área de estar al lado o encima del garaje, porque la diferencia de ruido es enorme y la correa aguanta el calor de Florida sin problema. Elija un motor de cadena si el garaje es separado o nadie duerme cerca, porque nada dura más por menos dinero. En Florida un motor de cadena cuesta de $275 a $450 instalado y uno de correa de $350 a $600, y el respaldo de batería agrega de $60 a $150 a cualquiera de los dos y vale la pena en un estado que se queda sin luz después de las tormentas."
 pubDate: 2026-08-31
 enSlug: belt-vs-chain-drive-opener

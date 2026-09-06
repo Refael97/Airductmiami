@@ -1,6 +1,6 @@
 ---
 title: "Mejor material de puerta de garaje para una casa en Florida"
-description: "Acero, aluminio, madera, fibra de vidrio o vinilo en un garaje de Florida. Qué les hace el aire salino, las termitas, el sol y el calor, y cuánto cuesta cada uno."
+description: "Acero, aluminio, madera, fibra de vidrio o vinilo en un garaje de Florida. Qué les hace el aire salino, las termitas y el calor, y cuánto cuesta cada uno."
 answer: "Para la mayoría de las casas de Florida la respuesta es acero galvanizado calibre 24 o 25 en versión certificada contra viento o resistente a impactos, instalada de $950 a $3,000. A pocas millas de la costa, el aluminio con vidrio resistente a impactos, de $1,300 a $4,000, y la fibra de vidrio, de $1,400 a $3,800, no se oxidan. La madera, de $2,200 a $9,000, va en la casa que de verdad la pide y con un dueño que la va a barnizar y a vigilar por termitas, y el vinilo, de $1,100 a $2,800, aguanta un garaje de trabajo. Todo material se vende en versión certificada, y las puertas para huracanes empiezan alrededor de $1,800."
 pubDate: 2026-09-01
 enSlug: best-garage-door-material-florida
