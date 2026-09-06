@@ -33,7 +33,21 @@ for (const file of readdirSync(ES_DIR)) {
   if (en) esBySlugEn.set(en, file.replace(/\.md$/, ''));
 }
 
+/**
+ * Deliberate exceptions, with the reason. A link is only worth having
+ * where a sentence earns it, so a link the English makes only inside its
+ * own related-reading list is not automatically owed by the Spanish.
+ * Keyed by Spanish slug, listing the English slugs not to ask for.
+ */
+const ALLOWED = {
+  'dano-por-tormenta-que-hacer': {
+    'prepare-garage-door-for-hurricane':
+      'The English links this only from its related-reading list. The Spanish article covers the aftermath alone: what the damage looks like, do not press the button, photograph it, secure the opening, the claim, the storm chasers. Nothing in it discusses readying a door before a storm, so there is no sentence to earn the link.',
+  },
+};
+
 let missingTotal = 0;
+let allowedTotal = 0;
 const rows = [];
 
 for (const file of readdirSync(ES_DIR)) {
@@ -61,7 +75,10 @@ for (const file of readdirSync(ES_DIR)) {
     }),
   );
 
-  const missing = [...enLinks].filter((s) => !esLinks.has(s) && esBySlugEn.has(s));
+  const allowed = ALLOWED[esSlug] ?? {};
+  const candidates = [...enLinks].filter((s) => !esLinks.has(s) && esBySlugEn.has(s));
+  const missing = candidates.filter((s) => !(s in allowed));
+  allowedTotal += candidates.length - missing.length;
   if (missing.length === 0) continue;
 
   missingTotal += missing.length;
@@ -77,7 +94,14 @@ for (const r of rows) {
   }
 }
 
-console.log(
-  `\n${rows.length} Spanish guides are missing ${missingTotal} links their English counterpart makes.`,
-);
+if (missingTotal === 0) {
+  console.log(`Link parity holds across all Spanish guides.`);
+} else {
+  console.log(
+    `\n${rows.length} Spanish guides are missing ${missingTotal} links their English counterpart makes.`,
+  );
+}
+if (allowedTotal > 0) {
+  console.log(`${allowedTotal} link${allowedTotal === 1 ? '' : 's'} deliberately not carried over, see ALLOWED.`);
+}
 process.exit(missingTotal === 0 ? 0 : 1);

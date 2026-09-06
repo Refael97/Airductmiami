@@ -81,7 +81,7 @@ Los mismos precios de cualquier otra semana. Esta es la parte que queremos dejar
 | Cable y tambor, los dos lados | $225 a $400 |
 | Despacho de emergencia el mismo día o fuera de horario | $150 a $300 de recargo, dicho antes de despachar |
 | Reemplazo completo, acero estándar certificado para viento | $950 a $4,200, permiso incluido en la cotización |
-| Reemplazo completo, puerta resistente a impactos o de HVHZ | $1,800 a $6,500, permiso incluido en la cotización |
+| Reemplazo completo, [puerta resistente a impactos o de HVHZ](/es/blog/costo-puerta-garaje-para-huracanes/) | $1,800 a $6,500, permiso incluido en la cotización |
 
 Esos números están en [nuestra lista de precios](/es/precios/), y estaban ahí antes de la tormenta. El recargo de emergencia aplica al despacho, nunca a la reparación, y le decimos cuánto es antes de que alguien salga. La mano de obra, donde se cotiza por hora, va de $45 a $120 la hora.
 
@@ -89,11 +89,11 @@ No inflamos las reparaciones de tormenta. Lo decimos por escrito porque es lo qu
 
 ## Reparar o reemplazar
 
-Una puerta con una sola sección doblada y los rieles derechos es una reparación, si el fabricante todavía hace ese perfil. Una puerta con dos o más secciones dobladas, rieles abiertos y el riel del motor torcido casi siempre es un reemplazo, porque solo el costo de los paneles se acerca al de una puerta nueva y la puerta nueva sí viene certificada.
+Una puerta con una sola sección doblada y los rieles derechos es una reparación, si el fabricante todavía hace ese perfil. Una puerta con dos o más secciones dobladas, rieles abiertos y el riel del motor torcido [casi siempre es un reemplazo](/es/blog/reparar-o-reemplazar-puerta-garaje/), porque solo [el costo de los paneles](/es/blog/costo-cambio-panel-puerta-garaje/) se acerca al de una puerta nueva y la puerta nueva sí viene certificada.
 
-La certificación es la razón por la que el reemplazo muchas veces tiene sentido después de una tormenta. Una puerta que se pandeó hacia adentro no daba para la presión de su sitio, o la daba en su momento y ya cumplió su vida. Un reemplazo en Florida tiene que estar certificado para la presión de diseño del sitio y necesita permiso tramitado por un contratista licenciado. En [Miami-Dade](/es/areas-de-servicio/miami-dade-county/) y [Broward](/es/areas-de-servicio/broward-county/) eso significa una puerta con NOA de Miami-Dade. En el resto del estado, incluido [Southwest Florida](/es/areas-de-servicio/southwest-florida/), significa una Florida Product Approval.
+La certificación es la razón por la que el reemplazo muchas veces tiene sentido después de una tormenta. Una puerta que se pandeó hacia adentro no daba para la presión de su sitio, o la daba en su momento y ya cumplió su vida. Un reemplazo en Florida tiene que estar certificado para la presión de diseño del sitio y necesita [permiso tramitado por un contratista licenciado](/es/blog/permiso-puerta-garaje-florida/). En [Miami-Dade](/es/areas-de-servicio/miami-dade-county/) y [Broward](/es/areas-de-servicio/broward-county/) eso significa una puerta con NOA de Miami-Dade. En el resto del estado, incluido [Southwest Florida](/es/areas-de-servicio/southwest-florida/), significa una Florida Product Approval.
 
-Después de una tormenta, además, las puertas certificadas escasean. Le decimos el tiempo de entrega cuando cotizamos y no prometemos una puerta que no podemos conseguir.
+Después de una tormenta, además, las puertas certificadas escasean. Le decimos [el tiempo de entrega](/es/blog/mejor-momento-cambiar-puerta-garaje-florida/) cuando cotizamos y no prometemos una puerta que no podemos conseguir.
 
 ## El reclamo es suyo; el papeleo es nuestro
 
@@ -103,7 +103,7 @@ Lo que sí hacemos es darle lo que el ajustador pide: una evaluación escrita co
 
 ## Los cazadores de tormentas
 
-Después de un huracán llegan empresas que usted nunca ha oído nombrar, de otros estados, a trabajar las calles dañadas. Algunas son serias. El patrón que hay que vigilar es el que está detrás de casi todas las quejas: un toque en la puerta, un precio que solo sirve hoy, efectivo, sin cotización escrita, sin permiso, y una empresa que ya no existe cuando la puerta falla.
+Después de un huracán llegan empresas que usted nunca ha oído nombrar, de otros estados, a trabajar las calles dañadas. Algunas son serias. [El patrón que hay que vigilar](/es/blog/estafas-reparacion-puerta-garaje/) es el que está detrás de casi todas las quejas: un toque en la puerta, un precio que solo sirve hoy, efectivo, sin cotización escrita, sin permiso, y una empresa que ya no existe cuando la puerta falla.
 
 Pregunte tres cosas. ¿La cotización va por escrito? ¿Quién tramita el permiso? ¿Dónde estaban trabajando ustedes en abril? Una empresa local, licenciada y asegurada, responde las tres sin dudar.
 

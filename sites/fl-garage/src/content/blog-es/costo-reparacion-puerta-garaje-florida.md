@@ -124,15 +124,15 @@ factura.
 la puerta de garaje esté certificada para la presión de viento de diseño del
 sitio, porque la puerta es la abertura más grande de la casa y cuando falla
 la casa se presuriza y el techo queda en riesgo. Miami-Dade y Broward son la
-Zona de Huracanes de Alta Velocidad (HVHZ), donde una puerta nueva necesita
+[Zona de Huracanes de Alta Velocidad](/es/blog/puertas-garaje-hvhz-explicado/) (HVHZ), donde una puerta nueva necesita
 un NOA de Miami-Dade. En el resto del estado necesita una Aprobación de
 Producto de Florida. Por eso una puerta nueva aquí empieza en $950 y no
 menos, por eso una puerta certificada contra huracanes va de $1,800 a
 $6,500, y por eso los paneles de repuesto de una puerta certificada cuestan
 más.
 
-**Los permisos.** Cambiar la puerta de garaje en Florida requiere un permiso
-de construcción, sacado por un contratista licenciado, con la certificación
+**Los permisos.** Cambiar la puerta de garaje en Florida requiere [un permiso
+de construcción](/es/blog/permiso-puerta-garaje-florida/), sacado por un contratista licenciado, con la certificación
 documentada en el permiso. Nuestras cotizaciones de puerta nueva lo
 incluyen. Cambiar solo el motor normalmente no lo necesita, y tampoco los
 resortes, los cables o los rodillos.
@@ -140,16 +140,16 @@ resortes, los cables o los rodillos.
 **Sal y humedad.** A pocas millas de cualquiera de las dos costas, los
 resortes, los cables, las bisagras, los soportes inferiores y el tubo de
 torsión se corroen. El óxido en un cable es la advertencia visible más común
-que vemos. Los herrajes corroídos suben el trabajo dentro del rango porque
+que vemos. [Los herrajes corroídos](/es/blog/aire-salino-corrosion-puerta-garaje/) suben el trabajo dentro del rango porque
 hay que cambiar más piezas a la vez, y por eso un
 [mantenimiento](/es/servicios/garage-door-tune-up/) dos veces al año en la
 costa es un seguro barato.
 
 **El calor.** En verano un garaje llega a 100°F y más, y ese calor cocina las
 tarjetas lógicas y los engranes de plástico de los equipos viejos. Las
-llamadas por motor suben en julio y agosto.
+llamadas por motor [suben en julio y agosto](/es/blog/calor-verano-problemas-puerta-garaje/).
 
-**Las tormentas.** Después de una tormenta con nombre, los paneles quedan
+**Las tormentas.** [Después de una tormenta con nombre](/es/blog/dano-por-tormenta-que-hacer/), los paneles quedan
 doblados hacia adentro, los rieles torcidos y las puertas salidas del riel
 por la presión. Evaluamos, aseguramos la abertura y cotizamos por escrito la
 reparación o el reemplazo, con la reparación entre $150 y $1,500. El
@@ -170,7 +170,7 @@ Dos trabajos se cobran de más más que ningún otro en este mercado.
 dañado, volverlo a asentar y tensarlo es un trabajo de $85 a $140. A veces se
 cobra como un reemplazo completo, tres veces más. Pida ver el cable.
 
-**Alineación de los sensores de seguridad.** Una puerta que se devuelve
+**Alineación de los sensores de seguridad.** [Una puerta que se devuelve](/es/blog/puerta-garaje-cierra-y-vuelve-a-abrir/)
 apenas toca el piso muy seguido son dos ojos fotoeléctricos desalineados,
 que es un arreglo de diez minutos en la parte baja del rango de $95 a $300
 de reparación del motor. No debería convertirse en un cambio de motor.
@@ -181,8 +181,8 @@ El patrón es constante y fácil de reconocer una vez que lo conoce. Una
 reparación anunciada en $49, o un cargo de visita de $29, pone a un técnico
 en su entrada. Ya que la puerta está desarmada, la cotización se vuelve
 varios cientos de dólares en piezas que al parecer hay que cambiar todas al
-mismo tiempo. Después de un huracán el mismo patrón llega con placas de otro
-estado.
+mismo tiempo. Después de un huracán el mismo patrón llega con [placas de otro
+estado](/es/blog/estafas-reparacion-puerta-garaje/).
 
 La defensa es sencilla: pida el precio de la reparación terminada, por
 escrito, antes de que salga nadie. Una empresa que solo cotiza al llegar ya

@@ -49,7 +49,7 @@ El resultado es una puerta que pesa de 50 a 150 libras más que la puerta de con
 
 Los resortes, no el motor, cargan la puerta. El motor solo guía una puerta que los resortes ya están sosteniendo.
 
-El tamaño del resorte se calcula con el peso de la puerta: el calibre del alambre, el diámetro interior y el largo, juntos, determinan cuánto peso va a sostener el resorte y por cuántos ciclos. Si se equivoca, pasa una de dos cosas.
+El tamaño del resorte se calcula con el peso de la puerta: el calibre del alambre, el diámetro interior y el largo, juntos, determinan cuánto peso va a sostener el resorte y [por cuántos ciclos](/es/blog/cuanto-duran-resortes-puerta-garaje/). Si se equivoca, pasa una de dos cosas.
 
 **Resorte muy débil.** La puerta pesa, no se queda a media altura cuando usted la levanta, y el motor hace el levante. El motor se gasta antes de tiempo, a veces en dos años, y en un garaje de Florida donde la tarjeta ya está cocinándose a 100°F, todavía antes.
 
@@ -59,7 +59,7 @@ Cuando no hay luz después de una tormenta, una puerta desbalanceada es además 
 
 ## La prueba
 
-Cierre la puerta, jale la liberación manual, levántela hasta la cintura y suéltela.
+Cierre la puerta, [jale la liberación manual](/es/blog/liberacion-manual-puerta-garaje/), levántela hasta la cintura y suéltela.
 
 Se queda quieta: correcto. Baja: muy débil, o gastado. Sube: muy fuerte.
 
@@ -71,7 +71,7 @@ Hágalo una vez al año, en abril o mayo antes de la temporada, el mismo día de
 
 **Un cambio a puerta aislada con el resorte viejo.** Mismo problema, margen menor. Cincuenta libras alcanzan.
 
-**Un cambio de resorte hecho por el dueño.** Alguien igualó el largo y el calibre del alambre a ojo, o los ordenó de una tabla genérica de medidas en lugar del peso de la puerta.
+**Un cambio de resorte [hecho por el dueño](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/).** Alguien igualó el largo y el calibre del alambre a ojo, o los ordenó de una tabla genérica de medidas en lugar del peso de la puerta.
 
 **Una puerta que ganó peso.** Las puertas de madera absorben agua. Una puerta de madera con el acabado descuidado durante un par de temporadas de lluvia pesa de verdad más de lo que pesaba, y el resorte que era correcto dejó de serlo.
 
@@ -85,7 +85,7 @@ Un motor se clasifica por fuerza de levante, y una puerta más pesada necesita u
 
 Pregunte qué calibre de alambre, qué diámetro interior y qué largo van a instalar, y cuál es la clasificación de ciclos.
 
-Una empresa que le puede decir esos cuatro números los sacó de su puerta. Una que no puede está instalando lo que traía en la camioneta y esperando que quede cerca, que es como las puertas terminan desbalanceadas para siempre. Para una puerta certificada nueva, haga las mismas cuatro preguntas sobre los resortes en la cotización de la puerta. El [cambio de resortes](/es/servicios/garage-door-spring-replacement/) cuesta de $150 a $350 por resorte instalado, y en una puerta que abre muchas veces al día vale la pena preguntar por resortes de alto ciclaje.
+Una empresa que le puede decir esos cuatro números los sacó de su puerta. Una que no puede está instalando lo que traía en la camioneta y esperando que quede cerca, que es como las puertas terminan desbalanceadas para siempre. Para una puerta certificada nueva, haga las mismas cuatro preguntas sobre los resortes en la cotización de la puerta. El [cambio de resortes](/es/servicios/garage-door-spring-replacement/) cuesta de $150 a $350 por resorte instalado, y en una puerta que abre muchas veces al día vale la pena preguntar por [resortes de alto ciclaje](/es/blog/resortes-alto-ciclaje-vale-la-pena/).
 
 ## Para seguir leyendo
 

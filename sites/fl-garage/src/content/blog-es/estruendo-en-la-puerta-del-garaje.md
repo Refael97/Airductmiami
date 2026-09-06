@@ -82,7 +82,7 @@ Usted puede decir que no. Una empresa que no lo deja decir que no le está dicie
 
 ## Por qué se rompen los resortes en Florida
 
-Los resortes fallan por ciclos, no solo por años, y aquí nunca por frío. Un resorte estándar está calculado para unos 10,000 ciclos de abrir y cerrar, que son de siete a diez años para un usuario ligero. Una puerta de familia en Florida hace de seis a diez ciclos al día porque el garaje es la bodega y la segunda puerta principal, y eso llega a 10,000 en cinco a siete años. En comunidades de carritos de golf como The Villages la cuenta sube igual de rápido.
+Los resortes fallan por ciclos, no solo por años, y aquí nunca por frío. Un resorte estándar está calculado para [unos 10,000 ciclos](/es/blog/cuanto-duran-resortes-puerta-garaje/) de abrir y cerrar, que son de siete a diez años para un usuario ligero. Una puerta de familia en Florida hace [de seis a diez ciclos al día](/es/blog/resortes-alto-ciclaje-vale-la-pena/) porque el garaje es la bodega y la segunda puerta principal, y eso llega a 10,000 en cinco a siete años. En comunidades de carritos de golf como The Villages la cuenta sube igual de rápido.
 
 La humedad y el aire salino pican la superficie de la espiral, y la picadura es donde arranca la grieta. A pocas millas de cualquiera de las dos costas cambiamos resortes visiblemente oxidados a los cinco y seis años de instalados.
 
@@ -90,7 +90,7 @@ La humedad y el aire salino pican la superficie de la espiral, y la picadura es 
 
 Un resorte de torsión se arma con un número específico de cuartos de vuelta según el peso de su puerta específica. Armarlo y desarmarlo requiere barras de armado adecuadas, y hacerlo con un destornillador es como la gente pierde dedos y recibe golpes en la cabeza.
 
-Esto no es prudencia por prudencia. Es la lesión grave más común del trabajo residencial de puertas de garaje, y le pasa a gente competente que subestimó la cantidad de energía involucrada. Nunca intente trabajar un resorte de torsión.
+Esto no es prudencia por prudencia. Es la lesión grave más común del trabajo residencial de puertas de garaje, y le pasa a gente competente que subestimó la cantidad de energía involucrada. [Nunca intente trabajar](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/) un resorte de torsión.
 
 ## Dónde estamos
 
