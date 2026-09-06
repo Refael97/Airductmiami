@@ -1,6 +1,6 @@
 ---
 title: "La puerta del garaje no abre: qué revisar primero"
-description: "Diagnóstico real para una puerta de garaje que no abre, desde la revisión de cinco segundos después de una tormenta hasta el resorte roto que necesita técnico hoy mismo."
+description: "Diagnóstico real para una puerta de garaje que no abre, desde la revisión de cinco segundos tras la tormenta hasta el resorte roto que necesita técnico hoy."
 answer: "Una puerta de garaje que no abre casi siempre tiene una de cuatro causas: un resorte de torsión roto, un apagón o un GFCI botado después de la tormenta, la batería del control agotada, o un seguro puesto. Jale la liberación manual y levante la puerta con la mano: si pesa muchísimo o no se mueve, el resorte falló y no se debe usar el motor. El cambio de resorte cuesta de $150 a $350 por resorte instalado y la reparación del motor de $95 a $300."
 pubDate: 2026-09-02
 cluster: symptom

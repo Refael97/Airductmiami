@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje que abre lento: causas y costos en Florida"
-description: "Una puerta que antes corría bien y ahora batalla casi siempre está perdiendo tensión de resorte. La prueba de balance, las causas de Florida y qué cuesta cada arreglo."
+description: "Una puerta que antes corría bien y ahora batalla casi siempre pierde tensión de resorte. La prueba de balance, las causas de Florida y qué cuesta arreglarla."
 answer: "Una puerta de garaje que abre lento casi siempre está perdiendo tensión en los resortes. Los resortes cargan el peso y el motor solo guía la puerta, así que a medida que los resortes se cansan el motor empieza a levantar un peso para el que nunca fue hecho. En Florida el óxido en los herrajes, los rodillos secos y un garaje que pasa el verano arriba de 100°F empeoran el cuadro. El cambio de resortes va de $150 a $350 por resorte instalado, y una afinación con lubricación y ajuste cuesta $85 a $160."
 pubDate: 2026-08-27
 cluster: symptom

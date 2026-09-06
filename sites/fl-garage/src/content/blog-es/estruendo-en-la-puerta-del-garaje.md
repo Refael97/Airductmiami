@@ -1,6 +1,6 @@
 ---
 title: "Estruendo en el garaje: qué se acaba de romper"
-description: "Un estruendo que se oyó desde adentro de la casa y después la puerta no abre. Qué es ese sonido casi siempre en un garaje de Florida y qué hacer en los diez minutos siguientes."
+description: "Un estruendo que se oye desde adentro de la casa y después la puerta no abre. Qué es casi siempre ese sonido en un garaje de Florida y qué hacer ahora."
 answer: "Un solo estruendo fuerte en el garaje, seguido de una puerta que no abre, casi siempre es un resorte de torsión que se reventó. El sonido es el resorte soltando su energía acumulada contra el eje. No use el motor: los resortes cargan el peso de la puerta, y sin ellos el motor se fuerza, dobla paneles o deja caer la puerta. El cambio de resorte cuesta de $150 a $350 por resorte instalado, y cambiar los dos en una puerta de dos resortes suma $120 a $250."
 pubDate: 2026-08-26
 cluster: symptom

@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje chueca o despareja: causas y costo"
-description: "Un lado toca el piso antes que el otro. Las fallas de cable, tambor y riel detrás de eso, por qué la humedad de Florida causa casi todas y cuánto cuesta el arreglo."
+description: "Un lado toca el piso antes que el otro. Las fallas de cable, tambor y riel detrás de eso, por qué la humedad de Florida las causa y qué cuesta el arreglo."
 answer: "Una puerta de garaje que cierra chueca casi siempre tiene un problema de cable: un cable se oxidó, se estiró, se salió de su tambor o está deshilachado. También puede ser un riel doblado, una bisagra de extremo rota o los tambores desfasados. Trátelo como urgente, porque la siguiente etapa es la puerta fuera del riel. En Florida la reparación de cables va de $95 a $300, cable y tambor juntos de $225 a $400, y la reparación de puerta fuera del riel de $140 a $600."
 pubDate: 2026-08-28
 cluster: symptom

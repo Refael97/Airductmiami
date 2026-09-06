@@ -1,6 +1,6 @@
 ---
 title: "La puerta de garaje se abre sola: por qué pasa y cómo pararlo"
-description: "Una puerta que se abre sola casi siempre es un botón atorado, un teclado mojado, el control de un vecino en código fijo o interferencia de radio. Cómo saber cuál."
+description: "Una puerta que se abre sola casi siempre es un botón atorado, un teclado mojado, el control de un vecino en código fijo o interferencia. Cómo saber cuál es."
 answer: "Una puerta de garaje que se abre sola casi siempre es una de cinco cosas: un botón atorado o hinchado por agua en un control remoto, un teclado exterior o la consola de pared, un motor anterior a los códigos rodantes que el control de un vecino puede activar, interferencia de radio de un foco LED, un corto en el cableado del botón, o una tarjeta lógica dañada por el calor o por un rayo. Los motores fabricados antes de 1993 son la causa más común. La reparación de motor va de $95 a $300 y un motor nuevo con código rodante cuesta de $275 a $600 instalado."
 pubDate: 2026-09-02
 cluster: symptom

@@ -1,6 +1,6 @@
 ---
 title: "La puerta del garaje no cierra: las seis causas"
-description: "Por qué una puerta de garaje se niega a cerrar o se devuelve al bajar, empezando por los sensores de seguridad que causan casi todo en Florida, y cuánto cuesta cada arreglo."
+description: "Por qué una puerta de garaje se niega a cerrar o se devuelve al bajar, empezando por los sensores de seguridad que causan casi todo, y qué cuesta cada arreglo."
 answer: "Una puerta de garaje que no cierra casi siempre tiene un problema en los sensores de seguridad: el haz bloqueado, los ojos desalineados, el sol de la tarde sobre el lente, o un cable corroído al ras del piso. En Florida los sensores también juntan hormigas, telarañas y agua de la tormenta diaria. Las otras causas son el límite de recorrido mal puesto, algo atorado en el riel, rodillos trabados y una fuerza de bajada demasiado baja. Alinear los sensores va incluido en el mantenimiento de $85 a $160; cambiar el par de sensores es una reparación de motor de $95 a $300."
 pubDate: 2026-09-01
 cluster: symptom

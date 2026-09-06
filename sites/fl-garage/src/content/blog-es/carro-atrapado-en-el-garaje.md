@@ -1,6 +1,6 @@
 ---
 title: "Carro atrapado en el garaje: cómo sacarlo seguro"
-description: "Su puerta de garaje no abre y el carro quedó adentro. Qué revisar primero, cómo levantar la puerta a mano sin lastimarse, qué no hacer y cuánto cuesta la reparación."
+description: "Su puerta de garaje no abre y el carro quedó adentro. Qué revisar primero, cómo levantar la puerta a mano sin lastimarse y cuánto cuesta la reparación."
 answer: "Si su carro quedó atrapado detrás de una puerta de garaje que no abre, revise primero si el motor tiene corriente, después jale el cordón rojo de liberación manual con la puerta cerrada y levante la puerta a mano con una segunda persona. Si la puerta pesa muchísimo o no se mueve, un resorte se rompió y la puerta hay que apuntalarla, no sostenerla. Nunca use el motor con un resorte roto. El cambio de resorte en Florida cuesta de $150 a $350 por resorte, y el despacho el mismo día o fuera de horario suma $150 a $300."
 pubDate: 2026-08-26
 cluster: symptom

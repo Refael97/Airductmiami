@@ -8,7 +8,7 @@
  * that already carry authority.
  */
 import { getCollection, type CollectionEntry } from 'astro:content';
-import type { Locale } from '../data/ui';
+import { blogHref as blogHrefFor, type Locale } from '../data/ui';
 
 export type Post = CollectionEntry<'blog'>;
 export type PostEs = CollectionEntry<'blogEs'>;
@@ -78,4 +78,22 @@ export async function translationOf(lang: Locale, post: AnyPost): Promise<string
   const enSlug = (post.data as { enSlug: string }).enSlug;
   const en = await getCollection('blog', ({ data, id }) => !data.draft && id === enSlug);
   return en[0]?.id;
+}
+
+/**
+ * The URL of an article in a given language, addressed by its English
+ * slug, which is the one name an article keeps across both languages.
+ *
+ * Returns undefined when the translation does not exist yet, so a caller
+ * can drop the link rather than emit a 404. Templates that link to a
+ * specific guide must use this: hardcoding an English slug into a
+ * Spanish page produces a link to a page that was never built.
+ */
+export async function articleHref(lang: Locale, enSlug: string): Promise<string | undefined> {
+  if (lang === 'en') {
+    const en = await getCollection('blog', ({ data, id }) => !data.draft && id === enSlug);
+    return en[0] ? blogHrefFor('en', en[0].id) : undefined;
+  }
+  const es = await getCollection('blogEs', ({ data }) => !data.draft && data.enSlug === enSlug);
+  return es[0] ? blogHrefFor('es', es[0].id) : undefined;
 }

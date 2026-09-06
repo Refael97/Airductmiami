@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje trabada a medias: causas y qué hacer"
-description: "Por qué una puerta de garaje se detiene a media subida o bajada, qué significa que pare siempre en el mismo punto, cómo sacar el carro y cuánto cuesta cada reparación."
+description: "Por qué una puerta de garaje se detiene a media subida o bajada, qué significa que pare siempre en el mismo punto y cuánto cuesta cada reparación."
 answer: "Una puerta de garaje trabada a medias casi siempre tiene un rodillo trabado, un tramo de riel doblado u oxidado, un cable deshilachado, o un límite de recorrido del motor que se desajustó. Si se detiene en el mismo punto cada vez, la causa es mecánica y está a esa altura en uno de los rieles. Si se detiene en puntos distintos, es más probable que sea el balance de los resortes o el ajuste de fuerza del motor. La reparación de riel empieza en $140, la de cable en $95, y un mantenimiento que reajusta límites y lubrica los herrajes cuesta $85 a $160."
 pubDate: 2026-08-31
 cluster: symptom

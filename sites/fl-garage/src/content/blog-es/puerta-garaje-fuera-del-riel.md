@@ -1,6 +1,6 @@
 ---
 title: "Puerta de garaje fuera del riel: qué hacer ahora"
-description: "Una puerta de garaje que se salió del riel, por qué cada botonazo de más la encarece, qué la causa en Florida y cuánto cuesta la reparación cuando se hace a tiempo."
+description: "Una puerta de garaje que se salió del riel, por qué cada botonazo de más la encarece, qué la causa en Florida y cuánto cuesta la reparación a tiempo."
 answer: "Si su puerta de garaje se salió del riel, deje de usar el motor de inmediato. Cada ciclo adicional dobla el riel, destruye rodillos y arruga paneles, y convierte una reparación de $140 a $300 en una de $600 o más. Jale la liberación manual solo si la puerta está cerrada, deje la puerta donde está, mantenga a la gente lejos y llame a servicio."
 pubDate: 2026-08-30
 cluster: symptom

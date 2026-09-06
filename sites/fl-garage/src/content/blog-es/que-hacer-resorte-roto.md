@@ -1,6 +1,6 @@
 ---
 title: "Qué hacer cuando se rompe un resorte de la puerta"
-description: "Los primeros diez minutos después de que se rompe un resorte en Florida: qué revisar, qué evitar, cómo sacar el carro y si hay que arreglarlo hoy o antes de la tormenta."
+description: "Los primeros diez minutos después de que se rompe un resorte en Florida: qué revisar, qué evitar, cómo sacar el carro y si hay que arreglarlo hoy."
 answer: "Cuando se rompe un resorte de puerta de garaje, deje de usar el motor de inmediato. Los resortes cargan el peso de la puerta, no el motor, así que usarlo lo va a forzar, va a doblar paneles y puede dejar caer la puerta. Deje la puerta cerrada si está cerrada, bájela con cuidado y con ayuda si está abierta, y no intente el cambio usted mismo. El cambio de resorte cuesta de $150 a $350 por resorte instalado, y hacer los dos en una puerta de dos resortes suma $120 a $250."
 pubDate: 2026-09-04
 cluster: symptom

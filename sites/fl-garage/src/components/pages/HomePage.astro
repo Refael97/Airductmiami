@@ -10,6 +10,7 @@ import { iconFor } from '../../data/serviceIcons';
 import { homeImages, serviceImages, hasImage, altFor } from '../../data/pageImages';
 import { ui, paths, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
 import { svc, copy } from '../../lib/i18n';
+import { articleHref } from '../../lib/relatedContent';
 
 interface Props { lang: Locale }
 const { lang } = Astro.props;
@@ -25,6 +26,12 @@ const priceRows = priceTableOrder
 const all = services.map((s) => svc(lang, s));
 const hurricaneServices = all.filter((s) => s.hurricane);
 const storm = svc(lang, getService('hurricane-rated-garage-door-installation')!);
+
+/* The scam guide is linked by its English slug, because that is the one
+   stable name for the article. Spanish articles carry their own slugs, so
+   the href is resolved through the collection rather than assumed: on the
+   Spanish home page a hardcoded English slug is a 404. */
+const scamsHref = await articleHref(lang, 'garage-door-repair-scams');
 
 /** The four failures that cover most calls, each with its illustration. */
 const faults = ['garage-door-spring-replacement', 'garage-door-off-track-repair', 'garage-door-cable-repair', 'garage-door-tune-up']
@@ -261,7 +268,9 @@ const faultBlurb: Record<string, Record<Locale, { title: string; text: string }>
         {c.whyParagraphs.map((para) => <p>{para}</p>)}
       </div>
       <p class="text-center" style="margin-top:1.4rem;">
-        <a href={`${p.blog}garage-door-repair-scams/`} class="btn btn-outline">{lang === 'es' ? 'Cómo detectar una cotización engañosa' : 'How to spot a bait quote'}</a>
+        {scamsHref && (
+          <a href={scamsHref} class="btn btn-outline">{lang === 'es' ? 'Cómo detectar una cotización engañosa' : 'How to spot a bait quote'}</a>
+        )}
       </p>
     </div>
   </section>
