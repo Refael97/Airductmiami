@@ -1,0 +1,45 @@
+---
+/**
+ * The closing call to action, used at the foot of every deep page.
+ * Deliberately quiet: the customer is stressed and their car is stuck, so
+ * the brand solves rather than sells. No urgency theater, no exclamation
+ * marks. See the site character note in research/fl-garage/BRIEF.md.
+ */
+import { ui, paths, type Locale } from '../data/ui';
+
+interface Props {
+  heading?: string;
+  text?: string;
+  cta?: string;
+  lang?: Locale;
+}
+const { lang = 'en' } = Astro.props;
+const t = ui[lang];
+const heading = Astro.props.heading ?? t.ctaHeading;
+const text = Astro.props.text ?? t.ctaText;
+const cta = Astro.props.cta ?? t.ctaButton;
+---
+<section class="cta-band">
+  <div class="container" data-anim="fade-up">
+    <h2>{heading}</h2>
+    <p>{text}</p>
+    <a href={paths[lang].contact} class="btn btn-accent btn-lg">{cta}</a>
+  </div>
+</section>
+
+<style>
+  .cta-band {
+    background: var(--grad-primary);
+    color: #fff;
+    padding-block: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-band::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 4px;
+    background: var(--stripe-brand);
+  }
+  .cta-band h2 { color: #fff; margin-bottom: 0.5rem; }
+  .cta-band p { color: #d3dded; margin-bottom: 1.3rem; }
+</style>

@@ -1,0 +1,137 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/manrope';
+import '@fontsource/bebas-neue';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import JsonLd from '../components/JsonLd.astro';
+import Reveal from '../components/Reveal.astro';
+import { localBusinessSchema, websiteSchema } from '../lib/schema';
+import { business } from '../data/business';
+import { ui, paths, type Locale } from '../data/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  ogType?: string;
+  noindex?: boolean;
+  lang?: Locale;
+  /** Path (no origin) of this same page in the other language, for hreflang and the switcher. */
+  altHref?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  schema,
+  ogType = 'website',
+  noindex = false,
+  lang = 'en',
+  altHref,
+} = Astro.props;
+
+const t = ui[lang];
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+/** One canonical URL form: trailing slash, matching the sitemap and the edge redirect. */
+const withSlash = (p: string) => (p.endsWith('/') || /\.\w+$/.test(p) ? p : `${p}/`);
+const canonicalURL = `${site}${withSlash(canonical ?? Astro.url.pathname)}`;
+const ogImage = `${site}/og-image.png`;
+
+const currentPath = withSlash(Astro.url.pathname);
+/* Normalise the alternate once, here, and hand the same form to hreflang
+   and to the header switcher. A slashless alternate is a 301 hop for the
+   crawler and a second URL form for Google to consider. */
+const altPath = altHref ? withSlash(altHref) : undefined;
+/* A noindexed page has no business declaring hreflang. */
+const emitHreflang = !noindex;
+const enHref = lang === 'en' ? currentPath : altPath;
+const esHref = lang === 'es' ? currentPath : altPath;
+/* The switcher always has somewhere to go: the translation when one
+   exists, the other language's home page when it does not. */
+const switchHref = altPath ?? paths[lang === 'en' ? 'es' : 'en'].home;
+
+const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
+---
+<!doctype html>
+<html lang={t.htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Reveal animations only apply when scripting is on, so nothing can
+         stay invisible if the script never runs. -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    {emitHreflang && enHref && <link rel="alternate" hreflang="en" href={`${site}${enHref}`} />}
+    {emitHreflang && esHref && <link rel="alternate" hreflang="es" href={`${site}${esHref}`} />}
+    {emitHreflang && enHref && <link rel="alternate" hreflang="x-default" href={`${site}${enHref}`} />}
+
+    <meta name="generator" content={Astro.generator} />
+    <meta name="geo.region" content="US-FL" />
+    <meta name="geo.placename" content="Florida" />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={business.name} />
+    <meta property="og:locale" content={t.ogLocale} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <JsonLd schema={siteSchema} />
+    {schema && <JsonLd schema={schema} />}
+
+    <!-- GA4. Loaded async so it never blocks rendering, and skipped entirely
+         on localhost so development traffic does not pollute the property. -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${business.ga4Id}`}></script>
+    <script is:inline define:vars={{ gaId: business.ga4Id, lang }}>
+      (function () {
+        var host = location.hostname;
+        if (host === 'localhost' || host === '127.0.0.1' || host === '') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', gaId, { site_language: lang });
+
+        /* Phone taps, captured by delegation so the listener survives any
+           number of tel: links being added to any page later. Capture phase,
+           because the click navigates away immediately. */
+        document.addEventListener(
+          'click',
+          function (e) {
+            var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+            if (a) gtag('event', 'phone_call', { page_path: location.pathname, site_language: lang });
+          },
+          true
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="visually-hidden">{t.skipToContent}</a>
+    <Header lang={lang} switchHref={switchHref} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <Reveal />
+  </body>
+</html>

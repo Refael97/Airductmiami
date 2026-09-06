@@ -1,0 +1,40 @@
+---
+import JsonLd from './JsonLd.astro';
+import { faqSchema } from '../lib/schema';
+import { ui, type Locale } from '../data/ui';
+
+interface Item { question: string; answer: string; }
+interface Props {
+  items: Item[];
+  title?: string;
+  /** Set false to skip FAQPage schema (e.g. when a page emits it elsewhere). */
+  emitSchema?: boolean;
+  lang?: Locale;
+}
+const { items, emitSchema = true, lang = 'en' } = Astro.props;
+/* An explicit empty title means the page supplies its own heading above. */
+const title = Astro.props.title === undefined ? ui[lang].faqTitle : Astro.props.title;
+---
+{items.length > 0 && (
+  <section
+    class="faq-section"
+    aria-label={title ? undefined : ui[lang].faqTitle}
+    aria-labelledby={title ? 'faq-heading' : undefined}
+  >
+    {title && <h2 id="faq-heading">{title}</h2>}
+    <div class="faq-list">
+      {items.map((item, i) => (
+        <details class="faq-item" open={i === 0}>
+          <summary>{item.question}</summary>
+          <div class="faq-body"><p>{item.answer}</p></div>
+        </details>
+      ))}
+    </div>
+    {emitSchema && <JsonLd schema={faqSchema(items)} />}
+  </section>
+)}
+
+<style>
+  .faq-section { margin-top: 2.5rem; }
+  .faq-list { margin-top: 1.2rem; }
+</style>
