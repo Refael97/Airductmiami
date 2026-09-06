@@ -177,7 +177,7 @@ export const centralFloridaCitiesEs: Record<string, CityEs> = {
   sanford: {
     metaTitle: 'Reparación de Puertas de Garaje en Sanford | Desde $150',
     metaDescription:
-      'Reparación de puertas de garaje en Sanford. Resortes desde $150, cables desde $95 y motores nuevos desde $275. Distrito histórico y urbanizaciones, el mismo día.',
+      'Reparación de puertas de garaje en Sanford. Resortes desde $150, cables desde $95 y motores desde $275. Distrito histórico y urbanizaciones, el mismo día.',
     answer:
       'La reparación de puertas de garaje en Sanford empieza en $150 por resorte, $95 por reparación de cable y $275 por un motor de puerta de garaje nuevo instalado. Trabajamos los garajes separados del distrito histórico y las urbanizaciones de Rinehart Road y la SR 417 el mismo día, con cotización escrita antes de cualquier trabajo.',
     intro: [
