@@ -77,9 +77,9 @@ Entre 8 y 10 pulgadas puede caber un motor de estilo estándar con riel de perfi
 
 Dos cosas importan más aquí que en casi todo el país y aplican a todas las opciones de arriba.
 
-**El calor.** Un garaje cerrado de Florida llega a 100°F y más en verano, y lo primero que falla es la tarjeta electrónica y los engranes plásticos. Un motor lateral de pared se monta en la pared, más abajo que una unidad de techo, lo que lo deja un poco más lejos del aire más caliente pegado al techo. Es una ventaja pequeña, no una razón para elegirlo.
+**El calor.** Un garaje cerrado de Florida [llega a 100°F y más en verano](/es/blog/calor-verano-problemas-puerta-garaje/), y lo primero que falla es la tarjeta electrónica y los engranes plásticos. Un motor lateral de pared se monta en la pared, más abajo que una unidad de techo, lo que lo deja un poco más lejos del aire más caliente pegado al techo. Es una ventaja pequeña, no una razón para elegirlo.
 
-**Los apagones.** Después de una tormenta se va la luz y la puerta de todos modos tiene que abrir. El respaldo de batería agrega de $60 a $150 en cualquier motor y está disponible en casi todos los modelos laterales de pared. Si solo puede justificar una mejora, elija el respaldo de batería antes que el WiFi, y lea nuestra guía de [respaldo de batería y apagones](/es/blog/respaldo-de-bateria-apagones/) antes de decidir. Sea cual sea el motor que elija, sepa dónde está la liberación manual antes de necesitarla.
+**Los apagones.** Después de una tormenta se va la luz y la puerta de todos modos tiene que abrir. El respaldo de batería agrega de $60 a $150 en cualquier motor y está disponible en casi todos los modelos laterales de pared. Si solo puede justificar una mejora, elija el respaldo de batería antes que el WiFi, y lea nuestra guía de [respaldo de batería y apagones](/es/blog/respaldo-de-bateria-apagones/) antes de decidir. Sea cual sea el motor que elija, sepa [dónde está la liberación manual](/es/blog/liberacion-manual-puerta-garaje/) antes de necesitarla.
 
 ## Qué pedir en una cotización
 

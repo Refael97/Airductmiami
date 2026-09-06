@@ -46,8 +46,8 @@ Si oyó un estruendo y la puerta no levanta, casi seguro es esto. Nuestra guía 
 
 Si necesita el carro y la puerta está cerrada:
 
-1. Jale la liberación manual con la puerta abajo.
-2. Levante con una segunda persona. Cuente con que se sienta como 130 a 350 libras, según la puerta.
+1. Jale [la liberación manual](/es/blog/liberacion-manual-puerta-garaje/) con la puerta abajo.
+2. Levante con una segunda persona. Cuente con que se sienta [como 130 a 350 libras](/es/blog/cuanto-pesa-una-puerta-de-garaje/), según la puerta.
 3. Asegúrela bien. Prensas de presión en el riel debajo de los rodillos inferiores en los dos lados, o un par de escaleras de tijera bajo la sección de abajo. No con una escoba, no con una silla.
 4. Saque el carro, luego baje la puerta despacio entre los dos y déjela cerrada.
 
@@ -59,7 +59,7 @@ La temporada de huracanes va del 1 de junio al 30 de noviembre, y un resorte rot
 
 Una puerta cerrada es el estado seguro. La puerta es la abertura más grande de la casa, y no necesita resortes buenos para resistir la presión del viento; necesita estar abajo, asegurada y, si tiene kit de refuerzo, reforzada. Si el resorte se le rompe con la puerta cerrada y la tormenta está a tres días, puede esperar una cita normal.
 
-Una puerta trabada abierta es lo contrario. Un garaje abierto deja entrar el viento a la casa, la casa se presuriza y lo siguiente que falla es el techo. Si no logra bajarla a mano con ayuda, llame y diga que la puerta está abierta y que viene una tormenta. Para nosotros eso es una llamada del mismo día, siempre.
+Una puerta trabada abierta es lo contrario. Un garaje abierto deja entrar el viento a la casa, la casa se presuriza y lo siguiente que falla es el techo. Si no logra bajarla a mano con ayuda, llame y diga que la puerta está abierta y que viene una tormenta. Para nosotros eso es una llamada del mismo día, siempre. El resto de la lista está en nuestra guía para [preparar la puerta del garaje para un huracán](/es/blog/preparar-puerta-garaje-huracan/).
 
 ## Cuánto cuesta
 
@@ -72,7 +72,7 @@ Una puerta trabada abierta es lo contrario. Un garaje abierto deja entrar el vie
 | Despacho de emergencia o fuera de horario | Carro atrapado, puerta abierta, tormenta encima | $150 a $300 adicionales, dichos antes de salir |
 | Mantenimiento junto con el cambio de resorte | Rodillos, bisagras, balance, límites | $85 a $160 |
 
-Cada cifra coincide con nuestra [página de precios](/es/precios/) y es un precio desde para una puerta sencilla estándar en condiciones normales. La [página del servicio de cambio de resortes](/es/servicios/garage-door-spring-replacement/) explica qué incluye la visita. Un año en repuestos y un año en mano de obra, escrito en la factura.
+Cada cifra coincide con nuestra [página de precios](/es/precios/) y es un precio desde para una puerta sencilla estándar en condiciones normales. El desglose completo por tamaño de puerta y tipo de resorte está en el [costo de cambio de resortes](/es/blog/costo-cambio-resortes-puerta-garaje/). La [página del servicio de cambio de resortes](/es/servicios/garage-door-spring-replacement/) explica qué incluye la visita. Un año en repuestos y un año en mano de obra, escrito en la factura.
 
 ## La conversación de los dos resortes
 
@@ -88,9 +88,9 @@ Con los resortes fuera del eje es también el momento de mirar los cables y los 
 
 ## Por qué pasó
 
-Los resortes fallan por ciclos, no por años. Un resorte estándar está calculado para unos 10,000 ciclos de abrir y cerrar, que son de siete a diez años para un uso ligero y de cinco a siete para una familia de Florida que usa el garaje como puerta principal. En Wesley Chapel, Riverview y Port St. Lucie, donde urbanizaciones enteras se levantaron en los años dos mil, la primera ronda de resortes rotos está llegando ahora, calle por calle.
+[Los resortes fallan por ciclos](/es/blog/cuanto-duran-resortes-puerta-garaje/), no por años. Un resorte estándar está calculado para unos 10,000 ciclos de abrir y cerrar, que son de siete a diez años para un uso ligero y de cinco a siete para una familia de Florida que usa el garaje como puerta principal. En Wesley Chapel, Riverview y Port St. Lucie, donde urbanizaciones enteras se levantaron en los años dos mil, la primera ronda de resortes rotos está llegando ahora, calle por calle.
 
-La humedad hace el resto. La humedad pica la superficie de la espiral, el aire salino cerca de la costa la pica más rápido, y la grieta de fatiga arranca en una picadura. Los resortes en Cape Coral, Jupiter y Melbourne fallan antes de lo que sugiere el conteo de ciclos, y por lo general se ven oxidados antes de irse.
+La humedad hace el resto. La humedad pica la superficie de la espiral, el aire salino cerca de la costa la pica más rápido, y la grieta de fatiga arranca en una picadura. Los resortes en Cape Coral, Jupiter y Melbourne fallan antes de lo que sugiere el conteo de ciclos, y por lo general se ven oxidados antes de irse. Si su puerta es de mucho uso, los [resortes de alto ciclaje](/es/blog/resortes-alto-ciclaje-vale-la-pena/) le dan la opción de 25,000 ciclos, que cuesta un poco más una vez y dura dos o tres veces más.
 
 Casi nunca hay algo que usted haya hecho mal. Lo que sí puede hacer la próxima vez es reservar un [mantenimiento](/es/servicios/garage-door-tune-up/) de $85 a $160 cada abril o mayo, antes del calor y antes de la temporada, para que veamos el óxido y el balance antes de que el resorte vea el final de su vida.
 

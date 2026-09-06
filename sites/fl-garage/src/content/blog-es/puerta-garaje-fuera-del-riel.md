@@ -35,14 +35,14 @@ La diferencia entre esos dos desenlaces depende por completo de lo que pase en l
 ## Qué hacer
 
 1. **Deje de apretar el botón.** El motor no sabe que la puerta se salió. Va a seguir jalando.
-2. **Jale la liberación manual** solo si la puerta está cerrada o casi cerrada. Si la puerta está arriba y a medio descarrilar, no toque la liberación: desconectarla puede dejar caer la puerta.
+2. **Jale [la liberación manual](/es/blog/liberacion-manual-puerta-garaje/)** solo si la puerta está cerrada o casi cerrada. Si la puerta está arriba y a medio descarrilar, no toque la liberación: desconectarla puede dejar caer la puerta.
 3. **Mantenga lejos a personas, mascotas y carros.** Una puerta a medio descarrilar se puede venir abajo sin aviso.
 4. **Anote qué pasó justo antes.** Un estruendo, un carro que la rozó, una tormenta, un cable que se reventó. Eso nos dice dónde mirar.
 5. **Diga si quedó abierta o cerrada cuando llame.** Eso define si es emergencia.
 
 ## Qué la causa en Florida
 
-**Un cable oxidado o roto.** La causa más común que vemos en todo el estado. El cable se oxida en el soporte inferior, donde el agua de las tormentas de la tarde se queda pegada la mitad del año, y el aire salino cerca de la costa lo acelera. Un lado pierde apoyo, la puerta sube chueca y los rodillos del lado bajo se salen del riel. Una puerta chueca es la etapa de advertencia.
+**Un cable oxidado o roto.** La causa más común que vemos en todo el estado. El cable se oxida en el soporte inferior, donde el agua de las tormentas de la tarde se queda pegada la mitad del año, y el aire salino cerca de la costa lo acelera. Un lado pierde apoyo, la puerta sube chueca y los rodillos del lado bajo se salen del riel. [Una puerta chueca](/es/blog/puerta-garaje-chueca-o-despareja/) es la etapa de advertencia.
 
 **Un golpe.** Un carro que roza la puerta, aunque sea a paso de peatón, saca el riel de alineación. En las entradas estrechas de los townhouses de [Doral](/es/areas-de-servicio/doral/) o [Kendall](/es/areas-de-servicio/kendall/) esta es una llamada frecuente. La puerta suele seguir trabajando semanas antes de descarrilarse, y por eso nadie hace la conexión.
 
@@ -66,7 +66,7 @@ La diferencia entre esos dos desenlaces depende por completo de lo que pase en l
 | Daño por tormenta, varias de las anteriores | Paneles doblados, riel torcido, soportes arrancados | [Reparación por daño de tormenta](/es/servicios/storm-damage-garage-door-repair/) $150 a $1,500, el reemplazo se cotiza aparte |
 | Trabada abierta, mismo día o fuera de horario | La casa queda expuesta | Suma $150 a $300, dicho antes de despachar |
 
-Cada precio es un precio desde para una puerta sencilla estándar en condiciones normales. La lista completa está en nuestra [página de precios](/es/precios/).
+Cada precio es un precio desde para una puerta sencilla estándar en condiciones normales. La lista completa está en nuestra [página de precios](/es/precios/), y nuestra guía del [costo de reparar una puerta fuera del riel](/es/blog/costo-reparacion-puerta-fuera-del-riel/) explica qué mueve ese número.
 
 ## Después de una tormenta
 

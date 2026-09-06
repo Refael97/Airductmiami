@@ -22,7 +22,7 @@ faq:
 
 ## Empiece por los sensores, porque casi siempre son los sensores
 
-Dos ojos eléctricos van cerca del piso, uno a cada lado del vano, a unas seis pulgadas de alto. Uno manda un haz infrarrojo y el otro lo recibe. Si algo corta ese haz, la puerta no cierra, o empieza a bajar, se detiene y se devuelve.
+Dos ojos eléctricos van cerca del piso, uno a cada lado del vano, a unas seis pulgadas de alto. Uno manda [un haz infrarrojo](/es/blog/sensores-seguridad-puerta-garaje/) y el otro lo recibe. Si algo corta ese haz, la puerta no cierra, o empieza a bajar, se detiene y se devuelve.
 
 Revise en este orden:
 
@@ -86,7 +86,7 @@ Un garaje abierto es una casa abierta, y en la mayoría de los vecindarios de Fl
 
 ![Una puerta de garaje trabada abierta de noche con la luz interior prendida, la situación en la que lo deja un sensor o un ajuste de límite fallando.](/images/garage-door-stuck-at-night.webp)
 
-Tratamos una puerta que no cierra como llamada del mismo día, y el [recargo de emergencia](/es/servicios/emergency-garage-door-repair/) de $150 a $300 se dice antes de despachar, para que usted decida si puede esperar hasta la mañana.
+Tratamos una puerta que no cierra como llamada del mismo día, y el [recargo de emergencia](/es/servicios/emergency-garage-door-repair/) de $150 a $300 se dice antes de despachar, para que usted decida si puede esperar hasta la mañana. Nuestra guía del [costo de reparación de emergencia](/es/blog/costo-reparacion-emergencia-puerta-garaje/) explica cuándo aplica ese recargo.
 
 ## Dónde trabajamos
 

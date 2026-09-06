@@ -56,13 +56,13 @@ $225 a $400, y le mostramos el cable antes de cotizarlo.
 
 Deje de oprimir el botón.
 
-Cada ciclo adicional después de que la puerta se sale del riel convierte una
+Cada ciclo adicional después de que [la puerta se sale del riel](/es/blog/puerta-garaje-fuera-del-riel/) convierte una
 reparación sencilla en una cara. El motor no sabe que la puerta está fuera,
 va a seguir jalando hasta que algo ceda, y en una puerta certificada para
 viento con refuerzos lo que cede suele ser el soporte del riel o la bisagra,
 no el motor.
 
-Jale el cordón de liberación manual, deje la puerta donde está y llame a
+Jale [el cordón de liberación manual](/es/blog/liberacion-manual-puerta-garaje/), deje la puerta donde está y llame a
 alguien. Si la puerta quedó abierta y la casa está expuesta, o si hay un
 aviso de tormenta vigente, dígalo cuando llame, porque eso es una emergencia
 real y se trata como tal. La
@@ -88,15 +88,15 @@ puerta puede seguir funcionando semanas antes de descarrilarse.
 
 **La presión de la tormenta.** Durante una tormenta tropical o un huracán la
 puerta se flexiona hacia adentro bajo la carga de viento, los rodillos se
-suben fuera del riel con la ráfaga y la puerta cae chueca. Después de una
-tormenta con nombre esta es la llamada más común que recibimos, muchas veces
+suben fuera del riel con la ráfaga y la puerta cae chueca. [Después de una
+tormenta con nombre](/es/blog/dano-por-tormenta-que-hacer/) esta es la llamada más común que recibimos, muchas veces
 con refuerzos doblados y riel torcido también. Eso es una
 [evaluación de daño por tormenta](/es/servicios/storm-damage-garage-door-repair/)
 y no un trabajo simple de puerta fuera del riel.
 
 **Rodillos gastados o trabados.** Un rodillo que no gira arrastra dentro del
-riel. Con los meses desgasta el riel y termina saliéndose de él. Los rodillos
-de acero se oxidan en este clima, los de nylon no.
+riel. Con los meses desgasta el riel y termina saliéndose de él. [Los rodillos
+de acero](/es/blog/cambio-de-rodillos-puerta-garaje/) se oxidan en este clima, los de nylon no.
 
 **Alineación del riel.** Los soportes flojos dejan que el riel se abra bajo
 carga. En un garaje de bloque de concreto los tornillos de expansión en el
@@ -119,7 +119,7 @@ que ya se flexionó una vez bajo el viento puede no aguantar la siguiente.
 
 ## Cómo se ve una cotización justa
 
-Antes de que salga el técnico le deben decir el rango para volver a asentarla
+Antes de que salga el técnico [le deben decir el rango](/es/blog/que-incluye-una-cotizacion-justa/) para volver a asentarla
 limpia, qué lo cambia si el riel o los rodillos están doblados, y el cargo de
 emergencia si necesita el mismo día. Al llegar, las piezas dobladas se le
 deben mostrar antes de ponerles precio. Nuestra

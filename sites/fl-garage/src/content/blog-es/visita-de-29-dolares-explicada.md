@@ -47,7 +47,7 @@ cuesta a la empresa comprarlo.
 
 Para la empresa, dos cosas.
 
-**Acceso.** Un técnico parado en su garaje está en una posición comercial
+**Acceso.** [Un técnico parado en su garaje](/es/blog/que-hace-un-tecnico-puerta-garaje/) está en una posición comercial
 completamente distinta a la de una voz por teléfono. Usted ya esperó la cita.
 Su carro puede estar atrapado. La comparación de precios que habría hecho
 frente a un teclado ahora es mucho más difícil de hacer con alguien mirándolo.
@@ -80,7 +80,7 @@ precio real" no es la defensa que la gente supone.
 
 Somos una empresa de puertas de garaje, no un regulador, y si un anuncio
 específico cruza esa línea no nos toca decidirlo. Pero el patrón que
-describen las guías se parece mucho al patrón de este ramo, y vale la pena
+describen las guías se parece mucho al [patrón de este ramo](/es/blog/estafas-reparacion-puerta-garaje/), y vale la pena
 saber que existe un nombre para él en la regulación federal.
 
 ## Dónde se hace el dinero de verdad
@@ -125,11 +125,13 @@ Si una cotización por dos resortes estándar en una puerta sencilla estándar
 llega a $1,200, eso no es una opinión distinta sobre su puerta. Eso es un
 modelo de negocio distinto. Nuestra
 [guía de costos de reparación en Florida](/es/blog/costo-reparacion-puerta-garaje-florida/)
-pone precio a cada trabajo de la lista.
+pone precio a cada trabajo de la lista, y si usted ya tiene un número en la
+mano, [cuándo una cotización es muy alta](/es/blog/mi-cotizacion-es-muy-alta/)
+explica qué la justifica y qué no.
 
 ## La defensa de cinco minutos
 
-Todo esto pasa antes de que salga nadie, que es el único momento en el que
+Todo esto pasa [antes de que salga nadie](/es/blog/preguntas-antes-de-contratar/), que es el único momento en el que
 usted tiene algo de ventaja.
 
 **Pida el precio de la reparación terminada, no el de la visita.** "Si
@@ -181,7 +183,9 @@ número antes de que llegara la camioneta.
 El patrón empeora después de cada tormenta con nombre. Empresas que no
 existían en junio aparecen en septiembre con placas de otro estado, y los
 dueños de casa con una puerta doblada y la casa presurizada no están en
-posición de comparar precios.
+posición de comparar precios. Si acaba de pasar una tormenta, lea
+[qué hacer con el daño por tormenta](/es/blog/dano-por-tormenta-que-hacer/)
+antes de firmar nada.
 
 ## Por qué nosotros publicamos precios
 
@@ -190,7 +194,7 @@ o fuera de horario tiene un cargo de $150 a $300, ese cargo se dice antes de
 mandar al técnico y aplica solo al envío. **La reparación en sí se cotiza al
 mismo precio publicado que tendría cualquier otro día del año.**
 
-Usted recibe un estimado por escrito antes de que se toque nada, y ese
+Usted recibe [un estimado por escrito](/es/blog/que-incluye-una-cotizacion-justa/) antes de que se toque nada, y ese
 estimado es lo que paga. La
 [guía de costo de reparación de emergencia](/es/blog/costo-reparacion-emergencia-puerta-garaje/)
 explica cómo se separan los dos números.

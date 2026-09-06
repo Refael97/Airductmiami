@@ -22,7 +22,7 @@ faq:
 
 ## La prueba de treinta segundos
 
-Cierre la puerta. Jale el cordón rojo de liberación manual para dejar al motor fuera del cuadro. Levante la puerta a mano hasta la altura de la cintura y suéltela.
+Cierre la puerta. Jale [el cordón rojo de liberación manual](/es/blog/liberacion-manual-puerta-garaje/) para dejar al motor fuera del cuadro. Levante la puerta a mano hasta la altura de la cintura y suéltela.
 
 **Se queda donde la dejó.** La puerta está balanceada y los resortes están haciendo su trabajo. El problema es fricción o es el motor.
 
@@ -38,9 +38,9 @@ Esa sola prueba separa las causas en dos grupos y es lo primero que hacemos en c
 
 Los resortes se miden en ciclos, no en años. Un resorte de torsión estándar rinde alrededor de 10,000 aperturas y cierres. En una casa de Florida el garaje es la bodega, el taller y la segunda puerta principal, así que una puerta familiar corre de seis a diez veces al día y llega a esa cuenta en cinco a siete años en vez de diez. En comunidades de carritos de golf y desarrollos de 55 y más, la puerta corre varias veces al día para dos personas y la cuenta sube igual de rápido.
 
-La humedad hace el resto. La humedad pica la superficie de la espira, y cada picadura es un punto donde el acero puede empezar a agrietarse. A pocas millas de cualquiera de las dos costas, el salitre lo acelera. Un resorte picado pierde tensión más rápido que uno limpio, así que la puerta se pone pesada antes.
+La humedad hace el resto. La humedad [pica la superficie de la espira](/es/blog/oxido-puerta-garaje-humedad-florida/), y cada picadura es un punto donde el acero puede empezar a agrietarse. A pocas millas de cualquiera de las dos costas, el salitre lo acelera. Un resorte picado pierde tensión más rápido que uno limpio, así que la puerta se pone pesada antes.
 
-El tercer factor es el calor. Un garaje pegado a la casa en Fort Myers o en Orlando pasa casi todo el verano arriba de 100°F. El motor, su capacitor de arranque y su tarjeta lógica están montados a la altura del techo, donde el aire está más caliente, y el equipo que ya venía trabajando de más porque la puerta está pesada es el primero que falla.
+El tercer factor es el calor. Un garaje pegado a la casa en Fort Myers o en Orlando pasa casi todo [el verano arriba de 100°F](/es/blog/calor-verano-problemas-puerta-garaje/). El motor, su capacitor de arranque y su tarjeta lógica están montados a la altura del techo, donde el aire está más caliente, y el equipo que ya venía trabajando de más porque la puerta está pesada es el primero que falla.
 
 ## Si los resortes están cansados
 
@@ -54,7 +54,7 @@ Cambiar los resortes en el momento en que la puerta empieza a ir lenta cuesta [$
 
 Entonces hay fricción en algún punto del herraje, o el problema es el motor mismo.
 
-**Rodillos secos o trabados.** Gírelos uno por uno con la mano y la puerta cerrada. Deben girar libres. Un rodillo que se arrastra en lugar de rodar está frenando la puerta, y un juego de rodillos oxidados es común en cualquier puerta que nunca recibió servicio.
+**Rodillos secos o trabados.** Gírelos uno por uno con la mano y la puerta cerrada. Deben girar libres. Un rodillo que se arrastra en lugar de rodar está frenando la puerta, y [un juego de rodillos oxidados](/es/blog/cambio-de-rodillos-puerta-garaje/) es común en cualquier puerta que nunca recibió servicio.
 
 **Bisagras y baleros secos.** Las placas de balero de los extremos y el balero central del tubo de torsión se secan y endurecen. Lubrique bisagras, rodillos y baleros con silicona o litio blanco en spray. Nunca engrase el riel, porque junta arena y empeora el arrastre.
 

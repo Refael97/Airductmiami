@@ -24,7 +24,7 @@ faq:
 
 Esta sola prueba separa casi todas las causas.
 
-Con la puerta cerrada, jale el cordón de liberación manual, esa manija roja que cuelga del carro sobre el riel del motor. Eso desconecta la puerta del motor. Ahora levante la puerta con la mano.
+Con la puerta cerrada, jale [el cordón de liberación manual](/es/blog/liberacion-manual-puerta-garaje/), esa manija roja que cuelga del carro sobre el riel del motor. Eso desconecta la puerta del motor. Ahora levante la puerta con la mano.
 
 **Si sube con esfuerzo moderado y se queda quieta a media altura**, la puerta está bien y el problema es el motor, su corriente o sus controles.
 
@@ -36,9 +36,9 @@ Revise en este orden. Casi todo esto no cuesta nada.
 
 **Corriente.** Después de una tormenta de verano, esta es la primera respuesta. Confirme que el vecindario tiene luz, que el motor está enchufado y que el tomacorriente del garaje sirve. En Florida los tomacorrientes del garaje van en circuitos GFCI, y un GFCI se bota cuando le entra agua a la toma o a algo conectado. Busque el botón de reset, que puede estar en el garaje, en el cuarto de lavado o en un baño, y presiónelo.
 
-**Apagón.** Si la calle está a oscuras, nada del motor funciona hasta que vuelva la luz, salvo que la unidad tenga batería de respaldo. Use la liberación manual. Si vive en una zona que pierde la luz cada temporada, vale la pena instalar respaldo antes de la próxima.
+**Apagón.** Si la calle está a oscuras, nada del motor funciona hasta que vuelva la luz, salvo que la unidad tenga [batería de respaldo](/es/blog/respaldo-de-bateria-apagones/). Use la liberación manual. Si vive en una zona que pierde la luz cada temporada, vale la pena instalar respaldo antes de la próxima.
 
-**Batería del control.** Pruebe el botón de pared. Si el botón de pared sí funciona y el control remoto no, el problema es el control.
+**Batería del control.** Pruebe el botón de pared. Si el botón de pared sí funciona y el control remoto no, [el problema es el control](/es/blog/control-remoto-no-funciona/).
 
 **Seguro puesto.** Muchos paneles de pared tienen una función de bloqueo o de vacaciones que deshabilita los controles, y muchas puertas todavía tienen un pasador manual por dentro. Los dos se activan sin querer, y el pasador es el que la gente olvida después de un huracán, porque aseguraron la puerta antes de evacuar.
 
@@ -73,9 +73,9 @@ El cambio de resorte cuesta [$150 a $350 por resorte instalado](/es/servicios/ga
 
 Aquí los resortes no fallan por el frío. Fallan por conteo de ciclos, y una puerta de Florida trabaja duro porque el garaje es la bodega, el taller y la segunda puerta principal de la casa. Un resorte estándar está calculado para unos 10,000 ciclos, que son de siete a diez años en una casa de uso ligero y más cerca de cinco en una familia con dos carros en una urbanización de Wesley Chapel o Coral Springs.
 
-La humedad y el aire salino pican las espirales del resorte y oxidan los cables, y la picadura es donde arranca la grieta. A pocas millas de cualquiera de las dos costas, los resortes y los cables fallan antes de lo que dice el conteo de ciclos.
+[La humedad y el aire salino](/es/blog/oxido-puerta-garaje-humedad-florida/) pican las espirales del resorte y oxidan los cables, y la picadura es donde arranca la grieta. A pocas millas de cualquiera de las dos costas, los resortes y los cables fallan antes de lo que dice el conteo de ciclos.
 
-Luego está el lado del motor: un garaje en Kissimmee o en Fort Myers pasa de 100°F durante meses, y ese calor cocina tarjetas lógicas, debilita capacitores y ablanda el engranaje. Sume la temporada de rayos y unos cuantos picos de voltaje, y el motor es la segunda razón más común por la que una puerta no abre.
+Luego está el lado del motor: un garaje en Kissimmee o en Fort Myers pasa de 100°F durante meses, y [ese calor cocina tarjetas lógicas](/es/blog/calor-verano-problemas-puerta-garaje/), debilita capacitores y ablanda el engranaje. Sume la temporada de rayos y unos cuantos picos de voltaje, y el motor es la segunda razón más común por la que una puerta no abre.
 
 ## Cuánto cuesta
 
@@ -98,7 +98,7 @@ Cada número es el mismo de nuestra [página de precios](/es/precios/) y es un p
 
 No engrase el riel. El riel va limpio y seco, porque la grasa recoge la arena y el polvo que entran a todos los garajes de Florida y empeora las cosas.
 
-No ajuste ni cambie los resortes usted mismo. Un resorte de torsión cargado guarda energía suficiente para romper huesos y la suelta de golpe si no se descarga de forma controlada con barras de armado. Nunca intente trabajar un resorte de torsión.
+No ajuste ni cambie los resortes usted mismo. Un resorte de torsión cargado guarda energía suficiente para romper huesos y la suelta de golpe si no se descarga de forma controlada con barras de armado. Nunca intente [trabajar un resorte de torsión](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/).
 
 No siga apretando el botón esperando que se destrabe. Cada intento con la puerta averiada hace la reparación más grande.
 

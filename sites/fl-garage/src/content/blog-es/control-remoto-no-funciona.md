@@ -38,7 +38,7 @@ Oprima el botón de pared dentro del garaje.
 
 ![Consola de pared inteligente para motor de puerta de garaje, con el botón de la puerta, el botón de la luz y el botón de bloqueo que desactiva los controles remotos.](/images/smart-wall-console.webp)
 
-**La programación.** Los controles pierden su código cuando alguien oprime el botón de aprendizaje y lo sostiene de más, lo que borra todos los códigos guardados, y en algunos modelos después de cortes de corriente repetidos. Volver a programarlo toma menos de un minuto: oprima el botón de aprendizaje del motor y después el botón del control dentro de los treinta segundos siguientes.
+**La programación.** Los controles pierden su código cuando alguien oprime el botón de aprendizaje y lo sostiene de más, lo que borra todos los códigos guardados, y en algunos modelos después de cortes de corriente repetidos. [Volver a programarlo](/es/blog/como-programar-control-remoto/) toma menos de un minuto: oprima el botón de aprendizaje del motor y después el botón del control dentro de los treinta segundos siguientes.
 
 **El control mismo.** Los botones se gastan, las carcasas se rompen y los controles se caen en la entrada y se mojan en la tormenta de la tarde. Si un segundo control funciona y este no, ya tiene su respuesta. Un control de repuesto es una refacción chica que programamos en el momento.
 
@@ -56,7 +56,7 @@ Otras causas que vemos: un router o un nodo de malla WiFi nuevo montado en la pa
 
 **Corriente.** Revise que el motor esté conectado y que el contacto tenga corriente. Los contactos de garaje en Florida están protegidos con GFCI, y un GFCI se bota cuando el contacto o algo en ese circuito se moja. Después de una tormenta que metió agua bajo la puerta, o de usar la manguera cerca del contacto, el GFCI se queda botado hasta que alguien oprime reset. Busque el contacto con el botón de reset, que puede estar en el garaje, en el cuarto de lavado o en un baño.
 
-**Apagón.** Si el vecindario está a oscuras después de una tormenta, nada del motor va a funcionar hasta que vuelva la corriente, salvo que el equipo tenga respaldo de batería. Jale la liberación manual y abra la puerta a mano.
+**Apagón.** Si el vecindario está a oscuras después de una tormenta, nada del motor va a funcionar hasta que vuelva la corriente, salvo que el equipo tenga [respaldo de batería](/es/blog/respaldo-de-bateria-apagones/). Jale la liberación manual y abra la puerta a mano.
 
 **El cableado de la consola de pared.** Dos cables delgados van del botón de pared al motor por la pared y el techo. Se grapan de más, los engancha una escalera y, en un garaje de Florida, el cobre expuesto se corroe de verde en las terminales por la humedad. Una terminal corroída da un botón de pared intermitente que sirve unos días y otros no.
 
@@ -80,7 +80,7 @@ Cada número coincide con nuestra [página de precios](/es/precios/) y es un pre
 
 ## Cuándo cambiar en vez de reparar
 
-Si el motor se fabricó antes de 1993, no tiene sensores de seguridad y conviene cambiarlo sin importar qué le pase al control remoto.
+Si el motor [se fabricó antes de 1993](/es/blog/seguridad-motores-antiguos-puerta-garaje/), no tiene sensores de seguridad y conviene cambiarlo sin importar qué le pase al control remoto.
 
 Si ya no se fabrican refacciones para el modelo, o si la cotización de reparación se acerca a la mitad del costo de un equipo nuevo, cambiarlo es mejor gasto. Un motor nuevo de cadena o de banda va de [$275 a $600 instalado](/es/servicios/garage-door-opener-installation/). En Florida recomendamos gastar los $60 a $150 extra del respaldo de batería en cualquier equipo nuevo, porque lo primero que se lleva una tormenta es la corriente y lo segundo que usted necesita es el carro.
 

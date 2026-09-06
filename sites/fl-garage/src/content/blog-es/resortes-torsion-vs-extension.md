@@ -46,7 +46,7 @@ Esa es toda la prueba. En una casa de Florida construida después de 1990 casi s
 
 **Balance.** La distribución central de la fuerza hace que una puerta de torsión cuelgue más pareja y corra más suave en todo su recorrido. El motor trabaja menos, lo que importa cuando el motor ya está peleando con el calor del verano.
 
-**Vida.** Los resortes de torsión están clasificados normalmente para unos 10,000 ciclos, que son de 7 a 10 años en una puerta que se usa tres o cuatro veces al día. Los de extensión andan entre 7,000 y 10,000 y pierden tensión de forma menos predecible conforme envejecen.
+**Vida.** Los resortes de torsión están clasificados normalmente para unos 10,000 ciclos, que son [de 7 a 10 años](/es/blog/cuanto-duran-resortes-puerta-garaje/) en una puerta que se usa tres o cuatro veces al día. Los de extensión andan entre 7,000 y 10,000 y pierden tensión de forma menos predecible conforme envejecen.
 
 **Altura libre.** La torsión necesita espacio arriba de la puerta; la extensión necesita espacio lateral a lo largo de los rieles. Cuál tiene usted casi siempre depende de qué permitía el garaje cuando se instaló la puerta.
 
@@ -58,7 +58,7 @@ Esa es toda la prueba. En una casa de Florida construida después de 1990 casi s
 
 Aquí los resortes no fallan por frío. Fallan por conteo de ciclos, y las puertas de Florida ciclan duro porque el garaje es la bodega, el taller y la segunda puerta principal. Una familia que entra y sale por el garaje ocho veces al día se acaba un resorte de 10,000 ciclos en tres o cuatro años.
 
-El segundo factor de Florida es la corrosión. La humedad y el aire salino atacan la superficie de la espira, más rápido a pocas millas de cualquiera de las dos costas, y una espira picada se rompe antes que una limpia. Los resortes de extensión quedan expuestos en todo su largo y tienden a mostrar el óxido primero. Los de torsión también se oxidan, y el eje donde van montados también. Una capa ligera de lubricante para puertas de garaje sobre las espiras dos veces al año lo retrasa. El óxido en el cable de levante es la advertencia visible más común que vemos.
+El segundo factor de Florida es la corrosión. La humedad y [el aire salino](/es/blog/aire-salino-corrosion-puerta-garaje/) atacan la superficie de la espira, más rápido a pocas millas de cualquiera de las dos costas, y una espira picada se rompe antes que una limpia. Los resortes de extensión quedan expuestos en todo su largo y tienden a mostrar el óxido primero. Los de torsión también se oxidan, y el eje donde van montados también. Una capa ligera de lubricante para puertas de garaje sobre las espiras dos veces al año lo retrasa. [El óxido en el cable de levante](/es/blog/oxido-puerta-garaje-humedad-florida/) es la advertencia visible más común que vemos.
 
 ## Los costos
 
@@ -85,6 +85,6 @@ La conversión necesita altura libre arriba de la abertura. En un garaje de tech
 
 ## Lo que ninguno de los dos es
 
-Ninguno es trabajo para hacerlo usted mismo. Los dos almacenan energía suficiente para causar lesiones graves y los dos la sueltan de golpe si se manejan mal. Los resortes de extensión no son la opción más segura por verse menos dramáticos; un resorte de extensión sin contención que se suelta es la lesión de la que más oímos.
+Ninguno es [trabajo para hacerlo usted mismo](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/). Los dos almacenan energía suficiente para causar lesiones graves y los dos la sueltan de golpe si se manejan mal. Los resortes de extensión no son la opción más segura por verse menos dramáticos; un resorte de extensión sin contención que se suelta es la lesión de la que más oímos.
 
 Si un resorte se acaba de romper, no use el motor. Los resortes cargan el peso de la puerta, no el motor. Lea [qué hacer con un resorte roto](/es/blog/que-hacer-resorte-roto/) y llame. El cambio de resortes es un trabajo del mismo día los siete días de la semana, y el cargo de emergencia de $150 a $300 por despacho fuera de horario se dice antes de mandar a nadie. Un [mantenimiento](/es/servicios/garage-door-tune-up/) anual de $85 a $160, mejor en abril o mayo antes de la temporada, es cuando revisamos los resortes, los cables de contención y el balance en cualquiera de los dos sistemas.

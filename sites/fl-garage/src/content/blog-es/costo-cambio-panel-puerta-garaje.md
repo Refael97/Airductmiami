@@ -51,14 +51,14 @@ de un fabricante grande está disponible con más frecuencia que una de un
 fabricante pequeño.
 
 Si el perfil ya no existe, hay tres opciones honestas y no hay una cuarta: un
-panel que no combina a la vista, una puerta completa, o vivir con el daño.
+panel que no combina a la vista, [una puerta completa](/es/blog/reparar-o-reemplazar-puerta-garaje/), o vivir con el daño.
 
 ## La regla de Florida: la sección debe coincidir con la certificación
 
 Aquí es donde Florida se separa del resto del país. El Código de Construcción
 de Florida exige que la puerta de garaje esté certificada para la presión de
 viento del sitio, y en Miami-Dade y Broward, la Zona de Huracanes de Alta
-Velocidad, la puerta lleva un NOA de Miami-Dade. En el resto del estado lleva
+Velocidad, la puerta lleva [un NOA de Miami-Dade](/es/blog/noa-miami-dade-vs-aprobacion-producto-florida/). En el resto del estado lleva
 un número de Aprobación de Producto de Florida. De cualquier forma, la puerta
 se probó como un ensamble: estas secciones, estos refuerzos, este riel, estas
 bisagras.
@@ -66,8 +66,8 @@ bisagras.
 La sección de repuesto tiene que ser la sección del fabricante para esa
 puerta. Lleva los mismos refuerzos y la misma estructura, y entra con los
 mismos sujetadores. Una sección genérica que casualmente cabe en la abertura
-no conserva la certificación, y la siguiente inspección de mitigación de
-viento lo puede notar.
+no conserva la certificación, y la siguiente [inspección de mitigación de
+viento](/es/blog/credito-seguro-mitigacion-viento/) lo puede notar.
 
 La consecuencia práctica es que cambiar una sección en una puerta certificada
 es un poco más caro que en una puerta sin certificar, porque las secciones
@@ -103,7 +103,7 @@ de $150 a $1,500 para asegurar, apuntalar y reparar, con el reemplazo
 completo cotizado por separado y por escrito si la puerta ya no da para más.
 
 Los reclamos al seguro los hace usted, nosotros damos las fotos y la
-cotización escrita. No inflamos las reparaciones de tormenta, porque esa es
+cotización escrita. No inflamos [las reparaciones de tormenta](/es/blog/dano-por-tormenta-que-hacer/), porque esa es
 la queja que la gente tiene después de cada huracán.
 
 ## Cuándo conviene cambiar la puerta completa
@@ -135,7 +135,7 @@ pone precio a las opciones.
 
 En Florida la sección inferior es donde se mueren las puertas. Durante medio
 año una tormenta de la tarde pone agua contra el sello inferior todos los
-días, y en la costa esa agua trae sal. El acero se corroe de adentro de la
+días, y en la costa esa agua trae sal. [El acero se corroe](/es/blog/oxido-puerta-garaje-humedad-florida/) de adentro de la
 sección hacia afuera, y para cuando el óxido se ve a través de la pintura la
 sección ya no tiene arreglo.
 

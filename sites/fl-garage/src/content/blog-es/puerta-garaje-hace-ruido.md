@@ -26,7 +26,7 @@ faq:
 
 **Chillido agudo.** Bisagras y rodillos secos. Es el ruido que mejor responde a la lubricación y la razón más común por la que la gente pide una afinación.
 
-**Un golpe seco, una sola vez.** Un resorte de torsión o un cable que cedió. Si después de eso la puerta ya no abre o quedó muy pesada, es el resorte. Deje de usar el motor de puerta de garaje y no intente forzarla.
+**Un golpe seco, una sola vez.** Un resorte de torsión o un cable que cedió. Si después de eso la puerta ya no abre o quedó muy pesada, es el resorte. Deje de usar el motor de puerta de garaje y no intente forzarla. Nuestra guía sobre [un estruendo en la puerta del garaje](/es/blog/estruendo-en-la-puerta-del-garaje/) explica qué hacer enseguida.
 
 **Chasquidos al subir.** Las bisagras de las secciones se atoran cuando la puerta toma la curva del riel. Casi siempre están secas, a veces están rotas y de vez en cuando la puerta está fuera de escuadra.
 
@@ -34,7 +34,7 @@ faq:
 
 **Un retumbo que se siente en la pared.** Es el ruido de la cadena transmitido a la estructura de la casa. No es una falla, es lo que hacen los motores de cadena.
 
-**Zumbido sin movimiento.** El motor tiene corriente, pero algo entre él y la puerta falló: un engrane pelado, un carro roto o una puerta tan desbalanceada que el motor no puede levantarla. Esa la vemos en detalle en [el motor que dejó de funcionar](/es/blog/motor-puerta-garaje-dejo-de-funcionar/).
+**Zumbido sin movimiento.** El motor tiene corriente, pero [algo entre él y la puerta falló](/es/blog/motor-funciona-puerta-no-se-mueve/): un engrane pelado, un carro roto o una puerta tan desbalanceada que el motor no puede levantarla. Esa la vemos en detalle en [el motor que dejó de funcionar](/es/blog/motor-puerta-garaje-dejo-de-funcionar/).
 
 ## Por qué las puertas en Florida se ponen ruidosas
 
@@ -44,7 +44,7 @@ La primera es la humedad. Un perno de bisagra o el balero de un rodillo que en u
 
 ![Rodillos de puerta de garaje desgastados de una casa costera en Florida: baleros oxidados, ruedas con planos y un vástago corroído dentro de la bisagra. Rodillos así raspan en el riel y con el tiempo se salen de él.](/images/worn-garage-door-rollers.webp)
 
-La segunda es el calor. Un garaje que pasa todo el verano arriba de 100°F adelgaza el lubricante en spray y lo seca más rápido, así que una puerta lubricada en primavera puede estar chillando en agosto.
+La segunda es el calor. Un garaje que pasa [todo el verano arriba de 100°F](/es/blog/calor-verano-problemas-puerta-garaje/) adelgaza el lubricante en spray y lo seca más rápido, así que una puerta lubricada en primavera puede estar chillando en agosto.
 
 La tercera es el uso. En Florida la puerta de garaje es la puerta principal, la puerta de la bodega y la puerta del taller. En comunidades de carritos de golf abre y cierra varias veces al día. Más ciclos significan más desgaste en cada pieza móvil, y una puerta que corre cuatro veces al día llega al punto de necesitar servicio en la mitad del tiempo que una que corre dos.
 
@@ -58,7 +58,7 @@ Si a mano también suena fuerte, camine la puerta despacio y escuche. Casi siemp
 
 ## Qué se lubrica y qué no
 
-Use silicona o litio blanco en spray para puertas de garaje. No use WD-40, que es un solvente y desplaza el lubricante que ya estaba, ni grasa, que junta arena.
+Use [silicona o litio blanco en spray](/es/blog/como-lubricar-puerta-garaje/) para puertas de garaje. No use WD-40, que es un solvente y desplaza el lubricante que ya estaba, ni grasa, que junta arena.
 
 **Sí se lubrica:** los puntos de giro de las bisagras, los baleros de los rodillos, el resorte de torsión mismo, las placas de balero de los extremos y el riel del motor si es de cadena o de tornillo sinfín.
 
@@ -85,10 +85,10 @@ Todos los precios son precios desde, para una puerta sencilla estándar, y la li
 
 Casi toda casa de Florida es de una planta con el garaje pegado, así que una recámara o la sala comparten pared con el motor. Un motor de cadena atornillado a las vigas del techo manda su vibración directo por esa pared.
 
-Si el herraje va callado a mano y el ruido es del motor, tiene dos caminos. Unas bases de hule entre el motor y el techo quitan una parte. Un motor de banda quita casi toda, y si el equipo ya pasó los diez años en un garaje caliente, cambiarlo suele ser mejor gasto que tratar de silenciarlo.
+Si el herraje va callado a mano y el ruido es del motor, tiene dos caminos. Unas bases de hule entre el motor y el techo quitan una parte. [Un motor de banda](/es/blog/motor-de-correa-o-de-cadena/) quita casi toda, y si el equipo ya pasó los diez años en un garaje caliente, cambiarlo suele ser mejor gasto que tratar de silenciarlo.
 
 ## Cuándo llamarnos
 
 Llame cuando el ruido sea raspado y no chillido, cuando aparezca un sonido nuevo en un punto exacto del recorrido, cuando la puerta empiece a correr [chueca o despareja](/es/blog/puerta-garaje-chueca-o-despareja/), o cuando lubricar ya no ayude.
 
-Una afinación de $85 a $160 cubre la inspección, la lubricación, el apriete de herrajes y el ajuste de límites y balance. Las refacciones que encontramos se cotizan aparte y le mostramos la pieza que quitamos. Trabajamos en todo el estado, desde el [Suroeste de Florida](/es/areas-de-servicio/southwest-florida/) hasta el [Norte de Florida](/es/areas-de-servicio/north-florida/), el mismo día, los siete días de la semana.
+[Una afinación](/es/blog/costo-mantenimiento-puerta-garaje/) de $85 a $160 cubre la inspección, la lubricación, el apriete de herrajes y el ajuste de límites y balance. Las refacciones que encontramos se cotizan aparte y le mostramos la pieza que quitamos. Trabajamos en todo el estado, desde el [Suroeste de Florida](/es/areas-de-servicio/southwest-florida/) hasta el [Norte de Florida](/es/areas-de-servicio/north-florida/), el mismo día, los siete días de la semana.

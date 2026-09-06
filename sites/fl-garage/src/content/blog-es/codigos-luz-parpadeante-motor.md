@@ -52,7 +52,7 @@ Revise esto en orden.
 
 **¿El cable está dañado o corroído?** El cable de los sensores corre por la pared a ras del piso. Ahí es donde lo grapan de más, lo pellizcan detrás de un estante, lo muerden los roedores y, en Florida, donde se queda el agua de tormenta. Mire los tornillitos de conexión atrás de cada sensor. Costra verde o blanca en ellos significa corrosión, y una conexión que va y viene con la humedad es la falla clásica de sensores en Florida.
 
-Si esas cinco revisiones salen bien y el parpadeo sigue, falló el par de sensores o la tarjeta lógica. Ahí es donde usted se detiene y llama a alguien.
+Si esas cinco revisiones salen bien y el parpadeo sigue, falló [el par de sensores](/es/blog/sensores-seguridad-puerta-garaje/) o la tarjeta lógica. Ahí es donde usted se detiene y llama a alguien.
 
 ## Qué le dicen las luces de los sensores
 

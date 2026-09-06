@@ -73,7 +73,7 @@ Revise el WiFi en el motor antes de comprar. La construcción de bloque de concr
 
 Si usted solo puede justificar una mejora en un motor nuevo, el respaldo de batería le gana al WiFi. Significa que la puerta abre aunque no haya luz, lo que después de una tormenta puede durar días. Agrega de $60 a $150 en cualquier motor y casi todas las unidades inteligentes lo ofrecen.
 
-La aplicación también necesita corriente. Cuando se va la luz, el router está caído, el WiFi del motor está caído y la cámara está apagada, a menos que el router tenga su propio respaldo. Lo que a usted le queda es la puerta, abriendo con la batería desde el control remoto y el botón de pared. Nuestra guía de [respaldo de batería y apagones](/es/blog/respaldo-de-bateria-apagones/) explica cuánto dura una batería y cómo usar la liberación manual si no alcanza.
+La aplicación también necesita corriente. Cuando se va la luz, el router está caído, el WiFi del motor está caído y la cámara está apagada, a menos que el router tenga su propio respaldo. Lo que a usted le queda es la puerta, abriendo con la batería desde el control remoto y el botón de pared. Nuestra guía de [respaldo de batería y apagones](/es/blog/respaldo-de-bateria-apagones/) explica cuánto dura una batería y cómo usar [la liberación manual](/es/blog/liberacion-manual-puerta-garaje/) si no alcanza.
 
 ## Cuándo no vale la pena
 
@@ -81,13 +81,13 @@ Si el garaje es separado, se usa poco y usted lo ve desde la cocina, una aplicac
 
 Si su WiFi no llega al garaje de forma confiable y usted no quiere agregar un punto de acceso, la función lo va a frustrar. Pruebe la señal en el lugar del motor antes de comprar.
 
-Si el motor actual es tan viejo que no tiene sensores de seguridad, la mejora correcta es un motor nuevo por razones de seguridad, y la pregunta del WiFi viene después.
+Si el motor actual es [tan viejo que no tiene sensores de seguridad](/es/blog/seguridad-motores-antiguos-puerta-garaje/), la mejora correcta es un motor nuevo por razones de seguridad, y la pregunta del WiFi viene después.
 
 ## Dos advertencias prácticas
 
 **Los focos LED.** Muchos focos LED emiten interferencia que acaba con el alcance del control remoto, y agregar un controlador inteligente a un motor con un LED malo produce un conjunto de síntomas confuso. Use un foco clasificado para motores de puerta de garaje. Si el control ya batalla, lea primero nuestra guía de [control remoto que no funciona](/es/blog/control-remoto-no-funciona/).
 
-**El calor.** Un garaje cerrado de Florida llega a 100°F y más en verano, lo que cocina la tarjeta electrónica de cualquier motor. Un motor inteligente no es más vulnerable que uno estándar, pero tiene más electrónica que perder. Mantenga la unidad fuera del sol directo que entra por una ventana y cuente con que el calor del verano acorte la vida de cualquier motor aquí comparado con la misma unidad en un clima más fresco.
+**El calor.** Un garaje cerrado de Florida [llega a 100°F y más en verano](/es/blog/calor-verano-problemas-puerta-garaje/), lo que cocina la tarjeta electrónica de cualquier motor. Un motor inteligente no es más vulnerable que uno estándar, pero tiene más electrónica que perder. Mantenga la unidad fuera del sol directo que entra por una ventana y cuente con que el calor del verano acorte la vida de cualquier motor aquí comparado con la misma unidad en un clima más fresco.
 
 ## Qué pedir
 

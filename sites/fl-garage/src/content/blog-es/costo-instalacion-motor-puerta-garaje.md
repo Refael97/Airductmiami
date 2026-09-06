@@ -36,7 +36,7 @@ faq:
 
 El rango estándar de instalación en [nuestra lista de precios](/es/precios/)
 es de $275 a $600. La mayoría de los dueños de casa de Florida con garaje
-adjunto y una recámara arriba o al lado terminan en un motor de banda en la
+adjunto y una recámara arriba o al lado terminan en [un motor de banda](/es/blog/motor-de-correa-o-de-cadena/) en la
 banda de $350 a $600.
 
 ## Qué incluye el precio
@@ -69,7 +69,7 @@ Wellington con establo o taller aparte, no tienen a quién molestar, y nada
 dura más por menos dinero.
 
 Si no hay altura libre suficiente arriba de la puerta para un riel, necesita
-un jackshaft de pared. Las casas tipo rancho de los años 50 a 70 en Hialeah,
+[un jackshaft de pared](/es/blog/motores-para-techo-bajo/). Las casas tipo rancho de los años 50 a 70 en Hialeah,
 el Kendall antiguo, Hollywood al este de la I-95 y el St. Petersburg antiguo
 seguido tienen puertas sencillas con muy poca altura libre, y un jackshaft
 montado junto a la barra de torsión lo resuelve.
@@ -92,7 +92,7 @@ una razón práctica para preferir banda sobre cadena, aparte del ruido.
 
 **Los apagones.** Florida pierde electricidad después de las tormentas más
 que cualquier otro lugar del país, y puede quedarse sin luz por días. Un
-motor con batería de respaldo sigue abriendo cuando la calle está a oscuras.
+motor con [batería de respaldo](/es/blog/respaldo-de-bateria-apagones/) sigue abriendo cuando la calle está a oscuras.
 
 ## Reparar o cambiar el que ya tiene
 
@@ -109,7 +109,7 @@ Cambie el equipo cuando ocurra cualquiera de estas:
 - El motor ya se reconstruyó una vez
 - La tarjeta ya falló dos veces por calor, lo que significa que la siguiente también
 
-La línea de 1993 vale la pena tomarla en serio. Los sensores de ojo
+[La línea de 1993](/es/blog/seguridad-motores-antiguos-puerta-garaje/) vale la pena tomarla en serio. Los sensores de ojo
 fotoeléctrico se volvieron obligatorios en motores nuevos ese año. Un motor
 sin ellos no tiene forma confiable de detenerse ante un niño o una mascota, y
 todavía hay muchos funcionando en los barrios más viejos de Miami, Fort
@@ -123,7 +123,7 @@ motor, y es la opción más útil en este estado.
 **WiFi y control desde el teléfono.** De verdad sirve para revisar si dejó la
 puerta abierta cuando ya va en la I-4, y para dejar entrar a una entrega o a
 alguien que limpia. En las casas de renta vacacional alrededor de Kissimmee y
-en las casas de temporada de Naples y Bonita Springs es casi indispensable.
+en las casas de temporada de Naples y Bonita Springs [es casi indispensable](/es/blog/motor-inteligente-vale-la-pena/).
 La línea de
 [instalación de motor inteligente](/es/servicios/smart-garage-door-opener-installation/)
 va de $350 a $750 con opciones de cámara y batería.

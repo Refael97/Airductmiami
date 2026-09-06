@@ -72,7 +72,7 @@ En la práctica:
 - **Los motores laterales de pared** de esas mismas marcas normalmente la incluyen, porque el montaje en pared se vende como unidad premium.
 - **Los motores inteligentes con WiFi** casi siempre la incluyen o la ofrecen, y la aplicación reporta el estado de la batería.
 - **Los motores de cadena económicos** muchas veces no tienen el compartimiento. Un motor barato sin opción de respaldo es la razón común por la que un dueño de casa no puede agregarla después.
-- **Los motores viejos**, de más de unos diez años, casi nunca aceptan batería. Si su unidad tiene esa edad y el problema de los apagones le importa, la respuesta es un motor nuevo con respaldo integrado, y un motor de esa edad de todos modos está cerca del final de la vida de su tarjeta y de sus engranes en un garaje de Florida.
+- **Los motores viejos**, de más de unos diez años, casi nunca aceptan batería. Si su unidad tiene esa edad y el problema de los apagones le importa, la respuesta es un motor nuevo con respaldo integrado, y un motor de esa edad de todos modos está cerca del final de la vida de su tarjeta y de sus engranes en un garaje de Florida, donde [el calor del verano](/es/blog/calor-verano-problemas-puerta-garaje/) acorta la vida de cualquier equipo.
 
 Si no está seguro de su motor, el número de modelo en la cabeza y una mirada buscando una tapa de batería en el costado o atrás lo resuelven. Se lo podemos revisar en cualquier visita de [reparación de motor](/es/servicios/garage-door-opener-repair/), de $95 a $300 por la reparación misma.
 
@@ -86,7 +86,7 @@ Cámbiela cuando avisa. Un motor que pita cada treinta segundos le está diciend
 
 ## La liberación manual es el recurso
 
-Sea cual sea su motor, la liberación manual es lo que abre la puerta cuando la batería está agotada, cuando el motor no tiene batería, o cuando el motor falló por otra razón. Es el cordón rojo que cuelga del carro sobre el riel.
+Sea cual sea su motor, [la liberación manual](/es/blog/liberacion-manual-puerta-garaje/) es lo que abre la puerta cuando la batería está agotada, cuando el motor no tiene batería, o cuando el motor falló por otra razón. Es el cordón rojo que cuelga del carro sobre el riel.
 
 Con la puerta cerrada, jale el cordón. El carro se desconecta de la puerta y usted levanta la puerta a mano. Una puerta con resortes sanos sube con esfuerzo moderado y se queda donde usted la deje. Bájela de la misma forma, y ponga el pasador de seguro si va a salir. Cuando vuelva la luz, reconecte jalando el cordón hacia el motor o corriendo el motor hasta que el carro vuelva a tomar la puerta, según el modelo.
 
@@ -96,7 +96,7 @@ Un respaldo de batería significa que usted casi nunca usa la liberación. No si
 
 ## Antes de la temporada
 
-Si usted va a elegir un motor esta primavera, el respaldo de batería es el único accesorio que recomendamos a todo cliente de Florida sin que nos lo pregunten. Son de $60 a $150 una vez, funciona sin configuración y el primer apagón lo paga. Si ya tiene un motor que la acepta y está vacío, eso es un trabajo de diez minutos en un mantenimiento.
+Si usted va a elegir un motor esta primavera, el respaldo de batería es el único accesorio que recomendamos a todo cliente de Florida sin que nos lo pregunten. Son de $60 a $150 una vez, funciona sin configuración y el primer apagón lo paga. Si ya tiene un motor que la acepta y está vacío, eso es un trabajo de diez minutos en un mantenimiento. Y si va a poner puerta nueva antes de junio, la [lista para preparar la puerta del garaje](/es/blog/preparar-puerta-garaje-huracan/) trae la batería anotada por una razón.
 
 ## Para seguir leyendo
 

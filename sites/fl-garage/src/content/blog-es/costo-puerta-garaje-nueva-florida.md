@@ -32,12 +32,12 @@ impactos. En Florida el primer grado no existe. El Código de Construcción de
 Florida exige que toda puerta de garaje esté certificada para la presión de
 viento de diseño del sitio, porque la puerta de garaje es la abertura más
 grande de la casa y cuando falla la casa se presuriza y el techo queda en
-riesgo. Por eso la puerta base aquí es una puerta certificada para viento, y
+riesgo. Por eso la puerta base aquí es [una puerta certificada para viento](/es/blog/certificada-viento-vs-resistente-impactos/), y
 el precio arranca en $950 y no menos.
 
 | Certificación | Qué significa | Dónde se exige | Instalada, puerta sencilla |
 |---|---|---|---|
-| Certificada para viento | Construida para resistir la presión de viento de diseño del sitio, con Aprobación de Producto de Florida | En todo el estado fuera de la HVHZ | $950 a $4,200 |
+| Certificada para viento | Construida para resistir la presión de viento de diseño del sitio, con Aprobación de Producto de Florida | En todo el estado [fuera de la HVHZ](/es/blog/puertas-garaje-hvhz-explicado/) | $950 a $4,200 |
 | Resistente a impactos | Certificada para viento y probada contra impacto de misil grande, la puerta de huracán | Miami-Dade y Broward, y donde las reglas de protección de aberturas del sitio lo pidan | $1,800 a $6,500 |
 | HVHZ con NOA de Miami-Dade | Puerta resistente a impactos con Notice of Acceptance de Miami-Dade | Miami-Dade y Broward | $1,800 a $6,500 |
 
@@ -56,7 +56,7 @@ de $1,800 a $6,500.
 | Aluminio | $1,300 a $4,000 | No se oxida, las de cristal completo cuestan más |
 | Fibra de vidrio | $1,400 a $3,800 | Apariencia de madera sin comején |
 | Madera | $2,200 a $9,000 | Puertas tipo carruaje a la medida, el riesgo es comején y pudrición |
-| Certificada contra huracanes, cualquier material | Desde $1,800 | Resistente a impactos o con NOA de HVHZ |
+| Certificada contra huracanes, [cualquier material](/es/blog/mejor-material-puerta-garaje-florida/) | Desde $1,800 | Resistente a impactos o con NOA de HVHZ |
 | Cristal completo y aluminio resistente a impactos | Hasta $8,000 y más | Remodelaciones en Naples, Boca Raton y Jupiter |
 
 Una doble de 16 pies no son dos sencillas. Es un producto más grande y más
@@ -65,7 +65,7 @@ de cada rango.
 
 ## Qué agrega el permiso
 
-Cambiar una puerta de garaje en Florida requiere un permiso de construcción,
+Cambiar una puerta de garaje en Florida requiere [un permiso de construcción](/es/blog/permiso-puerta-garaje-florida/),
 sacado por un contratista licenciado, con la certificación de la puerta
 documentada en el permiso. El inspector revisa que la puerta instalada
 coincida con la Aprobación de Producto de Florida o con el NOA del papeleo, y
@@ -96,7 +96,7 @@ que viene con la puerta.
 **El desecho.** Incluido. Una puerta de garaje es una cosa incómoda de tirar
 por cuenta propia.
 
-**Trabajo estructural.** Poco común, pero un marco podrido por veinte años de
+**Trabajo estructural.** Poco común, pero [un marco podrido](/es/blog/cambio-de-marco-puerta-garaje/) por veinte años de
 lluvia de la tarde, o una abertura de bloque de concreto que quedó fuera de
 escuadra, hay que resolverla antes de meter la puerta.
 
@@ -107,7 +107,7 @@ práctica R-0 a R-2. Una puerta con núcleo de poliuretano es R-12 a R-18.
 
 En Florida la pregunta es el calor, no el frío. Un garaje adjunto con puerta
 sin aislar llega a 100°F y más en verano, y ese calor pasa por la pared a la
-cocina y cocina el motor que está en el techo. Una puerta aislada mantiene el
+cocina y cocina el motor que está en el techo. [Una puerta aislada](/es/blog/puerta-garaje-aislada-o-sin-aislar/) mantiene el
 garaje más cerca de la temperatura de la casa, importa más cuando hay una
 recámara arriba del garaje o un taller o gimnasio adentro, y además es más
 rígida y más silenciosa. También se abolla menos.
@@ -116,7 +116,7 @@ rígida y más silenciosa. También se abolla menos.
 
 La inspección de mitigación de viento de Florida, formato OIR-B1-1802,
 registra si las aberturas, incluida la puerta de garaje, tienen protección
-certificada. Una puerta certificada puede contribuir a un crédito en la prima
+certificada. Una puerta certificada puede contribuir a [un crédito en la prima](/es/blog/credito-seguro-mitigacion-viento/)
 bajo las reglas de descuento por mitigación de Florida. Decimos que "puede
 calificar" porque la tabla de créditos es de su aseguradora, y le entregamos
 el papeleo de aprobación de producto que el inspector necesita. El programa
@@ -126,7 +126,7 @@ solicitudes antes de pedir la puerta.
 
 ## Cuándo comprarla
 
-De marzo a mayo. La puerta llega y el permiso sale antes de que empiece la
+[De marzo a mayo](/es/blog/mejor-momento-cambiar-puerta-garaje-florida/). La puerta llega y el permiso sale antes de que empiece la
 temporada de huracanes el 1 de junio, y los instaladores todavía no están en
 la carrera de después de la tormenta. Tras una tormenta con nombre los
 tiempos de entrega se alargan y sube el número de empresas dispuestas a
@@ -134,7 +134,7 @@ cobrar por la urgencia.
 
 ## Cuándo conviene más una reparación
 
-Una puerta nueva es una compra grande y no siempre es la correcta. Si los
+Una puerta nueva es una compra grande y [no siempre es la correcta](/es/blog/reparar-o-reemplazar-puerta-garaje/). Si los
 paneles están sanos y la puerta trae etiqueta de certificación, y solo
 fallaron los resortes, los cables o los rodillos, una reparación de $150 a
 $350 por resorte o de $95 a $300 por cables le compra años. Lo decimos aun

@@ -26,7 +26,7 @@ Esta sola distinción reduce las posibilidades más rápido que cualquier otra c
 
 **El mismo punto, cada vez.** Hay algo físico en el camino a esa altura. Mire los dos rieles en esa posición exacta buscando una abolladura, un abultamiento, una mancha de óxido, un soporte flojo, o un rodillo que no está bien metido en el riel. Después mire las bisagras de la unión de secciones que queda al nivel del punto donde se detiene.
 
-**Puntos distintos, o cada vez peor.** Es más probable que sea el balance de los resortes, un cable estirándose, o un motor que está perdiendo fuerza con el calor. Una puerta que antes corría limpia y ahora se detiene un poco más arriba cada mes le está diciendo que los resortes están cansados.
+**Puntos distintos, o cada vez peor.** Es más probable que sea el balance de los resortes, un cable estirándose, o un motor que está perdiendo fuerza con el calor. Una puerta que antes corría limpia y ahora se detiene un poco más arriba cada mes le está diciendo que [los resortes están cansados](/es/blog/puerta-garaje-abre-lento/).
 
 ## La prueba manual
 
@@ -48,7 +48,7 @@ Si la puerta no se mueve nada a mano, pare. Algo está trabado con fuerza sufici
 
 **Soporte de riel flojo.** El riel se abre bajo carga y el rodillo se sale a medias. Común en puertas que nunca han recibido servicio, y en casas viejas de bloque donde los tirafondos del marco se aflojaron después de décadas de ciclos.
 
-**Cable deshilachado o estirado.** Un lado pierde apoyo, la puerta va chueca y se atasca en los rieles. El óxido en un cable es la advertencia visible más común que vemos en Florida, y un cable oxidado se deshilacha hilo por hilo hasta que se suelta. Esta es urgente, porque el paso siguiente es que la puerta se salga del riel por completo. La [reparación de cable](/es/servicios/garage-door-cable-repair/) cuesta $95 a $300, o $225 a $400 con el tambor.
+**Cable deshilachado o estirado.** Un lado pierde apoyo, [la puerta va chueca](/es/blog/puerta-garaje-chueca-o-despareja/) y se atasca en los rieles. El óxido en un cable es la advertencia visible más común que vemos en Florida, y un cable oxidado se deshilacha hilo por hilo hasta que se suelta. Esta es urgente, porque el paso siguiente es que la puerta se salga del riel por completo. La [reparación de cable](/es/servicios/garage-door-cable-repair/) cuesta $95 a $300, o $225 a $400 con el tambor.
 
 ![Un cable de izaje deshilachado en el soporte inferior, con hilos rotos saliéndose del alambre manchado de óxido.](/images/frayed-lift-cable.webp)
 
@@ -82,6 +82,6 @@ Estos son los precios desde de nuestra [página de precios](/es/precios/) para u
 
 ## Por qué vemos tanto de esto en Florida
 
-Una puerta en Cape Coral o Clearwater vive en aire salino, se moja en el sello inferior casi todas las tardes de junio a octubre, hace más ciclos que una puerta del norte porque el garaje es la puerta principal, y está en un cuarto que pasa de 100°F todo el verano. Cada una de esas cosas acorta la vida de los rodillos, el riel y los cables. Un mantenimiento cada primavera, antes de la temporada de huracanes, detecta casi todo eso antes de que la puerta se trabe a medias con el carro adentro.
+Una puerta en Cape Coral o Clearwater [vive en aire salino](/es/blog/aire-salino-corrosion-puerta-garaje/), se moja en el sello inferior casi todas las tardes de junio a octubre, hace más ciclos que una puerta del norte porque el garaje es la puerta principal, y está en un cuarto que pasa de 100°F todo el verano. Cada una de esas cosas acorta la vida de los rodillos, el riel y los cables. Un mantenimiento cada primavera, antes de la temporada de huracanes, detecta casi todo eso antes de que la puerta se trabe a medias con el carro adentro.
 
 Hacemos este trabajo el mismo día en [Southwest Florida](/es/areas-de-servicio/southwest-florida/), [Tampa Bay](/es/areas-de-servicio/tampa-bay/), [Broward County](/es/areas-de-servicio/broward-county/), [Miami-Dade County](/es/areas-de-servicio/miami-dade-county/), [Palm Beach y la Treasure Coast](/es/areas-de-servicio/palm-beach-treasure-coast/), [Central Florida](/es/areas-de-servicio/central-florida/) y [North Florida](/es/areas-de-servicio/north-florida/). Llame al (561) 897-9930 y díganos a qué altura se detiene la puerta.

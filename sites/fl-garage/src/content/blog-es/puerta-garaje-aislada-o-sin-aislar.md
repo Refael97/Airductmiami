@@ -86,3 +86,4 @@ Si el objetivo es el calor, atienda toda la abertura. El sello inferior recibe e
 - [Puertas de acero, guía de compra](/es/guia-de-compra/steel-garage-doors/)
 - [Medidas estándar de puertas de garaje](/es/blog/medidas-estandar-puertas-garaje/)
 - [Costo de una puerta de garaje nueva en Florida](/es/blog/costo-puerta-garaje-nueva-florida/)
+- [Problemas de puerta de garaje por el calor del verano en Florida](/es/blog/calor-verano-problemas-puerta-garaje/)

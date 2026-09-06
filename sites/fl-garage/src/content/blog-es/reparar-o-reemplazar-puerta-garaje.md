@@ -40,7 +40,7 @@ Frente a una puerta nueva de acero certificada contra viento de $950 a $4,200 in
 
 ## Los seis casos en que el reemplazo es lo correcto
 
-**Las secciones están oxidadas de lado a lado.** No óxido superficial, sino corrosión que atravesó el acero, normalmente empezando en la sección inferior donde el sello retiene agua contra ella cada tarde durante medio año. A pocas millas de cualquiera de las dos costas esto pasa años antes que tierra adentro. Cuando la sección perdió integridad no hay nada que reparar, y una sección inferior nueva en una puerta cuyas demás secciones van por el mismo camino es dinero gastado dos veces.
+**Las secciones están oxidadas de lado a lado.** No óxido superficial, sino [corrosión que atravesó el acero](/es/blog/oxido-puerta-garaje-humedad-florida/), normalmente empezando en la sección inferior donde el sello retiene agua contra ella cada tarde durante medio año. A pocas millas de cualquiera de las dos costas esto pasa años antes que tierra adentro. Cuando la sección perdió integridad no hay nada que reparar, y una sección inferior nueva en una puerta cuyas demás secciones van por el mismo camino es dinero gastado dos veces.
 
 **Un panel dañado no se puede igualar.** Si el perfil está descontinuado, las opciones honestas son una diferencia visible o el reemplazo completo. En el frente de la casa, la mayoría elige reemplazar. El [cambio de panel](/es/servicios/garage-door-panel-replacement/) cuesta de $250 a $800 por sección cuando el perfil todavía se fabrica.
 
@@ -64,7 +64,7 @@ Una puerta sin certificar cambia la decisión de reparar o reemplazar como ningu
 
 Fuera de la zona HVHZ hay un camino intermedio. Existen kits de refuerzos con aprobación de producto de Florida, aceptados en casi todo el estado, y para una puerta sana pero sin certificar son una opción real. Nuestra guía de [refuerzos para puerta de garaje](/es/blog/refuerzos-puerta-garaje-huracanes/) explica dónde se aceptan y dónde no. En Miami-Dade y Broward la vía aceptada es una puerta certificada.
 
-El calendario importa. La temporada de huracanes va del 1 de junio al 30 de noviembre, y el mejor momento para cambiar una puerta es de marzo a mayo, cuando los tiempos de entrega son más cortos y no estamos trabajando alrededor de vigilancias y avisos. Una puerta ordenada en primavera está montada antes de la primera tormenta. Una puerta ordenada en septiembre puede no estarlo.
+El calendario importa. La temporada de huracanes va del 1 de junio al 30 de noviembre, y [el mejor momento para cambiar una puerta](/es/blog/mejor-momento-cambiar-puerta-garaje-florida/) es de marzo a mayo, cuando los tiempos de entrega son más cortos y no estamos trabajando alrededor de vigilancias y avisos. Una puerta ordenada en primavera está montada antes de la primera tormenta. Una puerta ordenada en septiembre puede no estarlo.
 
 ## La regla de la mitad del precio
 

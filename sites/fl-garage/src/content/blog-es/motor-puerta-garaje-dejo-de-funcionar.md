@@ -26,7 +26,7 @@ faq:
 
 Si la puerta está cerrada y usted tiene que salir, jale el cordón rojo de emergencia que cuelga del carro sobre el riel. Eso desconecta la puerta del motor y la puerta ya se levanta a mano.
 
-**Una advertencia.** Una puerta balanceada sube fácil y se queda donde la deje. Si está muy pesada o se azota hacia abajo, el resorte de torsión falló y el motor solo lo estaba tapando. No se pare debajo de ella y no intente detenerla usted solo. Eso es una llamada de resortes, no de motor, y es el único escenario peligroso de esta página.
+**Una advertencia.** Una puerta balanceada sube fácil y se queda donde la deje. Si está muy pesada o se azota hacia abajo, el resorte de torsión falló y el motor solo lo estaba tapando. No se pare debajo de ella y no intente detenerla usted solo. Eso es una llamada de resortes, no de motor, y es el único escenario peligroso de esta página. Nuestra guía sobre [el carro atrapado en el garaje](/es/blog/carro-atrapado-en-el-garaje/) recorre esa situación paso a paso.
 
 ## Averigüe qué tipo de muerte es
 
@@ -104,7 +104,7 @@ Un motor no está diseñado para levantar una puerta de garaje. Los resortes lev
 | Corre bien pero la puerta pesa a mano | Resorte cansado | [Cambio de resortes](/es/servicios/garage-door-spring-replacement/), $150 a $350 por resorte |
 | Más de quince años, segunda falla del año | Edad y calor | Motor nuevo de $275 a $600, o [motor inteligente](/es/servicios/smart-garage-door-opener-installation/) con respaldo de batería de $350 a $750 |
 
-Todos son precios desde para una puerta sencilla estándar. La lista completa está en la [página de precios](/es/precios/).
+Todos son precios desde para una puerta sencilla estándar. La lista completa está en la [página de precios](/es/precios/), y nuestra guía del [costo de instalar un motor nuevo](/es/blog/costo-instalacion-motor-puerta-garaje/) explica qué mueve ese número.
 
 ## Reparar o cambiar
 
@@ -112,8 +112,8 @@ Todos son precios desde para una puerta sencilla estándar. La lista completa es
 
 **Por lo general no vale la pena en un equipo viejo:** la tarjeta lógica. Las tarjetas de modelos descontinuados se vuelven escasas y el precio sube. Cuando una tarjeta en un equipo de más de quince años cuesta más de la mitad de un motor nuevo, la respuesta honesta es el motor nuevo, y se lo decimos en vez de venderle la tarjeta.
 
-**Cámbielo sin discusión si es anterior a 1993.** Los motores de antes de ese año no tienen sensores de seguridad de ojo eléctrico, que la ley federal exige en equipos residenciales desde 1993.
+**Cámbielo sin discusión si es anterior a 1993.** Los motores de antes de ese año no tienen [sensores de seguridad de ojo eléctrico](/es/blog/seguridad-motores-antiguos-puerta-garaje/), que la ley federal exige en equipos residenciales desde 1993.
 
-Dos agregados para Florida cuando le toque cambiar. Ponga un supresor de picos en el contacto del motor, porque la próxima tormenta va a llegar. Y elija un equipo con respaldo de batería, que agrega $60 a $150 y significa que la puerta sigue corriendo cuando no hay luz, que después de una tormenta es exactamente cuando la necesita.
+Dos agregados para Florida cuando le toque cambiar. Ponga un supresor de picos en el contacto del motor, porque la próxima tormenta va a llegar. Y elija [un equipo con respaldo de batería](/es/blog/respaldo-de-bateria-apagones/), que agrega $60 a $150 y significa que la puerta sigue corriendo cuando no hay luz, que después de una tormenta es exactamente cuando la necesita.
 
 Atendemos todo el estado, desde [Palm Beach y la Treasure Coast](/es/areas-de-servicio/palm-beach-treasure-coast/) hasta el [Centro de Florida](/es/areas-de-servicio/central-florida/), el mismo día, los siete días de la semana.

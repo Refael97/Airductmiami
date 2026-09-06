@@ -31,7 +31,7 @@ puerta, repartido entre los dos, y en una doble de 16 pies eso es mucho peso
 sobre dos cables trenzados delgados.
 
 Por eso un solo cable roto no es un problema pequeño: la carga se pasa a un
-lado, la puerta sube chueca y se atora o se sale del riel.
+lado, [la puerta sube chueca](/es/blog/puerta-garaje-chueca-o-despareja/) y se atora o se sale del riel.
 
 ## Lo que cuesta
 
@@ -58,7 +58,7 @@ volver a asentar y tensar. Ese es un trabajo de $85 a $140.
 Si el cable está deshilachado, doblado o oxidado, hay que cambiarlo. Ese es
 el trabajo de $95 a $300.
 
-La diferencia entre los dos se ve en treinta segundos. Pida ver el cable. Una
+La diferencia entre los dos se ve en treinta segundos. [Pida ver el cable](/es/blog/que-incluye-una-cotizacion-justa/). Una
 empresa que no le muestra la pieza que dice que hay que cambiar es una
 empresa con la que hay que tener cuidado.
 
@@ -105,7 +105,7 @@ paneles.
 Mire el cable donde se enrolla en el tambor, arriba del riel. El
 deshilachado ahí es la señal más temprana, y es lo que muestra la foto de
 arriba de esta página. Cerca del soporte inferior, busque manchas naranjas en
-el concreto, óxido en los tornillos del soporte y dobleces en el cable.
+el concreto, [óxido en los tornillos del soporte](/es/blog/oxido-puerta-garaje-humedad-florida/) y dobleces en el cable.
 
 Una puerta que empezó a cerrar disparejo, con un lado tocando el piso antes
 que el otro, muchas veces le está diciendo que un cable se estiró o se salió.

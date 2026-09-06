@@ -30,7 +30,7 @@ requiere herramienta y práctica que la mayoría de la gente no tiene.
 
 El resorte en sí es una parte pequeña de la factura. El resto es la visita,
 la mano de obra, el desecho de la pieza vieja y el hecho de que quien lo hace
-trae un juego de barras de tensado y sabe cuántos cuartos de vuelta necesita
+trae [un juego de barras de tensado](/es/blog/nunca-cambie-usted-un-resorte-de-torsion/) y sabe cuántos cuartos de vuelta necesita
 su puerta en específico.
 
 ## Los números en Florida
@@ -53,7 +53,7 @@ sencilla o doble normal con resorte estándar.
 
 Cuatro cosas mueven el número de verdad.
 
-**El tamaño y el peso de la puerta.** Una doble de 16 pies pesa más o menos
+**El tamaño y el peso de la puerta.** [Una doble de 16 pies](/es/blog/cuanto-pesa-una-puerta-de-garaje/) pesa más o menos
 el doble que una sencilla y por lo general lleva dos resortes. Casi toda casa
 de Florida construida después de 1980 tiene una, y una doble aislada y
 certificada para viento pesa todavía más. Ese es un trabajo mayor, con más
@@ -62,7 +62,7 @@ piezas, y cuesta más.
 **El tipo y la clasificación del resorte.** Un resorte estándar está
 clasificado para cerca de 10,000 ciclos de apertura y cierre. Un resorte de
 alto ciclaje está clasificado para 20,000 o más y cuesta más al inicio. En
-una puerta que abre seis veces al día, el de alto ciclaje suele salir más
+una puerta que abre seis veces al día, [el de alto ciclaje](/es/blog/resortes-alto-ciclaje-vale-la-pena/) suele salir más
 barato a diez años.
 
 **Qué más falló.** En una puerta vieja los resortes rara vez fallan solos.
@@ -82,14 +82,14 @@ Aquí los resortes no fallan por frío. Fallan por dos cosas.
 
 **El conteo de ciclos.** Un garaje de Florida es la bodega, el taller, la
 segunda puerta de entrada y donde vive el carrito de golf. Una puerta que
-abre y cierra seis veces al día llega a 10,000 ciclos en menos de cinco años.
+abre y cierra seis veces al día [llega a 10,000 ciclos](/es/blog/cuanto-duran-resortes-puerta-garaje/) en menos de cinco años.
 Los fraccionamientos de los años 2000 en Wesley Chapel, Riverview, Port St.
 Lucie y Clermont están llegando ahora a su primera falla de resorte, y las
 puertas instaladas todas juntas en Pembroke Pines y Coral Springs en los
 años 90 van en su segundo o tercer juego.
 
-**Sal y humedad.** A pocas millas de cualquiera de las dos costas, el aire
-salino pica el alambre. Un resorte picado falla temprano, y casi siempre
+**Sal y humedad.** A pocas millas de cualquiera de las dos costas, [el aire
+salino](/es/blog/aire-salino-corrosion-puerta-garaje/) pica el alambre. Un resorte picado falla temprano, y casi siempre
 falla con un estruendo. En Cape Coral, Fort Lauderdale, Clearwater, Jupiter
 y Melbourne vemos resortes oxidados a lo largo de toda la espiral que ni de
 cerca llegaron a su vida por ciclos.
@@ -117,7 +117,7 @@ segunda visita, contra $120 a $250 agregados hoy.
 Casi todas las puertas de Florida instaladas desde los años 90 llevan un
 resorte de torsión sobre un eje arriba de la puerta. Las puertas sencillas
 más viejas de Hialeah, del Kendall antiguo, de Hollywood al este de la I-95
-y del St. Petersburg antiguo a veces llevan un par de resortes de extensión
+y del St. Petersburg antiguo a veces llevan [un par de resortes de extensión](/es/blog/resortes-torsion-vs-extension/)
 a lo largo de los rieles horizontales. Los dos se cambian dentro del mismo
 rango de precio. En una puerta con resortes de extensión instalamos cables
 de seguridad por dentro de los resortes si faltan, porque un resorte de
@@ -125,7 +125,7 @@ extensión que se revienta sin ese cable se vuelve un proyectil.
 
 ## Cómo se ve una cotización justa
 
-Antes de que salga nadie, usted debería poder obtener:
+Antes de que salga nadie, [usted debería poder obtener](/es/blog/que-incluye-una-cotizacion-justa/):
 
 - Un rango de precio para su puerta en específico, no un promedio nacional
 - Si el precio es por un resorte o por dos
@@ -138,7 +138,7 @@ entrada, eso es información sobre cómo va a ir el resto de la visita.
 
 ## Qué no hacer
 
-No opere el motor con un resorte roto. Los resortes cargan el peso de la
+No opere el motor [con un resorte roto](/es/blog/que-hacer-resorte-roto/). Los resortes cargan el peso de la
 puerta, no el motor. Forzar el motor lo daña, dobla paneles y puede dejar
 caer la puerta.
 

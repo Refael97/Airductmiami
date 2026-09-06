@@ -48,7 +48,7 @@ Revise las dos luces indicadoras cerca del piso. Ambas fijas quiere decir alinea
 
 Las causas en Florida son específicas. Un garaje que mira al oeste recibe sol bajo y directo en el ojo receptor al final de la tarde, y a diferencia del norte del país eso pasa todo el año. Una visera pequeña sobre el sensor lo resuelve. Las hormigas y las lagartijas se meten al lente y a la carcasa. La lluvia salpica desde la entrada y deja una película sobre el lente. Y el cable del sensor corre por la pared a ras del piso, justo donde se queda el agua de tormenta, así que las terminales se corroen y la conexión va y viene con la humedad.
 
-Busque un soporte golpeado, un cable pellizcado o mordido, o costra verde en los tornillitos de conexión atrás del sensor. Nuestra guía sobre [los códigos de luz parpadeante del motor](/es/blog/codigos-luz-parpadeante-motor/) explica qué le está diciendo el equipo mientras esto pasa.
+Busque un soporte golpeado, un cable pellizcado o mordido, o costra verde en los tornillitos de conexión atrás del sensor. Nuestra guía sobre [los sensores de seguridad](/es/blog/sensores-seguridad-puerta-garaje/) muestra cómo realinearlos, y nuestra guía sobre [los códigos de luz parpadeante del motor](/es/blog/codigos-luz-parpadeante-motor/) explica qué le está diciendo el equipo mientras esto pasa.
 
 Si la falla es intermitente, o depende de la hora del día, ahí es donde hay que buscar primero.
 
@@ -78,10 +78,10 @@ Todos son precios desde, para una puerta sencilla estándar. La lista completa e
 
 No resuelva esto subiendo la fuerza hasta que la puerta se quede abajo.
 
-Ese ajuste es lo único que impide que la puerta aplaste lo que esté debajo, y en la mayoría de los motores es una perilla chica que es fácil pasarse de vuelta. Una puerta que se regresa le está diciendo algo, no se está portando mal.
+Ese ajuste es lo único que impide que la puerta [aplaste lo que esté debajo](/es/blog/seguridad-ninos-mascotas-puerta-garaje/), y en la mayoría de los motores es una perilla chica que es fácil pasarse de vuelta. Una puerta que se regresa le está diciendo algo, no se está portando mal.
 
 ## Cuándo llamarnos
 
 Si la puerta se regresa cada vez y usted ya revisó los sensores y el sello, pida una afinación. Si empezó después de una tormenta o de un apagón, o si el motor además hace otras cosas raras, pida reparación de motor y cuéntenos qué ha visto.
 
-Un motor que pasó diez veranos de Florida en un garaje caliente a veces empieza a leer mal la fuerza porque la tarjeta lógica se está yendo, y le decimos si conviene más repararlo o cambiarlo antes de que usted se comprometa con cualquiera de las dos. Atendemos el [Condado de Broward](/es/areas-de-servicio/broward-county/), [Palm Beach y la Treasure Coast](/es/areas-de-servicio/palm-beach-treasure-coast/) y el resto del estado, el mismo día, los siete días de la semana.
+Un motor que pasó diez veranos de Florida en un garaje caliente a veces empieza a leer mal la fuerza porque la tarjeta lógica se está yendo, y le decimos si conviene más repararlo o cambiarlo antes de que usted se comprometa con cualquiera de las dos. Nuestra guía sobre [la puerta que no cierra](/es/blog/puerta-garaje-no-cierra/) cubre las fallas emparentadas. Atendemos el [Condado de Broward](/es/areas-de-servicio/broward-county/), [Palm Beach y la Treasure Coast](/es/areas-de-servicio/palm-beach-treasure-coast/) y el resto del estado, el mismo día, los siete días de la semana.

@@ -58,7 +58,7 @@ garaje es la segunda puerta de entrada, y casi siempre da directo a la cocina
 o al cuarto de lavado. Una puerta atorada abierta es un problema de
 seguridad, no una molestia. Pague el cargo.
 
-**Carro atrapado y usted lo necesita.** Si necesita el vehículo antes del
+**[Carro atrapado](/es/blog/carro-atrapado-en-el-garaje/) y usted lo necesita.** Si necesita el vehículo antes del
 siguiente día hábil, pague el cargo. Si no lo necesita, no lo pague.
 
 **Puerta colgando o parcialmente fuera del riel.** Una puerta en ese estado
@@ -72,7 +72,7 @@ huracán para su condado y su puerta quedó abierta o fuera del riel, eso es
 una emergencia y así la tratamos.
 
 **Puerta cerrada, resorte roto, carro afuera.** Esto puede esperar a la
-mañana. No opere el motor y no fuerce la puerta. Agende una cita normal. La
+mañana. No opere el motor y [no fuerce la puerta](/es/blog/que-hacer-resorte-roto/). Agende una cita normal. La
 [guía de costo de resortes](/es/blog/costo-cambio-resortes-puerta-garaje/)
 explica qué esperar de esa visita.
 
@@ -82,7 +82,7 @@ No oprima el botón. Si un resorte está roto o un cable falló, el motor
 empeora el daño con cada intento, y un trabajo de cable de $150 se vuelve un
 trabajo fuera del riel de $600 en tres oprimidas.
 
-Busque el cordón de liberación manual, la manija roja que cuelga del carro
+Busque [el cordón de liberación manual](/es/blog/liberacion-manual-puerta-garaje/), la manija roja que cuelga del carro
 del motor. Jalarlo desconecta la puerta del motor. Haga esto solo cuando la
 puerta esté completamente cerrada, porque una puerta con el resorte roto se
 va a caer si está arriba y usted la libera.
@@ -101,7 +101,7 @@ Tres patrones llenan el teléfono fuera de horario aquí.
 
 **El calor.** A media tarde en julio un garaje cerrado en Orlando o Tampa
 pasa de 100°F. Las tarjetas lógicas y los engranes de plástico de los equipos
-viejos fallan con ese calor, y suelen fallar la tarde en que usted llega a
+viejos [fallan con ese calor](/es/blog/calor-verano-problemas-puerta-garaje/), y suelen fallar la tarde en que usted llega a
 casa. Una reparación de motor cuesta de $95 a $300, un reemplazo cuesta de
 $275 a $600 instalado. La
 [guía de costo de instalación de motor](/es/blog/costo-instalacion-motor-puerta-garaje/)
@@ -110,8 +110,8 @@ explica qué equipo comprar.
 **Las tormentas.** La temporada de tormentas de la tarde y la temporada de
 huracanes se traslapan, y las dos producen puertas salidas del riel por
 presión de viento, cables reventados por soportes inferiores oxidados por el
-agua, y motores muertos después de una marejada o un apagón. Después de una
-tormenta con nombre sube el volumen y también sube el número de empresas
+agua, y motores muertos después de una marejada o un apagón. [Después de una
+tormenta con nombre](/es/blog/dano-por-tormenta-que-hacer/) sube el volumen y también sube el número de empresas
 dispuestas a cobrar por ello.
 
 **Los regresos de temporada.** En Naples, Bonita Springs, Venice y Palm Beach
@@ -126,7 +126,7 @@ debe aplicarse dos veces en la misma visita. Y nunca debe usarse para
 justificar un precio de reparación por encima del publicado.
 
 Cada una de esas es una versión de lo mismo: usar una situación de estrés
-para cobrar más de lo que vale el trabajo. Es la queja más común de este
+para cobrar [más de lo que vale el trabajo](/es/blog/mi-cotizacion-es-muy-alta/). Es la queja más común de este
 ramo, sube después de cada huracán, y es la razón por la que nuestros precios
 están en el sitio web y no en la cabeza de un técnico. Nuestro artículo sobre
 [la visita de $29](/es/blog/visita-de-29-dolares-explicada/) explica el resto

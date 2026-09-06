@@ -26,7 +26,7 @@ faq:
 
 Un garaje abierto es una puerta abierta a su casa. En Florida el garaje está pegado a la vivienda, la puerta que da a la cocina o al cuarto de lavado muchas veces no tiene llave, y adentro están las herramientas, las bicicletas y a veces el carrito de golf.
 
-Así que antes de diagnosticar nada, asegúrelo hoy mismo. Desconecte el motor del contacto del techo y jale la liberación manual, o use el botón de bloqueo de la consola de pared si su equipo lo tiene. Ese modo desactiva todos los controles remotos y teclados y se activa con una sola pulsación.
+Así que antes de diagnosticar nada, asegúrelo hoy mismo. Desconecte el motor del contacto del techo y jale la liberación manual, o use el botón de bloqueo de la consola de pared si su equipo lo tiene. Ese modo desactiva todos los controles remotos y teclados y se activa con una sola pulsación. Nuestra guía sobre [cerraduras y seguridad del garaje](/es/blog/cerraduras-y-seguridad-puerta-garaje/) cubre el pasador manual para una puerta que tiene que quedarse cerrada.
 
 Después revise las causas de abajo en ese orden, porque están ordenadas por la frecuencia con la que resultan ser la respuesta.
 
@@ -54,7 +54,7 @@ Florida hace esto más probable que casi cualquier otro lugar. Subdivisiones com
 
 **Cómo saber cuál tiene.** Abra el control remoto. Una hilera de interruptores diminutos adentro significa código fijo. Una tarjeta electrónica y una pila significan código rodante.
 
-**La solución.** Si su motor es de código fijo, ningún ajuste lo vuelve seguro. O se le agrega un receptor de código rodante al motor existente, lo cual se puede en algunos equipos, o se cambia el motor. Como un motor de código fijo tiene como mínimo treinta años, los pasó en un garaje caliente y es anterior a la exigencia de sensores de seguridad, cambiarlo es la recomendación honesta y no una venta forzada.
+**La solución.** Si su motor es de código fijo, ningún ajuste lo vuelve seguro. O se le agrega un receptor de código rodante al motor existente, lo cual se puede en algunos equipos, o se cambia el motor. Como un motor de código fijo tiene como mínimo treinta años, los pasó en un garaje caliente y es anterior a [la exigencia de sensores de seguridad](/es/blog/seguridad-motores-antiguos-puerta-garaje/), cambiarlo es la recomendación honesta y no una venta forzada.
 
 ## Tres: interferencia de radio
 
@@ -108,4 +108,4 @@ Todos son precios desde para una puerta sencilla estándar. La lista completa es
 
 **Ponga llave a la puerta entre el garaje y la casa.** Sea cual sea la causa, esa es la diferencia entre perder una bicicleta y perderlo todo.
 
-**Si su motor es de código fijo, planee cambiarlo antes de la temporada.** Un motor moderno con código rodante, respaldo de batería y alerta al teléfono cuando la puerta abre cuesta menos de lo que la gente supone, y la alerta por sí sola termina con el misterio, porque usted se entera en el minuto en que ocurre. Atendemos todo el estado, [Miami](/es/areas-de-servicio/miami/), [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale/), [Tampa](/es/areas-de-servicio/tampa/) y más allá, el mismo día, los siete días de la semana.
+**Si su motor es de código fijo, planee cambiarlo antes de la temporada.** Un motor moderno con código rodante, respaldo de batería y [alerta al teléfono cuando la puerta abre](/es/blog/motor-inteligente-vale-la-pena/) cuesta menos de lo que la gente supone, y la alerta por sí sola termina con el misterio, porque usted se entera en el minuto en que ocurre. Atendemos todo el estado, [Miami](/es/areas-de-servicio/miami/), [Fort Lauderdale](/es/areas-de-servicio/fort-lauderdale/), [Tampa](/es/areas-de-servicio/tampa/) y más allá, el mismo día, los siete días de la semana.

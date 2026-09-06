@@ -50,7 +50,7 @@ Importante: si la puerta estaba desbalanceada y eso fue lo que mató el engranaj
 
 ## Carro desenganchado
 
-El cordón de liberación manual desconecta el carro de la corredera para que la puerta se pueda mover a mano. En Florida se jala mucho: en cada apagón después de una tormenta, cada vez que se bota el GFCI, cada vez que alguien necesita el carro y el motor está muerto. Si se jaló y no se volvió a enganchar, el motor corre la corredera de arriba abajo por el riel sin nada conectado, y la puerta se queda quieta.
+[El cordón de liberación manual](/es/blog/liberacion-manual-puerta-garaje/) desconecta el carro de la corredera para que la puerta se pueda mover a mano. En Florida se jala mucho: en cada apagón después de una tormenta, cada vez que se bota el GFCI, cada vez que alguien necesita el carro y el motor está muerto. Si se jaló y no se volvió a enganchar, el motor corre la corredera de arriba abajo por el riel sin nada conectado, y la puerta se queda quieta.
 
 Volver a engancharlo casi siempre es cuestión de cerrar la puerta a mano y luego correr el motor hasta que la corredera haga clic en el carro. Algunos modelos necesitan que primero se empuje la palanca de liberación hacia la puerta.
 
@@ -81,9 +81,9 @@ Cada cifra es la misma de nuestra [página de precios](/es/precios/), un precio 
 
 ## Reparar o cambiar el motor
 
-Un juego de engranaje en una unidad de cadena de diez años con la puerta balanceada es un sí fácil. Un juego de engranaje en una unidad anterior al ojo eléctrico, o en una que ya recibió tarjeta y capacitor, es dinero que debería ir a un motor nuevo.
+Un juego de engranaje en una unidad de cadena de diez años con la puerta balanceada es un sí fácil. Un juego de engranaje en [una unidad anterior al ojo eléctrico](/es/blog/seguridad-motores-antiguos-puerta-garaje/), o en una que ya recibió tarjeta y capacitor, es dinero que debería ir a un motor nuevo.
 
-Un motor nuevo de cadena cuesta $275 a $450 instalado y uno de banda $350 a $600. Elija el que elija, en Florida le agregamos batería de respaldo por $60 a $150, porque el próximo apagón de tormenta es justo el momento en que usted va a querer que la puerta trabaje sin jalar la liberación manual. La [instalación de motor](/es/servicios/garage-door-opener-installation/) se cotiza antes de llegar, y cambiar solamente el motor normalmente no necesita permiso.
+Un motor nuevo de cadena cuesta $275 a $450 instalado y uno de banda $350 a $600, y la comparación completa está en nuestra guía de [motor de banda o de cadena](/es/blog/motor-de-correa-o-de-cadena/). Elija el que elija, en Florida le agregamos batería de respaldo por $60 a $150, porque el próximo apagón de tormenta es justo el momento en que usted va a querer que la puerta trabaje sin jalar la liberación manual. La [instalación de motor](/es/servicios/garage-door-opener-installation/) se cotiza antes de llegar, y cambiar solamente el motor normalmente no necesita permiso.
 
 ## La pregunta detrás de las tres fallas
 

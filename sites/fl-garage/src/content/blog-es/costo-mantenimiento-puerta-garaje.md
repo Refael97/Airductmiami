@@ -52,7 +52,7 @@ presión, así que apretarlos no es cosmético.
 **Alineación del riel.** Revisar que el riel esté a plomo, con separación
 pareja y firmemente fijado al marco en toda su longitud.
 
-**Lubricación.** Resortes, bisagras, rodillos, baleros y el carril del motor.
+**Lubricación.** [Resortes, bisagras, rodillos](/es/blog/como-lubricar-puerta-garaje/), baleros y el carril del motor.
 El riel no, que debe quedar limpio y seco.
 
 **Sensores de seguridad.** Revisar alineación y altura de montaje. Van a no
@@ -101,7 +101,7 @@ explica la diferencia.
 
 Una puerta que se salió un poco de balance es un ajuste de resorte. Si se
 deja, el motor compensa por meses y luego la tarjeta o el engrane se rinde
-con el calor de julio, y eso son $95 a $300 de reparación o $275 a $600 de
+con [el calor de julio](/es/blog/calor-verano-problemas-puerta-garaje/), y eso son $95 a $300 de reparación o $275 a $600 de
 reemplazo.
 
 ## El calendario: abril o mayo
@@ -114,17 +114,17 @@ batería de respaldo funcionando. Una puerta que no se revisó se entera de qué
 estaba flojo durante la primera tormenta tropical.
 
 La visita de primavera también queda antes del calor del verano, que es
-cuando fallan los motores, y es la ventana en la que todavía se puede pedir e
-instalar una
+cuando fallan los motores, y es la ventana en la que [todavía se puede pedir e
+instalar](/es/blog/mejor-momento-cambiar-puerta-garaje-florida/) una
 [puerta nueva certificada](/es/blog/costo-puerta-garaje-nueva-florida/) antes
-de junio. Si el mantenimiento encuentra que su puerta no tiene ninguna
-certificación de viento, ese es el mes para enterarse.
+de junio. Si el mantenimiento encuentra que su puerta [no tiene ninguna
+certificación de viento](/es/blog/refuerzos-puerta-garaje-huracanes/), ese es el mes para enterarse.
 
 Los residentes de temporada en Naples, Bonita Springs, Venice y Palm Beach
 Gardens deberían agendar la visita la semana antes de irse en primavera, o la
 semana que regresan en noviembre. Una puerta que pasa seis meses cerrada en
-la humedad de la costa es la puerta que más probablemente tiene un cable
-oxidado esperando.
+la humedad de la costa es la puerta que más probablemente tiene [un cable
+oxidado](/es/blog/oxido-puerta-garaje-humedad-florida/) esperando.
 
 ## Puertas en la costa: dos veces al año
 
@@ -138,7 +138,7 @@ Coast están todas en esa franja.
 
 ## Qué recibe al final
 
-Una lista escrita de qué se revisó, qué pasó bien y qué conviene vigilar, con
+[Una lista escrita](/es/blog/lista-mantenimiento-puerta-garaje/) de qué se revisó, qué pasó bien y qué conviene vigilar, con
 una foto de cualquier cosa que recomendemos cambiar. Si no hay nada que
 hacer, la lista lo dice. Si hay algo, se cotiza al precio publicado y usted
 decide si lo agenda o no. La

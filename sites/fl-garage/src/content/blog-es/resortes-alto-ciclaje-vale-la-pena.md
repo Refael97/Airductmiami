@@ -90,4 +90,4 @@ Cuando reciba una cotización de resortes, pida tres cosas: el calibre del alamb
 
 Una empresa que le da las tres es una empresa que midió su puerta. Una empresa que no sabe decir qué calificación está instalando está poniendo lo que traía en la camioneta, y usted no tiene forma de comparar esa cotización con ninguna otra. Nuestra guía sobre el [costo del cambio de resortes de puerta de garaje](/es/blog/costo-cambio-resortes-puerta-garaje/) cubre el resto de la cotización.
 
-Todos los precios de este sitio son precios de inicio para una puerta sencilla estándar, y usted recibe una cotización escrita antes de empezar cualquier trabajo. La lista completa está en nuestra [página de precios](/es/precios/).
+Todos los precios de este sitio son precios de inicio para una puerta sencilla estándar, y usted recibe [una cotización escrita](/es/blog/que-incluye-una-cotizacion-justa/) antes de empezar cualquier trabajo. La lista completa está en nuestra [página de precios](/es/precios/).

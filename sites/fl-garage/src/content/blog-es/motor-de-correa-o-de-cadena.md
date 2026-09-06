@@ -66,7 +66,7 @@ En un garaje separado, un taller o un garaje de carrito de golf donde nadie duer
 
 ## Qué les hacen el calor y la humedad
 
-El garaje de Florida llega a 100°F y más en verano. Ese calor no molesta a una correa, que es cordón de acero dentro de hule, y tampoco molesta a una cadena. A lo que sí molesta es a la electrónica. Las tarjetas y los capacitores envejecen más rápido en un garaje caliente, y el engrane plástico de las unidades viejas se ablanda y se barre. Esas fallas ocurren en los dos tipos de motor y son la razón por la que la [reparación de motor](/es/servicios/garage-door-opener-repair/) de $95 a $300 es trabajo de verano para nosotros.
+El garaje de Florida [llega a 100°F y más en verano](/es/blog/calor-verano-problemas-puerta-garaje/). Ese calor no molesta a una correa, que es cordón de acero dentro de hule, y tampoco molesta a una cadena. A lo que sí molesta es a la electrónica. Las tarjetas y los capacitores envejecen más rápido en un garaje caliente, y el engrane plástico de las unidades viejas se ablanda y se barre. Esas fallas ocurren en los dos tipos de motor y son la razón por la que la [reparación de motor](/es/servicios/garage-door-opener-repair/) de $95 a $300 es trabajo de verano para nosotros.
 
 La humedad sí distingue a los dos. A pocas millas de cualquiera de las dos costas, una cadena que nadie toca agarra óxido superficial, se pone ruidosa y desgasta la catarina. Un paño con lubricante ligero una o dos veces al año, en la misma visita del [mantenimiento](/es/servicios/garage-door-tune-up/), la deja bien. La correa no pide nada.
 
@@ -82,7 +82,7 @@ Para un garaje al lado o debajo de una recámara, esa es una de las mejoras de m
 
 En Florida se va la luz. Después de una tormenta con nombre puede quedarse fuera durante días, y una puerta pesada sin corriente significa jalar la liberación manual y levantar a mano, lo que en una puerta doble resistente a impactos es trabajo de verdad.
 
-El respaldo de batería agrega de $60 a $150 a cualquier motor y da decenas de ciclos con una carga. Ya viene incluido en casi todos los motores de correa. Lo recomendamos en todo garaje adosado del estado, y nuestro artículo sobre [respaldo de batería y apagones](/es/blog/respaldo-de-bateria-apagones/) explica cuánto dura de verdad una batería y cómo probarla antes de la temporada de huracanes. Aprenda dónde está la liberación manual de cualquier manera.
+El respaldo de batería agrega de $60 a $150 a cualquier motor y da decenas de ciclos con una carga. Ya viene incluido en casi todos los motores de correa. Lo recomendamos en todo garaje adosado del estado, y nuestro artículo sobre [respaldo de batería y apagones](/es/blog/respaldo-de-bateria-apagones/) explica cuánto dura de verdad una batería y cómo probarla antes de la temporada de huracanes. Aprenda [dónde está la liberación manual](/es/blog/liberacion-manual-puerta-garaje/) de cualquier manera.
 
 ## Los otros tipos de motor, en breve
 
