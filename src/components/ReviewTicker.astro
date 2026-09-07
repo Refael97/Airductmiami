@@ -1,0 +1,131 @@
+---
+/**
+ * Running customer reviews, on every page.
+ *
+ * The reviews are real and verbatim (see src/data/reviews.ts). Three
+ * decisions worth knowing:
+ *
+ * 1. **Reviews are never translated.** A customer who wrote in Spanish
+ *    appears in Spanish on the English pages too, and the other way round.
+ *    Rewriting a review is the thing the FTC rule reaches, and it would
+ *    also throw away the most useful signal this business has, which is
+ *    that half its happy customers write in Spanish. Each card carries a
+ *    `lang` attribute so screen readers switch voice correctly.
+ *
+ * 2. **No star ratings and no rating schema.** None of these customers
+ *    gave a star rating, so there is none to show and no AggregateRating
+ *    to emit. The heading says how many reviews there are, from the data,
+ *    so the number cannot go stale.
+ *
+ * 3. **The motion stops for anyone who asked it to.** The track animates
+ *    with CSS only, pauses on hover and on keyboard focus so a link inside
+ *    a card can actually be reached, and `prefers-reduced-motion` turns it
+ *    into a plain horizontal scroll region. That is also why the whole
+ *    thing is a real scroll container: with motion off it stays usable.
+ */
+import { reviews, reviewCount } from '../data/reviews';
+import type { Locale } from '../data/ui';
+
+interface Props { lang?: Locale }
+const { lang = 'en' } = Astro.props;
+
+const t =
+  lang === 'es'
+    ? {
+        heading: `Lo que dicen ${reviewCount} clientes`,
+        note: 'Reseñas reales de clientes, en sus propias palabras y sin editar.',
+        aria: 'Reseñas de clientes',
+      }
+    : {
+        heading: `What ${reviewCount} customers said`,
+        note: 'Real customer reviews, in their own words and unedited.',
+        aria: 'Customer reviews',
+      };
+
+/* The track is rendered twice so the loop has no visible seam. The copy is
+   hidden from assistive tech, which reads the first pass only. */
+const loop = [...reviews, ...reviews];
+---
+<section class="reviews" aria-label={t.aria}>
+  <div class="container reviews-head">
+    <h2>{t.heading}</h2>
+    <p>{t.note}</p>
+  </div>
+
+  <div class="reviews-viewport" tabindex="0" role="group" aria-label={t.aria}>
+    <ul class="reviews-track">
+      {loop.map((r, i) => (
+        <li class="review-card" aria-hidden={i >= reviews.length ? 'true' : undefined}>
+          <p class="review-text" lang={r.lang}>{r.text}</p>
+          <p class="review-who">
+            <span class="review-name">{r.name}</span>
+            {r.city && <span class="review-city">{r.city}</span>}
+          </p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .reviews {
+    background: var(--c-bg-alt, #f4f5f7);
+    border-top: 1px solid var(--c-line, #e5e7eb);
+    border-bottom: 1px solid var(--c-line, #e5e7eb);
+    padding-block: 2rem 2.2rem;
+    overflow: hidden;
+  }
+  .reviews-head { margin-bottom: 1.2rem; }
+  .reviews-head h2 { font-size: clamp(1.2rem, 1rem + 0.8vw, 1.6rem); margin: 0 0 0.25rem; }
+  .reviews-head p { margin: 0; font-size: 0.88rem; color: var(--c-muted, #6b7280); }
+
+  /* A real scroll container, so the content stays reachable when the
+     animation is switched off or the pointer is a finger. */
+  .reviews-viewport { overflow-x: auto; scrollbar-width: none; }
+  .reviews-viewport::-webkit-scrollbar { display: none; }
+  .reviews-viewport:focus-visible { outline: 3px solid var(--c-primary, #0f2747); outline-offset: 3px; }
+
+  .reviews-track {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    width: max-content;
+    animation: review-scroll 90s linear infinite;
+  }
+  .reviews-viewport:hover .reviews-track,
+  .reviews-viewport:focus-within .reviews-track { animation-play-state: paused; }
+
+  /* Half, because the list is doubled. Translating by exactly one copy
+     means the seam lands where the first card started. */
+  @keyframes review-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .review-card {
+    flex: 0 0 clamp(240px, 78vw, 340px);
+    background: #fff;
+    border: 1px solid var(--c-line, #e5e7eb);
+    border-radius: 14px;
+    padding: 1.1rem 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+  .review-text {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--c-body, #4b5563);
+  }
+  .review-who { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }
+  .review-name { font-weight: 700; font-size: 0.9rem; color: var(--c-ink, #111827); }
+  .review-city { font-size: 0.8rem; color: var(--c-muted, #6b7280); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reviews-track { animation: none; }
+  }
+</style>
