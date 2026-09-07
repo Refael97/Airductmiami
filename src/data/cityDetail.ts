@@ -296,6 +296,22 @@ export const cityDetail: Record<string, CityDetail> = {
           'Esa es la razón honesta por la que un sistema en la costa necesita atención más seguido que uno tierra adentro. Un condominio frente al mar en Hollywood con limpieza cada tres años no está siendo sobre atendido. El mismo apartamento en Weston probablemente sí.',
         ],
       },
+      {
+        heading: 'Vivir en edificio: dónde termina su sistema y dónde empieza el del condominio',
+        body: [
+          'Buena parte de Hollywood vive en edificio y no en casa, desde las torres frente al Broadwalk hasta los condominios de Hillcrest y las asociaciones de dos y tres pisos cerca de Hollywood Boulevard. En casi todos, la manejadora está dentro del apartamento, en un clóset con puerta de rejilla en el pasillo, y el filtro queda en una rejilla de retorno en el techo a pocos pies. Los tramos de ducto son cortos, a veces veinte pies en total, y el sistema completo se limpia bien en una mañana.',
+          'Lo que conviene saber antes de llamar a cualquiera es hasta dónde llega lo suyo. La manejadora, los ductos dentro de sus paredes y su techo, la rejilla del filtro y la línea de drenaje son suyos. Lo compartido, un tiro vertical que cruza varios pisos o un equipo en la azotea que sirve las áreas comunes, es de la asociación. Le decimos de qué lado de esa línea está su problema antes de cotizar, incluso cuando la respuesta es que le toca a la administración pagarlo y no a usted.',
+          'El clóset explica además una queja que oímos casi a diario en estos edificios. La manejadora jala el aire de retorno por una rejilla de pasillo que suele quedar a pocos pies de la cocina, así que la grasa de cocinar llega al filtro y después al serpentín mucho más rápido que en una casa. Un serpentín con grasa retiene el polvo en lugar de soltarlo, y cuando esa capa ya está ahí, cambiar el filtro no resuelve nada.',
+        ],
+      },
+      {
+        heading: 'La casa que se quedó cerrada todo el verano',
+        body: [
+          'Hollywood tiene mucha gente que pasa aquí solo parte del año, y una casa cerrada de mayo a noviembre se comporta distinto a una donde vive alguien. La instrucción de siempre para quien la cuida es dejar el termostato en 80 grados. En 80 el equipo casi no enciende, y un equipo que casi no enciende no le quita agua al aire, así que la casa puede pasar cuatro meses a 80 grados con 70 por ciento de humedad adentro.',
+          'Ese es el número que importa. El moho no necesita agua encharcada, necesita una superficie por encima de 60 por ciento de humedad relativa y algo orgánico de qué vivir, y el serpentín, la bandeja de drenaje y el interior de un ducto flexible se lo dan completo. Quien regresa en noviembre lo cuenta casi con las mismas palabras: la casa está tal como la dejó y huele a encierro los primeros diez minutos después de encender el aire.',
+          'Lo que evita que se repita el año siguiente no es una limpieza más fuerte sino el ajuste. Un termostato con control de humedad, o un deshumidificador pequeño conectado a un drenaje, mantiene la casa entre 55 y 60 por ciento por una fracción de lo que cuesta dejar el aire en 74 todo el verano. Limpiamos lo que ya creció y le decimos en qué dejarlo, para no volver a hacer el mismo trabajo el próximo noviembre.',
+        ],
+      },
     ],
     ductRepair: {
       local: [
@@ -320,8 +336,24 @@ export const cityDetail: Record<string, CityDetail> = {
           'This is the honest reason coastal systems need attention more often than inland ones, and it is worth understanding rather than being told your system is dangerous. A Hollywood beachside condo on a three year cleaning cycle is not being over serviced. The same unit in Weston probably would be.',
         ],
       },
+      {
+        heading: 'Living in a building, and where your system actually stops',
+        body: [
+          'A large share of Hollywood lives in a building rather than a house, from the towers along the Broadwalk to the Hillcrest blocks and the two and three storey associations off Hollywood Boulevard. In almost all of them the air handler sits in a closet inside the unit, usually behind a louvered door off the hallway, with the filter behind a return grille in the ceiling a few feet away. The supply runs are short, sometimes twenty feet from end to end, and the whole system can be cleaned properly in a morning.',
+          'The thing worth knowing before you call anybody is where your system stops. The air handler, the duct inside your walls and ceiling, the filter grille and the drain line are yours. Anything shared, a riser passing through several floors or a rooftop unit serving the common areas, belongs to the association. We tell you which side of that line your problem is on before we quote, including the times when the answer is that your board should be paying for it rather than you.',
+          'The closet position also explains a complaint we hear constantly in these buildings. A closet air handler pulls its return through a hallway grille that is usually a few feet from the kitchen, so cooking grease reaches the filter and then the coil far faster than it would in a house with the return in a bedroom hall. A coil with a greasy film holds dust instead of shedding it, and once that layer is there a filter change does nothing.',
+        ],
+      },
+      {
+        heading: 'The house that was closed all summer',
+        body: [
+          'Hollywood has a large part year population, and a house or an apartment shut up from May to November behaves nothing like one somebody lives in. The usual instruction to whoever checks on the place is to leave the thermostat at 80 degrees. At 80 the system barely runs, and a system that barely runs removes very little water from the air, so the house can sit for four months at 80 degrees with the indoor humidity at 70 percent.',
+          'That is the number that matters. Mold does not need standing water, it needs a surface held above roughly 60 percent relative humidity and something organic to feed on, and the coil, the drain pan and the inside of a flex duct supply all of it. Owners coming back in November describe the same thing almost word for word: the place looks exactly as they left it and it smells like a basement for the first ten minutes after the air conditioning starts.',
+          'What stops it happening again is not a harder cleaning, it is the setting. A thermostat with a humidity control, or a small dehumidifier plumbed to a drain, holds the house between 55 and 60 percent for a fraction of what it costs to run the air conditioning at 74 all summer. We clean out what has grown and then tell you what to leave it on, so we are not back doing the same job next November.',
+        ],
+      },
     ],
-    neighborhoods: ['Hollywood Lakes', 'Emerald Hills', 'Hollywood Hills', 'Beverly Hills', 'Boulevard Heights', 'Driftwood'],
+    neighborhoods: ['Hollywood Lakes', 'Emerald Hills', 'Hollywood Hills', 'Beverly Hills', 'Boulevard Heights', 'Driftwood', 'Hollywood Beach', 'Hillcrest', 'Liberia'],
     dryerVent: {
       local: [
         'Hollywood runs from beachfront condominium towers to fifties bungalows in Hollywood Lakes to seventies ranch homes in Driftwood and Boulevard Heights, and the vent problem changes with each. The bungalows almost always have a short run straight through an exterior wall, which is the best case, except that the exterior hood is usually the original one and the flap has long since stopped moving.',
@@ -331,6 +363,31 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'pembroke-pines': {
+    depthEs: [
+      {
+        heading: 'Los tramos largos son el problema que define a Pembroke Pines',
+        body: [
+          'Pembroke Pines creció hacia el oeste en comunidades planeadas grandes, y las casas que vinieron con ese crecimiento son anchas. Chapel Trail, Pembroke Falls y Silver Lakes están llenas de casas donde la manejadora está en la cochera o en un cuarto de servicio en un extremo, y la recámara más lejana queda a sesenta o setenta pies de distancia.',
+          'Cada pie de ese recorrido es ducto tendido en un ático que en julio llega a 130 grados. El aire que sale de la manejadora a 55 grados no llega a 55 grados al otro extremo, y esa diferencia es la razón por la que tantas casas de aquí tienen una recámara que siempre está más caliente que el resto. El dueño casi siempre supone que el equipo quedó chico. Con frecuencia el equipo está bien y lo que pasa es que el enfriamiento se pierde en el camino.',
+          'Le vamos a decir con claridad si su equipo de verdad quedó chico, porque una limpieza no arregla eso. Lo que sí arregla es la parte de la pérdida que viene de la restricción y de las uniones que se abrieron en un tramo así de largo.',
+        ],
+      },
+      {
+        heading: 'Cómo saber si es el ducto o es el equipo',
+        body: [
+          'Antes de gastar en equipo hay tres cosas que se revisan y que cuestan poco. La primera es si las salidas de la parte lejana de la casa realmente están entregando aire, y con cuánta fuerza comparadas con las que están cerca de la manejadora. Una diferencia grande entre la primera salida y la última no es normal y no es culpa del termostato.',
+          'La segunda es el retorno. En estas casas anchas el retorno suele ser uno solo y central, y si está restringido todo el sistema trabaja con más presión y la salida más lejana es la primera en rendirse. La tercera es el ático mismo: buscar uniones abiertas, aislamiento caído y tramos flexibles que se doblaron sobre una viga y quedaron estrangulados durante veinte años.',
+          'Si las tres salen bien y aun así la casa no enfría, entonces sí conviene hablar del equipo. En ese orden se gasta menos y se acierta más seguido.',
+        ],
+      },
+      {
+        heading: 'El lado de los condominios y Century Village',
+        body: [
+          'Century Village en Pembroke Pines tiene las mismas características que su comunidad hermana en Deerfield: sistemas compactos, tramos cortos, paredes compartidas y edificios con la edad suficiente para que el ducto original esté al final de su vida útil y no a la mitad.',
+          'En un apartamento así el sistema completo se limpia bien en una mañana, y el resultado normalmente se nota más que en una casa grande por una razón simple: hay menos sistema para diluir la mejora. En un espacio chico y cerrado, un serpentín limpio y un retorno que sella se sienten el mismo día.',
+        ],
+      },
+    ],
     depth: [
       {
         heading: 'Long duct runs are the defining Pembroke Pines problem',
@@ -367,6 +424,32 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'pompano-beach': {
+    depthEs: [
+      {
+        heading: 'Los condominios de Pompano y la línea que divide lo suyo de lo de la asociación',
+        body: [
+          'Pompano Beach tiene una de las concentraciones más altas de edificios de condominio de mediana altura de todo Broward. Cypress Bend y Palm Aire suman entre las dos miles de apartamentos, y en un edificio así su ducto no termina en su pared: se une a un tramo vertical que sirve a las unidades de arriba y de abajo.',
+          'Ahí la asociación se encarga del tramo compartido y usted del suyo, y la frontera entre los dos es justamente donde los problemas se quedan sin dueño durante años, porque cada lado supone que el otro lo está atendiendo. Cuando ese tramo vertical se carga, todos los apartamentos de la columna empiezan a fallar al mismo tiempo, y limpiar los seis pies que le tocan a usted no cambia nada.',
+          'Le decimos de qué lado de la línea está su problema antes de cotizarle, incluso cuando la respuesta es que le conviene llevarlo a su junta. Preferimos eso a cobrarle una limpieza que usted va a volver a necesitar en dos meses.',
+        ],
+      },
+      {
+        heading: 'Old Pompano y Cresthaven: casas chicas con aire acondicionado puesto después',
+        body: [
+          'Los sectores de casas solas, Old Pompano y Cresthaven, son construcción más vieja y más compacta, de los años cincuenta y sesenta, levantada antes de que el aire central fuera lo normal. En esas casas el sistema se adaptó después, y el ducto se metió por donde cupo: plafones bajados, clósets y un ático de poca altura.',
+          'Un ducto adaptado tiene más uniones y más transiciones que uno proyectado desde el principio, y cada una de ellas es un punto que se puede abrir con el tiempo. Cuando se abre en el ático, el sistema empieza a jalar aire a 120 grados y todo lo que ese aire trae, y su equipo trabaja de más para compensar una fuga que usted no puede ver.',
+          'La señal desde adentro es la de siempre: un cuarto que no alcanza a los demás, polvo que regresa a los pocos días de haber limpiado, y un recibo de luz que subió sin que cambiara nada más en la casa.',
+        ],
+      },
+      {
+        heading: 'La sal, y por qué en Pompano el serpentín se ensucia más rápido',
+        body: [
+          'Todo lo que está cerca de la playa y del Intracoastal, incluido Harbor Village, recibe sal de forma constante. La sal no solo corroe el equipo de afuera. Entra con el aire por cualquier abertura del retorno y se deposita sobre el serpentín junto con el polvo.',
+          'Un serpentín con esa capa transfiere calor peor y se mantiene mojado más tiempo después de cada ciclo, y mojado durante horas es exactamente la condición que necesita el crecimiento biológico. Esa es la razón honesta por la que un sistema en la costa necesita atención más seguido que uno tierra adentro, y no es una recomendación de venta: es el mismo motivo por el que las aletas de las salidas se traban abiertas aquí y no en Coral Springs.',
+          'Si al encender el aire hay olor a humedad los primeros minutos, esa es la señal más confiable de que hay algo creciendo sobre una superficie mojada dentro de su sistema. Limpiar el serpentín y la bandeja lo quita. Sellar el retorno y mantener la humedad de la casa abajo de 60 por ciento es lo que evita que regrese.',
+        ],
+      },
+    ],
     neighborhoods: ['Old Pompano', 'Cypress Bend', 'Palm Aire', 'Harbor Village', 'Cresthaven'],
     dryerVent: {
       local: [
@@ -377,7 +460,75 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   plantation: {
-    neighborhoods: ['Plantation Acres', 'Jacaranda', 'Plantation Isles', 'Central Park', 'Hawaiian Gardens'],
+    depth: [
+      {
+        heading: 'Three building waves, and equipment newer than the duct in all of them',
+        body: [
+          'Plantation was built in roughly three passes and you can read them off a map. The eastern side, Plantation Park and the streets around Sunset Park, is late fifties and sixties. The middle of the city, Jacaranda and the neighborhoods either side of Pine Island Road, is seventies and eighties. The western edge toward the Sawgrass and the outer parts of the Acres finished in the nineties. That is close to forty years of housing, and the ductwork spans the same forty years.',
+          'What all three waves have in common is the sequence that follows. The air handler gets replaced, usually twice over that span, and the duct it connects to is never touched, because equipment fails in a way you notice and ductwork does not. It is entirely normal in this city to find a three year old system connected to distribution that went in when the house was framed.',
+          'That matters more than it sounds. A modern variable speed air handler moves air differently from the one the duct was sized around, so a new system on old duct produces noise, uneven rooms and static pressure problems that read as an equipment fault and are not. Before anyone sells you a third system, it is worth measuring what is actually coming out of the registers.',
+        ],
+      },
+      {
+        heading: 'One central return, and why the far bedroom loses',
+        body: [
+          'Houses of this era in Plantation were usually built with a single large return grille in a hallway, sized for the equipment of the day and never revisited. Every cubic foot of air the system moves has to come back through that one opening, which makes it the narrowest point in the whole loop.',
+          'When that return is restricted, and there are several ordinary ways for it to be restricted, the entire system runs at higher static pressure and the longest supply run is the one that gives up first. That is the bedroom at the far end of the hall, the room the owner has been told is simply hard to cool. The common causes are a filter far denser than the system was designed for, a grille that has been painted over more than once, and a return duct behind the grille that is kinked or partly collapsed where it turns.',
+          'Bedroom doors are the other half of it. If the return is in the hallway and the bedroom doors are shut at night, air that goes into those rooms has no path back, and the rooms pressurise slightly and stop taking supply. Undercut doors or a transfer grille fix that, and it costs nothing compared with a system replacement.',
+        ],
+      },
+      {
+        heading: 'Plantation Acres: large lots, well irrigation and what comes in from outside',
+        body: [
+          'The Acres, west of Flamingo Road, is a different kind of Broward neighborhood: lots of an acre and more, plenty of them on private wells for irrigation, open ground, unpaved edges and in places livestock. The houses are wide, low and set well back, and the systems in them are working against conditions the rest of the city does not have.',
+          'Well water in west Broward carries iron and dissolved minerals. Sprinklers throw it as a fine spray, the water evaporates, and what is left is the rust coloured film you see on driveways, walls and window screens out here. That same film settles on the outdoor coil and on everything near the intake side of the system, and it reaches the indoor coil through any gap on the return path.',
+          'Add fine soil dust from open lots and unpaved driveways and the load on a filter in the Acres is genuinely heavier than the load on an identical filter three miles east in Jacaranda. If a one inch filter in your house is grey inside of a month, that is not a defective filter, that is the actual air your system is being asked to handle.',
+        ],
+      },
+      {
+        heading: 'The tree canopy the city is named for',
+        body: [
+          'Plantation carries one of the heaviest mature canopies in Broward. Live oak, mahogany and black olive over the older streets in Plantation Park, Sunset Park and Hawaiian Gardens shade the roofs, which genuinely helps the attic and the duct running through it. Everything else the canopy does is a maintenance problem.',
+          'Roof terminations and vent caps collect leaf litter and seed debris from above, so a duct can be completely clear while its exit is blocked, and the symptom looks identical to a blocked duct from inside the house. Oak pollen through February and March is the other half: it comes in on shoes, through doors held open, and through any leak on the return, and it ends up on the coil and in the first ten or fifteen feet of supply duct where the air slows down.',
+          'The practical version of this is simple. If the allergy season inside your house tracks the one outside instead of being milder than it, the return path and the coil are where to look, not the filter aisle at the hardware store.',
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: 'Tres etapas de construcción, y en todas el equipo es más nuevo que el ducto',
+        body: [
+          'Plantation se construyó en tres etapas y se notan en el mapa. El lado este, Plantation Park y las calles alrededor de Sunset Park, es de finales de los cincuenta y de los sesenta. El centro de la ciudad, Jacaranda y los barrios a ambos lados de Pine Island Road, es de los setenta y ochenta. El borde oeste, hacia el Sawgrass y las partes exteriores de los Acres, se terminó en los noventa. Son casi cuarenta años de vivienda, y el ducto abarca esos mismos cuarenta años.',
+          'Lo que tienen en común las tres etapas es lo que vino después. La manejadora se cambió, normalmente dos veces en ese periodo, y el ducto al que se conecta nunca se tocó, porque el equipo falla de una forma que usted nota y el ducto no. Es completamente normal en esta ciudad encontrar un sistema de tres años conectado a una distribución que se instaló cuando se levantó la casa.',
+          'Eso pesa más de lo que parece. Una manejadora moderna de velocidad variable mueve el aire distinto a aquella para la que se dimensionó el ducto, así que un equipo nuevo sobre ducto viejo da ruido, cuartos disparejos y problemas de presión que parecen falla del equipo y no lo son. Antes de que alguien le venda un tercer sistema, vale la pena medir qué está saliendo de verdad por las rejillas.',
+        ],
+      },
+      {
+        heading: 'Un solo retorno central, y por qué pierde la recámara del fondo',
+        body: [
+          'Las casas de esa época en Plantation se construyeron casi siempre con una sola rejilla de retorno grande en el pasillo, dimensionada para el equipo de entonces y nunca revisada desde entonces. Todo el aire que mueve el sistema tiene que regresar por esa única abertura, lo que la convierte en el punto más estrecho de todo el circuito.',
+          'Cuando ese retorno está restringido, y hay varias maneras normales de que lo esté, el sistema entero trabaja con más presión y el tramo de suministro más largo es el primero que se rinde. Esa es la recámara del fondo del pasillo, el cuarto que a usted le han dicho que simplemente es difícil de enfriar. Las causas más comunes son un filtro mucho más denso de lo que el sistema aguanta, una rejilla pintada dos o tres veces, y un ducto de retorno doblado o medio aplastado detrás de la rejilla.',
+          'Las puertas de las recámaras son la otra mitad del asunto. Si el retorno está en el pasillo y las puertas se cierran de noche, el aire que entra a esos cuartos no tiene por dónde regresar, los cuartos se presurizan un poco y dejan de recibir. Recortar la parte de abajo de la puerta o poner una rejilla de transferencia lo resuelve, y cuesta una fracción de lo que cuesta cambiar un equipo.',
+        ],
+      },
+      {
+        heading: 'Plantation Acres: terrenos grandes, riego de pozo y lo que entra de afuera',
+        body: [
+          'Los Acres, al oeste de Flamingo Road, son otro tipo de barrio de Broward: terrenos de un acre o más, muchos con pozo propio para el riego, terreno abierto, orillas sin pavimentar y en algunas partes animales. Las casas son anchas, bajas y quedan retiradas de la calle, y sus sistemas trabajan contra condiciones que el resto de la ciudad no tiene.',
+          'El agua de pozo en el oeste de Broward trae hierro y minerales disueltos. Los aspersores la avientan en gotas finas, el agua se evapora y lo que queda es esa película color óxido que usted ve en las entradas de carro, en las paredes y en los mosquiteros. Esa misma película se asienta sobre el condensador de afuera y sobre todo lo que está cerca de la toma del sistema, y llega al serpentín de adentro por cualquier abertura del retorno.',
+          'Súmele el polvo fino de los lotes abiertos y de los caminos sin pavimentar y la carga sobre un filtro en los Acres es de verdad mayor que sobre un filtro idéntico tres millas al este, en Jacaranda. Si el filtro de una pulgada de su casa está gris al mes, no es un filtro defectuoso, es el aire que su sistema está moviendo.',
+        ],
+      },
+      {
+        heading: 'El arbolado que le da el nombre a la ciudad',
+        body: [
+          'Plantation tiene uno de los arbolados maduros más densos de Broward. Los robles, la caoba y el olivo negro sobre las calles viejas de Plantation Park, Sunset Park y Hawaiian Gardens dan sombra al techo, lo cual sí ayuda al ático y al ducto que pasa por ahí. Todo lo demás que hace el arbolado es trabajo de mantenimiento.',
+          'Las salidas del techo y sus tapas juntan hojas y semillas desde arriba, así que el ducto puede estar perfectamente limpio y la salida bloqueada, y desde adentro de la casa el síntoma se ve igual que un ducto tapado. El polen de roble de febrero y marzo es la otra mitad: entra en los zapatos, por las puertas y por cualquier fuga del retorno, y termina en el serpentín y en los primeros diez o quince pies de ducto, donde el aire baja de velocidad.',
+          'La versión práctica de esto es sencilla. Si su temporada de alergias adentro de la casa sigue el mismo calendario que la de afuera en lugar de ser más leve, lo que hay que revisar es el retorno y el serpentín, no el pasillo de filtros de la ferretería.',
+        ],
+      },
+    ],
+    neighborhoods: ['Plantation Acres', 'Jacaranda', 'Plantation Isles', 'Central Park', 'Hawaiian Gardens', 'Sunset Park', 'Plantation Gardens', 'Lauderdale West'],
     dryerVent: {
       local: [
         'Plantation is largely seventies and eighties single family construction on generous lots, and the houses are wide rather than tall. A wide single storey house with the laundry near the middle produces exactly the vent run you do not want: long, horizontal, in the attic, with a roof termination at the far end.',
@@ -412,8 +563,57 @@ export const cityDetail: Record<string, CityDetail> = {
           'That heat strip is the part worth thinking about. It sits in the airstream, it is almost never used, and dust settles on it for eleven months of the year. The first genuinely cold night in January is when that dust burns off, which is the source of the burning smell that generates a wave of calls every winter. Cleaning the air handler removes it. It is a real service, it is just not a furnace.',
         ],
       },
+      {
+        heading: 'Sunrise Lakes and the 55 plus buildings',
+        body: [
+          'Sunrise Lakes is one of the largest 55 plus communities in Broward, several thousand units spread across four phases of low rise buildings put up in the seventies and eighties, and the systems inside them are all built the same way. The air handler sits in a closet in the apartment, usually off the hallway, the filter is behind a return grille a few feet from it, and the supply runs are short enough that the entire system is twenty or thirty feet of duct.',
+          'Short runs are why a cleaning in one of these units is a morning of work rather than a full day, and they are also why the result is easy to feel. There is less system for the improvement to get lost in. What we find most often is a return grille that has never come off the ceiling, a coil with a felted layer of dust on the entering side, and a drain pan that has held water long enough to have a rim on it.',
+          'The ownership line matters here more than anywhere else we work. In these associations the equipment inside your unit is yours and anything shared is the association\'s, and the fastest way to spend money on nothing is to clean your own twenty feet when the problem sits in a shared path. We say which one it is before we quote, and we would rather send you to your board than sell you a job that will not fix what you called about.',
+        ],
+      },
+      {
+        heading: 'Welleby, Sawgrass and the attic half of the city',
+        body: [
+          'The single family half of Sunrise, from Welleby and Springtree out to the newer streets near Sawgrass, is eighties and nineties slab construction with the air handler in a garage or a utility room and flexible duct run across the attic. That attic is most of the story. It passes 120 degrees on a summer afternoon while the duct inside it carries air at 55 degrees, and the gap between those two numbers drives nearly everything that goes wrong up there.',
+          'Flex duct sags between the trusses as the outer jacket ages, and every sag is a low point where the air slows down and dust drops out of it. Long runs to the back bedrooms lose cooling on the way, which is why the room at the end of the house reads three or four degrees warmer than the thermostat. The usual conclusion is that the system is undersized, and it gets replaced. Often the equipment was fine and the loss was in the last thirty feet of duct.',
+          'Afternoon storm season supplies the other half. A June or July storm puts outdoor humidity back at saturation in twenty minutes, and a house with leaks in the attic portion of its duct pulls that air in through the leaks rather than through the filter. It is the reason a system can be correctly sized, properly serviced, and still leave the house feeling damp through August.',
+        ],
+      },
     ],
-    neighborhoods: ['Sunrise Lakes', 'Welleby', 'Sawgrass', 'Bonaventure', 'Sunrise Golf Village'],
+    depthEs: [
+      {
+        heading: 'Sunrise tiene de la vivienda más vieja del oeste de Broward',
+        body: [
+          'Sunrise Lakes y Sunrise Golf Village se construyeron en los años setenta, y buena parte de eso son condominios bajos y villas que nunca han tenido un cambio serio del sistema de aire. Las manejadoras sí se han cambiado, casi siempre más de una vez, pero el ducto al que se conectan muchas veces sigue siendo el original.',
+          'Eso importa porque una manejadora nueva y más eficiente mueve el aire de otra manera que aquella para la que se dimensionó el ducto. Al poner un equipo moderno de velocidad variable sobre ducto de hace cincuenta años aparecen ruido, cuartos disparejos y problemas de presión que parecen falla del equipo y no lo son. Vemos gente que ya cambió el equipo dos veces persiguiendo un problema que siempre estuvo en el ducto.',
+          'Por eso, antes de vender nada, revisamos si el ducto puede con el equipo que usted ya tiene. Si la respuesta es que no, se lo decimos, aunque eso signifique que la limpieza sola no le va a resolver el problema.',
+        ],
+      },
+      {
+        heading: 'La calefacción, en un lugar donde casi no hay invierno',
+        body: [
+          'En Sunrise nos preguntan seguido por la limpieza de la calefacción, y vale la pena aclararlo porque en Florida el vocabulario confunde. Casi ninguna casa de aquí tiene un horno de gas. Lo que la mayoría llama calefacción es la manejadora, la mitad interior del sistema, donde están el ventilador, el serpentín y, en muchos casos, unas resistencias eléctricas para las pocas noches frías del año.',
+          'Esas resistencias son la parte que sí conviene pensar. Están en el paso del aire, casi nunca se usan, y el polvo se les acumula encima once meses seguidos. La primera noche de verdad fría de enero es cuando ese polvo se quema, y de ahí viene el olor a quemado que nos genera una tanda de llamadas cada invierno. Limpiar la manejadora lo quita. Es un servicio real, solo que no es un horno.',
+        ],
+      },
+      {
+        heading: 'Sunrise Lakes y los edificios de 55 años y más',
+        body: [
+          'Sunrise Lakes es una de las comunidades de 55 años y más grandes de Broward, con miles de apartamentos repartidos en cuatro fases de edificios bajos levantados en los años setenta y ochenta, y todos los sistemas están armados igual. La manejadora va en un clóset dentro del apartamento, casi siempre en el pasillo, el filtro queda detrás de una rejilla de retorno a pocos pies, y los tramos de suministro son tan cortos que todo el sistema son veinte o treinta pies de ducto.',
+          'Por eso una limpieza aquí es cosa de una mañana y no de un día, y por eso también se siente el cambio: hay menos sistema donde se diluya la mejora. Lo que más encontramos es una rejilla de retorno que nunca se ha bajado del techo, un serpentín con una capa de polvo apelmazada del lado por donde entra el aire, y una bandeja de drenaje que lleva tanto tiempo con agua que ya tiene marca.',
+          'Aquí la línea de responsabilidad importa más que en cualquier otro lado. En estas asociaciones lo que está dentro de su apartamento es suyo y lo compartido es de la asociación, y la manera más rápida de gastar dinero en nada es limpiar sus veinte pies cuando el problema está en un tramo común. Le decimos cuál de los dos es antes de cotizar, y preferimos mandarlo con la administración que venderle un trabajo que no le va a resolver nada.',
+        ],
+      },
+      {
+        heading: 'Welleby, Sawgrass y el lado de la ciudad que tiene ático',
+        body: [
+          'La mitad de casas individuales de Sunrise, desde Welleby y Springtree hasta las calles más nuevas cerca de Sawgrass, es construcción sobre losa de los años ochenta y noventa, con la manejadora en el garaje o en un cuarto de servicio y ducto flexible tendido por el ático. Ese ático es casi toda la historia. Pasa de 120 grados una tarde de verano mientras el ducto que va adentro lleva aire a 55 grados, y esa diferencia provoca casi todo lo que falla allá arriba.',
+          'El ducto flexible se descuelga entre las vigas conforme envejece la cubierta, y cada tramo colgado es un punto bajo donde el aire se frena y se deposita el polvo. Los tramos largos hacia los cuartos del fondo pierden frío en el camino, y por eso el cuarto del extremo marca tres o cuatro grados más que el termostato. La conclusión de siempre es que el equipo quedó chico, y se cambia. Muchas veces el equipo estaba bien y lo que se perdía estaba en los últimos treinta pies de ducto.',
+          'La temporada de tormentas de la tarde pone la otra mitad. Una tormenta de junio o julio deja la humedad de afuera al tope en veinte minutos, y una casa con fugas en la parte del ducto que va por el ático jala ese aire por las fugas y no por el filtro. Es la razón por la que un sistema bien dimensionado y bien atendido puede dejarle la casa sintiéndose húmeda en agosto.',
+        ],
+      },
+    ],
+    neighborhoods: ['Sunrise Lakes', 'Welleby', 'Sawgrass', 'Bonaventure', 'Sunrise Golf Village', 'Springtree', 'Sunset Strip'],
     dryerVent: {
       local: [
         'Sunrise Lakes and Sunrise Golf Village are among the oldest housing in west Broward, and a great deal of it is low rise condominium and villa construction from the seventies. In those buildings the dryer vent frequently runs through the attic space above a shared corridor before terminating at a gable end, and that shared attic is not anybody\'s obvious responsibility.',
@@ -436,6 +636,31 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Winston Park', 'Wynmoor', 'Regency Lakes', 'Cocobay', 'Township'],
   },
   'deerfield-beach': {
+    depthEs: [
+      {
+        heading: 'En Deerfield hay dos ciudades, y su sistema depende de en cuál vive usted',
+        body: [
+          'Deerfield Beach se parte en dos de forma muy limpia, y de qué lado esté su casa define casi todo lo que su sistema necesita. Al oeste de la interestatal, Century Village y las comunidades de alrededor son edificios bajos de condominio de los años setenta, con manejadoras compactas dentro de un clóset, tramos de ducto cortos y vecinos por los cuatro costados. Esos sistemas son lo bastante chicos como para que un solo retorno bloqueado afecte todo el apartamento en cuestión de días, y el clóset de la manejadora muchas veces comparte espacio con el calentador de agua, que le suma calor y humedad a un lugar que no debería tener ninguno de los dos.',
+          'Al este de Federal Highway, The Cove y el lado de Hillsboro son casas solas, lo bastante cerca del Atlántico como para que la sal alcance el techo, el equipo de afuera y cualquier pieza con una aleta metálica. La sal hace dos cosas. Corroe los componentes de afuera, y lo más importante, significa que el aire que entra por cualquier fuga viene cargado de sal además de humedad.',
+          'Deer Creek, Independence Bay y Crystal Lake son la parte más nueva de la ciudad, casas de dos pisos y townhouses donde el problema no es la sal sino la distancia: tramos largos por un ático que en julio pasa de 120 grados.',
+        ],
+      },
+      {
+        heading: 'El patrón de Century Village: le limpian el serpentín y el problema vuelve',
+        body: [
+          'Vemos la misma secuencia en los apartamentos de Century Village con la frecuencia suficiente para llamarla un patrón. Al apartamento nunca le han tocado los ductos desde que se construyó. El dueño nota que el aire ya no alcanza y llama al servicio. El técnico encuentra el serpentín restringido, lo limpia, y el sistema trabaja mejor durante una temporada.',
+          'La razón por la que regresa es que el serpentín no era el origen. Un serpentín se ensucia porque le está llegando aire sin filtrar, y en estos edificios eso casi siempre es porque el ducto de retorno o la caja del filtro no sella. Si le limpian el serpentín y dejan el retorno como estaba, lo que compró fueron ocho meses.',
+          'Vale la pena saberlo antes de contratar a nadie, porque cambia lo que usted debe pedir. Una limpieza de ductos que no incluye revisar el camino del retorno y el sello del filtro no está resolviendo el problema que usted tiene en realidad.',
+        ],
+      },
+      {
+        heading: 'Qué preguntar antes de contratar',
+        body: [
+          'Tres preguntas separan un trabajo real de uno rápido, y las tres se contestan por teléfono. Si el equipo pone todo el sistema bajo succión, o solo pasa un cepillo por las rejillas. Si el serpentín y la bandeja de condensado entran en el trabajo o se cotizan aparte. Y si le van a revisar el retorno, no solo las salidas.',
+          'En condominio hay una cuarta pregunta, que es de quién es cada parte. La manejadora, el ducto dentro de sus paredes y el filtro son suyos; los tramos compartidos son de la asociación. Se lo decimos antes de cotizarle, incluso cuando la respuesta es que le toca hablar con su junta y no con nosotros.',
+        ],
+      },
+    ],
     ductRepair: {
       local: [
         'Deerfield splits between Century Village condominium systems, where the ducting is short, shared and original to the seventies, and the coastal single family homes east of Federal where salt reaches everything with a metal component.',
@@ -493,6 +718,31 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'boynton-beach': {
+    depthEs: [
+      {
+        heading: 'Boynton es en buena medida una ciudad de comunidades de cincuenta y cinco años y más',
+        body: [
+          'Hunters Run, Leisureville y las comunidades de alrededor representan una parte muy grande de la vivienda de Boynton Beach, y comparten el mismo perfil: construidas entre los setenta y los noventa, de una planta o de pocos pisos, con sistemas compactos y con residentes que muchas veces llevan décadas en la misma casa.',
+          'Ese último dato es el que importa. Un sistema que lleva veinticinco años con un solo dueño normalmente ya tuvo cambio de equipo y nunca tuvo cambio de distribución, porque el equipo falla de forma visible y el ducto no. Encontramos seguido ducto original de los setenta u ochenta conectado a una manejadora de tercera generación, y el dueño lleva años oyendo que el problema es la unidad.',
+          'Es también el grupo más expuesto a las tácticas de susto por las que este oficio tiene mala fama. Por eso publicamos nuestros precios, y por eso el técnico que llega a su casa no gana comisión por lo que le venda.',
+        ],
+      },
+      {
+        heading: 'La costa y el oeste de Boynton no son el mismo trabajo',
+        body: [
+          'Al este de Federal, las propiedades de la isla barrera y la vivienda vieja cerca de la playa reciben sal en cada componente exterior y por cada abertura del camino de retorno. Las salidas y las aletas se corroen, dejan de sellar, y el aire húmedo de afuera se mete al ducto durante la noche, cuando el sistema está apagado y las superficies del ducto siguen frías.',
+          'Al oeste del turnpike, las comunidades más nuevas son construcción convencional sobre losa, con el ducto en el ático y salidas por el techo. Ahí lo que degrada al sistema es el calor: uniones que se abren, cinta que se despega y aislamiento que se vuelve quebradizo después de veinte veranos.',
+          'Son dos diagnósticos distintos y conviene saber cuál le toca, porque la reparación no se parece. En la costa se trabaja sobre terminaciones, aletas y sellado del retorno. Tierra adentro se trabaja sobre uniones y sobre el tramo de ático que perdió su aislamiento.',
+        ],
+      },
+      {
+        heading: 'Lo que cambia adentro cuando el retorno sella',
+        body: [
+          'La queja más común que recibimos en Boynton no es el polvo, es el olor a humedad al encender el aire, y casi siempre viene del mismo lugar: un serpentín mojado con polvo encima, alimentado por aire que no pasó por el filtro.',
+          'Sellar el camino del retorno cambia esa ecuación de raíz. El aire vuelve a entrar por donde debe, el filtro por fin hace su trabajo, y el serpentín se mantiene limpio mucho más tiempo del que dura si solo se limpia. Bajar la humedad de la casa de 60 por ciento es la otra mitad, y es lo que evita que el olor regrese el próximo verano.',
+        ],
+      },
+    ],
     ductRepair: {
       local: [
         'Boynton\'s fifty five plus communities share a pattern: equipment that has been replaced two or three times connected to ductwork that has never been touched. Equipment fails visibly and ductwork does not, so the distribution quietly ages past the point where the equipment can compensate.',
@@ -654,8 +904,57 @@ export const cityDetail: Record<string, CityDetail> = {
           'In most buildings the air handler, the ductwork inside your walls and the filter are yours, while risers, corridors and anything shared belong to the association. That boundary is where problems go unowned for years, because each side reasonably assumes the other is handling it. We will tell you which side of the line your problem is on before quoting anything, including when the answer is that you should be talking to your board rather than to us.',
         ],
       },
+      {
+        heading: 'Houses from the twenties to the sixties, with the air conditioning added later',
+        body: [
+          'Harbor Oaks and the streets on the bluff south of downtown are twenties and thirties houses, built decades before central air conditioning existed anywhere in Florida. Skycrest, Morningside Estates and most of the blocks east of Missouri Avenue are fifties and sixties ranch houses, many of which started on window units and were converted to a central system later. In both cases the ductwork was fitted into a house that was never designed to carry any, so the runs go through closets, soffits, furred down ceilings and an attic with three feet of clearance at the ridge.',
+          'Retrofitted duct leaks, and not because the installer was careless. A run assembled around obstacles has more joints, more transitions and more places for a connection to work loose as the building moves. Where that happens matters as much as how much. A joint that has opened in the attic pulls in air at well over 120 degrees. A joint that has opened inside a soffit or a wall cavity pulls in whatever is in the cavity, which is insulation fibre and sixty years of dust.',
+          'From inside the house the signs are consistent: one room that never keeps up with the rest, a return grille that whistles when the system starts, and a film of dust that is back on furniture within a few days of cleaning. All three point at the distribution rather than the equipment.',
+        ],
+      },
+      {
+        heading: 'What the September 2024 surge left in ground floor air handlers',
+        body: [
+          'When Hurricane Helene ran up the Gulf coast in late September 2024, the surge it pushed into Pinellas flooded ground floors along Clearwater Beach, Island Estates, Sand Key and the low mainland streets near the water. In a large share of those homes and ground floor condominium units, the air handler sits in a closet or a garage at floor level, which means it sat in salt water.',
+          'The visible repairs got done. Drywall was cut back, flooring was replaced, and units were swapped where they had to be. The part that usually did not get done is the duct. Fibreglass insulation inside a duct jacket does not dry after it has been submerged, because the jacket is a vapour barrier and it holds the water in. It stays wet, it holds salt, and it grows. Galvanized fittings and the bottom of a return plenum that stood in brackish water corrode from the inside, where nobody looks.',
+          'If your ground floor took water in 2024 and nobody opened the ductwork afterwards, that is the first thing worth checking, particularly if a musty smell came back some weeks after the remediation was signed off. Sometimes the answer is a cleaning. Sometimes the section that was under water has to be replaced, and we will tell you that rather than clean a duct that needs cutting out.',
+        ],
+      },
     ],
-    neighborhoods: ['Countryside', 'Island Estates', 'Clearwater Beach', 'Feather Sound', 'Sand Key'],
+    depthEs: [
+      {
+        heading: 'La isla y el continente son dos trabajos distintos',
+        body: [
+          'Clearwater Beach, Sand Key e Island Estates están sobre la arena, y todo lo que pasa con el aire acondicionado ahí lo define la sal. La sal llega al equipo de afuera, a las salidas del techo y a cualquier pieza metálica con aleta, y también llega al serpentín de adentro, porque el sistema jala aire por cualquier abertura del retorno. Un serpentín con una capa de sal y polvo transfiere calor peor y se queda mojado más tiempo, que es exactamente la condición que el moho necesita.',
+          'Countryside y los barrios del continente son construcción normal tierra adentro, con el ducto tendido en el ático. Ahí el problema no es la sal sino el calor: medio año con la distribución metida en un espacio que pasa de 120 grados, y un aislamiento que se vuelve quebradizo antes de lo que la gente supone.',
+        ],
+      },
+      {
+        heading: 'De quién es el ducto: la pregunta del condominio en Pinellas',
+        body: [
+          'Clearwater tiene una de las proporciones más altas de condominios y villas de todo Pinellas, y buena parte de ese inventario es de los años setenta y ochenta. Un sistema en condominio plantea una pregunta que una casa sola no plantea: qué parte es suya.',
+          'En la mayoría de los edificios la manejadora, el ducto que corre dentro de sus paredes y el filtro son suyos, mientras que los tramos verticales compartidos, los pasillos y las salidas del techo son de la asociación. Esa frontera es donde los problemas se quedan sin dueño durante años, porque cada lado supone con razón que el otro se está haciendo cargo.',
+          'Le decimos de qué lado de la línea está su problema antes de cotizarle nada, incluso cuando la respuesta es que le conviene hablar con su junta y no con nosotros. Limpiarle a usted seis pies de ducto cuando la obstrucción está en el tramo compartido no le resuelve nada y usted lo va a notar en dos meses.',
+        ],
+      },
+      {
+        heading: 'Casas de los años veinte a los sesenta con aire puesto después',
+        body: [
+          'Harbor Oaks y las calles del acantilado al sur del centro son casas de los años veinte y treinta, levantadas mucho antes de que existiera el aire acondicionado central. Skycrest, Morningside Estates y casi todo lo que está al este de Missouri Avenue son casas de una planta de los cincuenta y sesenta, muchas de ellas empezaron con unidades de ventana y se pasaron a sistema central después. En los dos casos el ducto se metió en una casa que no se diseñó para llevarlo, así que va por clósets, plafones bajados y un ático con tres pies de altura.',
+          'Un ducto adaptado tiene fugas, y no por descuido de quien lo instaló. Un tramo armado esquivando obstáculos tiene más uniones y más transiciones, y cada una es un punto que se puede aflojar con los años. Dónde está la fuga importa tanto como su tamaño: una unión abierta en el ático mete aire de más de 120 grados, y una abierta dentro de una pared o un plafón mete fibra de aislamiento y polvo de sesenta años.',
+          'Desde adentro las señales son las mismas siempre: un cuarto que nunca alcanza a los demás, una rejilla de retorno que silba al arrancar el sistema, y una capa de polvo que vuelve a los muebles a los pocos días de haber limpiado.',
+        ],
+      },
+      {
+        heading: 'Lo que dejó la marea de septiembre de 2024 en las manejadoras de planta baja',
+        body: [
+          'Cuando el huracán Helene subió por la costa del Golfo a finales de septiembre de 2024, la marea que empujó hacia Pinellas inundó las plantas bajas de Clearwater Beach, Island Estates, Sand Key y las calles bajas del continente cerca del agua. En buena parte de esas casas y de esos condominios de planta baja la manejadora está en un clóset o en la cochera al nivel del piso, así que estuvo dentro del agua salada.',
+          'La reparación visible sí se hizo. Se cortó el panel de yeso, se cambió el piso y se reemplazó el equipo donde no quedó otra. Lo que casi nunca se hizo fue abrir el ducto. El aislamiento de fibra de vidrio dentro de la cubierta de un ducto no se seca después de estar sumergido, porque esa cubierta es una barrera de vapor y retiene el agua adentro. Se queda húmedo, retiene sal, y crece. Las piezas galvanizadas y el fondo del plenum de retorno que estuvo en agua salobre se corroen desde adentro, donde nadie mira.',
+          'Si su planta baja tomó agua en 2024 y nadie abrió los ductos después, ese es el primer lugar donde hay que revisar, sobre todo si el olor a humedad regresó unas semanas después de que le entregaron el trabajo de remediación. A veces la respuesta es una limpieza. A veces el tramo que estuvo bajo el agua hay que cambiarlo, y se lo vamos a decir en lugar de limpiar un ducto que se tiene que cortar.',
+        ],
+      },
+    ],
+    neighborhoods: ['Countryside', 'Island Estates', 'Clearwater Beach', 'Feather Sound', 'Sand Key', 'Harbor Oaks', 'Skycrest', 'Morningside Estates', 'Coachman Ridge'],
   },
 
   // ---- Central Florida ----
@@ -881,8 +1180,58 @@ export const cityDetail: Record<string, CityDetail> = {
           'The third is the seasonal one. A lot of Bradenton properties are part year residences, and a house closed up for four months with the thermostat at 80 is a house with a duct system that never dries out. Returning owners almost always notice the smell before they notice anything else.',
         ],
       },
+      {
+        heading: 'East of I-75 is a different house with different problems',
+        body: [
+          'Braden River, Tara and the Lakewood Ranch side of Manatee County are the newer half of what we cover, most of it built from the nineties onward on slab, with the air handler in a garage or a utility closet and flexible duct fanned out across the attic. Nothing in a house like that is worn out. The problems there were built in rather than aged in.',
+          'The first is the attic itself. A Manatee County attic passes 120 degrees on a July afternoon while the duct inside it carries air at 55 degrees. A lot of that construction went in with R-6 flex, the outer jacket sags between the trusses over twenty years, and every sag is a low point where the air slows and dust settles out of it. If the bedroom at the far end of the house is always three or four degrees warmer than the thermostat, that is usually where it is happening rather than in the equipment.',
+          'The second is what the builder left behind. Drywall dust, sawdust and insulation fibre get into open duct while the house is going up, and nobody takes them out, so a house that is only five years old can still be distributing the material it was built from. Families who move in east of the interstate and start noticing allergies within a season are usually reacting to that rather than to anything they brought with them.',
+        ],
+      },
+      {
+        heading: 'Palma Sola, the bay side, and what the Gulf adds',
+        body: [
+          'West of 75th Street the air changes. Palma Sola, the blocks off Cortez Road and everything running out toward Anna Maria Island sit in salt air, and salt does more indoors than most people expect. It reaches the outdoor condenser first, which you can see, and then it reaches the evaporator coil inside through every gap in the return path, which you cannot.',
+          'A coil carrying a film of salt and dust transfers heat worse and stays wet longer between cycles, and staying wet longer is the whole mechanism behind a musty smell. That is the honest reason a house two blocks from the bay wants the coil looked at sooner than the same house in Braden Woods, and the difference is a year or two on the cycle rather than anything dramatic.',
+          'Salt also takes the moving parts. Dampers, roof terminations and the flap on an exterior hood corrode until they stop closing, and a damper stuck open lets humid outside air sit in the duct all night. On the water side of Bradenton we check those before quoting anything, because a clean duct behind a seized damper fills straight back up.',
+        ],
+      },
     ],
-    neighborhoods: ['Palma Sola', 'Bayshore Gardens', 'West Bradenton', 'Village of the Arts', 'Braden River', 'Samoset'],
+    depthEs: [
+      {
+        heading: 'Por qué el ducto en Bradenton se ensucia más rápido de lo que debería',
+        body: [
+          'El condado de Manatee está entre el Golfo y los ríos Manatee y Braden, y el aire de aquí carga humedad casi todo el año. Adentro del ducto eso importa por una razón concreta: el aire que sale de la manejadora va frío, el ducto que lo lleva cruza un ático o un espacio bajo el piso que no lo está, y en esa diferencia de temperatura se forma condensación. El polvo que en seco pasaría de largo se pega a una superficie húmeda y se queda ahí.',
+          'La vivienda de Bradenton empeora el asunto. Buena parte de West Bradenton, Bayshore Gardens y Samoset se levantó entre los años cincuenta y setenta, antes de que existieran las normas de aislamiento de hoy, y mucho de ese ducto original sigue trabajando. Un ducto flexible viejo, con la cubierta exterior ya degradada, suda bastante más que uno moderno.',
+          'El efecto práctico es que una casa de Bradenton con el sistema original vuelve a mostrar polvo alrededor de las rejillas en un par de años, mientras que la misma casa con ducto sellado y aislado aguanta cinco. Si ve marcas grises en forma de abanico en el techo alrededor de una rejilla, eso no es polvo del cuarto asentándose. Es su ducto perdiendo aire frío hacia el ático y jalando aire del ático de regreso.',
+        ],
+      },
+      {
+        heading: 'Lo que más encontramos en las casas de aquí',
+        body: [
+          'Tres cosas salen más en Bradenton que en el resto de la costa del Golfo donde trabajamos. La primera es el retorno desconectado. En casas de esta época el camino de retorno muchas veces no es un ducto sellado sino la cavidad de la pared o el espacio entre viguetas, y en cuanto el panel que lo cerraba se afloja, el sistema empieza a jalar aire directo de la pared o de abajo de la casa.',
+          'La segunda es moho en el serpentín de los sistemas que corren sin parar todo el verano. La humedad de Manatee mantiene el serpentín mojado, y un serpentín mojado, a oscuras y con polvo llegando todo el tiempo es donde el moho aparece primero, antes que en cualquier ducto.',
+          'La tercera tiene que ver con el calendario. Muchas propiedades aquí se usan solo parte del año, y una casa cerrada cuatro meses con el termostato en 80 es una casa cuyo sistema nunca se seca. Quien regresa lo nota por el olor antes que por cualquier otra cosa, y casi siempre lo nota en los primeros diez minutos después de encender el aire.',
+        ],
+      },
+      {
+        heading: 'Al este de la I-75 la casa es otra y falla distinto',
+        body: [
+          'Braden River, Tara y el lado de Lakewood Ranch son la mitad nueva de lo que atendemos: casi todo construido de los años noventa en adelante, sobre losa, con la manejadora en el garaje o en un clóset de servicio y ducto flexible repartido por el ático. En una casa así nada está desgastado. Los problemas vienen de fábrica.',
+          'El primero es el ático. Un ático en Manatee pasa de 120 grados una tarde de julio, y ahí adentro va el ducto que lleva aire a 55 grados. En mucha de esa construcción se usó ducto flexible R-6, la cubierta se descuelga entre las vigas con los años, y cada tramo colgado es un punto bajo donde el aire se frena y cae el polvo. Si el cuarto del extremo de la casa siempre está tres o cuatro grados más caliente que el termostato, casi siempre es eso y no el equipo.',
+          'El segundo es lo que dejó la constructora. Polvo de drywall, aserrín y fibra de aislamiento entran al ducto abierto mientras se levanta la casa, y nadie los saca después. Una casa de cinco años puede seguir repartiendo el material con el que fue construida. Las familias que se mudan al este de la interestatal y en una temporada ya andan con alergias casi siempre están reaccionando a eso.',
+        ],
+      },
+      {
+        heading: 'Palma Sola, el lado de la bahía y lo que agrega el Golfo',
+        body: [
+          'Pasando la calle 75 el aire cambia. Palma Sola, las cuadras cerca de Cortez Road y todo lo que va hacia Anna Maria Island están en aire salino, y la sal hace más adentro de la casa de lo que la gente supone. Primero llega al condensador de afuera, que se ve, y después llega al serpentín de adentro por cualquier hueco del retorno, que no se ve.',
+          'Un serpentín con una película de sal y polvo transfiere calor peor y se queda mojado más tiempo entre ciclos, y quedarse mojado más tiempo es todo el mecanismo detrás del olor a humedad. Esa es la razón honesta por la que una casa a dos cuadras de la bahía necesita revisión del serpentín antes que la misma casa en Braden Woods, y hablamos de un año o dos de diferencia en el ciclo, no de algo dramático.',
+          'La sal también se come las piezas que se mueven. Las compuertas, las terminaciones de techo y la tapa de la ventila exterior se corroen hasta que dejan de cerrar, y una compuerta trabada abierta deja entrar aire húmedo de afuera al ducto toda la noche. Del lado del agua revisamos eso antes de cotizar, porque un ducto limpio detrás de una compuerta trabada se vuelve a llenar.',
+        ],
+      },
+    ],
+    neighborhoods: ['Palma Sola', 'Bayshore Gardens', 'West Bradenton', 'Village of the Arts', 'Braden River', 'Samoset', 'Downtown Bradenton', 'Braden Woods', 'Tara'],
     dryerVent: {
       local: [
         'Bradenton\'s housing skews older than the Gulf coast communities around it, and West Bradenton and Bayshore Gardens in particular are full of fifties and sixties single storey homes where the laundry sits in a carport, a utility room or the garage. Those are short vent runs, four to eight feet through an exterior wall, and short runs are the ones people assume are fine.',
