@@ -188,7 +188,7 @@ export const cityDetail: Record<string, CityDetail> = {
       ],
       common: 'A crushed transition hose in a laundry closet built to the minimum dimension, combined with a riser the association has not touched in years.',
     },
-    neighborhoods: ['South Beach', 'Mid-Beach', 'North Beach', 'Sunset Islands', 'Venetian Islands'],
+    neighborhoods: ['South Beach', 'Mid-Beach', 'North Beach', 'Sunset Islands', 'Venetian Islands', 'South of Fifth', 'Flamingo Park', 'Normandy Isles', 'Bayshore'],
   },
   hialeah: {
     depth: [
@@ -257,7 +257,7 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
-    neighborhoods: ['West Hialeah', 'Palm Springs North', 'Amelia', 'Hialeah Acres'],
+    neighborhoods: ['West Hialeah', 'East Hialeah', 'Palm Springs North', 'Amelia', 'Hialeah Acres', 'Westland', 'Milander'],
     dryerVent: {
       local: [
         'A large share of Hialeah housing was built between the late sixties and the early eighties, and the laundry hookups in those homes were often placed on an interior wall rather than an exterior one. That single decision turns what should be a four foot vent run into twenty or thirty feet with two or three elbows, and every elbow is a place lint stops moving.',
@@ -319,7 +319,7 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
-    neighborhoods: ['Coral Gables Riviera', 'Old Cutler', 'Ponce Davis', 'Coral Bay', 'Golden Gate'],
+    neighborhoods: ['Coral Gables Riviera', 'Old Cutler', 'Ponce Davis', 'Coral Bay', 'Golden Gate', 'Cocoplum', 'Gables by the Sea'],
   },
   kendall: {
     depthEs: [
@@ -422,7 +422,7 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
-    neighborhoods: ['Keys Gate', 'Silver Palm', 'Malibu Bay', 'Waterstone'],
+    neighborhoods: ['Keys Gate', 'Silver Palm', 'Malibu Bay', 'Waterstone', 'Downtown Homestead', 'The Villages of Homestead', 'Redland'],
   },
   pinecrest: {
     depthEs: [
@@ -484,7 +484,7 @@ export const cityDetail: Record<string, CityDetail> = {
       ],
       common: 'Long horizontal attic runs sagging between joists, where every low point is both a restriction and a place condensation collects.',
     },
-    neighborhoods: ['Pinecrest Village', 'Suniland', 'Evergreen', 'High Pines'],
+    neighborhoods: ['Pinecrest Village', 'Suniland', 'Evergreen', 'High Pines', 'Devonwood', 'Coral Pine'],
   },
   'north-miami': {
     depthEs: [
@@ -539,7 +539,7 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
-    neighborhoods: ['Keystone Point', 'Sans Souci Estates', 'Griffing Park', 'Arch Creek'],
+    neighborhoods: ['Keystone Point', 'Sans Souci Estates', 'Griffing Park', 'Arch Creek', 'Sunkist Grove', 'Cloverleaf', 'San Michel'],
   },
   aventura: {
     depthEs: [
@@ -594,7 +594,7 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
-    neighborhoods: ['Williams Island', 'Aventura Lakes', 'Turnberry', 'Hidden Bay'],
+    neighborhoods: ['Williams Island', 'Aventura Lakes', 'Turnberry', 'Hidden Bay', 'The Waterways', 'Mystic Pointe', 'Porto Vita'],
     dryerVent: {
       local: [
         'Aventura is a condominium city, which means almost every dryer here vents into a shared riser rather than straight outside. Those risers run the full height of the building and are cleaned, when they are cleaned at all, by the association rather than by the unit owner. The in unit portion, the run from behind your machine to the wall connection, is yours, and it is where most of the accessible lint sits.',
@@ -818,7 +818,7 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
-    neighborhoods: ['Historic Miramar', 'Riviera Isles', 'Vizcaya', 'Silver Lakes', 'Monarch Lakes'],
+    neighborhoods: ['Historic Miramar', 'Riviera Isles', 'Vizcaya', 'Silver Lakes', 'Monarch Lakes', 'Sunset Lakes', 'Huntington'],
     dryerVent: {
       local: [
         'Miramar is two cities in one for this purpose. East of University, Historic Miramar is fifties and sixties construction with short exterior wall vents and original hoods. West of the turnpike, Riviera Isles and Monarch Lakes are two thousands construction with two storey homes, upstairs laundry rooms, and vent runs that travel the full depth of the house before reaching the roof.',
@@ -968,6 +968,58 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   davie: {
+    depthEs: [
+      {
+        heading: 'Terreno abierto, corrales y lo que entra con eso',
+        body: [
+          'Davie tiene más propiedad de lote grande y de caballos que cualquier otra ciudad de Broward, y el aire afuera de esas casas trae cosas que el aire suburbano no. Caminos de arena y entradas sin pavimentar, corrales y arenas que se trabajan y se rastrillan, paja y viruta, y pastizal abierto que se seca entre lluvias meten polvo fino al aire, y buena parte llega adentro sobre la ropa y las botas antes de acercarse siquiera a una rejilla de retorno.',
+          'Una vez adentro, el sistema lo mueve. Todo lo que cae al piso se vuelve a levantar y se va hacia el retorno, y lo que no se queda en el filtro aterriza en el serpentín. Las casas con caballos nos dicen siempre lo mismo: el filtro está gris en tres semanas y hay una película fina sobre los muebles dos días después de limpiar.',
+          'Eso es un problema de filtración y de flujo de aire antes que de limpieza. Un filtro de mayor rango por el que el equipo no puede respirar empeora las cosas, porque entonces el sistema jala aire sin filtrar por los lados del marco. Sellar la rejilla del filtro y usar un filtro que le quede al equipo sirve más que subir de rango a ciegas.',
+        ],
+      },
+      {
+        heading: 'Agua de pozo, riego y el equipo de afuera',
+        body: [
+          'Muchas propiedades de Davie riegan con pozo propio, y el agua de pozo de esta zona de Broward trae hierro y minerales disueltos. Donde eso importa para un sistema de aire es afuera: el rocío de los aspersores que alcanza el condensador deja sarro y manchas de óxido en las aletas, y un condensador con sarro transfiere calor peor que uno limpio.',
+          'La cadena a partir de ahí es directa. Un condensador que transfiere calor peor obliga al sistema a correr más tiempo para llegar a la misma temperatura, y un sistema que corre más tiempo pasa más aire por cada superficie de adentro del ducto, hora tras hora. El ducto se ensucia más rápido porque el equipo de afuera está trabajando de más.',
+          'Vale la pena ver hacia dónde tiran los aspersores antes de suponer que el problema está adentro. Mover una cabeza de riego, o ponerle una protección a la unidad, es un trabajo mucho menor que cualquiera de las alternativas.',
+        ],
+      },
+      {
+        heading: 'Casas manufacturadas y modulares',
+        body: [
+          'Davie tiene una cantidad real de casas manufacturadas y modulares, y su sistema de ductos no se parece en nada al de una casa construida en sitio. El ducto va en el piso, dentro del vientre de la casa debajo de la membrana de aislamiento, y las rejillas de suministro están en el piso y no en el techo. Todo el servicio cambia, empezando porque desde adentro no se ve nada.',
+          'Dominan dos fallas. La primera es la membrana del vientre: en cuanto se rompe, el ducto queda expuesto al terreno y el sistema empieza a jalar aire húmedo y polvo de tierra de abajo de la casa. La segunda es el ducto de cruce, el tramo flexible que lleva el aire de una mitad a la otra en una casa doble por debajo del centro, que se descuelga, lo aplasta un soporte o se sale del collarín por completo. Cuando media casa doble no enfría, el cruce es lo primero que hay que revisar.',
+          'Le decimos con honestidad cuándo un sistema de ducto en el piso ya pasó el punto de limpiarse. Un ducto abierto al terreno debajo de la casa necesita que se cierre esa abertura antes de que tenga sentido limpiar lo que hay adentro.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Open land, paddocks and what comes in with it',
+        body: [
+          'Davie has more large lot and equestrian property than anywhere else in Broward, and the air outside those houses carries things suburban air does not. Sand roads and unpaved drives, arenas and paddocks that get worked and dragged, hay and bedding, and open pasture that dries out between rains all put fine dust into the air, and a good part of it comes indoors on clothes and boots before it ever reaches a return grille.',
+          'Once it is inside, the system moves it. Everything that lands on a floor gets stirred up again and pulled toward the return, and whatever does not stop at the filter lands on the coil. Households with horses tell us the same thing every time: the filter is grey in three weeks and there is a fine film back on the furniture two days after cleaning.',
+          'That is a filtration and airflow problem before it is a cleaning problem. A higher rated filter the system cannot breathe through makes it worse rather than better, because the system then pulls unfiltered air around the frame. Sealing the filter grille and matching the filter to the equipment does more than upgrading the filter on its own.',
+        ],
+      },
+      {
+        heading: 'Well water, irrigation and the equipment outside',
+        body: [
+          'A lot of Davie properties irrigate from a private well, and well water in this part of Broward carries iron and dissolved minerals. Where that matters for an air conditioning system is outdoors: sprinkler spray reaching the condenser leaves mineral scale and rust staining on the fins, and a scaled condenser rejects heat worse than a clean one.',
+          'The chain from there is direct. A condenser rejecting heat worse makes the system run longer to reach the same temperature, and a system running longer pulls more air past every surface inside the duct, hour after hour. The duct gets dirty faster because the equipment outside is working harder.',
+          'It is worth looking at where the sprinkler heads throw before assuming the indoor system is at fault. Moving one head, or shielding the unit, is a far smaller job than any of the alternatives.',
+        ],
+      },
+      {
+        heading: 'Manufactured and older modular homes',
+        body: [
+          'Davie has a real stock of manufactured and modular homes, and their duct systems are nothing like a site built house. The duct runs in the floor, inside the belly of the home under the insulation membrane, and the supply registers are in the floor rather than the ceiling. Everything about servicing one is different, starting with the fact that none of it is visible from inside.',
+          'Two failures dominate. The first is the belly membrane. Once it tears, the duct is exposed to the ground, and the system starts pulling humid air and soil dust from under the home. The second is the crossover duct, the flexible section carrying air between the two halves of a double wide under the middle of the house, which sags, gets crushed by a support, or comes off its collar entirely. When half a double wide will not cool, the crossover is the first thing to check.',
+          'We tell you honestly when a floor duct system is past the point of cleaning. A duct that is open to the ground under the home needs that opening closed before there is any point in cleaning what is inside it.',
+        ],
+      },
+    ],
     dryerVent: {
       local: [
         'Davie has more large lot and equestrian property than anywhere else in Broward, and the houses on them are wide single storey builds. A wide house with the laundry near the middle produces the worst case run: long, horizontal, in the attic, terminating at the far end through the roof.',
@@ -975,7 +1027,7 @@ export const cityDetail: Record<string, CityDetail> = {
       ],
       common: 'Nesting in gable and roof terminations, which is the most common single cause of a dryer that worked last week and does not this week.',
     },
-    neighborhoods: ['Forest Ridge', 'Ivanhoe', 'Long Lake Estates', 'Shenandoah', 'Orange Park'],
+    neighborhoods: ['Forest Ridge', 'Ivanhoe', 'Long Lake Estates', 'Shenandoah', 'Orange Park', 'Pine Island Ridge', 'Rolling Hills'],
   },
   sunrise: {
     depth: [
@@ -1053,7 +1105,59 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'coral-springs': {
-    neighborhoods: ['Eagle Trace', 'Ramblewood', 'Coral Creek', 'Turtle Run', 'Westchester'],
+    depthEs: [
+      {
+        heading: 'Una ciudad construida en veinte años, que se desgasta al mismo tiempo',
+        body: [
+          'Coral Springs pasó de casi nada a ciudad completa entre principios de los setenta y mediados de los noventa, y se construyó rápido y con un patrón. Ramblewood, Westchester y Maplewood son el extremo viejo; Eagle Trace, Turtle Run y Coral Creek el nuevo. La consecuencia útil es que barrios enteros comparten la misma construcción, la misma distribución de ductos y la misma edad.',
+          'La consecuencia incómoda es que también llegan juntos al final de su vida útil. En un ático del sur de Florida el ducto flexible da alrededor de quince años antes de que la cubierta exterior se ponga quebradiza y el forro interior empiece a soltarse de los collarines, y la mayoría de estas casas van en su segunda o tercera manejadora con su primer juego de ductos. Una casa de 1985 con una manejadora de 2021 es aquí el caso normal, no la excepción.',
+          'Esa diferencia es de donde salen las quejas. El equipo está bien, la distribución no, y al dueño ya le dijeron dos veces que el sistema simplemente está viejo. Antes de que alguien cotice una cuarta manejadora conviene medir lo que están entregando las rejillas, porque muchas veces la respuesta es un tramo que se separó en el ático hace años.',
+        ],
+      },
+      {
+        heading: 'Casas de dos pisos y la puerta que todos cierran',
+        body: [
+          'Buena parte de la vivienda de Coral Springs es de dos pisos, y dos pisos crean un problema que una casa de una planta no tiene. Los dos niveles los sirve la misma manejadora, el aire caliente sube sin importar lo que quiera el termostato, y el retorno casi siempre son una o dos rejillas grandes abajo.',
+          'Eso deja a las recámaras de arriba devolviendo su aire por el espacio debajo de una puerta cerrada. Media pulgada de holgura no es un retorno, así que una recámara de arriba con la puerta cerrada trabaja contra una restricción toda la noche, que es justo cuando la familia está adentro. Si arriba corre tres o cuatro grados más caliente que abajo, revise si las salidas de arriba están abiertas y si existe alguna vía real de retorno antes de mirar el equipo.',
+          'El tronco vertical que alimenta el segundo piso también hay que revisarlo. Va dentro de un registro donde nadie lo ve, y cuando se separa en una unión el aire se va a la cavidad de la pared en lugar de a la recámara. Esa falla no se ve desde ningún cuarto de la casa y es común a esta edad.',
+        ],
+      },
+      {
+        heading: 'Lo que puede y lo que no puede cambiar por fuera de la casa',
+        body: [
+          'Coral Springs cuida el aspecto de la ciudad y aplica sus normas de apariencia con más mano que casi todo Broward, y encima de la ciudad casi siempre hay una asociación de propietarios con reglas propias. Cualquier cosa que cambie el exterior, una terminación nueva en el techo, una ventila en una pared que da a la calle, una tapa de otro color, es primero un asunto de aprobación y después uno técnico.',
+          'Eso define cómo trabajamos. Cuando el trabajo se puede hacer desde adentro, por las rejillas, el plenum y el gabinete de la manejadora, lo hacemos desde adentro. Cuando de verdad hay que cambiar algo por fuera, le decimos qué aprobación necesita antes de empezar, en lugar de dejarle una notificación de violación junto con el trabajo terminado.',
+          'La arboleda es el otro factor de afuera. Coral Springs tiene más sombra que casi todo el condado, y las tapas y terminaciones de techo bajo árboles maduros juntan hoja y semilla encima de lo que esté haciendo el ducto por dentro. Un ducto limpio detrás de una salida obstruida rinde igual que uno tapado.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'A city built in twenty years, wearing out on the same schedule',
+        body: [
+          'Coral Springs went from almost nothing to a full city between the early seventies and the middle nineties, and it was built fast and to a pattern. Ramblewood, Westchester and Maplewood are the older end, Eagle Trace, Turtle Run and Coral Creek the later one. The useful consequence is that whole neighbourhoods share the same construction, the same duct layout and the same age.',
+          'The awkward consequence is that they reach the end of their service life together. Flexible duct in a South Florida attic realistically gives about fifteen years before the outer jacket goes brittle and the inner liner starts pulling away from the collars, and most of these houses are on their second or third air handler and their first set of duct. A 1985 house with a 2021 air handler is the normal case here, not the exception.',
+          'That gap is where the complaints come from. The equipment is fine, the distribution is not, and the owner has been told twice that the system is simply old. Before anyone quotes a fourth air handler it is worth measuring what the registers are delivering, because the answer is often a run that separated in the attic years ago.',
+        ],
+      },
+      {
+        heading: 'Two storey plans and the door everybody closes',
+        body: [
+          'A large share of Coral Springs housing is two storey, and two storeys create a problem a single storey house does not have. Both floors are served by the same air handler, hot air rises regardless of what the thermostat wants, and the return is usually one or two large grilles downstairs.',
+          'That leaves the upstairs bedrooms pushing their return air back through the gap under a closed door. Half an inch of undercut is not a return, so an upstairs bedroom with the door shut runs against a restriction all night, which is exactly when the family is in it. If your upstairs runs three or four degrees warmer than downstairs, check whether the upstairs supply runs are open and whether there is any real return path up there before you look at the equipment.',
+          'The vertical trunk feeding upstairs is worth checking too. It runs inside a chase where nobody can see it, and when it separates at a joint the air goes into the wall cavity instead of the bedroom. That failure is invisible from every room in the house and it is common at this age.',
+        ],
+      },
+      {
+        heading: 'What can and cannot change on the outside of the house',
+        body: [
+          'Coral Springs takes the appearance of the city seriously and enforces its community standards more actively than most of Broward, and on top of the city there is usually a homeowners association with rules of its own. Anything that changes the exterior, a new roof termination, a vent hood on a street facing wall, a cap in a different colour, is an approval question before it is a technical one.',
+          'That shapes how we approach the work. Where a job can be done from inside the house, through the registers, the plenum and the air handler cabinet, we do it from inside. When something genuinely has to change outside, we tell you what approval it needs before we start rather than leaving you with a violation notice and a finished job.',
+          'The canopy is the other outdoor factor. Coral Springs has heavier tree cover than most of the county, and roof caps and terminations under mature trees collect leaf litter and seed debris on top of whatever the duct itself is doing. A clear duct behind an obstructed exit performs the same as a blocked one.',
+        ],
+      },
+    ],
+    neighborhoods: ['Eagle Trace', 'Ramblewood', 'Coral Creek', 'Turtle Run', 'Westchester', 'Maplewood', 'Cypress Run'],
     dryerVent: {
       local: [
         'Coral Springs was built fast and to a pattern, which is useful here because it means the same vent configuration repeats across whole neighborhoods. In Ramblewood and Westchester the laundry sits off the garage with a short run to a side wall. In the later communities, Eagle Trace and Turtle Run, the two storey plans put the laundry upstairs and vent through the roof.',
@@ -1311,6 +1415,32 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Hunters Run', 'Leisureville', 'Quantum Village', 'Chapel Hill', 'Renaissance Commons'],
   },
   'west-palm-beach': {
+    depthEs: [
+      {
+        heading: 'Westgate, Roosevelt Estates y las casas divididas en apartamentos',
+        body: [
+          'Buena parte de la vivienda al oeste del centro son casas de los cincuenta y sesenta que en algún momento se dividieron en dos o tres unidades. Por fuera siguen siendo una casa. Por dentro hay paredes nuevas, cocinas nuevas y, casi siempre, un solo manejador de aire repartiendo a espacios que hoy pertenecen a familias distintas.',
+          'Eso importa más de lo que parece. Cuando el ducto se divide entre unidades, el olor de una cocina llega a la otra, y lo que uno de los inquilinos hace con la humedad lo respiran todos. Cuando alguien cerró una rejilla o tapó un retorno para ganar espacio, el sistema entero trabaja desequilibrado y el cuarto del fondo nunca enfría.',
+          'La pregunta que más nos hacen aquí es de quién es la responsabilidad. El ducto es parte del inmueble, no del contrato de alquiler, así que en la práctica corresponde al dueño. Si usted alquila, lo que sí puede hacer es pedir un presupuesto por escrito con el conteo de rejillas y llevárselo al propietario. Se lo damos sin costo y sin que usted quede comprometido a nada.',
+        ],
+      },
+      {
+        heading: 'Century Village y los edificios de condominio: dónde termina lo suyo',
+        body: [
+          'En los condominios de West Palm Beach el manejador va en un clóset, los tramos son cortos y el trabajo se hace en unas pocas horas. Es de los casos donde la diferencia se nota antes, sencillamente porque hay menos sistema donde diluirla.',
+          'Lo que esos edificios sí tienen es infraestructura compartida. Donde su tramo se une al montante que sirve a otras unidades, esa parte es de la asociación, y ese límite es exactamente donde los problemas se quedan años sin dueño porque cada lado supone que el otro lo está atendiendo.',
+          'Le decimos de qué lado de la línea está su problema antes de cotizar, incluso cuando la respuesta es que le toca a la junta. Limpiar sus dos metros cuando la obstrucción está más arriba no arregla nada, y usted nos estaría llamando otra vez antes de que termine la temporada.',
+        ],
+      },
+      {
+        heading: 'Cuánto cuesta y qué es lo que mueve el precio',
+        body: [
+          'Una limpieza completa cuesta entre 300 y 600 dólares por sistema. Lo que mueve el número dentro de ese rango es el conteo de rejillas, cuánta acumulación hay adentro y qué tan accesible está el manejador. Nada de eso se decide cuando el técnico ya está en su pasillo: se lo decimos antes de agendar.',
+          'La palabra importante es por sistema. Muchas casas de dos plantas al oeste de la autopista tienen dos manejadores, uno por piso, y son dos trabajos. Un apartamento con un solo equipo es un precio. Conviene aclararlo por teléfono para que nadie se lleve una sorpresa.',
+          'Si le ofrecen la casa completa por 49 o 99 dólares, ese no es el precio del trabajo, es el precio de entrar. Dos técnicos, una máquina y tres horas en una casa cuestan lo que cuestan. Lo que sigue a ese anuncio es media hora de aspirar las rejillas, o una lista de cargos adicionales una vez que ya están adentro.',
+        ],
+      },
+    ],
     depth: [
       {
         heading: 'El Cid, Flamingo Park and Northwood: houses older than air conditioning',
