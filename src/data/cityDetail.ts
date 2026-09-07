@@ -606,6 +606,32 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Broward ----
   'fort-lauderdale': {
+    depthEs: [
+      {
+        heading: 'Melrose Park, Riverland y las casas de bloque de los años cincuenta',
+        body: [
+          'Al oeste de la 95 hay barrios enteros de casas de bloque de una planta levantadas entre los cincuenta y los sesenta. Son sólidas y siguen en pie sin problema, pero se construyeron con techos bajos y áticos de muy poca altura, y el aire acondicionado central llegó a ellas años después de terminadas.',
+          'Eso deja el ducto metido en un espacio donde apenas cabe un brazo. Se nota en dos cosas: los tramos se instalaron doblados más de lo que deberían porque no había por dónde más pasarlos, y cuando algo falla, el técnico anterior probablemente trabajó a ciegas. Encontramos uniones cerradas con cinta de tela que se secó hace quince años y tramos apoyados directamente sobre el cielo raso.',
+          'También es la razón por la que en estas casas el cuarto más lejano del manejador nunca enfría igual. No siempre es falta de capacidad del equipo. Muchas veces es que el aire se está quedando en el camino.',
+        ],
+      },
+      {
+        heading: 'Los edificios de la playa y las unidades que pasan medio año vacías',
+        body: [
+          'Buena parte de la vivienda cerca del agua se alquila por temporada o se ocupa solo unos meses al año. La costumbre es dejar el aire apagado o en 80 grados mientras no hay nadie, que es lo lógico para la factura y lo peor posible para el sistema.',
+          'Un apartamento cerrado en agosto sin equipo trabajando llega a niveles de humedad que no bajan solos. La humedad se asienta en el aislamiento del ducto, en el serpentín y en la bandeja de condensado, y quien abre la puerta en noviembre entra a un olor que no estaba en marzo.',
+          'Si el suyo es un apartamento de temporada, el momento de limpiarlo es antes de que empiece la ocupación, no después de que alguien se queje. Y si va a quedar vacío, dejar el termostato en 77 con el ventilador en automático cuesta mucho menos que resolver el problema después.',
+        ],
+      },
+      {
+        heading: 'Cuando el olor no viene del ducto',
+        body: [
+          'Vale la pena decirlo aunque no nos convenga: no todo olor a humedad se arregla limpiando el ducto. En muchas casas de Fort Lauderdale el origen está en el serpentín del evaporador o en la bandeja de condensado, que en este clima se ensucian antes que el ducto mismo.',
+          'La diferencia se nota en el patrón. Si el olor aparece cuando arranca el equipo y se va disipando, suele venir del serpentín. Si es constante y más fuerte en un cuarto específico, ahí sí el ducto es el sospechoso. Y si es un olor dulce o de tierra mojada cerca del manejador, revise el desagüe antes que nada.',
+          'Cuando vamos a una casa y el problema es el serpentín, lo decimos y cotizamos eso, que es un trabajo distinto y más barato. Limpiar un ducto que está bien para no contradecir a nadie es la manera más rápida de que el cliente nos llame otra vez con el mismo olor.',
+        ],
+      },
+    ],
     depth: [
       {
         heading: 'Waterfront property, canal air and what it does indoors',
@@ -1167,6 +1193,58 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'coconut-creek': {
+    depthEs: [
+      {
+        heading: 'Wynmoor y los edificios de asociación: todo el complejo envejece al mismo tiempo',
+        body: [
+          'Wynmoor es una comunidad grande para mayores de 55 años, y funciona menos como un conjunto de apartamentos que como una sola instalación. Las unidades se construyeron en los mismos años, se equiparon igual, y llegan al final de la vida útil del equipo con pocas temporadas de diferencia entre una y otra.',
+          'Para el propietario eso tiene una consecuencia práctica. El manejador va en un clóset, los tramos son cortos, y una limpieza completa se hace en unas horas. Pero donde su ducto se conecta con algo compartido, la responsabilidad cruza una línea que está escrita en los documentos de la asociación, no en el edificio. Esa línea la revisamos antes de cotizar y se la explicamos, incluso cuando la respuesta es que le toca a la asociación.',
+          'También significa que si tres unidades del mismo edificio tienen la misma queja el mismo verano, eso rara vez son tres casualidades. Casi siempre es la edad del equipo, y limpiar una sola unidad no lo resuelve.',
+        ],
+      },
+      {
+        heading: 'Winston Park y Regency Lakes: el ducto flexible que aguantó veinte años',
+        body: [
+          'La parte de casas unifamiliares de Coconut Creek es construcción sobre losa de los años ochenta y noventa, con ducto flexible repartido por el ático y rejillas en el cielo raso. Es un diseño correcto y no falla de golpe. Se degrada.',
+          'El flexible se descuelga entre las vigas con las décadas, y cada punto bajo es donde el aire pierde velocidad y suelta el polvo que traía. El sellado de las uniones se pone quebradizo en un ático que en julio pasa de 120 grados. Ninguna de las dos cosas produce un día en que el sistema se detiene: producen una casa que enfría un poco peor cada año hasta que el dueño concluye que el equipo se le quedó chico.',
+          'Antes de cambiar un manejador que está cumpliendo, vale la pena saber qué está pasando entre él y los cuartos. Un equipo nuevo empujando aire por una distribución de veinticinco años no va a dar el número que trae en la etiqueta.',
+        ],
+      },
+      {
+        heading: 'El patio con malla no filtra nada, y de dónde viene el polvo de verdad',
+        body: [
+          'Casi todas las casas de aquí tienen patio cerrado con malla, y es común suponer que eso es lo que mantiene limpio el interior. Detiene hojas e insectos. No hace absolutamente nada con las partículas del tamaño que importa adentro, y de todos modos no está en el camino del aire.',
+          'Las entradas reales se ven menos. En este tipo de vivienda el retorno suele ser una sola rejilla grande en un pasillo, y lo que hay detrás muchas veces es la estructura de la pared, no un conducto sellado. Todo lo que esté en esa pared, y todo lo que esté en el ático por encima, entra al sistema cada vez que arranca el ventilador.',
+          'Por eso aparecen sombras grises alrededor de una rejilla en una casa que se limpia cada semana. Ese polvo no está entrando por la malla del patio. Está saliendo de adentro del edificio, por el retorno, y el sistema lo reparte.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Wynmoor and the association buildings: a whole city block on one maintenance clock',
+        body: [
+          'Wynmoor is a large age restricted community of low rise buildings, and it behaves less like a set of apartments than like a single piece of infrastructure. The units were built in the same years, fitted with the same equipment, and they reach the end of that equipment life within a few seasons of each other.',
+          'That matters when you are the owner. The air handler sits in a closet, the runs are short, and a proper cleaning takes a few hours. But where your ducting meets anything shared, the responsibility crosses a line that is written in the association documents rather than in the building. We read that line before quoting, and we tell you when the answer is that the association owns the problem.',
+          'It also means neighbours compare notes, which is useful. If three units in a building have the same complaint in the same summer, that is rarely three coincidences. It is usually the age of the equipment, and cleaning one unit will not settle it.',
+        ],
+      },
+      {
+        heading: 'Winston Park, Regency Lakes and the flex duct that was fine for twenty years',
+        body: [
+          'The single family side of Coconut Creek is mostly eighties and nineties slab construction with flexible duct fanned across the attic and supply registers in the ceiling. It is a sound design and it does not fail dramatically. It degrades.',
+          'R-6 flex sags between the trusses over two decades, and every sag becomes a low point where air slows and dust drops out of it. The mastic and tape at the joints go brittle in an attic that passes 120 degrees in July. Neither of those produces a day where the system stops. They produce a house that cools slightly worse every year until the owner concludes the equipment is undersized.',
+          'Before replacing an air handler that is doing its job, it is worth knowing what is happening between it and the rooms. A new system pushing air through twenty five year old distribution will not reach the number on its label.',
+        ],
+      },
+      {
+        heading: 'The screened enclosure question, and where the dust is actually coming from',
+        body: [
+          'Almost every home here has a screened patio, and homeowners often assume that is what keeps the inside clean. It filters leaves and insects. It does nothing at all for the particles small enough to matter indoors, and it is not part of the air path anyway.',
+          'The real entry points are less visible. In this housing stock the return is usually a single large grille in a hallway, and the cavity behind it is often the wall framing rather than sealed sheet metal. Anything in that wall, and anything in the attic above it, gets pulled into the system every time the blower runs.',
+          'That is why grey shadowing appears around a supply register in a house that is cleaned every week. The dust is not coming past the screen. It is coming from inside the building, through the return, and being redistributed.',
+        ],
+      },
+    ],
     neighborhoods: ['Winston Park', 'Wynmoor', 'Regency Lakes', 'Cocobay', 'Township'],
   },
   'deerfield-beach': {
@@ -1532,6 +1610,32 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'st-petersburg': {
+    depthEs: [
+      {
+        heading: 'Shore Acres y las zonas que se inundan: el problema aparece después',
+        body: [
+          'St. Petersburg tiene agua en tres lados y barrios que se inundan con marejada y con lluvia fuerte. Shore Acres es el ejemplo conocido, pero no es el único. Lo que casi nadie revisa después de una inundación es el ducto.',
+          'La razón es que el daño no se ve. Los pisos se secan, las paredes se reparan, y el aislamiento que se mojó dentro de la cubierta del ducto se queda mojado, porque una cubierta sellada no ventila. Semanas más tarde aparece un olor en una casa que ya se veía reparada, y nadie relaciona una cosa con la otra.',
+          'Si su casa tomó agua en algún momento, aunque haya sido hace dos temporadas, el ducto vale una revisión. Es la parte de la casa que nadie abre y la única que puede seguir húmeda mucho después de que todo lo demás se secó.',
+        ],
+      },
+      {
+        heading: 'Old Northeast e Historic Kenwood: aire acondicionado en casas de los años veinte',
+        body: [
+          'Old Northeast y Historic Kenwood son bungalows de madera de los años veinte, muchos sobre pilotes y con espacio abierto debajo del piso. Se construyeron con ventilación cruzada, techos altos y ningún ducto, porque el aire acondicionado central no existía cuando se levantaron.',
+          'Todo el sistema que hay hoy se agregó después, y se agregó por donde se pudo: por el espacio bajo el piso, por un clóset, por un plafón bajado en un pasillo. Los tramos bajo la casa quedan sin soporte entre pilote y pilote, se descuelgan con los años, y cada punto bajo es donde se queda la humedad hasta que la unión se abre.',
+          'Desde adentro se siente como una sola rejilla que entrega menos que las demás, o un olor a tierra que se hace más fuerte en el cuarto que queda sobre la trampilla de acceso. Un tramo separado puede llevar años enfriando el espacio debajo de la casa antes de que alguien lo note.',
+        ],
+      },
+      {
+        heading: 'Qué revisar usted mismo antes de llamarnos',
+        body: [
+          'Hay tres cosas que puede verificar en diez minutos y que evitan una visita que no necesita. La primera es el filtro. Si lleva más de tres meses puesto, cámbielo y espere una semana antes de concluir cualquier cosa, porque un filtro saturado produce exactamente los mismos síntomas que un ducto obstruido.',
+          'La segunda es pasar por cada rejilla con la mano y comparar. Si todas entregan poco, el problema está en el equipo o en el filtro. Si una entrega mucho menos que el resto, el problema está en ese tramo y sí es trabajo nuestro.',
+          'La tercera es mirar si alguna rejilla tiene manchas grises alrededor del marco. Eso es polvo que pasó de largo, y significa que hay aire entrando al sistema por donde no debería, casi siempre en el retorno. Con esas tres respuestas podemos decirle por teléfono si conviene que vayamos.',
+        ],
+      },
+    ],
     ductRepair: {
       local: [
         'The Old Northeast and Historic Kenwood bungalows have air conditioning that was added decades after the houses were built, with runs that frequently drop into the crawl space rather than rising into an attic. Those runs are out of sight, usually unsupported, and take damage from anything that has been under there.',
@@ -1855,6 +1959,58 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Lake Morton', 'Dixieland', 'Grasslands', 'Christina', 'Lake Hollingsworth', 'Cleveland Heights', 'Oakbridge'],
   },
   jacksonville: {
+    depthEs: [
+      {
+        heading: 'En Jacksonville sí hay invierno, y eso cambia todo el sistema',
+        body: [
+          'Esta es la única parte de nuestra cobertura donde la calefacción no es un detalle. Jacksonville tiene noches bajo cero casi todos los inviernos, así que aquí las casas usan bomba de calor o calefacción de gas en serio, durante semanas, no para un frente frío aislado.',
+          'Un sistema que trabaja en los dos sentidos somete al ducto a un cambio de temperatura que el ducto del sur de Florida nunca vive. Uniones que se sellaron a 95 grados se van aflojando con los años de dilatarse y contraerse, y un tramo que cruza un espacio sin acondicionar pelea contra 40 grados de diferencia en enero en lugar de ignorarlos.',
+          'También hace que el primer ciclo de calefacción del año diga bastante. Ese olor a polvo quemado que todo el mundo reconoce en octubre es polvo real sobre un intercambiador real, y si dura más de una hora o vuelve cada vez que enciende, eso sí conviene revisarlo.',
+        ],
+      },
+      {
+        heading: 'Riverside, Avondale y San Marco: casas sobre pilotes, no sobre losa',
+        body: [
+          'Los barrios históricos junto al río son casas de madera de entre 1910 y 1930, levantadas sobre pilotes con un espacio abierto debajo del piso. Ese solo dato las separa de casi todo lo demás que atendemos en Florida, donde la construcción sobre losa manda el ducto para arriba.',
+          'Aquí buena parte de la distribución corre por debajo, y ese espacio es más húmedo que un ático, en la mayoría de estas casas no está aislado del terreno, y lo alcanza cualquier cosa que haya pasado por ahí en un siglo. Encontramos tramos separados en una unión que llevan años acondicionando la tierra, y tramos aplastados por almacenamiento o por un plomero que necesitó el espacio más que el ducto.',
+          'Desde adentro se siente como una rejilla de piso que entrega bastante menos que las demás, o un olor a humedad más fuerte en el cuarto que queda junto a la trampilla. El dueño casi siempre culpa al cuarto. El cuarto está bien.',
+        ],
+      },
+      {
+        heading: 'Mandarin y Southside: aquí el tema es el polen',
+        body: [
+          'Al sur y al este del centro histórico la vivienda es losa con ducto en el ático, y las fallas son las de siempre: flexible descolgado, sellado quebradizo y escombro de obra que sigue circulando desde que se construyó la casa.',
+          'Lo propio del norte de Florida es la primavera. La carga de polen de pino y roble aquí es más pesada que en cualquier punto más al sur, y durante varias semanas lo cubre todo afuera y entra por cada rendija del camino de retorno. Una casa cómoda once meses del año puede ser genuinamente difícil en marzo.',
+          'La respuesta útil no es limpiar más seguido. Es encontrar por dónde está entrando aire sin filtrar al sistema, porque con el retorno sellado el filtro por fin puede hacer su trabajo. Limpiar un sistema que sigue jalando polen por un retorno con fugas le compra una buena semana.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Jacksonville actually has a winter, and that changes the whole system',
+        body: [
+          'This is the one part of our coverage where the heating side is not decorative. Jacksonville sees freezing nights most winters, so homes here run heat pumps or gas furnaces in earnest for weeks at a time rather than for the odd cold snap.',
+          'A system that runs in both directions puts the ductwork through a temperature swing that South Florida ducting never sees. Joints that are sealed at 95 degrees are worked loose over years of expanding and contracting, and a run passing through an unconditioned crawl space or attic is fighting a 40 degree difference in January instead of ignoring it.',
+          'It also means the first heating cycle of the season is genuinely informative. The burnt dust smell that everyone recognises in October is real dust on a real heat exchanger, and if it lasts more than an hour or comes back every time, that is worth a look rather than worth ignoring.',
+        ],
+      },
+      {
+        heading: 'Riverside, Avondale and San Marco: houses on crawl spaces, not slabs',
+        body: [
+          'The historic districts along the river are wood frame houses from the nineteen tens through the thirties, raised on piers with an open crawl space beneath. That single fact separates them from almost everything else we work on in Florida, where slab construction puts the ducting overhead.',
+          'Here a good share of the distribution runs under the floor, and a crawl space is damper than an attic, unsealed to the ground in most of these houses, and reachable by anything that has been under there in a century. We find runs separated at a joint that have spent years conditioning the dirt, and runs crushed by storage or by a plumber who needed the space more than the duct did.',
+          'From inside, it reads as one floor register that delivers noticeably less than the others, or a musty note that is strongest in the room nearest the access hatch. Owners usually blame the room. The room is fine.',
+        ],
+      },
+      {
+        heading: 'Mandarin, Southside and the newer suburbs, where the pollen is the story',
+        body: [
+          'South and east of the historic core the housing is conventional slab with attic ducting, and the failures are the ordinary ones: sagging flex, brittle joint sealing, and builder debris from the framing stage still in circulation.',
+          'What is specific to North Florida is the spring. The pine and oak pollen load here is heavier than anywhere further south, and for several weeks it coats everything outdoors and gets pulled indoors through every gap in the return path. A house that is comfortable eleven months of the year can be genuinely difficult in March.',
+          'The useful response is not more cleaning. It is finding where unfiltered air is entering the system, because a sealed return path means the filter gets to do its job. Cleaning a system that keeps drawing pollen through a leaky return buys you one good week.',
+        ],
+      },
+    ],
     neighborhoods: ['Riverside', 'San Marco', 'Mandarin', 'Ortega', 'Southside', 'Avondale'],
   },
 
@@ -2077,6 +2233,58 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Bonita Bay', 'Pelican Landing', 'Spanish Wells', 'Bonita Farms', 'Bonita Beach', 'Vanderbilt Lakes', 'Palmira'],
   },
   sarasota: {
+    depthEs: [
+      {
+        heading: 'La casa que pasa vacía de mayo a octubre',
+        body: [
+          'Sarasota tiene una de las poblaciones de temporada más fuertes del estado, y buena parte de la vivienda se ocupa solo unos meses al año. La costumbre al cerrar es subir el termostato o apagarlo, que es razonable para la factura y es lo peor posible para el edificio.',
+          'Una casa cerrada en agosto sin equipo trabajando alcanza niveles de humedad que no bajan solos. Se asienta en el aislamiento del ducto, en el serpentín y en la bandeja de condensado, y quien abre la puerta en noviembre entra a un olor que en abril no existía.',
+          'Si la casa va a quedar vacía, dejar el termostato en 77 con el ventilador en automático cuesta una fracción de lo que cuesta arreglar la consecuencia. Y el momento de limpiar una casa de temporada es antes de que empiece la temporada, no después de que alguien ya se quejó.',
+        ],
+      },
+      {
+        heading: 'Siesta Key y Bird Key: la sal no descansa',
+        body: [
+          'En las islas de barrera el aire trae sal todos los días del año, no solo durante las tormentas. Llega al serpentín por el camino del retorno y llega al condensador directamente, y el efecto es acumulativo, no dramático.',
+          'Lo que produce es corrosión en las aletas de aluminio del serpentín, que entonces retiene humedad y suciedad más fácilmente que uno limpio, lo cual restringe el flujo de aire, lo cual hace que todo el sistema trabaje más para dar menos. El equipo costero no suele fallar antes de tiempo. Primero rinde mal durante años.',
+          'Por eso en las islas revisamos el serpentín y la bandeja antes de cotizar una limpieza de ductos. En una propiedad de isla, el serpentín es más seguido el origen de la queja que el ducto, y es un trabajo distinto y más barato.',
+        ],
+      },
+      {
+        heading: 'Gulf Gate, Arlington Park y Palmer Ranch: tres décadas, tres problemas distintos',
+        body: [
+          'Gulf Gate y Arlington Park son construcción de los sesenta y setenta, y sus equipos ya se cambiaron una o dos veces sobre una distribución que nunca se rediseñó. Un equipo moderno sobre ducto original no va a rendir lo que dice su etiqueta, y la falla casi nunca está en la caja que se acaba de instalar.',
+          'Palmer Ranch y las comunidades planificadas al este son de los noventa en adelante, de dos plantas, muchas veces con dos sistemas y flexible repartido por el ático. Ahí nada está gastado, así que los problemas son los que vinieron de fábrica: descuelgue, uniones quebradizas y polvo de construcción que sigue moviéndose por la casa veinte años después.',
+          'La diferencia práctica está en lo que logra una limpieza. En las casas viejas suele ser el paso que le dice si la distribución necesita trabajo o no. En las nuevas normalmente resuelve la queja por sí sola, porque el sistema está sano y lo único que tiene es el escombro con el que nació.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'The house that sits empty from May to October',
+        body: [
+          'Sarasota has one of the strongest seasonal populations in the state, and a large share of the housing is occupied for part of the year. The habit when closing up is to set the thermostat high or switch it off, which is sensible for the electricity bill and is the worst thing available for the building.',
+          'A closed Florida house in August with no equipment running reaches humidity levels that do not come back down on their own. It settles into duct insulation, into the evaporator coil, and into the condensate pan, and the owner who opens the door in November walks into a smell that was not there in April.',
+          'If a house is going to be empty, leaving the thermostat at 77 with the fan on auto costs a fraction of what it costs to deal with the consequences. And the time to clean a seasonal house is before the season starts, not after someone has already noticed.',
+        ],
+      },
+      {
+        heading: 'Siesta Key, Bird Key and the salt that never stops',
+        body: [
+          'On the barrier islands the air carries salt every day of the year, not only during storms. It reaches the evaporator coil through the return path and it reaches the condenser directly, and the effect is cumulative rather than dramatic.',
+          'What it produces is corrosion on the aluminium fins of the coil, which then holds moisture and dirt more readily than a clean coil does, which then restricts airflow, which then makes the whole system work harder for less. Coastal equipment does not usually fail early. It underperforms for years first.',
+          'This is also why on the islands we look at the coil and the pan before we quote a duct cleaning. On a barrier island property the coil is more often the source of a complaint than the ductwork is, and it is a different and cheaper job.',
+        ],
+      },
+      {
+        heading: 'Gulf Gate, Arlington Park and Palmer Ranch: three different decades, three different problems',
+        body: [
+          'Gulf Gate and Arlington Park are sixties and seventies construction, and their systems have usually been replaced once or twice into a distribution layout that was never redesigned. Modern equipment on original ducting will not reach its rating, and the fault is almost never in the box that was just installed.',
+          'Palmer Ranch and the planned communities east of the trail are nineties onward, two storey, often on two systems, with flex fanned across the attic. Nothing is worn out there, so the problems are the ones that were built in: sag, brittle joints, and drywall dust from the framing stage still moving through the house twenty years later.',
+          'The practical difference is what a cleaning achieves. In the older houses it is often the step that tells you whether the distribution needs work at all. In the newer ones it usually resolves the complaint on its own, because the system is sound and simply full of the debris it started with.',
+        ],
+      },
+    ],
     neighborhoods: ['Downtown Sarasota', 'Gulf Gate', 'Palmer Ranch', 'Siesta Key', 'Arlington Park'],
   },
   bradenton: {
