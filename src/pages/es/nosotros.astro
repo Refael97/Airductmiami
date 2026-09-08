@@ -4,6 +4,14 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABand from '../../components/CTABand.astro';
 import { business } from '../../data/business';
 import { cities } from '../../data/cities';
+import { services } from '../../data/services';
+import { reviews, reviewCount } from '../../data/reviews';
+
+/* Las cifras se cuentan de los mismos datos con los que se construye el
+   sitio, así que no pueden separarse de lo que el sitio realmente muestra.
+   Ver docs/TRUST-AND-CLAIMS.md: el crecimiento se describe, nunca se
+   cuantifica con un número que no podamos documentar. */
+const spanishReviews = reviews.filter((r) => r.lang === 'es').length;
 import { ui } from '../../data/ui';
 
 const lang = 'es' as const;
@@ -29,6 +37,15 @@ const description = 'Por qué publicamos precios cuando este oficio no lo hace, 
  <li><strong>Precios honestos y claros.</strong> La cotización es el precio. Sin gancho y cambio, sin tácticas de miedo.</li>
  <li><strong>Fotos de antes y después.</strong> Usted ve exactamente lo que sacamos.</li>
  </ul>
+
+ <h2>Una empresa en crecimiento, y sobre qué está construido ese crecimiento</h2>
+ <p>Florida Breeze está creciendo, y vale la pena decir con claridad qué significa eso y qué no. Significa que hay demanda del trabajo. No significa que llevemos décadas aquí ni que seamos la operación más grande del estado, y no vamos a afirmar ninguna de las dos cosas.</p>
+
+ <p>Empezamos con la limpieza de ductos. Hoy los mismos equipos cubren {services.length} servicios: limpieza e instalación de ductos de secadora, el lado de la manejadora y el serpentín, reparación y sellado de ductos, eliminación de moho, sanitización, sistemas comerciales, lámparas UV, pruebas de calidad del aire, aislamiento de ático y, más recientemente, reparación de puertas corredizas de vidrio. Cada uno se agregó por la misma razón: los clientes a quienes les dijimos la verdad sobre su sistema seguían preguntando si también hacíamos el siguiente trabajo de su lista.</p>
+
+ <p>Con la cobertura pasó lo mismo. Publicamos páginas reales y escritas localmente para {cities.length} comunidades de Florida, a nivel de vecindario, en inglés y en español. No es una plantilla con el nombre de la ciudad cambiado. Hacerlo así es más lento, y es la razón por la que suena el teléfono en lugares donde nunca hemos pagado publicidad.</p>
+
+ <p>Lo que permite crecer en este oficio es aburrido y difícil de fingir: cotizar con honestidad, hacer el trabajo bien, documentarlo y no dejarle sorpresas al cliente en la factura. Desde entonces {reviewCount} clientes nos han escrito con sus propias palabras, {spanishReviews} de ellos en español, y publicamos cada uno sin editar y sin traducir más abajo en todas las páginas de este sitio. Cuando tengamos suficientes para que signifiquen algo en términos estadísticos, lo diremos. Por ahora las reseñas hablan solas y no las vamos a adornar con una calificación de estrellas que nadie nos dio.</p>
 
  <h2>Nuestra misión</h2>
  <p>El aire interior es algo en lo que casi nadie piensa, hasta que aparecen las alergias, suben las facturas o un olor a humedad no se va. Nuestra misión es hacer que el aire limpio y saludable sea simple y accesible para cada hogar y negocio de Florida, con un trabajo del que nos sentimos orgullosos y que documentamos.</p>

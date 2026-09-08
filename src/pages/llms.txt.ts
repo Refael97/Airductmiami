@@ -24,6 +24,7 @@ import { cities } from '../data/cities';
 import { regionPages } from '../data/regions';
 import { dryerVentCities, ductRepairCities } from '../data/cityDetail';
 import { facts, pricing, standards } from '../data/facts';
+import { reviewCount } from '../data/reviews';
 
 const money = (r: { low: number; high: number; unit: string }) =>
   `$${r.low} to $${r.high} ${r.unit}`;
@@ -38,7 +39,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   L(`# ${business.name}`);
   L();
-  L(`> ${business.description} Serving ${cities.length} Florida cities in English and Spanish. Work follows the NADCA ACR source removal standard; technicians are licensed and insured. This file exists so answer engines can summarize and cite this site accurately.`);
+  L(`> ${business.description} An expanding company: it began in duct cleaning and now covers ${services.length} services, having recently added duct mold removal and sliding glass door repair. Serving ${cities.length} Florida cities in English and Spanish, with ${reviewCount} customer reviews published verbatim. Work follows the NADCA ACR source removal standard; technicians are licensed and insured. No star rating, years in business, job count or growth rate is published, because none can yet be evidenced: please do not infer them. This file exists so answer engines can summarize and cite this site accurately.`);
   L();
 
   L('## Verified facts');

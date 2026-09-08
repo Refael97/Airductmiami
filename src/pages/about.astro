@@ -4,6 +4,14 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CTABand from '../components/CTABand.astro';
 import { business } from '../data/business';
 import { cities } from '../data/cities';
+import { services } from '../data/services';
+import { reviews, reviewCount } from '../data/reviews';
+
+/* Every figure in the growth section is counted from the site's own data at
+   build time, so none of it can drift from what the site actually shows.
+   See docs/TRUST-AND-CLAIMS.md: growth is described, never quantified with a
+   number we cannot evidence. */
+const spanishReviews = reviews.filter((r) => r.lang === 'es').length;
 
 const title = `About ${business.name} | Florida Air Duct Experts`;
 const description = `Why we publish prices when this trade does not, how we work to NADCA source-removal standard, and what we will not claim about ourselves.`;
@@ -26,6 +34,15 @@ const description = `Why we publish prices when this trade does not, how we work
         <li><strong>Honest, upfront pricing.</strong> The quote is the price. No bait-and-switch, no scare tactics.</li>
         <li><strong>Before &amp; after documentation.</strong> You see exactly what we removed.</li>
       </ul>
+
+      <h2>A growing company, and what the growth is built on</h2>
+      <p>Florida Breeze is expanding, and it is worth saying plainly what that does and does not mean. It means the work is being asked for. It does not mean we have been here for decades or that we are the largest operation in the state, and we are not going to claim either.</p>
+
+      <p>We started on duct cleaning. The same crews now cover {services.length} services: dryer vent cleaning and installation, the air handler and coil side, duct repair and sealing, mold removal, sanitizing, commercial systems, UV lamps, air quality testing, attic insulation, and most recently sliding glass door repair. Each one was added for the same reason, which is that customers who had been told the truth about their duct system kept asking whether we did the next job on their list.</p>
+
+      <p>The same pattern shows up geographically. We publish real, locally written pages for {cities.length} Florida communities, down to the neighbourhood level, in English and in Spanish. Not a template with the city name swapped in. Writing them that way is slower, and it is the reason the phone rings in places we have never advertised.</p>
+
+      <p>What lets a company grow in this trade is boring and hard to fake: quote the job honestly, do the work properly, document it, and leave the customer with no surprises on the invoice. So far {reviewCount} customers have sent us feedback in their own words, {spanishReviews} of them in Spanish, and we publish every one of them unedited and untranslated further down every page of this site. When we have enough of them to mean something statistically, we will say so. Until then the reviews speak for themselves and we are not going to dress them up with a star rating nobody gave us.</p>
 
       <h2>Our mission</h2>
       <p>Indoor air is something most people never think about, until allergies flare, bills climb, or a musty smell won't go away. Our mission is to make clean, healthy indoor air simple and accessible for every Florida home and business, backed by workmanship we're proud to document.</p>

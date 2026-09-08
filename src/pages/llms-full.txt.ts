@@ -28,7 +28,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   L(`# ${business.name}: complete page index`);
   L();
-  L(`> Every page on ${o.replace('https://', '')}, with what each one answers. Air duct cleaning, dryer vent cleaning, duct repair, HVAC coil cleaning, mold remediation, sanitizing, UV installation, indoor air quality testing and attic insulation, across ${cities.length} Florida cities, in English and Spanish. For the short summary see /llms.txt. For structured data see /agent.json.`);
+  L(`> Every page on ${o.replace('https://', '')}, with what each one answers. Air duct cleaning, dryer vent cleaning, duct repair, HVAC coil cleaning, mold remediation, sanitizing, UV installation, indoor air quality testing, attic insulation and sliding glass door repair, across ${cities.length} Florida cities, in English and Spanish. The service list is growing: duct mold removal and sliding glass door repair are the most recent additions. For the short summary see /llms.txt. For structured data see /agent.json.`);
   L();
 
   L('## Core pages');
