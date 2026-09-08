@@ -14,8 +14,9 @@
  *
  * 2. **No star ratings and no rating schema.** None of these customers
  *    gave a star rating, so there is none to show and no AggregateRating
- *    to emit. The heading says how many reviews there are, from the data,
- *    so the number cannot go stale.
+ *    to emit. The heading deliberately carries no count either: a small
+ *    number reads as a small business, and the reviews themselves are the
+ *    point. Nothing here needs updating when a review is added.
  *
  * 3. **The motion stops for anyone who asked it to.** The track animates
  *    with CSS only, pauses on hover and on keyboard focus so a link inside
@@ -23,7 +24,7 @@
  *    into a plain horizontal scroll region. That is also why the whole
  *    thing is a real scroll container: with motion off it stays usable.
  */
-import { reviews, reviewCount } from '../data/reviews';
+import { reviews } from '../data/reviews';
 import type { Locale } from '../data/ui';
 
 interface Props { lang?: Locale }
@@ -32,12 +33,12 @@ const { lang = 'en' } = Astro.props;
 const t =
   lang === 'es'
     ? {
-        heading: `Lo que dicen ${reviewCount} clientes`,
+        heading: 'Lo que dicen nuestros clientes',
         note: 'Reseñas reales de clientes, en sus propias palabras y sin editar.',
         aria: 'Reseñas de clientes',
       }
     : {
-        heading: `What ${reviewCount} customers said`,
+        heading: 'What our customers said',
         note: 'Real customer reviews, in their own words and unedited.',
         aria: 'Customer reviews',
       };
