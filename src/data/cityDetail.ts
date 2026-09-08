@@ -1555,6 +1555,230 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
 
+  doral: {
+    depthEs: [
+      {
+        heading: 'Una ciudad que todavía se está construyendo, y lo que eso deja adentro',
+        body: [
+          'Doral es de las ciudades más jóvenes del condado y sigue levantando obra. Eso cambia el diagnóstico por completo: aquí casi nada está gastado, así que cuando un sistema no rinde, el motivo rara vez es la edad.',
+          'Lo que sí encontramos es escombro de la etapa de construcción. Mientras la casa estaba en obra el ducto quedó abierto, y por ahí entró polvo de drywall, aserrín y fibra de aislamiento que el sistema lleva años repartiendo. En una torre o en un townhouse recién entregado esto es la norma, no la excepción.',
+          'Y hay una segunda fuente que la gente no asocia: la obra del vecino. En una zona que no ha parado de construir, el polvo fino de las obras cercanas entra por cada rendija del camino de retorno cada vez que arranca el ventilador. Por eso una casa nueva y limpia puede tener sombras grises alrededor de las rejillas al segundo año.',
+        ],
+      },
+      {
+        heading: 'Downtown Doral, Doral Isles y los edificios con manejador en clóset',
+        body: [
+          'Buena parte de la vivienda de Doral es de mediana altura, con el manejador metido en un clóset y tramos de ducto cortos. Es una configuración que se limpia bien y rápido, y donde la diferencia se nota antes porque hay menos sistema donde diluirla.',
+          'Pero en esa configuración el serpentín pesa más que el ducto. Está a centímetros del filtro, trabaja casi todo el año, y en este clima se ensucia antes que los tramos. Cuando alguien nos llama por un olor en un apartamento de Doral, el origen está en el serpentín o en la bandeja de condensado más veces de las que está en el ducto.',
+          'Se lo decimos y cotizamos eso, que es un trabajo distinto y más barato. Limpiar un ducto que está bien para no contradecir a nadie es la manera más rápida de que usted nos vuelva a llamar por el mismo olor.',
+        ],
+      },
+      {
+        heading: 'Dos plantas, dos sistemas, dos precios',
+        body: [
+          'Muchos townhouses de Doral tienen un equipo por piso. Eso no es un detalle técnico, es la diferencia entre un precio y dos: el trabajo se cotiza por sistema, y una casa con dos manejadores son dos limpiezas.',
+          'Conviene aclararlo por teléfono antes de agendar. Nuestro rango publicado es de 300 a 600 dólares por sistema, y preferimos que usted sepa desde el principio si en su caso son uno o dos que enterarse cuando el técnico ya está adentro.',
+          'También vale saber que en una casa de dos plantas el piso de arriba casi siempre enfría peor. Antes de concluir que el equipo se quedó chico, vale la pena ver qué está pasando en el camino entre él y los cuartos.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'A city still under construction, and what that leaves behind',
+        body: [
+          'Doral is one of the youngest cities in the county and it is still building. That changes the diagnosis entirely: almost nothing here is worn out, so when a system underperforms, age is rarely the reason.',
+          'What we do find is debris from the construction stage. While the house was being framed the ductwork sat open, and drywall dust, sawdust and insulation fibre went into it. The system has been redistributing that ever since. In a recently delivered townhome or tower this is the norm rather than the exception.',
+          'There is a second source people do not connect: the neighbour\u2019s construction. In an area that has never stopped building, fine site dust enters through every gap in the return path each time the blower runs. That is how a clean, new house ends up with grey shadowing around its registers by the second year.',
+        ],
+      },
+      {
+        heading: 'Downtown Doral, Doral Isles and the closet air handler',
+        body: [
+          'A large share of Doral housing is mid-rise, with the air handler in a closet and short duct runs. It is a configuration that cleans properly and quickly, and the difference is easier to notice than in a house because there is less system to dilute it.',
+          'In that configuration the coil matters more than the ductwork. It sits inches from the filter, it runs most of the year, and in this climate it fouls before the runs do. When someone calls us about a smell in a Doral apartment, the source is the evaporator coil or the condensate pan more often than it is the duct.',
+          'We say so and quote that instead, which is a different and cheaper job. Cleaning a duct that is fine in order to avoid contradicting anyone is the fastest way to have you calling us again about the same smell.',
+        ],
+      },
+      {
+        heading: 'Two floors, two systems, two prices',
+        body: [
+          'Many Doral townhomes run one system per floor. That is not a technical footnote, it is the difference between one price and two: the work is quoted per system, and a house with two air handlers is two cleanings.',
+          'It is worth settling on the phone before booking. Our published range is $300 to $600 per system, and we would rather you knew from the start whether yours is one or two than find out once a technician is already inside.',
+          'It is also worth knowing that in a two storey house the upper floor almost always cools worse. Before concluding the equipment is undersized, it is worth seeing what is happening between it and the rooms.',
+        ],
+      },
+    ],
+    neighborhoods: ['Downtown Doral', 'Doral Isles', 'Islands at Doral', 'Costa del Sol', 'Doral Park', 'Vintage Estates'],
+  },
+
+  sweetwater: {
+    depthEs: [
+      {
+        heading: 'Casas que crecieron por partes, con el ducto original',
+        body: [
+          'La mayoría de las casas de Sweetwater son de bloque, de una planta, de los sesenta y setenta, y a casi todas se les agregó algo con los años: un cuarto atrás, un garaje cerrado, una cocina ampliada.',
+          'El problema es que el ducto casi nunca creció con la casa. Se le colgó un tramo flexible al sistema existente para alimentar el cuarto nuevo, y ese tramo suele ser el más largo, el peor sostenido y el que menos entrega. Es la razón número uno por la que en estas casas hay un cuarto que nunca enfría igual que los demás.',
+          'Y el retorno se queda igual que siempre. Una casa que empezó con dos cuartos y hoy tiene cuatro sigue jalando aire por una sola rejilla de pasillo del tamaño original, y un sistema que no puede jalar suficiente aire tampoco puede entregarlo.',
+        ],
+      },
+      {
+        heading: 'Los alquileres cerca de la universidad',
+        body: [
+          'La zona cercana a la universidad tiene mucha casa dividida y mucho alquiler, y ahí el ducto es de nadie. El inquilino no lo manda a limpiar porque no es suyo, y el propietario no lo ve porque no vive ahí.',
+          'El resultado es previsible: sistemas que llevan diez años o más sin que nadie los abra, filtros que se cambian cuando alguien se acuerda, y olores que el siguiente inquilino hereda junto con las llaves.',
+          'Si usted alquila, el ducto es parte del inmueble y no del contrato, así que en la práctica le toca al dueño. Lo que sí puede hacer es pedirnos un presupuesto por escrito con el conteo de rejillas y llevárselo. Se lo damos sin costo y sin que usted quede comprometido a nada.',
+        ],
+      },
+      {
+        heading: 'Terreno bajo, humedad alta',
+        body: [
+          'Sweetwater está en la parte baja y occidental del condado, cerca del borde de los Everglades, y el nivel freático aquí es alto. Eso no le afecta el ducto directamente, pero sí le sube la humedad de fondo dentro de la casa.',
+          'Un equipo que trabaja contra más humedad tiene el serpentín mojado más horas al día, y un serpentín que casi nunca se seca es donde empieza el olor. Si el suyo huele más fuerte en los primeros minutos después de que arranca, mire ahí antes que en los tramos.',
+          'Lo mismo aplica a la bandeja de condensado y a su desagüe. Es la pieza más barata de atender del sistema entero y la que más seguido resulta ser el origen de la queja.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Houses that grew in pieces, on their original ductwork',
+        body: [
+          'Most Sweetwater housing is single storey block construction from the sixties and seventies, and nearly all of it has been added to: a room at the back, an enclosed garage, an extended kitchen.',
+          'The problem is that the ductwork almost never grew with the house. A flexible run was hung off the existing system to feed the new room, and that run tends to be the longest, the least supported and the weakest delivering. It is the single most common reason one room in these houses never cools like the others.',
+          'The return stays exactly as it was. A house that started with two bedrooms and now has four is still pulling air through one hallway grille sized for the original plan, and a system that cannot draw enough air cannot deliver it either.',
+        ],
+      },
+      {
+        heading: 'The rentals near the university',
+        body: [
+          'The area near the university has a lot of divided housing and a lot of renting, and ductwork there belongs to nobody. The tenant does not have it cleaned because it is not theirs, and the owner does not see it because they do not live there.',
+          'The result is predictable: systems nobody has opened in a decade or more, filters changed when someone remembers, and smells the next tenant inherits along with the keys.',
+          'If you rent, the ductwork is part of the building rather than part of the lease, so in practice it is the owner\u2019s. What you can do is ask us for a written quote with the register count and take it to them. We give it at no cost and it commits you to nothing.',
+        ],
+      },
+      {
+        heading: 'Low ground, high humidity',
+        body: [
+          'Sweetwater sits on the low western side of the county near the edge of the Everglades, and the water table here is high. That does not reach your ductwork directly, but it does raise the background humidity inside the house.',
+          'Equipment working against more humidity keeps a wet coil for more hours of the day, and a coil that rarely dries is where the smell starts. If yours is strongest in the first minutes after the system kicks on, look there before looking at the runs.',
+          'The same goes for the condensate pan and its drain. It is the cheapest part of the whole system to deal with and the one that most often turns out to be the source of the complaint.',
+        ],
+      },
+    ],
+    neighborhoods: ['Sweetwater Estates', 'West Flagler', 'Coral Way corridor', 'FIU area', 'NW 107th Avenue'],
+  },
+
+  'hialeah-gardens': {
+    depthEs: [
+      {
+        heading: 'Más nueva que Hialeah, con problemas distintos',
+        body: [
+          'Es fácil meter a Hialeah Gardens en el mismo saco que su vecina grande, y es un error. Hialeah tiene vivienda que en buena parte es de los cincuenta y sesenta. Aquí lo que domina es construcción de los ochenta en adelante, sobre losa, con el ducto en el ático.',
+          'Eso significa que la falla no es desgaste sino diseño y calor. El flexible R-6 se descuelga entre las vigas con las décadas, y cada punto bajo es donde el aire pierde velocidad y suelta el polvo que traía. El sellado de las uniones se pone quebradizo en un ático que en julio pasa de 120 grados.',
+          'Ninguna de las dos cosas produce un día en que el sistema se detiene. Producen una casa que enfría un poco peor cada año, hasta que el dueño concluye que el equipo se le quedó chico y cambia una caja que estaba cumpliendo.',
+        ],
+      },
+      {
+        heading: 'Vivir al lado de bodegas e industria ligera',
+        body: [
+          'Hialeah Gardens tiene zonas de bodegas, talleres e industria ligera pegadas a la vivienda, y eso mete al aire residencial más polvo del que cargaría un suburbio tierra adentro. Súmele el tráfico pesado de Okeechobee Road.',
+          'Ese polvo no se queda afuera. Entra por el camino de retorno cada vez que arranca el ventilador, y en este tipo de casa el retorno suele ser una rejilla grande de pasillo con la estructura de la pared detrás en lugar de un conducto sellado. Todo lo que esté en esa pared, y en el ático encima, entra al sistema.',
+          'Por eso aquí sellar el retorno rinde más que limpiar seguido. Con el camino cerrado el filtro por fin hace su trabajo. Limpiar un sistema que sigue jalando polvo sin filtrar le compra una buena semana.',
+        ],
+      },
+      {
+        heading: 'Qué revisar usted mismo antes de llamarnos',
+        body: [
+          'Hay tres cosas que puede verificar en diez minutos y que le pueden ahorrar una visita. La primera es el filtro: si lleva más de tres meses puesto, cámbielo y espere una semana antes de concluir nada, porque un filtro saturado da exactamente los mismos síntomas que un ducto obstruido.',
+          'La segunda es pasar la mano por cada rejilla y comparar. Si todas entregan poco, el asunto está en el equipo o en el filtro. Si una entrega mucho menos que el resto, está en ese tramo y sí es trabajo nuestro.',
+          'La tercera es mirar si alguna rejilla tiene manchas grises alrededor del marco. Eso es polvo que pasó de largo, y significa que hay aire entrando al sistema por donde no debería. Con esas tres respuestas le podemos decir por teléfono si conviene que vayamos.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Newer than Hialeah, with different problems',
+        body: [
+          'It is easy to file Hialeah Gardens with its larger neighbour, and it is a mistake. A good share of Hialeah housing is fifties and sixties. What dominates here is eighties onward construction, on slab, with the ductwork in the attic.',
+          'That means the failure is design and heat rather than wear. R-6 flex sags between the trusses over decades, and every sag is a low point where air slows and dust drops out of it. Joint sealing goes brittle in an attic that passes 120 degrees in July.',
+          'Neither produces a day when the system stops. They produce a house that cools slightly worse every year, until the owner concludes the equipment is undersized and replaces a box that was doing its job.',
+        ],
+      },
+      {
+        heading: 'Living next to warehouses and light industry',
+        body: [
+          'Hialeah Gardens has warehouse, workshop and light industrial blocks up against its housing, and that puts more dust into the residential air than an inland suburb would carry. Add the heavy traffic on Okeechobee Road.',
+          'That dust does not stay outside. It comes in through the return path every time the blower runs, and in this housing type the return is usually a large hallway grille with wall framing behind it rather than sealed sheet metal. Anything in that wall, and in the attic above it, gets pulled into the system.',
+          'That is why sealing the return pays better here than cleaning more often. With the path closed the filter finally does its job. Cleaning a system that keeps drawing unfiltered dust buys you one good week.',
+        ],
+      },
+      {
+        heading: 'What to check yourself before calling us',
+        body: [
+          'There are three things you can check in ten minutes that may save you a visit. The first is the filter: if it has been in more than three months, change it and wait a week before concluding anything, because a loaded filter produces exactly the symptoms of a restricted duct.',
+          'The second is to pass your hand across every register and compare. If they all deliver poorly, the issue is the equipment or the filter. If one delivers far less than the rest, it is in that run and it is genuinely our work.',
+          'The third is to look for grey shadowing around any register frame. That is dust that got past the filter, which means air is entering the system where it should not. With those three answers we can tell you on the phone whether a visit is worth it.',
+        ],
+      },
+    ],
+    neighborhoods: ['Okeechobee Road corridor', 'NW 87th Avenue', 'Palm Springs North', 'Country Club', 'West 84th Street'],
+  },
+
+  'miami-lakes': {
+    depthEs: [
+      {
+        heading: 'Los árboles son la razón por la que su filtro se satura antes',
+        body: [
+          'Miami Lakes se planificó alrededor de sus árboles, y esa copa madura es lo que hace agradable al pueblo y lo que le complica el sistema. Un suburbio pelado no suelta lo que suelta esto: polen, semilla, hoja triturada y residuo orgánico fino, todo el año y en cantidad.',
+          'Nada de eso entra por la puerta. Entra por el camino de retorno, y en la mayoría de estas casas el retorno es una rejilla grande de pasillo con la estructura de la pared detrás. Si esa cavidad no está sellada, el sistema jala directamente de la pared y del ático.',
+          'La señal desde adentro es un filtro que se ve sucio antes de tiempo. Si el suyo llega gris al mes en lugar de a los tres, no está exagerando y no es mala suerte: es que está entrando aire sin filtrar por algún lado.',
+        ],
+      },
+      {
+        heading: 'Los lagos, y la humedad que se queda abajo',
+        body: [
+          'El agua que le da el nombre al pueblo también le sube la humedad de fondo, sobre todo en las casas más cercanas a los lagos y en las plantas bajas. El equipo trabaja contra más humedad, el serpentín pasa más horas mojado, y un serpentín que casi nunca se seca es donde empieza el olor.',
+          'Distinguirlo es sencillo por el patrón. Si el olor aparece cuando arranca el equipo y después se disipa, viene del serpentín o de la bandeja. Si es constante y más fuerte en un cuarto específico, ahí sí el ducto es el sospechoso.',
+          'Vale decirlo aunque no nos convenga: cuando el problema es el serpentín, eso cotizamos, y es un trabajo distinto y más barato que una limpieza completa de ductos.',
+        ],
+      },
+      {
+        heading: 'Tres épocas de vivienda en un mismo pueblo',
+        body: [
+          'Miami Lakes tiene casas de una planta de los sesenta y setenta, vivienda de los ochenta y noventa, y townhouses recientes, y cada época falla distinto. Vale saber en cuál está usted antes de decidir qué hacer.',
+          'En las casas más antiguas el equipo ya se cambió una o dos veces sobre una distribución que nunca se rediseñó. Un equipo moderno sobre ducto original no va a dar el número de su etiqueta, y la falla casi nunca está en la caja que se acaba de instalar.',
+          'En las más nuevas nada está gastado, así que lo que hay es lo que vino de fábrica: descuelgue, uniones quebradizas y polvo de construcción que sigue circulando. Ahí una limpieza normalmente resuelve la queja por sí sola, porque el sistema está sano y lo único que tiene es el escombro con el que nació.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'The trees are why your filter loads early',
+        body: [
+          'Miami Lakes was planned around its trees, and that mature canopy is both what makes the town pleasant and what complicates its air systems. A bare suburb does not shed what this does: pollen, seed, shredded leaf and fine organic debris, year round and in quantity.',
+          'None of it comes in through the front door. It comes in through the return path, and in most of these houses the return is a large hallway grille with wall framing behind it. If that cavity is unsealed, the system draws straight from the wall and the attic.',
+          'The tell from inside is a filter that looks dirty early. If yours is grey at one month instead of three, you are not imagining it and it is not bad luck: unfiltered air is getting in somewhere.',
+        ],
+      },
+      {
+        heading: 'The lakes, and the humidity that stays low',
+        body: [
+          'The water the town is named for also raises the background humidity, particularly in the houses nearest the lakes and on ground floors. Equipment works against more moisture, the coil stays wet for more hours, and a coil that rarely dries is where a smell begins.',
+          'Telling them apart is simple from the pattern. If the smell appears when the system starts and then fades, it is the coil or the pan. If it is constant and strongest in one particular room, the ductwork is the suspect.',
+          'Worth saying even though it does not suit us: when the problem is the coil, that is what we quote, and it is a different and cheaper job than a full duct cleaning.',
+        ],
+      },
+      {
+        heading: 'Three eras of housing in one town',
+        body: [
+          'Miami Lakes has single storey houses from the sixties and seventies, eighties and nineties housing, and recent townhomes, and each era fails differently. It is worth knowing which one you are in before deciding what to do.',
+          'In the older houses the equipment has already been replaced once or twice onto a distribution layout that was never redesigned. Modern equipment on original ducting will not reach the number on its label, and the fault is almost never in the box that was just installed.',
+          'In the newer ones nothing is worn out, so what you have is what came with it: sag, brittle joints and construction dust still in circulation. There a cleaning usually settles the complaint on its own, because the system is sound and simply full of the debris it started with.',
+        ],
+      },
+    ],
+    neighborhoods: ['Miami Lakes Town Center', 'Loch Lomond', 'Royal Oaks', 'Lake Martha', 'Bull Run', 'Lake Sarah'],
+  },
+
   // ---- Tampa Bay ----
   tampa: {
     depthEs: [

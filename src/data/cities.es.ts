@@ -60,6 +60,26 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Las torres frente al mar por aquí enfrentan aire salino y humedad constante, y los manejadores de aire de los condominios son puntos ideales para el moho en las serpentinas que nos especializamos en eliminar.',
  region: 'Sur de Florida',
  },
+ 'doral': {
+ intro: 'Doral es una de las ciudades más nuevas de Miami-Dade y de las que más rápido construyen, y eso define lo que falla dentro de sus ductos: escombro de obra, no desgaste por edad.',
+ local: 'Los townhouses y los condominios de mediana altura de aquí son de los noventa en adelante, con ducto flexible por el ático o un manejador compacto en un clóset, y un ritmo de construcción que mantiene polvo fino de obra en el aire todo el año. Si acaba de mudarse a una casa nueva y empezó con alergias en la primera temporada, casi siempre es eso y no algo que usted trajo.',
+ region: 'Sur de Florida',
+ },
+ 'sweetwater': {
+ intro: 'Sweetwater es una ciudad pequeña y densa al oeste de Miami donde la mayoría de la vivienda es anterior al aire acondicionado moderno y se le ha ido agregando con los años.',
+ local: 'Casas de bloque de una planta de los sesenta y setenta conviven con alquileres de estudiantes cerca de la universidad, y en ambos casos el retorno suele ser una sola rejilla de pasillo haciendo más trabajo del que le corresponde. Cuando una casa creció por partes, el ducto casi nunca creció con ella.',
+ region: 'Sur de Florida',
+ },
+ 'hialeah-gardens': {
+ intro: 'Hialeah Gardens es más nueva que su vecina grande, así que sus problemas de ducto son los que vienen de fábrica y no los que trae la edad.',
+ local: 'Construcción sobre losa de los ochenta a los dos mil, con flexible repartido por áticos que en julio pasan de 120 grados, y zonas de bodegas e industria ligera que meten al aire residencial más polvo del que cargaría un suburbio tierra adentro.',
+ region: 'Sur de Florida',
+ },
+ 'miami-lakes': {
+ intro: 'Miami Lakes se planificó alrededor de sus árboles y de su agua, y esas dos cosas deciden qué termina dentro de los ductos aquí.',
+ local: 'Una copa de árboles madura suelta mucho más polen y residuo orgánico que un suburbio pelado, los lagos mantienen la humedad pegada al suelo, y la vivienda va desde casas de una planta de los sesenta hasta townhouses recientes, o sea tres épocas de ducto distintas en un mismo pueblo.',
+ region: 'Sur de Florida',
+ },
  'fort-lauderdale': {
  intro: 'El estilo de vida junto al agua de Fort Lauderdale y la humedad durante todo el año hacen que tener ductos limpios y libres de moho sea esencial para un aire interior saludable.',
  local: 'Con cientos de millas de canales y una humedad costera constante, las casas de Fort Lauderdale son especialmente propensas al moho en los ductos y en el manejador de aire.',
