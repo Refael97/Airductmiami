@@ -1,0 +1,130 @@
+---
+/**
+ * The request block on a part page. This is the whole point of the parts
+ * catalogue, so it is worth saying what it is and is not.
+ *
+ * It is NOT a buy button. There is no cart, no stock, no part-only price.
+ * A page laid out like a shop tells the reader we hold that item on a shelf,
+ * and we do not: a partner technician arrives with the part and fits it. The
+ * button says exactly that, because a click that promises one thing and
+ * delivers another spends the site's credibility to gain nothing.
+ *
+ * The lead carries `part` and `part_name` on top of the standard LeadMeta
+ * contract, which is what lets the callback confirm the right part and lets
+ * the technician load the truck before leaving. Without those two fields the
+ * catalogue produces leads indistinguishable from the contact form and the
+ * whole exercise is decoration.
+ *
+ * Posting matches ContactPage: Netlify forms by default, or a direct POST to
+ * PUBLIC_FORM_ENDPOINT when the site runs on a host with no forms product.
+ */
+import LeadMeta from './LeadMeta.astro';
+import { business } from '../data/business';
+import { ui, paths, type Locale } from '../data/ui';
+
+interface Props {
+  lang: Locale;
+  /** Part slug, machine readable, for routing and reporting. */
+  slug: string;
+  /** Part name in the reader's language, for the human reading the lead. */
+  name: string;
+}
+const { lang, slug, name } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+
+const formEndpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const usesNetlifyForms = formEndpoint === '';
+/* Its own form name so part requests are separable from general quotes in
+   whatever inbox they land in. */
+const formName = 'part-request';
+---
+<section class="part-req" id="request">
+  <div class="pr-inner">
+    <div class="pr-copy">
+      <h2>{t.partsRequestHeading}</h2>
+      <p class="pr-lead">{t.partsRequestLead}</p>
+      <p class="pr-item"><span class="pr-item-label">{name}</span></p>
+      <p class="pr-note">{t.partsNotSold}</p>
+      {business.phoneLive && (
+        <a href={`tel:${business.phoneHref}`} class="pr-phone">{business.phone}</a>
+      )}
+    </div>
+
+    <form
+      name={formName}
+      method="POST"
+      data-netlify={usesNetlifyForms ? 'true' : undefined}
+      netlify-honeypot={usesNetlifyForms ? 'bot-field' : undefined}
+      action={usesNetlifyForms ? p.thankYou : formEndpoint}
+      class="pr-form"
+    >
+      {usesNetlifyForms && <input type="hidden" name="form-name" value={formName} />}
+      {!usesNetlifyForms && <input type="hidden" name="redirect_to" value={p.thankYou} />}
+      <p class="visually-hidden" aria-hidden="true">
+        <label>{t.formHoneypot} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
+      <LeadMeta source="part_request" lang={lang} />
+      {/* The two fields that make this catalogue worth building. */}
+      <input type="hidden" name="part" value={slug} />
+      <input type="hidden" name="part_name" value={name} />
+
+      <label class="pr-field">
+        <span>{t.formName}</span>
+        <input type="text" name="name" required autocomplete="name" />
+      </label>
+      <label class="pr-field">
+        <span>{t.formPhone}</span>
+        <input type="tel" name="phone" required autocomplete="tel" inputmode="tel" />
+      </label>
+      <label class="pr-field">
+        <span>{t.formZip}</span>
+        <input
+          type="text" name="zip" required
+          inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+          autocomplete="postal-code"
+        />
+      </label>
+
+      <button type="submit" class="btn btn-accent btn-lg pr-submit">{t.partsRequestCta}</button>
+      <a href={p.contact} class="pr-ask">{t.partsAskCta}</a>
+    </form>
+  </div>
+</section>
+
+<style>
+  .part-req {
+    background: var(--c-bg-alt, #f4f6f8);
+    border: 1px solid var(--c-line);
+    border-radius: var(--radius, 14px);
+    padding: 1.6rem;
+    margin: 2.5rem 0;
+  }
+  .pr-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.8rem; align-items: start; }
+  .pr-copy h2 { margin: 0 0 0.5rem; font-size: clamp(1.2rem, 1rem + 0.8vw, 1.55rem); }
+  .pr-lead { margin: 0 0 0.9rem; color: var(--c-body); }
+  .pr-item {
+    margin: 0 0 0.6rem; padding: 0.6rem 0.85rem;
+    background: #fff; border: 1px solid var(--c-line); border-radius: 10px;
+  }
+  .pr-item-label { font-weight: 800; color: var(--c-ink); }
+  .pr-note { margin: 0 0 0.9rem; font-size: 0.82rem; color: var(--c-muted); }
+  .pr-phone { font-weight: 800; font-size: 1.15rem; }
+
+  .pr-form { display: grid; gap: 0.6rem; }
+  .pr-field { display: grid; gap: 0.25rem; }
+  .pr-field span { font-size: 0.78rem; font-weight: 700; color: var(--c-ink); }
+  .pr-field input {
+    width: 100%; padding: 0.62rem 0.75rem;
+    border: 1px solid var(--c-line); border-radius: 10px;
+    font: inherit; background: #fff; color: var(--c-ink);
+  }
+  .pr-field input:focus-visible { outline: 2px solid var(--c-primary); outline-offset: 1px; }
+  .pr-submit { width: 100%; margin-top: 0.2rem; }
+  .pr-ask { display: block; text-align: center; font-size: 0.86rem; margin-top: 0.15rem; }
+
+  @media (max-width: 760px) {
+    .part-req { padding: 1.2rem; }
+    .pr-inner { grid-template-columns: 1fr; gap: 1.2rem; }
+  }
+</style>

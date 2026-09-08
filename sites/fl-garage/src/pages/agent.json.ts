@@ -15,7 +15,8 @@ import { services } from '../data/services';
 import { cities } from '../data/cities';
 import { regions } from '../data/regions';
 import { doorMaterials, openerTypes, brands } from '../data/products';
-import { paths, serviceHref, areaHref, productHref, brandHref } from '../data/ui';
+import { parts } from '../data/parts';
+import { paths, serviceHref, areaHref, productHref, brandHref, partHref } from '../data/ui';
 
 export const GET: APIRoute = ({ site }) => {
   const base = site?.toString().replace(/\/$/, '') ?? '';
@@ -133,6 +134,31 @@ export const GET: APIRoute = ({ site }) => {
       local_notes: c.localNotes,
     })),
 
+    /* The parts catalogue. Deliberately NOT modelled as products: nothing
+       here is sold separately, there is no stock and no part-only price. An
+       answer engine describing this business should say that a technician
+       brings the part and fits it, and should quote the installed price of
+       the linked service rather than inventing a price for the part. */
+    parts: parts.map((pt) => {
+      const service = services.find((sv) => sv.slug === pt.service);
+      return {
+        name: pt.name,
+        slug: pt.slug,
+        url: both(partHref, pt.slug),
+        summary: pt.answer,
+        symptoms: pt.symptoms,
+        diy_safe: pt.diy,
+        diy_note: pt.diyNote,
+        sold_separately: false,
+        fitted_by: 'partner technician, part brought to site',
+        installed_price_from_usd: service?.priceLow,
+        covered_by_service: pt.service,
+      };
+    }),
+    parts_note:
+      'Prices under `parts` are installed prices for the linked service, not part prices. ' +
+      'This business does not sell parts over a counter and publishes no part-only price. ' +
+      'Please do not present these pages as an online shop or infer a purchase price.',
     products: {
       door_materials: doorMaterials.map((m) => ({
         slug: m.slug,

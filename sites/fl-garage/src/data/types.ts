@@ -128,6 +128,67 @@ export interface ServiceEs {
 }
 
 /* ---------------------------------------------------------------------- */
+/* Parts catalogue                                                         */
+/* ---------------------------------------------------------------------- */
+
+/**
+ * One replaceable part of a garage door, as a page.
+ *
+ * This is deliberately NOT a product. There is no cart, no stock, no
+ * part-only price and no `Product` schema, because we do not sell parts: a
+ * partner technician arrives with the part and fits it. See
+ * research/fl-garage/CATALOGUE.md section 3 for why the shop shape was
+ * rejected, and section 5a for what these pages are instead.
+ *
+ * The organising idea is the symptom, not the SKU. The visitor worth having
+ * is the one whose door just failed and who does not know what the part is
+ * called. `symptoms` is therefore the field that earns the traffic and
+ * `answer` is the field that keeps it.
+ */
+export interface Part {
+  slug: string;
+  name: string;
+  /** Short label for cards, breadcrumbs and the hub grid. */
+  shortName: string;
+  metaTitle: string;
+  metaDescription: string;
+  /** Slug of the service in services.ts whose published price covers this. */
+  service: string;
+  /** Direct answer, one paragraph, for the answer box and featured snippets. */
+  answer: string;
+  /** What the part does and where it sits, in plain language. */
+  intro: string[];
+  /** How a homeowner recognises this part has failed. The searchable field. */
+  symptoms: string[];
+  /** Why it fails here specifically: heat, salt, humidity, cycles. */
+  whyItFails: string[];
+  /**
+   * Honest DIY position. `safe` means a homeowner can reasonably do it,
+   * `no` means it is genuinely dangerous, and `depends` needs the note.
+   */
+  diy: 'safe' | 'depends' | 'no';
+  diyNote: string;
+  quickFacts: { label: string; value: string }[];
+  faq: FAQ[];
+  /** Other part slugs that commonly fail with, or get mistaken for, this. */
+  related: string[];
+}
+
+export interface PartEs {
+  name: string;
+  shortName: string;
+  metaTitle: string;
+  metaDescription: string;
+  answer: string;
+  intro: string[];
+  symptoms: string[];
+  whyItFails: string[];
+  diyNote: string;
+  quickFacts: { label: string; value: string }[];
+  faq: FAQ[];
+}
+
+/* ---------------------------------------------------------------------- */
 /* Buyer's guide                                                           */
 /* ---------------------------------------------------------------------- */
 

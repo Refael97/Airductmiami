@@ -1,0 +1,10 @@
+---
+import PartPage from '../../../components/pages/PartPage.astro';
+import { parts } from '../../../data/parts';
+
+export function getStaticPaths() {
+  return parts.map((item) => ({ params: { part: item.slug }, props: { item } }));
+}
+const { item } = Astro.props;
+---
+<PartPage lang="es" item={item} />

@@ -8,7 +8,8 @@ import { services } from '../data/services';
 import { regions } from '../data/regions';
 import { citiesByRegion } from '../data/cities';
 import { doorMaterials, openerTypes, brands } from '../data/products';
-import { paths, serviceHref, areaHref, productHref, brandHref, money } from '../data/ui';
+import { parts } from '../data/parts';
+import { paths, serviceHref, areaHref, productHref, brandHref, money, partHref } from '../data/ui';
 
 export const GET: APIRoute = ({ site }) => {
   const base = site?.toString().replace(/\/$/, '') ?? '';
@@ -41,6 +42,7 @@ export const GET: APIRoute = ({ site }) => {
   push(`- [Services](${base}${paths.en.services}) · [Servicios](${base}${paths.es.services})`);
   push(`- [Service areas](${base}${paths.en.serviceAreas}) · [Áreas de servicio](${base}${paths.es.serviceAreas})`);
   push(`- [Doors and openers buyer's guide](${base}${paths.en.buyersGuide}) · [Guía de compra](${base}${paths.es.buyersGuide})`);
+  push(`- [Parts catalogue](${base}${paths.en.parts}) · [Catálogo de repuestos](${base}${paths.es.parts})`);
   push(`- [Guides and costs](${base}${paths.en.blog}) · [Guías](${base}${paths.es.blog})`);
   push(`- [FAQ](${base}${paths.en.faq}) · [Preguntas](${base}${paths.es.faq})`);
   push(`- [About](${base}${paths.en.about}) · [Nosotros](${base}${paths.es.about})`);
@@ -76,6 +78,23 @@ export const GET: APIRoute = ({ site }) => {
     push(`- [${o.name}](${base}${productHref('en', o.slug)}): ${money(o.priceLow)} to ${money(o.priceHigh)} installed. Noise: ${o.noise}. ${o.bestFor}`);
   });
   push();
+  push('## Parts');
+  push('');
+  push(
+    'One page per replaceable part, organised by the symptom a homeowner would' +
+    ' notice rather than by SKU. These are service pages, not product listings:' +
+    ' no part is sold separately, every price shown is the installed price of' +
+    ' the matching service, and a partner technician arrives with the part and' +
+    ' fits it. Each page states honestly whether the job is safe for a' +
+    ' homeowner to attempt.',
+  );
+  push('');
+  parts.forEach((pt) => {
+    const diy =
+      pt.diy === 'safe' ? 'safe to DIY' : pt.diy === 'depends' ? 'partly DIY' : 'not a DIY job';
+    push(`- [${pt.name}](${base}${partHref('en', pt.slug)}) · [ES](${base}${partHref('es', pt.slug)}): ${diy}`);
+  });
+  push('');
   push('## Brands serviced');
   push();
   push('We are an independent repair company and are not affiliated with any of these manufacturers.');

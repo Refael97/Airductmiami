@@ -1,0 +1,153 @@
+---
+/**
+ * One part of a garage door, as a page.
+ *
+ * Schema note, deliberate: this emits `Service` and `FAQPage` and NOT
+ * `Product`. Google's Product type requires a price, we publish installed
+ * service prices rather than part prices, and inventing a part price to
+ * satisfy a schema would break the rule that the site, the popup and the
+ * phone all quote the same number. A page whose call to action is "a
+ * technician brings this and fits it" is a service page, and describing it
+ * as one is both the truthful and the technically correct choice.
+ * See research/fl-garage/CATALOGUE.md section 3.
+ *
+ * The price shown always comes from the matching service in services.ts, so
+ * a price change happens in one place and cannot drift between the service
+ * page and the part page.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import QuickFacts from '../QuickFacts.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import PartRequest from '../PartRequest.astro';
+import FAQ from '../FAQ.astro';
+import { parts, partBySlug } from '../../data/parts';
+import { services } from '../../data/services';
+import type { Part } from '../../data/types';
+import { serviceSchema, faqSchema } from '../../lib/schema';
+import { ui, paths, partHref, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { part as localise, svc } from '../../lib/i18n';
+
+interface Props { lang: Locale; item: Part }
+const { lang, item: raw } = Astro.props;
+const item = localise(lang, raw);
+const t = ui[lang];
+const p = paths[lang];
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const href = partHref(lang, item.slug);
+const url = `${site}${href}`;
+
+/* The price is the service's price. Never a part-only number. */
+const service = services.find((s) => s.slug === item.service);
+const serviceLocalised = service ? svc(lang, service) : undefined;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.partsBreadcrumb, href: p.parts },
+  { name: item.shortName, href },
+];
+
+const related = raw.related
+  .map((slug) => partBySlug[slug])
+  .filter(Boolean)
+  .map((r) => localise(lang, r));
+
+const diyLabel =
+  raw.diy === 'safe' ? t.partsDiySafe : raw.diy === 'depends' ? t.partsDiyDepends : t.partsDiyNo;
+
+const schema = [
+  serviceSchema(site, {
+    name: item.name,
+    description: item.metaDescription,
+    url,
+    slug: item.slug,
+    priceLow: service?.priceLow,
+    priceHigh: service?.priceHigh,
+  }),
+  faqSchema(item.faq),
+];
+---
+<BaseLayout
+  title={item.metaTitle}
+  description={item.metaDescription}
+  schema={schema}
+  lang={lang}
+  altHref={partHref(otherLocale(lang), item.slug)}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container container-narrow prose">
+      <h1>{item.name}</h1>
+      <AnswerBox text={item.answer} lang={lang} />
+
+      {serviceLocalised && (
+        <p class="pt-covered">
+          {t.partsCoveredBy}{' '}
+          <a href={serviceHref(lang, serviceLocalised.slug)}>{serviceLocalised.name}</a>
+          {' '}&middot;{' '}
+          <strong>{t.from} {money(serviceLocalised.priceLow)}</strong>
+        </p>
+      )}
+
+      {item.intro.map((para) => <p>{para}</p>)}
+
+      <h2>{t.partsSymptomsHeading}</h2>
+      <ul class="check-list">
+        {item.symptoms.map((sym) => <li>{sym}</li>)}
+      </ul>
+
+      <h2>{t.partsWhyHeading}</h2>
+      {item.whyItFails.map((para) => <p>{para}</p>)}
+
+      <h2>{t.partsDiyHeading}</h2>
+      <div class={`pt-diy pt-diy-${raw.diy}`}>
+        <p class="pt-diy-verdict">{diyLabel}</p>
+        <p class="pt-diy-note">{item.diyNote}</p>
+      </div>
+
+      <QuickFacts facts={item.quickFacts} />
+      <PriceDisclaimer lang={lang} />
+
+      <PartRequest lang={lang} slug={item.slug} name={item.name} />
+
+      <FAQ items={item.faq} lang={lang} emitSchema={false} />
+
+      {related.length > 0 && (
+        <>
+          <h2>{t.partsRelatedHeading}</h2>
+          <ul class="pt-related">
+            {related.map((r) => (
+              <li><a href={partHref(lang, r.slug)}>{r.shortName}</a></li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      <p class="pt-back"><a href={p.parts}>{t.partsHeading}</a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .pt-covered { margin: 0 0 1.4rem; color: var(--c-body); }
+
+  .pt-diy { border-left: 4px solid var(--c-line); padding: 0.9rem 1.1rem; border-radius: 0 10px 10px 0; background: var(--c-bg-alt, #f4f6f8); }
+  .pt-diy-verdict { margin: 0 0 0.4rem; font-weight: 800; color: var(--c-ink); }
+  .pt-diy-note { margin: 0; color: var(--c-body); }
+  /* The colour carries the same message as the words, never instead of them. */
+  .pt-diy-safe { border-left-color: #1c9d63; }
+  .pt-diy-depends { border-left-color: #c9861a; }
+  .pt-diy-no { border-left-color: #c02b2b; }
+
+  .pt-related { list-style: none; padding: 0; margin: 0.6rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .pt-related a {
+    display: inline-block; padding: 0.4rem 0.85rem;
+    border: 1px solid var(--c-line); border-radius: 999px;
+    background: #fff; font-size: 0.9rem; text-decoration: none;
+  }
+  .pt-related a:hover { border-color: var(--c-primary); color: var(--c-primary); }
+  .pt-back { margin-top: 2rem; }
+</style>

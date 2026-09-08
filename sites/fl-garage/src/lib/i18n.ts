@@ -15,12 +15,14 @@ import type {
   DoorMaterial,
   OpenerType,
   Brand,
+  Part,
   PageCopy,
 } from '../data/types';
 import { serviceEs } from '../data/services.es';
 import { cityEs } from '../data/cities.es';
 import { regionEs } from '../data/regions.es';
 import { materialEs, openerEs, brandEs } from '../data/products.es';
+import { partEs } from '../data/parts.es';
 import { copyEn } from '../data/copy.en';
 import { copyEs } from '../data/copy.es';
 
@@ -55,6 +57,11 @@ export function brand(lang: Locale, b: Brand): Brand {
 }
 
 /** Core page copy. Spanish sections fall back to English one by one. */
+export function part(lang: Locale, p: Part): Part {
+  const es = lang === 'es' ? partEs[p.slug] : undefined;
+  return es ? { ...p, ...es } : p;
+}
+
 export function copy(lang: Locale): PageCopy {
   if (lang === 'en') return copyEn;
   return { ...copyEn, ...copyEs } as PageCopy;

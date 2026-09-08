@@ -27,6 +27,7 @@ interface Paths {
   prices: string;
   buyersGuide: string;
   brands: string;
+  parts: string;
   blog: string;
   faq: string;
   about: string;
@@ -43,6 +44,7 @@ export const paths: Record<Locale, Paths> = {
     prices: '/prices/',
     buyersGuide: '/buyers-guide/',
     brands: '/brands/',
+    parts: '/parts/',
     blog: '/blog/',
     faq: '/faq/',
     about: '/about/',
@@ -57,6 +59,7 @@ export const paths: Record<Locale, Paths> = {
     prices: '/es/precios/',
     buyersGuide: '/es/guia-de-compra/',
     brands: '/es/marcas/',
+    parts: '/es/repuestos/',
     blog: '/es/blog/',
     faq: '/es/preguntas-frecuentes/',
     about: '/es/nosotros/',
@@ -71,6 +74,7 @@ export const serviceHref = (l: Locale, slug: string) => `${paths[l].services}${s
 export const areaHref = (l: Locale, slug: string) => `${paths[l].serviceAreas}${slug}/`;
 export const productHref = (l: Locale, slug: string) => `${paths[l].buyersGuide}${slug}/`;
 export const brandHref = (l: Locale, slug: string) => `${paths[l].brands}${slug}/`;
+export const partHref = (l: Locale, slug: string) => `${paths[l].parts}${slug}/`;
 /** Articles carry their own slug per language; the caller passes the right one. */
 export const blogHref = (l: Locale, slug: string) => `${paths[l].blog}${slug}/`;
 
@@ -229,6 +233,26 @@ export interface Strings {
   openersLead: string;
   brandsHeading: string;
   brandsLead: string;
+  /* Parts catalogue */
+  navParts: string;
+  partsHeading: string;
+  partsLead: string;
+  partsIntro: string;
+  partsSymptomsHeading: string;
+  partsWhyHeading: string;
+  partsDiyHeading: string;
+  partsDiySafe: string;
+  partsDiyDepends: string;
+  partsDiyNo: string;
+  partsRelatedHeading: string;
+  partsRequestHeading: string;
+  partsRequestLead: string;
+  partsRequestCta: string;
+  partsAskCta: string;
+  partsCoveredBy: string;
+  partsBreadcrumb: string;
+  partsHubNote: string;
+  partsNotSold: string;
   installed: string;
   choosingQuestions: string;
   buyersCtaHeading: string;
@@ -500,6 +524,25 @@ export const ui: Record<Locale, Strings> = {
     openersHeading: 'Opener drive types',
     openersLead:
       'The drive type decides how loud the opener is and how it copes with a Florida garage in August.',
+    navParts: 'Parts',
+    partsHeading: 'Garage door parts',
+    partsLead: 'What each part does, how to tell yours has failed, and what it costs fitted. A technician arrives with the part.',
+    partsIntro: 'Pick the part that matches what your door is doing. Every price here is the installed price from our published price list, and every page says honestly whether the job is one you could reasonably do yourself.',
+    partsSymptomsHeading: 'How to tell this part has failed',
+    partsWhyHeading: 'Why it fails in Florida',
+    partsDiyHeading: 'Can you do this yourself',
+    partsDiySafe: 'Yes, this one you can do',
+    partsDiyDepends: 'Partly, with limits',
+    partsDiyNo: 'No, do not attempt this',
+    partsRelatedHeading: 'Parts that fail with this one',
+    partsRequestHeading: 'Have a technician bring this part',
+    partsRequestLead: 'Leave your details and we call you back to confirm the part, the price and a time. The technician arrives with it on the truck.',
+    partsRequestCta: 'Send a technician with this part',
+    partsAskCta: 'Ask a question about this part',
+    partsCoveredBy: 'Covered by',
+    partsBreadcrumb: 'Parts',
+    partsHubNote: 'We do not sell parts over a counter. A partner technician brings the part and fits it, so the price you see is the fitted price and there is nothing to measure or order yourself.',
+    partsNotSold: 'Not sold separately. Price shown is fitted, by a technician who brings the part.',
     brandsHeading: 'Brands we service',
     brandsLead: 'The brands we see most in Florida garages, and what typically goes wrong with each.',
     installed: 'installed',
@@ -831,6 +874,25 @@ export const ui: Record<Locale, Strings> = {
     openersHeading: 'Tipos de motor de puerta de garaje',
     openersLead:
       'El tipo de transmisión decide qué tan ruidoso es el motor y cómo aguanta el calor de un garaje de Florida en agosto.',
+    navParts: 'Repuestos',
+    partsHeading: 'Repuestos para puertas de garaje',
+    partsLead: 'Qué hace cada pieza, cómo saber que la suya falló y cuánto cuesta instalada. El técnico llega con el repuesto.',
+    partsIntro: 'Elija la pieza que corresponde a lo que está haciendo su puerta. Cada precio aquí es el precio instalado de nuestra lista publicada, y cada página dice con honestidad si el trabajo es uno que usted podría hacer por su cuenta.',
+    partsSymptomsHeading: 'Cómo saber que esta pieza falló',
+    partsWhyHeading: 'Por qué falla en Florida',
+    partsDiyHeading: '¿Puede hacerlo usted mismo?',
+    partsDiySafe: 'Sí, esta sí la puede hacer',
+    partsDiyDepends: 'En parte, con límites',
+    partsDiyNo: 'No, no lo intente',
+    partsRelatedHeading: 'Piezas que fallan junto con esta',
+    partsRequestHeading: 'Que un técnico le lleve esta pieza',
+    partsRequestLead: 'Deje sus datos y le llamamos para confirmar la pieza, el precio y una hora. El técnico llega con ella en el camión.',
+    partsRequestCta: 'Enviar un técnico con esta pieza',
+    partsAskCta: 'Preguntar sobre esta pieza',
+    partsCoveredBy: 'Cubierto por',
+    partsBreadcrumb: 'Repuestos',
+    partsHubNote: 'No vendemos repuestos en mostrador. Un técnico asociado lleva la pieza y la instala, así que el precio que ve es el precio instalado y usted no tiene nada que medir ni que encargar.',
+    partsNotSold: 'No se vende por separado. El precio mostrado es instalado, por un técnico que lleva la pieza.',
     brandsHeading: 'Marcas que atendemos',
     brandsLead: 'Las marcas que más vemos en los garajes de Florida, y lo que suele fallar en cada una.',
     installed: 'con instalación',
