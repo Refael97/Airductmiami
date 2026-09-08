@@ -1947,6 +1947,342 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Country Way', 'Bay Crest Park', 'Twin Lakes', 'Woodbridge', 'Sweetwater Creek', 'Bayside West'],
   },
 
+  'lake-worth': {
+    depthEs: [
+      {
+        heading: 'Casas de los años veinte que nunca se dibujaron con ducto',
+        body: [
+          'El centro histórico y las calles cercanas al agua son casitas y bungalows de los años veinte y treinta. Se construyeron cuando la respuesta a un verano de Florida era un ventilador de techo y una brisa cruzada, y todo el sistema de aire que hay hoy llegó décadas después.',
+          'Eso produce trazados que no se ven en vivienda más nueva: tramos por clósets, por plafones bajados, por paredes bajas de ático y a veces por espacios que no están ni acondicionados ni sellados. Cada transición de esas es un punto por donde se escapa aire frío y entra aire sin filtrar.',
+          'También produce casas donde el equipo es moderno y la distribución no. Un manejador eficiente empujando aire por un ducto trazado en 1975 no va a dar lo que dice su etiqueta, y la falla casi nunca está en la caja que se acaba de instalar.',
+        ],
+      },
+      {
+        heading: 'Cerca del agua, y lo que la sal hace tierra adentro',
+        body: [
+          'Lake Worth Beach está lo bastante cerca del mar para que el aire traiga sal todos los días, no solo durante las tormentas. Llega al serpentín por el camino de retorno y llega al condensador directamente.',
+          'Lo que produce es corrosión en las aletas de aluminio del serpentín, que entonces retiene humedad y suciedad más fácilmente que uno limpio, lo cual restringe el flujo, lo cual hace que todo el sistema trabaje más para dar menos. El equipo costero no suele fallar antes de tiempo: primero rinde mal durante años.',
+          'Por eso aquí revisamos el serpentín y la bandeja antes de cotizar una limpieza de ductos. Cerca del agua, el serpentín es el origen de la queja más seguido que el ducto, y es un trabajo distinto y más barato.',
+        ],
+      },
+      {
+        heading: 'Casas divididas y alquileres: de quién es el ducto',
+        body: [
+          'Mucha de la vivienda antigua de aquí se dividió en algún momento en dos o tres unidades, y otra parte se alquila entera. En ambos casos el ducto termina siendo de nadie: el inquilino no lo manda a limpiar porque no es suyo y el dueño no lo ve porque no vive ahí.',
+          'Cuando un solo manejador reparte a espacios que hoy pertenecen a familias distintas, el olor de una cocina llega a la otra y la humedad que genera uno la respiran todos. Y cuando alguien cerró una rejilla o tapó un retorno para ganar espacio, el sistema entero queda desequilibrado.',
+          'El ducto es parte del inmueble y no del contrato de alquiler, así que en la práctica le toca al propietario. Si usted alquila, pídanos un presupuesto por escrito con el conteo de rejillas y lléveselo. Se lo damos sin costo y sin compromiso.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Twenties houses that were never drawn with ductwork',
+        body: [
+          'The historic downtown and the streets near the water are cottages and bungalows from the twenties and thirties. They were built when the answer to a Florida summer was a ceiling fan and a cross breeze, and every air system in them arrived decades later.',
+          'That produces routing you do not see in newer housing: runs through closets, through dropped soffits, through knee walls, and in some cases through spaces that are neither conditioned nor sealed. Each of those transitions is a place cooled air escapes and unfiltered air enters.',
+          'It also produces houses where the equipment is modern and the distribution is not. An efficient air handler pushing air through ducting laid out in 1975 will not reach the number on its label, and the fault is almost never in the box that was just installed.',
+        ],
+      },
+      {
+        heading: 'Close to the water, and what salt does inland',
+        body: [
+          'Lake Worth Beach is near enough to the ocean that the air carries salt every day, not only during storms. It reaches the coil through the return path and it reaches the condenser directly.',
+          'What it produces is corrosion on the aluminium fins of the coil, which then holds moisture and dirt more readily than a clean coil, which restricts airflow, which makes the whole system work harder for less. Coastal equipment does not usually fail early: it underperforms for years first.',
+          'That is why we look at the coil and the pan here before quoting a duct cleaning. Near the water the coil is the source of the complaint more often than the ductwork, and it is a different and cheaper job.',
+        ],
+      },
+      {
+        heading: 'Divided houses and rentals: whose ductwork is it',
+        body: [
+          'A lot of the older housing here was split into two or three units at some point, and much of the rest is rented whole. In both cases the ductwork ends up belonging to nobody: the tenant does not have it cleaned because it is not theirs and the owner does not see it because they do not live there.',
+          'When one air handler feeds spaces that now belong to different families, one kitchen\u2019s smell reaches the other and the moisture one household makes is breathed by all of them. And where someone closed a register or blocked a return to gain space, the whole system runs out of balance.',
+          'The ductwork is part of the building rather than part of the lease, so in practice it is the owner\u2019s. If you rent, ask us for a written quote with the register count and take it to them. We give it at no cost and it commits you to nothing.',
+        ],
+      },
+    ],
+    neighborhoods: ['Downtown Lake Worth', 'College Park', 'Bryant Park', 'Parrot Cove', 'Tropical Ridge', 'Lake Osborne'],
+  },
+
+  greenacres: {
+    depthEs: [
+      {
+        heading: 'La edad exacta a la que el ducto empieza a pedir atención',
+        body: [
+          'La mayoría de la vivienda de Greenacres es de los setenta a los noventa, y esa es precisamente la edad a la que un sistema de ductos empieza a fallar sin romperse. No está roto. Está cansado.',
+          'Lo que vemos aquí una y otra vez es flexible descolgado entre las vigas, uniones cuyo sellado se puso quebradizo con treinta julios encima, y aislamiento separado de la cubierta en algún tramo. Cada una de esas cosas se lleva un poco del aire que usted paga por enfriar.',
+          'La señal desde adentro es que la casa tarda más en llegar a una temperatura que antes alcanzaba, y que el cuarto más lejano del manejador ya no llega nunca. Es fácil culpar al equipo, y muchas veces el equipo está bien.',
+        ],
+      },
+      {
+        heading: 'Los condominios bajos y el límite con la asociación',
+        body: [
+          'Greenacres tiene bastante condominio de poca altura, y ahí el manejador va en un clóset con tramos cortos. Se limpia bien en unas horas, y la diferencia se nota antes porque hay menos sistema donde diluirla.',
+          'Lo que esos edificios tienen es infraestructura compartida. Donde su tramo se une a algo que sirve a otras unidades, esa parte es de la asociación, y ese límite es donde los problemas se quedan años sin dueño porque cada lado supone que el otro lo atiende.',
+          'Le decimos de qué lado de la línea está su problema antes de cotizar, incluso cuando la respuesta es que le toca a la junta. Limpiar sus dos metros cuando la obstrucción está más arriba no arregla nada.',
+        ],
+      },
+      {
+        heading: 'Cuánto cuesta, y por qué desconfiar de los 99 dólares',
+        body: [
+          'Una limpieza completa cuesta entre 300 y 600 dólares por sistema. Lo que mueve el número es el conteo de rejillas, cuánta acumulación hay adentro y qué tan accesible está el manejador. Se lo decimos antes de agendar, no cuando el técnico ya está en su pasillo.',
+          'Casi todas las casas de una planta de aquí son de un solo sistema, así que en general es un precio y no dos. Si su condominio comparte algo con el edificio, eso lo aclaramos antes.',
+          'Si le ofrecen la casa completa por 49 o 99 dólares, ese no es el precio del trabajo, es el precio de entrar por su puerta. Dos técnicos, una máquina y tres horas cuestan lo que cuestan, y lo que sigue a ese anuncio es media hora de aspirar rejillas o una lista de cargos adicionales.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'The exact age at which ductwork starts asking for attention',
+        body: [
+          'Most Greenacres housing is seventies through nineties, and that is precisely the age at which a duct system starts failing without breaking. It is not broken. It is tired.',
+          'What we see here repeatedly is flex sagging between the trusses, joints whose sealing went brittle under thirty Julys, and insulation separated from the jacket somewhere along a run. Each of those takes a little of the air you are paying to cool.',
+          'The tell from inside is that the house takes longer to reach a temperature it used to hit, and the room furthest from the air handler no longer gets there at all. It is easy to blame the equipment, and often the equipment is fine.',
+        ],
+      },
+      {
+        heading: 'The low rise condominiums and the association boundary',
+        body: [
+          'Greenacres has a good deal of low rise condominium, and there the air handler sits in a closet with short runs. It cleans properly in a few hours, and the difference shows sooner because there is less system to dilute it.',
+          'What those buildings do have is shared infrastructure. Where your run joins anything serving other units, that part belongs to the association, and that boundary is where problems sit unowned for years because each side assumes the other is dealing with it.',
+          'We tell you which side of the line your problem is on before quoting, including when the answer is that it belongs to your board. Cleaning your six feet when the restriction is upstream fixes nothing.',
+        ],
+      },
+      {
+        heading: 'What it costs, and why to distrust the $99 offer',
+        body: [
+          'A full cleaning runs $300 to $600 per system. What moves the number is the register count, how much buildup is in there, and how accessible the air handler is. We tell you before booking, not once a technician is standing in your hallway.',
+          'Almost every single storey house here is one system, so it is generally one price rather than two. If your condominium shares anything with the building, we settle that first.',
+          'If you are offered the whole house for $49 or $99, that is not the price of the job, it is the price of getting through your door. Two technicians, a machine and three hours cost what they cost, and what follows that advert is half an hour of vacuuming at the registers or a list of add-ons.',
+        ],
+      },
+    ],
+    neighborhoods: ['Original Greenacres', 'Rainbow Lakes', 'Pine Ridge', 'Jefferson Green', 'River Bridge', 'Sherbrooke Estates'],
+  },
+
+  weston: {
+    depthEs: [
+      {
+        heading: 'Construido sobre los Everglades, y el agua no se fue',
+        body: [
+          'Weston se levantó sobre terreno drenado de los Everglades. El agua se manejó, no desapareció: el nivel freático aquí sigue alto y eso mantiene arriba la humedad de fondo dentro de las casas durante todo el año.',
+          'Un equipo que trabaja contra más humedad tiene el serpentín mojado más horas al día, y un serpentín que casi nunca se seca es donde empieza el olor. Si el suyo huele más fuerte en los primeros minutos después de arrancar, mire ahí antes que en los tramos.',
+          'La bandeja de condensado y su desagüe entran en la misma categoría. Es la pieza más barata de atender del sistema entero y la que más seguido resulta ser el origen real de la queja.',
+        ],
+      },
+      {
+        heading: 'Dos plantas, dos sistemas, dos precios',
+        body: [
+          'Buena parte de Weston es de dos plantas y muchas casas tienen un equipo por piso. No es un detalle técnico: el trabajo se cotiza por sistema, y una casa con dos manejadores son dos limpiezas y dos precios.',
+          'Conviene aclararlo por teléfono antes de agendar. Nuestro rango publicado es de 300 a 600 dólares por sistema, y preferimos que usted lo sepa desde el principio.',
+          'También vale saber que en una casa de dos plantas el piso de arriba casi siempre enfría peor, porque el aire tiene que subir y el ático está a 120 grados encima de él. Antes de concluir que el equipo se quedó chico, vale ver qué pasa en el camino.',
+        ],
+      },
+      {
+        heading: 'Casas nuevas, escombro de obra, y reglas de asociación',
+        body: [
+          'Aquí casi nada está gastado, así que lo que encontramos es lo que vino de fábrica: polvo de drywall, aserrín y fibra de aislamiento que entraron mientras la casa estaba en obra y que el sistema lleva años repartiendo.',
+          'Familias que se mudan a una casa nueva y empiezan con alergias en la primera temporada suelen estar reaccionando a eso y no a algo que trajeron. La casa es nueva. Lo que hay adentro del ducto tiene exactamente la edad de la casa.',
+          'Y un detalle práctico de Weston: casi todo aquí tiene asociación, con reglas de horario y de acceso para contratistas. Díganos cuál es la suya cuando agende y nos ajustamos, en lugar de que un camión llegue y se encuentre con una caseta que no lo deja pasar.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Built on the Everglades, and the water did not leave',
+        body: [
+          'Weston was raised on drained Everglades land. The water was managed rather than removed: the table here is still high, and that keeps the background humidity inside the houses up all year.',
+          'Equipment working against more moisture keeps a wet coil for more hours of the day, and a coil that rarely dries is where a smell begins. If yours is strongest in the first minutes after the system starts, look there before looking at the runs.',
+          'The condensate pan and its drain fall in the same category. It is the cheapest part of the whole system to deal with and the one that most often turns out to be the real source of the complaint.',
+        ],
+      },
+      {
+        heading: 'Two floors, two systems, two prices',
+        body: [
+          'A large share of Weston is two storey and many houses run one system per floor. That is not a technical footnote: the work is quoted per system, and a house with two air handlers is two cleanings and two prices.',
+          'It is worth settling on the phone before booking. Our published range is $300 to $600 per system, and we would rather you knew from the start.',
+          'It is also worth knowing that in a two storey house the upper floor almost always cools worse, because the air has to climb and the attic is at 120 degrees above it. Before concluding the equipment is undersized, it is worth seeing what happens on the way.',
+        ],
+      },
+      {
+        heading: 'New houses, construction debris, and association rules',
+        body: [
+          'Almost nothing here is worn out, so what we find is what came with it: drywall dust, sawdust and insulation fibre that went in while the house was being framed and that the system has been redistributing ever since.',
+          'Families who move into a new house and start noticing allergy symptoms within a season are usually reacting to that rather than to anything they brought with them. The house is new. What is inside the ductwork is exactly as old as the house.',
+          'And one practical Weston detail: nearly everything here has an association, with hours and contractor access rules. Tell us which one is yours when you book and we will work to it, rather than having a truck arrive and meet a gate that will not let it through.',
+        ],
+      },
+    ],
+    neighborhoods: ['Weston Hills', 'Savanna', 'Windmill Ranch Estates', 'The Ridges', 'Bonaventure', 'Indian Trace'],
+  },
+
+  'cutler-bay': {
+    depthEs: [
+      {
+        heading: 'Andrew dejó una línea clara en la vivienda de aquí',
+        body: [
+          'El huracán Andrew pasó por esta zona en 1992 y buena parte de lo que hoy está en pie se construyó o se reconstruyó después. Eso le da al pueblo una línea inusualmente limpia: construcción posterior a 1992 bajo un código más exigente de un lado, y casas más antiguas que sobrevivieron del otro.',
+          'La diferencia se nota en el ducto. Lo que se levantó después suele tener el sistema mejor sujetado y mejor sellado, porque se instaló bajo reglas más estrictas. Lo anterior a Andrew que quedó en pie suele conservar trazado original bajo un equipo que ya se cambió una o dos veces.',
+          'Por eso la primera pregunta que hacemos por teléfono es de qué año es la casa. La respuesta cambia lo que vamos a buscar y lo que le vamos a recomendar.',
+        ],
+      },
+      {
+        heading: 'Costa baja: la humedad no baja sola',
+        body: [
+          'Cutler Bay está bajo y cerca del agua, y eso mantiene la humedad de fondo alta durante todo el año. El equipo trabaja contra ella de forma constante y el aislamiento del ducto en un ático caliente y húmedo es un sitio donde las cosas crecen.',
+          'Si su casa ha tomado agua alguna vez, por marejada o por inundación, el ducto vale una revisión aunque los pisos ya se hayan resuelto. El aislamiento que se mojó dentro de una cubierta sellada no se seca, y la primera señal suele ser un olor semanas más tarde en una casa que por fuera se ve reparada.',
+          'Es la parte de la casa que nadie abre, y por eso es la última que alguien encuentra.',
+        ],
+      },
+      {
+        heading: 'Antes de la temporada, no después',
+        body: [
+          'En una zona que ya sabe lo que es una tormenta grande, el momento de revisar el sistema es antes de la temporada y no durante ella. Después de un evento todo el mundo llama a la vez y las agendas se llenan.',
+          'Lo que sí conviene saber: nosotros no somos su respuesta de emergencia por daño de tormenta. Si entró agua a la casa, eso es trabajo de otro oficio primero. Nosotros venimos después, cuando ya se sabe qué se mojó y qué no.',
+          'Lo que hacemos es lo de siempre, con precio antes de empezar: 300 a 600 dólares por sistema, según el conteo de rejillas y lo que haya adentro.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Andrew left a clear line through the housing here',
+        body: [
+          'Hurricane Andrew came through this area in 1992 and a great deal of what stands today was built or rebuilt after it. That gives the town an unusually clean line: post-1992 construction to a tougher code on one side, and surviving older houses on the other.',
+          'The difference shows in the ductwork. What went up afterwards usually has the system better supported and better sealed, because it was installed under stricter rules. What predates Andrew and survived tends to keep its original layout under equipment that has been replaced once or twice.',
+          'That is why the first question we ask on the phone is what year the house is. The answer changes what we go looking for and what we recommend.',
+        ],
+      },
+      {
+        heading: 'Low coast: the humidity does not come down on its own',
+        body: [
+          'Cutler Bay sits low and close to the water, and that keeps the background humidity high all year. Equipment works against it constantly, and duct insulation in a hot damp attic is somewhere things grow.',
+          'If your house has ever taken water, from surge or flooding, the ductwork is worth inspecting even if the floors were dealt with. Insulation that got wet inside a sealed jacket does not dry out, and the first sign is usually a smell weeks later in a house that otherwise looks repaired.',
+          'Ductwork is the one part of a house nobody has reason to open, so damage inside it outlasts every repair made around it.',
+        ],
+      },
+      {
+        heading: 'Before the season rather than after it',
+        body: [
+          'In an area that already knows what a large storm is, the time to look at the system is before the season rather than during it. After an event everybody calls at once and the calendar fills.',
+          'Worth being clear about: we are not your storm damage emergency response. If water got into the house, that is another trade first. We come afterwards, once it is known what got wet and what did not.',
+          'What we do is the ordinary work, with the price before we start: $300 to $600 per system, set by the register count and what is actually in there.',
+        ],
+      },
+    ],
+    neighborhoods: ['Lakes by the Bay', 'Saga Bay', 'Cutler Ridge', 'Bel Aire', 'Whispering Pines', 'Old Cutler Road'],
+  },
+
+  davenport: {
+    depthEs: [
+      {
+        heading: 'La casa que pasa cerrada la mitad del año',
+        body: [
+          'Davenport está en el corredor de casas de vacaciones, y buena parte de la vivienda aquí se ocupa solo unas semanas al año o se renta por temporadas cortas. La costumbre al cerrar es apagar el aire o subirlo a 80 grados, que es razonable para la factura y es lo peor posible para el edificio.',
+          'Una casa cerrada en agosto sin equipo trabajando alcanza niveles de humedad que no bajan solos. Se asienta en el aislamiento del ducto, en el serpentín y en la bandeja de condensado, y quien abre la puerta en noviembre entra a un olor que en abril no existía.',
+          'Si la casa va a quedar vacía, dejar el termostato en 77 con el ventilador en automático cuesta una fracción de lo que cuesta arreglar la consecuencia después.',
+        ],
+      },
+      {
+        heading: 'Si la renta, el ducto es parte de la reseña',
+        body: [
+          'En una casa de renta corta el olor no es un detalle privado: aparece en las reseñas, y una reseña que menciona humedad cuesta reservas durante meses. Es la razón práctica por la que a los dueños de por aquí les conviene revisar el sistema antes de la temporada.',
+          'El momento correcto es antes de que empiece la ocupación, no después de que un huésped ya se quejó. Un sistema limpio y una casa que huele neutra es la diferencia entre una reseña de cinco estrellas y una que menciona el aire.',
+          'Si maneja varias propiedades, dígalo. Varias casas de la misma zona el mismo día es más fácil de agendar y le organizamos la visita completa.',
+        ],
+      },
+      {
+        heading: 'Construcción nueva, escombro de fábrica',
+        body: [
+          'Davenport lleva años construyendo sin parar, así que aquí casi nada está gastado. Cuando un sistema no rinde, el motivo rara vez es la edad del equipo.',
+          'Lo que encontramos es lo que entró durante la obra: polvo de drywall, aserrín y fibra de aislamiento que quedaron dentro del ducto mientras la casa estaba abierta. El sistema lo lleva repartiendo desde el primer día.',
+          'Y hay una segunda fuente en una zona que sigue construyendo: el polvo fino de la obra del vecino entra por cada rendija del camino de retorno cada vez que arranca el ventilador. Por eso una casa nueva puede tener sombras grises alrededor de las rejillas al segundo año.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'The house that sits closed half the year',
+        body: [
+          'Davenport is in the vacation home corridor, and much of the housing here is occupied for a few weeks a year or let on short stays. The habit when closing up is to switch the air off or set it to 80, which is sensible for the bill and the worst thing available for the building.',
+          'A closed house in August with no equipment running reaches humidity levels that do not come back down on their own. It settles into duct insulation, into the coil and into the condensate pan, and whoever opens the door in November walks into a smell that was not there in April.',
+          'If the house is going to be empty, leaving the thermostat at 77 with the fan on auto costs a fraction of what it costs to deal with the consequence later.',
+        ],
+      },
+      {
+        heading: 'If you let it, the ductwork is part of the review',
+        body: [
+          'In a short let a smell is not a private detail: it turns up in reviews, and a review that mentions damp costs bookings for months. That is the practical reason owners around here are better off looking at the system before the season.',
+          'The right moment is before occupancy starts, not after a guest has already complained. A clean system and a house that smells of nothing is the difference between a five star review and one that mentions the air.',
+          'If you manage several properties, say so. Several houses in one area on one day is easier to schedule and we will plan the whole visit around it.',
+        ],
+      },
+      {
+        heading: 'New construction, factory-fresh debris',
+        body: [
+          'Davenport has been building without pause for years, so almost nothing here is worn out. When a system underperforms, the reason is rarely the age of the equipment.',
+          'What we find is what went in during construction: drywall dust, sawdust and insulation fibre left inside the ductwork while the house stood open. The system has been distributing it since day one.',
+          'And there is a second source in an area still building: fine site dust from the neighbour\u2019s construction enters through every gap in the return path each time the blower runs. That is how a new house ends up with grey shadowing around its registers by the second year.',
+        ],
+      },
+    ],
+    neighborhoods: ['Champions Gate', 'Providence', 'Loma del Sol', 'Westside', 'Ridgewood Lakes', 'Bella Vida'],
+  },
+
+  immokalee: {
+    depthEs: [
+      {
+        heading: 'Campo abierto por todos lados, y el polvo entra',
+        body: [
+          'Immokalee es una comunidad agrícola tierra adentro, y la carga de polvo aquí no se parece a nada más que atendamos en la costa del Golfo. Campo abierto en todas direcciones, caminos sin pavimentar y trabajo de tierra durante buena parte del año.',
+          'Ese polvo no se queda afuera. Entra por el camino de retorno cada vez que arranca el ventilador, y en la mayoría de estas casas el retorno es una sola rejilla con la estructura de la pared detrás en lugar de un conducto sellado.',
+          'La consecuencia práctica es que aquí el filtro es su primera línea y conviene revisarlo cada mes, no cada tres. Es el gasto más pequeño de todo el sistema y el que más le devuelve.',
+        ],
+      },
+      {
+        heading: 'Casas prefabricadas: el ducto va por debajo',
+        body: [
+          'Una parte importante de la vivienda de aquí es prefabricada, y en ese tipo de casa el ducto principal corre por debajo del piso, dentro de la envoltura inferior. Es una configuración completamente distinta a un ático y falla distinto.',
+          'Lo que vemos es la envoltura rota o colgando, tramos aplastados, y roedores que entraron por ahí. Cuando esa envoltura se abre, el sistema deja de repartir aire acondicionado a los cuartos y empieza a acondicionar el espacio bajo la casa.',
+          'La señal desde adentro es una casa que nunca llega a la temperatura por más que el equipo trabaje, y una factura que sube sin explicación. Vale mirar debajo antes de concluir que el equipo se quedó chico.',
+        ],
+      },
+      {
+        heading: 'Precio claro, y qué no hacemos',
+        body: [
+          'Nuestro rango es de 300 a 600 dólares por sistema, y usted lo tiene antes de que agendemos. No cobramos más por la distancia, pero sí le pedimos flexibilidad con el día, porque agendamos por zona.',
+          'Y decimos con claridad lo que no hacemos, para que nada sea sorpresa. No reparamos ni reemplazamos ductos en la misma visita, aunque le fotografiamos lo que lo necesite y se lo mostramos. Si el ducto está aplastado o desconectado, limpiarlo es dinero gastado en algo que hay que reemplazar, y se lo decimos en lugar de limpiarlo.',
+          'Tampoco hacemos pruebas de laboratorio, así que no vamos a hacerle una afirmación de antes y después sobre conteo de esporas que no podamos sostener.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Open field on every side, and the dust gets in',
+        body: [
+          'Immokalee is an inland farming community, and the dust load here is unlike anything else we serve on the Gulf coast. Open field in every direction, unpaved roads, and ground work through much of the year.',
+          'That dust does not stay outside. It comes in through the return path every time the blower runs, and in most of these houses the return is a single grille with wall framing behind it rather than sealed sheet metal.',
+          'The practical consequence is that the filter is your first line here and it is worth checking monthly rather than quarterly. It is the smallest expense in the whole system and the one that returns the most.',
+        ],
+      },
+      {
+        heading: 'Manufactured housing: the ductwork runs underneath',
+        body: [
+          'A significant share of the housing here is manufactured, and in that construction the main duct runs below the floor inside the belly wrap. It is a completely different configuration from an attic and it fails differently.',
+          'What we see is belly wrap torn or hanging, runs crushed, and rodents that got in through the gap. Once that wrap opens, the system stops delivering conditioned air to the rooms and starts conditioning the space under the house.',
+          'The tell from inside is a house that never reaches temperature however hard the equipment works, and a bill that climbs without explanation. It is worth looking underneath before concluding the equipment is undersized.',
+        ],
+      },
+      {
+        heading: 'A clear price, and what we do not do',
+        body: [
+          'Our range is $300 to $600 per system and you have it before we book. We do not charge more for distance, but we do ask for flexibility on the day, because we schedule by area.',
+          'And we say plainly what we do not do, so nothing is a surprise. We do not repair or replace ductwork on the same visit, though we photograph anything that needs it and show you. If a duct is crushed or disconnected, cleaning it is money spent on something that needs replacing, and we tell you that instead of cleaning it.',
+          'We also do not run laboratory testing, so we will not make a before and after claim about spore counts that we cannot stand behind.',
+        ],
+      },
+    ],
+    neighborhoods: ['Main Street', 'Farm Worker Village', 'Lake Trafford', 'Immokalee Road', 'Eden Park', 'Carson Road'],
+  },
+
   // ---- Tampa Bay ----
   tampa: {
     depthEs: [
@@ -2686,7 +3022,7 @@ export const cityDetail: Record<string, CityDetail> = {
         heading: 'La casa que pasa vacía de mayo a octubre',
         body: [
           'Sarasota tiene una de las poblaciones de temporada más fuertes del estado, y buena parte de la vivienda se ocupa solo unos meses al año. La costumbre al cerrar es subir el termostato o apagarlo, que es razonable para la factura y es lo peor posible para el edificio.',
-          'Una casa cerrada en agosto sin equipo trabajando alcanza niveles de humedad que no bajan solos. Se asienta en el aislamiento del ducto, en el serpentín y en la bandeja de condensado, y quien abre la puerta en noviembre entra a un olor que en abril no existía.',
+          'Una casa cerrada durante semanas en plena temporada de lluvias llega a niveles de humedad que ya no bajan por sí solos. La humedad se instala en el aislamiento del ducto, en el serpentín y en la bandeja, y el olor que encuentra el siguiente huésped se formó mientras no había nadie.',
           'Si la casa va a quedar vacía, dejar el termostato en 77 con el ventilador en automático cuesta una fracción de lo que cuesta arreglar la consecuencia. Y el momento de limpiar una casa de temporada es antes de que empiece la temporada, no después de que alguien ya se quejó.',
         ],
       },

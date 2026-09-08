@@ -40,6 +40,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Las casas familiares por todo Kendall suelen usar el aire acondicionado sin parar en verano, lo que hace comunes el moho en las serpentinas y el polvo en los ductos, y convierte la eficiencia de los ductos en un factor real de la factura de enfriamiento.',
  region: 'Sur de Florida',
  },
+ 'cutler-bay': {
+ intro: 'Cutler Bay está en la trayectoria que tomó el huracán Andrew en 1992, y buena parte de lo que hoy está en pie se construyó o se reconstruyó después de aquello.',
+ local: 'Eso le da al pueblo una línea de vivienda inusualmente clara: construcción posterior a 1992 bajo un código más exigente por un lado, casas más antiguas que sobrevivieron por el otro, y una posición costera baja que mantiene alta la humedad en ambas.',
+ region: 'Sur de Florida',
+ },
  'homestead': {
  intro: 'El entorno agrícola de Homestead y su clima cálido implican polvo y polen adicionales que, con el tiempo, se depositan en los ductos del hogar.',
  local: 'La cercanía a los campos de cultivo trae polvo fino y polen de temporada al interior, así que los propietarios de Homestead suelen notar una acumulación de polvo más rápida alrededor de sus rejillas de ventilación.',
@@ -100,6 +105,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Muchas casas de Miramar son construcciones grandes de dos pisos con tubos de secadora extensos, donde la limpieza anual es importante para prevenir incendios y para secar con eficiencia.',
  region: 'Sur de Florida',
  },
+ 'weston': {
+ intro: 'Weston se construyó sobre terreno drenado de los Everglades en los noventa y los dos mil, lo que la convierte en una de las viviendas más nuevas y más uniformes en las que trabajamos.',
+ local: 'Casas de dos plantas sobre losa, muchas veces con dos sistemas, con ducto flexible repartido por áticos que llegan a 120 grados, y un nivel freático lo bastante alto como para mantener arriba la humedad de fondo todo el año.',
+ region: 'Sur de Florida',
+ },
  'pompano-beach': {
  intro: 'El entorno costero de Pompano Beach expone los sistemas de aire acondicionado del hogar al aire salino y a la humedad que favorecen el moho y reducen la eficiencia.',
  local: 'Tanto los condominios frente a la playa como las casas tierra adentro enfrentan la humedad que impulsa el moho en serpentinas y ductos a lo largo de este tramo de la costa de Broward.',
@@ -150,6 +160,16 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Las comunidades en crecimiento de aquí usan mucho el aire acondicionado contra el calor costero, lo que mantiene húmedos los manejadores de aire y hace relevante el mantenimiento de ductos todo el año.',
  region: 'Sur de Florida',
  },
+ 'lake-worth': {
+ intro: 'Lake Worth Beach tiene parte de la vivienda más antigua del condado de Palm Beach, y casi nada de eso se construyó con sistema de ductos.',
+ local: 'Las casitas y bungalows de los años veinte y treinta cerca del agua se diseñaron para ventilación cruzada, así que cada tramo de ducto se agregó décadas después y se metió en una casa que nunca se dibujó para cargarlo. Por eso aquí el ducto pasa por clósets, por plafones bajados y por espacios que no están ni acondicionados ni sellados.',
+ region: 'Sur de Florida',
+ },
+ 'greenacres': {
+ intro: 'Greenacres es un suburbio de trabajo tierra adentro en el condado de Palm Beach, donde la mayoría de la vivienda se levantó entre los setenta y los noventa.',
+ local: 'Casas de una planta sobre losa y condominios bajos con ducto en el ático que ya lleva treinta veranos de Florida o más, que es justo cuando el flexible empieza a descolgarse y el sellado de las uniones empieza a ceder.',
+ region: 'Sur de Florida',
+ },
  'west-palm-beach': {
  intro: 'El entorno frente al agua de West Palm Beach y su clima cálido hacen que tener ductos limpios y eficientes sea importante tanto para la comodidad como para la salud.',
  local: 'Una combinación de condominios del centro y vecindarios históricos implica sistemas de aire acondicionado variados, todos enfrentando la humedad costera que favorece el moho en los ductos.',
@@ -185,6 +205,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  'kissimmee': {
  intro: 'El clima cálido de Kissimmee y sus muchas casas de vacaciones y de alquiler hacen que el mantenimiento regular de ductos y de tubos de secadora sea especialmente valioso.',
  local: 'Las propiedades de alquiler y vacacionales, con mucha rotación de huéspedes, tienen un uso intenso del aire acondicionado y la secadora, así que la limpieza rutinaria es importante para la seguridad y la comodidad de quienes se hospedan.',
+ region: 'Centro de Florida',
+ },
+ 'davenport': {
+ intro: 'Davenport está en el corredor de casas de vacaciones al suroeste de los parques, donde buena parte de la vivienda se ocupa solo una parte del año.',
+ local: 'Construcción nueva sobre losa, mucha de ella de alquiler de temporada, y un patrón que no vemos con esta fuerza en ningún otro lado: casas cerradas semanas enteras en los meses más húmedos, que es lo más duro que se le puede hacer a un sistema de aire en Florida.',
  region: 'Centro de Florida',
  },
  'poinciana': {
@@ -226,6 +251,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  'lehigh-acres': {
  intro: 'Lehigh Acres es una de las comunidades loteadas más grandes del país, y su vivienda se divide limpiamente en dos épocas muy distintas.',
  local: 'Lotes de mediados de siglo con casas modestas y antiguas conviven con calles enteras levantadas durante el auge de los dos mil, así que aquí un técnico necesita saber en qué década está parado antes de opinar sobre el ducto.',
+ region: 'Suroeste de Florida',
+ },
+ 'immokalee': {
+ intro: 'Immokalee es una comunidad agrícola tierra adentro, y la carga de polvo aquí no se parece a ningún otro lugar que atendamos en la costa del Golfo.',
+ local: 'Campo abierto por todos lados, caminos sin pavimentar, y una mezcla de casas antiguas y viviendas prefabricadas, o sea carga fuerte de polvo afuera y sistemas de ducto que de entrada nunca quedaron bien sellados.',
  region: 'Suroeste de Florida',
  },
  'naples': {
