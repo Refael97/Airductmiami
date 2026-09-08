@@ -1779,6 +1779,174 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Miami Lakes Town Center', 'Loch Lomond', 'Royal Oaks', 'Lake Martha', 'Bull Run', 'Lake Sarah'],
   },
 
+  poinciana: {
+    depthEs: [
+      {
+        heading: 'Casas nuevas, escombro viejo',
+        body: [
+          'Poinciana es de las comunidades más nuevas que atendemos, y eso invierte el diagnóstico. Aquí casi nada está gastado, así que cuando un sistema no rinde el motivo rara vez es la edad del equipo.',
+          'Lo que encontramos es lo que entró durante la obra. Mientras la casa estaba en construcción el ducto estuvo abierto, y por ahí pasó polvo de drywall, aserrín y fibra de aislamiento. Ese material no se va solo: el sistema lo lleva repartiendo desde el día que usted se mudó.',
+          'Por eso una familia que llega a una casa recién construida y empieza con alergias en la primera temporada casi siempre está reaccionando a eso, no a algo que trajo consigo. La casa es nueva. Lo que hay adentro del ducto tiene exactamente la edad de la casa.',
+        ],
+      },
+      {
+        heading: 'El ático de Florida y el flexible que se descuelga',
+        body: [
+          'Todo el ducto aquí va por el ático, y un ático en Poinciana en julio pasa de 120 grados. El flexible R-6 aguanta, pero se descuelga entre las vigas con los años, y cada punto bajo es donde el aire pierde velocidad y suelta el polvo que traía.',
+          'El sellado de las uniones se pone quebradizo con ese mismo calor. Ninguna de las dos cosas produce un día en que el sistema se detiene: producen una casa que enfría un poco peor cada año.',
+          'La consecuencia práctica es que mucha gente cambia un equipo que estaba cumpliendo. Antes de gastar en una caja nueva vale la pena ver qué está pasando entre ella y los cuartos, porque un equipo moderno empujando aire por una distribución que se descolgó no va a dar el número de su etiqueta.',
+        ],
+      },
+      {
+        heading: 'Lejos de todo, y qué significa eso para una visita',
+        body: [
+          'Poinciana es enorme y está bastante separada de Kissimmee y de Orlando. Lo decimos porque afecta algo concreto: agendamos por zona, y conviene que le digamos qué días estamos por allá en lugar de prometerle una hora que después no se sostiene.',
+          'Lo que no cambia es el precio. Nuestro rango publicado es de 300 a 600 dólares por sistema, y no le cobramos más por vivir lejos. Lo que sí le pedimos es flexibilidad con el día.',
+          'Y si tiene vecinos con la misma necesidad, dígannoslo. Varias casas de la misma zona el mismo día es más fácil de agendar para todos.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'New houses, old debris',
+        body: [
+          'Poinciana is among the newest communities we serve, and that inverts the diagnosis. Almost nothing here is worn out, so when a system underperforms the reason is rarely the age of the equipment.',
+          'What we find is what went in during construction. While the house was being framed the ductwork sat open, and drywall dust, sawdust and insulation fibre went into it. That material does not leave on its own: the system has been distributing it since the day you moved in.',
+          'A family that moves into a newly built house and starts noticing allergy symptoms within a season is usually reacting to that rather than to anything they brought with them. The house is new. What is inside the ductwork is exactly as old as the house.',
+        ],
+      },
+      {
+        heading: 'The Florida attic and the flex that sags',
+        body: [
+          'All of the ducting here runs through the attic, and a Poinciana attic in July passes 120 degrees. R-6 flex survives that, but it sags between the trusses over the years, and every sag is a low point where air slows and drops the dust it was carrying.',
+          'Joint sealing goes brittle in the same heat. Neither produces a day when the system stops: they produce a house that cools slightly worse every year.',
+          'The practical consequence is that a lot of people replace equipment that was doing its job. Before spending on a new box it is worth seeing what is happening between it and the rooms, because modern equipment pushing air through a distribution that has sagged will not reach the number on its label.',
+        ],
+      },
+      {
+        heading: 'Out on its own, and what that means for a visit',
+        body: [
+          'Poinciana is very large and sits a fair way out from Kissimmee and Orlando. We mention it because it affects something concrete: we schedule by area, and we would rather tell you which days we are out there than promise an hour that does not hold.',
+          'What it does not change is the price. Our published range is $300 to $600 per system, and we do not charge more for distance. What we do ask for is some flexibility on the day.',
+          'And if neighbours need the same work, say so. Several houses in one area on one day is easier to schedule for everybody.',
+        ],
+      },
+    ],
+    neighborhoods: ['Solivita', 'Poinciana Village', 'Cypress Woods', 'Marigold', 'Bellalago', 'Deerwood'],
+  },
+
+  'buenaventura-lakes': {
+    depthEs: [
+      {
+        heading: 'Treinta veranos sobre el mismo ducto',
+        body: [
+          'La mayoría de las casas de Buenaventura Lakes son del auge de los ochenta y noventa, y esa es exactamente la edad en la que el ducto empieza a pedir atención. No está roto. Está cansado.',
+          'Lo que vemos aquí una y otra vez es flexible descolgado entre las vigas, uniones cuyo sellado se puso quebradizo con treinta julios encima, y aislamiento que se separó de la cubierta en algún tramo. Cada una de esas cosas se lleva un poco del aire que usted paga por enfriar.',
+          'La señal más común desde adentro es que la casa tarda más en llegar a la temperatura que antes alcanzaba, y que el cuarto más lejano del manejador ya no llega nunca. Es fácil culpar al equipo, y muchas veces el equipo está bien.',
+        ],
+      },
+      {
+        heading: 'El retorno que se quedó en el tamaño original',
+        body: [
+          'En este tipo de casa el retorno suele ser una sola rejilla grande en un pasillo, y detrás de ella muchas veces está la estructura de la pared en lugar de un conducto sellado. Todo lo que esté en esa pared, y en el ático por encima, entra al sistema cada vez que arranca el ventilador.',
+          'Por eso aparecen sombras grises alrededor de una rejilla en una casa que se limpia cada semana. Ese polvo no está entrando por la puerta: está saliendo de adentro del edificio y el sistema lo reparte.',
+          'Sellar el camino de retorno rinde más que limpiar seguido, porque con el camino cerrado el filtro por fin puede hacer su trabajo. Si su filtro llega gris al mes en lugar de a los tres, eso es lo que le está pasando.',
+        ],
+      },
+      {
+        heading: 'Casas llenas, sistemas del tamaño de otra época',
+        body: [
+          'Muchas casas de aquí albergan hoy a más gente de la que el plano original contemplaba, con familias de tres generaciones bajo el mismo techo. Es común y no tiene nada de malo, pero el sistema fue dimensionado para otra cosa.',
+          'Más personas significa más humedad adentro: cocinar, duchas, ropa lavada. El equipo trabaja más horas contra más humedad, el serpentín pasa más tiempo mojado, y un serpentín que casi nunca se seca es donde empieza el olor.',
+          'Si el olor aparece cuando arranca el equipo y luego se disipa, mire el serpentín y la bandeja de condensado antes que los tramos. Es un trabajo distinto y más barato, y se lo decimos aunque no nos convenga.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Thirty summers on the same ductwork',
+        body: [
+          'Most Buenaventura Lakes housing comes from the eighties and nineties boom, and that is exactly the age at which ductwork starts asking for attention. It is not broken. It is tired.',
+          'What we see here repeatedly is flex sagging between the trusses, joints whose sealing went brittle under thirty Julys, and insulation that has separated from the jacket somewhere along a run. Each of those takes a little of the air you are paying to cool.',
+          'The most common tell from inside is that the house takes longer to reach a temperature it used to hit, and that the room furthest from the air handler no longer gets there at all. It is easy to blame the equipment, and often the equipment is fine.',
+        ],
+      },
+      {
+        heading: 'A return still sized for the original plan',
+        body: [
+          'In this housing type the return is usually one large hallway grille, and behind it is often wall framing rather than sealed sheet metal. Anything in that wall, and in the attic above it, enters the system every time the blower runs.',
+          'That is why grey shadowing appears around a register in a house that is cleaned every week. The dust is not coming through the front door: it is coming from inside the building and the system is redistributing it.',
+          'Sealing the return path pays better than cleaning more often, because with the path closed the filter can finally do its job. If your filter is grey at one month instead of three, that is what is happening.',
+        ],
+      },
+      {
+        heading: 'Full houses on systems sized for another era',
+        body: [
+          'Many houses here hold more people than the original plan assumed, with three generations under one roof. That is common and there is nothing wrong with it, but the system was sized for something else.',
+          'More people means more moisture indoors: cooking, showers, laundry. Equipment runs more hours against more humidity, the coil stays wet longer, and a coil that rarely dries is where a smell begins.',
+          'If the smell arrives when the system starts and then fades, look at the coil and the condensate pan before the runs. It is a different and cheaper job, and we say so even though it does not suit us.',
+        ],
+      },
+    ],
+    neighborhoods: ['Buenaventura Boulevard', 'Robert McLane', 'Lakeside Village', 'Simpson Road', 'Boggy Creek'],
+  },
+
+  'town-n-country': {
+    depthEs: [
+      {
+        heading: 'Uno de los suburbios más antiguos de este lado de Tampa',
+        body: [
+          'Town \u2019n\u2019 Country se construyó en los sesenta y setenta, y eso decide casi todo. Son casas de una planta sobre losa, con el ducto en el ático, y en muchas de ellas el trazado sigue siendo el original aunque el equipo ya se haya cambiado una o dos veces.',
+          'Esa combinación es la que más vemos fallar: una caja moderna y eficiente empujando aire por una distribución diseñada para otro equipo, en otra década. No va a dar el rendimiento de su etiqueta, y la falla casi nunca está en lo que se acaba de instalar.',
+          'Vale revisarlo antes de gastar otra vez. Cambiar el equipo por segunda vez sin tocar el ducto suele repetir el mismo resultado.',
+        ],
+      },
+      {
+        heading: 'Cerca de la bahía: humedad todo el año',
+        body: [
+          'La cercanía a la bahía mantiene el aire húmedo aquí durante todo el año, no solo en verano. El equipo trabaja contra esa humedad de forma constante, el serpentín pasa más horas mojado, y el aislamiento del ducto en un ático caliente y húmedo es un sitio donde las cosas crecen.',
+          'Si su casa ha tomado agua alguna vez, por tormenta o por inundación, el ducto vale una revisión aunque los pisos ya se hayan resuelto. El aislamiento que se mojó dentro de una cubierta sellada no se seca, y la primera señal suele ser un olor semanas después.',
+          'Es la parte de la casa que nadie abre, y por eso es la que más tarda en descubrirse.',
+        ],
+      },
+      {
+        heading: 'Qué mueve el precio y qué no',
+        body: [
+          'Una limpieza completa cuesta entre 300 y 600 dólares por sistema. Lo que mueve el número dentro de ese rango es el conteo de rejillas, cuánta acumulación hay adentro y qué tan accesible está el manejador. Se lo decimos antes de agendar, no cuando el técnico ya está en su pasillo.',
+          'Casi todas las casas de Town \u2019n\u2019 Country son de un solo sistema, así que en general es un precio y no dos. Si la suya tiene una ampliación con su propio equipo, eso sí cambia la cuenta y conviene mencionarlo por teléfono.',
+          'Si le ofrecen la casa completa por 49 o 99 dólares, ese no es el precio del trabajo, es el precio de entrar. Dos técnicos, una máquina y tres horas cuestan lo que cuestan.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'One of the oldest suburbs on this side of Tampa',
+        body: [
+          'Town \u2019n\u2019 Country was built through the sixties and seventies, and that decides most of it. These are single storey slab houses with attic ducting, and in many of them the layout is still the original one even though the equipment has been replaced once or twice.',
+          'That combination is the one we most often see fail: a modern, efficient box pushing air through a distribution designed for different equipment in another decade. It will not deliver its rated performance, and the fault is almost never in the thing that was just installed.',
+          'It is worth checking before spending again. Replacing the equipment a second time without touching the ductwork usually repeats the same result.',
+        ],
+      },
+      {
+        heading: 'Close to the bay, humid all year',
+        body: [
+          'Being near the bay keeps the air humid here year round rather than only in summer. Equipment works against that constantly, the coil stays wet for more hours, and duct insulation in a hot damp attic is somewhere things grow.',
+          'If your house has ever taken water, from a storm or a flood, the ductwork is worth inspecting even if the floors were dealt with. Insulation that got wet inside a sealed jacket does not dry out, and the first sign is usually a smell weeks later.',
+          'It is the part of the building nobody opens, which is why it is the last thing anyone finds.',
+        ],
+      },
+      {
+        heading: 'What moves the price and what does not',
+        body: [
+          'A full cleaning runs $300 to $600 per system. What moves the number within that range is the register count, how much buildup is in there, and how accessible the air handler is. We tell you before booking, not once a technician is standing in your hallway.',
+          'Almost every Town \u2019n\u2019 Country house is a single system, so it is generally one price rather than two. If yours has an addition with its own equipment, that does change the arithmetic and it is worth mentioning on the phone.',
+          'If you are offered the whole house for $49 or $99, that is not the price of the job, it is the price of getting in the door. Two technicians, a machine and three hours cost what they cost.',
+        ],
+      },
+    ],
+    neighborhoods: ['Country Way', 'Bay Crest Park', 'Twin Lakes', 'Woodbridge', 'Sweetwater Creek', 'Bayside West'],
+  },
+
   // ---- Tampa Bay ----
   tampa: {
     depthEs: [
@@ -2348,6 +2516,62 @@ export const cityDetail: Record<string, CityDetail> = {
     ],
     neighborhoods: ['Cape Harbour', 'Pelican', 'Tarpon Point', 'Sandoval', 'Burnt Store', 'Yacht Club', 'Four Mile Cove'],
   },
+  'lehigh-acres': {
+    depthEs: [
+      {
+        heading: 'Dos Lehigh distintos, y hay que saber en cuál está usted',
+        body: [
+          'Lehigh Acres se lotéo a mediados del siglo pasado y se construyó en dos oleadas muy separadas. Hay casas modestas y antiguas en lotes de aquella época, y hay calles enteras levantadas durante el auge de los dos mil. Fallan de manera completamente distinta.',
+          'En las antiguas el equipo ya se cambió una o dos veces sobre una distribución que nunca se rediseñó, y muchas veces el ducto original sigue ahí debajo de una caja nueva. En las del auge nada está gastado, así que lo que hay es lo que vino de fábrica.',
+          'Por eso la primera pregunta que hacemos por teléfono es de qué año es la casa. La respuesta cambia lo que vamos a buscar y cambia lo que le vamos a recomendar.',
+        ],
+      },
+      {
+        heading: 'Lo que dejó una construcción rápida',
+        body: [
+          'Las casas del auge se levantaron deprisa, y eso se nota adentro del ducto. Encontramos tramos con más curvas de las necesarias porque era el camino más rápido, uniones selladas a medias, y bastante escombro de obra que entró mientras la casa estaba abierta.',
+          'También encontramos algo específico de la construcción apurada: retornos que se resolvieron dejando espacio bajo las puertas en lugar de instalar un conducto propio. Funciona a medias, y significa que el sistema jala aire de donde puede en vez de de donde debería.',
+          'Nada de eso es un defecto que se note el primer año. Se nota al décimo, cuando la casa enfría peor de lo que enfriaba y nadie sabe por qué.',
+        ],
+      },
+      {
+        heading: 'Polvo, terreno abierto y pozo',
+        body: [
+          'Lehigh Acres tiene mucho lote sin construir y muchos caminos sin pavimentar, y ese polvo fino entra por cada rendija del camino de retorno. Es una carga que un suburbio cerrado no tiene.',
+          'Además buena parte de la zona se riega con pozo, y el agua de pozo aquí es dura. Deja depósitos minerales en el condensador y en cualquier cosa que la rocíe con regularidad, lo cual no ensucia el ducto pero sí hace que el equipo trabaje más para dar lo mismo.',
+          'Si su casa está en una calle sin pavimentar o cerca de lote abierto, el filtro es su primera línea y conviene revisarlo mensualmente y no cada tres meses. Es el gasto más pequeño del sistema y el que más devuelve.',
+        ],
+      },
+    ],
+    depth: [
+      {
+        heading: 'Two different Lehighs, and it matters which one you are in',
+        body: [
+          'Lehigh Acres was platted in the middle of the last century and built out in two widely separated waves. There are modest older houses on lots from that era, and there are whole streets put up during the two thousands boom. They fail in completely different ways.',
+          'In the older ones the equipment has been replaced once or twice onto a distribution that was never redesigned, and often the original ductwork is still there under a new box. In the boom houses nothing is worn out, so what you have is what came with it.',
+          'That is why the first question we ask on the phone is what year the house is. The answer changes what we go looking for and what we end up recommending.',
+        ],
+      },
+      {
+        heading: 'What fast construction left behind',
+        body: [
+          'The boom houses went up quickly, and it shows inside the ductwork. We find runs with more bends than they need because that was the fastest route, joints sealed halfway, and a fair amount of construction debris that went in while the house was open.',
+          'We also find something specific to rushed building: returns solved by leaving a gap under the doors instead of running dedicated ducting. It half works, and it means the system draws air from wherever it can rather than from where it should.',
+          'None of that is a fault you notice in year one. You notice it in year ten, when the house cools worse than it used to and nobody can say why.',
+        ],
+      },
+      {
+        heading: 'Dust, open land and well water',
+        body: [
+          'Lehigh Acres has a great deal of undeveloped lot and a great many unpaved roads, and that fine dust comes in through every gap in the return path. It is a load a closed suburb does not carry.',
+          'A large part of the area also irrigates from a well, and the well water here is hard. It leaves mineral deposits on the condenser and on anything it sprays regularly, which does not dirty the ductwork but does make the equipment work harder for the same result.',
+          'If your house is on an unpaved street or near open lot, the filter is your first line and it is worth checking monthly rather than quarterly. It is the smallest expense in the system and the one that returns the most.',
+        ],
+      },
+    ],
+    neighborhoods: ['Mirror Lakes', 'Westminster', 'Lehigh Estates', 'Greenbriar', 'Country Lakes', 'Bell Boulevard'],
+  },
+
   naples: {
     depth: [
       {

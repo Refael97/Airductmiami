@@ -161,6 +161,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Desde los bungalós históricos de Hyde Park hasta las urbanizaciones modernas de New Tampa, la humedad que viene de la bahía hace del moho en serpentinas y ductos una preocupación frecuente para los propietarios.',
  region: 'Bahía de Tampa',
  },
+ 'town-n-country': {
+ intro: 'Town \u2019n\u2019 Country es una de las comunidades más grandes del condado de Hillsborough y uno de los suburbios más antiguos de este lado de Tampa.',
+ local: 'Casas de una planta sobre losa de los sesenta y setenta, lo bastante cerca de la bahía para recibir aire húmedo todo el año, con ducto que en muchas casas sigue siendo el trazado original debajo de un equipo más nuevo.',
+ region: 'Bahía de Tampa',
+ },
  'st-petersburg': {
  intro: 'El clima peninsular de St. Petersburg rodea las casas con aire húmedo del Golfo que favorece el moho en los ductos y en los sistemas de aire acondicionado.',
  local: 'Rodeadas de agua por tres lados, las casas de St. Pete lidian con una humedad especialmente alta, lo que hace de la prevención del moho en ductos y serpentinas una prioridad.',
@@ -180,6 +185,16 @@ export const cityEsContent: Record<string, CityEsContent> = {
  'kissimmee': {
  intro: 'El clima cálido de Kissimmee y sus muchas casas de vacaciones y de alquiler hacen que el mantenimiento regular de ductos y de tubos de secadora sea especialmente valioso.',
  local: 'Las propiedades de alquiler y vacacionales, con mucha rotación de huéspedes, tienen un uso intenso del aire acondicionado y la secadora, así que la limpieza rutinaria es importante para la seguridad y la comodidad de quienes se hospedan.',
+ region: 'Centro de Florida',
+ },
+ 'poinciana': {
+ intro: 'Poinciana es una de las comunidades planificadas más grandes de Florida y de las que más rápido crecen, y su vivienda es más nueva que casi todo lo que tiene alrededor.',
+ local: 'Construcción sobre losa con ducto flexible por el ático, calle tras calle, así que aquí los problemas son los que vienen de fábrica y no los que trae la edad. Si se mudó a una casa nueva y empezó con alergias en la primera temporada, casi siempre es el escombro de obra que quedó adentro del ducto.',
+ region: 'Centro de Florida',
+ },
+ 'buenaventura-lakes': {
+ intro: 'Buenaventura Lakes es una comunidad establecida del condado de Osceola donde la mayoría de la vivienda es del auge de los ochenta y noventa.',
+ local: 'Casas de una planta sobre losa con ducto en el ático que ya lleva encima treinta veranos de Florida, que es justo la edad a la que el flexible empieza a descolgarse y el sellado de las uniones empieza a fallar.',
  region: 'Centro de Florida',
  },
  'winter-park': {
@@ -206,6 +221,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  'cape-coral': {
  intro: 'Los vecindarios bordeados de canales de Cape Coral y la humedad del Golfo hacen que tener ductos libres de moho sea esencial para un aire interior saludable.',
  local: 'Con más canales que cualquier ciudad del mundo, la humedad junto al agua de Cape Coral es implacable, condiciones ideales para el moho del aire acondicionado en el que nos especializamos.',
+ region: 'Suroeste de Florida',
+ },
+ 'lehigh-acres': {
+ intro: 'Lehigh Acres es una de las comunidades loteadas más grandes del país, y su vivienda se divide limpiamente en dos épocas muy distintas.',
+ local: 'Lotes de mediados de siglo con casas modestas y antiguas conviven con calles enteras levantadas durante el auge de los dos mil, así que aquí un técnico necesita saber en qué década está parado antes de opinar sobre el ducto.',
  region: 'Suroeste de Florida',
  },
  'naples': {
