@@ -124,6 +124,23 @@ export const heroImage: PageImage & { fallback: string } = {
  * Anything dropped in here should therefore have no lettering baked in.
  * See docs/MEDIA-STANDARD.md.
  */
+/**
+ * Per-offer side panels for the promo popup, keyed by the popup's offer.
+ *
+ * An offer with no entry here, or whose file is not on disk, falls back to
+ * `promoAsideImage` and then to the gradient panel, so adding an offer never
+ * breaks the popup and a missing photograph is not a broken image sitting on
+ * top of the lead form. The same no-lettering rule applies: the discount
+ * badge is HTML so it stays translatable.
+ */
+export const promoAsideImages: Record<string, PageImage> = {
+  mold: {
+    file: 'mold-on-supply-register.webp',
+    alt: '',
+    altEs: '',
+  },
+};
+
 export const promoAsideImage: PageImage = {
   file: 'promo-aside.webp',
   /* Decorative: the popup already carries its offer and its trust points as

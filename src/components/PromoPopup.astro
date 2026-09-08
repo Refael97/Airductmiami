@@ -5,15 +5,25 @@
  * page, whichever comes first. Submits to a Netlify form via fetch and shows
  * an inline success state.
  *
- * The offer is context-aware: dryer-related pages pitch $25 off a dryer vent
- * cleaning, everything else pitches $50 off a full air duct cleaning. Both
- * are framed as discounts, never as a low fixed price: the site's own
- * scam-awareness article warns readers that "$99 whole-home cleaning" ads
- * are bait, and a cheap fixed price pattern-matches to those ads even when
- * honest. Copy lives in the OFFERS block below, one place per promotion.
+ * The offer matches the service the reader is actually there for. A visitor
+ * on the mold removal page was being pitched a duct cleaning discount, which
+ * answers a question they did not ask. OFFER_FOR maps the URL to one of four
+ * offers: sliding door repair, mold removal, dryer vent, or duct cleaning as
+ * the default. Order matters in that list, because a mold article and a duct
+ * article share a path prefix.
+ *
+ * Every offer is framed as a discount, never as a low fixed price: the site's
+ * own scam-awareness article warns readers that "$99 whole-home cleaning" ads
+ * are bait, and a cheap fixed price pattern-matches to those ads even when it
+ * is honest. Copy lives in the OFFERS block below, one place per promotion,
+ * and the discount amounts are the only numbers in it that are a business
+ * decision rather than a fact: change them there and nowhere else.
+ *
+ * The headline lives per offer rather than in SHARED because "your home could
+ * be breathing better" is a duct promise and means nothing on a patio door.
  */
 import { business } from '../data/business';
-import { promoAsideImage, hasImage } from '../data/pageImages';
+import { promoAsideImages, promoAsideImage, hasImage } from '../data/pageImages';
 import LeadMeta from './LeadMeta.astro';
 import type { Locale } from '../data/ui';
 
@@ -24,12 +34,23 @@ const { lang = 'en' } = Astro.props;
 const isEs = lang === 'es';
 
 const path = Astro.url.pathname;
-/** Dryer cluster (EN 'dryer', ES 'secadora'/'ventila'): keep the $99 vent special there. */
-const offerKey = /dryer|secadora|ventila/.test(path) ? 'dryer' : 'duct';
+
+/* First match wins, so the most specific cluster is listed first. Each entry
+   carries both languages: 'moho' is the Spanish mold cluster, 'corrediza' the
+   Spanish slider pages, 'secadora' and 'ventila' the Spanish dryer pages. */
+const OFFER_FOR: [RegExp, 'sliding' | 'mold' | 'dryer' | 'duct'][] = [
+  [/sliding-glass-door|puerta-corrediza|corrediza/, 'sliding'],
+  [/mold|moho/, 'mold'],
+  [/dryer|secadora|ventila/, 'dryer'],
+];
+const offerKey = OFFER_FOR.find(([re]) => re.test(path))?.[1] ?? 'duct';
 
 const OFFERS = {
   dryer: {
     en: {
+      headline1: 'Your dryer could be',
+      headline2: 'running safer',
+      headline3: 'today',
       badgeTop: 'Limited time offer',
       price: '$25',
       badgeBottom: 'Off dryer vent cleaning',
@@ -40,6 +61,9 @@ const OFFERS = {
       successBody: `We received your request and your $25 discount is locked in. We will call you shortly to schedule your dryer vent cleaning. In a hurry? Call ${business.phone}.`,
     },
     es: {
+      headline1: 'Su secadora podría',
+      headline2: 'trabajar más segura',
+      headline3: 'hoy',
       badgeTop: 'Oferta por tiempo limitado',
       price: '$25',
       badgeBottom: 'De descuento en ducto de secadora',
@@ -52,6 +76,9 @@ const OFFERS = {
   },
   duct: {
     en: {
+      headline1: 'Your home could be',
+      headline2: 'breathing better',
+      headline3: 'today',
       badgeTop: 'Limited time offer',
       price: '$50',
       badgeBottom: 'Off air duct cleaning',
@@ -62,6 +89,9 @@ const OFFERS = {
       successBody: `We received your request and your $50 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
     },
     es: {
+      headline1: 'Su casa podría',
+      headline2: 'respirar mejor',
+      headline3: 'hoy',
       badgeTop: 'Oferta por tiempo limitado',
       price: '$50',
       badgeBottom: 'De descuento en limpieza de ductos',
@@ -72,13 +102,66 @@ const OFFERS = {
       successBody: `Recibimos su solicitud y su descuento de $50 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
     },
   },
+  mold: {
+    en: {
+      headline1: 'Get the mold out of',
+      headline2: 'your air ducts',
+      headline3: 'for good',
+      badgeTop: 'Limited time offer',
+      price: '$100',
+      badgeBottom: 'Off air duct mold removal',
+      sub: 'Get $100 off air duct and air handler mold removal.',
+      body: 'Containment first, then source removal from the ducts, the air handler and the coil, so the growth is taken out rather than sprayed over. You get the price and the scope before any work starts, and the $100 discount is locked in when we call you back.',
+      cta: 'Claim my $100 off',
+      fine: 'No obligation. Free estimate. Discount applies to one duct mold removal job.',
+      successBody: `We received your request and your $100 discount is locked in. We will call you shortly to look at the ductwork and price the job. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: 'Saque el moho de',
+      headline2: 'sus ductos de aire',
+      headline3: 'de raíz',
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$100',
+      badgeBottom: 'De descuento en eliminación de moho',
+      sub: 'Reciba $100 de descuento en la eliminación de moho en ductos y manejadora.',
+      body: 'Primero contención, después extracción en la fuente en el ducto, la manejadora y el serpentín, para sacar el crecimiento en lugar de taparlo con un rociado. Usted recibe el precio y el alcance antes de empezar, y el descuento de $100 queda asegurado cuando le llamemos.',
+      cta: 'Quiero mis $100 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a un trabajo de eliminación de moho en ductos.',
+      successBody: `Recibimos su solicitud y su descuento de $100 queda asegurado. Le llamaremos en breve para revisar el ducto y cotizar el trabajo. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+  sliding: {
+    en: {
+      headline1: 'Make that slider',
+      headline2: 'glide like new',
+      headline3: 'again',
+      badgeTop: 'Limited time offer',
+      price: '$40',
+      badgeBottom: 'Off sliding door repair',
+      sub: 'Get $40 off sliding glass door repair.',
+      body: 'A door that drags, sticks, jumps the track or will not lock is almost always the rollers and the bottom track, and most repairs finish in one visit. You get the price before we start, and the $40 discount is locked in when we call you back.',
+      cta: 'Claim my $40 off',
+      fine: 'No obligation. Free estimate. Discount applies to one sliding door repair visit.',
+      successBody: `We received your request and your $40 discount is locked in. We will call you shortly to schedule your sliding door repair. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: 'Haga que su puerta',
+      headline2: 'corra como nueva',
+      headline3: 'otra vez',
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$40',
+      badgeBottom: 'De descuento en puertas corredizas',
+      sub: 'Reciba $40 de descuento en la reparación de su puerta corrediza.',
+      body: 'Una puerta que se traba, se atora, se sale del riel o no cierra con llave casi siempre es cosa de los rodamientos y del riel inferior, y la mayoría de las reparaciones se resuelven en una sola visita. Usted recibe el precio antes de empezar, y el descuento de $40 queda asegurado cuando le llamemos.',
+      cta: 'Quiero mis $40 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a una visita de reparación de puerta corrediza.',
+      successBody: `Recibimos su solicitud y su descuento de $40 queda asegurado. Le llamaremos en breve para agendar la reparación. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
 }[offerKey][lang];
 
 const SHARED = {
   en: {
-    headline1: 'Your home could be',
-    headline2: 'breathing better',
-    headline3: 'today',
     trust: ['Free estimate', 'Same-week service', 'Licensed & insured', 'Local Florida experts'],
     name: 'Your Name',
     phone: 'Phone Number',
@@ -87,9 +170,6 @@ const SHARED = {
     successTitle: 'You got it!',
   },
   es: {
-    headline1: 'Su casa podría',
-    headline2: 'respirar mejor',
-    headline3: 'hoy',
     trust: ['Cotización gratis', 'Servicio en la misma semana', 'Licencia y seguro', 'Expertos locales de Florida'],
     name: 'Su nombre',
     phone: 'Teléfono',
@@ -110,7 +190,8 @@ const formName = 'popup-special';
 /* Desktop only side image. Renders only when the file is in public/images,
    so a missing file degrades to the gradient panel the popup shipped with
    rather than to a broken image on top of the lead form. */
-const asideSrc = hasImage(promoAsideImage) ? `/images/${promoAsideImage.file}` : null;
+const aside = promoAsideImages[offerKey] ?? promoAsideImage;
+const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
 ---
 {!excluded && (
 <div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
