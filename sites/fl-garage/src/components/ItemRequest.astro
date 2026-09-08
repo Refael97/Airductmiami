@@ -1,7 +1,7 @@
 ---
 /**
- * The request block on a part page. This is the whole point of the parts
- * catalogue, so it is worth saying what it is and is not.
+ * The request block shared by both catalogues, parts and doors. This is the
+ * whole point of either of them, so it is worth saying what it is and is not.
  *
  * It is NOT a buy button. There is no cart, no stock, no part-only price.
  * A page laid out like a shop tells the reader we hold that item on a shelf,
@@ -24,28 +24,50 @@ import { ui, paths, type Locale } from '../data/ui';
 
 interface Props {
   lang: Locale;
-  /** Part slug, machine readable, for routing and reporting. */
+  /** Item slug, machine readable, for routing and reporting. */
   slug: string;
-  /** Part name in the reader's language, for the human reading the lead. */
+  /** Item name in the reader's language, for the human reading the lead. */
   name: string;
+  /** 'part' or 'door'. Decides the field names, the copy and the form name. */
+  kind: 'part' | 'door';
 }
-const { lang, slug, name } = Astro.props;
+const { lang, slug, name, kind } = Astro.props;
+const t0 = ui[lang];
+const isPart = kind === 'part';
+
+const copy = isPart
+  ? {
+      heading: t0.partsRequestHeading,
+      lead: t0.partsRequestLead,
+      cta: t0.partsRequestCta,
+      ask: t0.partsAskCta,
+      note: t0.partsNotSold,
+    }
+  : {
+      heading: t0.doorsRequestHeading,
+      lead: t0.doorsRequestLead,
+      cta: t0.doorsRequestCta,
+      ask: t0.doorsAskCta,
+      note: t0.doorsQuoteNote,
+    };
 const t = ui[lang];
 const p = paths[lang];
 
 const formEndpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
 const usesNetlifyForms = formEndpoint === '';
-/* Its own form name so part requests are separable from general quotes in
-   whatever inbox they land in. */
-const formName = 'part-request';
+/* Its own form name per catalogue, so part requests, door requests and
+   general quotes stay separable in whatever inbox they land in. Netlify
+   needs each name to exist as a form definition, which it does because
+   both are rendered somewhere in the static build. */
+const formName = isPart ? 'part-request' : 'door-request';
 ---
 <section class="part-req" id="request">
   <div class="pr-inner">
     <div class="pr-copy">
-      <h2>{t.partsRequestHeading}</h2>
-      <p class="pr-lead">{t.partsRequestLead}</p>
+      <h2>{copy.heading}</h2>
+      <p class="pr-lead">{copy.lead}</p>
       <p class="pr-item"><span class="pr-item-label">{name}</span></p>
-      <p class="pr-note">{t.partsNotSold}</p>
+      <p class="pr-note">{copy.note}</p>
       {business.phoneLive && (
         <a href={`tel:${business.phoneHref}`} class="pr-phone">{business.phone}</a>
       )}
@@ -64,10 +86,11 @@ const formName = 'part-request';
       <p class="visually-hidden" aria-hidden="true">
         <label>{t.formHoneypot} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
       </p>
-      <LeadMeta source="part_request" lang={lang} />
-      {/* The two fields that make this catalogue worth building. */}
-      <input type="hidden" name="part" value={slug} />
-      <input type="hidden" name="part_name" value={name} />
+      <LeadMeta source={isPart ? 'part_request' : 'door_request'} lang={lang} />
+      {/* The two fields that make either catalogue worth building: without
+          them a request is indistinguishable from a contact form submission. */}
+      <input type="hidden" name={kind} value={slug} />
+      <input type="hidden" name={`${kind}_name`} value={name} />
 
       <label class="pr-field">
         <span>{t.formName}</span>
@@ -86,8 +109,8 @@ const formName = 'part-request';
         />
       </label>
 
-      <button type="submit" class="btn btn-accent btn-lg pr-submit">{t.partsRequestCta}</button>
-      <a href={p.contact} class="pr-ask">{t.partsAskCta}</a>
+      <button type="submit" class="btn btn-accent btn-lg pr-submit">{copy.cta}</button>
+      <a href={p.contact} class="pr-ask">{copy.ask}</a>
     </form>
   </div>
 </section>

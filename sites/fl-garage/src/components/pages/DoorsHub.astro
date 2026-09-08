@@ -1,0 +1,120 @@
+---
+/**
+ * The door catalogue index: the page the owner asked for alongside the
+ * models themselves.
+ *
+ * Sorted by installed price ascending, because that is the axis a replace
+ * buyer scans first, and every card carries the two Florida columns that
+ * decide the choice: wind rated and impact rated. No approval numbers, here
+ * or anywhere else in this catalogue.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import CtaBand from '../CtaBand.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import { doorModels } from '../../data/doors';
+import { ui, paths, doorHref, money, otherLocale, type Locale } from '../../data/ui';
+import { door as localise } from '../../lib/i18n';
+import { business } from '../../data/business';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const to = lang === 'es' ? 'a' : 'to';
+
+const rows = [...doorModels]
+  .sort((a, b) => a.priceLow - b.priceLow)
+  .map((raw) => ({
+    raw,
+    item: localise(lang, raw),
+    hvhzLabel:
+      raw.hvhz === 'yes' ? t.doorsHvhzYes : raw.hvhz === 'available' ? t.doorsHvhzAvailable : t.doorsHvhzNo,
+  }));
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.doorsBreadcrumb, href: p.doors },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: t.doorsHeading,
+  description: t.doorsLead,
+  url: `${site}${p.doors}`,
+  inLanguage: lang === 'es' ? 'es-US' : 'en-US',
+};
+---
+<BaseLayout title={`${t.doorsHeading} | ${business.name}`} description={t.doorsLead} schema={schema} lang={lang} altHref={paths[otherLocale(lang)].doors}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container">
+      <h1>{t.doorsHeading}</h1>
+      <p class="lead dh-lead">{t.doorsLead}</p>
+      <p class="dh-intro">{t.doorsIntro}</p>
+      <p class="dh-note">{t.doorsHubNote}</p>
+
+      <ul class="dh-grid">
+        {rows.map(({ raw, item, hvhzLabel }) => (
+          <li class="dh-card">
+            <a href={doorHref(lang, item.slug)} class="dh-link">
+              <h2 class="dh-name">{item.shortName}</h2>
+              <p class="dh-price">{t.from} {money(raw.priceLow)} {to} {money(raw.priceHigh)}</p>
+              <p class="dh-constr">{item.construction}</p>
+              <ul class="dh-tags">
+                <li class={raw.windRated ? 'is-yes' : 'is-no'}>
+                  {t.doorsWindRated}: {raw.windRated ? t.doorsYes : t.doorsNo}
+                </li>
+                <li class={raw.impactRated ? 'is-yes' : 'is-no'}>
+                  {t.doorsImpactRated}: {raw.impactRated ? t.doorsYes : t.doorsNo}
+                </li>
+                <li class={`hvhz-${raw.hvhz}`}>{hvhzLabel}</li>
+              </ul>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <PriceDisclaimer lang={lang} variant="block" />
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .dh-lead { max-width: 62ch; }
+  .dh-intro { max-width: 70ch; color: var(--c-body); }
+  .dh-note {
+    max-width: 70ch; margin: 0 0 1.8rem;
+    padding: 0.8rem 1rem; border-left: 4px solid var(--c-primary);
+    background: var(--c-bg-alt, #f4f6f8); border-radius: 0 10px 10px 0;
+    font-size: 0.9rem; color: var(--c-body);
+  }
+  .dh-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .dh-card { display: flex; }
+  .dh-link {
+    display: flex; flex-direction: column; gap: 0.4rem;
+    width: 100%; padding: 1.1rem 1.2rem;
+    background: #fff; border: 1px solid var(--c-line);
+    border-radius: var(--radius, 14px); text-decoration: none; color: inherit;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .dh-link:hover { border-color: var(--c-primary); transform: translateY(-2px); text-decoration: none; }
+  .dh-name { margin: 0; font-size: 1.05rem; color: var(--c-ink); }
+  .dh-price { margin: 0; font-weight: 800; color: var(--c-primary); font-size: 0.95rem; }
+  .dh-constr { margin: 0; font-size: 0.86rem; color: var(--c-body); }
+  .dh-tags { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .dh-tags li {
+    font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.55rem;
+    border-radius: 999px; border: 1px solid var(--c-line); background: var(--c-bg-alt, #f4f6f8);
+  }
+  .dh-tags .is-yes { color: #157a4d; border-color: #9ad3b8; }
+  .dh-tags .is-no { color: #5c6672; }
+  .dh-tags .hvhz-yes { color: #157a4d; border-color: #9ad3b8; }
+  .dh-tags .hvhz-available { color: #8a5c0e; border-color: #e0c48a; }
+  .dh-tags .hvhz-no { color: #5c6672; }
+</style>

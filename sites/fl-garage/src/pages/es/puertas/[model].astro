@@ -1,0 +1,10 @@
+---
+import DoorPage from '../../../components/pages/DoorPage.astro';
+import { doorModels } from '../../../data/doors';
+
+export function getStaticPaths() {
+  return doorModels.map((item) => ({ params: { model: item.slug }, props: { item } }));
+}
+const { item } = Astro.props;
+---
+<DoorPage lang="es" item={item} />

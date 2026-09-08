@@ -128,6 +128,75 @@ export interface ServiceEs {
 }
 
 /* ---------------------------------------------------------------------- */
+/* Door model catalogue                                                    */
+/* ---------------------------------------------------------------------- */
+
+/**
+ * A door you can actually order, as a page.
+ *
+ * Deliberately a CONFIGURATION rather than a manufacturer SKU. Two reasons,
+ * both from research/fl-garage/CATALOGUE.md. First, naming a specific model
+ * we cannot source is worse than naming none, and product lines are renamed
+ * and discontinued constantly. Second, and more useful: the decision a
+ * Florida buyer is actually making is not "Clopay 4050 or Amarr 3000", it is
+ * "what rating do I need at my address, insulated or not, and what will it
+ * cost". MARKET.md found nobody in Florida answers that plainly, so the
+ * catalogue is organised around it.
+ *
+ * `windRated` and `impactRated` are the two columns that matter here and the
+ * reason this catalogue exists at all. Neither is ever stated as a specific
+ * design pressure or a specific NOA number: those depend on the size, the
+ * configuration and the opening, they go on the permit, and inventing one
+ * would be a code compliance claim we cannot stand behind.
+ */
+export interface DoorModel {
+  slug: string;
+  name: string;
+  shortName: string;
+  metaTitle: string;
+  metaDescription: string;
+  /** Installed, for a standard door of this configuration. */
+  priceLow: number;
+  priceHigh: number;
+  /** Steel, aluminium and glass, composite overlay, fiberglass, wood, vinyl. */
+  construction: string;
+  /** Rated for wind pressure. Nearly everything sold new in Florida is. */
+  windRated: boolean;
+  /** Also rated for impact, which is what HVHZ generally requires unglazed. */
+  impactRated: boolean;
+  /** Whether this configuration is normally specified inside the HVHZ. */
+  hvhz: 'yes' | 'available' | 'no';
+  /** Insulation, as a plain description. No invented R-values. */
+  insulation: string;
+  answer: string;
+  intro: string[];
+  /** Who this door is the right answer for. */
+  bestFor: string[];
+  /** Honest reasons to choose something else. */
+  tradeoffs: string[];
+  /** Slug of the buyer's guide material page this pairs with, if any. */
+  material?: string;
+  quickFacts: { label: string; value: string }[];
+  faq: FAQ[];
+  related: string[];
+}
+
+export interface DoorModelEs {
+  name: string;
+  shortName: string;
+  metaTitle: string;
+  metaDescription: string;
+  construction: string;
+  insulation: string;
+  answer: string;
+  intro: string[];
+  bestFor: string[];
+  tradeoffs: string[];
+  quickFacts: { label: string; value: string }[];
+  faq: FAQ[];
+}
+
+/* ---------------------------------------------------------------------- */
 /* Parts catalogue                                                         */
 /* ---------------------------------------------------------------------- */
 

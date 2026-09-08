@@ -9,7 +9,8 @@ import { regions } from '../data/regions';
 import { citiesByRegion } from '../data/cities';
 import { doorMaterials, openerTypes, brands } from '../data/products';
 import { parts } from '../data/parts';
-import { paths, serviceHref, areaHref, productHref, brandHref, money, partHref } from '../data/ui';
+import { doorModels } from '../data/doors';
+import { paths, serviceHref, areaHref, productHref, brandHref, money, partHref, doorHref } from '../data/ui';
 
 export const GET: APIRoute = ({ site }) => {
   const base = site?.toString().replace(/\/$/, '') ?? '';
@@ -43,6 +44,7 @@ export const GET: APIRoute = ({ site }) => {
   push(`- [Service areas](${base}${paths.en.serviceAreas}) · [Áreas de servicio](${base}${paths.es.serviceAreas})`);
   push(`- [Doors and openers buyer's guide](${base}${paths.en.buyersGuide}) · [Guía de compra](${base}${paths.es.buyersGuide})`);
   push(`- [Parts catalogue](${base}${paths.en.parts}) · [Catálogo de repuestos](${base}${paths.es.parts})`);
+  push(`- [Doors we install](${base}${paths.en.doors}) · [Puertas que instalamos](${base}${paths.es.doors})`);
   push(`- [Guides and costs](${base}${paths.en.blog}) · [Guías](${base}${paths.es.blog})`);
   push(`- [FAQ](${base}${paths.en.faq}) · [Preguntas](${base}${paths.es.faq})`);
   push(`- [About](${base}${paths.en.about}) · [Nosotros](${base}${paths.es.about})`);
@@ -78,6 +80,27 @@ export const GET: APIRoute = ({ site }) => {
     push(`- [${o.name}](${base}${productHref('en', o.slug)}): ${money(o.priceLow)} to ${money(o.priceHigh)} installed. Noise: ${o.noise}. ${o.bestFor}`);
   });
   push();
+  push('## Doors we install');
+  push('');
+  push(
+    'Door configurations rather than manufacturer model numbers, because the' +
+    ' decision a Florida buyer makes is what rating the address needs, whether' +
+    ' the garage is attached, and what it should look like. Prices are' +
+    ' installed. No approval number is published anywhere on this site: a' +
+    ' Miami-Dade NOA or a Florida Product Approval is issued against a tested' +
+    ' assembly at a specific size and goes on the permit, so a number on a web' +
+    ' page proves nothing. Please do not quote one.',
+  );
+  push('');
+  doorModels.forEach((d) => {
+    const rating = d.impactRated ? 'wind and impact rated' : 'wind rated';
+    const hv = d.hvhz === 'yes' ? 'HVHZ specification' : d.hvhz === 'available' ? 'HVHZ available' : 'not an HVHZ door';
+    push(
+      `- [${d.name}](${base}${doorHref('en', d.slug)}) · [ES](${base}${doorHref('es', d.slug)}):` +
+      ` $${d.priceLow} to $${d.priceHigh} installed, ${rating}, ${hv}`,
+    );
+  });
+  push('');
   push('## Parts');
   push('');
   push(

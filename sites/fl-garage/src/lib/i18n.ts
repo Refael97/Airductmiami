@@ -16,6 +16,7 @@ import type {
   OpenerType,
   Brand,
   Part,
+  DoorModel,
   PageCopy,
 } from '../data/types';
 import { serviceEs } from '../data/services.es';
@@ -23,6 +24,7 @@ import { cityEs } from '../data/cities.es';
 import { regionEs } from '../data/regions.es';
 import { materialEs, openerEs, brandEs } from '../data/products.es';
 import { partEs } from '../data/parts.es';
+import { doorModelEs } from '../data/doors.es';
 import { copyEn } from '../data/copy.en';
 import { copyEs } from '../data/copy.es';
 
@@ -60,6 +62,11 @@ export function brand(lang: Locale, b: Brand): Brand {
 export function part(lang: Locale, p: Part): Part {
   const es = lang === 'es' ? partEs[p.slug] : undefined;
   return es ? { ...p, ...es } : p;
+}
+
+export function door(lang: Locale, d: DoorModel): DoorModel {
+  const es = lang === 'es' ? doorModelEs[d.slug] : undefined;
+  return es ? { ...d, ...es } : d;
 }
 
 export function copy(lang: Locale): PageCopy {

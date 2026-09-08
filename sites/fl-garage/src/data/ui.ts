@@ -28,6 +28,7 @@ interface Paths {
   buyersGuide: string;
   brands: string;
   parts: string;
+  doors: string;
   blog: string;
   faq: string;
   about: string;
@@ -45,6 +46,7 @@ export const paths: Record<Locale, Paths> = {
     buyersGuide: '/buyers-guide/',
     brands: '/brands/',
     parts: '/parts/',
+    doors: '/doors/',
     blog: '/blog/',
     faq: '/faq/',
     about: '/about/',
@@ -60,6 +62,7 @@ export const paths: Record<Locale, Paths> = {
     buyersGuide: '/es/guia-de-compra/',
     brands: '/es/marcas/',
     parts: '/es/repuestos/',
+    doors: '/es/puertas/',
     blog: '/es/blog/',
     faq: '/es/preguntas-frecuentes/',
     about: '/es/nosotros/',
@@ -75,6 +78,7 @@ export const areaHref = (l: Locale, slug: string) => `${paths[l].serviceAreas}${
 export const productHref = (l: Locale, slug: string) => `${paths[l].buyersGuide}${slug}/`;
 export const brandHref = (l: Locale, slug: string) => `${paths[l].brands}${slug}/`;
 export const partHref = (l: Locale, slug: string) => `${paths[l].parts}${slug}/`;
+export const doorHref = (l: Locale, slug: string) => `${paths[l].doors}${slug}/`;
 /** Articles carry their own slug per language; the caller passes the right one. */
 export const blogHref = (l: Locale, slug: string) => `${paths[l].blog}${slug}/`;
 
@@ -253,6 +257,29 @@ export interface Strings {
   partsBreadcrumb: string;
   partsHubNote: string;
   partsNotSold: string;
+  /* Door model catalogue */
+  doorsHeading: string;
+  doorsLead: string;
+  doorsIntro: string;
+  doorsBreadcrumb: string;
+  doorsHubNote: string;
+  doorsBestForHeading: string;
+  doorsTradeoffsHeading: string;
+  doorsRatingHeading: string;
+  doorsRelatedHeading: string;
+  doorsRequestHeading: string;
+  doorsRequestLead: string;
+  doorsRequestCta: string;
+  doorsAskCta: string;
+  doorsQuoteNote: string;
+  doorsWindRated: string;
+  doorsImpactRated: string;
+  doorsHvhzYes: string;
+  doorsHvhzAvailable: string;
+  doorsHvhzNo: string;
+  doorsYes: string;
+  doorsNo: string;
+  doorsSeeMaterial: string;
   installed: string;
   choosingQuestions: string;
   buyersCtaHeading: string;
@@ -543,6 +570,28 @@ export const ui: Record<Locale, Strings> = {
     partsBreadcrumb: 'Parts',
     partsHubNote: 'We do not sell parts over a counter. A partner technician brings the part and fits it, so the price you see is the fitted price and there is nothing to measure or order yourself.',
     partsNotSold: 'Not sold separately. Price shown is fitted, by a technician who brings the part.',
+    doorsHeading: 'Garage doors we install',
+    doorsLead: 'Every door configuration we fit in Florida, what each one is rated for, and the installed price.',
+    doorsIntro: 'These are organised by what actually decides the choice in this state: what rating your address needs, whether the garage is attached, and what you want it to look like. Pick the one that fits and we will confirm the exact specification against your opening.',
+    doorsBreadcrumb: 'Doors',
+    doorsHubNote: 'Ratings are stated as what applies, never as a specific approval number. A Miami-Dade NOA or a Florida Product Approval is issued against a tested assembly at a specific size, it goes on your permit, and the licensed contractor who pulls that permit is the one who puts it there. A number printed on a website proves nothing about the door on your opening.',
+    doorsBestForHeading: 'Who this door is right for',
+    doorsTradeoffsHeading: 'Reasons to choose something else',
+    doorsRatingHeading: 'Rating and code',
+    doorsRelatedHeading: 'Compare with',
+    doorsRequestHeading: 'Request this door',
+    doorsRequestLead: 'Leave your details and we call you back to measure the opening, confirm the rating your address needs, and give you a written price.',
+    doorsRequestCta: 'Request this door',
+    doorsAskCta: 'Ask a question about this door',
+    doorsQuoteNote: 'Price shown is installed, for a standard opening. The final number is confirmed after measuring, and the rating is confirmed against your address.',
+    doorsWindRated: 'Wind rated',
+    doorsImpactRated: 'Impact rated',
+    doorsHvhzYes: 'HVHZ specification',
+    doorsHvhzAvailable: 'HVHZ available',
+    doorsHvhzNo: 'Not an HVHZ door',
+    doorsYes: 'Yes',
+    doorsNo: 'No',
+    doorsSeeMaterial: 'More about this material',
     brandsHeading: 'Brands we service',
     brandsLead: 'The brands we see most in Florida garages, and what typically goes wrong with each.',
     installed: 'installed',
@@ -893,6 +942,28 @@ export const ui: Record<Locale, Strings> = {
     partsBreadcrumb: 'Repuestos',
     partsHubNote: 'No vendemos repuestos en mostrador. Un técnico asociado lleva la pieza y la instala, así que el precio que ve es el precio instalado y usted no tiene nada que medir ni que encargar.',
     partsNotSold: 'No se vende por separado. El precio mostrado es instalado, por un técnico que lleva la pieza.',
+    doorsHeading: 'Puertas de garaje que instalamos',
+    doorsLead: 'Cada configuración de puerta que instalamos en Florida, para qué está certificada cada una, y el precio instalada.',
+    doorsIntro: 'Están organizadas por lo que de verdad decide la elección en este estado: qué certificación necesita su dirección, si el garaje está pegado a la casa, y cómo quiere que se vea. Elija la que le corresponda y confirmamos la especificación exacta contra su marco.',
+    doorsBreadcrumb: 'Puertas',
+    doorsHubNote: 'Las certificaciones se indican como lo que aplica, nunca como un número de aprobación específico. Un NOA de Miami-Dade o una Aprobación de Producto de Florida se emite contra un ensamble probado en una medida específica, va en su permiso, y el contratista con licencia que saca ese permiso es quien lo pone ahí. Un número impreso en un sitio web no prueba nada sobre la puerta que va en su marco.',
+    doorsBestForHeading: 'Para quién es esta puerta',
+    doorsTradeoffsHeading: 'Razones para elegir otra',
+    doorsRatingHeading: 'Certificación y código',
+    doorsRelatedHeading: 'Compare con',
+    doorsRequestHeading: 'Solicitar esta puerta',
+    doorsRequestLead: 'Deje sus datos y le llamamos para medir el marco, confirmar la certificación que necesita su dirección, y darle un precio por escrito.',
+    doorsRequestCta: 'Solicitar esta puerta',
+    doorsAskCta: 'Preguntar sobre esta puerta',
+    doorsQuoteNote: 'El precio mostrado es instalada, para un marco estándar. El número final se confirma después de medir, y la certificación se confirma contra su dirección.',
+    doorsWindRated: 'Certificada para viento',
+    doorsImpactRated: 'Certificada contra impacto',
+    doorsHvhzYes: 'Especificación HVHZ',
+    doorsHvhzAvailable: 'HVHZ disponible',
+    doorsHvhzNo: 'No es puerta HVHZ',
+    doorsYes: 'Sí',
+    doorsNo: 'No',
+    doorsSeeMaterial: 'Más sobre este material',
     brandsHeading: 'Marcas que atendemos',
     brandsLead: 'Las marcas que más vemos en los garajes de Florida, y lo que suele fallar en cada una.',
     installed: 'con instalación',

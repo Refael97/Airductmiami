@@ -20,7 +20,7 @@ import Breadcrumbs from '../Breadcrumbs.astro';
 import AnswerBox from '../AnswerBox.astro';
 import QuickFacts from '../QuickFacts.astro';
 import PriceDisclaimer from '../PriceDisclaimer.astro';
-import PartRequest from '../PartRequest.astro';
+import ItemRequest from '../ItemRequest.astro';
 import FAQ from '../FAQ.astro';
 import { parts, partBySlug } from '../../data/parts';
 import { services } from '../../data/services';
@@ -111,7 +111,7 @@ const schema = [
       <QuickFacts facts={item.quickFacts} />
       <PriceDisclaimer lang={lang} />
 
-      <PartRequest lang={lang} slug={item.slug} name={item.name} />
+      <ItemRequest lang={lang} kind="part" slug={item.slug} name={item.name} />
 
       <FAQ items={item.faq} lang={lang} emitSchema={false} />
 

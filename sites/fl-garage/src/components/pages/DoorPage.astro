@@ -1,0 +1,167 @@
+---
+/**
+ * One door configuration, as a page.
+ *
+ * The rating block is the reason this catalogue exists. MARKET.md found that
+ * nobody in Florida explains wind rating, impact rating and HVHZ plainly, so
+ * it sits above the fold rather than buried in a spec table.
+ *
+ * What it never does is print an approval number. A Miami-Dade NOA or a
+ * Florida Product Approval is issued against a tested assembly at a specific
+ * size and goes on the permit; a number on a web page says nothing about the
+ * door that ends up on the reader's opening, and publishing one would be a
+ * code compliance claim we cannot stand behind. See src/data/doors.ts.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import QuickFacts from '../QuickFacts.astro';
+import PriceDisclaimer from '../PriceDisclaimer.astro';
+import ItemRequest from '../ItemRequest.astro';
+import FAQ from '../FAQ.astro';
+import { doorBySlug } from '../../data/doors';
+import type { DoorModel } from '../../data/types';
+import { serviceSchema, faqSchema } from '../../lib/schema';
+import { ui, paths, doorHref, productHref, money, otherLocale, type Locale } from '../../data/ui';
+import { door as localise } from '../../lib/i18n';
+
+interface Props { lang: Locale; item: DoorModel }
+const { lang, item: raw } = Astro.props;
+const item = localise(lang, raw);
+const t = ui[lang];
+const p = paths[lang];
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const href = doorHref(lang, item.slug);
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.doorsBreadcrumb, href: p.doors },
+  { name: item.shortName, href },
+];
+
+const related = raw.related
+  .map((slug) => doorBySlug[slug])
+  .filter(Boolean)
+  .map((r) => localise(lang, r));
+
+/* Same convention as ProductPage: the joining word is derived here rather
+   than carried as a ui string. */
+const to = lang === 'es' ? 'a' : 'to';
+
+const hvhzLabel =
+  raw.hvhz === 'yes' ? t.doorsHvhzYes : raw.hvhz === 'available' ? t.doorsHvhzAvailable : t.doorsHvhzNo;
+
+const schema = [
+  serviceSchema(site, {
+    name: item.name,
+    description: item.metaDescription,
+    url: `${site}${href}`,
+    slug: item.slug,
+    priceLow: raw.priceLow,
+    priceHigh: raw.priceHigh,
+  }),
+  faqSchema(item.faq),
+];
+---
+<BaseLayout
+  title={item.metaTitle}
+  description={item.metaDescription}
+  schema={schema}
+  lang={lang}
+  altHref={doorHref(otherLocale(lang), item.slug)}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="section">
+    <div class="container container-narrow prose">
+      <h1>{item.name}</h1>
+      <AnswerBox text={item.answer} lang={lang} />
+
+      <p class="dp-price">
+        <strong>{t.from} {money(raw.priceLow)}</strong> {to} {money(raw.priceHigh)}
+      </p>
+
+      <h2>{t.doorsRatingHeading}</h2>
+      <ul class="dp-rating">
+        <li class={raw.windRated ? 'is-yes' : 'is-no'}>
+          <span class="dp-r-label">{t.doorsWindRated}</span>
+          <span class="dp-r-value">{raw.windRated ? t.doorsYes : t.doorsNo}</span>
+        </li>
+        <li class={raw.impactRated ? 'is-yes' : 'is-no'}>
+          <span class="dp-r-label">{t.doorsImpactRated}</span>
+          <span class="dp-r-value">{raw.impactRated ? t.doorsYes : t.doorsNo}</span>
+        </li>
+        <li class={`hvhz-${raw.hvhz}`}>
+          <span class="dp-r-label">HVHZ</span>
+          <span class="dp-r-value">{hvhzLabel}</span>
+        </li>
+      </ul>
+      <p class="dp-approval">{t.doorsHubNote}</p>
+
+      {item.intro.map((para) => <p>{para}</p>)}
+
+      <h2>{t.doorsBestForHeading}</h2>
+      <ul class="check-list">{item.bestFor.map((b) => <li>{b}</li>)}</ul>
+
+      <h2>{t.doorsTradeoffsHeading}</h2>
+      <ul class="check-list dp-tradeoffs">{item.tradeoffs.map((c) => <li>{c}</li>)}</ul>
+
+      <QuickFacts facts={item.quickFacts} />
+      <PriceDisclaimer lang={lang} />
+
+      <ItemRequest lang={lang} kind="door" slug={item.slug} name={item.name} />
+
+      <FAQ items={item.faq} lang={lang} emitSchema={false} />
+
+      {raw.material && (
+        <p class="dp-material"><a href={productHref(lang, raw.material)}>{t.doorsSeeMaterial}</a></p>
+      )}
+
+      {related.length > 0 && (
+        <>
+          <h2>{t.doorsRelatedHeading}</h2>
+          <ul class="dp-related">
+            {related.map((r) => <li><a href={doorHref(lang, r.slug)}>{r.shortName}</a></li>)}
+          </ul>
+        </>
+      )}
+
+      <p class="dp-back"><a href={p.doors}>{t.doorsHeading}</a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .dp-price { font-size: 1.15rem; margin: 0 0 1.6rem; }
+  .dp-rating { list-style: none; padding: 0; margin: 0 0 0.9rem; display: grid; gap: 0.5rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .dp-rating li {
+    display: flex; flex-direction: column; gap: 0.15rem;
+    padding: 0.7rem 0.9rem; border: 1px solid var(--c-line);
+    border-radius: 10px; background: #fff; border-left-width: 4px;
+  }
+  .dp-r-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-muted); }
+  .dp-r-value { font-weight: 800; color: var(--c-ink); }
+  /* Colour repeats the word, it never carries the meaning alone. */
+  .dp-rating .is-yes { border-left-color: #1c9d63; }
+  .dp-rating .is-no { border-left-color: #b9c0c8; }
+  .dp-rating .hvhz-yes { border-left-color: #1c9d63; }
+  .dp-rating .hvhz-available { border-left-color: #c9861a; }
+  .dp-rating .hvhz-no { border-left-color: #b9c0c8; }
+
+  .dp-approval {
+    padding: 0.8rem 1rem; border-left: 4px solid var(--c-primary);
+    background: var(--c-bg-alt, #f4f6f8); border-radius: 0 10px 10px 0;
+    font-size: 0.9rem; color: var(--c-body); margin-bottom: 1.8rem;
+  }
+  .dp-tradeoffs li::marker { color: var(--c-muted); }
+  .dp-material { margin-top: 1.4rem; }
+  .dp-related { list-style: none; padding: 0; margin: 0.6rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .dp-related a {
+    display: inline-block; padding: 0.4rem 0.85rem;
+    border: 1px solid var(--c-line); border-radius: 999px;
+    background: #fff; font-size: 0.9rem; text-decoration: none;
+  }
+  .dp-related a:hover { border-color: var(--c-primary); color: var(--c-primary); }
+  .dp-back { margin-top: 2rem; }
+</style>

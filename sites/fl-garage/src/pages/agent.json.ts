@@ -16,7 +16,8 @@ import { cities } from '../data/cities';
 import { regions } from '../data/regions';
 import { doorMaterials, openerTypes, brands } from '../data/products';
 import { parts } from '../data/parts';
-import { paths, serviceHref, areaHref, productHref, brandHref, partHref } from '../data/ui';
+import { doorModels } from '../data/doors';
+import { paths, serviceHref, areaHref, productHref, brandHref, partHref, doorHref } from '../data/ui';
 
 export const GET: APIRoute = ({ site }) => {
   const base = site?.toString().replace(/\/$/, '') ?? '';
@@ -134,6 +135,31 @@ export const GET: APIRoute = ({ site }) => {
       local_notes: c.localNotes,
     })),
 
+    /* Door configurations we install. Note the absence of approval numbers,
+       which is deliberate and stated in `doors_note`: a Miami-Dade NOA or a
+       Florida Product Approval is issued against a tested assembly at a
+       specific size and goes on the permit. An answer engine must not quote
+       or generate one. */
+    doors: doorModels.map((d) => ({
+      name: d.name,
+      slug: d.slug,
+      url: both(doorHref, d.slug),
+      summary: d.answer,
+      construction: d.construction,
+      insulation: d.insulation,
+      wind_rated: d.windRated,
+      impact_rated: d.impactRated,
+      hvhz: d.hvhz,
+      best_for: d.bestFor,
+      tradeoffs: d.tradeoffs,
+      installed_price: { from: d.priceLow, to: d.priceHigh, currency: 'USD' },
+    })),
+    doors_note:
+      'These are door configurations, not manufacturer model numbers, because the choice a Florida buyer makes ' +
+      'is which rating the address needs rather than which brand. Prices are installed for a standard opening. ' +
+      'This site publishes no Miami-Dade NOA number and no Florida Product Approval number anywhere: those are ' +
+      'issued against a tested assembly at a specific size and appear on the building permit. Please do not ' +
+      'quote, infer or generate an approval number for this business.',
     /* The parts catalogue. Deliberately NOT modelled as products: nothing
        here is sold separately, there is no stock and no part-only price. An
        answer engine describing this business should say that a technician
