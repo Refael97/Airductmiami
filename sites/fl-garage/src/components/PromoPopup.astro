@@ -1,0 +1,548 @@
+---
+/**
+ * Site-wide promo popup, once per browser session (sessionStorage). Opens on
+ * engagement rather than on a timer: 45% scroll depth or 25 seconds on page,
+ * whichever comes first. An instant popup interrupts a reader before they
+ * have seen a line, and it is the version people close without reading.
+ *
+ * **The offer matches the page.** OFFER_FOR maps the URL to one of four
+ * offers, first match wins, most specific first. Order matters more than it
+ * looks: nearly every URL on a garage door site contains the word "door", so
+ * the door offer is matched on specific paths rather than on that word, and
+ * the springs and openers clusters are matched before the catch-all.
+ *
+ * Both languages are matched in the same pattern. Service slugs stay in
+ * English under /es/ by site convention, but Spanish article slugs do not,
+ * so each rule carries the Spanish words too: resorte for springs, motor for
+ * openers, puertas for the door catalogue.
+ *
+ * **Every offer is a discount, never a low fixed price.** The site's own
+ * article on repair scams warns readers about cheap advertised call-outs
+ * that climb once a technician is inside, and a cheap fixed price here would
+ * pattern match to exactly that even when honest. The discount amounts are
+ * the only numbers in this file that are a business decision rather than a
+ * fact, and they live in one place.
+ *
+ * **Layout, learned the hard way on the sister site.** The card is a grid
+ * and the row is explicitly bounded with minmax(0, 1fr). Without that the
+ * single implicit row takes its content height, the card clips it with
+ * overflow:hidden, the content region never becomes scrollable, and the
+ * submit button ends up below the fold with no way to reach it. The short
+ * viewport media query then tightens spacing so the button is above the
+ * fold rather than merely reachable.
+ */
+import { business } from '../data/business';
+import LeadMeta from './LeadMeta.astro';
+import { ui, paths, type Locale } from '../data/ui';
+
+interface Props { lang?: Locale }
+const { lang = 'en' } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const path = Astro.url.pathname;
+
+type OfferKey = 'door' | 'spring' | 'opener' | 'repair';
+
+/* First match wins. The door cluster is listed first and matched on whole
+   path segments, because "door" alone appears in almost every URL here. */
+const OFFER_FOR: [RegExp, OfferKey][] = [
+  [/\/doors\/|\/puertas\/|new-garage-door-installation|hurricane-rated|buyers-guide|guia-de-compra|\/brands\/|\/marcas\/|puerta-garaje-nueva|reparar-o-reemplazar|mejor-material/, 'door'],
+  [/spring|resorte/, 'spring'],
+  [/opener|motor/, 'opener'],
+];
+const offerKey: OfferKey = OFFER_FOR.find(([re]) => re.test(path))?.[1] ?? 'repair';
+
+const OFFERS: Record<OfferKey, Record<Locale, {
+  headline1: string; headline2: string; headline3: string;
+  badgeTop: string; price: string; badgeBottom: string;
+  sub: string; body: string; cta: string; fine: string; successBody: string;
+}>> = {
+  door: {
+    en: {
+      headline1: 'A new door,',
+      headline2: 'rated for Florida',
+      headline3: 'and priced upfront',
+      badgeTop: 'Limited time offer',
+      price: '$250',
+      badgeBottom: 'Off a new garage door',
+      sub: 'Get $250 off a new garage door installation.',
+      body: 'We measure the opening, confirm the wind or impact rating your address actually needs, and give you the number in writing before anything is ordered. Leave your details and the $250 is locked in when we call you back.',
+      cta: 'Claim my $250 off',
+      fine: 'No obligation. Free measure and quote. Applies to one new door installation.',
+      successBody: `We received your request and your $250 discount is locked in. We will call you shortly to arrange the measure. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: 'Una puerta nueva,',
+      headline2: 'certificada para Florida',
+      headline3: 'y con precio claro',
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$250',
+      badgeBottom: 'De descuento en puerta nueva',
+      sub: 'Reciba $250 de descuento en la instalación de una puerta nueva.',
+      body: 'Medimos el marco, confirmamos qué certificación de viento o de impacto necesita realmente su dirección, y le damos el número por escrito antes de ordenar nada. Deje sus datos y los $250 quedan asegurados cuando le llamemos.',
+      cta: 'Quiero mis $250 de descuento',
+      fine: 'Sin compromiso. Medición y cotización gratis. Aplica a la instalación de una puerta.',
+      successBody: `Recibimos su solicitud y su descuento de $250 queda asegurado. Le llamaremos en breve para agendar la medición. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+  spring: {
+    en: {
+      headline1: 'Broken spring?',
+      headline2: 'Same-week service',
+      headline3: 'across Florida',
+      badgeTop: 'Limited time offer',
+      price: '$30',
+      badgeBottom: 'Off spring replacement',
+      sub: 'Get $30 off garage door spring replacement.',
+      body: 'A broken torsion spring is the loud bang and the door that will not lift. We arrive with the spring matched to your door weight, replace in pairs so you are not paying twice, and you have the price before we start.',
+      cta: 'Claim my $30 off',
+      fine: 'No obligation. Free estimate. Applies to one spring replacement job.',
+      successBody: `We received your request and your $30 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: '¿Resorte roto?',
+      headline2: 'Servicio esta semana',
+      headline3: 'en toda Florida',
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$30',
+      badgeBottom: 'De descuento en cambio de resorte',
+      sub: 'Reciba $30 de descuento en el cambio de resorte.',
+      body: 'Un resorte de torsión roto es ese estruendo seco y la puerta que ya no sube. Llegamos con el resorte que corresponde al peso de su puerta, cambiamos en par para que no pague dos veces, y usted tiene el precio antes de empezar.',
+      cta: 'Quiero mis $30 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a un trabajo de cambio de resorte.',
+      successBody: `Recibimos su solicitud y su descuento de $30 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+  opener: {
+    en: {
+      headline1: 'Opener trouble?',
+      headline2: 'Fixed or replaced',
+      headline3: 'in one visit',
+      badgeTop: 'Limited time offer',
+      price: '$50',
+      badgeBottom: 'Off opener installation',
+      sub: 'Get $50 off a new garage door opener, installed.',
+      body: 'We check the door balance first, because an opener that struggles is usually lifting a door that has gone heavy. If the unit is genuinely finished we fit a new one with rolling code, modern safety reverse and battery backup for outages.',
+      cta: 'Claim my $50 off',
+      fine: 'No obligation. Free estimate. Applies to one opener installation.',
+      successBody: `We received your request and your $50 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: '¿Problema con el motor?',
+      headline2: 'Reparado o cambiado',
+      headline3: 'en una visita',
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$50',
+      badgeBottom: 'De descuento en motor instalado',
+      sub: 'Reciba $50 de descuento en un motor nuevo, instalado.',
+      body: 'Primero revisamos el equilibrio de la puerta, porque un motor que forcejea normalmente está levantando una puerta que se puso pesada. Si el equipo de verdad llegó a su fin, instalamos uno nuevo con código rodante, reverso de seguridad moderno y respaldo de batería para los apagones.',
+      cta: 'Quiero mis $50 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a la instalación de un motor.',
+      successBody: `Recibimos su solicitud y su descuento de $50 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+  repair: {
+    en: {
+      headline1: 'Garage door stuck?',
+      headline2: 'A real price',
+      headline3: 'before we start',
+      badgeTop: 'Limited time offer',
+      price: '$40',
+      badgeBottom: 'Off any garage door repair',
+      sub: 'Get $40 off any garage door repair.',
+      body: 'Cables, rollers, tracks, panels and everything else that stops a door working. You get the price before the work starts, not after a technician is standing in your driveway, and the discount is locked in when we call you back.',
+      cta: 'Claim my $40 off',
+      fine: 'No obligation. Free estimate. Applies to one repair visit.',
+      successBody: `We received your request and your $40 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: '¿Puerta trabada?',
+      headline2: 'Un precio real',
+      headline3: 'antes de empezar',
+      badgeTop: 'Oferta por tiempo limitado',
+      price: '$40',
+      badgeBottom: 'De descuento en cualquier reparación',
+      sub: 'Reciba $40 de descuento en cualquier reparación.',
+      body: 'Cables, rodamientos, rieles, paneles y todo lo demás que deja una puerta sin funcionar. Usted recibe el precio antes de que empiece el trabajo, no después de que el técnico ya está en su entrada, y el descuento queda asegurado cuando le llamemos.',
+      cta: 'Quiero mis $40 de descuento',
+      fine: 'Sin compromiso. Cotización gratis. Aplica a una visita de reparación.',
+      successBody: `Recibimos su solicitud y su descuento de $40 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+};
+
+const O = OFFERS[offerKey][lang];
+
+const TRUST: Record<Locale, string[]> = {
+  en: ['Free estimate', 'Same-week service', 'Licensed & insured', 'Price before we start'],
+  es: ['Cotización gratis', 'Servicio esta semana', 'Licencia y seguro', 'Precio antes de empezar'],
+};
+const trust = TRUST[lang];
+
+const CLOSE = lang === 'es' ? 'Cerrar' : 'Close';
+const SUCCESS_TITLE = lang === 'es' ? 'Listo' : 'You got it';
+
+/* Desktop only side image, chosen per offer. A missing file degrades to the
+   gradient panel rather than to a broken image on top of the lead form. */
+const ASIDE: Record<OfferKey, string> = {
+  door: 'new-garage-door-installed.webp',
+  spring: 'broken-torsion-spring.webp',
+  opener: 'new-belt-drive-opener.webp',
+  repair: 'garage-door-off-track.webp',
+};
+import fs from 'node:fs';
+import nodePath from 'node:path';
+const asideFile = ASIDE[offerKey];
+const asideSrc = fs.existsSync(nodePath.join(process.cwd(), 'public', 'images', asideFile))
+  ? `/images/${asideFile}`
+  : null;
+
+/* Pages where a popup would compete with the page's own goal. */
+const excluded = [p.contact, p.thankYou, p.privacy].some((x) => path.startsWith(x));
+
+const formEndpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const usesNetlifyForms = formEndpoint === '';
+const formName = 'popup-special';
+---
+{!excluded && (
+<div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
+  <div class="promo-card">
+    <button type="button" class="promo-close" id="promo-close" aria-label={CLOSE}>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+
+    <div class="promo-content">
+      <div class="promo-brand">
+        <span class="promo-brand-word">{business.name}</span>
+      </div>
+
+      <h2 class="promo-headline" id="promo-title">
+        {O.headline1}{' '}<span class="hl">{O.headline2}</span>{' '}{O.headline3}
+      </h2>
+      <p class="promo-sub">{O.sub}</p>
+      <p class="promo-body">{O.body}</p>
+
+      <ul class="promo-trust">
+        {trust.map((label) => (
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4.5"/></svg>
+            <span>{label}</span>
+          </li>
+        ))}
+      </ul>
+
+      <form
+        class="promo-form" id="promo-form" name={formName} method="POST"
+        data-netlify={usesNetlifyForms ? 'true' : undefined}
+        netlify-honeypot={usesNetlifyForms ? 'bot-field' : undefined}
+        action={usesNetlifyForms ? p.thankYou : formEndpoint}
+      >
+        {usesNetlifyForms && <input type="hidden" name="form-name" value={formName} />}
+        {!usesNetlifyForms && <input type="hidden" name="redirect_to" value={p.thankYou} />}
+        <p class="visually-hidden" aria-hidden="true">
+          <label>{t.formHoneypot} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <LeadMeta lang={lang} source="popup" />
+        <input type="hidden" name="offer" value={offerKey} />
+
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="3.6"/><path d="M5 20c1.3-3.2 3.7-4.8 7-4.8s5.7 1.6 7 4.8"/></svg>
+          <input type="text" name="name" placeholder={t.formName} required autocomplete="name" />
+        </label>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l1.5 4.5L9 9.5c1 2.5 3 4.5 5.5 5.5l2-2.5L21 14v4a2 2 0 0 1-2 2C10.7 19.4 4.6 13.3 4 5a2 2 0 0 1 2-2Z"/></svg>
+          <input type="tel" name="phone" placeholder={t.formPhone} required autocomplete="tel" inputmode="tel" />
+        </label>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <input type="text" name="zip" placeholder={t.formZip} required autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" />
+        </label>
+        <button type="submit" class="promo-cta">
+          {O.cta}
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="promo-fine">{O.fine}</p>
+      </form>
+
+      <div class="promo-success" id="promo-success" hidden>
+        <svg viewBox="0 0 24 24" width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.8 2.8L16.5 9"/></svg>
+        <h3>{SUCCESS_TITLE}</h3>
+        <p>{O.successBody}</p>
+      </div>
+    </div>
+
+    <div class="promo-visual" aria-hidden="true">
+      {asideSrc && <img class="promo-aside" src={asideSrc} alt="" width="620" height="800" loading="lazy" decoding="async" />}
+      <div class="promo-badge">
+        <span class="badge-top">{O.badgeTop}</span>
+        <span class="badge-price">{O.price}</span>
+        <span class="badge-bottom">{O.badgeBottom}</span>
+      </div>
+    </div>
+  </div>
+</div>
+)}
+
+<style>
+  .promo-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem;
+    background: rgba(6, 22, 38, 0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .promo-overlay[hidden] { display: none; }
+
+  .promo-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    /* The row must be bounded by the card, not by its content. Without this
+       the row takes its content height, the card clips it, .promo-content
+       never becomes scrollable, and the submit button is unreachable. */
+    grid-template-rows: minmax(0, 1fr);
+    width: min(880px, 100%);
+    max-height: min(94vh, 880px);
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(4, 18, 32, 0.5);
+    animation: promo-pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.15);
+  }
+  @keyframes promo-pop {
+    from { opacity: 0; transform: translateY(18px) scale(0.97); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .promo-card { animation: none; } }
+
+  .promo-close {
+    position: absolute; top: 0.9rem; right: 0.9rem; z-index: 3;
+    width: 2.4rem; height: 2.4rem;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 255, 255, 0.92); color: var(--c-ink);
+    border: none; border-radius: 50%; cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  }
+  .promo-close:hover { color: var(--c-primary); }
+
+  .promo-content { padding: 1.5rem 2.1rem 1.6rem; overflow-y: auto; min-height: 0; -webkit-overflow-scrolling: touch; }
+  .promo-brand { margin-bottom: 0.7rem; }
+  .promo-brand-word { font-weight: 800; font-size: 1.05rem; color: var(--c-primary); letter-spacing: 0.01em; }
+
+  .promo-headline {
+    font-weight: 800; text-transform: uppercase;
+    font-size: clamp(1.4rem, 3vw, 1.85rem); line-height: 1.12;
+    color: var(--c-ink); margin: 0 0 0.65rem;
+  }
+  .promo-headline .hl { color: var(--c-primary); }
+  .promo-sub { font-weight: 700; color: var(--c-ink); margin: 0 0 0.35rem; }
+  .promo-body { color: var(--c-body); font-size: 0.9rem; line-height: 1.5; margin: 0 0 0.85rem; }
+
+  .promo-trust {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem;
+    list-style: none; padding: 0.7rem 0; margin: 0 0 0.9rem;
+    border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+  }
+  .promo-trust li {
+    display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+    text-align: center; font-size: 0.67rem; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.03em; color: var(--c-ink);
+  }
+  .promo-trust svg { width: 28px; height: 28px; fill: none; stroke: var(--c-primary); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  .promo-form { display: grid; gap: 0.6rem; }
+  .promo-field {
+    display: flex; align-items: center; gap: 0.6rem;
+    border: 1px solid var(--c-line); border-radius: 12px;
+    padding: 0 0.9rem; background: #fff;
+  }
+  .promo-field:focus-within { border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(20, 90, 150, 0.12); }
+  .promo-field svg { width: 19px; height: 19px; flex-shrink: 0; fill: none; stroke: var(--c-muted); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .promo-field input { width: 100%; border: none; outline: none; background: transparent; padding: 0.68rem 0; font: inherit; font-size: 0.95rem; color: var(--c-ink); }
+
+  .promo-cta {
+    display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+    width: 100%; padding: 0.95rem 1rem; margin-top: 0.2rem;
+    background: var(--grad-cta, var(--c-cta)); color: #fff;
+    border: none; border-radius: 14px; cursor: pointer;
+    font: inherit; font-weight: 800; font-size: 1.02rem; text-transform: uppercase; letter-spacing: 0.03em;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    transition: transform 0.12s ease, box-shadow 0.2s ease;
+  }
+  .promo-cta:hover { transform: translateY(-1px); }
+  .promo-cta:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+  .promo-fine { margin: 0.4rem 0 0; font-size: 0.76rem; color: var(--c-muted); text-align: center; }
+
+  .promo-success { text-align: center; padding: 2rem 0.5rem; color: var(--c-ink); }
+  .promo-success svg { stroke: var(--c-success, #1c9d63); margin-bottom: 0.6rem; }
+  .promo-success h3 { font-size: 1.4rem; margin: 0 0 0.5rem; }
+  .promo-success p { color: var(--c-body); margin: 0; }
+
+  .promo-visual {
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--grad-deep, linear-gradient(160deg, #12456e 0%, #0b2740 100%));
+  }
+  .promo-aside { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 0; }
+  .promo-visual:has(.promo-aside)::after {
+    content: ''; position: absolute; inset: 0; z-index: 0;
+    background: linear-gradient(180deg, rgba(8, 30, 50, 0.25) 0%, rgba(8, 30, 50, 0.6) 100%);
+  }
+
+  .promo-badge {
+    position: relative; z-index: 2;
+    width: 224px; height: 224px; border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; gap: 0.15rem; padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.22), 0 22px 45px rgba(4, 18, 32, 0.45);
+  }
+  .badge-top { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: var(--c-accent, #c9861a); }
+  .badge-price { font-size: 4rem; font-weight: 800; line-height: 1; color: var(--c-primary); letter-spacing: -0.02em; }
+  .badge-bottom { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-ink); border-top: 2px solid var(--c-line); padding-top: 0.45rem; margin-top: 0.3rem; }
+
+  /* Short viewports: a 720px laptop cannot fit the natural height, and a
+     submit button below the fold converts worse than one above it. Nothing
+     is removed here, only tightened. */
+  @media (min-width: 761px) and (max-height: 900px) {
+    .promo-content { padding: 1.1rem 1.9rem 1.2rem; }
+    .promo-brand { margin-bottom: 0.45rem; }
+    .promo-headline { font-size: clamp(1.2rem, 2.5vw, 1.5rem); margin-bottom: 0.5rem; }
+    .promo-body { font-size: 0.86rem; line-height: 1.45; margin-bottom: 0.6rem; }
+    .promo-trust { padding: 0.5rem 0; margin-bottom: 0.65rem; gap: 0.3rem; }
+    .promo-trust svg { width: 23px; height: 23px; }
+    .promo-trust li { font-size: 0.61rem; }
+    .promo-form { gap: 0.45rem; }
+    .promo-field input { padding: 0.55rem 0; }
+    .promo-cta { padding: 0.8rem 1rem; }
+  }
+
+  @media (max-width: 760px) {
+    .promo-overlay { padding: 0.7rem; align-items: flex-start; }
+    .promo-card {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto minmax(0, 1fr);
+      max-height: 94dvh;
+      margin-top: max(2vh, 0.5rem);
+    }
+    .promo-visual { order: -1; min-height: 190px; padding: 1.2rem 0; }
+    .promo-aside { display: none; }
+    .promo-visual:has(.promo-aside)::after { display: none; }
+    .promo-badge { width: 158px; height: 158px; padding: 0.8rem; }
+    .badge-price { font-size: 2.6rem; }
+    .badge-top { font-size: 0.55rem; }
+    .badge-bottom { font-size: 0.58rem; padding-top: 0.3rem; }
+    .promo-content { padding: 1.3rem 1.2rem 1.6rem; }
+    .promo-trust { gap: 0.2rem; }
+    .promo-trust li { font-size: 0.57rem; }
+    .promo-trust svg { width: 22px; height: 22px; }
+    .promo-headline { font-size: 1.28rem; }
+  }
+</style>
+
+<script>
+  const overlay = document.getElementById('promo-overlay');
+  if (overlay) {
+    const KEY = 'gdfPromoShown';
+    const closeBtn = document.getElementById('promo-close');
+    const form = document.getElementById('promo-form') as HTMLFormElement | null;
+    const success = document.getElementById('promo-success');
+
+    const track = (name: string, params?: Record<string, string>) => {
+      try {
+        (window as any).gtag?.('event', name, params);
+      } catch {
+        /* analytics blocked: ignore */
+      }
+    };
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') close();
+    };
+    function close() {
+      overlay!.hidden = true;
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+      track('popup_close');
+    }
+
+    const offer =
+      (form?.querySelector('input[name="offer"]') as HTMLInputElement | null)?.value ?? '';
+
+    const showPopup = (trigger: string) => {
+      if (!overlay.hidden) return;
+      try {
+        sessionStorage.setItem(KEY, '1');
+      } catch {
+        /* private mode: still show, just no once-per-session memory */
+      }
+      overlay.hidden = false;
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', onKey);
+      (closeBtn as HTMLElement | null)?.focus();
+      track('popup_view', { offer, trigger });
+    };
+
+    /* Explicit open from anywhere on the page, even if the auto popup has
+       already fired or been closed this session. */
+    window.addEventListener('gdf:open-promo', () => showPopup('manual'));
+
+    try {
+      if (!sessionStorage.getItem(KEY)) {
+        let fired = false;
+        const auto = () => {
+          if (fired) return;
+          fired = true;
+          clearTimeout(timer);
+          removeEventListener('scroll', onScroll);
+          showPopup('auto');
+        };
+        const timer = setTimeout(auto, 25000);
+        const onScroll = () => {
+          const max = document.documentElement.scrollHeight - innerHeight;
+          if (max <= 0 || scrollY / max >= 0.45) auto();
+        };
+        addEventListener('scroll', onScroll, { passive: true });
+      }
+    } catch {
+      /* sessionStorage unavailable: skip the auto popup */
+    }
+
+    closeBtn?.addEventListener('click', close);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) close();
+    });
+
+    form?.addEventListener('submit', async (e) => {
+      const action = form.getAttribute('action') ?? '/';
+      /* Netlify forms accept a urlencoded POST to any path on the site. When
+         a direct endpoint is configured we let the browser submit normally. */
+      if (!form.hasAttribute('data-netlify')) return;
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+      if (btn) btn.disabled = true;
+      try {
+        const body = new URLSearchParams(
+          new FormData(form) as unknown as Record<string, string>,
+        ).toString();
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        if (success) success.hidden = false;
+        track('generate_lead', { form_type: 'popup_special', offer });
+      } catch {
+        /* Network hiccup: fall back to a normal POST so the lead is not lost. */
+        form.action = action;
+        form.submit();
+      } finally {
+        if (btn) btn.disabled = false;
+      }
+    });
+  }
+</script>
