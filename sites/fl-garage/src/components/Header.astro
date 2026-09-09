@@ -168,7 +168,10 @@ const orderedRegions = [...regions].sort((a, b) => a.order - b.order);
       <a href={p.faq} class="nav-link nav-solo">{t.navFaq}</a>
     </nav>
 
-    <a href={p.contact} class="btn btn-accent header-cta">{t.headerCta}</a>
+    {/* Opens the booking modal, so nobody has to travel to a form. The
+        href is the fallback: with no script this is still a plain link to
+        the contact page, where the same four steps are waiting. */}
+    <a href={p.contact} class="btn btn-accent header-cta" data-open-booking>{t.headerCta}</a>
   </div>
 </header>
 

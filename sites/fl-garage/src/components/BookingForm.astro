@@ -1,0 +1,214 @@
+---
+/**
+ * The booking form, in four steps, used in two places: inline on the contact
+ * page and inside the modal that opens from anywhere on the site.
+ *
+ * This component renders markup only. All behaviour lives in BookingScript,
+ * which BaseLayout includes once per page and which enhances every
+ * `form[data-booking]` it finds. That is what lets the same form exist twice
+ * on one page without two copies of the logic, two sets of spam guards, or
+ * two chances for them to drift apart.
+ *
+ * Every id is prefixed, because two copies of a form on one page with the
+ * same ids means `label[for]` points at the wrong field and the browser
+ * focuses the invisible one when validation fails.
+ *
+ * Without JavaScript this is one long form with every step open, a plain
+ * submit button, and the two select fields in `.wz-fallback` standing in for
+ * the appointment grid. It posts and produces a usable lead. Everything the
+ * script adds is on top of that, never instead of it.
+ */
+import LeadMeta from './LeadMeta.astro';
+import { business } from '../data/business';
+import { services } from '../data/services';
+import { regions } from '../data/regions';
+import { ui, type Locale } from '../data/ui';
+import { svc, region as regionOf, copy } from '../lib/i18n';
+
+interface Props {
+  lang: Locale;
+  /** Unique per instance on a page. Prefixes every id. */
+  idPrefix: string;
+  /** Which surface produced the lead. Reaches the pipeline in `source`. */
+  source: string;
+  /** Where to send the visitor after a successful post. */
+  thankYou: string;
+}
+const { lang, idPrefix: q, source, thankYou } = Astro.props;
+const t = ui[lang];
+const c = copy(lang).contact;
+
+const serviceOptions = services.map((s) => svc(lang, s));
+const regionOptions = [...regions].sort((a, b) => a.order - b.order).map((r) => regionOf(lang, r));
+
+const jobTypes = [
+  { value: 'repair', file: 'garage-door-parts-overview.webp', title: t.wizJobRepair, note: t.wizJobRepairNote },
+  { value: 'new_door', file: 'new-garage-door-installed.webp', title: t.wizJobDoor, note: t.wizJobDoorNote },
+  { value: 'opener', file: 'opener-motor-unit.webp', title: t.wizJobOpener, note: t.wizJobOpenerNote },
+];
+
+const formEndpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+const usesNetlifyForms = formEndpoint === '';
+const formName = 'quote';
+---
+<form
+  name={formName}
+  method="POST"
+  data-booking
+  data-prefix={q}
+  data-netlify={usesNetlifyForms ? 'true' : undefined}
+  netlify-honeypot={usesNetlifyForms ? 'bot-field' : undefined}
+  action={usesNetlifyForms ? thankYou : formEndpoint}
+  class="quote-form"
+>
+  {usesNetlifyForms && <input type="hidden" name="form-name" value={formName} />}
+  {!usesNetlifyForms && <input type="hidden" name="redirect_to" value={thankYou} />}
+  <p class="hp">
+    <label>{t.formHoneypot} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+  </p>
+  <input type="hidden" name="loaded_at" class="wz-loaded-at" value="" />
+  <LeadMeta source={source} lang={lang} />
+
+  {/* Filled by the script when a slot is chosen. Hidden inputs cannot carry
+      `required`, so step two validates this itself. */}
+  <input type="hidden" name="appointment" class="wz-appt" value="" />
+  <input type="hidden" name="appointment_label" class="wz-appt-label" value="" />
+
+  <ol class="wz-rail" hidden>
+    <li><span class="wz-num">1</span><span class="wz-lbl">{t.wizStep1}</span></li>
+    <li><span class="wz-num">2</span><span class="wz-lbl">{t.wizStep2}</span></li>
+    <li><span class="wz-num">3</span><span class="wz-lbl">{t.wizStep3}</span></li>
+    <li><span class="wz-num">4</span><span class="wz-lbl">{t.wizStep4}</span></li>
+  </ol>
+
+  {/* ---- 1. what and where ---- */}
+  <div class="wz-step" data-step="1">
+    <p class="wz-legend" id={`${q}-job-legend`}>{t.wizJobLegend} <span aria-hidden="true">*</span></p>
+    <div class="wz-jobs" role="radiogroup" aria-labelledby={`${q}-job-legend`}>
+      {jobTypes.map((j) => (
+        <label class="wz-job">
+          <input type="radio" name="job_type" value={j.value} required />
+          <img src={`/images/${j.file}`} width="1200" height="900" alt="" loading="lazy" decoding="async" />
+          <span class="wz-job-title">{j.title}</span>
+          <span class="wz-job-note">{j.note}</span>
+        </label>
+      ))}
+    </div>
+
+    <div class="field">
+      <label for={`${q}-zip`}>{t.formZip} <span aria-hidden="true">*</span></label>
+      <input
+        type="text" id={`${q}-zip`} name="zip" required
+        inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+        title={t.formZipTitle}
+        autocomplete="postal-code"
+      />
+    </div>
+  </div>
+
+  {/* ---- 2. when ---- */}
+  <div class="wz-step" data-step="2">
+    <p class="wz-legend">{t.wizSlotsHeading} <span aria-hidden="true">*</span></p>
+
+    {/* The script builds the grid from the visitor's current time in Florida
+        every time this step opens, so a page left open overnight cannot
+        offer a window that has already passed. */}
+    <div class="wz-slots" hidden>
+      <button type="button" class="wz-asap" data-slot="ASAP emergency">
+        <span class="wz-asap-title">{t.wizAsap}</span>
+        <span class="wz-asap-note">{t.wizAsapNote}</span>
+      </button>
+      <div class="wz-days"></div>
+      <p class="wz-slots-none" hidden>{t.wizSlotsNone}</p>
+      <p class="wz-note">{t.wizSlotsNote}</p>
+    </div>
+
+    {/* No script, no grid. These two selects keep the form usable and are
+        removed by the script the moment it runs. */}
+    <div class="wz-fallback">
+      <div class="field-row">
+        <div class="field">
+          <label for={`${q}-urgency`}>{t.formUrgency}</label>
+          <select id={`${q}-urgency`} name="urgency">
+            {c.urgency.map((u, i) => <option value={u} selected={i === 1}>{u}</option>)}
+          </select>
+        </div>
+        <div class="field">
+          <label for={`${q}-window`}>{t.wizWindow}</label>
+          <select id={`${q}-window`} name="window">
+            {c.windows.map((w, i) => <option value={w} selected={i === 3}>{w}</option>)}
+          </select>
+        </div>
+      </div>
+      <p class="wz-note">{t.wizWindowNote}</p>
+    </div>
+  </div>
+
+  {/* ---- 3. who ---- */}
+  <div class="wz-step" data-step="3">
+    <div class="field-row">
+      <div class="field">
+        <label for={`${q}-name`}>{t.formName} <span aria-hidden="true">*</span></label>
+        <input type="text" id={`${q}-name`} name="name" required autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for={`${q}-phone`}>{t.formPhone} <span aria-hidden="true">*</span></label>
+        <input type="tel" id={`${q}-phone`} name="phone" required autocomplete="tel" />
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for={`${q}-email`}>{t.formEmail}</label>
+        <input type="email" id={`${q}-email`} name="email" autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for={`${q}-area`}>{t.formArea}</label>
+        <select id={`${q}-area`} name="area">
+          <option value="">{t.formAreaSelect}</option>
+          {regionOptions.map((r) => <option value={r.name}>{r.name}</option>)}
+          <option value="Other">{t.formAreaOther}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for={`${q}-symptom`}>{t.formSymptom}</label>
+        <select id={`${q}-symptom`} name="symptom">
+          {c.symptoms.map((s) => <option value={s}>{s}</option>)}
+        </select>
+      </div>
+      <div class="field">
+        <label for={`${q}-service`}>{t.formService}</label>
+        <select id={`${q}-service`} name="service">
+          <option value="Not sure">{t.formServiceNotSure}</option>
+          {serviceOptions.map((s) => <option value={s.name}>{s.name}</option>)}
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for={`${q}-message`}>{t.formMessage}</label>
+      <textarea id={`${q}-message`} name="message" rows="3" placeholder={t.formMessagePlaceholder}></textarea>
+    </div>
+  </div>
+
+  {/* ---- 4. confirm ---- */}
+  <div class="wz-step" data-step="4">
+    <div class="wz-review">
+      <h2 class="wz-review-h">{t.wizReviewHeading}</h2>
+      <dl class="wz-review-list"></dl>
+    </div>
+    <p class="wz-confirm-note">{t.wizConfirmNote}</p>
+    <button type="submit" class="btn btn-accent btn-lg full">{t.wizBookCta}</button>
+    <p class="form-note">{t.formNote}</p>
+  </div>
+
+  <p class="form-error wz-error" role="alert" hidden></p>
+
+  <div class="wz-nav" hidden>
+    <button type="button" class="btn btn-outline" data-wz="back">{t.wizBack}</button>
+    <button type="button" class="btn btn-accent" data-wz="next">{t.wizNext}</button>
+  </div>
+</form>

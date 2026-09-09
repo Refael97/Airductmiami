@@ -365,6 +365,21 @@ export interface Strings {
   wizStep1: string;
   wizStep2: string;
   wizStep3: string;
+  wizStep4: string;
+  wizSlotsHeading: string;
+  wizSlotsNote: string;
+  wizSlotsNone: string;
+  wizAsap: string;
+  wizAsapNote: string;
+  wizToday: string;
+  wizTomorrow: string;
+  wizPickSlot: string;
+  wizApptLabel: string;
+  wizConfirmNote: string;
+  wizBookCta: string;
+  wizModalTitle: string;
+  wizModalLead: string;
+  wizClose: string;
   wizNext: string;
   wizBack: string;
   wizJobLegend: string;
@@ -415,6 +430,10 @@ export interface Strings {
   privacyRemoval: (email: string) => string;
   privacyChoices: (email: string) => string;
   privacyContact: (email: string) => string;
+  /* One statement about imagery, in one place, instead of a disclaimer
+     under every grid of pictures on the site. */
+  imageryHeading: string;
+  imageryText: string;
 
   // 404
   notFoundTitle: string;
@@ -715,9 +734,27 @@ export const ui: Record<Locale, Strings> = {
       'We use these details to quote your job and nothing else. No marketing lists, no sharing with third parties.',
     formHoneypot: 'Do not fill this in:',
     wizStepOf: (c, n) => `Step ${c} of ${n}`,
-    wizStep1: 'What you need',
-    wizStep2: 'What happened',
-    wizStep3: 'Where to reach you',
+    wizStep1: 'Service',
+    wizStep2: 'Appointment',
+    wizStep3: 'Your details',
+    wizStep4: 'Confirm',
+    wizSlotsHeading: 'Choose an arrival window',
+    wizSlotsNote:
+      'Two hour windows, in Florida time. We text you the technician name and a live arrival time on the morning of the visit.',
+    wizSlotsNone:
+      'Nothing left today. Call us and we will find you the first opening.',
+    wizAsap: 'As soon as possible',
+    wizAsapNote: 'Car trapped, door stuck open, or a spring that just went',
+    wizToday: 'Today',
+    wizTomorrow: 'Tomorrow',
+    wizPickSlot: 'Choose an arrival window to continue.',
+    wizApptLabel: 'Arrival window',
+    wizConfirmNote:
+      'Booking this holds the window. You get the price before any work starts, and nothing is charged until you have agreed it.',
+    wizBookCta: 'Book this appointment',
+    wizModalTitle: 'Book a technician',
+    wizModalLead: 'Four short steps. No call needed.',
+    wizClose: 'Close',
     wizNext: 'Next',
     wizBack: 'Back',
     wizJobLegend: 'What brings you here?',
@@ -807,6 +844,9 @@ export const ui: Record<Locale, Strings> = {
     privacyChoices: (email) =>
       `You can ask us what we hold about you, ask us to correct it, or ask us to delete it. Email ${email} and we will respond.`,
     privacyContact: (email) => `Questions about this policy go to ${email}.`,
+    imageryHeading: 'About the images on this site',
+    imageryText:
+      'Some photographs on this site are illustrations of the doors, parts and faults being described, created to show the reader what a component or a failure actually looks like. Others are photographs of real work. Nothing on this site is presented as a customer, a member of staff, a certificate or a record of a job we performed unless it is one.',
 
     notFoundTitle: 'Page not found',
     notFoundText: 'That page does not exist. The price list and the service pages are the fastest way back.',
@@ -1106,9 +1146,27 @@ export const ui: Record<Locale, Strings> = {
       'Usamos estos datos para cotizar su trabajo y nada más. Sin listas de marketing, sin compartir con terceros.',
     formHoneypot: 'No llene este campo:',
     wizStepOf: (c, n) => `Paso ${c} de ${n}`,
-    wizStep1: 'Qué necesita',
-    wizStep2: 'Qué pasó',
-    wizStep3: 'Dónde localizarlo',
+    wizStep1: 'Servicio',
+    wizStep2: 'Cita',
+    wizStep3: 'Sus datos',
+    wizStep4: 'Confirmar',
+    wizSlotsHeading: 'Elija una ventana de llegada',
+    wizSlotsNote:
+      'Ventanas de dos horas, en hora de Florida. La mañana de la visita le enviamos por mensaje el nombre del técnico y la hora de llegada real.',
+    wizSlotsNone:
+      'Hoy ya no queda nada. Llámenos y le buscamos el primer espacio disponible.',
+    wizAsap: 'Lo antes posible',
+    wizAsapNote: 'Carro atrapado, puerta trabada abierta o un resorte que acaba de romperse',
+    wizToday: 'Hoy',
+    wizTomorrow: 'Mañana',
+    wizPickSlot: 'Elija una ventana de llegada para continuar.',
+    wizApptLabel: 'Ventana de llegada',
+    wizConfirmNote:
+      'Al reservar queda apartada la ventana. Recibe el precio antes de que empiece cualquier trabajo, y no se cobra nada hasta que usted lo haya aceptado.',
+    wizBookCta: 'Reservar esta cita',
+    wizModalTitle: 'Agende un técnico',
+    wizModalLead: 'Cuatro pasos cortos. Sin llamar.',
+    wizClose: 'Cerrar',
     wizNext: 'Siguiente',
     wizBack: 'Atrás',
     wizJobLegend: '¿Qué lo trae por aquí?',
@@ -1198,6 +1256,9 @@ export const ui: Record<Locale, Strings> = {
     privacyChoices: (email) =>
       `Puede preguntarnos qué información tenemos sobre usted, pedir que la corrijamos o pedir que la eliminemos. Escriba a ${email} y le responderemos.`,
     privacyContact: (email) => `Las preguntas sobre esta política van a ${email}.`,
+    imageryHeading: 'Sobre las imágenes de este sitio',
+    imageryText:
+      'Algunas fotografías de este sitio son ilustraciones de las puertas, piezas y fallas que se describen, creadas para mostrarle al lector cómo se ve realmente un componente o una falla. Otras son fotografías de trabajos reales. Nada en este sitio se presenta como un cliente, un miembro del personal, un certificado o el registro de un trabajo que hayamos realizado a menos que lo sea.',
 
     notFoundTitle: 'Página no encontrada',
     notFoundText: 'Esa página no existe. La lista de precios y las páginas de servicios son el camino más rápido de regreso.',

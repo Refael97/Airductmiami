@@ -1,0 +1,413 @@
+---
+/**
+ * Behaviour for every booking form on the page.
+ *
+ * Included once by BaseLayout, and it enhances each `form[data-booking]` it
+ * finds, so the inline form on the contact page and the copy inside the modal
+ * share one implementation of the steps, the appointment grid, the validation
+ * and the spam guards.
+ *
+ * The appointment grid is the part worth reading twice.
+ *
+ * This is a statically built site, so anything computed at build time is
+ * frozen at the moment of the last deploy. A calendar built that way shows
+ * August to a visitor who arrives in September, which is the exact failure
+ * this has to avoid. So the grid is built in the browser, from the visitor's
+ * clock, every single time step two opens, and never cached: a page left open
+ * overnight rebuilds tomorrow's list before it is shown again.
+ *
+ * It is built in Florida time, not the visitor's. Someone browsing from
+ * California at 6pm their time is looking at 9pm in Miami, and the honest
+ * answer is that tonight is over. `Intl.DateTimeFormat` with an explicit
+ * timeZone is what gets that right, including across the DST changeover,
+ * without shipping a date library.
+ *
+ * Day arithmetic runs on noon UTC of each Florida calendar date. Adding
+ * 86,400,000ms to noon UTC always lands on noon UTC of the next calendar day,
+ * whatever any timezone does that night, which midnight cannot promise.
+ */
+import { business, scheduleDays } from '../data/business';
+import { ui, type Locale } from '../data/ui';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+
+/**
+ * Opening hours as a map from JavaScript weekday index to [openHour,
+ * closeHour], derived from the same `business.hours` the footer and the
+ * schema render. Deriving rather than restating means a change to the
+ * published hours changes the offered appointments in the same commit.
+ */
+const WEEKDAY_INDEX: Record<string, number> = {
+  Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6,
+};
+const hoursByDay: Record<number, [number, number]> = {};
+business.hours.forEach((block, i) => {
+  const open = Number(block.opens.split(':')[0]);
+  const close = Number(block.closes.split(':')[0]);
+  (scheduleDays[i] ?? []).forEach((day) => {
+    hoursByDay[WEEKDAY_INDEX[day]] = [open, close];
+  });
+});
+
+const strings = {
+  fill: t.errFill('%s'),
+  format: t.errFormat,
+  fast: t.errFast,
+  zip: t.errZip,
+  pitch: t.errPitch,
+  requiredField: t.requiredField,
+  pickJob: t.wizPickJob,
+  pickSlot: t.wizPickSlot,
+  today: t.wizToday,
+  tomorrow: t.wizTomorrow,
+  apptLabel: t.wizApptLabel,
+  jobLabel: t.wizJobLegend,
+};
+---
+<script
+  is:inline
+  define:vars={{
+    S: strings,
+    HOURS: hoursByDay,
+    TZ: business.timezone,
+    LOCALE: lang === 'es' ? 'es-419' : 'en-US',
+    lang,
+  }}
+>
+  (function () {
+    var forms = [].slice.call(document.querySelectorAll('form[data-booking]'));
+    if (!forms.length) return;
+
+    /* ---------------------------------------------------------------- */
+    /* Appointment windows                                              */
+    /* ---------------------------------------------------------------- */
+
+    var WINDOW_HOURS = 2;
+    /* Nobody can be at your house in ten minutes. Two hours of lead time is
+       what makes the first offered window one a technician can actually
+       make, which is the whole difference between a booking and a wish. */
+    var LEAD_HOURS = 2;
+    var DAYS_SHOWN = 4;
+    var DAY_MS = 86400000;
+
+    function partsInFlorida(date) {
+      var f = new Intl.DateTimeFormat('en-US', {
+        timeZone: TZ,
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', hour12: false,
+      });
+      var o = {};
+      f.formatToParts(date).forEach(function (p) { o[p.type] = p.value; });
+      /* Hour 24 is midnight in the hour12:false formatter of some engines. */
+      return {
+        y: +o.year, m: +o.month, d: +o.day,
+        hour: +o.hour % 24, minute: +o.minute,
+      };
+    }
+
+    function hourLabel(h) {
+      var suffix = h < 12 ? 'AM' : 'PM';
+      var display = h % 12 === 0 ? 12 : h % 12;
+      return display + suffix;
+    }
+
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+    /**
+     * Every bookable window from now to DAYS_SHOWN days out, as
+     * [{ heading, slots: [{ label, value }] }].
+     */
+    function buildDays() {
+      var now = partsInFlorida(new Date());
+      /* Noon UTC of today's Florida date. Safe to add whole days to. */
+      var cursor = Date.UTC(now.y, now.m - 1, now.d, 12);
+
+      /* The first window that is still honourable today. Round up so 10:05
+         plus two hours offers the 14:00 window, not the 12:00 one. */
+      var earliestToday = now.hour + LEAD_HOURS + (now.minute > 0 ? 1 : 0);
+
+      var dayFmt = new Intl.DateTimeFormat(LOCALE, {
+        timeZone: 'UTC', weekday: 'long', month: 'long', day: '2-digit', year: 'numeric',
+      });
+
+      var out = [];
+      for (var i = 0; i < DAYS_SHOWN + 3 && out.length < DAYS_SHOWN; i++) {
+        var day = new Date(cursor + i * DAY_MS);
+        var hours = HOURS[day.getUTCDay()];
+        if (!hours) continue;
+
+        /* Windows sit on even hours, so a 07:00 open starts the day at
+           08:00 and a 20:00 close ends it with the 18:00 window. */
+        var first = hours[0] % 2 === 0 ? hours[0] : hours[0] + 1;
+        var slots = [];
+        for (var h = first; h + WINDOW_HOURS <= hours[1]; h += WINDOW_HOURS) {
+          if (i === 0 && h < earliestToday) continue;
+          var date =
+            day.getUTCFullYear() + '-' + pad(day.getUTCMonth() + 1) + '-' + pad(day.getUTCDate());
+          slots.push({
+            label: hourLabel(h) + '-' + hourLabel(h + WINDOW_HOURS),
+            value: date + ' ' + pad(h) + ':00-' + pad(h + WINDOW_HOURS) + ':00 ' + TZ,
+          });
+        }
+        if (!slots.length) continue;
+
+        var name = dayFmt.format(day);
+        var heading = i === 0 ? S.today + ', ' + name : i === 1 ? S.tomorrow + ', ' + name : name;
+        out.push({ heading: heading, slots: slots });
+      }
+      return out;
+    }
+
+    /* ---------------------------------------------------------------- */
+    /* Spam guards, unchanged in substance from the single page form     */
+    /* ---------------------------------------------------------------- */
+
+    /* Florida ZIP codes run 32000 to 34999. Nothing outside that is in
+       our service area. */
+    function zipInArea(zip) {
+      var n = parseInt(String(zip).slice(0, 3), 10);
+      return !isNaN(n) && n >= 320 && n <= 349;
+    }
+
+    var PITCH = [
+      'seo', 'backlink', 'ranking', 'rankings', 'digital marketing',
+      'web design', 'website design', 'audit', 'visibility', 'leads for',
+      'crypto', 'guest post', 'link building', 'outreach',
+      'partnership opportunity', 'increase your sales', 'grow your business',
+      'quick call', 'minute call', 'chatgpt', 'ai seo',
+      'posicionamiento', 'marketing digital', 'diseno web', 'diseño web',
+    ];
+
+    /* Two or more means a sales pitch. One alone is allowed, so a customer
+       who happens to write "audit" or "call" is never blocked. */
+    function pitchScore(text) {
+      var t = (text || '').toLowerCase();
+      var hits = 0;
+      for (var i = 0; i < PITCH.length; i++) if (t.indexOf(PITCH[i]) !== -1) hits++;
+      return hits;
+    }
+
+    /* ---------------------------------------------------------------- */
+    /* One form                                                          */
+    /* ---------------------------------------------------------------- */
+
+    function enhance(form) {
+      var steps = [].slice.call(form.querySelectorAll('.wz-step'));
+      var rail = form.querySelector('.wz-rail');
+      var nav = form.querySelector('.wz-nav');
+      var box = form.querySelector('.wz-error');
+      if (!steps.length || !rail || !nav) return;
+
+      var at = 0;
+      var railItems = [].slice.call(rail.children);
+      var backBtn = nav.querySelector('[data-wz="back"]');
+      var nextBtn = nav.querySelector('[data-wz="next"]');
+      var slotsWrap = form.querySelector('.wz-slots');
+      var daysWrap = form.querySelector('.wz-days');
+      var noneMsg = form.querySelector('.wz-slots-none');
+      var fallback = form.querySelector('.wz-fallback');
+      var apptField = form.querySelector('.wz-appt');
+      var apptLabelField = form.querySelector('.wz-appt-label');
+      var reviewList = form.querySelector('.wz-review-list');
+      var loadedAt = form.querySelector('.wz-loaded-at');
+
+      rail.hidden = false;
+      nav.hidden = false;
+      if (loadedAt) loadedAt.value = String(Date.now());
+
+      /* The two selects only exist for the no-script case. Once we are here
+         they would be a second, contradictory answer to the same question. */
+      if (fallback) fallback.parentNode.removeChild(fallback);
+      if (slotsWrap) slotsWrap.hidden = false;
+
+      function say(message) {
+        if (!box) return;
+        box.textContent = message;
+        box.hidden = false;
+      }
+      function clearSay() { if (box) box.hidden = true; }
+
+      function renderSlots() {
+        if (!daysWrap) return;
+        daysWrap.textContent = '';
+        var days = buildDays();
+        if (noneMsg) noneMsg.hidden = days.length > 0;
+
+        days.forEach(function (day) {
+          var h = document.createElement('p');
+          h.className = 'wz-day-h';
+          h.textContent = day.heading;
+          daysWrap.appendChild(h);
+
+          var grid = document.createElement('div');
+          grid.className = 'wz-slot-grid';
+          day.slots.forEach(function (slot) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'wz-slot';
+            b.textContent = slot.label;
+            b.setAttribute('data-slot', slot.value);
+            b.setAttribute('data-label', day.heading + ' ' + slot.label);
+            grid.appendChild(b);
+          });
+          daysWrap.appendChild(grid);
+        });
+
+        /* A slot picked earlier may no longer exist after a rebuild. */
+        if (apptField && apptField.value) {
+          var still = form.querySelector('[data-slot="' + apptField.value + '"]');
+          if (still) still.classList.add('is-picked');
+          else { apptField.value = ''; apptLabelField.value = ''; }
+        }
+      }
+
+      form.addEventListener('click', function (e) {
+        var btn = e.target.closest ? e.target.closest('[data-slot]') : null;
+        if (!btn || !form.contains(btn)) return;
+        [].slice.call(form.querySelectorAll('[data-slot]')).forEach(function (b) {
+          b.classList.remove('is-picked');
+        });
+        btn.classList.add('is-picked');
+        apptField.value = btn.getAttribute('data-slot');
+        apptLabelField.value = btn.getAttribute('data-label') || btn.textContent.trim();
+        clearSay();
+      });
+
+      function labelFor(el) {
+        var l = el.id ? form.querySelector('label[for="' + el.id + '"]') : null;
+        return l ? l.textContent.replace('*', '').trim() : el.name;
+      }
+
+      function fillReview() {
+        if (!reviewList) return;
+        reviewList.textContent = '';
+        var rows = [];
+        var picked = form.querySelector('input[name="job_type"]:checked');
+        if (picked) {
+          var title = picked.parentNode.querySelector('.wz-job-title');
+          rows.push([S.jobLabel.replace('*', '').trim(), title ? title.textContent : picked.value]);
+        }
+        if (apptLabelField && apptLabelField.value) rows.push([S.apptLabel, apptLabelField.value]);
+        ['zip', 'symptom', 'service'].forEach(function (n) {
+          var el = form.querySelector('[name="' + n + '"]');
+          if (el && el.value) rows.push([labelFor(el), el.value]);
+        });
+        rows.forEach(function (r) {
+          var dt = document.createElement('dt');
+          dt.textContent = r[0];
+          var dd = document.createElement('dd');
+          dd.textContent = r[1];
+          reviewList.appendChild(dt);
+          reviewList.appendChild(dd);
+        });
+      }
+
+      function render() {
+        for (var i = 0; i < steps.length; i++) steps[i].hidden = i !== at;
+        for (var j = 0; j < railItems.length; j++) {
+          railItems[j].className = j === at ? 'is-at' : j < at ? 'is-done' : '';
+          if (j === at) railItems[j].setAttribute('aria-current', 'step');
+          else railItems[j].removeAttribute('aria-current');
+        }
+        backBtn.hidden = at === 0;
+        nextBtn.hidden = at === steps.length - 1;
+        if (at === 1) renderSlots();
+        if (at === steps.length - 1) fillReview();
+      }
+
+      function stepValid() {
+        if (at === 1) {
+          if (!apptField.value) { say(S.pickSlot); return false; }
+          return true;
+        }
+        var fields = [].slice.call(steps[at].querySelectorAll('input, select, textarea'));
+        for (var i = 0; i < fields.length; i++) {
+          if (fields[i].checkValidity()) continue;
+          if (fields[i].name === 'job_type') say(S.pickJob);
+          fields[i].focus({ preventScroll: true });
+          return false;
+        }
+        return true;
+      }
+
+      function go(to) {
+        at = Math.max(0, Math.min(steps.length - 1, to));
+        clearSay();
+        render();
+        var top = form.closest('dialog') || form;
+        top.scrollTop = 0;
+        if (!form.closest('dialog')) form.scrollIntoView({ block: 'start' });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'quote_step', { step: at + 1, site_language: lang });
+        }
+      }
+
+      nextBtn.addEventListener('click', function () { if (stepValid()) go(at + 1); });
+      backBtn.addEventListener('click', function () { go(at - 1); });
+
+      form.addEventListener('change', function (e) {
+        if (e.target && e.target.name === 'job_type') clearSay();
+      });
+
+      /* The browser blocks submit on an invalid required field and focuses
+         it. Hidden steps make that invisible, so the message is surfaced
+         here instead. `invalid` does not bubble, hence the capture phase. */
+      var reporting = false;
+      form.addEventListener('invalid', function (e) {
+        if (reporting) return;
+        reporting = true;
+        setTimeout(function () { reporting = false; }, 0);
+        var bad = e.target;
+        var label = form.querySelector('label[for="' + bad.id + '"]');
+        var name = label ? label.textContent.replace('*', '').trim() : S.requiredField;
+        say(bad.validity.patternMismatch
+          ? name + ': ' + (bad.title || S.format)
+          : S.fill.replace('%s', name));
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'quote_blocked', { field: bad.name });
+        }
+      }, true);
+
+      form.addEventListener('input', function () { clearSay(); });
+
+      var started = false;
+      form.addEventListener('focusin', function () {
+        if (started || typeof window.gtag !== 'function') return;
+        started = true;
+        window.gtag('event', 'quote_start', { page_path: location.pathname, site_language: lang });
+      });
+
+      function reject(e, message, field) {
+        e.preventDefault();
+        say(message);
+        if (field) field.focus({ preventScroll: true });
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'quote_blocked_spam', { reason: message.slice(0, 60) });
+        }
+      }
+
+      form.addEventListener('submit', function (e) {
+        var zip = form.querySelector('[name="zip"]');
+        var msg = form.querySelector('[name="message"]');
+        var elapsed = loadedAt && loadedAt.value
+          ? Date.now() - parseInt(loadedAt.value, 10)
+          : 99999;
+
+        if (elapsed < 4000) return reject(e, S.fast, null);
+        if (zip && zip.value && !zipInArea(zip.value)) return reject(e, S.zip, zip);
+        if (msg && pitchScore(msg.value) >= 2) return reject(e, S.pitch, msg);
+        clearSay();
+      });
+
+      render();
+
+      /* Exposed so the modal can reset a form the visitor abandoned, and so
+         the chat can drop someone straight onto a chosen step. */
+      form.wizGo = go;
+    }
+
+    forms.forEach(enhance);
+  })();
+</script>

@@ -198,11 +198,6 @@ const faultBlurb: Record<string, Record<Locale, { title: string; text: string }>
         })}
       </div>
 
-      <p class="media-note">
-        {lang === 'es'
-          ? 'Las imágenes ilustran los tipos de puerta comunes en cada zona. No son fotografías de nuestro trabajo. Cuando nuestros trabajos produzcan fotos reales de antes y después, aparecerán aquí con la ciudad y el servicio indicados.'
-          : 'Images above illustrate the door types common to each area. They are not photographs of our own work. When our jobs produce real before and after photos, they will appear here with the city and the service named.'}
-      </p>
 
       <p class="text-center" style="margin-top:1.2rem;">
         <a href={p.buyersGuide} class="btn btn-outline">{lang === 'es' ? 'Comparar puertas y motores' : 'Compare doors and openers'}</a>
@@ -245,11 +240,6 @@ const faultBlurb: Record<string, Record<Locale, { title: string; text: string }>
         })}
       </div>
 
-      <p class="media-note">
-        {lang === 'es'
-          ? 'Las imágenes ilustran las fallas descritas. No son fotografías de nuestro trabajo y no se sugiere ningún antes y después.'
-          : 'Images above illustrate the failures described. They are not photographs of our own work, and no before and after is implied.'}
-      </p>
 
       <p class="text-center" style="margin-top:1.2rem;">
         <a href={p.prices} class="btn btn-outline">{lang === 'es' ? 'Ver todos los precios publicados' : 'See every published price'}</a>
@@ -406,10 +396,6 @@ const faultBlurb: Record<string, Record<Locale, { title: string; text: string }>
   .fault-price { display: inline-block; margin-top: 0.6rem; font-weight: 700; color: var(--c-primary); font-size: 0.92rem; }
   @media (max-width: 1000px) { .fault-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .fault-grid { grid-template-columns: 1fr; } }
-  .media-note {
-    font-size: 0.8rem; color: var(--c-muted); line-height: 1.55;
-    max-width: 46rem; margin: 1.4rem auto 0; text-align: center;
-  }
 
   @media (prefers-reduced-motion: reduce) { .door-card:hover { transform: none; } }
 
