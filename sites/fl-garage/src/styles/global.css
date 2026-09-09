@@ -626,16 +626,43 @@ li { margin-bottom: 0.4em; }
 
 @media (max-width: 520px) {
     /* Three cards side by side at 375px leaves each one 100px wide and the
-       label unreadable. One per row, image shrunk to a thumbnail. */
-    .wz-jobs { grid-template-columns: 1fr; }
+       label unreadable. One per row, the image a full height strip down the
+       left.
+
+       The image spans every row, which is the whole trick. Left in row one
+       it sized that row to its own height, so the title floated in the
+       middle of a tall row, a gap opened between the title and the note
+       below it, and the note sat against blank card with no image beside
+       it at all. Spanning means the rows are sized by the text, and the
+       image simply fills whatever that comes to.
+
+       aspect-ratio is cleared for the same reason: a ratio and a filled
+       grid area are two different instructions about the same box. */
+    .wz-jobs { grid-template-columns: 1fr; gap: 0.6rem; }
     .wz-job {
-      display: grid; grid-template-columns: 5.5rem 1fr;
-      align-items: center; text-align: left;
-      column-gap: 0.9rem; padding-bottom: 0;
+      display: block; position: relative;
+      /* Room on the left for the image, which is taken out of flow. */
+      padding: 0.85rem 0.95rem 0.85rem calc(6.4rem + 1rem);
+      min-height: 6.4rem; text-align: left;
     }
-    .wz-job img { aspect-ratio: 1 / 1; height: 100%; }
-    .wz-job-title { grid-column: 2; margin: 0.7rem 0.7rem 0.1rem 0; }
-    .wz-job-note { grid-column: 2; margin: 0 0.7rem 0.7rem 0; }
+    /* Two attempts got this wrong, so the reasoning is worth keeping.
+       height: 100% on a grid item cannot resolve against a row the content
+       sizes, and top/bottom offsets do not stretch a replaced element
+       either: an absolutely positioned image with height auto takes its
+       intrinsic height and ignores bottom. Both times it fell back to its
+       own 4:3 ratio and came up short of the card.
+
+       Taken out of flow, the containing block is the card's padding box,
+       whose height IS definite, so a percentage resolves against it and
+       cover crops the rest. max-width is cleared because the global reset
+       caps every image at its container. */
+    .wz-job img {
+      position: absolute; top: 0; left: 0;
+      width: 6.4rem; height: 100%; max-width: none;
+      aspect-ratio: auto; object-fit: cover;
+    }
+    .wz-job-title { margin: 0 0 0.2rem; }
+    .wz-job-note { margin: 0; }
     .wz-rail .wz-lbl { display: none; }
 }
 
