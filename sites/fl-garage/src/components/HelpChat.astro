@@ -157,6 +157,21 @@ const t = ui[lang];
       return el;
     }
 
+    /* Three dots rather than the word "Typing". It reads as a person on the
+       other end composing a reply, which is the convention every messenger
+       uses, and it does not need translating. The label carries the meaning
+       for anyone who cannot see the animation. */
+    function typing() {
+      var el = document.createElement('div');
+      el.className = 'hc-typing';
+      el.setAttribute('role', 'status');
+      el.setAttribute('aria-label', C.thinking);
+      for (var i = 0; i < 3; i++) el.appendChild(document.createElement('span'));
+      log.appendChild(el);
+      log.scrollTop = log.scrollHeight;
+      return el;
+    }
+
     root.addEventListener('click', function (e) {
       if (e.target.closest('[data-hc-toggle]')) { toggle(); return; }
       if (e.target.closest('[data-hc-back]')) { show('menu'); return; }
@@ -235,8 +250,7 @@ const t = ui[lang];
       history.push({ role: 'user', content: text });
 
       busy = true;
-      var pending = bubble('bot', C.thinking);
-      pending.classList.add('is-pending');
+      var pending = typing();
 
       fetch('/api/chat', {
         method: 'POST',
@@ -272,7 +286,15 @@ const t = ui[lang];
   })();
 </script>
 
-<style>
+<style is:global>
+  /* Global, not scoped, and this is the reason: every message bubble and the
+     typing indicator are created by the script with document.createElement,
+     so they never carry the scoping attribute Astro adds to elements in the
+     template. Scoped rules for them are written, compiled, shipped, and
+     silently never match, which is exactly how the bubbles ended up
+     rendering as bare paragraphs. Every selector here is .hc- prefixed, so
+     going global costs nothing. */
+
   .hc { position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 60; }
 
   .hc-bubble {
@@ -287,15 +309,15 @@ const t = ui[lang];
 
   .hc-panel {
     position: absolute; right: 0; bottom: calc(100% + 0.7rem);
-    width: min(360px, calc(100vw - 2.2rem));
+    width: min(370px, calc(100vw - 2.2rem));
     display: grid; grid-template-rows: auto minmax(0, 1fr);
-    max-height: min(70vh, 560px);
-    background: #fff; border: 1px solid var(--c-line); border-radius: 16px;
+    max-height: min(72vh, 580px);
+    background: #fff; border: 1px solid var(--c-line); border-radius: 18px;
     box-shadow: 0 22px 60px rgba(11, 22, 40, 0.28);
     overflow: hidden;
   }
   /* Author display rules beat the UA [hidden] rule, so say it explicitly. */
-  .hc-panel[hidden], .hc-back[hidden] { display: none; }
+  .hc-panel[hidden], .hc-back[hidden], .hc-chat[hidden], .hc-menu[hidden] { display: none; }
 
   .hc-head {
     display: flex; align-items: center; gap: 0.6rem;
@@ -317,7 +339,7 @@ const t = ui[lang];
     display: block; width: 100%; text-align: left; cursor: pointer;
     text-decoration: none; font: inherit;
     padding: 0.7rem 0.85rem; margin-bottom: 0.55rem;
-    border: 1px solid var(--c-line); border-radius: 11px; background: #fff;
+    border: 1px solid var(--c-line); border-radius: 12px; background: #fff;
     transition: border-color 0.16s ease, background 0.16s ease;
   }
   .hc-opt:hover { border-color: var(--c-primary); background: var(--c-primary-light); text-decoration: none; }
@@ -326,30 +348,85 @@ const t = ui[lang];
   .hc-opt-note { display: block; font-size: 0.78rem; color: var(--c-muted); margin-top: 0.1rem; line-height: 1.35; }
   .hc-opt-num { display: block; margin-top: 0.35rem; font-weight: 800; color: var(--c-accent); font-size: 0.95rem; }
 
-  .hc-chat { display: grid; grid-template-rows: minmax(0, 1fr) auto auto; min-height: 300px; }
-  .hc-chat[hidden] { display: none; }
-  .hc-log { overflow-y: auto; padding: 0.9rem 1rem; display: grid; gap: 0.5rem; align-content: start; }
-  .hc-msg {
-    max-width: 85%; padding: 0.5rem 0.75rem; border-radius: 12px;
-    font-size: 0.87rem; line-height: 1.45; white-space: pre-wrap;
+  /* ---- the conversation ---------------------------------------------- */
+
+  .hc-chat { display: grid; grid-template-rows: minmax(0, 1fr) auto auto; min-height: 320px; }
+  .hc-log {
+    overflow-y: auto; padding: 0.9rem 0.85rem;
+    /* Flex, not grid: each bubble picks its own side with align-self, and
+       consecutive bubbles from the same side sit as one run. */
+    display: flex; flex-direction: column; gap: 0.35rem;
   }
-  .hc-msg-bot { justify-self: start; background: var(--c-bg-alt, #f4f6f8); color: var(--c-ink); border-bottom-left-radius: 4px; }
-  .hc-msg-me { justify-self: end; background: var(--c-primary); color: #fff; border-bottom-right-radius: 4px; }
-  .hc-msg.is-pending { opacity: 0.6; font-style: italic; }
-  .hc-msg-call { display: block; margin-top: 0.35rem; font-weight: 800; color: var(--c-accent); }
+
+  .hc-msg {
+    max-width: 82%; width: fit-content;
+    padding: 0.55rem 0.8rem; border-radius: 17px;
+    font-size: 0.88rem; line-height: 1.5;
+    white-space: pre-wrap; overflow-wrap: anywhere;
+    animation: hc-in 0.18s ease-out both;
+  }
+  .hc-msg-bot {
+    align-self: flex-start;
+    background: #eef1f6; color: var(--c-ink);
+    border-bottom-left-radius: 6px;
+  }
+  .hc-msg-me {
+    align-self: flex-end;
+    background: var(--c-primary); color: #fff;
+    border-bottom-right-radius: 6px;
+  }
+  /* A run of bubbles from the same side reads as one turn, so only the last
+     one in the run keeps its tail corner. */
+  .hc-msg-bot + .hc-msg-bot { border-top-left-radius: 6px; }
+  .hc-msg-me + .hc-msg-me { border-top-right-radius: 6px; }
+  /* Extra air where the side changes, which is where a turn actually ends. */
+  .hc-msg-bot + .hc-msg-me, .hc-msg-me + .hc-msg-bot { margin-top: 0.4rem; }
+
+  .hc-msg-call {
+    display: inline-block; margin-top: 0.45rem;
+    font-weight: 800; font-size: 1rem; color: var(--c-accent);
+  }
+
+  .hc-typing {
+    align-self: flex-start; display: flex; align-items: center; gap: 4px;
+    padding: 0.72rem 0.85rem; margin-top: 0.4rem;
+    background: #eef1f6; border-radius: 17px; border-bottom-left-radius: 6px;
+    animation: hc-in 0.18s ease-out both;
+  }
+  .hc-typing span {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #8b95a5;
+    animation: hc-dot 1.3s infinite ease-in-out;
+  }
+  .hc-typing span:nth-child(2) { animation-delay: 0.16s; }
+  .hc-typing span:nth-child(3) { animation-delay: 0.32s; }
+
+  @keyframes hc-dot {
+    0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(-4px); }
+  }
+  @keyframes hc-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hc-msg, .hc-typing { animation: none; }
+    .hc-typing span { animation: none; opacity: 0.55; }
+  }
 
   .hc-compose { display: flex; gap: 0.5rem; padding: 0.7rem 0.8rem 0.4rem; border-top: 1px solid var(--c-line); }
   .hc-compose input {
-    flex: 1; min-width: 0; padding: 0.55rem 0.75rem; font: inherit; font-size: 0.88rem;
+    flex: 1; min-width: 0; padding: 0.58rem 0.85rem; font: inherit; font-size: 0.88rem;
     border: 1px solid var(--c-line); border-radius: 999px; background: #fff; color: var(--c-ink);
   }
   .hc-compose input:focus { outline: none; border-color: var(--c-primary); box-shadow: var(--ring); }
   .hc-send {
     flex: 0 0 auto; display: grid; place-items: center; cursor: pointer;
-    width: 2.3rem; height: 2.3rem; border: 0; border-radius: 50%;
+    width: 2.35rem; height: 2.35rem; border: 0; border-radius: 50%;
     background: var(--c-primary); color: #fff;
+    transition: filter 0.15s ease;
   }
-  .hc-send:hover { filter: brightness(1.12); }
+  .hc-send:hover { filter: brightness(1.14); }
   .hc-disclosure { margin: 0; padding: 0 0.9rem 0.8rem; font-size: 0.7rem; color: var(--c-muted); line-height: 1.4; }
 
   @media (max-width: 560px) {
