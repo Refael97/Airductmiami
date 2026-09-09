@@ -443,6 +443,8 @@ export interface PageCopy {
     lead: string;
     symptoms: string[];
     urgency: string[];
+    /** Preferred part of the day. A preference, never a booked slot. */
+    windows: string[];
     faq: FAQ[];
   };
 }

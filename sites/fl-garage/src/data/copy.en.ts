@@ -554,6 +554,18 @@ export const copyEn: PageCopy = {
       'This week',
       'Just getting a price',
     ],
+    /* A preference we can honour, not a slot we can book. Precision Door
+       shows real two hour appointment slots because the franchise runs a
+       24/7 dispatch desk behind the widget. We route to partner crews and
+       confirm by phone, so we ask which part of the day suits and say so.
+       Offering a slot we cannot guarantee would break the rule that the
+       site, the popup and the phone all say the same thing. */
+    windows: [
+      'Morning, 8am to 12pm',
+      'Midday, 12pm to 4pm',
+      'Evening, 4pm to 8pm',
+      'Any time, whatever is soonest',
+    ],
     faq: [
       {
         question: 'What happens after I send this?',

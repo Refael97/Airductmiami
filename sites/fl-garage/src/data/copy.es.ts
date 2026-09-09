@@ -554,6 +554,12 @@ export const copyEs: PageCopy = {
       'Esta semana',
       'Solo quiero un precio',
     ],
+    windows: [
+      'Mañana, de 8am a 12pm',
+      'Mediodía, de 12pm a 4pm',
+      'Tarde, de 4pm a 8pm',
+      'Cualquier hora, lo más pronto posible',
+    ],
     faq: [
       {
         question: '¿Qué pasa después de que envío esto?',

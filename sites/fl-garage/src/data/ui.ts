@@ -360,6 +360,24 @@ export interface Strings {
   formSubmit: string;
   formNote: string;
   formHoneypot: string;
+  // Booking wizard. The flat form is the fallback; these label the steps.
+  wizStepOf: (current: number, total: number) => string;
+  wizStep1: string;
+  wizStep2: string;
+  wizStep3: string;
+  wizNext: string;
+  wizBack: string;
+  wizJobLegend: string;
+  wizJobRepair: string;
+  wizJobRepairNote: string;
+  wizJobDoor: string;
+  wizJobDoorNote: string;
+  wizJobOpener: string;
+  wizJobOpenerNote: string;
+  wizWindow: string;
+  wizWindowNote: string;
+  wizReviewHeading: string;
+  wizPickJob: string;
   whatWeSendBack: string;
   sendBack: string[];
   contactHeading: string;
@@ -696,6 +714,24 @@ export const ui: Record<Locale, Strings> = {
     formNote:
       'We use these details to quote your job and nothing else. No marketing lists, no sharing with third parties.',
     formHoneypot: 'Do not fill this in:',
+    wizStepOf: (c, n) => `Step ${c} of ${n}`,
+    wizStep1: 'What you need',
+    wizStep2: 'What happened',
+    wizStep3: 'Where to reach you',
+    wizNext: 'Next',
+    wizBack: 'Back',
+    wizJobLegend: 'What brings you here?',
+    wizJobRepair: 'Repair a door',
+    wizJobRepairNote: 'Spring, cable, opener, off track, stuck',
+    wizJobDoor: 'New door',
+    wizJobDoorNote: 'Replacement, hurricane rated, new build',
+    wizJobOpener: 'Opener or motor',
+    wizJobOpenerNote: 'New opener, remote, keypad, sensors',
+    wizWindow: 'Time of day that suits you',
+    wizWindowNote:
+      'A preference, not a booked slot. We confirm the actual arrival window with you by phone before anyone leaves.',
+    wizReviewHeading: 'What you told us',
+    wizPickJob: 'Choose what brings you here to continue.',
     whatWeSendBack: 'What we will send back',
     sendBack: [
       'A price range for your specific problem',
@@ -1069,6 +1105,24 @@ export const ui: Record<Locale, Strings> = {
     formNote:
       'Usamos estos datos para cotizar su trabajo y nada más. Sin listas de marketing, sin compartir con terceros.',
     formHoneypot: 'No llene este campo:',
+    wizStepOf: (c, n) => `Paso ${c} de ${n}`,
+    wizStep1: 'Qué necesita',
+    wizStep2: 'Qué pasó',
+    wizStep3: 'Dónde localizarlo',
+    wizNext: 'Siguiente',
+    wizBack: 'Atrás',
+    wizJobLegend: '¿Qué lo trae por aquí?',
+    wizJobRepair: 'Reparar una puerta',
+    wizJobRepairNote: 'Resorte, cable, motor, fuera del riel, trabada',
+    wizJobDoor: 'Puerta nueva',
+    wizJobDoorNote: 'Reemplazo, resistente a huracanes, obra nueva',
+    wizJobOpener: 'Motor o abridor',
+    wizJobOpenerNote: 'Motor nuevo, control, teclado, sensores',
+    wizWindow: 'Hora del día que le conviene',
+    wizWindowNote:
+      'Es una preferencia, no una cita reservada. Confirmamos con usted por teléfono la ventana de llegada real antes de que salga nadie.',
+    wizReviewHeading: 'Lo que nos dijo',
+    wizPickJob: 'Elija qué lo trae por aquí para continuar.',
     whatWeSendBack: 'Lo que le enviaremos',
     sendBack: [
       'Un rango de precio para su problema específico',
