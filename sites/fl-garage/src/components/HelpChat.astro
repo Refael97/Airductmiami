@@ -1,0 +1,362 @@
+---
+/**
+ * The floating help widget: one bubble, three ways in.
+ *
+ * The three routes exist because visitors arrive in three different states,
+ * and a single "chat with us" button serves only one of them. Someone whose
+ * car is trapped wants a phone ringing. Someone unsure what is wrong wants to
+ * describe it. Someone who already knows wants a slot in the calendar.
+ *
+ * Two of the three need nothing from a server: the call is a `tel:` link and
+ * the booking opens the same modal the rest of the site uses. Only the
+ * messaging route depends on the API key, and if that key is not set the
+ * panel says so and points at the other two rather than showing a chat that
+ * silently fails.
+ *
+ * The assistant never books. When it has understood the job it asks the page
+ * to open the booking form prefilled, which is why there is exactly one
+ * appointment grid on this site and one place that decides what is available.
+ */
+import { business } from '../data/business';
+import { ui, type Locale } from '../data/ui';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const t = ui[lang];
+---
+<div class="hc" data-help-chat>
+  <button type="button" class="hc-bubble" data-hc-toggle aria-expanded="false" aria-controls="hc-panel">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.9L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z" />
+    </svg>
+    <span class="hc-bubble-text">{t.chatBubble}</span>
+  </button>
+
+  <div class="hc-panel" id="hc-panel" hidden>
+    <header class="hc-head">
+      <button type="button" class="hc-back" data-hc-back hidden>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none"
+             stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        {t.chatBack}
+      </button>
+      <strong>{t.chatGreeting}</strong>
+      <button type="button" class="hc-x" data-hc-toggle aria-label={t.wizClose}>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
+             stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </header>
+
+    {/* ---- the three routes ---- */}
+    <div class="hc-menu" data-hc-view="menu">
+      <p class="hc-sub">{t.chatGreetingSub}</p>
+
+      <button type="button" class="hc-opt" data-hc-open="chat">
+        <span class="hc-opt-title">{t.chatPickChat}</span>
+        <span class="hc-opt-note">{t.chatPickChatNote}</span>
+      </button>
+
+      <a href={`tel:${business.phoneNowHref}`} class="hc-opt hc-opt-call" data-hc-call>
+        <span class="hc-opt-title">{t.chatPickCall}</span>
+        <span class="hc-opt-note">{t.chatPickCallNote}</span>
+        <span class="hc-opt-num">{business.phoneNow}</span>
+      </a>
+
+      <button type="button" class="hc-opt" data-hc-open="book">
+        <span class="hc-opt-title">{t.chatPickBook}</span>
+        <span class="hc-opt-note">{t.chatPickBookNote}</span>
+      </button>
+    </div>
+
+    {/* ---- messaging ---- */}
+    <div class="hc-chat" data-hc-view="chat" hidden>
+      <div class="hc-log" data-hc-log aria-live="polite"></div>
+      <form class="hc-compose" data-hc-form>
+        <input type="text" data-hc-input placeholder={t.chatPlaceholder}
+               autocomplete="off" maxlength="800" />
+        <button type="submit" class="hc-send" aria-label={t.chatSend}>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12l16-8-6 16-2.5-6.5L4 12z" />
+          </svg>
+        </button>
+      </form>
+      {/* Not decoration. Someone who thinks they are talking to the
+          technician who will arrive tomorrow has been misled. */}
+      <p class="hc-disclosure">{t.chatDisclosure}</p>
+    </div>
+  </div>
+</div>
+
+<script
+  is:inline
+  define:vars={{
+    lang,
+    C: {
+      opener: t.chatOpener,
+      thinking: t.chatThinking,
+      offline: t.chatOffline,
+      error: t.chatError,
+      openedBooking: t.chatOpenedBooking,
+      phone: business.phoneNow,
+      phoneHref: business.phoneNowHref,
+    },
+  }}
+>
+  (function () {
+    var root = document.querySelector('[data-help-chat]');
+    if (!root) return;
+
+    var panel = root.querySelector('.hc-panel');
+    var back = root.querySelector('[data-hc-back]');
+    var views = {
+      menu: root.querySelector('[data-hc-view="menu"]'),
+      chat: root.querySelector('[data-hc-view="chat"]'),
+    };
+    var log = root.querySelector('[data-hc-log]');
+    var form = root.querySelector('[data-hc-form]');
+    var input = root.querySelector('[data-hc-input]');
+
+    var open = false;
+    var view = 'menu';
+    /* The transcript we send back each turn. The API is stateless, so this
+       array is the entire memory of the conversation. */
+    var history = [];
+    var busy = false;
+
+    function show(name) {
+      view = name;
+      for (var k in views) if (views[k]) views[k].hidden = k !== name;
+      back.hidden = name === 'menu';
+      if (name === 'chat' && !history.length) {
+        bubble('bot', C.opener);
+        input.focus();
+      }
+    }
+
+    function toggle(force) {
+      open = typeof force === 'boolean' ? force : !open;
+      panel.hidden = !open;
+      root.querySelector('[data-hc-toggle]').setAttribute('aria-expanded', String(open));
+      if (open && typeof window.gtag === 'function') {
+        window.gtag('event', 'help_open', { page_path: location.pathname });
+      }
+      if (!open) show('menu');
+    }
+
+    function bubble(who, text) {
+      var el = document.createElement('div');
+      el.className = 'hc-msg hc-msg-' + who;
+      el.textContent = text;
+      log.appendChild(el);
+      log.scrollTop = log.scrollHeight;
+      return el;
+    }
+
+    root.addEventListener('click', function (e) {
+      if (e.target.closest('[data-hc-toggle]')) { toggle(); return; }
+      if (e.target.closest('[data-hc-back]')) { show('menu'); return; }
+
+      var opener = e.target.closest('[data-hc-open]');
+      if (opener) {
+        var which = opener.getAttribute('data-hc-open');
+        if (which === 'book') {
+          toggle(false);
+          if (typeof window.openBookingModal === 'function') window.openBookingModal();
+          else location.href = document.querySelector('.header-cta').getAttribute('href');
+          return;
+        }
+        show('chat');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'help_route', { route: which, site_language: lang });
+        }
+        return;
+      }
+
+      if (e.target.closest('[data-hc-call]') && typeof window.gtag === 'function') {
+        window.gtag('event', 'help_route', { route: 'call', site_language: lang });
+      }
+    });
+
+    /* Escape closes the panel, matching the booking dialog's behaviour. */
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && open) toggle(false);
+    });
+
+    /**
+     * Hand what the assistant learned to the booking form and open it, so the
+     * visitor does not answer the same two questions twice.
+     */
+    function handOff(fields) {
+      var dlg = document.getElementById('booking-dialog');
+      if (!dlg) return;
+      var f = dlg.querySelector('form[data-booking]');
+      if (f) {
+        if (fields.job_type) {
+          var radio = f.querySelector('input[name="job_type"][value="' + fields.job_type + '"]');
+          if (radio) radio.checked = true;
+        }
+        if (fields.zip) {
+          var zip = f.querySelector('[name="zip"]');
+          if (zip) zip.value = String(fields.zip).slice(0, 5);
+        }
+        if (fields.symptom) {
+          var msg = f.querySelector('[name="message"]');
+          if (msg && !msg.value) msg.value = String(fields.symptom);
+        }
+      }
+      toggle(false);
+      if (typeof window.openBookingModal === 'function') window.openBookingModal();
+      /* Straight to the calendar when both of step one's answers are known;
+         otherwise the form opens where it always does. */
+      if (f && f.wizGo && fields.job_type && fields.zip) f.wizGo(1);
+    }
+
+    function fallbackBubble(text) {
+      var el = bubble('bot', text);
+      var a = document.createElement('a');
+      a.className = 'hc-msg-call';
+      a.href = 'tel:' + C.phoneHref;
+      a.textContent = C.phone;
+      el.appendChild(a);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var text = input.value.trim();
+      if (!text || busy) return;
+      input.value = '';
+      bubble('me', text);
+      history.push({ role: 'user', content: text });
+
+      busy = true;
+      var pending = bubble('bot', C.thinking);
+      pending.classList.add('is-pending');
+
+      fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ messages: history, lang: lang, page: location.pathname }),
+      })
+        .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (res) {
+          pending.remove();
+          /* The endpoint says `configured: false` when no key is set. That is
+             a deployment state, not a failure to hide from the visitor. */
+          if (!res.ok || res.d.configured === false) {
+            fallbackBubble(res.d && res.d.configured === false ? C.offline : C.error);
+            return;
+          }
+          if (res.d.reply) {
+            bubble('bot', res.d.reply);
+            history.push({ role: 'assistant', content: res.d.reply });
+          }
+          if (res.d.booking) {
+            bubble('bot', C.openedBooking);
+            handOff(res.d.booking);
+          } else if (!res.d.reply) {
+            fallbackBubble(C.error);
+          }
+        })
+        .catch(function () {
+          pending.remove();
+          fallbackBubble(C.error);
+        })
+        .then(function () { busy = false; input.focus(); });
+    });
+  })();
+</script>
+
+<style>
+  .hc { position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 60; }
+
+  .hc-bubble {
+    display: flex; align-items: center; gap: 0.55rem; cursor: pointer;
+    padding: 0.75rem 1.1rem; border: 0; border-radius: 999px;
+    background: var(--c-primary); color: #fff;
+    font: inherit; font-size: 0.92rem; font-weight: 800;
+    box-shadow: 0 10px 26px rgba(11, 22, 40, 0.3);
+    transition: transform 0.16s ease, filter 0.16s ease;
+  }
+  .hc-bubble:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+  .hc-panel {
+    position: absolute; right: 0; bottom: calc(100% + 0.7rem);
+    width: min(360px, calc(100vw - 2.2rem));
+    display: grid; grid-template-rows: auto minmax(0, 1fr);
+    max-height: min(70vh, 560px);
+    background: #fff; border: 1px solid var(--c-line); border-radius: 16px;
+    box-shadow: 0 22px 60px rgba(11, 22, 40, 0.28);
+    overflow: hidden;
+  }
+  /* Author display rules beat the UA [hidden] rule, so say it explicitly. */
+  .hc-panel[hidden], .hc-back[hidden] { display: none; }
+
+  .hc-head {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.85rem 1rem; border-bottom: 1px solid var(--c-line);
+    background: var(--c-bg-alt, #f4f6f8);
+  }
+  .hc-head strong { flex: 1; font-size: 0.98rem; color: var(--c-ink); }
+  .hc-back, .hc-x {
+    display: inline-flex; align-items: center; gap: 0.2rem; cursor: pointer;
+    border: 0; background: none; padding: 0.2rem; color: var(--c-body);
+    font: inherit; font-size: 0.82rem;
+  }
+  .hc-back:hover, .hc-x:hover { color: var(--c-ink); }
+
+  .hc-menu { padding: 0.9rem 1rem 1.1rem; overflow-y: auto; }
+  .hc-sub { font-size: 0.87rem; color: var(--c-body); margin: 0 0 0.9rem; }
+
+  .hc-opt {
+    display: block; width: 100%; text-align: left; cursor: pointer;
+    text-decoration: none; font: inherit;
+    padding: 0.7rem 0.85rem; margin-bottom: 0.55rem;
+    border: 1px solid var(--c-line); border-radius: 11px; background: #fff;
+    transition: border-color 0.16s ease, background 0.16s ease;
+  }
+  .hc-opt:hover { border-color: var(--c-primary); background: var(--c-primary-light); text-decoration: none; }
+  .hc-opt:last-child { margin-bottom: 0; }
+  .hc-opt-title { display: block; font-weight: 800; font-size: 0.9rem; color: var(--c-ink); }
+  .hc-opt-note { display: block; font-size: 0.78rem; color: var(--c-muted); margin-top: 0.1rem; line-height: 1.35; }
+  .hc-opt-num { display: block; margin-top: 0.35rem; font-weight: 800; color: var(--c-accent); font-size: 0.95rem; }
+
+  .hc-chat { display: grid; grid-template-rows: minmax(0, 1fr) auto auto; min-height: 300px; }
+  .hc-chat[hidden] { display: none; }
+  .hc-log { overflow-y: auto; padding: 0.9rem 1rem; display: grid; gap: 0.5rem; align-content: start; }
+  .hc-msg {
+    max-width: 85%; padding: 0.5rem 0.75rem; border-radius: 12px;
+    font-size: 0.87rem; line-height: 1.45; white-space: pre-wrap;
+  }
+  .hc-msg-bot { justify-self: start; background: var(--c-bg-alt, #f4f6f8); color: var(--c-ink); border-bottom-left-radius: 4px; }
+  .hc-msg-me { justify-self: end; background: var(--c-primary); color: #fff; border-bottom-right-radius: 4px; }
+  .hc-msg.is-pending { opacity: 0.6; font-style: italic; }
+  .hc-msg-call { display: block; margin-top: 0.35rem; font-weight: 800; color: var(--c-accent); }
+
+  .hc-compose { display: flex; gap: 0.5rem; padding: 0.7rem 0.8rem 0.4rem; border-top: 1px solid var(--c-line); }
+  .hc-compose input {
+    flex: 1; min-width: 0; padding: 0.55rem 0.75rem; font: inherit; font-size: 0.88rem;
+    border: 1px solid var(--c-line); border-radius: 999px; background: #fff; color: var(--c-ink);
+  }
+  .hc-compose input:focus { outline: none; border-color: var(--c-primary); box-shadow: var(--ring); }
+  .hc-send {
+    flex: 0 0 auto; display: grid; place-items: center; cursor: pointer;
+    width: 2.3rem; height: 2.3rem; border: 0; border-radius: 50%;
+    background: var(--c-primary); color: #fff;
+  }
+  .hc-send:hover { filter: brightness(1.12); }
+  .hc-disclosure { margin: 0; padding: 0 0.9rem 0.8rem; font-size: 0.7rem; color: var(--c-muted); line-height: 1.4; }
+
+  @media (max-width: 560px) {
+    .hc { right: 0.75rem; bottom: 0.75rem; }
+    /* The label costs a third of a narrow screen; the icon carries it. */
+    .hc-bubble-text { display: none; }
+    .hc-bubble { padding: 0.85rem; }
+    .hc-panel { width: calc(100vw - 1.5rem); max-height: 78vh; }
+  }
+</style>

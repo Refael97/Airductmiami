@@ -8,6 +8,7 @@ import Footer from '../components/Footer.astro';
 import PromoPopup from '../components/PromoPopup.astro';
 import BookingModal from '../components/BookingModal.astro';
 import BookingScript from '../components/BookingScript.astro';
+import HelpChat from '../components/HelpChat.astro';
 import JsonLd from '../components/JsonLd.astro';
 import Reveal from '../components/Reveal.astro';
 import { localBusinessSchema, websiteSchema } from '../lib/schema';
@@ -140,6 +141,7 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
     {/* Last, so every form on the page already exists when it runs: the
         inline one on the contact page and the copy inside the modal. */}
     <BookingScript lang={lang} />
+    <HelpChat lang={lang} />
     <Reveal />
   </body>
 </html>

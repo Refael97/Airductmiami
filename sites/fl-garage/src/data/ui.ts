@@ -380,6 +380,25 @@ export interface Strings {
   wizModalTitle: string;
   wizModalLead: string;
   wizClose: string;
+  // Help widget
+  chatBubble: string;
+  chatGreeting: string;
+  chatGreetingSub: string;
+  chatPickChat: string;
+  chatPickChatNote: string;
+  chatPickCall: string;
+  chatPickCallNote: string;
+  chatPickBook: string;
+  chatPickBookNote: string;
+  chatBack: string;
+  chatPlaceholder: string;
+  chatSend: string;
+  chatOpener: string;
+  chatThinking: string;
+  chatOffline: string;
+  chatError: string;
+  chatDisclosure: string;
+  chatOpenedBooking: string;
   wizNext: string;
   wizBack: string;
   wizJobLegend: string;
@@ -755,6 +774,26 @@ export const ui: Record<Locale, Strings> = {
     wizModalTitle: 'Book a technician',
     wizModalLead: 'Four short steps. No call needed.',
     wizClose: 'Close',
+    chatBubble: 'We can help you',
+    chatGreeting: 'We can help you',
+    chatGreetingSub: 'Tell us what you need and we will take it from there.',
+    chatPickChat: 'Message a technician now',
+    chatPickChatNote: 'Describe what the door is doing and get an answer here',
+    chatPickCall: 'Get a call from a technician now',
+    chatPickCallNote: 'Straight to a mobile, seven days a week',
+    chatPickBook: 'Book a visit at a time that suits me',
+    chatPickBookNote: 'Pick a real two hour arrival window',
+    chatBack: 'Back',
+    chatPlaceholder: 'What is the door doing?',
+    chatSend: 'Send',
+    chatOpener: 'Tell me what the door is doing and I will work out what it needs.',
+    chatThinking: 'Typing',
+    chatOffline:
+      'Messaging is not switched on yet. Call the technician below, or book a visit and we will come to you.',
+    chatError: 'That did not go through. Call the technician below, or book a visit.',
+    chatDisclosure:
+      'You are messaging an AI assistant, not a person. It cannot confirm a price or a time; the booking form does that.',
+    chatOpenedBooking: 'I have opened the booking form for you with what you told me.',
     wizNext: 'Next',
     wizBack: 'Back',
     wizJobLegend: 'What brings you here?',
@@ -1167,6 +1206,26 @@ export const ui: Record<Locale, Strings> = {
     wizModalTitle: 'Agende un técnico',
     wizModalLead: 'Cuatro pasos cortos. Sin llamar.',
     wizClose: 'Cerrar',
+    chatBubble: 'Podemos ayudarle',
+    chatGreeting: 'Podemos ayudarle',
+    chatGreetingSub: 'Díganos qué necesita y nosotros seguimos desde ahí.',
+    chatPickChat: 'Escribirle a un técnico ahora',
+    chatPickChatNote: 'Describa qué hace la puerta y reciba una respuesta aquí',
+    chatPickCall: 'Que un técnico me llame ahora',
+    chatPickCallNote: 'Directo a un celular, los siete días de la semana',
+    chatPickBook: 'Agendar una visita a la hora que me convenga',
+    chatPickBookNote: 'Elija una ventana de llegada real de dos horas',
+    chatBack: 'Atrás',
+    chatPlaceholder: '¿Qué hace la puerta?',
+    chatSend: 'Enviar',
+    chatOpener: 'Cuénteme qué hace la puerta y le digo qué necesita.',
+    chatThinking: 'Escribiendo',
+    chatOffline:
+      'Los mensajes todavía no están activados. Llame al técnico aquí abajo, o agende una visita y vamos a su casa.',
+    chatError: 'Eso no se envió. Llame al técnico aquí abajo, o agende una visita.',
+    chatDisclosure:
+      'Está escribiéndole a un asistente de IA, no a una persona. No puede confirmar un precio ni una hora; eso lo hace el formulario de reserva.',
+    chatOpenedBooking: 'Le abrí el formulario de reserva con lo que me contó.',
     wizNext: 'Siguiente',
     wizBack: 'Atrás',
     wizJobLegend: '¿Qué lo trae por aquí?',

@@ -18,6 +18,18 @@
   # git errors, and the build proceeds, which is the safe direction.
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
 
+# The help widget's messaging route. Netlify would find this by default;
+# naming it means a move shows up as a config change rather than as a
+# silently 404ing endpoint.
+#
+# Requires ANTHROPIC_API_KEY in the site's environment variables. Set it in
+# the Netlify UI, never in this file and never in the repository. Until it is
+# set the function answers 503 with configured:false and the widget shows the
+# technician's number instead of a chat that fails without saying so.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [build.environment]
   NODE_VERSION = "20"
 

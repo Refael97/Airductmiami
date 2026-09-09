@@ -26,6 +26,15 @@ export interface BusinessInfo {
   description: string;
   phone: string;
   phoneHref: string;
+  /**
+   * A second technician's mobile, for the "call me now" option in the help
+   * widget only. Separate from `phone` on purpose: `phone` is the published
+   * number and appears in the schema, the footer and every page, so it must
+   * stay one number everywhere. This one is a routing choice inside a single
+   * widget and is never published as the business number.
+   */
+  phoneNow: string;
+  phoneNowHref: string;
   email: string;
   /** Second mailbox. Different kind of message, not a different department. */
   emailSupport: string;
@@ -81,6 +90,8 @@ export const business: BusinessInfo = {
      provisioned later, change it here and nowhere else. */
   phone: '(561) 897-9930',
   phoneHref: '+15618979930',
+  phoneNow: '(305) 360-4932',
+  phoneNowHref: '+13053604932',
   email: 'info@garage-door-fixers.com',
   emailSupport: 'support@garage-door-fixers.com',
   phoneLive: true,
