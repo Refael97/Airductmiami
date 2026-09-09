@@ -13,6 +13,10 @@ interface Props {
 const { name, size = 30, class: cls = '' } = Astro.props;
 
 const paths: Record<string, string> = {
+  // Speech bubble with a tail: messaging, not a document
+  chat: `<path d="M20.5 11.8a7.9 7.9 0 0 1-8.5 7.9 9.3 9.3 0 0 1-3.8-.85L3.5 20.5l1.8-4.4A7.9 7.9 0 0 1 12 3.9a7.9 7.9 0 0 1 8.5 7.9z"/>
+         <path d="M8.8 11.9h.01M12 11.9h.01M15.2 11.9h.01"/>`,
+
   // Garage door: frame, panel lines, ground
   door: `<rect x="3" y="5" width="18" height="15" rx="1.5"/>
          <path d="M3 9.5h18M3 14h18M3 20h18"/>`,

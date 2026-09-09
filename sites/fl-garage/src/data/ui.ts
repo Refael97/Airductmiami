@@ -399,6 +399,10 @@ export interface Strings {
   chatError: string;
   chatDisclosure: string;
   chatOpenedBooking: string;
+  chatBusy: string;
+  chatAgent: string;
+  chatTeaser: string;
+  chatTeaserSub: string;
   wizNext: string;
   wizBack: string;
   wizJobLegend: string;
@@ -794,6 +798,11 @@ export const ui: Record<Locale, Strings> = {
     chatDisclosure:
       'You are messaging an AI assistant, not a person. It cannot confirm a price or a time; the booking form does that.',
     chatOpenedBooking: 'I have opened the booking form for you with what you told me.',
+    chatBusy:
+      'Messaging is busy right now. Call the technician below, or book a visit and we will come to you.',
+    chatAgent: 'Sofia',
+    chatTeaser: 'Not sure what is wrong?',
+    chatTeaserSub: 'Describe the noise and we will tell you what it is.',
     wizNext: 'Next',
     wizBack: 'Back',
     wizJobLegend: 'What brings you here?',
@@ -1226,6 +1235,11 @@ export const ui: Record<Locale, Strings> = {
     chatDisclosure:
       'Está escribiéndole a un asistente de IA, no a una persona. No puede confirmar un precio ni una hora; eso lo hace el formulario de reserva.',
     chatOpenedBooking: 'Le abrí el formulario de reserva con lo que me contó.',
+    chatBusy:
+      'Los mensajes están saturados en este momento. Llame al técnico aquí abajo, o agende una visita y vamos a su casa.',
+    chatAgent: 'Sofía',
+    chatTeaser: '¿No sabe qué tiene la puerta?',
+    chatTeaserSub: 'Describa el ruido y le decimos qué es.',
     wizNext: 'Siguiente',
     wizBack: 'Atrás',
     wizJobLegend: '¿Qué lo trae por aquí?',

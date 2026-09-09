@@ -17,6 +17,7 @@
  * to open the booking form prefilled, which is why there is exactly one
  * appointment grid on this site and one place that decides what is available.
  */
+import Icon from './Icon.astro';
 import { business } from '../data/business';
 import { ui, type Locale } from '../data/ui';
 
@@ -25,6 +26,22 @@ const { lang } = Astro.props;
 const t = ui[lang];
 ---
 <div class="hc" data-help-chat>
+  {/* A small nudge that rises out of the bubble a few seconds in. Shown at
+      most once per session, never while the promo popup is on screen, and
+      gone for good the moment it is dismissed or the panel is opened. A
+      second thing shouting at someone who is already reading is a reason to
+      leave, not a reason to click. */}
+  <div class="hc-teaser" data-hc-teaser hidden>
+    <button type="button" class="hc-teaser-x" data-hc-teaser-close aria-label={t.wizClose}>
+      <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="3" stroke-linecap="round">
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+    <strong>{t.chatTeaser}</strong>
+    <span>{t.chatTeaserSub}</span>
+  </div>
+
   <button type="button" class="hc-bubble" data-hc-toggle aria-expanded="false" aria-controls="hc-panel">
     <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none"
          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -42,7 +59,7 @@ const t = ui[lang];
         </svg>
         {t.chatBack}
       </button>
-      <strong>{t.chatGreeting}</strong>
+      <strong data-hc-title>{t.chatGreeting}</strong>
       <button type="button" class="hc-x" data-hc-toggle aria-label={t.wizClose}>
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
              stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
@@ -55,21 +72,34 @@ const t = ui[lang];
     <div class="hc-menu" data-hc-view="menu">
       <p class="hc-sub">{t.chatGreetingSub}</p>
 
-      <button type="button" class="hc-opt" data-hc-open="chat">
-        <span class="hc-opt-title">{t.chatPickChat}</span>
-        <span class="hc-opt-note">{t.chatPickChatNote}</span>
+      {/* Three colours, in the order the brand uses them: navy for the
+          considered choice, red for the urgent one, white for the planned
+          one. Someone whose car is trapped should be able to find the red
+          button without reading three headings. */}
+      <button type="button" class="hc-opt hc-opt-navy" data-hc-open="chat">
+        <span class="hc-opt-ico"><Icon name="chat" size={20} /></span>
+        <span class="hc-opt-text">
+          <span class="hc-opt-title">{t.chatPickChat}</span>
+          <span class="hc-opt-note">{t.chatPickChatNote}</span>
+        </span>
       </button>
 
-      <a href={`tel:${business.phoneNowHref}`} class="hc-opt hc-opt-call" data-hc-call>
-        <span class="hc-opt-title">{t.chatPickCall}</span>
-        <span class="hc-opt-note">{t.chatPickCallNote}</span>
-        <span class="hc-opt-num">{business.phoneNow}</span>
+      <a href={`tel:${business.phoneNowHref}`} class="hc-opt hc-opt-red" data-hc-call>
+        <span class="hc-opt-ico"><Icon name="phone" size={20} /></span>
+        <span class="hc-opt-text">
+          <span class="hc-opt-title">{t.chatPickCall}</span>
+          <span class="hc-opt-note">{t.chatPickCallNote}</span>
+          <span class="hc-opt-num">{business.phoneNow}</span>
+        </span>
       </a>
 
-      <button type="button" class="hc-opt" data-hc-open="book">
-        <span class="hc-opt-title">{t.chatPickBook}</span>
-        <span class="hc-opt-note">{t.chatPickBookNote}</span>
-      </button>
+      <button type="button" class="hc-opt hc-opt-white" data-hc-open="book">
+        <span class="hc-opt-ico"><Icon name="clock" size={20} /></span>
+        <span class="hc-opt-text">
+          <span class="hc-opt-title">{t.chatPickBook}</span>
+          <span class="hc-opt-note">{t.chatPickBookNote}</span>
+        </span>
+      </a>
     </div>
 
     {/* ---- messaging ---- */}
@@ -97,6 +127,9 @@ const t = ui[lang];
   define:vars={{
     lang,
     C: {
+      agent: t.chatAgent,
+      busy: t.chatBusy,
+      greeting: t.chatGreeting,
       opener: t.chatOpener,
       thinking: t.chatThinking,
       offline: t.chatOffline,
@@ -121,6 +154,9 @@ const t = ui[lang];
     var form = root.querySelector('[data-hc-form]');
     var input = root.querySelector('[data-hc-input]');
 
+    var teaser = root.querySelector('[data-hc-teaser]');
+    var title = root.querySelector('[data-hc-title]');
+
     var open = false;
     var view = 'menu';
     /* The transcript we send back each turn. The API is stateless, so this
@@ -132,13 +168,23 @@ const t = ui[lang];
       view = name;
       for (var k in views) if (views[k]) views[k].hidden = k !== name;
       back.hidden = name === 'menu';
+      /* Once you are in the conversation the heading should say who you are
+         talking to, not what the widget is called. */
+      if (title) title.textContent = name === 'chat' ? C.agent : C.greeting;
       if (name === 'chat' && !history.length) {
         bubble('bot', C.opener);
         input.focus();
       }
     }
 
+    function hideTeaser(permanent) {
+      if (!teaser) return;
+      teaser.hidden = true;
+      if (permanent) { try { sessionStorage.setItem('gdfHelpTeaser', '1'); } catch (e) {} }
+    }
+
     function toggle(force) {
+      hideTeaser(true);
       open = typeof force === 'boolean' ? force : !open;
       panel.hidden = !open;
       root.querySelector('[data-hc-toggle]').setAttribute('aria-expanded', String(open));
@@ -173,6 +219,8 @@ const t = ui[lang];
     }
 
     root.addEventListener('click', function (e) {
+      if (e.target.closest('[data-hc-teaser-close]')) { hideTeaser(true); return; }
+      if (e.target.closest('[data-hc-teaser]')) { hideTeaser(true); toggle(true); return; }
       if (e.target.closest('[data-hc-toggle]')) { toggle(); return; }
       if (e.target.closest('[data-hc-back]')) { show('menu'); return; }
 
@@ -196,6 +244,22 @@ const t = ui[lang];
         window.gtag('event', 'help_route', { route: 'call', site_language: lang });
       }
     });
+
+    /* The nudge. Late enough that it is not competing with the page
+       loading, and skipped outright if the promo popup has the screen or
+       this visitor has already seen it. */
+    (function armTeaser() {
+      if (!teaser) return;
+      var seen = false;
+      try { seen = sessionStorage.getItem('gdfHelpTeaser') === '1'; } catch (e) {}
+      if (seen) return;
+      setTimeout(function () {
+        if (open || document.querySelector('.promo-card')) return;
+        var dlg = document.getElementById('booking-dialog');
+        if (dlg && dlg.open) return;
+        teaser.hidden = false;
+      }, 6000);
+    })();
 
     /* Escape closes the panel, matching the booking dialog's behaviour. */
     document.addEventListener('keydown', function (e) {
@@ -263,7 +327,10 @@ const t = ui[lang];
           /* The endpoint says `configured: false` when no key is set. That is
              a deployment state, not a failure to hide from the visitor. */
           if (!res.ok || res.d.configured === false) {
-            fallbackBubble(res.d && res.d.configured === false ? C.offline : C.error);
+            var why = res.d && res.d.configured === false ? C.offline
+              : res.d && res.d.error === 'rate_limited' ? C.busy
+              : C.error;
+            fallbackBubble(why);
             return;
           }
           if (res.d.reply) {
@@ -336,17 +403,79 @@ const t = ui[lang];
   .hc-sub { font-size: 0.87rem; color: var(--c-body); margin: 0 0 0.9rem; }
 
   .hc-opt {
-    display: block; width: 100%; text-align: left; cursor: pointer;
+    display: flex; align-items: flex-start; gap: 0.7rem;
+    width: 100%; text-align: left; cursor: pointer;
     text-decoration: none; font: inherit;
-    padding: 0.7rem 0.85rem; margin-bottom: 0.55rem;
-    border: 1px solid var(--c-line); border-radius: 12px; background: #fff;
-    transition: border-color 0.16s ease, background 0.16s ease;
+    padding: 0.75rem 0.85rem; margin-bottom: 0.55rem;
+    border: 1.5px solid var(--c-line); border-radius: 13px; background: #fff;
+    transition: transform 0.15s ease, box-shadow 0.18s ease, border-color 0.16s ease;
   }
-  .hc-opt:hover { border-color: var(--c-primary); background: var(--c-primary-light); text-decoration: none; }
+  .hc-opt:hover { text-decoration: none; transform: translateY(-1px); }
   .hc-opt:last-child { margin-bottom: 0; }
-  .hc-opt-title { display: block; font-weight: 800; font-size: 0.9rem; color: var(--c-ink); }
-  .hc-opt-note { display: block; font-size: 0.78rem; color: var(--c-muted); margin-top: 0.1rem; line-height: 1.35; }
-  .hc-opt-num { display: block; margin-top: 0.35rem; font-weight: 800; color: var(--c-accent); font-size: 0.95rem; }
+  .hc-opt-text { display: block; }
+  .hc-opt-title { display: block; font-weight: 800; font-size: 0.9rem; }
+  .hc-opt-note { display: block; font-size: 0.78rem; margin-top: 0.1rem; line-height: 1.35; opacity: 0.78; }
+  .hc-opt-num { display: block; margin-top: 0.35rem; font-weight: 800; font-size: 1rem; }
+
+  .hc-opt-ico {
+    flex: 0 0 auto; display: grid; place-items: center;
+    width: 2.2rem; height: 2.2rem; border-radius: 10px;
+  }
+
+  /* Navy, red, white: the brand's three, in the order it uses them. Navy is
+     the considered choice, red the urgent one, white the planned one, so
+     someone with a car trapped finds the right button without reading. */
+  .hc-opt-navy {
+    background: var(--c-primary); border-color: var(--c-primary); color: #fff;
+  }
+  .hc-opt-navy .hc-opt-ico { background: rgba(255, 255, 255, 0.16); color: #fff; }
+  .hc-opt-navy:hover { box-shadow: 0 8px 20px rgba(15, 39, 71, 0.28); }
+
+  .hc-opt-red {
+    background: var(--c-accent); border-color: var(--c-accent); color: #fff;
+  }
+  .hc-opt-red .hc-opt-ico { background: rgba(255, 255, 255, 0.18); color: #fff; }
+  .hc-opt-red .hc-opt-num { color: #fff; }
+  .hc-opt-red:hover { box-shadow: 0 8px 20px rgba(214, 40, 40, 0.32); }
+
+  .hc-opt-white { background: #fff; color: var(--c-ink); }
+  .hc-opt-white .hc-opt-ico { background: var(--c-primary-light); color: var(--c-primary); }
+  .hc-opt-white:hover { border-color: var(--c-primary); box-shadow: 0 8px 20px rgba(15, 39, 71, 0.12); }
+
+  /* ---- the nudge ------------------------------------------------------ */
+
+  .hc-teaser {
+    position: absolute; right: 0; bottom: calc(100% + 0.7rem);
+    width: min(255px, calc(100vw - 2.2rem));
+    cursor: pointer; text-align: left;
+    padding: 0.7rem 1.9rem 0.75rem 0.85rem;
+    background: #fff; border: 1px solid var(--c-line); border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(11, 22, 40, 0.2);
+    animation: hc-teaser-in 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  }
+  .hc-teaser[hidden] { display: none; }
+  .hc-teaser strong { display: block; font-size: 0.88rem; color: var(--c-ink); }
+  .hc-teaser span { display: block; font-size: 0.78rem; color: var(--c-muted); margin-top: 0.12rem; line-height: 1.35; }
+  /* The tail, pointing back at the bubble it came from. */
+  .hc-teaser::after {
+    content: ''; position: absolute; right: 1.4rem; bottom: -7px;
+    width: 12px; height: 12px; background: #fff;
+    border-right: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+    transform: rotate(45deg);
+  }
+  .hc-teaser-x {
+    position: absolute; top: 0.35rem; right: 0.35rem;
+    display: grid; place-items: center; cursor: pointer;
+    width: 1.3rem; height: 1.3rem; padding: 0;
+    border: 0; border-radius: 50%; background: none; color: var(--c-muted);
+  }
+  .hc-teaser-x:hover { background: var(--c-bg-alt, #f4f6f8); color: var(--c-ink); }
+
+  @keyframes hc-teaser-in {
+    from { opacity: 0; transform: translateY(10px) scale(0.94); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hc-teaser { animation: none; } }
 
   /* ---- the conversation ---------------------------------------------- */
 

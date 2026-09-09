@@ -20,6 +20,10 @@
  * turns a booking into a broken promise.
  */
 import Anthropic from '@anthropic-ai/sdk';
+/* Deliberately outside netlify/functions: every file directly in that
+   directory is published as its own endpoint, and a shared module with no
+   default export would become a broken route. */
+import { check as rateLimit } from '../lib/rate-limit.mts';
 
 /** Keep a stray or hostile client from turning one request into a long bill. */
 const MAX_TURNS = 24;
@@ -62,10 +66,11 @@ const BOOKING_TOOL: Anthropic.Tool = {
   },
 };
 
-const SYSTEM_EN = `You answer for Garage Door Fixers, a garage door repair and installation company covering Florida. You are talking to someone on the company website who clicked "message a technician".
+const SYSTEM_EN = `You are Sofia, the service coordinator for Garage Door Fixers, a garage door repair and installation company covering Florida. You are talking to someone on the company website who clicked "message a technician". Introduce yourself by name once, in your first reply, and not again.
 
-How to behave:
+How to write:
 - Answer in two or three sentences. This is a chat bubble on a phone, not an article.
+- Never use a dash of any kind. No em dash, no en dash, no hyphen standing in for a pause. Where you would reach for one, use a comma, a full stop, or start a new sentence. This is a house rule and it has no exceptions.
 - Diagnose before you sell. Ask what the door is doing, what it sounded like, whether it moves at all.
 - If someone describes a snapped torsion spring, a cable off the drum, or a door hanging crooked, tell them plainly not to operate it and not to try to fix it themselves. Those carry enough stored energy to injure someone badly.
 - The moment you know the job type and they want someone to come out, call open_booking. The form takes it from there.
@@ -77,10 +82,11 @@ What you must never do:
 - Never invent a customer, a review, or a past job.
 - If you do not know, say so and offer the phone number.`;
 
-const SYSTEM_ES = `Usted responde por Garage Door Fixers, una empresa de reparación e instalación de puertas de garaje que cubre Florida. Está hablando con alguien en el sitio web de la empresa que hizo clic en "escribirle a un técnico".
+const SYSTEM_ES = `Usted es Sofía, la coordinadora de servicio de Garage Door Fixers, una empresa de reparación e instalación de puertas de garaje que cubre Florida. Está hablando con alguien en el sitio web de la empresa que hizo clic en "escribirle a un técnico". Preséntese por su nombre una sola vez, en su primera respuesta, y no vuelva a hacerlo.
 
-Cómo comportarse:
+Cómo escribir:
 - Responda en dos o tres oraciones. Esto es una burbuja de chat en un teléfono, no un artículo.
+- Nunca use una raya ni un guion de ningún tipo. Ni raya larga, ni raya corta, ni guion haciendo de pausa. Donde le salga uno, use una coma, un punto, o empiece otra oración. Es una regla de la casa y no tiene excepciones.
 - Diagnostique antes de vender. Pregunte qué hace la puerta, qué sonido hizo, si se mueve o no.
 - Si alguien describe un resorte de torsión roto, un cable salido del tambor, o una puerta colgando torcida, dígale claramente que no la opere y que no intente arreglarla. Esas piezas guardan suficiente energía para lesionar gravemente a una persona.
 - En cuanto sepa el tipo de trabajo y que quieren que vaya alguien, llame a open_booking. El formulario sigue desde ahí.
@@ -112,6 +118,22 @@ export default async function handler(request: Request): Promise<Response> {
     /* Not an error on our side, and not something to hide from the widget.
        `configured: false` is what makes it fall back cleanly. */
     return json(503, { configured: false, error: 'chat_not_configured' });
+  }
+
+  /* Before anything that costs money. The token caps bound one request;
+     this is what bounds how many of them one visitor can send. */
+  const verdict = await rateLimit(request);
+  if (!verdict.ok) {
+    return new Response(
+      JSON.stringify({ error: 'rate_limited', reason: verdict.reason }),
+      {
+        status: 429,
+        headers: {
+          'content-type': 'application/json',
+          'retry-after': String(verdict.retryAfter),
+        },
+      },
+    );
   }
 
   let body: Body;
@@ -156,6 +178,12 @@ export default async function handler(request: Request): Promise<Response> {
       messages,
     });
 
+    /* Belt and braces on the house rule. The prompt forbids dashes; this
+       guarantees it, because one slipping through is the kind of thing
+       nobody notices until it is on every page of the transcript. */
+    const noDashes = (t: string) =>
+      t.replace(/\s*[\u2014\u2013]\s*/g, ', ').replace(/(\S)\s+-\s+(\S)/g, '$1, $2');
+
     let reply = '';
     let booking: Record<string, unknown> | null = null;
     for (const block of response.content) {
@@ -171,7 +199,7 @@ export default async function handler(request: Request): Promise<Response> {
       return json(200, { reply: '', declined: true, booking: null });
     }
 
-    return json(200, { reply: reply.trim(), booking, declined: false });
+    return json(200, { reply: noDashes(reply.trim()), booking, declined: false });
   } catch (error) {
     if (error instanceof Anthropic.AuthenticationError) {
       return json(503, { configured: false, error: 'bad_api_key' });

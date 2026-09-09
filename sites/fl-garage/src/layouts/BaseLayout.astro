@@ -117,12 +117,47 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
 
         /* Phone taps, captured by delegation so the listener survives any
            number of tel: links being added to any page later. Capture phase,
-           because the click navigates away immediately. */
+           because the click navigates away immediately.
+
+           What a tap is and is not: this records that someone opened their
+           dialler. It cannot tell you whether they pressed call, whether it
+           connected, or how long it lasted. Knowing that needs a call
+           tracking number that records the call itself. Until then this is
+           the ceiling of what the site can honestly report, so the event is
+           named for the tap.
+
+           The three parameters are what make it usable. `phone_number`
+           separates the technician's direct line in the help widget from the
+           published number in the header and footer. `placement` says which
+           surface earned it, derived from where the link sits rather than
+           from a hand maintained attribute on every link. `page_path` says
+           which page the visitor was reading when they gave up on the web
+           and reached for the phone, which is the one that tells you where
+           the site is failing to answer a question. */
+        function placementOf(a) {
+          if (a.closest('[data-help-chat]')) return 'help_widget';
+          if (a.closest('header')) return 'header';
+          if (a.closest('footer')) return 'footer';
+          if (a.closest('.promo-card')) return 'promo_popup';
+          if (a.closest('dialog')) return 'booking_modal';
+          if (a.closest('aside')) return 'sidebar';
+          return 'page_body';
+        }
+
         document.addEventListener(
           'click',
           function (e) {
             var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
-            if (a) gtag('event', 'phone_call', { page_path: location.pathname, site_language: lang });
+            if (!a) return;
+            gtag('event', 'phone_call_tap', {
+              phone_number: a.getAttribute('href').replace('tel:', ''),
+              placement: placementOf(a),
+              page_path: location.pathname,
+              site_language: lang,
+            });
+            /* The original event name, kept so the history in the property
+               stays one continuous series rather than restarting today. */
+            gtag('event', 'phone_call', { page_path: location.pathname, site_language: lang });
           },
           true
         );
