@@ -21,6 +21,7 @@ import ItemRequest from '../ItemRequest.astro';
 import FAQ from '../FAQ.astro';
 import { doorBySlug } from '../../data/doors';
 import type { DoorModel } from '../../data/types';
+import { doorImages, hasImage, altFor } from '../../data/pageImages';
 import { serviceSchema, faqSchema } from '../../lib/schema';
 import { ui, paths, doorHref, productHref, money, otherLocale, type Locale } from '../../data/ui';
 import { door as localise } from '../../lib/i18n';
@@ -30,6 +31,8 @@ const { lang, item: raw } = Astro.props;
 const item = localise(lang, raw);
 const t = ui[lang];
 const p = paths[lang];
+
+const img = doorImages[item.slug];
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const href = doorHref(lang, item.slug);
@@ -77,6 +80,16 @@ const schema = [
     <div class="container container-narrow prose">
       <h1>{item.name}</h1>
       <AnswerBox text={item.answer} lang={lang} />
+
+      {hasImage(img) && (
+        <img
+          class="item-shot"
+          src={`/images/${img.file}`}
+          width="1200" height="900"
+          alt={altFor(lang, img)}
+          loading="eager" fetchpriority="high" decoding="async"
+        />
+      )}
 
       <p class="dp-price">
         <strong>{t.from} {money(raw.priceLow)}</strong> {to} {money(raw.priceHigh)}
@@ -133,6 +146,13 @@ const schema = [
 </BaseLayout>
 
 <style>
+  .item-shot {
+    display: block; width: 100%; height: auto; margin: 0 0 1.5rem;
+    aspect-ratio: 4 / 3; object-fit: cover;
+    border: 1px solid var(--c-line); border-radius: var(--radius);
+    background: var(--c-bg-alt, #f4f6f8);
+  }
+
   .dp-price { font-size: 1.15rem; margin: 0 0 1.6rem; }
   .dp-rating { list-style: none; padding: 0; margin: 0 0 0.9rem; display: grid; gap: 0.5rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
   .dp-rating li {

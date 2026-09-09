@@ -3,12 +3,16 @@
  *
  * Two rules govern everything here.
  *
- * First, these are illustrations, not evidence. Every image is generated,
- * every page that shows one carries a note saying so, and none of them is
- * ever presented as a photograph of work this business performed. See
- * docs/TRUST-AND-CLAIMS.md. The same images must never be uploaded to a
- * Google Business Profile, where photos are read as documentation of the
- * business rather than as editorial illustration.
+ * First, these are illustrations, not evidence. None of them is ever
+ * presented as a photograph of work this business performed. The statement
+ * saying so lives once, on the privacy page under "About the images on this
+ * site", rather than under every grid of pictures: a disclaimer repeated at
+ * every turn reads as an apology and nobody finishes it. What the rule
+ * actually protects is that no image here claims a customer, a technician, a
+ * certificate or a completed job. See docs/TRUST-AND-CLAIMS.md.
+ *
+ * These must never be uploaded to a Google Business Profile, where photos
+ * are read as documentation of the business rather than as illustration.
  *
  * Second, an entry here renders only if the file actually exists on disk.
  * `hasImage` checks `public/` at build time, which means a missing file
@@ -175,5 +179,149 @@ export const homeImages: Record<string, PageImage> = {
     file: 'new-build-three-car-garage.webp',
     alt: 'Three car garage on a new two storey house in a master planned Florida subdivision, a double door and a single door in matching tan',
     altEs: 'Garaje para tres carros en una casa nueva de dos pisos en una urbanización planificada de Florida, con una puerta doble y una sencilla del mismo color',
+  },
+};
+
+/**
+ * Parts catalogue illustrations.
+ *
+ * Studio product shots on a near white ground rather than cut out to
+ * transparency, because every surface that renders one sits on a white card.
+ * On white, a clean studio background and a transparent one are the same
+ * picture, and the studio version keeps its contact shadow, which is what
+ * stops a component from looking like it is floating.
+ *
+ * Several deliberately show the failed state rather than the new part: a
+ * stripped drive gear, a frayed cable, a dented section. Someone searching
+ * for a part is looking at a broken one, and matching what they can see in
+ * their own garage is the job.
+ */
+export const partImages: Record<string, PageImage> = {
+  'torsion-spring': {
+    file: 'part-torsion-spring.webp',
+    alt: 'Garage door torsion spring on a short length of shaft, a tight helical coil of square section steel wire with a red winding cone at one end',
+    altEs: 'Resorte de torsión de puerta de garaje sobre un tramo de eje, un espiral apretado de alambre de acero de sección cuadrada con un cono de tensado rojo en un extremo',
+  },
+  'extension-spring': {
+    file: 'part-extension-spring.webp',
+    alt: 'Pair of garage door extension springs with hooked loop ends, one threaded with a safety containment cable through the centre of the coil',
+    altEs: 'Par de resortes de extensión de puerta de garaje con extremos de gancho, uno con el cable de seguridad pasado por el centro del espiral',
+  },
+  'lift-cable': {
+    file: 'part-lift-cable.webp',
+    alt: 'Coiled galvanised garage door lift cable with a swaged stop ball at one end, and a section where the wire strands have frayed and splayed outward',
+    altEs: 'Cable de elevación galvanizado enrollado con una bola de tope prensada en un extremo, y un tramo donde los hilos se deshilacharon y se abrieron',
+  },
+  roller: {
+    file: 'part-roller.webp',
+    alt: 'Three garage door rollers side by side, a white nylon wheel on a sealed bearing, a black nylon one and a bare steel one, each on a long stem',
+    altEs: 'Tres rodillos de puerta de garaje uno al lado del otro, uno de nailon blanco con rodamiento sellado, uno de nailon negro y uno de acero, cada uno con vástago largo',
+  },
+  hinge: {
+    file: 'part-hinge.webp',
+    alt: 'Two galvanised steel garage door hinges lying flat, a flat leaf section hinge with a roller carrier tube and a taller end hinge bracket',
+    altEs: 'Dos bisagras de acero galvanizado de puerta de garaje planas, una bisagra de sección con tubo portarrodillo y un soporte de bisagra de extremo más alto',
+  },
+  'bottom-seal': {
+    file: 'part-bottom-seal.webp',
+    alt: 'Black rubber U shaped garage door bottom seal, partly coiled, beside the aluminium retainer track it slides into',
+    altEs: 'Sello inferior de goma negra en forma de U para puerta de garaje, parcialmente enrollado, junto al riel de aluminio en el que se desliza',
+  },
+  'weather-seal': {
+    file: 'part-weather-seal.webp',
+    alt: 'White vinyl garage door perimeter stop moulding with the integral flexible flap gasket along one edge shown in profile',
+    altEs: 'Moldura de tope de vinilo blanco para el perímetro de la puerta de garaje, con la aleta flexible integrada mostrada de perfil',
+  },
+  track: {
+    file: 'part-track.webp',
+    alt: 'Garage door track sections crossing, a curved radius piece and a straight vertical piece with punched bolt slots, plus a horizontal piece with a dent and a bend',
+    altEs: 'Secciones de riel de puerta de garaje cruzadas, una pieza curva de radio y una vertical recta con ranuras troqueladas, más una pieza horizontal abollada y doblada',
+  },
+  'opener-drive-gear': {
+    file: 'part-opener-drive-gear.webp',
+    alt: 'Garage door opener drive gear with several nylon teeth stripped away, beside its steel worm shaft, with fine white plastic shavings scattered around',
+    altEs: 'Engranaje de motor de puerta de garaje con varios dientes de nailon arrancados, junto a su tornillo sinfín de acero y virutas finas de plástico blanco alrededor',
+  },
+  'safety-sensor': {
+    file: 'part-safety-sensor.webp',
+    alt: 'Pair of garage door photo eye safety sensors in adjustable steel brackets, each with a round lens and an indicator light, thin bell wire trailing from the back',
+    altEs: 'Par de sensores fotoeléctricos de seguridad de puerta de garaje en soportes de acero ajustables, cada uno con lente redonda y luz indicadora, con cable delgado saliendo por detrás',
+  },
+  remote: {
+    file: 'part-remote.webp',
+    alt: 'Two garage door remotes, a three button visor remote with a metal clip and a smaller two button keyfob on a split ring',
+    altEs: 'Dos controles de puerta de garaje, uno de visera de tres botones con clip metálico y un llavero más pequeño de dos botones en una argolla',
+  },
+  keypad: {
+    file: 'part-keypad.webp',
+    alt: 'Wireless garage door keypad with the flip up weather cover raised, showing the grid of rubber buttons on its backplate',
+    altEs: 'Teclado inalámbrico de puerta de garaje con la tapa abatible levantada, mostrando la cuadrícula de botones de goma sobre su placa trasera',
+  },
+  panel: {
+    file: 'part-panel.webp',
+    alt: 'Single white steel garage door section standing upright, with two raised panel embossings, an end stile, a top edge hinge bracket and a deep dent creasing the lower half',
+    altEs: 'Sección individual de puerta de garaje de acero blanco de pie, con dos relieves rectangulares, un montante lateral, un soporte de bisagra en el borde superior y una abolladura profunda en la mitad inferior',
+  },
+};
+
+/**
+ * Door catalogue illustrations.
+ *
+ * Each one is on the kind of Florida house that door actually goes on: CBS
+ * and barrel tile for the wind rated steel, a coastal block house for the
+ * impact rated one, a tilt wall industrial unit for the commercial door.
+ * A door photographed against a house it would never be fitted to teaches
+ * the reader the wrong thing about their own street.
+ */
+export const doorImages: Record<string, PageImage> = {
+  'wind-rated-steel': {
+    file: 'door-wind-rated-steel.webp',
+    alt: 'Wind rated white steel garage door with short raised panels, closed on a single storey concrete block and stucco house with a barrel tile roof and sabal palms',
+    altEs: 'Puerta de garaje de acero blanco resistente al viento con paneles en relieve cortos, cerrada en una casa de un piso de bloque y estuco con techo de teja y palmas',
+  },
+  'insulated-steel': {
+    file: 'door-insulated-steel.webp',
+    alt: 'Almond coloured insulated steel garage door with long raised panels and four small windows across the top, closed on a two storey stucco house with a shingle roof',
+    altEs: 'Puerta de garaje de acero aislado color almendra con paneles largos en relieve y cuatro ventanas pequeñas en la parte superior, cerrada en una casa de dos pisos de estuco con techo de tejas asfálticas',
+  },
+  'impact-rated-steel': {
+    file: 'door-impact-rated-steel.webp',
+    alt: 'Impact rated white steel garage door standing half open on a coastal block house, the heavy horizontal reinforcing struts and galvanised vertical tracks visible on the inside face',
+    altEs: 'Puerta de garaje de acero blanco resistente a impactos entreabierta en una casa costera de bloque, con los refuerzos horizontales pesados y los rieles verticales galvanizados visibles por dentro',
+  },
+  'carriage-house-steel': {
+    file: 'door-carriage-house-steel.webp',
+    alt: 'Steel carriage house garage door finished as dark stained timber with cross buck overlays, black strap hinges and four arched windows, on a Mediterranean stucco house',
+    altEs: 'Puerta de garaje de acero estilo carruaje con acabado de madera oscura, refuerzos cruzados aplicados, herrajes negros y cuatro ventanas de arco, en una casa mediterránea de estuco',
+  },
+  'composite-carriage-house': {
+    file: 'door-composite-carriage-house.webp',
+    alt: 'Composite carriage house garage door with a deep walnut woodgrain texture, cross buck overlays and grille windows, on a coastal cottage with white lap siding and a metal roof',
+    altEs: 'Puerta de garaje compuesta estilo carruaje con textura profunda de veta color nogal, refuerzos cruzados y ventanas con cuadrícula, en una casa costera con forro blanco y techo metálico',
+  },
+  'full-view-aluminium': {
+    file: 'door-full-view-aluminium.webp',
+    alt: 'Full view garage door with a black anodised aluminium frame and sixteen frosted glass panels, closed on a modern flat roofed white stucco Florida house',
+    altEs: 'Puerta de garaje de vista completa con marco de aluminio anodizado negro y dieciséis paneles de vidrio esmerilado, cerrada en una casa moderna de estuco blanco con techo plano',
+  },
+  'fiberglass-door': {
+    file: 'door-fiberglass-door.webp',
+    alt: 'Fiberglass garage door with an oak woodgrain finish in honey tone, flush panels and a row of rectangular windows near the top, on a single storey stucco house with a tile roof',
+    altEs: 'Puerta de garaje de fibra de vidrio con acabado de veta de roble en tono miel, paneles lisos y una fila de ventanas rectangulares arriba, en una casa de un piso de estuco con techo de teja',
+  },
+  'vinyl-door': {
+    file: 'door-vinyl-door.webp',
+    alt: 'White vinyl garage door with a smooth flush surface and long shallow raised panels, on a modest single storey stucco house under a live oak in an older inland neighbourhood',
+    altEs: 'Puerta de garaje de vinilo blanco con superficie lisa y paneles largos poco pronunciados, en una casa sencilla de un piso de estuco bajo un roble en un vecindario interior más antiguo',
+  },
+  'wood-door': {
+    file: 'door-wood-door.webp',
+    alt: 'Solid cedar garage door in a clear finish showing real vertical plank grain and visible joinery, with three windows in the top rail, on a coastal house with a standing seam metal roof',
+    altEs: 'Puerta de garaje de cedro macizo con acabado transparente que muestra la veta vertical real y la ensambladura, con tres ventanas en el travesaño superior, en una casa costera con techo metálico',
+  },
+  'commercial-sectional': {
+    file: 'door-commercial-sectional.webp',
+    alt: 'Wide ribbed white steel commercial sectional door in a concrete tilt wall unit of a Florida industrial park, with a loading apron and a bollard either side',
+    altEs: 'Puerta seccional comercial ancha de acero blanco acanalado en una nave de concreto de un parque industrial de Florida, con plataforma de carga y un bolardo a cada lado',
   },
 };

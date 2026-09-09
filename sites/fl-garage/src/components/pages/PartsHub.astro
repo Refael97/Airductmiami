@@ -20,6 +20,7 @@ import CtaBand from '../CtaBand.astro';
 import PriceDisclaimer from '../PriceDisclaimer.astro';
 import { parts } from '../../data/parts';
 import { services } from '../../data/services';
+import { partImages, hasImage, altFor } from '../../data/pageImages';
 import { ui, paths, partHref, money, otherLocale, type Locale } from '../../data/ui';
 import { part as localise } from '../../lib/i18n';
 import { business } from '../../data/business';
@@ -68,6 +69,14 @@ const schema = {
         {rows.map(({ raw, item, priceLow, diyLabel }) => (
           <li class="ph-card">
             <a href={partHref(lang, item.slug)} class="ph-link">
+              {hasImage(partImages[item.slug]) && (
+                <img
+                  class="ph-shot"
+                  src={`/images/${partImages[item.slug].file}`}
+                  width="1200" height="900" loading="lazy" decoding="async"
+                  alt={altFor(lang, partImages[item.slug])}
+                />
+              )}
               <h2 class="ph-name">{item.shortName}</h2>
               {priceLow !== undefined && (
                 <p class="ph-price">{t.from} {money(priceLow)}</p>
@@ -87,6 +96,19 @@ const schema = {
 </BaseLayout>
 
 <style>
+  /* Sits above the card's own padding, so the shot runs edge to edge at the
+     top of the card the way the door cards on the home page do. */
+  /* Bleeds over the card's 1.2rem side padding to reach its edges.
+     `max-width: none` is load bearing: the global reset caps every image at
+     100% of its container, which silently trimmed exactly the 2.4rem this
+     adds and left a gutter down one side. `align-self: stretch` is not an
+     alternative here, since a replaced element is never stretched by it. */
+  .ph-shot {
+    display: block; width: calc(100% + 2.4rem); max-width: none;
+    margin: -1.1rem -1.2rem 0.9rem; aspect-ratio: 4 / 3; object-fit: cover;
+    border-bottom: 1px solid var(--c-line); background: var(--c-bg-alt, #f4f6f8);
+  }
+
   .ph-lead { max-width: 62ch; }
   .ph-intro { max-width: 68ch; color: var(--c-body); }
   .ph-note {
@@ -106,7 +128,7 @@ const schema = {
     display: flex; flex-direction: column; gap: 0.4rem;
     width: 100%; padding: 1.1rem 1.2rem;
     background: #fff; border: 1px solid var(--c-line);
-    border-radius: var(--radius, 14px);
+    border-radius: var(--radius, 14px); overflow: hidden;
     text-decoration: none; color: inherit;
     transition: border-color 0.15s ease, transform 0.15s ease;
   }

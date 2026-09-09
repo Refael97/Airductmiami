@@ -13,6 +13,7 @@ import Breadcrumbs from '../Breadcrumbs.astro';
 import CtaBand from '../CtaBand.astro';
 import PriceDisclaimer from '../PriceDisclaimer.astro';
 import { doorModels } from '../../data/doors';
+import { doorImages, hasImage, altFor } from '../../data/pageImages';
 import { ui, paths, doorHref, money, otherLocale, type Locale } from '../../data/ui';
 import { door as localise } from '../../lib/i18n';
 import { business } from '../../data/business';
@@ -61,6 +62,14 @@ const schema = {
         {rows.map(({ raw, item, hvhzLabel }) => (
           <li class="dh-card">
             <a href={doorHref(lang, item.slug)} class="dh-link">
+              {hasImage(doorImages[item.slug]) && (
+                <img
+                  class="dh-shot"
+                  src={`/images/${doorImages[item.slug].file}`}
+                  width="1200" height="900" loading="lazy" decoding="async"
+                  alt={altFor(lang, doorImages[item.slug])}
+                />
+              )}
               <h2 class="dh-name">{item.shortName}</h2>
               <p class="dh-price">{t.from} {money(raw.priceLow)} {to} {money(raw.priceHigh)}</p>
               <p class="dh-constr">{item.construction}</p>
@@ -86,6 +95,17 @@ const schema = {
 </BaseLayout>
 
 <style>
+  /* Bleeds over the card's 1.2rem side padding to reach its edges.
+     `max-width: none` is load bearing: the global reset caps every image at
+     100% of its container, which silently trimmed exactly the 2.4rem this
+     adds and left a gutter down one side. `align-self: stretch` is not an
+     alternative here, since a replaced element is never stretched by it. */
+  .dh-shot {
+    display: block; width: calc(100% + 2.4rem); max-width: none;
+    margin: -1.1rem -1.2rem 0.9rem; aspect-ratio: 4 / 3; object-fit: cover;
+    border-bottom: 1px solid var(--c-line); background: var(--c-bg-alt, #f4f6f8);
+  }
+
   .dh-lead { max-width: 62ch; }
   .dh-intro { max-width: 70ch; color: var(--c-body); }
   .dh-note {
@@ -100,7 +120,7 @@ const schema = {
     display: flex; flex-direction: column; gap: 0.4rem;
     width: 100%; padding: 1.1rem 1.2rem;
     background: #fff; border: 1px solid var(--c-line);
-    border-radius: var(--radius, 14px); text-decoration: none; color: inherit;
+    border-radius: var(--radius, 14px); overflow: hidden; text-decoration: none; color: inherit;
     transition: border-color 0.15s ease, transform 0.15s ease;
   }
   .dh-link:hover { border-color: var(--c-primary); transform: translateY(-2px); text-decoration: none; }

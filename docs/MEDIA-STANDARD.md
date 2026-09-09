@@ -23,6 +23,23 @@ A generated before/after is a fabricated proof of work. It is the same
 category of problem as a fake review, and it is the single easiest thing for
 a competitor to expose.
 
+## Where the disclosure goes, revised 9 September 2026
+
+One statement, on one page, not a note under every grid of pictures.
+
+The garage site previously carried a paragraph under each image grid saying
+the pictures were not photographs of our own work. That has been replaced by
+a single "About the images on this site" section on the privacy page, in both
+languages, at the owner's direction.
+
+The reasoning is worth recording because it is a real trade. Repeating a
+disclaimer at every turn reads as an apology, nobody finishes it, and it
+draws attention to the illustrations rather than to the work. No competitor
+in this market labels their illustrations that way either. What the rule
+above actually protects is unchanged and is not negotiable: no generated
+image may claim a customer, a technician, a certificate, a rating or a
+completed job. The disclosure moved. The line did not.
+
 ## Standing exception, recorded 3 September 2026
 
 The promo popup on the Florida site carries a generated photograph of a
