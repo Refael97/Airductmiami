@@ -27,7 +27,7 @@ If your opener has no such sensors, it was made before that. It is over thirty y
 
 That is not a maintenance issue. It is the whole argument for replacement on its own. Our guide to [safety sensors](/blog/garage-door-safety-sensors-explained/) explains what they do and how to test them.
 
-![A garage door opener motor unit mounted to the ceiling, with the rail running toward the door and the light cover in place. The label with the model and date is on the housing.](/images/opener-motor-unit.webp)
+![A garage door opener motor unit mounted to the ceiling, with the belt rail running toward the closed door and the light lens in place.](/images/opener-motor-unit.webp)
 
 ## How to check
 

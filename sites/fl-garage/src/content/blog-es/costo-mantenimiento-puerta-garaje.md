@@ -52,7 +52,7 @@ presión, así que apretarlos no es cosmético.
 **Alineación del riel.** Revisar que el riel esté a plomo, con separación
 pareja y firmemente fijado al marco en toda su longitud.
 
-**Lubricación.** [Resortes, bisagras, rodillos](/es/blog/como-lubricar-puerta-garaje/), baleros y el carril del motor.
+**Lubricación.** [Resortes, bisagras, rodillos](/es/blog/como-lubricar-puerta-garaje/), baleros.
 El riel no, que debe quedar limpio y seco.
 
 **Sensores de seguridad.** Revisar alineación y altura de montaje. Van a no

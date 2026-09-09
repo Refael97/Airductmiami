@@ -67,7 +67,7 @@ Timing matters. Hurricane season runs 1 June to 30 November, and the best time t
 
 ## The half the price rule
 
-![A new steel garage door installed on a Florida house, with the rating label on the inside face of the section.](/images/new-garage-door-installed.webp)
+![A new steel garage door installed on a Florida house, the panels flush and the finish unmarked.](/images/new-garage-door-installed.webp)
 
 Add up the repair, including everything that is worn and would be quoted on the same visit, and compare it to a new door of the kind you would actually buy. If the repair is under half, repair. If it is over half, replace, and choose the rated door.
 

@@ -21,7 +21,7 @@ faq:
     answer: "Because a published price is a commitment and a number quoted in your driveway is not. It is also why searches for repair costs are dominated by directories rather than by garage door companies. Ours are on the price list and they are the same numbers a technician quotes."
 ---
 
-![Inside a residential garage: the torsion spring on its shaft above the door, the lift cables running down each side, the rollers in the track and the opener rail. Every price on this page is for one of these parts.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the door, the lift cables running down each side and the rollers in the track. Every price on this page is for one of these parts.](/images/garage-door-parts-overview.webp)
 
 ## The whole price list
 

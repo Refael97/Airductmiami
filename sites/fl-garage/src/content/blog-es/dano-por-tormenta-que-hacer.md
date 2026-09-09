@@ -54,7 +54,7 @@ Este es el paso que la gente se salta porque quiere resolver la puerta ya. Tome 
 | Cada sección dañada, de cerca | Dobleces, largueros partidos, bisagras rotas |
 | Cada riel desde el piso hasta la curva | Riel doblado, tornillos arrancados, riel abierto |
 | Los cables y los tambores | Flojos, deshilachados o fuera del tambor |
-| El motor y el riel del motor | Riel doblado, carro dañado |
+| El motor | Riel doblado, carro dañado |
 | La etiqueta de la puerta | Modelo y certificación, si se alcanza a leer |
 | Los escombros que golpearon la puerta | Rama, teja, cerca del vecino |
 
@@ -89,7 +89,7 @@ No inflamos las reparaciones de tormenta. Lo decimos por escrito porque es lo qu
 
 ## Reparar o reemplazar
 
-Una puerta con una sola sección doblada y los rieles derechos es una reparación, si el fabricante todavía hace ese perfil. Una puerta con dos o más secciones dobladas, rieles abiertos y el riel del motor torcido [casi siempre es un reemplazo](/es/blog/reparar-o-reemplazar-puerta-garaje/), porque solo [el costo de los paneles](/es/blog/costo-cambio-panel-puerta-garaje/) se acerca al de una puerta nueva y la puerta nueva sí viene certificada.
+Una puerta con una sola sección doblada y los rieles derechos es una reparación, si el fabricante todavía hace ese perfil. Una puerta con dos o más secciones dobladas, rieles abiertos torcido [casi siempre es un reemplazo](/es/blog/reparar-o-reemplazar-puerta-garaje/), porque solo [el costo de los paneles](/es/blog/costo-cambio-panel-puerta-garaje/) se acerca al de una puerta nueva y la puerta nueva sí viene certificada.
 
 La certificación es la razón por la que el reemplazo muchas veces tiene sentido después de una tormenta. Una puerta que se pandeó hacia adentro no daba para la presión de su sitio, o la daba en su momento y ya cumplió su vida. Un reemplazo en Florida tiene que estar certificado para la presión de diseño del sitio y necesita [permiso tramitado por un contratista licenciado](/es/blog/permiso-puerta-garaje-florida/). En [Miami-Dade](/es/areas-de-servicio/miami-dade-county/) y [Broward](/es/areas-de-servicio/broward-county/) eso significa una puerta con NOA de Miami-Dade. En el resto del estado, incluido [Southwest Florida](/es/areas-de-servicio/southwest-florida/), significa una Florida Product Approval.
 

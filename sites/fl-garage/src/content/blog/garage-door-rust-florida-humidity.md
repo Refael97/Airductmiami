@@ -29,7 +29,7 @@ Within a few miles of either coast the process is fast. A door in Fort Lauderdal
 
 ## Which parts rust first
 
-![Labeled overview of the parts of a garage door: springs, torsion tube, drums, cables, tracks, rollers, hinges and bottom brackets](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, a cable drum at each end and the lift cables running down both sides](/images/garage-door-parts-overview.webp)
 
 | Part | Where the rust starts | What it means |
 |---|---|---|

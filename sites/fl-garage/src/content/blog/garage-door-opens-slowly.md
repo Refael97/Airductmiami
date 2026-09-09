@@ -31,7 +31,7 @@ Close the door. Pull the red manual release cord so the opener is out of the pic
 
 That single test separates the causes into two groups, and it is the first thing we do on any slow door call. If you are not comfortable with the release cord, our guide to the [manual release](/blog/garage-door-manual-release-how-to/) walks through it.
 
-![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. The spring carries the weight; the opener only guides the door.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side. The spring carries the weight; the opener only guides the door.](/images/garage-door-parts-overview.webp)
 
 ## Why Florida doors get slow earlier
 

@@ -22,7 +22,7 @@ faq:
     answer: "Las aseguradoras aceptan una inspección por un periodo determinado y después piden una nueva. El periodo es regla de su aseguradora, así que pregunte cuándo vence su informe actual y si un cambio de puerta es razón para actualizarlo antes."
 ---
 
-![Puerta de garaje nueva de acero instalada en una casa de Florida, con la etiqueta de certificación del fabricante visible en la cara interior del montante de extremo](/images/new-garage-door-installed.webp)
+![Puerta de garaje nueva de acero instalada en una casa de Florida, con los paneles a nivel y el acabado sin marcas](/images/new-garage-door-installed.webp)
 
 ## Qué es la inspección
 

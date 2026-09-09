@@ -21,7 +21,7 @@ faq:
     answer: "Insurers accept an inspection for a set period and then ask for a new one. The period is your insurer's rule, so ask them when your current report expires and whether a door replacement is a reason to update it early."
 ---
 
-![A new steel garage door installed on a Florida home, with the manufacturer's rating label visible on the inside of the end stile](/images/new-garage-door-installed.webp)
+![A new steel garage door installed on a Florida home, the panels flush and the finish unmarked](/images/new-garage-door-installed.webp)
 
 ## What the inspection is
 

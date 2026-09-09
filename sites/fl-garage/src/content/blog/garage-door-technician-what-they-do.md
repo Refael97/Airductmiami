@@ -25,7 +25,7 @@ People search for a garage door tech, a garage door technician, garage door expe
 
 None of those words is a qualification. There is no exam that makes somebody a garage door expert and no register of garage door doctors. They are marketing terms, which is worth knowing before you assume one company is more qualified than another because of what it calls its staff.
 
-![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. These are the parts a service call gets quoted against.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side. These are the parts a service call gets quoted against.](/images/garage-door-parts-overview.webp)
 
 ## What the job actually is
 

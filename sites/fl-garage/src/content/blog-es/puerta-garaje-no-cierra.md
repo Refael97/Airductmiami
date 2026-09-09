@@ -62,7 +62,7 @@ Jale la liberación manual con la puerta cerrada y mueva la puerta con la mano, 
 
 **Se quiere caer o se quiere volar hacia arriba.** El balance de los resortes está mal, y esa es la causa de raíz.
 
-![Vista interior de un garaje: el resorte de torsión sobre su eje encima de la puerta cerrada, los cables de izaje bajando por cada lado y el riel del motor. Una puerta que no cierra es un sensor, un ajuste o una de estas piezas.](/images/garage-door-parts-overview.webp)
+![Vista interior de un garaje: el resorte de torsión sobre su eje encima de la puerta cerrada, los cables de izaje bajando por cada lado. Una puerta que no cierra es un sensor, un ajuste o una de estas piezas.](/images/garage-door-parts-overview.webp)
 
 ## Cuánto cuesta cada arreglo
 

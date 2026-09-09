@@ -20,7 +20,7 @@ faq:
     answer: "Las dos pueden ser buenas y las dos pueden ser caras. Las franquicias suelen tener mejores sistemas y precios más altos. Las empresas locales varían muchísimo. Juzgue por la cotización escrita, la consulta de licencia y la respuesta sobre el permiso, no por el letrero de la camioneta."
 ---
 
-![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante a cada lado y el carril del motor. Estas son las piezas contra las que se cotiza una visita de servicio.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante a cada lado. Estas son las piezas contra las que se cotiza una visita de servicio.](/images/garage-door-parts-overview.webp)
 
 ## Las señales que de verdad significan algo
 

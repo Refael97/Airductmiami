@@ -68,7 +68,7 @@ El calendario importa. La temporada de huracanes va del 1 de junio al 30 de novi
 
 ## La regla de la mitad del precio
 
-![Puerta de garaje de acero nueva instalada en una casa de Florida, con la etiqueta de certificación en la cara interior de la sección.](/images/new-garage-door-installed.webp)
+![Puerta de garaje de acero nueva instalada en una casa de Florida, con los paneles a nivel y el acabado sin marcas.](/images/new-garage-door-installed.webp)
 
 Sume la reparación, incluido todo lo que está gastado y se cotizaría en la misma visita, y compárela con una puerta nueva de la clase que usted de verdad compraría. Si la reparación queda debajo de la mitad, repare. Si pasa de la mitad, reemplace, y elija la puerta certificada.
 

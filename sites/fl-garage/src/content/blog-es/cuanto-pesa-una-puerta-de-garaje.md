@@ -20,7 +20,7 @@ faq:
     answer: "En una puerta de madera, sí. La madera absorbe el agua de la lluvia de la tarde y del aire húmedo, y una puerta de madera descuidada puede terminar la temporada de lluvias notablemente más pesada de lo que estaba cuando se calculó el resorte. Las puertas de acero, aluminio, fibra de vidrio y vinilo no cambian."
 ---
 
-![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante bajando por cada lado y el riel del motor. El resorte se calcula con el peso de la puerta.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante bajando por cada lado. El resorte se calcula con el peso de la puerta.](/images/garage-door-parts-overview.webp)
 
 ## Pesos típicos
 

@@ -538,7 +538,11 @@ li { margin-bottom: 0.4em; }
 }
 .wz-rail li:first-child::before { display: none; }
 .wz-num {
-  display: grid; place-items: center; position: relative;
+  /* z-index, not just position: the connector on step N is drawn from the
+     centre of step N-1, so it passes straight under that step's circle.
+     Being a later sibling's pseudo-element it paints last and struck
+     through the numeral until the circle was lifted above it. */
+  display: grid; place-items: center; position: relative; z-index: 1;
   width: 1.8rem; height: 1.8rem; border-radius: 50%;
   background: #fff; border: 2px solid var(--c-line);
   font-weight: 800; font-size: 0.85rem; color: var(--c-muted);

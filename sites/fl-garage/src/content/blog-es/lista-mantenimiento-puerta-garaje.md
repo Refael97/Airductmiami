@@ -22,7 +22,7 @@ faq:
 
 Una puerta de garaje en Florida no tiene temporada baja. Trabaja todo el año, el garaje se queda a 100°F durante cuatro meses, la humedad nunca deja que el acero se seque, y esa misma puerta es la abertura más grande de la casa cuando llega un huracán. Eso cambia el calendario. En lugar de dos revisiones al año, conviene una revisión a fondo antes de la temporada y una mirada corta cada mes durante los meses de lluvia.
 
-![Las partes de una puerta de garaje seccional: resortes, cables, tambores, rodillos, bisagras, riel y motor.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje encima de la puerta cerrada, un tambor de cable en cada extremo y los cables de izaje bajando por ambos lados.](/images/garage-door-parts-overview.webp)
 
 ## Por qué aquí el calendario es distinto
 

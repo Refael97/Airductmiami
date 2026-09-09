@@ -30,7 +30,7 @@ A pocas millas de cualquiera de las dos costas el proceso es rápido. Una puerta
 
 ## Qué piezas se oxidan primero
 
-![Vista general de las partes de una puerta de garaje: resortes, tubo de torsión, tambores, cables, rieles, rodillos, bisagras y soportes inferiores.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje encima de la puerta cerrada, un tambor de cable en cada extremo y los cables de izaje bajando por ambos lados.](/images/garage-door-parts-overview.webp)
 
 | Pieza | Dónde empieza el óxido | Qué significa |
 |---|---|---|

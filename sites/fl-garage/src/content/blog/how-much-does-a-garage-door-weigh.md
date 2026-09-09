@@ -19,7 +19,7 @@ faq:
     answer: "On a wood door, yes. Wood absorbs water from the daily afternoon rain and the humid air, and a neglected wood door can be noticeably heavier by the end of a wet season than it was when the spring was set. Steel, aluminum, fiberglass and vinyl doors do not change."
 ---
 
-![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. The spring is sized to the door's weight.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side. The spring is sized to the door's weight.](/images/garage-door-parts-overview.webp)
 
 ## Typical weights
 

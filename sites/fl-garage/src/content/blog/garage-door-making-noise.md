@@ -59,7 +59,7 @@ If it is loud by hand, walk the door slowly and listen. You can usually put a fi
 
 Use a garage door silicone or white lithium spray. Not WD-40, which is a solvent and displaces the lubricant that is already there, and not grease, which collects sand.
 
-**Do lubricate:** hinge pivot points, roller bearings, the torsion spring itself, the end bearing plates, and the opener rail if it is a chain or screw drive.
+**Do lubricate:** hinge pivot points, roller bearings, the torsion spring itself, the end bearing plates if it is a chain or screw drive.
 
 **Do not lubricate:** the track. Track needs to be clean and dry. Grease in the track collects the sand and grit that blows into every Florida garage and turns it into an abrasive paste that wears rollers faster than no lubricant at all.
 

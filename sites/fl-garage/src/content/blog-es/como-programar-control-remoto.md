@@ -22,7 +22,7 @@ faq:
 
 Programar un control remoto toma dos minutos una vez que sabe dónde está el botón. La mayoría de la gente que nos llama por esto lleva rato parada frente al control de pared oprimiendo cosas, y el botón que necesita está en el techo. Así funciona en todas las marcas comunes, qué le hace el clima de Florida a los teclados y a los motores, y cómo distinguir un problema de programación de un receptor muerto.
 
-![Unidad de motor de puerta de garaje montada en el techo, con la tapa de la luz y el botón Learn atrás.](/images/opener-motor-unit.webp)
+![Unidad de motor de puerta de garaje montada en el techo, con su mica y el riel de banda corriendo hacia la puerta cerrada.](/images/opener-motor-unit.webp)
 
 ## Qué está haciendo en realidad
 

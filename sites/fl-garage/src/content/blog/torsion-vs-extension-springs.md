@@ -31,7 +31,7 @@ Stand inside the garage with the door closed and look up.
 
 That is the whole test. On a Florida house built after about 1990 you will almost always find torsion. On a 1950s to 1970s single in Hialeah, St. Petersburg or the older parts of Fort Lauderdale you may find either, and on a door that was replaced in the 1980s with a low roof above it, extension is common because it needed no headroom.
 
-![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side.](/images/garage-door-parts-overview.webp)
 
 ## How each one works
 

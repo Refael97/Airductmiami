@@ -21,7 +21,7 @@ faq:
 
 Programming a remote takes two minutes once you know where the button is. Most of the people who call us about it have been standing at the wall control pressing things, and the button they need is on the ceiling. This is how it works on every common brand, what the Florida climate does to keypads and openers, and how to tell a programming problem from a dead receiver.
 
-![A garage door opener motor unit mounted on the ceiling, with the light cover and Learn button on the back](/images/opener-motor-unit.webp)
+![A garage door opener motor unit mounted on the ceiling, with its light lens and the belt rail running toward the closed door](/images/opener-motor-unit.webp)
 
 ## What you are actually doing
 

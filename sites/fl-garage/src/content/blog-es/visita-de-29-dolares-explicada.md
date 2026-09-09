@@ -22,7 +22,7 @@ faq:
     answer: "Ese es justo el momento para el que está diseñado todo el modelo, y por eso el número se acuerda antes de que salga nadie. Usted sigue teniendo derecho a parar. Pida que dejen la puerta como la encontraron, pague el cargo acordado y consiga otra cotización."
 ---
 
-![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante a cada lado y el carril del motor. Estas son las piezas contra las que se cotiza una visita de servicio.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante a cada lado. Estas son las piezas contra las que se cotiza una visita de servicio.](/images/garage-door-parts-overview.webp)
 
 ## La aritmética
 

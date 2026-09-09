@@ -36,7 +36,7 @@ Cuál usar depende de dónde va.
 | Aceite de motor, aceite 3 en 1 | Se adelgaza y gotea sobre el carro | Se escurre en semanas | Sí | Nada |
 | WD-40 | No es lubricante | Quita la grasa que ya está | No, pero deja la pieza seca | Limpiar óxido antes de lubricar |
 
-El silicón entra delgado, seca y no retiene tierra. En un garaje al que le entra arena de la entrada de carros y polen por la puerta cada primavera, esa es la ventaja principal. El litio se agarra mejor y vale la pena guardarlo para el resorte y el riel del motor, donde uno quiere que se quede meses aguantando la humedad.
+El silicón entra delgado, seca y no retiene tierra. En un garaje al que le entra arena de la entrada de carros y polen por la puerta cada primavera, esa es la ventaja principal. El litio se agarra mejor y vale la pena guardarlo para el resorte, donde uno quiere que se quede meses aguantando la humedad.
 
 Qué no usar: WD-40 ni ningún aceite penetrante general como lubricante. Es un solvente, y su trabajo es desplazar lo que ya está ahí. En una puerta de garaje eso significa sacarle la grasa a las balineras. Sirve para limpiar una bisagra oxidada antes de lubricarla. No es el lubricante.
 

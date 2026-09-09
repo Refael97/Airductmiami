@@ -19,7 +19,7 @@ faq:
     answer: "Look for the factory label on the inside of an end stile or the top section. It names the manufacturer, the model and the NOA number. If there is no label, check whether the county has a permit on file for the door. No label and no permit usually means an unrated door."
 ---
 
-![A steel garage door installed on a South Florida home, with the NOA label on the inside of the end stile](/images/new-garage-door-installed.webp)
+![A steel garage door installed on a South Florida home, the panels flush and the finish unmarked](/images/new-garage-door-installed.webp)
 
 ## What the HVHZ is
 

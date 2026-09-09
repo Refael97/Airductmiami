@@ -26,7 +26,7 @@ La gente busca técnico de puertas de garaje, especialista en puertas de garaje,
 
 Ninguna de esas palabras es una credencial. No hay examen que haga a alguien experto en puertas de garaje ni registro de doctores de puertas de garaje. Son términos de mercadeo, y conviene saberlo antes de suponer que una empresa está más calificada que otra por cómo llama a su personal.
 
-![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante a cada lado y el carril del motor. Estas son las piezas contra las que se cotiza una visita de servicio.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante a cada lado. Estas son las piezas contra las que se cotiza una visita de servicio.](/images/garage-door-parts-overview.webp)
 
 ## En qué consiste el trabajo
 

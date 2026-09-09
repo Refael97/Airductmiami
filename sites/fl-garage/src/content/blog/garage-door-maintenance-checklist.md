@@ -21,7 +21,7 @@ faq:
 
 A garage door in Florida does not have an off season. It cycles all year, the garage sits at 100°F for four months, the humidity never lets the steel dry out, and the same door is the largest opening in the house when a hurricane arrives. That changes the calendar. Instead of two checks a year, you want one thorough round before the season and a short monthly look through the wet months.
 
-![The parts of a sectional garage door: springs, cables, drums, rollers, hinges, track and opener](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, a cable drum at each end and the lift cables running down both sides](/images/garage-door-parts-overview.webp)
 
 ## Why the calendar is different here
 

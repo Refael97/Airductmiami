@@ -61,7 +61,7 @@ Pull the manual release with the door closed and move the door by hand, slowly, 
 
 **Wants to fall or fly up.** The spring balance is wrong, and that is the root cause.
 
-![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. A door that will not close is a sensor, a setting, or one of these parts.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side. A door that will not close is a sensor, a setting, or one of these parts.](/images/garage-door-parts-overview.webp)
 
 ## What each fix costs
 

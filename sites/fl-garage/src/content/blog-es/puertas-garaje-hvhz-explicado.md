@@ -20,7 +20,7 @@ faq:
     answer: "Busque la etiqueta de fábrica en la cara interior de un montante de extremo o de la sección superior. Nombra el fabricante, el modelo y el número de NOA. Si no hay etiqueta, revise si el condado tiene un permiso archivado para la puerta. Sin etiqueta y sin permiso, por lo general se trata de una puerta sin certificación."
 ---
 
-![Puerta de garaje de acero instalada en una casa del sur de Florida, con la etiqueta del NOA en la cara interior del montante de extremo](/images/new-garage-door-installed.webp)
+![Puerta de garaje de acero instalada en una casa del sur de Florida, con los paneles a nivel y el acabado sin marcas](/images/new-garage-door-installed.webp)
 
 ## Qué es la zona HVHZ
 

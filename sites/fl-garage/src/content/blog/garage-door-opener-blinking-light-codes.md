@@ -31,7 +31,7 @@ Three different things on a garage door system blink, and people mix them up con
 
 **The LEDs on the motor unit itself**, behind the lens cover on newer models. These are the real diagnostic codes, usually an up arrow LED and a down arrow LED that flash in a counted pattern.
 
-![A garage door opener motor unit on the ceiling with the lens cover and the diagnostic LEDs. The model number sticker on the side is what you need before reading any counted code.](/images/opener-motor-unit.webp)
+![A garage door opener motor unit on the ceiling with its light lens and the belt rail running toward the closed door.](/images/opener-motor-unit.webp)
 
 Which one is flashing changes the answer completely. Go and look before you read further.
 

@@ -32,7 +32,7 @@ En un sistema de puerta de garaje parpadean tres cosas distintas, y la gente las
 
 **Los LED del cuerpo del motor**, detrás de la mica en los modelos nuevos. Esos son los códigos de diagnóstico de verdad, por lo general un LED de flecha hacia arriba y otro hacia abajo que parpadean en un patrón contado.
 
-![Motor de puerta de garaje montado en el techo con la mica y los LED de diagnóstico. La calcomanía con el número de modelo en el costado es lo que necesita antes de leer cualquier código contado.](/images/opener-motor-unit.webp)
+![Motor de puerta de garaje montado en el techo con su mica y el riel de banda corriendo hacia la puerta cerrada.](/images/opener-motor-unit.webp)
 
 Cuál de los tres está parpadeando cambia la respuesta por completo. Vaya a mirar antes de seguir leyendo.
 

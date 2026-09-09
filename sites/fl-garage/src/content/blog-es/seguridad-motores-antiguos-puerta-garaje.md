@@ -28,7 +28,7 @@ Si su motor no tiene esos sensores, se fabricó antes de esa fecha. Tiene más d
 
 Eso no es un asunto de mantenimiento. Es el argumento completo para cambiarlo, por sí solo. Nuestra guía sobre [sensores de seguridad](/es/blog/sensores-seguridad-puerta-garaje/) explica qué hacen y cómo probarlos.
 
-![Un motor de puerta de garaje montado al techo, con el carril corriendo hacia la puerta y la tapa de la luz puesta. La etiqueta con el modelo y la fecha está en la carcasa.](/images/opener-motor-unit.webp)
+![Un motor de puerta de garaje montado al techo, con el riel de banda corriendo hacia la puerta cerrada y la mica puesta.](/images/opener-motor-unit.webp)
 
 ## Cómo revisar
 

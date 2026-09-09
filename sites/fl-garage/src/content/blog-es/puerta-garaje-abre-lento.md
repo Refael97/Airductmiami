@@ -32,7 +32,7 @@ Cierre la puerta. Jale [el cordón rojo de liberación manual](/es/blog/liberaci
 
 Esa sola prueba separa las causas en dos grupos y es lo primero que hacemos en cualquier visita por una puerta lenta.
 
-![Interior de un garaje residencial: el resorte de torsión sobre su tubo arriba de la puerta cerrada, los cables de izaje bajando por cada lado y el riel del motor. El resorte carga el peso, el motor solo guía la puerta.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su tubo arriba de la puerta cerrada, los cables de izaje bajando por cada lado. El resorte carga el peso, el motor solo guía la puerta.](/images/garage-door-parts-overview.webp)
 
 ## Por qué en Florida se ponen lentas antes
 

@@ -32,7 +32,7 @@ Párese dentro del garaje con la puerta cerrada y mire hacia arriba.
 
 Esa es toda la prueba. En una casa de Florida construida después de 1990 casi siempre va a encontrar torsión. En una sencilla de los años cincuenta a setenta en Hialeah, St. Petersburg o las partes viejas de Fort Lauderdale puede encontrar cualquiera de los dos, y en una puerta que se cambió en los años ochenta con un techo bajo encima, la extensión es común porque no necesitaba altura libre.
 
-![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante bajando por cada lado y el riel del motor.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta cerrada, los cables de levante bajando por cada lado.](/images/garage-door-parts-overview.webp)
 
 ## Cómo trabaja cada uno
 

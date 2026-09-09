@@ -22,7 +22,7 @@ faq:
     answer: "Porque un precio publicado es un compromiso y un número dicho en su entrada no lo es. Por eso las búsquedas de costos las dominan los directorios y no las empresas del ramo. Los nuestros están en la lista de precios y son los mismos que le dice un técnico."
 ---
 
-![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta, los cables de levante a cada lado, los rodillos en el riel y el carril del motor. Cada precio de esta página corresponde a una de estas piezas.](/images/garage-door-parts-overview.webp)
+![Interior de un garaje residencial: el resorte de torsión sobre su eje arriba de la puerta, los cables de levante a cada lado, los rodillos en el riel. Cada precio de esta página corresponde a una de estas piezas.](/images/garage-door-parts-overview.webp)
 
 ## La lista completa de precios
 

@@ -19,7 +19,7 @@ faq:
     answer: "Both can be good and both can be expensive. Franchises tend to have better systems and higher prices. Local firms vary enormously. Judge on the written quote, the license lookup and the permit answer, not the sign on the truck."
 ---
 
-![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side, and the opener rail. These are the parts a service call gets quoted against.](/images/garage-door-parts-overview.webp)
+![Inside a residential garage: the torsion spring on its shaft above the closed door, the lift cables running down each side. These are the parts a service call gets quoted against.](/images/garage-door-parts-overview.webp)
 
 ## The signals that actually mean something
 

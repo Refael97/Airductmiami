@@ -60,7 +60,7 @@ Si a mano también suena fuerte, camine la puerta despacio y escuche. Casi siemp
 
 Use [silicona o litio blanco en spray](/es/blog/como-lubricar-puerta-garaje/) para puertas de garaje. No use WD-40, que es un solvente y desplaza el lubricante que ya estaba, ni grasa, que junta arena.
 
-**Sí se lubrica:** los puntos de giro de las bisagras, los baleros de los rodillos, el resorte de torsión mismo, las placas de balero de los extremos y el riel del motor si es de cadena o de tornillo sinfín.
+**Sí se lubrica:** los puntos de giro de las bisagras, los baleros de los rodillos, el resorte de torsión mismo, las placas de balero de los extremos si es de cadena o de tornillo sinfín.
 
 **No se lubrica:** el riel. El riel debe estar limpio y seco. La grasa en el riel junta la arena y el polvo que entran a todo garaje de Florida y forma una pasta abrasiva que desgasta los rodillos más rápido que si no hubiera lubricante.
 
