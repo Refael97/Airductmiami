@@ -461,6 +461,14 @@ export const copyEn: PageCopy = {
         ],
       },
       {
+        heading: 'New to garage doors, not new to service work',
+        paragraphs: [
+          'The section above is honest about age, so here is the other half of it. The people behind this company are not new to the work of turning up at a Florida house on time and doing the job properly. Garage Door Fixers is part of a larger group that runs several home service businesses in this state.',
+          'What that buys you is specific and worth naming. Fulfilment partners who were vetted before this brand existed, a dispatch and callback process that was already running, and access to a Miami parts warehouse, which is the reason the common springs, cables, rollers and hinges are on the truck rather than ordered after the visit.',
+          'What it does not buy you is a longer history in garage doors specifically, and we are not going to blur those two things together. A group behind you is a real advantage. It is not the same as thirty years of hanging doors, and a company that lets you assume it is has already started shading the truth.',
+        ],
+      },
+      {
         heading: 'Why the prices are on the website',
         paragraphs: [
           'Search for what a garage door repair costs and the results are dominated by directories and cost-estimate sites, not by garage door companies. That is not an accident. The question gets asked constantly and almost nobody in the trade answers it, because a published price is a commitment and a number given in your driveway is not.',

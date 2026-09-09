@@ -461,6 +461,14 @@ export const copyEs: PageCopy = {
         ],
       },
       {
+        heading: 'Nuevos en puertas de garaje, no nuevos en servicio a domicilio',
+        paragraphs: [
+          'La sección de arriba es honesta sobre la antigüedad, así que aquí va la otra mitad. La gente detrás de esta empresa no es nueva en el trabajo de llegar puntual a una casa en Florida y hacer bien el trabajo. Garage Door Fixers forma parte de un grupo más grande que opera varios negocios de servicio a domicilio en este estado.',
+          'Lo que eso le da es concreto y vale la pena nombrarlo. Socios de ejecución que ya estaban evaluados antes de que existiera esta marca, un proceso de despacho y de llamada de regreso que ya estaba funcionando, y acceso a una bodega de repuestos en Miami, que es la razón por la que los resortes, cables, rodamientos y bisagras comunes van en el camión en lugar de pedirse después de la visita.',
+          'Lo que no le da es más historia en puertas de garaje específicamente, y no vamos a mezclar esas dos cosas. Tener un grupo detrás es una ventaja real. No es lo mismo que treinta años colgando puertas, y una empresa que deja que usted lo suponga ya empezó a maquillar la verdad.',
+        ],
+      },
+      {
         heading: 'Por qué los precios están en el sitio',
         paragraphs: [
           'Busque cuánto cuesta reparar una puerta de garaje y los resultados los dominan los directorios y los sitios de estimación de costos, no las empresas de puertas de garaje. Eso no es casualidad. La pregunta se hace todo el tiempo y casi nadie del oficio la responde, porque un precio publicado es un compromiso y un número dicho en su entrada no lo es.',
