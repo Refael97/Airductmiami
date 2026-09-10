@@ -1,4 +1,5 @@
 ---
+import Icon from './Icon.astro';
 import { business } from '../data/business';
 import { services } from '../data/services';
 import { ui, paths, serviceHref, type Locale } from '../data/ui';
@@ -96,6 +97,22 @@ const regionLabel = lang === 'es' ? 'Florida' : business.area.regionName;
         <li><a href={p.privacy}>{t.footerPrivacy}</a></li>
         <li><a href={paths[lang === 'en' ? 'es' : 'en'].home} hreflang={lang === 'en' ? 'es' : 'en'} rel="alternate">{t.langSwitch}</a></li>
       </ul>
+
+      {/* Renders only when a profile is set, so the network's other sites do
+          not sprout an empty row. `me` states this is the same business, and
+          noopener is the usual guard on any target="_blank". */}
+      {business.social.facebook && (
+        <a
+          class="footer-social"
+          href={business.social.facebook}
+          target="_blank"
+          rel="me noopener"
+          aria-label={t.footerFacebook}
+        >
+          <Icon name="facebook" size={18} />
+          <span>{t.footerFacebook}</span>
+        </a>
+      )}
     </div>
   </div>
 
@@ -108,6 +125,18 @@ const regionLabel = lang === 'es' ? 'Florida' : business.area.regionName;
 </footer>
 
 <style>
+  .footer-social {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    margin-top: 0.9rem; padding: 0.45rem 0.8rem 0.45rem 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 999px;
+    font-size: 0.85rem; color: #c8d2de; text-decoration: none;
+    transition: border-color 0.16s ease, color 0.16s ease, background 0.16s ease;
+  }
+  .footer-social:hover {
+    color: #fff; border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.06); text-decoration: none;
+  }
+
   .site-footer {
     background: var(--c-primary); color: #b8c4d2; margin-top: 4rem;
     position: relative; padding-top: 2.5rem; overflow: hidden;

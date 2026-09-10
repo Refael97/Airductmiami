@@ -140,6 +140,7 @@ export interface Strings {
   footerAbout: string;
   footerQuote: string;
   footerPrivacy: string;
+  footerFacebook: string;
   footerRights: string;
   footerServingArea: (area: string) => string;
   footerAgent: string;
@@ -514,6 +515,7 @@ export const ui: Record<Locale, Strings> = {
     footerAbout: 'About us',
     footerQuote: 'Request a quote',
     footerPrivacy: 'Privacy',
+    footerFacebook: 'Follow us on Facebook',
     footerRights: 'All rights reserved.',
     footerServingArea: (area) => `Serving all of ${area}.`,
     footerAgent: 'For AI agents: structured business data (JSON)',
@@ -950,6 +952,7 @@ export const ui: Record<Locale, Strings> = {
     footerAbout: 'Nosotros',
     footerQuote: 'Solicitar cotización',
     footerPrivacy: 'Privacidad',
+    footerFacebook: 'Síganos en Facebook',
     footerRights: 'Todos los derechos reservados.',
     footerServingArea: (area) => `Servicio en toda ${area}.`,
     footerAgent: 'Para agentes de IA: datos estructurados del negocio (JSON)',

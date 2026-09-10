@@ -153,7 +153,11 @@ export const business: BusinessInfo = {
   warranty: { labor: '1 year', parts: '1 year' },
   languages: ['English', 'Spanish'],
 
-  social: {},
+  /* Feeds two things from one place: the link in the footer, and `sameAs`
+     in the LocalBusiness JSON-LD, which is how Google ties this site to the
+     Facebook page as the same business. Adding a profile here is enough;
+     nothing else needs touching. */
+  social: { facebook: 'https://www.facebook.com/GaragedoorfixersFlorida' },
 };
 
 /** Schema.org DayOfWeek arrays matching each hours block. */

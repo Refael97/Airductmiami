@@ -13,6 +13,10 @@ interface Props {
 const { name, size = 30, class: cls = '' } = Astro.props;
 
 const paths: Record<string, string> = {
+  // Facebook mark. Solid rather than outline, because a brand glyph drawn
+  // in someone else's house style stops reading as that brand.
+  facebook: `<path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7H7.9v-2.94h2.54V9.85c0-2.52 1.5-3.92 3.77-3.92 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78L15.89 22A10.02 10.02 0 0 0 22 12.06z" fill="currentColor" stroke="none"/>`,
+
   // Speech bubble with a tail: messaging, not a document
   chat: `<path d="M20.5 11.8a7.9 7.9 0 0 1-8.5 7.9 9.3 9.3 0 0 1-3.8-.85L3.5 20.5l1.8-4.4A7.9 7.9 0 0 1 12 3.9a7.9 7.9 0 0 1 8.5 7.9z"/>
          <path d="M8.8 11.9h.01M12 11.9h.01M15.2 11.9h.01"/>`,
