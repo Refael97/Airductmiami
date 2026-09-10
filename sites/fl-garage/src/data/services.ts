@@ -601,9 +601,9 @@ export const services: Service[] = [
     /* Title leads with "maintenance" deliberately: "garage door maintenance
        near me" carries one of the highest CPCs in the vertical, while almost
        nobody searches "tune-up". See docs/KEYWORD-RESEARCH.md. */
-    metaTitle: 'Garage Door Maintenance & Tune-Up in Florida | From $85',
+    metaTitle: 'Garage Door Tune Up & Maintenance in Florida | From $85',
     metaDescription:
-      'Garage door maintenance across Florida: balance, rollers, cables, rust check, sensors, bottom seal and manual release. $85 to $160, best done in April or May before the season.',
+      'Garage door tune up and maintenance across Florida: balance, rollers, cables, rust check, sensors, bottom seal and manual release. $85 to $160, best done in April or May before the season.',
     priceLow: 85,
     priceHigh: 160,
     priceNote: 'annual service, best in April or May before the season',
@@ -616,7 +616,7 @@ export const services: Service[] = [
     emergency: false,
     hurricane: false,
     answer:
-      'A garage door tune-up is an annual service that checks and adjusts the parts that wear: spring balance, rollers, hinges, cables, tracks, bottom seal, safety sensors and opener settings. In Florida it costs $85 to $160 and the best time is April or May, before hurricane season starts on 1 June. Its real value is catching a rusted cable or a fatigued spring before it fails with the car inside.',
+      'A garage door tune up is an annual service that checks and adjusts the parts that wear: spring balance, rollers, hinges, cables, tracks, bottom seal, safety sensors and opener settings. Written either way, garage door tune up or garage door tune-up, it is the same job. In Florida it costs $85 to $160 and the best time is April or May, before hurricane season starts on 1 June. Its real value is catching a rusted cable or a fatigued spring before it fails with the car inside.',
     intro: [
       'Almost every emergency call we take was preventable. Springs give warning as a door that is heavy to lift by hand. Cables show rust at the bottom bracket for months before they break. Rollers grind long before they jump the track. Humidity and salt air make all of this faster in Florida, and a door within a few miles of either coast should not go a year without someone looking at the hardware.',
       'April or May is the right month. The tune-up is where we confirm the door will close and lock ahead of a storm, check that the track bolts and struts on a rated door are tight, test the manual release you will need in an outage, and replace a bottom seal that has been sitting in water since last summer. Seasonal residents in Southwest Florida and the Palm Beaches often book it for the week before they leave in spring or the week they return in November.',
