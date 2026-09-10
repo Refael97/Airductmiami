@@ -694,14 +694,14 @@ export const brands: Brand[] = [
     slug: 'amarr',
     name: 'Amarr',
     kind: 'door',
-    metaTitle: 'Amarr Garage Doors in Florida | Repair and Installation',
+    metaTitle: 'Amarr Garage Doors in Florida | Repair, Install, 2400 and 2500',
     metaDescription:
-      'Amarr garage door repair, section replacement and installation across Florida. New wind-rated doors from $950, sections from $250, carriage house styles, quoted in writing first.',
+      'Amarr garage door repair and installation in Florida, residential and the commercial 2000, 2400 and 2500 series. Sections from $250, new doors from $950.',
     answer:
-      'We repair and install Amarr garage doors across Florida. Section replacement starts at $250 and a new wind-rated Amarr door installed starts at $950, with impact-rated doors from about $1,800. Amarr is best known for its carriage house range, which is common in Weston, Palm Beach Gardens and Lakewood Ranch, and its Florida lines carry Florida Product Approvals and Miami-Dade NOAs. We are an independent company, not an Amarr dealer.',
+      'We repair and install Amarr garage doors across Florida, residential and commercial. Section replacement starts at $250 and a new wind-rated residential Amarr door installed starts at $950, with impact-rated doors from about $1,800. On the commercial side we supply and fit the Amarr 2000, 2400 and 2500 steel sectional series, the three that turn up on bay and warehouse openings from Lake Worth Beach and North Palm Beach through West Palm Beach, Riviera Beach and Wellington. A commercial door is quoted after a measure, because the number follows the opening size, the gauge and the wind load package rather than a list price. We are an independent company, not an Amarr dealer.',
     intro: [
-      'Amarr is a major North American manufacturer whose carriage house range turns up frequently on the kind of houses where the door is part of the elevation, which in Florida means the master planned communities of Weston, Wellington, Palm Beach Gardens, Lakewood Ranch and Naples. Its wind-rated lines carry Florida Product Approvals, with Miami-Dade NOA versions for the HVHZ, and we match the approval to your wind zone before we quote.',
-      'Carriage styling changes the repair picture. Decorative hardware and specific panel profiles are model-linked, so a damaged section on a carriage door is a question of availability first and price second. The decorative handles and strap hinges are also the first thing to rust on a coastal door, and swapping them for the stainless versions is a small job that keeps the door looking right.',
+      'Amarr is a major North American manufacturer, and in Florida it shows up in two quite different places. On houses it is the carriage house range, common in Weston, Wellington, Palm Beach Gardens, Lakewood Ranch and Naples, where the door is part of the elevation. On commercial buildings it is the 2000, 2400 and 2500 steel sectional series, which is what people are searching for when the query is a four digit number and a town. Both are covered below.',
+      'Carriage styling changes the repair picture on the residential side. Decorative hardware and specific panel profiles are model-linked, so a damaged section on a carriage door is a question of availability first and price second. The decorative handles and strap hinges are also the first thing to rust on a coastal door, and swapping them for the stainless versions is a small job that keeps the door looking right.',
       'We are an independent repair and installation company, not an Amarr dealer or authorized installer, and we say so. Every section, hardware set and new door is quoted in writing with the approval document attached.',
     ],
     common: [
@@ -709,8 +709,56 @@ export const brands: Brand[] = [
       'Section profile availability on older discontinued models',
       'Standard hinge, roller and bearing wear, faster on the coasts',
       'Spring specification errors where a heavier insulated or impact door was fitted with a standard spring',
+      'Commercial doors ordered without the wind load package, which is not something you bolt on afterwards because the rating covers the tested assembly',
+      'Single layer commercial sections dented at the bottom on openings that see daily traffic, where the two layer version would have taken the knock',
     ],
+    series: {
+      title: 'Amarr commercial doors: the 2000, 2400 and 2500 series',
+      intro: [
+        'These three are Amarr steel sectional overhead doors, and the model numbers work in a pattern worth knowing before you order. Within each series the last two digits are the construction: 2402 is single layer, 2412 is two layer, 2422 is three layer. The series number itself is the duty rating. 2000 is extra heavy duty in 20 gauge steel, 2400 is heavy duty in 24 gauge, and 2500 is medium duty in nominal 24 gauge for budget sensitive work. Lower gauge means thicker steel, the same way it does on a residential door.',
+        'The figures that usually decide it are the size limits rather than the gauge. The 2400 series takes the widest standard opening of the three at 30 ft 2 in, the 2000 series goes to 26 ft 2 in, and the 2500 series stops at 20 ft 2 in wide and 16 ft 1 in tall. If your opening is wider than 20 ft, the 2500 is out regardless of what it costs, and that is the single most common reason a specification changes between the quote and the order.',
+        'Insulation only exists on the two and three layer versions. The single layer x02 doors have none, and the insulated ones carry an R value of 7.0 with CFC free polystyrene. In a Florida building with a west facing bay that is not a comfort question, it is a load on the air conditioning for the whole afternoon, and it is cheaper to specify at order time than to regret.',
+        'The Florida part is the wind load. Amarr lists a wind load option on all three series, and in Florida a commercial door needs an approval document that matches the design pressure at your address, with a Miami-Dade NOA inside the High Velocity Hurricane Zone and a Florida Product Approval outside it. It is an option, not the default, so it has to be specified when the door is ordered. We get the current document from the manufacturer and it goes on the permit. We quote and install these across Palm Beach County, including Lake Worth Beach and the unincorporated Lake Worth addresses west of it, North Palm Beach, Riviera Beach, West Palm Beach, Wellington, Jupiter and Palm Beach Gardens.',
+      ],
+      columns: ['2002 / 2012 / 2022', '2402 / 2412 / 2422', '2502 / 2512 / 2522'],
+      rows: [
+        { label: 'Duty rating', values: ['Extra heavy duty', 'Heavy duty', 'Medium duty'] },
+        { label: 'Exterior steel', values: ['20 gauge', '24 gauge', 'Nominal 24 gauge'] },
+        { label: 'Panel', values: ['Deep ribbed, smooth', 'Deep ribbed, smooth', 'Deep ribbed, smooth'] },
+        { label: 'Door thickness', values: ['2 in', '2 in', '2 in'] },
+        {
+          label: 'Construction',
+          values: ['Single, double or triple', 'Single, double or triple', 'Single, double or triple'],
+        },
+        {
+          label: 'Insulation',
+          values: ['Double and triple only', 'Double and triple only', 'Double and triple only'],
+        },
+        { label: 'R value, insulated', values: ['7.0', '7.0', '7.0'] },
+        { label: 'Widest standard door', values: ['26 ft 2 in', '30 ft 2 in', '20 ft 2 in'] },
+        { label: 'Tallest standard door', values: ['26 ft 1 in', '26 ft 1 in', '16 ft 1 in'] },
+        { label: 'Wind load', values: ['Option', 'Option', 'Option'] },
+        { label: 'Limited warranty', values: ['10 years', '10 years', '10 years'] },
+      ],
+      source:
+        'Figures taken from the Amarr specification chart published for each series, read on 10 September 2026. Manufacturers revise these, so we confirm against the current drawing before anything is ordered.',
+    },
     faq: [
+      {
+        question: 'Which Amarr commercial series do I need, the 2000, the 2400 or the 2500?',
+        answer:
+          'Start with the opening, not the price. The 2500 series stops at 20 ft 2 in wide and 16 ft 1 in tall, so a wider bay rules it out immediately. Above that, the 2400 is the heavy duty 24 gauge door and takes the widest standard opening at 30 ft 2 in, and the 2000 is the extra heavy duty 20 gauge door for openings that take knocks or cycle constantly. We measure, ask how often the door runs and what goes through it, and quote the series that fits.',
+      },
+      {
+        question: 'What is the difference between an Amarr 2402, 2412 and 2422?',
+        answer:
+          'The construction. Within a series the last two digits are the layer count: 2402 is single layer with no insulation, 2412 is two layer with vinyl-coated polystyrene, and 2422 is three layer. The same pattern runs through the other two series, so a 2502 and a 2522 are the same door in single and triple layer. The insulated versions carry an R value of 7.0 and are stiffer, which is why they hold up better on an opening that gets bumped.',
+      },
+      {
+        question: 'Does an Amarr commercial door need a wind rating in Palm Beach County?',
+        answer:
+          'Yes. Palm Beach County is outside the High Velocity Hurricane Zone, but the design pressure is still high and highest near the water, so a replacement commercial door needs a Florida Product Approval matching the pressure at your address, and a permit pulled by a licensed contractor. Inside Miami-Dade and Broward it needs a Miami-Dade NOA instead. Wind load is a factory option on the 2000, 2400 and 2500 series rather than the default, so it has to be specified when the door is ordered. Retrofitting is not a route: the rating covers the assembly that was tested.',
+      },
       {
         question: 'Is a carriage house door harder to repair?',
         answer:

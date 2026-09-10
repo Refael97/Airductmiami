@@ -66,6 +66,29 @@ worse than no number: it converts a lead into a bad experience.
   fires a year" is defensible; an invented percentage is not.
 - Guarantees are only published if the fulfillment partner will honor them.
 
+## Somebody else's product specifications
+
+Added 10 September 2026, when the Amarr page started publishing the
+manufacturer's own figures for the commercial 2000, 2400 and 2500 series.
+
+A specification is a claim about a third party's product, and getting one
+wrong is worse than the usual kind of wrong: the reader orders a door on it.
+So the rules are tighter than for our own copy.
+
+- Every number comes from the manufacturer's own published chart. Not a
+  dealer's summary, not a PDF on somebody's reseller site, not memory.
+- The page says where the figures came from and on what date. Spec charts
+  get revised, and a stale figure presented as current is a false claim even
+  though it was true when it was written.
+- The page also says that we confirm against the current drawing before
+  anything is ordered, because that is what actually happens.
+- If the manufacturer's site cannot be read, nothing gets published. On
+  9 September the Amarr site was unreachable from the build environment and
+  the honest answer was to say the work was blocked, not to reconstruct the
+  line-up from search snippets.
+- Naming a model is not claiming a dealership. The independent-company
+  disclosure stays on the page.
+
 ## Identity
 
 - The brand may be new; it may not pretend to be old. No "serving families

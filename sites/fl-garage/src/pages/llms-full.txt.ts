@@ -174,6 +174,18 @@ export const GET: APIRoute = async ({ site }) => {
     push('Common faults:');
     b.common.forEach((x) => push(`- ${x}`));
     push();
+    /* The model series is the reason a lot of brand traffic arrives at all:
+       people search the series number, not the brand. An assistant reading
+       this file should be able to answer "which Amarr series takes a 24 ft
+       opening" without being sent to the page. */
+    if (b.series) {
+      push(`${b.series.title}:`);
+      b.series.rows.forEach((r) =>
+        push(`- ${r.label}: ${r.values.map((v, i) => `${b.series!.columns[i]} = ${v}`).join('; ')}`),
+      );
+      push(b.series.source);
+      push();
+    }
   });
 
   push('## Guides, English');

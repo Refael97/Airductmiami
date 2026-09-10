@@ -296,6 +296,29 @@ export interface OpenerType {
   faq: FAQ[];
 }
 
+/**
+ * A manufacturer's model series, rendered as one comparison table on the
+ * brand page.
+ *
+ * This exists because a real fraction of brand traffic searches the series
+ * number rather than the brand: "amarr 2400 north palm fl" is somebody
+ * sourcing a specific door, not somebody browsing. A page that names the
+ * brand and never names the series cannot answer that search, so the
+ * numbers have to be on the page, and they have to be the manufacturer's
+ * own numbers rather than ours. `source` says where they came from and
+ * when, because spec charts change and a stale figure here is worse than
+ * no figure at all.
+ */
+export interface BrandSeries {
+  title: string;
+  intro: string[];
+  /** Column headings, one per series. */
+  columns: string[];
+  /** One row per specification, with one value per column. */
+  rows: { label: string; values: string[] }[];
+  source: string;
+}
+
 export interface Brand {
   slug: string;
   name: string;
@@ -305,6 +328,7 @@ export interface Brand {
   answer: string;
   intro: string[];
   common: string[];
+  series?: BrandSeries;
   faq: FAQ[];
 }
 
@@ -331,6 +355,7 @@ export interface BrandEs {
   answer: string;
   intro: string[];
   common: string[];
+  series?: BrandSeries;
   faq: FAQ[];
 }
 

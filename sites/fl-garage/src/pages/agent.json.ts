@@ -214,6 +214,20 @@ export const GET: APIRoute = ({ site }) => {
         url: both(brandHref, b.slug),
         affiliation: 'none, independent service company',
         common_faults: b.common,
+        /* Model series, where we publish one. Emitted as rows keyed by column
+           so an agent can answer a "which series fits" question directly
+           rather than parsing a rendered table. */
+        series: b.series
+          ? {
+              title: b.series.title,
+              models: b.series.columns,
+              specs: b.series.rows.map((r) => ({
+                spec: r.label,
+                by_model: Object.fromEntries(b.series!.columns.map((c, i) => [c, r.values[i]])),
+              })),
+              source: b.series.source,
+            }
+          : undefined,
       })),
     },
 

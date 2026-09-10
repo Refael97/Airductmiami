@@ -72,6 +72,35 @@ const schema = serviceSchema(site, {
           {brand.common.map((x) => <li>{x}</li>)}
         </ul>
 
+        {brand.series && (
+          <>
+            <h2>{brand.series.title}</h2>
+            {brand.series.intro.map((para) => <p>{para}</p>)}
+            {/* Scrolls sideways on a phone rather than squeezing eleven rows of
+                specification into 375px. The first column is sticky so the row
+                label stays readable once the table is scrolled. */}
+            <div class="spec-wrap">
+              <table class="spec-table">
+                <thead>
+                  <tr>
+                    <th scope="col">{brand.name}</th>
+                    {brand.series.columns.map((c) => <th scope="col">{c}</th>)}
+                  </tr>
+                </thead>
+                <tbody>
+                  {brand.series.rows.map((row) => (
+                    <tr>
+                      <th scope="row">{row.label}</th>
+                      {row.values.map((v) => <td>{v}</td>)}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p class="spec-source">{brand.series.source}</p>
+          </>
+        )}
+
         <h2>{t.whatItCosts}</h2>
         <div class="two-prices">
           <a href={serviceHref(lang, repair.slug)} class="price-tile">
@@ -132,6 +161,45 @@ const schema = serviceSchema(site, {
   .pt-label { font-weight: 700; color: var(--c-ink); font-size: 0.95rem; }
   .pt-price { font-family: var(--font-display); font-size: 1.7rem; line-height: 1.1; color: var(--c-primary); }
 
+  /* global.css makes every .prose table a scrolling block box. That is right
+     for an article table dropped into markdown and wrong here: it would put a
+     second scroller inside .spec-wrap and stop the sticky label column working.
+     So this one is restated as a real table and the scrolling is done once, by
+     the wrapper. The same rules also reset the .prose full cell borders down to
+     a single rule between rows. */
+  .spec-wrap { overflow-x: auto; margin: 1.4rem 0 0.6rem; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+  /* border-collapse: separate, not collapse, and deliberately: Chrome does not
+     paint box-shadow on a cell in a collapsed table, and the shadow is what
+     draws the pinned label column's edge once the table is scrolled sideways.
+     Zero spacing plus a bottom rule on every cell gives the same single hairline
+     a collapsed table would have. */
+  .spec-table {
+    display: table; width: 100%; min-width: 40rem; margin: 0; font-size: 0.9rem;
+    border-collapse: separate; border-spacing: 0;
+  }
+  .spec-table th, .spec-table td { border: 0; border-bottom: 1px solid var(--c-line); padding: 0.62rem 0.9rem; text-align: left; vertical-align: top; }
+  .spec-table tbody tr:last-child th, .spec-table tbody tr:last-child td { border-bottom: 0; }
+  .spec-table thead th { background: var(--c-primary-light); color: var(--c-primary); font-size: 0.82rem; white-space: nowrap; }
+  /* Sticky so the row label survives a sideways scroll on a phone. The shadow
+     draws the column's right edge, which a plain border cannot do here: the
+     border scrolls away with the cell it belongs to, and without a line the
+     labels and the scrolled values read as one jumbled column. */
+  .spec-table tbody th {
+    position: sticky; left: 0; z-index: 1;
+    background: #fff; box-shadow: 1px 0 0 var(--c-line), 7px 0 7px -7px rgba(15, 39, 71, 0.22);
+    font-weight: 700; color: var(--c-ink); white-space: nowrap;
+  }
+  .spec-table tbody tr:nth-child(even) th, .spec-table tbody tr:nth-child(even) td { background: var(--c-bg-alt); }
+  .spec-source { font-size: 0.82rem; color: var(--c-muted); margin: 0 0 0.4rem; }
+
+  @media (max-width: 520px) {
+    /* On a phone the pinned label column is competing with the values for a
+       343px viewport, and a label on two lines costs far less than a value
+       column you cannot see. Let the labels wrap and cap how much they take. */
+    .spec-table tbody th { white-space: normal; max-width: 7.5rem; }
+    .spec-table th, .spec-table td { padding: 0.6rem 0.7rem; }
+  }
+
   .b-aside { position: sticky; top: 6.5rem; }
   .aside-card h3 { font-size: 1rem; margin-bottom: 0.8rem; }
   .plain { list-style: none; padding: 0; margin: 0; }
@@ -141,7 +209,7 @@ const schema = serviceSchema(site, {
   .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
 
   @media (max-width: 960px) {
-    .b-body { grid-template-columns: 1fr; }
+    .b-body { grid-template-columns: minmax(0, 1fr); }
     .b-aside { position: static; }
   }
 </style>

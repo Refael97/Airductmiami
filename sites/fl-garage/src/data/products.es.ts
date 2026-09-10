@@ -641,14 +641,14 @@ export const brandEs: Record<string, BrandEs> = {
     ],
   },
   amarr: {
-    metaTitle: 'Puertas de Garaje Amarr en Florida | Reparación',
+    metaTitle: 'Puertas Amarr en Florida | Reparación e Instalación, 2400 y 2500',
     metaDescription:
-      'Reparación, cambio de sección e instalación de puertas Amarr en Florida. Puertas nuevas desde $950, secciones desde $250, estilo carruaje y NOA.',
+      'Reparación e instalación de puertas Amarr en Florida, residenciales y las series comerciales 2000, 2400 y 2500. Secciones desde $250, puertas nuevas desde $950.',
     answer:
-      'Reparamos e instalamos puertas de garaje Amarr en toda Florida. El reemplazo de sección empieza en $250 y una puerta Amarr nueva certificada contra viento e instalada empieza en $950, con las resistentes a impactos desde unos $1,800. Amarr es conocida por su línea estilo carruaje, común en Weston, Palm Beach Gardens y Lakewood Ranch, y sus líneas para Florida llevan aprobación de producto de Florida y NOA de Miami-Dade. Somos una empresa independiente, no un distribuidor de Amarr.',
+      'Reparamos e instalamos puertas de garaje Amarr en toda Florida, residenciales y comerciales. El reemplazo de sección empieza en $250 y una puerta Amarr residencial nueva certificada contra viento e instalada empieza en $950, con las resistentes a impactos desde unos $1,800. Del lado comercial suministramos e instalamos las series seccionales de acero Amarr 2000, 2400 y 2500, las tres que aparecen en naves y bodegas desde Lake Worth Beach y North Palm Beach hasta West Palm Beach, Riviera Beach y Wellington. Una puerta comercial se cotiza después de medir, porque el número depende del tamaño del vano, del calibre y del paquete de carga de viento, no de una lista de precios. Somos una empresa independiente, no un distribuidor de Amarr.',
     intro: [
-      'Amarr es un fabricante grande de Norteamérica cuya línea estilo carruaje aparece seguido en el tipo de casa donde la puerta es parte de la fachada, que en Florida son las comunidades planeadas de Weston, Wellington, Palm Beach Gardens, Lakewood Ranch y Naples. Sus líneas certificadas contra viento llevan aprobación de producto de Florida, con versiones con NOA de Miami-Dade para la zona HVHZ, y ajustamos la aprobación a su zona de viento antes de cotizar.',
-      'El estilo carruaje cambia el panorama de la reparación. Los herrajes decorativos y los perfiles de panel específicos están ligados al modelo, así que una sección dañada en una puerta de carruaje es primero una pregunta de disponibilidad y después de precio. Las manijas y las bisagras tipo correa decorativas también son lo primero que se oxida en una puerta costera, y cambiarlas por las versiones de acero inoxidable es un trabajo chico que mantiene la puerta viéndose bien.',
+      'Amarr es un fabricante grande de Norteamérica y en Florida aparece en dos lugares muy distintos. En casas es la línea estilo carruaje, común en Weston, Wellington, Palm Beach Gardens, Lakewood Ranch y Naples, donde la puerta es parte de la fachada. En edificios comerciales son las series seccionales de acero 2000, 2400 y 2500, que es lo que la gente busca cuando la consulta es un número de cuatro dígitos y un pueblo. Aquí cubrimos las dos.',
+      'El estilo carruaje cambia el panorama de la reparación del lado residencial. Los herrajes decorativos y los perfiles de panel específicos están ligados al modelo, así que una sección dañada en una puerta de carruaje es primero una pregunta de disponibilidad y después de precio. Las manijas y las bisagras tipo correa decorativas también son lo primero que se oxida en una puerta costera, y cambiarlas por las versiones de acero inoxidable es un trabajo chico que mantiene la puerta viéndose bien.',
       'Somos una empresa independiente de reparación e instalación, no un distribuidor ni instalador autorizado de Amarr, y lo decimos. Cada sección, juego de herrajes y puerta nueva se cotiza por escrito con el documento de aprobación adjunto.',
     ],
     common: [
@@ -656,8 +656,65 @@ export const brandEs: Record<string, BrandEs> = {
       'Disponibilidad del perfil de sección en modelos viejos descontinuados',
       'Desgaste normal de bisagras, rodillos y balineras, más rápido en las costas',
       'Errores en la especificación del resorte, donde una puerta aislada o resistente a impactos, que pesa más, quedó con un resorte estándar',
+      'Puertas comerciales pedidas sin el paquete de carga de viento, que no se le agrega después porque la certificación cubre el conjunto que se probó',
+      'Secciones comerciales de una capa golpeadas en la parte baja en vanos con tráfico diario, donde la versión de dos capas habría aguantado el golpe',
     ],
+    series: {
+      title: 'Puertas comerciales Amarr: las series 2000, 2400 y 2500',
+      intro: [
+        'Las tres son puertas seccionales de acero de Amarr, y los números de modelo siguen un patrón que conviene entender antes de pedir. Dentro de cada serie, los dos últimos dígitos son la construcción: la 2402 es de una capa, la 2412 de dos capas y la 2422 de tres. El número de la serie es la clasificación de servicio. La 2000 es de servicio extra pesado en acero calibre 20, la 2400 es de servicio pesado en calibre 24, y la 2500 es de servicio mediano en calibre 24 nominal para proyectos ajustados de presupuesto. Calibre más bajo significa acero más grueso, igual que en una puerta residencial.',
+        'Lo que casi siempre decide no es el calibre sino los límites de tamaño. La serie 2400 acepta el vano estándar más ancho de las tres, 30 pies 2 pulg; la serie 2000 llega a 26 pies 2 pulg; y la serie 2500 se detiene en 20 pies 2 pulg de ancho y 16 pies 1 pulg de alto. Si su vano pasa de 20 pies, la 2500 queda descartada sin importar el precio, y esa es la razón más común por la que la especificación cambia entre la cotización y el pedido.',
+        'El aislamiento solo existe en las versiones de dos y tres capas. Las de una sola capa, las x02, no traen nada, y las aisladas llevan un valor R de 7.0 con poliestireno sin CFC. En un edificio de Florida con un vano orientado al oeste eso no es una cuestión de confort, es carga sobre el aire acondicionado toda la tarde, y sale más barato especificarlo al pedir que lamentarlo después.',
+        'La parte de Florida es la carga de viento. Amarr ofrece la opción de carga de viento en las tres series, y en Florida una puerta comercial necesita un documento de aprobación que corresponda a la presión de diseño de su dirección, con NOA de Miami-Dade dentro de la zona HVHZ y aprobación de producto de Florida fuera de ella. Es una opción, no lo predeterminado, así que hay que pedirla cuando se ordena la puerta. Nosotros conseguimos el documento vigente del fabricante y va en el permiso. Cotizamos e instalamos estas puertas en todo el condado de Palm Beach, incluidos Lake Worth Beach y las direcciones no incorporadas de Lake Worth al oeste, North Palm Beach, Riviera Beach, West Palm Beach, Wellington, Jupiter y Palm Beach Gardens.',
+      ],
+      columns: ['2002 / 2012 / 2022', '2402 / 2412 / 2422', '2502 / 2512 / 2522'],
+      rows: [
+        { label: 'Clasificación de servicio', values: ['Extra pesado', 'Pesado', 'Mediano'] },
+        { label: 'Acero exterior', values: ['Calibre 20', 'Calibre 24', 'Calibre 24 nominal'] },
+        {
+          label: 'Panel',
+          values: ['Acanalado profundo, liso', 'Acanalado profundo, liso', 'Acanalado profundo, liso'],
+        },
+        { label: 'Espesor de la puerta', values: ['2 pulg', '2 pulg', '2 pulg'] },
+        {
+          label: 'Construcción',
+          values: ['Una, dos o tres capas', 'Una, dos o tres capas', 'Una, dos o tres capas'],
+        },
+        {
+          label: 'Aislamiento',
+          values: ['Solo dos y tres capas', 'Solo dos y tres capas', 'Solo dos y tres capas'],
+        },
+        { label: 'Valor R, aislada', values: ['7.0', '7.0', '7.0'] },
+        {
+          label: 'Ancho estándar máximo',
+          values: ['26 pies 2 pulg', '30 pies 2 pulg', '20 pies 2 pulg'],
+        },
+        {
+          label: 'Alto estándar máximo',
+          values: ['26 pies 1 pulg', '26 pies 1 pulg', '16 pies 1 pulg'],
+        },
+        { label: 'Carga de viento', values: ['Opción', 'Opción', 'Opción'] },
+        { label: 'Garantía limitada', values: ['10 años', '10 años', '10 años'] },
+      ],
+      source:
+        'Datos tomados de la ficha de especificaciones que Amarr publica para cada serie, consultada el 10 de septiembre de 2026. Los fabricantes las actualizan, así que verificamos contra el plano vigente antes de ordenar cualquier cosa.',
+    },
     faq: [
+      {
+        question: '¿Cuál serie comercial de Amarr necesito, la 2000, la 2400 o la 2500?',
+        answer:
+          'Empiece por el vano, no por el precio. La serie 2500 se detiene en 20 pies 2 pulg de ancho y 16 pies 1 pulg de alto, así que un vano más ancho la descarta de inmediato. Arriba de eso, la 2400 es la puerta de servicio pesado en calibre 24 y acepta el vano estándar más ancho, 30 pies 2 pulg, y la 2000 es la de servicio extra pesado en calibre 20 para vanos que reciben golpes o que abren y cierran todo el día. Medimos, preguntamos con qué frecuencia trabaja la puerta y qué pasa por ahí, y cotizamos la serie que corresponde.',
+      },
+      {
+        question: '¿Cuál es la diferencia entre una Amarr 2402, 2412 y 2422?',
+        answer:
+          'La construcción. Dentro de una serie, los dos últimos dígitos son el número de capas: la 2402 es de una capa sin aislamiento, la 2412 es de dos capas con poliestireno recubierto de vinilo, y la 2422 es de tres capas. El mismo patrón corre en las otras dos series, así que una 2502 y una 2522 son la misma puerta en una y en tres capas. Las versiones aisladas llevan un valor R de 7.0 y son más rígidas, que es la razón por la que aguantan mejor en un vano que recibe golpes.',
+      },
+      {
+        question: '¿Una puerta comercial Amarr necesita certificación de viento en el condado de Palm Beach?',
+        answer:
+          'Sí. El condado de Palm Beach está fuera de la zona HVHZ, pero la presión de diseño sigue siendo alta y es más alta cerca del agua, así que una puerta comercial de reemplazo necesita una aprobación de producto de Florida que corresponda a la presión de su dirección, y un permiso tramitado por un contratista con licencia. Dentro de Miami-Dade y Broward necesita un NOA de Miami-Dade. La carga de viento es una opción de fábrica en las series 2000, 2400 y 2500, no lo predeterminado, así que hay que especificarla al ordenar. Adaptarla después no es camino: la certificación cubre el conjunto que se probó.',
+      },
       {
         question: '¿Una puerta estilo carruaje es más difícil de reparar?',
         answer:
