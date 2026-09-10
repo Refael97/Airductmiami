@@ -745,6 +745,11 @@ export const brands: Brand[] = [
     },
     faq: [
       {
+        question: 'What does an Amarr garage door replacement cost?',
+        answer:
+          'A residential Amarr garage door replacement starts at $950 installed for a wind-rated door and runs to about $4,200 for an insulated double with a decorative finish. Impact-rated doors start around $1,800. If what is damaged is one section rather than the whole door, section replacement starts at $250 and is usually the better money, as long as the panel profile is still available. Commercial doors in the 2000, 2400 and 2500 series are quoted after a measure, because the number follows the opening and the wind load package.',
+      },
+      {
         question: 'Which Amarr commercial series do I need, the 2000, the 2400 or the 2500?',
         answer:
           'Start with the opening, not the price. The 2500 series stops at 20 ft 2 in wide and 16 ft 1 in tall, so a wider bay rules it out immediately. Above that, the 2400 is the heavy duty 24 gauge door and takes the widest standard opening at 30 ft 2 in, and the 2000 is the extra heavy duty 20 gauge door for openings that take knocks or cycle constantly. We measure, ask how often the door runs and what goes through it, and quote the series that fits.',

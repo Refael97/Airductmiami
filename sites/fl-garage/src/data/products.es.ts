@@ -701,6 +701,11 @@ export const brandEs: Record<string, BrandEs> = {
     },
     faq: [
       {
+        question: '¿Cuánto cuesta cambiar una puerta de garaje Amarr?',
+        answer:
+          'El cambio de una puerta de garaje Amarr residencial empieza en $950 instalada para una puerta certificada contra viento y llega a unos $4,200 para una doble aislada con acabado decorativo. Las resistentes a impactos empiezan alrededor de $1,800. Si lo dañado es una sección y no la puerta entera, el reemplazo de sección empieza en $250 y casi siempre conviene más, siempre que el perfil del panel siga disponible. Las puertas comerciales de las series 2000, 2400 y 2500 se cotizan después de medir, porque el número depende del vano y del paquete de carga de viento.',
+      },
+      {
         question: '¿Cuál serie comercial de Amarr necesito, la 2000, la 2400 o la 2500?',
         answer:
           'Empiece por el vano, no por el precio. La serie 2500 se detiene en 20 pies 2 pulg de ancho y 16 pies 1 pulg de alto, así que un vano más ancho la descarta de inmediato. Arriba de eso, la 2400 es la puerta de servicio pesado en calibre 24 y acepta el vano estándar más ancho, 30 pies 2 pulg, y la 2000 es la de servicio extra pesado en calibre 20 para vanos que reciben golpes o que abren y cierran todo el día. Medimos, preguntamos con qué frecuencia trabaja la puerta y qué pasa por ahí, y cotizamos la serie que corresponde.',
