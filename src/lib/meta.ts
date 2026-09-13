@@ -64,12 +64,30 @@ export interface CityMetaInput {
  * because the dryer vent queries are a real cluster in their own right,
  * 90 impressions on "dryer vent cleaning deerfield" alone, but the duct
  * phrase is what most searches lead with.
+ *
+ * "AC vent" was added to the description on 13 September 2026. Search
+ * Console had the city pages being shown for "ac vent cleaning deerfield
+ * beach fl" at position 9.2, sixty seven times, with no clicks, and for
+ * "ac duct cleaning" plus a city across Bradenton, Hollywood, Pembroke
+ * Pines, Boca Raton, Sarasota and Clearwater. Those pages contained the
+ * strings "AC vent", "AC duct" and "air conditioner" exactly zero times.
+ *
+ * The Spanish pages are the control group and they settle the argument.
+ * They do carry the phrase, because "ductos de aire acondicionado" is
+ * simply how it is said, and the one query that converts best on the whole
+ * site is "limpieza de ductos de aire acondicionado cerca de mi": position
+ * 3.8 and a 15 percent click through rate. Same business, same service,
+ * same country. The difference is the vocabulary on the page.
+ *
+ * It goes in the description and not the title on purpose. On Deerfield the
+ * duct phrasing is worth roughly 615 impressions a month against 67 for the
+ * AC phrasing, and the title has room for one lead term, not two.
  */
 export function cityMeta({ name, county }: CityMetaInput) {
   const title = fit(`Air Duct Cleaning in ${name}, FL | From $${PRICES.ductLow}`, LIMITS.title);
   const description = fit(
-    `Air duct cleaning in ${name}, ${county} from $${PRICES.ductLow}. ` +
-      `Dryer vents from $${PRICES.ventLow}. You get the price before we book, not after. Licensed and insured.`,
+    `Air duct and AC vent cleaning in ${name}, ${county} from $${PRICES.ductLow}. ` +
+      `Dryer vents from $${PRICES.ventLow}. You get the price before we book, not after.`,
     LIMITS.description,
   );
   return { title, description };

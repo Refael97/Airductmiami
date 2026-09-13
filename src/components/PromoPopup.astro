@@ -235,6 +235,11 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         <input type="hidden" name="form-name" value={formName} />
         <LeadMeta lang={lang} source="popup" />
         <input type="hidden" name="offer" value={offerKey} />
+        {/* Filled by script from the ZIP the visitor types, never asked for.
+            Present in the markup because Netlify Forms builds its field list
+            from the static HTML: a field injected at runtime is dropped. */}
+        <input type="hidden" name="zip_city" value="" />
+        <input type="hidden" name="zip_county" value="" />
         <p class="visually-hidden" aria-hidden="true">
           <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
         </p>
@@ -538,6 +543,47 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
 
     const offer = (document.getElementById('promo-form')?.querySelector('input[name="offer"]') as HTMLInputElement | null)?.value ?? '';
 
+    /* ZIP to city, so the lead that lands in the inbox reads "33019
+       (Hollywood, Broward County)" rather than five digits nobody can place.
+       The table is 41KB of JSON, so it is fetched when the popup opens rather
+       than shipped with the page, which leaves it warm by the time anyone has
+       finished typing a name and a phone number. Everything here degrades to
+       "no city" and never to "no lead". */
+    let zipTable: Promise<Record<string, string>> | null = null;
+    const loadZips = () => {
+      if (!zipTable) {
+        zipTable = fetch('/data/fl-zip-cities.json')
+          .then((r) => (r.ok ? r.json() : {}))
+          .catch(() => ({}));
+      }
+      return zipTable;
+    };
+
+    const zipField = form?.querySelector('input[name="zip"]') as HTMLInputElement | null;
+    const cityField = form?.querySelector('input[name="zip_city"]') as HTMLInputElement | null;
+    const countyField = form?.querySelector('input[name="zip_county"]') as HTMLInputElement | null;
+
+    const resolveZip = async () => {
+      if (!zipField || !cityField || !countyField) return '';
+      const zip = zipField.value.trim().slice(0, 5);
+      if (!/^\d{5}$/.test(zip)) {
+        cityField.value = '';
+        countyField.value = '';
+        return '';
+      }
+      const table = await loadZips();
+      const hit = table[zip];
+      /* Out of state, or a typo. Better blank than a guess. */
+      const [city, county] = hit ? hit.split('|') : ['', ''];
+      cityField.value = city;
+      countyField.value = county ? `${county} County` : '';
+      return city;
+    };
+
+    zipField?.addEventListener('input', () => {
+      void resolveZip();
+    });
+
     const showPopup = (trigger: string) => {
       if (!overlay.hidden) return;
       try {
@@ -546,6 +592,7 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         /* private mode: still show, just no once-per-session memory */
       }
       overlay.hidden = false;
+      void loadZips();
       document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', onKey);
       (closeBtn as HTMLElement | null)?.focus();
@@ -590,6 +637,10 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
       const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
       if (btn) btn.disabled = true;
       try {
+        /* Someone who pastes a ZIP and hits send immediately can beat the
+           fetch. Wait for it, but only briefly: a city in the email is worth
+           a moment, and never worth the lead. */
+        await Promise.race([resolveZip(), new Promise((r) => setTimeout(r, 1200))]);
         const data = new FormData(form);
         const body = new URLSearchParams(data as unknown as Record<string, string>).toString();
         const res = await fetch('/', {
@@ -600,7 +651,17 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         if (!res.ok) throw new Error(String(res.status));
         form.hidden = true;
         if (success) success.hidden = false;
-        track('generate_lead', { form_type: 'popup_special', offer });
+        /* Same parameter shape the contact form reports, so one GA report
+           covers both and "which city" does not depend on which form. */
+        track('generate_lead', {
+          form_type: 'popup_special',
+          offer,
+          service: offer === 'dryer' ? 'Dryer Vent Cleaning' : 'Air Duct Cleaning',
+          lead_city: cityField?.value ?? '',
+          source: 'popup',
+          site_language: (form?.querySelector('input[name="locale"]') as HTMLInputElement | null)?.value ?? 'en',
+          page_path: location.pathname,
+        });
       } catch {
         // Network hiccup: fall back to a normal POST so the lead is not lost.
         form.submit();

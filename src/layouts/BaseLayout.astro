@@ -106,16 +106,77 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
       gtag('js', new Date());
       gtag('config', 'G-EK5SGJE8MP');
 
-      // Lead events. phone_call fires on any tel: link click site-wide;
-      // generate_lead fires once on the form thank-you pages.
+      // Lead events.
+      //
+      // phone_call fires on any tel: link click site-wide, and carries where
+      // on the page the tap happened, because "eleven calls" and "eleven
+      // calls, nine of them from the sticky bar" are different facts.
+      function placementOf(a) {
+        if (a.closest('#promo-overlay')) return 'promo_popup';
+        if (a.closest('header')) return 'header';
+        if (a.closest('footer')) return 'footer';
+        if (a.closest('aside')) return 'sidebar';
+        return 'page_body';
+      }
       document.addEventListener('click', function (e) {
         var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
-        if (a) gtag('event', 'phone_call', { page_path: location.pathname });
-      }, true);
-      if (/^\/(thank-you|es\/gracias)\/?$/.test(location.pathname)) {
-        gtag('event', 'generate_lead', {
-          form_type: location.pathname.indexOf('/es/') === 0 ? 'quote_es' : 'quote',
+        if (!a) return;
+        gtag('event', 'phone_call', {
+          page_path: location.pathname,
+          placement: placementOf(a),
+          phone_number: a.getAttribute('href').replace('tel:', ''),
+          site_language: location.pathname.indexOf('/es/') === 0 ? 'es' : 'en',
         });
+      }, true);
+
+      // generate_lead used to fire on every load of a thank-you page, which
+      // counted refreshes, back-button returns and anyone who bookmarked it.
+      // Over the last 30 days that was 26 events from 13 users: exactly the
+      // doubling you would expect, on the one number the business steers by.
+      //
+      // So the form now leaves a note on its way out and the thank-you page
+      // fires only if it finds one, then eats it. No note, no conversion.
+      // The popup is excluded because it submits over fetch, stays on the
+      // page and reports its own generate_lead; without this its note would
+      // sit in storage and fire on some unrelated visit to /thank-you/ later.
+      var LEAD_KEY = 'fbLeadPending';
+      document.addEventListener('submit', function (e) {
+        var f = e.target;
+        if (!f || f.id === 'promo-form' || !f.hasAttribute('data-netlify')) return;
+        function val(name) {
+          var el = f.querySelector('[name="' + name + '"]');
+          return el && el.value ? String(el.value).slice(0, 60) : '';
+        }
+        try {
+          sessionStorage.setItem(LEAD_KEY, JSON.stringify({
+            t: Date.now(),
+            form_type: val('form-name') || 'quote',
+            service: val('service'),
+            lead_city: val('city') || val('zip_city'),
+            source: val('source'),
+            site_language: val('locale') || 'en',
+            page_path: val('page') || location.pathname,
+          }));
+        } catch (err) {
+          /* private mode: the lead still sends, it just goes uncounted */
+        }
+      }, true);
+
+      if (/^\/(thank-you|es\/gracias)\/?$/.test(location.pathname)) {
+        try {
+          var raw = sessionStorage.getItem(LEAD_KEY);
+          if (raw) {
+            sessionStorage.removeItem(LEAD_KEY);
+            var lead = JSON.parse(raw);
+            // A note older than ten minutes is not this visit's lead.
+            if (Date.now() - lead.t < 600000) {
+              delete lead.t;
+              gtag('event', 'generate_lead', lead);
+            }
+          }
+        } catch (err) {
+          /* unreadable note: better to miss one than to invent one */
+        }
       }
     </script>
   </head>
