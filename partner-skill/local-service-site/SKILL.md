@@ -17,13 +17,27 @@ signed off by the owner.
 
 Start with research on the state and on the service itself.
 
+Good research covers keyword research, competitor research, the market and
+the places in it, the service and how the work is actually done, prices,
+and then continued optimisation once the site is live.
+
 **The owner supplies this.** Ask for it before anything else. If it does
 not exist yet, stop and say so rather than filling the gap with
 assumptions.
 
 ---
 
-## 2. Agree what the site contains
+## 2. Set up the accounts
+
+- **Domain:** buy it on Cloudflare.
+- **Hosting:** Netlify, with Forms turned on.
+- **Search Console and Google Analytics:** connect both on day one, before
+  there is anything to measure. Neither backfills, so whatever you do not
+  connect now is history you never get.
+
+---
+
+## 3. Agree what the site contains
 
 Take the research to the owner and agree the list of pages the site will
 have before building any of them.
@@ -37,13 +51,13 @@ for sign-off, and do not add to it later without asking.
 
 ---
 
-## 3. Build it
+## 4. Build it
 
 Build the site to the agreed list.
 
 ---
 
-## 4. Write the content
+## 5. Write the content
 
 Every page answers its own question first, in plain words.
 
@@ -54,7 +68,7 @@ before writing it.
 
 ---
 
-## 5. Set up how a lead arrives
+## 6. Set up how a lead arrives
 
 Agree the ways a customer can get in touch, and build them.
 
@@ -62,7 +76,7 @@ Whatever the business cannot honour, the site does not offer.
 
 ---
 
-## 6. Set up measurement
+## 7. Set up measurement
 
 Make sure a real enquiry is recorded as one, and that the enquiry reaches
 whoever works it.
@@ -71,13 +85,13 @@ Check it end to end in a real browser before calling it done.
 
 ---
 
-## 7. Put it live
+## 8. Put it live
 
 Deploy, and confirm the live site serves what you built.
 
 ---
 
-## 8. After launch
+## 9. After launch
 
 Wait for real data. Then change one thing at a time, and write down what
 you changed and what you expect it to move.
@@ -86,7 +100,7 @@ you changed and what you expect it to move.
 
 ## Stack
 
-Astro, static output, deployed on Netlify.
+Astro, static output.
 
 ---
 
