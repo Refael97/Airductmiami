@@ -1,0 +1,599 @@
+---
+/**
+ * The floating help widget: one bubble, three ways in.
+ *
+ * The three routes exist because visitors arrive in three different states,
+ * and a single "chat with us" button serves only one of them. Someone who
+ * has just smelled something wants to describe it. Someone comparing
+ * companies wants a number and a person. Someone already decided wants to
+ * leave their details and get off the page.
+ *
+ * Two of the three need nothing from a server: the call is a `tel:` link and
+ * the quote opens the same lead form the rest of the site uses. Only the
+ * messaging route depends on the API key, and if that key is not set the
+ * panel says so and points at the other two rather than showing a chat that
+ * silently fails.
+ *
+ * The assistant never books a time, because this site has no calendar to
+ * book into. When it has understood the job it asks the page to open the
+ * quote form carrying what it learned, and the office confirms the time on
+ * the call back. One lead form, one place that collects a lead.
+ */
+import { business } from '../data/business';
+import { ui, localizedPaths, type Locale } from '../data/ui';
+
+interface Props { lang?: Locale }
+const { lang = 'en' } = Astro.props;
+const t = ui[lang];
+const p = localizedPaths(lang);
+---
+<div class="hc" data-help-chat>
+  {/* A small nudge that rises out of the bubble a few seconds in. Shown at
+      most once per session, never while the promo popup is on screen, and
+      gone for good the moment it is dismissed or the panel is opened. A
+      second thing shouting at someone who is already reading is a reason to
+      leave, not a reason to click. */}
+  <div class="hc-teaser" data-hc-teaser hidden>
+    <button type="button" class="hc-teaser-x" data-hc-teaser-close aria-label={t.chatClose}>
+      <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="3" stroke-linecap="round">
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+    <strong>{t.chatTeaser}</strong>
+    <span>{t.chatTeaserSub}</span>
+  </div>
+
+  <button type="button" class="hc-bubble" data-hc-toggle aria-expanded="false" aria-controls="hc-panel">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.9L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z" />
+    </svg>
+    <span class="hc-bubble-text">{t.chatBubble}</span>
+  </button>
+
+  <div class="hc-panel" id="hc-panel" hidden>
+    <header class="hc-head">
+      <button type="button" class="hc-back" data-hc-back hidden>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none"
+             stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        {t.chatBack}
+      </button>
+      <strong data-hc-title>{t.chatGreeting}</strong>
+      <button type="button" class="hc-x" data-hc-toggle aria-label={t.chatClose}>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
+             stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </header>
+
+    {/* ---- the three routes ---- */}
+    <div class="hc-menu" data-hc-view="menu">
+      <p class="hc-sub">{t.chatGreetingSub}</p>
+
+      {/* Deep blue for the conversation, aqua for the quote, white for the
+          call. Aqua is the colour this site uses for its own call to action
+          everywhere else, and the business prefers a form lead to a call, so
+          the quote gets the loud one. */}
+      <button type="button" class="hc-opt hc-opt-blue" data-hc-open="chat">
+        <span class="hc-opt-ico">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4-.9L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z" />
+          </svg>
+        </span>
+        <span class="hc-opt-text">
+          <span class="hc-opt-title">{t.chatPickChat}</span>
+          <span class="hc-opt-note">{t.chatPickChatNote}</span>
+        </span>
+      </button>
+
+      <button type="button" class="hc-opt hc-opt-aqua" data-hc-open="quote">
+        <span class="hc-opt-ico">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+            <path d="M9.5 8.5h5M9.5 12h5M9.5 15.5h3" />
+          </svg>
+        </span>
+        <span class="hc-opt-text">
+          <span class="hc-opt-title">{t.chatPickQuote}</span>
+          <span class="hc-opt-note">{t.chatPickQuoteNote}</span>
+        </span>
+      </button>
+
+      <a href={`tel:${business.phoneHref}`} class="hc-opt hc-opt-white" data-hc-call>
+        <span class="hc-opt-ico">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h4l1.5 4.5L9 9.5c1 2.5 3 4.5 5.5 5.5l2-2.5L21 14v4a2 2 0 0 1-2 2C10.7 19.4 4.6 13.3 4 5a2 2 0 0 1 2-2Z" />
+          </svg>
+        </span>
+        <span class="hc-opt-text">
+          <span class="hc-opt-title">{t.chatPickCall}</span>
+          <span class="hc-opt-note">{t.chatPickCallNote}</span>
+          <span class="hc-opt-num">{business.phone}</span>
+        </span>
+      </a>
+    </div>
+
+    {/* ---- messaging ---- */}
+    <div class="hc-chat" data-hc-view="chat" hidden>
+      <div class="hc-log" data-hc-log aria-live="polite"></div>
+      <form class="hc-compose" data-hc-form>
+        <input type="text" data-hc-input placeholder={t.chatPlaceholder}
+               autocomplete="off" maxlength="800" />
+        <button type="submit" class="hc-send" aria-label={t.chatSend}>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12l16-8-6 16-2.5-6.5L4 12z" />
+          </svg>
+        </button>
+      </form>
+      {/* Not decoration. Someone who thinks they are talking to the
+          technician who will arrive tomorrow has been misled. */}
+      <p class="hc-disclosure">{t.chatDisclosure}</p>
+    </div>
+  </div>
+</div>
+
+<script
+  is:inline
+  define:vars={{
+    lang,
+    contactHref: p.contact,
+    C: {
+      agent: t.chatAgent,
+      busy: t.chatBusy,
+      greeting: t.chatGreeting,
+      opener: t.chatOpener,
+      thinking: t.chatThinking,
+      offline: t.chatOffline,
+      error: t.chatError,
+      openedForm: t.chatOpenedForm,
+      phone: business.phone,
+      phoneHref: business.phoneHref,
+    },
+  }}
+>
+  (function () {
+    var root = document.querySelector('[data-help-chat]');
+    if (!root) return;
+
+    var panel = root.querySelector('.hc-panel');
+    var back = root.querySelector('[data-hc-back]');
+    var views = {
+      menu: root.querySelector('[data-hc-view="menu"]'),
+      chat: root.querySelector('[data-hc-view="chat"]'),
+    };
+    var log = root.querySelector('[data-hc-log]');
+    var form = root.querySelector('[data-hc-form]');
+    var input = root.querySelector('[data-hc-input]');
+
+    var teaser = root.querySelector('[data-hc-teaser]');
+    var title = root.querySelector('[data-hc-title]');
+
+    var open = false;
+    /* The transcript we send back each turn. The API is stateless, so this
+       array is the entire memory of the conversation. */
+    var history = [];
+    var busy = false;
+
+    /* The sticky quote bar is fixed to the bottom of the screen under 760px
+       and the bubble would land on top of it. Measure the bar rather than
+       hardcoding a height, because it is absent on the contact, thank you
+       and privacy pages and a bubble floating for no reason looks broken. */
+    function lift() {
+      var bar = document.getElementById('quote-bar');
+      var h = bar && !bar.hidden && bar.offsetHeight ? bar.offsetHeight + 12 : 0;
+      root.style.setProperty('--hc-lift', h ? h + 'px' : '0px');
+    }
+    lift();
+    addEventListener('resize', lift, { passive: true });
+    /* The bar reveals itself on scroll, so catch it the first time too. */
+    addEventListener('scroll', function once() {
+      setTimeout(lift, 400);
+      removeEventListener('scroll', once);
+    }, { passive: true });
+
+    function show(name) {
+      for (var k in views) if (views[k]) views[k].hidden = k !== name;
+      back.hidden = name === 'menu';
+      /* Once you are in the conversation the heading should say who you are
+         talking to, not what the widget is called. */
+      if (title) title.textContent = name === 'chat' ? C.agent : C.greeting;
+      if (name === 'chat' && !history.length) {
+        bubble('bot', C.opener);
+        input.focus();
+      }
+    }
+
+    function hideTeaser(permanent) {
+      if (!teaser) return;
+      teaser.hidden = true;
+      if (permanent) { try { sessionStorage.setItem('fbHelpTeaser', '1'); } catch (e) {} }
+    }
+
+    function toggle(force) {
+      hideTeaser(true);
+      open = typeof force === 'boolean' ? force : !open;
+      panel.hidden = !open;
+      root.querySelector('[data-hc-toggle]').setAttribute('aria-expanded', String(open));
+      if (open && typeof window.gtag === 'function') {
+        window.gtag('event', 'help_open', { page_path: location.pathname, site_language: lang });
+      }
+      if (!open) show('menu');
+    }
+
+    function bubble(who, text) {
+      var el = document.createElement('div');
+      el.className = 'hc-msg hc-msg-' + who;
+      el.textContent = text;
+      log.appendChild(el);
+      log.scrollTop = log.scrollHeight;
+      return el;
+    }
+
+    /* Three dots rather than the word "Typing". It reads as a person on the
+       other end composing a reply, which is the convention every messenger
+       uses, and it does not need translating. The label carries the meaning
+       for anyone who cannot see the animation. */
+    function typing() {
+      var el = document.createElement('div');
+      el.className = 'hc-typing';
+      el.setAttribute('role', 'status');
+      el.setAttribute('aria-label', C.thinking);
+      for (var i = 0; i < 3; i++) el.appendChild(document.createElement('span'));
+      log.appendChild(el);
+      log.scrollTop = log.scrollHeight;
+      return el;
+    }
+
+    /**
+     * Open the site's own lead form, carrying anything the assistant learned.
+     * The popup does not exist on the pages whose own goal is the form, so
+     * those fall through to the contact page rather than doing nothing.
+     */
+    function openQuote(fields) {
+      toggle(false);
+      if (document.getElementById('promo-overlay')) {
+        dispatchEvent(new CustomEvent('fb:open-promo', { detail: fields || {} }));
+      } else {
+        location.href = contactHref;
+      }
+    }
+
+    root.addEventListener('click', function (e) {
+      if (e.target.closest('[data-hc-teaser-close]')) { hideTeaser(true); return; }
+      if (e.target.closest('[data-hc-teaser]')) { hideTeaser(true); toggle(true); return; }
+      if (e.target.closest('[data-hc-toggle]')) { toggle(); return; }
+      if (e.target.closest('[data-hc-back]')) { show('menu'); return; }
+
+      var opener = e.target.closest('[data-hc-open]');
+      if (opener) {
+        var which = opener.getAttribute('data-hc-open');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'help_route', { route: which, site_language: lang });
+        }
+        if (which === 'quote') { openQuote({ trigger: 'help_widget' }); return; }
+        show('chat');
+        return;
+      }
+
+      if (e.target.closest('[data-hc-call]') && typeof window.gtag === 'function') {
+        window.gtag('event', 'help_route', { route: 'call', site_language: lang });
+      }
+    });
+
+    /* The nudge. Late enough that it is not competing with the page
+       loading, and skipped outright if the promo popup has the screen or
+       this visitor has already seen it. */
+    (function armTeaser() {
+      if (!teaser) return;
+      var seen = false;
+      try { seen = sessionStorage.getItem('fbHelpTeaser') === '1'; } catch (e) {}
+      if (seen) return;
+      setTimeout(function () {
+        var promo = document.getElementById('promo-overlay');
+        if (open || (promo && !promo.hidden)) return;
+        teaser.hidden = false;
+      }, 6000);
+    })();
+
+    /* Escape closes the panel. */
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && open) toggle(false);
+    });
+
+    function fallbackBubble(text) {
+      var el = bubble('bot', text);
+      var a = document.createElement('a');
+      a.className = 'hc-msg-call';
+      a.href = 'tel:' + C.phoneHref;
+      a.textContent = C.phone;
+      el.appendChild(a);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var text = input.value.trim();
+      if (!text || busy) return;
+      input.value = '';
+      bubble('me', text);
+      history.push({ role: 'user', content: text });
+
+      busy = true;
+      var pending = typing();
+
+      fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ messages: history, lang: lang, page: location.pathname }),
+      })
+        .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (res) {
+          pending.remove();
+          /* The endpoint says `configured: false` when no key is set. That is
+             a deployment state, not a failure to hide from the visitor. */
+          if (!res.ok || res.d.configured === false) {
+            var why = res.d && res.d.configured === false ? C.offline
+              : res.d && res.d.error === 'rate_limited' ? C.busy
+              : C.error;
+            fallbackBubble(why);
+            return;
+          }
+          if (res.d.reply) {
+            bubble('bot', res.d.reply);
+            history.push({ role: 'assistant', content: res.d.reply });
+          }
+          if (res.d.quote) {
+            bubble('bot', C.openedForm);
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'help_route', { route: 'chat_to_quote', site_language: lang });
+            }
+            setTimeout(function () {
+              openQuote({
+                trigger: 'help_chat',
+                offer: res.d.quote.service === 'dryer' ? 'dryer' : 'duct',
+                zip: res.d.quote.zip || '',
+                note: res.d.quote.note || '',
+              });
+            }, 900);
+          } else if (!res.d.reply) {
+            fallbackBubble(C.error);
+          }
+        })
+        .catch(function () {
+          pending.remove();
+          fallbackBubble(C.error);
+        })
+        .then(function () { busy = false; input.focus(); });
+    });
+  })();
+</script>
+
+<style is:global>
+  /* Global, not scoped, and this is the reason: every message bubble and the
+     typing indicator are created by the script with document.createElement,
+     so they never carry the scoping attribute Astro adds to elements in the
+     template. Scoped rules for them are written, compiled, shipped, and
+     silently never match, which is exactly how the bubbles ended up
+     rendering as bare paragraphs on the other site in the network. Every
+     selector here is .hc- prefixed, so going global costs nothing. */
+
+  .hc {
+    position: fixed; right: 1.1rem; z-index: 910;
+    /* --hc-lift is set by the script to clear the sticky quote bar. */
+    bottom: calc(1.1rem + var(--hc-lift, 0px) + env(safe-area-inset-bottom, 0px));
+  }
+
+  .hc-bubble {
+    display: flex; align-items: center; gap: 0.55rem; cursor: pointer;
+    padding: 0.75rem 1.1rem; border: 0; border-radius: 999px;
+    background: var(--grad-primary); color: #fff;
+    font: inherit; font-size: 0.92rem; font-weight: 800;
+    box-shadow: 0 10px 26px rgba(9, 60, 99, 0.32);
+    transition: transform 0.16s ease, filter 0.16s ease;
+  }
+  .hc-bubble:hover { transform: translateY(-2px); filter: brightness(1.12); }
+
+  .hc-panel {
+    position: absolute; right: 0; bottom: calc(100% + 0.7rem);
+    width: min(370px, calc(100vw - 2.2rem));
+    display: grid; grid-template-rows: auto minmax(0, 1fr);
+    max-height: min(72vh, 580px);
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+  /* Author display rules beat the UA [hidden] rule, so say it explicitly. */
+  .hc-panel[hidden], .hc-back[hidden], .hc-chat[hidden], .hc-menu[hidden] { display: none; }
+
+  .hc-head {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.85rem 1rem; border-bottom: 1px solid var(--c-line);
+    background: var(--c-bg-alt);
+  }
+  .hc-head strong { flex: 1; font-size: 0.98rem; color: var(--c-ink); }
+  .hc-back, .hc-x {
+    display: inline-flex; align-items: center; gap: 0.2rem; cursor: pointer;
+    border: 0; background: none; padding: 0.2rem; color: var(--c-body);
+    font: inherit; font-size: 0.82rem;
+  }
+  .hc-back:hover, .hc-x:hover { color: var(--c-ink); }
+
+  .hc-menu { padding: 0.9rem 1rem 1.1rem; overflow-y: auto; }
+  .hc-sub { font-size: 0.87rem; color: var(--c-body); margin: 0 0 0.9rem; }
+
+  .hc-opt {
+    display: flex; align-items: flex-start; gap: 0.7rem;
+    width: 100%; text-align: left; cursor: pointer;
+    text-decoration: none; font: inherit;
+    padding: 0.75rem 0.85rem; margin-bottom: 0.55rem;
+    border: 1.5px solid var(--c-line); border-radius: var(--radius);
+    background: #fff;
+    transition: transform 0.15s ease, box-shadow 0.18s ease, border-color 0.16s ease;
+  }
+  .hc-opt:hover { text-decoration: none; transform: translateY(-1px); }
+  .hc-opt:last-child { margin-bottom: 0; }
+  .hc-opt-text { display: block; }
+  .hc-opt-title { display: block; font-weight: 800; font-size: 0.9rem; }
+  .hc-opt-note { display: block; font-size: 0.78rem; margin-top: 0.1rem; line-height: 1.35; opacity: 0.82; }
+  .hc-opt-num { display: block; margin-top: 0.35rem; font-weight: 800; font-size: 1rem; }
+
+  .hc-opt-ico {
+    flex: 0 0 auto; display: grid; place-items: center;
+    width: 2.2rem; height: 2.2rem; border-radius: var(--radius-sm);
+  }
+
+  /* Deep ocean blue, aqua, white. Aqua is what this site uses for every
+     other call to action, and a form lead is the one the business wants
+     most, so the quote carries it. */
+  .hc-opt-blue {
+    background: var(--grad-primary); border-color: transparent; color: #fff;
+  }
+  .hc-opt-blue .hc-opt-ico { background: rgba(255, 255, 255, 0.16); color: #fff; }
+  .hc-opt-blue:hover { box-shadow: 0 8px 20px rgba(11, 63, 102, 0.3); }
+
+  .hc-opt-aqua {
+    background: var(--grad-cta); border-color: transparent; color: #04343f;
+  }
+  .hc-opt-aqua .hc-opt-ico { background: rgba(255, 255, 255, 0.34); color: #04343f; }
+  .hc-opt-aqua:hover { box-shadow: 0 8px 20px rgba(0, 169, 220, 0.34); }
+
+  .hc-opt-white { background: #fff; color: var(--c-ink); }
+  .hc-opt-white .hc-opt-ico { background: var(--c-primary-light); color: var(--c-primary); }
+  .hc-opt-white .hc-opt-num { color: var(--c-primary); }
+  .hc-opt-white:hover { border-color: var(--c-primary); box-shadow: 0 8px 20px rgba(14, 134, 202, 0.16); }
+
+  /* ---- the nudge ------------------------------------------------------ */
+
+  .hc-teaser {
+    position: absolute; right: 0; bottom: calc(100% + 0.7rem);
+    width: min(255px, calc(100vw - 2.2rem));
+    cursor: pointer; text-align: left;
+    padding: 0.7rem 1.9rem 0.75rem 0.85rem;
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius);
+    box-shadow: 0 12px 32px rgba(9, 60, 99, 0.22);
+    animation: hc-teaser-in 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  }
+  .hc-teaser[hidden] { display: none; }
+  .hc-teaser strong { display: block; font-size: 0.88rem; color: var(--c-ink); }
+  .hc-teaser span { display: block; font-size: 0.78rem; color: var(--c-muted); margin-top: 0.12rem; line-height: 1.35; }
+  /* The tail, pointing back at the bubble it came from. */
+  .hc-teaser::after {
+    content: ''; position: absolute; right: 1.4rem; bottom: -7px;
+    width: 12px; height: 12px; background: #fff;
+    border-right: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+    transform: rotate(45deg);
+  }
+  .hc-teaser-x {
+    position: absolute; top: 0.35rem; right: 0.35rem;
+    display: grid; place-items: center; cursor: pointer;
+    width: 1.3rem; height: 1.3rem; padding: 0;
+    border: 0; border-radius: 50%; background: none; color: var(--c-muted);
+  }
+  .hc-teaser-x:hover { background: var(--c-bg-alt); color: var(--c-ink); }
+
+  @keyframes hc-teaser-in {
+    from { opacity: 0; transform: translateY(10px) scale(0.94); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hc-teaser { animation: none; } }
+
+  /* ---- the conversation ---------------------------------------------- */
+
+  .hc-chat { display: grid; grid-template-rows: minmax(0, 1fr) auto auto; min-height: 320px; }
+  .hc-log {
+    overflow-y: auto; padding: 0.9rem 0.85rem;
+    /* Flex, not grid: each bubble picks its own side with align-self, and
+       consecutive bubbles from the same side sit as one run. */
+    display: flex; flex-direction: column; gap: 0.35rem;
+  }
+
+  .hc-msg {
+    max-width: 82%; width: fit-content;
+    padding: 0.55rem 0.8rem; border-radius: 17px;
+    font-size: 0.88rem; line-height: 1.5;
+    white-space: pre-wrap; overflow-wrap: anywhere;
+    animation: hc-in 0.18s ease-out both;
+  }
+  .hc-msg-bot {
+    align-self: flex-start;
+    background: var(--c-bg-alt); color: var(--c-ink);
+    border-bottom-left-radius: 6px;
+  }
+  .hc-msg-me {
+    align-self: flex-end;
+    background: var(--c-primary); color: #fff;
+    border-bottom-right-radius: 6px;
+  }
+  /* A run of bubbles from the same side reads as one turn, so only the last
+     one in the run keeps its tail corner. */
+  .hc-msg-bot + .hc-msg-bot { border-top-left-radius: 6px; }
+  .hc-msg-me + .hc-msg-me { border-top-right-radius: 6px; }
+  /* Extra air where the side changes, which is where a turn actually ends. */
+  .hc-msg-bot + .hc-msg-me, .hc-msg-me + .hc-msg-bot { margin-top: 0.4rem; }
+
+  /* Block, not inline: the sentence above ends in a colon, so inline put the
+     number hard against it with no space. Its own line also makes it the
+     obvious thing to tap. */
+  .hc-msg-call {
+    display: block; margin-top: 0.45rem;
+    font-weight: 800; font-size: 1rem; color: var(--c-primary);
+  }
+
+  .hc-typing {
+    align-self: flex-start; display: flex; align-items: center; gap: 4px;
+    padding: 0.72rem 0.85rem; margin-top: 0.4rem;
+    background: var(--c-bg-alt); border-radius: 17px; border-bottom-left-radius: 6px;
+    animation: hc-in 0.18s ease-out both;
+  }
+  .hc-typing span {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--c-muted);
+    animation: hc-dot 1.3s infinite ease-in-out;
+  }
+  .hc-typing span:nth-child(2) { animation-delay: 0.16s; }
+  .hc-typing span:nth-child(3) { animation-delay: 0.32s; }
+
+  @keyframes hc-dot {
+    0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(-4px); }
+  }
+  @keyframes hc-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hc-msg, .hc-typing { animation: none; }
+    .hc-typing span { animation: none; opacity: 0.55; }
+  }
+
+  .hc-compose { display: flex; gap: 0.5rem; padding: 0.7rem 0.8rem 0.4rem; border-top: 1px solid var(--c-line); }
+  .hc-compose input {
+    flex: 1; min-width: 0; padding: 0.58rem 0.85rem; font: inherit; font-size: 0.88rem;
+    border: 1px solid var(--c-line); border-radius: 999px; background: #fff; color: var(--c-ink);
+  }
+  .hc-compose input:focus { outline: none; border-color: var(--c-primary); box-shadow: var(--ring); }
+  .hc-send {
+    flex: 0 0 auto; display: grid; place-items: center; cursor: pointer;
+    width: 2.35rem; height: 2.35rem; border: 0; border-radius: 50%;
+    background: var(--grad-cta); color: #04343f;
+    transition: filter 0.15s ease;
+  }
+  .hc-send:hover { filter: brightness(1.08); }
+  .hc-disclosure { margin: 0; padding: 0 0.9rem 0.8rem; font-size: 0.7rem; color: var(--c-muted); line-height: 1.4; }
+
+  @media (max-width: 560px) {
+    .hc { right: 0.75rem; }
+    /* The label costs a third of a narrow screen; the icon carries it. */
+    .hc-bubble-text { display: none; }
+    .hc-bubble { padding: 0.85rem; }
+    .hc-panel { width: calc(100vw - 1.5rem); max-height: 78vh; }
+  }
+</style>

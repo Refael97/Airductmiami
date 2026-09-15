@@ -13,6 +13,12 @@
  * a loop is impossible by construction.
  */
 export default (request: Request) => {
+  /* Only ever redirect a navigation. A browser following a 301 for a POST
+     reissues it as a GET, so without this guard a POST to /api/chat came
+     back as a 405 and the chat looked broken while curl worked perfectly.
+     This cost an afternoon on the other site in the network. */
+  if (request.method !== 'GET' && request.method !== 'HEAD') return undefined;
+
   const url = new URL(request.url);
   const { pathname } = url;
   // Skip the root, paths already ending in a slash, and real files (.xml,
@@ -28,5 +34,5 @@ export default (request: Request) => {
 
 export const config = {
   path: '/*',
-  excludedPath: ['/images/*', '/_astro/*', '/*.xml', '/*.txt', '/*.svg', '/*.png', '/*.ico', '/*.webp'],
+  excludedPath: ['/api/*', '/images/*', '/_astro/*', '/*.xml', '/*.txt', '/*.svg', '/*.png', '/*.ico', '/*.webp'],
 };

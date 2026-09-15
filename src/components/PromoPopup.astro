@@ -240,6 +240,10 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
             from the static HTML: a field injected at runtime is dropped. */}
         <input type="hidden" name="zip_city" value="" />
         <input type="hidden" name="zip_county" value="" />
+        {/* What the visitor told the chat assistant before it handed them
+            here, so whoever calls back is not starting from nothing. Empty
+            on every lead that did not come through the chat. */}
+        <input type="hidden" name="chat_note" value="" />
         <p class="visually-hidden" aria-hidden="true">
           <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
         </p>
@@ -599,9 +603,26 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
       track('popup_view', { offer, trigger });
     };
 
-    // Explicit open from the sticky quote bar: always allowed, even if the
-    // auto popup already fired (or was closed) this session.
-    window.addEventListener('fb:open-promo', () => showPopup('quote_bar'));
+    /* Explicit open from the sticky quote bar or the help widget: always
+       allowed, even if the auto popup already fired or was closed this
+       session. The help widget passes what its assistant worked out, so the
+       visitor does not answer the same question twice. */
+    window.addEventListener('fb:open-promo', (e) => {
+      const d = (e as CustomEvent).detail || {};
+      if (d.zip && zipField) {
+        zipField.value = String(d.zip).slice(0, 5);
+        void resolveZip();
+      }
+      if (d.note) {
+        const n = form?.querySelector('input[name="chat_note"]') as HTMLInputElement | null;
+        if (n) n.value = String(d.note).slice(0, 300);
+      }
+      if (d.offer) {
+        const o = form?.querySelector('input[name="offer"]') as HTMLInputElement | null;
+        if (o) o.value = String(d.offer);
+      }
+      showPopup(d.trigger || 'quote_bar');
+    });
 
     // Auto engagement trigger: open at 45% scroll depth or after 25 seconds
     // on the page, whichever comes first, once per session. An instant popup

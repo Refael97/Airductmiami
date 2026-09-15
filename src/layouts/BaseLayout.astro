@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 import PromoPopup from '../components/PromoPopup.astro';
 import ReviewTicker from '../components/ReviewTicker.astro';
 import StickyQuoteBar from '../components/StickyQuoteBar.astro';
+import HelpChat from '../components/HelpChat.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { localBusinessSchema, websiteSchema } from '../lib/schema';
 import { business } from '../data/business';
@@ -193,5 +194,6 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
     <Footer lang={lang} />
     <PromoPopup lang={lang} />
     <StickyQuoteBar lang={lang} />
+    <HelpChat lang={lang} />
   </body>
 </html>
