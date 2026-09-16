@@ -15,7 +15,14 @@ const { name, size = 30, class: cls = '' } = Astro.props;
 const paths: Record<string, string> = {
   // Facebook mark. Solid rather than outline, because a brand glyph drawn
   // in someone else's house style stops reading as that brand.
-  facebook: `<path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7H7.9v-2.94h2.54V9.85c0-2.52 1.5-3.92 3.77-3.92 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78L15.89 22A10.02 10.02 0 0 0 22 12.06z" fill="currentColor" stroke="none"/>`,
+  //
+  // Do not "tidy" this path. An earlier copy ended `h2.78L15.89 22`, which
+  // collapsed three commands of the crossbar's right arm into one absolute
+  // line and drew a diagonal wedge sloping off the f instead of a clean
+  // step. The correct tail is `h2.78 l-.45 2.9 h-2.33 V22`: out along the
+  // crossbar, down its depth, back to the stem, then straight down. This is
+  // the same path the air duct site uses and it matches the official mark.
+  facebook: `<path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.57v1.89h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z" fill="currentColor" stroke="none"/>`,
 
   // Speech bubble with a tail: messaging, not a document
   chat: `<path d="M20.5 11.8a7.9 7.9 0 0 1-8.5 7.9 9.3 9.3 0 0 1-3.8-.85L3.5 20.5l1.8-4.4A7.9 7.9 0 0 1 12 3.9a7.9 7.9 0 0 1 8.5 7.9z"/>
