@@ -53,6 +53,10 @@ async function run({ url, detail, label }) {
   check('form is hidden after submit', !formVisible);
   check('confirmation is visible', successVisible);
   check('offer copy is stripped from the card', !headlineVisible);
+  // The badge sits over the technician's face, which is the right trade while
+  // it is still selling something and the wrong one once the offer is claimed.
+  check('discount badge is off the photo', !(await p.locator('.promo-badge').isVisible()));
+  check('technician photo still shown', await p.locator('.promo-aside').isVisible());
   // the confirmation must be the thing on screen, not something below the fold
   const box = await p.locator('#promo-success').boundingBox();
   const vh = p.viewportSize().height;

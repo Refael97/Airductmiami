@@ -210,7 +210,7 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
 ---
 {!excluded && (
 <div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
-  <div class="promo-card">
+  <div class="promo-card" id="promo-card">
     <button type="button" class="promo-close" id="promo-close" aria-label={OFFER.close}>
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
     </button>
@@ -446,7 +446,13 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
      persuade comes down and the card becomes the confirmation, rather than a
      wall of offer copy with a thank you tucked below it. The logo stays so
      the visitor can still see whose confirmation this is. */
-  .promo-content.is-done > :not(.promo-brand):not(.promo-success) { display: none; }
+  .promo-card.is-done .promo-content > :not(.promo-brand):not(.promo-success) { display: none; }
+
+  /* The discount badge sits over the technician's face. That is the right
+     trade while the badge is still selling something, and the wrong one
+     afterwards: the offer has been claimed and it is already restated in the
+     confirmation text. Dropping it hands the panel back to the photograph. */
+  .promo-card.is-done .promo-badge { display: none; }
 
   .promo-success { text-align: center; padding: 2rem 0.5rem; color: var(--c-ink); }
   .promo-success svg { stroke: var(--c-accent); margin-bottom: 0.6rem; }
@@ -747,8 +753,11 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         form.hidden = true;
         if (success) success.hidden = false;
         /* Strips the offer copy out of the card so the confirmation is the
-           whole panel and lands where the visitor is already looking. */
-        document.getElementById('promo-content')?.classList.add('is-done');
+           whole panel and lands where the visitor is already looking, and
+           takes the discount badge off the technician's face with it. The
+           state lives on the card because the badge is in .promo-visual,
+           a sibling of the content, not inside it. */
+        document.getElementById('promo-card')?.classList.add('is-done');
         /* Announced, not just drawn: at this point focus is still on a
            button inside a form that has just been removed from the page. */
         success?.setAttribute('tabindex', '-1');
