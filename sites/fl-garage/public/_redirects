@@ -1,0 +1,80 @@
+# Gone: the New York pages this site carried before it was re-pointed at Florida.
+#
+# The site was built for New York, then converted city by city to Florida. The
+# New York pages were deleted with the conversion, so they already answer 404.
+# Google has not caught up: over the 30 days to 14 September 2026 these URLs
+# still drew 1,605 of the property's 3,816 Search Console impressions, 42% of
+# everything, at an average position of 49 and with zero clicks, because there
+# is nothing behind them to click through to.
+#
+# 410 rather than 404 because 410 is the stronger signal and Google drops a
+# 410 from the index faster than a 404 it has to keep re-verifying.
+#
+# 410 rather than a 301 to the Florida equivalent because there is no
+# equivalent. Somebody searching for a garage door in Hicksville or Yonkers is
+# in New York, and this company does not work in New York. Pointing them at a
+# Florida city page helps neither of them, and Google reads an off-topic
+# redirect as a soft 404 anyway.
+#
+# Netlify's matcher ignores trailing slashes, so one line covers /x and /x/.
+# The 410 body is the site's own not-found page; the status is what matters.
+#
+# Slugs taken from sites/ny-garage/src/data/cities.ts and regions.ts at commit
+# 24d5914^, the last commit before the Florida conversion. Checked against the
+# 52 Florida cities and 7 Florida regions: no slug collides, so nothing live is
+# caught by these rules.
+
+# New York cities and boroughs (41) and regions (6).
+/service-areas/annadale	/404.html	410
+/service-areas/babylon	/404.html	410
+/service-areas/bay-ridge	/404.html	410
+/service-areas/bayside	/404.html	410
+/service-areas/brentwood	/404.html	410
+/service-areas/brooklyn	/404.html	410
+/service-areas/commack	/404.html	410
+/service-areas/douglaston	/404.html	410
+/service-areas/dyker-heights	/404.html	410
+/service-areas/eltingville	/404.html	410
+/service-areas/forest-hills	/404.html	410
+/service-areas/freeport	/404.html	410
+/service-areas/fresh-meadows	/404.html	410
+/service-areas/garden-city	/404.html	410
+/service-areas/great-kills	/404.html	410
+/service-areas/harrison	/404.html	410
+/service-areas/hempstead	/404.html	410
+/service-areas/hicksville	/404.html	410
+/service-areas/howard-beach	/404.html	410
+/service-areas/huntington	/404.html	410
+/service-areas/islip	/404.html	410
+/service-areas/larchmont	/404.html	410
+/service-areas/levittown	/404.html	410
+/service-areas/long-beach	/404.html	410
+/service-areas/marine-park	/404.html	410
+/service-areas/massapequa	/404.html	410
+/service-areas/middle-village	/404.html	410
+/service-areas/mill-basin	/404.html	410
+/service-areas/mineola	/404.html	410
+/service-areas/mount-vernon	/404.html	410
+/service-areas/nassau-county	/404.html	410
+/service-areas/new-dorp	/404.html	410
+/service-areas/new-rochelle	/404.html	410
+/service-areas/patchogue	/404.html	410
+/service-areas/queens	/404.html	410
+/service-areas/rye	/404.html	410
+/service-areas/scarsdale	/404.html	410
+/service-areas/sheepshead-bay	/404.html	410
+/service-areas/smithtown	/404.html	410
+/service-areas/staten-island	/404.html	410
+/service-areas/suffolk-county	/404.html	410
+/service-areas/tottenville	/404.html	410
+/service-areas/valley-stream	/404.html	410
+/service-areas/westchester-county	/404.html	410
+/service-areas/white-plains	/404.html	410
+/service-areas/whitestone	/404.html	410
+/service-areas/yonkers	/404.html	410
+
+# New York articles. No Florida counterpart serves a New York searcher.
+/blog/best-garage-door-material-new-york	/404.html	410
+/blog/garage-door-repair-cost-new-york	/404.html	410
+/blog/new-garage-door-cost-new-york	/404.html	410
+/blog/winter-garage-door-problems-new-york	/404.html	410
