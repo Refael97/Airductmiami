@@ -43,7 +43,7 @@ const cityFaq = [
  { question: `¿Cuánto cuesta la limpieza de ductos en ${city.name}?`, answer: `En ${city.name}, una limpieza completa de ductos de un solo sistema suele costar entre 300 y 600 dólares, y la limpieza de la ventila del secador entre 100 y 200 dólares. Le damos una cotización clara y sin sorpresas.` },
  { question: `¿Cada cuánto deben limpiar los ductos las familias de ${city.name}?`, answer: `Cada 3 a 5 años en la mayoría de los hogares de ${city.name}, y con más frecuencia si tiene mascotas, alergias o antecedentes de moho. ${es.local}` },
  { question: `¿Ofrecen citas la misma semana en ${city.name}?`, answer: `Sí. Ofrecemos citas rápidas, muchas veces la misma semana, para ${city.name} y el área de ${city.county}. Llame al ${business.phone} para reservar.` },
- { question: `¿Sus técnicos en ${city.name} tienen licencia y seguro?`, answer: `Sí. Cada técnico que atiende ${city.name} cuenta con licencia y seguro, y seguimos los estándares NADCA de extracción por fuente para una limpieza segura y a fondo.` },
+ { question: `¿Sus técnicos en ${city.name} tienen licencia y seguro?`, answer: `Asegurados sí, y le mandamos el certificado antes de la cita si lo pide. Sobre la licencia: la limpieza de ductos no es un oficio con licencia en Florida, así que no existe una licencia de limpieza de ductos que nadie pueda tener. Seguimos la norma NADCA ACR de extracción en la fuente, y lo que Florida sí licencia, la remediación de moho ante todo, pasa a un contratista que tiene esa licencia.` },
 ];
 
 const detail = cityDetail[city.slug] ?? { neighborhoods: [] };
@@ -78,7 +78,7 @@ const guides = await guidesForCityEs();
 
  <div class="prose">
  <p>{es.local}</p>
- <p>Nuestros técnicos con licencia y seguro llevan equipo NADCA de extracción por fuente a cada trabajo en {city.name}. Ponemos todo el sistema bajo succión para que el polvo, el polen y el moho se capturen y no se dispersen por su casa. Si nota un olor a humedad cuando enciende el aire, facturas altas de electricidad, alergias o simplemente le toca un mantenimiento, le ayudamos a respirar un aire más limpio.</p>
+ <p>Nuestros técnicos asegurados llevan equipo NADCA de extracción por fuente a cada trabajo en {city.name}. Ponemos todo el sistema bajo succión para que el polvo, el polen y el moho se capturen y no se dispersen por su casa. Si nota un olor a humedad cuando enciende el aire, facturas altas de electricidad, alergias o simplemente le toca un mantenimiento, le ayudamos a respirar un aire más limpio.</p>
 
  {(detail.depthEs ?? []).map((block) => (
  <>

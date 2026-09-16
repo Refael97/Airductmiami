@@ -1,14 +1,14 @@
 ---
 title: "Cómo elegir empresa de limpieza de ductos sin caer"
 description: "Licencia y seguro primero, después el precio. Qué debe poder enseñarle una empresa seria y las señales de alerta que no conviene ignorar."
-answer: "Una empresa confiable de limpieza de ductos tiene licencia y seguro, da un precio claro por sistema entre 300 y 600 dólares, y nunca lo presiona con ofertas de 99 dólares que terminan en ventas agresivas."
+answer: "Una empresa confiable de limpieza de ductos tiene seguro de responsabilidad, da un precio claro por sistema entre 300 y 600 dólares, y nunca lo presiona con ofertas de 99 dólares que terminan en ventas agresivas. En Florida no existe una licencia estatal de limpieza de ductos, así que quien le anuncie una le está describiendo algo que no existe."
 pubDate: 2024-11-08
 category: "Costos y Guías"
 tags: ["elegir empresa", "florida", "consejos", "limpieza de ductos"]
 featured: false
 faq:
   - question: "¿Necesito verificar la licencia de la empresa?"
-    answer: "Sí, en Florida conviene confirmar que la empresa tenga licencia y seguro de responsabilidad, porque eso lo protege a usted si algo se daña durante el trabajo."
+    answer: "Confirme el seguro de responsabilidad, porque eso lo protege a usted si algo se daña durante el trabajo. La licencia es distinta: en Florida la limpieza de ductos no es un oficio con licencia, así que no hay una que pedir. Donde sí debe exigirla es en trabajo que el estado sí licencia, como la remediación de moho."
   - question: "¿Un precio muy bajo es mala señal?"
     answer: "Casi siempre, los anuncios de 79 o 99 dólares suelen ser un gancho para venderle servicios que no necesita una vez que el técnico está en su casa."
   - question: "¿Cómo sé si el trabajo quedó bien hecho?"
@@ -19,9 +19,9 @@ Contratar a alguien para que entre a su casa y trabaje en un sistema que no ve t
 
 ## La respuesta corta
 
-Busque una empresa con licencia y seguro, que le dé un precio claro por sistema (lo normal va de 300 a 600 dólares) y que no lo presione. Si alguien le ofrece limpiar toda la casa por 99 dólares, desconfíe. Ese número casi nunca es el número final.
+Busque una empresa asegurada, que le dé un precio claro por sistema (lo normal va de 300 a 600 dólares) y que no lo presione. Si alguien le ofrece limpiar toda la casa por 99 dólares, desconfíe. Ese número casi nunca es el número final.
 
-## Empiece por lo básico: licencia y seguro
+## Empiece por lo básico: el seguro, y por qué la licencia es una pregunta con trampa
 
 Antes de cualquier otra cosa, confirme que la empresa esté asegurada. Si un técnico rompe una rejilla, moja una alfombra o daña el manejador de aire, el seguro de responsabilidad es lo que cubre ese daño. Sin él, el problema se vuelve suyo. Pregúntelo directamente y pida que se lo confirmen por escrito o por correo.
 

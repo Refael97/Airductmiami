@@ -19,11 +19,11 @@ Una buena conversación de cinco minutos antes de contratar le puede ahorrar cie
 
 ## La respuesta corta
 
-Antes de dar el sí, cubra cinco frentes: licencia, seguro, precio total por sistema, método de trabajo y prueba del resultado. Si la empresa responde las diez preguntas de abajo con claridad y sin molestarse, va por buen camino.
+Antes de dar el sí, cubra cinco frentes: seguro, precio total por sistema, método de trabajo, prueba del resultado, y qué pasa si el trabajo entra en algo que Florida sí licencia. Si la empresa responde las diez preguntas de abajo con claridad y sin molestarse, va por buen camino.
 
 ## Las 10 preguntas
 
-1. **¿Tienen licencia y seguro de responsabilidad?** Esto lo protege a usted si algo se daña.
+1. **¿Tienen seguro de responsabilidad?** Esto lo protege a usted si algo se daña. Y ojo con la licencia: en Florida la limpieza de ductos no es un oficio con licencia, así que si alguien le presume una "licencia de limpieza de ductos", le está enseñando algo que no existe.
 2. **¿Cuánto cuesta en total, por sistema?** Pida el número final, no el de gancho del anuncio.
 3. **¿Qué incluye ese precio?** Debe cubrir conductos de suministro, de retorno, rejillas y el manejador de aire.
 4. **¿Qué método usan?** La respuesta correcta menciona presión negativa con cepillos, no solo una aspiradora de mano.

@@ -48,11 +48,11 @@ export const regionPages: RegionPageContent[] = [
       'Professional air duct and dryer vent cleaning across South Florida. One licensed, insured team covering Miami-Dade, Broward, and Palm Beach counties. Free quotes, same-week service.',
     esMetaTitle: 'Limpieza de Ductos en el Sur de Florida | Miami-Dade, Broward y Palm Beach',
     esMetaDescription:
-      'Limpieza profesional de ductos de aire y de secadora en todo el sur de Florida. Un solo equipo con licencia y seguro para los condados de Miami-Dade, Broward y Palm Beach. Cotización gratis.',
+      'Limpieza profesional de ductos de aire y de secadora en todo el sur de Florida. Un solo equipo asegurado para los condados de Miami-Dade, Broward y Palm Beach. Cotización gratis.',
     answer:
       'Florida Breeze Air Duct provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services across the entire South Florida tri-county area: Miami-Dade, Broward, and Palm Beach. One licensed, insured team, NADCA source-removal equipment, free quotes, and same-week appointments throughout the region.',
     esAnswer:
-      'Florida Breeze Air Duct ofrece limpieza profesional de ductos de aire, limpieza del ducto de secadora y servicios de calidad del aire interior en toda la zona de los tres condados del sur de Florida: Miami-Dade, Broward y Palm Beach. Un solo equipo con licencia y seguro, equipo NADCA de extracción en la fuente, cotizaciones gratis y citas en la misma semana.',
+      'Florida Breeze Air Duct ofrece limpieza profesional de ductos de aire, limpieza del ducto de secadora y servicios de calidad del aire interior en toda la zona de los tres condados del sur de Florida: Miami-Dade, Broward y Palm Beach. Un solo equipo asegurado, equipo NADCA de extracción en la fuente, cotizaciones gratis y citas en la misma semana.',
     body: [
       'South Florida is the hardest environment in the country for ductwork. Air conditioners run practically every day of the year, coastal humidity hovers near 75 percent, and salt air moves miles inland. That combination feeds coil mold, packs ducts with dust and pollen, and quietly drives up cooling bills from Homestead to Jupiter.',
       'We built our coverage around the whole tri-county area rather than a single city. The same crews, the same negative-air source-removal equipment, and the same pricing serve high-rise condos on Brickell and Fort Lauderdale Beach, golf communities in Boca Raton and Delray Beach, and family neighborhoods in Kendall, Pembroke Pines, and West Palm Beach.',
@@ -87,11 +87,11 @@ export const regionPages: RegionPageContent[] = [
       'Air duct and dryer vent cleaning across Broward County: Fort Lauderdale, Hollywood, Pembroke Pines, Plantation, Coral Springs, and more. Licensed, insured, NADCA standards. Free quotes.',
     esMetaTitle: 'Limpieza de Ductos en el Condado de Broward, FL | Fort Lauderdale y Más',
     esMetaDescription:
-      'Limpieza de ductos de aire y de secadora en todo el condado de Broward: Fort Lauderdale, Hollywood, Pembroke Pines, Plantation, Coral Springs y más. Con licencia y seguro. Cotización gratis.',
+      'Limpieza de ductos de aire y de secadora en todo el condado de Broward: Fort Lauderdale, Hollywood, Pembroke Pines, Plantation, Coral Springs y más. Asegurados. Cotización gratis.',
     answer:
-      'Florida Breeze Air Duct serves all of Broward County with professional air duct cleaning, dryer vent cleaning, and mold remediation, from the beach condos of Fort Lauderdale and Hollywood to the inland suburbs of Pembroke Pines, Plantation, Sunrise, and Coral Springs. Licensed and insured, NADCA source-removal standards, free quotes.',
+      'Florida Breeze Air Duct serves all of Broward County with professional air duct cleaning, dryer vent cleaning, and mold remediation, from the beach condos of Fort Lauderdale and Hollywood to the inland suburbs of Pembroke Pines, Plantation, Sunrise, and Coral Springs. Insured, NADCA source-removal standards, free quotes.',
     esAnswer:
-      'Florida Breeze Air Duct atiende todo el condado de Broward con limpieza profesional de ductos de aire, limpieza del ducto de secadora y remediación de moho, desde los condominios de playa de Fort Lauderdale y Hollywood hasta los suburbios de Pembroke Pines, Plantation, Sunrise y Coral Springs. Con licencia y seguro, normas NADCA de extracción en la fuente y cotizaciones gratis.',
+      'Florida Breeze Air Duct atiende todo el condado de Broward con limpieza profesional de ductos de aire, limpieza del ducto de secadora y remediación de moho, desde los condominios de playa de Fort Lauderdale y Hollywood hasta los suburbios de Pembroke Pines, Plantation, Sunrise y Coral Springs. Asegurados, normas NADCA de extracción en la fuente y cotizaciones gratis.',
     body: [
       'Broward County homes work their air conditioning hard. Coastal cities like Fort Lauderdale, Hollywood, and Pompano Beach deal with salt air and constant humidity, while the big inland suburbs, Pembroke Pines, Miramar, Plantation, Sunrise, and Coral Springs, are full of family homes where the AC runs around the clock and ducts fill with dust, dander, and pollen.',
       'A lot of Broward housing dates from the 1970s through the 1990s, which means original ductwork that has never been opened, flexible runs that sag and tear in hot attics, and dryer vents routed long distances to the roof. Those are exactly the problems our crews handle every day: source-removal duct cleaning, duct repair and rerouting, and dryer vent cleaning and installation.',
@@ -100,18 +100,18 @@ export const regionPages: RegionPageContent[] = [
     esBody: [
       'Las casas del condado de Broward exigen mucho a su aire acondicionado. Las ciudades costeras como Fort Lauderdale, Hollywood y Pompano Beach lidian con aire salado y humedad constante, mientras que los grandes suburbios del interior, Pembroke Pines, Miramar, Plantation, Sunrise y Coral Springs, están llenos de casas familiares donde el aire funciona sin parar y los ductos se llenan de polvo, caspa de mascotas y polen.',
       'Buena parte de las viviendas de Broward se construyó entre los años 70 y 90. Eso significa ductos originales que nunca se han abierto, tramos flexibles que se cuelgan y se rompen en áticos calientes y ductos de secadora con recorridos largos hasta el techo. Son exactamente los problemas que nuestras cuadrillas resuelven a diario: limpieza por extracción en la fuente, reparación y reubicación de ductos, y limpieza e instalación del ducto de secadora.',
-      'Cotizamos el precio completo antes de empezar, llegamos en la ventana de tiempo prometida y terminamos con fotos de antes y después. Ya sea cerca de la playa en Deerfield Beach o en el interior en Coconut Creek, lo atiende el mismo equipo con licencia y seguro.',
+      'Cotizamos el precio completo antes de empezar, llegamos en la ventana de tiempo prometida y terminamos con fotos de antes y después. Ya sea cerca de la playa en Deerfield Beach o en el interior en Coconut Creek, lo atiende el mismo equipo asegurado.',
     ],
     faq: [
       { question: 'How much does air duct cleaning cost in Broward County?', answer: 'Most Broward homes pay $300 to $600 for a complete single-system cleaning and $100 to $200 for dryer vent cleaning. You get the exact price up front, with no add-ons invented on site.' },
       { question: 'Which Broward County cities do you cover?', answer: 'All of them, including Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Pompano Beach, Plantation, Davie, Sunrise, Coral Springs, Coconut Creek, and Deerfield Beach.' },
-      { question: 'Are your Broward technicians licensed and insured?', answer: 'Yes. Every technician working in Broward County is licensed and insured, and every cleaning follows NADCA source-removal standards.' },
+      { question: 'Are your Broward technicians licensed and insured?', answer: 'Insured, yes. On licensing the honest answer is more useful: air duct cleaning is not a licensed trade in Florida, so there is no duct cleaning licence for any company here to hold. Every cleaning follows NADCA source-removal standards, and work Florida does licence, mold remediation above all, goes to a contractor who holds that licence.' },
       { question: 'How fast can you get to a Broward County home?', answer: `Crews are in Broward daily, so most appointments land within the same week. Call ${business.phone} and we will give you the next available window for your city.` },
     ],
     esFaq: [
       { question: 'Cuánto cuesta la limpieza de ductos en el condado de Broward?', answer: 'La mayoría de las casas de Broward paga entre $300 y $600 por la limpieza completa de un sistema y entre $100 y $200 por la limpieza del ducto de secadora. Le damos el precio exacto por adelantado, sin cargos inventados en sitio.' },
       { question: 'Qué ciudades del condado de Broward cubren?', answer: 'Todas, incluidas Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Pompano Beach, Plantation, Davie, Sunrise, Coral Springs, Coconut Creek y Deerfield Beach.' },
-      { question: 'Sus técnicos en Broward tienen licencia y seguro?', answer: 'Sí. Cada técnico que trabaja en el condado de Broward cuenta con licencia y seguro, y cada limpieza sigue las normas NADCA de extracción en la fuente.' },
+      { question: 'Sus técnicos en Broward tienen licencia y seguro?', answer: 'Asegurados, sí. Sobre la licencia la respuesta honesta le sirve más: la limpieza de ductos no es un oficio con licencia en Florida, así que no existe una licencia de limpieza de ductos que ninguna empresa de aquí pueda tener. Cada limpieza sigue las normas NADCA de extracción en la fuente, y lo que Florida sí licencia, la remediación de moho ante todo, pasa a un contratista que tiene esa licencia.' },
       { question: 'Qué tan rápido pueden llegar a una casa en Broward?', answer: `Tenemos cuadrillas en Broward todos los días, así que la mayoría de las citas queda dentro de la misma semana. Llame al ${business.phone} y le damos la próxima ventana disponible para su ciudad.` },
     ],
   },
@@ -130,7 +130,7 @@ export const regionPages: RegionPageContent[] = [
     answer:
       'Florida Breeze Air Duct is a local Palm Beach County team, reachable at our 561 number, providing air duct cleaning, dryer vent cleaning, and air duct mold removal throughout West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, and the surrounding communities. Licensed, insured, NADCA standards, free quotes.',
     esAnswer:
-      'Florida Breeze Air Duct es un equipo local del condado de Palm Beach, con número 561, que ofrece limpieza de ductos de aire, limpieza del ducto de secadora y eliminación de moho en ductos en West Palm Beach, Boca Raton, Boynton Beach, Delray Beach y las comunidades cercanas. Con licencia, seguro, normas NADCA y cotizaciones gratis.',
+      'Florida Breeze Air Duct es un equipo local del condado de Palm Beach, con número 561, que ofrece limpieza de ductos de aire, limpieza del ducto de secadora y eliminación de moho en ductos en West Palm Beach, Boca Raton, Boynton Beach, Delray Beach y las comunidades cercanas. Asegurados, normas NADCA y cotizaciones gratis.',
     body: [
       'Palm Beach County is home base for us. Our phone number starts with 561 because our crews start their mornings here, from downtown West Palm Beach to the gated communities west of Boynton Beach and the golf course neighborhoods of Boca Raton and Delray Beach.',
       'The county mixes two very different duct problems. Older coastal homes and condos east of I-95 fight humidity and salt air, which show up as musty AC smells and mold at the coil. Newer construction west of the turnpike has long flexible duct runs through hot attics that leak, sag, and fill with construction dust. We clean, repair, and treat both every week.',

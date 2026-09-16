@@ -162,3 +162,57 @@ new pages. Duct cleaning is not a licensed activity in Florida. MOLD.md
 flags this as the "certified when no certificate exists" case this document
 already prohibits. It was not changed here because changing it on two pages
 out of 302 helps nobody; it needs the owner's answer and a site-wide sweep.
+
+## The licence claim, removed site-wide, 16 September 2026
+
+Asked directly whether a licence number exists, the owner's answer was no.
+That settles what `research/fl-airduct/MOLD.md` had flagged as an open item
+and this document had left standing: "Licensed & Insured" was on 175 pages
+with nothing behind it.
+
+It had to go, and not only because it was unevidenced. **Air duct cleaning is
+not a licensed trade in Florida.** There is no state duct cleaning licence, so
+the claim was not merely unproven: it named a credential that does not exist.
+That is exactly the "certified when no certificate exists" case this document
+prohibits, and it was the single most repeated sentence on the site.
+
+What changed:
+
+| Was | Is |
+|---|---|
+| "Licensed & Insured · Serving all of Florida" | "Insured · Serving all of Florida" |
+| "Con licencia y asegurados · Servicio en toda Florida" | "Asegurados · Servicio en toda Florida" |
+| "licensed and insured technicians" | "insured technicians" |
+| `standards.licensed: true` in facts.ts | removed, with a note on what to do if a real licence is ever held |
+
+The FAQ answers were not edited, they were rewritten, because the honest
+answer is a better answer than the one it replaces:
+
+> Insured, yes, and we will send the certificate before an appointment if you
+> ask. On licensing the honest answer is more useful than a yes: air duct
+> cleaning is not a licensed trade in Florida. There is no state duct cleaning
+> licence to hold, so a company advertising one is describing something that
+> does not exist, and a number printed on a website proves nothing by itself.
+
+That is the same position `/services/sliding-glass-door-repair/` already took
+and the same one `/mold-in-air-ducts/` takes. The site now says one thing about
+licensing everywhere.
+
+**Two blog articles were also corrected, and this is the part worth noticing.**
+"How to choose a duct cleaning company" and its Spanish twin told readers to
+check that a company is licensed. That advice sent people looking for a
+credential that does not exist, which is how the confusion propagates. They now
+tell readers to verify insurance, and that the licence question only has a real
+answer where the work crosses into a trade Florida does license.
+
+The question text "Are you licensed and insured?" is kept as a question,
+because it is what people ask and a FAQ that dodges the word is less useful
+than one that answers it.
+
+**Still open, and now inconsistent:** the promo popup still offers "$100 off
+air duct mold removal" on mold pages, in both languages. Under
+s.468.8419(1) that is an offer to perform mold remediation, the same problem
+`/mold-in-air-ducts/` was rebuilt to avoid. It was left alone here because
+changing which service gets discounted is a business decision rather than a
+copy fix, but it is the one place left where the site offers a licensed
+service by name and at a price.

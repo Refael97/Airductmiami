@@ -98,7 +98,7 @@ export function cityMetaEs({ name, county }: CityMetaInput) {
   const title = fit(`Limpieza de Ductos en ${name}, FL | Desde $${PRICES.ductLow}`, LIMITS.title);
   const description = fit(
     `Limpieza de ductos en ${name} desde $${PRICES.ductLow} y ventila de secadora desde $${PRICES.ventLow}. ` +
-      `Le damos el precio antes de agendar. Con licencia y seguro.`,
+      `Le damos el precio antes de agendar. Asegurados, norma NADCA.`,
     LIMITS.description,
   );
   return { title, description };
@@ -121,7 +121,7 @@ export function regionMetaEs(name: string) {
     title: fit(`Limpieza de Ductos en ${name} | Desde $${PRICES.ductLow}`, LIMITS.title),
     description: fit(
       `Limpieza de ductos en ${name} desde $${PRICES.ductLow} y ventila de secadora desde $${PRICES.ventLow}. ` +
-        `Precio antes de agendar. Con licencia y seguro.`,
+        `Precio antes de agendar. Asegurados, norma NADCA.`,
       LIMITS.description,
     ),
   };

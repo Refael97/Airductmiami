@@ -50,15 +50,20 @@ const formName = 'landing-quote';
 
 /* The single promise on the page, in one place.
 
-   Worth being deliberate about: this is the only sentence here the business
-   has to keep on a clock, and the owner has said plainly that calling leads
-   back quickly is the thing he is currently losing jobs over. It is the
-   campaign brief's wording and it ships as asked, but if the callback is
-   not reliably inside the hour this is the line to change, and changing it
+   Tightened from one business hour to 30 minutes on 16 September 2026, the
+   owner's decision, made after seeing a competitor lead with a 45 minute
+   response time. Going inside that is a real differentiator in a trade
+   where most quotes arrive the next day.
+   
+   It is also the only sentence on either page the business has to keep on a
+   clock, and it is now half as long as it was. Every lead form and the
+   Google Ads conversion both fire the moment this is submitted, so the
+   promise starts running before anyone has looked at the inbox. This is the
+   one line to change if the answer rate cannot hold it, and changing it
    here changes it on both pages. */
 const CALLBACK_PROMISE = isEs
-  ? 'Le devolvemos la llamada dentro de 1 hora hábil. Sin spam, nunca.'
-  : 'We call back within 1 business hour. No spam, ever.';
+  ? 'Le devolvemos la llamada en menos de 30 minutos. Sin spam, nunca.'
+  : 'We call back within 30 minutes. No spam, ever.';
 ---
 <section class="lqf" id="quote">
   <div class="container lqf-inner">
@@ -116,7 +121,7 @@ const CALLBACK_PROMISE = isEs
       <p>
         {isEs ? 'Le llamamos al ' : "We'll call you at "}
         <strong id="lqf-echo"></strong>
-        {isEs ? ' dentro de la hora.' : ' within the hour.'}
+        {isEs ? ' en menos de 30 minutos.' : ' within 30 minutes.'}
       </p>
       <p class="lqf-done-call">
         {isEs ? '¿Lo necesita antes? Llame al ' : 'Need it faster? Call '}

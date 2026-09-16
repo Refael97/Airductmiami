@@ -122,7 +122,19 @@ export const facts: Fact[] = [
 /** Standards and credentials, kept honest. Nothing here is aspirational. */
 export const standards = {
   method: 'NADCA ACR Standard source removal, using negative-air equipment',
-  licensed: true,
+  /* `licensed: true` was here until 16 September 2026, when the owner
+     confirmed there is no licence number behind it.
+
+     It has to go, and not only because it was unevidenced. Air duct
+     cleaning is not a licensed trade in Florida: there is no state duct
+     cleaning licence, so the claim was not merely unproven, it named a
+     credential that does not exist. That is the "certified when no
+     certificate exists" case docs/TRUST-AND-CLAIMS.md prohibits, and an
+     answer engine repeating it is much harder to retract than a web page.
+
+     If a real licence is ever held, a chapter 489 contractor licence or a
+     DBPR mold licence, add it back as a number rather than as a boolean,
+     because the number is the only part a customer can check. */
   insured: true,
   /* No aggregate rating, review count, years-in-business claim or job count
      appears anywhere in the agent surface until each can be evidenced. An

@@ -23,7 +23,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  shortName: 'Limpieza de Conductos',
  metaTitle: 'Limpieza de Ductos en Florida | Desde $300',
  metaDescription:
- 'Limpieza de ductos en Florida desde $300, con equipo de presión negativa y estándar NADCA. Le damos el precio antes de agendar. Con licencia y seguro.',
+ 'Limpieza de ductos en Florida desde $300, con equipo de presión negativa y estándar NADCA. Le damos el precio antes de agendar. Asegurados, norma NADCA.',
  answer:
  'La limpieza de conductos de aire es la extracción profesional de polvo, residuos, moho y alérgenos de los ductos de suministro y retorno de su sistema HVAC mediante equipo de aire negativo (extracción en la fuente). En Florida suele recomendarse cada 3 a 5 años para proteger la calidad del aire interior y la eficiencia del sistema.',
  intro: [

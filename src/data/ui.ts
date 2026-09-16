@@ -134,7 +134,7 @@ export const ui: Record<Locale, LocaleStrings> = {
  footerServices: 'Services',
  footerAreas: 'Service Areas',
  footerCompany: 'Company',
- licensedInsured: 'Licensed & Insured · Serving all of Florida',
+ licensedInsured: 'Insured · Serving all of Florida',
  servingFlorida: 'Serving all of Florida',
  ctaHeading: 'Ready for cleaner, healthier air?',
  ctaText:
@@ -199,7 +199,7 @@ export const ui: Record<Locale, LocaleStrings> = {
  footerServices: 'Servicios',
  footerAreas: 'Áreas de Servicio',
  footerCompany: 'Empresa',
- licensedInsured: 'Con licencia y asegurados · Servicio en toda Florida',
+ licensedInsured: 'Asegurados · Servicio en toda Florida',
  servingFlorida: 'Servicio en toda Florida',
  ctaHeading: '¿Listo para un aire más limpio y saludable?',
  ctaText:
