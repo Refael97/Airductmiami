@@ -254,6 +254,6 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
         see it dismiss it. Not on traffic we are paying for. */}
     {!landing && <PromoPopup lang={lang} />}
     {landing ? <LandingCallBar lang={lang} /> : <StickyQuoteBar lang={lang} />}
-    {!landing && <HelpChat lang={lang} />}
+    {!landing && <HelpChat lang={lang} pageTitle={title} />}
   </body>
 </html>

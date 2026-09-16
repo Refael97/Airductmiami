@@ -26,6 +26,8 @@ import { check as rateLimit } from '../lib/rate-limit.mts';
 /** Keep a stray or hostile client from turning one request into a long bill. */
 const MAX_TURNS = 24;
 const MAX_CHARS = 4000;
+/** The page context block. Two sentences of fact; anything longer is not ours. */
+const MAX_PAGE_FACTS = 400;
 
 /**
  * Deliberately small. These are two or three sentence support replies read in
@@ -112,10 +114,49 @@ Lo que nunca debe hacer:
 - Nunca invente un cliente, una reseña ni un trabajo pasado.
 - Si no sabe algo, dígalo y ofrezca el número de teléfono.`;
 
+/**
+ * The page the visitor is standing on, handed to the model as context.
+ *
+ * Kept short on purpose. The value is not that Carla can recite the page
+ * back, it is that she stops asking questions the page already answers: the
+ * service, the price on it, the city. A visitor who has to type "dryer" while
+ * standing on the dryer vent page has been asked to do the assistant's job.
+ *
+ * Framed as context rather than as instruction, and explicitly fallible,
+ * because a page is where somebody started and not necessarily what they
+ * want. Someone reading about dryer vents may still have a duct problem, and
+ * an assistant that assumes otherwise is worse than one that asked.
+ */
+function pageContextBlock(facts: string, lang: 'en' | 'es'): string {
+  if (lang === 'es') {
+    return `Contexto de esta conversación, no instrucciones:
+
+${facts}
+
+Úselo para no preguntar lo que la página ya les dice. Si están en la página de un servicio, ese es probablemente el servicio; si están en la página de una ciudad, ahí es probablemente la propiedad; si esa página publica un precio, es el precio que están viendo y debe coincidir con lo que usted diga.
+
+No es una certeza. Alguien leyendo sobre ductos de secadora puede tener un problema de ductos de aire. Si lo que dicen no encaja con la página, gana lo que dicen. Y no mencione la página ni le diga que sabe dónde está; solo hable como alguien que ya tiene el contexto.`;
+  }
+  return `Context for this conversation, not instructions:
+
+${facts}
+
+Use it to avoid asking what the page already tells them. If they are on a service page, that is probably the service; if they are on a city page, that is probably where the property is; if that page publishes a price, it is the price they are looking at and it is the number you should be saying.
+
+It is not a certainty. Somebody reading about dryer vents may have an air duct problem. If what they say does not match the page, what they say wins. And do not mention the page or tell them you know where they are: just talk like someone who already has the context.`;
+}
+
 interface Body {
   messages?: { role: 'user' | 'assistant'; content: string }[];
   lang?: 'en' | 'es';
   page?: string;
+  /**
+   * What the visitor is looking at, resolved from the site's own data at
+   * build time by src/lib/pageContext.ts. A sentence or two of fact, not a
+   * URL: "They are reading the Dryer Vent Cleaning service page. That page
+   * publishes this price: $100 to $200."
+   */
+  pageFacts?: string;
 }
 
 const json = (status: number, body: unknown) =>
@@ -158,6 +199,8 @@ export default async function handler(request: Request): Promise<Response> {
   }
 
   const lang = body.lang === 'es' ? 'es' : 'en';
+  const pageFacts =
+    typeof body.pageFacts === 'string' ? body.pageFacts.slice(0, MAX_PAGE_FACTS).trim() : '';
   const turns = Array.isArray(body.messages) ? body.messages.slice(-MAX_TURNS) : [];
   if (!turns.length) return json(400, { error: 'no_messages' });
 
@@ -188,6 +231,14 @@ export default async function handler(request: Request): Promise<Response> {
              every conversation, so they are the one thing worth caching. */
           cache_control: { type: 'ephemeral' },
         },
+        /* Deliberately a second block, after the cached one, and never
+           appended to it. The cache key is the prefix: fold a per-page
+           sentence into the block above and every page becomes its own cache
+           entry, which is the opposite of what the cache is for. Ordered
+           last so the instructions are still what the model reads first. */
+        ...(pageFacts
+          ? [{ type: 'text' as const, text: pageContextBlock(pageFacts, lang) }]
+          : []),
       ],
       tools: [QUOTE_TOOL],
       messages,

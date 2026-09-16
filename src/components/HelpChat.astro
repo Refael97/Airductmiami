@@ -21,9 +21,19 @@
  */
 import { business } from '../data/business';
 import { ui, localizedPaths, type Locale } from '../data/ui';
+import { pageContext } from '../lib/pageContext';
 
-interface Props { lang?: Locale }
-const { lang = 'en' } = Astro.props;
+interface Props {
+  lang?: Locale;
+  /** This page's own <title>, so an article can name itself to the assistant. */
+  pageTitle?: string;
+}
+const { lang = 'en', pageTitle = '' } = Astro.props;
+
+/* Resolved once, at build time, against the same data the page renders
+   from. Sent with every message so the assistant knows what the visitor is
+   looking at instead of asking them to describe it. */
+const pageFacts = pageContext(Astro.url.pathname, pageTitle, lang);
 const t = ui[lang];
 const p = localizedPaths(lang);
 ---
@@ -144,6 +154,7 @@ const p = localizedPaths(lang);
   is:inline
   define:vars={{
     lang,
+    pageFacts,
     contactHref: p.contact,
     C: {
       agent: t.chatAgent,
@@ -332,7 +343,12 @@ const p = localizedPaths(lang);
       fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ messages: history, lang: lang, page: location.pathname }),
+        body: JSON.stringify({
+          messages: history,
+          lang: lang,
+          page: location.pathname,
+          pageFacts: pageFacts,
+        }),
       })
         .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
         .then(function (res) {
