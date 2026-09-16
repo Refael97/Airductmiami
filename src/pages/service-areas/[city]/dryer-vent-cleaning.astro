@@ -37,6 +37,11 @@ const dv = detail.dryerVent!;
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const pageUrl = `${site}/service-areas/${city.slug}/dryer-vent-cleaning/`;
+/* hreflang only counts when both sides declare each other, and these pages
+   never declared the Spanish twin because until now there was not one.
+   Undefined where the Spanish page does not exist, so we never point at a
+   404. */
+const altHref = detail.dryerVentEs ? `/es/areas-de-servicio/${city.slug}/dryer-vent-cleaning/` : undefined;
 
 const { title: metaTitle, description: metaDescription } = dryerVentCityMeta(city);
 
@@ -77,7 +82,12 @@ const otherCities = dryerVentCities
   .filter((c) => c.region === city.region)
   .slice(0, 6);
 ---
-<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+<BaseLayout
+  title={metaTitle}
+  description={metaDescription}
+  schema={schema}
+  altHref={altHref}
+>
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },

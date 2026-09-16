@@ -1,0 +1,234 @@
+---
+/**
+ * Spanish duct repair page per city. Companion to the dryer vent page in
+ * this folder, and built on the same reasoning, which is recorded there.
+ *
+ * One number is worth repeating here: /es/servicios/air-duct-repair/ took 5
+ * clicks from 168 impressions at position 8.0 over the 90 days to 14
+ * September 2026. The statewide Spanish repair page already earns. What it
+ * has never had is a city to land on.
+ *
+ * Same rule as everywhere else in this folder: a page exists only where a
+ * hand written ductRepairEs block exists.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+import FAQ from '../../../../components/FAQ.astro';
+import CTABand from '../../../../components/CTABand.astro';
+import { getCity } from '../../../../data/cities';
+import { cityDetail, ductRepairCitiesEs } from '../../../../data/cityDetail';
+import { business } from '../../../../data/business';
+import { serviceSchema } from '../../../../lib/schema';
+import { ductRepairCityMetaEs } from '../../../../lib/meta';
+
+export const getStaticPaths = (() => {
+  return ductRepairCitiesEs.map((slug) => ({ params: { city: slug } }));
+}) satisfies GetStaticPaths;
+
+const { city: slug } = Astro.params;
+const city = getCity(slug!)!;
+const detail = cityDetail[slug!];
+const dr = detail.ductRepairEs!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}/es/areas-de-servicio/${city.slug}/air-duct-repair/`;
+const altHref = `/service-areas/${city.slug}/air-duct-repair/`;
+
+const { title: metaTitle, description: metaDescription } = ductRepairCityMetaEs(city);
+
+const schema = serviceSchema(site, {
+  name: `Reparación de Ductos en ${city.name}, FL`,
+  description: metaDescription,
+  url: pageUrl,
+  slug: 'air-duct-repair',
+});
+
+const faq = [
+  {
+    question: `¿Cuánto cuesta reparar los ductos en ${city.name}?`,
+    answer: `Sellar un conjunto de uniones con fuga o reconectar un tramo caído normalmente son unos cientos de dólares. Reemplazar uno o dos tramos dañados queda arriba de eso. Cambiar todo el ducto de una casa de un solo sistema llega a los miles. No publicamos un precio inicial para reparación porque el rango honesto es así de amplio, y un número bajo aquí sería justo el precio gancho contra el que le advertimos. Usted recibe la cifra real después de la revisión y antes de agendar el trabajo.`,
+  },
+  {
+    question: `¿Cómo sé si necesito reparación y no limpieza?`,
+    answer: `La limpieza resuelve restricción. La reparación resuelve pérdida. Si el síntoma es polvo alrededor de las rejillas y olor a humedad, casi siempre es limpieza. Si un cuarto nunca llega a temperatura, si la factura subió sin que usted cambiara nada, o si el sistema corre sin parar, el aire se está escapando antes de llegar y limpiar no va a cambiar eso.`,
+  },
+  {
+    question: `¿Reparar o reemplazar?`,
+    answer: `Reparar cuando las fallas están en unos cuantos puntos identificables y la funda exterior está íntegra en casi todo el tramo. Reemplazar cuando la funda ya se degradó en toda su longitud, cuando el aislamiento está saturado o contaminado, o cuando ya pagó reparaciones en el mismo sistema tres veces en tres años. Hay también una respuesta intermedia que casi nunca se ofrece: cambiar los peores tramos y sellar el resto suele ser lo correcto y cuesta una fracción de un sistema completo. Pídala por su nombre.`,
+  },
+  {
+    question: `¿Cuánto dura un ducto en ${city.county}?`,
+    answer: `El ducto flexible dura de forma realista entre 10 y 15 años en un ático de Florida, en el extremo bajo de su clasificación, porque el calor y la humedad envejecen la funda más rápido que en cualquier otra parte del país. El metal rígido bien instalado dura bastante más, aunque sus uniones y su envoltura de aislamiento envejecen en el mismo plazo.`,
+  },
+  {
+    question: `¿Me van a enseñar el problema antes de cotizar?`,
+    answer: `Sí, y usted debería exigírselo a cualquiera. Una revisión que valga la pena incluye mediciones de flujo en cada rejilla para identificar los tramos por medición y no por opinión, fotografías de las fallas específicas en su propio ático, y una opción de reparación cotizada junto a la de reemplazo. Una cotización de reemplazo sin haberle enseñado nada no es un diagnóstico.`,
+  },
+];
+
+const hasDryerVent = Boolean(detail.dryerVentEs);
+
+const others = ductRepairCitiesEs
+  .filter((s) => s !== slug)
+  .map((s) => getCity(s))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .slice(0, 8);
+---
+<BaseLayout
+  title={metaTitle}
+  description={metaDescription}
+  schema={schema}
+  lang="es"
+  altHref={altHref}
+>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Inicio', href: '/es/' },
+      { name: 'Áreas de Servicio', href: '/es/areas-de-servicio/' },
+      { name: city.name, href: `/es/areas-de-servicio/${city.slug}/` },
+      {
+        name: 'Reparación de Ductos',
+        href: `/es/areas-de-servicio/${city.slug}/air-duct-repair/`,
+      },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{city.county} · Florida</span>
+        <h1>Reparación de Ductos en {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">La respuesta corta</span>
+        <p>
+          En {city.name} el ducto falla en las uniones y en la funda exterior, no a la mitad de un tramo. Primero
+          medimos el flujo en las rejillas, para identificar por número cuáles tramos están fallando; después le
+          enseñamos las fallas en su propio ático; y le cotizamos reparar junto a reemplazar para que vea la
+          diferencia. Reparar es la respuesta correcta con más frecuencia de lo que este oficio admite.
+        </p>
+      </div>
+
+      <div class="prose">
+        <h2>Qué falla en {city.name}, y por qué</h2>
+        {dr.local.map((p) => (<p>{p}</p>))}
+
+        <div class="callout">
+          <strong>Lo que encontramos con más frecuencia en {city.name}:</strong>
+          <p>{dr.common}</p>
+        </div>
+
+        <h2>Las señales, y qué significa cada una</h2>
+        <p>Casi todas se identifican desde adentro de la casa, sin subir al ático.</p>
+        <ul class="check-list">
+          <li><strong>Un cuarto que nunca llega a temperatura.</strong> El síntoma más común y el peor diagnosticado. Si todos los demás cuartos están cómodos, el sistema no está chico. El tramo que sirve a ese cuarto sí.</li>
+          <li><strong>La factura subió sin que usted cambiara nada.</strong> Un ducto con fuga al ático está enfriando el ático. Usted pagó por enfriar ese aire y ningún cuarto lo recibió.</li>
+          <li><strong>Marcas grises en abanico en el techo alrededor de una rejilla.</strong> El aire está pasando por el borde de la bota en vez de por adentro, arrastrando polvo del ático. La bota no está sellada al techo.</li>
+          <li><strong>El sistema corre y corre y nunca satisface.</strong> Casi siempre pérdidas del lado de suministro en un tramo largo.</li>
+          <li><strong>El retorno o el clóset de la manejadora se siente húmedo.</strong> Una fuga del lado del retorno jala aire del ático con toda su humedad, y el sistema tiene que acondicionarla. Las fugas de retorno cuestan más que las de suministro.</li>
+        </ul>
+
+        <h2>Reparar, reemplazar, o dejarlo así</h2>
+        <p>
+          Las tres son respuestas reales y usted debería recibir las tres consideradas. Esta es la parte de la
+          conversación que con más frecuencia no sucede.
+        </p>
+        <div class="grid grid-3 decision">
+          <div class="card">
+            <h3>Reparar</h3>
+            <p>Las fallas están en puntos identificables, la funda está íntegra en casi todo el tramo, el aislamiento está seco, y el sistema tiene menos de unos doce años.</p>
+          </div>
+          <div class="card">
+            <h3>Reemplazar</h3>
+            <p>La funda se degradó en toda su longitud, el aislamiento está saturado o contaminado, el ducto está mal ruteado y repararlo conserva el error original, o ya pagó reparaciones tres veces en tres años.</p>
+          </div>
+          <div class="card">
+            <h3>Parcial</h3>
+            <p>Cambiar los peores tramos y sellar el resto. Con frecuencia es lo correcto, casi nunca se ofrece, y cuesta una fracción de un sistema completo. Pídalo específicamente.</p>
+          </div>
+        </div>
+
+        <h2>Cómo revisamos, y qué debería exigirle a cualquiera</h2>
+        <ol class="numbered">
+          <li><strong>Mediciones de flujo en cada rejilla.</strong> Los tramos que rinden mal se identifican midiendo y no opinando. Este es el paso que separa un diagnóstico de una visita de ventas.</li>
+          <li><strong>Fotografías de las fallas reales.</strong> En su ático, de la unión o el tramo específico del que se le está hablando. Si un contratista le dice que el ducto está perdido y no le enseña nada, pídale que se lo muestre.</li>
+          <li><strong>Suministro y retorno evaluados por separado.</strong> Le cuestan distinto y fallan distinto.</li>
+          <li><strong>Dos cotizaciones, reparar y reemplazar.</strong> Con una explicación clara de qué compra cada una y cuánto es probable que dure.</li>
+          <li><strong>Flujo medido otra vez al terminar.</strong> Mismo instrumento, mismas rejillas. Si los números no se movieron, el trabajo no está terminado.</li>
+        </ol>
+
+        {detail.neighborhoods.length > 0 && (
+          <>
+            <h2>Dónde trabajamos en {city.name}</h2>
+            <p>
+              Cubrimos {city.name} y el área de {city.county}, incluyendo
+              {' '}{detail.neighborhoods.slice(0, -1).join(', ')} y {detail.neighborhoods.slice(-1)[0]}.
+              Llame al {business.phone} para agendar una revisión.
+            </p>
+          </>
+        )}
+
+        <div class="callout warn">
+          <strong>Una cosa que conviene saber antes de que alguien le cotice.</strong>
+          <p>
+            "Necesita todo el ducto nuevo" es fácil de decir y caro de comprobar. También es cierto a veces. La
+            diferencia está en si le enseñaron las fallas. Un contratista que de verdad encontró el problema va a
+            estar contento de llevarlo a verlo, y a uno que no quiera, no le dé el trabajo.
+          </p>
+        </div>
+      </div>
+
+      <FAQ items={faq} title={`Reparación de Ductos en ${city.name}: Preguntas Frecuentes`} />
+
+      <div class="related-links">
+        <h2>Relacionado</h2>
+        <ul>
+          <li><a href={`/es/areas-de-servicio/${city.slug}/`}>Limpieza de ductos en {city.name}</a></li>
+          {hasDryerVent && (<li><a href={`/es/areas-de-servicio/${city.slug}/dryer-vent-cleaning/`}>Ventila de secadora en {city.name}</a></li>)}
+          <li><a href="/es/servicios/air-duct-repair/">Nuestro servicio de reparación de ductos</a></li>
+          <li><a href="/es/blog/ductos-con-fugas-senales-soluciones/">Ductos con fugas: señales y soluciones</a></li>
+          <li><a href="/es/blog/condensacion-ductos-florida/">Condensación en los ductos en Florida</a></li>
+        </ul>
+      </div>
+
+      {others.length > 0 && (
+        <div class="nearby">
+          <h2>Reparación de Ductos Cerca</h2>
+          <div class="city-chips">
+            {others.map((c) => (
+              <a href={`/es/areas-de-servicio/${c.slug}/air-duct-repair/`} class="chip">{c.name}</a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand heading={`¿Un cuarto en ${city.name} que nunca enfría? Vamos a averiguar por qué.`} />
+</BaseLayout>
+
+<style>
+  .callout {
+    background: var(--c-bg-alt); border-left: 4px solid var(--c-primary);
+    border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .callout.warn { border-left-color: var(--c-warn); }
+  .callout p { margin: 0.4rem 0 0; }
+  .numbered { padding-left: 1.2rem; display: grid; gap: 0.6rem; }
+  .decision { margin: 1.2rem 0; }
+  .decision h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+  .decision p { margin: 0; font-size: 0.93rem; }
+  .related-links { margin-top: 2.5rem; }
+  .related-links ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
+  .related-links li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-line); }
+  .related-links li:last-child { border-bottom: 0; }
+  .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+</style>

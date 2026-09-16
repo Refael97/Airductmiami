@@ -71,6 +71,22 @@ export interface CityDetail {
     common: string;
   };
   /**
+   * The Spanish counterpart, for /es/areas-de-servicio/{slug}/dryer-vent-cleaning/.
+   *
+   * Separate from dryerVent rather than translated from it, for the reason
+   * recorded on depthEs: written for the language. The Spanish mirror is
+   * also the half that earns. Over the 90 days to 14 September 2026 the
+   * Spanish city pages averaged positions between 3.9 and 9 with click
+   * through rates of 5 to 14 percent, against 18 to 44 and roughly 0.1
+   * percent on their English twins. /es/areas-de-servicio/kissimmee/ took 8
+   * clicks from 67 impressions at position 3.9, which is the best performing
+   * page on the site.
+   */
+  dryerVentEs?: {
+    local: string[];
+    common: string;
+  };
+  /**
    * Present only for cities that get a dedicated repair page at
    * /service-areas/{slug}/air-duct-repair/. Roughly 450 impressions of city
    * plus repair queries were landing on nothing: "ductwork repair bradenton"
@@ -82,11 +98,24 @@ export interface CityDetail {
     local: string[];
     common: string;
   };
+  /** The Spanish counterpart, same rule as dryerVentEs. */
+  ductRepairEs?: {
+    local: string[];
+    common: string;
+  };
 }
 
 export const cityDetail: Record<string, CityDetail> = {
   // ---- Miami-Dade ----
   miami: {
+    dryerVentEs: {
+      local: [
+        'En Miami la pregunta primera es si es casa o condominio, porque son dos trabajos distintos. En una torre de Brickell o Edgewater la secadora suele descargar a un tramo compartido del edificio, y ese tramo no es suyo: es de la asociación. Le decimos de qué lado de la línea está su problema antes de cotizarle nada.',
+        'En Coral Way, Little Havana y las zonas de casa sola el ducto va por el ático o por la pared hasta una salida exterior, y ahí sí es todo suyo.',
+        'La humedad de Miami empeora las dos situaciones. Aire a más de 70 por ciento de humedad entrando por una aleta que ya no cierra deja el último tramo húmedo toda la noche, y la pelusa se pega en vez de salir.',
+      ],
+      common: 'Una aleta exterior que ya no cierra, con el último tramo del ducto húmedo y la pelusa pegada en vez de saliendo.',
+    },
     depthEs: [
       {
         heading: 'Un condominio y una casa no son el mismo trabajo',
@@ -337,6 +366,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Coral Gables Riviera', 'Old Cutler', 'Ponce Davis', 'Coral Bay', 'Golden Gate', 'Cocoplum', 'Gables by the Sea'],
   },
   kendall: {
+    dryerVentEs: {
+      local: [
+        'Kendall es en su mayoría casa de una planta y townhouse de los setenta a los noventa, con la lavandería en el garaje o en un cuarto interior. En los townhouses el ducto muchas veces cruza hasta una pared exterior compartida, y ese tramo pasa por encima de un vecino, lo que complica el acceso cuando falla.',
+        'La humedad del sur de Miami-Dade hace el resto. Si la aleta exterior ya no cierra bien, el aire húmedo entra de regreso cada noche y deja el último tramo mojado, que es exactamente donde la pelusa se queda pegada.',
+      ],
+      common: 'Un tramo que cruza por encima de la unidad vecina, tapado en el último metro y difícil de alcanzar sin abrir plafón.',
+    },
     depthEs: [
       {
         heading: 'En Kendall el aire acondicionado trabaja más que en casi todo Miami-Dade',
@@ -1271,6 +1307,13 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Winston Park', 'Wynmoor', 'Regency Lakes', 'Cocobay', 'Township'],
   },
   'deerfield-beach': {
+    dryerVentEs: {
+      local: [
+        'Deerfield Beach mezcla condominios de los setenta al oeste de la interestatal con casas de una planta y con el inventario de la playa. En los condominios el ducto de la secadora suele ser corto o descargar a un tramo compartido; en las casas sube al ático y cruza hasta una salida de techo.',
+        'Cerca del agua la sal traba las aletas de la salida en pocas temporadas. Trabada abierta, entra aire húmedo toda la noche y la pelusa se pega; trabada cerrada, la secadora se ahoga y se calienta.',
+      ],
+      common: 'Aletas trabadas por la sal en la salida exterior, con el último tramo del ducto húmedo y la pelusa pegada.',
+    },
     depthEs: [
       {
         heading: 'En Deerfield hay dos ciudades, y su sistema depende de en cuál vive usted',
@@ -1516,6 +1559,14 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Hunters Run', 'Leisureville', 'Quantum Village', 'Chapel Hill', 'Renaissance Commons'],
   },
   'west-palm-beach': {
+    dryerVentEs: {
+      local: [
+        'West Palm Beach tiene desde casas de los años veinte en El Cid y Flamingo Park hasta condominios de los setenta y construcción nueva. En las casas viejas la lavandería se agregó después y el ducto toma el camino que se pudo, casi siempre con más codos de los que debería.',
+        'Cerca del agua, en Palm Beach y las calles del Intracoastal, la sal se come las aletas de la salida exterior en pocas temporadas. Una aleta trabada abierta deja entrar aire húmedo toda la noche; una trabada cerrada ahoga la secadora.',
+        'En los condominios el ducto suele ser corto y por eso se asume que está bien. Un tramo corto nunca se calienta en toda su longitud, así que el último pie antes de la salida se queda húmedo y la pelusa se queda ahí.',
+      ],
+      common: 'Aletas de la salida exterior trabadas por la sal, y el último pie del ducto tapado en un tramo que parecía demasiado corto para fallar.',
+    },
     depthEs: [
       {
         heading: 'Westgate, Roosevelt Estates y las casas divididas en apartamentos',
@@ -2308,6 +2359,22 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Tampa Bay ----
   tampa: {
+    dryerVentEs: {
+      local: [
+        'Tampa mezcla dos tipos de vivienda que fallan distinto. En las casas de los años veinte y treinta de Seminole Heights y Ybor la lavandería se metió después, en un clóset o en un porche cerrado, y el ducto sale por donde se pudo en su momento, casi nunca por el camino corto.',
+        'En New Tampa, Westchase y todo lo que se construyó de los noventa para acá la lavandería está adentro de la casa y el ducto sube al ático para salir por el techo. Ese tramo es largo, tiene codos, y corre por un espacio que pasa de 120 grados medio año.',
+        'En los dos casos la pelusa se detiene en el mismo lugar: el último tramo antes de salir, donde el aire ya se enfrió y la humedad se condensa contra la lámina.',
+      ],
+      common: 'El tramo final antes de la salida al techo tapado, con el resto del ducto limpio, en una casa donde el secado empezó a tardar el doble.',
+    },
+    ductRepairEs: {
+      local: [
+        'Tampa tiene mucha casa de los años veinte a los cincuenta a la que el aire acondicionado se le puso décadas después. El ducto se acomodó entre clósets, plafones bajados y un ático de poca altura, y un tramo armado esquivando obstáculos tiene más uniones y más lugares donde aflojarse.',
+        'Dónde está la fuga importa tanto como el tamaño. Una unión abierta en el ático jala aire a más de 120 grados. Una abierta dentro de una pared jala fibra de aislamiento y el polvo de sesenta años que hay en esa cavidad.',
+        'Desde adentro las señales son siempre las mismas: un cuarto que nunca alcanza a los demás en agosto, una rejilla de retorno que silba al arrancar, y polvo que vuelve a los muebles a los pocos días de limpiar. Las tres apuntan a la distribución, no al equipo.',
+      ],
+      common: 'Una unión abierta en un tramo adaptado, con el cuarto del final tratado durante años como si fuera problema del equipo.',
+    },
     depthEs: [
       {
         heading: 'En Tampa el ducto va debajo de la casa, no arriba',
@@ -2428,6 +2495,21 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Old Northeast', 'Historic Kenwood', 'Snell Isle', 'Jungle Terrace', 'Shore Acres'],
   },
   clearwater: {
+    dryerVentEs: {
+      local: [
+        'El inventario de condominios y villas de Clearwater pone casi todas las secadoras en tramos cortos hacia una pared exterior o hacia un tramo compartido del edificio, y los tramos cortos son justo los que la gente da por buenos. Casi nunca lo son: un ducto corto nunca se calienta en toda su longitud, así que el último pie antes de la salida se queda húmedo y la pelusa se pega ahí en vez de salir.',
+        'En la isla, Clearwater Beach y Sand Key, la sal traba las aletas en pocas temporadas, y una aleta que no cierra deja entrar aire húmedo del Golfo de regreso por el ducto cada noche.',
+      ],
+      common: 'Los últimos doce pulgadas antes de la salida exterior tapadas, en un tramo que parecía demasiado corto para tener problema.',
+    },
+    ductRepairEs: {
+      local: [
+        'En Clearwater la primera pregunta de una reparación es de propiedad. En la mayoría de los edificios la manejadora, el ducto dentro de sus paredes y el filtro son suyos, mientras que los tramos verticales y lo compartido son de la asociación.',
+        'Esa frontera es donde los problemas se quedan sin dueño durante años, porque cada lado supone que el otro se está haciendo cargo. En la isla hay que sumarle la sal: las salidas se corroen, las aletas dejan de sellar, y el sistema jala aire salado por cada abertura del retorno.',
+        'Le decimos de qué lado de la línea está su problema antes de cotizar, incluso cuando la respuesta es que le conviene hablar con su junta y no con nosotros.',
+      ],
+      common: 'Un retorno sin sellar, con el sistema jalando aire sin filtrar de una cavidad de pared o de un pasillo en vez de por el filtro.',
+    },
     ductRepair: {
       local: [
         'Clearwater\'s high proportion of condominium and villa housing makes the first repair question an ownership question. In most buildings the air handler, the ducting inside your walls and the filter housing are yours, while risers and anything shared belong to the association.',
@@ -2512,6 +2594,22 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Central Florida ----
   orlando: {
+    dryerVentEs: {
+      local: [
+        'Orlando es en su mayoría construcción de una planta con la lavandería adentro de la casa, así que el ducto de la secadora sube al ático y cruza hasta una salida en el techo. Ese es el tramo más largo de la casa, no el más corto, y es el que la gente supone que está bien porque nunca lo ha visto.',
+        'La zona tiene además mucha casa de renta corta y mucha casa de temporada rumbo a los parques. Una secadora que descansa medio año y después trabaja diario compacta de golpe la pelusa que se quedó húmeda, y la restricción llega toda junta en vez de poco a poco.',
+        'En las casas más viejas de College Park y Colonialtown la lavandería se puso después, muchas veces en el garaje, y el ducto sale por donde se pudo.',
+      ],
+      common: 'Un tramo de ático largo hacia una salida de techo, tapado en la salida y no en ningún punto que se alcance desde adentro.',
+    },
+    ductRepairEs: {
+      local: [
+        'Casi todo el ducto residencial de Orlando corre por el ático, y el ático de Florida Central pasa medio año arriba de 120 grados. Ese calor endurece el aislamiento y afloja las cintas de las uniones antes de lo que la gente supone, sobre todo en flexible instalado en los noventa y los dos miles.',
+        'La señal que más se confunde con falla del equipo es un cuarto que no enfría en agosto. Si el sistema tiene años funcionando bien y de pronto un solo cuarto se queda atrás, el problema casi nunca es el equipo: es la rama que llega a ese cuarto.',
+        'También vemos tramos desprendidos por completo del collarín, tirando el aire frío al ático. Ese caso se paga dos veces, en la factura de luz y en el cuarto que sigue caliente.',
+      ],
+      common: 'Flexible desprendido del collarín en el ático, descargando aire acondicionado al espacio del techo.',
+    },
     depthEs: [
       {
         heading: 'Las casas de renta corta son el caso especial de Orlando',
@@ -2564,6 +2662,14 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   kissimmee: {
+    dryerVentEs: {
+      local: [
+        'Kissimmee tiene una de las concentraciones más altas de casas de renta corta del estado, y una secadora de casa de renta no trabaja como una de familia. Entre huéspedes corre varias cargas seguidas, en cada cambio, todo el año. Ese uso se parece más al de una lavandería chica que al de una casa.',
+        'La otra mitad del problema es que nadie que la usa está pendiente. El huésped que encuentra las toallas húmedas las vuelve a meter y se va. El dueño está en otro estado y no ve nada, y la persona de limpieza mide el tiempo del cambio, no el del secado. Una obstrucción que en una casa se nota en dos semanas aquí puede durar un año.',
+        'En Poinciana, Buenaventura Lakes y los fraccionamientos nuevos rumbo a los parques la lavandería casi siempre está adentro, con el ducto subiendo al ático. Tramo largo, uso pesado, y nadie mirándolo.',
+      ],
+      common: 'Una ventila de casa de renta que nunca se limpió desde la entrega, descubierta porque la ropa del cambio dejó de caber en el horario.',
+    },
     dryerVent: {
       local: [
         'Kissimmee carries one of the highest concentrations of short term rental housing in the state, and a vacation rental dryer does not work like a family one. Between guests it runs several loads back to back, every changeover, all year. That is a duty cycle closer to a small laundromat than to a house.',
@@ -2783,6 +2889,22 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Southwest Florida ----
   'fort-myers': {
+    dryerVentEs: {
+      local: [
+        'Casi todo Fort Myers es de una planta, y en ese tipo de construcción la lavandería queda en el garaje o en un cuarto interior sin pared exterior detrás. El ducto sube al ático y cruza hasta una salida en el techo o en el alero, así que es el tramo más largo de la casa y no el más corto.',
+        'Buena parte de la vivienda aquí es de temporada, y ese es el peor caso para una ventila. Una secadora que no se usa de mayo a noviembre y después corre diario compacta en la primera semana toda la pelusa húmeda que se asentó, y la obstrucción llega de golpe.',
+        'Ian se llevó salidas de techo y de alero por todo el condado de Lee en 2022, y muchas las repuso rápido un techador y no alguien pensando en secadoras. Una tapa con malla contra insectos se ve bien hecha y es la forma más eficaz que existe de tapar una ventila, porque la pelusa hace puente sobre la malla en semanas.',
+      ],
+      common: 'Una salida repuesta después del huracán con tapa de malla, con la pelusa haciendo puente y regresándose por el ducto.',
+    },
+    ductRepairEs: {
+      local: [
+        'El ducto residencial de Fort Myers corre por el ático, y el ático del suroeste de Florida pasa medio año arriba de 120 grados. El aislamiento se vuelve quebradizo y las uniones se aflojan, sobre todo en flexible de los noventa y los dos miles, que es buena parte del inventario.',
+        'Ian abrió techos por todo el condado en 2022. Donde se abrió la cubierta, el ático de abajo se mojó, y el aislamiento del ducto que se empapó entonces muchas veces se secó en su lugar en vez de reemplazarse, porque no se veía mientras se firmaban las reparaciones visibles.',
+        'Un aislamiento que se ha mojado y secado varias veces pierde agarre sobre el núcleo interior. El tramo se descuelga entre soportes, el aire frena en cada hundimiento, y el cuarto del final deja de alcanzar.',
+      ],
+      common: 'Flexible de ático con aislamiento que se mojó en 2022 y se secó en su lugar, ahora descolgado del núcleo interior.',
+    },
     dryerVent: {
       local: [
         'Most of Fort Myers is single storey, and in single storey Florida construction the laundry sits in the garage or an interior utility room with no exterior wall behind it. The vent goes up into the attic and runs to a roof cap or out through a soffit, which makes it the longest duct in the house rather than the shortest.',
@@ -2845,6 +2967,21 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['McGregor', 'Whiskey Creek', 'Gateway', 'Pelican Preserve', 'Iona', 'Dean Park', 'Fort Myers Villas'],
   },
   'cape-coral': {
+    dryerVentEs: {
+      local: [
+        'En Cape Coral la lavandería casi siempre está en el garaje, lo que suena a que el ducto debería ser corto. En buena parte de las casas de aquí no lo es: la secadora queda en una pared interior del garaje y el ducto sube y cruza el ático hasta una salida en el techo, porque así salía más barato construirlo.',
+        'Muchas de estas casas son de temporada. Cerradas seis meses con la humedad de adentro alta, y después una temporada de uso diario, es el patrón que convierte pelusa asentada en una obstrucción sólida en vez de gradual.',
+      ],
+      common: 'Secadora en el garaje con tramo largo de ático hasta una salida de techo, tapada en la salida y no en ningún punto alcanzable desde adentro.',
+    },
+    ductRepairEs: {
+      local: [
+        'Cape Coral se construyó casi entera entre los setenta y los dos miles: losa, una planta, ducto en el ático. Esa uniformidad ayuda, porque las fallas aquí son predecibles de una forma que no lo son en una ciudad de inventario mezclado.',
+        'El manto freático es alto y los canales ponen aire húmedo contra al menos un lado de casi todos los lotes. Un ducto en el ático encima de eso, sirviendo a un serpentín que corre casi todo el año, pasa mucho tiempo cerca del punto de rocío.',
+        'Ian entró por aquí en 2022 y los techos se llevaron lo peor. Donde se abrió la cubierta el ático se mojó, y el aislamiento del ducto que se empapó se secó en su lugar en lugar de cambiarse.',
+      ],
+      common: 'Aislamiento de ático mojado en 2022 y secado en su lugar, con el núcleo interior ya descolgándose de la funda.',
+    },
     ductRepair: {
       local: [
         'Cape Coral is a canal city built almost entirely between the seventies and the two thousands: slab on grade, single storey, ductwork in the attic. That uniformity is useful, because the failure modes here are predictable in a way they are not in a city with mixed housing stock.',
@@ -3229,5 +3366,12 @@ export function detailFor(slug: string): CityDetail {
 /** Slugs that have a dedicated dryer vent page. Drives getStaticPaths. */
 export const dryerVentCities = Object.keys(cityDetail).filter((s) => cityDetail[s].dryerVent);
 
+/** Spanish dryer vent pages. A separate list because the Spanish side is
+ *  written city by city and lags the English one deliberately. */
+export const dryerVentCitiesEs = Object.keys(cityDetail).filter((s) => cityDetail[s].dryerVentEs);
+
 /** Slugs that have a dedicated air duct repair page. Drives getStaticPaths. */
 export const ductRepairCities = Object.keys(cityDetail).filter((s) => cityDetail[s].ductRepair);
+
+/** Spanish duct repair pages. Same rule. */
+export const ductRepairCitiesEs = Object.keys(cityDetail).filter((s) => cityDetail[s].ductRepairEs);

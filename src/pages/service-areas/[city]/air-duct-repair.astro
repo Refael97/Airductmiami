@@ -40,6 +40,11 @@ const dr = detail.ductRepair!;
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const pageUrl = `${site}/service-areas/${city.slug}/air-duct-repair/`;
+/* hreflang only counts when both sides declare each other, and these pages
+   never declared the Spanish twin because until now there was not one.
+   Undefined where the Spanish page does not exist, so we never point at a
+   404. */
+const altHref = detail.ductRepairEs ? `/es/areas-de-servicio/${city.slug}/air-duct-repair/` : undefined;
 const { title: metaTitle, description: metaDescription } = ductRepairCityMeta(city);
 
 const schema = serviceSchema(site, {
@@ -80,7 +85,12 @@ const others = ductRepairCities
 
 const hasDryerVent = Boolean(detail.dryerVent);
 ---
-<BaseLayout title={metaTitle} description={metaDescription} schema={schema}>
+<BaseLayout
+  title={metaTitle}
+  description={metaDescription}
+  schema={schema}
+  altHref={altHref}
+>
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },

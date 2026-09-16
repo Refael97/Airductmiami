@@ -1,0 +1,239 @@
+---
+/**
+ * Spanish dryer vent page per city.
+ *
+ * The English mirror has had these since August. The Spanish one had no
+ * city by service pages at all, which is the wrong way round given what the
+ * data says. Over the 90 days to 14 September 2026 the Spanish city pages
+ * averaged positions between 3.9 and 9 with click through rates of 5 to 14
+ * percent, against 18 to 44 and roughly 0.1 percent on their English twins.
+ * /es/areas-de-servicio/kissimmee/ took 8 clicks from 67 impressions at
+ * position 3.9, the best performing page on the site.
+ *
+ * Honest about the evidence: unlike the English pages, these are not built
+ * on measured demand for the exact Spanish city plus service queries, which
+ * is thin today. It is thin partly because there has never been a page to
+ * earn an impression with. What is measured is the pattern: on this domain,
+ * in this market, Spanish ranks several pages higher than English for the
+ * same content, and the English city by service pages already rank well
+ * (/service-areas/hollywood/dryer-vent-cleaning/ sits at 7.7). Both signals
+ * point the same way. That is a bet, and it is written down as one.
+ *
+ * Same rule as the English side: a page exists only where a hand written
+ * dryerVentEs block exists. Generating one per city from a template is a
+ * doorway pattern and Google is good at spotting exactly that.
+ *
+ * The URL keeps the English service slug, matching /es/servicios/
+ * dryer-vent-cleaning/, because that is the convention already in the
+ * sitemap and changing it would orphan what is indexed.
+ */
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+import FAQ from '../../../../components/FAQ.astro';
+import CTABand from '../../../../components/CTABand.astro';
+import { getCity } from '../../../../data/cities';
+import { cityDetail, dryerVentCitiesEs } from '../../../../data/cityDetail';
+import { business } from '../../../../data/business';
+import { serviceSchema } from '../../../../lib/schema';
+import { dryerVentCityMetaEs, PRICES } from '../../../../lib/meta';
+
+export const getStaticPaths = (() => {
+  return dryerVentCitiesEs.map((slug) => ({ params: { city: slug } }));
+}) satisfies GetStaticPaths;
+
+const { city: slug } = Astro.params;
+const city = getCity(slug!)!;
+const detail = cityDetail[slug!];
+const dv = detail.dryerVentEs!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const pageUrl = `${site}/es/areas-de-servicio/${city.slug}/dryer-vent-cleaning/`;
+/** The English twin, for hreflang and the language switcher. */
+const altHref = `/service-areas/${city.slug}/dryer-vent-cleaning/`;
+
+const { title: metaTitle, description: metaDescription } = dryerVentCityMetaEs(city);
+
+const schema = serviceSchema(site, {
+  name: `Limpieza de Ventila de Secadora en ${city.name}, FL`,
+  description: metaDescription,
+  url: pageUrl,
+  slug: 'dryer-vent-cleaning',
+});
+
+const faq = [
+  {
+    question: `¿Cuánto cuesta limpiar la ventila de la secadora en ${city.name}?`,
+    answer: `La mayoría de las casas en ${city.name} pagan entre $${PRICES.ventLow} y $${PRICES.ventHigh} por una limpieza completa. La cifra depende del largo del tramo y de por dónde sale, así que una salida corta de pared queda abajo del rango y un tramo largo de ático hasta el techo queda arriba. Usted recibe el precio antes de agendar, no después de que el técnico ya está en su lavandería.`,
+  },
+  {
+    question: `¿Cómo sé que mi ventila en ${city.name} necesita limpieza?`,
+    answer: `Las señales confiables son una carga que necesita dos ciclos para secar, una secadora o un cuarto de lavado caliente al tacto después de una carga, olor a quemado, y una aleta exterior que ya no se abre sola mientras la secadora trabaja. Cualquiera de las cuatro significa que el tramo está restringido.`,
+  },
+  {
+    question: `¿Con qué frecuencia hay que limpiarla?`,
+    answer: `Una vez al año para una casa normal. Más seguido si corre varias cargas al día, si hay mascotas que sueltan mucho pelo, o si tiene uno de esos tramos largos de ático o de techo que son comunes en ${city.county}.`,
+  },
+  {
+    question: `¿De verdad es un riesgo de incendio?`,
+    answer: `Sí, y no es una frase de venta. La pelusa es altamente inflamable, y una ventila restringida hace que la secadora trabaje más caliente de lo que fue diseñada. La US Fire Administration atribuye miles de incendios residenciales al año a las secadoras de ropa, y señala la falta de limpieza como la causa principal.`,
+  },
+  {
+    question: `¿Limpian en condominios y apartamentos de ${city.name}?`,
+    answer: `Limpiamos la parte que es suya, desde la máquina hasta la conexión en la pared, en cualquier edificio. Cuando el tramo se une a un ducto compartido que sirve a otras unidades, ese ducto es de la asociación, y se lo decimos con claridad en lugar de limpiarle seis pies y decirle que el problema quedó resuelto.`,
+  },
+];
+
+const otherCities = dryerVentCitiesEs
+  .filter((s) => s !== slug)
+  .map((s) => getCity(s))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .filter((c) => c.region === city.region)
+  .slice(0, 6);
+---
+<BaseLayout
+  title={metaTitle}
+  description={metaDescription}
+  schema={schema}
+  lang="es"
+  altHref={altHref}
+>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Inicio', href: '/es/' },
+      { name: 'Áreas de Servicio', href: '/es/areas-de-servicio/' },
+      { name: city.name, href: `/es/areas-de-servicio/${city.slug}/` },
+      {
+        name: 'Ventila de Secadora',
+        href: `/es/areas-de-servicio/${city.slug}/dryer-vent-cleaning/`,
+      },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{city.county} · Florida</span>
+        <h1>Limpieza de Ventila de Secadora en {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">La respuesta corta</span>
+        <p>
+          Limpiar la ventila de la secadora en {city.name} cuesta entre ${PRICES.ventLow} y ${PRICES.ventHigh} en
+          una casa normal y toma de 45 a 90 minutos. Limpiamos el tramo completo, de la máquina hasta la salida
+          exterior, no nada más la parte que se alcanza, y medimos el flujo de aire antes y después para que usted
+          vea la diferencia en lugar de creernos.
+        </p>
+      </div>
+
+      <div class="prose">
+        <h2>Cómo son de verdad las ventilas en {city.name}</h2>
+        {dv.local.map((p) => (<p>{p}</p>))}
+
+        <div class="callout">
+          <strong>Lo que encontramos con más frecuencia en {city.name}:</strong>
+          <p>{dv.common}</p>
+        </div>
+
+        <h2>Las cuatro señales que vale la pena atender</h2>
+        <p>
+          No hace falta una inspección para saber si esto le aplica. Cualquiera de las cuatro significa que el
+          tramo está restringido, y empeoran en el orden en que están puestas.
+        </p>
+        <ul class="check-list">
+          <li><strong>Dos ciclos para secar una carga.</strong> Es el primer síntoma y con el que más tiempo vive la gente. Una secadora que no puede expulsar el aire tampoco puede sacar la humedad, así que sigue corriendo.</li>
+          <li><strong>La parte de arriba de la secadora está caliente al tacto.</strong> El calor que debería estar saliendo de la casa se está quedando en la máquina. Es el punto donde el aparato empieza a gastarse antes de tiempo.</li>
+          <li><strong>El cuarto de lavado se siente húmedo.</strong> Una secadora saca varios litros de agua de la ropa en cada carga. Si el cuarto está húmedo, esa agua no está llegando afuera.</li>
+          <li><strong>Olor a quemado o a pelusa caliente.</strong> Deje de usar la secadora. Es pelusa llegando a una temperatura a la que nunca debería llegar, y es el último aviso que va a recibir.</li>
+        </ul>
+
+        <h2>En qué consiste el trabajo</h2>
+        <ol class="numbered">
+          <li><strong>Medición de flujo en la salida.</strong> Medimos lo que de verdad está saliendo antes de tocar nada, para que la mejora sea un número y no una opinión.</li>
+          <li><strong>Sacar y revisar la manguera de transición.</strong> La manguera flexible detrás de la máquina concentra una parte sorprendente de las obstrucciones, aplastada por una secadora empujada contra la pared para que cupiera.</li>
+          <li><strong>Cepillo rotatorio y aire comprimido por todo el tramo.</strong> Trabajado desde los dos extremos cuando la configuración lo permite, para que la pelusa salga en lugar de irse a acumular a un rincón.</li>
+          <li><strong>Liberar la salida exterior y la aleta.</strong> Aquí se quitan nidos, pintura, hojas y aletas corroídas. Un ducto limpio con la salida tapada sigue siendo una ventila tapada.</li>
+          <li><strong>Segunda medición de flujo.</strong> Mismo instrumento, mismo punto. Si el número no se movió, el trabajo no está terminado.</li>
+        </ol>
+
+        {detail.neighborhoods.length > 0 && (
+          <>
+            <h2>Dónde trabajamos en {city.name}</h2>
+            <p>
+              Cubrimos todo {city.name} y el área de {city.county}, incluyendo
+              {' '}{detail.neighborhoods.slice(0, -1).join(', ')} y {detail.neighborhoods.slice(-1)[0]}.
+              Llame al {business.phone} y le decimos el precio de su tramo antes de agendar nada.
+            </p>
+          </>
+        )}
+
+        <h2>Lo que cuesta</h2>
+        <table class="price-table">
+          <thead>
+            <tr><th>Trabajo</th><th>Precio típico en {city.name}</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ventila de secadora, salida de pared o tramo corto</td><td>Desde ${PRICES.ventLow}*</td></tr>
+            <tr><td>Ventila de secadora, tramo largo de ático o techo</td><td>${PRICES.ventLow} a ${PRICES.ventHigh}*</td></tr>
+            <tr><td>Junto con limpieza de ductos de aire</td><td>Se cotiza en paquete</td></tr>
+            <tr><td>Cambio de ruta o reemplazo del ducto</td><td>Se cotiza después de revisar</td></tr>
+          </tbody>
+        </table>
+        <p class="footnote">
+          * Es un punto de partida, no una tarifa fija. La cifra final depende del largo del tramo, del número de
+          codos y de por dónde sale. Usted recibe esa cifra antes de que agendemos la cita.
+        </p>
+      </div>
+
+      <FAQ items={faq} title={`Ventila de Secadora en ${city.name}: Preguntas Frecuentes`} />
+
+      <div class="related-links">
+        <h2>Relacionado</h2>
+        <ul>
+          <li><a href={`/es/areas-de-servicio/${city.slug}/`}>Limpieza de ductos en {city.name}</a></li>
+          <li><a href="/es/servicios/dryer-vent-cleaning/">Cómo funciona la limpieza de ventila</a></li>
+          <li><a href="/es/blog/senales-ventila-secadora-tapada/">Señales de una ventila tapada</a></li>
+          <li><a href="/es/blog/secadora-huele-a-quemado/">Por qué la secadora huele a quemado</a></li>
+        </ul>
+      </div>
+
+      {otherCities.length > 0 && (
+        <div class="nearby">
+          <h2>Ventila de Secadora Cerca</h2>
+          <div class="city-chips">
+            {otherCities.map((c) => (
+              <a href={`/es/areas-de-servicio/${c.slug}/dryer-vent-cleaning/`} class="chip">{c.name}</a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand heading={`¿La secadora tarda dos ciclos en ${city.name}? Vamos a arreglarlo.`} />
+</BaseLayout>
+
+<style>
+  .callout {
+    background: var(--c-bg-alt); border-left: 4px solid var(--c-primary);
+    border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .callout p { margin: 0.4rem 0 0; }
+  .numbered { padding-left: 1.2rem; display: grid; gap: 0.6rem; }
+  .price-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  .price-table th, .price-table td { text-align: left; padding: 0.7rem 0.6rem; border-bottom: 1px solid var(--c-line); }
+  .price-table th { font-weight: 700; }
+  .footnote { font-size: 0.85rem; color: var(--c-muted); }
+  .related-links { margin-top: 2.5rem; }
+  .related-links ul { list-style: none; padding: 0; margin: 0.8rem 0 0; display: grid; gap: 0.5rem; }
+  .related-links li { padding-bottom: 0.5rem; border-bottom: 1px solid var(--c-line); }
+  .related-links li:last-child { border-bottom: 0; }
+  .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+</style>

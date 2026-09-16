@@ -176,3 +176,38 @@ export function ductRepairCityMeta({ name, county }: CityMetaInput) {
   );
   return { title, description };
 }
+
+/**
+ * Dryer vent and duct repair city meta, Spanish.
+ *
+ * Written for the language rather than translated, on the same rule as
+ * cityMetaEs. Two words earn their place: "ventila" is what a Florida
+ * Spanish speaker calls a dryer vent, not "conducto de secadora", and
+ * "ductos" beats the more formal "conductos" in this market, which the
+ * query data bears out.
+ */
+export function dryerVentCityMetaEs({ name }: CityMetaInput) {
+  /* Deliberately shorter than the English twin. "Limpieza de Ventila de
+     Secadora en Fort Myers, FL | Desde $100" overruns the title limit and
+     fit() truncates it to a dangling "| Desde", which is worse in a result
+     than the shorter phrase. Spanish is simply a longer language and the
+     budget has to be spent differently. */
+  const title = fit(`Ventila de Secadora en ${name}, FL | Desde $${PRICES.ventLow}`, LIMITS.title);
+  const description = fit(
+    `Limpieza de ventila de secadora en ${name} desde $${PRICES.ventLow}. ` +
+      `Una ventila tapada causa incendios y duplica el tiempo de secado. Precio antes de agendar.`,
+    LIMITS.description,
+  );
+  return { title, description };
+}
+
+/** Duct repair city page meta, Spanish. No price, for the reason above. */
+export function ductRepairCityMetaEs({ name }: CityMetaInput) {
+  const title = fit(`Reparación de Ductos en ${name}, FL | Fugas y Sellado`, LIMITS.title);
+  const description = fit(
+    `Reparación y sellado de ductos en ${name}. Encontramos las fallas, se las mostramos, ` +
+      `y le cotizamos reparar junto a reemplazar. Medimos el flujo antes y después.`,
+    LIMITS.description,
+  );
+  return { title, description };
+}
