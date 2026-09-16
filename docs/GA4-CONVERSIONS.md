@@ -74,10 +74,19 @@ in the UI only, so this part cannot be automated and has to be clicked.
 Then, so the parameters above are reportable rather than just collected:
 
 5. Admin → **Custom definitions** → **Create custom dimension**, scope
-   Event, once each for `service`, `lead_city`, `source`, `form_type` and
-   `placement`. GA4 collects the parameters either way, but it will not
-   break a report down by one until it is registered, and registration is
-   not retroactive.
+   Event, once each for `service`, `lead_city`, `source`, `form_type`,
+   `placement`, `route` and `site_language`. GA4 collects the parameters
+   either way, but it will not break a report down by one until it is
+   registered, and registration is not retroactive.
+
+   `route` and `site_language` were missing from this list until 16
+   September 2026, which was an omission in this document rather than in the
+   code. Both have been firing since the widget shipped. `route` is the one
+   that matters most and the one nobody would miss: it carries `chat`,
+   `quote`, `call` and `chat_to_quote`, and without it registered you can
+   see how many people opened the help bubble but not which of the three
+   things they chose to do next. That is the whole question the widget
+   exists to answer.
 
 Nothing above changes what is collected. It changes what is countable.
 
@@ -122,3 +131,23 @@ GA4 event; and a reload of the thank-you page firing nothing.
 Nothing to click for this one. Google Ads conversion actions are created in
 the ad account, and this one already exists, which is where the snippet came
 from.
+
+
+## The help widget's own events
+
+| Event | Fires when | Parameters |
+|---|---|---|
+| `help_open` | The floating bubble is opened | `page_path`, `site_language` |
+| `help_route` | A route is chosen inside it | `route`, `site_language` |
+
+`route` takes `chat`, `quote`, `call` or `chat_to_quote`, the last being the
+assistant deciding it has understood the job and opening the quote form
+itself rather than the visitor picking it.
+
+`help_open` fires on every open, so closing and reopening the bubble counts
+twice. That is the right behaviour, and it means the number to read in GA4 is
+Users rather than Event count.
+
+Verified in a real browser by `.chat-events.mjs`, which exists because these
+two calls sit inside a click handler that also does the visible work: if the
+gtag call stops firing, nothing about the widget looks broken.
