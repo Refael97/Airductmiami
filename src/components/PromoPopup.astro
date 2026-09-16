@@ -45,7 +45,7 @@ const OFFER_FOR: [RegExp, 'sliding' | 'mold' | 'dryer' | 'duct'][] = [
 ];
 const offerKey = OFFER_FOR.find(([re]) => re.test(path))?.[1] ?? 'duct';
 
-const OFFERS = {
+const ALL_OFFERS = {
   dryer: {
     en: {
       headline1: 'Your dryer could be',
@@ -158,7 +158,22 @@ const OFFERS = {
       successBody: `Recibimos su solicitud y su descuento de $40 queda asegurado. Le llamaremos en breve para agendar la reparación. ¿Tiene prisa? Llame al ${business.phone}.`,
     },
   },
-}[offerKey][lang];
+};
+
+const OFFERS = ALL_OFFERS[offerKey][lang];
+
+/* What the visitor was actually promised, in words, for the lead email.
+   "offer: duct" tells whoever calls back nothing; "$50 off air duct
+   cleaning" tells them what they have to honour. Built from the same
+   OFFERS block the popup renders from, so the two can never disagree, and
+   sent for every offer because the chat can switch it after render. */
+const offerLabel = (key: keyof typeof ALL_OFFERS) => {
+  const o = ALL_OFFERS[key][lang];
+  return `${o.price} ${o.badgeBottom.toLowerCase()}`;
+};
+const offerLabels = Object.fromEntries(
+  (Object.keys(ALL_OFFERS) as (keyof typeof ALL_OFFERS)[]).map((k) => [k, offerLabel(k)]),
+);
 
 const SHARED = {
   en: {
@@ -200,7 +215,7 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
     </button>
 
-    <div class="promo-content">
+    <div class="promo-content" id="promo-content">
       <div class="promo-brand">
         <img src="/logo.svg" alt="" width="42" height="42" loading="lazy" />
         <span class="promo-brand-word">Florida <em>Breeze</em><small>Air Duct</small></span>
@@ -231,10 +246,18 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         </li>
       </ul>
 
-      <form class="promo-form" id="promo-form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form class="promo-form" id="promo-form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-offer-labels={JSON.stringify(offerLabels)}>
         <input type="hidden" name="form-name" value={formName} />
         <LeadMeta lang={lang} source="popup" />
         <input type="hidden" name="offer" value={offerKey} />
+        {/* The offer in words, and how the popup was opened. "source: popup"
+            was true and useless: it could not tell a popup the reader
+            triggered by scrolling from one the chat assistant handed over
+            after a conversation, and it never said what discount had been
+            promised. Both are set by script, because the chat can change the
+            offer and the trigger after this markup is rendered. */}
+        <input type="hidden" name="offer_text" value={offerLabels[offerKey]} />
+        <input type="hidden" name="lead_origin" value="" />
         {/* Filled by script from the ZIP the visitor types, never asked for.
             Present in the markup because Netlify Forms builds its field list
             from the static HTML: a field injected at runtime is dropped. */}
@@ -412,6 +435,19 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
   }
   .promo-fine svg { flex-shrink: 0; }
 
+  /* [hidden] is a user agent rule and any author `display` beats it, so
+     setting form.hidden on a `display: grid` form does nothing at all: the
+     form stayed on screen and the confirmation appeared underneath it, at
+     the bottom of the card, where it was easy to miss entirely. The overlay
+     above already carries this guard. The form needed it too. */
+  .promo-form[hidden] { display: none; }
+
+  /* Once the details are in, the pitch is over. Everything that was there to
+     persuade comes down and the card becomes the confirmation, rather than a
+     wall of offer copy with a thank you tucked below it. The logo stays so
+     the visitor can still see whose confirmation this is. */
+  .promo-content.is-done > :not(.promo-brand):not(.promo-success) { display: none; }
+
   .promo-success { text-align: center; padding: 2rem 0.5rem; color: var(--c-ink); }
   .promo-success svg { stroke: var(--c-accent); margin-bottom: 0.6rem; }
   .promo-success h3 { font-size: 1.4rem; margin: 0 0 0.5rem; }
@@ -545,7 +581,37 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
       if (e.key === 'Escape') close();
     };
 
-    const offer = (document.getElementById('promo-form')?.querySelector('input[name="offer"]') as HTMLInputElement | null)?.value ?? '';
+    const field = (name: string) =>
+      form?.querySelector(`input[name="${name}"]`) as HTMLInputElement | null;
+    const setField = (name: string, value: string) => {
+      const el = field(name);
+      if (el) el.value = value;
+    };
+
+    /* Read at the moment it is used, never cached. The chat assistant can
+       change the offer after this script has run, and a copy taken at load
+       would report the page's offer instead of the one the visitor was
+       actually shown. */
+    const offerNow = () => field('offer')?.value ?? '';
+
+    /* Keeps the words next to the key. Whoever calls this lead back needs to
+       know what was promised, and "duct" is not that. */
+    const OFFER_LABELS: Record<string, string> = (() => {
+      try {
+        return JSON.parse(form?.dataset.offerLabels ?? '{}');
+      } catch {
+        return {};
+      }
+    })();
+
+    /* How the popup was opened, written for a human reading an email at
+       seven in the morning rather than for a dashboard. */
+    const ORIGIN_LABEL: Record<string, string> = {
+      auto: 'Popup, opened on its own',
+      quote_bar: 'Popup, from the sticky quote bar',
+      help_widget: 'Popup, from the chat widget button',
+      help_chat: 'Popup, handed over by the chat assistant',
+    };
 
     /* ZIP to city, so the lead that lands in the inbox reads "33019
        (Hollywood, Broward County)" rather than five digits nobody can place.
@@ -600,7 +666,8 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
       document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', onKey);
       (closeBtn as HTMLElement | null)?.focus();
-      track('popup_view', { offer, trigger });
+      setField('lead_origin', ORIGIN_LABEL[trigger] ?? trigger);
+      track('popup_view', { offer: offerNow(), trigger });
     };
 
     /* Explicit open from the sticky quote bar or the help widget: always
@@ -618,8 +685,11 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         if (n) n.value = String(d.note).slice(0, 300);
       }
       if (d.offer) {
-        const o = form?.querySelector('input[name="offer"]') as HTMLInputElement | null;
-        if (o) o.value = String(d.offer);
+        const key = String(d.offer);
+        setField('offer', key);
+        /* The words have to follow the key, or the email promises a duct
+           discount on a dryer lead. */
+        if (OFFER_LABELS[key]) setField('offer_text', OFFER_LABELS[key]);
       }
       showPopup(d.trigger || 'quote_bar');
     });
@@ -676,12 +746,22 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
         if (!res.ok) throw new Error(String(res.status));
         form.hidden = true;
         if (success) success.hidden = false;
+        /* Strips the offer copy out of the card so the confirmation is the
+           whole panel and lands where the visitor is already looking. */
+        document.getElementById('promo-content')?.classList.add('is-done');
+        /* Announced, not just drawn: at this point focus is still on a
+           button inside a form that has just been removed from the page. */
+        success?.setAttribute('tabindex', '-1');
+        success?.focus();
+        /* Long enough to read the confirmation and the phone number in it,
+           short enough that nobody has to dismiss the page they were on. */
+        setTimeout(close, 5000);
         /* Same parameter shape the contact form reports, so one GA report
            covers both and "which city" does not depend on which form. */
         track('generate_lead', {
           form_type: 'popup_special',
-          offer,
-          service: offer === 'dryer' ? 'Dryer Vent Cleaning' : 'Air Duct Cleaning',
+          offer: offerNow(),
+          service: offerNow() === 'dryer' ? 'Dryer Vent Cleaning' : 'Air Duct Cleaning',
           lead_city: cityField?.value ?? '',
           source: 'popup',
           site_language: (form?.querySelector('input[name="locale"]') as HTMLInputElement | null)?.value ?? 'en',

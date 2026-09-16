@@ -34,6 +34,10 @@ pipeline reads them by key, so renaming one breaks every downstream step.
 | `name`, `phone` | | Required on every form |
 | `email`, `city`, `service`, `message` | | Optional, present on long forms |
 | `offer` | `duct` / `dryer` | Popup only: which promotion was shown |
+| `offer_text` | `$50 off air duct cleaning` | Popup only: the same promotion in words, so whoever calls back knows what has to be honoured. `offer` alone does not say what was promised |
+| `lead_origin` | `Popup, handed over by the chat assistant` | Popup only: how the popup was opened. `source: popup` could not tell a popup the reader triggered by scrolling from one the chat assistant handed over after a conversation |
+| `chat_note` | `Dryer takes two cycles to dry` | Popup only, and only when the chat assistant handed the visitor over: what they said in their own words |
+| `zip_city`, `zip_county` | `Hollywood`, `Broward County` | Popup only: resolved from the ZIP, never asked for |
 
 Implemented by `src/components/LeadMeta.astro`, which reads
 `src/data/business.ts`. **Every new site copies both files and edits only the
@@ -82,6 +86,7 @@ existing vertical = zero work.
 
 `timestamp` · `site_id` · `brand` · `vertical` · `locale` · `name` · `phone` ·
 `email` · `city` · `service` · `message` · `source` · `page` · `offer` ·
+`offer_text` · `lead_origin` · `chat_note` · `zip_city` · `zip_county` ·
 `call_status` · `booked_at` · `outcome` · `sold_to` · `sale_value` · `notes`
 
 The last five are filled by the agent and by you. `sold_to` + `sale_value`
