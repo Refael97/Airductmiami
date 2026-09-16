@@ -657,6 +657,10 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
       if (btn) btn.disabled = true;
+      /* Minted before the send, not after, so a retry of this same
+         submission reports the same lead to Google Ads rather than a
+         second one. */
+      const leadId = (window as any).fbNewLeadId?.();
       try {
         /* Someone who pastes a ZIP and hits send immediately can beat the
            fetch. Wait for it, but only briefly: a city in the email is worth
@@ -683,6 +687,10 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
           site_language: (form?.querySelector('input[name="locale"]') as HTMLInputElement | null)?.value ?? 'en',
           page_path: location.pathname,
         });
+        /* The popup never reaches /thank-you/, so the conversion has to be
+           reported here. This and the thank-you page are the only two
+           places a lead is confirmed, and both now report it. */
+        (window as any).fbLeadConversion?.(leadId);
       } catch {
         // Network hiccup: fall back to a normal POST so the lead is not lost.
         form.submit();

@@ -107,6 +107,39 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
       gtag('js', new Date());
       gtag('config', 'G-EK5SGJE8MP');
 
+      // The Google Ads account that pays for the clicks needs its own
+      // config line. One gtag.js serves several destinations, but only the
+      // ones it has been configured for: a send_to naming a destination
+      // that was never configured is dropped silently, which is the failure
+      // mode where the tag looks installed and reports nothing.
+      gtag('config', 'AW-18122873644');
+
+      // One lead, one conversion, reported wherever generate_lead is
+      // reported and nowhere else, so the ad account and GA4 are counting
+      // the same events rather than two different numbers.
+      //
+      // The id is minted once when the lead is submitted and travels with
+      // it, so both sends of the same lead would carry the same
+      // transaction_id and Google would keep one. A fresh random id per
+      // call would satisfy the field and defeat the purpose.
+      function fbNewLeadId() {
+        return 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+      }
+      function fbLeadConversion(id) {
+        try {
+          gtag('event', 'conversion', {
+            send_to: 'AW-18122873644/MAlUCPvq0vkcEKy21MFD',
+            value: 1.0,
+            currency: 'ILS',
+            transaction_id: id || fbNewLeadId(),
+          });
+        } catch (err) {
+          /* analytics blocked: the lead still reached the inbox */
+        }
+      }
+      window.fbNewLeadId = fbNewLeadId;
+      window.fbLeadConversion = fbLeadConversion;
+
       // Lead events.
       //
       // phone_call fires on any tel: link click site-wide, and carries where
@@ -151,6 +184,7 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
         try {
           sessionStorage.setItem(LEAD_KEY, JSON.stringify({
             t: Date.now(),
+            lead_id: fbNewLeadId(),
             form_type: val('form-name') || 'quote',
             service: val('service'),
             lead_city: val('city') || val('zip_city'),
@@ -172,7 +206,13 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
             // A note older than ten minutes is not this visit's lead.
             if (Date.now() - lead.t < 600000) {
               delete lead.t;
+              // Carried for Google Ads only. Kept out of the GA4 event so
+              // its parameter shape stays exactly what docs/GA4-CONVERSIONS.md
+              // documents and the custom dimensions there still line up.
+              var leadId = lead.lead_id;
+              delete lead.lead_id;
               gtag('event', 'generate_lead', lead);
+              fbLeadConversion(leadId);
             }
           }
         } catch (err) {

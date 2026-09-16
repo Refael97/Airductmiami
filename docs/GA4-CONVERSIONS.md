@@ -80,3 +80,45 @@ Then, so the parameters above are reportable rather than just collected:
    not retroactive.
 
 Nothing above changes what is collected. It changes what is countable.
+
+## Google Ads, added 16 September 2026
+
+The owner supplied a conversion snippet from the ad account and asked for it
+on every lead, "whether it is the popup, a form, or the chat".
+
+Conversion: `AW-18122873644/MAlUCPvq0vkcEKy21MFD`, value `1.0`, currency
+`ILS`. The currency is the ad account's, not the customer's; the value is a
+flat placeholder that counts each lead as one. If leads ever get scored, the
+value is the field to change.
+
+**It fires wherever `generate_lead` fires, and nowhere else.** That is the
+whole design. Both numbers come from the same two lines of code, so the ad
+account and GA4 cannot drift apart, and the de-duplication described above
+protects both. Pasting the snippet onto the thank-you page instead would
+have reintroduced exactly the refresh-counting bug this document opens with,
+and would have missed the popup entirely.
+
+The chat needs no wiring: it has no form of its own. Its "get a quote" route
+opens the popup, and falls back to `/contact/` on the pages where the popup
+is excluded. Both of those already report.
+
+Two things were needed beyond the snippet:
+
+- **`gtag('config', 'AW-18122873644')`.** One `gtag.js` serves several
+  destinations, but only those it has been configured for. Without this line
+  a `send_to` naming the ad account is dropped silently, which is the failure
+  where the tag looks installed and reports nothing.
+- **`transaction_id`.** Minted once when the lead is submitted and carried
+  with it, so both sends of one lead would carry the same id and Google keeps
+  one. A fresh random id per call fills the field and defeats its purpose. It
+  is kept out of the GA4 event so the parameter table above still holds.
+
+Verified in a real browser against a fresh build, fifteen assertions in
+`.ads-conversion.mjs`: one conversion and one `generate_lead` from the popup,
+from `/thank-you/` and from `/es/gracias/`; correct `send_to`, value and
+currency; the AW destination actually configured; `lead_id` absent from the
+GA4 event; and a reload of the thank-you page firing nothing.
+
+Nothing to click for this one. Google Ads conversion actions are created in
+the ad account, and this one already exists, which is where the snippet came
+from.
