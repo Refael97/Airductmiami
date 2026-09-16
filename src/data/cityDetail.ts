@@ -267,6 +267,21 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'coral-gables': {
+    ductRepair: {
+      local: [
+        'The Merrick era houses through the Gables were built in the twenties, decades before central air conditioning, with thick masonry walls, barrel tile roofs and very little attic. There was nowhere to put a duct system, so one was fitted afterwards through soffits, furred down ceilings, closet chases and whatever roof space the hips allowed.',
+        'That history is the repair problem. Retrofitted runs are assembled around obstacles, which means more joints, tighter bends and more places to work loose as a building moves. Access is the other half of it: a run boxed into a ceiling in 1978 was not built to be opened again, and the work often starts with finding a way to reach it that does not take a plaster ceiling down.',
+        'Historic and zoning rules also constrain where a termination may go on an exterior elevation, which is worth knowing before anyone promises you a new penetration through a front facade.',
+      ],
+      common: 'A retrofitted run boxed into a soffit or furred ceiling, leaking at a transition nobody has reached since it was installed.',
+    },
+    dryerVent: {
+      local: [
+        'The same building stock puts dryers in the same position. In a Gables house the laundry is usually an interior room or a converted service space, and the run goes through masonry or up into a shallow roof space, taking the long way round because the short way was not available in 1926.',
+        'Masonry matters here in a way it does not in block and stucco construction elsewhere. A duct passing through a thick wall cannot simply be pulled and replaced, so when a run fails the honest answer is sometimes cleaning and monitoring rather than a rebuild, and we would rather tell you that than quote a rebuild we cannot reach.',
+      ],
+      common: 'A long interior run through masonry with two or more elbows, restricted well before it reaches the exterior hood.',
+    },
     depthEs: [
       {
         heading: 'Meterle ductos a una casa que nunca los tuvo',
@@ -425,6 +440,14 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Keys Gate', 'Silver Palm', 'Malibu Bay', 'Waterstone', 'Downtown Homestead', 'The Villages of Homestead', 'Redland'],
   },
   pinecrest: {
+    ductRepair: {
+      local: [
+        'Pinecrest is one acre lots and low ranch houses from the fifties and sixties, and almost all of them have been extended at least once. That is the fact that matters for ductwork: when a house grows, the duct is nearly always extended rather than redesigned, so a system sized for the original footprint ends up feeding a wing it was never calculated for.',
+        'The symptom is always the same and it is almost always blamed on the equipment. The far room, usually the addition or a converted garage, never keeps up in August, and somebody quotes a larger air handler. A bigger unit pushing down an undersized branch moves the noise, not the air.',
+        'The attics here are shallow and the runs are long, because these houses are wide rather than tall. A branch that has come apart at a transition is often twenty or thirty feet from the nearest hatch, which is exactly why it stays unfound.',
+      ],
+      common: 'An undersized or collapsed branch feeding an addition, with the room at the end of it treated as an equipment problem for years.',
+    },
     depthEs: [
       {
         heading: 'Una casa, dos o tres sistemas',
@@ -2338,6 +2361,14 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'st-petersburg': {
+    ductRepair: {
+      local: [
+        'St. Petersburg has something most of Florida does not: houses on raised foundations with a crawl space underneath. Through the Old Northeast, Kenwood, Euclid St Paul and Roser Park a good share of the twenties and thirties bungalow stock runs its ductwork under the floor rather than overhead, and everything about repairing it is different.',
+        'Under a floor the enemy is not 130 degree attic air, it is ground moisture. A duct a few feet above damp soil in a poorly vented crawl space runs cold, sweats on the outside and soaks its own insulation from the outside in. Flex that has been doing that for a decade is heavy, sagging between its straps, with condensate standing at the low point of every sag.',
+        'The mid century blocks further out and the newer construction have conventional attic runs, so the same city contains both problems. The first thing worth settling on a St. Petersburg repair call is simply which of the two you have, and that is a two minute question on the phone.',
+      ],
+      common: 'Flex duct in a crawl space, sagging between straps with wet insulation and standing condensate at the low points.',
+    },
     depthEs: [
       {
         heading: 'Shore Acres y las zonas que se inundan: el problema aparece después',
@@ -2533,6 +2564,14 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   kissimmee: {
+    dryerVent: {
+      local: [
+        'Kissimmee carries one of the highest concentrations of short term rental housing in the state, and a vacation rental dryer does not work like a family one. Between guests it runs several loads back to back, every changeover, all year. That is a duty cycle closer to a small laundromat than to a house.',
+        'The other half of the problem is that nobody using it is paying attention. A guest who finds the towels still damp runs them again and leaves. An owner two states away sees nothing, and the housekeeper is measuring the turnaround rather than the drying time. A restriction a homeowner would catch in a fortnight can sit here for a year.',
+        'Through Poinciana, Buenaventura Lakes and the newer subdivisions out toward the parks the laundry is usually interior, with the run going up into the attic. Long run, heavy use, nobody watching it.',
+      ],
+      common: 'A rental vent never cleaned since handover, found because the changeover laundry stopped fitting inside the turnaround window.',
+    },
     depth: [
       {
         heading: 'Kissimmee has a duct problem the rest of Florida does not',
@@ -2744,6 +2783,14 @@ export const cityDetail: Record<string, CityDetail> = {
 
   // ---- Southwest Florida ----
   'fort-myers': {
+    dryerVent: {
+      local: [
+        'Most of Fort Myers is single storey, and in single storey Florida construction the laundry sits in the garage or an interior utility room with no exterior wall behind it. The vent goes up into the attic and runs to a roof cap or out through a soffit, which makes it the longest duct in the house rather than the shortest.',
+        'A large part of the housing here is seasonal, and that is the worst case for a vent. A dryer that sits unused from May to November and then runs every day through season compacts a winter of settled, damp lint in the first heavy week, so the restriction arrives all at once instead of gradually.',
+        'Ian took roof caps and soffit terminations off across Lee County in 2022, and many were replaced quickly by roofers rather than by anyone thinking about dryers. A cap fitted with insect mesh across the outlet looks tidy and is the most effective way there is to block a dryer vent, because lint bridges the mesh within weeks.',
+      ],
+      common: 'A roof or soffit termination replaced after storm damage with a screened cap, lint bridging the mesh and backing up down the run.',
+    },
     depthEs: [
       {
         heading: 'Lo que dejó Ian en los ductos del condado de Lee',
@@ -2798,6 +2845,21 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['McGregor', 'Whiskey Creek', 'Gateway', 'Pelican Preserve', 'Iona', 'Dean Park', 'Fort Myers Villas'],
   },
   'cape-coral': {
+    ductRepair: {
+      local: [
+        'Cape Coral is a canal city built almost entirely between the seventies and the two thousands: slab on grade, single storey, ductwork in the attic. That uniformity is useful, because the failure modes here are predictable in a way they are not in a city with mixed housing stock.',
+        'The water table is high and the canals put humid air against at least one side of most lots. A duct system in an attic above that, serving a coil that runs most of the year, spends much of its life close to dew point, and insulation that has wet and dried repeatedly loses its grip on the inner core.',
+        'Ian came ashore here in 2022 and the roofs took the worst of it. Where a roof deck was opened the attic below took water, and duct insulation soaked then was often dried in place rather than replaced, because it was out of sight while the visible repairs were being signed off.',
+      ],
+      common: 'Attic flex with insulation soaked in 2022 and dried in place, the inner core now sagging away from the jacket.',
+    },
+    dryerVent: {
+      local: [
+        'Cape Coral laundries are mostly in the garage, which sounds like it should mean a short run to an exterior wall. In much of the housing here it does not: the dryer sits on an interior garage wall and the duct goes up and across the attic to a roof cap, because that was the cheapest way to build it.',
+        'A great many of these houses are seasonal. Closed up for six months with the indoor humidity sitting high, then a season of daily use, is the pattern that turns settled lint into a solid restriction rather than a gradual one.',
+      ],
+      common: 'A garage dryer on a long attic run to a roof cap, blocked at the cap rather than anywhere reachable from inside.',
+    },
     depth: [
       {
         heading: 'A canal lot is a salt air lot',
