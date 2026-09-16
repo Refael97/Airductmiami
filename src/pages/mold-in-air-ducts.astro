@@ -1,0 +1,329 @@
+---
+/**
+ * Campaign landing page: "mold in air ducts / AC vents".
+ *
+ * This page deliberately does NOT follow the campaign brief's page 2, and
+ * the reason is in research/fl-airduct/MOLD.md.
+ *
+ * Florida licenses mold assessment and mold remediation under chapter 468
+ * part XVI. Section 468.8419(1) prohibits performing "or offering to
+ * perform" either one without the licence, and "offer to perform" is the
+ * phrase that reaches marketing: the offer sits on the page whether or not
+ * a job is ever booked. Penalties graduate from a second degree misdemeanor
+ * to a third degree felony. The statutory definition of remediation is
+ * "removal, cleaning, sanitizing, demolition, or other treatment" of mold
+ * over 10 square feet, and a single 8 inch duct run carries about 2.1 square
+ * feet of interior surface per linear foot, so "mold through the ductwork"
+ * is over the threshold in almost every house.
+ *
+ * The brief asked for a "free duct mold inspection", a "duct mold removal"
+ * price and a written quote for "heavier contamination". Those are an offer
+ * of assessment and an offer of remediation. We do not hold MRSA or MRSR,
+ * and air duct cleaning carries no chapter 489 exemption to stand on.
+ *
+ * So the page keeps the URL, the search intent and the traffic, and changes
+ * what it offers. Everything here sits on MOLD.md's "may still truthfully
+ * say" list: describing what growth looks like, looking and photographing
+ * (assessment is sampling, which we do not do), cleaning and sanitizing the
+ * system to the NADCA source-removal standard at the published price, and
+ * saying plainly where the line is and who to call past it.
+ *
+ * That last part is not a weakness. In a market of "$49 specials" promising
+ * mold removal, being the company that tells someone the truth about
+ * licensing is the strongest thing on the page, and MOLD.md says so.
+ *
+ * Image note: mold-on-supply-register.webp is a generated illustration, not
+ * a photograph of our work, so it is captioned as one. docs/MEDIA-STANDARD.md
+ * allows generated imagery to illustrate a condition and forbids it standing
+ * as evidence of a job. The brief's caption naming Boca Raton would have
+ * made it evidence.
+ *
+ * No star ratings, for the reason recorded in src/data/reviews.ts.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LandingQuoteForm from '../components/LandingQuoteForm.astro';
+import FAQ from '../components/FAQ.astro';
+import { business } from '../data/business';
+import { reviews } from '../data/reviews';
+import { serviceImages, hasImage } from '../data/pageImages';
+
+const title = 'Mold in Your Air Ducts or AC Vents? | Florida Breeze Air Duct';
+const description =
+  'Black specks on your AC vents or a musty smell that gets worse when the AC runs? Here is how to tell what it is, what duct cleaning and sanitizing fixes, and when Florida law says you need a licensed remediator.';
+
+const moldImg = serviceImages['mold-remediation'];
+
+/* No review mentions mold, and we do not write reviews. The brief's own
+   fallback applies: where there are none on the topic, use the second thing
+   this visitor is afraid of, which is the price. */
+const pick = (name: string) => reviews.find((r) => r.name === name)!;
+const trustReviews = [pick('Steven H.'), pick('Tierra'), pick('Marcos E.')];
+
+const faqs = [
+  {
+    question: 'What does it cost?',
+    answer:
+      'Cleaning and sanitizing one system starts at $375, and that is the job for growth living inside the ductwork itself. You get the exact number before anything is booked. Licensed mold remediation is a separate trade with separate pricing, and if that is what your house needs we will tell you rather than quote you for something else.',
+  },
+  {
+    question: 'Can I just clean the vents myself?',
+    answer:
+      'You can clean the cover, and it will look better. The duct behind it is where the growth is, and cleaning it without sealing the registers and putting the system under negative pressure pushes spores into the rooms instead of out of them.',
+  },
+  {
+    question: 'Will it come back?',
+    answer:
+      'Only if the moisture stays. In Florida it is usually a blocked condensate drain, a leaking supply plenum or duct running through a hot attic with no insulation. We will show you what we find and where the water is coming from, including when fixing it is somebody else’s job.',
+  },
+];
+---
+<BaseLayout title={title} description={description} landing>
+  <!-- Hero -->
+  <section class="lp-hero">
+    <div class="container lp-hero-inner">
+      <div class="lp-hero-copy">
+        <h1>Mold in Your Air Ducts? Here's How to Tell.</h1>
+        <p class="lp-lede">
+          Black or green specks around your AC vents, and a musty smell that gets
+          stronger when the system runs, are the two classic signs of growth inside
+          the ductwork. Florida humidity makes it common. Most of it is a cleaning
+          job, and we will tell you straight when it is not.
+        </p>
+        <p class="lp-price">
+          <strong>Duct cleaning + sanitizing from $375</strong>
+          <span>Free quote · Insured · Miami-Dade, Broward &amp; Palm Beach</span>
+        </p>
+        <div class="lp-cta-row">
+          <a href={`tel:${business.phoneHref}`} class="lp-btn lp-btn--call">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+            Call {business.phone}
+          </a>
+          <a href="#quote" class="lp-btn lp-btn--quote">Get a Free Quote</a>
+        </div>
+      </div>
+      <div class="lp-hero-media">
+        {hasImage(moldImg) && (
+          <figure class="lp-figure">
+            <img
+              src={`/images/${moldImg.file}`}
+              alt={moldImg.alt}
+              width="800"
+              height="600"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <figcaption>Illustration: growth on the back of a supply register.</figcaption>
+          </figure>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Is it mold? -->
+  <section class="lp-band">
+    <div class="container lp-narrow">
+      <h2>What duct mold looks and smells like</h2>
+      <ol class="lp-signs">
+        <li>
+          <strong>Specks on the vent covers.</strong>
+          Black, green or white, worst in bathrooms and bedrooms where the supply air
+          is coldest and condensation forms on the metal.
+        </li>
+        <li>
+          <strong>A musty, earthy smell that peaks just after the AC starts.</strong>
+          Not a constant background smell. A hit in the first half minute.
+        </li>
+        <li>
+          <strong>Symptoms that ease when you leave the house.</strong>
+          Sneezing, itchy eyes, a cough at night that is gone by lunchtime at work.
+        </li>
+      </ol>
+      <p class="lp-kicker">
+        The part you can see on the vent cover is the end of the run, not the extent
+        of it. Wiping the cover with bleach cleans the cover. The duct behind it is
+        untouched, and the system blows through it every time it cycles.
+      </p>
+    </div>
+  </section>
+
+  <!-- The honest line. This is the page's differentiator. -->
+  <section class="lp-band lp-band--alt">
+    <div class="container lp-narrow">
+      <h2>What we do, and where we stop</h2>
+      <p class="lp-lead-para">
+        Florida licenses mold assessment and mold remediation as separate professions
+        under chapter 468. We are a duct cleaning company, we are not a licensed mold
+        remediator, and we will not sell you a cleaning to fix something a cleaning
+        does not fix.
+      </p>
+      <div class="lp-split">
+        <div class="lp-split-col lp-split-col--yes">
+          <h3>What we do</h3>
+          <ul>
+            <li>Clean the ducts, the coil, the blower and the plenum to the NADCA source-removal standard: every register sealed, negative-air machine on the trunk line, mechanical agitation branch by branch.</li>
+            <li>Sanitize the cleaned system with an EPA-registered antimicrobial.</li>
+            <li>Camera the system and show you what is actually inside it, before and after, in photographs you keep.</li>
+            <li>Tell you where the moisture is coming from, because without that it returns.</li>
+          </ul>
+        </div>
+        <div class="lp-split-col lp-split-col--no">
+          <h3>What we don't</h3>
+          <ul>
+            <li>We do not sample or test to identify mold. In Florida that is a licensed mold assessor's work.</li>
+            <li>We do not remediate mold in drywall, insulation or framing. That is a licensed mold remediator's work.</li>
+            <li>We do not tell you what species it is. Nobody can, by looking.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="lp-kicker">
+        If what you have needs a licensed remediator, you will hear that from us on
+        the visit, with photographs and a note of where it is, and we will tell you
+        how to check a licence before you hire anyone. You can verify ours, and
+        theirs, at the Florida DBPR.
+      </p>
+    </div>
+  </section>
+
+  <!-- Who should not wait -->
+  <section class="lp-band">
+    <div class="container lp-narrow">
+      <h2>Who shouldn't leave it a month</h2>
+      <p>It matters more, sooner, if someone in the house is:</p>
+      <ul class="lp-who">
+        <li>Under five or over sixty-five</li>
+        <li>Managing asthma or allergies</li>
+        <li>Pregnant, or recovering from an illness</li>
+      </ul>
+      <p class="lp-kicker">
+        That is the Florida Department of Health's own list of who reacts worst to
+        indoor mold. It is a reason to book this week rather than next month, not a
+        reason to panic.
+      </p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="lp-band lp-band--alt">
+    <div class="container lp-narrow">
+      <h2>What South Florida homeowners say</h2>
+      <div class="lp-reviews">
+        {trustReviews.map((r) => (
+          <figure class="lp-review" lang={r.lang}>
+            <blockquote><p>{r.text}</p></blockquote>
+            <figcaption>{r.name}{r.city ? ` · ${r.city}` : ''}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <LandingQuoteForm
+    title="Get a free quote"
+    intro="No obligation. We'll tell you what you're looking at and what it costs before anything is scheduled."
+    cta="Get My Free Quote"
+    campaign="mold-in-air-ducts"
+    detailLabel="What did you notice?"
+    offerLine="$50 off when you book this week"
+  />
+
+  <section class="lp-band">
+    <div class="container lp-narrow">
+      <FAQ items={faqs} title="Straight answers" />
+    </div>
+  </section>
+
+  <!-- Close -->
+  <section class="lp-close">
+    <div class="container lp-narrow">
+      <h2>Find out what it actually is, this week.</h2>
+      <a href={`tel:${business.phoneHref}`} class="lp-btn lp-btn--call lp-btn--big">
+        Call {business.phone}
+      </a>
+      <p class="lp-close-fine">Same-week appointments · Insured · NADCA source-removal standard</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .lp-hero { background: var(--grad-primary); color: #fff; padding-block: clamp(1.8rem, 5vw, 3rem); }
+  .lp-hero-inner {
+    display: grid; gap: clamp(1.4rem, 4vw, 2.4rem);
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: center;
+  }
+  .lp-hero h1 {
+    margin: 0 0 0.7rem;
+    font-size: clamp(1.75rem, 5.2vw, 2.9rem);
+    line-height: 1.12;
+    color: #fff;
+  }
+  .lp-lede { margin: 0 0 1rem; font-size: clamp(1rem, 2.4vw, 1.12rem); color: rgba(255,255,255,0.9); }
+  .lp-price {
+    display: flex; flex-direction: column; gap: 0.15rem;
+    margin: 0 0 1.2rem; padding: 0.7rem 0.9rem;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .lp-price strong { font-size: 1.1rem; }
+  .lp-price span { font-size: 0.85rem; color: rgba(255,255,255,0.78); }
+
+  .lp-cta-row { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+  .lp-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    min-height: 54px; padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 800; font-size: 1.02rem; text-decoration: none;
+  }
+  .lp-btn--call { background: var(--grad-cta); color: #fff; }
+  .lp-btn--quote { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.55); }
+  .lp-btn--big { min-height: 60px; font-size: 1.12rem; }
+
+  .lp-figure { margin: 0; }
+  .lp-figure img { width: 100%; height: auto; border-radius: 14px; display: block; }
+  .lp-figure figcaption { margin-top: 0.5rem; font-size: 0.8rem; color: rgba(255,255,255,0.75); text-align: center; }
+
+  .lp-band { padding-block: clamp(2.2rem, 5.5vw, 3.2rem); }
+  .lp-band--alt { background: var(--c-bg-alt); }
+  .lp-narrow { max-width: 44rem; margin-inline: auto; }
+  .lp-band h2 { margin: 0 0 1.1rem; font-size: clamp(1.4rem, 4.2vw, 1.95rem); }
+
+  .lp-signs { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.85rem; }
+  .lp-signs li strong { display: block; }
+  .lp-kicker { margin: 1.1rem 0 0; font-weight: 700; color: var(--c-ink); }
+  .lp-lead-para { margin: 0 0 1.3rem; font-size: 1.04rem; }
+
+  .lp-split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; }
+  .lp-split-col {
+    background: #fff; border-radius: 14px; padding: 1.1rem 1.2rem;
+    border: 1px solid var(--c-line);
+  }
+  .lp-split-col h3 { margin: 0 0 0.6rem; font-size: 1.05rem; }
+  .lp-split-col ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.5rem; font-size: 0.93rem; }
+  .lp-split-col--yes { border-top: 4px solid var(--c-success); }
+  .lp-split-col--no { border-top: 4px solid var(--c-warn); }
+
+  .lp-who { margin: 0.5rem 0 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+
+  .lp-reviews { display: grid; gap: 0.9rem; }
+  .lp-review {
+    margin: 0; padding: 1.1rem 1.2rem;
+    background: #fff; border-radius: 14px;
+    border: 1px solid var(--c-line);
+  }
+  .lp-review blockquote { margin: 0; }
+  .lp-review p { margin: 0; }
+  .lp-review figcaption { margin-top: 0.6rem; font-weight: 700; font-size: 0.88rem; color: var(--c-muted); }
+
+  .lp-close { background: var(--grad-deep); color: #fff; padding-block: clamp(2.4rem, 6vw, 3.4rem); text-align: center; }
+  .lp-close h2 { margin: 0 0 1.2rem; color: #fff; font-size: clamp(1.4rem, 4.4vw, 2.1rem); }
+  .lp-close-fine { margin: 0.9rem 0 0; font-size: 0.85rem; color: rgba(255,255,255,0.72); }
+
+  @media (max-width: 860px) {
+    .lp-hero-inner { grid-template-columns: minmax(0, 1fr); }
+    .lp-hero-media { order: 2; }
+    .lp-cta-row .lp-btn { flex: 1 1 100%; }
+    .lp-split { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

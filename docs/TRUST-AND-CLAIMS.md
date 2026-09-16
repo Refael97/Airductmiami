@@ -111,3 +111,54 @@ Before publishing anything, ask: **if a customer, a competitor, or a
 regulator saw exactly how this was made, would it still stand?** If the
 honest version of a tactic works, use the honest version. If it only works
 while nobody looks, it is not a tactic, it is a liability.
+
+## Campaign landing pages, 16 September 2026
+
+Two Google Ads landing pages shipped: `/musty-ac-smell/` and
+`/mold-in-air-ducts/`. Four things in the supplied brief were not built as
+written, each because a standard already recorded here or in a sibling
+document says otherwise. Recorded so the next person does not "fix" them
+back.
+
+**Star ratings on the reviews.** Asked for; not built. `src/data/reviews.ts`
+records that none of these eleven customers gave a rating, which is why the
+site has no `rating` field and no `AggregateRating` schema anywhere. Stars
+invented for a paid page are the FTC problem in 16 CFR part 465, on the page
+most likely to be screenshotted by a competitor.
+
+**A photograph captioned as a job in Boca Raton.** Asked for; not built.
+`mold-on-supply-register.webp` is a generated illustration.
+`docs/MEDIA-STANDARD.md` allows generated imagery to illustrate a condition
+and puts "before/after of our work" in the real-only row. Naming a city and
+calling it a typical call turns an illustration into evidence. It ships
+captioned as an illustration. The before/after on `/musty-ac-smell/` is the
+real customer-supplied pair from the home page and carries no such caveat.
+
+**A team or truck photograph.** Asked for; not built. Real-only row, and we
+have none. The one generated technician on the site is the recorded standing
+exception in `docs/MEDIA-STANDARD.md`, not a precedent.
+
+**The mold page's offer.** This is the substantial one, and it is set out in
+full in the page's own header comment and in `research/fl-airduct/MOLD.md`.
+The brief asked for a free duct mold inspection, a duct mold removal price
+and a written quote for heavier contamination. Florida licenses mold
+assessment and mold remediation separately under chapter 468 part XVI, and
+s.468.8419(1) prohibits performing **or offering to perform** either without
+the licence, with penalties graduating to a third degree felony. "Offer to
+perform" reaches marketing: the offer sits on the page whether or not a job
+is booked. We hold neither licence and duct cleaning carries no chapter 489
+exemption.
+
+So the page keeps the URL, the search intent and the traffic, and changes
+what it offers: what growth looks like, what cleaning and sanitizing to the
+NADCA source-removal standard does fix, and an explicit "what we do / what we
+don't" split naming the licensed line and saying we stop at it. MOLD.md
+already argued that this is stronger copy than the alternative, not weaker,
+and in a market advertising "$49 mold specials" that looks right.
+
+**Still open, and not created by these pages:** "Licensed & Insured" appears
+site-wide with no licence number behind it, including in the footer of both
+new pages. Duct cleaning is not a licensed activity in Florida. MOLD.md
+flags this as the "certified when no certificate exists" case this document
+already prohibits. It was not changed here because changing it on two pages
+out of 302 helps nobody; it needs the owner's answer and a site-wide sweep.

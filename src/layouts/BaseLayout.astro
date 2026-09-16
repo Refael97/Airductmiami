@@ -6,6 +6,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PromoPopup from '../components/PromoPopup.astro';
 import ReviewTicker from '../components/ReviewTicker.astro';
+import LandingCallBar from '../components/LandingCallBar.astro';
 import StickyQuoteBar from '../components/StickyQuoteBar.astro';
 import HelpChat from '../components/HelpChat.astro';
 import JsonLd from '../components/JsonLd.astro';
@@ -23,6 +24,15 @@ interface Props {
   lang?: Locale;
   /** Path (no origin) of this same page in the other language, for hreflang + switcher. */
   altHref?: string;
+  /**
+   * Campaign landing page. Strips the chrome down to one exit: no nav, no
+   * review ticker, no popup, no chat, and a sticky call bar instead of the
+   * quote bar. Everything in <head> is untouched, which is the point of
+   * doing this with a flag rather than a second layout: paid traffic has to
+   * report generate_lead, phone_call and the Google Ads conversion through
+   * exactly the same code as the rest of the site, or the campaign is blind.
+   */
+  landing?: boolean;
 }
 
 const {
@@ -34,6 +44,7 @@ const {
   noindex = false,
   lang = 'en',
   altHref,
+  landing = false,
 } = Astro.props;
 
 const t = ui[lang];
@@ -147,6 +158,10 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
       // calls, nine of them from the sticky bar" are different facts.
       function placementOf(a) {
         if (a.closest('#promo-overlay')) return 'promo_popup';
+        /* Checked before header and footer: on a landing page the sticky call
+           bar is the button the whole layout exists to serve, and it is worth
+           being able to count it on its own. */
+        if (a.closest('#call-bar')) return 'sticky_call_bar';
         if (a.closest('header')) return 'header';
         if (a.closest('footer')) return 'footer';
         if (a.closest('aside')) return 'sidebar';
@@ -223,17 +238,22 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
   </head>
   <body>
     <a href="#main" class="visually-hidden">{lang === 'es' ? 'Saltar al contenido' : 'Skip to content'}</a>
-    <Header lang={lang} switchHref={altPath} />
+    <Header lang={lang} switchHref={altPath} minimal={landing} />
     <main id="main">
       <slot />
     </main>
     {/* Real customer reviews, verbatim and untranslated, on every page.
         Sits between the content and the footer so it is the last thing
         read before the contact links. See src/data/reviews.ts. */}
-    <ReviewTicker lang={lang} />
-    <Footer lang={lang} />
-    <PromoPopup lang={lang} />
-    <StickyQuoteBar lang={lang} />
-    <HelpChat lang={lang} />
+    {!landing && <ReviewTicker lang={lang} />}
+    <Footer lang={lang} minimal={landing} />
+    {/* A landing page carries its own reviews, its own form and one phone
+        number. Every other exit is a door somebody leaves through without
+        calling, and the popup is the worst of them: GA4 records 219
+        popup_view against 148 popup_close, so two thirds of the people who
+        see it dismiss it. Not on traffic we are paying for. */}
+    {!landing && <PromoPopup lang={lang} />}
+    {landing ? <LandingCallBar lang={lang} /> : <StickyQuoteBar lang={lang} />}
+    {!landing && <HelpChat lang={lang} />}
   </body>
 </html>

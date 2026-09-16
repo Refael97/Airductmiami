@@ -1,0 +1,266 @@
+---
+/**
+ * The one form on a campaign landing page.
+ *
+ * Three fields and an optional fourth. Every field past that is a reason to
+ * abandon, and everything the office actually needs to call somebody back is
+ * a name, a number and a town.
+ *
+ * It does not navigate to /thank-you/. Someone who has just typed their
+ * number in is the most likely person on the site to also call, and a
+ * thank-you page without a phone number on it throws that away. The
+ * confirmation replaces the form in place and puts the number in front of
+ * them, exactly as the campaign brief asks.
+ *
+ * Reporting is deliberately identical to the popup's: `generate_lead` to
+ * GA4 and the Google Ads conversion through `window.fbLeadConversion`, with
+ * one id minted per submission. Landing pages that report differently from
+ * the rest of the site are how a campaign ends up optimising against a
+ * number nobody else can reconcile.
+ *
+ * The hidden fields are all present in the static markup because Netlify
+ * builds a form's field list from the HTML at deploy time and silently drops
+ * anything injected later.
+ */
+import { business } from '../data/business';
+import LeadMeta from './LeadMeta.astro';
+import type { Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+  /** Heading above the form. */
+  title: string;
+  /** One line under the heading. */
+  intro: string;
+  /** Submit button text. Never "Submit". */
+  cta: string;
+  /** Which landing page this is, for the lead email and the reports. */
+  campaign: string;
+  /** Label for the free-text field. */
+  detailLabel: string;
+  /** The discount line, shown once, here, and nowhere else on the page. */
+  offerLine: string;
+}
+const { lang = 'en', title, intro, cta, campaign, detailLabel, offerLine } = Astro.props;
+const isEs = lang === 'es';
+
+/* One Netlify form for both landing pages. `campaign` and `page` say which
+   one a lead came from, and one form means one place to check submissions. */
+const formName = 'landing-quote';
+
+/* The single promise on the page, in one place.
+
+   Worth being deliberate about: this is the only sentence here the business
+   has to keep on a clock, and the owner has said plainly that calling leads
+   back quickly is the thing he is currently losing jobs over. It is the
+   campaign brief's wording and it ships as asked, but if the callback is
+   not reliably inside the hour this is the line to change, and changing it
+   here changes it on both pages. */
+const CALLBACK_PROMISE = isEs
+  ? 'Le devolvemos la llamada dentro de 1 hora hábil. Sin spam, nunca.'
+  : 'We call back within 1 business hour. No spam, ever.';
+---
+<section class="lqf" id="quote">
+  <div class="container lqf-inner">
+    <h2>{title}</h2>
+    <p class="lqf-intro">{intro}</p>
+
+    <form
+      class="lqf-form"
+      id="lqf-form"
+      name={formName}
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value={formName} />
+      <LeadMeta lang={lang} source="landing_page" />
+      <input type="hidden" name="campaign" value={campaign} />
+      <input type="hidden" name="lead_origin" value={`Landing page: ${campaign}`} />
+      <p class="visually-hidden" aria-hidden="true">
+        <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
+
+      <label class="lqf-field">
+        <span>{isEs ? 'Nombre' : 'Name'}</span>
+        <input type="text" name="name" required autocomplete="name" />
+      </label>
+      <label class="lqf-field">
+        <span>{isEs ? 'Teléfono' : 'Phone'}</span>
+        <input type="tel" name="phone" required autocomplete="tel" inputmode="tel" />
+      </label>
+      <label class="lqf-field">
+        <span>{isEs ? 'Ciudad' : 'City'}</span>
+        <input type="text" name="city" required autocomplete="address-level2" />
+      </label>
+      <label class="lqf-field lqf-field--wide">
+        <span>{detailLabel} <em>{isEs ? '(opcional)' : '(optional)'}</em></span>
+        <textarea name="message" rows="3"></textarea>
+      </label>
+
+      <button type="submit" class="lqf-cta">{cta}</button>
+
+      <p class="lqf-fine">
+        <span class="lqf-offer">{offerLine}</span>
+        <span>{CALLBACK_PROMISE}</span>
+      </p>
+    </form>
+
+    <div class="lqf-done" id="lqf-done" hidden>
+      <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.8 2.8L16.5 9"/>
+      </svg>
+      <h3>{isEs ? 'Recibido.' : 'Got it.'}</h3>
+      {/* The number they typed is read back from the field at submit time,
+          so the confirmation is about their lead and not a generic thanks. */}
+      <p>
+        {isEs ? 'Le llamamos al ' : "We'll call you at "}
+        <strong id="lqf-echo"></strong>
+        {isEs ? ' dentro de la hora.' : ' within the hour.'}
+      </p>
+      <p class="lqf-done-call">
+        {isEs ? '¿Lo necesita antes? Llame al ' : 'Need it faster? Call '}
+        <a href={`tel:${business.phoneHref}`}>{business.phone}</a>
+        {isEs ? ' ahora.' : ' now.'}
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .lqf { background: var(--c-bg-alt); padding-block: clamp(2.4rem, 6vw, 3.6rem); }
+  .lqf-inner { max-width: 44rem; }
+  .lqf h2 { margin: 0 0 0.4rem; font-size: clamp(1.5rem, 4.5vw, 2rem); }
+  .lqf-intro { margin: 0 0 1.4rem; color: var(--c-muted); }
+
+  .lqf-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    background: #fff;
+    padding: clamp(1.1rem, 4vw, 1.6rem);
+    border-radius: 16px;
+    box-shadow: 0 12px 34px rgba(15, 39, 71, 0.1);
+  }
+  /* [hidden] is a user agent rule and loses to this grid, the same trap the
+     popup form hit. Restated so hiding the form actually hides it. */
+  .lqf-form[hidden] { display: none; }
+
+  .lqf-field { display: flex; flex-direction: column; gap: 0.3rem; }
+  .lqf-field--wide, .lqf-cta, .lqf-fine { grid-column: 1 / -1; }
+  .lqf-field span { font-size: 0.86rem; font-weight: 700; color: var(--c-ink); }
+  .lqf-field em { font-weight: 500; font-style: normal; opacity: 0.6; }
+  .lqf-field input, .lqf-field textarea {
+    width: 100%;
+    padding: 0.72rem 0.8rem;
+    border: 1px solid var(--c-line);
+    border-radius: 10px;
+    font: inherit;
+    font-size: 1rem; /* under 16px iOS zooms the page on focus */
+    background: #fff;
+  }
+  .lqf-field input:focus-visible, .lqf-field textarea:focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 1px;
+  }
+
+  .lqf-cta {
+    min-height: 56px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--grad-cta);
+    color: #fff;
+    font: inherit;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .lqf-cta:disabled { opacity: 0.65; cursor: progress; }
+
+  .lqf-fine {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.9rem;
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--c-muted);
+  }
+  .lqf-offer {
+    font-weight: 800;
+    color: var(--c-ink);
+    background: #fff3d1;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+  }
+
+  .lqf-done {
+    text-align: center;
+    background: #fff;
+    padding: clamp(1.6rem, 6vw, 2.4rem) 1.2rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 34px rgba(15, 39, 71, 0.1);
+    color: var(--c-ink);
+  }
+  .lqf-done svg { color: var(--c-accent); }
+  .lqf-done h3 { margin: 0.5rem 0 0.4rem; font-size: 1.4rem; }
+  .lqf-done p { margin: 0 0 0.4rem; }
+  .lqf-done-call a { font-weight: 800; white-space: nowrap; }
+
+  @media (max-width: 600px) {
+    .lqf-form { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('lqf-form') as HTMLFormElement | null;
+  const done = document.getElementById('lqf-done');
+  const echo = document.getElementById('lqf-echo');
+
+  const val = (name: string) =>
+    (form?.querySelector(`[name="${name}"]`) as HTMLInputElement | null)?.value ?? '';
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+    if (btn) btn.disabled = true;
+
+    /* Minted before the send so a retry of this submission reports the same
+       lead to Google Ads rather than a second one. */
+    const leadId = (window as any).fbNewLeadId?.();
+    const phone = val('phone');
+
+    try {
+      const body = new URLSearchParams(
+        new FormData(form) as unknown as Record<string, string>,
+      ).toString();
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      });
+      if (!res.ok) throw new Error(String(res.status));
+
+      form.hidden = true;
+      if (echo) echo.textContent = phone;
+      if (done) done.hidden = false;
+      done?.setAttribute('tabindex', '-1');
+      done?.focus();
+
+      /* Same parameter shape as the contact form and the popup, so one GA4
+         report covers all three surfaces. */
+      (window as any).gtag?.('event', 'generate_lead', {
+        form_type: 'landing_page',
+        service: val('service'),
+        lead_city: val('city'),
+        source: 'landing_page',
+        site_language: val('locale') || 'en',
+        page_path: location.pathname,
+      });
+      (window as any).fbLeadConversion?.(leadId);
+    } catch {
+      /* Network hiccup: fall back to a normal POST so the lead is not lost.
+         It goes uncounted, which is the right way round. */
+      form.submit();
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+</script>

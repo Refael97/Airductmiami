@@ -1,0 +1,303 @@
+---
+/**
+ * Campaign landing page: "musty smell from AC".
+ *
+ * A problem page, not a service page. The person arriving has a house that
+ * smells and does not yet know the phrase "duct cleaning", so nothing here
+ * explains what the company does until after the smell has been named and
+ * placed. Written against the Google Ads brief of 16 September 2026.
+ *
+ * Indexed deliberately. These pages target the same symptom searches the
+ * blog already ranks for, and a noindex would throw that away to protect a
+ * duplication problem that does not exist: no other page on the site is
+ * about the smell on its own.
+ *
+ * Two things the brief asked for are deliberately not here, both because of
+ * standards this repository already set:
+ *
+ * - No star ratings on the reviews. `src/data/reviews.ts` records that none
+ *   of these customers gave one, which is why the site has no rating field
+ *   and no AggregateRating schema anywhere. Inventing stars for a paid
+ *   landing page is the FTC problem the file exists to prevent.
+ * - No "our team" photograph. `docs/MEDIA-STANDARD.md` puts team and truck
+ *   photos in the real-only row and we have none.
+ *
+ * The before/after below is real, customer-supplied, and already carries
+ * that status on the home page. It is the only class of image on this site
+ * allowed to stand as evidence of work performed.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BeforeAfter from '../components/BeforeAfter.astro';
+import LandingQuoteForm from '../components/LandingQuoteForm.astro';
+import FAQ from '../components/FAQ.astro';
+import { business } from '../data/business';
+import { reviews } from '../data/reviews';
+
+const title = 'Musty Smell From AC? Fix It Today | Florida Breeze Air Duct';
+const description =
+  'That musty, mildew smell when your AC runs is growth inside your ducts and coil. Duct cleaning and sanitizing across South Florida, from $375. Call (561) 897-9930.';
+
+/* The three reviews on this page all mention the smell, which is the whole
+   point of choosing three rather than showing the ticker's ten. Picked by
+   hand from src/data/reviews.ts and never edited: Carmen's stays in Spanish
+   because rewriting a customer's words is the one thing that file forbids
+   outright, and in South Florida it reads as corroboration rather than as a
+   mistake. */
+const pick = (name: string) => reviews.find((r) => r.name === name)!;
+const smellReviews = [pick('Steven H.'), pick('Ben'), pick('Carmen M.')];
+
+const faqs = [
+  {
+    question: 'Will the smell come back?',
+    answer:
+      'Not if the source is removed. It comes back when something keeps feeding it, usually a blocked condensate drain or humidity sitting in the system. If we see that on the visit we will tell you what it is, plainly, including when it is not something we fix.',
+  },
+  {
+    question: 'Is the sanitizing step safe for kids and pets?',
+    answer:
+      'Yes. It is an EPA-registered antimicrobial applied to a system that has already been cleaned, not a masking spray. You can be home while we work.',
+  },
+  {
+    question: 'How much does it cost?',
+    answer:
+      'Cleaning and sanitizing one system starts at $375. A house with two air handlers is two systems and costs more. You get the exact number before anything is booked, not after the van arrives.',
+  },
+];
+---
+<BaseLayout title={title} description={description} landing>
+  <!-- Hero -->
+  <section class="lp-hero">
+    <div class="container lp-hero-inner">
+      <div class="lp-hero-copy">
+        <h1>Musty Smell From Your AC? It's Coming From Your Ducts.</h1>
+        <p class="lp-lede">
+          Florida humidity grows mold and bacteria inside your air ducts and on the
+          coil. Every time the AC kicks on, it blows that smell into every room. We
+          remove it at the source, usually the same week.
+        </p>
+        <p class="lp-price">
+          <strong>Duct cleaning + sanitizing from $375</strong>
+          <span>Insured · Miami-Dade, Broward &amp; Palm Beach</span>
+        </p>
+        <div class="lp-cta-row">
+          <a href={`tel:${business.phoneHref}`} class="lp-btn lp-btn--call">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+            Call {business.phone}
+          </a>
+          <a href="#quote" class="lp-btn lp-btn--quote">Get a Free Quote</a>
+        </div>
+      </div>
+      <div class="lp-hero-media">
+        <BeforeAfter
+          beforeSrc="/images/before-1.webp"
+          afterSrc="/images/after-1.webp"
+          beforeAlt="Coil compartment packed with grey dust and debris before cleaning"
+          afterAlt="The same coil compartment clean after the service"
+        />
+        <p class="lp-caption">A real job. Drag to compare.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Is it the ducts or the filter? -->
+  <section class="lp-band">
+    <div class="container lp-narrow">
+      <h2>3 signs the smell is in your ducts, not your filter</h2>
+      <ol class="lp-signs">
+        <li>
+          <strong>It gets worse when the AC turns on.</strong>
+          A filter smell is constant. A duct smell hits you in the first thirty
+          seconds after the system starts.
+        </li>
+        <li>
+          <strong>It's in every room, not just one.</strong>
+          Ducts feed every register. One bad room is usually something else.
+        </li>
+        <li>
+          <strong>You already changed the filter and it came back.</strong>
+          That's the giveaway. The filter was never the source.
+        </li>
+      </ol>
+      <p class="lp-kicker">
+        If two of those three sound familiar, it's your ducts. Call us and we'll
+        confirm it on the phone in two minutes.
+      </p>
+    </div>
+  </section>
+
+  <!-- What won't fix it -->
+  <section class="lp-band lp-band--alt">
+    <div class="container lp-narrow">
+      <h2>What people try first, and why it comes back</h2>
+      <dl class="lp-dont">
+        <div>
+          <dt>Air freshener or duct spray</dt>
+          <dd>Covers the smell for a day. Whatever is growing is still growing.</dd>
+        </div>
+        <div>
+          <dt>A new filter</dt>
+          <dd>Filters catch what is coming in. They do not touch what is already inside the ducts.</dd>
+        </div>
+        <div>
+          <dt>Running the fan more</dt>
+          <dd>Spreads it faster.</dd>
+        </div>
+        <div>
+          <dt>A "$49 duct cleaning special"</dt>
+          <dd>
+            Twenty minutes of blowing air through your registers, then eight hundred
+            dollars of extras. Ask whoever is offering it whether they seal every
+            register and put a negative-air machine on the trunk line. That question
+            ends most of those calls.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- How we get rid of it -->
+  <section class="lp-band">
+    <div class="container lp-narrow">
+      <h2>How we get rid of it</h2>
+      <ol class="lp-steps">
+        <li>
+          <strong>Seal and vacuum.</strong>
+          Every register sealed, and a negative-air machine on the trunk line so
+          nothing blows back into the house while we work.
+        </li>
+        <li>
+          <strong>Agitate and extract.</strong>
+          Branch by branch, the ducts are mechanically scrubbed and the buildup is
+          pulled into the machine. You see it in the before and after photos.
+        </li>
+        <li>
+          <strong>Sanitize.</strong>
+          An EPA-registered antimicrobial through the cleaned system. This is the
+          step that ends the smell instead of covering it.
+        </li>
+      </ol>
+      <p class="lp-kicker">
+        Most homes take two to four hours, to the NADCA source-removal standard. You
+        get photographs of what came out.
+      </p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="lp-band lp-band--alt">
+    <div class="container lp-narrow">
+      <h2>What South Florida homeowners say</h2>
+      <div class="lp-reviews">
+        {smellReviews.map((r) => (
+          <figure class="lp-review" lang={r.lang}>
+            <blockquote><p>{r.text}</p></blockquote>
+            <figcaption>{r.name}{r.city ? ` · ${r.city}` : ''}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <LandingQuoteForm
+    title="Get a free quote in 2 minutes"
+    intro="Tell us your city and we'll give you a real price on the phone, before anything is booked."
+    cta="Get My Free Quote"
+    campaign="musty-ac-smell"
+    detailLabel="What's going on?"
+    offerLine="$50 off when you book this week"
+  />
+
+  <section class="lp-band">
+    <div class="container lp-narrow">
+      <FAQ items={faqs} title="Straight answers" />
+    </div>
+  </section>
+
+  <!-- Close -->
+  <section class="lp-close">
+    <div class="container lp-narrow">
+      <h2>Stop smelling it every time the AC turns on.</h2>
+      <a href={`tel:${business.phoneHref}`} class="lp-btn lp-btn--call lp-btn--big">
+        Call {business.phone}
+      </a>
+      <p class="lp-close-fine">Same-week appointments · Insured · NADCA source-removal standard</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Shared by both landing pages. Kept in the page rather than in global.css
+     so nothing here can reach the other 299. */
+  .lp-hero { background: var(--grad-primary); color: #fff; padding-block: clamp(1.8rem, 5vw, 3rem); }
+  .lp-hero-inner {
+    display: grid; gap: clamp(1.4rem, 4vw, 2.4rem);
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: center;
+  }
+  .lp-hero h1 {
+    margin: 0 0 0.7rem;
+    font-size: clamp(1.75rem, 5.2vw, 2.9rem);
+    line-height: 1.12;
+    color: #fff;
+  }
+  .lp-lede { margin: 0 0 1rem; font-size: clamp(1rem, 2.4vw, 1.12rem); color: rgba(255,255,255,0.9); }
+  .lp-price {
+    display: flex; flex-direction: column; gap: 0.15rem;
+    margin: 0 0 1.2rem; padding: 0.7rem 0.9rem;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .lp-price strong { font-size: 1.1rem; }
+  .lp-price span { font-size: 0.85rem; color: rgba(255,255,255,0.78); }
+
+  .lp-cta-row { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+  .lp-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    min-height: 54px; padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 800; font-size: 1.02rem; text-decoration: none;
+  }
+  .lp-btn--call { background: var(--grad-cta); color: #fff; }
+  .lp-btn--quote { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.55); }
+  .lp-btn--big { min-height: 60px; font-size: 1.12rem; }
+
+  .lp-hero-media :global(.ba) { border-radius: 14px; overflow: hidden; }
+  .lp-caption { margin: 0.5rem 0 0; font-size: 0.8rem; color: rgba(255,255,255,0.75); text-align: center; }
+
+  .lp-band { padding-block: clamp(2.2rem, 5.5vw, 3.2rem); }
+  .lp-band--alt { background: var(--c-bg-alt); }
+  .lp-narrow { max-width: 44rem; margin-inline: auto; }
+  .lp-band h2 { margin: 0 0 1.1rem; font-size: clamp(1.4rem, 4.2vw, 1.95rem); }
+
+  .lp-signs, .lp-steps { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.85rem; }
+  .lp-signs li strong, .lp-steps li strong { display: block; }
+  .lp-kicker { margin: 1.1rem 0 0; font-weight: 700; color: var(--c-ink); }
+
+  .lp-dont { margin: 0; display: grid; gap: 0.9rem; }
+  .lp-dont dt { font-weight: 800; color: var(--c-ink); }
+  .lp-dont dd { margin: 0.15rem 0 0; color: var(--c-muted); }
+
+  .lp-reviews { display: grid; gap: 0.9rem; }
+  .lp-review {
+    margin: 0; padding: 1.1rem 1.2rem;
+    background: #fff; border-radius: 14px;
+    border: 1px solid var(--c-line);
+  }
+  .lp-review blockquote { margin: 0; }
+  .lp-review p { margin: 0; }
+  .lp-review figcaption { margin-top: 0.6rem; font-weight: 700; font-size: 0.88rem; color: var(--c-muted); }
+
+  .lp-close { background: var(--grad-deep); color: #fff; padding-block: clamp(2.4rem, 6vw, 3.4rem); text-align: center; }
+  .lp-close h2 { margin: 0 0 1.2rem; color: #fff; font-size: clamp(1.4rem, 4.4vw, 2.1rem); }
+  .lp-close-fine { margin: 0.9rem 0 0; font-size: 0.85rem; color: rgba(255,255,255,0.72); }
+
+  @media (max-width: 860px) {
+    .lp-hero-inner { grid-template-columns: minmax(0, 1fr); }
+    /* On a phone the photograph is proof, and proof belongs after the claim
+       rather than above it where it pushes the price and the call button
+       under the fold. */
+    .lp-hero-media { order: 2; }
+    .lp-cta-row .lp-btn { flex: 1 1 100%; }
+  }
+</style>

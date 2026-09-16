@@ -4,8 +4,16 @@ import { services } from '../data/services';
 import { cities } from '../data/cities';
 import { ui, serviceHref, cityHref, type Locale } from '../data/ui';
 
-interface Props { lang?: Locale; }
-const { lang = 'en' } = Astro.props;
+interface Props {
+  lang?: Locale;
+  /**
+   * Campaign landing pages: contact details, the trust line and privacy.
+   * The three columns of links below are the site's own navigation by
+   * another name, and a landing page is supposed to have one exit.
+   */
+  minimal?: boolean;
+}
+const { lang = 'en', minimal = false } = Astro.props;
 const t = ui[lang];
 
 const year = 2025;
@@ -22,7 +30,7 @@ const footerCities = cities.slice(0, 12);
       <p class="footer-contact">
         <a href={`tel:${business.phoneHref}`}>📞 {business.phone}</a><br />
         <a href={`mailto:${business.email}`}>✉️ {business.email}</a>
-        {business.social.facebook && (
+        {!minimal && business.social.facebook && (
           <>
             <br />
             <a
@@ -40,6 +48,8 @@ const footerCities = cities.slice(0, 12);
       <p class="footer-badge">{t.licensedInsured}</p>
     </div>
 
+    {!minimal && (
+    <>
     <div class="footer-col">
       <h3>{t.footerServices}</h3>
       <ul>
@@ -70,16 +80,31 @@ const footerCities = cities.slice(0, 12);
         <li><a href={t.privacy}>{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a></li>
       </ul>
     </div>
+    </>
+    )}
+
+    {minimal && (
+    <div class="footer-col">
+      <ul>
+        <li><a href={t.privacy}>{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a></li>
+      </ul>
+    </div>
+    )}
   </div>
 
   <div class="footer-bottom">
     <div class="container">
       <p>© {year} {business.legalName}. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'} · {t.servingFlorida}.</p>
+      {/* Not on landing pages. It is a link out, and paid traffic gets one
+          exit: the phone number. The file itself stays reachable, and every
+          other page still points at it. */}
+      {!minimal && (
       <p class="agent-link">
         <a href="/agent.json">
           {lang === 'es' ? 'Para agentes de IA: datos del negocio (JSON)' : 'For AI agents: structured business data (JSON)'}
         </a>
       </p>
+      )}
     </div>
   </div>
 </footer>
