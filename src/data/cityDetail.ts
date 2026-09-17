@@ -514,15 +514,7 @@ export const cityDetail: Record<string, CityDetail> = {
         'El síntoma es siempre el mismo y casi siempre se le echa la culpa al equipo. El cuarto del fondo, normalmente la ampliación o el garaje convertido, nunca alcanza en agosto, y alguien cotiza una manejadora más grande. Un equipo más grande empujando por una rama chica mueve el ruido, no el aire.',
         'Los áticos aquí son bajos y los tramos largos, porque estas casas son anchas y no altas. Una rama que se soltó en una transición queda muchas veces a veinte o treinta pies de la entrada más cercana, y por eso no se encuentra.',
       ],
-      common: 'Una rama chica o colapsada alimentando una ampliación, con el cuarto del final tratado durante años como problema del equipo.',
-    },
-    ductRepair: {
-      local: [
-        'Pinecrest is one acre lots and low ranch houses from the fifties and sixties, and almost all of them have been extended at least once. That is the fact that matters for ductwork: when a house grows, the duct is nearly always extended rather than redesigned, so a system sized for the original footprint ends up feeding a wing it was never calculated for.',
-        'The symptom is always the same and it is almost always blamed on the equipment. The far room, usually the addition or a converted garage, never keeps up in August, and somebody quotes a larger air handler. A bigger unit pushing down an undersized branch moves the noise, not the air.',
-        'The attics here are shallow and the runs are long, because these houses are wide rather than tall. A branch that has come apart at a transition is often twenty or thirty feet from the nearest hatch, which is exactly why it stays unfound.',
-      ],
-      common: 'An undersized or collapsed branch feeding an addition, with the room at the end of it treated as an equipment problem for years.',
+      common: 'Tramos largos y horizontales de ático descolgados entre viguetas, donde cada punto bajo es a la vez una restricción y un lugar donde se junta la condensación.',
     },
     depthEs: [
       {
@@ -2611,14 +2603,6 @@ export const cityDetail: Record<string, CityDetail> = {
         'Los bloques de mediados de siglo y la construcción nueva tienen ducto de ático, así que la misma ciudad contiene los dos problemas. Lo primero que conviene resolver en una llamada de St. Petersburg es cuál de los dos tiene, y eso son dos minutos por teléfono.',
       ],
       common: 'Flexible en crawl space, descolgado entre correas, con aislamiento mojado y agua parada en los puntos bajos.',
-    },
-    ductRepair: {
-      local: [
-        'St. Petersburg has something most of Florida does not: houses on raised foundations with a crawl space underneath. Through the Old Northeast, Kenwood, Euclid St Paul and Roser Park a good share of the twenties and thirties bungalow stock runs its ductwork under the floor rather than overhead, and everything about repairing it is different.',
-        'Under a floor the enemy is not 130 degree attic air, it is ground moisture. A duct a few feet above damp soil in a poorly vented crawl space runs cold, sweats on the outside and soaks its own insulation from the outside in. Flex that has been doing that for a decade is heavy, sagging between its straps, with condensate standing at the low point of every sag.',
-        'The mid century blocks further out and the newer construction have conventional attic runs, so the same city contains both problems. The first thing worth settling on a St. Petersburg repair call is simply which of the two you have, and that is a two minute question on the phone.',
-      ],
-      common: 'Flex duct in a crawl space, sagging between straps with wet insulation and standing condensate at the low points.',
     },
     depthEs: [
       {
