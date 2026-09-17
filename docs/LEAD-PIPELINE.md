@@ -37,7 +37,17 @@ pipeline reads them by key, so renaming one breaks every downstream step.
 | `offer_text` | `$50 off air duct cleaning` | Popup only: the same promotion in words, so whoever calls back knows what has to be honoured. `offer` alone does not say what was promised |
 | `lead_origin` | `Popup, handed over by the chat assistant` | Popup only: how the popup was opened. `source: popup` could not tell a popup the reader triggered by scrolling from one the chat assistant handed over after a conversation |
 | `chat_note` | `Dryer takes two cycles to dry` | Popup only, and only when the chat assistant handed the visitor over: what they said in their own words |
-| `zip_city`, `zip_county` | `Hollywood`, `Broward County` | Popup only: resolved from the ZIP, never asked for |
+| `zip`, `zip_city`, `zip_county` | `33019`, `Hollywood`, `Broward County` | Optional on every form that has room for it. The ZIP is the only place question; the other two are resolved from it in the browser and never asked for |
+| `city_county` | `Miami-Dade County` | A guess, from the city the visitor typed, and only set when no ZIP answered it exactly. Blank where the name sits in two counties, because a wrong county sends a truck to the wrong side of the state |
+
+A lead that reads `City: miami` and nothing else is not dispatchable, which is
+what prompted this. The rule is that **the county is worked out on whatever
+form the lead used**, not only on the popup: `src/lib/leadPlace.ts` holds the
+lookups, `/data/fl-zip-cities.json` and `/data/fl-city-counties.json` hold the
+tables, and any form marked `data-place-aware` gets both. The tables are
+fetched on first focus rather than bundled, so the 53KB costs nothing on the
+350 pages nobody fills a form on. Every lookup fails to an empty string: a
+lead without a county is a lead, a lead lost to a failed lookup is not.
 
 Implemented by `src/components/LeadMeta.astro`, which reads
 `src/data/business.ts`. **Every new site copies both files and edits only the
@@ -86,7 +96,8 @@ existing vertical = zero work.
 
 `timestamp` · `site_id` · `brand` · `vertical` · `locale` · `name` · `phone` ·
 `email` · `city` · `service` · `message` · `source` · `page` · `offer` ·
-`offer_text` · `lead_origin` · `chat_note` · `zip_city` · `zip_county` ·
+`offer_text` · `lead_origin` · `chat_note` · `zip` · `zip_city` · `zip_county` ·
+`city_county` ·
 `call_status` · `booked_at` · `outcome` · `sold_to` · `sale_value` · `notes`
 
 The last five are filled by the agent and by you. `sold_to` + `sale_value`

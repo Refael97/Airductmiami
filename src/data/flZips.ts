@@ -610,3 +610,79 @@ export function lookupZip(zip: string): ZipPlace | null {
   const key = String(zip).trim().slice(0, 5);
   return /^\d{5}$/.test(key) ? (zipIndex()[key] ?? null) : null;
 }
+
+/**
+ * City name to county, for the forms that ask where somebody lives in words
+ * rather than in digits.
+ *
+ * Added 17 September 2026 after a real lead arrived from the contact form
+ * reading only "miami". The ZIP lookup above could do nothing with it,
+ * because the contact form has never had a ZIP field: the whole feature had
+ * been built into the popup, which is the only form that asks for one. The
+ * original instruction was that this should work regardless of the form.
+ *
+ * 528 mailing city names appear in the data. 17 of them span two counties,
+ * which is the reason this is not a plain map. Where one county holds at
+ * least three times as many ZIPs as the next, it wins: Miami is Miami-Dade
+ * by 94 ZIPs to Putnam's 1, Orlando is Orange by 57 to Brevard's 2. Where it
+ * is genuinely close, DeBary and Dunnellon and three other small places,
+ * this returns null rather than pick. Better blank than a guess is the same
+ * rule the ZIP path already follows.
+ *
+ * Inherits the USPS mailing-city caveat in this file's header: Doral files
+ * under Miami. For a county that does not matter, because Doral is in
+ * Miami-Dade either way, which is exactly what this is for.
+ */
+function normalizeCity(name: string): string {
+  return String(name)
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z\s]/g, ' ')
+    .replace(/\bft\b/g, 'fort')
+    .replace(/\bst\b/g, 'saint')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** How many ZIPs a range spec covers, used only to break a tie. */
+function zipsIn(spec: string): number {
+  let n = 0;
+  for (const part of spec.split(',')) {
+    const dash = part.indexOf('-');
+    if (dash === -1) n += 1;
+    else n += Number(part.slice(dash + 1)) - Number(part.slice(0, dash)) + 1;
+  }
+  return n;
+}
+
+let cityCounties: Record<string, string> | null = null;
+
+/** Normalised city name to county, ambiguous names omitted. */
+export function cityCountyIndex(): Record<string, string> {
+  if (cityCounties) return cityCounties;
+  const tally: Record<string, Record<string, number>> = {};
+  for (const [key, ranges] of Object.entries(flZipRanges)) {
+    const [city, county] = key.split('|');
+    const k = normalizeCity(city);
+    (tally[k] ??= {})[county] = (tally[k][county] ?? 0) + zipsIn(ranges);
+  }
+  const out: Record<string, string> = {};
+  for (const [city, counties] of Object.entries(tally)) {
+    const ordered = Object.entries(counties).sort((a, b) => b[1] - a[1]);
+    const [top, second] = ordered;
+    /* One county, or one that dominates. Otherwise say nothing. */
+    if (!second || top[1] >= second[1] * 3) out[city] = top[0];
+  }
+  cityCounties = out;
+  return out;
+}
+
+/**
+ * The county for a city typed by hand. Null for out of state, a typo, or
+ * one of the handful of names Florida uses in two counties at once.
+ */
+export function lookupCity(name: string): string | null {
+  if (!name) return null;
+  return cityCountyIndex()[normalizeCity(name)] ?? null;
+}

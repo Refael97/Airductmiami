@@ -82,6 +82,11 @@ const CALLBACK_PROMISE = isEs
       <LeadMeta lang={lang} source="landing_page" />
       <input type="hidden" name="campaign" value={campaign} />
       <input type="hidden" name="lead_origin" value={`Landing page: ${campaign}`} />
+      {/* Filled from the typed city, where the name has one unambiguous
+          county. There is no ZIP field here on purpose: a fourth required
+          field on a paid click is a reason to abandon, and the county is
+          worth having only if it costs nothing to ask for. */}
+      <input type="hidden" name="city_county" value="" />
       <p class="visually-hidden" aria-hidden="true">
         <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
       </p>
@@ -215,9 +220,20 @@ const CALLBACK_PROMISE = isEs
 </style>
 
 <script>
+  import { preloadPlaces, countyFromCity, setHidden } from '../lib/leadPlace';
+
   const form = document.getElementById('lqf-form') as HTMLFormElement | null;
   const done = document.getElementById('lqf-done');
   const echo = document.getElementById('lqf-echo');
+
+  /* Same rule as the contact form: the county is resolved while they type,
+     not at submit, so nothing here can delay the lead by a millisecond. A
+     name that sits in two counties resolves to nothing rather than a guess. */
+  form?.addEventListener('focusin', preloadPlaces, { once: true });
+  const cityInput = form?.querySelector('input[name="city"]') as HTMLInputElement | null;
+  cityInput?.addEventListener('change', async () => {
+    if (form) setHidden(form, 'city_county', await countyFromCity(cityInput.value));
+  });
 
   const val = (name: string) =>
     (form?.querySelector(`[name="${name}"]`) as HTMLInputElement | null)?.value ?? '';

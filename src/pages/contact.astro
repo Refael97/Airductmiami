@@ -46,6 +46,7 @@ const description = `Contact ${business.name} for a free air duct or dryer vent 
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          data-place-aware
           action="/thank-you/"
           class="quote-form"
         >
@@ -56,6 +57,14 @@ const description = `Contact ${business.name} for a free air duct or dryer vent 
           <label>Phone<input type="tel" name="phone" required autocomplete="tel" /></label>
           <label>Email<input type="email" name="email" autocomplete="email" /></label>
           <label>City<input type="text" name="city" placeholder="e.g. Orlando" /></label>
+          {/* Optional, and it earns its place: a ZIP is exact where a typed
+              city is not, and it is what turns "miami" in the inbox into
+              "Miami, Miami-Dade County". Never required, because a required
+              field is a reason to abandon. */}
+          <label>Zip Code <span class="opt">(optional)</span><input type="text" name="zip" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" placeholder="e.g. 33019" /></label>
+          <input type="hidden" name="zip_city" value="" />
+          <input type="hidden" name="zip_county" value="" />
+          <input type="hidden" name="city_county" value="" />
           <label>Service needed
             <select name="service">
               <option>Air Duct Cleaning</option>
@@ -99,4 +108,46 @@ const description = `Contact ${business.name} for a free air duct or dryer vent 
     outline: 2px solid var(--c-primary); border-color: var(--c-primary);
   }
   @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  /* Where the lead is, worked out from what they typed.
+   *
+   * Resolved as they type rather than on submit, deliberately. This form
+   * navigates natively to the thank-you page, and intercepting that to await
+   * a lookup would put an async hop in front of the one action on this page
+   * that matters. By the time anyone has filled six fields the hidden values
+   * are long since set.
+   */
+  import { preloadPlaces, placeFromZip, countyFromCity, setHidden } from '../lib/leadPlace';
+
+  const form = document.querySelector('form[data-place-aware]') as HTMLFormElement | null;
+  if (form) {
+    form.addEventListener('focusin', preloadPlaces, { once: true });
+
+    const zip = form.querySelector('input[name="zip"]') as HTMLInputElement | null;
+    const city = form.querySelector('input[name="city"]') as HTMLInputElement | null;
+
+    zip?.addEventListener('input', async () => {
+      const place = await placeFromZip(zip.value);
+      setHidden(form, 'zip_city', place.city);
+      setHidden(form, 'zip_county', place.county);
+      /* A resolved ZIP retires the guess made from the typed city, whichever
+         order the two were filled in. */
+      if (place.county) setHidden(form, 'city_county', '');
+    });
+
+    /* Only consulted when no ZIP resolved it. A typed city name is a good
+       guess and a ZIP is a fact, and the email should not present the two
+       as if they were the same thing. */
+    city?.addEventListener('change', async () => {
+      const exact = (form.querySelector('input[name="zip_county"]') as HTMLInputElement | null)?.value;
+      if (exact) { setHidden(form, 'city_county', ''); return; }
+      setHidden(form, 'city_county', await countyFromCity(city.value));
+    });
+  }
+</script>
+
+<style>
+  .opt { font-weight: 400; opacity: 0.6; font-size: 0.85em; }
 </style>
