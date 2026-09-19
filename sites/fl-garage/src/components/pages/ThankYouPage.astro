@@ -39,19 +39,16 @@ const guides = services.slice(0, 4).map((s) => svc(lang, s));
     </div>
   </section>
 
-  {/* The conversion event fires here rather than on form submit. A submit
-      handler races the navigation and drops events; this page is only ever
-      reached after a submission has actually gone through. */}
-  <script is:inline define:vars={{ lang }}>
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'generate_lead', {
-        currency: 'USD',
-        source: 'contact_form',
-        page_path: location.pathname,
-        site_language: lang,
-      });
-    }
-  </script>
+  {/* No generate_lead here any more, and the absence is deliberate.
+
+      It used to fire on every load of this page, which counted refreshes,
+      back-button returns and bookmarks, and it reported `contact_form` and
+      the thank-you URL whichever form the lead had actually come from.
+
+      BaseLayout.astro now owns the event: the form leaves a note on its way
+      out, this page fires once if it finds one, and the parameters describe
+      the form rather than this page. Putting a second send back here would
+      restore the double count. */}
 </BaseLayout>
 
 <style>

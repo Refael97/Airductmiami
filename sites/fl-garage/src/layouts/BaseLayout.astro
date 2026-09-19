@@ -104,7 +104,7 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
     <!-- GA4. Loaded async so it never blocks rendering, and skipped entirely
          on localhost so development traffic does not pollute the property. -->
     <script async src={`https://www.googletagmanager.com/gtag/js?id=${business.ga4Id}`}></script>
-    <script is:inline define:vars={{ gaId: business.ga4Id, lang }}>
+    <script is:inline define:vars={{ gaId: business.ga4Id, adsId: business.adsId, adsSendTo: business.adsLeadSendTo, lang }}>
       (function () {
         var host = location.hostname;
         if (host === 'localhost' || host === '127.0.0.1' || host === '') return;
@@ -114,6 +114,37 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
         window.gtag = gtag;
         gtag('js', new Date());
         gtag('config', gaId, { site_language: lang });
+
+        /* The Google Ads account that pays for the clicks needs its own
+           config line. One gtag.js serves several destinations, but only the
+           ones it has been configured for. Skipped entirely while
+           business.adsId is empty, so this is inert until there is an
+           account rather than being a broken tag that looks installed. */
+        if (adsId) gtag('config', adsId);
+
+        /* One lead, one conversion, minted at submit and carried to
+           wherever the lead is confirmed. Both sends of the same lead
+           therefore carry the same transaction_id and Google keeps one; a
+           fresh random id per call would satisfy the field and defeat the
+           point of having it. */
+        function gdNewLeadId() {
+          return 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+        }
+        function gdLeadConversion(id) {
+          if (!adsSendTo) return;
+          try {
+            gtag('event', 'conversion', {
+              send_to: adsSendTo,
+              value: 1.0,
+              currency: 'USD',
+              transaction_id: id || gdNewLeadId(),
+            });
+          } catch (err) {
+            /* analytics blocked: the lead still reached the inbox */
+          }
+        }
+        window.gdNewLeadId = gdNewLeadId;
+        window.gdLeadConversion = gdLeadConversion;
 
         /* Phone taps, captured by delegation so the listener survives any
            number of tel: links being added to any page later. Capture phase,
@@ -161,6 +192,98 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
           },
           true
         );
+
+        /* generate_lead used to fire on every load of a thank-you page,
+           which counted refreshes, back-button returns and anyone who
+           bookmarked it. On the sister site that turned 13 real leads into
+           26 recorded ones: the number the business steers by, at roughly
+           twice the truth. This site had the identical bug.
+
+           So a lead form leaves a note on its way out and the thank-you
+           page fires only if it finds one, then eats it. No note, no
+           conversion. A refresh finds nothing, a direct visit finds nothing.
+
+           Keyed on site_id rather than on data-netlify, because site_id is
+           the network lead contract that every lead form carries (see
+           LeadMeta.astro) and it stays true if this site ever posts to a
+           direct endpoint instead. The popup is excluded: it submits over
+           fetch, stays on the page and reports itself, and without the
+           exclusion its note would sit in storage and fire on some
+           unrelated visit to /thank-you/ weeks later. */
+        var LEAD_KEY = 'gdLeadPending';
+        /* Bubble phase, not capture, and this is the whole reason: the quote
+           wizard validates in its own submit handler and calls
+           preventDefault on an out-of-area ZIP, a too-fast fill or a sales
+           pitch. A capture listener runs before that and would write a note
+           for a submission the browser never sent, which would then fire a
+           false conversion if the visitor reached the thank-you page by any
+           other route inside ten minutes. Here the form has already had its
+           say, and defaultPrevented tells us what it decided. */
+        document.addEventListener(
+          'submit',
+          function (e) {
+            if (e.defaultPrevented) return;
+            var f = e.target;
+            if (!f || f.id === 'promo-form') return;
+            if (!f.querySelector('[name="site_id"]')) return;
+            function val(name) {
+              var el = f.querySelector('[name="' + name + '"]');
+              if (el && el.type === 'radio') {
+                var picked = f.querySelector('[name="' + name + '"]:checked');
+                el = picked || null;
+              }
+              return el && el.value ? String(el.value).slice(0, 60) : '';
+            }
+            try {
+              sessionStorage.setItem(LEAD_KEY, JSON.stringify({
+                t: Date.now(),
+                lead_id: gdNewLeadId(),
+                form_type: val('form-name') || 'quote',
+                /* Three ways this site describes a job, and they answer
+                   different questions: what was ordered, what kind of door
+                   work it is, and what is actually wrong with it. */
+                service: val('service'),
+                job_type: val('job_type'),
+                symptom: val('symptom'),
+                /* The geography this site collects is a ZIP, not a city.
+                   lead_city is kept in the shape so one report can cover
+                   both sites, and left empty rather than guessed. */
+                lead_city: '',
+                lead_zip: val('zip'),
+                urgency: val('urgency'),
+                source: val('source'),
+                site_language: val('locale') || lang,
+                page_path: val('page') || location.pathname,
+              }));
+            } catch (err) {
+              /* private mode: the lead still sends, it just goes uncounted */
+            }
+          },
+          false
+        );
+
+        if (/^\/(thank-you|es\/gracias)\/?$/.test(location.pathname)) {
+          try {
+            var raw = sessionStorage.getItem(LEAD_KEY);
+            if (raw) {
+              sessionStorage.removeItem(LEAD_KEY);
+              var lead = JSON.parse(raw);
+              /* A note older than ten minutes is not this visit's lead. */
+              if (Date.now() - lead.t < 600000) {
+                delete lead.t;
+                /* Carried for Google Ads only, so the GA4 event keeps
+                   exactly the parameter shape the custom dimensions in
+                   docs/GA4-CONVERSIONS-GARAGE.md are registered against. */
+                var leadId = lead.lead_id;
+                delete lead.lead_id;
+                gtag('event', 'generate_lead', lead);
+                gdLeadConversion(leadId);
+              }
+            }
+          } catch (err) {
+            /* unreadable note: better to miss one than to invent one */
+          }
+        }
       })();
     </script>
   </head>

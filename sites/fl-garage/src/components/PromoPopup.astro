@@ -352,6 +352,12 @@ const formName = 'popup-special';
   .promo-trust svg { width: 28px; height: 28px; fill: none; stroke: var(--c-primary); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
   .promo-form { display: grid; gap: 0.6rem; }
+  /* [hidden] is a user agent rule and loses to the display above, so
+     `form.hidden = true` after a submit did nothing: the form stayed on
+     screen and the confirmation appeared underneath it, mostly below the
+     fold. Restated so hiding the form actually hides it. Same trap, and the
+     same fix, as the air duct site. */
+  .promo-form[hidden] { display: none; }
   .promo-field {
     display: flex; align-items: center; gap: 0.6rem;
     border: 1px solid var(--c-line); border-radius: 12px;
@@ -471,6 +477,21 @@ const formName = 'popup-special';
     const offer =
       (form?.querySelector('input[name="offer"]') as HTMLInputElement | null)?.value ?? '';
 
+    /* The offer key says which discount was shown; a report wants to know
+       which job it was for. Kept next to the offer rather than in the
+       reporting call so adding a fifth offer is one line in one place. */
+    const SERVICE_FOR_OFFER: Record<string, string> = {
+      door: 'Garage Door Installation',
+      spring: 'Garage Door Spring Repair',
+      opener: 'Garage Door Opener Repair',
+      repair: 'Garage Door Repair',
+    };
+
+    const fieldValue = (name: string) =>
+      (form?.querySelector(`[name="${name}"]`) as HTMLInputElement | null)?.value ?? '';
+    const zipValue = () => fieldValue('zip');
+    const localeValue = () => fieldValue('locale') || 'en';
+
     const showPopup = (trigger: string) => {
       if (!overlay.hidden) return;
       try {
@@ -523,6 +544,9 @@ const formName = 'popup-special';
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
       if (btn) btn.disabled = true;
+      /* Minted before the send, so a retry of this same submission reports
+         the same lead to Google Ads rather than a second one. */
+      const leadId = (window as any).gdNewLeadId?.();
       try {
         const body = new URLSearchParams(
           new FormData(form) as unknown as Record<string, string>,
@@ -535,7 +559,32 @@ const formName = 'popup-special';
         if (!res.ok) throw new Error(String(res.status));
         form.hidden = true;
         if (success) success.hidden = false;
-        track('generate_lead', { form_type: 'popup_special', offer });
+        /* Announced, not just drawn: focus is still on a button inside a
+           form that has this moment been taken off the page. */
+        success?.setAttribute('tabindex', '-1');
+        success?.focus();
+        /* The same parameter shape the forms report through BaseLayout, so
+           one GA4 report covers every lead surface on the site and "which
+           job" does not depend on which form the lead came through. The
+           popup asks for a ZIP and never for a city, so lead_city is empty
+           here rather than guessed. */
+        track('generate_lead', {
+          form_type: 'popup_special',
+          offer,
+          service: SERVICE_FOR_OFFER[offer] ?? 'Garage Door Repair',
+          job_type: '',
+          symptom: '',
+          lead_city: '',
+          lead_zip: zipValue(),
+          urgency: '',
+          source: 'popup',
+          site_language: localeValue(),
+          page_path: location.pathname,
+        });
+        /* The popup never reaches /thank-you/, so the conversion has to be
+           reported from here. This and the thank-you page are the only two
+           places a lead is confirmed, and both now report it. */
+        (window as any).gdLeadConversion?.(leadId);
       } catch {
         /* Network hiccup: fall back to a normal POST so the lead is not lost. */
         form.action = action;

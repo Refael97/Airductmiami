@@ -148,6 +148,23 @@ export const business: BusinessInfo = {
      the Florida air duct site's ID: mixed properties make every per-site
      number meaningless. */
   ga4Id: 'G-B1T6H15GFN',
+
+  /* Google Ads, for reporting a lead as a conversion in the account that
+     pays for the click.
+
+     Both are empty because this site has no Ads account yet. Empty is not a
+     placeholder to be tidied away: the layout checks for it and skips the
+     `gtag('config')` line and every conversion send, so nothing fires and
+     nothing errors until there is an account to fire into.
+
+     To turn it on, paste the two halves of the conversion snippet Google
+     gives you. `AW-XXXXXXXXX` is the account, `AW-XXXXXXXXX/AbC-dEfGhIj`
+     is the specific conversion action, and the label after the slash is the
+     half people leave out. A `send_to` naming a destination that was never
+     configured is dropped in silence, which is the failure mode where the
+     tag looks installed and reports nothing. Both fields or neither. */
+  adsId: '',
+  adsLeadSendTo: '',
   emergencyAvailable: true,
   credentials: ['Licensed', 'Insured'],
   warranty: { labor: '1 year', parts: '1 year' },

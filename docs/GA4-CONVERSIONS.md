@@ -5,6 +5,11 @@ reported as a conversion in Google Analytics.
 
 Property: `properties/545663484`, measurement ID `G-EK5SGJE8MP`.
 
+This file is the air duct site. The garage door site got the same treatment
+on 19 September and has its own: `docs/GA4-CONVERSIONS-GARAGE.md`. Event and
+parameter names are deliberately shared between the two, so a change to one
+should be considered for the other.
+
 ## What was actually wrong
 
 The tag was installed and `generate_lead` was already firing. Two things
