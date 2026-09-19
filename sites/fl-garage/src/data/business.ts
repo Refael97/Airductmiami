@@ -165,6 +165,24 @@ export const business: BusinessInfo = {
      tag looks installed and reports nothing. Both fields or neither. */
   adsId: '',
   adsLeadSendTo: '',
+
+  /* Attached to every key event the site sends.
+
+     Not decoration. Google's own note on this is blunt: a key event whose
+     `value` is missing or invalid "is recorded with the correct count, but
+     it won't be sent to Google Ads". So an event without these two is a
+     number you can read in Analytics and cannot bid on, which is the half
+     that matters once there is a campaign.
+
+     `1` is a counting unit, not a revenue claim: it says one lead, so the
+     value column and the count column agree. Replace it with what a garage
+     door lead is actually worth — the average job value times the share
+     that close — and Analytics starts answering "which pages earn" rather
+     than only "which pages convert". The same number can be set in GA4 under
+     Set default key event value, which needs no deploy; set it in one place
+     or the other, not both. */
+  keyEventValue: 1,
+  keyEventCurrency: 'USD',
   emergencyAvailable: true,
   credentials: ['Licensed', 'Insured'],
   warranty: { labor: '1 year', parts: '1 year' },

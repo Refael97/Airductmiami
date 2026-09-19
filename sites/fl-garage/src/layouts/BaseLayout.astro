@@ -104,7 +104,7 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
     <!-- GA4. Loaded async so it never blocks rendering, and skipped entirely
          on localhost so development traffic does not pollute the property. -->
     <script async src={`https://www.googletagmanager.com/gtag/js?id=${business.ga4Id}`}></script>
-    <script is:inline define:vars={{ gaId: business.ga4Id, adsId: business.adsId, adsSendTo: business.adsLeadSendTo, lang }}>
+    <script is:inline define:vars={{ gaId: business.ga4Id, adsId: business.adsId, adsSendTo: business.adsLeadSendTo, keyValue: business.keyEventValue, keyCurrency: business.keyEventCurrency, lang }}>
       (function () {
         var host = location.hostname;
         if (host === 'localhost' || host === '127.0.0.1' || host === '') return;
@@ -150,12 +150,20 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
            number of tel: links being added to any page later. Capture phase,
            because the click navigates away immediately.
 
-           What a tap is and is not: this records that someone opened their
+           What this records and what it does not: someone opened their
            dialler. It cannot tell you whether they pressed call, whether it
            connected, or how long it lasted. Knowing that needs a call
-           tracking number that records the call itself. Until then this is
-           the ceiling of what the site can honestly report, so the event is
-           named for the tap.
+           tracking number that records the call itself. The event is named
+           `phone_call` because that is the key event the owner created in
+           the property on 19 September, and the site sends what the property
+           is set up to receive; the limit above is the one to remember when
+           reading the number, and it is why this is a floor on calls rather
+           than a count of them.
+
+           It used to send two events on one tap, `phone_call_tap` with the
+           detail and `phone_call` without it. Two names for one click is how
+           a property ends up with two different call numbers and no way to
+           say which is right, so there is now one event carrying everything.
 
            The three parameters are what make it usable. `phone_number`
            separates the technician's direct line in the help widget from the
@@ -180,24 +188,33 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
           function (e) {
             var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
             if (!a) return;
-            gtag('event', 'phone_call_tap', {
+            gtag('event', 'phone_call', {
+              /* Both, or the event counts in Analytics and never reaches
+                 Google Ads. See business.keyEventValue. */
+              value: keyValue,
+              currency: keyCurrency,
               phone_number: a.getAttribute('href').replace('tel:', ''),
               placement: placementOf(a),
               page_path: location.pathname,
               site_language: lang,
             });
-            /* The original event name, kept so the history in the property
-               stays one continuous series rather than restarting today. */
-            gtag('event', 'phone_call', { page_path: location.pathname, site_language: lang });
           },
           true
         );
 
-        /* generate_lead used to fire on every load of a thank-you page,
-           which counted refreshes, back-button returns and anyone who
-           bookmarked it. On the sister site that turned 13 real leads into
-           26 recorded ones: the number the business steers by, at roughly
-           twice the truth. This site had the identical bug.
+        /* The lead event is `new_lead`, which is the key event the owner
+           created in the property on 19 September. It replaced
+           `generate_lead`, GA4's recommended name for the same thing, and
+           the trade is deliberate: the recommended name buys a section in
+           GA4's default reports, and sending both names would mean two lead
+           counts in one property with nothing to say which is right. The
+           property decides the name; one action sends one event.
+
+           That event used to fire on every load of a thank-you page, which
+           counted refreshes, back-button returns and anyone who bookmarked
+           it. On the sister site the same bug turned 13 real leads into 26
+           recorded ones: the number the business steers by, at roughly twice
+           the truth. This site had it too.
 
            So a lead form leaves a note on its way out and the thank-you
            page fires only if it finds one, then eats it. No note, no
@@ -238,6 +255,10 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
               sessionStorage.setItem(LEAD_KEY, JSON.stringify({
                 t: Date.now(),
                 lead_id: gdNewLeadId(),
+                /* Both, or the event counts in Analytics and never reaches
+                   Google Ads. See business.keyEventValue. */
+                value: keyValue,
+                currency: keyCurrency,
                 form_type: val('form-name') || 'quote',
                 /* Three ways this site describes a job, and they answer
                    different questions: what was ordered, what kind of door
@@ -276,7 +297,7 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
                    docs/GA4-CONVERSIONS-GARAGE.md are registered against. */
                 var leadId = lead.lead_id;
                 delete lead.lead_id;
-                gtag('event', 'generate_lead', lead);
+                gtag('event', 'new_lead', lead);
                 gdLeadConversion(leadId);
               }
             }

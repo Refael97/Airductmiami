@@ -236,6 +236,11 @@ const formName = 'popup-special';
         data-netlify={usesNetlifyForms ? 'true' : undefined}
         netlify-honeypot={usesNetlifyForms ? 'bot-field' : undefined}
         action={usesNetlifyForms ? p.thankYou : formEndpoint}
+        {/* Carried on the element rather than read off window, so the popup
+            does not depend on the layout's script having run first. One
+            source either way: both come from business.ts. */}
+        data-key-value={String(business.keyEventValue)}
+        data-key-currency={business.keyEventCurrency}
       >
         {usesNetlifyForms && <input type="hidden" name="form-name" value={formName} />}
         {!usesNetlifyForms && <input type="hidden" name="redirect_to" value={p.thankYou} />}
@@ -456,7 +461,7 @@ const formName = 'popup-special';
     const form = document.getElementById('promo-form') as HTMLFormElement | null;
     const success = document.getElementById('promo-success');
 
-    const track = (name: string, params?: Record<string, string>) => {
+    const track = (name: string, params?: Record<string, string | number>) => {
       try {
         (window as any).gtag?.('event', name, params);
       } catch {
@@ -563,12 +568,16 @@ const formName = 'popup-special';
            form that has this moment been taken off the page. */
         success?.setAttribute('tabindex', '-1');
         success?.focus();
-        /* The same parameter shape the forms report through BaseLayout, so
-           one GA4 report covers every lead surface on the site and "which
-           job" does not depend on which form the lead came through. The
-           popup asks for a ZIP and never for a city, so lead_city is empty
-           here rather than guessed. */
-        track('generate_lead', {
+        /* Same event name and same parameter shape the forms report through
+           BaseLayout, so one GA4 report covers every lead surface on the
+           site and "which job" does not depend on which form the lead came
+           through. The popup asks for a ZIP and never for a city, so
+           lead_city is empty here rather than guessed. */
+        track('new_lead', {
+          /* Both, or the event counts in Analytics and never reaches Google
+             Ads. See business.keyEventValue. */
+          value: Number(form.dataset.keyValue ?? 1),
+          currency: form.dataset.keyCurrency ?? 'USD',
           form_type: 'popup_special',
           offer,
           service: SERVICE_FOR_OFFER[offer] ?? 'Garage Door Repair',

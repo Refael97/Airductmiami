@@ -2,10 +2,16 @@
  * What this site reports to GA4, and how many times it reports it.
  *
  * The sister site had two faults on exactly this ground and this site had
- * both. generate_lead fired on every load of a thank-you page, so refreshes,
+ * both. the lead event fired on every load of a thank-you page, so refreshes,
  * back-button returns and bookmarks were all counted as leads; and it
  * described the thank-you page rather than the form, so every lead looked
  * like it came from `contact_form` whichever surface it actually used.
+ *
+ * Google's rule on key events is also checked here: a key event whose
+ * `value` or `currency` is missing "is recorded with the correct count, but
+ * it won't be sent to Google Ads". An event that counts in Analytics and
+ * cannot be bid on is half an event, so both parameters are asserted on
+ * every surface.
  *
  * There is also a fault specific to this site. The quote wizard validates in
  * its own submit handler and calls preventDefault on an out-of-area ZIP, a
@@ -115,22 +121,24 @@ const events = (p, name) =>
 
   // Same session, now land on the thank-you page as the form would.
   await p.goto(HOST + '/thank-you/');
-  let leads = await events(p, 'generate_lead');
-  check('thank-you fires exactly one generate_lead', leads.length === 1, `got ${leads.length}`);
+  let leads = await events(p, 'new_lead');
+  check('thank-you fires exactly one new_lead', leads.length === 1, `got ${leads.length}`);
   if (leads.length) {
     const prm = leads[0].params;
     check('the event describes the form', prm.page_path === '/contact/', `page_path=${prm.page_path}`);
     check('lead_id is kept out of the GA4 event', !('lead_id' in prm));
     check('the shape matches the documented dimensions',
       ['form_type', 'service', 'lead_city', 'source', 'site_language', 'page_path'].every((k) => k in prm));
+    check('it carries a numeric value', typeof prm.value === 'number', `value=${prm.value}`);
+    check('and a currency, or Ads drops it', prm.currency === 'USD', `currency=${prm.currency}`);
   }
 
   // The bug this replaces: a reload used to count as a second lead.
   await p.reload();
-  leads = await events(p, 'generate_lead');
+  leads = await events(p, 'new_lead');
   check('a reload fires nothing', leads.length === 0, `got ${leads.length}`);
   await p.goto(HOST + '/thank-you/');
-  leads = await events(p, 'generate_lead');
+  leads = await events(p, 'new_lead');
   check('a second visit fires nothing', leads.length === 0, `got ${leads.length}`);
   await ctx.close();
 }
@@ -140,9 +148,9 @@ const events = (p, name) =>
   console.log('\n--- thank-you reached with no lead behind it');
   const { ctx, p } = await session();
   await p.goto(HOST + '/thank-you/');
-  check('a direct visit fires nothing', (await events(p, 'generate_lead')).length === 0);
+  check('a direct visit fires nothing', (await events(p, 'new_lead')).length === 0);
   await p.goto(HOST + '/es/gracias/');
-  check('the Spanish page fires nothing either', (await events(p, 'generate_lead')).length === 0);
+  check('the Spanish page fires nothing either', (await events(p, 'new_lead')).length === 0);
   await ctx.close();
 }
 
@@ -164,7 +172,7 @@ const events = (p, name) =>
   });
   check('a rejected submit leaves no note', wrote === null, `note=${wrote}`);
   await p.goto(HOST + '/thank-you/');
-  check('and so fires no conversion', (await events(p, 'generate_lead')).length === 0);
+  check('and so fires no conversion', (await events(p, 'new_lead')).length === 0);
   await ctx.close();
 }
 
@@ -184,8 +192,8 @@ const events = (p, name) =>
   check('the form is hidden after submit', !(await p.locator('#promo-form').isVisible()));
   check('the confirmation is visible', await p.locator('#promo-success').isVisible());
 
-  const leads = await events(p, 'generate_lead');
-  check('the popup fires exactly one generate_lead', leads.length === 1, `got ${leads.length}`);
+  const leads = await events(p, 'new_lead');
+  check('the popup fires exactly one new_lead', leads.length === 1, `got ${leads.length}`);
   if (leads.length) {
     const prm = leads[0].params;
     check('it is named as the popup', prm.form_type === 'popup_special', `form_type=${prm.form_type}`);
@@ -193,13 +201,15 @@ const events = (p, name) =>
     check('it carries the ZIP', prm.lead_zip === '33012', `lead_zip=${prm.lead_zip}`);
     check('it reports the page it was shown on',
       prm.page_path === '/services/garage-door-spring-replacement/', `page_path=${prm.page_path}`);
+    check('it carries a numeric value', typeof prm.value === 'number', `value=${prm.value}`);
+    check('and a currency, or Ads drops it', prm.currency === 'USD', `currency=${prm.currency}`);
   }
 
   // The popup stays on the page, so it must not also leave a note.
   const note = await p.evaluate(() => { try { return sessionStorage.getItem('gdLeadPending'); } catch { return null; } });
   check('the popup leaves no note to fire later', note === null, `note=${note}`);
   await p.goto(HOST + '/thank-you/');
-  check('so the thank-you page stays silent', (await events(p, 'generate_lead')).length === 0);
+  check('so the thank-you page stays silent', (await events(p, 'new_lead')).length === 0);
   await ctx.close();
 }
 
@@ -221,12 +231,16 @@ const events = (p, name) =>
     return true;
   });
   check('the page has a click-to-call at all', tapped);
-  const taps = await events(p, 'phone_call_tap');
+  const taps = await events(p, 'phone_call');
   check('a tap is recorded', taps.length === 1, `got ${taps.length}`);
   if (taps.length) {
     const known = ['help_widget', 'header', 'footer', 'promo_popup', 'booking_modal', 'sidebar', 'page_body'];
     check('and says which surface earned it', known.includes(taps[0].params.placement), `placement=${taps[0].params.placement}`);
-    check('the legacy phone_call still fires beside it', (await events(p, 'phone_call')).length === 1);
+    check('it carries a numeric value', typeof taps[0].params.value === 'number', `value=${taps[0].params.value}`);
+    check('and a currency, or Ads drops it', taps[0].params.currency === 'USD', `currency=${taps[0].params.currency}`);
+    /* The old second event on the same click is gone: two names for one tap
+       is how a property ends up with two call numbers and no tie-breaker. */
+    check('no second event fires on the same tap', (await events(p, 'phone_call_tap')).length === 0);
   }
   await ctx.close();
 }

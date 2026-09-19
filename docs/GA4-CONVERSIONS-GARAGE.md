@@ -10,11 +10,55 @@ The air duct site's equivalent is `docs/GA4-CONVERSIONS.md`. The two are kept
 deliberately close — same event names, same parameter names — so one habit
 reads both properties. Where they differ, this file says why.
 
+## The two key events
+
+The owner created two key events in the property on 19 September, with
+**Create with code** — the option that registers the name in Analytics and
+leaves the sending to the site:
+
+| Key event | Fires when |
+|---|---|
+| `new_lead` | A lead is confirmed, once per lead |
+| `phone_call` | A `tel:` link is tapped |
+
+The site sends exactly those two names, and each fires once per action.
+
+Two names were retired to make that true. `generate_lead`, GA4's recommended
+event for a lead, gave way to `new_lead`: the recommended name buys a section
+in GA4's default reports, and that is worth less than the property and the
+site agreeing on one name. And `phone_call_tap`, which used to fire on the
+same click as `phone_call` carrying the detail the latter lacked, is gone —
+its parameters moved onto `phone_call`. Two events on one tap is how a
+property ends up with two different call numbers and nothing to say which is
+right.
+
+Reverting either is a one-line change in `BaseLayout.astro`, but do not send
+both names at once and mark both as key events.
+
+**If `new_lead` was created with the "Create without code" option instead,
+built from `page_view` on `/thank-you/`, delete it and recreate it with
+code.** That option counts every load of the thank-you page, which is
+precisely the bug described below and the reason this work happened.
+
+### Value and currency
+
+Both events carry `value` and `currency`, from `business.keyEventValue` and
+`business.keyEventCurrency`. Google's rule is blunt: an event whose `value`
+is missing or invalid "is recorded with the correct count, but it won't be
+sent to Google Ads". Without them these are numbers to read and not numbers
+to bid on.
+
+`1` is a counting unit, not a revenue claim — it makes the value column
+agree with the count column. Replacing it with a real figure (average job
+value × close rate) turns Analytics from "which pages convert" into "which
+pages earn". The same number can be set in GA4 under **Set default key event
+value**, which needs no deploy. One place or the other, not both.
+
 ## What was wrong
 
 Both faults the air duct site had, this site had too.
 
-**It counted the wrong thing.** `generate_lead` fired on every load of
+**It counted the wrong thing.** The lead event fired on every load of
 `/thank-you/` or `/es/gracias/`. That counts a refresh, a back-button return
 and anyone who bookmarked the page. On the sister property that turned 13
 real leads into 26 recorded ones: roughly twice the truth, on the one number
@@ -54,7 +98,7 @@ so this keeps working if the site is ever switched to post to a direct
 endpoint instead of Netlify Forms.
 
 The popup is excluded from the mechanism by id. It submits over `fetch`,
-stays on the page, and reports its own `generate_lead` when Netlify confirms
+stays on the page, and reports its own `new_lead` when Netlify confirms
 the submission. Without the exclusion its note would sit in storage and fire
 on some unrelated visit to `/thank-you/` weeks later.
 
@@ -75,6 +119,8 @@ Every lead surface reports the same shape, so one report covers all four and
 | `source` | `contact_form`, `popup`, `part_request`, `door_request` | From `LeadMeta.astro` |
 | `site_language` | `en`, `es` | |
 | `page_path` | `/services/garage-door-spring-replacement/` | The page the form was on, **not** the thank-you page |
+| `value` | `1` | Required for Google Ads. See above |
+| `currency` | `USD` | Required alongside `value`, ISO 4217 |
 
 `lead_id` is minted per submission and deliberately **not** in the GA4 event.
 It exists for Google Ads deduplication only, and adding it here would mean a
@@ -84,9 +130,8 @@ custom dimension with one distinct value per lead.
 
 | Event | Fires when | Should be a key event |
 |---|---|---|
-| `generate_lead` | A lead is confirmed, once | **Yes** |
-| `phone_call_tap` | Any `tel:` link is tapped, with `placement` | **Yes** |
-| `phone_call` | Alongside the above | No — kept only so the existing history stays one continuous series |
+| `new_lead` | A lead is confirmed, once | **Yes** — already created |
+| `phone_call` | Any `tel:` link is tapped, with `placement` and `phone_number` | **Yes** — already created |
 | `conversion` | A lead, sent to Google Ads | n/a, this one is for Ads |
 | `quote_start` | First interaction with the wizard | No |
 | `quote_step` | Each step of the wizard is reached | No — this is the funnel |
@@ -135,21 +180,20 @@ In GA4 → Admin → Custom definitions → Create custom dimension, event-scope
 `form_type` · `service` · `job_type` · `symptom` · `lead_zip` · `urgency` ·
 `source` · `site_language` · `page_path` · `placement` · `route` · `step`
 
-Then in Admin → Events, mark as key events:
+The key events themselves are done: `new_lead` and `phone_call` were created
+on 19 September and the site now sends both.
 
-- `generate_lead`
-- `phone_call_tap`
-
-The same list is outstanding on the air duct property. Doing both in one
-sitting is twenty minutes and is the single highest-value unbilled action on
-either site.
+The custom dimensions are outstanding on the air duct property too. Doing
+both in one sitting is twenty minutes and is the single highest-value
+unbilled action on either site.
 
 ## Verified
 
 `sites/fl-garage/.ga-conversions.mjs`, in a real browser against the built
-site. 29 checks: one lead per submission and none for a reload, a second
-visit or a direct visit; the event describing the form rather than the
-thank-you page; a wizard-rejected submission leaving no note and firing
-nothing; the popup reporting itself once and leaving no note behind; phone
-taps carrying a placement; and Google Ads staying silent while the id is
-empty.
+site. 34 checks: one `new_lead` per submission and none for a reload, a
+second visit or a direct visit; the event describing the form rather than
+the thank-you page; a wizard-rejected submission leaving no note and firing
+nothing; the popup reporting itself once and leaving no note behind;
+`phone_call` carrying a placement and firing alone on a tap; `value` and
+`currency` present on every key event; and Google Ads staying silent while
+the id is empty.
