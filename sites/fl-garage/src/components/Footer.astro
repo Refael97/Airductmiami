@@ -39,7 +39,7 @@ const regionLabel = lang === 'es' ? 'Florida' : business.area.regionName;
       {/* Only channels that actually work are shown. See business.ts. */}
       <p class="footer-contact">
         {business.phoneLive && (
-          <><a href={`tel:${business.phoneHref}`}>{business.phone}</a><br /></>
+          <><a href={`tel:${business.phoneHref}`}>{t.phoneCta}</a><br /></>
         )}
         {business.emailLive ? (
           <>

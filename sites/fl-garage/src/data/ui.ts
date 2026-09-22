@@ -208,6 +208,16 @@ export interface Strings {
   nearbyAreas: string;
   allOf: (name: string) => string;
   communitiesIn: (name: string) => string;
+  /**
+   * The label on every click-to-call link. The digits are deliberately not
+   * shown anywhere a visitor reads: the published line is an 813 (Tampa
+   * Bay) number while the work and the rankings are Miami-Dade and Broward,
+   * and an area code from the wrong end of the state is a reason to
+   * hesitate. The number still reaches Google and the answer engines
+   * through the schema, agent.json and the llms files, which is where it
+   * does its job without being read off the page.
+   */
+  phoneCta: string;
   beforeYouCall: string;
   beforeYouCallNote: string;
   emergencyQ: string;
@@ -441,7 +451,7 @@ export interface Strings {
   thanksLead: string;
   thanksNext: string;
   thanksSteps: string[];
-  thanksUrgent: (phone: string) => string;
+  thanksUrgent: string;
   thanksWhileYouWait: string;
   thanksFullList: string;
 
@@ -581,6 +591,7 @@ export const ui: Record<Locale, Strings> = {
     nearbyAreas: 'Nearby areas',
     allOf: (name) => `All of ${name} →`,
     communitiesIn: (name) => `Communities in ${name}`,
+    phoneCta: 'Call now',
     beforeYouCall: 'Before you call anyone',
     beforeYouCallNote:
       'Work out what has actually failed, and what it should cost, before you pick up the phone.',
@@ -857,8 +868,8 @@ export const ui: Record<Locale, Strings> = {
       'You get an arrival window, and the emergency premium up front if it applies.',
       'If you go ahead, you get the estimate in writing before anything is touched.',
     ],
-    thanksUrgent: (phone) =>
-      `If your car is trapped or the door is stuck open, call ${phone} rather than waiting on the reply.`,
+    thanksUrgent:
+      'If your car is trapped or the door is stuck open, call us rather than waiting on the reply.',
     thanksWhileYouWait: 'While you wait',
     thanksFullList: 'The full published price list',
 
@@ -1018,6 +1029,7 @@ export const ui: Record<Locale, Strings> = {
     nearbyAreas: 'Áreas cercanas',
     allOf: (name) => `Todo ${name} →`,
     communitiesIn: (name) => `Comunidades en ${name}`,
+    phoneCta: 'Llamar ahora',
     beforeYouCall: 'Antes de llamar a cualquiera',
     beforeYouCallNote:
       'Averigüe qué falló realmente, y cuánto debería costar, antes de levantar el teléfono.',
@@ -1295,8 +1307,8 @@ export const ui: Record<Locale, Strings> = {
       'Recibe una ventana de llegada, y el recargo de emergencia por adelantado si aplica.',
       'Si decide seguir, recibe el presupuesto por escrito antes de que toquemos nada.',
     ],
-    thanksUrgent: (phone) =>
-      `Si su carro está atrapado o la puerta quedó trabada abierta, llame al ${phone} en lugar de esperar la respuesta.`,
+    thanksUrgent:
+      'Si su carro está atrapado o la puerta quedó trabada abierta, llámenos en lugar de esperar la respuesta.',
     thanksWhileYouWait: 'Mientras espera',
     thanksFullList: 'La lista de precios publicada completa',
 

@@ -89,7 +89,10 @@ const t = ui[lang];
         <span class="hc-opt-text">
           <span class="hc-opt-title">{t.chatPickCall}</span>
           <span class="hc-opt-note">{t.chatPickCallNote}</span>
-          <span class="hc-opt-num">{business.phoneNow}</span>
+          {/* The digits used to sit here. Removed with the rest of them on
+              22 September: the whole row is already a tel: link, so the
+              number added nothing a tap does not do, and reading an 813
+              area code in Miami is a reason to pause. */}
         </span>
       </a>
 
@@ -135,7 +138,9 @@ const t = ui[lang];
       offline: t.chatOffline,
       error: t.chatError,
       openedBooking: t.chatOpenedBooking,
-      phone: business.phoneNow,
+      /* The label the fallback bubble puts on its call link, in place of
+         the number it used to print. */
+      phone: t.phoneCta,
       phoneHref: business.phoneNowHref,
     },
   }}

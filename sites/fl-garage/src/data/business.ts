@@ -103,8 +103,17 @@ export const business: BusinessInfo = {
      again, run `grep -rn '300-1379' src/` first. */
   phone: '(813) 300-1379',
   phoneHref: '+18133001379',
-  phoneNow: '(305) 360-4932',
-  phoneNowHref: '+13053604932',
+  /* Was a second technician's mobile, (305) 360-4932. Pointed at the one
+     published line on 22 September 2026: the owner asked for a single
+     number everywhere, so the help widget's "call me now" now reaches the
+     same place as every other call button.
+
+     The two fields are kept rather than collapsed into `phone`, because the
+     split is what lets the widget be routed somewhere else later without
+     touching the published number. While they are equal, `placement` on the
+     phone_call event is what tells the widget's calls apart from the rest. */
+  phoneNow: '(813) 300-1379',
+  phoneNowHref: '+18133001379',
   email: 'info@garage-door-fixers.com',
   emailSupport: 'support@garage-door-fixers.com',
   phoneLive: true,

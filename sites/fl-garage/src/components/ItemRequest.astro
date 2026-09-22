@@ -69,7 +69,7 @@ const formName = isPart ? 'part-request' : 'door-request';
       <p class="pr-item"><span class="pr-item-label">{name}</span></p>
       <p class="pr-note">{copy.note}</p>
       {business.phoneLive && (
-        <a href={`tel:${business.phoneHref}`} class="pr-phone">{business.phone}</a>
+        <a href={`tel:${business.phoneHref}`} class="pr-phone">{t.phoneCta}</a>
       )}
     </div>
 

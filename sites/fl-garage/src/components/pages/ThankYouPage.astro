@@ -27,7 +27,10 @@ const guides = services.slice(0, 4).map((s) => svc(lang, s));
         </ol>
       </div>
 
-      <p class="urgent">{t.thanksUrgent(business.phone)}</p>
+      <p class="urgent">
+        {t.thanksUrgent}{' '}
+        <a href={`tel:${business.phoneHref}`}>{t.phoneCta}</a>
+      </p>
 
       <h2 class="reading">{t.thanksWhileYouWait}</h2>
       <ul class="links">

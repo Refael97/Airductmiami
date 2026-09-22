@@ -50,7 +50,7 @@ const crumbs = [
           {business.phoneLive && (
             <p class="contact-method">
               <span class="cm-ico"><Icon name="phone" size={18} /></span>
-              <span><strong><a href={`tel:${business.phoneHref}`}>{business.phone}</a></strong><br />{t.contactSevenDays}</span>
+              <span><strong><a href={`tel:${business.phoneHref}`}>{t.phoneCta}</a></strong><br />{t.contactSevenDays}</span>
             </p>
           )}
           {business.emailLive && (

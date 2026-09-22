@@ -69,7 +69,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'We measure the opening, confirm the wind or impact rating your address actually needs, and give you the number in writing before anything is ordered. Leave your details and the $250 is locked in when we call you back.',
       cta: 'Claim my $250 off',
       fine: 'No obligation. Free measure and quote. Applies to one new door installation.',
-      successBody: `We received your request and your $250 discount is locked in. We will call you shortly to arrange the measure. In a hurry? Call ${business.phone}.`,
+      successBody: `We received your request and your $250 discount is locked in. We will call you shortly to arrange the measure. In a hurry?`,
     },
     es: {
       headline1: 'Una puerta nueva,',
@@ -82,7 +82,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'Medimos el marco, confirmamos qué certificación de viento o de impacto necesita realmente su dirección, y le damos el número por escrito antes de ordenar nada. Deje sus datos y los $250 quedan asegurados cuando le llamemos.',
       cta: 'Quiero mis $250 de descuento',
       fine: 'Sin compromiso. Medición y cotización gratis. Aplica a la instalación de una puerta.',
-      successBody: `Recibimos su solicitud y su descuento de $250 queda asegurado. Le llamaremos en breve para agendar la medición. ¿Tiene prisa? Llame al ${business.phone}.`,
+      successBody: `Recibimos su solicitud y su descuento de $250 queda asegurado. Le llamaremos en breve para agendar la medición. ¿Tiene prisa?`,
     },
   },
   spring: {
@@ -97,7 +97,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'A broken torsion spring is the loud bang and the door that will not lift. We arrive with the spring matched to your door weight, replace in pairs so you are not paying twice, and you have the price before we start.',
       cta: 'Claim my $30 off',
       fine: 'No obligation. Free estimate. Applies to one spring replacement job.',
-      successBody: `We received your request and your $30 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+      successBody: `We received your request and your $30 discount is locked in. We will call you shortly to schedule. In a hurry?`,
     },
     es: {
       headline1: '¿Resorte roto?',
@@ -110,7 +110,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'Un resorte de torsión roto es ese estruendo seco y la puerta que ya no sube. Llegamos con el resorte que corresponde al peso de su puerta, cambiamos en par para que no pague dos veces, y usted tiene el precio antes de empezar.',
       cta: 'Quiero mis $30 de descuento',
       fine: 'Sin compromiso. Cotización gratis. Aplica a un trabajo de cambio de resorte.',
-      successBody: `Recibimos su solicitud y su descuento de $30 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+      successBody: `Recibimos su solicitud y su descuento de $30 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa?`,
     },
   },
   opener: {
@@ -125,7 +125,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'We check the door balance first, because an opener that struggles is usually lifting a door that has gone heavy. If the unit is genuinely finished we fit a new one with rolling code, modern safety reverse and battery backup for outages.',
       cta: 'Claim my $50 off',
       fine: 'No obligation. Free estimate. Applies to one opener installation.',
-      successBody: `We received your request and your $50 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+      successBody: `We received your request and your $50 discount is locked in. We will call you shortly to schedule. In a hurry?`,
     },
     es: {
       headline1: '¿Problema con el motor?',
@@ -138,7 +138,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'Primero revisamos el equilibrio de la puerta, porque un motor que forcejea normalmente está levantando una puerta que se puso pesada. Si el equipo de verdad llegó a su fin, instalamos uno nuevo con código rodante, reverso de seguridad moderno y respaldo de batería para los apagones.',
       cta: 'Quiero mis $50 de descuento',
       fine: 'Sin compromiso. Cotización gratis. Aplica a la instalación de un motor.',
-      successBody: `Recibimos su solicitud y su descuento de $50 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+      successBody: `Recibimos su solicitud y su descuento de $50 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa?`,
     },
   },
   repair: {
@@ -153,7 +153,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'Cables, rollers, tracks, panels and everything else that stops a door working. You get the price before the work starts, not after a technician is standing in your driveway, and the discount is locked in when we call you back.',
       cta: 'Claim my $40 off',
       fine: 'No obligation. Free estimate. Applies to one repair visit.',
-      successBody: `We received your request and your $40 discount is locked in. We will call you shortly to schedule. In a hurry? Call ${business.phone}.`,
+      successBody: `We received your request and your $40 discount is locked in. We will call you shortly to schedule. In a hurry?`,
     },
     es: {
       headline1: '¿Puerta trabada?',
@@ -166,7 +166,7 @@ const OFFERS: Record<OfferKey, Record<Locale, {
       body: 'Cables, rodamientos, rieles, paneles y todo lo demás que deja una puerta sin funcionar. Usted recibe el precio antes de que empiece el trabajo, no después de que el técnico ya está en su entrada, y el descuento queda asegurado cuando le llamemos.',
       cta: 'Quiero mis $40 de descuento',
       fine: 'Sin compromiso. Cotización gratis. Aplica a una visita de reparación.',
-      successBody: `Recibimos su solicitud y su descuento de $40 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa? Llame al ${business.phone}.`,
+      successBody: `Recibimos su solicitud y su descuento de $40 queda asegurado. Le llamaremos en breve para agendar. ¿Tiene prisa?`,
     },
   },
 };
@@ -272,7 +272,9 @@ const formName = 'popup-special';
       <div class="promo-success" id="promo-success" hidden>
         <svg viewBox="0 0 24 24" width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.8 2.8L16.5 9"/></svg>
         <h3>{SUCCESS_TITLE}</h3>
-        <p>{O.successBody}</p>
+        {/* The call link carries a label, not digits. The sentence above
+            ends on the question so the link is the answer to it. */}
+        <p>{O.successBody} <a href={`tel:${business.phoneHref}`}>{t.phoneCta}</a></p>
       </div>
     </div>
 
