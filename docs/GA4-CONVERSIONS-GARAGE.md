@@ -115,7 +115,7 @@ Every lead surface reports the same shape, so one report covers all four and
 | `symptom` | `Door will not open` | What is actually wrong. Empty from the popup |
 | `lead_zip` | `33012` | The geography this site collects |
 | `lead_city` | | **Always empty here.** Kept in the shape so one report can cover both sites; this site asks for a ZIP and never for a city, and a city guessed from a ZIP is not worth the column until the lookup is ported |
-| `urgency` | `Today if possible` | From the wizard. Empty from the popup |
+| `booked_slot` | `yes`, `no` | Whether they picked a slot in the scheduler. Not *which* slot: a raw appointment is one distinct value per lead and would burn a dimension on something unreportable. The exact time is in the lead email, where it is needed |
 | `source` | `contact_form`, `popup`, `part_request`, `door_request` | From `LeadMeta.astro` |
 | `site_language` | `en`, `es` | |
 | `page_path` | `/services/garage-door-spring-replacement/` | The page the form was on, **not** the thank-you page |
@@ -177,7 +177,7 @@ time.
 
 In GA4 → Admin → Custom definitions → Create custom dimension, event-scoped:
 
-`form_type` · `service` · `job_type` · `symptom` · `lead_zip` · `urgency` ·
+`form_type` · `service` · `job_type` · `symptom` · `lead_zip` · `booked_slot` ·
 `source` · `site_language` · `page_path` · `placement` · `route` · `step`
 
 The key events themselves are done: `new_lead` and `phone_call` were created
@@ -186,6 +186,28 @@ on 19 September and the site now sends both.
 The custom dimensions are outstanding on the air duct property too. Doing
 both in one sitting is twenty minutes and is the single highest-value
 unbilled action on either site.
+
+## What the first two real leads corrected
+
+Both arrived on 20 September, from ZIP 33186, one through the quote wizard
+on `/contact/` and one through the popup on `/service-areas/kendall/`.
+
+The wizard lead came with `urgency` and `window` blank, which looked like
+fields people skip. They are not. Both selects live inside `.wz-fallback`,
+which `BookingScript.astro` removes from the DOM the moment it runs, so only
+a visitor with JavaScript disabled is ever shown them. Netlify still lists
+them in the notification email because it builds the field list from the
+static HTML at deploy time.
+
+So `urgency` was a custom dimension that would have been empty for every
+lead the site will ever get, and the real signal — that this visitor picked
+a slot for the next morning — was not being captured at all. `booked_slot`
+replaced it. The same reasoning applies to `area`, which is a genuinely
+optional select and is not in the event either.
+
+The two blank rows in the lead email are cosmetic and still worth removing,
+either by dropping the fallback selects or by giving them names Netlify does
+not collect.
 
 ## Verified
 

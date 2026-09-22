@@ -271,7 +271,20 @@ const siteSchema = [localBusinessSchema(site, lang), websiteSchema(site, lang)];
                    both sites, and left empty rather than guessed. */
                 lead_city: '',
                 lead_zip: val('zip'),
-                urgency: val('urgency'),
+                /* Whether they picked a slot in the scheduler, not which
+                   slot: a raw appointment is a distinct value per lead and
+                   would burn a custom dimension on something unreportable.
+                   The exact time is in the lead email, where it is needed.
+
+                   This replaced `urgency`, which was collected here for
+                   three days and was always empty. Its select lives inside
+                   .wz-fallback, which BookingScript removes from the DOM the
+                   moment it runs, so only a visitor with JavaScript off ever
+                   answers it. Netlify still lists the field from the static
+                   HTML at deploy time, which is why it shows up blank in
+                   every lead email and looked like a field people were
+                   skipping rather than one they were never shown. */
+                booked_slot: val('appointment') ? 'yes' : 'no',
                 source: val('source'),
                 site_language: val('locale') || lang,
                 page_path: val('page') || location.pathname,

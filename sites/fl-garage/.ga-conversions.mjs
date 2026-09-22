@@ -118,6 +118,11 @@ const events = (p, name) =>
   check('the note carries the source', note.source === 'contact_form' || !!note.source, `source=${note.source}`);
   check('the note carries the ZIP', note.lead_zip === '33012', `lead_zip=${note.lead_zip}`);
   check('the note carries a lead id', typeof note.lead_id === 'string' && note.lead_id.startsWith('lead-'));
+  /* Carlos, the first real lead through this form, booked a slot and left
+     `urgency` blank, because BookingScript removes the select that asks it.
+     booked_slot is derived from the appointment field instead. */
+  check('booked_slot is no when no slot was picked', note.booked_slot === 'no', `booked_slot=${note.booked_slot}`);
+  check('urgency is gone, it was always empty', !('urgency' in note));
 
   // Same session, now land on the thank-you page as the form would.
   await p.goto(HOST + '/thank-you/');
@@ -199,6 +204,7 @@ const events = (p, name) =>
     check('it is named as the popup', prm.form_type === 'popup_special', `form_type=${prm.form_type}`);
     check('the offer maps to a job', prm.service === 'Garage Door Spring Repair', `service=${prm.service}`);
     check('it carries the ZIP', prm.lead_zip === '33012', `lead_zip=${prm.lead_zip}`);
+    check('booked_slot says no, the popup has no scheduler', prm.booked_slot === 'no', `booked_slot=${prm.booked_slot}`);
     check('it reports the page it was shown on',
       prm.page_path === '/services/garage-door-spring-replacement/', `page_path=${prm.page_path}`);
     check('it carries a numeric value', typeof prm.value === 'number', `value=${prm.value}`);

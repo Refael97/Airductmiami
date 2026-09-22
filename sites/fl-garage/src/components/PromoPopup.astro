@@ -585,7 +585,9 @@ const formName = 'popup-special';
           symptom: '',
           lead_city: '',
           lead_zip: zipValue(),
-          urgency: '',
+          /* The popup has no scheduler. Sent rather than omitted so the
+             shape is identical across surfaces. */
+          booked_slot: 'no',
           source: 'popup',
           site_language: localeValue(),
           page_path: location.pathname,
