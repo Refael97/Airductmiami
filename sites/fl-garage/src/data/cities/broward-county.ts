@@ -302,7 +302,7 @@ export const browardCountyCities: City[] = [
       {
         question: 'Do you offer service in Spanish in Miramar?',
         answer:
-          'Yes. You can call (561) 897-9930 and speak Spanish, and every page on this site has a Spanish version. The estimate, the invoice and the one year parts and labor warranty are written the same way in either language.',
+          'Yes. You can call (813) 300-1379 and speak Spanish, and every page on this site has a Spanish version. The estimate, the invoice and the one year parts and labor warranty are written the same way in either language.',
       },
     ],
   },

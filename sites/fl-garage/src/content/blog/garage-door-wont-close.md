@@ -89,4 +89,4 @@ We treat a door that will not close as a same-day call, and the [emergency premi
 
 ## Where we work
 
-Same-day service across [Central Florida](/service-areas/central-florida/), [Tampa Bay](/service-areas/tampa-bay/), [Southwest Florida](/service-areas/southwest-florida/), [Miami-Dade County](/service-areas/miami-dade-county/), [Broward County](/service-areas/broward-county/), [Palm Beach and the Treasure Coast](/service-areas/palm-beach-treasure-coast/) and [North Florida](/service-areas/north-florida/). Call (561) 897-9930 and tell us what the two sensor lights are doing. It saves a trip.
+Same-day service across [Central Florida](/service-areas/central-florida/), [Tampa Bay](/service-areas/tampa-bay/), [Southwest Florida](/service-areas/southwest-florida/), [Miami-Dade County](/service-areas/miami-dade-county/), [Broward County](/service-areas/broward-county/), [Palm Beach and the Treasure Coast](/service-areas/palm-beach-treasure-coast/) and [North Florida](/service-areas/north-florida/). Call (813) 300-1379 and tell us what the two sensor lights are doing. It saves a trip.

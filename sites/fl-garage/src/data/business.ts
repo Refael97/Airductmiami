@@ -83,13 +83,26 @@ export const business: BusinessInfo = {
   description:
     'Garage Door Fixers provides garage door repair, spring replacement, opener installation, hurricane-rated door installation and storm damage repair across Florida, from Miami-Dade and Broward to Tampa Bay, Orlando, Southwest Florida and Jacksonville. Published starting prices, a written estimate before any work, licensed and insured, in English and Spanish.',
 
-  /* The number rings a technician's mobile phone directly. It is the same
-     number the Florida air duct site uses, at the owner's decision on
-     6 September 2026: one dispatcher, two brands. Whoever answers must not
-     greet callers with the other brand's name. If a dedicated number is
-     provisioned later, change it here and nowhere else. */
-  phone: '(561) 897-9930',
-  phoneHref: '+15618979930',
+  /* The published number, and the only one that appears on the page, in the
+     schema, in agent.json and in the llms files.
+
+     Changed to (813) 300-1379 on 22 September 2026, at the owner's
+     instruction. This ends the arrangement of 6 September, when this site
+     shared (561) 897-9930 with the Florida air duct site — one dispatcher,
+     two brands. The two sites now have separate numbers, which removes the
+     risk of a caller being greeted with the wrong brand's name.
+
+     Note the area code no longer matches where the work is. 813 is Tampa
+     Bay; the leads so far, and the counties this site ranks in, are Miami
+     Dade and Broward. That is the owner's call and not a code problem, but
+     see `primaryCounty` below, whose reasoning it changes.
+
+     "Change it here and nowhere else" was not true when this change was
+     made: the number was also written out in ten blog articles and two city
+     data files, which had to be rewritten alongside it. If it changes
+     again, run `grep -rn '300-1379' src/` first. */
+  phone: '(813) 300-1379',
+  phoneHref: '+18133001379',
   phoneNow: '(305) 360-4932',
   phoneNowHref: '+13053604932',
   email: 'info@garage-door-fixers.com',
@@ -101,10 +114,20 @@ export const business: BusinessInfo = {
     region: 'FL',
     regionName: 'Florida',
     country: 'US',
-    /* Palm Beach County: the phone number's area code and where the
-       dispatch centres. No street line and no ZIP anywhere: a service area
-       business does not publish one, and an invented one is grounds for
-       permanent Business Profile suspension. */
+    /* Palm Beach County, which is where dispatch centres.
+
+       It used to be justified by the phone number's area code as well. That
+       stopped being true on 22 September 2026, when the published number
+       became an 813 (Tampa Bay) one, so the area code now points at a third
+       region and is no longer a reason for anything here. Left as Palm Beach
+       rather than quietly changed: primaryCounty feeds the schema and the
+       Business Profile, and moving it is a decision about where the business
+       says it is based, not a tidy-up. Worth revisiting — the leads and the
+       rankings both say Miami-Dade.
+
+       No street line and no ZIP anywhere: a service area business does not
+       publish one, and an invented one is grounds for permanent Business
+       Profile suspension. */
     primaryCounty: 'Palm Beach County',
     counties: [
       'Miami-Dade County',

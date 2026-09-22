@@ -260,7 +260,7 @@ export const browardCountyCitiesEs: Record<string, CityEs> = {
       {
         question: '¿Atienden en español en Miramar?',
         answer:
-          'Sí. Puede llamar al (561) 897-9930 y hablar en español, y cada página de este sitio tiene su versión en español. El presupuesto, la factura y la garantía de un año en piezas y mano de obra se escriben igual en cualquiera de los dos idiomas.',
+          'Sí. Puede llamar al (813) 300-1379 y hablar en español, y cada página de este sitio tiene su versión en español. El presupuesto, la factura y la garantía de un año en piezas y mano de obra se escriben igual en cualquiera de los dos idiomas.',
       },
     ],
   },
