@@ -1,5 +1,5 @@
 ---
-title: "How Much Does a Garage Door Weigh?"
+title: "How Much Does a Garage Door Weigh? 130 to 450 lbs"
 description: "Real garage door weights by size and material, why impact-rated Florida doors weigh more and change the spring spec, and the ten second balance test."
 answer: "A residential garage door weighs between 130 and 450 pounds. A standard single steel door runs 130 to 180 pounds, an insulated single 180 to 220, a standard double 200 to 250, an insulated double 250 to 320, and an impact-rated Florida double 300 to 400 or more, with wood and impact glass doors heavier still. Spring size is set by that weight, which is why a new rated door needs new springs at $150 to $350 each, and never the old ones."
 pubDate: 2026-09-02

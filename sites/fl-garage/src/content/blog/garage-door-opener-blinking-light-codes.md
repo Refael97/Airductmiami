@@ -1,5 +1,5 @@
 ---
-title: "Garage Door Opener Light Blinking: What the Flashes Mean"
+title: "Garage Door Opener Blinking 10 Times? Check the Sensors"
 description: "Opener light flashing and the door will not close. What 10 flashes means, what the sensor lights say, what Florida does to sensors, and what a fix costs."
 answer: "On a LiftMaster or Chamberlain opener, a light that flashes 10 times when you press the button almost always means the safety sensors are blocked, misaligned or wired wrong. The door will go up and refuse to come down. Check the two photo eyes near the floor before anything else. Other flashing patterns are model specific and have to be read against your manual, and if it needs a technician, opener repair in Florida runs $95 to $300."
 pubDate: 2026-08-31
