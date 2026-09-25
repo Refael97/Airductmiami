@@ -18,8 +18,29 @@ import { doorMaterials, openerTypes, brands } from '../data/products';
 import { parts } from '../data/parts';
 import { doorModels } from '../data/doors';
 import { paths, serviceHref, areaHref, productHref, brandHref, partHref, doorHref } from '../data/ui';
+import { getCollection } from 'astro:content';
 
-export const GET: APIRoute = ({ site }) => {
+export const GET: APIRoute = async ({ site }) => {
+  /* Every question and answer the site holds, flattened into one block.
+
+     This file had no faq key at all, and the guides hold 358 question and
+     answer pairs between them: by far the largest block of specific,
+     checkable content on the site and the part an answer engine is most
+     likely to quote. Only the 59 pairs nested inside the services array
+     were reachable.
+
+     Each pair carries the URL it came from, so an engine quoting one cites
+     the page rather than the domain. That is the difference between a
+     mention and a link a reader can click, and this site already has a
+     lead that arrived from ChatGPT, so the channel is not theoretical. */
+  const guides = await getCollection('blog');
+  const guideFaq = guides.flatMap((p) =>
+    (p.data.faq ?? []).map((f: { question: string; answer: string }) => ({
+      question: f.question,
+      answer: f.answer,
+      guide: p.id,
+    })),
+  );
   const base = site?.toString().replace(/\/$/, '') ?? '';
   const both = (fn: (l: 'en' | 'es', slug: string) => string, slug: string) => ({
     en: `${base}${fn('en', slug)}`,
@@ -250,6 +271,27 @@ export const GET: APIRoute = ({ site }) => {
       required_fields: ['name', 'phone', 'zip'],
     },
 
+    faq: [
+      ...services.flatMap((s) =>
+        (s.faq ?? []).map((f: { question: string; answer: string }) => ({
+          question: f.question,
+          answer: f.answer,
+          service: s.slug,
+          url: both(serviceHref, s.slug),
+        })),
+      ),
+      ...guideFaq.map((f) => ({
+        question: f.question,
+        answer: f.answer,
+        guide: f.guide,
+        /* English only, deliberately. The Spanish guides carry their own
+           slugs rather than translations of the English ones, so deriving
+           an ES URL from an EN slug produces a 404: the first version of
+           this line did exactly that. The question and answer here are in
+           English anyway, so the English page is the honest citation. */
+        url: `${base}${paths.en.blog}${f.guide}/`,
+      })),
+    ],
     notes_for_agents: [
       'Every price on this site is a starting price for a standard single door. Do not present it as a final price.',
       'The emergency premium applies to dispatch only. The repair itself is quoted at the same published price on any day.',
