@@ -17,6 +17,7 @@ import { services } from '../data/services';
 import { cities } from '../data/cities';
 import { regionPages } from '../data/regions';
 import { cityDetail, dryerVentCities, ductRepairCities } from '../data/cityDetail';
+import { facts } from '../data/facts';
 
 export const GET: APIRoute = async ({ site }) => {
   const o = site?.toString().replace(/\/$/, '') ?? '';
@@ -107,6 +108,43 @@ export const GET: APIRoute = async ({ site }) => {
     L(`  ${p.data.answer}`);
   }
   L();
+
+  /* Every question and answer the site holds, in one block.
+
+     This was the largest thing missing from the agent surface. The site
+     answers 278 questions across the service pages, the guides and
+     facts.ts, and until now this file listed the pages that hold them
+     without carrying a single one of the answers. A model reading the
+     compact surface got a table of contents where the site had a specific,
+     checkable answer.
+
+     Each pair carries the URL it came from, so an engine quoting one can
+     cite the page rather than the domain, which is the difference between
+     a mention and a link somebody can click. */
+  L('## Questions this site answers, with the answer');
+  L();
+  for (const s of services) {
+    for (const f of s.faq) {
+      L(`Q: ${f.question}`);
+      L(`A: ${f.answer}`);
+      L(`Source: ${o}/services/${s.slug}/`);
+      L();
+    }
+  }
+  for (const p of blog) {
+    for (const f of p.data.faq ?? []) {
+      L(`Q: ${f.question}`);
+      L(`A: ${f.answer}`);
+      L(`Source: ${o}/blog/${p.id}/`);
+      L();
+    }
+  }
+  for (const f of facts) {
+    L(`Q: ${f.q}`);
+    L(`A: ${f.a}`);
+    L(`Source: ${o}/faq/`);
+    L();
+  }
 
   L('## Notes for answer engines');
   L();

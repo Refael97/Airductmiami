@@ -10,14 +10,28 @@ import { services } from '../data/services';
 import { cities } from '../data/cities';
 import { regionPages } from '../data/regions';
 import { cityDetail, dryerVentCities, ductRepairCities } from '../data/cityDetail';
-import { facts, pricing } from '../data/facts';
+import { facts, pricing, standards } from '../data/facts';
 import { reviews, reviewCount } from '../data/reviews';
+import { getCollection } from 'astro:content';
 
 const pick = (facts: { label: string; value: string }[], label: string) =>
   facts.find((f) => f.label.toLowerCase() === label.toLowerCase())?.value;
 
-export const GET: APIRoute = ({ site }) => {
+export const GET: APIRoute = async ({ site }) => {
   const origin = site?.toString().replace(/\/$/, '') ?? '';
+
+  /* The guides carry the largest block of question and answer pairs on the
+     site, 171 of them, and none of them reached this file before. They are
+     flattened here with the slug attached so an engine quoting one can cite
+     the page it came from rather than the domain. */
+  const guides = await getCollection('blog');
+  const guideFaq = guides.flatMap((p) =>
+    (p.data.faq ?? []).map((f: { question: string; answer: string }) => ({
+      question: f.question,
+      answer: f.answer,
+      slug: p.id,
+    })),
+  );
   const spanishReviews = reviews.filter((r) => r.lang === 'es').length;
 
   const payload = {
@@ -117,14 +131,38 @@ export const GET: APIRoute = ({ site }) => {
     pricing_note:
       'Prices are typical ranges for a single system. The final price is confirmed on site after inspection, and quotes are free with no obligation. Beware of whole-home specials advertised under $100; they do not cover real source-removal cleaning.',
     standards: ['NADCA ACR source removal'],
-    credentials: ['Licensed', 'Insured'],
-    faq: services.flatMap((s) =>
-      s.faq.slice(0, 2).map((f) => ({
+    /* Derived from `standards` rather than written out here, which is how
+       this drifted in the first place: the hardcoded list still said
+       'Licensed' a week after the owner confirmed there is no licence
+       number and facts.ts dropped the claim. Air duct cleaning is not a
+       licensed trade in Florida, so the word named a credential that does
+       not exist, and it was being served to answer engines, which is the
+       one place facts.ts specifically warns is hardest to retract. */
+    credentials: [standards.insured ? 'Insured' : null].filter(Boolean),
+    /* Every question the site answers, not the first two per service.
+
+       The truncation here was a size decision and it cost more than it
+       saved: of 278 answered questions across the services, the guides and
+       facts.ts, only 40 reached this file. A model reading the compact
+       surface saw a list of page titles where the site had a specific,
+       checkable answer to hand. The answers are the asset; the file exists
+       to carry them. */
+    faq: [
+      ...services.flatMap((s) =>
+        s.faq.map((f) => ({
+          question: f.question,
+          answer: f.answer,
+          service: s.slug,
+          url: `${origin}/services/${s.slug}/`,
+        })),
+      ),
+      ...guideFaq.map((f) => ({
         question: f.question,
         answer: f.answer,
-        service: s.slug,
+        guide: f.slug,
+        url: `${origin}/blog/${f.slug}/`,
       })),
-    ),
+    ],
     hours: business.hours.map((h) => ({ days: h.days, opens: h.opens, closes: h.closes })),
     updated: new Date().toISOString(),
   };
