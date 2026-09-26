@@ -52,7 +52,15 @@ const description = `Contact ${business.name} for a free air duct or dryer vent 
         >
           <input type="hidden" name="form-name" value="quote" />
           <LeadMeta source="contact_form" />
-          <p hidden><label>Do not fill this out: <input name="bot-field" /></label></p>
+          {/* tabindex and autocomplete are not decoration. Netlify discards
+              any submission whose honeypot is non-empty, silently and with
+              no error shown to the visitor, so anything that can fill this
+              field destroys a real lead invisibly. `hidden` stops a person
+              seeing it; it does not stop a password manager or an
+              autofill extension writing into it, and it does not stop a
+              keyboard user tabbing into it. The popup and the landing form
+              already carried both guards; these two contact forms did not. */}
+          <p hidden><label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
           <label>Name<input type="text" name="name" required autocomplete="name" /></label>
           <label>Phone<input type="tel" name="phone" required autocomplete="tel" /></label>
           <label>Email<input type="email" name="email" autocomplete="email" /></label>
