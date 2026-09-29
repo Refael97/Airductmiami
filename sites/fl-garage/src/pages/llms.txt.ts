@@ -8,6 +8,7 @@ import { services } from '../data/services';
 import { regions } from '../data/regions';
 import { citiesByRegion } from '../data/cities';
 import { doorMaterials, openerTypes, brands } from '../data/products';
+import { seriesForBrand } from '../data/brandSeries';
 import { parts } from '../data/parts';
 import { doorModels } from '../data/doors';
 import { paths, serviceHref, areaHref, productHref, brandHref, money, partHref, doorHref } from '../data/ui';
@@ -122,7 +123,12 @@ export const GET: APIRoute = ({ site }) => {
   push();
   push('We are an independent repair company and are not affiliated with any of these manufacturers.');
   push();
-  brands.forEach((b) => push(`- [${b.name}](${base}${brandHref('en', b.slug)}): ${b.kind === 'opener' ? 'openers' : 'doors'}`));
+  brands.forEach((b) => {
+    push(`- [${b.name}](${base}${brandHref('en', b.slug)}): ${b.kind === 'opener' ? 'openers' : 'doors'}`);
+    seriesForBrand(b.slug).forEach((sp) =>
+      push(`  - [${b.name} ${sp.model} series](${base}${brandHref('en', b.slug)}${sp.slug}/): ${sp.metaDescription}`),
+    );
+  });
   push();
   push('## Contact');
   push();

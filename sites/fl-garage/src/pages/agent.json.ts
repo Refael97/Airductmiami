@@ -15,6 +15,7 @@ import { services } from '../data/services';
 import { cities } from '../data/cities';
 import { regions } from '../data/regions';
 import { doorMaterials, openerTypes, brands } from '../data/products';
+import { seriesPages, seriesForBrand } from '../data/brandSeries';
 import { parts } from '../data/parts';
 import { doorModels } from '../data/doors';
 import { paths, serviceHref, areaHref, productHref, brandHref, partHref, doorHref } from '../data/ui';
@@ -249,6 +250,17 @@ export const GET: APIRoute = async ({ site }) => {
               source: b.series.source,
             }
           : undefined,
+        /* One page per series where it exists, so a model number query can
+           be cited to the page that is only about that model. */
+        series_pages: seriesForBrand(b.slug).length
+          ? seriesForBrand(b.slug).map((sp) => ({
+              model: sp.model,
+              url: {
+                en: `${base}${paths.en.brands}${sp.brand}/${sp.slug}/`,
+                es: `${base}${paths.es.brands}${sp.brand}/${sp.slug}/`,
+              },
+            }))
+          : undefined,
       })),
     },
 
@@ -278,6 +290,15 @@ export const GET: APIRoute = async ({ site }) => {
           answer: f.answer,
           service: s.slug,
           url: both(serviceHref, s.slug),
+        })),
+      ),
+      ...seriesPages.flatMap((sp) =>
+        sp.faq.map((f) => ({
+          question: f.question,
+          answer: f.answer,
+          brand: sp.brand,
+          model: sp.model,
+          url: `${base}${paths.en.brands}${sp.brand}/${sp.slug}/`,
         })),
       ),
       ...guideFaq.map((f) => ({

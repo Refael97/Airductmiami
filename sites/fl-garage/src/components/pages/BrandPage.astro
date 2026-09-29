@@ -10,7 +10,8 @@ import { brands } from '../../data/products';
 import type { Brand } from '../../data/types';
 import { getService } from '../../data/services';
 import { serviceSchema } from '../../lib/schema';
-import { ui, paths, brandHref, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { ui, paths, brandHref, seriesHref, serviceHref, money, otherLocale, type Locale } from '../../data/ui';
+import { seriesForBrand, seriesOf } from '../../data/brandSeries';
 import { brand as brandOf, svc } from '../../lib/i18n';
 
 interface Props { lang: Locale; base: Brand }
@@ -32,6 +33,10 @@ const crumbs = [
 const isOpener = brand.kind === 'opener';
 const repair = svc(lang, getService(isOpener ? 'garage-door-opener-repair' : 'garage-door-panel-replacement')!);
 const install = svc(lang, getService(isOpener ? 'garage-door-opener-installation' : 'new-garage-door-installation')!);
+/* A page per model series where one exists. Linked from the table so
+   someone who searched "amarr 2400" lands one click from the page that is
+   only about the 2400. */
+const seriesLinks = seriesForBrand(brand.slug).map((s) => seriesOf(lang, s));
 const others = brands.filter((b) => b.slug !== brand.slug).map((b) => brandOf(lang, b));
 
 const schema = serviceSchema(site, {
@@ -98,6 +103,13 @@ const schema = serviceSchema(site, {
               </table>
             </div>
             <p class="spec-source">{brand.series.source}</p>
+            {seriesLinks.length > 0 && (
+              <ul class="series-links">
+                {seriesLinks.map((s) => (
+                  <li><a href={seriesHref(lang, s.brand, s.slug)}>{s.h1} →</a></li>
+                ))}
+              </ul>
+            )}
           </>
         )}
 
@@ -191,6 +203,8 @@ const schema = serviceSchema(site, {
   }
   .spec-table tbody tr:nth-child(even) th, .spec-table tbody tr:nth-child(even) td { background: var(--c-bg-alt); }
   .spec-source { font-size: 0.82rem; color: var(--c-muted); margin: 0 0 0.4rem; }
+  .series-links { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 0.5rem; }
+  .series-links a { font-weight: 700; }
 
   @media (max-width: 520px) {
     /* On a phone the pinned label column is competing with the values for a

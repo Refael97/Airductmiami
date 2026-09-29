@@ -1,6 +1,9 @@
 /**
- * Palm Beach and the Treasure Coast: eight service-area pages, per
- * research/fl-garage/BRIEF.md section 6.
+ * Palm Beach and the Treasure Coast: ten service-area pages. The first
+ * eight are per research/fl-garage/BRIEF.md section 6; Lake Worth Beach
+ * and North Palm Beach were added on 29 September 2026 because Search
+ * Console showed those two towns named in dozens of queries with no page
+ * to answer them.
  *
  * Palm Beach and St. Lucie counties are outside the High Velocity Hurricane
  * Zone, but the design wind pressure is still high, highest along the
@@ -66,7 +69,7 @@ export const palmBeachTreasureCoastCities: City[] = [
     answer:
       'Garage door repair in West Palm Beach starts at $150 per spring, $95 for cable repair and $275 for a new opener installed. Same-day service runs seven days a week from the older neighborhoods east of I-95 to the subdivisions west of the Turnpike, with a written estimate before any work.',
     intro: [
-      'West Palm Beach is the home of our 561 phone number and the widest spread of housing we cover in Palm Beach County. East of I-95 are the 1920s to 1950s neighborhoods, Flamingo Park, El Cid and Northwood among them, where garages are small, often detached, and sometimes too low for a standard rail opener. West of the Turnpike along Okeechobee Boulevard are the 1990s and 2000s gated subdivisions with two and three car garages and doors that all went in within a few years of each other.',
+      'West Palm Beach has the widest spread of housing we cover in Palm Beach County. East of I-95 are the 1920s to 1950s neighborhoods, Flamingo Park, El Cid and Northwood among them, where garages are small, often detached, and sometimes too low for a standard rail opener. West of the Turnpike along Okeechobee Boulevard are the 1990s and 2000s gated subdivisions with two and three car garages and doors that all went in within a few years of each other.',
       'In the older neighborhoods the calls are about cables, rollers and rust on single doors that have been cycling for decades, and about openers that were bolted on years after the house was built. In the western communities it is cycle count: a door installed in 1998 with a 10,000 cycle spring is on its second or third set by now, and the opener that came with the house has a logic board that has spent 25 summers at 100°F. West Palm Beach is outside the HVHZ, but Palm Beach County is still a high wind zone, so a replacement door needs a Florida Product Approval number and a permit from the city building department, pulled by a licensed contractor.',
     ],
     localNotes: [
@@ -75,7 +78,7 @@ export const palmBeachTreasureCoastCities: City[] = [
       'Salt air within a few miles of the Intracoastal rusts cables and bottom brackets first',
       'City permit for a door replacement inside the city limits; unincorporated addresses go through the county',
     ],
-    nearby: ['palm-beach-gardens', 'wellington', 'boynton-beach', 'jupiter'],
+    nearby: ['palm-beach-gardens', 'lake-worth-beach', 'north-palm-beach', 'wellington', 'boynton-beach', 'jupiter'],
     faq: [
       {
         question: 'My garage in Flamingo Park is small and old. Can it take a modern opener?',
@@ -85,7 +88,7 @@ export const palmBeachTreasureCoastCities: City[] = [
       {
         question: 'Do you cover the whole city or just part of it?',
         answer:
-          'All of it, plus the unincorporated county pockets with a West Palm Beach mailing address. The number is a 561 number and rings a technician, not an answering service. Give us the street when you call and we confirm the arrival window for that side of the city.',
+          'All of it, plus the unincorporated county pockets with a West Palm Beach mailing address. The number rings our dispatch line, not an answering service. Give us the street when you call and we confirm the arrival window for that side of the city.',
       },
     ],
   },
@@ -110,7 +113,7 @@ export const palmBeachTreasureCoastCities: City[] = [
       'HOA approval on top of the building permit in nearly every gated community',
       'West Boynton addresses are unincorporated Palm Beach County, so the permit goes through the county',
     ],
-    nearby: ['delray-beach', 'boca-raton', 'wellington', 'west-palm-beach'],
+    nearby: ['lake-worth-beach', 'delray-beach', 'boca-raton', 'wellington', 'west-palm-beach'],
     faq: [
       {
         question: 'We are in a 55 plus community. Does the HOA have to approve a new door?',
@@ -185,7 +188,7 @@ export const palmBeachTreasureCoastCities: City[] = [
       'The golf cart door cycles several times a day and fails first',
       'High value doors where a matching section at $250 to $800 beats replacing the whole door',
     ],
-    nearby: ['jupiter', 'west-palm-beach', 'wellington'],
+    nearby: ['north-palm-beach', 'jupiter', 'west-palm-beach', 'wellington'],
     faq: [
       {
         question: 'Can you replace one damaged section on a carriage style door?',
@@ -220,7 +223,7 @@ export const palmBeachTreasureCoastCities: City[] = [
       'Jupiter Farms large lots with detached garages and wider doors',
       'Coastal addresses carry higher design wind pressure, so the rated door depends on the street',
     ],
-    nearby: ['palm-beach-gardens', 'west-palm-beach', 'port-st-lucie'],
+    nearby: ['north-palm-beach', 'palm-beach-gardens', 'west-palm-beach', 'port-st-lucie'],
     faq: [
       {
         question: 'Why do my bottom brackets keep rusting?',
@@ -255,7 +258,7 @@ export const palmBeachTreasureCoastCities: City[] = [
       '1980s to 2000s subdivision doubles reaching their second and third spring sets',
       'Detached garages and barns with no opener at all, or one added years later',
     ],
-    nearby: ['west-palm-beach', 'boynton-beach', 'palm-beach-gardens', 'delray-beach'],
+    nearby: ['west-palm-beach', 'lake-worth-beach', 'boynton-beach', 'palm-beach-gardens', 'delray-beach'],
     faq: [
       {
         question: 'Do you work on barn and trailer bay doors, not just the house?',
@@ -266,6 +269,88 @@ export const palmBeachTreasureCoastCities: City[] = [
         question: 'Can you come during show season, and what about when we leave?',
         answer:
           'Same day, seven days a week, through the season. If you are a seasonal household, the best time to have the door checked is before you leave in April or May. A tune-up at $85 to $160 catches a tired spring before it snaps on an empty house, and it is also the right time to test the manual release and the battery backup ahead of hurricane season.',
+      },
+    ],
+  },
+  {
+    slug: 'lake-worth-beach',
+    name: 'Lake Worth Beach',
+    region: 'palm-beach-treasure-coast',
+    county: 'Palm Beach County',
+    tier: 2,
+    metaTitle: 'Garage Door Repair in Lake Worth Beach, FL | From $150',
+    metaDescription:
+      'Garage door repair in Lake Worth Beach and suburban Lake Worth, FL. Springs from $150, cables from $95, openers installed from $275, commercial doors quoted. Same-day service.',
+    answer:
+      'Garage door repair in Lake Worth Beach starts at $150 per spring, $95 for cable repair and $275 for a new opener installed, with same-day service seven days a week. We cover the city itself and the unincorporated Lake Worth addresses west of it, and we install commercial doors, including the Amarr 2400 and 2500 series, for the warehouse and service bays in the area. A replacement door needs a Florida Product Approval and a permit from the right building department, which is the city inside the limits and Palm Beach County outside them.',
+    intro: [
+      'Lake Worth Beach is two places that share a name. The city, renamed from Lake Worth in 2019, is some of the oldest housing in Palm Beach County: 1920s to 1950s bungalows and cottages in College Park, Mango Groves, Tropical Ridge and the streets between Dixie Highway and the Lake Worth Lagoon, where a garage, if there is one, is often small, detached and set at the back of a narrow lot. West of the city, "Lake Worth" on an envelope usually means unincorporated Palm Beach County, mile after mile of 1970s to 1990s subdivisions along Lake Worth Road, Lantana Road and Jog Road with attached two car garages and 16 foot doubles.',
+      'The failures follow the housing. In the old city it is age and salt: single doors that have been cycling for decades, cables and bottom brackets rusting within a couple of miles of the lagoon, and openers that were added long after the garage was built, sometimes in less headroom than a standard rail needs. Out west it is volume: thousands of doors that went in within a few years of each other now on their second or third set of springs, and 1990s chain drive openers stripping their gears in summer heat. The area also has a working side, with light industrial and warehouse buildings along the rail corridor and around Boutwell Road, and those bays are where commercial doors like the Amarr 2400 and 2500 series come in.',
+    ],
+    localNotes: [
+      '1920s to 1950s bungalows in the old city with small, often detached garages and low headroom',
+      '1970s to 1990s subdivisions in unincorporated Lake Worth with doubles aging in bulk',
+      'Salt air near the Lake Worth Lagoon rusts cables and bottom brackets first',
+      'City permit inside the limits, Palm Beach County permit for unincorporated Lake Worth addresses',
+      'Commercial bays in the light industrial areas, where we quote Amarr 2400 and 2500 series doors',
+    ],
+    nearby: ['west-palm-beach', 'boynton-beach', 'wellington', 'delray-beach'],
+    faq: [
+      {
+        question: 'My address says Lake Worth but I am not in the city. Do you still cover it?',
+        answer:
+          'Yes. Most "Lake Worth" addresses west of the city limits are unincorporated Palm Beach County, and we cover all of it. The only practical difference is the permit for a replacement door, which goes through the county rather than the city. Repairs such as springs, cables and openers need no permit either way.',
+      },
+      {
+        question: 'Do you install commercial doors in Lake Worth Beach?',
+        answer:
+          'Yes. We supply and install commercial steel sectional doors, including the Amarr 2400 series for openings up to 30 ft 2 in wide and the more economical 2500 series for openings up to 20 ft 2 in wide. Every commercial door is quoted after we measure, with the wind load option specified at order and the Florida Product Approval on the permit.',
+      },
+      {
+        question: 'Our old detached garage has very little space above the door. Can it take an opener?',
+        answer:
+          'Usually. A standard rail opener needs about 12 inches of headroom above the door, which many of the older garages in the city do not have. A low headroom track kit or a wall mounted jackshaft opener, $450 to $800 installed, solves it in most cases. We measure first and tell you which one fits.',
+      },
+    ],
+  },
+  {
+    slug: 'north-palm-beach',
+    name: 'North Palm Beach',
+    region: 'palm-beach-treasure-coast',
+    county: 'Palm Beach County',
+    tier: 3,
+    metaTitle: 'Garage Door Repair in North Palm Beach, FL | From $150',
+    metaDescription:
+      'Garage door repair in North Palm Beach, FL. Springs from $150, rusted cables from $95, impact-rated doors from $1,800, commercial doors quoted. Same-day service near the water.',
+    answer:
+      'Garage door repair in North Palm Beach starts at $150 per spring, $95 for cable repair and $1,800 for an impact-rated door installed. Almost every house in the village is within a short distance of the Intracoastal or a canal, so salt corrosion on cables, bottom brackets and springs is the main reason doors fail early here. A replacement door needs a Florida Product Approval for the design pressure at the address and a permit from the village building department.',
+    intro: [
+      'North Palm Beach is a small village between Palm Beach Gardens and Juno Beach, built largely from the late 1950s through the 1970s along the Intracoastal and a network of canals, with Lost Tree Village and newer rebuilds on the larger waterfront lots. The original houses are single story concrete block with attached one and two car garages, and a lot of them have since been remodeled or rebuilt, which means a mix of 60 year old openings and brand new impact doors on the same street.',
+      'Being on the water is the whole story for the doors. Salt air turns cables orange and stiff, rots bottom brackets where they meet a damp slab and pits spring coils until they break early, and a door with a corroded cable usually has a damaged drum too. Coastal addresses also carry some of the highest design wind pressure in the county, so the rating a replacement door needs depends on the street. The village also has marinas, boat storage and commercial buildings along U.S. 1 and the Intracoastal, and those wider openings are where commercial doors such as the Amarr 2400 and 2500 series are specified.',
+    ],
+    localNotes: [
+      '1950s to 1970s concrete block houses on canals and the Intracoastal, many remodeled or rebuilt',
+      'Salt corrosion on cables, drums, bottom brackets and springs is the leading failure',
+      'High coastal design wind pressure, so the rated door depends on the address',
+      'Village permit for a replacement door; repairs need none',
+      'Marina, boat storage and commercial openings along U.S. 1 where we quote Amarr commercial doors',
+    ],
+    nearby: ['palm-beach-gardens', 'jupiter', 'west-palm-beach', 'wellington'],
+    faq: [
+      {
+        question: 'Everything on my garage door is rusting. What should be replaced first?',
+        answer:
+          'The cables and bottom brackets, because they carry the load and fail without warning. Cable repair is $95 to $300, and on a corroded door we price cable and drum together at $225 to $400 so there is no second visit. We fit galvanized or stainless hardware on the coast as standard and check the springs for pitting at the same time.',
+      },
+      {
+        question: 'Should I choose an impact-rated door on the water in North Palm Beach?',
+        answer:
+          'Code requires a door rated for the wind pressure at your address, and on the water that pressure is high. A wind-rated door meets code from $950 installed. An impact-rated door, from $1,800, is also tested against flying debris, and it is what most owners on the Intracoastal and the canals choose when they replace. Ask your insurer whether it earns a wind mitigation credit.',
+      },
+      {
+        question: 'Do you install commercial and boat storage doors in North Palm Beach?',
+        answer:
+          'Yes, as long as it is a sectional overhead door. We supply and install commercial doors including the Amarr 2400 series for openings up to 30 ft 2 in wide and the 2500 series up to 20 ft 2 in wide, quoted after we measure, with the wind load option and the Florida Product Approval on the permit.',
       },
     ],
   },

@@ -1,5 +1,5 @@
 /**
- * Palm Beach y la Costa del Tesoro: espejo en español de las ocho
+ * Palm Beach y la Costa del Tesoro: espejo en español de las diez
  * páginas de área de servicio, con las mismas claves que
  * cities/palm-beach-treasure-coast.ts.
  *
@@ -54,7 +54,7 @@ export const palmBeachTreasureCoastCitiesEs: Record<string, CityEs> = {
     answer:
       'La reparación de una puerta de garaje en West Palm Beach comienza en $150 por resorte, $95 por reparación de cable y $275 por un motor nuevo instalado. Atendemos el mismo día los siete días de la semana, desde los barrios viejos al este del I-95 hasta las urbanizaciones al oeste del Turnpike, siempre con presupuesto por escrito antes de empezar.',
     intro: [
-      'West Palm Beach es la casa de nuestro número 561 y la mezcla de vivienda más amplia que cubrimos en el condado de Palm Beach. Al este del I-95 están los barrios de los años veinte a cincuenta, entre ellos Flamingo Park, El Cid y Northwood, donde los garajes son chicos, muchas veces separados de la casa y a veces demasiado bajos para un motor de riel estándar. Al oeste del Turnpike, a lo largo de Okeechobee Boulevard, están las urbanizaciones cerradas de los noventa y los dos mil, con garajes para dos y tres autos cuyas puertas se instalaron todas con pocos años de diferencia.',
+      'West Palm Beach tiene la mezcla de vivienda más amplia que cubrimos en el condado de Palm Beach. Al este del I-95 están los barrios de los años veinte a cincuenta, entre ellos Flamingo Park, El Cid y Northwood, donde los garajes son chicos, muchas veces separados de la casa y a veces demasiado bajos para un motor de riel estándar. Al oeste del Turnpike, a lo largo de Okeechobee Boulevard, están las urbanizaciones cerradas de los noventa y los dos mil, con garajes para dos y tres autos cuyas puertas se instalaron todas con pocos años de diferencia.',
       'En los barrios viejos las llamadas son por cables, rodillos y óxido en puertas sencillas que llevan décadas subiendo y bajando, y por motores que se atornillaron años después de construida la casa. En las comunidades del oeste el problema es el conteo de ciclos: una puerta instalada en 1998 con un resorte de 10,000 ciclos ya va en su segundo o tercer juego, y el motor que vino con la casa tiene una tarjeta lógica que aguantó 25 veranos a más de 100°F. West Palm Beach queda fuera de la HVHZ, pero el condado sigue siendo zona de viento alto, así que una puerta de reemplazo necesita una aprobación de producto de Florida y un permiso de construcción del departamento de la ciudad, tramitado por un contratista con licencia.',
     ],
     localNotes: [
@@ -72,7 +72,7 @@ export const palmBeachTreasureCoastCitiesEs: Record<string, CityEs> = {
       {
         question: '¿Cubren toda la ciudad o solo una parte?',
         answer:
-          'Toda la ciudad, más los sectores no incorporados del condado que tienen dirección postal de West Palm Beach. El número es un 561 y timbra en el teléfono de un técnico, no en un centro de llamadas. Dénos la calle cuando llame y le confirmamos la ventana de llegada para ese lado de la ciudad.',
+          'Toda la ciudad, más los sectores no incorporados del condado que tienen dirección postal de West Palm Beach. El número timbra en nuestra línea de despacho, no en un centro de llamadas. Dénos la calle cuando llame y le confirmamos la ventana de llegada para ese lado de la ciudad.',
       },
     ],
   },
@@ -232,6 +232,76 @@ export const palmBeachTreasureCoastCitiesEs: Record<string, CityEs> = {
     ],
   },
 
+  'lake-worth-beach': {
+    metaTitle: 'Reparación de Puertas de Garaje en Lake Worth Beach | $150',
+    metaDescription:
+      'Reparación de puertas de garaje en Lake Worth Beach y Lake Worth, FL. Resortes desde $150, cables desde $95, motor instalado desde $275 y puertas comerciales cotizadas. Servicio el mismo día.',
+    answer:
+      'La reparación de una puerta de garaje en Lake Worth Beach comienza en $150 por resorte, $95 por reparación de cable y $275 por un motor nuevo instalado, con servicio el mismo día los siete días de la semana. Cubrimos la ciudad y las direcciones no incorporadas de Lake Worth al oeste, e instalamos puertas comerciales, incluidas las series Amarr 2400 y 2500, para las bodegas y talleres de la zona. Una puerta de reemplazo necesita una aprobación de producto de Florida y un permiso del departamento de construcción que corresponde: la ciudad dentro de sus límites y el condado de Palm Beach fuera de ellos.',
+    intro: [
+      'Lake Worth Beach son dos lugares con el mismo nombre. La ciudad, que se llamaba Lake Worth hasta 2019, tiene parte de las casas más antiguas del condado de Palm Beach: bungalós y casitas de los años veinte a cincuenta en College Park, Mango Groves, Tropical Ridge y las calles entre Dixie Highway y la laguna de Lake Worth, donde el garaje, si lo hay, suele ser chico, separado de la casa y al fondo de un lote angosto. Al oeste de la ciudad, "Lake Worth" en un sobre casi siempre significa condado de Palm Beach no incorporado: kilómetros de urbanizaciones de los setenta a los noventa sobre Lake Worth Road, Lantana Road y Jog Road, con garajes para dos autos y puertas dobles de 16 pies.',
+      'Las fallas siguen a las casas. En la ciudad vieja es la edad y el salitre: puertas sencillas que llevan décadas trabajando, cables y soportes inferiores oxidados a un par de millas de la laguna, y motores agregados mucho después de construido el garaje, a veces con menos espacio arriba del que pide un riel estándar. En el oeste es el volumen: miles de puertas instaladas en los mismos pocos años que ya van por su segundo o tercer juego de resortes, y motores de cadena de los noventa que se comen el engranaje con el calor del verano. La zona también tiene su lado de trabajo, con bodegas y naves de industria ligera junto a la vía del tren y alrededor de Boutwell Road, y ahí es donde entran puertas comerciales como las series Amarr 2400 y 2500.',
+    ],
+    localNotes: [
+      'Bungalós de los años veinte a cincuenta en la ciudad vieja, con garajes chicos, muchas veces separados y con poco espacio arriba',
+      'Urbanizaciones de los setenta a los noventa en Lake Worth no incorporado, con puertas dobles que envejecen juntas',
+      'El aire salino cerca de la laguna de Lake Worth oxida primero los cables y los soportes inferiores',
+      'Permiso de la ciudad dentro de sus límites y del condado de Palm Beach para las direcciones no incorporadas',
+      'Naves comerciales en las zonas de industria ligera, donde cotizamos puertas Amarr serie 2400 y 2500',
+    ],
+    faq: [
+      {
+        question: 'Mi dirección dice Lake Worth pero no estoy dentro de la ciudad. ¿Igual me atienden?',
+        answer:
+          'Sí. La mayoría de las direcciones "Lake Worth" al oeste de los límites de la ciudad son condado de Palm Beach no incorporado, y lo cubrimos completo. La única diferencia práctica es el permiso para una puerta de reemplazo, que se tramita con el condado y no con la ciudad. Las reparaciones como resortes, cables y motores no necesitan permiso en ninguno de los dos casos.',
+      },
+      {
+        question: '¿Instalan puertas comerciales en Lake Worth Beach?',
+        answer:
+          'Sí. Suministramos e instalamos puertas comerciales seccionales de acero, incluida la serie Amarr 2400 para vanos de hasta 30 pies 2 pulg de ancho y la serie 2500, más económica, para vanos de hasta 20 pies 2 pulg. Cada puerta comercial se cotiza después de medir, con la opción de carga de viento especificada al ordenar y la aprobación de producto de Florida en el permiso.',
+      },
+      {
+        question: 'Nuestro garaje viejo tiene muy poco espacio arriba de la puerta. ¿Se le puede poner motor?',
+        answer:
+          'Casi siempre. Un motor de riel estándar necesita unas 12 pulgadas libres arriba de la puerta, y muchos garajes antiguos de la ciudad no las tienen. Un kit de riel para poco espacio o un motor de montaje lateral en la pared, de $450 a $800 instalado, lo resuelve en la mayoría de los casos. Medimos primero y le decimos cuál le queda.',
+      },
+    ],
+  },
+  'north-palm-beach': {
+    metaTitle: 'Reparación de Puertas de Garaje en North Palm Beach | $150',
+    metaDescription:
+      'Reparación de puertas de garaje en North Palm Beach, FL. Resortes desde $150, cables oxidados desde $95, puertas contra impactos desde $1,800 y puertas comerciales cotizadas. Servicio el mismo día.',
+    answer:
+      'La reparación de una puerta de garaje en North Palm Beach comienza en $150 por resorte, $95 por reparación de cable y $1,800 por una puerta resistente a impactos instalada. Casi todas las casas del pueblo quedan cerca del Intracoastal o de un canal, así que la corrosión salina en cables, soportes inferiores y resortes es la razón principal por la que las puertas fallan antes de tiempo aquí. Una puerta de reemplazo necesita una aprobación de producto de Florida para la presión de diseño de la dirección y un permiso del departamento de construcción del pueblo.',
+    intro: [
+      'North Palm Beach es un pueblo chico entre Palm Beach Gardens y Juno Beach, construido sobre todo desde finales de los cincuenta hasta los setenta a lo largo del Intracoastal y de una red de canales, con Lost Tree Village y casas reconstruidas en los lotes grandes frente al agua. Las casas originales son de bloque de concreto de un piso con garaje para uno o dos autos, y muchas ya se remodelaron o se reconstruyeron, lo que deja en la misma calle vanos de 60 años junto a puertas nuevas contra impactos.',
+      'Estar junto al agua lo explica todo. El aire salino deja los cables anaranjados y tiesos, pudre los soportes inferiores donde tocan un piso húmedo y pica las espiras del resorte hasta que se rompe antes de tiempo, y una puerta con el cable corroído casi siempre tiene también el tambor dañado. Las direcciones costeras además tienen de las presiones de diseño de viento más altas del condado, así que la certificación que necesita una puerta de reemplazo depende de la calle. El pueblo también tiene marinas, depósitos de lanchas y edificios comerciales sobre la U.S. 1 y el Intracoastal, y en esos vanos más anchos es donde se especifican puertas comerciales como las series Amarr 2400 y 2500.',
+    ],
+    localNotes: [
+      'Casas de bloque de los cincuenta a los setenta sobre canales y el Intracoastal, muchas remodeladas o reconstruidas',
+      'La corrosión salina en cables, tambores, soportes inferiores y resortes es la falla principal',
+      'Presión de diseño de viento alta en la costa, así que la puerta certificada depende de la dirección',
+      'Permiso del pueblo para una puerta de reemplazo; las reparaciones no lo necesitan',
+      'Vanos de marinas, depósitos de lanchas y comercios sobre la U.S. 1 donde cotizamos puertas comerciales Amarr',
+    ],
+    faq: [
+      {
+        question: 'Todo en mi puerta de garaje se está oxidando. ¿Qué conviene cambiar primero?',
+        answer:
+          'Los cables y los soportes inferiores, porque cargan el peso y fallan sin avisar. La reparación de cables cuesta de $95 a $300, y en una puerta corroída cotizamos cable y tambor juntos, de $225 a $400, para que no haga falta una segunda visita. En la costa ponemos herrajes galvanizados o de acero inoxidable como estándar y revisamos al mismo tiempo si los resortes tienen picaduras.',
+      },
+      {
+        question: '¿Me conviene una puerta resistente a impactos frente al agua en North Palm Beach?',
+        answer:
+          'El código exige una puerta certificada para la presión de viento de su dirección, y frente al agua esa presión es alta. Una puerta certificada contra viento cumple el código desde $950 instalada. Una resistente a impactos, desde $1,800, además está probada contra objetos lanzados por el viento, y es la que eligen la mayoría de los dueños sobre el Intracoastal y los canales cuando cambian la puerta. Pregúntele a su aseguradora si le da un crédito por mitigación de viento.',
+      },
+      {
+        question: '¿Instalan puertas comerciales y de depósitos de lanchas en North Palm Beach?',
+        answer:
+          'Sí, siempre que sea una puerta seccional de techo. Suministramos e instalamos puertas comerciales, incluida la serie Amarr 2400 para vanos de hasta 30 pies 2 pulg de ancho y la serie 2500 hasta 20 pies 2 pulg, cotizadas después de medir, con la opción de carga de viento y la aprobación de producto de Florida en el permiso.',
+      },
+    ],
+  },
   'port-st-lucie': {
     metaTitle: 'Puertas de Garaje en Port St. Lucie | Desde $150',
     metaDescription:

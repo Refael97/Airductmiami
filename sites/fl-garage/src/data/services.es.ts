@@ -194,9 +194,9 @@ export const serviceEs: Record<string, ServiceEs> = {
   'smart-garage-door-opener-installation': {
     name: 'Instalación de Motor Inteligente WiFi para Puerta de Garaje',
     shortName: 'Motor Inteligente',
-    metaTitle: 'Motor Inteligente para Puerta de Garaje | Desde $350',
+    metaTitle: 'Garaje Inteligente: Motor WiFi para Puerta de Garaje | $350',
     metaDescription:
-      'Motores WiFi con batería de respaldo y opción de cámara instalados en Florida. Control desde el celular, aviso de puerta abierta y respaldo en apagones.',
+      'Convierta su garaje en un garaje inteligente: motores WiFi con batería de respaldo y opción de cámara instalados en Florida. Control desde el celular, aviso de puerta abierta y respaldo en apagones.',
     priceNote: 'unidad WiFi con batería de respaldo y opciones de cámara',
     priceFactors: [
       'La unidad elegida: un motor WiFi con batería de respaldo queda en la parte baja del rango y uno con cámara integrada en la parte alta',

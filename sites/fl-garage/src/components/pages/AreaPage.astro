@@ -19,8 +19,9 @@ import { iconFor } from '../../data/serviceIcons';
 import { serviceSchema } from '../../lib/schema';
 import { guidesForCity } from '../../lib/relatedContent';
 import { business } from '../../data/business';
-import { ui, paths, serviceHref, areaHref, blogHref, money, otherLocale, type Locale } from '../../data/ui';
-import { svc, region as regionOf, city as cityOf } from '../../lib/i18n';
+import { ui, paths, serviceHref, areaHref, brandHref, blogHref, money, otherLocale, type Locale } from '../../data/ui';
+import { svc, region as regionOf, city as cityOf, brand as brandOf } from '../../lib/i18n';
+import { brands } from '../../data/products';
 
 type Props =
   | { lang: Locale; kind: 'region'; region: Region }
@@ -69,7 +70,16 @@ const priceRows = priceTableOrder
   .filter((s): s is Service => Boolean(s))
   .map((s) => svc(lang, s));
 
-const topServices = services.slice(0, 6).map((s) => svc(lang, s));
+/* Every service, not the first six. The cut used to stop before tune-up,
+   emergency repair and replacement, so 52 city pages linked to none of them,
+   and Search Console then showed exactly those searches ("garage door tune-up
+   in pembroke pines", "garage door replacement in pembroke pines") with the
+   city page stuck past position 60. */
+const topServices = services.map((s) => svc(lang, s));
+
+/* Brands, so a city page points at the brand and model pages people search
+   by name with a town attached ("amarr 2400 wellington"). */
+const brandLinks = brands.map((b) => brandOf(lang, b));
 const emergency = svc(lang, getService('emergency-garage-door-repair')!);
 
 /** Region and city pages both describe the same service, scoped to a place. */
@@ -181,6 +191,13 @@ const localFaq = isRegion ? region.faq : city!.faq.concat(universal);
         </div>
         <p class="all-link"><a href={p.services}>{t.allServicesCost}</a></p>
 
+        <h2>{lang === 'es' ? `Marcas que reparamos e instalamos ${inPhrase}` : `Brands we repair and install ${inPhrase}`}</h2>
+        <ul class="brand-links">
+          {brandLinks.map((b) => (
+            <li><a href={brandHref(lang, b.slug)}>{b.name}</a></li>
+          ))}
+        </ul>
+
         <PriceDisclaimer variant="block" lang={lang} />
 
         <FAQ items={localFaq} title={t.areaQuestions(inPhrase)} lang={lang} />
@@ -280,6 +297,12 @@ const localFaq = isRegion ? region.faq : city!.faq.concat(universal);
   .svc-name { font-weight: 700; font-size: 0.9rem; color: var(--c-ink); }
   .svc-price { margin-left: auto; font-size: 0.82rem; font-weight: 800; color: var(--c-primary); white-space: nowrap; }
   .all-link { font-weight: 700; font-size: 0.92rem; }
+  .brand-links { list-style: none; padding: 0; margin: 0.9rem 0 1.2rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .brand-links a {
+    display: inline-block; padding: 0.35rem 0.85rem; border: 1px solid var(--c-line); border-radius: 999px;
+    background: #fff; font-size: 0.88rem; font-weight: 600; text-decoration: none;
+  }
+  .brand-links a:hover { border-color: var(--c-primary); }
 
   .area-aside { position: sticky; top: 6.5rem; display: grid; gap: 1.2rem; }
   .aside-card h3 { font-size: 1rem; margin-bottom: 0.7rem; }

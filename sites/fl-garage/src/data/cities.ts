@@ -1,5 +1,5 @@
 /**
- * The 52 service-area pages, per research/fl-garage/BRIEF.md section 6.
+ * The 54 service-area pages, per research/fl-garage/BRIEF.md section 6.
  *
  * Selection is weighted by search volume (Semrush, 6 September 2026),
  * garage density and job value. Every city carries genuinely local copy:

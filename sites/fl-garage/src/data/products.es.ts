@@ -629,6 +629,11 @@ export const brandEs: Record<string, BrandEs> = {
     ],
     faq: [
       {
+        question: "¿Son distribuidores autorizados de Clopay?",
+        answer:
+          "No, y lo decimos claramente. Somos una empresa independiente de reparación e instalación. Reparamos cualquier puerta Clopay e instalamos puertas Clopay nuevas pedidas por la cadena de suministro, con la aprobación de producto de Florida o el NOA de Miami-Dade del modelo exacto en el permiso, y la garantía del fabricante cubre la puerta. Lo que le damos que una sala de exhibición no siempre da es un precio instalado por escrito que incluye el permiso, el retiro de la puerta vieja y resortes calculados para el peso de la puerta nueva.",
+      },
+      {
         question: '¿Pueden conseguir una sección Clopay para una puerta vieja?',
         answer:
           'Muchas veces sí, porque Clopay mantiene sus perfiles en producción más tiempo que la mayoría. El color es lo difícil de igualar en una puerta que lleva una década desvaneciéndose bajo el sol de Florida. Revisamos la disponibilidad y le mostramos la comparación honesta antes de que se comprometa, y le decimos cuándo conviene más una puerta nueva certificada desde $950.',

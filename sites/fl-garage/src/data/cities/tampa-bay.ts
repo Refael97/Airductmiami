@@ -178,6 +178,16 @@ export const tampaBayCities: City[] = [
         answer:
           'It may. Florida\'s wind mitigation inspection, form OIR-B1-1802, records whether the garage door has rated protection, and a rated door can contribute to a premium credit. We do not promise a dollar figure; ask your insurer for the credit schedule. A new wind-rated door starts at $950 installed and an impact-rated door starts around $1,800, both with the permit in the quote.',
       },
+      {
+        question: "What does garage door repair cost in Clearwater?",
+        answer:
+          "Springs start at $150 each, cable repair at $95, opener repair at $95, off track repair at $140 and a new opener installed at $275. A storm damage assessment and repair starts at $150. Every job gets a written estimate before we start, and near the beach we price cable and drum together, $225 to $400, because salt air usually takes both.",
+      },
+      {
+        question: "Do you cover Clearwater Beach, Countryside and Dunedin?",
+        answer:
+          "Yes. We cover all of Clearwater, from Clearwater Beach, Island Estates and Sand Key across downtown and Belleair to Countryside, and the surrounding Pinellas towns, same day, seven days a week. Tell us the street when you call and we confirm the arrival window.",
+      },
     ],
   },
   {

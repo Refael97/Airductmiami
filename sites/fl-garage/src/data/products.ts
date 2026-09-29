@@ -679,6 +679,11 @@ export const brands: Brand[] = [
     ],
     faq: [
       {
+        question: "Are you a Clopay authorized dealer?",
+        answer:
+          "No, and we say so plainly. We are an independent repair and installation company. We repair every Clopay door and install new Clopay doors ordered through the supply chain, with the Florida Product Approval or Miami-Dade NOA for the exact model on the permit, and the manufacturer warranty applies to the door itself. What you get from us that a dealer showroom does not always give is a written installed price that includes the permit, removal of the old door and springs sized to the new door's weight.",
+      },
+      {
         question: 'Can you match a Clopay section on an older door?',
         answer:
           'Often, because Clopay keeps profiles in production longer than most. Colour is the harder match on a door that has faded for a decade in Florida sun. We check availability and show you the honest comparison before you commit, and we tell you when the better spend is a new rated door from $950.',

@@ -1,0 +1,268 @@
+---
+/**
+ * One manufacturer model series, either language. See data/brandSeries.ts
+ * for why these pages exist and where every figure on them comes from.
+ *
+ * The specification table is read from the brand's own `series` table
+ * rather than restated, so the brand page and the series page cannot
+ * disagree about a gauge or a width.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
+import AnswerBox from '../AnswerBox.astro';
+import CtaBand from '../CtaBand.astro';
+import FAQ from '../FAQ.astro';
+import { brands } from '../../data/products';
+import { getCity } from '../../data/cities';
+import { seriesForBrand, seriesOf, type SeriesPage } from '../../data/brandSeries';
+import { serviceSchema } from '../../lib/schema';
+import { ui, paths, brandHref, seriesHref, areaHref, serviceHref, otherLocale, type Locale } from '../../data/ui';
+import { brand as brandOf, city as cityOf } from '../../lib/i18n';
+
+interface Props { lang: Locale; base: SeriesPage }
+const { lang, base } = Astro.props;
+const t = ui[lang];
+const p = paths[lang];
+const es = lang === 'es';
+
+const page = seriesOf(lang, base);
+const brand = brandOf(lang, brands.find((b) => b.slug === base.brand)!);
+const table = brand.series!;
+
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const href = seriesHref(lang, base.brand, base.slug);
+const url = `${site}${href}`;
+
+const crumbs = [
+  { name: t.breadcrumbHome, href: p.home },
+  { name: t.breadcrumbDoorsOpeners, href: p.buyersGuide },
+  { name: brand.name, href: brandHref(lang, brand.slug) },
+  { name: `${brand.name} ${base.model}`, href },
+];
+
+const towns = base.towns
+  .map((s) => getCity(s))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .map((c) => cityOf(lang, c));
+
+const siblings = seriesForBrand(base.brand)
+  .filter((s) => s.slug !== base.slug)
+  .map((s) => seriesOf(lang, s));
+
+const L = es
+  ? {
+      eyebrow: `${brand.name} comercial`,
+      specs: `Especificaciones de la serie ${base.model}`,
+      compare: 'Comparada con las otras series comerciales',
+      bestFor: 'La elegimos para',
+      notFor: 'Mejor otra opción cuando',
+      towns: 'Ciudades del condado de Palm Beach',
+      questions: `Preguntas sobre la Amarr ${base.model}`,
+      otherSeries: 'Otras series',
+      back: `Todo sobre ${brand.name}`,
+      commercial: 'Instalación de puertas nuevas',
+      related: 'Relacionado',
+    }
+  : {
+      eyebrow: `${brand.name} commercial`,
+      specs: `${base.model} series specifications`,
+      compare: 'Compared with the other commercial series',
+      bestFor: 'We specify it for',
+      notFor: 'Choose something else when',
+      towns: 'Palm Beach County towns',
+      questions: `Amarr ${base.model} questions`,
+      otherSeries: 'Other series',
+      back: `Everything on ${brand.name}`,
+      commercial: 'New door installation',
+      related: 'Related',
+    };
+
+const schema = serviceSchema(site, {
+  name: page.h1,
+  description: page.metaDescription,
+  url,
+  slug: `${base.brand}-${base.slug}`,
+});
+---
+<BaseLayout title={page.metaTitle} description={page.metaDescription} schema={schema} lang={lang} altHref={seriesHref(otherLocale(lang), base.brand, base.slug)}>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="b-hero">
+    <div class="container">
+      <span class="eyebrow">{L.eyebrow}</span>
+      <div class="stripe-rule" aria-hidden="true"></div>
+      <h1>{page.h1}</h1>
+      <p class="lead">{page.metaDescription}</p>
+      <div class="hero-actions">
+        <a href={p.contact} class="btn btn-accent btn-lg">{t.getFreeQuote}</a>
+        <a href={brandHref(lang, brand.slug)} class="btn btn-outline btn-lg">{L.back}</a>
+      </div>
+      <p class="disclosure">{t.brandDisclosure(brand.name)}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container b-body">
+      <article class="prose">
+        <AnswerBox text={page.answer} lang={lang} />
+
+        {page.intro.map((para) => <p>{para}</p>)}
+
+        <h2>{page.variantsTitle}</h2>
+        <div class="variants">
+          {page.variants.map((v) => (
+            <div class="variant">
+              <span class="v-code">{v.code}</span>
+              <span class="v-name">{v.name}</span>
+              <p>{v.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2>{L.specs}</h2>
+        <div class="spec-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th scope="col">{brand.name}</th>
+                <th scope="col" class="this-col">{table.columns[base.specColumn]}</th>
+                {table.columns.map((c, i) => i !== base.specColumn && <th scope="col">{c}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {table.rows.map((row) => (
+                <tr>
+                  <th scope="row">{row.label}</th>
+                  <td class="this-col">{row.values[base.specColumn]}</td>
+                  {row.values.map((v, i) => i !== base.specColumn && <td>{v}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="spec-source">{table.source}</p>
+
+        <h2>{page.fitTitle}</h2>
+        <div class="fit">
+          <div>
+            <h3>{L.bestFor}</h3>
+            <ul class="check-list">{page.bestFor.map((x) => <li>{x}</li>)}</ul>
+          </div>
+          <div>
+            <h3>{L.notFor}</h3>
+            <ul class="cross-list">{page.notFor.map((x) => <li>{x}</li>)}</ul>
+          </div>
+        </div>
+
+        <h2>{page.windTitle}</h2>
+        {page.wind.map((para) => <p>{para}</p>)}
+
+        <h2>{page.whereTitle}</h2>
+        {page.where.map((para) => <p>{para}</p>)}
+        <ul class="town-links" aria-label={L.towns}>
+          {towns.map((c) => <li><a href={areaHref(lang, c.slug)}>{c.name}</a></li>)}
+        </ul>
+
+        <h2>{page.quoteTitle}</h2>
+        <ol class="steps">
+          {page.quote.map((s) => (
+            <li><strong>{s.title}.</strong> {s.text}</li>
+          ))}
+        </ol>
+
+        <FAQ items={page.faq} title={L.questions} lang={lang} />
+      </article>
+
+      <aside class="b-aside">
+        <div class="card aside-card">
+          <h3>{L.otherSeries}</h3>
+          <ul class="plain">
+            {siblings.map((s) => (
+              <li><a href={seriesHref(lang, s.brand, s.slug)}>{brand.name} {s.model}</a></li>
+            ))}
+            <li><a href={brandHref(lang, brand.slug)}>{brand.name} 2000</a></li>
+          </ul>
+          <a href={brandHref(lang, brand.slug)} class="aside-more">{L.back} →</a>
+        </div>
+        <div class="card aside-card">
+          <h3>{L.related}</h3>
+          <ul class="plain">
+            <li><a href={serviceHref(lang, 'new-garage-door-installation')}>{L.commercial}</a></li>
+            <li><a href={serviceHref(lang, 'garage-door-spring-replacement')}>{es ? 'Cambio de resortes' : 'Spring replacement'}</a></li>
+            <li><a href={serviceHref(lang, 'garage-door-panel-replacement')}>{es ? 'Cambio de secciones' : 'Section replacement'}</a></li>
+            <li><a href={areaHref(lang, 'palm-beach-treasure-coast')}>{es ? 'Palm Beach y la Costa del Tesoro' : 'Palm Beach and the Treasure Coast'}</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CtaBand lang={lang} />
+</BaseLayout>
+
+<style>
+  .b-hero { background: var(--grad-hero); padding-block: 2.6rem 2.4rem; }
+  .b-hero .lead { max-width: 46rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.3rem; }
+  .disclosure { font-size: 0.82rem; color: var(--c-muted); margin: 1.1rem 0 0; max-width: 46rem; }
+
+  .b-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+  .b-body .prose { max-width: none; }
+
+  .variants { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.2rem 0 0.4rem; }
+  .variant { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius); box-shadow: var(--shadow-card); padding: 1.1rem 1.2rem; }
+  .variant p { font-size: 0.92rem; margin: 0.5rem 0 0; }
+  .v-code { display: block; font-family: var(--font-display); font-size: 1.6rem; line-height: 1.1; color: var(--c-primary); }
+  .v-name { display: block; font-weight: 700; color: var(--c-ink); font-size: 0.9rem; }
+
+  .fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem; }
+  .fit h3 { font-size: 1rem; margin: 0.6rem 0 0.4rem; }
+  .cross-list { padding-left: 1.2rem; }
+  .cross-list li { margin-bottom: 0.4rem; }
+
+  .town-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.8rem 0 0; }
+  .town-links a {
+    display: inline-block; padding: 0.35rem 0.8rem; border: 1px solid var(--c-line); border-radius: 999px;
+    background: #fff; font-size: 0.88rem; font-weight: 600; text-decoration: none;
+  }
+  .town-links a:hover { border-color: var(--c-primary); }
+
+  .steps { padding-left: 1.3rem; }
+  .steps li { margin-bottom: 0.6rem; }
+
+  /* Same table treatment as BrandPage.astro, with this series pulled into the
+     first value column and tinted so the row reads as "this door". */
+  .spec-wrap { overflow-x: auto; margin: 1.4rem 0 0.6rem; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+  .spec-table {
+    display: table; width: 100%; min-width: 40rem; margin: 0; font-size: 0.9rem;
+    border-collapse: separate; border-spacing: 0;
+  }
+  .spec-table th, .spec-table td { border: 0; border-bottom: 1px solid var(--c-line); padding: 0.62rem 0.9rem; text-align: left; vertical-align: top; }
+  .spec-table tbody tr:last-child th, .spec-table tbody tr:last-child td { border-bottom: 0; }
+  .spec-table thead th { background: var(--c-primary-light); color: var(--c-primary); font-size: 0.82rem; white-space: nowrap; }
+  .spec-table tbody th {
+    position: sticky; left: 0; z-index: 1;
+    background: #fff; box-shadow: 1px 0 0 var(--c-line), 7px 0 7px -7px rgba(15, 39, 71, 0.22);
+    font-weight: 700; color: var(--c-ink); white-space: nowrap;
+  }
+  .spec-table tbody tr:nth-child(even) th, .spec-table tbody tr:nth-child(even) td { background: var(--c-bg-alt); }
+  .spec-table td.this-col { font-weight: 700; color: var(--c-ink); }
+  .spec-source { font-size: 0.82rem; color: var(--c-muted); margin: 0 0 0.4rem; }
+
+  @media (max-width: 520px) {
+    .spec-table tbody th { white-space: normal; max-width: 7.5rem; }
+    .spec-table th, .spec-table td { padding: 0.6rem 0.7rem; }
+  }
+
+  .b-aside { position: sticky; top: 6.5rem; display: grid; gap: 1rem; }
+  .aside-card h3 { font-size: 1rem; margin-bottom: 0.8rem; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li { padding: 0.45rem 0; border-bottom: 1px solid var(--c-line); font-size: 0.9rem; }
+  .plain li:last-child { border-bottom: 0; }
+  .aside-more { display: inline-block; margin-top: 0.9rem; font-size: 0.88rem; font-weight: 700; }
+
+  @media (max-width: 960px) {
+    .b-body { grid-template-columns: minmax(0, 1fr); }
+    .b-aside { position: static; }
+  }
+</style>

@@ -124,6 +124,11 @@ export const browardCountyCities: City[] = [
         answer:
           'If the house was built in the 1980s or 1990s and the springs have never been changed, yes. A spring on a daily-use double door lasts about 10,000 cycles, roughly 7 to 10 years, and yours is likely well past it. Replacing both springs on your schedule is $150 to $350 per spring plus $120 to $250 for doing the pair. Replacing one after it snaps on a Sunday adds the emergency premium of $150 to $300.',
       },
+      {
+        question: "How much does it cost to replace a garage door in Coral Springs?",
+        answer:
+          "A hurricane-rated door with a Miami-Dade NOA starts at $1,800 installed with the permit, because Coral Springs is in Broward and inside the HVHZ. Insulated, carriage style and larger doors cost more, and the city appearance code and most HOAs have to approve the style and color first. We give you the manufacturer sheet for the application and do not order until it is approved.",
+      },
     ],
   },
   {
@@ -134,7 +139,7 @@ export const browardCountyCities: City[] = [
     tier: 1,
     metaTitle: 'Garage Door Repair in Pembroke Pines, FL | From $150',
     metaDescription:
-      'Garage door repair in Pembroke Pines, FL. Springs from $150, cable repair from $95, openers installed from $275. Same-day service, written estimate first.',
+      'Garage door repair, replacement and tune-ups in Pembroke Pines, FL. Springs from $150, tune-up from $85, NOA-rated doors from $1,800. Same-day service, written estimate first.',
     answer:
       'Garage door repair in Pembroke Pines starts at $150 per spring, $95 for cable repair and $275 for a new opener installed. Most of western Pembroke Pines was built in a single 1990s wave, so the doors in Silver Lakes, Chapel Trail and Pembroke Falls are hitting spring and opener failure at the same time. Pembroke Pines is in the HVHZ, so a replacement door needs a Miami-Dade NOA rating and a permit.',
     intro: [
@@ -158,6 +163,21 @@ export const browardCountyCities: City[] = [
         question: 'Does my HOA need to approve a replacement door in Pembroke Pines?',
         answer:
           'In most of the western communities, yes. Associations there typically require the door to match the house color and the style on the street. We give you the manufacturer sheet and color sample for the application and we do not order until the approval is in. The city permit is separate, and because Pembroke Pines is in the HVHZ it requires a door with a Miami-Dade NOA. Hurricane-rated doors start at $1,800 with the permit in the quote.',
+      },
+      {
+        question: "How much is a garage door tune-up in Pembroke Pines?",
+        answer:
+          "$85 to $160. It covers a balance test, the rollers, hinges, cables, drums and bottom brackets, lubrication, tightening the hardware, the safety sensors and auto-reverse, the manual release, and the opener's force and limits. On a 1990s door in the western communities it is also how you find out the springs are near the end before one snaps. Once a year is right for most houses, ideally in April or May before hurricane season.",
+      },
+      {
+        question: "What does a garage door replacement cost in Pembroke Pines?",
+        answer:
+          "A hurricane-rated replacement door with a Miami-Dade NOA starts at $1,800 installed, with the permit included in the quote, because Pembroke Pines is in the HVHZ. The price rises with size, insulation and finish, and a three car garage with a double and a single is quoted per door. If only one or two sections are damaged, section replacement from $250 is usually the cheaper route, as long as the profile is still made.",
+      },
+      {
+        question: "Do you do regular garage door maintenance in Pembroke Pines, or only repairs?",
+        answer:
+          "Both. Maintenance is the tune-up, $85 to $160, and repairs are priced per job: springs from $150, cables from $95, opener repair from $95, off track repair from $140. A written estimate comes before any work, and there is no charge added for a Saturday or Sunday visit.",
       },
     ],
   },

@@ -46,6 +46,16 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
         answer:
           'Sí. Avísenos cuando llame y enviamos un técnico que habla español. El presupuesto por escrito, la factura y la garantía de un año en piezas y mano de obra dicen lo mismo en cualquiera de los dos idiomas, y todo el sitio está disponible en español bajo /es/.',
       },
+      {
+        question: "¿Cuánto cuesta una puerta de garaje nueva instalada en Miami?",
+        answer:
+          "Desde $1,800 instalada para una puerta certificada contra huracanes con NOA de Miami-Dade, con el permiso incluido en la cotización. Miami está en la HVHZ, así que toda puerta de reemplazo necesita ese NOA. El tamaño, el aislamiento, las ventanas y el acabado suben el precio desde ahí, y una puerta de aluminio y vidrio de vista completa con vidrio contra impactos cuesta bastante más. Cada cotización es por escrito y por puerta antes de ordenar nada.",
+      },
+      {
+        question: "¿Cuánto cuesta reparar una puerta de garaje en Miami?",
+        answer:
+          "Resortes desde $150 cada uno, reparación de cables desde $95, reparación del motor desde $95, puerta descarrilada desde $140 y motor nuevo instalado desde $275. Una sección dañada desde $250. El mantenimiento cuesta de $85 a $160. Recibe un presupuesto por escrito antes de cualquier trabajo, y las reparaciones no necesitan permiso.",
+      },
     ],
   },
 

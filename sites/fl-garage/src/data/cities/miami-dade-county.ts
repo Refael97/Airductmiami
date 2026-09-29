@@ -53,6 +53,16 @@ export const miamiDadeCountyCities: City[] = [
         answer:
           'Yes. Tell us when you call and we send a technician who speaks Spanish. The written estimate, the invoice and the one year parts and labor warranty read the same in either language, and every page on this site is available in Spanish under /es/.',
       },
+      {
+        question: "How much does a new garage door cost in Miami, installed?",
+        answer:
+          "From $1,800 installed for a hurricane-rated door with a Miami-Dade NOA, with the permit included in the quote. Miami is in the HVHZ, so every replacement door needs that NOA. Size, insulation, windows and finish move the price up from there, and a full view aluminum and glass door with impact glazing costs considerably more. Every quote is written, per door, before anything is ordered.",
+      },
+      {
+        question: "What does garage door repair cost in Miami?",
+        answer:
+          "Springs from $150 each, cable repair from $95, opener repair from $95, off track repair from $140 and a new opener installed from $275. A single damaged section is from $250. A tune-up is $85 to $160. You get a written estimate before any work, and repairs do not need a permit.",
+      },
     ],
   },
   {

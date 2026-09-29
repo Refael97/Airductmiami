@@ -107,6 +107,11 @@ export const browardCountyCitiesEs: Record<string, CityEs> = {
         answer:
           'Si la casa es de los años ochenta o noventa y los resortes nunca se han cambiado, sí. Un resorte en una puerta doble de uso diario dura unos 10,000 ciclos, más o menos de 7 a 10 años, y el suyo probablemente ya los pasó. Cambiar los dos cuando usted lo decide cuesta $150 a $350 por resorte más $120 a $250 por hacer el par. Cambiar uno después de que se rompe un domingo suma el recargo por emergencia de $150 a $300.',
       },
+      {
+        question: "¿Cuánto cuesta cambiar una puerta de garaje en Coral Springs?",
+        answer:
+          "Una puerta certificada contra huracanes con NOA de Miami-Dade empieza en $1,800 instalada con el permiso, porque Coral Springs está en Broward, dentro de la HVHZ. Las puertas aisladas, estilo carruaje o más grandes cuestan más, y el código de apariencia de la ciudad y la mayoría de las asociaciones tienen que aprobar primero el estilo y el color. Le entregamos la ficha del fabricante para la solicitud y no ordenamos hasta que esté aprobada.",
+      },
     ],
   },
 
@@ -136,6 +141,16 @@ export const browardCountyCitiesEs: Record<string, CityEs> = {
         question: '¿El HOA tiene que aprobar la puerta de reemplazo en Pembroke Pines?',
         answer:
           'En casi todas las comunidades del oeste, sí. Ahí las asociaciones suelen pedir que la puerta combine con el color de la casa y con el estilo de la cuadra. Le entregamos la hoja del fabricante y la muestra de color para la solicitud, y no pedimos la puerta hasta que llega la aprobación. El permiso de la ciudad es aparte y, como Pembroke Pines está en la zona HVHZ, exige una puerta con NOA de Miami-Dade. Las puertas reforzadas para huracanes empiezan en $1,800 con el permiso incluido en el presupuesto.',
+      },
+      {
+        question: "¿Cuánto cuesta un mantenimiento de puerta de garaje en Pembroke Pines?",
+        answer:
+          "De $85 a $160. Incluye prueba de balance, revisión de rodillos, bisagras, cables, tambores y soportes inferiores, lubricación, ajuste de la tornillería, prueba de los sensores de seguridad y del retroceso automático, la liberación manual, y la fuerza y los límites del motor. En una puerta de los años noventa de las comunidades del oeste también es la forma de saber que los resortes están por terminar antes de que uno se rompa. Una vez al año es lo correcto para la mayoría de las casas, idealmente en abril o mayo antes de la temporada de huracanes.",
+      },
+      {
+        question: "¿Cuánto cuesta cambiar la puerta de garaje en Pembroke Pines?",
+        answer:
+          "Una puerta de reemplazo certificada contra huracanes con NOA de Miami-Dade empieza en $1,800 instalada, con el permiso incluido en la cotización, porque Pembroke Pines está en la HVHZ. El precio sube con el tamaño, el aislamiento y el acabado, y un garaje para tres autos con una puerta doble y una sencilla se cotiza por puerta. Si solo están dañadas una o dos secciones, el cambio de sección desde $250 casi siempre sale más barato, siempre que el perfil se siga fabricando.",
       },
     ],
   },

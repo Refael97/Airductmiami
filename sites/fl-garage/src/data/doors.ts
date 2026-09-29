@@ -336,22 +336,22 @@ export const doorModels: DoorModel[] = [
 
   {
     slug: 'full-view-aluminium',
-    name: 'Full-View Aluminium and Glass Garage Door',
+    name: 'Full-View Aluminum and Glass Garage Door',
     shortName: 'Full-view glass',
-    metaTitle: 'Full-View Glass Garage Door in Florida | Aluminium, Cost Installed',
+    metaTitle: 'Full-View Glass Garage Door in Florida | Aluminum, Cost Installed',
     metaDescription:
-      'Aluminium frame and glass doors installed from $2,800. Where they work in Florida, what the glass does to the rating, and the salt air question.',
+      'Aluminum frame and glass doors installed from $2,800. Where they work in Florida, what the glass does to the rating, and the salt air question.',
     priceLow: 2800,
     priceHigh: 6500,
-    construction: 'Aluminium frame with glass or acrylic panels',
+    construction: 'Aluminum frame with glass or acrylic panels',
     windRated: true,
     impactRated: false,
     hvhz: 'available',
     insulation: 'Minimal. Insulated glazing is available and is not the same as an insulated door.',
     answer:
-      'A full-view door is an aluminium frame filled with glass, installed from about $2,800. It is the contemporary look, it is used a great deal on Florida patios, showrooms and modern builds, and it comes with two Florida specific questions that a salesperson may not raise: what the glass does to your rating and your insurance credit, and how the aluminium behaves in salt air.',
+      'A full-view door is an aluminum frame filled with glass, installed from about $2,800. It is the contemporary look, it is used a great deal on Florida patios, showrooms and modern builds, and it comes with two Florida specific questions that a salesperson may not raise: what the glass does to your rating and your insurance credit, and how the aluminum behaves in salt air.',
     intro: [
-      'The frame is aluminium because it does not rust, which in coastal Florida is a real advantage over steel. Aluminium corrodes rather than rusting, and near salt water it will pit and chalk over time, more slowly than steel rusts but visibly.',
+      'The frame is aluminum because it does not rust, which in coastal Florida is a real advantage over steel. Aluminum corrodes rather than rusting, and near salt water it will pit and chalk over time, more slowly than steel rusts but visibly.',
       'The glass is where the Florida complications live. Glazing has to be considered separately in the rating, impact rated glass is available and expensive, and any glazed opening is part of the all-or-nothing wind mitigation assessment your insurer applies. A solid door creates no glazed opening. This one does.',
       'None of that is a reason not to buy it. It is a reason to have the conversation before rather than after, particularly if you are inside the HVHZ or pursuing an insurance credit.',
     ],
@@ -359,7 +359,7 @@ export const doorModels: DoorModel[] = [
       'Contemporary and modern Florida houses where a panelled door looks wrong',
       'Garages converted to gyms, studios or bars where daylight is the point',
       'Commercial frontage, showrooms and restaurants opening onto a patio',
-      'Coastal properties where aluminium outlasts steel in the frame',
+      'Coastal properties where aluminum outlasts steel in the frame',
     ],
     tradeoffs: [
       'Very little insulation value, so an attached garage will run hot',
@@ -373,7 +373,7 @@ export const doorModels: DoorModel[] = [
       { label: 'Wind rated', value: 'Yes' },
       { label: 'Impact rated', value: 'Available, glazing dependent' },
       { label: 'Insulation', value: 'Minimal' },
-      { label: 'Coastal', value: 'Aluminium frame does not rust' },
+      { label: 'Coastal', value: 'Aluminum frame does not rust' },
     ],
     faq: [
       {
@@ -387,7 +387,7 @@ export const doorModels: DoorModel[] = [
           'A glazed opening is part of the wind mitigation assessment, and the opening protection credit is generally all or nothing across the whole envelope. Putting in a full-view door with non-impact glazing can affect a credit you were relying on elsewhere. Ask your insurer specifically about this door before ordering, because finding out afterwards is expensive.',
       },
       {
-        question: 'Will the aluminium corrode near the beach?',
+        question: 'Will the aluminum corrode near the beach?',
         answer:
           'It will weather, and it will not rust the way steel does. Expect chalking of the finish and some pitting over years within a few miles of the water, faster on the ocean side. Anodised and powder coated finishes hold up better than painted, and rinsing the door with fresh water when you rinse anything else outside genuinely extends it.',
       },
@@ -404,16 +404,16 @@ export const doorModels: DoorModel[] = [
       'Fiberglass doors resist salt corrosion completely and installed from $1,800. Where they beat steel in Florida and where the sun beats them.',
     priceLow: 1800,
     priceHigh: 4000,
-    construction: 'Fiberglass skin over an aluminium or steel frame',
+    construction: 'Fiberglass skin over an aluminum or steel frame',
     windRated: true,
     impactRated: false,
     hvhz: 'available',
     insulation: 'Available insulated, commonly specified that way here.',
     answer:
-      'A fiberglass door is a moulded fiberglass skin over a frame, installed from about $1,800. Its one decisive Florida advantage is that fiberglass does not corrode at all, which makes it worth a serious look within sight of salt water where steel doors rust and aluminium pits. Its weakness is also Florida: ultraviolet light fades and eventually embrittles it, so the finish quality matters more than the price.',
+      'A fiberglass door is a moulded fiberglass skin over a frame, installed from about $1,800. Its one decisive Florida advantage is that fiberglass does not corrode at all, which makes it worth a serious look within sight of salt water where steel doors rust and aluminum pits. Its weakness is also Florida: ultraviolet light fades and eventually embrittles it, so the finish quality matters more than the price.',
     intro: [
       'Fiberglass sits between steel and composite. It can be moulded with a wood grain convincingly, it is much lighter than steel, and it does not rust, dent or corrode.',
-      'On a barrier island or an oceanfront street that immunity is the whole argument. Steel rusts at every scratch in salt air and aluminium chalks and pits. Fiberglass simply does not care, and that is worth paying for in the places where it matters.',
+      'On a barrier island or an oceanfront street that immunity is the whole argument. Steel rusts at every scratch in salt air and aluminum chalks and pits. Fiberglass simply does not care, and that is worth paying for in the places where it matters.',
       'The counter argument is the same sun. Cheap fiberglass fades and can become brittle after years of direct Florida exposure, and a brittle panel cracks rather than dents. The finish and the resin quality are what separate a door that lasts from one that does not, which makes this a poor category to buy at the bottom of the price band.',
     ],
     bestFor: [
@@ -465,7 +465,7 @@ export const doorModels: DoorModel[] = [
       'Vinyl doors do not rust, dent or need painting, installed from $1,500. Where they make sense in Florida and the honest limits.',
     priceLow: 1500,
     priceHigh: 3200,
-    construction: 'Vinyl skin over a steel or aluminium frame',
+    construction: 'Vinyl skin over a steel or aluminum frame',
     windRated: true,
     impactRated: false,
     hvhz: 'no',

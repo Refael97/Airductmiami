@@ -77,6 +77,8 @@ export const serviceHref = (l: Locale, slug: string) => `${paths[l].services}${s
 export const areaHref = (l: Locale, slug: string) => `${paths[l].serviceAreas}${slug}/`;
 export const productHref = (l: Locale, slug: string) => `${paths[l].buyersGuide}${slug}/`;
 export const brandHref = (l: Locale, slug: string) => `${paths[l].brands}${slug}/`;
+/** A model series under its brand, /brands/amarr/2400-series/. */
+export const seriesHref = (l: Locale, brand: string, slug: string) => `${paths[l].brands}${brand}/${slug}/`;
 export const partHref = (l: Locale, slug: string) => `${paths[l].parts}${slug}/`;
 export const doorHref = (l: Locale, slug: string) => `${paths[l].doors}${slug}/`;
 /** Articles carry their own slug per language; the caller passes the right one. */

@@ -152,6 +152,11 @@ export const tampaBayCitiesEs: Record<string, CityEs> = {
         answer:
           'Puede. La inspección de mitigación de viento de Florida, formulario OIR-B1-1802, registra si la puerta de garaje tiene protección certificada, y una puerta certificada puede contribuir a un crédito en la prima. No prometemos una cifra; pregunte a su aseguradora por la tabla de créditos. Una puerta nueva certificada para viento empieza en $950 instalada y una resistente a impactos cerca de $1,800, ambas con el permiso incluido en el presupuesto.',
       },
+      {
+        question: "¿Cuánto cuesta reparar una puerta de garaje en Clearwater?",
+        answer:
+          "Los resortes empiezan en $150 cada uno, la reparación de cables en $95, la reparación del motor en $95, la puerta descarrilada en $140 y un motor nuevo instalado en $275. La evaluación y reparación por daño de tormenta empieza en $150. Cada trabajo lleva un presupuesto por escrito antes de empezar, y cerca de la playa cotizamos cable y tambor juntos, de $225 a $400, porque el salitre casi siempre se lleva los dos.",
+      },
     ],
   },
 
