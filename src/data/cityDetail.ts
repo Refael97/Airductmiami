@@ -2234,6 +2234,22 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
+    dryerVent: {
+      local: [
+        "Most of the older city is cottages and bungalows from the twenties and thirties, and none of them were drawn with a laundry room. The dryer arrived later, in a converted porch, a back utility room or a garage, and its vent went out wherever there was a wall to go through, often through a crawl space or a soffit rather than straight out.",
+        "The divided houses and small rentals make it worse. Where one building became two or three units, each unit got its own dryer, and the vents were run by whoever did the conversion. We regularly find two dryers sharing one run, which no code allows and which doubles the lint in half the space, and plastic foil transition hoses that were never meant to be permanent.",
+        "Out toward Lake Osborne and the suburban streets west of the city the problem is the ordinary Florida one: laundry on an interior wall, a vent run up into an attic that passes 120 degrees in summer, and a roof cap nobody has looked at since the roof was last replaced.",
+      ],
+      common: "A vent added decades after the house was built, run through a crawl space or soffit with more bends than the dryer is rated for, and never cleaned since.",
+    },
+    dryerVentEs: {
+      local: [
+        "Casi toda la ciudad vieja son casitas y bungalows de los años veinte y treinta, y ninguno se dibujó con cuarto de lavado. La secadora llegó después, en un porche cerrado, un cuarto de servicio o el garaje, y la ventila salió por donde hubo pared, muchas veces por debajo del piso o por el alero en vez de directo afuera.",
+        "Las casas divididas y los alquileres chicos lo empeoran. Donde un edificio se volvió dos o tres unidades, cada una recibió su secadora y las ventilas las puso quien hizo la división. Seguido encontramos dos secadoras compartiendo un solo ducto, algo que ningún código permite y que junta el doble de pelusa en la mitad del espacio, y mangueras de aluminio delgado que nunca se pensaron como permanentes.",
+        "Hacia Lake Osborne y las calles suburbanas al oeste de la ciudad el problema es el normal de Florida: lavandería en una pared interior, una ventila que sube a un ático que pasa de 120 grados en verano, y una salida en el techo que nadie ha revisado desde que se cambió el techo.",
+      ],
+      common: "Una ventila agregada décadas después de construida la casa, con más curvas de las que la secadora admite, pasando por debajo del piso o por el alero, y sin limpiar desde entonces.",
+    },
     neighborhoods: ['Downtown Lake Worth', 'College Park', 'Bryant Park', 'Parrot Cove', 'Tropical Ridge', 'Lake Osborne'],
   },
 
@@ -3013,6 +3029,22 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
+    ductRepair: {
+      local: [
+        "Most duct repair in Lakeland is really duct sealing. The ductwork here is not being eaten by salt the way it is on the coasts; it is being worked loose by heat. A Polk County attic passes 120 degrees on a July afternoon while the duct inside it carries 55 degree air, and twenty summers of that expansion and contraction open the joints, lift the mastic and let the tape let go.",
+        "In Dixieland, Lake Morton and Cleveland Heights the ducts were fitted after the houses were built, so there are more joints, more transitions and more places for a seal to fail. A leak in the attic pulls in superheated attic air. A leak inside a wall cavity pulls in insulation fibre and decades of dust, which is why the dust comes back to the furniture within days of cleaning.",
+        "In the newer houses along the I-4 corridor, in Grasslands, Christina and Oakbridge, the failure is sag rather than age: R-6 flex hung too loosely between supports, drooping into low points where the air slows down. Re-hanging and re-sealing those runs is a repair, not a replacement, and it is often the whole answer to a back bedroom that never cools.",
+      ],
+      common: "Joints opened by twenty summers of attic heat, with the mastic lifted and the tape released, leaking conditioned air into a 120 degree attic.",
+    },
+    ductRepairEs: {
+      local: [
+        "Casi toda la reparación de ductos en Lakeland es en realidad sellado de ductos. Aquí el ducto no se lo come la sal como en las costas; lo afloja el calor. Un ático de Polk County pasa de 120 grados una tarde de julio mientras el ducto de adentro lleva aire a 55, y veinte veranos de dilatarse y contraerse abren las uniones, levantan el mastique y sueltan la cinta.",
+        "En Dixieland, Lake Morton y Cleveland Heights el ducto se instaló después de construidas las casas, así que hay más uniones, más transiciones y más lugares donde un sello puede fallar. Una fuga en el ático mete aire sobrecalentado. Una fuga dentro de una pared mete fibra de aislamiento y décadas de polvo, y por eso el polvo regresa a los muebles a los pocos días de limpiar.",
+        "En las casas nuevas junto a la I-4, en Grasslands, Christina y Oakbridge, la falla es el descuelgue y no la edad: flexible R-6 colgado con poca tensión entre soportes, que se hunde en puntos bajos donde el aire se frena. Volver a colgar y sellar esos tramos es una reparación, no un reemplazo, y muchas veces es toda la solución para la recámara del fondo que nunca enfría.",
+      ],
+      common: "Uniones abiertas por veinte veranos de calor de ático, con el mastique levantado y la cinta suelta, tirando aire frío a un ático de 120 grados.",
+    },
     neighborhoods: ['Lake Morton', 'Dixieland', 'Grasslands', 'Christina', 'Lake Hollingsworth', 'Cleveland Heights', 'Oakbridge'],
   },
   jacksonville: {

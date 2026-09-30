@@ -83,8 +83,28 @@ export interface CityMetaInput {
  * duct phrasing is worth roughly 615 impressions a month against 67 for the
  * AC phrasing, and the title has room for one lead term, not two.
  */
+/**
+ * Per city title overrides, for a page whose ranking is already won and whose
+ * snippet is what is losing the click.
+ *
+ * Fort Myers, from the export of 30 September 2026: "duct cleaning fort
+ * myers" at an average position of 1.3, 442 impressions, no clicks, and the
+ * page as a whole at 755 impressions and position 6.2 with none. A position
+ * that high with nothing taken is either an AI Overview citation or a title
+ * that does not read as the answer. This leads with the searcher's exact
+ * words and puts the range, not just the floor, in the title, because "from
+ * $300" beside four competitors saying the same thing is not a reason to
+ * choose. Only the English page; the Spanish one is not the one being shown.
+ */
+const CITY_TITLE: Record<string, string> = {
+  'Fort Myers': `Duct Cleaning Fort Myers, FL | $${PRICES.ductLow} to $${PRICES.ductHigh}, Priced First`,
+};
+
 export function cityMeta({ name, county }: CityMetaInput) {
-  const title = fit(`Air Duct Cleaning in ${name}, FL | From $${PRICES.ductLow}`, LIMITS.title);
+  const title = fit(
+    CITY_TITLE[name] ?? `Air Duct Cleaning in ${name}, FL | From $${PRICES.ductLow}`,
+    LIMITS.title,
+  );
   const description = fit(
     `Air duct and AC vent cleaning in ${name}, ${county} from $${PRICES.ductLow}. ` +
       `Dryer vents from $${PRICES.ventLow}. You get the price before we book, not after.`,
