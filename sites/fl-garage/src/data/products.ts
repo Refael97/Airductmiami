@@ -180,7 +180,7 @@ export const doorMaterials: DoorMaterial[] = [
     slug: 'fiberglass-garage-doors',
     name: 'Fiberglass Garage Doors',
     shortName: 'Fiberglass',
-    metaTitle: 'Fiberglass Garage Doors in Florida | Cost, Pros and Cons',
+    metaTitle: 'Fiberglass Garage Doors in Florida | Prices, Pros and Cons',
     metaDescription:
       'Fiberglass garage doors installed in Florida from $1,400 to $3,800. No rust, no termites, light, convincing wood grain, and the UV fading and cracking to know about before you buy.',
     priceLow: 1400,

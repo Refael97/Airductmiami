@@ -155,9 +155,9 @@ export const services: Service[] = [
     name: 'Dryer Vent Installation',
     shortName: 'Dryer Vent Installation',
     icon: '🛠️',
-    metaTitle: 'Dryer Vent Installation in Florida',
+    metaTitle: 'Dryer Vent & Dryer Duct Installation in Florida',
     metaDescription:
-      'Dryer vent installation across Florida: rigid metal duct, shortest safe route, sealed joints. Price agreed before we book, not after.',
+      'Dryer vent and dryer duct installation, replacement and repair across Florida, $200 to $600. Rigid metal duct, shortest safe route, price before we book.',
     answer:
       'Dryer vent installation is the professional design and fitting of the exhaust duct that carries hot, moist air from your clothes dryer to the outside of your home. A correct installation uses rigid metal ducting on the shortest practical route with a proper exterior termination, keeps drying fast, prevents lint fires, and typically costs $200 to $600 in Florida depending on the route.',
     intro: [
@@ -219,15 +219,17 @@ export const services: Service[] = [
     name: 'AC & HVAC System Cleaning',
     shortName: 'AC / HVAC Cleaning',
     icon: '❄️',
-    metaTitle: 'AC Coil & Air Handler Cleaning in Florida',
+    metaTitle: 'HVAC Cleaning in Florida | Coil & Air Handler, From $200',
     metaDescription:
-      'Coil and air handler cleaning across Florida. Humidity fouls the evaporator coil here faster than anywhere. Upfront price before we book.',
+      'HVAC cleaning across Florida, $200 to $450: coil, blower wheel, air handler and drain line. Humidity fouls the coil here fast. Price before we book.',
     answer:
       'AC and HVAC system cleaning is the deep cleaning of the parts that move and cool your air (the evaporator coil, blower wheel, air handler, and condensate drain), not just the ducts. In humid Florida it prevents mold, restores airflow, and keeps your air conditioner running efficiently.',
     intro: [
       'Ducts are only part of the system. The evaporator coil and blower wheel sit in the constantly damp, dark air handler, the perfect environment for the black mold and biofilm that Florida homeowners so often smell when the AC kicks on.',
       'A dirty coil insulates itself with grime and cannot transfer heat efficiently, forcing longer run times and higher bills. A caked blower wheel moves dramatically less air, creating weak vents and hot rooms.',
       'We clean the coil with coil-safe cleaner, remove and detail the blower wheel, flush and treat the condensate drain line to prevent overflow shut-offs, and sanitize the air-handler cabinet.',
+      "HVAC cleaning and an HVAC tune-up are different jobs, and it is worth knowing which one you are buying. A tune-up from an HVAC contractor checks refrigerant pressures, capacitors, contactors and electrical connections, which is licensed work and not what we do. HVAC cleaning is the physical cleaning of the parts the air passes through: the coil, the blower wheel, the cabinet and the drain. In Florida most systems need both, and the cleaning is the half that usually gets skipped because nobody opens the cabinet during a routine service.",
+      "The signs that a system needs cleaning rather than repair are consistent. A musty smell for the first minutes after the AC starts, weak airflow from every register at once, water around the air handler, ice on the coil or the copper line, and a bill that climbs while the thermostat setting stays the same. Air handlers in condo closets and garages show it first, because they sit in the dampest air in the building.",
     ],
     benefits: [
       { title: 'Restored airflow', text: 'A clean blower and coil push noticeably more air from every vent.' },
@@ -251,6 +253,10 @@ export const services: Service[] = [
       { question: 'Is HVAC cleaning different from air duct cleaning?', answer: 'Yes. Duct cleaning addresses the ductwork; HVAC cleaning addresses the coil, blower, air handler, and drain line where mold and efficiency losses usually originate.' },
       { question: 'Why does my AC smell musty in Florida?', answer: 'Mold and biofilm grow on the damp evaporator coil and in the air handler. Cleaning and sanitizing these components removes the odor at its source.' },
       { question: 'How often should HVAC components be cleaned?', answer: 'Annually is recommended in Florida because year-round humidity and heavy AC use accelerate coil mold and drain clogs.' },
+      { question: "How much does HVAC cleaning cost in Florida?", answer: "$200 to $450 for one air handler. The price moves with how dirty the coil and blower wheel are, whether the blower has to come out to be cleaned properly, and how easy the cabinet is to reach. A second system is priced separately, and you get the number before we book." },
+      { question: "Is HVAC cleaning the same as an AC tune-up?", answer: "No. A tune-up from a licensed HVAC contractor checks refrigerant, capacitors and electrical parts. HVAC cleaning is the physical cleaning of the coil, blower wheel, cabinet and drain line. A tune-up rarely includes pulling and cleaning the blower wheel or deep cleaning the coil, which is why a serviced system can still smell musty and move less air." },
+      { question: "How do I know my HVAC system needs cleaning?", answer: "A musty smell when the AC starts, weak airflow from every register, water around the air handler, ice on the coil, or a bill that rises without the thermostat changing. Any one of those, in a Florida home, usually points to a dirty coil, a caked blower wheel or a slow drain." },
+      { question: "Do you clean air handlers in condos?", answer: "Yes. Most condo units have the air handler in a closet, which is the dampest place in the unit and where coil mold and drain backups start. We clean the coil, blower, cabinet and drain inside the unit and work within the association's rules on access and hours." },
     ],
     related: ['air-duct-cleaning', 'air-duct-sanitizing', 'indoor-air-quality-testing'],
   },

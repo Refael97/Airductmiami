@@ -1,5 +1,5 @@
 ---
-title: "Garage Door Off the Track in Florida: What to Do Right Now"
+title: "Garage Door Off Track or Derailed? What to Do Right Now"
 description: "A garage door that has jumped its track, why every extra press of the button makes it more expensive, what causes it in Florida, and what the repair costs."
 answer: "If your garage door has come off its track, stop using the opener immediately. Every additional cycle bends track, destroys rollers and creases panels, turning a $140 to $300 repair into one costing $600 or more. Pull the manual release only if the door is closed, leave the door where it is, keep people clear, and call for service."
 pubDate: 2026-08-30

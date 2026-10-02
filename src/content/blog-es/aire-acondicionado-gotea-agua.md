@@ -1,8 +1,9 @@
 ---
-title: "¿Su aire acondicionado gotea agua? 5 causas y qué hacer"
-description: "Las 5 causas del goteo de agua en el aire acondicionado, cuál puede resolver usted mismo y cuándo el goteo avisa de un problema serio de humedad."
+title: "¿Su aire acondicionado gotea o tira agua? Causas y qué hacer"
+description: "Por qué el aire acondicionado gotea o pierde agua: la manejadora, el split que tira agua por delante, la máquina exterior y las rejillas que sudan. Qué es normal y qué no."
 answer: "Un aire acondicionado gotea casi siempre por el drenaje de condensado tapado con algas y suciedad, algo muy común en Florida. Otras causas son el filtro sucio que congela la serpentina, la bandeja oxidada o mal nivelada y las fugas en ductos que condensan humedad."
 pubDate: 2026-07-13
+updatedDate: 2026-10-02
 category: "Eficiencia del Aire Acondicionado"
 tags: ["goteo", "condensado", "drenaje", "serpentina", "Florida"]
 featured: false
@@ -13,6 +14,18 @@ faq:
     answer: "Muchas veces sí. Apague el sistema, ubique la salida de la línea afuera de la casa y aspire con una aspiradora de líquidos durante un minuto. Si el goteo vuelve en pocos días, el problema está más adentro."
   - question: "¿El goteo del aire acondicionado causa moho?"
     answer: "Sí, y rápido. El agua estancada en la bandeja o en el clóset de la manejadora alimenta moho en 24 a 48 horas, y desde ahí las esporas viajan por los ductos a toda la casa."
+  - question: "¿Es normal que el aire acondicionado gotee?"
+    answer: "Es normal que salga agua por el tubo de condensado afuera de la casa, sobre todo en verano: eso es el sistema sacándole humedad al aire. No es normal que aparezca agua adentro, alrededor de la manejadora, en el techo, en la pared o saliendo por la rejilla o por el frente de un split."
+  - question: "¿Por qué mi split tira agua por delante o por el ventilador?"
+    answer: "Casi siempre por una de tres cosas: la manguera de drenaje tapada o sin pendiente, los filtros y la serpentina sucios que hacen que el agua se congele y luego se derrame, o una unidad que quedó desnivelada en la pared. Si lo que sale son gotitas lanzadas por el ventilador, la turbina suele estar cubierta de suciedad y moho, y hay que limpiarla."
+  - question: "¿Por qué gotea la máquina exterior del aire acondicionado?"
+    answer: "En modo frío, el agua cerca de la unidad exterior casi siempre es la salida del tubo de condensado, que muchas veces termina justo ahí, y eso es normal. También puede sudar el tubo de cobre grueso si perdió su aislamiento. En modo calefacción, una bomba de calor bota agua afuera cuando se descongela, y eso también es normal."
+  - question: "¿Por qué el aire acondicionado gotea más en verano?"
+    answer: "Porque en verano el aire de Florida tiene más humedad, y el sistema saca más agua por día. Una línea de drenaje que en invierno alcanzaba a desaguar con algo de baba adentro, en julio ya no da abasto y se desborda. Por eso el primer goteo del año casi siempre aparece en los meses de calor."
+  - question: "¿Cómo evitar que el aire acondicionado gotee?"
+    answer: "Cambie el filtro cada uno a tres meses, eche una taza de vinagre blanco por el acceso de la línea de drenaje cada uno a tres meses para cortar las algas, y pida que revisen que el interruptor de seguridad de la bandeja funcione. Una limpieza anual de la serpentina y la bandeja quita lo que el vinagre no alcanza."
+  - question: "¿Por qué sale agua de las rejillas del techo?"
+    answer: "Porque la rejilla o el ducto detrás de ella está sudando: el aire frío que sale se encuentra con aire caliente y húmedo, y el vapor se condensa en la superficie. Pasa cuando el ducto del ático perdió aislamiento, cuando la bota de la rejilla no está sellada al techo, o cuando el termostato está muy bajo en un día muy húmedo."
 ---
 
 ## Respuesta rápida
@@ -37,6 +50,38 @@ Un aire acondicionado en Florida es también un deshumidificador gigante. En un 
 - **Cambie el filtro** si tiene más de un mes en pleno verano. Es la solución completa en muchos casos de serpentina congelada.
 - **Aspire la línea de drenaje** desde la salida exterior con una aspiradora de líquidos durante un minuto. Saldrá una baba oscura sorprendente.
 - **Revise si hay hielo** en la serpentina. Si lo hay, deje el ventilador encendido sin enfriamiento una hora para descongelar antes de volver a arrancar.
+
+## ¿Es normal que gotee? Lo que sí y lo que no
+
+Que salga agua **afuera** de la casa, por el tubito de PVC del condensado, es normal y hasta buena señal: el sistema está sacando humedad. En pleno verano puede ser un chorrito constante. Lo que **no** es normal es cualquier agua adentro: alrededor de la manejadora, en el techo, bajando por la pared, saliendo por una rejilla o por el frente de un split. Esa agua siempre tiene una causa, y casi nunca se arregla sola.
+
+## Cuando el split tira agua por delante o por el ventilador
+
+En los minisplits de pared el agua cae a una bandeja dentro de la unidad y sale por una manguera delgada. Cuando el split tira agua por delante, las causas son pocas y conocidas:
+
+- **Manguera de drenaje tapada o sin pendiente.** Si la manguera sube en algún punto, o se dobló detrás de la pared, el agua se regresa y rebalsa la bandeja por el frente.
+- **Filtros y serpentina sucios.** Con poco aire, la serpentina se congela; al apagarse, el hielo se derrite de golpe y la bandeja no alcanza.
+- **Unidad desnivelada.** Unos pocos milímetros de inclinación hacia adelante bastan para que el agua salga por donde no debe.
+- **Gotitas lanzadas por el ventilador.** Si lo que sale son gotas disparadas hacia el cuarto, la turbina (el ventilador cilíndrico) suele estar cubierta de suciedad y moho. Esa baba retiene agua y la lanza al girar. Se resuelve con una limpieza a fondo de la turbina, no con el drenaje.
+
+## Cuando gotea la máquina exterior
+
+En modo frío, el agua junto a la unidad de afuera casi siempre es la salida del condensado, que muchos instaladores dejan terminar ahí mismo. Si el tubo de cobre grueso que entra a la unidad está goteando, es que perdió su aislamiento y está sudando; hay que reponer la espuma, porque además pierde eficiencia. Si usted tiene bomba de calor y la usa en invierno, la máquina exterior bota agua cada vez que se descongela, y eso es parte de su funcionamiento normal.
+
+## Cuando sale agua por las rejillas del techo
+
+Una rejilla que gotea casi nunca es el drenaje: es condensación. El aire que sale a 55 grados se encuentra con aire caliente y húmedo alrededor de la rejilla o del ducto en el ático, y el vapor se vuelve agua en la superficie. Pasa sobre todo cuando el ducto del ático perdió aislamiento, cuando la bota de la rejilla no está sellada al techo, o cuando el termostato está muy bajo en un día de mucha humedad. La explicación completa está en la guía de [condensación en los ductos](/es/blog/condensacion-ductos-florida/).
+
+## Por qué gotea más en verano
+
+El aire de Florida en julio carga mucha más humedad que en enero, y el aire acondicionado saca más agua por día. Una línea de drenaje con un poco de baba adentro alcanza a desaguar en invierno y se rebalsa en verano. Por eso el primer goteo del año casi siempre aparece con los primeros días de calor fuerte.
+
+## Cómo evitar que vuelva a gotear
+
+- **Filtro nuevo** cada uno a tres meses, y cada mes si hay mascotas o la casa tiene mucho polvo.
+- **Una taza de vinagre blanco** por el acceso de la línea de drenaje cada uno a tres meses, para cortar las algas antes de que tapen el tubo.
+- **Interruptor de seguridad** en la bandeja o en la línea, que apaga el sistema antes de que el agua llegue al techo. Pida que lo prueben.
+- **Limpieza anual** de la serpentina, la bandeja y el drenaje, que quita lo que el vinagre no alcanza.
 
 ## Cuándo el goteo es aviso de algo más grande
 

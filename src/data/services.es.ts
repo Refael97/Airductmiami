@@ -23,7 +23,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  shortName: 'Limpieza de Conductos',
  metaTitle: 'Limpieza de Ductos en Florida | Desde $300',
  metaDescription:
- 'Limpieza de ductos en Florida desde $300, con equipo de presión negativa y estándar NADCA. Le damos el precio antes de agendar. Asegurados, norma NADCA.',
+ 'Precio de la limpieza de ductos de aire acondicionado en Florida: $300 a $600 por sistema, norma NADCA. Le damos el precio antes de agendar.',
  answer:
  'La limpieza de conductos de aire es la extracción profesional de polvo, residuos, moho y alérgenos de los ductos de suministro y retorno de su sistema HVAC mediante equipo de aire negativo (extracción en la fuente). En Florida suele recomendarse cada 3 a 5 años para proteger la calidad del aire interior y la eficiencia del sistema.',
  intro: [
@@ -193,15 +193,17 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'hvac-cleaning': {
  name: 'Limpieza del Aire Acondicionado (Sistema HVAC)',
  shortName: 'Limpieza de AC',
- metaTitle: 'Limpieza de Serpentina y Manejadora en Florida',
+ metaTitle: 'Limpieza de Aire Acondicionado y Serpentina | Florida',
  metaDescription:
- 'Limpieza de serpentina y manejadora en Florida. La humedad del estado ensucia la serpentina y le quita eficiencia al equipo. Precio por adelantado.',
+ 'Limpieza del aire acondicionado en Florida, de $200 a $450: serpentina, turbina, manejadora y drenaje. Precio antes de agendar.',
  answer:
  'La limpieza del aire acondicionado y del sistema HVAC es la limpieza profunda de las piezas que mueven y enfrían su aire (el serpentín evaporador, la turbina del ventilador, la manejadora y el drenaje de condensado), no solo los ductos. En el clima húmedo de Florida previene el moho, recupera el flujo de aire y mantiene su aire acondicionado funcionando con eficiencia.',
  intro: [
  'Los ductos son solo una parte del sistema. El serpentín evaporador y la turbina del ventilador están dentro de la manejadora de aire, un lugar oscuro y siempre húmedo, el ambiente perfecto para el moho negro y la biopelícula que tantas veces huelen los dueños de casa en Florida cuando enciende el aire acondicionado.',
  'Un serpentín sucio se aísla con la suciedad y no puede transferir el calor de forma eficiente, lo que obliga a ciclos más largos y facturas más altas. Una turbina de ventilador incrustada mueve muchísimo menos aire, lo que crea rejillas débiles y habitaciones calientes.',
  'Limpiamos el serpentín con un limpiador seguro para serpentines, retiramos y detallamos la turbina del ventilador, lavamos y tratamos la línea de drenaje de condensado para evitar los cortes por desbordamiento, y desinfectamos el gabinete de la manejadora de aire.',
+ "La limpieza del sistema HVAC y el mantenimiento técnico del aire acondicionado son trabajos distintos, y conviene saber cuál está comprando. El mantenimiento de un contratista de aire acondicionado revisa la presión del refrigerante, los capacitores y las conexiones eléctricas, que es trabajo con licencia y no es lo que hacemos nosotros. La limpieza del HVAC es la limpieza física de las piezas por donde pasa el aire: el serpentín, la turbina, el gabinete y el drenaje. En Florida casi todos los sistemas necesitan las dos cosas, y la limpieza es la mitad que se suele saltar porque en un servicio de rutina nadie abre el gabinete.",
+ "Las señales de que el sistema necesita limpieza y no una reparación son siempre las mismas. Olor a humedad los primeros minutos después de que arranca el aire, poco flujo en todas las rejillas a la vez, agua alrededor de la manejadora, hielo en el serpentín o en el tubo de cobre, y una factura que sube aunque el termostato siga igual. Las manejadoras en clósets de condominio y en garajes lo muestran primero, porque están en el aire más húmedo del edificio.",
  ],
  benefits: [
  { title: 'Flujo de aire recuperado', text: 'Un ventilador y un serpentín limpios empujan mucho más aire por cada rejilla.' },
@@ -225,6 +227,10 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  { question: 'Es diferente la limpieza de HVAC de la limpieza de conductos?', answer: 'Sí. La limpieza de conductos trata los ductos; la limpieza de HVAC trata el serpentín, el ventilador, la manejadora de aire y la línea de drenaje, que es donde suelen originarse el moho y las pérdidas de eficiencia.' },
  { question: 'Por qué mi aire acondicionado huele a humedad en Florida?', answer: 'El moho y la biopelícula crecen en el serpentín evaporador húmedo y dentro de la manejadora de aire. Limpiar y desinfectar estos componentes elimina el olor desde su origen.' },
  { question: 'Con qué frecuencia se deben limpiar los componentes del HVAC?', answer: 'En Florida se recomienda hacerlo cada año, porque la humedad de todo el año y el uso intenso del aire acondicionado aceleran el moho en el serpentín y las obstrucciones del drenaje.' },
+ { question: "¿Cuánto cuesta la limpieza del aire acondicionado en Florida?", answer: "De $200 a $450 por manejadora. El precio depende de qué tan sucios estén el serpentín y la turbina, de si hay que sacar la turbina para limpiarla bien y de qué tan fácil es llegar al gabinete. Un segundo sistema se cotiza aparte, y usted recibe el número antes de agendar." },
+ { question: "¿La limpieza del HVAC es lo mismo que el mantenimiento del aire acondicionado?", answer: "No. El mantenimiento de un contratista con licencia revisa el refrigerante, los capacitores y la parte eléctrica. La limpieza del HVAC es la limpieza física del serpentín, la turbina, el gabinete y la línea de drenaje. Un mantenimiento casi nunca incluye sacar y lavar la turbina ni limpiar a fondo el serpentín, y por eso un sistema con servicio puede seguir oliendo a humedad y moviendo menos aire." },
+ { question: "¿Cómo sé si mi aire acondicionado necesita limpieza?", answer: "Olor a humedad cuando arranca, poco flujo en todas las rejillas, agua alrededor de la manejadora, hielo en el serpentín o una factura que sube sin que cambie el termostato. Cualquiera de esas señales, en una casa de Florida, casi siempre apunta a un serpentín sucio, una turbina cubierta de suciedad o un drenaje lento." },
+ { question: "¿Limpian manejadoras en condominios?", answer: "Sí. En la mayoría de los condominios la manejadora está en un clóset, el lugar más húmedo de la unidad y donde empiezan el moho del serpentín y los desbordes del drenaje. Limpiamos el serpentín, la turbina, el gabinete y el drenaje dentro de la unidad, respetando las reglas de la asociación sobre acceso y horarios." },
  ],
  },
  'air-duct-repair': {
