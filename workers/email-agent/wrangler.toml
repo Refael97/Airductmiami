@@ -12,11 +12,20 @@ compatibility_date = "2026-09-01"
 # xAI model used to draft replies. Change here without touching code.
 GROK_MODEL = "grok-4"
 
+# Every message to info@ on either domain is also copied here: the Resend
+# receiving inbox that the owner's own Grok bot reads. MX for the
+# "inbox" subdomain points at Resend; the main domains keep Cloudflare
+# Email Routing, so Gmail delivery does not depend on Resend.
+# Comma separated for more than one. Empty to turn the copy off.
+COPY_TO = "agent@inbox.floridabreezeairduct.com"
+
 # Secrets, set with `wrangler secret put NAME` or in the dashboard under
 # Settings > Variables and Secrets. Never commit their values.
+#   FORWARD_TO               the Gmail address every message is copied to
+#
+# Only for the built-in drafting (leave unset when the owner's bot answers):
 #   XAI_API_KEY              console.x.ai
 #   RESEND_API_KEY           resend.com > API keys (sending access)
 #   TELEGRAM_BOT_TOKEN       from @BotFather
 #   TELEGRAM_CHAT_ID         your own chat id, the bot tells you on /start
 #   TELEGRAM_WEBHOOK_SECRET  any long random string you choose
-#   FORWARD_TO               the Gmail address every message is copied to

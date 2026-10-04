@@ -1,13 +1,16 @@
 /** Thin wrappers over the Telegram Bot API and the Resend API. */
 
 export interface Env {
-  XAI_API_KEY: string;
+  /** Optional. Without it the Worker only copies mail and drafts nothing. */
+  XAI_API_KEY?: string;
   GROK_MODEL: string;
   RESEND_API_KEY: string;
   TELEGRAM_BOT_TOKEN: string;
   TELEGRAM_CHAT_ID: string;
   TELEGRAM_WEBHOOK_SECRET: string;
   FORWARD_TO: string;
+  /** Extra addresses every message is copied to, comma separated. */
+  COPY_TO?: string;
 }
 
 /* ------------------------------ Telegram ------------------------------ */

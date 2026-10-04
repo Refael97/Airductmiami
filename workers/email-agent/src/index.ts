@@ -15,23 +15,28 @@
 import PostalMime from 'postal-mime';
 import { BRANDS, brandForAddress, type Brand } from './brands.ts';
 import { draftReply, type Inbound } from './grok.ts';
-import { parseNetlifyLead, readApproval, renderApproval, replySubject, skipReason, DRAFT_START, type DraftMeta } from './logic.ts';
+import { copyDestinations, parseNetlifyLead, readApproval, renderApproval, replySubject, skipReason, DRAFT_START, type DraftMeta } from './logic.ts';
 import { notify, sendEmail, tg, APPROVAL_BUTTONS, type Env } from './services.ts';
 
 export default {
   async email(message: ForwardableEmailMessage, env: Env, _ctx: ExecutionContext): Promise<void> {
-    const raw = await new Response(message.raw).arrayBuffer();
-
-    if (env.FORWARD_TO) {
+    // Copies first: the owner's Gmail, then COPY_TO (the inbox the owner's
+    // own bot reads). Each one separately, so one bad address cannot stop
+    // the others.
+    for (const to of copyDestinations(env.FORWARD_TO, env.COPY_TO)) {
       try {
-        await message.forward(env.FORWARD_TO);
+        await message.forward(to);
       } catch (err) {
-        console.error('forward failed', err);
-        await safeNotify(env, `⚠️ העברת מייל ל-Gmail נכשלה (${message.to}). בדוק ש-FORWARD_TO מאומת ב-Email Routing.\n${String(err)}`);
+        console.error(`forward to ${to} failed`, err);
+        await safeNotify(env, `⚠️ העברת מייל ל-${to} נכשלה (${message.to}). בדוק שהכתובת מאומתת ב-Email Routing.\n${String(err)}`);
       }
     }
 
+    // Without an xAI key the built-in drafting is off and the Worker only copies.
+    if (!env.XAI_API_KEY) return;
+
     try {
+      const raw = await new Response(message.raw).arrayBuffer();
       await handleInbound(raw, message, env);
     } catch (err) {
       console.error('agent failed', err);

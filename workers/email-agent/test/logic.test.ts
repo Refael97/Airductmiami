@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { skipReason, parseNetlifyLead, renderApproval, readApproval, replySubject } from '../src/logic.ts';
+import { copyDestinations, skipReason, parseNetlifyLead, renderApproval, readApproval, replySubject } from '../src/logic.ts';
 import { extractJson } from '../src/grok.ts';
 import { brandForAddress } from '../src/brands.ts';
 
@@ -70,4 +70,13 @@ test('brand is chosen by the domain written to', () => {
   assert.equal(brandForAddress('info@floridabreezeairduct.com')?.key, 'airduct');
   assert.equal(brandForAddress('Support@Garage-Door-Fixers.com')?.key, 'garage');
   assert.equal(brandForAddress('x@gmail.com'), undefined);
+});
+
+test('copies go to Gmail first, then each COPY_TO address once', () => {
+  assert.deepEqual(copyDestinations('Owner@Gmail.com', ' agent@inbox.floridabreezeairduct.com, owner@gmail.com ,'), [
+    'owner@gmail.com',
+    'agent@inbox.floridabreezeairduct.com',
+  ]);
+  assert.deepEqual(copyDestinations('owner@gmail.com', undefined), ['owner@gmail.com']);
+  assert.deepEqual(copyDestinations(undefined, ''), []);
 });

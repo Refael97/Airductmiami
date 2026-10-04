@@ -141,3 +141,14 @@ export function replySubject(subject: string): string {
   if (!s) return 'Your request';
   return /^re:/i.test(s) ? s : `Re: ${s}`;
 }
+
+/**
+ * Every address a message is copied to: the owner's Gmail first, then each
+ * address in COPY_TO (comma separated), without duplicates.
+ */
+export function copyDestinations(forwardTo: string | undefined, copyTo: string | undefined): string[] {
+  const all = [forwardTo ?? '', ...(copyTo ?? '').split(',')]
+    .map((a) => a.trim().toLowerCase())
+    .filter((a) => a.includes('@'));
+  return [...new Set(all)];
+}

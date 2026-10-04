@@ -70,7 +70,7 @@ export function extractJson(s: string): unknown {
   return JSON.parse(s.slice(start, end + 1));
 }
 
-export async function draftReply(env: { XAI_API_KEY: string; GROK_MODEL: string }, brand: Brand, m: Inbound): Promise<DraftResult> {
+export async function draftReply(env: { XAI_API_KEY?: string; GROK_MODEL: string }, brand: Brand, m: Inbound): Promise<DraftResult> {
   const res = await fetch('https://api.x.ai/v1/chat/completions', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.XAI_API_KEY}`, 'Content-Type': 'application/json' },
