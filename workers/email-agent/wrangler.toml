@@ -1,0 +1,22 @@
+# The email agent for both business inboxes. See README.md for setup.
+#
+# No KV, no database: a pending draft lives in the Telegram message that
+# asks for approval, and is read back from it when the owner presses Send.
+# That keeps the deploy to one command with nothing to provision first.
+
+name = "email-agent"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+# xAI model used to draft replies. Change here without touching code.
+GROK_MODEL = "grok-4"
+
+# Secrets, set with `wrangler secret put NAME` or in the dashboard under
+# Settings > Variables and Secrets. Never commit their values.
+#   XAI_API_KEY              console.x.ai
+#   RESEND_API_KEY           resend.com > API keys (sending access)
+#   TELEGRAM_BOT_TOKEN       from @BotFather
+#   TELEGRAM_CHAT_ID         your own chat id, the bot tells you on /start
+#   TELEGRAM_WEBHOOK_SECRET  any long random string you choose
+#   FORWARD_TO               the Gmail address every message is copied to
