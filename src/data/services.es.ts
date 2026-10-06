@@ -21,7 +21,13 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  'air-duct-cleaning': {
  name: 'Limpieza de Conductos de Aire',
  shortName: 'Limpieza de Conductos',
- metaTitle: 'Limpieza de Ductos en Florida | Desde $300',
+ /* "Aire acondicionado" and "precio" added 6 October 2026: over the 28 days
+    to 5 October the three queries this page ranks for at positions 7 to 10,
+    the site's best converting phrasing, were "limpieza de ductos de aire
+    acondicionado precio", "limpieza de conductos de aire acondicionado
+    precio" and "limpieza de ductos de aire acondicionado", and the title
+    contained neither phrase. */
+ metaTitle: 'Limpieza de Ductos de Aire Acondicionado | Precio desde $300',
  metaDescription:
  'Precio de la limpieza de ductos de aire acondicionado en Florida: $300 a $600 por sistema, norma NADCA. Le damos el precio antes de agendar.',
  answer:

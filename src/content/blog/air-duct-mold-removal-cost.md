@@ -13,6 +13,8 @@ faq:
     answer: "Yes. A standard cleaning is $300 to $600 because it removes dust. Mold removal adds inspection, containment, antimicrobial treatment, and often coil and drain pan work, which is why it starts higher."
   - question: "Does insurance cover air duct mold removal?"
     answer: "Usually only when the mold came from a sudden covered event such as a burst pipe. Mold from ordinary Florida humidity is treated as a maintenance issue and is almost never covered."
+  - question: "How much does air duct mold removal cost in Palm Beach County?"
+    answer: "The same $500 to $3,000 as the rest of South Florida. A condo with a closet air handler and growth caught on the coil sits near the low end; an older house with long attic flex runs that have to be replaced, or a newer two system home out west, sits near the top. Growth over 10 square feet needs a Florida licensed mold remediator, so ask for the licence number before paying anyone."
   - question: "How do I know if a mold removal quote is fair?"
     answer: "A fair quote follows a camera inspection you were shown, itemizes the work, and lands in the $500 to $3,000 range for a typical home. Be careful with quotes given over the phone before anyone has looked inside your system."
 ---
@@ -60,6 +62,17 @@ Mold is the easiest thing in this industry to exaggerate, because you cannot see
 - **Be careful with "the whole system has to be replaced"** on the first visit. It is sometimes true, especially with duct board, and it should come with photos.
 - **Watch for a small advertised fee that grows.** The same bait pattern that shows up in [air duct cleaning scams](/blog/air-duct-cleaning-scams/) shows up here, amplified, because fear does the selling.
 - **A second opinion is reasonable** on anything above about $2,000. An honest company will not fight you on it.
+
+## Air duct mold removal cost in Palm Beach County
+
+Palm Beach County prices land in the same **$500 to $3,000** range as the rest of South Florida. Where you live in the county changes which end of it you are likely to be at.
+
+- **Condos east of I-95**, in West Palm Beach, Lake Worth Beach, Boynton Beach and Delray Beach, usually have a closet air handler with short duct runs. Growth caught on the coil and drain pan of a system like that tends to sit at the low end.
+- **Single family homes from the seventies through the nineties**, in Greenacres, Palm Springs, Lantana and the older parts of Boca Raton, usually have an attic air handler and long flex runs through a hot attic. When mold has moved into those runs, the flex often cannot be fully cleaned and gets replaced, which is what pushes a job toward the top of the range.
+- **Newer homes out west**, in Wellington, Royal Palm Beach and the Acreage, are larger and often have two systems. Two systems is close to two jobs, so the total runs higher even when each system is in decent shape.
+- **Homes near the Intracoastal and the beach** take more humid air through every door and window, so the moisture source is often the house rather than the equipment. A cleaning without a humidity fix tends to be a cleaning you repeat.
+
+One thing that matters more than the price: Florida licenses mold remediation under chapter 468 of the Florida Statutes, and growth covering more than 10 square feet in total needs a licensed mold remediator. Ductwork reaches that size quickly, since a single 8 inch run has about two square feet of inside surface per foot of length. Before you pay anyone in Palm Beach County to "remove mold" from your ducts, ask for their state mold remediator licence number and check it. We are a duct cleaning company, not a mold remediator: we clean and sanitize systems to the NADCA source-removal standard at our published price, and when what we find is past that line, we say so and tell you who to call.
 
 ## Testing: needed or not?
 

@@ -2306,6 +2306,27 @@ export const cityDetail: Record<string, CityDetail> = {
         ],
       },
     ],
+    /* Added 6 October 2026. Over the 28 days to 5 October Greenacres was the
+       page Google showed for "dryer vent cleaning service near me", "dryer
+       air duct cleaning near me" and "dryer vent duct cleaning near me",
+       roughly 60 mobile impressions at positions 10 to 12, one step off the
+       first page, with only an air duct page to show. */
+    dryerVent: {
+      local: [
+        "Most Greenacres houses are single storey block homes from the seventies through the nineties, and in most of them the laundry sits in the garage or in a closet on an interior wall. A garage dryer usually vents straight out through the block, which is short and easy. An interior closet does not have that option, so the vent climbs into the attic and runs across it to a roof cap or a soffit, often fifteen or twenty feet with two or three bends.",
+        "That attic run is where the trouble is. Thirty summers above 120 degrees make the original foil flex brittle, and the run sags between the trusses. Every sag is a low point where lint settles and stays, and a long run with low points can lose most of its airflow before the dryer itself shows anything wrong.",
+        "The low rise condominiums are the other case: a stacked or closet dryer with a short run to an exterior wall, and a lint screen at the cap that collects faster than anyone expects because nobody can reach it from inside.",
+      ],
+      common: "A long attic run from an interior laundry closet, sagging between the trusses with lint settled at every low point.",
+    },
+    dryerVentEs: {
+      local: [
+        "Casi todas las casas de Greenacres son de una planta, de bloque, de los setenta a los noventa, y en la mayoría la lavandería está en el garaje o en un clóset sobre una pared interior. Una secadora en el garaje casi siempre ventila directo a través del bloque, un tramo corto y fácil. Un clóset interior no tiene esa opción, así que la ventila sube al ático y lo cruza hasta una salida en el techo o en el alero, muchas veces cinco o seis metros con dos o tres curvas.",
+        "Ese tramo por el ático es donde está el problema. Treinta veranos a más de 120 grados ponen quebradizo el flexible de aluminio original, y el tramo se descuelga entre las vigas. Cada parte descolgada es un punto bajo donde la pelusa se asienta y se queda, y un tramo largo con puntos bajos puede perder casi todo el flujo antes de que la secadora muestre algo raro.",
+        "Los condominios bajos son el otro caso: secadora apilada o en clóset, con un tramo corto a una pared exterior y una rejilla en la salida que se tapa más rápido de lo que uno cree, porque nadie la alcanza desde adentro.",
+      ],
+      common: "Un tramo largo por el ático desde un clóset interior, descolgado entre las vigas, con pelusa asentada en cada punto bajo.",
+    },
     neighborhoods: ['Original Greenacres', 'Rainbow Lakes', 'Pine Ridge', 'Jefferson Green', 'River Bridge', 'Sherbrooke Estates'],
   },
 

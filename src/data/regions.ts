@@ -45,12 +45,12 @@ export const regionPages: RegionPageContent[] = [
     region: 'South Florida',
     metaTitle: 'Air Duct Cleaning in South Florida | Miami-Dade, Broward & Palm Beach',
     metaDescription:
-      'Professional air duct and dryer vent cleaning across South Florida. One licensed, insured team covering Miami-Dade, Broward, and Palm Beach counties. Free quotes, same-week service.',
+      'Professional air duct and dryer vent cleaning across South Florida. One insured team covering Miami-Dade, Broward, and Palm Beach counties. Free quotes, same-week service.',
     esMetaTitle: 'Limpieza de Ductos en el Sur de Florida | Miami-Dade, Broward y Palm Beach',
     esMetaDescription:
       'Limpieza profesional de ductos de aire y de secadora en todo el sur de Florida. Un solo equipo asegurado para los condados de Miami-Dade, Broward y Palm Beach. Cotización gratis.',
     answer:
-      'Florida Breeze Air Duct provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services across the entire South Florida tri-county area: Miami-Dade, Broward, and Palm Beach. One licensed, insured team, NADCA source-removal equipment, free quotes, and same-week appointments throughout the region.',
+      'Florida Breeze Air Duct provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services across the entire South Florida tri-county area: Miami-Dade, Broward, and Palm Beach. One insured team, NADCA source-removal equipment, free quotes, and same-week appointments throughout the region.',
     esAnswer:
       'Florida Breeze Air Duct ofrece limpieza profesional de ductos de aire, limpieza del ducto de secadora y servicios de calidad del aire interior en toda la zona de los tres condados del sur de Florida: Miami-Dade, Broward y Palm Beach. Un solo equipo asegurado, equipo NADCA de extracción en la fuente, cotizaciones gratis y citas en la misma semana.',
     body: [
@@ -142,7 +142,7 @@ export const regionPages: RegionPageContent[] = [
     esMetaDescription:
       'Limpieza de ductos de aire, ducto de secadora y eliminación de moho en ductos en el condado de Palm Beach: West Palm Beach, Boca Raton, Boynton Beach y Delray Beach. Equipo local 561. Cotización gratis.',
     answer:
-      'Florida Breeze Air Duct is a local Palm Beach County team, reachable at our 561 number, providing air duct cleaning, dryer vent cleaning, and air duct mold removal throughout West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, and the surrounding communities. Licensed, insured, NADCA standards, free quotes.',
+      'Florida Breeze Air Duct is a local Palm Beach County team, reachable at our 561 number, providing air duct cleaning, dryer vent cleaning, and air duct mold removal throughout West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, and the surrounding communities. Insured, NADCA standards, free quotes.',
     esAnswer:
       'Florida Breeze Air Duct es un equipo local del condado de Palm Beach, con número 561, que ofrece limpieza de ductos de aire, limpieza del ducto de secadora y eliminación de moho en ductos en West Palm Beach, Boca Raton, Boynton Beach, Delray Beach y las comunidades cercanas. Asegurados, normas NADCA y cotizaciones gratis.',
     body: [

@@ -96,8 +96,23 @@ export interface CityMetaInput {
  * $300" beside four competitors saying the same thing is not a reason to
  * choose. Only the English page; the Spanish one is not the one being shown.
  */
+/*
+ * St. Petersburg, from the 28 days to 5 October 2026: this page is the one
+ * Google shows to St. Petersburg phones for the generic "services" phrasing,
+ * "air duct cleaning services", "air and duct cleaning services", "home air
+ * duct cleaning services", "air duct cleaning service" and the rest, about
+ * 1,600 mobile impressions at positions 28 to 51 against roughly 40 for the
+ * plain city query. The searchers are local; the page's title just never
+ * used their word. It fits in 60 characters with the price kept.
+ *
+ * Fort Myers is left as it is but no longer for the reason written above it:
+ * the same query in the same window was 1,973 impressions, all desktop, in
+ * bursts of 100 to 250 a day at position 1 with no clicks, which is a rank
+ * tracker polling the result, not people passing it over.
+ */
 const CITY_TITLE: Record<string, string> = {
   'Fort Myers': `Duct Cleaning Fort Myers, FL | $${PRICES.ductLow} to $${PRICES.ductHigh}, Priced First`,
+  'St. Petersburg': `Air Duct Cleaning Services in St. Petersburg, FL | From $${PRICES.ductLow}`,
 };
 
 export function cityMeta({ name, county }: CityMetaInput) {
@@ -130,7 +145,7 @@ export function regionMeta(name: string) {
     title: fit(`Air Duct Cleaning in ${name} | From $${PRICES.ductLow}`, LIMITS.title),
     description: fit(
       `Air duct cleaning across ${name} from $${PRICES.ductLow}, dryer vents from $${PRICES.ventLow}. ` +
-        `Upfront price before we book. Licensed, insured, NADCA standards.`,
+        `Upfront price before we book. Insured, NADCA standards.`,
       LIMITS.description,
     ),
   };
