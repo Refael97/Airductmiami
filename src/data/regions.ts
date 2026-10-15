@@ -137,21 +137,21 @@ export const regionPages: RegionPageContent[] = [
     counties: ['Palm Beach County'],
     metaTitle: 'Air Duct Cleaning in Palm Beach County, FL | West Palm Beach Area Pros',
     metaDescription:
-      'Air duct cleaning, dryer vent cleaning, and duct mold removal across Palm Beach County: West Palm Beach, Boca Raton, Boynton Beach, and Delray Beach. Local 561 team. Free quotes.',
+      'Air duct cleaning, dryer vent cleaning, and duct mold removal across Palm Beach County: West Palm Beach, Boca Raton, Boynton Beach, and Delray Beach. Local crews. Free quotes.',
     esMetaTitle: 'Limpieza de Ductos en el Condado de Palm Beach, FL | West Palm Beach',
     esMetaDescription:
-      'Limpieza de ductos de aire, ducto de secadora y eliminación de moho en ductos en el condado de Palm Beach: West Palm Beach, Boca Raton, Boynton Beach y Delray Beach. Equipo local 561. Cotización gratis.',
+      'Limpieza de ductos de aire, ducto de secadora y eliminación de moho en ductos en el condado de Palm Beach: West Palm Beach, Boca Raton, Boynton Beach y Delray Beach. Equipo local. Cotización gratis.',
     answer:
-      'Florida Breeze Air Duct is a local Palm Beach County team, reachable at our 561 number, providing air duct cleaning, dryer vent cleaning, and air duct mold removal throughout West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, and the surrounding communities. Insured, NADCA standards, free quotes.',
+      'Florida Breeze Air Duct is a local Palm Beach County team providing air duct cleaning, dryer vent cleaning, and air duct mold removal throughout West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, and the surrounding communities. Insured, NADCA standards, free quotes.',
     esAnswer:
-      'Florida Breeze Air Duct es un equipo local del condado de Palm Beach, con número 561, que ofrece limpieza de ductos de aire, limpieza del ducto de secadora y eliminación de moho en ductos en West Palm Beach, Boca Raton, Boynton Beach, Delray Beach y las comunidades cercanas. Asegurados, normas NADCA y cotizaciones gratis.',
+      'Florida Breeze Air Duct es un equipo local del condado de Palm Beach que ofrece limpieza de ductos de aire, limpieza del ducto de secadora y eliminación de moho en ductos en West Palm Beach, Boca Raton, Boynton Beach, Delray Beach y las comunidades cercanas. Asegurados, normas NADCA y cotizaciones gratis.',
     body: [
-      'Palm Beach County is home base for us. Our phone number starts with 561 because our crews start their mornings here, from downtown West Palm Beach to the gated communities west of Boynton Beach and the golf course neighborhoods of Boca Raton and Delray Beach.',
+      'Palm Beach County is home base for us. Our crews start their mornings here, from downtown West Palm Beach to the gated communities west of Boynton Beach and the golf course neighborhoods of Boca Raton and Delray Beach.',
       'The county mixes two very different duct problems. Older coastal homes and condos east of I-95 fight humidity and salt air, which show up as musty AC smells and mold at the coil. Newer construction west of the turnpike has long flexible duct runs through hot attics that leak, sag, and fill with construction dust. We clean, repair, and treat both every week.',
       'Duct mold is the request we hear most in Palm Beach County. Our process is honest: we camera-inspect first, show you what we find, and only then quote remediation. Cleaning with negative-air equipment removes the contamination, an EPA-registered antimicrobial treats the surfaces, and a coil UV light can keep it from coming back.',
     ],
     esBody: [
-      'El condado de Palm Beach es nuestra base. Nuestro número de teléfono empieza con 561 porque nuestras cuadrillas comienzan la mañana aquí, desde el centro de West Palm Beach hasta las comunidades cerradas al oeste de Boynton Beach y los vecindarios con campos de golf de Boca Raton y Delray Beach.',
+      'El condado de Palm Beach es nuestra base. Nuestras cuadrillas comienzan la mañana aquí, desde el centro de West Palm Beach hasta las comunidades cerradas al oeste de Boynton Beach y los vecindarios con campos de golf de Boca Raton y Delray Beach.',
       'El condado combina dos problemas de ductos muy distintos. Las casas y condominios costeros más antiguos, al este de la I-95, pelean contra la humedad y el aire salado, que se manifiestan como olor a humedad en el aire acondicionado y moho en el serpentín. La construcción más nueva, al oeste del turnpike, tiene tramos largos de ducto flexible que cruzan áticos calientes y que gotean, se cuelgan y se llenan de polvo de obra. Limpiamos, reparamos y tratamos ambos casos cada semana.',
       'La eliminación de moho en ductos es la solicitud que más escuchamos en el condado de Palm Beach. Nuestro proceso es honesto: primero inspeccionamos con cámara, le mostramos lo que encontramos y solo entonces cotizamos la remediación. La limpieza con equipo de aire negativo retira la contaminación, un antimicrobiano registrado por la EPA trata las superficies y una luz UV en el serpentín puede evitar que regrese.',
     ],
@@ -159,13 +159,13 @@ export const regionPages: RegionPageContent[] = [
       { question: 'Do you remove mold from air ducts in Palm Beach County?', answer: 'Yes. Air duct mold removal is one of our most requested Palm Beach County services. We inspect with a camera, clean with negative-air source-removal equipment, apply an EPA-registered antimicrobial, and can install a coil UV light to prevent regrowth.' },
       { question: 'How much does air duct cleaning cost in West Palm Beach and Boca Raton?', answer: 'The range is the same across the county: $300 to $600 for a complete single-system cleaning, $100 to $200 for dryer vent cleaning, and custom quotes for mold remediation based on what the inspection finds.' },
       { question: 'Which Palm Beach County cities do you serve?', answer: 'West Palm Beach, Boca Raton, Boynton Beach, Delray Beach, and the surrounding communities, including Lake Worth Beach, Wellington, Jupiter, Palm Beach Gardens, and Royal Palm Beach.' },
-      { question: 'Are you actually local to Palm Beach County?', answer: 'Yes. Our number is a local 561 number and our crews are based in the county, which is why most Palm Beach appointments can be scheduled within a few days.' },
+      { question: 'Are you actually local to Palm Beach County?', answer: 'Yes. Our crews are based in the county, which is why most Palm Beach appointments can be scheduled within a few days.' },
     ],
     esFaq: [
       { question: 'Eliminan moho de los ductos en el condado de Palm Beach?', answer: 'Sí. La eliminación de moho en ductos es uno de los servicios que más nos piden en el condado de Palm Beach. Inspeccionamos con cámara, limpiamos con equipo de aire negativo de extracción en la fuente, aplicamos un antimicrobiano registrado por la EPA y podemos instalar una luz UV en el serpentín para evitar que regrese.' },
       { question: 'Cuánto cuesta la limpieza de ductos en West Palm Beach y Boca Raton?', answer: 'El rango es el mismo en todo el condado: $300 a $600 por la limpieza completa de un sistema, $100 a $200 por el ducto de secadora y cotizaciones personalizadas para la remediación de moho según lo que encuentre la inspección.' },
       { question: 'Qué ciudades del condado de Palm Beach atienden?', answer: 'West Palm Beach, Boca Raton, Boynton Beach, Delray Beach y las comunidades cercanas, incluidas Lake Worth Beach, Wellington, Jupiter, Palm Beach Gardens y Royal Palm Beach.' },
-      { question: 'De verdad son locales del condado de Palm Beach?', answer: 'Sí. Nuestro número es un 561 local y nuestras cuadrillas tienen base en el condado. Por eso la mayoría de las citas en Palm Beach se puede agendar en pocos días.' },
+      { question: 'De verdad son locales del condado de Palm Beach?', answer: 'Sí. Nuestras cuadrillas tienen base en el condado. Por eso la mayoría de las citas en Palm Beach se puede agendar en pocos días.' },
     ],
   },
 ];
