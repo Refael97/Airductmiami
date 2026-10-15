@@ -179,8 +179,8 @@ export function regionMetaEs(name: string) {
 export function dryerVentCityMeta({ name, county }: CityMetaInput) {
   const title = fit(`Dryer Vent Cleaning in ${name}, FL | From $${PRICES.ventLow}`, LIMITS.title);
   const description = fit(
-    `Dryer vent cleaning in ${name}, ${county} from $${PRICES.ventLow}. ` +
-      `Clogged vents cause fires and double your drying time. Price before we book.`,
+    `Dryer vent cleaning in ${name}, ${county} from $${PRICES.ventLow}; repair and new dryer duct ` +
+      `installation $200 to $600. Price before we book.`,
     LIMITS.description,
   );
   return { title, description };

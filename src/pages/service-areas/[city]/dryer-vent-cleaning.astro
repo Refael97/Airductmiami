@@ -66,6 +66,10 @@ const faq = [
     answer: `Once a year for a typical household. More often if you run several loads a day, if anyone in the house sheds a lot of pet hair, or if you have one of the long attic or roof runs that are common in ${city.county}.`,
   },
   {
+    question: `How much does dryer vent installation or repair cost in ${city.name}?`,
+    answer: `Replacing or repairing a dryer duct, or installing a new one, runs $200 to $600 in ${city.name}. A short run straight through an exterior wall sits at the bottom of that range; a long attic run to a roof cap, or a new laundry location that needs a route from scratch, sits at the top. We use rigid metal duct and give you the price before we book.`,
+  },
+  {
     question: `Is a blocked dryer vent actually a fire risk?`,
     answer: `Yes, and it is not a marketing line. Lint is highly flammable, and a restricted vent makes the dryer run hotter than it was designed to. The US Fire Administration attributes thousands of residential fires a year to clothes dryers, with failure to clean them the leading cause.`,
   },
@@ -144,6 +148,28 @@ const otherCities = dryerVentCities
           <li><strong>Second airflow reading.</strong> Same instrument, same place. If the number has not moved, the job is not finished.</li>
         </ol>
 
+        {/* Added 15 October 2026. "dryer duct installation near me" carried 462
+            mobile impressions over the 28 days to 13 October at position 46,
+            all on the statewide service page, while these city pages were
+            already ranking 8 to 9 for "dryer vent repair near me" and "dryer
+            vent installation near me" without saying a word about either.
+            Local searches want a local page; this gives the one already
+            winning the repair intent the installation answer and price. */}
+        <h2>Dryer vent repair and installation in {city.name}</h2>
+        <p>
+          Some runs are past cleaning. Foil or plastic flex hose in the wall or attic, a joint that has come
+          apart, a run with more bends than the dryer is rated for, or a new laundry location with no vent at all
+          all mean the duct itself has to change. We replace it with rigid metal duct on the shortest safe route
+          to the outside, seal the joints with foil tape rather than screws that catch lint, and fit a hood with
+          a working damper.
+        </p>
+        <p>
+          Dryer duct repair, replacement and new installation in {city.name} runs $200 to $600, depending on the
+          length of the run and whether it goes through a wall or up through the attic to a roof cap. As with
+          cleaning, you get the figure before we book. More on how we route and what code allows is on our
+          {' '}<a href="/services/dryer-vent-installation/">dryer vent and dryer duct installation</a> page.
+        </p>
+
         {detail.neighborhoods.length > 0 && (
           <>
             <h2>Where in {city.name} we work</h2>
@@ -164,7 +190,7 @@ const otherCities = dryerVentCities
             <tr><td>Dryer vent cleaning, standard wall or short run</td><td>From ${PRICES.ventLow}*</td></tr>
             <tr><td>Dryer vent cleaning, long attic or roof run</td><td>${PRICES.ventLow} to ${PRICES.ventHigh}*</td></tr>
             <tr><td>Combined with air duct cleaning</td><td>Bundled, quoted together</td></tr>
-            <tr><td>Vent rerouting or replacement</td><td>Quoted after inspection</td></tr>
+            <tr><td>Dryer vent repair, replacement or new installation</td><td>$200 to $600*</td></tr>
           </tbody>
         </table>
         <p class="footnote">

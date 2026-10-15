@@ -75,6 +75,10 @@ const faq = [
     answer: `Una vez al año para una casa normal. Más seguido si corre varias cargas al día, si hay mascotas que sueltan mucho pelo, o si tiene uno de esos tramos largos de ático o de techo que son comunes en ${city.county}.`,
   },
   {
+    question: `¿Cuánto cuesta instalar o reparar la ventila de la secadora en ${city.name}?`,
+    answer: `Reparar o reemplazar un ducto de secadora, o instalar uno nuevo, cuesta entre $200 y $600 en ${city.name}. Un tramo corto que sale directo por la pared queda abajo de ese rango; un tramo largo por el ático hasta el techo, o una lavandería nueva que necesita ruta desde cero, queda arriba. Usamos ducto rígido de metal y le damos el precio antes de agendar.`,
+  },
+  {
     question: `¿De verdad es un riesgo de incendio?`,
     answer: `Sí, y no es una frase de venta. La pelusa es altamente inflamable, y una ventila restringida hace que la secadora trabaje más caliente de lo que fue diseñada. La US Fire Administration atribuye miles de incendios residenciales al año a las secadoras de ropa, y señala la falta de limpieza como la causa principal.`,
   },
@@ -157,6 +161,22 @@ const otherCities = dryerVentCitiesEs
           <li><strong>Segunda medición de flujo.</strong> Mismo instrumento, mismo punto. Si el número no se movió, el trabajo no está terminado.</li>
         </ol>
 
+        {/* Twin of the English section added 15 October 2026; see there. */}
+        <h2>Reparación e instalación de ventila de secadora en {city.name}</h2>
+        <p>
+          Hay ductos que ya no se arreglan con una limpieza. Manguera de aluminio delgado o de plástico dentro de la
+          pared o del ático, una unión que se soltó, un tramo con más curvas de las que la secadora admite, o una
+          lavandería nueva que no tiene ventila: en todos esos casos lo que hay que cambiar es el ducto. Lo
+          reemplazamos con ducto rígido de metal por la ruta segura más corta hacia afuera, sellamos las uniones con
+          cinta de aluminio en vez de tornillos que atrapan pelusa, y ponemos una salida con aleta que funcione.
+        </p>
+        <p>
+          Reparar, reemplazar o instalar un ducto de secadora nuevo en {city.name} cuesta entre $200 y $600, según
+          el largo del tramo y si sale por la pared o sube por el ático hasta el techo. Igual que con la limpieza,
+          le damos el precio antes de agendar. Más detalle sobre cómo lo hacemos en
+          {' '}<a href="/es/servicios/dryer-vent-installation/">instalación de ventila y ducto de secadora</a>.
+        </p>
+
         {detail.neighborhoods.length > 0 && (
           <>
             <h2>Dónde trabajamos en {city.name}</h2>
@@ -177,7 +197,7 @@ const otherCities = dryerVentCitiesEs
             <tr><td>Ventila de secadora, salida de pared o tramo corto</td><td>Desde ${PRICES.ventLow}*</td></tr>
             <tr><td>Ventila de secadora, tramo largo de ático o techo</td><td>${PRICES.ventLow} a ${PRICES.ventHigh}*</td></tr>
             <tr><td>Junto con limpieza de ductos de aire</td><td>Se cotiza en paquete</td></tr>
-            <tr><td>Cambio de ruta o reemplazo del ducto</td><td>Se cotiza después de revisar</td></tr>
+            <tr><td>Reparación, reemplazo o instalación nueva del ducto</td><td>$200 a $600*</td></tr>
           </tbody>
         </table>
         <p class="footnote">

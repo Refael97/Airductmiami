@@ -1219,6 +1219,24 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Forest Ridge', 'Ivanhoe', 'Long Lake Estates', 'Shenandoah', 'Orange Park', 'Pine Island Ridge', 'Rolling Hills'],
   },
   sunrise: {
+    /* Added 15 October 2026. Over the 28 days to 13 October the Sunrise city
+       page was shown 99 times on phones for "air duct repair sunrise cove" at
+       position 4.8 with no click, the only repair query in the data with a
+       first page position and no repair page to send it to. */
+    ductRepair: {
+      local: [
+        'The repair work in Sunrise splits along the same line as everything else in the city. In Sunrise Lakes, Sunrise Golf Village and the other seventies villa and low rise communities, the air handlers have been replaced more than once but the duct they feed is frequently original. Fifty year old duct board and fabric connectors on a modern variable speed air handler is where we find the noise, the whistling grilles and the joints that have let go.',
+        'In the single family half, from Welleby and Springtree out toward Sawgrass, the duct is flex across a hot attic. The jacket ages, the run sags between the trusses, and a connection at the plenum or at a branch fitting pulls apart. That is cooled air going straight into the attic, and the room at the end of that run never catches up with the thermostat.',
+      ],
+      common: 'A separated flex connection in the attic, or original duct board on a replaced air handler, losing cooled air before it reaches the room.',
+    },
+    ductRepairEs: {
+      local: [
+        'Las reparaciones en Sunrise se dividen igual que todo lo demás en la ciudad. En Sunrise Lakes, Sunrise Golf Village y las otras comunidades de villas y edificios bajos de los setenta, el manejador de aire se ha cambiado más de una vez pero el ducto que alimenta muchas veces es el original. Ducto de cartón de cincuenta años y uniones de tela conectados a un manejador moderno de velocidad variable es donde encontramos el ruido, las rejillas que silban y las uniones que ya se soltaron.',
+        'En la mitad de casas solas, de Welleby y Springtree hacia Sawgrass, el ducto es flexible y cruza un ático caliente. La cubierta envejece, el tramo se descuelga entre las vigas, y una conexión en el pleno o en un ramal se separa. Eso es aire frío yendo directo al ático, y el cuarto al final de ese tramo nunca alcanza al termostato.',
+      ],
+      common: 'Una conexión de flexible suelta en el ático, o ducto de cartón original en un manejador nuevo, perdiendo aire frío antes de llegar al cuarto.',
+    },
     dryerVentEs: {
       local: [
         'Sunrise se construyó casi entera entre los setenta y los noventa, y esa uniformidad ayuda: la lavandería está en el garaje o en un cuarto interior, y el ducto sube al ático hasta una salida de techo. Las fallas aquí son predecibles.',
