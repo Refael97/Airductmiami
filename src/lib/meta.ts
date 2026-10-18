@@ -115,9 +115,36 @@ const CITY_TITLE: Record<string, string> = {
   'St. Petersburg': `Air Duct Cleaning Services in St. Petersburg, FL | From $${PRICES.ductLow}`,
 };
 
+/*
+ * Cities whose air duct page Google mostly shows to dryer vent searchers.
+ *
+ * Over the 28 days to 16 October 2026, on phones, these pages sat in the top
+ * twelve for "dryer vent cleaning near me", "dryer duct cleaning near me" and
+ * "dryer vent cleaning service near me" (Greenacres 211 such impressions,
+ * Lake Worth 254, Bonita Springs 447 across both services, Coconut Creek 80,
+ * Lehigh Acres 62) and took no clicks, under a title that says only "Air
+ * Duct Cleaning". Deerfield Beach is here for the same reason at a lower
+ * position: about 550 dryer vent impressions a month land on its city page
+ * rather than its dryer page, against roughly 200 for the duct phrasing.
+ *
+ * The title names both services, dryer first, and keeps the $100 floor only
+ * where the whole thing still fits in 60 characters; a cut-off "| From"
+ * reads worse than no price.
+ */
+const DRYER_LED = new Set([
+  'Greenacres', 'Lake Worth Beach', 'Coconut Creek', 'Lehigh Acres', 'Bonita Springs', 'Deerfield Beach',
+]);
+
+function dryerLedTitle(name: string): string {
+  const base = `Dryer Vent & Air Duct Cleaning in ${name}, FL`;
+  const priced = `${base} | From $${PRICES.ventLow}`;
+  return priced.length <= LIMITS.title ? priced : base;
+}
+
 export function cityMeta({ name, county }: CityMetaInput) {
   const title = fit(
-    CITY_TITLE[name] ?? `Air Duct Cleaning in ${name}, FL | From $${PRICES.ductLow}`,
+    CITY_TITLE[name] ??
+      (DRYER_LED.has(name) ? dryerLedTitle(name) : `Air Duct Cleaning in ${name}, FL | From $${PRICES.ductLow}`),
     LIMITS.title,
   );
   const description = fit(
