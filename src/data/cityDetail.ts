@@ -632,6 +632,69 @@ export const cityDetail: Record<string, CityDetail> = {
     ],
     neighborhoods: ['Keystone Point', 'Sans Souci Estates', 'Griffing Park', 'Arch Creek', 'Sunkist Grove', 'Cloverleaf', 'San Michel'],
   },
+  'north-miami-beach': {
+    depth: [
+      {
+        heading: "Despite the name, mostly not a beach town",
+        body: [
+          "North Miami Beach is often confused with the beaches, but most of the city sits inland along Biscayne Boulevard, NE 163rd Street and the blocks west of them. The heart of it is single storey block houses from the fifties and sixties, Fulford and Highland Village among them, on slab with a shallow attic under a low roof.",
+          "Central air reached most of those houses after they were built, and the duct layout shows it: a trunk through the attic, short branches dropped through the ceiling, and one central return in the hallway that was sized for a house before its rooms were closed off and its windows sealed. A new air handler on that layout often changes very little, because the restriction was never the equipment.",
+          "The duct material of that era comes up constantly. Fibreglass duct board was common for plenums and trunks, and once its inner surface erodes it sheds fibre from the cut edges into the airstream. That is a replacement conversation, not a cleaning one, and we say so when we find it.",
+        ],
+      },
+      {
+        heading: "Eastern Shores and the water",
+        body: [
+          "Eastern Shores is the exception, waterfront houses on canals off the Intracoastal, and the closer a house sits to the water the more humid and salt laden the air its system works with. Duct surfaces stay cold after a day of running, damp air reaches them when the system cycles off, and they sweat. Dust that would have blown through sticks to a damp surface.",
+          "Salt reaches the outdoor condenser first and the indoor coil second, through every gap in the return. Dampers and roof caps corrode until they stop closing, and a stuck damper leaves the duct open to the outside air all night. The coil and the drain pan are usually where a musty smell at start up is coming from.",
+        ],
+      },
+      {
+        heading: "The condo corridors",
+        body: [
+          "Along NE 163rd Street, Biscayne Boulevard and the Intracoastal, a large share of homes are condominium units with a compact air handler in a hallway closet and short runs. The whole system cleans properly in a few hours, and the difference is easier to feel than in a house because there is less system to dilute it.",
+          "Where your run joins anything serving other units, that part belongs to the association. We tell you which side of the line a problem is on before quoting, including when the honest answer is that it is the board's to fix.",
+        ],
+      },
+      {
+        heading: "What it costs here",
+        body: [
+          "The same as the rest of Miami-Dade: $300 to $600 per system for a full cleaning, and $100 to $200 for a dryer vent. Almost every house here is one system, so it is one price. You get the number before we book, not when the technician is already in your hallway.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Aunque se llame así, casi no es un pueblo de playa",
+        body: [
+          "North Miami Beach se confunde a menudo con las playas, pero casi toda la ciudad queda tierra adentro, sobre Biscayne Boulevard, la calle 163 NE y las cuadras al oeste. El corazón son casas de bloque de una planta de los cincuenta y sesenta, Fulford y Highland Village entre ellas, sobre losa y con un ático bajo debajo de un techo de poca pendiente.",
+          "El aire central llegó a casi todas esas casas después de construidas, y la distribución lo muestra: un tronco por el ático, ramales cortos que bajan por el cielo raso, y un solo retorno central en el pasillo, dimensionado para una casa antes de que se cerraran sus cuartos y se sellaran sus ventanas. Una manejadora nueva sobre esa distribución muchas veces cambia muy poco, porque el límite nunca fue el equipo.",
+          "El material de ducto de esa época sale todo el tiempo. El ducto de cartón de fibra de vidrio era común en plenums y troncos, y cuando su superficie interior se erosiona suelta fibra por los bordes cortados hacia el aire. Esa es una conversación de reemplazo, no de limpieza, y se lo decimos cuando lo encontramos.",
+        ],
+      },
+      {
+        heading: "Eastern Shores y el agua",
+        body: [
+          "Eastern Shores es la excepción, casas sobre canales que salen al Intracoastal, y mientras más cerca del agua está la casa, más húmedo y salino es el aire con el que trabaja su sistema. Las superficies del ducto siguen frías después de un día de trabajo, les llega aire húmedo cuando el equipo se apaga, y sudan. El polvo que habría pasado de largo se pega a una superficie mojada.",
+          "La sal llega primero al condensador de afuera y después al serpentín de adentro, por cualquier hueco del retorno. Las compuertas y las salidas de techo se corroen hasta que no cierran, y una compuerta trabada deja el ducto abierto al aire de afuera toda la noche. El serpentín y la bandeja de drenaje suelen ser de donde sale el olor a humedad al arrancar.",
+        ],
+      },
+      {
+        heading: "Los corredores de condominios",
+        body: [
+          "Sobre la calle 163 NE, Biscayne Boulevard y el Intracoastal, buena parte de las viviendas son unidades de condominio con una manejadora compacta en un clóset de pasillo y tramos cortos. Todo el sistema se limpia bien en unas horas, y la diferencia se siente más que en una casa porque hay menos sistema donde diluirla.",
+          "Donde su tramo se une a algo que sirve a otras unidades, esa parte es de la asociación. Le decimos de qué lado de la línea está el problema antes de cotizar, incluso cuando la respuesta honesta es que le toca a la junta.",
+        ],
+      },
+      {
+        heading: "Lo que cuesta aquí",
+        body: [
+          "Lo mismo que en el resto de Miami-Dade: entre 300 y 600 dólares por sistema por una limpieza completa, y entre 100 y 200 por la ventila de la secadora. Casi todas las casas aquí son de un solo sistema, así que es un solo precio. Se lo damos antes de agendar, no cuando el técnico ya está en su pasillo.",
+        ],
+      },
+    ],
+    neighborhoods: ['Eastern Shores', 'Fulford', 'Highland Village', 'Oleta River area'],
+  },
   aventura: {
     dryerVentEs: {
       local: [
@@ -1390,6 +1453,23 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
   'coconut-creek': {
+    /* Added 19 October 2026. Over the 28 days to 16 October this city page sat in the top twelve on phones for "dryer vent cleaning near me" 40 times, plus about 30 searches a quarter naming the city with "dryer", and had no dryer vent page to offer. */
+    dryerVent: {
+      local: [
+        "Coconut Creek splits into the two kinds of dryer venting we see most. Wynmoor and the other association communities are low rise buildings where the dryer sits in a closet and vents a short distance to an exterior wall, and what clogs is the last foot: the wall hood and the screen or damper behind it, which nobody can reach from inside a second floor unit.",
+        "Winston Park, Regency Lakes and the other single family streets are eighties and nineties slab homes with the laundry in the garage or on an interior wall. A garage dryer usually vents straight out through the block. An interior laundry vents up into the attic and across it to a roof cap, and that long run, through an attic past 120 degrees in summer, is where lint settles at every sag.",
+        "The landscaping the city is known for adds to it. Roof caps and wall hoods under heavy planting collect leaf litter and seed debris, and a clear duct behind a blocked exit performs exactly like a blocked one.",
+      ],
+      common: "A short condo run blocked at an exterior wall hood nobody can reach, or a long attic run to a roof cap under heavy landscaping.",
+    },
+    dryerVentEs: {
+      local: [
+        "Coconut Creek se divide en los dos tipos de ventila de secadora que más vemos. Wynmoor y las demás comunidades de asociación son edificios bajos donde la secadora está en un clóset y ventila un tramo corto hasta una pared exterior, y lo que se tapa es el último pie: la salida en la pared y la rejilla o la aleta detrás, que nadie alcanza desde adentro de una unidad de segundo piso.",
+        "Winston Park, Regency Lakes y las demás calles de casas solas son construcción sobre losa de los ochenta y noventa, con la lavandería en el garaje o en una pared interior. Una secadora en el garaje casi siempre ventila directo a través del bloque. Una lavandería interior ventila hacia el ático y lo cruza hasta el techo, y ese tramo largo, por un ático de más de 120 grados en verano, es donde la pelusa se asienta en cada parte descolgada.",
+        "La vegetación por la que la ciudad es conocida suma. Las salidas de techo y de pared bajo plantas densas juntan hojas y semillas, y un ducto limpio con la salida tapada funciona igual que uno tapado.",
+      ],
+      common: "Un tramo corto de condominio tapado en una salida de pared que nadie alcanza, o un tramo largo por el ático hasta el techo bajo vegetación densa.",
+    },
     depthEs: [
       {
         heading: 'Wynmoor y los edificios de asociación: todo el complejo envejece al mismo tiempo',
@@ -2349,6 +2429,23 @@ export const cityDetail: Record<string, CityDetail> = {
   },
 
   weston: {
+    /* Added 19 October 2026. About 60 searches a quarter named Weston with a dryer vent phrase, 40 of them on phones, and the only page Google could offer was the air duct page. */
+    dryerVent: {
+      local: [
+        "Weston is mostly two storey houses from the nineties and two thousands, and the second floor laundry room is common here in a way it is not in older South Florida. A dryer upstairs vents either out through a side wall or up through the attic to a roof cap, and the roof route is the one that clogs: a vertical climb the dryer has to push lint up, then a cap on a roof nobody goes onto.",
+        "Where the laundry is downstairs, the vent often runs inside a wall or between floors to reach an exterior wall, which makes it long, hidden and easy to forget. The builders' original foil transition hose behind the machine is frequently still there, crushed flat by a dryer pushed back to fit the space.",
+        "The high water table and humid background air the city was built with keep the lint damp in a run that is already slow. Damp lint packs instead of blowing through, and a vent that was fine five years ago gets noticeably slower each season.",
+      ],
+      common: "A second floor laundry venting up to a roof cap, packed with damp lint on the vertical climb and at the cap.",
+    },
+    dryerVentEs: {
+      local: [
+        "Weston es casi todo casas de dos plantas de los noventa y los dos mil, y aquí la lavandería en el segundo piso es común de una forma que no lo es en el resto del sur de Florida más viejo. Una secadora arriba ventila por una pared lateral o sube por el ático hasta el techo, y la ruta por el techo es la que se tapa: una subida vertical por la que la secadora tiene que empujar la pelusa, y después una salida en un techo al que nadie se sube.",
+        "Donde la lavandería está abajo, la ventila muchas veces corre por dentro de una pared o entre pisos hasta llegar afuera, y eso la hace larga, escondida y fácil de olvidar. La manguera de aluminio original detrás de la máquina suele seguir ahí, aplastada por una secadora empujada contra la pared.",
+        "El nivel freático alto y el aire húmedo de fondo con los que se construyó la ciudad mantienen húmeda la pelusa en un tramo que ya es lento. La pelusa húmeda se compacta en vez de salir, y una ventila que hace cinco años andaba bien se pone más lenta cada temporada.",
+      ],
+      common: "Una lavandería en el segundo piso que ventila hacia el techo, con pelusa húmeda compactada en la subida y en la salida.",
+    },
     depthEs: [
       {
         heading: 'Construido sobre los Everglades, y el agua no se fue',
@@ -3307,6 +3404,23 @@ export const cityDetail: Record<string, CityDetail> = {
     neighborhoods: ['Cape Harbour', 'Pelican', 'Tarpon Point', 'Sandoval', 'Burnt Store', 'Yacht Club', 'Four Mile Cove'],
   },
   'lehigh-acres': {
+    /* Added 19 October 2026. Over the 28 days to 16 October this city page was shown 29 times on phones for "dryer vent cleaning near me" at a top ten position and had no dryer vent page to send it to. */
+    dryerVent: {
+      local: [
+        "The two Lehighs vent their dryers differently. The older homes on mid-century lots are small block houses where the laundry is usually in the garage or a utility room on an outside wall, so the vent is short and goes straight out. What fails there is age: a hood whose damper has rusted shut and a transition hose that has been replaced with whatever was at hand.",
+        "The boom era streets are larger houses built fast, and the laundry is often on an interior wall with a vent run up into the attic to a roof cap. Those runs were laid the quickest way rather than the shortest, with more bends than the dryer is rated for, and every extra bend is a place lint stops.",
+        "The open land and unpaved roads add a dust load most suburbs do not have. Exterior hoods pick it up along with the lint, and a damper that cannot swing open fully halves the airflow before anything inside the duct is wrong.",
+      ],
+      common: "A fast-built attic run with more bends than the dryer is rated for, or an old wall hood rusted shut on a mid-century house.",
+    },
+    dryerVentEs: {
+      local: [
+        "Los dos Lehigh ventilan la secadora de forma distinta. Las casas viejas en lotes de mediados de siglo son casas de bloque chicas donde la lavandería suele estar en el garaje o en un cuarto de servicio sobre una pared exterior, así que la ventila es corta y sale directo. Lo que falla ahí es la edad: una salida con la aleta oxidada y cerrada, y una manguera de transición reemplazada con lo que hubo a mano.",
+        "Las calles del auge son casas más grandes construidas deprisa, y la lavandería muchas veces está en una pared interior con la ventila subiendo al ático hasta el techo. Esos tramos se hicieron por el camino más rápido y no por el más corto, con más curvas de las que la secadora admite, y cada curva de más es un lugar donde la pelusa se detiene.",
+        "El terreno abierto y los caminos sin pavimentar agregan una carga de polvo que casi ningún suburbio tiene. Las salidas exteriores lo juntan junto con la pelusa, y una aleta que no abre del todo reduce el flujo a la mitad antes de que haya algo mal dentro del ducto.",
+      ],
+      common: "Un tramo por el ático hecho deprisa, con más curvas de las que la secadora admite, o una salida de pared vieja oxidada y cerrada en una casa de mediados de siglo.",
+    },
     depthEs: [
       {
         heading: 'Dos Lehigh distintos, y hay que saber en cuál está usted',

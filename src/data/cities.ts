@@ -56,11 +56,20 @@ export const cities: City[] = [
   { slug: 'north-miami', name: 'North Miami', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'North Miami’s coastal humidity and established housing stock make routine duct cleaning and mold prevention a smart investment.',
     local: 'A mix of aging single-family homes and condos here often hides duct dust and early coil mold that our source-removal cleaning resolves.',
-    nearby: ['miami', 'miami-beach', 'hialeah', 'aventura'] },
+    nearby: ['miami', 'north-miami-beach', 'miami-beach', 'aventura'] },
+  /* Added 19 October 2026: "air duct cleaning north miami beach" and its
+     variants drew about 100 impressions a month, mostly on phones, at
+     positions 10 to 13, all landing on the North Miami page. North Miami
+     Beach is its own city with its own housing, and the North Miami page
+     never named it. */
+  { slug: 'north-miami-beach', name: 'North Miami Beach', county: 'Miami-Dade County', region: 'South Florida',
+    intro: "North Miami Beach sits between North Miami and Aventura, and despite the name it is mostly inland: mid-century single storey houses, condominium buildings along the main corridors, and a waterfront strip on the Intracoastal.",
+    local: "Fifties and sixties block homes with original-era duct layouts, condo air handlers in hallway closets, and canal-front houses in Eastern Shores breathing the most humid air in the city.",
+    nearby: ['north-miami', 'aventura', 'miami-beach', 'hollywood'] },
   { slug: 'aventura', name: 'Aventura', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'Aventura’s high-rise condo living comes with shared and individual HVAC systems that benefit from professional duct and coil cleaning.',
     local: 'Oceanfront towers here face salt air and constant humidity, and condo air handlers are prime spots for the coil mold we specialize in removing.',
-    nearby: ['north-miami', 'hollywood', 'miami-beach', 'hallandale-beach'] },
+    nearby: ['north-miami-beach', 'north-miami', 'hollywood', 'miami-beach'] },
   { slug: 'doral', name: 'Doral', county: 'Miami-Dade County', region: 'South Florida',
     intro: 'Doral is one of the newest cities in Miami-Dade and one of the fastest building, which shapes what goes wrong inside its ductwork: construction debris rather than age.',
     local: 'Townhomes and mid-rise condos here are mostly nineties onward, with flexible duct across the attic or a compact air handler in a closet, and a development pace that keeps fine construction dust in the air year round.',

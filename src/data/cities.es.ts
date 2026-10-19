@@ -60,6 +60,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Una mezcla de casas unifamiliares y condominios que van envejeciendo suele esconder polvo en los ductos y moho temprano en las serpentinas, que nuestra limpieza con remoción de origen resuelve.',
  region: 'Sur de Florida',
  },
+ 'north-miami-beach': {
+ intro: "North Miami Beach queda entre North Miami y Aventura y, aunque el nombre diga otra cosa, es casi toda tierra adentro: casas de una planta de mediados de siglo, edificios de condominio sobre las avenidas principales y una franja frente al Intracoastal.",
+ local: "Casas de bloque de los cincuenta y sesenta con la distribución de ductos de su época, manejadoras de condominio en clósets de pasillo, y casas sobre canales en Eastern Shores respirando el aire más húmedo de la ciudad.",
+ region: 'Sur de Florida',
+ },
  'aventura': {
  intro: 'La vida en condominios de gran altura de Aventura viene con sistemas de aire acondicionado compartidos e individuales que se benefician de una limpieza profesional de ductos y serpentinas.',
  local: 'Las torres frente al mar por aquí enfrentan aire salino y humedad constante, y los manejadores de aire de los condominios son puntos ideales para el moho en las serpentinas que nos especializamos en eliminar.',

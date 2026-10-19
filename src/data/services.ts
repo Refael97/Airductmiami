@@ -366,9 +366,14 @@ export const services: Service[] = [
     name: 'Air Duct Sanitizing & Deodorizing',
     shortName: 'Sanitizing',
     icon: '✨',
-    metaTitle: 'Air Duct Sanitizing & Deodorizing in Florida',
+    /* "Vent" and the price added 19 October 2026: over the previous 90 days
+       "air vent sanitizing near me" and "air duct sanitizing and cleaning"
+       drew about 190 impressions between them, mostly on phones, and Google
+       answered both with the home page and a blog post at positions 61 to
+       69 rather than this page, whose title never said "vent". */
+    metaTitle: 'Air Duct & Vent Sanitizing in Florida | $75 to $200',
     metaDescription:
-      'Air duct sanitizing across Florida after cleaning, applied to manufacturer specification. Price agreed before we book the visit.',
+      'Air duct and vent sanitizing across Florida, $75 to $200 with a cleaning, applied to manufacturer specification. Price agreed before we book the visit.',
     answer:
       'Air duct sanitizing applies an EPA-registered antimicrobial fog throughout cleaned ductwork to kill bacteria, mold spores, and odor-causing microbes. It is done after mechanical cleaning to treat what brushing alone cannot reach and to leave the system fresh.',
     intro: [
