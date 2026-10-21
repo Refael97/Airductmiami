@@ -365,3 +365,218 @@ li { margin-bottom: 0.4em; }
 /* Softer, larger section headings baseline */
 .section-head .lead { margin-top: 0.4rem; }
 .section-deep { background: var(--grad-deep); }
+
+/* ----------------------------------------------------------------------
+   Booking form, fields and its four steps.
+
+   Global rather than scoped to a component because the same markup renders
+   twice on the contact page: inline in the page, and again inside the
+   booking modal BaseLayout mounts on every page. A scoped style would
+   attach to one instance and leave the other bare.
+   ---------------------------------------------------------------------- */
+
+
+/* Booking steps. Every rule here is additive: with the script off none of
+   these elements is rendered except .wz-step, which styles as a plain
+   block, and .wz-jobs, which is a useful layout either way. */
+/* The UA rule for [hidden] is display:none, and any author display rule
+   beats it. Everything below that both sets display and gets toggled by
+   the script needs this or it stays on screen with hidden set: the rail
+   and the nav when the script never runs, Back on step one, Next on the
+   last step beside the submit button. */
+.wz-rail[hidden], .wz-nav[hidden], .wz-nav button[hidden] { display: none; }
+
+.wz-rail {
+  /* Column count follows the number of steps rather than being restated
+     here, so adding a fifth step never silently wraps the rail. */
+  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr);
+  list-style: none; padding: 0; margin: 0 0 1.4rem;
+  counter-reset: none;
+}
+.wz-rail li {
+  display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+  position: relative; text-align: center;
+  font-size: 0.78rem; color: var(--c-muted);
+}
+/* The connector sits behind the numbers rather than between them, so it
+   does not shift when a label wraps to two lines. */
+.wz-rail li::before {
+  content: ''; position: absolute; top: 0.9rem; right: 50%; left: -50%;
+  height: 2px; background: var(--c-line);
+}
+.wz-rail li:first-child::before { display: none; }
+.wz-num {
+  /* z-index, not just position: the connector on step N is drawn from the
+     centre of step N-1, so it passes straight under that step's circle.
+     Being a later sibling's pseudo-element it paints last and struck
+     through the numeral until the circle was lifted above it. */
+  display: grid; place-items: center; position: relative; z-index: 1;
+  width: 1.8rem; height: 1.8rem; border-radius: 50%;
+  background: #fff; border: 2px solid var(--c-line);
+  font-weight: 800; font-size: 0.85rem; color: var(--c-muted);
+}
+.wz-rail li.is-at { color: var(--c-ink); font-weight: 700; }
+.wz-rail li.is-at .wz-num { border-color: var(--c-primary); color: var(--c-primary); }
+.wz-rail li.is-done .wz-num { background: var(--c-primary); border-color: var(--c-primary); color: #fff; }
+.wz-rail li.is-done::before { background: var(--c-primary); }
+
+.wz-legend { font-size: 0.95rem; font-weight: 800; color: var(--c-ink); margin: 0 0 0.7rem; }
+.wz-legend span { color: var(--c-accent); }
+
+.wz-jobs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 1.3rem; }
+.wz-job {
+  display: block; cursor: pointer; overflow: hidden; text-align: center;
+  border: 2px solid var(--c-line); border-radius: var(--radius);
+  background: #fff; padding-bottom: 0.8rem;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.wz-job:hover { border-color: #c8cfd8; }
+.wz-job img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+/* Visually hidden, not display:none: a removed radio is not focusable and
+   cannot be reached by keyboard or reported as invalid. */
+.wz-job input {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+.wz-job-title { display: block; margin: 0.6rem 0.6rem 0.15rem; font-weight: 800; font-size: 0.92rem; color: var(--c-ink); }
+.wz-job-note { display: block; margin: 0 0.6rem; font-size: 0.78rem; color: var(--c-muted); line-height: 1.35; }
+.wz-job:has(input:checked) { border-color: var(--c-primary); box-shadow: var(--ring); }
+.wz-job:has(input:focus-visible) { outline: 2px solid var(--c-primary); outline-offset: 2px; }
+
+.wz-note { font-size: 0.8rem; color: var(--c-muted); margin: -0.3rem 0 1rem; }
+
+.wz-review {
+  border: 1px solid var(--c-line); border-radius: var(--radius);
+  background: var(--c-bg-alt, #f4f6f8); padding: 0.9rem 1.1rem; margin-bottom: 1.1rem;
+}
+.wz-review-h { font-size: 0.9rem; margin: 0 0 0.5rem; color: var(--c-ink); }
+.wz-review dl { display: grid; grid-template-columns: auto 1fr; gap: 0.25rem 0.9rem; margin: 0; font-size: 0.86rem; }
+.wz-review dt { color: var(--c-muted); }
+.wz-review dd { margin: 0; color: var(--c-ink); font-weight: 600; }
+
+.wz-nav { display: flex; gap: 0.7rem; margin-top: 1.1rem; }
+.wz-nav button { flex: 1; }
+/* Back is the secondary action even when it is the only one showing. */
+.wz-nav [data-wz='back'] { flex: 0 0 30%; }
+.hp { position: absolute; left: -9999px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.field { margin-bottom: 1rem; }
+.field label {
+  display: block; font-size: 0.85rem; font-weight: 700; color: var(--c-ink);
+  margin-bottom: 0.3rem;
+}
+.field label span { color: var(--c-accent); }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 0.7rem 0.85rem; font: inherit; font-size: 0.95rem;
+  border: 1px solid var(--c-line); border-radius: 10px; background: #fff;
+  color: var(--c-ink);
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; border-color: var(--c-primary); box-shadow: var(--ring);
+}
+.field textarea { resize: vertical; }
+.full { width: 100%; }
+.form-error {
+  background: rgba(214, 40, 40, 0.08);
+  border: 1px solid rgba(214, 40, 40, 0.35);
+  border-left: 4px solid var(--c-accent);
+  border-radius: var(--radius-sm);
+  color: var(--c-accent-dark);
+  font-size: 0.9rem; font-weight: 600;
+  padding: 0.7rem 0.9rem; margin: 0 0 0.9rem;
+}
+.form-note { font-size: 0.8rem; color: var(--c-muted); margin: 0.9rem 0 0; }
+
+@media (max-width: 520px) {
+    /* Three cards side by side at 375px leaves each one 100px wide and the
+       label unreadable. One per row, the image a full height strip down the
+       left.
+
+       The image spans every row, which is the whole trick. Left in row one
+       it sized that row to its own height, so the title floated in the
+       middle of a tall row, a gap opened between the title and the note
+       below it, and the note sat against blank card with no image beside
+       it at all. Spanning means the rows are sized by the text, and the
+       image simply fills whatever that comes to.
+
+       aspect-ratio is cleared for the same reason: a ratio and a filled
+       grid area are two different instructions about the same box. */
+    .wz-jobs { grid-template-columns: 1fr; gap: 0.6rem; }
+    .wz-job {
+      display: block; position: relative;
+      /* Room on the left for the image, which is taken out of flow. */
+      padding: 0.85rem 0.95rem 0.85rem calc(6.4rem + 1rem);
+      min-height: 6.4rem; text-align: left;
+    }
+    /* Two attempts got this wrong, so the reasoning is worth keeping.
+       height: 100% on a grid item cannot resolve against a row the content
+       sizes, and top/bottom offsets do not stretch a replaced element
+       either: an absolutely positioned image with height auto takes its
+       intrinsic height and ignores bottom. Both times it fell back to its
+       own 4:3 ratio and came up short of the card.
+
+       Taken out of flow, the containing block is the card's padding box,
+       whose height IS definite, so a percentage resolves against it and
+       cover crops the rest. max-width is cleared because the global reset
+       caps every image at its container. */
+    .wz-job img {
+      position: absolute; top: 0; left: 0;
+      width: 6.4rem; height: 100%; max-width: none;
+      aspect-ratio: auto; object-fit: cover;
+    }
+    .wz-job-title { margin: 0 0 0.2rem; }
+    .wz-job-note { margin: 0; }
+    .wz-rail .wz-lbl { display: none; }
+}
+
+/* ---- appointment grid -------------------------------------------------
+   Built in the browser from the visitor's clock in Florida time, so these
+   rules style elements that only ever exist after the script runs.
+   ---------------------------------------------------------------------- */
+
+
+.wz-day-h {
+  font-size: 0.9rem; font-weight: 800; color: var(--c-ink);
+  /* Generous above, tight below: the heading belongs to the grid under it,
+     not to the one it follows. */
+  margin: 1.3rem 0 0.45rem;
+}
+.wz-days > .wz-day-h:first-child { margin-top: 0; }
+
+.wz-slot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+.wz-slot {
+  padding: 0.62rem 0.3rem; cursor: pointer;
+  font: inherit; font-size: 0.88rem; font-weight: 700;
+  color: #fff; background: var(--c-primary);
+  border: 2px solid var(--c-primary); border-radius: 9px;
+  transition: filter 0.15s ease, box-shadow 0.15s ease;
+}
+.wz-slot:hover { filter: brightness(1.12); }
+.wz-slot:focus-visible { outline: 2px solid var(--c-ink); outline-offset: 2px; }
+/* The chosen window inverts rather than merely darkening, so which one is
+   selected survives a glance on a screen full of identical buttons. */
+.wz-slot.is-picked {
+  background: #fff; color: var(--c-primary);
+  box-shadow: inset 0 0 0 2px var(--c-primary), var(--ring);
+}
+
+.wz-slots-none {
+  border-left: 4px solid var(--c-accent); background: rgba(214, 40, 40, 0.06);
+  border-radius: 0 8px 8px 0; padding: 0.7rem 0.9rem; margin: 0 0 1rem;
+  font-size: 0.9rem; color: var(--c-ink);
+}
+.wz-confirm-note {
+  font-size: 0.85rem; color: var(--c-body);
+  margin: 0 0 1rem; padding-left: 0.9rem;
+  border-left: 3px solid var(--c-primary);
+}
+@media (max-width: 560px) {
+  .wz-slot-grid { grid-template-columns: repeat(2, 1fr); }
+  .wz-slot { padding: 0.75rem 0.3rem; }
+  .wz-rail .wz-lbl { display: none; }
+}
+.wz-rail li.is-at .wz-num { border-color: var(--c-orange); color: var(--c-orange); }
+.wz-job:has(input:checked) { border-color: var(--c-orange); }
+.wz-legend, .wz-job-title, .wz-review-h { font-family: var(--font-head); }
+

@@ -69,7 +69,7 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
         <span class="hdr-phone-num">{business.phone}</span>
       </a>
       {!minimal && (
-        <a href={t.contact} class="hdr-quote btn btn-accent">{t.quoteLabel}
+        <a href={t.contact} class="hdr-quote btn btn-accent" data-open-booking><span class="q-long">{t.quoteLabel}</span><span class="q-short">{lang === 'es' ? 'Cotizar' : 'Free quote'}</span>
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       )}
@@ -187,6 +187,7 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
   .hdr-phone svg { color: var(--c-orange); }
   .hdr-phone:hover { border-color: var(--c-ink); text-decoration: none; }
   .hdr-quote { white-space: nowrap; font-size: 0.92rem; padding: 0.72rem 1.25rem; }
+  .q-short { display: none; }
 
   .nav-toggle, .nav-toggle-label { display: none; }
 
@@ -199,7 +200,10 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
     .brand-mark { width: 36px; height: 36px; }
     .bw-top { font-size: 1.32rem; }
     .bw-sub { font-size: 0.5rem; }
-    .hdr-quote { display: none; }
+    .hdr-quote { padding: 0.55rem 0.85rem; font-size: 0.82rem; box-shadow: none; }
+    .hdr-quote svg { display: none; }
+    .q-long { display: none; }
+    .q-short { display: inline; }
     .hdr-phone { padding: 0; width: 42px; height: 42px; justify-content: center; }
     .hdr-phone-num { display: none; }
     .lang-switch { display: block; }
@@ -246,5 +250,16 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
     }
     .dropdown a { font-size: 0.92rem; color: var(--c-muted); }
     .lang-switch a { border-bottom: none; }
+  }
+  @media (max-width: 420px) {
+    .header-inner { gap: 0.4rem 0.35rem; }
+    .brand { gap: 0.4rem; }
+    .brand-mark { width: 32px; height: 32px; }
+    .bw-top { font-size: 1.15rem; }
+    .bw-sub { font-size: 0.44rem; letter-spacing: 0.55em; }
+    .hdr-phone { width: 38px; height: 38px; }
+    .hdr-quote { padding: 0.5rem 0.75rem; font-size: 0.8rem; }
+    .header-actions { gap: 0.35rem; }
+    .nav-toggle-label { width: 36px; }
   }
 </style>

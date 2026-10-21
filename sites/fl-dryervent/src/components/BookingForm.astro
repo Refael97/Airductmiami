@@ -1,0 +1,179 @@
+---
+/**
+ * The four step booking form: what, when, who, confirm.
+ *
+ * Markup only. BookingScript, included once by BaseLayout, enhances every
+ * `form[data-booking]` on the page with the steps, the appointment grid and
+ * the spam guards.
+ *
+ * Without JavaScript it is one long form with every step open and the two
+ * selects in `.wz-fallback` standing in for the appointment grid. It still
+ * posts and still produces a usable lead.
+ *
+ * Ids are prefixed per instance so two copies on one page never share a
+ * `label[for]` target.
+ */
+import LeadMeta from './LeadMeta.astro';
+import { services } from '../data/services';
+import { serviceEsContent } from '../data/services.es';
+import { REGION_ORDER, REGION_ES } from '../data/cities';
+import { booking } from '../data/booking';
+import type { Locale } from '../data/ui';
+
+interface Props {
+  lang: Locale;
+  /** Unique per instance on a page. Prefixes every id. */
+  idPrefix: string;
+  /** Which surface produced the lead. Reaches the pipeline in `source`. */
+  source: string;
+}
+const { lang, idPrefix: q, source } = Astro.props;
+const b = booking[lang];
+const es = lang === 'es';
+const serviceNames = services.map((s) => (es ? serviceEsContent[s.slug]?.name ?? s.name : s.name));
+const regionNames = REGION_ORDER.map((r) => (es ? REGION_ES[r] : r));
+const formName = 'booking';
+---
+<form
+  name={formName}
+  method="POST"
+  data-booking
+  data-prefix={q}
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action={b.thankYou}
+  class="quote-form booking-form"
+>
+  <input type="hidden" name="form-name" value={formName} />
+  <p class="hp">
+    <label>{b.honeypot} <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+  </p>
+  <input type="hidden" name="loaded_at" class="wz-loaded-at" value="" />
+  <LeadMeta source={source} lang={lang} />
+
+  <input type="hidden" name="appointment" class="wz-appt" value="" />
+  <input type="hidden" name="appointment_label" class="wz-appt-label" value="" />
+
+  <ol class="wz-rail" hidden>
+    <li><span class="wz-num">1</span><span class="wz-lbl">{b.step1}</span></li>
+    <li><span class="wz-num">2</span><span class="wz-lbl">{b.step2}</span></li>
+    <li><span class="wz-num">3</span><span class="wz-lbl">{b.step3}</span></li>
+    <li><span class="wz-num">4</span><span class="wz-lbl">{b.step4}</span></li>
+  </ol>
+
+  {/* ---- 1. what and where ---- */}
+  <div class="wz-step" data-step="1">
+    <p class="wz-legend" id={`${q}-job-legend`}>{b.jobLegend} <span aria-hidden="true">*</span></p>
+    <div class="wz-jobs" role="radiogroup" aria-labelledby={`${q}-job-legend`}>
+      {b.jobs.map((j) => (
+        <label class="wz-job">
+          <input type="radio" name="job_type" value={j.value} required />
+          <img src={j.photo.small} width="640" height="478" alt="" loading="lazy" decoding="async" />
+          <span class="wz-job-title">{j.title}</span>
+          <span class="wz-job-note">{j.note}</span>
+        </label>
+      ))}
+    </div>
+
+    <div class="field">
+      <label for={`${q}-zip`}>{b.zip} <span aria-hidden="true">*</span></label>
+      <input
+        type="text" id={`${q}-zip`} name="zip" required
+        inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+        title={b.zipTitle}
+        autocomplete="postal-code"
+      />
+    </div>
+  </div>
+
+  {/* ---- 2. when ---- */}
+  <div class="wz-step" data-step="2">
+    <p class="wz-legend">{b.slotsHeading} <span aria-hidden="true">*</span></p>
+
+    {/* Built in the browser from the current time in Florida every time this
+        step opens, so a page left open overnight never offers a past window. */}
+    <div class="wz-slots" hidden>
+      <div class="wz-days"></div>
+      <p class="wz-slots-none" hidden>{b.slotsNone}</p>
+      <p class="wz-note">{b.slotsNote}</p>
+    </div>
+
+    <div class="wz-fallback">
+      <div class="field">
+        <label for={`${q}-window`}>{b.windowLabel}</label>
+        <select id={`${q}-window`} name="window">
+          {b.windows.map((w, i) => <option value={w} selected={i === b.windows.length - 1}>{w}</option>)}
+        </select>
+      </div>
+      <p class="wz-note">{b.windowNote}</p>
+    </div>
+  </div>
+
+  {/* ---- 3. who ---- */}
+  <div class="wz-step" data-step="3">
+    <div class="field-row">
+      <div class="field">
+        <label for={`${q}-name`}>{b.name} <span aria-hidden="true">*</span></label>
+        <input type="text" id={`${q}-name`} name="name" required autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for={`${q}-phone`}>{b.phone} <span aria-hidden="true">*</span></label>
+        <input type="tel" id={`${q}-phone`} name="phone" required autocomplete="tel" />
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for={`${q}-email`}>{b.email}</label>
+        <input type="email" id={`${q}-email`} name="email" autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for={`${q}-area`}>{b.area}</label>
+        <select id={`${q}-area`} name="area">
+          <option value="">{b.areaSelect}</option>
+          {regionNames.map((r) => <option value={r}>{r}</option>)}
+          <option value="Other">{b.areaOther}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for={`${q}-symptom`}>{b.symptom}</label>
+        <select id={`${q}-symptom`} name="symptom">
+          {b.symptoms.map((s) => <option value={s}>{s}</option>)}
+        </select>
+      </div>
+      <div class="field">
+        <label for={`${q}-service`}>{b.service}</label>
+        <select id={`${q}-service`} name="service">
+          <option value="Not sure">{b.serviceNotSure}</option>
+          {serviceNames.map((s) => <option value={s}>{s}</option>)}
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for={`${q}-message`}>{b.message}</label>
+      <textarea id={`${q}-message`} name="message" rows="3" placeholder={b.messagePlaceholder}></textarea>
+    </div>
+  </div>
+
+  {/* ---- 4. confirm ---- */}
+  <div class="wz-step" data-step="4">
+    <div class="wz-review">
+      <h2 class="wz-review-h">{b.reviewHeading}</h2>
+      <dl class="wz-review-list"></dl>
+    </div>
+    <p class="wz-confirm-note">{b.confirmNote}</p>
+    <button type="submit" class="btn btn-accent btn-lg full">{b.bookCta}</button>
+    <p class="form-note">{b.note}</p>
+  </div>
+
+  <p class="form-error wz-error" role="alert" hidden></p>
+
+  <div class="wz-nav" hidden>
+    <button type="button" class="btn btn-outline" data-wz="back">{b.back}</button>
+    <button type="button" class="btn btn-accent" data-wz="next">{b.next}</button>
+  </div>
+</form>

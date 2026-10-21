@@ -286,6 +286,19 @@ const p = localizedPaths(lang);
      */
     function openQuote(fields) {
       toggle(false);
+      /* The booking form is the main way in. Carry over what the chat
+         already learned so the visitor does not type it twice. */
+      if (typeof window.openBookingModal === 'function') {
+        var bf = document.querySelector('#booking-dialog form[data-booking]');
+        if (bf && fields) {
+          var z = bf.querySelector('[name="zip"]');
+          var m = bf.querySelector('[name="message"]');
+          if (z && fields.zip && !z.value) z.value = fields.zip;
+          if (m && fields.note && !m.value) m.value = fields.note;
+        }
+        window.openBookingModal();
+        return;
+      }
       if (document.getElementById('promo-overlay')) {
         dispatchEvent(new CustomEvent('fb:open-promo', { detail: fields || {} }));
         return;

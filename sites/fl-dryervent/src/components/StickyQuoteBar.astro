@@ -78,6 +78,8 @@ const label = isEs ? 'Precio de su ventila' : 'Get the price for your vent';
     reveal();
 
     bar.addEventListener('click', () => {
+      const w = window as unknown as { openBookingModal?: () => void };
+      if (typeof w.openBookingModal === 'function') { w.openBookingModal(); return; }
       window.dispatchEvent(new CustomEvent('fb:open-promo', { detail: { trigger: 'quote_bar' } }));
     });
   }

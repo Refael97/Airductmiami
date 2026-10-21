@@ -29,7 +29,7 @@ const alt = lang === 'es' ? photo.altEs : photo.alt;
       <p>{answer}</p>
     </div>
     <div class="ph-actions">
-      <a href={t.contact} class="btn btn-accent">{t.quoteLabel}
+      <a href={t.contact} class="btn btn-accent" data-open-booking>{t.quoteLabel}
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <a href={`tel:${business.phoneHref}`} class="btn btn-outline">
