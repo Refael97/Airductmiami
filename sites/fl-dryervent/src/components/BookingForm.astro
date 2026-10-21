@@ -51,6 +51,11 @@ const formName = 'booking';
   <input type="hidden" name="loaded_at" class="wz-loaded-at" value="" />
   <LeadMeta source={source} lang={lang} />
 
+  {/* Filled from the ZIP as it is typed, so the lead email says where the
+      job is. In the static markup because Netlify builds its field list
+      from it; a field added at runtime would be dropped. */}
+  <input type="hidden" name="zip_city" value="" />
+  <input type="hidden" name="zip_county" value="" />
   <input type="hidden" name="appointment" class="wz-appt" value="" />
   <input type="hidden" name="appointment_label" class="wz-appt-label" value="" />
 
@@ -177,3 +182,17 @@ const formName = 'booking';
     <button type="button" class="btn btn-accent" data-wz="next">{b.next}</button>
   </div>
 </form>
+
+<script>
+  import { preloadPlaces, placeFromZip, setHidden } from '../lib/leadPlace';
+
+  document.querySelectorAll<HTMLFormElement>('form[data-booking]').forEach((form) => {
+    form.addEventListener('focusin', preloadPlaces, { once: true });
+    const zip = form.querySelector<HTMLInputElement>('input[name="zip"]');
+    zip?.addEventListener('input', async () => {
+      const place = await placeFromZip(zip.value);
+      setHidden(form, 'zip_city', place.city);
+      setHidden(form, 'zip_county', place.county);
+    });
+  });
+</script>

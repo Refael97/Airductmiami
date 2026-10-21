@@ -41,7 +41,7 @@ export const services: Service[] = [
     name: 'Dryer Vent Cleaning',
     shortName: 'Vent Cleaning',
     icon: 'clean',
-    metaTitle: 'Dryer Vent Cleaning in Florida | $100 to $200',
+    metaTitle: 'Dryer Vent & Dryer Duct Cleaning Service | $100 to $200',
     metaDescription:
       'Dryer vent cleaning across Florida, $100 to $200. Airflow measured at the outside hood before and after, the whole run cleaned, price given before we book.',
     answer:
@@ -125,7 +125,7 @@ export const services: Service[] = [
     name: 'Dryer Vent & Dryer Duct Installation',
     shortName: 'Installation',
     icon: 'install',
-    metaTitle: 'Dryer Vent & Dryer Duct Installation in Florida',
+    metaTitle: 'Dryer Vent & Duct Installation in Florida | $200 to $600',
     metaDescription:
       'New dryer vent and dryer duct installation across Florida: rigid metal, shortest legal route, new laundry locations and full replacements. $200 to $600.',
     answer:

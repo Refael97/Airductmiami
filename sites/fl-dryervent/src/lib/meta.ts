@@ -15,17 +15,25 @@ export function fit(text: string, limit: number): string {
   return (at > limit * 0.6 ? cut.slice(0, at) : cut).trimEnd();
 }
 
-/** Uses the priced title only when it fits whole. */
-function titled(base: string, price: string): string {
-  const full = `${base} | ${price}`;
-  return full.length <= LIMITS.title ? full : fit(base, LIMITS.title);
+/**
+ * The first candidate that fits whole with the price, else the first that
+ * fits without it. Lets the long, searched phrasing win when the city name
+ * is short and fall back to a shorter phrasing when it is not.
+ */
+function titled(bases: string | string[], price: string): string {
+  const list = Array.isArray(bases) ? bases : [bases];
+  for (const b of list) {
+    const full = `${b} | ${price}`;
+    if (full.length <= LIMITS.title) return full;
+  }
+  return fit(list.find((b) => b.length <= LIMITS.title) ?? list[list.length - 1], LIMITS.title);
 }
 
 export function cityMeta(name: string) {
   return {
     title: titled(`Dryer Vent Cleaning in ${name}, FL`, `$${PRICE.cleanLow} to $${PRICE.cleanHigh}`),
     description: fit(
-      `Dryer vent cleaning in ${name} for $${PRICE.cleanLow} to $${PRICE.cleanHigh}, repair and new dryer duct installation $${PRICE.workLow} to $${PRICE.workHigh}. Airflow measured before and after.`,
+      `Dryer vent and dryer duct cleaning in ${name}, $${PRICE.cleanLow} to $${PRICE.cleanHigh}. Repair or a new run $${PRICE.workLow} to $${PRICE.workHigh}. Airflow measured before and after, price before we book.`,
       LIMITS.description,
     ),
   };
@@ -33,9 +41,12 @@ export function cityMeta(name: string) {
 
 export function cityMetaEs(name: string) {
   return {
-    title: titled(`Ventila de Secadora en ${name}, FL`, `$${PRICE.cleanLow} a $${PRICE.cleanHigh}`),
+    title: titled(
+      [`Limpieza de Ventila de Secadora en ${name}`, `Limpieza de Ventila en ${name}, FL`, `Ventila de Secadora en ${name}, FL`],
+      `$${PRICE.cleanLow} a $${PRICE.cleanHigh}`,
+    ),
     description: fit(
-      `Limpieza de ventila de secadora en ${name} por $${PRICE.cleanLow} a $${PRICE.cleanHigh}, reparación e instalación $${PRICE.workLow} a $${PRICE.workHigh}. Medimos el flujo antes y después.`,
+      `Limpieza de ventila y ducto de secadora en ${name}, cerca de usted. Precio: $${PRICE.cleanLow} a $${PRICE.cleanHigh}. Reparación o tramo nuevo $${PRICE.workLow} a $${PRICE.workHigh}. Flujo medido antes y después.`,
       LIMITS.description,
     ),
   };
@@ -45,7 +56,7 @@ export function regionMeta(name: string) {
   return {
     title: titled(`Dryer Vent Cleaning in ${name}`, `$${PRICE.cleanLow} to $${PRICE.cleanHigh}`),
     description: fit(
-      `Dryer vent cleaning, repair and installation across ${name}. Cleaning $${PRICE.cleanLow} to $${PRICE.cleanHigh}, price before we book, airflow measured before and after.`,
+      `Dryer vent and dryer duct cleaning, repair and installation across ${name}. Cleaning $${PRICE.cleanLow} to $${PRICE.cleanHigh}, price before we book, airflow measured.`,
       LIMITS.description,
     ),
   };
@@ -53,9 +64,12 @@ export function regionMeta(name: string) {
 
 export function regionMetaEs(name: string) {
   return {
-    title: titled(`Ventila de Secadora en ${name}`, `$${PRICE.cleanLow} a $${PRICE.cleanHigh}`),
+    title: titled(
+      [`Limpieza de Ventila de Secadora en ${name}`, `Ventila de Secadora en ${name}`],
+      `$${PRICE.cleanLow} a $${PRICE.cleanHigh}`,
+    ),
     description: fit(
-      `Limpieza, reparación e instalación de ventilas de secadora en ${name}. Limpieza $${PRICE.cleanLow} a $${PRICE.cleanHigh}, precio antes de agendar.`,
+      `Limpieza, reparación e instalación de ventilas y ductos de secadora en ${name}. Precio de la limpieza: $${PRICE.cleanLow} a $${PRICE.cleanHigh}, confirmado antes de agendar.`,
       LIMITS.description,
     ),
   };

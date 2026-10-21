@@ -20,9 +20,9 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
   'dryer-vent-cleaning': {
     name: 'Limpieza de Ventila de Secadora',
     shortName: 'Limpieza',
-    metaTitle: 'Limpieza de Ventila de Secadora en Florida | $100 a $200',
+    metaTitle: 'Servicio de Limpieza de Ducto de Secadora | $100 a $200',
     metaDescription:
-      'Limpieza de ventila de secadora en Florida, $100 a $200. Medimos el flujo de aire afuera antes y después, limpiamos todo el tramo y le damos el precio antes de agendar.',
+      'Limpieza de ventila y ducto de secadora en Florida. Precio: $100 a $200. Limpiamos todo el tramo y medimos el flujo afuera antes y después.',
     answer:
       'La limpieza de la ventila de la secadora saca la pelusa acumulada en el ducto entre la secadora y la salida de afuera. En Florida cuesta entre $100 y $200, y medimos el flujo de aire en la salida antes y después para que usted vea la diferencia en un número.',
     intro: [
@@ -61,7 +61,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
     shortName: 'Reparación',
     metaTitle: 'Reparación y Reemplazo de Ventila de Secadora en Florida',
     metaDescription:
-      'Reparación de ventila de secadora en Florida: uniones sueltas, ducto aplastado o de aluminio flexible, pelusa saliendo al ático. $200 a $600, cotizado antes de empezar.',
+      'Reparación y reemplazo de ventila de secadora en Florida: uniones sueltas, ducto aplastado o de aluminio, pelusa en el ático. Precio: $200 a $600.',
     answer:
       'La reparación arregla lo que una limpieza no puede: una unión que se soltó, un tramo aplastado, manguera de aluminio escondida en la pared, o un ducto que está echando pelusa al ático. En Florida cuesta entre $200 y $600, según dónde esté el daño y cuánto del tramo haya que cambiar.',
     intro: [
@@ -135,7 +135,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
     shortName: 'Salidas',
     metaTitle: 'Nidos y Aletas Trabadas en la Ventila de Secadora | Florida',
     metaDescription:
-      'Salidas de ventila de secadora en Florida: sacamos nidos de pájaro, liberamos aletas trabadas, quitamos mallas que no se permiten y cambiamos salidas. Precio antes de agendar.',
+      'Salidas de ventila de secadora en Florida: sacamos nidos, liberamos aletas trabadas, quitamos mallas y cambiamos salidas. Precio antes de agendar.',
     answer:
       'La salida al final del tramo es donde muchas ventilas de Florida se tapan de verdad: un nido de pájaro, una aleta oxidada y cerrada, o una malla que alguien puso y que atrapa la pelusa. Limpiarla o cambiarla entra en nuestro rango de limpieza o de reparación, $100 a $200 o $200 a $600, y se cotiza antes de agendar.',
     intro: [
@@ -171,7 +171,7 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
     shortName: 'Condominios',
     metaTitle: 'Ventila de Secadora en Condominios y Edificios | Florida',
     metaDescription:
-      'Limpieza de ventilas de secadora en condominios, apartamentos y asociaciones de Florida: por unidad o el edificio completo, cotizado por unidad antes de agendar.',
+      'Limpieza de ventilas de secadora en condominios, apartamentos y asociaciones de Florida: una unidad o el edificio completo, con precio por unidad.',
     answer:
       'En condominios y apartamentos la ventila es un tramo corto dentro de la unidad que muchas veces se une a un ducto compartido con otras unidades. Limpiamos unidades a $100 a $200 y cotizamos edificios completos por unidad para asociaciones y administradores, y le decimos claramente qué parte es suya y cuál es del edificio.',
     intro: [
