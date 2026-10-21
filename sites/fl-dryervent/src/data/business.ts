@@ -60,7 +60,7 @@ export interface BusinessInfo {
 
 export const business: BusinessInfo = {
   siteId: 'fl-dryervent',
-  gaMeasurementId: '', // TODO: set when the GA4 property for dryerventflorida.com exists
+  gaMeasurementId: 'G-DGWK813VWZ', // GA4 property for dryerventflorida.com
   domain: 'dryerventflorida.com',
   vertical: 'dryer-vent-cleaning',
   serviceArea: 'Florida',
