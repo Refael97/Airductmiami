@@ -1,5 +1,5 @@
 /**
- * The five services. One trade, split the way people search for it.
+ * The nine services. One trade, split the way people search for it.
  *
  * Prices are the published network prices for dryer vent work and must not
  * drift from them: $100 to $200 to clean, $200 to $600 to repair, replace
@@ -84,7 +84,7 @@ export const services: Service[] = [
     name: 'Dryer Vent Repair',
     shortName: 'Vent Repair',
     icon: 'repair',
-    metaTitle: 'Dryer Vent Repair in Florida | $200 to $600',
+    metaTitle: 'Dryer Vent Repair & Replacement in Florida | $200 to $600',
     metaDescription:
       'Dryer vent repair across Florida: separated joints, crushed or foil duct, runs that leak lint into walls or attics. $200 to $600, quoted before any work.',
     answer:
@@ -92,7 +92,7 @@ export const services: Service[] = [
     intro: [
       'Some vents are clean enough and still do not work. A joint in the attic has pulled apart and the dryer is blowing warm, wet lint into the insulation. A section behind the dryer has been crushed by the machine being pushed back. A previous owner ran foil hose through a wall cavity. Cleaning those runs moves lint around; it does not fix the airflow.',
       'We find the failure before quoting. The airflow reading at the hood tells us whether air is getting out, and inspecting the run tells us where it is getting lost. You see what we found, and you get one price for the repair before anything is opened.',
-      'Repairs use rigid metal duct, joints sealed with foil tape rather than screws that catch lint, and the shortest safe route the house allows. Where a run is longer than the Florida Building Code allows for your dryer, we tell you, because no amount of cleaning makes an over length run work.',
+      'Repairs and dryer duct replacement use rigid metal duct, joints sealed with foil tape rather than screws that catch lint, and the shortest safe route the house allows. Where a run is longer than the Florida Building Code allows for your dryer, we tell you, because no amount of cleaning makes an over length run work.',
     ],
     benefits: [
       { title: 'Found, then quoted', text: 'You see the separated joint or the crushed section before you agree to anything.' },
@@ -242,6 +242,178 @@ export const services: Service[] = [
       { question: 'How often should a building clean its dryer vents?', answer: 'Once a year for most buildings, more often where risers serve many units or carry heavy daily use.' },
     ],
     related: ['dryer-vent-cleaning', 'roof-and-wall-vent-caps', 'dryer-vent-repair'],
+  },
+  {
+    slug: 'dryer-vent-inspection',
+    name: 'Dryer Vent Inspection',
+    shortName: 'Inspection',
+    icon: 'inspect',
+    metaTitle: 'Dryer Vent Inspection in Florida | Airflow Tested',
+    metaDescription:
+      'Dryer vent inspection across Florida: airflow tested at the hood, then the transition hose, joints, run length and termination checked against the code.',
+    answer:
+      'A dryer vent inspection tells you whether your vent moves the air it should and, if it does not, where the air is being lost. We read airflow at the outside termination and check the transition hose, the joints, the run length against the code limit and the hood or cap. It is part of every cleaning we do, and on its own it is quoted before booking.',
+    intro: [
+      'Most inspections are booked because something changed. A house is being bought or sold and the home inspection report flags the dryer vent for further evaluation. A new dryer went in and the installer shoved it back against the wall. Or a newer machine has started showing a vent warning, which many dryers now do when they sense restricted exhaust.',
+      'We start outside with the dryer on high heat and take an airflow reading at the hood or roof cap. Then the dryer comes out and we follow the duct as far as it can be seen or reached: the hose behind the machine, the wall or floor connection, joints and supports in the attic or soffit, and the termination itself.',
+      'You get a plain written account of what the run is made of, how long it is once the bends are counted, and where any restriction or leak sits. Some runs need nothing. Some need a cleaning. Some have a fault that only a repair or a new route will solve, and we tell you which before any work is offered.',
+    ],
+    benefits: [
+      { title: 'A reading you can compare', text: 'Airflow taken at the termination on the hottest setting, so the same check can be repeated next year at the same spot.' },
+      { title: 'Length worked out on paper', text: 'Every straight section and bend added up against the 35 foot limit and its deductions, or the dryer manufacturer\'s figure where that is longer.' },
+      { title: 'Useful at a sale', text: 'Buyers, sellers and agents get a short written note on the vent that can sit next to the home inspection report.' },
+      { title: 'Findings first, fixes second', text: 'If the run is sound we say so. If it is not, the fix is priced separately and only done when you agree to it.' },
+    ],
+    process: [
+      { title: 'Outside reading', text: 'Dryer on high heat, airflow measured at the hood or roof cap before anything is moved.' },
+      { title: 'Transition and connection', text: 'Dryer pulled out, the hose behind it checked for a listed type, its length, kinks and crush, and the connection checked for a seal.' },
+      { title: 'Follow the run', text: 'Material, joints and supports checked through the attic, soffit or chase wherever the duct can be seen or reached.' },
+      { title: 'Count the length', text: 'Straight runs and every bend totalled and compared with the code limit and the dryer manufacturer\'s instructions.' },
+      { title: 'Termination and write up', text: 'Damper movement, screen and clearance from openings checked at the hood, then the findings written down and walked through with you.' },
+    ],
+    quickFacts: [
+      { label: 'Price', value: 'Included in every cleaning; on its own, quoted before booking' },
+      { label: 'What is checked', value: 'Airflow, transition hose, joints, run length, termination' },
+      { label: 'Good times to book', value: 'Home sale, new dryer, vent warning on the dryer' },
+      { label: 'You receive', value: 'Written findings and the airflow reading' },
+    ],
+    faq: [
+      { question: 'How much does a dryer vent inspection cost?', answer: 'It is built into every dryer vent cleaning we do, and those run $100 to $200. If you only want the inspection, for a sale or a second opinion, tell us about the house and the run and we quote it before booking.' },
+      { question: 'Should I have the dryer vent inspected when buying a house?', answer: 'In Florida it is worth it, because so many vents run through a hot attic to the roof where nobody looks. A general home inspector usually sees the hood and the visible hose; we follow the run and measure what actually comes out.' },
+      { question: 'My dryer shows a vent warning. Is the vent really blocked?', answer: 'Often, not always. The sensor reacts to restricted exhaust, which can be lint in the run, a crushed hose behind the machine, a stuck damper or a run that is simply too long. An inspection tells you which, so you do not pay for a cleaning that will not clear the warning.' },
+      { question: 'Do I need an inspection after replacing my dryer?', answer: 'It is a good idea. A new machine is often connected with the old hose, kinked as it is pushed into place, or given a foil hose longer than the 8 feet allowed. A check behind the dryer catches most of that early.' },
+      { question: 'What happens if the inspection finds a problem?', answer: 'You get the finding and a price to put it right: a cleaning at $100 to $200 or repair work at $200 to $600. Nothing is done until you say yes.' },
+    ],
+    related: ['dryer-vent-cleaning', 'dryer-vent-repair', 'roof-dryer-vent-cleaning'],
+  },
+  {
+    slug: 'roof-dryer-vent-cleaning',
+    name: 'Roof Dryer Vent Cleaning',
+    shortName: 'Roof Vents',
+    icon: 'roof',
+    metaTitle: 'Roof Dryer Vent Cleaning in Florida | $100 to $200',
+    metaDescription:
+      'Roof dryer vent cleaning in Florida, $100 to $200. The full run from dryer to roof cap cleaned from both ends, felted lint cleared, airflow measured.',
+    answer:
+      'Roof dryer vent cleaning clears the whole duct when your dryer exhausts through the roof: the vertical run through the attic and the cap on top. In Florida it costs $100 to $200, worked from the roof and from the dryer, with unusual cases such as a nest packed into the cap quoted before booking.',
+    intro: [
+      'Plenty of Florida homes have no outside wall the dryer can reach. Two story houses, townhomes and interior laundry rooms often send the duct up through the attic to a cap on the roof. Those runs are long, they climb before they leave, and every foot of lift is a place where damp lint loses speed and settles back down.',
+      'The cap is where they tend to choke. Many roof caps sold for bath fans or attic ventilation come with a screen, and on a dryer that screen felts over with lint until very little gets through. Others are open enough for birds and rodents to build in. Because the cap sits out of sight on tile or shingle, a dryer can run hot and slow for months before anyone thinks to look up.',
+      'We clean these runs from both ends. From the roof we clear the cap and brush downward; from the laundry we brush and blow upward toward the open cap, so lint leaves the house instead of packing into the attic elbow. On barrel tile, steep pitches or wet roofs we stay off anything that will not bear weight safely, and tell you what that means for the result.',
+    ],
+    benefits: [
+      { title: 'Cap and run in one visit', text: 'The screen, damper and throat of the roof cap are cleared, and so is every foot of duct below it.' },
+      { title: 'Top and bottom', text: 'Brushing from both ends keeps lint moving out through the roof rather than piling up where the duct turns in the attic.' },
+      { title: 'Care on tile and shingle', text: 'Weight placed only where the roof will take it, and the cap left sealed as we found it, or flagged if it was already failing.' },
+      { title: 'Measured at the cap', text: 'Airflow read at the roof termination before and after, so you see how much more air now reaches the outside.' },
+    ],
+    process: [
+      { title: 'Reading at the cap', text: 'With the dryer on high, airflow measured at the roof termination and the cap checked for a screen, a nest or a stuck damper.' },
+      { title: 'Clear the cap', text: 'Felted lint, nesting material and debris lifted out of the cap and the first feet of duct beneath it.' },
+      { title: 'Brush from the roof', text: 'Rotary brush run down the vertical section from the top, loosening what has settled on the way up.' },
+      { title: 'Brush and blow from the dryer', text: 'Transition hose checked, then brush and compressed air sent up through the attic run toward the open cap.' },
+      { title: 'Measure and report', text: 'Second reading at the cap, dryer reconnected, and any problem with the cap or the attic joints noted with a price.' },
+    ],
+    quickFacts: [
+      { label: 'Typical price', value: '$100 to $200' },
+      { label: 'Quoted before booking', value: 'A nest packed into the cap, a cap that must be replaced' },
+      { label: 'Cap replacement', value: 'Repair work, within $200 to $600' },
+      { label: 'Most common blockage', value: 'Lint felted over a screened cap' },
+    ],
+    faq: [
+      { question: 'How much does roof dryer vent cleaning cost?', answer: '$100 to $200 for most homes, the same range as any dryer vent cleaning, with roof runs usually toward the top because of their length and the climb. A nest packed solid into the cap is quoted before booking, and a cap that has to be replaced is repair work at $200 to $600.' },
+      { question: 'Why does my dryer roof vent keep clogging?', answer: 'Usually the cap has a screen or louvers too fine for lint, or the run is so long and vertical that the dryer cannot push lint all the way up. Taking the screen off or fitting a cap made for dryer exhaust often solves it; a run past its length limit may also need a shorter route.' },
+      { question: 'Is it normal to have the dryer vent on the roof?', answer: 'It is common in Florida where the laundry sits in the middle of the house or upstairs. It is not ideal, being longer and harder to clean than a wall vent, but it works when the run stays within its length limit and the cap is built for a dryer.' },
+      { question: 'Can a roof vent be cleaned without going on the roof?', answer: 'Partly. Most of the run can be cleaned from the dryer, but lint felted onto a cap screen or a nest inside the cap has to come out from above. If the roof cannot be walked safely, we tell you what was reached and what was not.' },
+      { question: 'Do you replace dryer roof caps?', answer: 'Yes. A cap with a screen, a broken damper or a cracked housing is swapped for one designed for dryer exhaust and sealed to the roof. That falls under our repair range of $200 to $600 and is quoted before the work.' },
+    ],
+    related: ['roof-and-wall-vent-caps', 'dryer-vent-cleaning', 'dryer-vent-inspection'],
+  },
+  {
+    slug: 'commercial-dryer-vent-cleaning',
+    name: 'Commercial Dryer Vent Cleaning',
+    shortName: 'Commercial',
+    icon: 'commercial',
+    metaTitle: 'Commercial Dryer Vent Cleaning in Florida | Quoted per Site',
+    metaDescription:
+      'Commercial dryer vent cleaning in Florida for condo laundry rooms, HOAs, hotels, assisted living and laundromats. Quoted per building after a walk through.',
+    answer:
+      'Commercial dryer vent cleaning covers buildings where many dryers run every day: condo and apartment laundry rooms, hotels and short term rentals, assisted living and small laundromats. Each site is quoted per building after a walk through, and every visit ends with a written record of what was cleaned and the airflow readings.',
+    intro: [
+      'A shared laundry room puts more lint through its ducts in a week than most families put through theirs in months. Machines run back to back, residents and guests skip the lint screen, and the ducts often feed a common header or a long climb to the roof. The hazard is the same one found in a house, repeated at every machine for every hour it runs.',
+      'We begin with a walk through: how many dryers there are, where each one vents, how the ducts join, where they leave the building and how we reach the terminations. That shows what a cleaning involves and how long the room will be out of use, and it is how we price the building from what is there rather than from a guess.',
+      'Most sites settle into a scheduled plan, with the interval set by how hard the machines are worked. After each visit the manager receives a written record listing every dryer and duct cleaned, what we found, and the airflow before and after, which is usually the document a board, an owner or an insurer asks to see.',
+    ],
+    benefits: [
+      { title: 'Priced from a walk through', text: 'The quote reflects the real ducts, roof access and number of machines, so it holds when the work starts.' },
+      { title: 'Planned around the laundry', text: 'Visits timed for quiet hours, and machines cleaned in groups so part of the room stays usable where the layout allows.' },
+      { title: 'Records for boards and insurers', text: 'A dated, written record of each dryer and duct cleaned with its airflow readings, ready for the maintenance file.' },
+      { title: 'A schedule instead of a scare', text: 'Recurring cleanings on a set interval, so nobody has to remember until a machine overheats.' },
+    ],
+    process: [
+      { title: 'Walk through', text: 'Machines counted, every connection, shared duct and termination located, and access to the roof or outside wall checked.' },
+      { title: 'Quote and schedule', text: 'One price for the building, and a date and time chosen around residents, guests or the care routine.' },
+      { title: 'Baseline readings', text: 'Airflow measured at each termination before cleaning, so the record shows where the worst restriction was.' },
+      { title: 'Clean', text: 'Each dryer pulled and its connection checked, ducts and any shared header brushed and blown through, terminations and dampers cleared.' },
+      { title: 'Readings and record', text: 'Airflow measured again at every termination and the written record sent to the manager or the board.' },
+    ],
+    quickFacts: [
+      { label: 'Price', value: 'Quoted per building after a walk through' },
+      { label: 'Who we work with', value: 'Associations, property managers, hotels, rental operators, assisted living, small laundromats' },
+      { label: 'Documentation', value: 'Written record of what was cleaned, with airflow readings' },
+      { label: 'Schedule', value: 'Recurring plan, interval set by how much the machines run' },
+    ],
+    faq: [
+      { question: 'How is commercial dryer vent cleaning priced?', answer: 'Per building, after we have walked the site. The number of machines, how the ducts are laid out and how the terminations are reached all change the work, so we do not price a building from a phone call.' },
+      { question: 'How often should a common laundry room be cleaned?', answer: 'More often than a house. A room that runs most of the day, a hotel laundry or a care facility will usually need more than one cleaning a year, while a small building with light use may manage with one. We suggest an interval from what the first visit shows.' },
+      { question: 'Can you provide paperwork for our insurer or association?', answer: 'Yes. Every visit ends with a written record of the date, which dryers and ducts were cleaned, and the airflow measured before and after. If your insurer or board wants something specific on it, tell us before the visit.' },
+      { question: 'Do you work with short term rental hosts?', answer: 'Yes. A rental runs the dryer after every stay, often for guests who never touch the lint screen. We can schedule between bookings and send the record straight to the owner or the management company.' },
+      { question: 'Do you clean laundromat dryer vents?', answer: 'For small laundromats, yes. We look at the machines and the exhaust layout on the walk through and tell you plainly if the setup needs equipment or access beyond what we bring.' },
+    ],
+    related: ['condo-and-apartment-dryer-vents', 'dryer-vent-inspection', 'roof-dryer-vent-cleaning'],
+  },
+  {
+    slug: 'dryer-booster-fan-installation',
+    name: 'Dryer Booster Fan Installation',
+    shortName: 'Booster Fans',
+    icon: 'fan',
+    metaTitle: 'Dryer Booster Fan Installation in Florida | $200 to $600',
+    metaDescription:
+      'Dryer vent booster fan installation in Florida for runs past code length: a listed unit, a pressure switch and cleaning access. $200 to $600, quoted first.',
+    answer:
+      'A dryer booster fan is an inline fan that helps exhaust travel a duct longer than the code allows when no shorter route exists. We install listed dryer exhaust duct power ventilators with a pressure switch and cleaning access, within our $200 to $600 range for vent work, and quote the job before booking.',
+    intro: [
+      'Some Florida laundries sit deep inside the house or two floors below the roof, and even the shortest route out is past the 35 foot limit once the bends are counted. Moving the dryer is not always possible. For that case the code allows a longer run when it is served by a dryer exhaust duct power ventilator, a booster made and listed for dryer exhaust, installed according to its listing and the dryer manufacturer\'s instructions.',
+      'A booster is not a cure for a slow dryer. If the run is full of lint, crushed behind the machine or split in the attic, a fan just pushes harder against the same fault, or blows lint out of the leak faster. We check length, condition and airflow first, and recommend one only when cleaning, repair or a shorter route cannot make the run work.',
+      'Where a booster is the right answer, it goes where it can be opened and cleaned, because lint gathers on its blades and inside its housing. A pressure switch starts it only when the dryer is pushing air and stops it when the dryer does. The duct around it is rigid metal with taped joints, ending at a damper with no screen.',
+    ],
+    benefits: [
+      { title: 'Only when it is the right fix', text: 'Cleaning, repair and rerouting are ruled out first, so you do not pay for a fan that hides a duct problem.' },
+      { title: 'Listed for dryer exhaust', text: 'A power ventilator built and listed for hot, damp lint, not a bathroom fan or a general purpose duct fan.' },
+      { title: 'Runs only with the dryer', text: 'A pressure switch brings it on when the dryer pushes air and shuts it off when the cycle ends.' },
+      { title: 'Reachable for cleaning', text: 'Mounted where the housing can be opened and the blades cleaned at every vent cleaning.' },
+    ],
+    process: [
+      { title: 'Measure the run', text: 'Developed length worked out with bend deductions, airflow read at the termination, and the duct checked for lint, crush and leaks.' },
+      { title: 'Rule out simpler fixes', text: 'Cleaning, a repair or a shorter route considered first, and the dryer manufacturer\'s instructions checked for their own length allowance.' },
+      { title: 'Quote', text: 'If a booster is the answer, one price for the unit, its mounting and any duct work, given before booking.' },
+      { title: 'Install', text: 'Listed unit fitted in an accessible spot per its listing and the dryer maker\'s instructions, pressure switch set, joints sealed with foil tape.' },
+      { title: 'Test', text: 'Airflow measured at the termination with dryer and fan running, and the switch checked to start and stop with the dryer.' },
+    ],
+    quickFacts: [
+      { label: 'Price', value: 'Within $200 to $600, quoted before booking' },
+      { label: 'When it fits', value: 'Run past the code length with no shorter route' },
+      { label: 'Unit required', value: 'Listed dryer exhaust duct power ventilator' },
+      { label: 'Must have', value: 'Pressure switch and cleaning access' },
+    ],
+    faq: [
+      { question: 'How much does dryer booster fan installation cost?', answer: 'It falls within our $200 to $600 range for vent work. The figure depends on the unit, where it can be mounted with access, and how much of the duct has to change, and you get it before booking.' },
+      { question: 'Will a booster fan fix my slow dryer?', answer: 'Only if the run is clean, sealed and simply too long. When lint, a crushed hose or a separated joint is the cause, a fan will not solve it, which is why we measure and inspect before recommending one.' },
+      { question: 'Can any inline fan be used as a dryer vent booster fan?', answer: 'No. Dryer exhaust carries hot, damp lint, and the code calls for a dryer exhaust duct power ventilator listed for that job. A general purpose duct fan is not built for lint passing over its motor and blades.' },
+      { question: 'Does a booster fan need maintenance?', answer: 'Yes. It should be opened and cleaned at every vent cleaning, and the pressure switch checked so the fan still starts when the dryer does. A fan that has stopped turning becomes a restriction of its own.' },
+      { question: 'Is rerouting better than a booster fan?', answer: 'When a shorter route exists, yes. Fewer feet and fewer bends work without any moving parts, and a reroute is installation work in the same $200 to $600 range.' },
+    ],
+    related: ['dryer-vent-installation', 'dryer-vent-repair', 'dryer-vent-inspection'],
   },
 ];
 

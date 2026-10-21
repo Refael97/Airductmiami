@@ -71,8 +71,8 @@ export const photos = {
     'Inline dryer booster fan installed in a rigid metal dryer duct',
     'Extractor auxiliar instalado en un ducto rígido de metal de la secadora'),
   inspectionCamera: photo('dryer-vent-inspection-camera', 1200, 896, 640,
-    'Technician checking a dryer vent with an inspection camera',
-    'Técnico revisando la ventila de la secadora con una cámara de inspección'),
+    'Technician checking inside a dryer vent run behind the dryer',
+    'Técnico revisando el interior del ducto detrás de la secadora'),
 } satisfies Record<string, Photo>;
 
 export type PhotoKey = keyof typeof photos;
