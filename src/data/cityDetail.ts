@@ -1887,6 +1887,125 @@ export const cityDetail: Record<string, CityDetail> = {
     },
   },
 
+  wellington: {
+    depth: [
+      {
+        heading: "Show season is a filter problem first",
+        body: [
+          "From January into spring the Winter Equestrian Festival fills Wellington with horses, arenas and the trucks that serve them, and the fine dust from arena footing, hay and dander travels a long way. It reaches every house in the village, not only the ones with barns, and it arrives through the return grille and any leak on the return side of the duct.",
+          "The first sign is a filter that is grey in three weeks instead of three months. The second is dust settling on furniture a day after cleaning. What decides how much of it ends up inside the duct is the return: a filter that seals properly in its slot stops most of it, and a filter rack with a gap around it lets it straight past to the coil.",
+          "For homes with horses on the property, or a family member with allergies, a cleaning just after the season ends removes what built up over the winter, and a better sealed filter slot keeps the next season from doing the same.",
+        ],
+      },
+      {
+        heading: "Big houses, two systems, two prices",
+        body: [
+          "Much of Wellington is two storey homes from the eighties through the two thousands, and a large share run two systems, one for each floor or one for each wing. We price per system, so a two system house is two cleanings and two prices. You hear both numbers before we book.",
+          "The upstairs system is usually the one in worse shape. Its air handler often sits in the attic, its ducts run through the hottest part of the house, and the flex in a Florida attic sags over twenty years until every low point holds dust. A cleaning of that system alone often does more for the upstairs bedrooms than the homeowner expects.",
+        ],
+      },
+      {
+        heading: "Built on drained land",
+        body: [
+          "Wellington sits on land that was drained and is kept drained by a network of canals and lakes, and the water table stays close to the surface. That keeps indoor humidity working against you most of the year, and it is why a musty smell at start up is a common call here: a coil and drain pan that never fully dry. Cleaning the coil and the pan removes it; holding indoor humidity under 60 percent keeps it from coming back.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "La temporada de shows es primero un problema de filtro",
+        body: [
+          "De enero a la primavera el Winter Equestrian Festival llena Wellington de caballos, pistas y los camiones que los atienden, y el polvo fino de la arena de las pistas, el heno y la caspa viaja lejos. Llega a todas las casas de la villa, no solo a las que tienen establo, y entra por la rejilla de retorno y por cualquier fuga en el lado del retorno.",
+          "La primera señal es un filtro gris en tres semanas en lugar de tres meses. La segunda es polvo sobre los muebles un día después de limpiar. Lo que decide cuánto termina dentro del ducto es el retorno: un filtro que sella bien en su ranura detiene casi todo, y una ranura con hueco alrededor lo deja pasar directo al serpentín.",
+          "En casas con caballos en la propiedad, o con alguien alérgico en la familia, una limpieza justo después de la temporada saca lo que se acumuló en el invierno, y una ranura de filtro bien sellada evita que la siguiente temporada haga lo mismo.",
+        ],
+      },
+      {
+        heading: "Casas grandes, dos sistemas, dos precios",
+        body: [
+          "Buena parte de Wellington son casas de dos plantas de los ochenta a los dos mil, y muchas tienen dos sistemas, uno por piso o uno por ala. Cobramos por sistema, así que una casa con dos sistemas son dos limpiezas y dos precios. Le damos los dos números antes de agendar.",
+          "El sistema de arriba suele estar peor. Su manejadora muchas veces está en el ático, sus ductos cruzan la parte más caliente de la casa, y el flexible en un ático de Florida se descuelga con los años hasta que cada punto bajo junta polvo. Limpiar solo ese sistema muchas veces mejora los cuartos de arriba más de lo que el dueño espera.",
+        ],
+      },
+    ],
+    neighborhoods: ["Palm Beach Polo", "Olympia", "Binks Forest", "Aero Club", "Equestrian Preserve"],
+  },
+  jupiter: {
+    depth: [
+      {
+        heading: "The inlet, the river and salt",
+        body: [
+          "East Jupiter sits between the ocean, the Jupiter Inlet and the Loxahatchee River, and the waterfront communities along them breathe the most humid and salt laden air in northern Palm Beach County. Salt reaches the outdoor condenser first, which you can see, and the indoor coil second through every gap in the return, which you cannot.",
+          "For the ductwork, the hours that matter are the hours the system is off. The duct surfaces are still cold, damp air reaches them, and they sweat. Dust that would have blown through sticks to the wet surface and stays. Dampers and roof caps corrode until they no longer close, and a stuck damper leaves the duct open to the outside air all night.",
+        ],
+      },
+      {
+        heading: "Abacoa and the newer middle",
+        body: [
+          "Abacoa and the neighborhoods built through the nineties and two thousands are tighter houses with flex duct in the attic and an air handler in a garage or closet. Nothing is worn out yet. What we find is what came with the build: drywall dust and construction debris in the runs, and flex that has started to sag between the trusses as the jacket ages.",
+        ],
+      },
+      {
+        heading: "Jupiter Farms is a different job",
+        body: [
+          "Out west, Jupiter Farms is acreage, horses, unpaved roads and well water. Road and paddock dust is a load most suburbs never see, and it arrives through any leak on the return side of the duct. A filter that is grey in three weeks here is normal, and a filter slot that does not seal is the reason the coil fills up.",
+          "Older ranch homes on the acreage often have long duct runs and an air handler in a garage or utility room, and those runs reward a full cleaning more than most.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "La ensenada, el río y la sal",
+        body: [
+          "El este de Jupiter queda entre el océano, la ensenada de Jupiter y el río Loxahatchee, y las comunidades sobre el agua respiran el aire más húmedo y salino del norte del condado de Palm Beach. La sal llega primero al condensador de afuera, que se ve, y después al serpentín de adentro por cualquier hueco del retorno, que no se ve.",
+          "Para el ducto, las horas que importan son las que el equipo está apagado. Las superficies siguen frías, les llega aire húmedo y sudan. El polvo que habría pasado de largo se pega a la superficie mojada y se queda. Las compuertas y salidas de techo se corroen hasta que no cierran, y una compuerta trabada deja el ducto abierto al aire de afuera toda la noche.",
+        ],
+      },
+      {
+        heading: "Jupiter Farms es otro trabajo",
+        body: [
+          "Al oeste, Jupiter Farms es terreno amplio, caballos, caminos sin pavimentar y agua de pozo. El polvo del camino y de los corrales es una carga que casi ningún suburbio tiene, y entra por cualquier fuga en el lado del retorno. Un filtro gris en tres semanas aquí es normal, y una ranura de filtro que no sella es la razón por la que el serpentín se llena.",
+          "Las casas tipo rancho más viejas en esos terrenos suelen tener tramos de ducto largos y la manejadora en el garaje o un cuarto de servicio, y esos tramos aprovechan una limpieza completa más que casi ningún otro.",
+        ],
+      },
+    ],
+    neighborhoods: ["Abacoa", "Jupiter Farms", "Admirals Cove", "Jonathan's Landing", "Jupiter Inlet"],
+  },
+  'palm-beach-gardens': {
+    depth: [
+      {
+        heading: "Two and three system houses",
+        body: [
+          "In the golf communities, PGA National, BallenIsles, Mirasol and the rest, a large house usually has more than one system: one per floor, or one for the main house and one for a guest wing. We price per system, so you hear one number per system before we book, and you can do the system that needs it most first.",
+          "The system that needs it most is usually the one nobody has looked at in years: the one serving the guest rooms or the second floor, with its air handler in the attic. It runs less, gets checked less, and its coil and drain pan are where a musty smell in a rarely used room comes from.",
+        ],
+      },
+      {
+        heading: "Original flex, now twenty to forty years old",
+        body: [
+          "Most of the city went up between the eighties and the two thousands, and the duct in those houses is mostly flex across a hot attic. At that age the outer jacket has gone brittle, the runs sag between the trusses, and connections at the plenum and the branch fittings start to separate. A separated connection pours cooled air into the attic, and the room at the end of that run never catches up with the thermostat.",
+          "That is a repair, not a cleaning. We tell you which one you need, and when it is both, we quote them separately so you can see what each one costs.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Casas de dos y tres sistemas",
+        body: [
+          "En las comunidades de golf, PGA National, BallenIsles, Mirasol y las demás, una casa grande suele tener más de un sistema: uno por piso, o uno para la casa principal y otro para el ala de huéspedes. Cobramos por sistema, así que le damos un número por sistema antes de agendar, y puede empezar por el que más lo necesita.",
+          "El que más lo necesita suele ser el que nadie ha revisado en años: el de los cuartos de huéspedes o el del segundo piso, con la manejadora en el ático. Trabaja menos, se revisa menos, y su serpentín y su bandeja de drenaje son de donde sale el olor a humedad en un cuarto que casi no se usa.",
+        ],
+      },
+      {
+        heading: "Flexible original, hoy de veinte a cuarenta años",
+        body: [
+          "Casi toda la ciudad se construyó entre los ochenta y los dos mil, y el ducto en esas casas es casi todo flexible cruzando un ático caliente. A esa edad la cubierta exterior se puso quebradiza, los tramos se descuelgan entre las vigas, y las conexiones en el pleno y en los ramales empiezan a separarse. Una conexión suelta echa aire frío al ático, y el cuarto al final de ese tramo nunca alcanza al termostato.",
+          "Eso es una reparación, no una limpieza. Le decimos cuál necesita, y cuando son las dos, las cotizamos por separado para que vea lo que cuesta cada una.",
+        ],
+      },
+    ],
+    neighborhoods: ["PGA National", "BallenIsles", "Mirasol", "Old Palm", "Downtown at the Gardens"],
+  },
   doral: {
     depthEs: [
       {

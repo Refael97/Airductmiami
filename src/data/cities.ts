@@ -157,7 +157,22 @@ export const cities: City[] = [
   { slug: 'west-palm-beach', name: 'West Palm Beach', county: 'Palm Beach County', region: 'South Florida',
     intro: 'West Palm Beach’s waterfront setting and warm climate make clean, efficient ductwork important for both comfort and health.',
     local: 'A blend of downtown condos and historic neighborhoods means varied HVAC systems, all facing the coastal humidity that promotes duct mold.',
-    nearby: ['delray-beach', 'boynton-beach', 'lake-worth', 'palm-beach-gardens'] },
+    nearby: ['palm-beach-gardens', 'wellington', 'lake-worth', 'boynton-beach'] },
+  /* Palm Beach County cities added 19 October 2026. The Palm Beach County
+     region page already named them as served, they sit nearest the
+     business's own base, and none had a page Google could show. */
+  { slug: 'wellington', name: "Wellington", county: 'Palm Beach County', region: 'South Florida',
+    intro: "Wellington is the equestrian capital of Palm Beach County, and its housing is mostly large single family homes from the eighties onward, many on two systems.",
+    local: "Show season brings arena dust, hay and dander into homes and onto filters from January to spring, and the lakes and canals that drain the village keep the background humidity up all year.",
+    nearby: ["west-palm-beach", "greenacres", "lake-worth", "boynton-beach"] },
+  { slug: 'jupiter', name: "Jupiter", county: 'Palm Beach County', region: 'South Florida',
+    intro: "Jupiter runs from the inlet and the beach to the rural acreage of Jupiter Farms, and the air a duct system breathes changes completely along the way.",
+    local: "Salt and humidity off the inlet and the Loxahatchee River on the east side, newer planned neighborhoods like Abacoa in the middle, and well water, horses and unpaved roads out in Jupiter Farms.",
+    nearby: ["palm-beach-gardens", "west-palm-beach", "wellington"] },
+  { slug: 'palm-beach-gardens', name: "Palm Beach Gardens", county: 'Palm Beach County', region: 'South Florida',
+    intro: "Palm Beach Gardens is golf course communities, large homes and newer condominiums along PGA Boulevard, and a high share of its houses run two or three air conditioning systems.",
+    local: "Big houses with multiple systems, air handlers in attics and closets, and gated communities built from the eighties to the two thousands, now reaching the age when the original flex duct starts to sag and leak.",
+    nearby: ["jupiter", "west-palm-beach", "wellington", "lake-worth"] },
   // ---- Tampa Bay ----
   { slug: 'tampa', name: 'Tampa', county: 'Hillsborough County', region: 'Tampa Bay',
     intro: 'Tampa’s hot, humid Gulf Coast climate keeps AC systems working overtime, making clean ducts and mold-free coils essential.',

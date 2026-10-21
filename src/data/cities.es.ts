@@ -175,6 +175,21 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Casas de una planta sobre losa y condominios bajos con ducto en el ático que ya lleva treinta veranos de Florida o más, que es justo cuando el flexible empieza a descolgarse y el sellado de las uniones empieza a ceder.',
  region: 'Sur de Florida',
  },
+ 'wellington': {
+ intro: "Wellington es la capital ecuestre del condado de Palm Beach, y su vivienda es casi toda de casas grandes de los ochenta en adelante, muchas con dos sistemas.",
+ local: "La temporada de shows trae polvo de pista, heno y caspa de caballo a las casas y a los filtros de enero a la primavera, y los lagos y canales que drenan la villa mantienen alta la humedad de fondo todo el año.",
+ region: 'Sur de Florida',
+ },
+ 'jupiter': {
+ intro: "Jupiter va desde la ensenada y la playa hasta los terrenos rurales de Jupiter Farms, y el aire que respira un sistema de ductos cambia por completo en ese camino.",
+ local: "Sal y humedad de la ensenada y del río Loxahatchee en el lado este, barrios planificados más nuevos como Abacoa en el medio, y agua de pozo, caballos y caminos sin pavimentar en Jupiter Farms.",
+ region: 'Sur de Florida',
+ },
+ 'palm-beach-gardens': {
+ intro: "Palm Beach Gardens son comunidades de golf, casas grandes y condominios más nuevos sobre PGA Boulevard, y buena parte de sus casas tienen dos o tres sistemas de aire acondicionado.",
+ local: "Casas grandes con varios sistemas, manejadoras en el ático y en clósets, y comunidades cerradas construidas de los ochenta a los dos mil, que ya llegan a la edad en que el flexible original se descuelga y pierde aire.",
+ region: 'Sur de Florida',
+ },
  'west-palm-beach': {
  intro: 'El entorno frente al agua de West Palm Beach y su clima cálido hacen que tener ductos limpios y eficientes sea importante tanto para la comodidad como para la salud.',
  local: 'Una combinación de condominios del centro y vecindarios históricos implica sistemas de aire acondicionado variados, todos enfrentando la humedad costera que favorece el moho en los ductos.',
