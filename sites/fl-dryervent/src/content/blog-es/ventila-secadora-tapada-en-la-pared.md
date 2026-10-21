@@ -1,6 +1,6 @@
 ---
 title: "Ventila de la secadora tapada en la pared"
-description: "¿La ventila de la secadora está tapada dentro de la pared? Cómo saber si el tapón está en la manguera, la pared o la salida, por qué pasa y qué puede hacer usted."
+description: "¿La ventila de la secadora está tapada en la pared? Cómo saber si el tapón está en la manguera, la pared o la salida, por qué pasa y qué puede hacer."
 answer: "Para encontrar el tapón, revise por partes: la manguera de atrás, la salida de afuera y el ducto dentro de la pared. En la pared se tapa en los codos, en ductos aplastados y en uniones con tornillos. Usted puede limpiar la manguera y la salida y cepillar con cuidado un ducto rígido, pero un ducto roto o aplastado dentro de la pared hay que abrirlo."
 pubDate: 2026-10-21
 category: "Limpieza de Ventilas"

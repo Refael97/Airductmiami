@@ -1,6 +1,6 @@
 ---
 title: "La secadora dice revisar ventila: qué significa"
-description: "Si su secadora LG, Samsung u otra marca muestra el aviso de revisar la ventila, detectó poco flujo de aire. Qué revisar primero y cómo saber si es la ventila o la secadora."
+description: "Si su secadora LG o Samsung muestra el aviso de revisar la ventila, detectó poco flujo de aire. Qué revisar primero y si es la ventila o la secadora."
 answer: "El aviso de revisar la ventila significa que la secadora calculó que el aire no está saliendo como debe, casi siempre por pelusa en la ventila, una manguera aplastada o una aleta trabada afuera. Limpie el filtro, enderece la manguera y mire la aleta; si el aviso vuelve, hay que limpiar o inspeccionar el ducto."
 pubDate: 2026-10-21
 category: "Limpieza de Ventilas"

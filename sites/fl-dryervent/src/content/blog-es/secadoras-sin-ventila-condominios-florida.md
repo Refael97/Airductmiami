@@ -1,6 +1,6 @@
 ---
 title: "Secadora sin ventila en condominios de Florida"
-description: "¿Conviene una secadora sin ventila en su condominio de Florida? Bomba de calor o condensación, qué se gana, qué se pierde y cuándo es mejor arreglar la ventila."
+description: "¿Conviene una secadora sin ventila en su condominio de Florida? Bomba de calor o condensación, qué se pierde y cuándo es mejor arreglar la ventila."
 answer: "Una secadora sin ventila tiene sentido en un condominio cuando no hay forma práctica de sacar el aire al exterior, por ejemplo cuando no hay pared exterior cerca o la asociación no permite abrir un hueco nuevo. Si su unidad ya tiene ventila y la ropa tarda en secar, casi siempre sale más barato limpiar o reparar esa ventila."
 pubDate: 2026-10-21
 category: "Condominios y Edificios"

@@ -1,6 +1,6 @@
 ---
 title: "Ventila de secadora en el alero: por qué se tapa"
-description: "La ventila de la secadora que sale por el alero es común en casas de Florida con techo de teja, pero se tapa y mete pelusa al ático. Qué dice el código y qué hacer."
+description: "La ventila de secadora en el alero es común en casas de Florida con techo de teja, pero se tapa y mete pelusa al ático. Qué dice el código y qué hacer."
 answer: "Una ventila que sale por el alero suelta el aire justo donde el ático respira, así que parte de la pelusa y la humedad vuelve a entrar por las rejillas del alero. Solo funciona con una salida hecha para secadora, con aleta y sin malla, lejos de otras aberturas, y en muchas casas conviene más llevarla a una pared o al techo."
 pubDate: 2026-10-21
 category: "Instalación y Código"

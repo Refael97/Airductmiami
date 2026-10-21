@@ -1,6 +1,6 @@
 ---
 title: "Extractor auxiliar para la ventila de la secadora"
-description: "Un extractor auxiliar para la ventila de la secadora solo se justifica en recorridos largos que el fabricante permite. Si hay una ruta más corta, es mejor cambiarla."
+description: "Un extractor auxiliar en la ventila de la secadora solo se justifica en recorridos largos que permite el fabricante. Si hay una ruta más corta, cámbiela."
 answer: "Un extractor auxiliar tiene sentido cuando el recorrido pasa del límite del código, no hay una ruta más corta y el manual de la secadora permite un recorrido más largo con extractor. Si se puede acortar la ruta, eso es mejor que poner un motor más."
 pubDate: 2026-10-21
 category: "Instalación y Código"

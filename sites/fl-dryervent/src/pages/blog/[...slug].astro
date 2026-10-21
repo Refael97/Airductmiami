@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import { categoryPhoto } from '../../data/images';
 import { getCollection, render } from 'astro:content';
+import { esAltFor } from '../../data/blogPairs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
@@ -47,7 +48,7 @@ const related = (await getCollection('blog'))
 const brandedTitle =
   d.title.length + 21 <= 60 ? `${d.title} | Dryer Vent Florida` : d.title;
 ---
-<BaseLayout title={brandedTitle} description={d.description} schema={schema} ogType="article">
+<BaseLayout title={brandedTitle} description={d.description} schema={schema} ogType="article" altHref={esAltFor(post.id)}>
   <Breadcrumbs
     crumbs={[
       { name: 'Home', href: '/' },
