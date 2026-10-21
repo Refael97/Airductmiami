@@ -1,0 +1,680 @@
+---
+/**
+ * Site-wide popup, once per browser session. Opens on engagement, 45% scroll
+ * or 25 seconds, never on load. Submits to a Netlify form over fetch and
+ * shows an inline confirmation. One panel for the one trade, offering the
+ * price for the visitor's own vent rather than a discount.
+ */
+import { business } from '../data/business';
+import LeadMeta from './LeadMeta.astro';
+import type { Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+}
+const { lang = 'en' } = Astro.props;
+const isEs = lang === 'es';
+
+const path = Astro.url.pathname;
+
+/* One trade, one panel. No discount: the network does not discount dryer
+   vents, and a "limited time" price on a $100 job reads like the bait ads
+   the articles warn about. The panel offers the thing people actually want,
+   the price for their own vent. */
+const offerKey = 'dryer' as const;
+
+const ALL_OFFERS = {
+  dryer: {
+    en: {
+      headline1: 'Find out what',
+      headline2: 'your dryer vent',
+      headline3: 'needs',
+      badgeTop: 'Dryer vent cleaning',
+      price: '$100 to $200',
+      badgeBottom: 'Price given before we book',
+      sub: 'Leave your number and ZIP. We call back with the price for your run.',
+      body: 'A slow dryer is usually a restricted vent, a crushed hose or a blocked hood. We clean the whole run, measure airflow at the hood before and after, and tell you plainly if it needs repair instead.',
+      cta: 'Call me with a price',
+      fine: 'No obligation. Repair or a new run is $200 to $600, also quoted before booking.',
+      successBody: `Thank you. We will call you shortly with the price for your dryer vent. In a hurry? Call ${business.phone}.`,
+    },
+    es: {
+      headline1: 'Sepa lo que',
+      headline2: 'su ventila de secadora',
+      headline3: 'necesita',
+      badgeTop: 'Limpieza de ventila',
+      price: '$100 a $200',
+      badgeBottom: 'Precio antes de agendar',
+      sub: 'Déjenos su teléfono y código postal. Le llamamos con el precio de su ventila.',
+      body: 'Una secadora lenta casi siempre es una ventila tapada, una manguera aplastada o una salida bloqueada. Limpiamos todo el tramo, medimos el flujo en la salida antes y después, y le decimos claramente si necesita reparación.',
+      cta: 'Llámenme con el precio',
+      fine: 'Sin compromiso. Reparación o tramo nuevo $200 a $600, también cotizado antes de agendar.',
+      successBody: `Gracias. Le llamaremos en breve con el precio de su ventila. ¿Tiene prisa? Llame al ${business.phone}.`,
+    },
+  },
+};
+
+const OFFERS = ALL_OFFERS[offerKey][lang];
+
+/* The panel's promise in words, for the lead email. */
+const offerLabel = (key: keyof typeof ALL_OFFERS) => {
+  const o = ALL_OFFERS[key][lang];
+  return `${o.price} ${o.badgeBottom.toLowerCase()}`;
+};
+const offerLabels = Object.fromEntries(
+  (Object.keys(ALL_OFFERS) as (keyof typeof ALL_OFFERS)[]).map((k) => [k, offerLabel(k)]),
+);
+
+const SHARED = {
+  en: {
+    trust: ['Price before booking', 'Same-week service', 'Insured', 'Airflow measured'],
+    name: 'Your Name',
+    phone: 'Phone Number',
+    zip: 'Zip Code',
+    close: 'Close',
+    successTitle: 'You got it!',
+  },
+  es: {
+    trust: ['Precio antes de agendar', 'Servicio la misma semana', 'Asegurados', 'Flujo medido'],
+    name: 'Su nombre',
+    phone: 'Teléfono',
+    zip: 'Código postal',
+    close: 'Cerrar',
+    successTitle: '¡Listo!',
+  },
+}[lang];
+
+const OFFER = { ...SHARED, ...OFFERS };
+
+// Skip pages where a popup would compete with the page's own goal.
+const excluded = ['/contact', '/es/contacto', '/thank-you', '/es/gracias', '/privacy', '/es/privacidad']
+  .some((p) => path.startsWith(p));
+
+const formName = 'popup-special';
+
+/* Desktop only side image. Renders only when the file is in public/images,
+   so a missing file degrades to the gradient panel the popup shipped with
+   rather than to a broken image on top of the lead form. */
+const asideSrc: string | null = null;
+---
+{!excluded && (
+<div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
+  <div class="promo-card" id="promo-card">
+    <button type="button" class="promo-close" id="promo-close" aria-label={OFFER.close}>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+
+    <div class="promo-content" id="promo-content">
+      <div class="promo-brand">
+        <img src="/logo.svg" alt="" width="42" height="42" loading="lazy" />
+        <span class="promo-brand-word">Dryer Vent <em>Florida</em><small>Clean · Repair · Install</small></span>
+      </div>
+
+      <h2 class="promo-headline" id="promo-title">
+        {OFFER.headline1}{' '}<span class="hl">{OFFER.headline2}</span>{' '}{OFFER.headline3}
+      </h2>
+      <p class="promo-sub">{OFFER.sub}</p>
+      <p class="promo-body">{OFFER.body}</p>
+
+      <ul class="promo-trust">
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4.5"/></svg>
+          <span>{OFFER.trust[0]}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><circle cx="13" cy="12" r="7.5"/><path d="M13 8v4l2.8 1.8"/><path d="M2.5 9h4M2.5 12.5h3M2.5 16h4"/></svg>
+          <span>{OFFER.trust[1]}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3Z"/><circle cx="12" cy="10.5" r="2.2"/><path d="M8.5 16c.8-1.6 2-2.4 3.5-2.4s2.7.8 3.5 2.4"/></svg>
+          <span>{OFFER.trust[2]}</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 21V9"/><path d="M12 9c-.5-3-2.5-4.8-5.5-5C7 6.5 9 8.5 12 9Z"/><path d="M12 9c.5-3 2.5-4.8 5.5-5C17 6.5 15 8.5 12 9Z"/><path d="M12 9c-3-1-5.8-.4-7.5 1.5 2.8 1 5.3.5 7.5-1.5Z"/><path d="M12 9c3-1 5.8-.4 7.5 1.5-2.8 1-5.3.5-7.5-1.5Z"/><path d="M8 21h8"/></svg>
+          <span>{OFFER.trust[3]}</span>
+        </li>
+      </ul>
+
+      <form class="promo-form" id="promo-form" name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-offer-labels={JSON.stringify(offerLabels)}>
+        <input type="hidden" name="form-name" value={formName} />
+        <LeadMeta lang={lang} source="popup" />
+        <input type="hidden" name="offer" value={offerKey} />
+        {/* The offer in words, and how the popup was opened. "source: popup"
+            was true and useless: it could not tell a popup the reader
+            triggered by scrolling from one the chat assistant handed over
+            after a conversation, and it never said what discount had been
+            promised. Both are set by script, because the chat can change the
+            offer and the trigger after this markup is rendered. */}
+        <input type="hidden" name="offer_text" value={offerLabels[offerKey]} />
+        <input type="hidden" name="lead_origin" value="" />
+        {/* Filled by script from the ZIP the visitor types, never asked for.
+            Present in the markup because Netlify Forms builds its field list
+            from the static HTML: a field injected at runtime is dropped. */}
+        <input type="hidden" name="zip_city" value="" />
+        <input type="hidden" name="zip_county" value="" />
+        {/* What the visitor told the chat assistant before it handed them
+            here, so whoever calls back is not starting from nothing. Empty
+            on every lead that did not come through the chat. */}
+        <input type="hidden" name="chat_note" value="" />
+        <p class="visually-hidden" aria-hidden="true">
+          <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8.2" r="3.6"/><path d="M5 20c1.3-3.2 3.7-4.8 7-4.8s5.7 1.6 7 4.8"/></svg>
+          <input type="text" name="name" placeholder={OFFER.name} required autocomplete="name" />
+        </label>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24"><path d="M6 3h4l1.5 4.5L9 9.5c1 2.5 3 4.5 5.5 5.5l2-2.5L21 14v4a2 2 0 0 1-2 2C10.7 19.4 4.6 13.3 4 5a2 2 0 0 1 2-2Z"/></svg>
+          <input type="tel" name="phone" placeholder={OFFER.phone} required autocomplete="tel" inputmode="tel" />
+        </label>
+        <label class="promo-field">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <input type="text" name="zip" placeholder={OFFER.zip} required autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" />
+        </label>
+        <button type="submit" class="promo-cta">
+          {OFFER.cta}
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="promo-fine">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>
+          {OFFER.fine}
+        </p>
+      </form>
+
+      <div class="promo-success" id="promo-success" hidden>
+        <svg viewBox="0 0 24 24" width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.8 2.8L16.5 9"/></svg>
+        <h3>{OFFER.successTitle}</h3>
+        <p>{OFFER.successBody}</p>
+      </div>
+    </div>
+
+    <div class="promo-visual" aria-hidden="true">
+      {asideSrc && <img class="promo-aside" src={asideSrc} alt="" width="620" height="800" loading="lazy" decoding="async" />}
+      <span class="swirl s1"></span>
+      <span class="swirl s2"></span>
+      <span class="swirl s3"></span>
+      <div class="promo-badge">
+        <span class="badge-top">{OFFER.badgeTop}</span>
+        <span class="badge-price">{OFFER.price}</span>
+        <span class="badge-bottom">{OFFER.badgeBottom}</span>
+      </div>
+    </div>
+  </div>
+</div>
+)}
+
+<style>
+  .promo-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem;
+    background: rgba(6, 26, 43, 0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .promo-overlay[hidden] { display: none; }
+
+  .promo-card {
+    position: relative;
+    display: grid; grid-template-columns: 1.25fr 1fr;
+    /* The row must be bounded by the card, not by its content. Without this
+       the single implicit row sizes to max-content, the card clips it with
+       overflow:hidden, and .promo-content never becomes scrollable: the
+       submit button ends up below the fold with no way to reach it. Longer
+       offer copy (mold) hit this on every laptop under about 780px tall. */
+    grid-template-rows: minmax(0, 1fr);
+    width: min(880px, 100%);
+    max-height: min(94vh, 880px);
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(4, 20, 35, 0.5);
+    animation: promo-pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.15);
+  }
+  @keyframes promo-pop {
+    from { opacity: 0; transform: translateY(18px) scale(0.97); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .promo-card { animation: none; }
+  }
+
+  .promo-close {
+    position: absolute; top: 0.9rem; right: 0.9rem; z-index: 3;
+    width: 2.4rem; height: 2.4rem;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 255, 255, 0.9); color: var(--c-ink);
+    border: none; border-radius: 50%; cursor: pointer;
+    box-shadow: var(--shadow-sm);
+  }
+  .promo-close:hover { color: var(--c-primary); }
+
+  .promo-content {
+    padding: 1.5rem 2.2rem 1.6rem;
+    overflow-y: auto;
+    min-height: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+  .promo-brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; }
+  .promo-brand-word {
+    display: flex; flex-direction: column; line-height: 1.05;
+    font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--c-ink);
+  }
+  .promo-brand-word em { font-style: normal; color: var(--c-primary); display: inline; }
+  .promo-brand-word small {
+    font-family: var(--font-body, inherit); font-weight: 700; font-size: 0.62rem;
+    letter-spacing: 0.28em; text-transform: uppercase; color: var(--c-muted);
+  }
+
+  .promo-headline {
+    font-family: inherit; font-weight: 800; text-transform: uppercase;
+    font-size: clamp(1.45rem, 3.2vw, 1.9rem); line-height: 1.12;
+    color: var(--c-ink); letter-spacing: 0.01em; margin: 0 0 0.7rem;
+  }
+  .promo-headline .hl { color: var(--c-primary); }
+  .promo-sub { font-weight: 700; color: var(--c-ink); margin: 0 0 0.35rem; }
+  .promo-body { color: var(--c-body); font-size: 0.9rem; line-height: 1.5; margin: 0 0 0.8rem; }
+
+  .promo-trust {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem;
+    list-style: none; padding: 0.7rem 0; margin: 0 0 0.9rem;
+    border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
+  }
+  .promo-trust li {
+    display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+    text-align: center; font-size: 0.68rem; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.04em; color: var(--c-ink);
+  }
+  .promo-trust svg {
+    width: 30px; height: 30px; fill: none; stroke: var(--c-primary);
+    stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .promo-form { display: grid; gap: 0.6rem; }
+  .promo-field {
+    display: flex; align-items: center; gap: 0.6rem;
+    border: 1px solid var(--c-line); border-radius: 12px;
+    padding: 0 0.9rem; background: #fff;
+  }
+  .promo-field:focus-within { border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(14, 134, 202, 0.12); }
+  .promo-field svg {
+    width: 19px; height: 19px; flex-shrink: 0;
+    fill: none; stroke: var(--c-muted); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+  }
+  .promo-field input {
+    width: 100%; border: none; outline: none; background: transparent;
+    padding: 0.68rem 0; font: inherit; font-size: 0.95rem; color: var(--c-ink);
+  }
+
+  .promo-cta {
+    display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+    width: 100%; padding: 0.95rem 1rem; margin-top: 0.2rem;
+    background: var(--grad-cta); color: #fff;
+    border: none; border-radius: 14px; cursor: pointer;
+    font: inherit; font-weight: 800; font-size: 1.02rem; text-transform: uppercase; letter-spacing: 0.03em;
+    box-shadow: 0 10px 24px rgba(18, 204, 178, 0.35);
+    transition: transform 0.12s ease, box-shadow 0.2s ease;
+  }
+  .promo-cta:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(18, 204, 178, 0.45); }
+  .promo-cta:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+  .promo-fine {
+    display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+    margin: 0.4rem 0 0; font-size: 0.76rem; color: var(--c-muted); text-align: center;
+  }
+  .promo-fine svg { flex-shrink: 0; }
+
+  /* [hidden] is a user agent rule and any author `display` beats it, so
+     setting form.hidden on a `display: grid` form does nothing at all: the
+     form stayed on screen and the confirmation appeared underneath it, at
+     the bottom of the card, where it was easy to miss entirely. The overlay
+     above already carries this guard. The form needed it too. */
+  .promo-form[hidden] { display: none; }
+
+  /* Once the details are in, the pitch is over. Everything that was there to
+     persuade comes down and the card becomes the confirmation, rather than a
+     wall of offer copy with a thank you tucked below it. The logo stays so
+     the visitor can still see whose confirmation this is. */
+  .promo-card.is-done .promo-content > :not(.promo-brand):not(.promo-success) { display: none; }
+
+  /* The discount badge sits over the technician's face. That is the right
+     trade while the badge is still selling something, and the wrong one
+     afterwards: the offer has been claimed and it is already restated in the
+     confirmation text. Dropping it hands the panel back to the photograph. */
+  .promo-card.is-done .promo-badge { display: none; }
+
+  .promo-success { text-align: center; padding: 2rem 0.5rem; color: var(--c-ink); }
+  .promo-success svg { stroke: var(--c-accent); margin-bottom: 0.6rem; }
+  .promo-success h3 { font-size: 1.4rem; margin: 0 0 0.5rem; }
+  .promo-success p { color: var(--c-body); margin: 0; }
+
+  /* Right visual panel */
+  .promo-visual {
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    background:
+      radial-gradient(120% 90% at 80% 10%, rgba(255, 255, 255, 0.25), transparent 55%),
+      linear-gradient(160deg, #1a5a85 0%, #0f3d5e 55%, #0e2233 100%);
+  }
+  /* Covers the gradient panel on desktop. The badge sits above it, and the
+     scrim keeps the badge legible whatever the photograph is doing behind. */
+  .promo-aside {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+    z-index: 0;
+  }
+  .promo-visual:has(.promo-aside)::after {
+    content: ''; position: absolute; inset: 0; z-index: 0;
+    background: linear-gradient(180deg, rgba(11, 39, 64, 0) 35%, rgba(11, 39, 64, 0.55) 100%);
+  }
+  /* With a photograph in place the decorative rings only add noise. */
+  .promo-visual:has(.promo-aside) .swirl { display: none; }
+
+  .swirl {
+    position: absolute; border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    border-right-color: transparent; border-top-color: transparent;
+    transform: rotate(-25deg);
+  }
+  .s1 { width: 240px; height: 240px; top: -70px; right: -60px; }
+  .s2 { width: 340px; height: 340px; bottom: -120px; left: -100px; border-width: 3px; }
+  .s3 { width: 130px; height: 130px; top: 46%; right: -40px; }
+
+  .promo-badge {
+    position: relative; z-index: 2;
+    width: 230px; height: 230px; border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; gap: 0.15rem; padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.22), 0 22px 45px rgba(4, 20, 35, 0.45);
+  }
+  .badge-top {
+    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--c-accent);
+  }
+  .badge-price {
+    font-size: 4.2rem; font-weight: 800; line-height: 1; color: var(--c-primary);
+    letter-spacing: -0.02em;
+  }
+  .badge-bottom {
+    font-size: 0.82rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--c-ink);
+    border-top: 2px solid var(--c-line); padding-top: 0.45rem; margin-top: 0.3rem;
+  }
+
+  /* Short viewports: a 720px laptop cannot fit this card's natural height, so
+     the submit button lands below the fold and the reader has to discover a
+     scrollbar inside a modal to convert. Nothing is removed here, only
+     tightened, which is enough to bring the button and the fine print back
+     into view on the common 1280x720 and 1366x768 screens. */
+  @media (min-width: 761px) and (max-height: 900px) {
+    .promo-content { padding: 1.1rem 2rem 1.2rem; }
+    .promo-brand { margin-bottom: 0.5rem; }
+    .promo-brand img { width: 34px; height: 34px; }
+    .promo-headline { font-size: clamp(1.25rem, 2.6vw, 1.55rem); margin-bottom: 0.5rem; }
+    .promo-body { font-size: 0.86rem; line-height: 1.45; margin-bottom: 0.6rem; }
+    .promo-trust { padding: 0.5rem 0; margin-bottom: 0.65rem; gap: 0.3rem; }
+    .promo-trust svg { width: 24px; height: 24px; }
+    .promo-trust li { font-size: 0.62rem; }
+    .promo-form { gap: 0.45rem; }
+    .promo-field input { padding: 0.55rem 0; }
+    .promo-cta { padding: 0.8rem 1rem; }
+  }
+
+  @media (max-width: 760px) {
+    .promo-overlay { padding: 0.7rem; align-items: flex-start; }
+    .promo-card {
+      grid-template-columns: 1fr;
+      /* Visual banner keeps its natural height; the content row is capped so
+         it scrolls inside the card instead of being clipped on short screens. */
+      grid-template-rows: auto minmax(0, 1fr);
+      max-height: 94dvh;
+      margin-top: max(2vh, 0.5rem);
+    }
+    .promo-visual { order: -1; min-height: 205px; padding: 1.4rem 0; }
+    /* Desktop only. On a phone this panel is a short banner above the form,
+       and a portrait crop here would push the form off screen. */
+    .promo-aside { display: none; }
+    .promo-visual:has(.promo-aside)::after { display: none; }
+    .promo-visual:has(.promo-aside) .swirl { display: block; }
+    .promo-badge { width: 165px; height: 165px; padding: 0.8rem; }
+    .badge-price { font-size: 2.7rem; }
+    .badge-top { font-size: 0.56rem; }
+    .badge-bottom { font-size: 0.6rem; padding-top: 0.3rem; }
+    .promo-content { padding: 1.3rem 1.2rem 1.6rem; }
+    .promo-trust { grid-template-columns: repeat(4, 1fr); gap: 0.2rem; }
+    .promo-trust li { font-size: 0.58rem; }
+    .promo-trust svg { width: 24px; height: 24px; }
+    .promo-headline { font-size: 1.3rem; }
+  }
+</style>
+
+<script>
+  const overlay = document.getElementById('promo-overlay');
+  if (overlay) {
+    const KEY = 'fbPromoShown';
+    const closeBtn = document.getElementById('promo-close');
+    const form = document.getElementById('promo-form') as HTMLFormElement | null;
+    const success = document.getElementById('promo-success');
+
+    const track = (name: string, params?: Record<string, string>) => {
+      try {
+        (window as any).gtag?.('event', name, params);
+      } catch {
+        /* analytics blocked: ignore */
+      }
+    };
+
+    const close = () => {
+      overlay.hidden = true;
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+      track('popup_close');
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') close();
+    };
+
+    const field = (name: string) =>
+      form?.querySelector(`input[name="${name}"]`) as HTMLInputElement | null;
+    const setField = (name: string, value: string) => {
+      const el = field(name);
+      if (el) el.value = value;
+    };
+
+    /* Read at the moment it is used, never cached. The chat assistant can
+       change the offer after this script has run, and a copy taken at load
+       would report the page's offer instead of the one the visitor was
+       actually shown. */
+    const offerNow = () => field('offer')?.value ?? '';
+
+    /* Keeps the words next to the key. Whoever calls this lead back needs to
+       know what was promised, and "duct" is not that. */
+    const OFFER_LABELS: Record<string, string> = (() => {
+      try {
+        return JSON.parse(form?.dataset.offerLabels ?? '{}');
+      } catch {
+        return {};
+      }
+    })();
+
+    /* How the popup was opened, written for a human reading an email at
+       seven in the morning rather than for a dashboard. */
+    const ORIGIN_LABEL: Record<string, string> = {
+      auto: 'Popup, opened on its own',
+      quote_bar: 'Popup, from the sticky quote bar',
+      help_widget: 'Popup, from the chat widget button',
+      help_chat: 'Popup, handed over by the chat assistant',
+    };
+
+    /* ZIP to city, so the lead that lands in the inbox reads "33019
+       (Hollywood, Broward County)" rather than five digits nobody can place.
+       The table is 41KB of JSON, so it is fetched when the popup opens rather
+       than shipped with the page, which leaves it warm by the time anyone has
+       finished typing a name and a phone number. Everything here degrades to
+       "no city" and never to "no lead". */
+    let zipTable: Promise<Record<string, string>> | null = null;
+    const loadZips = () => {
+      if (!zipTable) {
+        zipTable = fetch('/data/fl-zip-cities.json')
+          .then((r) => (r.ok ? r.json() : {}))
+          .catch(() => ({}));
+      }
+      return zipTable;
+    };
+
+    const zipField = form?.querySelector('input[name="zip"]') as HTMLInputElement | null;
+    const cityField = form?.querySelector('input[name="zip_city"]') as HTMLInputElement | null;
+    const countyField = form?.querySelector('input[name="zip_county"]') as HTMLInputElement | null;
+
+    const resolveZip = async () => {
+      if (!zipField || !cityField || !countyField) return '';
+      const zip = zipField.value.trim().slice(0, 5);
+      if (!/^\d{5}$/.test(zip)) {
+        cityField.value = '';
+        countyField.value = '';
+        return '';
+      }
+      const table = await loadZips();
+      const hit = table[zip];
+      /* Out of state, or a typo. Better blank than a guess. */
+      const [city, county] = hit ? hit.split('|') : ['', ''];
+      cityField.value = city;
+      countyField.value = county ? `${county} County` : '';
+      return city;
+    };
+
+    zipField?.addEventListener('input', () => {
+      void resolveZip();
+    });
+
+    const showPopup = (trigger: string) => {
+      if (!overlay.hidden) return;
+      try {
+        sessionStorage.setItem(KEY, '1');
+      } catch {
+        /* private mode: still show, just no once-per-session memory */
+      }
+      overlay.hidden = false;
+      void loadZips();
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', onKey);
+      (closeBtn as HTMLElement | null)?.focus();
+      setField('lead_origin', ORIGIN_LABEL[trigger] ?? trigger);
+      track('popup_view', { offer: offerNow(), trigger });
+    };
+
+    /* Explicit open from the sticky quote bar or the help widget: always
+       allowed, even if the auto popup already fired or was closed this
+       session. The help widget passes what its assistant worked out, so the
+       visitor does not answer the same question twice. */
+    window.addEventListener('fb:open-promo', (e) => {
+      const d = (e as CustomEvent).detail || {};
+      if (d.zip && zipField) {
+        zipField.value = String(d.zip).slice(0, 5);
+        void resolveZip();
+      }
+      if (d.note) {
+        const n = form?.querySelector('input[name="chat_note"]') as HTMLInputElement | null;
+        if (n) n.value = String(d.note).slice(0, 300);
+      }
+      if (d.offer) {
+        const key = String(d.offer);
+        setField('offer', key);
+        /* The words have to follow the key, or the email promises a duct
+           discount on a dryer lead. */
+        if (OFFER_LABELS[key]) setField('offer_text', OFFER_LABELS[key]);
+      }
+      showPopup(d.trigger || 'quote_bar');
+    });
+
+    // Auto engagement trigger: open at 45% scroll depth or after 25 seconds
+    // on the page, whichever comes first, once per session. An instant popup
+    // interrupted readers before they saw a single line.
+    try {
+      if (!sessionStorage.getItem(KEY)) {
+        let fired = false;
+        const auto = () => {
+          if (fired) return;
+          fired = true;
+          clearTimeout(timer);
+          removeEventListener('scroll', onScroll);
+          showPopup('auto');
+        };
+        const timer = setTimeout(auto, 25000);
+        const onScroll = () => {
+          const max = document.documentElement.scrollHeight - innerHeight;
+          if (max <= 0 || scrollY / max >= 0.45) auto();
+        };
+        addEventListener('scroll', onScroll, { passive: true });
+      }
+    } catch {
+      /* sessionStorage unavailable: skip the auto popup, bar still works */
+    }
+
+    closeBtn?.addEventListener('click', close);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) close();
+    });
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+      if (btn) btn.disabled = true;
+      /* Minted before the send, not after, so a retry of this same
+         submission reports the same lead to Google Ads rather than a
+         second one. */
+      const leadId = (window as any).fbNewLeadId?.();
+      try {
+        /* Someone who pastes a ZIP and hits send immediately can beat the
+           fetch. Wait for it, but only briefly: a city in the email is worth
+           a moment, and never worth the lead. */
+        await Promise.race([resolveZip(), new Promise((r) => setTimeout(r, 1200))]);
+        const data = new FormData(form);
+        const body = new URLSearchParams(data as unknown as Record<string, string>).toString();
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        if (success) success.hidden = false;
+        /* Strips the offer copy out of the card so the confirmation is the
+           whole panel and lands where the visitor is already looking, and
+           takes the discount badge off the technician's face with it. The
+           state lives on the card because the badge is in .promo-visual,
+           a sibling of the content, not inside it. */
+        document.getElementById('promo-card')?.classList.add('is-done');
+        /* Announced, not just drawn: at this point focus is still on a
+           button inside a form that has just been removed from the page. */
+        success?.setAttribute('tabindex', '-1');
+        success?.focus();
+        /* Long enough to read the confirmation and the phone number in it,
+           short enough that nobody has to dismiss the page they were on. */
+        setTimeout(close, 5000);
+        /* Same parameter shape the contact form reports, so one GA report
+           covers both and "which city" does not depend on which form. */
+        track('generate_lead', {
+          form_type: 'popup_special',
+          offer: offerNow(),
+          service: 'Dryer Vent Cleaning',
+          lead_city: cityField?.value ?? '',
+          source: 'popup',
+          site_language: (form?.querySelector('input[name="locale"]') as HTMLInputElement | null)?.value ?? 'en',
+          page_path: location.pathname,
+        });
+        /* The popup never reaches /thank-you/, so the conversion has to be
+           reported here. This and the thank-you page are the only two
+           places a lead is confirmed, and both now report it. */
+        (window as any).fbLeadConversion?.(leadId);
+      } catch {
+        // Network hiccup: fall back to a normal POST so the lead is not lost.
+        form.submit();
+      } finally {
+        if (btn) btn.disabled = false;
+      }
+    });
+  }
+</script>

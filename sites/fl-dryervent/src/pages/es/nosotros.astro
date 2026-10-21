@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CTABand from '../../components/CTABand.astro';
+import { business } from '../../data/business';
+import { cities } from '../../data/cities';
+import { PRICE } from '../../data/services';
+
+const title = `Nosotros | ${business.name}, Solo Ventilas de Secadora`;
+const description = `Por qué una empresa que solo hace ventilas de secadora, cómo medimos el trabajo, qué usamos para reparar y lo que no vamos a decir de nosotros mismos.`;
+---
+<BaseLayout title={title} description={description} lang="es" altHref="/about/">
+  <Breadcrumbs crumbs={[{ name: 'Inicio', href: '/es/' }, { name: 'Nosotros', href: '/es/nosotros/' }]} />
+  <section class="section">
+    <div class="container container-narrow prose">
+      <span class="eyebrow">Nosotros</span>
+      <h1>Una empresa que solo hace ventilas de secadora</h1>
+      <p class="lead">{business.name} limpia, repara e instala ventilas de secadora en casas, condominios y edificios de apartamentos en toda Florida. Ese es todo el negocio.</p>
+
+      <p>La ventila de la secadora casi siempre es un trabajo extra para alguien cuyo oficio es otro, y se nota. El cepillo entra desde la lavandería y empuja la pelusa más adentro. Nadie saca la manguera de atrás. Nadie mira la salida de afuera. Nadie mide nada, así que nadie puede decir si el trabajo sirvió.</p>
+
+      <p>Nosotros lo hacemos al revés. Medimos el flujo de aire en la salida antes de tocar nada y otra vez al terminar. La manguera, el tramo y la salida son parte del trabajo. Y cuando la ventila no está sucia sino rota, suelta en el ático, aplastada detrás de la secadora o demasiado larga, se lo decimos en lugar de venderle una limpieza que no lo va a arreglar.</p>
+
+      <h2>Cómo trabajamos</h2>
+      <ul class="check-list">
+        <li><strong>Precio antes de agendar.</strong> Limpieza ${PRICE.cleanLow} a ${PRICE.cleanHigh}, reparación o tramo nuevo ${PRICE.workLow} a ${PRICE.workHigh}. Le damos el precio de su ventila por teléfono, y nada se agrega sin preguntarle.</li>
+        <li><strong>Medido antes y después.</strong> El mismo instrumento en el mismo punto, para que el resultado sea un número.</li>
+        <li><strong>Metal rígido en cada reparación.</strong> Nada de manguera de aluminio o plástico dentro de paredes o techos, nada de tornillos en el paso del aire.</li>
+        <li><strong>El código de construcción de Florida, revisado.</strong> El límite de 35 pies y sus descuentos por curva, aleta en la salida, sin malla.</li>
+        <li><strong>Asegurados.</strong> El trabajo de ventilas no es un oficio con licencia en Florida, así que no hay licencia que mostrar y no decimos tener una.</li>
+      </ul>
+
+      <h2>Lo que no vamos a decir</h2>
+      <p>Esta es una marca nueva. No publicamos estrellas, ni cantidad de trabajos, ni año de fundación, porque nada de eso sería honesto todavía. Cuando los clientes nos reseñen, esas reseñas aparecerán aquí tal como las escribieron. Mientras tanto, la prueba son los números de flujo antes y después que le dejamos a cada cliente.</p>
+
+      <h2>Dónde trabajamos</h2>
+      <p>En toda Florida, con páginas para {cities.length} ciudades de Miami y Fort Lauderdale a Orlando, Tampa, Fort Myers y Naples. La mayor parte del trabajo está en Palm Beach, Broward y Miami-Dade. <a href="/es/areas-de-servicio/">Ver todas las áreas →</a></p>
+    </div>
+  </section>
+  <CTABand lang="es" />
+</BaseLayout>
+<style>
+  .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; text-align: center; }
+  .about-stats > div { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.2rem; }
+  .about-stats span { display: block; font-size: 1.8rem; font-weight: 800; color: var(--c-primary); }
+  .about-stats small { color: var(--c-muted); }
+</style>

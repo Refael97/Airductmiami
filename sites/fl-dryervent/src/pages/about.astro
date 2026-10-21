@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CTABand from '../components/CTABand.astro';
+import { business } from '../data/business';
+import { cities } from '../data/cities';
+import { PRICE } from '../data/services';
+
+const title = `About ${business.name} | One Trade, Done Properly`;
+const description = `Why a company that only does dryer vents, how we measure the work, what we use for repairs, and what we will not claim about ourselves.`;
+---
+<BaseLayout title={title} description={description} altHref="/es/nosotros/">
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about/' }]} />
+  <section class="section">
+    <div class="container container-narrow prose">
+      <span class="eyebrow">About us</span>
+      <h1>A company that only does dryer vents</h1>
+      <p class="lead">{business.name} cleans, repairs and installs dryer vents for houses, condos and apartment buildings across Florida. That is the whole business.</p>
+
+      <p>Dryer vents are usually an add on for someone whose main trade is something else, and it shows. The brush goes in from the laundry side and pushes lint further along. The hose behind the dryer is never pulled. The hood outside is never looked at. Nobody measures anything, so nobody can say whether the job worked.</p>
+
+      <p>We built the business the other way round. Airflow is read at the outside hood before we touch anything and again when we finish. The transition hose, the run and the hood are all part of the job. And when a vent is not dirty but broken, separated in the attic, crushed behind the dryer or simply too long for the dryer to push through, we say so instead of selling a cleaning that will not fix it.</p>
+
+      <h2>How we work</h2>
+      <ul class="check-list">
+        <li><strong>Price before booking.</strong> Cleaning is ${PRICE.cleanLow} to ${PRICE.cleanHigh}, repair or a new run ${PRICE.workLow} to ${PRICE.workHigh}. You hear the figure for your vent on the phone, and nothing is added without asking.</li>
+        <li><strong>Measured before and after.</strong> The same instrument in the same place, so the result is a number.</li>
+        <li><strong>Rigid metal for every repair.</strong> No foil or plastic hose inside walls or ceilings, no screws into the airflow, joints sealed with foil tape.</li>
+        <li><strong>The Florida Building Code, checked.</strong> The 35 foot length limit and its bend deductions, a damper at the termination, no screen.</li>
+        <li><strong>Insured.</strong> Dryer vent work is not a licensed trade in Florida, so there is no licence to show and we do not claim one.</li>
+      </ul>
+
+      <h2>What we will not claim</h2>
+      <p>This is a new brand. We do not publish a star rating, a count of jobs or a founding year, because none of those would be honest yet. When customers review us, those reviews will appear here as they were written. Until then, the before and after airflow numbers we leave with every customer are the evidence.</p>
+
+      <h2>Where we work</h2>
+      <p>Across Florida, with pages for {cities.length} cities from Miami and Fort Lauderdale to Orlando, Tampa, Fort Myers and Naples. Most of the work is in Palm Beach, Broward and Miami-Dade, where the crews start their days. <a href="/service-areas/">See all service areas →</a></p>
+
+      <div class="about-stats">
+        <div><span>{cities.length}</span><small>Florida cities with a page</small></div>
+        <div><span>${PRICE.cleanLow} to ${PRICE.cleanHigh}</span><small>Dryer vent cleaning</small></div>
+        <div><span>2</span><small>Airflow readings on every job</small></div>
+      </div>
+    </div>
+  </section>
+  <CTABand />
+</BaseLayout>
+
+<style>
+  .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; text-align: center; }
+  .about-stats > div { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: var(--radius); padding: 1.2rem; }
+  .about-stats span { display: block; font-size: 1.8rem; font-weight: 800; color: var(--c-primary); }
+  .about-stats small { color: var(--c-muted); }
+</style>

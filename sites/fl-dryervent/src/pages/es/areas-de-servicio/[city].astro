@@ -1,0 +1,137 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import FAQ from '../../../components/FAQ.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { cities, getCity } from '../../../data/cities';
+import { services, PRICE } from '../../../data/services';
+import { serviceEsContent } from '../../../data/services.es';
+import { business } from '../../../data/business';
+import { serviceSchema } from '../../../lib/schema';
+import { cityMetaEs } from '../../../lib/meta';
+import { guidesForCityEs } from '../../../lib/relatedContent';
+
+export const getStaticPaths = (() => cities.map((c) => ({ params: { city: c.slug } }))) satisfies GetStaticPaths;
+
+const city = getCity(Astro.params.city!)!;
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const { title, description } = cityMetaEs(city.name);
+const schema = serviceSchema(site, {
+  name: `Limpieza de ventila de secadora en ${city.name}, FL`,
+  description,
+  url: `${site}/es/areas-de-servicio/${city.slug}/`,
+  slug: 'dryer-vent-cleaning',
+});
+
+const faq = [
+  ...city.faqEs,
+  {
+    question: `¿Cuánto cuesta limpiar la ventila de la secadora en ${city.name}?`,
+    answer: `Entre $${PRICE.cleanLow} y $${PRICE.cleanHigh} en la mayoría de las casas de ${city.name}. Reparar, cambiar o instalar un tramo nuevo cuesta entre $${PRICE.workLow} y $${PRICE.workHigh}. Le damos el precio de su ventila antes de agendar.`,
+  },
+];
+const nearby = city.nearby.map(getCity).filter((c): c is NonNullable<typeof c> => Boolean(c));
+const guides = await guidesForCityEs();
+const countyEs = city.county.replace(/^(.*) County$/, 'Condado de $1');
+---
+<BaseLayout title={title} description={description} schema={schema} lang="es" altHref={`/service-areas/${city.slug}/`}>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Inicio', href: '/es/' },
+      { name: 'Áreas de Servicio', href: '/es/areas-de-servicio/' },
+      { name: city.name, href: `/es/areas-de-servicio/${city.slug}/` },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{countyEs} · Florida</span>
+        <h1>Limpieza de Ventila de Secadora en {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">Atendemos {city.name}</span>
+        <p>{city.introEs} La limpieza cuesta entre ${PRICE.cleanLow} y ${PRICE.cleanHigh}, y medimos el flujo de aire en la salida antes y después.</p>
+      </div>
+
+      <div class="prose">
+        <p><strong>Lo que más encontramos en {city.name}:</strong> {city.commonEs}</p>
+
+        {city.depthEs.map((block) => (
+          <>
+            <h2>{block.heading}</h2>
+            {block.body.map((para) => <p>{para}</p>)}
+          </>
+        ))}
+
+        <h2>Lo que cuesta en {city.name}</h2>
+        <table class="price-table">
+          <thead><tr><th>Trabajo</th><th>Precio</th></tr></thead>
+          <tbody>
+            <tr><td>Limpieza de ventila, tramo corto o por la pared</td><td>${PRICE.cleanLow} a ${PRICE.cleanHigh}</td></tr>
+            <tr><td>Limpieza de ventila, tramo largo por el ático o el techo</td><td>${PRICE.cleanLow} a ${PRICE.cleanHigh}</td></tr>
+            <tr><td>Reparación: unión suelta, ducto aplastado o de aluminio</td><td>${PRICE.workLow} a ${PRICE.workHigh}</td></tr>
+            <tr><td>Instalación o reemplazo del ducto</td><td>${PRICE.workLow} a ${PRICE.workHigh}</td></tr>
+            <tr><td>Edificios de condominio y asociaciones</td><td>Cotizado por unidad</td></tr>
+          </tbody>
+        </table>
+        <p class="footnote">Le damos el precio de su ventila antes de agendar. Si lo que encontramos lo cambia, se lo decimos antes de hacer algo más.</p>
+
+        {city.neighborhoods.length > 0 && (
+          <>
+            <h2>Dónde trabajamos en {city.name}</h2>
+            <p>
+              Todo {city.name} y el área de {countyEs}, incluyendo
+              {' '}{city.neighborhoods.slice(0, -1).join(', ')}{city.neighborhoods.length > 1 ? ' y ' : ''}{city.neighborhoods.slice(-1)[0]}.
+              Llame al {business.phone} y le damos el precio de su ventila.
+            </p>
+          </>
+        )}
+
+        <h2>Servicios de ventila de secadora en {city.name}</h2>
+      </div>
+
+      <ul class="svc-list">
+        {services.map((s) => {
+          const es = serviceEsContent[s.slug];
+          return <li><a href={`/es/servicios/${s.slug}/`}><strong>{es.name}</strong></a><span>{es.answer.split('. ')[0]}.</span></li>;
+        })}
+      </ul>
+
+      <FAQ items={faq} title={`Ventila de secadora en ${city.name}: preguntas frecuentes`} />
+
+      {guides.length > 0 && (
+        <div class="city-guides">
+          <h2>Antes de agendar</h2>
+          <ul>{guides.map((g) => <li><a href={`/es/blog/${g.id.replace(/\.md$/, '')}/`}>{g.data.title}</a></li>)}</ul>
+        </div>
+      )}
+
+      {nearby.length > 0 && (
+        <div class="nearby">
+          <h2>Áreas cercanas</h2>
+          <div class="city-chips">
+            {nearby.map((c) => <a href={`/es/areas-de-servicio/${c.slug}/`} class="chip">{c.name}</a>)}
+            <a href="/es/areas-de-servicio/" class="chip chip-all">Todas las áreas →</a>
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand lang="es" heading={`Ventila de secadora en ${city.name}`} />
+</BaseLayout>
+
+<style>
+  .svc-list { list-style: none; padding: 0; margin: 0 0 2rem; display: grid; gap: 0.75rem; }
+  .svc-list li { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.9rem 1rem; border: 1px solid var(--c-line); border-radius: 12px; background: #fff; }
+  .svc-list span { color: var(--c-body); font-size: 0.92rem; }
+  .city-guides, .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip { background: #fff; border: 1px solid var(--c-line); border-radius: 999px; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none; }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .chip-all { background: var(--c-primary); color: #fff; border-color: var(--c-primary); }
+  .footnote { font-size: 0.85rem; color: var(--c-muted, #6b7280); }
+</style>

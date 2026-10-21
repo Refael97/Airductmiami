@@ -1,0 +1,30 @@
+---
+/**
+ * Network lead identity. Drop inside every lead form on every site in the
+ * network. These hidden fields travel with the submission so one shared
+ * pipeline (and one AI agent) can route, script, and localize the follow-up
+ * without knowing anything site-specific in advance.
+ *
+ * Contract (do not rename these keys, the pipeline depends on them):
+ *   site_id  vertical  brand  locale  service_area  timezone  source  page
+ *
+ * See docs/LEAD-PIPELINE.md for the full schema.
+ */
+import { business } from '../data/business';
+import type { Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+  /** Which surface produced the lead: 'contact_form' | 'popup' | ... */
+  source: string;
+}
+const { lang = 'en', source } = Astro.props;
+---
+<input type="hidden" name="site_id" value={business.siteId} />
+<input type="hidden" name="vertical" value={business.vertical} />
+<input type="hidden" name="brand" value={business.name} />
+<input type="hidden" name="locale" value={lang} />
+<input type="hidden" name="service_area" value={business.serviceArea} />
+<input type="hidden" name="timezone" value={business.timezone} />
+<input type="hidden" name="source" value={source} />
+<input type="hidden" name="page" value={Astro.url.pathname} />

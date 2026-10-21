@@ -1,0 +1,153 @@
+---
+import { business } from '../data/business';
+import { services } from '../data/services';
+import { cities } from '../data/cities';
+import { ui, serviceHref, cityHref, type Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+  /**
+   * Campaign landing pages: contact details, the trust line and privacy.
+   * The three columns of links below are the site's own navigation by
+   * another name, and a landing page is supposed to have one exit.
+   */
+  minimal?: boolean;
+}
+const { lang = 'en', minimal = false } = Astro.props;
+const t = ui[lang];
+
+const year = new Date().getFullYear();
+const footerServices = services.slice(0, 8);
+const footerCities = cities.slice(0, 14);
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href={t.home} class="brand">
+        <img src="/logo.svg" alt="" width="34" height="34" style="display:inline-block;vertical-align:middle;" /> {business.name}
+      </a>
+      <p>{business.tagline}</p>
+      <p class="footer-contact">
+        <a href={`tel:${business.phoneHref}`}>📞 {business.phone}</a><br />
+        <a href={`mailto:${business.email}`}>✉️ {business.email}</a>
+        {!minimal && business.social.facebook && (
+          <>
+            <br />
+            <a
+              href={business.social.facebook}
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.57v1.89h2.78l-.45 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
+              Facebook
+            </a>
+          </>
+        )}
+      </p>
+      <p class="footer-badge">{t.licensedInsured}</p>
+    </div>
+
+    {!minimal && (
+    <>
+    <div class="footer-col">
+      <h3>{t.footerServices}</h3>
+      <ul>
+        {footerServices.map((s) => (
+          <li><a href={serviceHref(lang, s.slug)}>{s.shortName}</a></li>
+        ))}
+        <li><a href={t.services}>{t.allServices} →</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>{t.footerAreas}</h3>
+      <ul>
+        {footerCities.map((c) => (
+          <li><a href={cityHref(lang, c.slug)}>{c.name}</a></li>
+        ))}
+        <li><a href={t.serviceAreas}>{t.allAreas} →</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>{t.footerCompany}</h3>
+      <ul>
+        <li><a href={t.about}>{t.nav[3].label}</a></li>
+        <li><a href={t.blog}>{t.nav[2].label}</a></li>
+        <li><a href={t.faq}>{t.nav[4].label}</a></li>
+        <li><a href={t.contact}>{t.nav[5].label}</a></li>
+        <li><a href={t.privacy}>{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a></li>
+      </ul>
+    </div>
+    </>
+    )}
+
+    {minimal && (
+    <div class="footer-col">
+      <ul>
+        <li><a href={t.privacy}>{lang === 'es' ? 'Privacidad' : 'Privacy Policy'}</a></li>
+      </ul>
+    </div>
+    )}
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© {year} {business.legalName}. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'} · {t.servingFlorida}.</p>
+      {/* Not on landing pages. It is a link out, and paid traffic gets one
+          exit: the phone number. The file itself stays reachable, and every
+          other page still points at it. */}
+      {!minimal && (
+      <p class="agent-link">
+        <a href="/agent.json">
+          {lang === 'es' ? 'Para agentes de IA: datos del negocio (JSON)' : 'For AI agents: structured business data (JSON)'}
+        </a>
+      </p>
+      )}
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: var(--c-bg-deep); color: #a9c2d4; margin-top: 2rem; }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-block: 3rem 2rem;
+  }
+  .footer-brand .brand {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    color: #fff; font-weight: 800; font-size: 1.2rem; text-decoration: none;
+    margin-bottom: 0.6rem;
+  }
+  .footer-brand p { margin: 0 0 0.8rem; font-size: 0.92rem; }
+  .footer-contact a { color: #cfe0ec; }
+  .footer-badge {
+    display: inline-block; font-size: 0.8rem; color: var(--c-accent);
+    font-weight: 700; border: 1px solid rgba(20,184,166,0.4);
+    padding: 0.3rem 0.7rem; border-radius: 999px;
+  }
+  .footer-col h3 { color: #fff; font-size: 1rem; margin-bottom: 0.8rem; }
+  .footer-col ul { list-style: none; padding: 0; margin: 0; }
+  .footer-col li { margin-bottom: 0.45rem; }
+  .footer-col a { color: #a9c2d4; font-size: 0.9rem; text-decoration: none; }
+  .footer-col a:hover { color: #fff; text-decoration: underline; }
+  /* Rendered only when a real profile exists. See business.ts social. */
+  .social-link {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    margin-top: 0.35rem;
+  }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-block: 1.2rem; }
+  .footer-bottom p { margin: 0; font-size: 0.82rem; color: #7c96a8; }
+  .agent-link { margin-top: 0.4rem; }
+  .agent-link a { color: #7c96a8; font-size: 0.78rem; text-decoration: none; }
+  .agent-link a:hover { color: #a9c2d4; text-decoration: underline; }
+  @media (max-width: 860px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+  }
+  @media (max-width: 480px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>

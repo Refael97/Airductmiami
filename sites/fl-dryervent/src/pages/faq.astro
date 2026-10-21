@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import CTABand from '../components/CTABand.astro';
+import { business } from '../data/business';
+import { cities } from '../data/cities';
+import { facts } from '../data/facts';
+
+const title = 'Dryer Vent FAQ: Florida Prices, Code and Answers';
+const description = 'What dryer vent cleaning costs in Florida, how often to do it, the code length limit, foil hose, bird screens, condo vents and fire risk.';
+const own = [
+  { question: 'Do you serve my area?', answer: `We work across Florida, with pages for ${cities.length} cities. Call ${business.phone} to confirm your ZIP code.` },
+  { question: 'What are your hours?', answer: 'Monday to Friday 8am to 7pm, Saturday 9am to 5pm, Sunday 10am to 4pm, Eastern time. Same week appointments. We are not open 24 hours.' },
+  { question: 'Do you clean air ducts or repair dryers?', answer: 'No. We do dryer vents only: cleaning, repair, installation, caps and condo buildings. If the dryer itself has failed, an appliance technician is the right call.' },
+];
+---
+<BaseLayout title={title} description={description} altHref="/es/preguntas-frecuentes/">
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'FAQ', href: '/faq/' }]} />
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <span class="eyebrow">Answers</span>
+        <h1>Dryer Vent Questions, Answered</h1>
+        <p class="lead">The questions people ask before they call anyone, with the numbers in them.</p>
+      </div>
+      <FAQ items={[...facts, ...own]} title="" />
+    </div>
+  </section>
+  <CTABand />
+</BaseLayout>

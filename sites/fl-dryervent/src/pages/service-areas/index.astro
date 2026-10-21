@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CTABand from '../../components/CTABand.astro';
+import { cities, citiesByRegion } from '../../data/cities';
+import { regionPages } from '../../data/regions';
+import { business } from '../../data/business';
+
+const title = `Dryer Vent Cleaning Near You | Florida Service Areas`;
+const description = `Dryer vent cleaning, $100 to $200, in ${cities.length} Florida cities from Miami and Fort Lauderdale to Orlando, Tampa and Fort Myers. Price before you book.`;
+const regions = citiesByRegion();
+---
+<BaseLayout title={title} description={description} altHref="/es/areas-de-servicio/">
+  <Breadcrumbs crumbs={[{ name: 'Home', href: '/' }, { name: 'Service Areas', href: '/service-areas/' }]} />
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Statewide coverage</span>
+        <h1>Dryer Vent Cleaning Service Areas in Florida</h1>
+        <p class="lead">{cities.length} Florida cities, each with its own page: how dryer vents are usually run there, what we find most often, and the price.</p>
+      </div>
+      <div class="region-guides">
+        <span class="guides-label">County guides:</span>
+        {regionPages.map((r) => (
+          <a href={`/service-areas/${r.slug}/`} class="chip">{r.name}</a>
+        ))}
+      </div>
+      {regions.map(([region, list]) => (
+        <div class="region-block">
+          <h2>{region}</h2>
+          <div class="city-grid">
+            {list.map((c) => (
+              <a href={`/service-areas/${c.slug}/`} class="city-card">
+                <span class="city-name">{c.name}</span>
+                <span class="city-county">{c.county}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  <CTABand />
+</BaseLayout>
+
+<style>
+  .region-guides { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 2.2rem; }
+  .guides-label { font-weight: 700; color: var(--c-muted); font-size: 0.9rem; }
+  .chip {
+    background: #fff; border: 1px solid var(--c-line); border-radius: 999px;
+    padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .region-block { margin-bottom: 2.5rem; }
+  .region-block h2 { border-bottom: 2px solid var(--c-line); padding-bottom: 0.5rem; }
+  .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.9rem; }
+  .city-card {
+    display: flex; flex-direction: column;
+    background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-sm);
+    padding: 0.9rem 1.1rem; text-decoration: none; box-shadow: var(--shadow-sm);
+    transition: transform 0.12s ease, border-color 0.2s ease;
+  }
+  .city-card:hover { transform: translateY(-2px); border-color: var(--c-primary); text-decoration: none; }
+  .city-name { font-weight: 700; color: var(--c-ink); }
+  .city-county { font-size: 0.82rem; color: var(--c-muted); }
+</style>

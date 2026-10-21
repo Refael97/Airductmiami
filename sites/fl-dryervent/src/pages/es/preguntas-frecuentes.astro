@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTABand from '../../components/CTABand.astro';
+import { business } from '../../data/business';
+import { cities } from '../../data/cities';
+import { factsEs } from '../../data/facts';
+
+const title = 'Preguntas sobre Ventilas de Secadora en Florida';
+const description = 'Cuánto cuesta limpiar la ventila de la secadora en Florida, cada cuánto hacerlo, el largo máximo por código, la manguera de aluminio y los condominios.';
+const own = [
+  { question: '¿Atienden mi zona?', answer: `Trabajamos en toda Florida, con páginas para ${cities.length} ciudades. Llame al ${business.phone} para confirmar su código postal.` },
+  { question: '¿Cuál es su horario?', answer: 'Lunes a viernes de 8am a 7pm, sábado de 9am a 5pm y domingo de 10am a 4pm, hora del este. Citas la misma semana. No abrimos 24 horas.' },
+  { question: '¿Limpian ductos del aire acondicionado o reparan secadoras?', answer: 'No. Solo hacemos ventilas de secadora: limpieza, reparación, instalación, salidas y edificios. Si falló la secadora misma, lo correcto es un técnico de electrodomésticos.' },
+];
+---
+<BaseLayout title={title} description={description} lang="es" altHref="/faq/">
+  <Breadcrumbs crumbs={[{ name: 'Inicio', href: '/es/' }, { name: 'Preguntas', href: '/es/preguntas-frecuentes/' }]} />
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <span class="eyebrow">Respuestas</span>
+        <h1>Preguntas sobre la Ventila de la Secadora</h1>
+        <p class="lead">Lo que la gente pregunta antes de llamar a nadie, con los números.</p>
+      </div>
+      <FAQ items={[...factsEs, ...own]} title="" />
+    </div>
+  </section>
+  <CTABand lang="es" />
+</BaseLayout>

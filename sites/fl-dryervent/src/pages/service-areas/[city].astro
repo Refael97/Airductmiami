@@ -1,0 +1,134 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTABand from '../../components/CTABand.astro';
+import { cities, getCity } from '../../data/cities';
+import { services, PRICE } from '../../data/services';
+import { business } from '../../data/business';
+import { serviceSchema } from '../../lib/schema';
+import { cityMeta } from '../../lib/meta';
+import { guidesForCity } from '../../lib/relatedContent';
+
+export const getStaticPaths = (() => cities.map((c) => ({ params: { city: c.slug } }))) satisfies GetStaticPaths;
+
+const city = getCity(Astro.params.city!)!;
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const { title, description } = cityMeta(city.name);
+const schema = serviceSchema(site, {
+  name: `Dryer Vent Cleaning in ${city.name}, FL`,
+  description,
+  url: `${site}/service-areas/${city.slug}/`,
+  slug: 'dryer-vent-cleaning',
+});
+
+const faq = [
+  ...city.faq,
+  {
+    question: `How much does dryer vent cleaning cost in ${city.name}?`,
+    answer: `$${PRICE.cleanLow} to $${PRICE.cleanHigh} for most ${city.name} homes. Repair, replacement or a new run is $${PRICE.workLow} to $${PRICE.workHigh}. You get the figure for your vent before we book.`,
+  },
+];
+const nearby = city.nearby.map(getCity).filter((c): c is NonNullable<typeof c> => Boolean(c));
+const guides = await guidesForCity();
+---
+<BaseLayout title={title} description={description} schema={schema} altHref={`/es/areas-de-servicio/${city.slug}/`}>
+  <Breadcrumbs
+    crumbs={[
+      { name: 'Home', href: '/' },
+      { name: 'Service Areas', href: '/service-areas/' },
+      { name: city.name, href: `/service-areas/${city.slug}/` },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">{city.county} · Florida</span>
+        <h1>Dryer Vent Cleaning in {city.name}, FL</h1>
+      </div>
+
+      <div class="answer-box">
+        <span class="answer-label">Serving {city.name}</span>
+        <p>{city.intro} Cleaning runs ${PRICE.cleanLow} to ${PRICE.cleanHigh}, and we measure airflow at the outside hood before and after.</p>
+      </div>
+
+      <div class="prose">
+        <p><strong>What we find most often in {city.name}:</strong> {city.common}</p>
+
+        {city.depth.map((block) => (
+          <>
+            <h2>{block.heading}</h2>
+            {block.body.map((para) => <p>{para}</p>)}
+          </>
+        ))}
+
+        <h2>What it costs in {city.name}</h2>
+        <table class="price-table">
+          <thead><tr><th>Job</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td>Dryer vent cleaning, wall or short run</td><td>${PRICE.cleanLow} to ${PRICE.cleanHigh}</td></tr>
+            <tr><td>Dryer vent cleaning, long attic or roof run</td><td>${PRICE.cleanLow} to ${PRICE.cleanHigh}</td></tr>
+            <tr><td>Repair: separated joint, crushed or foil duct</td><td>${PRICE.workLow} to ${PRICE.workHigh}</td></tr>
+            <tr><td>New dryer duct installation or replacement</td><td>${PRICE.workLow} to ${PRICE.workHigh}</td></tr>
+            <tr><td>Condo buildings and associations</td><td>Quoted per unit</td></tr>
+          </tbody>
+        </table>
+        <p class="footnote">You get the figure for your vent before we book. If what we find changes it, you hear that before any extra work starts.</p>
+
+        {city.neighborhoods.length > 0 && (
+          <>
+            <h2>Where in {city.name} we work</h2>
+            <p>
+              All of {city.name} and the surrounding {city.county} area, including
+              {' '}{city.neighborhoods.slice(0, -1).join(', ')}{city.neighborhoods.length > 1 ? ' and ' : ''}{city.neighborhoods.slice(-1)[0]}.
+              Call {business.phone} for the price on your run.
+            </p>
+          </>
+        )}
+
+        <h2>Dryer vent services in {city.name}</h2>
+      </div>
+
+      <ul class="svc-list">
+        {services.map((s) => (
+          <li><a href={`/services/${s.slug}/`}><strong>{s.name}</strong></a><span>{s.answer.split('. ')[0]}.</span></li>
+        ))}
+      </ul>
+
+      <FAQ items={faq} title={`Dryer Vents in ${city.name}: FAQs`} />
+
+      {guides.length > 0 && (
+        <div class="city-guides">
+          <h2>Before you book</h2>
+          <ul>{guides.map((g) => <li><a href={`/blog/${g.id.replace(/\.md$/, '')}/`}>{g.data.title}</a></li>)}</ul>
+        </div>
+      )}
+
+      {nearby.length > 0 && (
+        <div class="nearby">
+          <h2>Nearby areas</h2>
+          <div class="city-chips">
+            {nearby.map((c) => <a href={`/service-areas/${c.slug}/`} class="chip">{c.name}</a>)}
+            <a href="/service-areas/" class="chip chip-all">All areas →</a>
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTABand heading={`Dryer vent cleaning in ${city.name}`} />
+</BaseLayout>
+
+<style>
+  .svc-list { list-style: none; padding: 0; margin: 0 0 2rem; display: grid; gap: 0.75rem; }
+  .svc-list li { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.9rem 1rem; border: 1px solid var(--c-line); border-radius: 12px; background: #fff; }
+  .svc-list span { color: var(--c-body); font-size: 0.92rem; }
+  .city-guides, .nearby { margin-top: 2.5rem; }
+  .city-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .chip { background: #fff; border: 1px solid var(--c-line); border-radius: 999px; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; color: var(--c-body); text-decoration: none; }
+  .chip:hover { border-color: var(--c-primary); color: var(--c-primary); text-decoration: none; }
+  .chip-all { background: var(--c-primary); color: #fff; border-color: var(--c-primary); }
+  .footnote { font-size: 0.85rem; color: var(--c-muted, #6b7280); }
+</style>
