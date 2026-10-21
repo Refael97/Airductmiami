@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CTABand from '../../components/CTABand.astro';
 import { services } from '../../data/services';
-import ServiceIcon from '../../components/ServiceIcon.astro';
+import { servicePhoto } from '../../data/images';
 import { business } from '../../data/business';
 
 const title = `Dryer Vent Services in Florida | Clean, Repair, Install`;
@@ -16,12 +16,12 @@ const description = 'Dryer vent cleaning $100 to $200, repair and new dryer duct
       <div class="section-head">
         <span class="eyebrow">Our services</span>
         <h1>Dryer Vent Services in Florida</h1>
-        <p class="lead">Five services, all of them dryer vents. Cleaning for a run that is slow, repair for one that is broken, a new duct for one that was never right, the cap at the end, and whole condo buildings.</p>
+        <p class="lead">Every service here is a dryer vent service: cleaning, inspection, repair and replacement, new runs, roof and wall caps, booster fans, condos and commercial buildings.</p>
       </div>
       <div class="grid grid-3">
         {services.map((s) => (
           <a href={`/services/${s.slug}/`} class="card service-card">
-            <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
+            <img class="svc-img" src={servicePhoto[s.slug]?.small} alt="" width="640" height="478" loading="lazy" decoding="async" />
             <h3>{s.name}</h3>
             <p>{s.answer.split('. ')[0]}.</p>
             <span class="card-link">Learn more →</span>
@@ -34,9 +34,10 @@ const description = 'Dryer vent cleaning $100 to $200, repair and new dryer duct
 </BaseLayout>
 
 <style>
-  .service-card { display: block; text-decoration: none; }
+  .service-card { display: block; text-decoration: none; padding-top: 0; overflow: hidden; }
+  .svc-img { width: calc(100% + 3.2rem); max-width: none; margin: 0 -1.6rem 1.1rem; aspect-ratio: 16 / 9; object-fit: cover; }
   .service-card:hover { text-decoration: none; }
   .service-card h3 { color: var(--c-ink); }
   .service-card p { color: var(--c-body); font-size: 0.95rem; }
-  .card-link { color: var(--c-primary); font-weight: 700; font-size: 0.9rem; }
+  .card-link { color: var(--c-orange); font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; }
 </style>

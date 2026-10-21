@@ -17,7 +17,7 @@ const { lang = 'en', minimal = false } = Astro.props;
 const t = ui[lang];
 
 const year = new Date().getFullYear();
-const footerServices = services.slice(0, 8);
+const footerServices = services;
 const footerCities = cities.slice(0, 14);
 ---
 <footer class="site-footer">

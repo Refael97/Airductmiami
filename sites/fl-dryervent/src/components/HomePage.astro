@@ -35,6 +35,10 @@ const blurbs: Record<string, [string, string]> = {
   'dryer-vent-installation': ['A new rigid metal run on the shortest route the code allows.', 'Un tramo nuevo de metal rígido por la ruta más corta que permite el código.'],
   'roof-and-wall-vent-caps': ['Hoods and roof caps cleared, dampers freed, screens and nests removed.', 'Salidas de pared y techo despejadas, aletas liberadas, mallas y nidos fuera.'],
   'condo-and-apartment-dryer-vents': ['Long interior runs and shared risers, priced per unit for the building.', 'Tramos interiores largos y ductos compartidos, con precio por unidad para el edificio.'],
+  'dryer-vent-inspection': ['Airflow tested at the hood and the whole run checked against the code.', 'Flujo medido en la salida y todo el tramo revisado contra el código.'],
+  'roof-dryer-vent-cleaning': ['Long runs that exit through a tile or shingle roof, cleaned from both ends.', 'Tramos largos que salen por un techo de tejas o tejas asfálticas, limpiados desde ambos extremos.'],
+  'commercial-dryer-vent-cleaning': ['Common laundry rooms and whole buildings, quoted per site with a written record.', 'Lavanderías comunes y edificios completos, cotizados por sitio con un registro escrito.'],
+  'dryer-booster-fan-installation': ['A listed booster for a run longer than the code allows, wired to run with the dryer.', 'Un extractor aprobado para un tramo más largo de lo que permite el código, conectado a la secadora.'],
 };
 
 const c = es
@@ -409,7 +413,6 @@ const svcName = (slug: string, name: string) => (es ? serviceEsContent[slug]?.na
   .h-svc { background: #fafbfc; }
   .h-svc-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.4rem; }
   .h-svc-card { grid-column: span 2; display: flex; flex-direction: column; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--c-line); text-decoration: none; transition: transform 0.18s ease, box-shadow 0.2s ease; }
-  .h-svc-card:nth-child(4), .h-svc-card:nth-child(5) { grid-column: span 3; }
   .h-svc-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); text-decoration: none; }
   .h-svc-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
   .h-svc-body { display: flex; flex-direction: column; gap: 0.4rem; padding: 1.2rem 1.4rem 1.4rem; flex: 1; }
@@ -468,7 +471,7 @@ const svcName = (slug: string, name: string) => (es ? serviceEsContent[slug]?.na
     .h-card { order: 2; justify-self: stretch; width: auto; margin-top: 1.6rem; }
     .h-hero { display: flex; flex-direction: column; }
     .h-svc-grid { grid-template-columns: 1fr; }
-    .h-svc-card, .h-svc-card:nth-child(4), .h-svc-card:nth-child(5) { grid-column: auto; }
+    .h-svc-card { grid-column: auto; }
     .h-split { grid-template-columns: 1fr; }
     .h-split-inner { max-width: none; }
     .h-why { grid-template-columns: 1fr; }

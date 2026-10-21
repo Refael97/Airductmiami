@@ -21,7 +21,7 @@ const path = Astro.url.pathname;
 const isActive = (href: string) =>
   href === t.home ? path === t.home : path.startsWith(href);
 
-const topServices = services.slice(0, 6);
+const topServices = services;
 const defaultSwitch = lang === 'es' ? '/' : '/es/';
 ---
 <header class="site-header">

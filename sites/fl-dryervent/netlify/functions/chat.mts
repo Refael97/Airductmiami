@@ -59,13 +59,17 @@ const QUOTE_TOOL: Anthropic.Tool = {
     properties: {
       service: {
         type: 'string',
-        enum: ['cleaning', 'repair', 'installation', 'caps', 'condo'],
+        enum: ['cleaning', 'repair', 'installation', 'caps', 'condo', 'inspection', 'roof', 'commercial', 'booster'],
         description:
           'cleaning for a slow dryer or a vent that has not been cleaned; ' +
           'repair for a crushed, split, disconnected or badly routed duct or transition hose; ' +
           'installation for a new or replaced dryer duct run, for example a new dryer location or a remodel; ' +
           'caps for the outside wall or roof hood, a stuck damper, a bird nest or a missing cap; ' +
-          'condo for a condo unit, an apartment, or a building or association with several units',
+          'condo for a condo unit, an apartment, or a building or association with several units; ' +
+          'inspection for an airflow test or a check of the whole run, for example before buying a home; ' +
+          'roof for cleaning a run that exits through the roof; ' +
+          'commercial for a common laundry room, a property manager, a hotel or several buildings; ' +
+          'booster for a booster fan on a run longer than the code allows',
       },
       zip: {
         type: ['string', 'null'],
@@ -95,6 +99,7 @@ The facts you may use. These are the only facts you have, so do not add to them:
 - Dryer vent cleaning: $100 to $200.
 - Dryer vent repair, replacement or a new installation: $200 to $600.
 - Condo and multi unit buildings: quoted per unit.
+- Commercial sites and common laundry rooms: quoted per site after a walk through. A dryer vent inspection is part of every cleaning, and on its own it is quoted before booking. Booster fan installation falls in the $200 to $600 range.
 - Every price is confirmed on the call back before anything is booked.
 - Hours: Monday to Friday 8am to 7pm, Saturday 9am to 5pm, Sunday 10am to 4pm, Eastern time.
 - Appointments are usually available the same week. The office confirms the exact time when they call back.
@@ -126,6 +131,7 @@ Los datos que puede usar. Son los únicos que tiene, así que no les agregue nad
 - Limpieza de ventila de secadora: $100 a $200.
 - Reparación, reemplazo o instalación nueva de ventila: $200 a $600.
 - Condominios y edificios de varias unidades: se cotiza por unidad.
+- Sitios comerciales y lavanderías comunes: se cotiza por sitio después de una visita. La inspección de la ventila va incluida en cada limpieza, y sola se cotiza antes de agendar. La instalación de un extractor auxiliar está en el rango de $200 a $600.
 - Todo precio se confirma en la llamada de vuelta antes de agendar.
 - Horario: lunes a viernes de 8am a 7pm, sábado de 9am a 5pm, domingo de 10am a 4pm, hora del Este.
 - Por lo general hay citas la misma semana. La oficina confirma la hora exacta cuando devuelve la llamada.

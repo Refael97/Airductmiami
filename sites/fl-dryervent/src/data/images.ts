@@ -61,6 +61,18 @@ export const photos = {
   runAfter: photo('vent-run-after', 1000, 666, 560,
     'Inside of the same vent run after cleaning',
     'Interior del mismo ducto después de limpiar'),
+  roofCleaning: photo('roof-dryer-vent-cleaning', 1200, 896, 640,
+    'Technician on a tile roof running a brush into a roof dryer vent cap',
+    'Técnico en un techo de tejas pasando el cepillo por la salida de la ventila'),
+  commercialLaundry: photo('commercial-laundry-room', 1200, 896, 640,
+    'Common laundry room with stacked washers and dryers in a Florida apartment building',
+    'Lavandería común con lavadoras y secadoras apiladas en un edificio de Florida'),
+  boosterFan: photo('dryer-booster-fan', 1200, 896, 640,
+    'Inline dryer booster fan installed in a rigid metal dryer duct',
+    'Extractor auxiliar instalado en un ducto rígido de metal de la secadora'),
+  inspectionCamera: photo('dryer-vent-inspection-camera', 1200, 896, 640,
+    'Technician checking a dryer vent with an inspection camera',
+    'Técnico revisando la ventila de la secadora con una cámara de inspección'),
 } satisfies Record<string, Photo>;
 
 export type PhotoKey = keyof typeof photos;
@@ -72,6 +84,10 @@ export const servicePhoto: Record<string, Photo> = {
   'dryer-vent-installation': photos.newRigidDuct,
   'roof-and-wall-vent-caps': photos.roofCap,
   'condo-and-apartment-dryer-vents': photos.condoCloset,
+  'dryer-vent-inspection': photos.inspectionCamera,
+  'roof-dryer-vent-cleaning': photos.roofCleaning,
+  'commercial-dryer-vent-cleaning': photos.commercialLaundry,
+  'dryer-booster-fan-installation': photos.boosterFan,
 };
 
 /**

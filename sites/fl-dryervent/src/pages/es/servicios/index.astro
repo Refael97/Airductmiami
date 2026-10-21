@@ -5,7 +5,7 @@ import CTABand from '../../../components/CTABand.astro';
 import { services } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
 import { business } from '../../../data/business';
-import ServiceIcon from '../../../components/ServiceIcon.astro';
+import { servicePhoto } from '../../../data/images';
 import { ui, serviceHref } from '../../../data/ui';
 
 const lang = 'es' as const;
@@ -20,14 +20,14 @@ const description = 'Limpieza de ventila de secadora $100 a $200, reparación e 
  <div class="section-head">
  <span class="eyebrow">Nuestros servicios</span>
  <h1>Servicios de Ventila de Secadora en Florida</h1>
- <p class="lead">Cinco servicios, todos de ventilas de secadora: limpieza, reparación, instalación, la salida de afuera y edificios de condominio completos.</p>
+ <p class="lead">Todos nuestros servicios son de ventilas de secadora: limpieza, inspección, reparación y reemplazo, tramos nuevos, salidas de techo y pared, extractores auxiliares, condominios y edificios comerciales.</p>
  </div>
  <div class="grid grid-3">
  {services.map((s) => {
  const es = serviceEsContent[s.slug];
  return (
  <a href={serviceHref(lang, s.slug)} class="card service-card">
- <span class="icon" aria-hidden="true"><ServiceIcon slug={s.slug} /></span>
+ <img class="svc-img" src={servicePhoto[s.slug]?.small} alt="" width="640" height="478" loading="lazy" decoding="async" />
  <h3>{es.name}</h3>
  <p>{es.answer.split('. ')[0]}.</p>
  <span class="card-link">{t.learnMore} →</span>
@@ -41,9 +41,10 @@ const description = 'Limpieza de ventila de secadora $100 a $200, reparación e 
 </BaseLayout>
 
 <style>
-  .service-card { display: block; text-decoration: none; }
+  .service-card { display: block; text-decoration: none; padding-top: 0; overflow: hidden; }
+  .svc-img { width: calc(100% + 3.2rem); max-width: none; margin: 0 -1.6rem 1.1rem; aspect-ratio: 16 / 9; object-fit: cover; }
   .service-card:hover { text-decoration: none; }
   .service-card h3 { color: var(--c-ink); }
   .service-card p { color: var(--c-body); font-size: 0.95rem; }
-  .card-link { color: var(--c-primary); font-weight: 700; font-size: 0.9rem; }
+  .card-link { color: var(--c-orange); font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; }
 </style>

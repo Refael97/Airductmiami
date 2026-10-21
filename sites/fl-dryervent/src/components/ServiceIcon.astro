@@ -11,6 +11,26 @@ interface Props {
 const { slug, size = 26 } = Astro.props;
 
 const icons: Record<string, string> = {
+  // magnifier over a duct
+  'dryer-vent-inspection': `
+    <circle cx="10.5" cy="10.5" r="5.5"/>
+    <path d="M14.5 14.5L20 20"/>
+    <path d="M8 10.5h5"/>`,
+  // roof with a vent cap
+  'roof-dryer-vent-cleaning': `
+    <path d="M3 13l9-7 9 7"/>
+    <path d="M15 8.5V5h3v6"/>
+    <path d="M6 12v8h12v-8"/>`,
+  // building with a laundry machine
+  'commercial-dryer-vent-cleaning': `
+    <rect x="4" y="3" width="16" height="18" rx="1.5"/>
+    <circle cx="12" cy="13" r="4"/>
+    <path d="M7 6.5h2M11 6.5h2"/>`,
+  // inline fan on a duct
+  'dryer-booster-fan-installation': `
+    <path d="M2 12h4M18 12h4"/>
+    <circle cx="12" cy="12" r="6"/>
+    <path d="M12 12c-.4-2.2.4-3.9 2.2-4.3.5 1.8-.4 3.5-2.2 4.3ZM12 12c2.2-.4 3.9.4 4.3 2.2-1.8.5-3.5-.4-4.3-2.2ZM12 12c.4 2.2-.4 3.9-2.2 4.3-.5-1.8.4-3.5 2.2-4.3ZM12 12c-2.2.4-3.9-.4-4.3-2.2 1.8-.5 3.5.4 4.3 2.2Z"/>`,
   // wrench on a duct
   'dryer-vent-repair': `
     <path d="M3 15h8M3 19h8"/>

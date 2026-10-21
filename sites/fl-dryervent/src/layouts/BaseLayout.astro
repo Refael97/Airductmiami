@@ -9,6 +9,7 @@ import StickyQuoteBar from '../components/StickyQuoteBar.astro';
 import HelpChat from '../components/HelpChat.astro';
 import BookingModal from '../components/BookingModal.astro';
 import BookingScript from '../components/BookingScript.astro';
+import NiceSelect from '../components/NiceSelect.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { localBusinessSchema, websiteSchema } from '../lib/schema';
 import { business } from '../data/business';
@@ -238,5 +239,6 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
     {!landing && <HelpChat lang={lang} pageTitle={title} />}
     {!landing && <BookingModal lang={lang} />}
     {!landing && <BookingScript lang={lang} />}
+    <NiceSelect />
   </body>
 </html>

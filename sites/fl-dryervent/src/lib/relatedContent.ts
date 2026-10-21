@@ -13,6 +13,10 @@ const SERVICE_CATEGORIES: Record<string, string[]> = {
   'dryer-vent-installation': ['Installation & Code', 'Costs & Buying Guides'],
   'roof-and-wall-vent-caps': ['Dryer Vent Cleaning', 'Installation & Code'],
   'condo-and-apartment-dryer-vents': ['Condos & Buildings', 'Dryer Vent Cleaning'],
+  'dryer-vent-inspection': ['Dryer Vent Cleaning', 'Installation & Code', 'Fire Safety'],
+  'roof-dryer-vent-cleaning': ['Dryer Vent Cleaning', 'Installation & Code'],
+  'commercial-dryer-vent-cleaning': ['Condos & Buildings', 'Fire Safety'],
+  'dryer-booster-fan-installation': ['Installation & Code', 'Costs & Buying Guides'],
 };
 
 const SERVICE_CATEGORIES_ES: Record<string, string[]> = {
@@ -21,6 +25,10 @@ const SERVICE_CATEGORIES_ES: Record<string, string[]> = {
   'dryer-vent-installation': ['Instalación y Código', 'Costos y Guías'],
   'roof-and-wall-vent-caps': ['Limpieza de Ventilas', 'Instalación y Código'],
   'condo-and-apartment-dryer-vents': ['Condominios y Edificios', 'Limpieza de Ventilas'],
+  'dryer-vent-inspection': ['Limpieza de Ventilas', 'Instalación y Código', 'Prevención de Incendios'],
+  'roof-dryer-vent-cleaning': ['Limpieza de Ventilas', 'Instalación y Código'],
+  'commercial-dryer-vent-cleaning': ['Condominios y Edificios', 'Prevención de Incendios'],
+  'dryer-booster-fan-installation': ['Instalación y Código', 'Costos y Guías'],
 };
 
 const byDate = <T extends { data: { pubDate: Date } }>(a: T, b: T) =>
