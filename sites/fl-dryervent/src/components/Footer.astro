@@ -24,7 +24,8 @@ const footerCities = cities.slice(0, 14);
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href={t.home} class="brand">
-        <img src="/logo.svg" alt="" width="34" height="34" style="display:inline-block;vertical-align:middle;" /> {business.name}
+        <img src="/logo-light.svg" alt="" width="40" height="40" />
+        <span class="fw"><span class="fw-top">dryer <em>vent</em></span><span class="fw-sub">Florida</span></span>
       </a>
       <p>{business.tagline}</p>
       <p class="footer-contact">
@@ -119,14 +120,18 @@ const footerCities = cities.slice(0, 14);
   }
   .footer-brand .brand {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    color: #fff; font-weight: 800; font-size: 1.2rem; text-decoration: none;
-    margin-bottom: 0.6rem;
+    color: #fff; text-decoration: none;
+    margin-bottom: 0.9rem;
   }
+  .fw { display: flex; flex-direction: column; line-height: 0.95; }
+  .fw-top { font-family: var(--font-head); font-weight: 800; font-size: 1.45rem; letter-spacing: -0.035em; color: #fff; }
+  .fw-top em { font-style: normal; color: var(--c-orange); }
+  .fw-sub { font-family: var(--font-head); font-size: 0.55rem; font-weight: 700; letter-spacing: 0.62em; text-transform: uppercase; color: #c9d4e2; margin-top: 0.25rem; padding-left: 0.15rem; }
   .footer-brand p { margin: 0 0 0.8rem; font-size: 0.92rem; }
-  .footer-contact a { color: #cfe0ec; }
+  .footer-contact a { color: #c9d4e2; }
   .footer-badge {
     display: inline-block; font-size: 0.8rem; color: var(--c-accent);
-    font-weight: 700; border: 1px solid rgba(20,184,166,0.4);
+    font-weight: 700; border: 1px solid rgba(242,106,33,0.45);
     padding: 0.3rem 0.7rem; border-radius: 999px;
   }
   .footer-col h3 { color: #fff; font-size: 1rem; margin-bottom: 0.8rem; }

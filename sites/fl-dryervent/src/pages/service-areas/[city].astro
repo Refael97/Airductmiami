@@ -1,5 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
+import PageHero from '../../components/PageHero.astro';
+import { cityPhoto } from '../../data/images';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
@@ -44,15 +46,7 @@ const guides = await guidesForCity();
 
   <section class="section">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">{city.county} · Florida</span>
-        <h1>Dryer Vent Cleaning in {city.name}, FL</h1>
-      </div>
-
-      <div class="answer-box">
-        <span class="answer-label">Serving {city.name}</span>
-        <p>{city.intro} Cleaning runs ${PRICE.cleanLow} to ${PRICE.cleanHigh}, and we measure airflow at the outside hood before and after.</p>
-      </div>
+      <PageHero eyebrow={`${city.county} · Florida`} title={`Dryer Vent Cleaning in ${city.name}, FL`} label={`Serving ${city.name}`} answer={`${city.intro} Cleaning runs $${PRICE.cleanLow} to $${PRICE.cleanHigh}, and we measure airflow at the outside hood before and after.`} photo={cityPhoto(city.slug)} />
 
       <div class="prose">
         <p><strong>What we find most often in {city.name}:</strong> {city.common}</p>

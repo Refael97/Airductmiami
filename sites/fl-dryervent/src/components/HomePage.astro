@@ -1,0 +1,486 @@
+---
+/**
+ * The home page, both languages. One template so English and Spanish can
+ * never drift apart in layout; only the words differ, and they live in the
+ * `copy` table below.
+ *
+ * Nothing on this page is a claim we cannot stand behind: no review counts,
+ * no star ratings, no invented airflow percentages. The "measured results"
+ * card shows the method (before and after at the hood), not a number.
+ */
+import CTABand from './CTABand.astro';
+import FAQ from './FAQ.astro';
+import BeforeAfter from './BeforeAfter.astro';
+import { business } from '../data/business';
+import { services, PRICE } from '../data/services';
+import { serviceEsContent } from '../data/services.es';
+import { cities, citiesByRegion, REGION_ES } from '../data/cities';
+import { photos, servicePhoto, type Photo } from '../data/images';
+import { ui, type Locale } from '../data/ui';
+
+interface Props {
+  lang?: Locale;
+  faq: { question: string; answer: string }[];
+}
+const { lang = 'en', faq } = Astro.props;
+const es = lang === 'es';
+const t = ui[lang];
+const alt = (p: Photo) => (es ? p.altEs : p.alt);
+const svcHref = (slug: string) => (es ? `/es/servicios/${slug}/` : `/services/${slug}/`);
+const cityHref = (slug: string) => (es ? `/es/areas-de-servicio/${slug}/` : `/service-areas/${slug}/`);
+
+const blurbs: Record<string, [string, string]> = {
+  'dryer-vent-cleaning': ['The full run from the dryer to the outside hood, brushed and blown clear.', 'Todo el tramo, de la secadora a la salida de afuera, cepillado y soplado.'],
+  'dryer-vent-repair': ['Crushed hose, a joint come apart in the attic, a duct that is the wrong material.', 'Manguera aplastada, una unión suelta en el ático, un ducto del material equivocado.'],
+  'dryer-vent-installation': ['A new rigid metal run on the shortest route the code allows.', 'Un tramo nuevo de metal rígido por la ruta más corta que permite el código.'],
+  'roof-and-wall-vent-caps': ['Hoods and roof caps cleared, dampers freed, screens and nests removed.', 'Salidas de pared y techo despejadas, aletas liberadas, mallas y nidos fuera.'],
+  'condo-and-apartment-dryer-vents': ['Long interior runs and shared risers, priced per unit for the building.', 'Tramos interiores largos y ductos compartidos, con precio por unidad para el edificio.'],
+};
+
+const c = es
+  ? {
+      kicker: 'Limpieza, Reparación e Instalación de Ventilas de Secadora en Florida',
+      slogan: ['Más flujo de aire.', 'Casas más seguras.', 'Tranquilidad.'],
+      lead: 'Especialistas en ventilas de secadora en toda Florida. Medimos el flujo de aire antes y después, para que usted vea la diferencia.',
+      call: business.phone,
+      trust: ['Asegurados', 'Precio antes de agendar', 'Citas la misma semana'],
+      cardTitle: 'Resultados medidos',
+      cardSub: 'Flujo de aire en la salida',
+      before: 'Antes', after: 'Después',
+      stats: [
+        { v: `$${PRICE.cleanLow} a $${PRICE.cleanHigh}`, l: 'Precio de limpieza', i: 'dollar' },
+        { v: `${cities.length}`, l: 'Ciudades de Florida', i: 'pin' },
+        { v: 'Antes y después', l: 'Flujo de aire medido', i: 'fan' },
+        { v: 'Misma semana', l: 'Citas', i: 'cal' },
+      ],
+      svcEyebrow: 'Nuestros servicios', svcTitle: 'Todo lo que tiene que ver con la ventila.', svcSub: 'Un especialista. Una casa más segura y una secadora que seca.',
+      svcAll: 'Ver todos los servicios', more: 'Más información',
+      baEyebrow: 'Resultados reales', baTitle: 'Vea la diferencia.', baSub: 'Medimos el flujo antes y después para que vea la mejora, no solo la imagine.',
+      howEyebrow: 'Cómo funciona', howTitle: 'Un proceso simple.', howSub: 'Rápido, claro y sin sorpresas.',
+      steps: [
+        ['Agende', 'Llame o pida su precio en línea. Le damos la cifra antes de agendar.'],
+        ['Medimos y limpiamos', 'Leemos el flujo en la salida, limpiamos todo el tramo y revisamos manguera y salida.'],
+        ['Vea el resultado', 'Segunda medición con la secadora andando. Usted ve los dos números.'],
+      ],
+      findEyebrow: 'Lo que encontramos', findTitle: 'Lo que vemos en casas de Florida.', findSub: 'Fotos del tipo de obstrucción que sacamos cada semana.',
+      finds: [
+        [photos.cloggedHood, 'Salida tapada', 'La aleta no abre y el aire vuelve a la secadora.'],
+        [photos.roofCap, 'Nido en el techo', 'Pájaros y pelusa en la salida del techo.'],
+        [photos.lintBehindDryer, 'Manguera llena', 'La obstrucción más común está detrás de la secadora.'],
+        [photos.atticSeparated, 'Ducto suelto en el ático', 'Pelusa caliente soplando sobre el aislamiento.'],
+      ] as [Photo, string, string][],
+      whyEyebrow: 'Por qué un especialista', whyTitle: 'Un trabajo chico que es fácil hacer mal.',
+      whyText: 'Un cepillo metido desde la lavandería empuja la pelusa más adentro y deja la salida tapada. Una limpieza que no revisa la manguera de atrás se pierde la obstrucción más común de la casa. Y ninguna limpieza arregla un tramo demasiado largo o que se soltó en el ático.',
+      whyList: [
+        ['Los dos extremos del tramo', 'desde la secadora y desde la salida cuando se alcanza.'],
+        ['Manguera y salida incluidas', 'porque ahí está gran parte de la obstrucción.'],
+        ['Código de construcción de Florida', 'metal rígido, sin tornillos en el ducto, la regla de 35 pies.'],
+        ['Precio antes de agendar', 'y nada se agrega sin preguntarle.'],
+      ],
+      whyBtn: 'Cómo trabajamos', whyHref: '/es/nosotros/',
+      facts: [
+        ['2,900', 'incendios de secadora en casas cada año en EE. UU., según la Administración de Incendios de EE. UU.'],
+        ['1 de 3', 'vienen de la causa principal: no limpiar la ventila'],
+        ['35 pies', 'largo máximo del ducto por código, menos 5 pies por cada curva de 90 grados'],
+      ],
+      areasEyebrow: 'En toda Florida', areasTitle: 'Limpieza de ventila de secadora cerca de usted.', areasSub: 'Cada ciudad tiene su página: cómo suelen ir las ventilas allí y lo que más encontramos.',
+      areasAll: 'Todas las áreas', areasHref: '/es/areas-de-servicio/',
+      faqEyebrow: 'Bueno saber', faqTitle: 'Preguntas frecuentes.',
+    }
+  : {
+      kicker: 'Dryer Vent Cleaning, Repair & Installation in Florida',
+      slogan: ['Better airflow.', 'Safer homes.', 'Peace of mind.'],
+      lead: 'Florida dryer vent specialists. We measure your airflow before and after, so you can see the difference.',
+      call: business.phone,
+      trust: ['Insured', 'Upfront pricing', 'Same week service'],
+      cardTitle: 'Measured results',
+      cardSub: 'Airflow at the outside hood',
+      before: 'Before', after: 'After',
+      stats: [
+        { v: `$${PRICE.cleanLow} to $${PRICE.cleanHigh}`, l: 'Typical cleaning range', i: 'dollar' },
+        { v: `${cities.length}`, l: 'Florida cities', i: 'pin' },
+        { v: 'Before / After', l: 'Measured airflow', i: 'fan' },
+        { v: 'Same week', l: 'Appointments', i: 'cal' },
+      ],
+      svcEyebrow: 'Our services', svcTitle: 'Complete dryer vent services.', svcSub: 'One specialist. A safer home and a dryer that dries.',
+      svcAll: 'View all services', more: 'Learn more',
+      baEyebrow: 'Real results', baTitle: 'See the difference.', baSub: 'We measure airflow before and after so you can see the improvement, not just imagine it.',
+      howEyebrow: 'How it works', howTitle: 'A simple process.', howSub: 'Fast, clear and no surprises.',
+      steps: [
+        ['Schedule', 'Call or ask for your price online. You get the figure before we book.'],
+        ['We measure and clean', 'Airflow read at the hood, the full run cleaned, the hose and hood checked.'],
+        ['See the result', 'A second reading with the dryer running. You see both numbers.'],
+      ],
+      findEyebrow: 'What we find', findTitle: 'What we pull out of Florida vents.', findSub: 'The kind of blockage we clear every week.',
+      finds: [
+        [photos.cloggedHood, 'Blocked hood', 'The flap cannot open and the heat backs up into the dryer.'],
+        [photos.roofCap, 'Nest in the roof cap', 'Birds and lint, a common pair on Florida roofs.'],
+        [photos.lintBehindDryer, 'Packed transition hose', 'The most common restriction sits right behind the dryer.'],
+        [photos.atticSeparated, 'Duct apart in the attic', 'Hot, lint laden air blowing into the insulation.'],
+      ] as [Photo, string, string][],
+      whyEyebrow: 'Why a specialist', whyTitle: 'A small job that is easy to do badly.',
+      whyText: 'A brush pushed into the wall from the laundry side moves the lint deeper and leaves the hood blocked. A cleaning that never looks at the transition hose misses the most common restriction in the house. And no cleaning fixes a run that is too long or has come apart in the attic.',
+      whyList: [
+        ['Both ends of the run', 'from the dryer and from the hood where it can be reached.'],
+        ['The hose and the hood included', 'because that is where much of the blockage sits.'],
+        ['Florida Building Code checked', 'rigid metal, no screws into the duct, the 35 foot rule.'],
+        ['Price before booking', 'and nothing added without asking first.'],
+      ],
+      whyBtn: 'How we work', whyHref: '/about/',
+      facts: [
+        ['2,900', 'home clothes dryer fires a year in the US, according to the US Fire Administration'],
+        ['1 in 3', 'traced to the leading cause: failure to clean'],
+        ['35 ft', 'maximum dryer duct length under the code, less 5 ft for every 90 degree bend'],
+      ],
+      areasEyebrow: 'Across Florida', areasTitle: 'Dryer vent cleaning near you.', areasSub: 'Every city has its own page: how vents are usually run there and what we find most often.',
+      areasAll: 'All service areas', areasHref: '/service-areas/',
+      faqEyebrow: 'Good to know', faqTitle: 'Frequently asked questions.',
+    };
+
+const regions = citiesByRegion();
+const svcName = (slug: string, name: string) => (es ? serviceEsContent[slug]?.name ?? name : name);
+---
+<section class="h-hero">
+  <picture class="h-hero-photo">
+    <source media="(max-width: 860px)" srcset={photos.hero.small} />
+    <img src={photos.hero.src} alt={alt(photos.hero)} width={photos.hero.w} height={photos.hero.h} fetchpriority="high" decoding="async" />
+  </picture>
+  <div class="container h-hero-inner">
+    <div class="h-hero-copy">
+      <h1 class="h-kicker">{c.kicker}</h1>
+      <p class="h-slogan" aria-hidden="true">
+        <span>{c.slogan[0]}</span>
+        <span>{c.slogan[1]}</span>
+        <span class="o">{c.slogan[2]}</span>
+      </p>
+      <p class="h-lead">{c.lead}</p>
+      <div class="h-actions">
+        <a href={t.contact} class="btn btn-accent btn-lg">{t.quoteLabel}
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href={`tel:${business.phoneHref}`} class="btn btn-outline btn-lg">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+          {c.call}
+        </a>
+      </div>
+      <ul class="h-trust">
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3Z"/><path d="M8.5 12l2.4 2.4 4.6-4.8" stroke-linecap="round"/></svg>{c.trust[0]}</li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.5-.8-1.5-1.3-2.8-1.3-1.7 0-2.8.9-2.8 2.1 0 2.9 5.8 1.5 5.8 4.3 0 1.2-1.2 2.1-3 2.1-1.4 0-2.5-.6-3-1.5M12 6.2v1.7M12 16.4v1.6"/></svg>{c.trust[1]}</li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></svg>{c.trust[2]}</li>
+      </ul>
+    </div>
+    <div class="h-card" aria-hidden="true">
+      <span class="h-card-title">{c.cardTitle}</span>
+      <div class="h-card-body">
+        <div class="h-card-text">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="var(--c-orange)" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M12 10c-.5-3 .5-6 3-7 1 2.5 0 5.5-3 7ZM14 12c3-.5 6 .5 7 3-2.5 1-5.5 0-7-3ZM12 14c.5 3-.5 6-3 7-1-2.5 0-5.5 3-7ZM10 12c-3 .5-6-.5-7-3 2.5-1 5.5 0 7 3Z"/></svg>
+          <span>{c.cardSub}</span>
+        </div>
+        <div class="h-bars">
+          <span class="bar b1"></span><span class="bar b2"></span>
+          <span class="lbl">{c.before}</span><span class="lbl o">{c.after}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="h-stats">
+  <div class="container h-stats-grid">
+    {c.stats.map((s) => (
+      <div class="h-stat">
+        <span class="h-stat-ico" aria-hidden="true">
+          {s.i === 'dollar' && <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M15 9c-.5-1-1.6-1.5-3-1.5-1.8 0-3 .9-3 2.2 0 3 6 1.6 6 4.5 0 1.3-1.3 2.3-3.1 2.3-1.5 0-2.6-.6-3.1-1.6M12 5.5v2M12 16.5v2"/></svg>}
+          {s.i === 'pin' && <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6"/></svg>}
+          {s.i === 'fan' && <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.8"/><path d="M12 10.2c-.6-3.4.6-6.7 3.6-7.4 1 2.9-.4 6-3.6 7.4ZM13.8 12c3.4-.6 6.7.6 7.4 3.6-2.9 1-6-.4-7.4-3.6ZM12 13.8c.6 3.4-.6 6.7-3.6 7.4-1-2.9.4-6 3.6-7.4ZM10.2 12c-3.4.6-6.7-.6-7.4-3.6 2.9-1 6 .4 7.4 3.6Z"/></svg>}
+          {s.i === 'cal' && <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M7.5 13.5h.01M12 13.5h.01M16.5 13.5h.01M7.5 17h.01M12 17h.01M16.5 17h.01"/></svg>}
+        </span>
+        <span class="h-stat-text"><strong>{s.v}</strong><span>{s.l}</span></span>
+      </div>
+    ))}
+  </div>
+</section>
+
+<section class="section h-svc">
+  <div class="container">
+    <div class="h-head-row">
+      <div>
+        <span class="eyebrow">{c.svcEyebrow}</span>
+        <h2>{c.svcTitle}</h2>
+        <p class="h-sub">{c.svcSub}</p>
+      </div>
+      <a href={t.services} class="h-more">{c.svcAll} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="h-svc-grid">
+      {services.map((s) => {
+        const p = servicePhoto[s.slug];
+        return (
+          <a href={svcHref(s.slug)} class="h-svc-card">
+            <img src={p.small} alt={alt(p)} width="640" height="478" loading="lazy" decoding="async" />
+            <span class="h-svc-body">
+              <span class="h-svc-name">{svcName(s.slug, s.name)}</span>
+              <span class="h-svc-text">{blurbs[s.slug]?.[es ? 1 : 0]}</span>
+              <span class="h-svc-link">{c.more} <span aria-hidden="true">→</span></span>
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<section class="h-split">
+  <div class="h-split-a">
+    <div class="h-split-inner">
+      <span class="eyebrow">{c.baEyebrow}</span>
+      <h2>{c.baTitle}</h2>
+      <p class="h-sub">{c.baSub}</p>
+      <BeforeAfter
+        beforeSrc={photos.runBefore.src}
+        afterSrc={photos.runAfter.src}
+        beforeAlt={alt(photos.runBefore)}
+        afterAlt={alt(photos.runAfter)}
+        beforeLabel={c.before}
+        afterLabel={c.after}
+      />
+    </div>
+  </div>
+  <div class="h-split-b">
+    <div class="h-split-inner">
+      <span class="eyebrow">{c.howEyebrow}</span>
+      <h2>{c.howTitle}</h2>
+      <p class="h-sub">{c.howSub}</p>
+      <ol class="h-steps">
+        {c.steps.map(([title, text], i) => (
+          <li>
+            <span class="h-step-n">{i + 1}</span>
+            <span class="h-step-ico" aria-hidden="true">
+              {i === 0 && <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M7.5 13.5h.01M12 13.5h.01M16.5 13.5h.01M7.5 17h.01M12 17h.01"/></svg>}
+              {i === 1 && <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg>}
+              {i === 2 && <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="4" y="13" width="4" height="7" rx="1"/><rect x="10" y="9" width="4" height="11" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>}
+            </span>
+            <span class="h-step-text"><strong>{title}</strong><span>{text}</span></span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="h-head-row">
+      <div>
+        <span class="eyebrow">{c.findEyebrow}</span>
+        <h2>{c.findTitle}</h2>
+        <p class="h-sub">{c.findSub}</p>
+      </div>
+    </div>
+    <div class="h-finds">
+      {c.finds.map(([p, title, text]) => (
+        <figure class="h-find">
+          <img src={p.small} alt={alt(p)} width="640" height="478" loading="lazy" decoding="async" />
+          <figcaption><strong>{title}</strong><span>{text}</span></figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container h-why">
+    <div class="h-why-photo">
+      <img src={photos.airflowMeter.src} srcset={`${photos.airflowMeter.small} 640w, ${photos.airflowMeter.src} 1200w`} sizes="(max-width: 860px) 100vw, 50vw" alt={alt(photos.airflowMeter)} width="1200" height="896" loading="lazy" decoding="async" />
+    </div>
+    <div>
+      <span class="eyebrow">{c.whyEyebrow}</span>
+      <h2>{c.whyTitle}</h2>
+      <p>{c.whyText}</p>
+      <ul class="check-list">
+        {c.whyList.map(([b, rest]) => <li><strong>{b}</strong>, {rest}</li>)}
+      </ul>
+      <a href={c.whyHref} class="btn btn-primary">{c.whyBtn}</a>
+    </div>
+  </div>
+  <div class="container h-facts">
+    {c.facts.map(([n, text]) => (
+      <div class="h-fact"><span class="h-fact-n">{n}</span><span>{text}</span></div>
+    ))}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="h-head-row">
+      <div>
+        <span class="eyebrow">{c.areasEyebrow}</span>
+        <h2>{c.areasTitle}</h2>
+        <p class="h-sub">{c.areasSub}</p>
+      </div>
+      <a href={c.areasHref} class="h-more">{c.areasAll} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="h-areas">
+      {regions.map(([region, list]) => (
+        <div class="h-area">
+          <h3>{es ? REGION_ES[region] : region}</h3>
+          <ul>{list.map((city) => (<li><a href={cityHref(city.slug)}>{city.name}</a></li>))}</ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<CTABand lang={lang} />
+
+<section class="section section-alt">
+  <div class="container container-narrow">
+    <div class="section-head center"><span class="eyebrow">{c.faqEyebrow}</span><h2>{c.faqTitle}</h2></div>
+    <FAQ items={faq} title="" />
+  </div>
+</section>
+
+<style>
+  /* ---------- hero ---------- */
+  .h-hero { position: relative; overflow: hidden; background: #f4f5f7; }
+  .h-hero-photo img {
+    position: absolute; top: 0; right: 0; height: 100%; width: 66%;
+    object-fit: cover; object-position: 30% 40%;
+  }
+  .h-hero::before {
+    content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(90deg, #f4f5f7 0%, #f4f5f7 38%, rgba(244,245,247,0.85) 46%, rgba(244,245,247,0) 62%);
+  }
+  .h-hero-inner {
+    position: relative; z-index: 2;
+    display: grid; grid-template-columns: minmax(0, 560px) 1fr; align-items: end;
+    min-height: 560px; padding-block: 3.2rem 3rem;
+  }
+  .h-hero-copy { align-self: center; }
+  .h-kicker {
+    font-family: var(--font-head); font-size: 0.8rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-orange);
+    line-height: 1.5; margin: 0 0 1rem;
+  }
+  .h-slogan {
+    font-family: var(--font-head); font-weight: 800; color: var(--c-navy);
+    font-size: clamp(2.6rem, 1.6rem + 3.6vw, 4.4rem); line-height: 0.98;
+    letter-spacing: -0.035em; word-spacing: 0.04em; margin: 0 0 1.3rem;
+  }
+  .h-slogan span { display: block; }
+  .h-slogan .o { color: var(--c-orange); }
+  .h-lead { font-size: 1.08rem; color: var(--c-body); max-width: 30rem; margin-bottom: 1.6rem; }
+  .h-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.6rem; }
+  .h-actions .btn-outline { background: rgba(255,255,255,0.9); }
+  .h-trust { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.6rem; }
+  .h-trust li { display: flex; align-items: center; gap: 0.45rem; margin: 0; font-size: 0.9rem; font-weight: 600; color: var(--c-ink); }
+  .h-trust svg { color: var(--c-navy); }
+
+  .h-card {
+    justify-self: end; align-self: end;
+    width: 230px; background: #fff; border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(15,35,64,0.22); padding: 1rem 1.1rem 0.9rem;
+  }
+  .h-card-title { display: block; font-family: var(--font-head); font-weight: 800; color: var(--c-navy); font-size: 0.95rem; margin-bottom: 0.6rem; }
+  .h-card-body { display: grid; grid-template-columns: 1fr auto; gap: 0.7rem; align-items: end; }
+  .h-card-text { display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: var(--c-ink); line-height: 1.3; }
+  .h-bars { display: grid; grid-template-columns: 26px 26px; column-gap: 8px; align-items: end; justify-items: center; }
+  .bar { width: 26px; border-radius: 3px 3px 0 0; }
+  .b1 { height: 30px; background: #c5ccd6; }
+  .b2 { height: 66px; background: var(--c-orange); }
+  .lbl { font-size: 0.66rem; color: var(--c-muted); margin-top: 0.3rem; }
+  .lbl.o { color: var(--c-orange); font-weight: 700; }
+
+  /* ---------- stats ---------- */
+  .h-stats { background: var(--c-bg-deep); color: #c9d4e2; }
+  .h-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 1.6rem; }
+  .h-stat { display: flex; align-items: center; justify-content: center; gap: 0.9rem; padding: 0.4rem 1rem; }
+  .h-stat + .h-stat { border-left: 1px solid rgba(255,255,255,0.14); }
+  .h-stat-ico { color: #fff; display: flex; }
+  .h-stat-text { display: flex; flex-direction: column; line-height: 1.25; font-size: 0.84rem; }
+  .h-stat-text strong { font-family: var(--font-head); color: #fff; font-size: 1.22rem; font-weight: 800; letter-spacing: -0.02em; }
+
+  /* ---------- shared heads ---------- */
+  .h-head-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; margin-bottom: 2rem; }
+  .h-head-row h2 { margin-bottom: 0.3rem; }
+  .h-sub { font-size: 1.05rem; color: var(--c-body); margin: 0; }
+  .h-more { font-family: var(--font-head); font-weight: 700; color: var(--c-orange); font-size: 0.95rem; white-space: nowrap; }
+
+  /* ---------- services ---------- */
+  .h-svc { background: #fafbfc; }
+  .h-svc-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.4rem; }
+  .h-svc-card { grid-column: span 2; display: flex; flex-direction: column; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid var(--c-line); text-decoration: none; transition: transform 0.18s ease, box-shadow 0.2s ease; }
+  .h-svc-card:nth-child(4), .h-svc-card:nth-child(5) { grid-column: span 3; }
+  .h-svc-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); text-decoration: none; }
+  .h-svc-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .h-svc-body { display: flex; flex-direction: column; gap: 0.4rem; padding: 1.2rem 1.4rem 1.4rem; flex: 1; }
+  .h-svc-name { font-family: var(--font-head); font-weight: 800; color: var(--c-navy); font-size: 1.15rem; letter-spacing: -0.02em; }
+  .h-svc-text { color: var(--c-body); font-size: 0.93rem; line-height: 1.55; flex: 1; }
+  .h-svc-link { font-family: var(--font-head); color: var(--c-orange); font-weight: 700; font-size: 0.9rem; margin-top: 0.4rem; }
+
+  /* ---------- before/after + process ---------- */
+  .h-split { display: grid; grid-template-columns: 1fr 1fr; }
+  .h-split-a { background: #f1f2f4; }
+  .h-split-inner { max-width: 600px; padding: clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem); }
+  .h-split-a .h-split-inner { margin-left: auto; }
+  .h-split-a :global(.ba) { margin-top: 1.6rem; aspect-ratio: 3 / 2; }
+  .h-steps { list-style: none; padding: 0; margin: 1.8rem 0 0; display: grid; gap: 1.5rem; position: relative; }
+  .h-steps li { display: grid; grid-template-columns: 2.4rem 3rem 1fr; gap: 1rem; align-items: start; margin: 0; position: relative; }
+  .h-steps li:not(:last-child)::after { content: ''; position: absolute; left: calc(1.2rem - 1px); top: 2.6rem; bottom: -1.3rem; width: 2px; background: #f7c9ad; }
+  .h-step-n { width: 2.4rem; height: 2.4rem; border-radius: 50%; background: #fdebe0; color: var(--c-orange); font-family: var(--font-head); font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .h-step-ico { color: var(--c-orange); display: flex; }
+  .h-step-text { display: flex; flex-direction: column; font-size: 0.93rem; color: var(--c-body); line-height: 1.5; }
+  .h-step-text strong { font-family: var(--font-head); color: var(--c-navy); font-size: 1.05rem; margin-bottom: 0.15rem; }
+
+  /* ---------- finds ---------- */
+  .h-finds { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+  .h-find { margin: 0; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid var(--c-line); box-shadow: var(--shadow-sm); }
+  .h-find img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .h-find figcaption { padding: 0.9rem 1.1rem 1.1rem; display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.88rem; color: var(--c-body); line-height: 1.45; }
+  .h-find strong { font-family: var(--font-head); color: var(--c-navy); font-size: 1rem; }
+
+  /* ---------- why ---------- */
+  .h-why { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+  .h-why-photo img { width: 100%; border-radius: 14px; box-shadow: var(--shadow); aspect-ratio: 4 / 3; object-fit: cover; }
+  .h-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.2rem; }
+  .h-fact { background: #fff; border: 1px solid var(--c-line); border-radius: 12px; padding: 1.1rem 1.3rem; display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center; font-size: 0.9rem; line-height: 1.45; }
+  .h-fact-n { font-family: var(--font-head); font-size: 1.7rem; font-weight: 800; color: var(--c-orange); letter-spacing: -0.03em; }
+
+  /* ---------- areas ---------- */
+  .h-areas { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.6rem; }
+  .h-area h3 { font-size: 1rem; color: var(--c-navy); border-bottom: 2px solid var(--c-orange); padding-bottom: 0.4rem; margin-bottom: 0.7rem; display: inline-block; }
+  .h-area ul { list-style: none; padding: 0; margin: 0; }
+  .h-area li { margin-bottom: 0.3rem; }
+  .h-area a { font-size: 0.92rem; color: var(--c-body); }
+  .h-area a:hover { color: var(--c-orange); }
+
+  @media (max-width: 1080px) {
+    .h-areas { grid-template-columns: repeat(3, 1fr); }
+    .h-finds { grid-template-columns: repeat(2, 1fr); }
+    .h-stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 1rem; }
+    .h-stat { justify-content: flex-start; }
+    .h-stat + .h-stat { border-left: 0; }
+  }
+  @media (max-width: 860px) {
+    .h-hero::before { display: none; }
+    .h-hero-photo img { position: static; width: 100%; height: auto; aspect-ratio: 16 / 10; object-position: 40% 35%; }
+    .h-hero-inner { grid-template-columns: 1fr; min-height: 0; padding-block: 1.8rem 2.2rem; }
+    .h-hero-copy { order: 1; }
+    .h-card { order: 2; justify-self: stretch; width: auto; margin-top: 1.6rem; }
+    .h-hero { display: flex; flex-direction: column; }
+    .h-svc-grid { grid-template-columns: 1fr; }
+    .h-svc-card, .h-svc-card:nth-child(4), .h-svc-card:nth-child(5) { grid-column: auto; }
+    .h-split { grid-template-columns: 1fr; }
+    .h-split-inner { max-width: none; }
+    .h-why { grid-template-columns: 1fr; }
+    .h-facts { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px) {
+    .h-stats-grid { grid-template-columns: 1fr 1fr; }
+    .h-stat { flex-direction: column; align-items: flex-start; gap: 0.4rem; padding: 0.3rem 0; }
+    .h-stat-ico svg { width: 30px; height: 30px; }
+    .h-stat-text strong { font-size: 1.05rem; }
+    .h-finds { grid-template-columns: 1fr; }
+    .h-areas { grid-template-columns: 1fr 1fr; }
+    .h-actions .btn { flex: 1 1 100%; }
+  }
+</style>

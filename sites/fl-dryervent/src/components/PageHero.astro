@@ -1,0 +1,61 @@
+---
+/**
+ * The top of every inner page (services, cities, counties): heading and the
+ * quick answer on the left, a photo on the right, the two ways to reach us
+ * underneath. Same shape on every page so the site reads as one brand.
+ */
+import { business } from '../data/business';
+import { ui, type Locale } from '../data/ui';
+import type { Photo } from '../data/images';
+
+interface Props {
+  lang?: Locale;
+  eyebrow: string;
+  title: string;
+  label: string;
+  answer: string;
+  photo: Photo;
+}
+const { lang = 'en', eyebrow, title, label, answer, photo } = Astro.props;
+const t = ui[lang];
+const alt = lang === 'es' ? photo.altEs : photo.alt;
+---
+<div class="ph">
+  <div class="ph-copy">
+    <span class="eyebrow">{eyebrow}</span>
+    <h1>{title}</h1>
+    <div class="answer-box ph-answer">
+      <span class="answer-label">{label}</span>
+      <p>{answer}</p>
+    </div>
+    <div class="ph-actions">
+      <a href={t.contact} class="btn btn-accent">{t.quoteLabel}
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href={`tel:${business.phoneHref}`} class="btn btn-outline">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+        {business.phone}
+      </a>
+    </div>
+  </div>
+  <div class="ph-photo">
+    <img src={photo.src} srcset={`${photo.small} 640w, ${photo.src} ${photo.w}w`} sizes="(max-width: 860px) 100vw, 45vw"
+         alt={alt} width={photo.w} height={photo.h} fetchpriority="high" decoding="async" />
+  </div>
+</div>
+
+<style>
+  .ph { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; margin: calc(-1 * clamp(1rem, 3.5vw, 2.8rem)) 0 2.5rem; }
+  .ph-copy h1 { margin-bottom: 1.1rem; }
+  .ph-answer { margin-bottom: 1.3rem; }
+  .ph-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .ph-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow); }
+  @media (max-width: 860px) {
+    .ph { grid-template-columns: 1fr; }
+    .ph-photo { order: -1; }
+    .ph-photo img { aspect-ratio: 16 / 10; }
+  }
+  @media (max-width: 520px) {
+    .ph-actions .btn { flex: 1 1 100%; }
+  }
+</style>

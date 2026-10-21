@@ -95,7 +95,7 @@ const formName = 'popup-special';
 /* Desktop only side image. Renders only when the file is in public/images,
    so a missing file degrades to the gradient panel the popup shipped with
    rather than to a broken image on top of the lead form. */
-const asideSrc: string | null = null;
+const asideSrc: string | null = '/images/technician-cleaning-wall-vent-800.webp';
 ---
 {!excluded && (
 <div class="promo-overlay" id="promo-overlay" role="dialog" aria-modal="true" aria-labelledby="promo-title" hidden>
@@ -107,7 +107,7 @@ const asideSrc: string | null = null;
     <div class="promo-content" id="promo-content">
       <div class="promo-brand">
         <img src="/logo.svg" alt="" width="42" height="42" loading="lazy" />
-        <span class="promo-brand-word">Dryer Vent <em>Florida</em><small>Clean · Repair · Install</small></span>
+        <span class="promo-brand-word"><span>dryer <em>vent</em></span><small>Florida</small></span>
       </div>
 
       <h2 class="promo-headline" id="promo-title">
@@ -257,13 +257,13 @@ const asideSrc: string | null = null;
   }
   .promo-brand { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; }
   .promo-brand-word {
-    display: flex; flex-direction: column; line-height: 1.05;
-    font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--c-ink);
+    display: flex; flex-direction: column; line-height: 0.95;
+    font-family: var(--font-head); font-weight: 800; font-size: 1.4rem; letter-spacing: -0.035em; color: var(--c-navy);
   }
-  .promo-brand-word em { font-style: normal; color: var(--c-primary); display: inline; }
+  .promo-brand-word em { font-style: normal; color: var(--c-orange); display: inline; }
   .promo-brand-word small {
-    font-family: var(--font-body, inherit); font-weight: 700; font-size: 0.62rem;
-    letter-spacing: 0.28em; text-transform: uppercase; color: var(--c-muted);
+    font-family: var(--font-head); font-weight: 700; font-size: 0.52rem; margin-top: 0.25rem;
+    letter-spacing: 0.62em; text-transform: uppercase; color: var(--c-navy);
   }
 
   .promo-headline {
@@ -354,14 +354,14 @@ const asideSrc: string | null = null;
     display: flex; align-items: center; justify-content: center;
     background:
       radial-gradient(120% 90% at 80% 10%, rgba(255, 255, 255, 0.25), transparent 55%),
-      linear-gradient(160deg, #1a5a85 0%, #0f3d5e 55%, #0e2233 100%);
+      linear-gradient(160deg, #1d3d63 0%, #0f2340 60%, #0a1a30 100%);
   }
   /* Covers the gradient panel on desktop. The badge sits above it, and the
      scrim keeps the badge legible whatever the photograph is doing behind. */
   .promo-aside {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
-    object-fit: cover; object-position: center top;
+    object-fit: cover; object-position: 32% center;
     z-index: 0;
   }
   .promo-visual:has(.promo-aside)::after {
@@ -382,25 +382,23 @@ const asideSrc: string | null = null;
   .s3 { width: 130px; height: 130px; top: 46%; right: -40px; }
 
   .promo-badge {
-    position: relative; z-index: 2;
-    width: 230px; height: 230px; border-radius: 50%;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; gap: 0.15rem; padding: 1rem;
+    position: absolute; z-index: 2; left: 1.4rem; right: 1.4rem; bottom: 1.4rem;
+    border-radius: 14px;
+    display: flex; flex-direction: column; align-items: flex-start;
+    text-align: left; gap: 0.2rem; padding: 1rem 1.2rem;
     background: #fff;
-    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.22), 0 22px 45px rgba(4, 20, 35, 0.45);
+    box-shadow: 0 18px 40px rgba(4, 20, 35, 0.4);
   }
   .badge-top {
-    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--c-accent);
+    font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--c-orange);
   }
   .badge-price {
-    font-size: 4.2rem; font-weight: 800; line-height: 1; color: var(--c-primary);
-    letter-spacing: -0.02em;
+    font-family: var(--font-head); font-size: 2.2rem; font-weight: 800; line-height: 1.05; color: var(--c-navy);
+    letter-spacing: -0.035em;
   }
   .badge-bottom {
-    font-size: 0.82rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--c-ink);
-    border-top: 2px solid var(--c-line); padding-top: 0.45rem; margin-top: 0.3rem;
+    font-size: 0.78rem; font-weight: 600; color: var(--c-body);
   }
 
   /* Short viewports: a 720px laptop cannot fit this card's natural height, so
@@ -438,10 +436,8 @@ const asideSrc: string | null = null;
     .promo-aside { display: none; }
     .promo-visual:has(.promo-aside)::after { display: none; }
     .promo-visual:has(.promo-aside) .swirl { display: block; }
-    .promo-badge { width: 165px; height: 165px; padding: 0.8rem; }
-    .badge-price { font-size: 2.7rem; }
-    .badge-top { font-size: 0.56rem; }
-    .badge-bottom { font-size: 0.6rem; padding-top: 0.3rem; }
+    .promo-badge { position: relative; left: auto; right: auto; bottom: auto; padding: 0.8rem 1rem; }
+    .badge-price { font-size: 1.7rem; }
     .promo-content { padding: 1.3rem 1.2rem 1.6rem; }
     .promo-trust { grid-template-columns: repeat(4, 1fr); gap: 0.2rem; }
     .promo-trust li { font-size: 0.58rem; }

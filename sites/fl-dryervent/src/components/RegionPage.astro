@@ -5,6 +5,8 @@
  * under /service-areas/ and /es/areas-de-servicio/.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from './PageHero.astro';
+import { photos } from '../data/images';
 import { regionMeta, regionMetaEs } from '../lib/meta';
 import Breadcrumbs from './Breadcrumbs.astro';
 import FAQ from './FAQ.astro';
@@ -63,15 +65,7 @@ const topServices = services;
 
   <section class="section">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Florida</span>
-        <h1>{h1}</h1>
-      </div>
-
-      <div class="answer-box">
-        <span class="answer-label">{isEs ? `Atendemos ${name}` : `Serving ${region.name}`}</span>
-        <p>{answer}</p>
-      </div>
+      <PageHero lang={lang} eyebrow="Florida" title={h1} label={isEs ? `Atendemos ${name}` : `Serving ${region.name}`} answer={answer} photo={region.slug === 'miami-dade-county' ? photos.condoBuilding : region.slug === 'broward-county' ? photos.cloggedHood : photos.hero} />
 
       <div class="prose">
         {body.map((p) => <p>{p}</p>)}

@@ -21,6 +21,17 @@
   # is the safe direction.
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
 
+# The help chat endpoint. netlify/functions/chat.mts declares its own route
+# with `export const config = { path: '/api/chat' }`, so no redirect is
+# needed. The directory is relative to `base`, and is spelled out (as in
+# sites/fl-garage) so nobody has to remember Netlify's default. The function
+# reads ANTHROPIC_API_KEY from the site's environment variables; until it is
+# set the endpoint answers `configured: false` and the widget falls back to
+# the phone and the quote form.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [build.environment]
   NODE_VERSION = "20"
 

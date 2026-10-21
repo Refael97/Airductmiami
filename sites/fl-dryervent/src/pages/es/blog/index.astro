@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { categoryPhoto } from '../../../data/images';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import CTABand from '../../../components/CTABand.astro';
 import { getCollection } from 'astro:content';
@@ -35,6 +36,7 @@ const fmt = (d: Date) => d.toLocaleDateString('es-US', { year: 'numeric', month:
  <div class="grid grid-3">
  {posts.map((p) => (
  <a href={blogHref(lang, p.id)} class="card post-card">
+ <img class="post-img" src={categoryPhoto(p.data.category).small} alt="" width="640" height="478" loading="lazy" decoding="async" />
  <span class="pill">{p.data.category}</span>
  <h3>{p.data.title}</h3>
  <p>{p.data.description}</p>
@@ -54,7 +56,9 @@ const fmt = (d: Date) => d.toLocaleDateString('es-US', { year: 'numeric', month:
   .post-card p { color: var(--c-body); font-size: 0.92rem; margin: 0; flex-grow: 1; }
   .post-meta { color: var(--c-muted); font-size: 0.82rem; margin-top: 0.4rem; }
   .featured { margin-bottom: 2rem; }
-  .featured-card { border-color: #bfddf3; background: linear-gradient(180deg, #fff, var(--c-primary-light)); }
+  .featured-card { border-color: #f7c9ad; }
   .cat-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
   .cat-tag { background: var(--c-bg-alt); border: 1px solid var(--c-line); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.82rem; font-weight: 600; color: var(--c-body); }
+  .post-card { padding-top: 0; overflow: hidden; }
+  .post-img { width: calc(100% + 3.2rem); max-width: none; margin: 0 -1.6rem 1.1rem; aspect-ratio: 16 / 9; object-fit: cover; }
 </style>

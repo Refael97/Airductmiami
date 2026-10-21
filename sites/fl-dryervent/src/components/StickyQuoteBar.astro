@@ -19,7 +19,7 @@ const path = Astro.url.pathname;
 const excluded = ['/contact', '/es/contacto', '/thank-you', '/es/gracias', '/privacy', '/es/privacidad']
   .some((p) => path.startsWith(p));
 
-const label = isEs ? 'Precio de su ventila en 30 segundos' : 'Get the price for your vent in 30 seconds';
+const label = isEs ? 'Precio de su ventila' : 'Get the price for your vent';
 ---
 {!excluded && (
 <button type="button" class="quote-bar" id="quote-bar" hidden>

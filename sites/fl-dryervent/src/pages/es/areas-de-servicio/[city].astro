@@ -1,5 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
+import PageHero from '../../../components/PageHero.astro';
+import { cityPhoto } from '../../../data/images';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
@@ -46,15 +48,7 @@ const countyEs = city.county.replace(/^(.*) County$/, 'Condado de $1');
 
   <section class="section">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">{countyEs} · Florida</span>
-        <h1>Limpieza de Ventila de Secadora en {city.name}, FL</h1>
-      </div>
-
-      <div class="answer-box">
-        <span class="answer-label">Atendemos {city.name}</span>
-        <p>{city.introEs} La limpieza cuesta entre ${PRICE.cleanLow} y ${PRICE.cleanHigh}, y medimos el flujo de aire en la salida antes y después.</p>
-      </div>
+      <PageHero lang="es" eyebrow={`${countyEs} · Florida`} title={`Limpieza de Ventila de Secadora en ${city.name}, FL`} label={`Atendemos ${city.name}`} answer={`${city.introEs} La limpieza cuesta entre $${PRICE.cleanLow} y $${PRICE.cleanHigh}, y medimos el flujo de aire en la salida antes y después.`} photo={cityPhoto(city.slug)} />
 
       <div class="prose">
         <p><strong>Lo que más encontramos en {city.name}:</strong> {city.commonEs}</p>

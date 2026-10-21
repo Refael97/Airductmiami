@@ -46,6 +46,30 @@ export interface LocaleStrings {
  servingFlorida: string;
  ctaHeading: string;
  ctaText: string;
+ // help widget (src/components/HelpChat.astro)
+ chatBubble: string;
+ chatTeaser: string;
+ chatTeaserSub: string;
+ chatGreeting: string;
+ chatGreetingSub: string;
+ chatBack: string;
+ chatClose: string;
+ chatPickChat: string;
+ chatPickChatNote: string;
+ chatPickCall: string;
+ chatPickCallNote: string;
+ chatPickQuote: string;
+ chatPickQuoteNote: string;
+ chatAgent: string;
+ chatOpener: string;
+ chatPlaceholder: string;
+ chatSend: string;
+ chatThinking: string;
+ chatDisclosure: string;
+ chatOffline: string;
+ chatBusy: string;
+ chatError: string;
+ chatOpenedForm: string;
 }
 
 /** Locale-aware path builder: prefixes /es for Spanish, root for English. */
@@ -115,6 +139,31 @@ export const ui: Record<Locale, LocaleStrings> = {
  ctaHeading: 'Dryer taking two cycles? Let us measure it.',
  ctaText:
  'Call or send the form. You get the price for your vent before we book, and the airflow numbers before and after the work.',
+ chatBubble: 'We can help',
+ chatTeaser: 'Dryer taking two cycles?',
+ chatTeaserSub: 'Ask us here, or get the price for your vent in under a minute.',
+ chatGreeting: 'How can we help?',
+ chatGreetingSub: 'Pick whichever is quickest for you.',
+ chatBack: 'Back',
+ chatClose: 'Close',
+ chatPickChat: 'Message us now',
+ chatPickChatNote: 'Tell us what your dryer is doing and get an answer straight away.',
+ chatPickCall: 'Call us now',
+ chatPickCallNote: 'Talk to someone about your dryer vent.',
+ chatPickQuote: 'Get a free quote',
+ chatPickQuoteNote: 'Leave your number and ZIP and we call back with a price.',
+ chatAgent: 'Nina · Dryer Vent Florida',
+ chatOpener:
+ 'Hi, I am Nina from Dryer Vent Florida. Tell me what is going on, a dryer taking two cycles, a hot laundry room, a burning smell or a flap outside that barely moves, and I will tell you what it usually is and what it costs.',
+ chatPlaceholder: 'Type your message',
+ chatSend: 'Send',
+ chatThinking: 'Typing',
+ chatDisclosure:
+ 'You are chatting with an AI assistant. It gives published prices and never books a time: the office confirms that when they call you back.',
+ chatOffline: 'Chat is not open right now. Call us and we will sort it out:',
+ chatBusy: 'We are getting a lot of messages right now. The fastest way through is to call:',
+ chatError: 'Something went wrong on our end. Please call us:',
+ chatOpenedForm: 'I have opened the quote form for you. Fill in your name and number and we will call you back.',
  },
  es: {
  htmlLang: 'es',
@@ -155,5 +204,30 @@ export const ui: Record<Locale, LocaleStrings> = {
  ctaHeading: '¿La secadora necesita dos ciclos? Vamos a medirla.',
  ctaText:
  'Llame o mande el formulario. Le damos el precio de su ventila antes de agendar, y el flujo de aire antes y después del trabajo.',
+ chatBubble: 'Le ayudamos',
+ chatTeaser: '¿La secadora necesita dos ciclos?',
+ chatTeaserSub: 'Pregúntenos aquí, o reciba el precio de su ventila en menos de un minuto.',
+ chatGreeting: '¿Cómo le ayudamos?',
+ chatGreetingSub: 'Elija lo que le resulte más rápido.',
+ chatBack: 'Atrás',
+ chatClose: 'Cerrar',
+ chatPickChat: 'Escríbanos ahora',
+ chatPickChatNote: 'Cuéntenos qué hace su secadora y reciba respuesta de inmediato.',
+ chatPickCall: 'Llámenos ahora',
+ chatPickCallNote: 'Hable con alguien sobre la ventila de su secadora.',
+ chatPickQuote: 'Cotización gratis',
+ chatPickQuoteNote: 'Deje su teléfono y código postal y le llamamos con el precio.',
+ chatAgent: 'Nina · Dryer Vent Florida',
+ chatOpener:
+ 'Hola, soy Nina de Dryer Vent Florida. Cuénteme qué está pasando, una secadora que necesita dos ciclos, un cuarto de lavado muy caliente, olor a quemado o una aleta afuera que casi no se mueve, y le digo qué suele ser y cuánto cuesta.',
+ chatPlaceholder: 'Escriba su mensaje',
+ chatSend: 'Enviar',
+ chatThinking: 'Escribiendo',
+ chatDisclosure:
+ 'Está conversando con un asistente de IA. Da los precios publicados y nunca agenda una hora: eso lo confirma la oficina cuando le devuelven la llamada.',
+ chatOffline: 'El chat no está abierto ahora. Llámenos y lo resolvemos:',
+ chatBusy: 'Estamos recibiendo muchos mensajes. La vía más rápida es llamar:',
+ chatError: 'Algo falló de nuestro lado. Por favor llámenos:',
+ chatOpenedForm: 'Le abrí el formulario de cotización. Ponga su nombre y su número y le devolvemos la llamada.',
  },
 };

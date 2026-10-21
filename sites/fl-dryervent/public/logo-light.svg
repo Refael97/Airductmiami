@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Dryer Vent Florida">
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#ffffff" stroke-width="10"/>
+  <path d="M104 46 A50 50 0 0 1 84 104" fill="none" stroke="#f26a21" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#ffffff">
+    <path id="b" d="M60 60 C56 46 60 30 74 26 C80 36 76 52 60 60 Z"/>
+    <use href="#b" transform="rotate(90 60 60)"/>
+    <use href="#b" transform="rotate(180 60 60)"/>
+    <use href="#b" transform="rotate(270 60 60)"/>
+  </g>
+  <circle cx="60" cy="60" r="8" fill="#f26a21" stroke="#10263f" stroke-width="3"/>
+</svg>

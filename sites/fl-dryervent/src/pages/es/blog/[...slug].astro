@@ -1,5 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
+import { categoryPhoto } from '../../../data/images';
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
@@ -64,6 +65,8 @@ const brandedTitle =
  {d.updatedDate && <> · Actualizado el {fmt(d.updatedDate)}</>}
  </p>
  </header>
+      <figure class="post-figure"><img src={categoryPhoto(d.category).src} srcset={`${categoryPhoto(d.category).small} 640w, ${categoryPhoto(d.category).src} 1200w`} sizes="(max-width: 860px) 100vw, 760px" alt={categoryPhoto(d.category).altEs} width="1200" height="896" decoding="async" /></figure>
+
 
  <div class="answer-box">
  <span class="answer-label">{t.quickAnswer}</span>
@@ -106,4 +109,6 @@ const brandedTitle =
   .related-posts { margin-top: 2.5rem; border-top: 1px solid var(--c-line); padding-top: 1.5rem; }
   .related-posts ul { list-style: none; padding: 0; }
   .related-posts li { margin-bottom: 0.5rem; }
+  .post-figure { margin: 0 0 1.6rem; max-width: var(--maxw-narrow); }
+  .post-figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; }
 </style>

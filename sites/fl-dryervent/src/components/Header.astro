@@ -27,10 +27,10 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
 <header class="site-header">
   <div class="container header-inner">
     <a href={t.home} class="brand" aria-label={business.name}>
-      <img class="brand-mark" src="/logo.svg" alt="" width="40" height="40" />
+      <img class="brand-mark" src="/logo.svg" alt="" width="44" height="44" />
       <span class="brand-word">
-        <span class="bw-top">Dryer Vent <em>Florida</em></span>
-        <span class="bw-sub">Clean · Repair · Install</span>
+        <span class="bw-top">dryer <em>vent</em></span>
+        <span class="bw-sub">Florida</span>
       </span>
     </a>
 
@@ -44,7 +44,7 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
     <nav class="site-nav" aria-label="Primary">
       <ul>
         <li class="has-dropdown">
-          <a href={t.services} class={isActive(t.services) ? 'active' : ''}>{t.nav[0].label} ▾</a>
+          <a href={t.services} class={isActive(t.services) ? 'active' : ''}>{t.nav[0].label} <svg class="chev" viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
           <ul class="dropdown">
             {topServices.map((s) => (
               <li><a href={serviceHref(lang, s.slug)}>{s.shortName}</a></li>
@@ -57,16 +57,23 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
         <li><a href={t.about} class={isActive(t.about) ? 'active' : ''}>{t.nav[3].label}</a></li>
         <li><a href={t.faq} class={isActive(t.faq) ? 'active' : ''}>{t.nav[4].label}</a></li>
         <li><a href={t.contact} class={isActive(t.contact) ? 'active' : ''}>{t.nav[5].label}</a></li>
-        <li class="lang-switch"><a href={switchHref ?? defaultSwitch} hreflang={lang === 'es' ? 'en' : 'es'} rel="alternate">🌐 {t.langSwitch}</a></li>
+        <li class="lang-switch"><a href={switchHref ?? defaultSwitch} hreflang={lang === 'es' ? 'en' : 'es'} rel="alternate">{t.langSwitch}</a></li>
       </ul>
     </nav>
     </>
     )}
 
-    <a href={`tel:${business.phoneHref}`} class="header-cta btn btn-accent">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
-      {business.phone}
-    </a>
+    <div class="header-actions">
+      <a href={`tel:${business.phoneHref}`} class="hdr-phone" aria-label={business.phone}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+        <span class="hdr-phone-num">{business.phone}</span>
+      </a>
+      {!minimal && (
+        <a href={t.contact} class="hdr-quote btn btn-accent">{t.quoteLabel}
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      )}
+    </div>
   </div>
 </header>
 
@@ -75,64 +82,71 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: saturate(180%) blur(8px);
     border-bottom: 1px solid var(--c-line);
   }
   .header-inner {
     display: flex;
-    flex-wrap: wrap; /* lets the nav drop to its own full-width row on mobile */
+    flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem 1rem;
-    min-height: 68px;
+    gap: 0.5rem 1.2rem;
+    min-height: 76px;
   }
   .brand {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    white-space: nowrap; /* never let the brand break into lines */
+    gap: 0.55rem;
+    white-space: nowrap;
     color: var(--c-ink);
     text-decoration: none;
-    margin-right: auto;
   }
   .brand:hover { text-decoration: none; }
-  .brand-mark { width: 40px; height: 40px; display: block; }
-  .brand-word { display: flex; flex-direction: column; line-height: 1.02; }
+  .brand-mark { width: 44px; height: 44px; display: block; }
+  .brand-word { display: flex; flex-direction: column; line-height: 0.95; }
   .bw-top {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: var(--c-ink);
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 1.62rem;
+    letter-spacing: -0.035em;
+    color: var(--c-navy);
   }
-  .bw-top em { font-style: normal; color: var(--c-accent-dark); }
+  .bw-top em { font-style: normal; color: var(--c-orange); }
   .bw-sub {
-    font-size: 0.62rem;
+    font-family: var(--font-head);
+    font-size: 0.6rem;
     font-weight: 700;
-    letter-spacing: 0.42em;
+    letter-spacing: 0.62em;
     text-transform: uppercase;
-    color: var(--c-muted);
-    margin-top: 0.15rem;
+    color: var(--c-navy);
+    margin-top: 0.22rem;
+    padding-left: 0.2rem;
   }
+  .site-nav { margin-left: auto; }
   .site-nav ul {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.1rem;
     list-style: none;
     margin: 0;
     padding: 0;
   }
+  .site-nav li { margin: 0; }
   .site-nav a {
-    display: block;
-    padding: 0.5rem 0.7rem;
-    color: var(--c-body);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 0.65rem;
+    color: var(--c-ink);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     border-radius: 8px;
     text-decoration: none;
   }
   .site-nav a:hover,
-  .site-nav a.active { color: var(--c-primary); background: var(--c-primary-light); }
-  .lang-switch a { color: var(--c-primary); font-weight: 700; }
+  .site-nav a.active { color: var(--c-orange); }
+  .chev { opacity: 0.7; }
+  .lang-switch a { color: var(--c-muted); font-weight: 700; }
 
   .has-dropdown { position: relative; }
   .dropdown {
@@ -140,11 +154,10 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
     top: 100%;
     left: 0;
     display: block;
-    flex-direction: column;
-    min-width: 240px;
+    min-width: 250px;
     background: #fff;
     border: 1px solid var(--c-line);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 0.4rem;
     opacity: 0;
@@ -160,19 +173,36 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
   }
   .dropdown li { width: 100%; }
   .dropdown a { font-size: 0.9rem; }
-  .dropdown-all { color: var(--c-primary); font-weight: 700; }
+  .dropdown a:hover { background: var(--c-bg-alt); }
+  .dropdown-all { color: var(--c-orange) !important; font-weight: 700; }
 
-  .header-cta { white-space: nowrap; font-size: 0.9rem; padding: 0.6rem 1.1rem; }
+  .header-actions { display: flex; align-items: center; gap: 0.6rem; }
+  .hdr-phone {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.62rem 1.05rem;
+    border: 1.5px solid #d6dce4; border-radius: 999px;
+    color: var(--c-ink); font-family: var(--font-head); font-weight: 700; font-size: 0.92rem;
+    white-space: nowrap; text-decoration: none;
+  }
+  .hdr-phone svg { color: var(--c-orange); }
+  .hdr-phone:hover { border-color: var(--c-ink); text-decoration: none; }
+  .hdr-quote { white-space: nowrap; font-size: 0.92rem; padding: 0.72rem 1.25rem; }
 
   .nav-toggle, .nav-toggle-label { display: none; }
 
-  @media (max-width: 1040px) {
-    .site-header { background: rgba(255, 255, 255, 0.99); }
-    .header-inner { min-height: 56px; }
-    .brand-mark { width: 32px; height: 32px; }
-    .bw-top { font-size: 1.08rem; }
-    .bw-sub { font-size: 0.55rem; }
-    .header-cta { display: none; }
+  @media (max-width: 1180px) {
+    .lang-switch { display: none; }
+  }
+  @media (max-width: 1080px) {
+    .header-inner { min-height: 62px; gap: 0.4rem 0.6rem; }
+    .brand { margin-right: auto; }
+    .brand-mark { width: 36px; height: 36px; }
+    .bw-top { font-size: 1.32rem; }
+    .bw-sub { font-size: 0.5rem; }
+    .hdr-quote { display: none; }
+    .hdr-phone { padding: 0; width: 42px; height: 42px; justify-content: center; }
+    .hdr-phone-num { display: none; }
+    .lang-switch { display: block; }
     .nav-toggle-label {
       display: flex;
       flex-direction: column;
@@ -184,30 +214,32 @@ const defaultSwitch = lang === 'es' ? '/' : '/es/';
       order: 3;
     }
     .nav-toggle-label span {
-      display: block; height: 3px; width: 26px;
+      display: block; height: 2.5px; width: 24px;
       background: var(--c-ink); border-radius: 2px;
     }
+    .header-actions { order: 2; }
     .site-nav {
       order: 4;
       flex-basis: 100%;
+      margin-left: 0;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.25s ease;
     }
-    .nav-toggle:checked ~ .site-nav { max-height: 640px; }
+    .nav-toggle:checked ~ .site-nav { max-height: 720px; }
     .site-nav ul {
       flex-direction: column;
       align-items: stretch;
       gap: 0;
       padding-bottom: 0.8rem;
     }
-    .site-nav li { margin: 0; }
     .site-nav a {
-      padding: 0.7rem 0.4rem;
+      padding: 0.75rem 0.4rem;
       font-size: 1rem;
       border-bottom: 1px solid var(--c-line);
       border-radius: 0;
     }
+    .chev { display: none; }
     .dropdown {
       position: static; opacity: 1; visibility: visible; transform: none;
       box-shadow: none; border: none; padding: 0 0 0 1rem; min-width: 0;
