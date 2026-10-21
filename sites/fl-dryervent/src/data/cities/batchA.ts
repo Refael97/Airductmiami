@@ -95,7 +95,7 @@ export const cityBatchA: CityContent[] = [
     name: "Hollywood",
     county: "Broward County",
     region: "Broward County",
-    nearby: ["fort-lauderdale", "miramar", "davie"],
+    nearby: ["fort-lauderdale", "miramar", "pembroke-pines", "miami-gardens"],
     neighborhoods: ["Hollywood Lakes", "Emerald Hills", "Hollywood Hills", "Driftwood", "Hollywood Beach", "Boulevard Heights"],
     intro:
       "Hollywood has houses from almost every decade of South Florida building, and the dryer vent tends to tell you which decade. The older the house, the more likely the laundry was moved at some point and the vent was rebuilt by whoever moved it.",
@@ -472,7 +472,7 @@ export const cityBatchA: CityContent[] = [
     name: "Miramar",
     county: "Broward County",
     region: "Broward County",
-    nearby: ["hollywood", "davie", "weston"],
+    nearby: ["hollywood", "pembroke-pines", "miami-gardens", "weston"],
     neighborhoods: ["Historic Miramar", "Riviera Isles", "Monarch Lakes", "Sunset Lakes"],
     intro:
       "Miramar is really two building periods side by side. The eastern part is small block houses with the dryer near an outside wall, and the western part is newer two storey homes and townhouses where the vent was installed by a production builder and has rarely been looked at since.",
@@ -759,7 +759,7 @@ export const cityBatchA: CityContent[] = [
     name: "Weston",
     county: "Broward County",
     region: "Broward County",
-    nearby: ["davie", "sunrise", "plantation", "miramar"],
+    nearby: ["davie", "sunrise", "plantation", "pembroke-pines"],
     neighborhoods: ["Weston Hills", "Savanna", "The Ridges", "Indian Trace", "Bonaventure", "Windmill Ranch Estates"],
     intro:
       "Weston is almost entirely planned communities from the late eighties onward, with concrete tile roofs, strict associations and a lot of two storey homes. That combination puts many dryer vents on the roof, behind a gate, under rules about what the roof may look like.",
@@ -1136,7 +1136,7 @@ export const cityBatchA: CityContent[] = [
     name: "Miami",
     county: "Miami-Dade County",
     region: "Miami-Dade County",
-    nearby: ["miami-beach", "coral-gables", "pinecrest"],
+    nearby: ["miami-beach", "coral-gables", "hialeah", "doral"],
     neighborhoods: ["Little Havana", "Shenandoah", "Coconut Grove", "Brickell", "Edgewater", "Morningside"],
     intro:
       "In Miami the dryer often lives where the house allowed it rather than where it vents well: on a back porch, in a converted carport, in a hallway closet of a duplex. The vent is usually short. The trouble is in how it was put together.",
@@ -1231,7 +1231,7 @@ export const cityBatchA: CityContent[] = [
     name: "Coral Gables",
     county: "Miami-Dade County",
     region: "Miami-Dade County",
-    nearby: ["miami", "pinecrest", "miami-beach"],
+    nearby: ["miami", "pinecrest", "kendall", "miami-beach"],
     neighborhoods: ["Cocoplum", "Gables Estates", "Gables by the Sea", "Coral Gables Riviera"],
     intro:
       "Coral Gables cares a great deal about how houses look from the street, and a dryer vent is one of the few mechanical parts that shows. The older Mediterranean homes have barrel tile roofs and thick walls, and the large waterfront homes to the south often have laundry rooms far from any exterior.",
@@ -1320,7 +1320,7 @@ export const cityBatchA: CityContent[] = [
     name: "Pinecrest",
     county: "Miami-Dade County",
     region: "Miami-Dade County",
-    nearby: ["coral-gables", "miami"],
+    nearby: ["coral-gables", "kendall", "homestead", "miami"],
     neighborhoods: ["Suniland", "High Pines", "Coral Pine"],
     intro:
       "Pinecrest is big lots, mature trees and houses that have been added onto over decades. A laundry that once sat by the carport now often sits well inside the house, and the vent has grown longer with every addition.",

@@ -20,7 +20,7 @@ const regions = citiesByRegion();
         <p class="lead">{cities.length} Florida cities, each with its own page: how dryer vents are usually run there, what we find most often, and the price.</p>
       </div>
       <div class="region-guides">
-        <span class="guides-label">County guides:</span>
+        <span class="guides-label">Regional guides:</span>
         {regionPages.map((r) => (
           <a href={`/service-areas/${r.slug}/`} class="chip">{r.name}</a>
         ))}

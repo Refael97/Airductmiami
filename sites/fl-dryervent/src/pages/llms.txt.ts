@@ -36,7 +36,7 @@ export const GET: APIRoute = async ({ site }) => {
   L();
   for (const s of services) L(`- [${s.name}](${o}/services/${s.slug}/): ${s.answer}`);
   L();
-  L('## Counties');
+  L('## Regions');
   L();
   for (const r of regionPages) L(`- [${r.name}](${o}/service-areas/${r.slug}/)`);
   L();

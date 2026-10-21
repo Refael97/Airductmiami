@@ -63,9 +63,12 @@ export function regionMeta(name: string) {
 }
 
 export function regionMetaEs(name: string) {
+  /* "en el Condado de Broward" reads right; drop the article only when the
+     priced title would not otherwise fit. */
+  const bare = name.replace(/^(el|la) /, '');
   return {
     title: titled(
-      [`Limpieza de Ventila de Secadora en ${name}`, `Ventila de Secadora en ${name}`],
+      [`Limpieza de Ventila de Secadora en ${name}`, `Ventila de Secadora en ${name}`, `Ventila de Secadora en ${bare}`],
       `$${PRICE.cleanLow} a $${PRICE.cleanHigh}`,
     ),
     description: fit(

@@ -32,7 +32,7 @@ const name = isEs ? region.esName : region.name;
    descriptions and were therefore truncated in every result. The builder
    fits the limits and leads with the published price. */
 const { title: metaTitle, description: metaDescription } = isEs
-  ? regionMetaEs(region.esName.replace(/^el /, ''))
+  ? regionMetaEs(region.esName)
   : regionMeta(region.name);
 const answer = isEs ? region.esAnswer : region.answer;
 const body = isEs ? region.esBody : region.body;
@@ -50,6 +50,14 @@ const schema = serviceSchema(site, {
   slug: region.slug,
 });
 
+const REGION_PHOTO: Record<string, typeof photos.hero> = {
+  'miami-dade-county': photos.condoBuilding,
+  'broward-county': photos.cloggedHood,
+  'palm-beach-county': photos.hero,
+  'central-florida': photos.airflowMeter,
+  'tampa-bay': photos.cleaningInside,
+  'southwest-florida': photos.roofCleaning,
+};
 const regionCities = citiesForRegionPage(region);
 const otherRegions = regionPages.filter((r) => r.slug !== region.slug);
 const topServices = services;
@@ -65,7 +73,7 @@ const topServices = services;
 
   <section class="section">
     <div class="container">
-      <PageHero lang={lang} eyebrow="Florida" title={h1} label={isEs ? `Atendemos ${name}` : `Serving ${region.name}`} answer={answer} photo={region.slug === 'miami-dade-county' ? photos.condoBuilding : region.slug === 'broward-county' ? photos.cloggedHood : photos.hero} />
+      <PageHero lang={lang} eyebrow="Florida" title={h1} label={isEs ? `Atendemos ${name}` : `Serving ${region.name}`} answer={answer} photo={REGION_PHOTO[region.slug] ?? photos.hero} />
 
       <div class="prose">
         {body.map((p) => <p>{p}</p>)}

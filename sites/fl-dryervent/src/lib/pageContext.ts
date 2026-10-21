@@ -80,8 +80,8 @@ export function pageContext(path: string, title: string, lang: Locale): string |
     const region = last ? getRegionPage(last) : undefined;
     if (region) {
       return isEs
-        ? `Están en la página ${region.esName.startsWith('el ') ? 'del ' + region.esName.slice(3) : 'de ' + region.esName}. La propiedad probablemente está en ese condado, así que la pregunta útil es en qué ciudad o código postal.`
-        : `They are on the ${region.name} page. The property is probably in that county, so the useful question is which city or ZIP.`;
+        ? `Están en la página ${region.esName.startsWith('el ') ? 'del ' + region.esName.slice(3) : 'de ' + region.esName}. La propiedad probablemente está en esa zona, así que la pregunta útil es en qué ciudad o código postal.`
+        : `They are on the ${region.name} page. The property is probably in that area, so the useful question is which city or ZIP.`;
     }
 
     const city = last ? cities.find((c) => c.slug === last) : undefined;

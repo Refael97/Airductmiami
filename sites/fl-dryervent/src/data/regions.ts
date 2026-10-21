@@ -106,6 +106,95 @@ export const regionPages: RegionPageContent[] = [
       { question: '¿Limpian ventilas en condominios de muchos pisos?', answer: 'Sí. Limpiamos la parte de la unidad y, para asociaciones, los ductos compartidos, cotizado por unidad para el edificio.' },
     ],
   },
+  {
+    slug: 'central-florida',
+    esSlug: 'centro-de-florida',
+    name: 'Central Florida',
+    esName: 'el Centro de Florida',
+    region: 'Central Florida',
+    answer:
+      'Dryer Vent Florida cleans, repairs and installs dryer vents across Central Florida, in Orlando, Kissimmee and Winter Park, from vacation rentals along US 192 to older homes under the oaks. Cleaning costs $100 to $200 and repair or a new run $200 to $600, with the price given before we book.',
+    esAnswer:
+      'Dryer Vent Florida limpia, repara e instala ventilas de secadora en el Centro de Florida, en Orlando, Kissimmee y Winter Park, desde las casas de alquiler vacacional de la 192 hasta las casas de familia de Buenaventura Lakes. La limpieza de ventila de secadora cuesta de $100 a $200, y la reparación o un ducto nuevo de $200 a $600.',
+    body: [
+      'Central Florida is a long way from the beach, so salt is not the enemy it is in Miami or Naples. Heat is. Most houses built here since the 1980s put the laundry upstairs or in the middle of the plan, and the vent crosses an attic that bakes all summer before it reaches a roof cap. Lint leaves the dryer damp, settles at every bend and dries hard where it lands.',
+      'Around Kissimmee and the attractions corridor the other big factor is short term rentals. A home turned over every few days pushes sheets and towels through the dryer at a pace no family matches, and the vent fills in months rather than years. Owners who live elsewhere usually hear about it first as a housekeeping complaint that loads are not drying.',
+      'Closer to downtown Orlando and in Winter Park the houses are older, with the laundry in a garage or utility room and a short wall vent under heavy tree cover. Those runs are quick to clean, and leaves and nests at the hood are as much of the job as the lint inside. Whatever the house, the airflow at the outside termination is measured before and after.',
+    ],
+    esBody: [
+      'El Centro de Florida queda lejos de la playa, así que aquí el enemigo no es la sal sino el calor. Casi todas las casas construidas desde los ochenta tienen la lavandería en el segundo piso o en medio de la casa, y el ducto de la secadora cruza un ático que se cocina todo el verano antes de salir por el techo. La pelusa sale húmeda, se pega en cada codo y allí se endurece.',
+      'En Kissimmee, Buenaventura Lakes y la zona de la 192 muchas casas son de alquiler vacacional. Una casa que cambia de huéspedes cada pocos días seca sábanas y toallas sin parar, y la ventila se llena en meses, no en años. Si usted alquila o administra una casa así, una limpieza cada tres o cuatro meses evita que el problema le llegue como queja del equipo de limpieza porque la ropa no seca.',
+      'En las casas de familia de Orlando y Kissimmee, con la lavandería en el garaje o en un clóset, una limpieza al año suele bastar. Medimos el flujo de aire afuera antes y después para que usted vea el cambio en números, y hay citas la misma semana cerca de usted, también sábados y domingos.',
+    ],
+    faq: [
+      { question: 'How much does dryer vent cleaning cost in Central Florida?', answer: '$100 to $200 for most homes in Orlando, Kissimmee and Winter Park. Repairs, replacements and new runs are $200 to $600, and you get the figure before we book.' },
+      { question: 'How often should a vacation rental dryer vent be cleaned?', answer: 'Every three to four months for a home turned over every few days. Towel and sheet loads fill a vent far faster than family laundry, and the before and after airflow numbers give an owner who lives away something concrete to go on.' },
+      { question: 'Which Central Florida areas do you cover?', answer: 'Orlando, Kissimmee and Winter Park, each with its own page, and the neighbourhoods around them such as College Park, Baldwin Park, Lake Nona, Buenaventura Lakes and Celebration. Give us your ZIP code when you book and we will confirm.' },
+    ],
+    esFaq: [
+      { question: '¿Cuál es el precio de limpiar la ventila de la secadora en Orlando o Kissimmee?', answer: 'De $100 a $200 en la mayoría de las casas. Si hay que reparar o cambiar el ducto de la secadora, de $200 a $600. Le damos el precio antes de agendar.' },
+      { question: 'Tengo una casa de alquiler vacacional. ¿Cada cuánto se limpia la ventila?', answer: 'Cada tres o cuatro meses si la casa cambia de huéspedes cada pocos días. Las toallas y las sábanas sueltan mucha pelusa, y le dejamos las lecturas de flujo de antes y después aunque usted viva lejos.' },
+      { question: '¿Tienen servicio cerca de mí en Kissimmee u Orlando?', answer: 'Sí. Atendemos Orlando, Kissimmee y Winter Park y los barrios de alrededor, como Buenaventura Lakes, Celebration, Lake Nona y College Park. Díganos su código postal al agendar y se lo confirmamos.' },
+    ],
+  },
+  {
+    slug: 'tampa-bay',
+    esSlug: 'bahia-de-tampa',
+    name: 'Tampa Bay',
+    esName: 'la Bahía de Tampa',
+    region: 'Tampa Bay',
+    answer:
+      'Dryer Vent Florida cleans, repairs and installs dryer vents around Tampa Bay, in Tampa and St. Petersburg, from 1920s bungalows to two storey suburbs and waterfront homes repaired after the 2024 storms. Cleaning costs $100 to $200 and repair or a new run $200 to $600.',
+    esAnswer:
+      'Dryer Vent Florida limpia, repara e instala ventilas de secadora en la Bahía de Tampa, en Tampa y St. Petersburg, desde las casitas de los años veinte hasta los suburbios de dos pisos y las casas junto al agua reparadas después de las tormentas de 2024. La limpieza cuesta de $100 a $200.',
+    body: [
+      'The bay area has two housing stocks that could hardly be more different. In Hyde Park, Seminole Heights, Historic Kenwood and the Old Northeast, the bungalows were built before anyone owned a dryer, so the laundry sits in a back porch addition or a converted garage with a short run through a frame wall. In Westchase, Carrollwood, New Tampa and the newer parts of Pinellas, builders put the laundry upstairs and the vent through the roof.',
+      'The short runs fail at the hood, where old plastic goes brittle and cracks. The long ones fail along the way and at the cap, where damper flaps split and hinge pins rust. After the 2024 storms, a great many low lying homes had laundry rooms stripped and rebuilt, and a vent put back in a hurry deserves a look even if the dryer seems fine.',
+      'We measure airflow at the outside termination before and after every job. In apartment communities and condo buildings the vent belongs to the property, so we work with management and price the building per unit.',
+    ],
+    esBody: [
+      'En la Bahía de Tampa hay dos tipos de casa muy distintos. En Hyde Park, Seminole Heights, Historic Kenwood y Old Northeast, las casitas viejas se hicieron antes de que existieran las secadoras, y la lavandería quedó en un portal de atrás o en un garaje convertido, con una ventila corta por una pared de madera. En Westchase, Carrollwood y New Tampa la lavandería está arriba y el ducto de la secadora sale por el techo.',
+      'Los tramos cortos fallan en la salida, donde el plástico viejo se raja. Los largos fallan en el camino y en el techo, donde la aleta se parte y la bisagra se oxida. Después de las tormentas de 2024 muchas lavanderías junto al agua se rehicieron a la carrera, y vale la pena revisar esa ventila aunque la secadora parezca bien.',
+      'La limpieza de ventila de secadora tiene un precio de $100 a $200, y la reparación o un ducto nuevo de $200 a $600. Medimos el flujo de aire afuera antes y después, y hay citas la misma semana cerca de usted, de lunes a domingo.',
+    ],
+    faq: [
+      { question: 'How much does dryer vent cleaning cost in the Tampa Bay area?', answer: '$100 to $200 for most homes in Tampa and St. Petersburg. Repairs, replacements and new runs are $200 to $600, and condo and apartment buildings are priced per unit.' },
+      { question: 'Our laundry room was rebuilt after flooding. Should the vent be checked?', answer: 'Yes. Vents reconnected during a fast rebuild often have a crushed hose, a loose joint or a hood that no longer closes. We trace the run, clean it and measure airflow so you know where it stands.' },
+      { question: 'Which Tampa Bay areas do you cover?', answer: 'Tampa and St. Petersburg, each with its own page, and the neighbourhoods around them, from South Tampa and Seminole Heights to Westchase, Carrollwood, Snell Isle and Shore Acres. Give us your ZIP code when you book and we will confirm.' },
+    ],
+    esFaq: [
+      { question: '¿Cuánto cuesta limpiar la ventila de la secadora en Tampa o St. Petersburg?', answer: 'De $100 a $200 en la mayoría de las casas. Reparaciones, reemplazos y ductos nuevos de $200 a $600, y los edificios se cotizan por unidad.' },
+      { question: 'La lavandería se rehízo después de una inundación. ¿Hay que revisar la ventila?', answer: 'Sí. En un arreglo rápido la manguera queda aplastada, una unión suelta o la aleta sin cerrar. Revisamos el tramo completo, lo limpiamos y medimos el flujo.' },
+    ],
+  },
+  {
+    slug: 'southwest-florida',
+    esSlug: 'suroeste-de-florida',
+    name: 'Southwest Florida',
+    esName: 'el Suroeste de Florida',
+    region: 'Southwest Florida',
+    answer:
+      'Dryer Vent Florida cleans, repairs and installs dryer vents across Southwest Florida, in Fort Myers, Cape Coral, Bonita Springs and Naples, from Gulf front condo towers to canal homes with the laundry in the garage. Cleaning costs $100 to $200 and repair or a new run $200 to $600.',
+    esAnswer:
+      'Dryer Vent Florida limpia, repara e instala ventilas de secadora en el Suroeste de Florida, en Fort Myers, Cape Coral, Bonita Springs y Naples, desde las torres de condominios frente al Golfo hasta las casas de canal con la lavandería en el garaje. La limpieza cuesta de $100 a $200.',
+    body: [
+      'Southwest Florida divides into three kinds of dryer vent. Cape Coral and much of Fort Myers are single storey block homes with the washer and dryer in the garage and a vent a few feet long through the side wall. Bonita Springs and the gated communities around it have coach homes, where the upstairs unit vents through a long run in the floor framing. Naples and the Gulf front of Bonita have condo towers, where the outside end of the duct is usually on a balcony or a wall only the building can reach.',
+      'Salt and humidity work on all three. Damper hinges near the Gulf and the canals corrode until the flap sticks, and after Hurricane Ian many laundry rooms in Fort Myers and Cape Coral were rebuilt quickly enough that the vent deserves a second look. Many owners here are seasonal, so October or November, before the house fills up, is the sensible time to clean.',
+    ],
+    esBody: [
+      'En el Suroeste de Florida hay tres tipos de ventila. En Cape Coral y gran parte de Fort Myers son casas de bloque de una planta con la secadora en el garaje y un ducto de pocos pies por la pared lateral. En Bonita Springs hay muchas coach homes, donde la unidad de arriba saca el aire por un ducto largo entre pisos. En Naples hay torres de condominios, donde la salida está en el balcón o en una pared a la que solo llega el edificio.',
+      'La sal y la humedad atacan a las tres: la aleta se oxida y se traba. Después del huracán Ian muchas lavanderías se rehicieron a la carrera, y conviene revisar el ducto de la secadora. Si usted pasa aquí solo la temporada, octubre o noviembre es buen momento para la limpieza de ventila de secadora, con un precio de $100 a $200 y cita la misma semana cerca de usted.',
+    ],
+    faq: [
+      { question: 'How much does dryer vent cleaning cost in Southwest Florida?', answer: '$100 to $200 for most homes and condo units in Fort Myers, Cape Coral, Bonita Springs and Naples. Repairs and new runs are $200 to $600, and condo buildings are priced per unit.' },
+      { question: 'I only live here in season. When should the vent be cleaned?', answer: 'October or November, before the house is in daily use again. If you rent it out in the winter months, clean again when the season ends.' },
+      { question: 'Which Southwest Florida areas do you cover?', answer: 'Fort Myers, Cape Coral, Bonita Springs and Naples, each with its own page, and the communities around them. Give us your ZIP code when you book and we will confirm.' },
+    ],
+    esFaq: [
+      { question: '¿Cuánto cuesta limpiar la ventila de la secadora en Fort Myers, Cape Coral o Naples?', answer: 'De $100 a $200 en la mayoría de las casas y unidades de condominio. Reparaciones y ductos nuevos de $200 a $600, y los edificios se cotizan por unidad.' },
+      { question: 'Solo vivo aquí en temporada. ¿Cuándo conviene limpiar?', answer: 'En octubre o noviembre, antes de volver a usar la casa todos los días. Si la alquila en invierno, límpiela otra vez cuando termine la temporada.' },
+    ],
+  },
 ];
 
 export function getRegionPage(slug: string): RegionPageContent | undefined {

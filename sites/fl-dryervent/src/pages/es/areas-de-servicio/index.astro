@@ -24,9 +24,9 @@ const regions = citiesByRegion();
  <p class="lead">{cities.length} ciudades de Florida, cada una con su página: cómo suelen ir las ventilas allí, lo que más encontramos y el precio.</p>
  </div>
  <div class="region-guides">
- <span class="guides-label">Por condado:</span>
+ <span class="guides-label">Guías por región:</span>
  {regionPages.map((r) => (
- <a href={`/es/areas-de-servicio/${r.esSlug}/`} class="chip">{r.esName.replace(/^el /, '')}</a>
+ <a href={`/es/areas-de-servicio/${r.esSlug}/`} class="chip">{r.esName.replace(/^(el|la) /, '')}</a>
  ))}
  </div>
  {regions.map(([region, list]) => (

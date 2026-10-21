@@ -5,11 +5,12 @@
 import type { CityContent, RegionName } from './cityTypes';
 import { cityBatchA } from './cities/batchA';
 import { cityBatchB } from './cities/batchB';
+import { cityBatchC } from './cities/batchC';
 
 export type City = CityContent;
 export type { RegionName };
 
-export const cities: City[] = [...cityBatchA, ...cityBatchB];
+export const cities: City[] = [...cityBatchA, ...cityBatchB, ...cityBatchC];
 
 export function getCity(slug: string): City | undefined {
   return cities.find((c) => c.slug === slug);
@@ -31,7 +32,7 @@ export const REGION_ES: Record<RegionName, string> = {
   'Miami-Dade County': 'Condado de Miami-Dade',
   'Southwest Florida': 'Suroeste de Florida',
   'Central Florida': 'Centro de Florida',
-  'Tampa Bay': 'Tampa Bay',
+  'Tampa Bay': 'Bahía de Tampa',
 };
 
 export function citiesByRegion(): [RegionName, City[]][] {
