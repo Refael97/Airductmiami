@@ -40,7 +40,7 @@ const schema = serviceSchema(site, {
 });
 
 const cityFaq = [
- { question: `¿Cuánto cuesta la limpieza de ductos en ${city.name}?`, answer: `En ${city.name}, una limpieza completa de ductos de un solo sistema suele costar entre 300 y 600 dólares, y la limpieza de la ventila del secador entre 100 y 200 dólares. Le damos una cotización clara y sin sorpresas.` },
+ { question: `¿Cuánto cuesta limpiar los ductos de aire acondicionado en ${city.name}?`, answer: `El precio de una limpieza completa de ductos de aire acondicionado en ${city.name} suele estar entre 300 y 600 dólares por sistema, y la ventila del secador entre 100 y 200 dólares. Le damos el precio antes de agendar, sin sorpresas.` },
  { question: `¿Cada cuánto deben limpiar los ductos las familias de ${city.name}?`, answer: `Cada 3 a 5 años en la mayoría de los hogares de ${city.name}, y con más frecuencia si tiene mascotas, alergias o antecedentes de moho. ${es.local}` },
  { question: `¿Ofrecen citas la misma semana en ${city.name}?`, answer: `Sí. Ofrecemos citas rápidas, muchas veces la misma semana, para ${city.name} y el área de ${city.county}. Llame al ${business.phone} para reservar.` },
  { question: `¿Sus técnicos en ${city.name} tienen licencia y seguro?`, answer: `Asegurados sí, y le mandamos el certificado antes de la cita si lo pide. Sobre la licencia: la limpieza de ductos no es un oficio con licencia en Florida, así que no existe una licencia de limpieza de ductos que nadie pueda tener. Seguimos la norma NADCA ACR de extracción en la fuente, y lo que Florida sí licencia, la remediación de moho ante todo, pasa a un contratista que tiene esa licencia.` },
@@ -73,7 +73,7 @@ const guides = await guidesForCityEs();
 
  <div class="answer-box">
  <span class="answer-label">Atendemos {city.name}</span>
- <p>{business.name} ofrece limpieza profesional de ductos de aire, limpieza de la ventila del secador y servicios de calidad del aire en todo {city.name} y {city.county}. {es.intro}</p>
+ <p>{business.name} ofrece limpieza profesional de ductos de aire acondicionado, limpieza de la ventila del secador y servicios de calidad del aire en todo {city.name} y {city.county}. {es.intro}</p>
  </div>
 
  <div class="prose">

@@ -817,6 +817,13 @@ export const cityDetail: Record<string, CityDetail> = {
           'That combination is where we find the largest gains. The equipment is fine. The duct is leaking, restricted, or both, and the homeowner has been told repeatedly that the system is simply old.',
         ],
       },
+      {
+        heading: 'Is HVAC duct cleaning in Fort Lauderdale different from air duct cleaning?',
+        body: [
+          'Yes, they are two jobs, priced separately so you only pay for the one you need. Air duct cleaning in Fort Lauderdale clears the supply and return ducts and costs $300 to $600 for one system. HVAC cleaning works on the equipment itself, the evaporator coil, blower wheel, air handler cabinet and condensate drain, and costs $200 to $450. Near the canals the coil usually fouls first, because it is the coldest, wettest surface in the house.',
+          'If the air smells musty as the system starts and the smell fades, the coil and drain are the likely source and HVAC cleaning is the job. If dust keeps coming out of the registers or one room never cools, the ducts are. Many Fort Lauderdale homes, especially the Las Olas and beachside condos with the air handler in a closet, need both, and we tell you which before booking.',
+        ],
+      },
     ],
     neighborhoods: ['Victoria Park', 'Coral Ridge', 'Rio Vista', 'Las Olas Isles', 'Sailboat Bend', 'Poinsettia Heights'],
     dryerVent: {
