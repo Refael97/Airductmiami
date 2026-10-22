@@ -30,7 +30,7 @@ Read these before changing anything. They are the memory of this work:
 | Folder | repo root (`.`) | `sites/fl-garage` | `sites/fl-dryervent` |
 | Domain | floridabreezeairduct.com | garage-door-fixers.com | dryerventflorida.com |
 | Search Console | `sc-domain:floridabreezeairduct.com` | `sc-domain:garage-door-fixers.com` | `sc-domain:dryerventflorida.com` (verified 21 Oct 2026; first impressions that day) |
-| GA4 | property 545663484 | property 548175529 | measurement id G-DGWK813VWZ (find the property id with the GA4 admin "list properties" tool) |
+| GA4 | property 545663484 | property 548175529 | property 559989937 (named "drayer vent" in GA4), measurement id G-DGWK813VWZ |
 | Lead events | `generate_lead`, `phone_call`, `form_submit` | `new_lead` (since 19 Sep 2026; `generate_lead` before), `phone_call`, `booking_open`, `quote_blocked` | `generate_lead`, `phone_call`, `booking_open`, `quote_step` |
 | Source of truth for prices and facts | `src/data/services.ts`, `src/data/business.ts` | `sites/fl-garage/src/data/*` | `sites/fl-dryervent/src/data/*` and `research/fl-dryervent/CONTENT-SPEC.md` |
 
@@ -120,6 +120,11 @@ alive. Ignore it, and say in the report how much you ignored:
 - queries at position about 1 with impressions and zero clicks that make no
   sense for the business (seen before: "Fort Myers" variants, "Amarr" plus
   "Palm Beach" on the garage site).
+
+**Anonymised queries.** Search Console hides rare queries. A page can show
+hundreds of impressions while a query filter on it returns nothing (seen on
+the garage site's Spanish guides). With no query to target, do not edit the
+page; note it and move on.
 
 If Composio fails or a property is missing, do the health check, the
 warnings backlog and the report, and say plainly that data was unavailable.
