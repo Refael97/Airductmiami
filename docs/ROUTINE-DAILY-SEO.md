@@ -32,5 +32,5 @@ carry on with the rest. Finish with the report, in Hebrew.
 - Composio connected to the Google account that owns both Search Console
   properties and both GA4 properties, and the Dryer Vent Florida GA4
   property added to that account.
-- `dryerventflorida.com` verified in Search Console (until then the routine
-  skips Search Console for that site and says so).
+- `dryerventflorida.com` is verified in Search Console (done 21 Oct 2026).
+  The Composio Google account must have access to that property too.

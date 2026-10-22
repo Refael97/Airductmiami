@@ -29,7 +29,7 @@ Read these before changing anything. They are the memory of this work:
 |---|---|---|---|
 | Folder | repo root (`.`) | `sites/fl-garage` | `sites/fl-dryervent` |
 | Domain | floridabreezeairduct.com | garage-door-fixers.com | dryerventflorida.com |
-| Search Console | `sc-domain:floridabreezeairduct.com` | `sc-domain:garage-door-fixers.com` | `sc-domain:dryerventflorida.com` (skip if not verified yet) |
+| Search Console | `sc-domain:floridabreezeairduct.com` | `sc-domain:garage-door-fixers.com` | `sc-domain:dryerventflorida.com` (verified 21 Oct 2026; first impressions that day) |
 | GA4 | property 545663484 | property 548175529 | measurement id G-DGWK813VWZ (find the property id with the GA4 admin "list properties" tool) |
 | Lead events | `generate_lead`, `phone_call`, `form_submit` | `new_lead` (since 19 Sep 2026; `generate_lead` before), `phone_call`, `booking_open`, `quote_blocked` | `generate_lead`, `phone_call`, `booking_open`, `quote_step` |
 | Source of truth for prices and facts | `src/data/services.ts`, `src/data/business.ts` | `sites/fl-garage/src/data/*` | `sites/fl-dryervent/src/data/*` and `research/fl-dryervent/CONTENT-SPEC.md` |
@@ -166,6 +166,53 @@ off on the air duct site:
    pages at position 30 add impressions, not clicks.**
 8. **Internal links** to a page that just started ranking, from older related
    pages in the same language.
+9. **A fallen page.** Compare the last 3 months with the 3 before, by page.
+   A page that lost half its clicks or more, or gets under 10 clicks a
+   month while carrying hundreds of impressions, is a revival candidate.
+   Work it with the page revival procedure below. Before blaming the page,
+   check the site: if many pages fell in the same week it is an update or
+   a technical problem, not a page problem, and the fix is not copy.
+
+### Page revival procedure
+
+The fastest traffic on an old page is the traffic Google already shows it
+for. Upgrade the page you have; do not write a new one, and never change
+its URL.
+
+1. Pull that page's queries (filter `page` = the URL) for 28 and 90 days:
+   clicks, impressions, CTR, position.
+2. Take the queries at position 8 to 20 with the most impressions. For each,
+   read the page and mark it:
+   - **answered**: the page answers it plainly;
+   - **partial**: the topic is there, the direct answer is not, or it is
+     buried deep;
+   - **missing**: the page does not answer it.
+   Also mark any query another page on the site fits better (self
+   competition, lever 2).
+3. Lead query: the one with the most impressions among those the page
+   should own. It opens the title (60 characters, if the title is not on a
+   28 day hold), and appears naturally in one H2 and in the description.
+4. For each **missing** or **partial** query: an H2 or H3 phrased as the real
+   question, and a 60 to 120 word answer whose first sentence answers it.
+   Place it where it belongs in the page's flow (in this repo: usually a new
+   FAQ entry or a `depth` block in the data file). Keep every paragraph that
+   already earns clicks; if one is out of date, update it in place.
+5. Internal links: from the 3 to 5 pages with the most clicks in the last 3
+   months, in the same language, where the topic genuinely fits, add a link
+   whose anchor text is the lead query or a natural variant. Never "click
+   here".
+6. Note in the ledger which queries were marked missing or partial, so the
+   judgement in 28 days looks at those queries, not only at the page total.
+
+A page with almost no impressions and no relevant query inside position 30
+is not a revival candidate. Do not pour copy into it. List it in the report
+with the closest live page on the same topic as a possible 301 target; the
+owner decides, because a redirect is a URL change. Never propose a redirect
+for a page that still gets clicks.
+
+Signals that revival will not work, so say so instead of editing: the
+query's results are now product pages or videos (intent changed), or the
+whole site dropped at once.
 
 Ignore national head terms a small local site cannot win, and positions
 beyond 40 unless several queries point the same way.
