@@ -611,7 +611,80 @@ export const brands: Brand[] = [
       'Gear and sprocket wear on older chain units after years of summer heat',
       'MyQ connectivity problems after a router change or a power outage',
     ],
+    /* Not a model series: Chamberlain has no series pages. The table slot is
+       used for the repair symptoms, which is what people search this brand
+       for ("chamberlain garage door opener repair"). */
+    series: {
+      title: 'Chamberlain garage door opener repair: symptoms, what to check, when to call',
+      intro: [
+        'Nearly every Chamberlain repair call starts with one of six complaints: the door reverses, the motor hums and nothing moves, the remotes or keypad quit, a light keeps blinking, the drive grinds, or the unit is dead. A few of these have a cause you can find yourself in five minutes, and it is worth looking before you book a visit. The table shows what to check first and where it stops being a homeowner job.',
+        'Two rules before you touch anything. Leave the torsion springs and the cables alone, because they hold the full weight of the door under tension. And if the door is open and a spring looks broken, do not pull the red release cord, because without the spring the door can drop. Every check in the first column is done with the door closed.',
+        'Chamberlain and LiftMaster openers come from the same manufacturer, so the diagnosis is the same on both and many parts fit either. Most Chamberlain repairs we do cost $95 to $300. When the unit is old enough that the repair comes close to the price of a new one, we put a new opener installed, from $275, next to the repair price so you can choose.',
+      ],
+      columns: ['What you can check first', 'What needs a technician'],
+      rows: [
+        {
+          label: 'Door starts down, then reverses',
+          values: [
+            'Look at the two sensors near the floor. Both lights should be steady. Wipe the lenses, clear anything in the beam, and push a knocked bracket back until the lights stop flickering.',
+            'Reversing with the beam clear and the lights steady points to the force or travel settings, a door out of balance, or a sensor wire that has broken inside the wall.',
+          ],
+        },
+        {
+          label: 'Motor hums but the door does not move',
+          values: [
+            'Check that the manual slide lock on the door is open and nothing is jammed in the tracks. Look at the spring above the door for a gap in the coil. If you find one, stop and do not run the opener.',
+            'A broken spring, a seized roller, or a failed motor on older units. If the motor runs freely and the door stays put, the drive gear has usually stripped.',
+          ],
+        },
+        {
+          label: 'Remotes or keypad stop working',
+          values: [
+            'Make sure the lock button on the wall control is off, since lock shuts out the handheld remotes. Then put a fresh battery in the remote or keypad and pair it again with the learn button on the motor head.',
+            'If no remote will pair, the receiver on the logic board is the likely fault, or the remotes belong to a different code system from the unit.',
+          ],
+        },
+        {
+          label: 'Light on the motor head keeps blinking',
+          values: [
+            'When the door will not close and the lights blink, check the safety sensors first. Note the number of blinks on the learn button light and look it up in your manual for your model.',
+            'A code that points to the logic board, the travel module or the wiring. We read it on site rather than guess from a description.',
+          ],
+        },
+        {
+          label: 'Grinding, clicking or a jerky door',
+          values: [
+            'Listen at the motor head while the door runs and look for a chain or belt sagging well below the rail. Keep hands clear of the moving drive.',
+            'Worn gear and sprocket, a stretched chain or a worn trolley. On a chain unit more than about 10 years old in a hot Florida garage, gear wear is the usual finding.',
+          ],
+        },
+        {
+          label: 'No lights, no response',
+          values: [
+            'Check the outlet the opener plugs into, the breaker, and reset any GFCI outlet in the garage. Try the wall control as well as the remote.',
+            'A surge that took the logic board, which is common after summer storms, or a failed power supply. On a unit past about 15 years we quote a replacement alongside the repair.',
+          ],
+        },
+      ],
+      source:
+        'Based on the faults we diagnose on Chamberlain openers in Florida garages. Button layouts and blink codes differ between model years, so your owner manual is the reference for your unit, and where it disagrees with this table, follow the manual.',
+    },
     faq: [
+      {
+        question: 'How much does Chamberlain garage door opener repair cost?',
+        answer:
+          '$95 to $300 for most faults: safety sensors, gear and sprocket, logic board, travel and force limits, and remote or keypad programming. A same day or after hours visit carries the emergency premium of $150 to $300, stated before we come out. If the opener is past about 15 years and the board has failed, a new Chamberlain or LiftMaster installed from $275 is often the better spend, and we quote both.',
+      },
+      {
+        question: 'My Chamberlain hums but the door will not open. Can I open it by hand?',
+        answer:
+          'Only if the door is closed and both springs are intact. Pull the red release cord straight down and lift; if the door feels far too heavy to raise, a spring has broken and the door should stay shut until we get there. A hum with no movement usually means the motor is pushing against something it cannot move, such as a broken spring, a locked door or a jammed roller.',
+      },
+      {
+        question: 'Why did my Chamberlain remotes stop working when the wall button still works?',
+        answer:
+          'Look at the lock button on the wall control first. It is easy to press by accident when reaching for the light, and it shuts out the handheld remotes until it is turned off. If lock is off, change the remote battery and pair the remote again with the learn button. If none of your remotes will pair, the receiver on the logic board is the likely fault, and that falls within a normal opener repair.',
+      },
       {
         question: 'I installed a Chamberlain myself and it reverses. Why?',
         answer:

@@ -567,7 +567,77 @@ export const brandEs: Record<string, BrandEs> = {
       'Desgaste de engrane y catarina en unidades de cadena viejas después de años de calor de verano',
       'Problemas de conexión MyQ después de cambiar de router o de un apagón',
     ],
+    series: {
+      title: 'Reparación de motores Chamberlain para puerta de garaje: síntomas, qué revisar y cuándo llamar',
+      intro: [
+        'Casi todas las llamadas por un motor Chamberlain empiezan con una de seis quejas: la puerta se regresa, el motor zumba y no mueve nada, los controles o el teclado dejaron de funcionar, una luz no para de parpadear, el mecanismo hace ruido de molienda, o la unidad no da señales de vida. Algunas tienen una causa que usted mismo puede encontrar en cinco minutos, y vale la pena revisar antes de pedir la visita. La tabla muestra qué mirar primero y en qué punto ya no es trabajo para el dueño de la casa.',
+        'Dos reglas antes de tocar nada. No toque los resortes de torsión ni los cables, porque sostienen todo el peso de la puerta bajo tensión. Y si la puerta está abierta y un resorte se ve roto, no jale la cuerda roja de liberación, porque sin el resorte la puerta puede caerse de golpe. Todas las revisiones de la primera columna se hacen con la puerta cerrada.',
+        'Los motores Chamberlain y LiftMaster salen del mismo fabricante, así que el diagnóstico es el mismo en los dos y muchas piezas sirven para cualquiera. La mayoría de las reparaciones Chamberlain que hacemos cuestan de $95 a $300. Cuando la unidad ya tiene tantos años que la reparación se acerca al precio de una nueva, le ponemos al lado el precio de un motor nuevo instalado, desde $275, para que usted decida.',
+      ],
+      columns: ['Lo que usted puede revisar primero', 'Lo que necesita un técnico'],
+      rows: [
+        {
+          label: 'La puerta empieza a bajar y se regresa',
+          values: [
+            'Mire los dos sensores cerca del piso. Las dos luces deben estar fijas. Limpie los lentes, quite lo que esté atravesado en el haz, y si un soporte recibió un golpe, empújelo hasta que las luces dejen de titilar.',
+            'Si se regresa con el haz libre y las luces fijas, el problema está en los ajustes de fuerza o de recorrido, en una puerta desbalanceada o en un cable de sensor roto dentro de la pared.',
+          ],
+        },
+        {
+          label: 'El motor zumba pero la puerta no se mueve',
+          values: [
+            'Revise que el cerrojo manual de la puerta esté abierto y que nada esté trabado en los rieles. Mire el resorte encima de la puerta por si tiene un espacio abierto en la espiral. Si lo ve, pare y no use el motor.',
+            'Un resorte roto, un rodillo trabado o, en unidades viejas, un motor que ya falló. Si el motor gira libre y la puerta no se mueve, casi siempre se barrió el engranaje.',
+          ],
+        },
+        {
+          label: 'Los controles o el teclado dejaron de funcionar',
+          values: [
+            'Confirme que el botón de bloqueo del control de pared esté apagado, porque el bloqueo deja fuera los controles remotos. Después cámbiele la pila al control o al teclado y vuelva a enlazarlo con el botón de aprendizaje de la cabeza del motor.',
+            'Si ningún control se enlaza, lo más probable es que falle el receptor de la tarjeta electrónica, o que los controles sean de un sistema de códigos distinto al de la unidad.',
+          ],
+        },
+        {
+          label: 'La luz de la cabeza del motor no para de parpadear',
+          values: [
+            'Si la puerta no cierra y las luces parpadean, revise primero los sensores de seguridad. Cuente los parpadeos de la luz del botón de aprendizaje y búsquelos en el manual de su modelo.',
+            'Un código que apunta a la tarjeta electrónica, al módulo de recorrido o al cableado. Lo leemos en su garaje en lugar de adivinar por teléfono.',
+          ],
+        },
+        {
+          label: 'Ruido de molienda, chasquidos o una puerta que se mueve a tirones',
+          values: [
+            'Escuche la cabeza del motor mientras la puerta corre y fíjese si la cadena o la banda cuelga muy por debajo del riel. No acerque las manos al mecanismo en movimiento.',
+            'Engranaje y catarina gastados, una cadena estirada o un carro desgastado. En un motor de cadena de más de unos 10 años en un garaje caliente de Florida, eso es lo que solemos encontrar.',
+          ],
+        },
+        {
+          label: 'Ni luces ni respuesta',
+          values: [
+            'Revise el tomacorriente donde se conecta el motor y el breaker, y restablezca cualquier tomacorriente GFCI del garaje. Pruebe el control de pared además del remoto.',
+            'Un pico de corriente que quemó la tarjeta electrónica, algo muy común después de las tormentas de verano, o una fuente de poder dañada. Si la unidad pasa de unos 15 años le cotizamos el reemplazo junto con la reparación.',
+          ],
+        },
+      ],
+      source:
+        'Basado en las fallas que diagnosticamos en motores Chamberlain en garajes de Florida. La distribución de los botones y los códigos de parpadeo cambian según el año del modelo, así que la referencia para su unidad es el manual del dueño, y si no coincide con esta tabla, haga caso al manual.',
+    },
     faq: [
+      {
+        question: '¿Cuánto cuesta reparar un motor Chamberlain de puerta de garaje?',
+        answer:
+          'De $95 a $300 para la mayoría de las fallas: sensores de seguridad, engranaje y catarina, tarjeta electrónica, límites de recorrido y de fuerza, y programación de controles o teclado. Una visita el mismo día o fuera de horario lleva el recargo de emergencia de $150 a $300, que le decimos antes de salir. Si el motor pasa de unos 15 años y la tarjeta falló, muchas veces conviene más un Chamberlain o LiftMaster nuevo instalado desde $275, y le cotizamos las dos opciones.',
+      },
+      {
+        question: 'Mi Chamberlain zumba pero la puerta no abre. ¿La puedo abrir a mano?',
+        answer:
+          'Solo si la puerta está cerrada y los dos resortes están enteros. Jale la cuerda roja de liberación hacia abajo y levante; si la puerta pesa demasiado para subirla, se rompió un resorte y lo mejor es dejarla cerrada hasta que lleguemos. Un zumbido sin movimiento casi siempre quiere decir que el motor empuja contra algo que no puede mover, como un resorte roto, una puerta con el cerrojo puesto o un rodillo trabado.',
+      },
+      {
+        question: '¿Por qué mis controles Chamberlain dejaron de funcionar si el botón de pared sí funciona?',
+        answer:
+          'Revise primero el botón de bloqueo del control de pared. Es fácil apretarlo sin querer al buscar el de la luz, y deja fuera los controles remotos hasta que se apaga. Si el bloqueo está apagado, cámbiele la pila al control y vuelva a enlazarlo con el botón de aprendizaje. Si ninguno de sus controles se enlaza, lo más probable es que falle el receptor de la tarjeta electrónica, y eso entra en una reparación normal del motor.',
+      },
       {
         question: '¿Instalé yo mismo un Chamberlain y la puerta se regresa?',
         answer:

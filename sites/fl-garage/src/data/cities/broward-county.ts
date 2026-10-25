@@ -143,13 +143,18 @@ export const browardCountyCities: City[] = [
     answer:
       'Garage door repair in Pembroke Pines starts at $150 per spring, $95 for cable repair and $275 for a new opener installed. Most of western Pembroke Pines was built in a single 1990s wave, so the doors in Silver Lakes, Chapel Trail and Pembroke Falls are hitting spring and opener failure at the same time. Pembroke Pines is in the HVHZ, so a replacement door needs a Miami-Dade NOA rating and a permit.',
     intro: [
-      'Pembroke Pines has two housing stocks. East of University Drive, the neighborhoods near Hollywood are 1960s and 1970s concrete block ranches with a single door and the low headroom that comes with that era. West of Flamingo Road, Silver Lakes, Chapel Trail, Pembroke Falls and the gated communities out toward I-75 went up in one 1990s boom, almost all with a 16 foot double door on a two car garage, and the three car garages in the later sections have a double and a single. Century Village is condominiums, so the calls from there are for the single family streets around it rather than the buildings themselves.',
+      'Pembroke Pines has two housing stocks. East of University Drive, the neighborhoods near Hollywood are 1960s and 1970s concrete block ranches with a single door and the low headroom that comes with that era. West of Flamingo Road, Silver Lakes, Chapel Trail, Pembroke Falls and the gated communities out toward I-75 went up in one 1990s boom, almost all with a 16 foot double door on a two car garage, and the three car garages in the later sections have a double and a single. Century Village is a 55 plus condominium community, so the calls from there are for the single family streets around it rather than the buildings themselves.',
       'When thousands of doors are installed in the same five years, they fail in the same five years. A torsion spring is good for about 10,000 cycles, and a family garage in Pembroke Pines that opens four to six times a day burned through that long ago. The calls we get in the western communities are a snapped spring, a chain drive opener from 1996 with a stripped gear, and sections that have bowed from thirty summers of heat. Most of these subdivisions have HOA rules on door color and style, so a replacement has to match the street as well as carry the Miami-Dade NOA rating the permit requires.',
+      'Garage door repair in Pembroke Pines is spring work more than anything else. The 16 foot doubles in the western communities hang on two torsion springs, and when one snaps the other is the same age and not far behind, so we quote the pair. Plenty of those doors have since been swapped for insulated or wind reinforced models with steel struts across the sections, and that kind of door is noticeably heavier than the one the builder hung. If the springs were not resized for it, they wear out years early and the opener ends up lifting weight it was never meant to carry. When a spring breaks, leave the opener off: running it pulls the cables off the drums and can kink the top section, and a spring job of $150 to $350 per spring turns into cable and section work on top.',
+      'Opener repair in Pembroke Pines comes down to heat and load. This far inland the salt does not eat the hardware the way it does in the beach towns, but a shut garage facing west on a July afternoon bakes the logic board and dries the grease on the drive, and the summer thunderstorms push surges down the line. Put a heavy insulated door that is slightly out of balance on top of that and the motor strains on every cycle until the gear strips or the board quits. A door that reverses with nothing in its path, a motor that hums without moving the door, or a door that stops partway is a job for us, and most opener repairs here come in between $95 and $300.',
+      'Before a new door is ordered in Pembroke Pines, three approvals have to line up. Broward is in the HVHZ, so the door needs a Miami-Dade NOA; the city permit has to carry that approval; and in most planned communities the association signs off on the color, the panel design and any windows. The townhouse rows are the strictest, because one door that does not match stands out along the whole row of single car garages. We measure the opening, the headroom and the side room, then give you one written price covering the door, new springs sized to its weight, the permit and hauling the old door away. Rated doors start at $1,800 installed, with a single car townhouse door toward the bottom of the range and an insulated 16 foot double toward the top.',
     ],
     localNotes: [
       '1990s doubles across Silver Lakes, Chapel Trail and Pembroke Falls, aging together',
       '1960s and 1970s singles with low headroom in the eastern neighborhoods',
       'HOA color and style rules in most western communities',
+      'Townhouse rows with single car garages, where the association often decides what door goes in',
+      'Heavier insulated and wind reinforced doubles that wear out springs and older openers early',
       'Replacement doors need a Miami-Dade NOA rating and a permit; repairs do not',
     ],
     nearby: ['miramar', 'hollywood', 'davie', 'weston'],
@@ -178,6 +183,21 @@ export const browardCountyCities: City[] = [
         question: "Do you do regular garage door maintenance in Pembroke Pines, or only repairs?",
         answer:
           "Both. Maintenance is the tune-up, $85 to $160, and repairs are priced per job: springs from $150, cables from $95, opener repair from $95, off track repair from $140. A written estimate comes before any work, and there is no charge added for a Saturday or Sunday visit.",
+      },
+      {
+        question: 'I own a townhouse in Pembroke Pines. Is the garage door mine to fix or the association\'s?',
+        answer:
+          'That depends on your association documents, so read them before you pay for anything. Some townhouse communities treat the garage door as part of the exterior the association maintains, and others leave everything inside the frame to the owner. Even where the owner pays for repairs, the association almost always controls the model and color of a replacement, and we quote to that specification. A single car townhouse door often runs on one spring, and spring replacement starts at $150.',
+      },
+      {
+        question: 'Why does the opener on our insulated double door in Pembroke Pines strain or stop halfway?',
+        answer:
+          'Usually because the door is heavier than the springs are set for, not because the opener is weak. With the door fully closed and both springs intact, pull the release cord and lift the door by hand: a balanced door rises smoothly and stays put about halfway up, and one that feels like dead weight or slides back down needs spring work first. Once the balance is right we reset the force and travel limits and check the gear and the board. Opener repair runs $95 to $300, and on a unit past about 15 years we price a belt drive replacement at $350 to $600 installed next to it.',
+      },
+      {
+        question: 'Can I keep my old opener when you install a new hurricane door in Pembroke Pines?',
+        answer:
+          'Often, yes. A rated double with its reinforcement struts is heavier, but the new springs we fit are sized to carry that weight, so a sound opener with working safety sensors can be reconnected. We recommend replacing it when the board or gear is near the end of its life, when it has no battery backup and you want one for storm outages, or when the unit is too small for the door. A new opener installed is $275 to $600, and battery backup adds $60 to $150.',
       },
     ],
   },
