@@ -51,6 +51,15 @@ export function fit(text: string, limit: number): string {
 export interface CityMetaInput {
   name: string;
   county: string;
+  /**
+   * The city has its own dryer vent page. Its air duct page then leaves dryer
+   * vents out of the description, so the two stop splitting the dryer
+   * searches: on 22 October Delray Beach's dryer queries showed the city
+   * page at 38.8 against its own dryer page at 19.3, Boynton Beach 28.1
+   * against 19.2, Boca Raton 43.1 against 20.2. Not applied to DRYER_LED
+   * cities, which deliberately lead with dryer vents.
+   */
+  hasDryerPage?: boolean;
 }
 
 /**
@@ -141,15 +150,19 @@ function dryerLedTitle(name: string): string {
   return priced.length <= LIMITS.title ? priced : base;
 }
 
-export function cityMeta({ name, county }: CityMetaInput) {
+export function cityMeta({ name, county, hasDryerPage = false }: CityMetaInput) {
+  const dryerElsewhere = hasDryerPage && !DRYER_LED.has(name);
   const title = fit(
     CITY_TITLE[name] ??
       (DRYER_LED.has(name) ? dryerLedTitle(name) : `Air Duct Cleaning in ${name}, FL | From $${PRICES.ductLow}`),
     LIMITS.title,
   );
   const description = fit(
-    `Air duct and AC vent cleaning in ${name}, ${county} from $${PRICES.ductLow}. ` +
-      `Dryer vents from $${PRICES.ventLow}. You get the price before we book, not after.`,
+    dryerElsewhere
+      ? `Air duct and AC vent cleaning in ${name}, ${county} from $${PRICES.ductLow}, NADCA source removal. ` +
+          `You get the price before we book, not after.`
+      : `Air duct and AC vent cleaning in ${name}, ${county} from $${PRICES.ductLow}. ` +
+          `Dryer vents from $${PRICES.ventLow}. You get the price before we book, not after.`,
     LIMITS.description,
   );
   return { title, description };

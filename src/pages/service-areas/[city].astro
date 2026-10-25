@@ -23,7 +23,7 @@ const city = getCity(slug!)!;
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const pageUrl = `${site}/service-areas/${city.slug}`;
 
-const { title: metaTitle, description: metaDescription } = cityMeta(city);
+const { title: metaTitle, description: metaDescription } = cityMeta({ ...city, hasDryerPage: Boolean(cityDetail[city.slug]?.dryerVent) });
 
 const schema = serviceSchema(site, {
   name: `Air Duct Cleaning in ${city.name}, FL`,

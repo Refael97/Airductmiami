@@ -39,7 +39,7 @@ export const services: Service[] = [
     icon: '🌬️',
     metaTitle: 'Air Duct Cleaning in Florida | From $300',
     metaDescription:
-      'Air duct cleaning across Florida from $300, to NADCA source-removal standard. You get the price before we book, not after. Insured, NADCA source-removal standard.',
+      'Air duct and AC vent cleaning across Florida from $300, to the NADCA source removal standard. Insured, and you get the price before we book, not after.',
     answer:
       'Air duct cleaning is the professional removal of dust, debris, mold, and allergens from the supply and return ductwork of your HVAC system using negative-air (source-removal) equipment. In Florida, it is typically recommended every 3 to 5 years to protect indoor air quality and system efficiency.',
     intro: [
@@ -116,7 +116,7 @@ export const services: Service[] = [
     icon: '🔥',
     metaTitle: 'Dryer Vent Cleaning in Florida | From $100',
     metaDescription:
-      'Dryer vent cleaning across Florida from $100. Trapped lint is the number one cause of dryer fires. Upfront price, insured, and the NADCA source-removal standard.',
+      'Dryer vent cleaning across Florida from $100. Failure to clean is the leading cause of home dryer fires. Price before we book, insured, NADCA standard.',
     answer:
       'Dryer vent cleaning removes flammable lint and debris from the exhaust duct that runs from your clothes dryer to the outside of your home. It is the single most effective way to prevent dryer fires and should be done at least once a year.',
     intro: [
