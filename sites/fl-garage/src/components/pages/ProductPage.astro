@@ -10,6 +10,7 @@ import AnswerBox from '../AnswerBox.astro';
 import QuickFacts from '../QuickFacts.astro';
 import PriceDisclaimer from '../PriceDisclaimer.astro';
 import CtaBand from '../CtaBand.astro';
+import RelatedPages from '../RelatedPages.astro';
 import FAQ from '../FAQ.astro';
 import { doorMaterials, openerTypes } from '../../data/products';
 import type { DoorMaterial, OpenerType } from '../../data/types';
@@ -138,6 +139,7 @@ const to = lang === 'es' ? 'a' : 'to';
     </div>
   </section>
 
+  <RelatedPages lang={lang} />
   <CtaBand lang={lang} />
 </BaseLayout>
 

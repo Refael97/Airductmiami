@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../Breadcrumbs.astro';
 import AnswerBox from '../AnswerBox.astro';
 import CtaBand from '../CtaBand.astro';
+import RelatedPages from '../RelatedPages.astro';
 import FAQ from '../FAQ.astro';
 import PriceDisclaimer from '../PriceDisclaimer.astro';
 import { getService } from '../../data/services';
@@ -114,6 +115,7 @@ const brandedTitle =
     </div>
   </section>
 
+  <RelatedPages lang={lang} />
   <CtaBand lang={lang} />
 </BaseLayout>
 

@@ -1,0 +1,94 @@
+---
+/**
+ * "Related pages" block closing the area, service, brand and article pages.
+ *
+ * GA4 over the 60 days to 26 October 2026: the forms and calls landed on
+ * Kendall, Port Charlotte (Spanish), Tampa, Sanford, Miami, St. Petersburg
+ * and the price list, most of them arriving from ChatGPT. Those pages had
+ * few internal links pointing at them. This block points every deep page at
+ * them, plus the services and cost guides people book from.
+ *
+ * Hand picked from that data. Revisit when the converting pages change.
+ */
+import { getCity } from '../data/cities';
+import { getService } from '../data/services';
+import { svc, city as cityL } from '../lib/i18n';
+import { paths, serviceHref, areaHref, blogHref, type Locale } from '../data/ui';
+
+interface Props {
+  lang: Locale;
+  current?: string;
+}
+const { lang, current = Astro.url.pathname } = Astro.props;
+const es = lang === 'es';
+
+const AREAS = ['kendall', 'miami', 'tampa', 'st-petersburg', 'sanford', 'port-charlotte', 'pembroke-pines', 'orlando', 'hialeah', 'fort-lauderdale'];
+const SERVICES = ['garage-door-spring-replacement', 'garage-door-opener-repair', 'garage-door-opener-installation', 'emergency-garage-door-repair', 'hurricane-rated-garage-door-installation', 'new-garage-door-installation'];
+const GUIDES = es
+  ? [
+      { slug: 'costo-reparacion-puerta-garaje-florida', title: 'Cuánto cuesta reparar una puerta de garaje en Florida' },
+      { slug: 'costo-cambio-resortes-puerta-garaje', title: 'Cuánto cuesta cambiar los resortes' },
+      { slug: 'costo-instalacion-motor-puerta-garaje', title: 'Cuánto cuesta instalar un motor' },
+      { slug: 'costo-puerta-garaje-para-huracanes', title: 'Cuánto cuesta una puerta para huracanes' },
+    ]
+  : [
+      { slug: 'garage-door-repair-cost-florida', title: 'Garage door repair cost in Florida' },
+      { slug: 'garage-door-spring-replacement-cost', title: 'Garage door spring replacement cost' },
+      { slug: 'garage-door-opener-installation-cost', title: 'Garage door opener installation cost' },
+      { slug: 'hurricane-rated-garage-door-cost', title: 'Hurricane rated garage door cost' },
+    ];
+
+const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
+const here = norm(current);
+
+const areas = AREAS.map((s) => getCity(s))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .map((c) => {
+    const name = cityL(lang, c).name;
+    return { href: areaHref(lang, c.slug), label: es ? `Reparación de puertas de garaje en ${name}` : `Garage door repair in ${name}` };
+  })
+  .filter((l) => l.href !== here);
+
+const serviceLinks = SERVICES.map((s) => getService(s))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s))
+  .map((s) => ({ href: serviceHref(lang, s.slug), label: svc(lang, s).name }))
+  .filter((l) => l.href !== here);
+
+const guides = [
+  { href: paths[lang].prices, label: es ? 'Lista de precios' : 'Price list' },
+  ...GUIDES.map((g) => ({ href: blogHref(lang, g.slug), label: g.title })),
+].filter((l) => l.href !== here);
+
+const t = es
+  ? { heading: 'Páginas relacionadas', areas: 'Áreas de servicio', services: 'Servicios', guides: 'Precios y guías' }
+  : { heading: 'Related pages', areas: 'Service areas', services: 'Services', guides: 'Prices and guides' };
+---
+<section class="related-pages" aria-labelledby="related-pages-h">
+  <div class="container">
+    <h2 id="related-pages-h">{t.heading}</h2>
+    <div class="rp-grid">
+      <div>
+        <h3>{t.services}</h3>
+        <ul>{serviceLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <h3>{t.areas}</h3>
+        <ul>{areas.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <h3>{t.guides}</h3>
+        <ul>{guides.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .related-pages { padding: 2.5rem 0; border-top: 1px solid var(--c-border, #e5e7eb); }
+  .related-pages h2 { margin-bottom: 1.2rem; }
+  .rp-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .rp-grid h3 { font-size: 1rem; margin-bottom: 0.6rem; }
+  .rp-grid ul { list-style: none; padding: 0; margin: 0; }
+  .rp-grid li { padding: 0.4rem 0; border-bottom: 1px solid var(--c-border, #e5e7eb); font-size: 0.95rem; line-height: 1.4; }
+  .rp-grid li:last-child { border-bottom: 0; }
+</style>

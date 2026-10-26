@@ -9,6 +9,7 @@ import Breadcrumbs from '../Breadcrumbs.astro';
 import AnswerBox from '../AnswerBox.astro';
 import PriceDisclaimer from '../PriceDisclaimer.astro';
 import CtaBand from '../CtaBand.astro';
+import RelatedPages from '../RelatedPages.astro';
 import FAQ from '../FAQ.astro';
 import Icon from '../Icon.astro';
 import { getRegion } from '../../data/regions';
@@ -247,6 +248,7 @@ const localFaq = isRegion ? region.faq : city!.faq.concat(universal);
     </div>
   </section>
 
+  <RelatedPages lang={lang} />
   <CtaBand
     lang={lang}
     heading={t.areaCtaHeading(inPhrase)}
