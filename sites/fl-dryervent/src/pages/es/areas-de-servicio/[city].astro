@@ -6,6 +6,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
 import CTABand from '../../../components/CTABand.astro';
+import RelatedPages from '../../../components/RelatedPages.astro';
 import { cities, getCity } from '../../../data/cities';
 import { services, PRICE } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
@@ -115,6 +116,7 @@ const countyEs = city.county.replace(/^(.*) County$/, 'Condado de $1');
     </div>
   </section>
 
+  <RelatedPages lang="es" />
   <CTABand lang="es" heading={`Ventila de secadora en ${city.name}`} />
 </BaseLayout>
 

@@ -6,6 +6,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
 import { cities, getCity } from '../../data/cities';
 import { services, PRICE } from '../../data/services';
 import { business } from '../../data/business';
@@ -112,6 +113,7 @@ const guides = await guidesForCity();
     </div>
   </section>
 
+  <RelatedPages />
   <CTABand heading={`Dryer vent cleaning in ${city.name}`} />
 </BaseLayout>
 
