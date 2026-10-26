@@ -32,6 +32,7 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
 import FAQ from '../../../../components/FAQ.astro';
 import CTABand from '../../../../components/CTABand.astro';
+import RelatedPages from '../../../../components/RelatedPages.astro';
 import { getCity } from '../../../../data/cities';
 import { cityDetail, dryerVentCitiesEs } from '../../../../data/cityDetail';
 import { business } from '../../../../data/business';
@@ -231,6 +232,7 @@ const otherCities = dryerVentCitiesEs
     </div>
   </section>
 
+  <RelatedPages lang="es" />
   <CTABand heading={`¿La secadora tarda dos ciclos en ${city.name}? Vamos a arreglarlo.`} />
 </BaseLayout>
 

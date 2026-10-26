@@ -1,0 +1,101 @@
+---
+/**
+ * "Related pages" block closing the city, service, region and article pages.
+ *
+ * GA4 over the 60 days to 26 October 2026 put the calls and form leads on a
+ * short list of pages: the Spanish city pages for Cape Coral, Tampa, Orlando,
+ * Hialeah and Lakeland, the English pages for Miami, Hialeah Gardens,
+ * Coconut Creek, Kissimmee, Sarasota and Naples, the Spanish air duct and
+ * mold services, and two cost guides. Most of those pages got their internal
+ * links only from a nearby-city chip or the footer. This block sends every
+ * deep page's link equity to the pages that already turn visits into calls.
+ *
+ * The lists are hand picked from that data, not generated. Revisit them when
+ * the converting pages change.
+ */
+import { getCity } from '../data/cities';
+import { services } from '../data/services';
+import { serviceEsContent } from '../data/services.es';
+
+interface Props {
+  lang?: 'en' | 'es';
+  /** Path of the page rendering the block, so it never links to itself. */
+  current?: string;
+}
+const { lang = 'en', current = Astro.url.pathname } = Astro.props;
+const es = lang === 'es';
+
+const AREAS_EN = ['miami', 'west-palm-beach', 'kissimmee', 'sarasota', 'naples', 'coconut-creek', 'hialeah-gardens', 'homestead', 'kendall', 'st-petersburg', 'clearwater', 'tampa', 'orlando', 'cape-coral'];
+const AREAS_ES = ['cape-coral', 'tampa', 'orlando', 'hialeah', 'lakeland', 'miami', 'hialeah-gardens', 'kissimmee', 'west-palm-beach', 'kendall'];
+const SERVICES = ['air-duct-cleaning', 'dryer-vent-cleaning', 'mold-remediation', 'hvac-cleaning', 'air-duct-sanitizing', 'attic-insulation'];
+const GUIDES_EN = [
+  { slug: 'air-duct-cleaning-cost-florida', title: 'What air duct cleaning costs in Florida' },
+  { slug: 'dryer-vent-cleaning-cost', title: 'What dryer vent cleaning costs' },
+  { slug: 'air-duct-mold-removal-cost', title: 'What air duct mold removal costs' },
+  { slug: 'attic-insulation-cooling-costs', title: 'Attic insulation and your cooling bill' },
+];
+const GUIDES_ES = [
+  { slug: 'costo-limpieza-ductos-florida', title: 'Cuánto cuesta limpiar los ductos en Florida' },
+  { slug: 'costo-limpieza-ventila-secadora', title: 'Cuánto cuesta limpiar la ventila de la secadora' },
+  { slug: 'costo-eliminacion-moho-ductos', title: 'Cuánto cuesta eliminar el moho de los ductos' },
+  { slug: 'aislamiento-atico-costos-enfriamiento', title: 'El aislamiento del ático y su factura de aire' },
+];
+
+const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
+const here = norm(current);
+
+const areas = (es ? AREAS_ES : AREAS_EN)
+  .map((slug) => getCity(slug))
+  .filter((c): c is NonNullable<typeof c> => Boolean(c))
+  .map((c) => ({
+    href: es ? `/es/areas-de-servicio/${c.slug}/` : `/service-areas/${c.slug}/`,
+    label: es ? `Limpieza de ductos en ${c.name}` : `Air duct cleaning in ${c.name}`,
+  }))
+  .filter((l) => l.href !== here);
+
+const serviceLinks = SERVICES
+  .map((slug) => services.find((s) => s.slug === slug))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s))
+  .map((s) => ({
+    href: es ? `/es/servicios/${s.slug}/` : `/services/${s.slug}/`,
+    label: es ? serviceEsContent[s.slug]?.name ?? s.name : s.name,
+  }))
+  .filter((l) => l.href !== here);
+
+const guides = (es ? GUIDES_ES : GUIDES_EN)
+  .map((g) => ({ href: es ? `/es/blog/${g.slug}/` : `/blog/${g.slug}/`, label: g.title }))
+  .filter((l) => l.href !== here);
+
+const t = es
+  ? { heading: 'Páginas relacionadas', areas: 'Áreas de servicio', services: 'Servicios', guides: 'Precios y guías' }
+  : { heading: 'Related pages', areas: 'Service areas', services: 'Services', guides: 'Prices and guides' };
+---
+<section class="related-pages" aria-labelledby="related-pages-h">
+  <div class="container">
+    <h2 id="related-pages-h">{t.heading}</h2>
+    <div class="rp-grid">
+      <div>
+        <h3>{t.services}</h3>
+        <ul>{serviceLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <h3>{t.areas}</h3>
+        <ul>{areas.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <h3>{t.guides}</h3>
+        <ul>{guides.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .related-pages { padding: 2.5rem 0; border-top: 1px solid var(--c-border, #e5e7eb); }
+  .related-pages h2 { margin-bottom: 1.2rem; }
+  .rp-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .rp-grid h3 { font-size: 1rem; margin-bottom: 0.6rem; }
+  .rp-grid ul { list-style: none; padding: 0; margin: 0; }
+  .rp-grid li { padding: 0.4rem 0; border-bottom: 1px solid var(--c-border, #e5e7eb); font-size: 0.95rem; line-height: 1.4; }
+  .rp-grid li:last-child { border-bottom: 0; }
+</style>

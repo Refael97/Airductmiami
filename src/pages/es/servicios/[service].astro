@@ -6,6 +6,7 @@ import { serviceImages, hasImage } from '../../../data/pageImages';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
 import CTABand from '../../../components/CTABand.astro';
+import RelatedPages from '../../../components/RelatedPages.astro';
 import { services, getService } from '../../../data/services';
 import { serviceEsContent } from '../../../data/services.es';
 import { cities } from '../../../data/cities';
@@ -152,6 +153,7 @@ const altHref = `/services/${base.slug}`;
  </div>
  </section>
 
+ <RelatedPages lang="es" />
  <CTABand lang={lang} heading={`Reserve su ${es.shortName.toLowerCase()} hoy`} />
 </BaseLayout>
 

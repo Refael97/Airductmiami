@@ -6,6 +6,7 @@ import { serviceImages, hasImage } from '../../data/pageImages';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTABand from '../../components/CTABand.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
 import { services, getService } from '../../data/services';
 import { cities, getCity } from '../../data/cities';
 import { dryerVentCities, ductRepairCities } from '../../data/cityDetail';
@@ -181,6 +182,7 @@ const pageImg = serviceImages[service.slug];
     </div>
   </section>
 
+  <RelatedPages />
   <CTABand heading={`Book your ${service.shortName.toLowerCase()} today`} />
 </BaseLayout>
 

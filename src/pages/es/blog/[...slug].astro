@@ -5,6 +5,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import FAQ from '../../../components/FAQ.astro';
 import CTABand from '../../../components/CTABand.astro';
+import RelatedPages from '../../../components/RelatedPages.astro';
 import { articleSchema } from '../../../lib/schema';
 import { ui, blogHref } from '../../../data/ui';
 
@@ -93,6 +94,7 @@ const brandedTitle =
  </div>
  </article>
 
+ <RelatedPages lang="es" />
  <CTABand lang={lang} />
 </BaseLayout>
 

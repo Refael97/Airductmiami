@@ -9,6 +9,7 @@ import { regionMeta, regionMetaEs } from '../lib/meta';
 import Breadcrumbs from './Breadcrumbs.astro';
 import FAQ from './FAQ.astro';
 import CTABand from './CTABand.astro';
+import RelatedPages from './RelatedPages.astro';
 import ServiceIcon from './ServiceIcon.astro';
 import { services } from '../data/services';
 import { serviceEsContent } from '../data/services.es';
@@ -117,6 +118,7 @@ const topServices = services.slice(0, 6);
     </div>
   </section>
 
+  <RelatedPages lang={isEs ? 'es' : 'en'} />
   <CTABand lang={lang} heading={isEs ? `¿Limpieza de ductos en ${name}? Estamos listos para ayudar.` : `Air duct cleaning in ${name}? We're ready to help.`} />
 </BaseLayout>
 
