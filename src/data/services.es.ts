@@ -319,35 +319,65 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  metaTitle: 'Eliminación de Moho en Ductos en Florida',
  metaDescription:
  'Eliminación de moho en ductos y manejadora en Florida, con contención y extracción por fuente. Precio por adelantado, sin cargos inventados en sitio.',
+ /* Deepened 26 October 2026. The page produced 2 leads over 60 days at 693
+    words, the thinnest converting page on the site. The scope is written
+    to match /mold-in-air-ducts/ and research/fl-airduct/MOLD.md: we look,
+    photograph and clean the system to the NADCA source removal standard;
+    we do not sample, name a species, or touch walls and framing, and growth
+    past the 10 square foot line in Florida law is said plainly to be a
+    licensed remediator's job. The old "hacemos pruebas" claim was removed
+    for that reason. */
  answer:
- 'La remediación de moho en conductos de aire es la identificación, eliminación y prevención del crecimiento de moho dentro de los ductos y los componentes del HVAC. La humedad de todo el año en Florida hace que el moho en ductos y serpentines sea especialmente común, y debe atenderse pronto porque las esporas circulan hacia el aire que usted respira.',
+ "La eliminación de moho en ductos es la limpieza por extracción en la fuente de las partes del aire acondicionado donde crece el moho: el serpentín, la bandeja y la línea de condensado, el soplador, el gabinete de la manejadora y los ductos de superficie lisa, seguida de la desinfección y de la corrección de la humedad que lo hizo crecer. En Florida es común porque el serpentín pasa mojado casi todo el año. El moho en paredes, drywall o estructura es un trabajo aparte con licencia propia en Florida.",
  intro: [
- 'Florida encabeza el país en problemas de moho interior por una sola razón: la humedad. Cuando el aire cálido y húmedo se encuentra con las superficies frías dentro de sus ductos y de la manejadora de aire, se forma condensación, y al moho solo le hace falta humedad y polvo para colonizar.',
- 'El moho en los ductos suele manifestarse como un olor persistente a humedad que se intensifica cuando funciona el aire acondicionado, como puntos negros visibles alrededor de las rejillas, o como síntomas de alergia y respiratorios sin explicación que mejoran cuando usted sale de casa.',
- 'Inspeccionamos y, cuando hace falta, hacemos pruebas para confirmar el moho, contenemos la zona afectada, retiramos de forma física el crecimiento y los materiales contaminados, aplicamos tratamiento antimicrobiano registrado por la EPA y, lo más importante, corregimos la fuente de humedad para que no regrese.',
+ "Las señales suelen llegar en este orden. Primero un olor a humedad, a tierra mojada o a ropa guardada, que se nota en los primeros segundos después de que arranca el aire. Después, puntos negros, verdes o grises en las rejillas, sobre todo en baños y dormitorios, donde el aire sale más frío y la rejilla suda. Más adelante, polvo oscuro pegado dentro de la caja de la rejilla, una mancha en el techo alrededor de ella o agua estancada en la bandeja de condensado. Y en algunas casas, estornudos o una tos de noche que mejoran cuando la persona pasa el día fuera.",
+ "No todo lo oscuro en una rejilla es moho. Puede ser polvo humedecido por la condensación, hollín de velas o restos de una obra, y a simple vista nadie puede confirmar si es moho ni de qué tipo. Nosotros no lo afirmamos: metemos cámara y luz en el sistema, fotografiamos lo que hay y se lo enseñamos. Lo que usted ve en la rejilla es el final del recorrido, no el tamaño del problema.",
+ "En Florida tiene una explicación sencilla. El serpentín condensa agua cada vez que el equipo enciende, el punto de rocío exterior pasa meses cerca de los 75 grados y cualquier ducto con el aislamiento dañado suda en un ático que en agosto llega a 130. Agua, polvo como alimento y tiempo: por eso aquí es una llamada de rutina y no una rareza.",
+ "El trabajo se concentra donde el moho vive de verdad, que casi nunca es el centro de un ducto. Empieza por la manejadora: la cara del serpentín, la bandeja de condensado y su drenaje, la rueda del soplador con su carcasa y el interior del gabinete. Sigue por los plenums, las cajas de las rejillas y los tramos donde la cámara mostró crecimiento. Todo se hace bajo aire negativo, con la máquina conectada a la troncal y las rejillas selladas, para que lo que se suelta viaje a un tambor con filtro HEPA y no a los cuartos. El crecimiento se retira con cepillos, látigos de aire y limpieza a mano, no rociándole un químico encima.",
+ "El material decide qué se puede limpiar. La lámina metálica lisa se limpia bien. El duct board de fibra de vidrio y los ductos forrados con fibra son porosos, y la EPA indica que, una vez que ese forro tiene moho, limpiarlo no evita que vuelva y que no hay biocida registrado para él. En esos tramos lo honesto es el reemplazo, y se lo mostramos con fotos antes de cotizar.",
+ "Lo que no incluye. El moho en paredes, drywall, aislamiento del ático, pisos o estructura es en Florida un trabajo aparte con licencia propia, y no lo tocamos. Tampoco tomamos muestras ni decimos qué especie es, porque eso le corresponde a un evaluador de moho con licencia. Y hay una línea que conviene conocer: la ley de Florida considera remediación de moho la limpieza o el retiro de un crecimiento que cubre más de 10 pies cuadrados, más o menos un cuadro de 3 por 3 pies, y ese trabajo es de un remediador con licencia. Si lo que muestra la cámara ya está en ese terreno, se lo decimos el mismo día, con fotos y una nota de dónde está, y le explicamos cómo verificar la licencia de quien contrate en el registro del DBPR de Florida. Un número impreso en una página web no prueba nada por sí solo.",
+ "Quitar el moho sin quitar el agua es pagar dos veces. Las causas que más se repiten en Florida son pocas: una línea de condensado tapada, un ducto o un plenum sin aislamiento que suda en el ático, un retorno con fugas que jala aire húmedo del ático o del garaje, y una casa por encima del 60 por ciento de humedad relativa cuando la meta es de 30 a 50. El ventilador del termostato en ON en lugar de AUTO también cuenta, porque sigue soplando sobre el serpentín mojado con el compresor apagado y devuelve esa agua a la casa. Le decimos cuál es la causa aunque arreglarla no sea trabajo nuestro. El drenaje se limpia en la misma visita, las fugas y el aislamiento de los ductos son nuestro servicio de reparación de ductos, y un equipo mal dimensionado o un problema de refrigerante es trabajo de un técnico de aire acondicionado.",
+ "La desinfección va después de la limpieza, nunca en su lugar. Con las superficies ya limpias se aplica un desinfectante registrado por la EPA solo donde lo permite su etiqueta, que suele ser la lámina metálica lisa y las rejillas. La nebulización barata ofrecida en lugar de la limpieza es la oferta que conviene rechazar. Si en casa hay alguien con asma, una embarazada o un bebé, avísenos y se limpia sin el producto. Cuesta de $75 a $200, en una línea aparte.",
+ "El precio publicado para este servicio en Florida es de $500 a $3,000 o más, según la gravedad, y lo mueve hasta dónde llegó el crecimiento. Si sigue en el serpentín y la bandeja, va de $500 a $900. Si ya pasó a los tramos de ducto, sube dentro del rango, y ahí también revisamos si el área cruza la línea de los 10 pies cuadrados. Con ducto poroso que reemplazar, pasa de $3,000. Una limpieza de ductos normal cuesta de $300 a $600 por sistema. La cifra exacta llega por escrito después de la inspección con cámara. Un precio cerrado por teléfono, sin que nadie haya mirado dentro, no es una cotización.",
+ "A veces le decimos que no compre este servicio. Si los puntos están solo en la cara de la rejilla y el interior sale limpio en las fotos, lo que hay es condensación y humedad en el cuarto. Se limpia la rejilla, se corrige la humedad y no hay nada más que pagar.",
  ],
  benefits: [
- { title: 'Aire más saludable', text: 'Eliminar el moho detiene la circulación de esporas que provocan síntomas.' },
- { title: 'Elimina el olor a humedad', text: 'La eliminación en la fuente acaba con el olor que los aromatizantes solo encubren.' },
- { title: 'Protege su hogar', text: 'Evita que el moho se propague a paneles de yeso, aislamiento y mobiliario.' },
- { title: 'Corrección de la humedad', text: 'Solucionamos el problema de humedad de fondo para que el moho no vuelva a crecer.' },
+ { title: "Lo ve en fotos antes de pagar", text: "La cámara entra al serpentín, al plenum y a los tramos, y usted ve lo que hay antes de aprobar nada. Las fotos del después se toman en los mismos puntos." },
+ { title: "Se retira, no se tapa", text: "El crecimiento sale con cepillo, látigo de aire y aire negativo hacia un tambor con filtro HEPA. Un perfume o una niebla encima solo lo esconden unas semanas." },
+ { title: "El olor atacado en su origen", text: "En Florida el olor a humedad casi siempre sale del serpentín, la bandeja y el soplador. Por ahí empezamos, no por la rejilla." },
+ { title: "Lo poroso se reemplaza, y se lo decimos", text: "Si el crecimiento está en duct board o en el forro de un ducto flexible, lo ve en fotos. Limpiarlo sería cobrarle por algo que vuelve." },
+ { title: "La humedad, identificada", text: "Le decimos qué alimenta el moho en su casa: el drenaje, un ducto que suda, un retorno con fugas o la humedad interior. Sin corregir eso, regresa." },
+ { title: "Un límite claro", text: "Paredes, drywall y estructura son en Florida un trabajo aparte con licencia propia. Si su caso llega ahí, lo sabe el mismo día y por escrito." },
  ],
  process: [
- { title: 'Inspeccionar y probar', text: 'Localizamos el moho y, si hace falta, tomamos muestras para confirmar el tipo y el alcance.' },
- { title: 'Contener', text: 'Aislamos el área de trabajo para prevenir la contaminación cruzada.' },
- { title: 'Eliminar y tratar', text: 'Retiramos el crecimiento y tratamos las superficies con antimicrobiano registrado por la EPA.' },
- { title: 'Prevenir', text: 'Corregimos la fuente de humedad y recomendamos controles de humedad.' },
+ { title: "Recorrido con cámara", text: "Manejadora, serpentín, bandeja, drenaje, plenums y tramos accesibles, con las fotos a la vista. Así se decide qué se limpia, qué se reemplaza y qué no nos toca." },
+ { title: "Cotización por escrito", text: "Desglosada y antes de empezar, incluido lo que queda fuera." },
+ { title: "Contención con aire negativo", text: "Máquina conectada a la troncal y rejillas selladas antes de tocar nada." },
+ { title: "Serpentín, bandeja y drenaje", text: "Se limpia la cara accesible del serpentín, se vacía y se limpia la bandeja de condensado, y se destapa y se lava la línea de drenaje." },
+ { title: "Soplador y gabinete", text: "Rueda del soplador, carcasa e interior del gabinete, limpiados a fondo." },
+ { title: "Plenums, cajas y tramos", text: "Los plenums, las cajas de rejilla y los tramos de lámina con crecimiento se cepillan y se aspiran uno por uno. Las rejillas se desmontan y se lavan." },
+ { title: "Desinfección según la etiqueta", text: "Con todo limpio se aplica un desinfectante registrado por la EPA, solo en las superficies que permite su etiqueta." },
+ { title: "Fotos y causa de la humedad", text: "Fotos de antes y después, y una nota de qué causó la humedad y quién la corrige." },
  ],
  quickFacts: [
  { label: 'Precio típico', value: '$500 a $3,000 o más (según gravedad)' },
+ { label: 'Solo en el serpentín', value: '$500 a $900' },
  { label: 'Causa de fondo', value: 'Humedad más condensación' },
  { label: 'Señal de alerta', value: 'Olor a humedad al funcionar el AC' },
  { label: 'Tratamiento', value: 'Antimicrobianos registrados por la EPA' },
+ { label: 'Desinfección posterior', value: '$75 a $200 como complemento' },
+ { label: 'No incluye', value: 'Moho en paredes, drywall o estructura' },
+ { label: 'Muestras de laboratorio', value: 'No las tomamos' },
  ],
  faq: [
- { question: 'Cómo sé si hay moho en mis conductos de aire?', answer: 'Las señales comunes son un olor a humedad que se intensifica cuando funciona el aire acondicionado, puntos negros o verdes visibles alrededor de las rejillas y síntomas de alergia que ceden al salir de casa. Una prueba lo confirma.' },
- { question: 'Por qué es tan común el moho en los ductos en Florida?', answer: 'La humedad de todo el año provoca condensación dentro de los ductos frescos y de las manejadoras de aire, y al moho solo le hace falta esa humedad más polvo para crecer.' },
- { question: 'Se puede eliminar el moho de los ductos de forma permanente?', answer: 'El moho se puede eliminar y prevenir su regreso, pero solo si se corrige la fuente de humedad de fondo, y por eso nuestro proceso incluye el control de humedad.' },
+ { question: "¿Cómo sé si hay moho en mis conductos de aire?", answer: "Olor a humedad al arrancar el aire, puntos negros, verdes o grises en las rejillas, agua en la bandeja de condensado y síntomas que ceden al salir de casa. A simple vista nadie puede confirmar que sea moho, así que lo primero que hacemos es mirar dentro del sistema con cámara." },
+ { question: "¿Por qué es tan común el moho en los ductos en Florida?", answer: "Porque el serpentín condensa agua cada vez que el equipo enciende y los ductos corren por áticos de 130 grados con un punto de rocío exterior cerca de los 75. Cualquier tramo con el aislamiento dañado suda, y al moho le basta esa humedad más el polvo del sistema." },
+ { question: "¿Cuánto cuesta eliminar el moho de los ductos en Florida?", answer: "De $500 a $3,000 o más, según hasta dónde llegó. El crecimiento leve en el serpentín y la bandeja va de $500 a $900, y si hay ducto poroso que reemplazar pasa de $3,000. Una limpieza de ductos normal cuesta de $300 a $600 por sistema. La cifra exacta se da después de la inspección con cámara, por escrito y antes de empezar." },
+ { question: "¿Ustedes quitan el moho de las paredes o del drywall?", answer: "No. El moho en paredes, drywall, aislamiento del ático o estructura es en Florida un trabajo aparte con licencia propia. Si lo vemos, se lo decimos con fotos y le explicamos cómo verificar la licencia del remediador en el registro del DBPR antes de contratarlo." },
+ { question: "¿Hacen pruebas de moho o análisis de laboratorio?", answer: "No. Tomar muestras para confirmar si es moho y de qué tipo es en Florida trabajo de un evaluador de moho con licencia. Nosotros fotografiamos lo que hay dentro del sistema y se lo enseñamos, sin ponerle un nombre que no podemos comprobar." },
+ { question: "¿Basta con nebulizar o desinfectar los ductos?", answer: "No. Una niebla cae encima del crecimiento y lo deja donde está. Primero se retira con limpieza mecánica bajo aire negativo y después, si hace falta, se desinfecta con un producto registrado por la EPA, de $75 a $200 como complemento." },
+ { question: "¿Se puede eliminar el moho de los ductos de forma permanente?", answer: "Se puede retirar y evitar que regrese, pero solo si se corrige la humedad que lo alimentó: un drenaje tapado, un ducto que suda en el ático, un retorno con fugas o una casa por encima del 60 por ciento de humedad. Le decimos cuál es la causa en su caso aunque arreglarla no sea trabajo nuestro." },
+ { question: "¿Puedo limpiar las rejillas con cloro yo mismo?", answer: "La cara de la rejilla sí, y va a verse mejor. El crecimiento está en el ducto de atrás, y echar cloro dentro no retira lo que vive en el forro y le agrega humedad a un sistema que ya tiene de sobra." },
  ],
  },
  'air-duct-sanitizing': {

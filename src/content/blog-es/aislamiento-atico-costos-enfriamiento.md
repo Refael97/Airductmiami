@@ -3,6 +3,7 @@ title: "Aislar el ático en Florida: cuánto baja su factura"
 description: "Cuánto ahorra realmente aislar el ático en Florida, cuánto aislamiento necesita esta zona climática y cómo saber si el suyo ya no sirve."
 answer: "Un buen aislamiento del ático frena el calor que baja desde arriba, y en Florida subir el valor R hasta el rango R-30 a R-38 puede reducir de forma notable el gasto de enfriamiento."
 pubDate: 2025-04-08
+updatedDate: 2026-10-26
 category: "Eficiencia del Aire Acondicionado"
 tags: ["aislamiento", "atico", "valor R", "florida", "ahorro"]
 featured: false
@@ -53,6 +54,41 @@ El aislamiento no da un número fijo igual para todos, porque depende de cómo e
 - El aire acondicionado casi no descansa en verano.
 - El techo se siente caliente al tocarlo por dentro.
 - La factura sube más de lo esperado en los meses de calor.
+
+## Ductos con fugas en el ático: lo que el aislamiento no arregla
+
+En el ático hay dos aislamientos distintos, y una casa en Florida necesita los dos. El del piso del ático, de R-30 a R-38, frena el calor que baja hacia los cuartos. El que envuelve cada ducto, de R-6 a R-8 en los tramos de suministro de un ático sin acondicionar, evita que el aire que sale a 55 grados se caliente por el camino y mantiene la superficie del ducto por encima del punto de rocío. Una capa gruesa en el piso del ático no hace nada por un ducto que está tirado encima de ella.
+
+Y muchas veces la pérdida mayor está en el ducto. Una casa típica de Florida con ductos sin sellar pierde entre el 20 y el 30 por ciento del aire frío antes de que llegue a un cuarto. Una unión que se soltó del collarín descarga todo ese tramo en el ático. La cinta de tela de las uniones no está hecha para un ático a 130 grados y se suelta en una o dos temporadas, aunque siga pareciendo pegada. Del lado del retorno la fuga funciona al revés: jala aire caliente y con polvo del ático hacia el sistema sin pasar por el filtro.
+
+Las señales apuntan al ducto, y no al aislamiento, cuando:
+
+- **Un solo cuarto nunca enfría** y el resto de la casa está bien.
+- **Aparece una mancha café en el techo** debajo de un tramo del ático. Casi siempre es un ducto que suda porque perdió su aislamiento, no una gotera.
+- **El polvo vuelve** a los pocos días de limpiar.
+- **La casa se siente pegajosa** aunque el termostato marque lo que usted pidió.
+
+Si en cambio todos los cuartos debajo del ático están calientes y el techo se siente tibio por dentro, eso apunta al aislamiento.
+
+## Qué conviene arreglar primero
+
+En la mayoría de las casas, primero los ductos y después el aislamiento, por tres razones.
+
+1. **El aislamiento soplado entierra los ductos.** Una vez puesto, las uniones que más fugan quedan escondidas debajo, y llegar a ellas después obliga a escarbar en lo que usted acaba de pagar.
+2. **La reparación suele ser la cuenta más chica.** Nuestra [reparación de ductos de aire](/es/servicios/air-duct-repair/) cuesta de $250 a $2,000 o más según el alcance, y reconectar unos collarines y sellar uniones queda en la parte baja. El [aislamiento del ático](/es/servicios/attic-insulation/) cuesta de $1,500 a $4,000 según el tamaño del ático.
+3. **Una fuga bota aire que usted ya pagó por enfriar.** El aislamiento frena el calor que entra. Un ducto suelto tira el frío directamente al ático.
+
+Si el aislamiento viejo hay que sacarlo de todos modos, porque está mojado, con moho o contaminado por roedores, ese es el momento más barato para llegar a los ductos, con el piso del ático abierto.
+
+Si este año el presupuesto solo alcanza para una cosa, lo decide una prueba de presión. Se sellan las rejillas, un ventilador calibrado presuriza el sistema y mide cuánto aire no logra retener. Con mucha fuga o un tramo desconectado, primero la reparación. Con ductos firmes y un ático por debajo de R-19, primero el aislamiento.
+
+Todo esto aplica a casas con ático propio. En un apartamento de condominio, el techo y lo que hay encima suelen ser de la asociación, y esa conversación es con ella.
+
+## Una sola subida al ático para las dos cosas
+
+Como casi siempre van juntas, podemos revisar las dos en la misma visita: la profundidad del aislamiento y si está contaminado, cada tramo de ducto accesible en el collarín, la cubierta, los soportes y el aislamiento, y la prueba de presión. Usted recibe fotos y una sola cotización con líneas separadas para los ductos y para el aislamiento, así puede hacer una cosa ahora y la otra después. Después de la reparación se vuelve a medir, de modo que la mejora es un número y no una promesa.
+
+Para leer más sobre el lado de los ductos: [ductos con fugas, cinco señales](/es/blog/ductos-con-fugas-senales-soluciones/), [cuánto cuesta reparar o sellar ductos](/es/blog/costo-reparacion-ductos-florida/) y [cuánto aire recupera al sellarlos](/es/blog/beneficios-sellado-ductos/).
 
 ## En resumen
 

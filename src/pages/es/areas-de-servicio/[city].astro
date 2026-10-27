@@ -14,6 +14,7 @@ import { business } from '../../../data/business';
 import { serviceSchema } from '../../../lib/schema';
 import { cityMetaEs, PRICES } from '../../../lib/meta';
 import { cityDetail } from '../../../data/cityDetail';
+import { cityDepthEsExtra } from '../../../data/cityDepthEsExtra';
 import ServiceIcon from '../../../components/ServiceIcon.astro';
 import { ui, serviceHref, cityHref } from '../../../data/ui';
 
@@ -81,7 +82,7 @@ const guides = await guidesForCityEs();
  <p>{es.local}</p>
  <p>Nuestros técnicos asegurados llevan equipo NADCA de extracción por fuente a cada trabajo en {city.name}. Ponemos todo el sistema bajo succión para que el polvo, el polen y el moho se capturen y no se dispersen por su casa. Si nota un olor a humedad cuando enciende el aire, facturas altas de electricidad, alergias o simplemente le toca un mantenimiento, le ayudamos a respirar un aire más limpio.</p>
 
- {(detail.depthEs ?? []).map((block) => (
+ {[...(detail.depthEs ?? []), ...(cityDepthEsExtra[city.slug] ?? [])].map((block) => (
  <>
  <h2>{block.heading}</h2>
  {block.body.map((para) => (<p>{para}</p>))}

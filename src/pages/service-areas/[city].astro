@@ -13,6 +13,7 @@ import ServiceIcon from '../../components/ServiceIcon.astro';
 import { serviceSchema } from '../../lib/schema';
 import { cityMeta, PRICES } from '../../lib/meta';
 import { cityDetail } from '../../data/cityDetail';
+import { cityDepthExtra } from '../../data/cityDepthExtra';
 
 export const getStaticPaths = (() => {
   return cities.map((c) => ({ params: { city: c.slug } }));
@@ -77,7 +78,7 @@ const guides = await guidesForCity();
         <p>{city.local}</p>
         <p>Our insured technicians bring NADCA source-removal equipment to every {city.name} job, placing your entire HVAC system under suction so dust, pollen, and mold are captured, not scattered through your home. Whether you're dealing with a musty AC smell, high energy bills, allergy flare-ups, or simply overdue maintenance, we help {city.name} homeowners breathe cleaner air.</p>
 
-        {(detail.depth ?? []).map((block) => (
+        {[...(detail.depth ?? []), ...(cityDepthExtra[city.slug] ?? [])].map((block) => (
           <>
             <h2>{block.heading}</h2>
             {block.body.map((para) => (<p>{para}</p>))}
