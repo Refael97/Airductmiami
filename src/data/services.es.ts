@@ -555,36 +555,40 @@ export const serviceEsContent: Record<string, ServiceEsContent> = {
  shortName: 'Pruebas de Calidad del Aire',
  metaTitle: 'Prueba de Calidad del Aire Interior en Florida',
  metaDescription:
- 'Prueba de calidad del aire interior en Florida: muestreo de partículas y moho con resultados que se explican. Precio antes de agendar la visita.',
+ 'Revisión de calidad del aire interior en Florida: cámara en ductos y manejadora, humedad medida cuarto por cuarto e informe con fotos. Precio antes.',
+ /* Reescrita el 27 de octubre de 2026 por la misma razón que la versión en
+    inglés: prometía muestras y laboratorio, lo que contradecía el resto del
+    sitio. Precio sin cambios. */
  answer:
- 'Las pruebas de calidad del aire interior miden las esporas de moho, los alérgenos, la humedad y las partículas finas en el aire y los ductos de su casa para que pueda identificar problemas y verificar soluciones. Es la forma objetiva de saber si su aire es saludable y si una limpieza dio resultado.',
+ 'La revisión de calidad del aire interior es una inspección en su casa de lo que hace que el aire en Florida se ponga malo: la humedad, un serpentín o una bandeja de drenaje mojados o sucios, polvo y residuos en los ductos, y fugas que meten aire del ático al sistema. Medimos la humedad y la temperatura cuarto por cuarto, metemos una cámara en los ductos y en la manejadora, y le entregamos un informe con fotos de lo que encontramos y de lo que hace falta hacer, si algo.',
  intro: [
- 'El calor y la humedad de Florida la convierten en uno de los estados más difíciles para mantener un aire interior saludable. Las pruebas eliminan las conjeturas: en lugar de preguntarse si ese olor a humedad es moho, obtiene respuestas medidas y verificadas en laboratorio.',
- 'Tomamos muestras del aire y, cuando corresponde, de superficies dentro de los ductos y alrededor de la manejadora de aire, luego comparamos las lecturas interiores con una referencia exterior para revelar niveles elevados de moho, alérgenos o partículas.',
- 'Las pruebas son valiosas antes de comprar una casa, después de una fuga o un susto de moho, cuando alguien del hogar tiene síntomas respiratorios sin explicación o para confirmar que una remediación realmente resolvió el problema.',
+ 'En Florida, la mayoría de las quejas sobre el aire de la casa vienen de la humedad. Una casa por encima del 60 por ciento de humedad relativa cría moho en las rejillas y en los muebles, huele a guardado cuando arranca el aire y mantiene cómodos a los ácaros todo el año. La revisión empieza ahí, con lecturas en cada cuarto y en las rejillas de salida, comparadas con el rango de 30 a 50 por ciento que debe tener una casa.',
+ 'Después, el sistema. La cámara entra a los ductos de suministro y de retorno y a la manejadora, donde revisamos la cara del serpentín, la bandeja y la línea de drenaje, la rueda del soplador y el aislamiento del plenum. Ahí se ven la suciedad, el agua estancada y el crecimiento mucho antes de que alguien los note en una rejilla.',
+ 'Lo que la revisión no hace: no tomamos muestras de aire ni de superficies, no mandamos nada a un laboratorio y no le decimos si una mancha es moho ni de qué tipo es. En Florida, tomar muestras para identificar moho es trabajo de un evaluador de moho con licencia. Si lo que fotografiamos lo necesita, se lo decimos claro, y si hace falta limpieza, reparación o eliminación de moho en ductos, recibe ese precio por escrito antes de agendar nada.',
+ 'Vale la pena antes de comprar una casa, después de una fuga, cuando un cuarto huele a humedad o alguien de la casa tiene síntomas que mejoran al salir, o cuando quiere saber si una limpieza de ductos de verdad ayudaría antes de pagarla.',
  ],
  benefits: [
- { title: 'Sepa qué respira', text: 'Datos objetivos y verificados en laboratorio sobre moho, alérgenos y partículas.' },
- { title: 'Verifique la remediación', text: 'Confirme que una limpieza o un trabajo de moho realmente resolvió el problema.' },
- { title: 'Proteja la salud', text: 'Identifique con precisión los disparadores detrás de los síntomas de alergia y respiratorios.' },
- { title: 'Tranquilidad', text: 'Especialmente valioso antes de comprar una casa o después de un daño por agua.' },
+ { title: 'Vea por dentro el sistema', text: 'Fotos con cámara de los ductos, el serpentín, la bandeja y el soplador, las partes que nunca se ven.' },
+ { title: 'La humedad, medida', text: 'Lecturas cuarto por cuarto, para saber si la humedad es el problema de fondo.' },
+ { title: 'Un siguiente paso honesto', text: 'Limpieza, reparación, corregir la humedad o nada. Cada uno con su razón.' },
+ { title: 'Límites claros', text: 'Sin muestras de laboratorio ni adivinanzas sobre el tipo de moho. Si eso hace falta, le decimos quién lo hace.' },
  ],
  process: [
- { title: 'Consulta', text: 'Conversamos sobre los síntomas y las inquietudes para elegir las pruebas adecuadas.' },
- { title: 'Toma de muestras', text: 'Recolectamos muestras de aire y, si hace falta, de superficies, con una referencia exterior.' },
- { title: 'Análisis de laboratorio', text: 'Las muestras se analizan en laboratorio en busca de moho, alérgenos y partículas.' },
- { title: 'Informe y plan', text: 'Usted recibe un informe claro y los siguientes pasos recomendados.' },
+ { title: 'Consulta', text: 'Hablamos del olor, de los síntomas o del motivo de la revisión antes de ir.' },
+ { title: 'Lecturas', text: 'Humedad y temperatura en cada cuarto y en las rejillas de salida.' },
+ { title: 'Inspección con cámara', text: 'Ductos de suministro y retorno, cara del serpentín, bandeja, soplador y plenum.' },
+ { title: 'Informe con fotos', text: 'Lo que encontramos, con fotos, y un precio por escrito para lo que haga falta.' },
  ],
  quickFacts: [
  { label: 'Precio típico', value: '$200 a $500' },
- { label: 'Resultados', value: 'Informe verificado en laboratorio' },
- { label: 'Ideal para', value: 'Compra de casa, tras una fuga, síntomas' },
- { label: 'Mide', value: 'Moho, alérgenos, humedad, partículas' },
+ { label: 'Resultados', value: 'Informe con fotos el mismo día' },
+ { label: 'Ideal para', value: 'Compra de casa, tras una fuga, olor a humedad' },
+ { label: 'Mide', value: 'Humedad, temperatura y lo que muestra la cámara' },
  ],
  faq: [
- { question: 'Cuándo debo hacer una prueba de calidad del aire interior?', answer: 'Antes de comprar una casa, después de un daño por agua o un susto de moho, cuando alguien tiene síntomas respiratorios sin explicación, o para verificar que la remediación dio resultado.' },
- { question: 'Pueden hacer una prueba específica de moho?', answer: 'Sí. Tomamos muestras de aire y de superficies y las comparamos con una referencia exterior para detectar y cuantificar niveles elevados de esporas de moho.' },
- { question: 'Cuánto tardan los resultados de la prueba de calidad del aire?', answer: 'Las muestras analizadas en laboratorio suelen regresar en unos pocos días hábiles, seguidas de un informe claro y recomendaciones.' },
+ { question: '¿Cuándo conviene revisar la calidad del aire de la casa?', answer: 'Antes de comprar una casa, después de un daño por agua, cuando un cuarto huele a humedad, cuando alguien tiene síntomas que mejoran al salir de la casa, o antes de pagar una limpieza de ductos que no sabe si necesita.' },
+ { question: '¿Pueden hacer una prueba específica de moho?', answer: 'No. No tomamos muestras ni mandamos nada a un laboratorio, y nadie puede identificar el moho ni su tipo a simple vista. En Florida, tomar muestras para identificar moho es trabajo de un evaluador de moho con licencia. Lo que hacemos es fotografiar lo que hay dentro de los ductos y la manejadora, medir la humedad que alimenta el crecimiento y decirle claro si el siguiente paso es llamar a un evaluador.' },
+ { question: '¿Cuánto dura la revisión y cuándo recibo los resultados?', answer: 'En la mayoría de las casas, una a dos horas. Usted ve las lecturas y las fotos mientras estamos ahí, y el informe por escrito con los precios llega el mismo día.' },
  ],
  },
  'attic-insulation': {

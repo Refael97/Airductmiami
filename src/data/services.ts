@@ -568,36 +568,43 @@ export const services: Service[] = [
     icon: '🔬',
     metaTitle: 'Indoor Air Quality Testing in Florida',
     metaDescription:
-      'Indoor air quality testing across Florida: mold, allergens, humidity and particulates, with results explained. Upfront price.',
+      'Indoor air quality check across Florida: camera inspection of the ducts and air handler, humidity readings room by room, photo report. Upfront price.',
+    /* Rewritten 27 October 2026. The page used to promise air and surface
+       sampling with lab analysis, which contradicted the air duct cleaning
+       page ("we do not run laboratory air testing") and /mold-in-air-ducts/
+       ("we do not sample or test to identify mold; in Florida that is a
+       licensed mold assessor's work"). It now describes what the visit
+       actually is. Price unchanged. */
     answer:
-      'Indoor air quality (IAQ) testing measures the mold spores, allergens, humidity, and fine particulates in your home’s air and ductwork so you can identify problems and verify solutions. It is the objective way to know whether your air is healthy and whether a cleaning worked.',
+      'An indoor air quality check is an on-site inspection of the things that make Florida indoor air go bad: humidity, a wet or dirty coil and drain pan, dust and debris in the ducts, and leaks that pull attic air into the system. We measure humidity and temperature room by room, put a camera into the ducts and the air handler, and give you a photo report with what we found and what, if anything, needs doing.',
     intro: [
-      "Florida’s heat and humidity make it one of the hardest states to maintain healthy indoor air. Testing removes the guesswork, instead of wondering whether that musty smell is mold, you get measured, lab-verified answers.",
-      'We sample the air and, where relevant, surfaces inside the ducts and around the air handler, then compare indoor readings to an outdoor baseline to reveal elevated mold, allergens, or particulates.',
-      'Testing is valuable before buying a home, after a leak or mold scare, when someone in the household has unexplained respiratory symptoms, or to confirm that remediation actually resolved the problem.',
+      "Most air quality complaints in Florida trace back to moisture. A house that sits above 60 percent relative humidity grows mildew on vents and furniture, smells musty when the AC starts, and keeps dust mites comfortable all year. The check starts there, with readings in each room and at the supply vents, against the 30 to 50 percent range a home should hold.",
+      'Then the system itself. The camera goes into the supply and return ducts and the air handler, where we look at the coil face, the drain pan and line, the blower wheel and the insulation on the plenum. That is where buildup, standing water and growth show up long before anyone sees them at a grille.',
+      'What the check does not do: we do not take air or surface samples, send anything to a lab, or tell you whether a stain is mold or what species it is. In Florida, sampling to identify mold is the work of a licensed mold assessor. If what we photograph needs that, we say so plainly, and if it needs cleaning, repair or air duct mold removal, you get that price in writing before anything is booked.',
+      'It is worth booking before buying a home, after a leak, when a room smells musty or someone in the house has symptoms that ease when they leave, or when you want to know whether a duct cleaning would actually help before paying for one.',
     ],
     benefits: [
-      { title: 'Know what you breathe', text: 'Objective, lab-verified data on mold, allergens, and particulates.' },
-      { title: 'Verify remediation', text: 'Confirm that a cleaning or mold job actually solved the problem.' },
-      { title: 'Protect health', text: 'Pinpoint triggers behind allergy and respiratory symptoms.' },
-      { title: 'Peace of mind', text: 'Especially valuable before a home purchase or after water damage.' },
+      { title: 'See inside the system', text: 'Camera photos of the ducts, coil, drain pan and blower, the parts you never see.' },
+      { title: 'Humidity, measured', text: 'Readings room by room, so you know whether moisture is the real problem.' },
+      { title: 'An honest next step', text: 'Cleaning, repair, a dehumidifier fix, or nothing at all. You get the reason with each.' },
+      { title: 'Clear limits', text: 'No lab samples and no guessing at mold species. If that is needed, we tell you who does it.' },
     ],
     process: [
-      { title: 'Consultation', text: 'We discuss symptoms and concerns to target the right tests.' },
-      { title: 'Sampling', text: 'Air and, if needed, surface samples are collected with an outdoor baseline.' },
-      { title: 'Lab analysis', text: 'Samples are lab-analyzed for mold, allergens, and particulates.' },
-      { title: 'Report & plan', text: 'You receive a clear report and recommended next steps.' },
+      { title: 'Consultation', text: 'We go through the smell, the symptoms or the reason for the check before we come out.' },
+      { title: 'Readings', text: 'Humidity and temperature in each room and at the supply vents.' },
+      { title: 'Camera inspection', text: 'Supply and return ducts, the coil face, drain pan, blower wheel and plenum.' },
+      { title: 'Photo report', text: 'What we found, with photos, and a written price for anything that needs doing.' },
     ],
     quickFacts: [
       { label: 'Typical price', value: '$200 to $500' },
-      { label: 'Results', value: 'Lab-verified report' },
-      { label: 'Best for', value: 'Home purchase, post-leak, symptoms' },
-      { label: 'Measures', value: 'Mold, allergens, humidity, particulates' },
+      { label: 'Results', value: 'Photo report the same day' },
+      { label: 'Best for', value: 'Home purchase, after a leak, musty smell' },
+      { label: 'Measures', value: 'Humidity, temperature, what the camera shows' },
     ],
     faq: [
-      { question: 'When should I test my indoor air quality?', answer: 'Before buying a home, after water damage or a mold scare, when someone has unexplained respiratory symptoms, or to verify that remediation worked.' },
-      { question: 'Can you test specifically for mold?', answer: 'Yes. We take air and surface samples and compare them to an outdoor baseline to detect and quantify elevated mold spores.' },
-      { question: 'How long do air quality test results take?', answer: 'Lab-analyzed samples typically return within a few business days, followed by a clear report and recommendations.' },
+      { question: 'When should I have my indoor air quality checked?', answer: 'Before buying a home, after water damage, when a room smells musty, when someone has symptoms that ease when they leave the house, or before paying for a duct cleaning you are not sure you need.' },
+      { question: 'Can you test specifically for mold?', answer: 'No. We do not take samples or send anything to a lab, and nobody can identify mold or its species by looking. In Florida, sampling to identify mold is the work of a licensed mold assessor. What we do is photograph what is inside the ducts and air handler and measure the humidity that feeds growth, and tell you plainly if an assessor is the next call.' },
+      { question: 'How long does the check take, and when do I get the results?', answer: 'Most homes take one to two hours. You see the readings and the photos while we are there, and the written report with any prices follows the same day.' },
     ],
     related: ['mold-remediation', 'hvac-cleaning', 'uv-light-installation'],
   },
