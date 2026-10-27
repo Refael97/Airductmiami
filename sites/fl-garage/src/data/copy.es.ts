@@ -124,6 +124,44 @@ export const copyEs: PageCopy = {
         note: 'Tarifa del mercado de Florida, solo para trabajos fuera de lo estándar',
       },
     ],
+    local: {
+      heading: 'Lo que cuesta una puerta de garaje en Miami y Miami-Dade',
+      intro:
+        'Los precios de Miami salen de la misma lista publicada que usamos en el resto de Florida. Lo que cambia en Miami-Dade es la regla para las puertas de reemplazo: todo el condado está en la Zona de Huracanes de Alta Velocidad (HVHZ), así que una puerta nueva necesita NOA de Miami-Dade (Notice of Acceptance) y permiso de construcción. Las reparaciones no necesitan ninguna de las dos cosas.',
+      blocks: [
+        {
+          heading: 'Cuánto cuesta reparar una puerta de garaje en Miami',
+          paragraphs: [
+            'Reparar una puerta de garaje en Miami cuesta de $150 a $350 por resorte, y de $120 a $250 por cambiar el segundo en la misma visita; de $95 a $300 por reparación de cable, o de $225 a $400 por cable y tambor juntos; de $95 a $300 por reparación del motor; de $140 a $600 por una puerta descarrilada; y de $250 a $800 por sección dañada cuando el perfil todavía se fabrica. El mantenimiento cuesta de $85 a $160, y la reparación por daños de tormenta empieza en $150 con la evaluación y el refuerzo del vano.',
+            'En Miami-Dade las reparaciones no llevan permiso, así que ninguno de estos precios carga ese costo. La salida de emergencia o fuera de horario agrega de $150 a $300 a la reparación, y se lo decimos antes de enviar al técnico; la reparación en sí cuesta lo mismo que cualquier otro día.',
+          ],
+        },
+        {
+          heading: 'Cuánto cuesta reemplazar una puerta de garaje en Miami',
+          paragraphs: [
+            'Cambiar una puerta de garaje en Miami cuesta de $1,800 a $6,500 instalada, por una puerta reforzada para huracanes con NOA de Miami-Dade, con el permiso y la inspección incluidos en la cotización. En Miami-Dade el punto de partida es $1,800 y no los $950 de la puerta certificada para viento que cotizamos en otras partes de Florida, porque la HVHZ exige NOA de Miami-Dade y, en la práctica, una puerta resistente a impactos.',
+            'Una puerta para un solo carro queda hacia abajo del rango. Una doble de 16 pies con aislamiento, una puerta con ventanas de vidrio contra impactos o una de aluminio y vidrio de vista completa queda hacia arriba. Cuando solo una o dos secciones están dañadas y el perfil todavía se fabrica, cambiar la sección desde $250 cada una sale más barato, y le decimos cuál de los dos casos es el suyo antes de que decida.',
+          ],
+        },
+        {
+          heading: 'Cuánto cuesta instalar una puerta de garaje en Miami',
+          paragraphs: [
+            'Instalar una puerta de garaje nueva en Miami se cotiza como instalación de puerta reforzada para huracanes: desde $1,800, e incluye sacar la puerta vieja, instalar la puerta certificada con su riel, refuerzos, resortes y soportes según el plano de la aprobación, reconectar el motor, presentar el permiso con el número de NOA y pasar la inspección que lo cierra.',
+            'Un motor nuevo instalado cuesta de $275 a $600, un motor inteligente con WiFi de $350 a $750, un motor de pared tipo jackshaft para un garaje con poca altura libre de $450 a $800, y la batería de respaldo agrega de $60 a $150. Cambiar solo el motor normalmente no lleva permiso, así que no carga ese costo.',
+          ],
+        },
+        {
+          heading: 'Qué mueve el precio en Miami-Dade',
+          list: [
+            'La HVHZ. Miami-Dade y Broward son la Zona de Huracanes de Alta Velocidad, así que la puerta de reemplazo necesita NOA de Miami-Dade y no la aprobación de producto de Florida que se usa en el resto del estado, y un kit de refuerzo no es la vía aceptada aquí; lo es una puerta certificada.',
+            'Lo que cubre el NOA. La aprobación cubre la puerta como un conjunto probado, así que las ventanas tienen que ser de vidrio contra impactos incluido en ella, y los refuerzos, el riel y los anclajes son los que indica el plano. Por eso una puerta con NOA y ventanas cuesta más que una sólida.',
+            'El permiso. Todo reemplazo lo necesita, de la Ciudad de Miami, de otra ciudad como Coral Gables o Hialeah, o del condado de Miami-Dade en zonas no incorporadas como Kendall. Va incluido en nuestro precio de reemplazo.',
+            'La sal y los años. Cerca de Biscayne Bay el cable, el tambor y el soporte inferior se oxidan juntos, así que una llamada por un cable puede terminar como trabajo de cable y tambor de $225 a $400, y los garajes sencillos viejos con poca altura libre pueden necesitar un motor jackshaft de $450 a $800.',
+            'Su asociación. En muchas comunidades de Kendall, de Doral y de townhouses, el HOA aprueba el estilo y el color antes de pedir la puerta, y no la pedimos hasta que lo haga.',
+          ],
+        },
+      ],
+    },
     faq: [
       {
         question: '¿Estos son sus precios reales o publicidad?',
@@ -149,6 +187,11 @@ export const copyEs: PageCopy = {
         question: '¿El permiso de construcción va incluido en una cotización de reemplazo?',
         answer:
           'Sí. Reemplazar una puerta de garaje en Florida requiere permiso, tramitado por un contratista con licencia y con la certificación de viento documentada en él. Nuestro precio de puerta nueva desde $950 y el de puerta reforzada para huracanes desde $1,800 incluyen el permiso. Cambiar solo el motor normalmente no requiere permiso, y por eso la instalación de motor desde $275 no carga ese costo.',
+      },
+      {
+        question: '¿Una puerta de garaje cuesta más en Miami que en el resto de Florida?',
+        answer:
+          'Las reparaciones cuestan lo mismo: resortes desde $150, cables desde $95, reparación del motor desde $95 y motor nuevo desde $275. La puerta de reemplazo sí cuesta más, porque Miami-Dade está en la HVHZ y la puerta necesita NOA de Miami-Dade, así que una puerta nueva en Miami empieza en $1,800 instalada en lugar de $950, con el permiso incluido en los dos casos.',
       },
       {
         question: '¿Dan garantía?',

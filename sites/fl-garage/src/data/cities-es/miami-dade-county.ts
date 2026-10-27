@@ -23,12 +23,18 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
     intro: [
       'Los garajes de Miami se dividen por época. Shenandoah, la Pequeña Habana, Coral Way y Coconut Grove tienen casas de los años veinte a los cincuenta con una sola puerta, muchas veces de 8 pies de ancho y con muy poca altura libre arriba, y buena parte de esos garajes se cerró hace décadas para convertirlos en cuartos. El cinturón de townhouses del oeste, hacia Doral y el borde de Kendall, se levantó a partir de los años noventa con puertas sencillas, entradas apenas más largas que el carro y motores de gama básica. Casi todo lo que queda en medio es bloque y estuco sobre losa, con una puerta doble de 16 pies de los años ochenta o noventa.',
       'Aquí lo que falla es el óxido y el calor. A pocas millas de Biscayne Bay, el aire salino se come los cables, las bisagras y los soportes inferiores, y un cable oxidado es la señal de alerta que más encontramos en una puerta del Grove o del Upper East Side. Un garaje cerrado en agosto pasa de los 100 grados F, y ese calor cocina la tarjeta lógica y el engranaje plástico de los motores viejos. Toda puerta de reemplazo en la ciudad tiene que llevar NOA de Miami-Dade e ir con permiso de construcción tramitado por un contratista con licencia, porque Miami está en la zona HVHZ y la puerta de garaje es la abertura más grande de la casa.',
+      'Reparar una puerta de garaje en Miami cuesta lo mismo en la Pequeña Habana que en el Grove: resortes de $150 a $350 cada uno, y de $120 a $250 por hacer el segundo en la misma visita; cables desde $95; motor de $95 a $300; puerta descarrilada desde $140; y una sección dañada desde $250. Lo que encarece un trabajo en Miami es la corrosión. A pocas cuadras de la bahía el cable, el tambor y el soporte inferior se oxidan juntos, así que una llamada que empieza por un cable deshilachado muchas veces termina como trabajo de cable y tambor, de $225 a $400. Ese precio se lo damos antes de empezar, no a mitad del trabajo, y cambiamos los dos cables a la vez porque el segundo ha respirado el mismo aire.',
+      'Los garajes viejos traen sus propios problemas. Una puerta sencilla de los años cuarenta en Shenandoah o sobre Coral Way puede tener apenas unas pulgadas libres encima, cuando un motor de riel normal pide unas 12. La salida es un kit de riel de baja altura, o un motor de pared tipo jackshaft, de $450 a $800 instalado, que va al lado de la puerta y mueve el tubo de torsión. Donde el garaje se convirtió en cuarto hace años pero la puerta se quedó en la fachada, una reparación de resorte o de cable mantiene bien el frente de la casa. Si esa puerta hay que cambiarla, sigue siendo la abertura más grande de la casa, y la nueva necesita NOA de Miami-Dade como cualquier otra.',
+      'Para cambiar una puerta en Miami tienen que coincidir tres cosas. La puerta necesita NOA de Miami-Dade, y si lleva ventanas el vidrio tiene que estar incluido en esa aprobación, lo que en la práctica significa vidrio contra impactos. Dentro de los límites de la ciudad el permiso lo da la Ciudad de Miami, y si la casa está en un distrito histórico designado la ciudad puede pedir además una revisión del estilo, cosa que verificamos antes de cotizar. Fuera de la ciudad, en el Miami-Dade no incorporado, el permiso lo da el condado. La cotización escrita cubre la puerta, el riel, los refuerzos, los resortes y los soportes instalados según el plano de la aprobación, el motor reconectado, el permiso y la inspección que lo cierra. Una puerta reforzada para huracanes empieza en $1,800 instalada: una sencilla queda hacia abajo del rango, y una doble de 16 pies con aislamiento o una de aluminio y vidrio de vista completa, hacia arriba.',
     ],
     localNotes: [
       'Puertas sencillas de los años veinte a los cincuenta en Shenandoah, la Pequeña Habana y Coconut Grove, muchas con poca altura libre',
       'Corrosión por aire salino en cables y soportes inferiores cerca de la bahía y al este de la US 1',
       'Townhouses con puertas sencillas y motores de gama básica en el borde oeste',
       'Toda la ciudad es zona HVHZ: la puerta de reemplazo necesita NOA de Miami-Dade y permiso de construcción',
+      'Cerca de la bahía el cable y el tambor se oxidan juntos, así que la reparación de cable se cotiza mirando también el tambor',
+      'Permiso de la Ciudad de Miami dentro de sus límites y del condado de Miami-Dade en las zonas no incorporadas',
+      'Las puertas con ventanas necesitan vidrio contra impactos incluido en el NOA',
     ],
     faq: [
       {
@@ -52,9 +58,24 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
           "Desde $1,800 instalada para una puerta certificada contra huracanes con NOA de Miami-Dade, con el permiso incluido en la cotización. Miami está en la HVHZ, así que toda puerta de reemplazo necesita ese NOA. El tamaño, el aislamiento, las ventanas y el acabado suben el precio desde ahí, y una puerta de aluminio y vidrio de vista completa con vidrio contra impactos cuesta bastante más. Cada cotización es por escrito y por puerta antes de ordenar nada.",
       },
       {
-        question: "¿Cuánto cuesta reparar una puerta de garaje en Miami?",
+        question: "¿Qué precio tiene cada reparación de puerta de garaje en Miami?",
         answer:
           "Resortes desde $150 cada uno, reparación de cables desde $95, reparación del motor desde $95, puerta descarrilada desde $140 y motor nuevo instalado desde $275. Una sección dañada desde $250. El mantenimiento cuesta de $85 a $160. Recibe un presupuesto por escrito antes de cualquier trabajo, y las reparaciones no necesitan permiso.",
+      },
+      {
+        question: '¿Puedo poner una puerta de garaje con ventanas en mi casa de Miami?',
+        answer:
+          'Sí, siempre que las ventanas estén incluidas en el NOA de Miami-Dade de la puerta. Dentro de la zona HVHZ eso quiere decir vidrio contra impactos probado junto con la puerta como un solo conjunto, así que a una puerta vendida con vidrio común no se le puede sacar la aprobación después. Las ventanas, el aislamiento y el acabado suben el precio por encima de los $1,800 con que empieza una puerta reforzada para huracanes, y una de aluminio y vidrio de vista completa cuesta bastante más. El número de NOA va en el permiso, y usted se queda con los papeles para su aseguradora.',
+      },
+      {
+        question: '¿Qué permiso le corresponde a mi puerta de garaje en Miami?',
+        answer:
+          'Dentro de la Ciudad de Miami, el permiso lo da la ciudad. Fuera de ella, en el Miami-Dade no incorporado, lo da el condado, y ciudades como Coral Gables y Miami Beach dan el suyo. En todas la puerta necesita NOA de Miami-Dade, porque todo el condado está en la zona HVHZ. El costo del permiso va dentro de nuestra cotización de reemplazo, desde $1,800 instalada. Las reparaciones de resortes, cables, motor y paneles no necesitan permiso.',
+      },
+      {
+        question: 'El cable de mi puerta cerca de la bahía está oxidado. ¿Cuánto cuesta arreglarlo?',
+        answer:
+          'La reparación de cable cuesta de $95 a $300. Cuando el tambor también se oxidó, algo común a pocas cuadras de Biscayne Bay, cable y tambor juntos cuestan de $225 a $400. Conviene cambiar los dos cables a la vez, porque el segundo ha tenido el mismo aire salino. Mientras tanto deje la puerta cerrada y el motor apagado: un cable oxidado suele soltarse con la puerta a medio subir, y una sección doblada agrega de $250 a $800 por panel.',
       },
     ],
   },
@@ -103,12 +124,17 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
     intro: [
       'Kendall es el gran suburbio no incorporado de Miami-Dade, y al oeste del Turnpike es casi todo casas de los años setenta a los noventa con puerta doble de 16 pies: Kendale Lakes, The Hammocks, Country Walk, Lakes of the Meadow, The Crossings. El huracán Andrew cruzó esta parte del condado el 24 de agosto de 1992 y arrancó puertas por millares, con Country Walk entre lo más golpeado de toda la zona. Las puertas que las reemplazaron en 1993 y 1994 se hicieron bajo el código más exigente que vino después, y ya van por su tercer o cuarto juego de resortes, con motores de la misma época.',
       'Al este del Turnpike, hacia Dadeland y las calles viejas al norte de Kendall Drive, las casas son de los años cincuenta a los setenta, con puertas sencillas más angostas y menos altura libre. Casi todas las urbanizaciones del oeste tienen HOA y la mayoría regula el estilo y el color de la puerta, así que revisamos las reglas de la asociación antes de cotizar un reemplazo. Todo reemplazo aquí necesita NOA de Miami-Dade y permiso de construcción tramitado por un contratista con licencia, porque Kendall está en la zona HVHZ, y una puerta reforzada para huracanes empieza en $1,800 instalada con el permiso incluido en el presupuesto.',
+      'En Kendall, reparar una puerta de garaje es casi siempre cambiar resortes o arreglar el motor de esas dobles de después de Andrew. Una puerta calificada de 16 pies lleva refuerzos de acero a lo ancho de las secciones y cuelga de dos resortes de torsión de calibre más grueso. Cuando uno se revienta, el otro tiene encima los mismos ciclos, así que cotizamos el par: de $150 a $350 el primer resorte y de $120 a $250 por cambiar el segundo en la misma visita. Muchos motores de estos garajes son de esos mismos años o de la primera ronda de cambios que vino después: motores de cadena con el engranaje plástico gastado y tarjetas lógicas que llevan veinte veranos dentro de un garaje cerrado. La reparación del motor cuesta de $95 a $300. Si el equipo pasa de unos 15 años, le ponemos al lado el precio de uno nuevo, de $275 a $600 instalado, y la batería de respaldo para los apagones que deja cada tormenta agrega de $60 a $150.',
+      'Kendall no es una ciudad. Es territorio no incorporado del condado, igual que Kendale Lakes, The Hammocks, Country Walk, Three Lakes y las demás comunidades al oeste del Turnpike, y por eso el permiso de una puerta nueva lo emite el condado de Miami-Dade y no una alcaldía. Pinecrest, al este, es una villa y emite sus propios permisos. Los pasos son los mismos en los dos casos: medimos el vano, la altura libre y el espacio a los lados; el HOA aprueba el estilo y el color donde lo hay; presentamos el permiso con el número de NOA; y después de la instalación la inspección final lo cierra. Cambiar resortes, cables o el motor no lleva permiso.',
+      'La visita funciona igual cada vez. Usted llama y le damos la ventana de llegada y el rango de precio antes de enviar al técnico, y el técnico le deja el número por escrito antes de tocar la puerta. La mayoría de los cambios de resorte se terminan en una sola visita de 30 minutos a 2 horas, porque en el camión van las medidas comunes, incluidos los resortes más pesados que pide una doble calificada. Al final probamos el balance con el motor desconectado y corremos el recorrido completo con la reversa de seguridad, y la garantía de un año en piezas y mano de obra queda escrita en la factura. Si la llamada necesita salida de emergencia o fuera de horario, el recargo de $150 a $300 se lo decimos antes de salir.',
     ],
     localNotes: [
       'Puertas de 1993 y 1994, posteriores a Andrew, que ya pasan de treinta años y fallan en grupo',
       'Puertas dobles de los años setenta a los noventa al oeste del Turnpike y sencillas más viejas hacia Dadeland',
       'Reglas de HOA sobre estilo y color en casi todas las urbanizaciones del oeste',
       'Zona HVHZ: NOA de Miami-Dade y permiso de construcción en cada reemplazo',
+      'Dobles calificadas con refuerzos de acero sobre dos resortes de calibre grueso: se cotiza el par',
+      'Territorio no incorporado: el permiso lo emite el condado de Miami-Dade, y Pinecrest emite el suyo',
     ],
     faq: [
       {
@@ -125,6 +151,21 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
         question: '¿Qué partes de Kendall cubren?',
         answer:
           'Todas: Kendall al este del Turnpike, Kendale Lakes, The Hammocks, Country Walk, Kendall West, Three Lakes, Sunset y Lakes of the Meadow, además de Westchester al norte y Pinecrest al este. En la mayoría de los casos el mismo día, los siete días de la semana.',
+      },
+      {
+        question: '¿Cuánto cuesta cambiar los resortes de la puerta de garaje en Kendall?',
+        answer:
+          'De $150 a $350 por un resorte instalado, y de $120 a $250 más por cambiar el segundo en la misma visita, o sea alrededor de $270 a $600 por el par en una puerta estándar. La mayoría de las casas al oeste del Turnpike tienen una doble calificada de 16 pies con dos resortes de calibre grueso, que queda hacia la parte alta de ese rango. Si los cables o los tambores se oxidaron junto con el resorte, cable y tambor juntos cuestan de $225 a $400, y usted lo ve por escrito antes de que empecemos.',
+      },
+      {
+        question: '¿Quién emite el permiso para una puerta de garaje nueva en Kendall?',
+        answer:
+          'El condado de Miami-Dade, porque Kendall y las comunidades de alrededor no están incorporadas. Pinecrest es una villa y emite sus propios permisos, así que allí la puerta va por Pinecrest. En los dos casos la puerta tiene que llevar NOA de Miami-Dade, porque todo el condado está en la zona HVHZ, y nuestro precio de puerta reforzada para huracanes, desde $1,800 instalada, incluye el permiso y la inspección. Las reparaciones de resortes, cables y motor no llevan permiso.',
+      },
+      {
+        question: '¿Pueden venir el mismo día a Kendall un sábado o un domingo?',
+        answer:
+          'Sí. El servicio el mismo día funciona los siete días: de 7:00 a 20:00 de lunes a viernes, de 8:00 a 18:00 los sábados y de 9:00 a 17:00 los domingos. Díganos la calle y qué pasa, un resorte reventado, una puerta fuera del riel o un motor que zumba y no mueve la puerta, y le damos la ventana de llegada y el rango de precio antes de salir. Si hace falta salida de emergencia o fuera de horario, el recargo de $150 a $300 se lo decimos de entrada y nunca se agrega después.',
       },
     ],
   },

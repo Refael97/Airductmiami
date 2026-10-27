@@ -270,12 +270,18 @@ export const southwestFloridaCitiesEs: Record<string, CityEs> = {
     intro: [
       'Port Charlotte lo trazó General Development en los años cincuenta, y la mayoría de sus casas se construyó en los años setenta y ochenta: casas de bloque de una planta en lotes de un cuarto de acre, con garaje adjunto y puerta de 16 pies, muchas sobre canales que llegan a la bahía de Charlotte. Deep Creek, al norte, es de los años ochenta y noventa y con restricciones de escritura; Punta Gorda Isles, cruzando la bahía, es frente a canal, con puertas más grandes y más garajes para tres carros. El condado de Charlotte ya pasó por esto dos veces. El huracán Charley cruzó la bahía el 13 de agosto de 2004 y cambió toda una generación de puertas; Ian hizo su segunda entrada a Florida cerca de Punta Gorda el 28 de septiembre de 2022 y lo repitió. Por eso la puerta de una casa en Port Charlotte hoy suele ser de 2005, de 2023, o una original que sobrevivió a las dos.',
       'Las puertas de 2005 tienen veinte años y sus resortes están al final de su vida útil. Las de 2023 se instalaron a las carreras, muchas veces por cuadrillas que ya no están en el condado, y las llamadas que recibimos son por resortes que nunca se calcularon para el peso de la puerta, rieles anclados en bloque blando y permisos que siguen abiertos. El suroeste de Florida está fuera de la Zona de Huracanes de Alta Velocidad, así que una puerta de reemplazo aquí necesita un número de aprobación de producto de Florida y un permiso de construcción del condado de Charlotte, tramitado por un contratista con licencia. El aire salino de la bahía y de los canales corroe cables y soportes inferiores en puertas de cualquier época, y las tormentas de la tarde mantienen agua contra el sello inferior de junio a noviembre.',
+      'Quién da el permiso depende de la dirección. Port Charlotte no es una ciudad sino territorio no incorporado, así que una puerta nueva en Port Charlotte, Murdock, Harbour Heights, Gulf Cove o Deep Creek se tramita ante el condado de Charlotte. Punta Gorda es la única ciudad incorporada del condado y da sus propios permisos, de modo que una casa en Punta Gorda Isles va por la ciudad. En los dos casos la puerta necesita un número de aprobación de producto de Florida para la presión de viento de esa dirección, que es más alta frente a la bahía y los canales, y no un NOA de Miami-Dade, porque Charlotte está fuera de la HVHZ. Una puerta nueva de acero sencilla certificada para viento empieza en $950 instalada y una resistente a impactos en $1,800, con el permiso y la inspección dentro de la cotización.',
+      'Junto al agua, lo que más se cambia no es la puerta sino la ferretería. En las casas sobre los canales el cable, el tambor y el soporte inferior se oxidan juntos, así que un cable deshilachado suele terminar como trabajo de cable y tambor, de $225 a $400, y cambiamos los dos cables a la vez porque el segundo ha respirado el mismo aire. Un resorte cuesta de $150 a $350, y el segundo en la misma visita de $120 a $250; en una casa frente al agua vale la pena pedir resortes galvanizados, que frenan la corrosión que les acorta la vida. Si solo una sección quedó golpeada y el perfil todavía se fabrica, el panel desde $250 sale más barato que la puerta completa.',
+      'Después de Ian, buena parte del condado pasó días sin corriente, y una puerta de garaje sin corriente se abre a mano: con la puerta cerrada del todo, se jala la cuerda roja del carro del motor y se levanta. Si pesa como un bulto muerto, el resorte está roto y hay que parar ahí. La batería de respaldo en el motor agrega de $60 a $150 y da un número limitado de ciclos, normalmente unos 20 en las primeras 24 horas. Atendemos el mismo día los siete días de la semana, de 7:00 a 20:00 de lunes a viernes, de 8:00 a 18:00 los sábados y de 9:00 a 17:00 los domingos, con el precio por escrito antes de empezar.',
     ],
     localNotes: [
       'Casas de bloque de los años setenta y ochenta con puertas de 16 pies, muchas sobre canales que llegan a la bahía de Charlotte',
       'Las puertas cambiadas después de Charley, en 2004 y 2005, están al final de la vida de sus resortes',
       'Las puertas cambiadas después de Ian, en 2023, traen preguntas de garantía y de permiso que contestamos de frente',
       'Deep Creek y Punta Gorda Isles: restricciones de escritura, frente a canal y puertas más grandes',
+      'Permiso del condado de Charlotte en Port Charlotte, y de la ciudad en Punta Gorda',
+      'Cables, tambores y soportes inferiores que se oxidan juntos en las casas sobre canales',
+      'Batería de respaldo en el motor para los apagones largos después de un huracán',
     ],
     faq: [
       {
@@ -292,6 +298,21 @@ export const southwestFloridaCitiesEs: Record<string, CityEs> = {
         question: 'Mi puerta se puso después de Charley. ¿Cambio los resortes o la puerta completa?',
         answer:
           'Casi siempre los resortes. Una puerta instalada en 2004 o 2005 se hizo bajo el Código de Construcción de Florida que entró en vigor en 2002, así que normalmente tiene clasificación de viento y una etiqueta que lo dice. Si la etiqueta está y las secciones y el riel están sanos, resortes nuevos de $150 a $350 cada uno, más cables y rodillos si la sal ya los tomó, le dan años más de servicio. Si la etiqueta no está, la sección inferior está oxidada o la puerta quedó fuera de escuadra, conviene más una puerta nueva desde $950 con el permiso incluido. Todo eso lo revisamos en la primera visita.',
+      },
+      {
+        question: '¿Cuánto cuesta cambiar la puerta de garaje en Port Charlotte?',
+        answer:
+          'Una puerta de acero sencilla certificada para viento empieza en $950 instalada, y una resistente a impactos en $1,800, las dos con el permiso del condado o de Punta Gorda incluido en la cotización. Una doble de 16 pies, el aislamiento, las ventanas y una presión de viento más alta frente al agua suben el precio. Si su comunidad tiene restricciones de escritura, como Deep Creek, revise lo que dicen sobre la puerta antes de que la pidamos.',
+      },
+      {
+        question: '¿Quién da el permiso para una puerta de garaje en Port Charlotte?',
+        answer:
+          'El condado de Charlotte, porque Port Charlotte no es una ciudad incorporada. Punta Gorda sí lo es y da sus propios permisos. En los dos casos la puerta necesita aprobación de producto de Florida, no NOA de Miami-Dade, y nosotros presentamos el permiso con el número de aprobación, coordinamos la inspección y lo cerramos. Cambiar resortes, cables o el motor no lleva permiso.',
+      },
+      {
+        question: '¿Cuánto cuesta cada reparación de puerta de garaje en Port Charlotte?',
+        answer:
+          'Resortes de $150 a $350 cada uno, y de $120 a $250 por el segundo en la misma visita. Cable de $95 a $300, o de $225 a $400 si el tambor también se oxidó. Motor de $95 a $300 de reparación, o de $275 a $600 uno nuevo instalado. Puerta descarrilada desde $140, sección dañada desde $250 y mantenimiento de $85 a $160. La salida de emergencia o fuera de horario agrega de $150 a $300, y se lo decimos antes de salir.',
       },
     ],
   },

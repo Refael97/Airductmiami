@@ -215,12 +215,17 @@ export const centralFloridaCities: City[] = [
     intro: [
       'Sanford has two kinds of garages and not much in between. The historic district around downtown and Lake Monroe has 1900s to 1940s houses with detached garages that were added later, often with 8 or 9 foot single doors and headroom that rules out a standard rail opener. West and south of downtown, from Lake Mary Heights out to the subdivisions along Rinehart Road, SR 46 and SR 417, the houses are 1990s to 2020s with 16 foot double doors, HOAs and builder grade openers.',
       'The calls split the same way. Downtown it is old hardware: a cable that rusted through at the bottom bracket, a wood door that has taken water at the bottom edge for years and is heavier than its spring, an opener with nowhere to mount. In the subdivisions it is the standard Central Florida list: a torsion spring at the end of its 10,000 cycles, a chain drive opener that stripped its gear in a 100°F garage, sensors knocked out of line. Any full door replacement in Sanford needs a Florida Product Approval door and a permit, and on a historic district house the door style may also need city review, which we tell you before quoting.',
+      'Garage door repair in Sanford is priced the same downtown as out by Rinehart Road: springs $150 to $350 each, with $120 to $250 to do the second at the same visit, cable repair from $95, opener repair $95 to $300, a new opener from $275 installed and off track repair from $140. Sanford is inland, so salt is not the problem it is on the coast. Heat and lightning are. A shut garage holds well over 100°F through a Central Florida summer, which dries the grease on the drive and cooks the logic board, and the afternoon thunderstorms along the I-4 corridor send surges down the line that can kill a board outright. An opener that stopped after a storm often needs a board or a sensor rather than a whole new unit.',
+      'Who issues the permit depends on the address. Inside city limits it is the City of Sanford; in the unincorporated parts of Seminole County around it, it is the county. Sanford is outside the HVHZ, so a new door needs a Florida Product Approval for the design wind pressure at the house rather than a Miami-Dade NOA. A wind-rated steel single starts at $950 installed and an impact-rated door at $1,800, each with the permit and the inspection in the quote. On a historic district house, a carriage style steel door is one way to keep the look of the original wood while getting a rated door, and we find out what the review wants before anything is ordered.',
+      'In the subdivisions the doors are mostly 16 foot doubles from the 1990s on, and the oldest are long past the 10,000 cycles a standard spring is rated for. A sound door with no wind rating can stay in service: outside Miami-Dade and Broward, a retrofit bracing kit with Florida Product Approval is an accepted option and costs much less than a new door. A tune-up at $85 to $160 once a year, ideally in April or May, covers the balance test, rollers, hinges, cables, drums, safety sensors and the opener\'s force and limits, and it is the visit that catches a worn spring before it snaps.',
     ],
     localNotes: [
       '1900s to 1940s detached garages in the historic district with narrow singles and low headroom',
       '1990s to 2020s double doors in the subdivisions off Rinehart Road and SR 417',
       'Wood doors downtown heavier than their springs after years of water at the bottom edge',
       'Historic district exterior changes may need city review before a door replacement',
+      'Summer lightning surges along the I-4 corridor that take out opener logic boards and sensors',
+      'City of Sanford permits inside city limits, Seminole County permits outside them',
     ],
     nearby: ['oviedo', 'apopka', 'orlando'],
     faq: [
@@ -233,6 +238,21 @@ export const centralFloridaCities: City[] = [
         question: 'Do you cover Lake Mary and Heathrow as well as Sanford?',
         answer:
           'Yes. Lake Mary, Heathrow and the Seminole County side of the I-4 corridor are on the same run as Sanford, same day seven days a week.',
+      },
+      {
+        question: 'How much does a new garage door cost in Sanford?',
+        answer:
+          'A wind-rated steel single starts at $950 installed, with the permit included in the quote, and an impact-rated door starts at $1,800. Sanford is outside the HVHZ, so the door needs a Florida Product Approval rather than a Miami-Dade NOA. A 16 foot double, insulation, windows and a carriage style finish raise the price, and on a historic district house any style review comes before we order.',
+      },
+      {
+        question: 'My garage door opener stopped working after a thunderstorm. Is it finished?',
+        answer:
+          'Often not. A surge usually takes out the logic board or the safety sensors rather than the motor, and opener repair runs $95 to $300. Check the outlet and the breaker first, and look at the sensor lights by the floor: if one is off or blinking, that is where the fault is. If the unit is past about 15 years we price a new one at $275 to $600 installed next to the repair, so you can compare.',
+      },
+      {
+        question: 'Does my garage door in Sanford have to be hurricane rated?',
+        answer:
+          'A replacement door needs a Florida Product Approval for the design wind pressure at your address, and the permit records what that is. Sanford is not in the HVHZ, so the Miami-Dade NOA rules do not apply. An existing sound door with no rating can stay in service, and a retrofit bracing kit with Florida Product Approval is an accepted option here. A rated door may count on a wind mitigation inspection; ask your insurer for the credit schedule.',
       },
     ],
   },

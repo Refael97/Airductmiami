@@ -412,6 +412,16 @@ export interface PageCopy {
     lead: string;
     answer: string;
     addOns: AddOn[];
+    /**
+     * Local cost section: what repair, replacement and installation cost in
+     * one market, from the published prices only, and what moves the number
+     * there. Optional so a locale can leave it out.
+     */
+    local?: {
+      heading: string;
+      intro: string;
+      blocks: { heading: string; paragraphs?: string[]; list?: string[] }[];
+    };
     faq: FAQ[];
   };
   servicesHub: {

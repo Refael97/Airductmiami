@@ -89,6 +89,24 @@ const crumbs = [
 
       <div class="narrow"><PriceDisclaimer variant="block" lang={lang} /></div>
 
+      {c.local && (
+        <div class="narrow local-cost">
+          <h2 class="sub">{c.local.heading}</h2>
+          <p>{c.local.intro}</p>
+          {c.local.blocks.map((b) => (
+            <>
+              <h3>{b.heading}</h3>
+              {b.paragraphs?.map((para) => <p>{para}</p>)}
+              {b.list && (
+                <ul>
+                  {b.list.map((item) => <li>{item}</li>)}
+                </ul>
+              )}
+            </>
+          ))}
+        </div>
+      )}
+
       <div class="promise-grid">
         <div class="card promise" data-anim="fade-up">
           <span class="icon"><Icon name="quote" size={30} /></span>
@@ -119,6 +137,9 @@ const crumbs = [
   .price-hero .lead { max-width: 46rem; }
   .narrow { max-width: var(--maxw-narrow); }
   .sub { margin: 2.6rem 0 1rem; }
+  .local-cost h3 { font-size: 1.12rem; margin: 1.6rem 0 0.5rem; }
+  .local-cost ul { padding-left: 1.2rem; }
+  .local-cost li { margin-bottom: 0.5rem; }
 
   .table-wrap {
     overflow-x: auto;

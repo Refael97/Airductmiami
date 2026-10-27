@@ -124,6 +124,44 @@ export const copyEn: PageCopy = {
         note: 'Florida market rate, used only for non-standard work',
       },
     ],
+    local: {
+      heading: 'Garage door costs in Miami and Miami-Dade',
+      intro:
+        'Miami prices come from the same published list as the rest of Florida. What changes in Miami-Dade is the rule for replacement doors: the whole county is in the High Velocity Hurricane Zone (HVHZ), so a new door needs a Miami-Dade Notice of Acceptance (NOA) and a permit. Repairs need neither.',
+      blocks: [
+        {
+          heading: 'Garage door repair cost in Miami',
+          paragraphs: [
+            'Garage door repair in Miami costs $150 to $350 per spring, with $120 to $250 to replace the second spring at the same visit; $95 to $300 for cable repair, or $225 to $400 for cable and drum together; $95 to $300 for opener repair; $140 to $600 for a door off its track; and $250 to $800 per damaged section when the profile is still made. A tune-up is $85 to $160, and storm damage repair starts at $150 for the assessment and bracing.',
+            'Repairs do not need a permit in Miami-Dade, so none of these prices carries a permit fee. An emergency or after-hours call-out adds $150 to $300 on top of the repair, stated before we dispatch, and the repair itself is priced the same as on any other day.',
+          ],
+        },
+        {
+          heading: 'Garage door replacement cost in Miami',
+          paragraphs: [
+            'Replacing a garage door in Miami costs $1,800 to $6,500 installed for a hurricane-rated door with a Miami-Dade NOA, with the permit and the inspection included in the quote. In Miami-Dade the starting point is $1,800 rather than the $950 wind-rated door we quote elsewhere in Florida, because the HVHZ requires a Miami-Dade NOA and, in practice, an impact-rated door.',
+            'A single car door sits toward the bottom of that range. An insulated 16 foot double, a door with impact glass windows, or a full view aluminum and glass door sits toward the top. When only one or two sections are damaged and the profile is still made, section replacement from $250 each is the cheaper route, and we tell you which applies before you decide.',
+          ],
+        },
+        {
+          heading: 'Garage door installation cost in Miami',
+          paragraphs: [
+            'Installing a new garage door in Miami is priced as a hurricane-rated door installation: from $1,800, covering the old door out, the rated door, track, struts, springs and brackets installed to the approval drawing, the opener reconnected, the permit filed with the NOA number, and the inspection that closes it.',
+            'A new opener installed costs $275 to $600, a smart WiFi opener $350 to $750, a wall mount jackshaft opener for a low headroom garage $450 to $800, and battery backup adds $60 to $150. Replacing only the opener normally needs no permit, so it carries no permit fee.',
+          ],
+        },
+        {
+          heading: 'What moves the price in Miami-Dade',
+          list: [
+            'The HVHZ. Miami-Dade and Broward are the High Velocity Hurricane Zone, so a replacement door needs a Miami-Dade NOA rather than the Florida Product Approval used in the rest of the state, and a retrofit bracing kit is not the accepted route here; a rated door is.',
+            'What the NOA covers. The approval covers the door as a tested assembly, so windows have to be impact glazing that is part of it, and the struts, track and anchors are the ones the approval drawing lists. That is why an NOA door with windows costs more than a solid one.',
+            'The permit. Every replacement door needs one, from the City of Miami, from another city such as Coral Gables or Hialeah, or from Miami-Dade County in unincorporated areas such as Kendall. It is included in our replacement price.',
+            'Salt and age. Near Biscayne Bay the cable, drum and bottom bracket rust together, so a cable call can become cable and drum work at $225 to $400, and older single garages with low headroom may need a jackshaft opener at $450 to $800.',
+            'Your association. In many Kendall, Doral and townhouse communities the HOA approves the style and color before the door is ordered, and we do not order until it has.',
+          ],
+        },
+      ],
+    },
     faq: [
       {
         question: 'Are these your real prices or an advertisement?',
@@ -149,6 +187,11 @@ export const copyEn: PageCopy = {
         question: 'Is the building permit included in a replacement quote?',
         answer:
           'Yes. Replacing a garage door in Florida requires a permit, pulled by a licensed contractor, with the wind rating documented on it. Our new door price from $950 and hurricane-rated door price from $1,800 both include the permit. Replacing only the opener normally does not need one, which is why opener installation from $275 does not carry that cost.',
+      },
+      {
+        question: 'Does a garage door cost more in Miami than in the rest of Florida?',
+        answer:
+          'Repairs cost the same: springs from $150, cables from $95, opener repair from $95, a new opener from $275. A replacement door costs more, because Miami-Dade is in the HVHZ and the door needs a Miami-Dade NOA, so a new door in Miami starts at $1,800 installed instead of $950, with the permit included either way.',
       },
       {
         question: 'Do you offer a warranty?',

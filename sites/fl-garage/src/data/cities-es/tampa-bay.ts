@@ -23,12 +23,17 @@ export const tampaBayCitiesEs: Record<string, CityEs> = {
     intro: [
       'Los garajes de Tampa dicen en qué década se construyó la calle. Los bungalós de South Tampa y Seminole Heights, de los años veinte a los cincuenta, tienen un garaje separado sobre el callejón, muchas veces con una puerta de 8 pies, poca altura libre y un marco de madera que lleva décadas aguantando la lluvia de la tarde. Carrollwood se construyó en los setenta y ochenta con puertas dobles pegadas a la casa, Westchase y Tampa Palms siguieron en los noventa, y New Tampa sigue agregando garajes de tres autos con una puerta doble y una sencilla. Buena parte de las puertas viejas anda con resortes que pasaron los 10,000 ciclos hace años.',
       'Las dos últimas temporadas cambiaron el trabajo aquí. La marejada de Helene, en septiembre de 2024, metió agua salada en garajes de las calles bajas de South Tampa y Davis Islands, y el viento de Milton, dos semanas después, dobló paneles y sacó puertas fuera del riel por todo el condado. Tampa queda fuera de la Zona de Huracanes de Alta Velocidad, así que una puerta de reemplazo no necesita una NOA de Miami-Dade, pero sí una aprobación de producto de Florida para la carga de viento de su dirección y un permiso de construcción, tramitado por un contratista con licencia ante la ciudad de Tampa o el condado de Hillsborough, según dónde viva usted.',
+      'Reparar una puerta de garaje en Tampa cuesta lo mismo en Hyde Park que en New Tampa: resortes de $150 a $350 cada uno, y de $120 a $250 por hacer el segundo en la misma visita; cables desde $95; reparación del motor de $95 a $300; motor nuevo instalado desde $275; y puerta descarrilada desde $140. Lo que cambia de una calle a otra es el trabajo. En un garaje de callejón de South Tampa o Seminole Heights suele ser una puerta vieja con resortes de extensión, un marco de madera blando abajo y un motor que no tiene dónde montarse. En Carrollwood y Town \'n\' Country es una doble de los setenta u ochenta que ya va por su segundo o tercer juego de resortes. En Westchase, Tampa Palms y Hunter\'s Green es un motor de constructor que ya gastó el engranaje, y un HOA que quiere que la puerta nueva combine con la calle.',
+      'Quién da el permiso depende de la dirección. South Tampa, Seminole Heights, Davis Islands, Tampa Palms y el resto de New Tampa están dentro de la ciudad, así que el permiso lo da la Ciudad de Tampa. Carrollwood, Town \'n\' Country y Westchase no están incorporados, y una puerta allí se tramita ante el condado de Hillsborough. La puerta necesita una aprobación de producto de Florida para la presión de viento de la casa, y cerca de la bahía y en las islas esa presión es más alta, lo que puede mover el precio. Una puerta nueva de acero sencilla certificada para viento empieza en $950 instalada, y una resistente a impactos en $1,800, las dos con el permiso y la inspección dentro de la cotización.',
+      'No toda puerta sin certificación hay que cambiarla. Como Tampa está fuera de Miami-Dade y Broward, una puerta en buen estado que no tiene clasificación de viento puede llevar un kit de refuerzo con aprobación de producto de Florida, que cuesta mucho menos que una puerta nueva. El kit no convierte la puerta en una de impacto y nada hace a una puerta a prueba de huracanes, pero en una doble sana de Carrollwood es una opción real. El momento de preguntar es abril o mayo, junto con un mantenimiento de $85 a $160, y no la semana en que le ponen nombre a una tormenta.',
     ],
     localNotes: [
       'Garajes separados sobre callejón en Hyde Park, Seminole Heights y Palma Ceia, con poca altura libre y puertas sencillas angostas',
       'Dobles de Carrollwood y Westchase de los setenta a los noventa, al final de su vida con resortes y motores originales',
       'El agua salada de Helene en 2024 corroyó soportes inferiores, cables y tarjetas de motor en los garajes cerca de la bahía',
       'Fuera de la HVHZ: el reemplazo pide puerta con aprobación de producto de Florida y permiso, no una NOA de Miami-Dade',
+      'Permiso de la Ciudad de Tampa dentro de sus límites, y del condado de Hillsborough en Carrollwood, Town \'n\' Country y Westchase',
+      'Una puerta sana sin certificación puede llevar un kit de refuerzo con aprobación de producto de Florida',
     ],
     faq: [
       {
@@ -45,6 +50,21 @@ export const tampaBayCitiesEs: Record<string, CityEs> = {
         question: '¿Necesito permiso para cambiar la puerta de garaje en Tampa?',
         answer:
           'Sí. Todo reemplazo de puerta de garaje en Florida necesita un permiso de construcción con la certificación de viento anotada, y la puerta necesita un número de aprobación de producto de Florida para la carga de viento del sitio. El permiso va incluido en el presupuesto escrito de una puerta nueva, que empieza en $950 para una sencilla de acero certificada. Cambiar solo el motor normalmente no requiere permiso.',
+      },
+      {
+        question: '¿Cuánto cuesta cada reparación de puerta de garaje en Tampa?',
+        answer:
+          'Los resortes cuestan de $150 a $350 cada uno, y hacer el segundo en la misma visita agrega de $120 a $250. La reparación de cable va de $95 a $300, la del motor de $95 a $300, un motor nuevo instalado de $275 a $600, la puerta descarrilada desde $140 y una sección dañada desde $250. El mantenimiento cuesta de $85 a $160. Son precios iniciales para una puerta estándar, y usted recibe el número por escrito antes de que empiece el trabajo. La salida de emergencia o fuera de horario agrega de $150 a $300, y se lo decimos antes de enviar a nadie.',
+      },
+      {
+        question: 'Vivo en Carrollwood. ¿El permiso va por la Ciudad de Tampa?',
+        answer:
+          'No. Carrollwood no está incorporado, así que la puerta de reemplazo se tramita ante el condado de Hillsborough, igual que en Town \'n\' Country y Westchase. South Tampa, Seminole Heights, Davis Islands y New Tampa están dentro de la ciudad y van por la Ciudad de Tampa. En cualquier caso la puerta necesita una aprobación de producto de Florida para su dirección, y el permiso va incluido en nuestra cotización de puerta nueva desde $950.',
+      },
+      {
+        question: '¿Puedo reforzar mi puerta actual en vez de cambiarla en Tampa?',
+        answer:
+          'Muchas veces sí. Tampa está fuera de la HVHZ, así que una puerta sana sin certificación puede llevar un kit de refuerzo con aprobación de producto de Florida, que cuesta menos que una puerta nueva. El kit no la vuelve resistente a impactos, y nada hace a una puerta a prueba de huracanes. Si las secciones están dobladas u oxidadas de lado a lado, conviene más una puerta certificada para viento desde $950 o una resistente a impactos desde $1,800, y se lo decimos en la visita.',
       },
     ],
   },

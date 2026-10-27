@@ -29,12 +29,18 @@ export const miamiDadeCountyCities: City[] = [
     intro: [
       'Miami garages split by era. Shenandoah, Little Havana, Coral Way and Coconut Grove have 1920s to 1950s houses with a single door, often 8 feet wide with low headroom, and a fair number of those garages were closed in as bedrooms decades ago. The townhouse belt out west, toward Doral and the far edge of Kendall, went up from the 1990s on with single doors, driveways barely longer than the car and builder-grade openers. Almost everything in between is concrete block and stucco on a slab with a 16 foot double door from the 1980s or 1990s.',
       'What fails here is rust and heat. Within a few miles of Biscayne Bay, salt air eats cables, hinges and bottom brackets, and a rusty cable is the most common warning sign we find on a Grove or Upper East Side door. A closed garage in August sits above 100°F, which cooks the logic board and the plastic drive gear in older openers. Every replacement door in the city must carry a Miami-Dade Notice of Acceptance and go on a permit pulled by a licensed contractor, because Miami is inside the High Velocity Hurricane Zone and the garage door is the largest opening in the house.',
+      'Garage door repair in Miami is priced the same in Little Havana as in the Grove: springs $150 to $350 each, with $120 to $250 to do the second at the same visit, cable repair from $95, opener repair $95 to $300, off track repair from $140 and a single damaged section from $250. What pushes a Miami job up is corrosion. Within a few blocks of the bay the cable, the drum and the bottom bracket rust together, so a call that starts as a frayed cable often ends as cable and drum work at $225 to $400. We price that before we start, not halfway through, and we replace both cables at once because the second one has breathed the same air.',
+      'The older garages bring their own problems. A 1940s single in Shenandoah or along Coral Way may have only a few inches over the door, where a standard rail opener wants about 12. The answer is a low headroom track kit, or a wall mount jackshaft opener at $450 to $800 installed that sits beside the door and drives the torsion tube. Where a garage was closed in as a room years ago but the door was left on the front of the house, a spring or cable repair keeps the street side looking right. If that door has to come out, it is still the largest opening in the house, and the replacement needs a Miami-Dade NOA like any other.',
+      'A replacement door in Miami needs three things to line up. The door needs a Miami-Dade NOA, and if it has windows the glazing must be part of that approval, which in practice means impact glass. Inside city limits the permit comes from the City of Miami, and on a house in a designated historic district the city may need to review the style as well, which we check before quoting. Outside the city limits, in unincorporated Miami-Dade, the permit comes from the county. The written quote covers the door, track, struts, springs and brackets installed to the approval drawing, the opener reconnected, the permit, and the inspection that closes it. A hurricane-rated door starts at $1,800 installed, a single car door toward the bottom of the range and an insulated 16 foot double or a full view aluminum and glass door toward the top.',
     ],
     localNotes: [
       'Prewar and 1950s single doors in Shenandoah, Little Havana and Coconut Grove, many with low headroom',
       'Salt air corrosion on cables and bottom brackets along the bay and east of US 1',
       'Townhouse single doors and builder-grade openers on the western edge',
       'Whole city is HVHZ: replacement doors need a Miami-Dade NOA and a permit',
+      'Cable and drum rust together near the bay, so cable calls are priced with the drum in view',
+      'City of Miami permits inside city limits, Miami-Dade County permits in unincorporated areas',
+      'Doors with windows need impact glazing that is part of the NOA',
     ],
     nearby: ['hialeah', 'doral', 'kendall', 'miami-lakes'],
     faq: [
@@ -62,6 +68,21 @@ export const miamiDadeCountyCities: City[] = [
         question: "What does garage door repair cost in Miami?",
         answer:
           "Springs from $150 each, cable repair from $95, opener repair from $95, off track repair from $140 and a new opener installed from $275. A single damaged section is from $250. A tune-up is $85 to $160. You get a written estimate before any work, and repairs do not need a permit.",
+      },
+      {
+        question: 'Can I put a garage door with windows on my house in Miami?',
+        answer:
+          'Yes, as long as the windows are part of the door\'s Miami-Dade NOA. Inside the HVHZ that means impact-rated glazing tested with the door as one assembly, so a door sold with ordinary glass cannot be given an approval afterward. Windows, insulation and finish all raise the price above the $1,800 starting point for a hurricane-rated door, and a full view aluminum and glass door costs considerably more. The NOA number goes on the permit, and you keep the paperwork for your insurer.',
+      },
+      {
+        question: 'Which permit applies to my garage door in Miami?',
+        answer:
+          'Inside the City of Miami the permit comes from the city. Outside it, in unincorporated Miami-Dade, it comes from the county, and cities such as Coral Gables and Miami Beach issue their own. The door needs a Miami-Dade NOA in every one of them, because the whole county is in the HVHZ. The permit fee is in our replacement quote, from $1,800 installed. Spring, cable, opener and panel repairs need no permit.',
+      },
+      {
+        question: 'The cable on my door near the bay is rusty. What will the repair cost?',
+        answer:
+          'Cable repair is $95 to $300. When the drum has rusted along with it, which is common within a few blocks of Biscayne Bay, cable and drum together are $225 to $400. Replace both cables at once, because the second one has had the same salt air. Until then keep the door closed and the opener off: a rusted cable usually lets go with the door partway up, and a bent section adds $250 to $800 per panel.',
       },
     ],
   },
@@ -119,12 +140,17 @@ export const miamiDadeCountyCities: City[] = [
     intro: [
       'Kendall is the big unincorporated suburb of Miami-Dade, and west of the Turnpike it is almost entirely 1970s to 1990s houses with a 16 foot double door: Kendale Lakes, The Hammocks, Country Walk, Lakes of the Meadow, The Crossings. Hurricane Andrew crossed this part of the county on 24 August 1992 and took doors off houses by the thousand, with Country Walk among the worst hit anywhere. The doors that replaced them in 1993 and 1994 were built to the tougher South Florida code that followed, and they are now past thirty years, with springs on their third or fourth set and openers from the same era.',
       'East of the Turnpike, toward Dadeland and the older streets north of Kendall Drive, the houses are 1950s to 1970s with narrower single doors and less headroom. HOA rules run through most of the western subdivisions and most of them regulate door style and color, so we check the covenant before quoting a replacement. Every replacement here needs a Miami-Dade NOA and a permit pulled by a licensed contractor, because Kendall is in the High Velocity Hurricane Zone, and a hurricane-rated door starts at $1,800 installed with the permit in the quote.',
+      'Garage door repair in Kendall is mostly spring and opener work on those post-Andrew doubles. A rated 16 foot door carries steel struts across its sections and hangs on two heavier gauge torsion springs, and when one snaps the other has the same cycles on it, so we quote the pair: $150 to $350 for the first spring and $120 to $250 to do the second at the same visit. Many of the openers in these garages date from the same years or from the first round of replacements after them: chain drives with worn plastic gears and logic boards that have spent twenty summers in a shut garage. Opener repair runs $95 to $300. Past about 15 years we price a new unit at $275 to $600 installed next to the repair, and battery backup adds $60 to $150 for the outages that follow every storm.',
+      'Kendall is not a city. It is unincorporated Miami-Dade, and so are Kendale Lakes, The Hammocks, Country Walk, Three Lakes and the rest of the communities west of the Turnpike, which means the permit for a replacement door comes from Miami-Dade County rather than a city hall. Pinecrest, to the east, is a village and issues its own permits. The order of steps is the same in both: we measure the opening, the headroom and the side room; the HOA approves the style and color where there is one; we file the permit with the NOA number on it; and after installation the inspection closes the permit. Spring, cable and opener repairs need no permit at all.',
+      'A Kendall visit works the same way every time. You call and get an arrival window and the price range before we dispatch, and the technician writes the number down before touching the door. Most spring jobs are finished in one visit of 30 minutes to 2 hours, because the common wire sizes, including the heavier springs a rated double needs, are on the truck. The job ends with a balance test with the opener disconnected, then a run of the full travel including the safety reverse, and the one year parts and labor warranty is written on the invoice. If the call needs an emergency or after-hours dispatch, the $150 to $300 premium is stated before anyone is sent.',
     ],
     localNotes: [
       'Post-Andrew doors from 1993 and 1994 now past thirty years and failing in clusters',
       '1970s to 1990s doubles west of the Turnpike, older singles toward Dadeland',
       'HOA style and color rules in most western subdivisions',
       'HVHZ: Miami-Dade NOA door and permit on every replacement',
+      'Rated doubles with steel struts hang on two heavier gauge springs, so we quote the pair',
+      'Unincorporated: replacement permits come from Miami-Dade County, while Pinecrest issues its own',
     ],
     nearby: ['palmetto-bay', 'miami', 'homestead', 'doral'],
     faq: [
@@ -142,6 +168,21 @@ export const miamiDadeCountyCities: City[] = [
         question: 'Which parts of Kendall do you cover?',
         answer:
           'All of it: Kendall east of the Turnpike, Kendale Lakes, The Hammocks, Country Walk, Kendall West, Three Lakes, Sunset and Lakes of the Meadow, plus Westchester to the north and Pinecrest to the east. Same day in most cases, seven days a week.',
+      },
+      {
+        question: 'How much does it cost to replace garage door springs in Kendall?',
+        answer:
+          '$150 to $350 for one spring installed, and $120 to $250 more to replace the second at the same visit, so roughly $270 to $600 for the pair on a standard door. Most houses west of the Turnpike have a rated 16 foot double on two heavier gauge springs, which sits toward the upper part of that range. If the cables or drums rusted along with the spring, cable and drum work together is $225 to $400, and you see it in writing before we start.',
+      },
+      {
+        question: 'Who issues the permit for a new garage door in Kendall?',
+        answer:
+          'Miami-Dade County, because Kendall and the communities around it are unincorporated. Pinecrest is a village and issues its own permits, so a door there goes through Pinecrest instead. Either way the door must carry a Miami-Dade NOA, because the whole county is in the HVHZ, and our hurricane-rated door price, from $1,800 installed, includes the permit and the inspection. Spring, cable and opener repairs need no permit.',
+      },
+      {
+        question: 'Can you come the same day in Kendall on a Saturday or Sunday?',
+        answer:
+          'Yes. Same-day service runs seven days a week: 7:00 to 20:00 Monday to Friday, 8:00 to 18:00 Saturday and 9:00 to 17:00 Sunday. Tell us the street and the problem, a snapped spring, a door off track or an opener that hums without moving, and we give you the arrival window and the price range before dispatch. If the call needs an emergency or after-hours dispatch, the $150 to $300 premium is stated up front, never added afterward.',
       },
     ],
   },

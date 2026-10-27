@@ -32,12 +32,17 @@ export const tampaBayCities: City[] = [
     intro: [
       'Tampa garages tell you when the street was built. South Tampa and Seminole Heights bungalows from the 1920s to the 1950s have a detached garage on the alley, often with an 8 foot door, low headroom and a wood frame that has taken afternoon rain for decades. Carrollwood was built out in the 1970s and 1980s with attached doubles, Westchase and Tampa Palms followed in the 1990s, and New Tampa keeps adding three car garages with a double and a single. A large share of the older doors are on springs that passed 10,000 cycles years ago.',
       'The last two seasons changed the work here. Helene\'s surge in September 2024 put saltwater into garages on the low streets of South Tampa and Davis Islands, and Milton\'s wind two weeks later bent panels and pulled doors off track across the county. Tampa sits outside the High Velocity Hurricane Zone, so a replacement door does not need a Miami-Dade NOA, but it still needs a Florida Product Approval for the wind pressure at your address and a permit, pulled by a licensed contractor through the City of Tampa or Hillsborough County depending on where you are.',
+      'Garage door repair in Tampa is priced the same in Hyde Park as in New Tampa: springs $150 to $350 each, with $120 to $250 to do the second at the same visit, cable repair from $95, opener repair $95 to $300, a new opener from $275 installed and off track repair from $140. The work itself changes by street. On a South Tampa or Seminole Heights alley garage it is often an old door on extension springs, a wood frame gone soft at the bottom and an opener with nowhere to mount. In Carrollwood and Town \'n\' Country it is a 1970s or 1980s double on its second or third set of springs. In Westchase, Tampa Palms and Hunter\'s Green it is a builder grade opener that has outlived its gear, and an HOA that wants any replacement to match the street.',
+      'Who issues the permit depends on the address. South Tampa, Seminole Heights, Davis Islands, Tampa Palms and the rest of New Tampa are inside city limits, so the permit comes from the City of Tampa. Carrollwood, Town \'n\' Country and Westchase are unincorporated, so a door there is permitted through Hillsborough County. The door needs a Florida Product Approval for the design pressure at the house, and near the bay and on the islands that pressure is higher, which can move the price. A new wind-rated steel single starts at $950 installed and an impact-rated door at $1,800, each with the permit and the inspection in the quote.',
+      'Not every unrated door has to come out. Because Tampa is outside Miami-Dade and Broward, a door that is sound but carries no wind rating can take a retrofit bracing kit with Florida Product Approval, which costs much less than a new door. A kit does not make a door impact-rated and nothing makes a door hurricane proof, but on a solid Carrollwood double it is a real option. The time to ask is April or May, together with a tune-up at $85 to $160, rather than the week a storm is named.',
     ],
     localNotes: [
       'Detached alley garages in Hyde Park, Seminole Heights and Palma Ceia with low headroom and narrow single doors',
       'Carrollwood and Westchase doubles from the 1970s to 1990s reaching end of life on original springs and openers',
       'Saltwater from Helene in 2024 corroded bottom brackets, cables and opener boards in garages near the bay',
       'Outside the HVHZ: a replacement needs a Florida Product Approval door and a permit, not a Miami-Dade NOA',
+      'City of Tampa permits inside city limits; Hillsborough County permits in Carrollwood, Town \'n\' Country and Westchase',
+      'Sound but unrated doors can take a bracing kit with Florida Product Approval instead of a replacement',
     ],
     nearby: ['brandon', 'riverview', 'wesley-chapel', 'clearwater'],
     faq: [
@@ -55,6 +60,21 @@ export const tampaBayCities: City[] = [
         question: 'Do I need a permit to replace my garage door in Tampa?',
         answer:
           'Yes. Any garage door replacement in Florida needs a building permit with the wind rating recorded on it, and the door itself needs a Florida Product Approval number for the design pressure at your site. We include the permit in the written quote for a new door, which starts at $950 for a wind-rated steel single. Replacing only the opener does not normally need a permit.',
+      },
+      {
+        question: 'What does each garage door repair cost in Tampa, part by part?',
+        answer:
+          'Springs are $150 to $350 each, with $120 to $250 to do the second at the same visit. Cable repair is $95 to $300, opener repair $95 to $300, a new opener $275 to $600 installed, off track repair from $140 and a damaged section from $250. A tune-up is $85 to $160. These are starting prices for a standard door, and you get the written number before any work starts. An emergency or after-hours dispatch adds $150 to $300, stated before we send anyone.',
+      },
+      {
+        question: 'My house is in Carrollwood. Does the permit go through the City of Tampa?',
+        answer:
+          'No. Carrollwood is unincorporated, so a replacement door there is permitted through Hillsborough County, and the same goes for Town \'n\' Country and Westchase. South Tampa, Seminole Heights, Davis Islands and New Tampa are inside the city and go through the City of Tampa. Either way the door needs a Florida Product Approval for your address, and the permit is included in our quote for a new door from $950.',
+      },
+      {
+        question: 'Can I brace my existing garage door instead of replacing it in Tampa?',
+        answer:
+          'Often, yes. Tampa is outside the HVHZ, so a sound but unrated door can take a retrofit bracing kit with Florida Product Approval, which costs less than a new door. It does not make the door impact-rated, and nothing makes a door hurricane proof. If the sections are bent or rusted through, a wind-rated door from $950 or an impact-rated door from $1,800 is the better spend, and we tell you which on the visit.',
       },
     ],
   },
@@ -204,12 +224,18 @@ export const tampaBayCities: City[] = [
     intro: [
       'St. Petersburg is the oldest housing we cover in Tampa Bay. The Old Northeast, Kenwood and the neighborhoods off Central Avenue were platted with alleys, and the garage is a detached block or frame building at the back of the lot with a single door of 8 or 9 feet and very little room above it. The 1950s and 1960s added ranch houses with attached single garages, often 7 feet of headroom or less, across the north and east of the city. Headroom decides what fits: a low headroom track kit, or a wall mounted jackshaft opener where there is no ceiling room at all.',
       'Helene\'s surge on 26 September 2024 flooded Shore Acres, Snell Isle and the streets along Tampa Bay, and Milton brought wind on 9 October. Shore Acres floods on high tides in an ordinary year, so its garages were already the most corroded in the city. St. Petersburg is outside the High Velocity Hurricane Zone; a replacement door needs a Florida Product Approval rating and a City of St. Petersburg permit, pulled by a licensed contractor, and on a 1920s detached garage that often means rebuilding the jamb before a rated door can be anchored to it.',
+      'Salt is the other constant. St. Petersburg sits on a peninsula with water on three sides, and on the bayside streets from Snell Isle and Venetian Isles down to Coquina Key and Pinellas Point, cables, drums and bottom brackets rust from the floor up. A rusted cable usually lets go with the door partway open, so cable repair runs $95 to $300, cable and drum together $225 to $400, and we replace both cables at once because the second one has had the same air. Springs are $150 to $350 each, with $120 to $250 to do the second at the same visit, and on a waterfront house galvanized springs are worth asking for, because they slow the corrosion that shortens spring life.',
+      'Power is the third problem. After Helene and Milton much of Pinellas County was without electricity for days, and a garage door with no power has to be opened by hand. With the door fully closed, pull the red release cord on the opener trolley and lift; if the door feels like dead weight, a spring is broken and you should stop. Battery backup on the opener adds $60 to $150 and gives you a limited number of cycles, usually around 20 in the first 24 hours. An opener whose motor or board sat in surge water is replaced rather than repaired, at $275 to $600 installed.',
+      'Inside city limits the permit for a replacement door comes from the City of St. Petersburg. Gulfport and Pinellas Park issue their own, and the unincorporated areas go through Pinellas County. The door needs a Florida Product Approval for the design pressure at the address, which runs higher on the open water, and our written quote includes the permit and the inspection: a wind-rated steel single from $950 installed, an impact-rated door from $1,800. Repairs to springs, cables, openers or a single section need no permit, and same-day service runs seven days a week, with the price in writing before any work.',
     ],
     localNotes: [
       'Detached alley garages in the Old Northeast and Kenwood with narrow doors and 7 foot ceilings',
       'Low headroom track and jackshaft openers are the usual fit in 1920s to 1960s garages',
       'Shore Acres and the bayside streets took saltwater in Helene, on top of routine tidal flooding',
       'Old wood jambs that need rebuilding before a rated door can be anchored',
+      'Bayside cables, drums and bottom brackets from Snell Isle to Pinellas Point rust together',
+      'Battery backup for the long outages that follow a storm',
+      'City of St. Petersburg permits inside city limits; Gulfport and Pinellas Park issue their own',
     ],
     nearby: ['clearwater', 'tampa', 'brandon', 'riverview'],
     faq: [
@@ -227,6 +253,21 @@ export const tampaBayCities: City[] = [
         question: 'Do you work on wood doors on old detached garages?',
         answer:
           'Yes. A wood door is heavier than a steel door of the same size and needs a heavier spring, and a door whose bottom rail has taken rain for years is heavier still, so we weigh the balance rather than assume it. A single rotted section can sometimes be replaced at $250 to $800; a door rotted along the bottom or eaten by termites is replaced with a rated door from $950, with the permit in the quote.',
+      },
+      {
+        question: 'What does each garage door repair cost in St. Petersburg?',
+        answer:
+          'Springs are $150 to $350 each, with $120 to $250 to do the second at the same visit. Cable repair is $95 to $300, or $225 to $400 when the drum has rusted too, opener repair is $95 to $300, a new opener $275 to $600 installed, off track repair from $140 and a single section from $250. A tune-up is $85 to $160. You get the written number before any work, and an emergency or after-hours dispatch adds $150 to $300, stated up front.',
+      },
+      {
+        question: 'Who issues the permit for a new garage door in St. Petersburg?',
+        answer:
+          'The City of St. Petersburg for addresses inside city limits. Gulfport and Pinellas Park issue their own permits, and unincorporated areas go through Pinellas County. St. Petersburg is outside the HVHZ, so the door needs a Florida Product Approval for the design pressure at your address, not a Miami-Dade NOA. The permit and the inspection are in our quote for a new door, from $950 for a wind-rated steel single.',
+      },
+      {
+        question: 'The power goes out after every storm and my car gets stuck in the garage. What fixes that?',
+        answer:
+          'Two things. First the manual release: with the door fully closed, pull the red cord on the opener trolley and lift by hand, and if the door will not lift easily, a spring is broken and you should call rather than force it. Second, battery backup on the opener, $60 to $150, which gives you a limited number of cycles, usually around 20 in the first 24 hours. On an opener past about 15 years we price a new unit at $275 to $600 installed with the backup added.',
       },
     ],
   },
