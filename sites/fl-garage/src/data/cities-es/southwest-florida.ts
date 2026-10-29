@@ -24,12 +24,18 @@ export const southwestFloridaCitiesEs: Record<string, CityEs> = {
     intro: [
       'El huracán Ian tocó tierra en Cayo Costa el 28 de septiembre de 2022 como categoría 4, con vientos sostenidos cerca de 150 mph, empujó una marejada de más de 10 pies por Fort Myers Beach y por el río Caloosahatchee, y dejó vientos de fuerza de huracán en el resto del condado de Lee. La puerta de garaje fue la abertura que más falló. En 2023 se cambiaron más puertas en Fort Myers y sus alrededores que en una década normal, casi todas de acero con clasificación de viento, sencillas y dobles de 16 pies, instaladas rápido por cuadrillas venidas de todo el estado. Esas puertas ya tienen tres años. Las que abrimos muestran un patrón: un permiso que se sacó pero nunca se cerró, resortes calculados a ojo en lugar de por el peso de la puerta, y una etiqueta de clasificación que nadie guardó.',
       'La vivienda debajo de esas puertas es variada. El corredor de McGregor y Whiskey Creek son casas de una planta de 1960 y 1970 con puertas sencillas y poca altura libre, muchas ya en su tercer o cuarto juego de resortes. Gateway y Pelican Preserve son de los años noventa y de la década del 2000, con dobles y garajes para tres carros bajo reglas de asociación sobre color y estilo. El aire salino del río y del Golfo oxida cables y soportes inferiores en las casas más viejas, y los garajes por encima de 100°F en verano cocinan las tarjetas electrónicas de los motores de cualquier edad. El suroeste de Florida está fuera de la Zona de Huracanes de Alta Velocidad, así que una puerta de reemplazo aquí necesita un número de aprobación de producto de Florida y no una NOA de Miami-Dade, y de todos modos necesita un permiso de construcción tramitado por un contratista con licencia.',
+      'La reparación de puertas de garaje en Fort Myers sale de la misma lista publicada en Dean Park que del otro lado de la I-75: resortes de $150 a $350 cada uno, y de $120 a $250 por cambiar el segundo en la misma visita, reparación de cable desde $95, reparación del motor de $95 a $300, puerta salida del riel desde $140 y una sección dañada desde $250. En las puertas instaladas después de Ian, la llamada que más recibimos es por un resorte que nunca se calculó para su puerta. Una puerta certificada con refuerzos de acero en las secciones pesa más que la que reemplazó, y cuando los resortes se eligieron a ojo la puerta se siente pesada a mano, el motor se esfuerza en cada ciclo y los resortes se acaban años antes de tiempo. Comparamos el resorte con la puerta antes de cotizar, y si la puerta está desbalanceada se corrigen los resortes antes de culpar al motor.',
+      'Quién emite el permiso de una puerta nueva depende de la dirección. Dentro de la Ciudad de Fort Myers lo da la ciudad. En las zonas no incorporadas del condado de Lee, como Whiskey Creek, Gateway, Iona, San Carlos Park y Lehigh Acres, lo da el condado, mientras que Cape Coral, Estero, Bonita Springs y el pueblo de Fort Myers Beach emiten los suyos. El condado de Lee está fuera de la Zona de Huracanes de Alta Velocidad, así que la puerta necesita una aprobación de producto de Florida para la presión de viento de diseño de la dirección. Aquí no se exige NOA de Miami-Dade, aunque una puerta que la tenga también se acepta. Si el permiso de una puerta de 2023 nunca se cerró, sigue abierto en la oficina que lo emitió, y un permiso abierto suele salir a la luz al vender la casa, así que vale la pena preguntar por él en ese departamento de construcción.',
+      'En cuanto a la puerta, una de acero certificada contra viento cuesta de $950 a $1,800 instalada, una de acero aislada de $1,400 a $3,000, y una resistente a impactos empieza en $1,800. El vidrio, un acabado estilo carriage o un garaje de tres carros suben el número. La cotización por escrito cubre la puerta, el riel y resortes calculados para su peso, el motor reconectado con la reversa de seguridad probada, la puerta vieja retirada, el permiso con el número de aprobación y la inspección que lo cierra. Las puertas de acero certificadas de inventario suelen tardar de 2 a 6 semanas. Las reparaciones son el mismo día en todo el condado de Lee, los siete días: de 7:00 a 20:00 de lunes a viernes, de 8:00 a 18:00 el sábado y de 9:00 a 17:00 el domingo.',
     ],
     localNotes: [
       'La mayor ola de reemplazo del estado después de Ian: miles de puertas instaladas en 2023 por cuadrillas que ya se fueron',
       'Corredor de McGregor y Whiskey Creek: puertas sencillas de 1960 y 1970 con poca altura libre',
       'Gateway y Pelican Preserve: dobles y garajes para tres carros bajo reglas de asociación',
       'Aire salino del río y del Golfo: el cable oxidado en el soporte inferior es la advertencia que más encontramos',
+      'Puertas de después de Ian con resortes que nunca se calcularon para el peso de la puerta certificada',
+      'Permisos de la Ciudad de Fort Myers dentro de sus límites y del condado de Lee en Whiskey Creek, Gateway, Iona, San Carlos Park y Lehigh Acres',
+      'Fuera de la zona HVHZ: aprobación de producto de Florida para la dirección, no NOA de Miami-Dade',
     ],
     faq: [
       {
@@ -46,6 +52,21 @@ export const southwestFloridaCitiesEs: Record<string, CityEs> = {
         question: '¿Una puerta nueva en Fort Myers necesita permiso?',
         answer:
           'Sí. Cambiar una puerta de garaje en Florida necesita un permiso de construcción tramitado por un contratista con licencia, con la clasificación de viento documentada en el permiso. En el condado de Lee eso significa una puerta con aprobación de producto de Florida; la NOA de Miami-Dade solo se exige en los condados de la Zona de Huracanes de Alta Velocidad. Cambiar solo el motor normalmente no necesita permiso. Una puerta nueva con clasificación de viento empieza en $950 instalada y una resistente a impactos en $1,800, con el permiso incluido en la cotización.',
+      },
+      {
+        question: '¿Cuánto cuesta reparar una puerta de garaje en Fort Myers?',
+        answer:
+          'Los resortes cuestan de $150 a $350 cada uno instalados, y el segundo resorte en la misma visita suma de $120 a $250. La reparación de cable cuesta de $95 a $300, o de $225 a $400 si el tambor se oxidó junto con el cable. La reparación del motor cuesta de $95 a $300, un motor nuevo instalado de $275 a $600, una puerta salida del riel de $140 a $600 y una sección dañada de $250 a $800. El mantenimiento cuesta de $85 a $160. Recibe el presupuesto por escrito antes de trabajar, las reparaciones no llevan permiso, y una salida de emergencia o fuera de horario suma de $150 a $300, que se le dice antes de despachar.',
+      },
+      {
+        question: '¿Una puerta de garaje en Fort Myers necesita NOA de Miami-Dade?',
+        answer:
+          'No. La NOA de Miami-Dade es el requisito dentro de la Zona de Huracanes de Alta Velocidad, que son Miami-Dade y Broward. Fort Myers y el resto del condado de Lee trabajan con la aprobación de producto de Florida, emitida para la puerta en su tamaño y calificada para la presión de viento de diseño de su dirección. Una puerta que tenga NOA de Miami-Dade también se acepta aquí, pero no tiene que pagar por ella. El número de aprobación va en el permiso, y le damos una copia para su archivo de mitigación de vientos.',
+      },
+      {
+        question: '¿Quién emite el permiso para una puerta de garaje nueva en Fort Myers?',
+        answer:
+          'La Ciudad de Fort Myers para las direcciones dentro de sus límites, y el condado de Lee para las zonas no incorporadas como Whiskey Creek, Gateway, Iona, San Carlos Park y Lehigh Acres. Cape Coral, Estero, Bonita Springs y Fort Myers Beach tienen su propio departamento de construcción. Tramitamos el permiso con el número de aprobación de producto de Florida de la puerta, y el costo va en la cotización, desde $950 instalada para una puerta de acero certificada contra viento. Las reparaciones de resortes, cables y motor no necesitan permiso.',
       },
     ],
   },

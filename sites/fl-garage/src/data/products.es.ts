@@ -824,7 +824,77 @@ export const brandEs: Record<string, BrandEs> = {
       'Óxido en bisagras, rodillos y soportes en puertas costeras',
       'Disponibilidad del perfil de sección en puertas de los años noventa y principios de los dos mil',
     ],
+    series: {
+      title: 'Reparación de puertas de garaje Wayne Dalton: síntomas, qué revisar y cuándo llamar',
+      intro: [
+        'Casi todas las llamadas por una puerta Wayne Dalton en Florida terminan en los resortes, los cables, la sección de abajo o el motor. La marca ha usado más de un sistema de resortes con los años, así que lo primero es averiguar cuál tiene su puerta. Párese dentro del garaje con la puerta cerrada y mire la barra que está encima. Si ve un resorte en espiral alrededor de la barra, es un sistema de torsión estándar. Si solo ve un tubo liso de pared a pared, con los herrajes en los dos extremos, es el sistema TorqueMaster, y los resortes están dentro de ese tubo, donde no se ven.',
+        'Dos reglas antes de tocar nada. No toque los resortes, los cables ni los soportes de los extremos, porque sostienen todo el peso de la puerta bajo tensión, y con más razón en un TorqueMaster, que se tensa desde el extremo del tubo de una forma propia de ese sistema. Y si la puerta está abierta y sospecha que un resorte se rompió, no jale la cuerda roja de liberación, porque sin el resorte la puerta puede caerse de golpe. Todas las revisiones de la primera columna se hacen con la puerta cerrada.',
+        'Las reparaciones Wayne Dalton salen de la misma lista publicada que cualquier otra puerta: resortes de $150 a $350 cada uno, hacia la parte alta en un TorqueMaster por el costo de las piezas, reparación de cable de $95 a $300, puerta salida del riel de $140 a $600, una sección de $250 a $800 mientras se siga fabricando el perfil, y reparación del motor de $95 a $300. Donde ya no se consiguen piezas TorqueMaster, cotizamos por escrito la conversión a un sistema de torsión estándar antes de empezar.',
+      ],
+      columns: ['Lo que usted puede revisar primero', 'Lo que necesita un técnico'],
+      rows: [
+        {
+          label: 'La puerta pesa de repente, o el motor la sube unas pulgadas y se detiene',
+          values: [
+            'Con la puerta cerrada, jale la cuerda de liberación e intente levantarla unas pulgadas a mano. Una puerta balanceada se siente liviana. Si se siente como peso muerto, casi seguro se rompió un resorte. En un TorqueMaster no va a ver la rotura, porque está dentro del tubo. Deténgase ahí y deje el motor apagado.',
+            'Cambio de resorte, en un TorqueMaster con las piezas y el procedimiento de tensado que pide ese sistema. Donde ya no hay piezas, conversión a resortes de torsión estándar sobre un eje nuevo, cotizada por escrito antes.',
+          ],
+        },
+        {
+          label: 'La puerta sube torcida o un cable cuelga flojo',
+          values: [
+            'Desde el piso, mire el cable de cada lado donde llega al tambor arriba y al soporte abajo. Busque hilos sueltos u óxido en el soporte inferior. Mantenga la puerta cerrada y el motor apagado.',
+            'Un cable que se salió del tambor o que el óxido cortó. La reparación de cable cuesta de $95 a $300, y de $225 a $400 cuando hay que cambiar el tambor con él.',
+          ],
+        },
+        {
+          label: 'Rodillos fuera del riel o la puerta trabada a medio camino',
+          values: [
+            'No vuelva a usar el motor. Revise los dos rieles por si un carro o un bote de basura los dobló, y busque un rodillo que se haya salido del canal.',
+            'Volver a montar la puerta en su riel, enderezar o cambiar el riel y reemplazar rodillos gastados. La reparación de una puerta salida del riel cuesta de $140 a $600.',
+          ],
+        },
+        {
+          label: 'La sección de abajo está blanda, rajada o deja entrar agua',
+          values: [
+            'Mire el sello de goma del borde inferior y, por dentro, la sección más baja. Un sello roto solo es un trabajo pequeño. Óxido que atraviesa el acero, o una sección que cede al empujarla, es uno más grande.',
+            'Un sello inferior nuevo, que se hace con un mantenimiento desde $85, o una sección de reemplazo de $250 a $800 mientras el perfil se siga fabricando. En una puerta certificada la sección tiene que igualar a la original para que la puerta siga siendo la que describe su aprobación.',
+          ],
+        },
+        {
+          label: 'La puerta hace ruido, va dura o chilla',
+          values: [
+            'Observe los rodillos y las bisagras mientras la puerta se mueve. Rodillos y bisagras secos, oxidados o flojos son la causa habitual del ruido, y en una puerta cerca de la costa el óxido aparece primero en las bisagras.',
+            'Un mantenimiento de $85 a $160 cubre balance, rodillos, bisagras, cables, riel, sello y sensores. Si encontramos bisagras o rodillos oxidados, se cotizan antes de cambiarlos.',
+          ],
+        },
+        {
+          label: 'El motor no responde',
+          values: [
+            'Revise el tomacorriente donde se conecta el motor, el breaker y cualquier tomacorriente GFCI del garaje. Confirme que el botón de bloqueo del control de pared esté apagado y cámbiele la pila al control. Algunas puertas Wayne Dalton tienen un motor montado en el tubo encima de la puerta en lugar de un riel en el techo, y las mismas revisiones aplican.',
+            'Una falla de tarjeta electrónica, engranaje o sensor, reparada por $95 a $300. Cuando el motor pasa de unos 15 años, o la pieza ya no se consigue, le ponemos al lado el precio de un motor nuevo instalado, desde $275.',
+          ],
+        },
+      ],
+      source:
+        'Basado en las fallas que diagnosticamos en puertas Wayne Dalton en garajes de Florida. Wayne Dalton ha cambiado sus sistemas de resortes y el diseño de sus secciones con los años, así que la etiqueta de su puerta y las instrucciones del fabricante para su modelo son la referencia, y donde no coincidan con esta tabla, siga esas instrucciones. Somos una empresa independiente, no un distribuidor de Wayne Dalton.',
+    },
     faq: [
+      {
+        question: '¿Cuánto cuesta reparar una puerta de garaje Wayne Dalton?',
+        answer:
+          'Los mismos precios publicados que cualquier puerta. Los resortes cuestan de $150 a $350 cada uno instalados, hacia la parte alta en un TorqueMaster por las piezas, y el segundo resorte en la misma visita suma de $120 a $250. La reparación de cable cuesta de $95 a $300, la de una puerta salida del riel de $140 a $600, una sección de $250 a $800 mientras se fabrique el perfil, y la reparación del motor de $95 a $300. El mantenimiento cuesta de $85 a $160. Recibe el precio por escrito antes de trabajar, y una salida de emergencia o fuera de horario suma de $150 a $300, que se le dice antes.',
+      },
+      {
+        question: '¿Cómo sé si mi puerta Wayne Dalton tiene resortes TorqueMaster y si uno está roto?',
+        answer:
+          'Mire la barra encima de la puerta cerrada. Un resorte en espiral visible sobre la barra es un sistema de torsión estándar; un tubo liso sin espiral a la vista es TorqueMaster, con los resortes por dentro. Como la rotura de un resorte TorqueMaster no se ve, la prueba es el peso: con la puerta cerrada jale la cuerda de liberación y levántela unas pulgadas. Si se siente como peso muerto, o el motor la sube unas pulgadas y se detiene, trátelo como un resorte roto, déjela cerrada y llámenos. No intente tensarlo ni destensarlo.',
+      },
+      {
+        question: '¿Se puede convertir una puerta Wayne Dalton TorqueMaster a resortes de torsión estándar?',
+        answer:
+          'Sí, y lo hacemos cuando ya no se consiguen piezas TorqueMaster para su puerta o cuando el sistema está tan gastado que no vale la pena repararlo. La conversión reemplaza el sistema cerrado por un eje de torsión estándar, resortes calculados para el peso de la puerta, tambores y rodamientos, y la puerta se balancea y se prueba antes de irnos. Se cotiza por escrito después de medir la puerta, para que pueda compararla primero con un simple cambio de resorte.',
+      },
       {
         question: '¿Se rompió mi resorte Wayne Dalton y dos empresas no lo quisieron tocar?',
         answer:

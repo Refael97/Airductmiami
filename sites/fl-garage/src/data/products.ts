@@ -874,7 +874,80 @@ export const brands: Brand[] = [
       'Hinge, roller and bracket rust on coastal doors',
       'Section profile availability on doors from the 1990s and early 2000s',
     ],
+    /* Not a model series: Wayne Dalton has no series pages. The table slot is
+       used for the repair symptoms, which is what people search this brand
+       for ("wayne dalton garage door repair"). */
+    series: {
+      title: 'Wayne Dalton garage door repair: symptoms, what to check, when to call',
+      intro: [
+        'Most Wayne Dalton repair calls in Florida come down to the springs, the cables, the bottom section or the opener. The brand has used more than one spring system over the years, so the first thing to find out is which one your door has. Stand inside the garage with the door closed and look at the bar above it. If you see a coiled spring wrapped around the bar, it is a standard torsion setup. If you see only a smooth tube running wall to wall, with the hardware at the two ends, it is the TorqueMaster system, and the springs are inside that tube where you cannot see them.',
+        'Two rules before you touch anything. Leave the springs, the cables and the end brackets alone, because they hold the full weight of the door under tension, and that goes double for a TorqueMaster, which is wound at the end of the tube in a way that is specific to that system. And if the door is open and you suspect a broken spring, do not pull the red release cord, because without the spring the door can drop. Every check in the first column is done with the door closed.',
+        'Wayne Dalton repairs are priced from the same published list as any other door: springs $150 to $350 each, toward the top of that range on a TorqueMaster because of the parts, cable repair $95 to $300, off track repair $140 to $600, a single section $250 to $800 while the profile is still made, and opener repair $95 to $300. Where TorqueMaster parts can no longer be found, we quote a conversion to a standard torsion setup in writing before any work starts.',
+      ],
+      columns: ['What you can check first', 'What needs a technician'],
+      rows: [
+        {
+          label: 'Door suddenly heavy, or the opener lifts it a few inches and stops',
+          values: [
+            'With the door closed, pull the release cord and try to lift the door a few inches by hand. A balanced door feels light. If it feels like dead weight, a spring has almost certainly broken. On a TorqueMaster you will not see the break, because it is inside the tube. Stop there and leave the opener off.',
+            'Spring replacement, on a TorqueMaster with the parts and winding procedure that system needs. Where those parts are gone, a conversion to standard torsion springs on a new shaft, quoted in writing first.',
+          ],
+        },
+        {
+          label: 'Door goes up crooked or a cable hangs loose',
+          values: [
+            'From the floor, look at the cable on each side where it meets the drum at the top and the bracket at the bottom. Look for fraying or rust at the bottom bracket. Keep the door closed and the opener off.',
+            'A cable that has come off its drum or a cable that has rusted through. Cable repair is $95 to $300, and $225 to $400 when the drum has to be replaced with it.',
+          ],
+        },
+        {
+          label: 'Rollers out of the track, or the door jammed partway',
+          values: [
+            'Do not run the opener again. Look along both tracks for a bend where a car or a bin hit them, and for a roller that has jumped out of the channel.',
+            'Resetting the door in its track, straightening or replacing the track, and replacing worn rollers. Off track repair is $140 to $600.',
+          ],
+        },
+        {
+          label: 'Bottom section soft, cracked or letting water in',
+          values: [
+            'Look at the rubber seal along the bottom edge and at the lowest section from inside. A torn seal on its own is a small job. Rust coming through the steel, or a section that flexes when pressed, is a bigger one.',
+            'A new bottom seal, done with a tune-up from $85, or a replacement section at $250 to $800 when the profile is still made. On a rated door the section has to match the original so the door stays the door its approval describes.',
+          ],
+        },
+        {
+          label: 'Noisy, stiff or squealing door',
+          values: [
+            'Watch the rollers and hinges as the door runs. Dry, rusty or wobbling rollers and hinges are the usual source of the noise, and a coastal door shows rust at the hinges first.',
+            'A tune-up at $85 to $160 covers balance, rollers, hinges, cables, track, seal and sensors. Rusted hinges or rollers found during it are quoted before they are replaced.',
+          ],
+        },
+        {
+          label: 'Opener dead or not responding',
+          values: [
+            'Check the outlet the opener plugs into, the breaker, and any GFCI outlet in the garage. Make sure the lock button on the wall control is off, and change the remote battery. Some Wayne Dalton doors have an opener mounted on the tube above the door rather than on a ceiling rail, and the same checks apply.',
+            'A logic board, gear or sensor fault, repaired at $95 to $300. When the opener is past about 15 years, or the part for it cannot be found, we price a new opener installed, from $275, next to the repair.',
+          ],
+        },
+      ],
+      source:
+        'Based on the faults we diagnose on Wayne Dalton doors in Florida garages. Wayne Dalton has changed its spring systems and section designs over the years, so the label on your door and the manufacturer\'s instructions for your model are the reference, and where they disagree with this table, follow them. We are an independent company, not a Wayne Dalton dealer.',
+    },
     faq: [
+      {
+        question: 'How much does Wayne Dalton garage door repair cost?',
+        answer:
+          'The same published prices as any door. Springs are $150 to $350 each installed, toward the top of the range on a TorqueMaster because of the parts, and the second spring at the same visit adds $120 to $250. Cable repair is $95 to $300, off track repair $140 to $600, one section $250 to $800 while the profile is still made, and opener repair $95 to $300. A tune-up is $85 to $160. You get a written price before any work, and an emergency or after-hours dispatch adds $150 to $300, stated up front.',
+      },
+      {
+        question: 'How do I know if my Wayne Dalton door has TorqueMaster springs, and whether one is broken?',
+        answer:
+          'Look at the bar above the closed door. A visible coiled spring on the bar is a standard torsion setup; a plain tube with no visible coil is TorqueMaster, with the springs inside. Because you cannot see a TorqueMaster spring break, the test is weight: pull the release cord with the door closed and lift a few inches. If the door feels like dead weight, or the opener raises it a few inches and stops, treat it as a broken spring, leave it closed and call us. Do not try to wind or unwind it.',
+      },
+      {
+        question: 'Can a Wayne Dalton TorqueMaster door be converted to standard torsion springs?',
+        answer:
+          'Yes, and we do it when TorqueMaster parts for your door can no longer be found or the existing system is too worn to be worth repairing. The conversion replaces the enclosed system with a standard torsion shaft, springs sized to the door\'s weight, drums and bearings, and the door is balanced and tested before we leave. It is quoted in writing after we measure the door, so you can compare it with a straight spring replacement first.',
+      },
       {
         question: 'My Wayne Dalton spring broke and two companies would not touch it. Why?',
         answer:

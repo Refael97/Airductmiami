@@ -200,12 +200,18 @@ export const miamiDadeCountyCities: City[] = [
     intro: [
       'Homestead was the landfall point for Hurricane Andrew in August 1992, and almost nothing built before that year kept its garage door. What stands today is either a house rebuilt in 1993 to 1995 to the tougher post-Andrew code, or one of the subdivisions that went up from the late 1990s through the 2010s along the Turnpike and US 1, Keys Gate, Waterstone and Silver Palm among them. That means the doors here are mostly 16 foot wind-rated steel doubles, and the oldest of them are now at the spring count and opener age where things break.',
       'Two things are different in Homestead. The Redland farms and nurseries put a film of dust on rollers, tracks and the opener rail that turns to grinding paste in the afternoon humidity, so a tune-up at $85 to $160 pays for itself here faster than anywhere else in the county. And the drive from central Miami is long enough that many companies quote next week. We run this end of the county on its own schedule. Homestead is inside the High Velocity Hurricane Zone, so any replacement door carries a Miami-Dade NOA and goes on a permit pulled by a licensed contractor.',
+      'Garage door repair in Homestead costs the same in Keys Gate as on a Redland grove road: springs $150 to $350 each, with $120 to $250 to do the second at the same visit, cable repair from $95, opener repair $95 to $300, off track repair from $140 and a single damaged section from $250. In the newer subdivisions the usual call is the first spring or the first stripped gear the house has had, on a builder-grade chain drive that has spent every summer in a shut garage. On the 1993 to 1995 rebuild doors it is the second or third set of springs, plus the cables and bottom brackets that thirty wet seasons have rusted. The number is written down before anyone touches the door, and repairs need no permit.',
+      'Who issues the permit for a new door depends on where the address sits. Inside Homestead city limits the permit comes from the City of Homestead, and Florida City, at the south end of the Turnpike, issues its own. Leisure City, Naranja, Princeton and the Redland are unincorporated Miami-Dade, so a door there is permitted by the county. The approval is the same in all of them: the whole county is inside the High Velocity Hurricane Zone, so the door must carry a Miami-Dade NOA rather than the standard Florida Product Approval used in most of the state. If you are not sure which side of the line you are on, the municipality is listed on your property record with the Miami-Dade Property Appraiser, and we confirm it before quoting.',
+      'A replacement door in Homestead is one written price: the door, track, struts, springs sized to the new door\'s weight and brackets installed to the NOA drawing, the opener reconnected and its safety reverse tested, the old door hauled away, the permit filed with the NOA number on it, and the inspection that closes it. A hurricane-rated door starts at $1,800 installed, and most homes land between $1,800 and $6,500. An impact-rated steel door runs $2,400 to $5,000, and impact glass takes a door to $8,000 and above. Stock rated steel doors typically arrive in 2 to 6 weeks, longer after a named storm, so March to May is the time to order. Keep the NOA and the closed permit together, because the wind mitigation inspector will ask for both.',
     ],
     localNotes: [
       'Almost every door is post-1992; the 1993 to 1995 rebuild doors are now the oldest in town',
       '2000s and 2010s subdivisions with builder-grade openers reaching first failure',
       'Agricultural dust from the Redland on rollers, tracks and opener rails',
       'Long drive for most companies; we schedule the south end of the county on its own run',
+      'Permits from the City of Homestead inside city limits, from Florida City for its addresses, and from Miami-Dade County in Leisure City, Naranja, Princeton and the Redland',
+      'Whole county is HVHZ: a replacement door needs a Miami-Dade NOA, where most of Florida uses a Florida Product Approval',
+      'Rebuild era doubles on their second or third set of springs, with rusted cables and bottom brackets',
     ],
     nearby: ['palmetto-bay', 'kendall', 'miami'],
     faq: [
@@ -223,6 +229,21 @@ export const miamiDadeCountyCities: City[] = [
         question: 'Do you work in the gated subdivisions off the Turnpike?',
         answer:
           'Yes. Keys Gate, Waterstone, Silver Palm and the rest. Most of them have HOA rules on door style and color, and we provide the spec sheet and NOA number for the application. Register us at the gate or send the code when you book and the technician will not lose your arrival window waiting outside.',
+      },
+      {
+        question: 'How much does garage door repair cost in Homestead, FL?',
+        answer:
+          'Springs are $150 to $350 each installed, and the second spring at the same visit adds $120 to $250. Cable repair is $95 to $300, opener repair $95 to $300, off track repair $140 to $600 and one damaged section $250 to $800. A new opener installed is $275 to $600, and a tune-up is $85 to $160. You get the range on the phone and a written number before any work, and none of these repairs needs a permit. An emergency or after-hours dispatch adds $150 to $300, stated before we send anyone.',
+      },
+      {
+        question: 'Who issues the garage door permit in Homestead, Florida City and the Redland?',
+        answer:
+          'The City of Homestead inside its city limits, the City of Florida City for Florida City addresses, and Miami-Dade County for unincorporated areas such as Leisure City, Naranja, Princeton and the Redland. In every one of them the door needs a Miami-Dade NOA, because all of Miami-Dade is in the HVHZ. We file the permit with the NOA number, and the fee is inside the replacement quote, from $1,800 installed.',
+      },
+      {
+        question: 'What is included in a hurricane-rated garage door replacement in Homestead?',
+        answer:
+          'Removal and disposal of the old door; the new door with its track, struts, springs and brackets installed to the Miami-Dade NOA drawing; the opener reconnected and tested; the permit filed with the NOA number; and the final inspection that closes it. It starts at $1,800 installed, an impact-rated steel door runs $2,400 to $5,000, and doors with impact glass run to $8,000 and above. A rated door may qualify for a wind mitigation credit, so ask your insurer for their schedule.',
       },
     ],
   },

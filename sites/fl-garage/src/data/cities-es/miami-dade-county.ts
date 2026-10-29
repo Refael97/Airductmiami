@@ -179,12 +179,18 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
     intro: [
       'Homestead fue el punto de entrada del huracán Andrew en agosto de 1992, y casi nada de lo construido antes de ese año conservó su puerta de garaje. Lo que hay hoy es una casa reconstruida entre 1993 y 1995 bajo el código más estricto que siguió a Andrew, o una de las urbanizaciones levantadas desde finales de los noventa hasta la década de 2010 a lo largo del Turnpike y la US 1, entre ellas Keys Gate, Waterstone y Silver Palm. Eso quiere decir que aquí casi todas las puertas son dobles de acero de 16 pies calificadas para viento, y las más antiguas ya llegaron a la edad en que se rompen resortes y motores.',
       'Dos cosas son distintas en Homestead. Las fincas y viveros del Redland dejan una capa de polvo sobre rodillos, rieles y el riel del motor que con la humedad de la tarde se vuelve una pasta que raspa, así que un mantenimiento de $85 a $160 se paga solo aquí más rápido que en cualquier otra parte del condado. Y el viaje desde el centro de Miami es largo, tanto que muchas compañías cotizan para la semana siguiente. Nosotros manejamos este extremo del condado con horario propio. Homestead está dentro de la zona HVHZ, así que cualquier puerta de reemplazo lleva NOA de Miami-Dade y va con permiso de construcción tramitado por un contratista con licencia.',
+      'La reparación de puertas de garaje en Homestead cuesta lo mismo en Keys Gate que en un camino de viveros del Redland: resortes de $150 a $350 cada uno, y de $120 a $250 por cambiar el segundo en la misma visita, reparación de cable desde $95, reparación del motor de $95 a $300, puerta salida del riel desde $140 y una sección dañada desde $250. En las urbanizaciones nuevas la llamada típica es el primer resorte o el primer engranaje barrido que tiene la casa, en un motor de cadena de gama básica que ha pasado cada verano en un garaje cerrado. En las puertas de la reconstrucción de 1993 a 1995 ya es el segundo o tercer juego de resortes, más los cables y soportes inferiores que treinta temporadas de lluvia han oxidado. El precio queda por escrito antes de tocar la puerta, y las reparaciones no llevan permiso.',
+      'Quién emite el permiso de una puerta nueva depende de dónde quede la casa. Dentro de los límites de la ciudad de Homestead el permiso lo da la Ciudad de Homestead, y Florida City, al final del Turnpike, emite los suyos. Leisure City, Naranja, Princeton y el Redland son zonas no incorporadas de Miami-Dade, así que allí el permiso lo da el condado. La aprobación es la misma en todos los casos: todo el condado está dentro de la zona HVHZ, de modo que la puerta debe tener NOA de Miami-Dade y no la aprobación de producto de Florida que se usa en casi todo el estado. Si no sabe de qué lado de la línea está, el municipio aparece en el registro de su propiedad en el Tasador de Propiedades de Miami-Dade, y nosotros lo confirmamos antes de cotizar.',
+      'Una puerta de reemplazo en Homestead se cotiza en un solo precio por escrito: la puerta, el riel, los refuerzos, resortes calculados para el peso de la puerta nueva y los soportes instalados según el plano de la NOA, el motor reconectado con su reversa de seguridad probada, la puerta vieja retirada, el permiso tramitado con el número de NOA y la inspección que lo cierra. Una puerta reforzada para huracanes empieza en $1,800 instalada, y la mayoría de las casas quedan entre $1,800 y $6,500. Una puerta de acero resistente a impactos cuesta de $2,400 a $5,000, y con vidrio de impacto cuesta $8,000 o más. Las puertas de acero certificadas de inventario suelen llegar en 2 a 6 semanas, más después de una tormenta con nombre, así que de marzo a mayo es la época para pedirla. Guarde la NOA y el permiso cerrado juntos, porque el inspector de mitigación de vientos le va a pedir los dos.',
     ],
     localNotes: [
       'Casi toda puerta es posterior a 1992; las de la reconstrucción de 1993 a 1995 son hoy las más viejas del pueblo',
       'Urbanizaciones de los años dos mil y dos mil diez con motores de gama básica llegando a su primera falla',
       'Polvo agrícola del Redland en rodillos, rieles y el riel del motor',
       'Viaje largo para la mayoría de las compañías: programamos el sur del condado en su propia ruta',
+      'Permisos de la Ciudad de Homestead dentro de sus límites, de Florida City para sus direcciones y del condado de Miami-Dade en Leisure City, Naranja, Princeton y el Redland',
+      'Todo el condado es HVHZ: la puerta de reemplazo necesita NOA de Miami-Dade, mientras casi toda Florida usa la aprobación de producto de Florida',
+      'Dobles de la reconstrucción en su segundo o tercer juego de resortes, con cables y soportes inferiores oxidados',
     ],
     faq: [
       {
@@ -201,6 +207,21 @@ export const miamiDadeCountyCitiesEs: Record<string, CityEs> = {
         question: '¿Trabajan en las comunidades cerradas junto al Turnpike?',
         answer:
           'Sí. Keys Gate, Waterstone, Silver Palm y las demás. Casi todas tienen reglas de HOA sobre estilo y color de la puerta, y nosotros entregamos la hoja técnica y el número de NOA para la solicitud. Regístrenos en la caseta o mándenos el código al agendar y el técnico no perderá su ventana de llegada esperando afuera.',
+      },
+      {
+        question: '¿Cuánto cuesta reparar una puerta de garaje en Homestead?',
+        answer:
+          'Los resortes cuestan de $150 a $350 cada uno instalados, y el segundo resorte en la misma visita suma de $120 a $250. La reparación de cable cuesta de $95 a $300, la del motor de $95 a $300, una puerta salida del riel de $140 a $600 y una sección dañada de $250 a $800. Un motor nuevo instalado cuesta de $275 a $600 y el mantenimiento de $85 a $160. Le damos el rango por teléfono y el precio por escrito antes de trabajar, y ninguna de estas reparaciones necesita permiso. Una salida de emergencia o fuera de horario suma de $150 a $300, y se lo decimos antes de despachar.',
+      },
+      {
+        question: '¿Quién da el permiso para una puerta de garaje en Homestead, Florida City y el Redland?',
+        answer:
+          'La Ciudad de Homestead dentro de sus límites, la Ciudad de Florida City para las direcciones de Florida City, y el condado de Miami-Dade en las zonas no incorporadas como Leisure City, Naranja, Princeton y el Redland. En todas ellas la puerta necesita NOA de Miami-Dade, porque todo Miami-Dade está en la zona HVHZ. Nosotros tramitamos el permiso con el número de NOA, y el costo va dentro de la cotización del reemplazo, desde $1,800 instalada.',
+      },
+      {
+        question: '¿Qué incluye el cambio por una puerta reforzada para huracanes en Homestead?',
+        answer:
+          'Retirar y desechar la puerta vieja; la puerta nueva con su riel, refuerzos, resortes y soportes instalados según el plano de la NOA de Miami-Dade; el motor reconectado y probado; el permiso tramitado con el número de NOA; y la inspección final que lo cierra. Empieza en $1,800 instalada, una puerta de acero resistente a impactos cuesta de $2,400 a $5,000 y las que llevan vidrio de impacto cuestan $8,000 o más. Una puerta certificada puede ayudar a obtener un crédito por mitigación de vientos, así que pida a su aseguradora la tabla de créditos.',
       },
     ],
   },

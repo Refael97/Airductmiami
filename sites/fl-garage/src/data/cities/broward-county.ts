@@ -215,12 +215,19 @@ export const browardCountyCities: City[] = [
     intro: [
       'Pompano Beach is older than most of Broward. The blocks between Federal Highway and the Intracoastal, and the streets around Cresthaven and the older sections west of Dixie Highway, were built from the 1950s into the 1970s as concrete block ranches with a single door. Palm Aire and the golf course communities on the west side came in the 1970s and 1980s with doubles. Some of the older single doors are still wood, and wood at the bottom edge of a Pompano garage takes on water every afternoon for half the year.',
       'Salt does the damage here. Within two miles of the beach we find cables that have gone orange and stiff, bottom brackets that crumble when touched, and springs with pitting along the coil that makes them snap early. A door that has been cycled on a corroded cable will usually also have a damaged drum. We price cable and drum together at $225 to $400 so you know the full number, and we use galvanized or stainless hardware on the coastal side as standard.',
+      'Garage door repair in Pompano Beach is priced from the same list on the beach side as in Palm Aire: springs $150 to $350 each, with $120 to $250 to do the second at the same visit, cable repair $95 to $300, opener repair $95 to $300, off track repair from $140 and a single damaged section from $250. Inland the heat does more harm than the salt, so the opener calls from the western side of the city are mostly logic boards and drive gears that have spent too many summers in a shut garage. Repairs need no permit, and the written number comes before any work.',
+      'Garage door replacement in Pompano Beach starts with the approval. Broward County is inside the High Velocity Hurricane Zone, so the new door must carry a Miami-Dade NOA for its size and design pressure, rather than the standard Florida Product Approval used in most of the state. If the door has windows, the glass has to be impact rated and part of that same approval. The permit comes from the City of Pompano Beach, while Lighthouse Point, Deerfield Beach and Lauderdale-by-the-Sea issue their own. We file it with the NOA number on it, and the inspection after installation closes it.',
+      'The published prices for a replacement door here: a hurricane-rated door from $1,800 installed, with most homes between $1,800 and $6,500; an impact-rated steel door $2,400 to $5,000; and doors with impact glass at $8,000 and above. A single car door on one of the 1950s and 1960s ranches sits toward the bottom of that range, and an insulated 16 foot double in Palm Aire toward the top. The written quote covers the door, track, struts, springs sized to the new door and brackets installed to the NOA drawing, the opener reconnected and tested, the old door hauled away, the permit and the inspection. Stock rated steel doors typically take 2 to 6 weeks, so March to May, before the season opens on 1 June, is the time to order.',
+      'For the wood singles still left on the older streets, the replacement that keeps the look is a steel door with a wood grain finish or a carriage style door that carries its own NOA. Keep the paperwork when the job is done. The NOA, the permit and the inspection record are what a wind mitigation inspector asks for, and a rated door may qualify for an insurance credit, though the opening protection credit usually depends on the windows as well as the garage door, so ask your insurer before counting on it.',
     ],
     localNotes: [
       '1950s to 1970s CBS singles near the coast, 1970s and 1980s doubles in Palm Aire',
       'Coastal corrosion on cables, drums, brackets and springs is the leading failure',
       'Some remaining wood doors with water damage at the bottom edge',
       'Replacement doors need a Miami-Dade NOA rating and a permit',
+      'Replacement permits from the City of Pompano Beach; Lighthouse Point and Deerfield Beach issue their own',
+      'Doors with windows need impact glass that is part of the door\'s NOA',
+      'Hurricane-rated replacement from $1,800 installed, permit and inspection in the quote',
     ],
     nearby: ['fort-lauderdale', 'coral-springs', 'hollywood', 'davie'],
     faq: [
@@ -233,6 +240,21 @@ export const browardCountyCities: City[] = [
         question: 'Can you repair an older wood door in Pompano Beach, or does it have to go?',
         answer:
           'If the sections are sound we repair it, and a wood door needs a heavier spring than a steel one the same size, which we set for. If the bottom section is rotted or the door has no wind rating, replacement is the honest answer. In the HVHZ that means a Miami-Dade NOA rated door with a permit, from $1,800 installed, and a wood look is available in steel if you want to keep the appearance.',
+      },
+      {
+        question: 'How much does garage door replacement cost in Pompano Beach?',
+        answer:
+          'A hurricane-rated door with a Miami-Dade NOA starts at $1,800 installed, and most homes fall between $1,800 and $6,500. An impact-rated steel door runs $2,400 to $5,000, and doors with impact glass run to $8,000 and above. The price includes removing the old door, new track and springs sized to the new door, the opener reconnected, the permit and the final inspection. A single car door sits toward the low end and an insulated 16 foot double toward the high end.',
+      },
+      {
+        question: 'Does a new garage door in Pompano Beach need a Miami-Dade NOA?',
+        answer:
+          'Yes. Pompano Beach is in Broward County, and Broward and Miami-Dade make up the High Velocity Hurricane Zone, where the door is approved under a Miami-Dade Notice of Acceptance for its size and design pressure. The standard Florida Product Approval is the route in the rest of the state. Windows in the door must be impact glass covered by the same approval. The NOA number goes on the permit, and you keep a copy for your insurer.',
+      },
+      {
+        question: 'Who issues the permit for a garage door replacement in Pompano Beach?',
+        answer:
+          'The City of Pompano Beach, for any address inside the city. Neighbors such as Lighthouse Point, Deerfield Beach and Lauderdale-by-the-Sea have their own building departments. We file the permit with the NOA number, schedule the inspection after installation and close the permit, and the fee is inside the replacement quote. Spring, cable, opener and panel repairs need no permit.',
       },
     ],
   },

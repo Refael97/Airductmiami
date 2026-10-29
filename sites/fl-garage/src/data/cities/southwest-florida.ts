@@ -28,12 +28,18 @@ export const southwestFloridaCities: City[] = [
     intro: [
       'Hurricane Ian came ashore at Cayo Costa on 28 September 2022 as a Category 4 storm with sustained winds near 150 mph, pushed a surge of more than 10 feet through Fort Myers Beach and up the Caloosahatchee, and put hurricane force wind across the rest of Lee County. The garage door was the opening that failed most often. In 2023 more doors were replaced in and around Fort Myers than in any normal decade, most of them wind-rated steel singles and 16 foot doubles fitted fast by crews from all over the state. Those doors are now three years old. The ones we open up show a pattern: a permit that was pulled but never closed, springs sized by guess rather than by door weight, and a rating label that nobody kept.',
       'The housing under those doors ranges widely. The McGregor corridor and Whiskey Creek are 1960s and 1970s ranches with single doors and low headroom, often on the third or fourth set of springs of their life. Gateway and Pelican Preserve are 1990s and 2000s builds with doubles and three car garages behind HOA rules on color and style. Salt air off the river and the Gulf rusts cables and bottom brackets on the older stock, and summer garages above 100°F cook the logic boards in openers of every age. Southwest Florida is outside the HVHZ, so a replacement door here needs a Florida Product Approval number rather than a Miami-Dade NOA, and it still needs a permit pulled by a licensed contractor.',
+      'Garage door repair in Fort Myers is priced from the same published list in Dean Park as out past I-75: springs $150 to $350 each, with $120 to $250 to do the second at the same visit, cable repair from $95, opener repair $95 to $300, off track repair from $140 and a single damaged section from $250. On the doors fitted after Ian, the call we take most is a spring that was never matched to its door. A rated door with steel struts across its sections weighs more than the door it replaced, and when the springs were picked by guess the door feels heavy by hand, the opener strains on every cycle and the springs give out years early. We check the spring size against the door before we quote, and a door that is out of balance gets its springs put right before anyone blames the opener.',
+      'Who issues the permit for a new door depends on the address. Inside the City of Fort Myers it comes from the city. Unincorporated Lee County, which takes in Whiskey Creek, Gateway, Iona, San Carlos Park and Lehigh Acres, is permitted by the county, while Cape Coral, Estero, Bonita Springs and the Town of Fort Myers Beach issue their own. Lee County is outside the High Velocity Hurricane Zone, so the door needs a Florida Product Approval for the design wind pressure at the address. A Miami-Dade NOA is not required here, though a door that carries one is accepted. If the permit for a 2023 door was never closed, it stays open with the office that issued it, and an open permit tends to come up when the house is sold, so it is worth asking that building department about it.',
+      'For the door itself, a wind-rated steel door runs $950 to $1,800 installed, an insulated steel door $1,400 to $3,000, and an impact-rated door starts at $1,800. Glass, a carriage style overlay or a three car garage move the number up. The written quote covers the door, track and springs sized to its weight, the opener reconnected and its safety reverse tested, the old door hauled away, the permit with the approval number on it and the inspection that closes it. Stock rated steel doors typically take 2 to 6 weeks. Repairs are same day across Lee County seven days a week, 7:00 to 20:00 Monday to Friday, 8:00 to 18:00 Saturday and 9:00 to 17:00 Sunday.',
     ],
     localNotes: [
       'The largest post-Ian replacement wave in the state: thousands of doors installed in 2023 by crews that have since left',
       'McGregor corridor and Whiskey Creek: 1960s and 1970s singles with low headroom',
       'Gateway and Pelican Preserve: 1990s and 2000s doubles and three car garages under HOA rules',
       'River and Gulf salt air, so a rusted cable at the bottom bracket is the most common warning we find',
+      'Post-Ian doors with springs that were never sized to the heavier rated door',
+      'City of Fort Myers permits inside city limits, Lee County permits in Whiskey Creek, Gateway, Iona, San Carlos Park and Lehigh Acres',
+      'Outside the HVHZ: a Florida Product Approval for the address, not a Miami-Dade NOA',
     ],
     nearby: ['cape-coral', 'bonita-springs', 'naples', 'port-charlotte'],
     faq: [
@@ -51,6 +57,21 @@ export const southwestFloridaCities: City[] = [
         question: 'Does a new door in Fort Myers need a permit?',
         answer:
           'Yes. Replacing a garage door anywhere in Florida needs a building permit pulled by a licensed contractor, with the wind rating documented on the permit. In Lee County that means a door with a Florida Product Approval number; the Miami-Dade NOA is only required in the HVHZ counties. Replacing only the opener normally does not need a permit. A new wind-rated door starts at $950 installed and an impact-rated door at $1,800, permit included in the quote.',
+      },
+      {
+        question: 'How much does garage door repair cost in Fort Myers?',
+        answer:
+          'Springs are $150 to $350 each installed, and the second spring at the same visit adds $120 to $250. Cable repair is $95 to $300, or $225 to $400 when the drum has rusted with it. Opener repair is $95 to $300, a new opener installed $275 to $600, off track repair $140 to $600 and one damaged section $250 to $800. A tune-up is $85 to $160. You get a written estimate before any work, repairs need no permit, and an emergency or after-hours dispatch adds $150 to $300, stated before we send anyone.',
+      },
+      {
+        question: 'Does a garage door in Fort Myers need a Miami-Dade NOA?',
+        answer:
+          'No. The Miami-Dade NOA is the requirement inside the High Velocity Hurricane Zone, which is Miami-Dade and Broward. Fort Myers and the rest of Lee County use a Florida Product Approval, issued for the door at its size and rated for the design wind pressure at your address. A door that holds a Miami-Dade NOA is also accepted here, but you do not have to pay for one. The approval number goes on the permit, and we give you a copy for your wind mitigation file.',
+      },
+      {
+        question: 'Who issues the permit for a new garage door in Fort Myers?',
+        answer:
+          'The City of Fort Myers for addresses inside city limits, and Lee County for unincorporated areas such as Whiskey Creek, Gateway, Iona, San Carlos Park and Lehigh Acres. Cape Coral, Estero, Bonita Springs and Fort Myers Beach have their own building departments. We file the permit with the door\'s Florida Product Approval number, and the fee is in the quote, from $950 installed for a wind-rated steel door. Spring, cable and opener repairs need no permit.',
       },
     ],
   },

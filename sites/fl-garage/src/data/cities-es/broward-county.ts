@@ -184,12 +184,19 @@ export const browardCountyCitiesEs: Record<string, CityEs> = {
     intro: [
       'Pompano Beach es más vieja que casi todo Broward. Las cuadras entre Federal Highway y el Intracoastal, y las calles alrededor de Cresthaven y las secciones viejas al oeste de Dixie Highway, se construyeron entre los años cincuenta y setenta como ranchos de bloque con puerta sencilla. Palm Aire y las comunidades de golf del lado oeste llegaron en los setenta y ochenta con puertas dobles. Algunas de esas puertas sencillas viejas todavía son de madera, y la madera del borde inferior de un garaje de Pompano toma agua todas las tardes durante medio año.',
       'Aquí el daño lo hace la sal. A menos de dos millas de la playa encontramos cables anaranjados y tiesos, soportes inferiores que se desmoronan al tocarlos, y resortes picados a lo largo del espiral que se rompen antes de tiempo. Una puerta que estuvo trabajando con un cable corroído casi siempre tiene también el tambor dañado. Cotizamos cable y tambor juntos, de $225 a $400, para que usted vea el número completo, y del lado costero usamos herrajería galvanizada o inoxidable como estándar.',
+      'La reparación de puertas de garaje en Pompano Beach sale de la misma lista del lado de la playa que en Palm Aire: resortes de $150 a $350 cada uno, y de $120 a $250 por cambiar el segundo en la misma visita, reparación de cable de $95 a $300, reparación del motor de $95 a $300, puerta salida del riel desde $140 y una sección dañada desde $250. Tierra adentro hace más daño el calor que la sal, así que las llamadas por el motor en el lado oeste de la ciudad son casi siempre tarjetas electrónicas y engranajes que pasaron demasiados veranos en un garaje cerrado. Las reparaciones no llevan permiso, y el precio por escrito llega antes de cualquier trabajo.',
+      'El reemplazo de una puerta de garaje en Pompano Beach empieza por la aprobación. El condado de Broward está dentro de la Zona de Huracanes de Alta Velocidad, así que la puerta nueva debe tener NOA de Miami-Dade para su tamaño y su presión de diseño, y no la aprobación de producto de Florida que se usa en casi todo el estado. Si la puerta lleva ventanas, el vidrio tiene que ser resistente a impactos y estar dentro de esa misma aprobación. El permiso lo da la Ciudad de Pompano Beach, mientras que Lighthouse Point, Deerfield Beach y Lauderdale-by-the-Sea emiten los suyos. Lo tramitamos con el número de NOA, y la inspección después de la instalación lo cierra.',
+      'Estos son los precios publicados para una puerta de reemplazo aquí: una puerta reforzada para huracanes desde $1,800 instalada, con la mayoría de las casas entre $1,800 y $6,500; una puerta de acero resistente a impactos de $2,400 a $5,000; y las puertas con vidrio de impacto desde $8,000. Una puerta para un carro en uno de los ranchos de los años cincuenta y sesenta queda en la parte baja del rango, y una doble de 16 pies aislada en Palm Aire en la parte alta. La cotización por escrito cubre la puerta, el riel, los refuerzos, resortes calculados para la puerta nueva y soportes instalados según el plano de la NOA, el motor reconectado y probado, la puerta vieja retirada, el permiso y la inspección. Las puertas de acero certificadas de inventario suelen tardar de 2 a 6 semanas, así que de marzo a mayo, antes de que la temporada empiece el 1 de junio, es la época para pedirla.',
+      'Para las puertas sencillas de madera que quedan en las calles viejas, el reemplazo que conserva la apariencia es una puerta de acero con acabado de veta de madera o una puerta estilo carriage que tenga su propia NOA. Guarde los papeles al terminar. La NOA, el permiso y el registro de la inspección son lo que pide un inspector de mitigación de vientos, y una puerta certificada puede ayudar a obtener un crédito en el seguro, aunque el crédito por protección de aberturas suele depender también de las ventanas y no solo de la puerta del garaje, así que consulte a su aseguradora antes de contar con él.',
     ],
     localNotes: [
       'Puertas sencillas de bloque de los años cincuenta a los setenta cerca de la costa y dobles de los setenta y ochenta en Palm Aire',
       'La corrosión costera en cables, tambores, soportes y resortes es la falla principal',
       'Todavía quedan puertas de madera con daño por agua en el borde inferior',
       'La puerta de reemplazo necesita NOA de Miami-Dade y permiso de construcción',
+      'Permisos de reemplazo de la Ciudad de Pompano Beach; Lighthouse Point y Deerfield Beach emiten los suyos',
+      'Las puertas con ventanas necesitan vidrio de impacto incluido en la NOA de la puerta',
+      'Reemplazo por una puerta reforzada para huracanes desde $1,800 instalada, con permiso e inspección en la cotización',
     ],
     faq: [
       {
@@ -201,6 +208,21 @@ export const browardCountyCitiesEs: Record<string, CityEs> = {
         question: '¿Se puede reparar una puerta vieja de madera en Pompano Beach o hay que cambiarla?',
         answer:
           'Si los paneles están sanos la reparamos, y una puerta de madera pide un resorte más pesado que una de acero del mismo tamaño, que es como la calculamos. Si el panel de abajo está podrido o la puerta no tiene calificación de viento, lo honesto es reemplazarla. En la zona HVHZ eso significa una puerta con NOA de Miami-Dade y permiso de construcción, desde $1,800 instalada, y si quiere conservar la apariencia hay acabados tipo madera en acero.',
+      },
+      {
+        question: '¿Cuánto cuesta cambiar una puerta de garaje en Pompano Beach?',
+        answer:
+          'Una puerta reforzada para huracanes con NOA de Miami-Dade empieza en $1,800 instalada, y la mayoría de las casas quedan entre $1,800 y $6,500. Una puerta de acero resistente a impactos cuesta de $2,400 a $5,000, y las que llevan vidrio de impacto cuestan $8,000 o más. El precio incluye retirar la puerta vieja, riel nuevo y resortes calculados para la puerta nueva, el motor reconectado, el permiso y la inspección final. Una puerta para un carro queda en la parte baja y una doble de 16 pies aislada en la parte alta.',
+      },
+      {
+        question: '¿Una puerta de garaje nueva en Pompano Beach necesita NOA de Miami-Dade?',
+        answer:
+          'Sí. Pompano Beach está en el condado de Broward, y Broward y Miami-Dade forman la Zona de Huracanes de Alta Velocidad, donde la puerta se aprueba con una Notice of Acceptance (NOA) de Miami-Dade para su tamaño y su presión de diseño. La aprobación de producto de Florida es la vía en el resto del estado. Las ventanas de la puerta deben ser de vidrio de impacto cubierto por la misma aprobación. El número de NOA va en el permiso, y usted guarda una copia para su aseguradora.',
+      },
+      {
+        question: '¿Quién da el permiso para cambiar una puerta de garaje en Pompano Beach?',
+        answer:
+          'La Ciudad de Pompano Beach, para cualquier dirección dentro de la ciudad. Los vecinos como Lighthouse Point, Deerfield Beach y Lauderdale-by-the-Sea tienen su propio departamento de construcción. Nosotros tramitamos el permiso con el número de NOA, programamos la inspección después de la instalación y cerramos el permiso, y el costo va dentro de la cotización del reemplazo. Las reparaciones de resortes, cables, motor y paneles no necesitan permiso.',
       },
     ],
   },
