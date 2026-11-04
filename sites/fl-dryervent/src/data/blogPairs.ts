@@ -21,6 +21,9 @@ export const blogPairs: Record<string, string> = {
   'soffit-dryer-vents': 'ventila-secadora-en-el-alero',
   'dryer-check-vent-warning': 'aviso-revisar-ventila-secadora',
   'dryer-vent-clogged-in-wall': 'ventila-secadora-tapada-en-la-pared',
+  'dryer-not-heating-thermal-fuse': 'secadora-no-calienta',
+  'water-in-dryer-vent': 'agua-en-la-ventila-de-la-secadora',
+  'gas-dryer-carbon-monoxide': 'secadora-de-gas-monoxido-de-carbono',
 };
 
 const reverse: Record<string, string> = Object.fromEntries(
