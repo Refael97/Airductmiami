@@ -350,7 +350,7 @@ export const services: Service[] = [
     intro: [
       "Florida leads the nation in indoor mold problems for one reason: humidity. When warm, moist air meets the cold surfaces inside your ducts and air handler, condensation forms, and mold needs only moisture and dust to colonize.",
       'Duct mold often shows up as a persistent musty smell that intensifies when the AC runs, visible black specks around vents, or unexplained allergy and respiratory symptoms that improve when you leave the house.',
-      'We inspect and, where needed, test to confirm mold, contain the affected area, physically remove growth and contaminated materials, apply EPA-registered antimicrobial treatment, and, most importantly, correct the moisture source so it does not return.',
+      'We inspect with a camera and photograph what is there, contain the affected area, physically remove growth and contaminated materials, apply EPA-registered antimicrobial treatment, and, most importantly, correct the moisture source so it does not return.',
     ],
     benefits: [
       { title: 'Healthier air', text: 'Removing mold stops spores from circulating and triggering symptoms.' },
@@ -359,7 +359,7 @@ export const services: Service[] = [
       { title: 'Moisture correction', text: 'We fix the underlying humidity issue so mold does not regrow.' },
     ],
     process: [
-      { title: 'Inspect & test', text: 'We locate mold and, if needed, sample to confirm type and extent.' },
+      { title: 'Inspect & photograph', text: 'A camera goes into the coil, plenum and ducts, and you see the photos before anything is approved.' },
       { title: 'Contain', text: 'The work area is isolated to prevent cross-contamination.' },
       { title: 'Remove & treat', text: 'Growth is removed and surfaces treated with EPA-registered antimicrobial.' },
       { title: 'Prevent', text: 'We correct the moisture source and recommend humidity controls.' },
@@ -371,7 +371,7 @@ export const services: Service[] = [
       { label: 'Treatment', value: 'EPA-registered antimicrobials' },
     ],
     faq: [
-      { question: 'How do I know if there is mold in my air ducts?', answer: 'Common signs are a musty smell that gets stronger when the AC runs, visible black or green specks around vents, and allergy symptoms that ease when you leave home. Testing confirms it.' },
+      { question: 'How do I know if there is mold in my air ducts?', answer: 'Common signs are a musty smell that gets stronger when the AC runs, visible black or green specks around vents, and allergy symptoms that ease when you leave home. A camera inspection shows where it is growing. We do not take samples or name the species: in Florida, sampling to identify mold is a licensed mold assessor\'s work.' },
       { question: 'Why is duct mold so common in Florida?', answer: 'Year-round humidity causes condensation inside cool ducts and air handlers, and mold needs only that moisture plus dust to grow.' },
       { question: 'Can you remove mold from ducts permanently?', answer: 'Mold can be removed and its return prevented, but only if the underlying moisture source is corrected, which is why our process includes humidity control.' },
     ],

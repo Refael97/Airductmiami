@@ -86,19 +86,19 @@ export async function guidesForServiceEs(slug: string, limit = 6): Promise<PostE
  */
 const CITY_GUIDE_SLUGS = [
   'air-duct-cleaning-cost-florida',
-  'how-often-clean-air-ducts',
+  'how-often-clean-air-ducts-florida',
   'air-duct-cleaning-scams',
   'black-mold-air-vents',
-  'signs-you-need-air-duct-cleaning',
+  'signs-your-air-ducts-need-cleaning',
   'dryer-vent-cleaning-cost',
 ];
 
 const CITY_GUIDE_SLUGS_ES = [
   'costo-limpieza-ductos-florida',
-  'cada-cuanto-limpiar-ductos',
-  'estafas-limpieza-de-ductos',
+  'cada-cuanto-limpiar-ductos-florida',
+  'estafas-limpieza-ductos',
   'moho-negro-en-ventilas',
-  'senales-necesita-limpieza-ductos',
+  'senales-de-que-necesita-limpieza-de-ductos',
   'humedad-ideal-interior-florida',
 ];
 
