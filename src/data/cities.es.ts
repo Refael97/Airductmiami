@@ -90,6 +90,16 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Una copa de árboles madura suelta mucho más polen y residuo orgánico que un suburbio pelado, los lagos mantienen la humedad pegada al suelo, y la vivienda va desde casas de una planta de los sesenta hasta townhouses recientes, o sea tres épocas de ducto distintas en un mismo pueblo.',
  region: 'Sur de Florida',
  },
+ 'miami-gardens': {
+ intro: "Miami Gardens se hizo ciudad apenas en 2003, pero sus casas son mucho más viejas: Carol City, Norland y Scott Lake se construyeron casi completas entre finales de los cincuenta y los setenta.",
+ local: "Casas de bloque de una planta, muchas con el garaje convertido o un Florida room agregado después, ductos en un ático bajo que en las casas más viejas llegaron años después de construida la casa, y calor de tierra adentro sin brisa de mar que lo alivie.",
+ region: 'Sur de Florida',
+ },
+ 'westchester': {
+ intro: "Westchester es la zona de casas de una planta al oeste de Coral Gables, por Bird Road, Coral Way y Galloway, construida casi toda en los cincuenta y sesenta y ampliada desde entonces.",
+ local: "Casas de bloque sobre losa, casi todas con al menos una ampliación, un carport o garaje convertido en cuarto, y ductos en el ático que se han alargado tantas veces que ya cuesta encontrar el trazado original.",
+ region: 'Sur de Florida',
+ },
  'fort-lauderdale': {
  intro: 'El estilo de vida junto al agua de Fort Lauderdale y la humedad durante todo el año hacen que tener ductos limpios y libres de moho sea esencial para un aire interior saludable.',
  local: 'Con cientos de millas de canales y una humedad costera constante, las casas de Fort Lauderdale son especialmente propensas al moho en los ductos y en el manejador de aire.',
@@ -148,6 +158,11 @@ export const cityEsContent: Record<string, CityEsContent> = {
  'deerfield-beach': {
  intro: 'La humedad frente al mar y el aire salino de Deerfield Beach hacen especialmente importante tener ductos libres de moho y serpentinas limpias.',
  local: 'Los condominios y las casas costeras de aquí lidian con la sal y la humedad que aceleran el moho y la corrosión del aire acondicionado en el límite entre Broward y Palm Beach.',
+ region: 'Sur de Florida',
+ },
+ 'tamarac': {
+ intro: "Tamarac se trazó en los sesenta y setenta en buena parte como ciudad de retiro, y mucha de su vivienda sigue siendo las villas, los condominios de jardín y las comunidades para mayores de 55 que se construyeron entonces.",
+ local: "Villas de una planta y apartamentos con la manejadora en un clóset o en el garaje, muchas casas cerradas todo el verano mientras los dueños están en el norte, y campos de golf y lagos que mantienen el aire húmedo alrededor.",
  region: 'Sur de Florida',
  },
  'boca-raton': {
@@ -216,6 +231,21 @@ export const cityEsContent: Record<string, CityEsContent> = {
  local: 'Los condominios frente al Golfo y las casas tierra adentro comparten el mismo reto: una humedad constante que alimenta el moho del aire acondicionado y reduce la eficiencia.',
  region: 'Bahía de Tampa',
  },
+ 'brandon': {
+ intro: "Brandon creció al este de Tampa por la State Road 60 de los setenta en adelante, y es una de las comunidades no incorporadas más grandes del condado de Hillsborough.",
+ local: "Casas de bloque de una planta sobre losa de los setenta a los noventa, urbanizaciones más nuevas de dos pisos hacia Bloomingdale y Valrico, y ductos en el ático de las calles viejas que ya llevan de treinta a cincuenta veranos encima.",
+ region: 'Bahía de Tampa',
+ },
+ 'riverview': {
+ intro: "Riverview baja desde Brandon por la US 301 y el río Alafia, y casi todo se ha construido después del 2000, así que tiene una de las viviendas más nuevas del condado de Hillsborough.",
+ local: "Urbanizaciones planificadas de casas sobre losa, muchas de dos pisos, con flexible por el ático y la manejadora en el garaje, algunas casas más viejas junto al Alafia, y obra nueva todavía por todos lados.",
+ region: 'Bahía de Tampa',
+ },
+ 'wesley-chapel': {
+ intro: "Wesley Chapel, en el sur del condado de Pasco justo al norte de New Tampa, era casi todo pasto y arboledas hasta los noventa, y hoy es una comunidad planificada tras otra por la State Road 54, la State Road 56 y la I-75.",
+ local: "Casas de dos pisos sobre losa de los noventa para acá, muchas con dos equipos y la manejadora en el ático, comunidades que siguen en construcción alrededor, y casas rurales más viejas en terrenos grandes entre medio.",
+ region: 'Bahía de Tampa',
+ },
  // ---- Centro de Florida ----
  'orlando': {
  intro: 'El clima caluroso y húmedo de Orlando, junto con su rápido crecimiento, significa muchas casas con sistemas de aire acondicionado que trabajan duro y se benefician de un cuidado profesional de los ductos.',
@@ -250,6 +280,16 @@ export const cityEsContent: Record<string, CityEsContent> = {
  'lakeland': {
  intro: 'Los numerosos lagos de Lakeland y su clima húmedo crean las condiciones de humedad que favorecen la formación de moho en los ductos del hogar.',
  local: 'Con más de 30 lagos con nombre, la humedad ambiental de Lakeland es alta, lo que hace la prevención del moho en ductos y serpentinas particularmente relevante por aquí.',
+ region: 'Centro de Florida',
+ },
+ 'sanford': {
+ intro: "Sanford, cabecera del condado de Seminole, está en la orilla sur del lago Monroe, y su vivienda va desde casas de madera de más de cien años cerca del centro hasta urbanizaciones de los últimos años hacia la interestatal.",
+ local: "Casas históricas de madera sobre pilares, algunas con el ducto por debajo del piso, casas de bloque de mediados de siglo en medio, y construcción nueva sobre losa al oeste de la ciudad vieja, todo respirando el aire húmedo del lago y del río St. Johns.",
+ region: 'Centro de Florida',
+ },
+ 'clermont': {
+ intro: "Clermont está en las lomas del sur del condado de Lake, entre una cadena de lagos, y casi toda su vivienda se construyó sobre antiguas arboledas de cítricos después de que las heladas de los ochenta acabaran con ellas.",
+ local: "Casas viejas junto al lago y en el centro cerca del lago Minneola, urbanizaciones de los noventa y dos mil por la US 27 y la State Road 50, y comunidades grandes para mayores de 55 donde muchas casas pasan parte del año cerradas.",
  region: 'Centro de Florida',
  },
  'jacksonville': {

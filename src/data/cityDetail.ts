@@ -3875,6 +3875,323 @@ export const cityDetail: Record<string, CityDetail> = {
       common: 'Exterior wall hoods on short runs where the last twelve inches have packed solid, which looks like nothing from inside the house.',
     },
   },
+
+  /* Wave 4, 6 November 2026: eight cities in regions already served
+     (Miami-Dade, Broward, Tampa Bay, Central Florida) that had no page.
+     Two depth blocks per language, no dryerVent or ductRepair block, so
+     each adds exactly one English and one Spanish page. */
+  'miami-gardens': {
+    depth: [
+      {
+        heading: "Carol City, Norland and the mid-century block house",
+        body: [
+          "Most of Miami Gardens was built as subdivisions long before it was a city. Carol City, Norland, Scott Lake and Lake Lucerne are mostly single storey concrete block houses on slab, and on the older streets many were built with window or wall units rather than ducted air. The central system came later, fitted into a low attic that was never drawn to carry it.",
+          "That shows in the layout. Runs are often longer and more crooked than they need to be, the return is usually one grille in the hallway, and the air handler sits in a closet or the garage, wherever it would fit. When the house cools unevenly, the cause is more often that layout than the equipment.",
+          "Additions make it harder. A converted garage or a closed in Florida room usually got its air by extending the nearest run, so the room furthest from the air handler is the one that never quite gets cold. A cleaning removes what has built up, and the camera shows whether an extension has come loose or been crushed above a ceiling.",
+        ],
+      },
+      {
+        heading: "Inland heat, the coil, and what it costs",
+        body: [
+          "Miami Gardens sits well inland, crossed by the Turnpike and the Palmetto, and it gets little of the sea breeze that cools the coast in the afternoon. The system runs long hours from April to November, the evaporator coil stays wet for most of that time, and a coil that rarely dries is where a musty smell usually starts.",
+          "If the smell comes when the system starts and fades after a few minutes, look at the coil and the drain pan before the ducts. Coil cleaning is quoted at $200 to $450 and is sometimes all the house needs. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "A full duct cleaning runs $300 to $600 per system, and most houses here have one system. What moves the price is the register count, the additions and how easy the air handler is to reach. You hear the number on the phone before anything is booked, and the photos at the end show you what was inside.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Casas de bloque de los cincuenta y sesenta, con el aire puesto después",
+        body: [
+          "Buena parte de Miami Gardens ya estaba construida mucho antes de que fuera ciudad. En Carol City, Norland, Scott Lake y Lake Lucerne la casa típica es de bloque, de una planta y sobre losa, y en las calles más viejas muchas se hicieron con aire de ventana o de pared. El aire central llegó años después y se acomodó en un ático bajo que nunca se pensó para llevar ductos.",
+          "Eso se nota en el trazado. Los tramos suelen ser más largos y con más vueltas de lo necesario, el retorno casi siempre es una sola rejilla en el pasillo, y la manejadora quedó donde cupo, en un clóset o en el garaje. Cuando la casa enfría disparejo, la culpa casi siempre es de ese trazado y no del equipo.",
+          "Las ampliaciones lo complican más. Al garaje convertido o al Florida room cerrado normalmente le llevaron el aire alargando el tramo más cercano, y por eso el cuarto más lejano es el que nunca se enfría bien. Con la limpieza sacamos lo acumulado, y la cámara enseña si alguna de esas extensiones se soltó o quedó aplastada arriba del techo.",
+        ],
+      },
+      {
+        heading: "Calor de tierra adentro, el serpentín y lo que cuesta",
+        body: [
+          "Miami Gardens queda tierra adentro, cruzada por el Turnpike y el Palmetto, y casi no le llega la brisa del mar que refresca la costa por la tarde. El equipo trabaja muchas horas de abril a noviembre, el serpentín pasa casi todo ese tiempo mojado, y un serpentín que nunca se seca es donde suele empezar el olor a humedad.",
+          "Si el olor sale cuando arranca el aire y se va a los pocos minutos, hay que mirar el serpentín y la bandeja antes que los ductos. La limpieza del serpentín se cotiza entre 200 y 450 dólares, y a veces es todo lo que la casa necesita. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La limpieza completa de ductos cuesta entre 300 y 600 dólares por sistema, y casi todas las casas de aquí tienen uno solo. El precio lo mueven el número de rejillas, las ampliaciones y qué tan fácil se llega a la manejadora. Se lo damos por teléfono antes de agendar, y al terminar le enseñamos en fotos lo que había adentro.",
+        ],
+      },
+    ],
+    neighborhoods: ["Carol City", "Norland", "Scott Lake", "Lake Lucerne", "Andover", "Bunche Park"],
+  },
+  westchester: {
+    depth: [
+      {
+        heading: "Fifties and sixties houses, extended room by room",
+        body: [
+          "Westchester filled up in the fifties and sixties with single storey concrete block houses on slab, and very few of them are still the house that was built. A bedroom at the back, a carport closed in, a Florida room turned into a family room, an efficiency behind the house for a parent or a tenant. Each one needed air, and each one usually got it from the nearest duct.",
+          "That is the pattern we find in the attic: a trunk sized for three bedrooms now feeding five rooms, long flex extensions laid across the ceiling joists, and joints sealed decades apart. The newest room is often the furthest from the air handler and the one that never cools, and the run that feeds it is often the dirtiest in the house, because where flex sags the air slows down and drops its dust.",
+          "An efficiency with its own unit is a separate system and is priced separately. If it shares the main system through an extension, it is part of the same cleaning, and we will tell you plainly whether that extension is worth keeping or whether the room needs its own supply.",
+        ],
+      },
+      {
+        heading: "The hallway return, and what it costs",
+        body: [
+          "In most Westchester houses the return is one grille in the hallway, and behind it there is often no sealed duct, just a framed opening that pulls air from wherever it can. With the attic above well past a hundred degrees in summer, any gap there draws hot, dusty attic air straight into the system. A filter that turns grey in one month instead of three is usually the sign.",
+          "So we clean the return path first and look at it with the camera. Cleaning the supply runs while the return keeps drawing from the attic only buys a few months. Where it needs sealing, that is a repair, and we quote it separately so you can decide.",
+          "A full cleaning runs $300 to $600 per system, and here the number moves mostly with the additions: more rooms means more registers and longer runs. Dryer vent cleaning is $100 to $200, and in houses where the laundry moved into the garage or a back room the vent run is often longer than people think. You get the price on the phone before anything is booked.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Casas de los cincuenta y sesenta que han crecido cuarto por cuarto",
+        body: [
+          "Westchester se llenó en los cincuenta y sesenta de casas de bloque de una planta sobre losa, y muy pocas siguen siendo la casa que se construyó. Un cuarto atrás, el carport cerrado, el Florida room convertido en sala, un efficiency en el patio para la abuela o para alquilar. Cada ampliación necesitó aire, y casi siempre se lo sacaron del ducto más cercano.",
+          "Eso es lo que encontramos en el ático: un ducto principal pensado para tres cuartos que hoy alimenta cinco, extensiones largas de flexible tiradas encima de las vigas, y uniones selladas con décadas de diferencia. El cuarto más nuevo suele ser el más lejos de la manejadora y el que nunca se enfría, y el tramo que lo alimenta suele ser el más sucio de la casa, porque donde el flexible se descuelga el aire pierde fuerza y suelta el polvo.",
+          "Si el efficiency tiene su propio equipo, es otro sistema y se cotiza aparte. Si comparte el aire de la casa por una extensión, entra en la misma limpieza, y le decimos con franqueza si vale la pena dejar esa extensión como está o si ese cuarto necesita su propia salida de aire.",
+        ],
+      },
+      {
+        heading: "El retorno del pasillo y lo que cuesta",
+        body: [
+          "En casi todas las casas de Westchester el retorno es una sola rejilla en el pasillo, y detrás muchas veces no hay ducto sellado sino un hueco enmarcado que jala aire de donde pueda. Con el ático por encima de los cien grados en verano, cualquier rendija ahí mete aire caliente y polvoriento directo al sistema. Si el filtro se pone gris al mes en vez de a los tres meses, casi siempre es eso.",
+          "Por eso limpiamos primero el camino de retorno y lo revisamos con cámara. Limpiar los ductos de salida mientras el retorno sigue chupando del ático solo le compra unos meses. Si hace falta sellarlo, eso ya es reparación y se lo cotizamos aparte para que usted decida.",
+          "La limpieza completa cuesta entre 300 y 600 dólares por sistema, y aquí lo que más mueve el número son las ampliaciones: más cuartos, más rejillas y tramos más largos. La ventila de la secadora va de 100 a 200 dólares, y en las casas donde la lavadora se pasó al garaje o a un cuarto de atrás el tubo suele ser más largo de lo que uno cree. El precio se lo damos por teléfono antes de agendar.",
+        ],
+      },
+    ],
+    neighborhoods: ["Coral Way", "Bird Road", "Galloway Road", "Coral Terrace", "Olympia Heights", "University Park"],
+  },
+  tamarac: {
+    depth: [
+      {
+        heading: "Villas, condos and the closet air handler",
+        body: [
+          "Much of Tamarac is single storey villas, duplexes and low rise garden condominiums from the late sixties through the eighties, in communities like Kings Point, Woodmont and The Mainlands. In most of them the air handler sits in a hall closet or the garage, the duct runs are short, and the whole system is small. That is good news for a cleaning, which goes quickly and shows its effect fast.",
+          "It also means the coil matters more than the ducts. In a closet system the coil sits a few inches from the filter and runs most of the year, and in a unit that has been through decades of Broward summers the drain pan and the cabinet around it are often where the smell is coming from. We look there first, and if that is the job, coil cleaning is quoted at $200 to $450 rather than a full duct cleaning nobody needs.",
+          "In a condominium the association often owns the roof, the outdoor unit or the main drain line, and the owner owns the rest. We work on what belongs to the unit, and anything we notice on the parts that do not is in the photos, so you can take it to the board.",
+        ],
+      },
+      {
+        heading: "A house closed for the summer",
+        body: [
+          "Many Tamarac owners spend the summer up north and leave the house shut from May to October. A closed house in Broward with the thermostat set high, or the system switched off, is a house whose air never dries out. Humidity climbs, the coil and the duct liner sit damp for months, and the first thing an owner notices in the fall is the smell in the first ten minutes after switching the air back on.",
+          "Before you leave, set the thermostat around 78 degrees rather than turning it off, or use the humidity setting if your thermostat has one, and change the filter. If the smell is already there when you come back, a camera inspection shows whether it comes from the coil, the pan or the ducts. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "A full duct cleaning runs $300 to $600 per system, and most villas and condo units here are a single system, often toward the lower end because the runs are short. Dryer vent cleaning is $100 to $200. We give you the figure on the phone before booking, and if you are away we can work with a neighbour or a manager who holds the key.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Villas, condominios y la manejadora en el clóset",
+        body: [
+          "Gran parte de Tamarac son villas de una planta, dúplex y condominios de jardín construidos entre finales de los sesenta y los ochenta, en comunidades como Kings Point, Woodmont y The Mainlands. En casi todas la manejadora está en un clóset del pasillo o en el garaje, los tramos son cortos y el sistema es pequeño. Para la limpieza eso es bueno: se hace rápido y la diferencia se nota enseguida.",
+          "También quiere decir que el serpentín pesa más que el ducto. En un equipo de clóset el serpentín queda a pocos centímetros del filtro y trabaja casi todo el año, y en una unidad que lleva décadas de veranos de Broward encima, la bandeja y el gabinete suelen ser el origen del olor. Miramos ahí primero, y si ese es el trabajo, la limpieza del serpentín se cotiza entre 200 y 450 dólares, no una limpieza completa de ductos que no hace falta.",
+          "En un condominio la asociación muchas veces es dueña del techo, del equipo de afuera o de la línea principal de drenaje, y el propietario del resto. Trabajamos en lo que le pertenece a la unidad, y lo que veamos en lo demás queda en las fotos para que usted lo lleve a la junta.",
+        ],
+      },
+      {
+        heading: "La casa que se queda cerrada todo el verano",
+        body: [
+          "Muchos dueños en Tamarac pasan el verano en el norte y dejan la casa cerrada de mayo a octubre. Una casa cerrada en Broward con el termostato muy alto, o con el aire apagado, es una casa donde el aire nunca se seca. La humedad sube, el serpentín y el forro del ducto pasan meses húmedos, y lo primero que se nota al regresar en otoño es el olor de los primeros diez minutos con el aire prendido.",
+          "Antes de irse, deje el termostato en unos 78 grados en lugar de apagarlo, o use el control de humedad si su termostato lo tiene, y cambie el filtro. Si el olor ya está cuando regresa, la inspección con cámara muestra si viene del serpentín, de la bandeja o de los ductos. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La limpieza completa de ductos cuesta entre 300 y 600 dólares por sistema, y la mayoría de las villas y apartamentos de aquí son un solo sistema, a menudo en la parte baja del rango. La ventila de la secadora va de 100 a 200 dólares. El precio se lo damos por teléfono antes de agendar, y si usted está fuera podemos coordinar con un vecino o con quien tenga la llave.",
+        ],
+      },
+    ],
+    neighborhoods: ["Woodmont", "Kings Point", "The Mainlands", "Colony West", "Commercial Boulevard", "McNab Road"],
+  },
+  brandon: {
+    depth: [
+      {
+        heading: "Seventies to nineties slab houses and tired attic duct",
+        body: [
+          "The older half of Brandon, around Kings Avenue, Lumsden Road, Providence Lakes and Heather Lakes, is mostly single storey concrete block houses on slab built from the seventies into the nineties. The ductwork is in the attic, and in many of them it is still the original layout, sometimes the original duct, under equipment that has been replaced twice.",
+          "Flex duct in a Florida attic sags between the trusses as it ages, the outer jacket breaks down, and the joints let go one by one. Every low point collects dust, and every leak on the return side pulls attic air into the system. The usual sign is a back bedroom that stays three or four degrees warmer than the thermostat, and the usual assumption is that the equipment is too small.",
+          "A cleaning removes what has built up, and the camera shows which runs have collapsed or come apart. A run that has failed is not something to clean, it is something to replace, and that is quoted as repair so you can see the two costs side by side.",
+        ],
+      },
+      {
+        heading: "Newer houses toward Bloomingdale and Valrico, and the price",
+        body: [
+          "East and south of the older streets, toward Bloomingdale and Valrico, much of the housing is two storey and from the nineties onward, often with the air handler in the garage and a second system for the upstairs. Nothing there is worn out yet. What we find is construction dust that went into open ducts while the house was being built, and an upstairs system that runs hotter and dirtier because its ducts sit in the hottest part of the house.",
+          "Afternoon thunderstorms through most of the summer keep the humidity high from June to September, so the coil stays wet and a musty smell at start up is common. Coil cleaning is quoted at $200 to $450. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "A full duct cleaning runs $300 to $600 per system, so a two system house is two prices, and you hear both before booking. Dryer vent cleaning is $100 to $200, more often toward the top of the range when the laundry is upstairs and the vent runs across the attic to the roof.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Casas de losa de los setenta a los noventa, con el ducto cansado",
+        body: [
+          "La parte más vieja de Brandon, por Kings Avenue, Lumsden Road, Providence Lakes y Heather Lakes, es casi toda de casas de bloque de una planta sobre losa, levantadas entre los setenta y los noventa. El ducto va en el ático, y en muchas sigue el trazado original, a veces el mismo ducto original, debajo de un equipo que ya se cambió dos veces.",
+          "El flexible en un ático de Florida se descuelga entre las vigas con los años, la cubierta exterior se deshace y las uniones se van soltando una por una. Cada parte baja junta polvo, y cada fuga del lado del retorno mete aire del ático al sistema. La señal de siempre es el cuarto del fondo que se queda tres o cuatro grados más caliente que el termostato, y la conclusión de siempre es que el equipo quedó chico.",
+          "La limpieza saca lo acumulado y la cámara enseña qué tramos se aplastaron o se soltaron. Un tramo que ya falló no se limpia, se cambia, y eso se cotiza como reparación para que usted vea los dos costos uno al lado del otro.",
+        ],
+      },
+      {
+        heading: "Las casas nuevas hacia Bloomingdale y Valrico, y lo que cuesta",
+        body: [
+          "Al este y al sur, hacia Bloomingdale y Valrico, mucha de la vivienda es de dos pisos y de los noventa en adelante, casi siempre con la manejadora en el garaje y un segundo equipo para arriba. Ahí nada está gastado todavía. Lo que encontramos es polvo de obra que entró al ducto abierto mientras se construía la casa, y un equipo de arriba que trabaja más caliente y se ensucia más porque sus ductos van en la parte más caliente de la casa.",
+          "Los aguaceros de casi todas las tardes de verano mantienen la humedad alta de junio a septiembre, así que el serpentín vive mojado y el olor a humedad al prender el aire es común. La limpieza del serpentín se cotiza entre 200 y 450 dólares. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La limpieza completa de ductos cuesta entre 300 y 600 dólares por sistema, así que una casa con dos equipos son dos precios, y se los decimos los dos antes de agendar. La ventila de la secadora va de 100 a 200 dólares, más cerca de los 200 cuando la lavadora está arriba y el tubo cruza el ático hasta el techo.",
+        ],
+      },
+    ],
+    neighborhoods: ["Providence Lakes", "Heather Lakes", "Bloomingdale", "Valrico", "Lumsden Road", "Kings Avenue"],
+  },
+  riverview: {
+    depth: [
+      {
+        heading: "Built since 2000, and what new houses get wrong",
+        body: [
+          "Most of Riverview went up in the last twenty five years, in planned communities off Big Bend Road, Boyette Road and US 301 such as Summerfield, South Fork and Rivercrest. These are slab houses with the air handler in the garage or a utility closet and flexible duct fanned across the attic. Almost nothing is old enough to have worn out, so when a system here underperforms, the cause is usually something that was built in.",
+          "The first is construction dust. Ducts sit open while drywall is sanded and insulation is blown, and that material stays inside until someone removes it. In a neighbourhood where the next phase is still being built, site dust keeps arriving through every gap on the return side. Families who move in and develop allergies in the first season are often reacting to that.",
+          "The second is the attic. A Tampa Bay attic passes 120 degrees on a July afternoon, and flex duct strapped too loosely sags between the trusses within a few years. Each sag is a low point where air slows and dust drops, and the room at the end of that run is the one that never cools. The camera shows it, and straightening and supporting a run is usually a small repair.",
+        ],
+      },
+      {
+        heading: "Two storeys, two systems, and the river",
+        body: [
+          "Many Riverview houses are two storey with a second system for the upstairs, and that system usually has the harder life: its air handler is in the attic or an upstairs closet, its ducts run through the hottest part of the house, and its filter is the one nobody remembers to change. We clean and quote each system separately, at $300 to $600 per system, and you hear both numbers before booking.",
+          "The older houses along the Alafia River and the creeks that feed it sit lower and breathe damper air, and some have taken water in a storm. Insulation that got wet inside a duct jacket does not dry out, and the first sign is often a smell weeks later. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "Dryer vent cleaning is $100 to $200. In two storey houses with the laundry upstairs, the vent often runs across the attic to the roof, and those long runs clog faster than a short one through an outside wall.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Casi todo construido después del 2000, y lo que traen de fábrica las casas nuevas",
+        body: [
+          "La mayor parte de Riverview se levantó en los últimos veinticinco años, en comunidades planificadas junto a Big Bend Road, Boyette Road y la US 301, como Summerfield, South Fork y Rivercrest. Son casas sobre losa, con la manejadora en el garaje o en un clóset de servicio y ducto flexible repartido por el ático. Casi nada tiene edad para estar gastado, así que cuando un sistema no rinde, el motivo casi siempre viene de la construcción.",
+          "Lo primero es el polvo de obra. Los ductos quedan abiertos mientras se lija el drywall y se sopla el aislamiento, y ese material se queda adentro hasta que alguien lo saca. En un vecindario donde todavía se está construyendo la siguiente fase, el polvo de la obra sigue entrando por cada rendija del retorno. Las familias que se mudan y empiezan con alergias en la primera temporada muchas veces están reaccionando a eso.",
+          "Lo segundo es el ático. Un ático en la bahía de Tampa pasa de 120 grados una tarde de julio, y el flexible mal amarrado se descuelga entre las vigas en pocos años. Cada parte colgada es un punto bajo donde el aire pierde fuerza y suelta el polvo, y el cuarto al final de ese tramo es el que nunca se enfría. La cámara lo muestra, y enderezar y sostener un tramo casi siempre es una reparación pequeña.",
+        ],
+      },
+      {
+        heading: "Dos pisos, dos equipos, y el río",
+        body: [
+          "Muchas casas de Riverview son de dos pisos con un equipo aparte para arriba, y ese equipo es el que más sufre: la manejadora está en el ático o en un clóset de arriba, los ductos van por la parte más caliente de la casa, y su filtro es el que a nadie se le acuerda cambiar. Cada sistema se limpia y se cotiza por separado, entre 300 y 600 dólares cada uno, y le damos los dos precios antes de agendar.",
+          "Las casas más viejas junto al río Alafia están más bajas y respiran un aire más húmedo, y algunas han tomado agua en alguna tormenta. El aislamiento que se mojó dentro de la cubierta del ducto no se seca, y la primera señal muchas veces es un olor semanas después. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La ventila de la secadora cuesta de 100 a 200 dólares. En las casas de dos pisos con la lavadora arriba, el tubo muchas veces cruza el ático hasta el techo, y esos tramos largos se tapan más rápido que uno corto que sale por una pared.",
+        ],
+      },
+    ],
+    neighborhoods: ["Summerfield", "South Fork", "Rivercrest", "Boyette Road", "Big Bend Road", "US 301"],
+  },
+  'wesley-chapel': {
+    depth: [
+      {
+        heading: "Master planned, mostly new, still building",
+        body: [
+          "Meadow Pointe dates from the nineties, Seven Oaks and Wiregrass Ranch from the two thousands, and Epperson and the newest communities along State Road 56 are younger still. Across all of them the house is much the same: slab on grade, frequently two storey, flexible duct across the attic, and an air handler in the garage, a closet or the attic itself.",
+          "On the newest streets the problem is construction debris. Ducts sit open while the house is finished, and drywall dust and insulation fibre go in with nobody to take them out afterwards. With the next phase going up a few hundred yards away, site dust keeps coming in on the return side. A new house that leaves the family sneezing through its first season is a common call here, and a cleaning once the builder has gone is often the fix.",
+          "In Meadow Pointe and the older parts of Seven Oaks the houses are now twenty to thirty years old, which is when attic flex starts to sag and the original joint sealing starts to fail. The upstairs bedrooms cool worse, the filter greys faster, and the camera usually shows why.",
+        ],
+      },
+      {
+        heading: "The upstairs system, and what it costs",
+        body: [
+          "Two storey houses here often run two systems, and the upstairs one, with its air handler in the attic, works in the hottest part of the house all summer. Its drain pan sits above a ceiling, so a blocked condensate line is not just a smell, it is a water stain in the bedroom below. We check the pan and the line on every visit to an attic unit and tell you what we see.",
+          "A full duct cleaning runs $300 to $600 per system, and a two system house is two prices, both quoted before you book. Coil cleaning is $200 to $450 when the coil, not the ducts, is the problem. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "Dryer vent cleaning is $100 to $200. Many laundry rooms here are upstairs, with the vent running across the attic to a roof cap, and those long runs are the ones that clog, so once a year is a sensible schedule for a busy household.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Comunidades planificadas, casi todo nuevo, y todavía construyendo",
+        body: [
+          "Meadow Pointe es de los noventa, Seven Oaks y Wiregrass Ranch de los dos mil, y Epperson y las comunidades más nuevas sobre la State Road 56 son todavía más recientes. En todas la casa es parecida: losa sobre el terreno, muchas veces de dos pisos, ducto flexible por el ático y la manejadora en el garaje, en un clóset o en el mismo ático.",
+          "En las calles más nuevas el problema es el escombro de obra. Los ductos quedan abiertos mientras se termina la casa, y el polvo de drywall y la fibra de aislamiento entran sin que nadie los saque después. Con la siguiente fase construyéndose a pocas cuadras, el polvo de la obra sigue entrando por el retorno. Una casa nueva donde la familia empieza a estornudar la primera temporada es una llamada común aquí, y una limpieza cuando ya se fue la constructora suele resolverlo.",
+          "En Meadow Pointe y en la parte más vieja de Seven Oaks las casas ya tienen entre veinte y treinta años, que es cuando el flexible del ático empieza a descolgarse y el sellado original de las uniones empieza a fallar. Los cuartos de arriba enfrían peor, el filtro se ensucia más rápido, y la cámara casi siempre enseña por qué.",
+        ],
+      },
+      {
+        heading: "El equipo de arriba y lo que cuesta",
+        body: [
+          "Las casas de dos pisos aquí muchas veces tienen dos equipos, y el de arriba, con la manejadora en el ático, trabaja todo el verano en la parte más caliente de la casa. Su bandeja de condensado queda encima de un techo, así que una línea de drenaje tapada no es solo un olor: es una mancha de agua en el cuarto de abajo. En cada visita a un equipo de ático revisamos la bandeja y la línea y le decimos lo que vimos.",
+          "La limpieza completa de ductos cuesta entre 300 y 600 dólares por sistema, y una casa con dos equipos son dos precios, los dos antes de agendar. La limpieza del serpentín va de 200 a 450 dólares cuando el problema es el serpentín y no el ducto. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La ventila de la secadora va de 100 a 200 dólares. Muchos cuartos de lavado aquí están arriba, con el tubo cruzando el ático hasta una salida en el techo, y esos tramos largos son los que se tapan, así que una vez al año es lo sensato para una familia que lava seguido.",
+        ],
+      },
+    ],
+    neighborhoods: ["Meadow Pointe", "Seven Oaks", "Wiregrass Ranch", "Epperson", "Lexington Oaks", "Saddlebrook"],
+  },
+  sanford: {
+    depth: [
+      {
+        heading: "Old frame houses near downtown and the lake",
+        body: [
+          "The streets around downtown Sanford and the residential historic district hold wood frame houses from the late eighteen hundreds and early nineteen hundreds, many raised on piers with a crawl space underneath. None of them were built for central air. When it arrived, the ducts went wherever they could: across a low attic, or under the floor through the crawl space.",
+          "Ducts under a raised floor live in some of the dampest air in the house, close to the ground and a short walk from Lake Monroe. Their insulation picks up moisture, joints corrode or let go, and animals sometimes get in. The camera shows which, and a run that has torn or come apart under the house is replaced as a repair rather than cleaned.",
+          "In attic retrofits the problem is the opposite: long runs squeezed into a shallow space, crushed in places, feeding rooms laid out for cross ventilation and ceiling fans. Old plaster and wood houses also leak air in more places, so the return side of the system pulls in more dust than a sealed modern house would. A cleaning helps most here when the return path is checked at the same time.",
+        ],
+      },
+      {
+        heading: "Newer Sanford toward Lake Mary, and the price",
+        body: [
+          "West of the old city, toward Lake Mary and along State Road 46 and Rinehart Road, the housing is mostly slab construction from the eighties onward, with plenty built in the last ten years. Those houses follow the usual Central Florida pattern: flex duct across a hot attic, an air handler in the garage, and on the newest streets construction dust still inside the ducts.",
+          "Afternoon storms from June to September and the lake on the north side of the city keep the humidity high, so the coil stays wet and a musty smell when the system starts is common. Coil cleaning is $200 to $450 when that is the source. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "A full duct cleaning runs $300 to $600 per system. In the historic houses the number moves with access, because a crawl space or a tight attic takes longer; in the newer ones it moves with the register count and whether there is a second system. Dryer vent cleaning is $100 to $200, and you get the price on the phone before booking.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "Las casas de madera cerca del centro y del lago",
+        body: [
+          "Las calles alrededor del centro de Sanford y del distrito histórico residencial tienen casas de madera de finales del siglo diecinueve y principios del veinte, muchas levantadas sobre pilares con un espacio libre debajo. Ninguna se construyó para aire central. Cuando llegó, los ductos se metieron donde se pudo: por un ático bajo o por debajo del piso, en ese espacio entre la casa y la tierra.",
+          "Un ducto debajo de un piso elevado vive en el aire más húmedo de toda la casa, pegado al suelo y a pocas cuadras del lago Monroe. El aislamiento chupa humedad, las uniones se oxidan o se sueltan, y a veces se meten animales. La cámara enseña cuál es el caso, y un tramo roto o desprendido debajo de la casa se cambia como reparación, no se limpia.",
+          "En los ductos que se metieron después en el ático pasa lo contrario: tramos largos apretados en un espacio bajo, aplastados en partes, que alimentan cuartos pensados para ventilación cruzada y abanicos de techo. Una casa vieja de madera y yeso también tiene más fugas de aire, así que el retorno jala más polvo que en una casa moderna bien sellada. Aquí la limpieza rinde más cuando se revisa el camino de retorno al mismo tiempo.",
+        ],
+      },
+      {
+        heading: "El Sanford nuevo, hacia Lake Mary, y lo que cuesta",
+        body: [
+          "Al oeste de la ciudad vieja, hacia Lake Mary y por la State Road 46 y Rinehart Road, la vivienda es casi toda sobre losa de los ochenta en adelante, y mucha de los últimos diez años. Esas casas tienen el patrón de siempre en el centro de Florida: flexible por un ático caliente, la manejadora en el garaje, y en las calles más nuevas el polvo de obra todavía adentro del ducto.",
+          "Los aguaceros de la tarde de junio a septiembre y el lago al norte de la ciudad mantienen la humedad alta, así que el serpentín se queda mojado y el olor a humedad al arrancar el aire es común. Si el olor viene de ahí, la limpieza del serpentín cuesta de 200 a 450 dólares. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La limpieza completa de ductos cuesta entre 300 y 600 dólares por sistema. En las casas históricas el precio lo mueve el acceso, porque un espacio bajo el piso o un ático apretado toman más tiempo; en las nuevas, el número de rejillas y si hay un segundo equipo. La ventila de la secadora va de 100 a 200 dólares, y el precio se lo damos por teléfono antes de agendar.",
+        ],
+      },
+    ],
+    neighborhoods: ["Downtown Sanford", "Sanford Residential Historic District", "Georgetown", "Goldsboro", "Mayfair", "Rinehart Road"],
+  },
+  clermont: {
+    depth: [
+      {
+        heading: "From groves to subdivisions",
+        body: [
+          "Downtown Clermont and the streets near Lake Minneola hold the older houses, some from the first half of the twentieth century, small and often with ductwork added long after they were built. Most of the city, though, went up from the nineties onward on land that had been citrus groves until the freezes of the eighties, in communities along US 27, State Road 50 and Hartwood Marsh Road.",
+          "Those newer houses are slab construction with flex duct across the attic and the air handler in the garage. The ones from the late nineties and early two thousands are now at the age when flex sags, joint sealing fails and the room at the far end of the house stops cooling. The newest streets have the opposite problem: dust from building that is still going on nearby, drawn in through every gap on the return side.",
+          "The hills add something too. Sandy soil and cleared lots on slopes mean fine sand and dust blow around new construction, and it ends up on filters and inside return grilles faster than people expect. A filter that is grey in a month is the sign to check the return path, not just to buy filters more often.",
+        ],
+      },
+      {
+        heading: "Kings Ridge, Summit Greens, two storey houses and the price",
+        body: [
+          "Clermont has large 55 and over communities, Kings Ridge and Summit Greens among them, where a single storey home on one system is the norm and many owners are away for part of the summer. A house shut for weeks with the air off never dries out, and the smell that greets the owner coming back usually starts at the coil, not in the ducts. Left running at around 78 degrees, the system keeps the house dry.",
+          "Elsewhere in the city, newer family houses are often large and two storey with a second system upstairs. Each system is quoted separately at $300 to $600, so you hear both numbers before booking. Coil cleaning is $200 to $450 when the coil is the problem. If the camera finds mold growing inside the ducts, that is our air duct mold removal service; mold in the walls or framing is not our work and goes to a separate licensed contractor.",
+          "Dryer vent cleaning is $100 to $200. Long runs to a roof cap in two storey houses clog faster than short wall vents, and in a house where the dryer takes two cycles to dry a load, the vent is the first thing to check.",
+        ],
+      },
+    ],
+    depthEs: [
+      {
+        heading: "De arboledas de naranja a urbanizaciones",
+        body: [
+          "El centro de Clermont y las calles cerca del lago Minneola tienen las casas más viejas, algunas de la primera mitad del siglo veinte, pequeñas y muchas con el ducto agregado mucho después de construidas. Pero la mayor parte de la ciudad se levantó de los noventa en adelante, sobre terrenos que fueron arboledas de cítricos hasta las heladas de los ochenta, en comunidades sobre la US 27, la State Road 50 y Hartwood Marsh Road.",
+          "Esas casas más nuevas son sobre losa, con flexible por el ático y la manejadora en el garaje. Las de finales de los noventa y principios de los dos mil ya llegaron a la edad en que el flexible se descuelga, el sellado de las uniones falla y el cuarto del fondo deja de enfriar. Las calles más nuevas tienen el problema contrario: polvo de las obras que siguen alrededor, que entra por cada rendija del retorno.",
+          "Las lomas también ponen lo suyo. Con suelo arenoso y lotes pelados en pendiente, la arena fina y el polvo vuelan alrededor de las obras y terminan en los filtros y en las rejillas de retorno más rápido de lo que uno espera. Un filtro gris al mes es señal de revisar el camino de retorno, no solo de comprar filtros más seguido.",
+        ],
+      },
+      {
+        heading: "Kings Ridge, Summit Greens, las casas de dos pisos y lo que cuesta",
+        body: [
+          "Clermont tiene comunidades grandes para mayores de 55, entre ellas Kings Ridge y Summit Greens, donde lo normal es una casa de una planta con un solo equipo y donde muchos dueños pasan parte del verano fuera. Una casa cerrada por semanas con el aire apagado nunca se seca, y el olor que recibe al dueño al regresar casi siempre empieza en el serpentín, no en el ducto. Con el equipo prendido en unos 78 grados la casa se mantiene seca.",
+          "En el resto de la ciudad, las casas familiares más nuevas muchas veces son grandes, de dos pisos y con un segundo equipo arriba. Cada sistema se cotiza aparte, entre 300 y 600 dólares, y le damos los dos precios antes de agendar. La limpieza del serpentín va de 200 a 450 dólares cuando el problema está ahí. Si la cámara encuentra moho adentro del ducto, eso lo atiende nuestro servicio de eliminación de moho en ductos; el moho en paredes o estructura no es trabajo nuestro y le corresponde a un contratista aparte con licencia.",
+          "La ventila de la secadora cuesta de 100 a 200 dólares. Los tubos largos que salen por el techo en las casas de dos pisos se tapan antes que los cortos que salen por la pared, y si la secadora necesita dos ciclos para secar una carga, lo primero que hay que revisar es la ventila.",
+        ],
+      },
+    ],
+    neighborhoods: ["Downtown Clermont", "Lake Minneola", "Kings Ridge", "Summit Greens", "Hartwood Marsh Road", "Minneola"],
+  },
 };
 
 /** Detail for a city, or an empty record if none has been written yet. */
