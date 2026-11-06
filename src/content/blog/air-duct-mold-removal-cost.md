@@ -3,6 +3,7 @@ title: "Air Duct Mold Removal Cost in Florida: $500 to $3,000"
 description: "Surface growth on the coil runs $500 to $900, a fully contaminated system $1,200 to $3,000. What moves the number and how to spot an inflated quote."
 answer: "Air duct mold removal in Florida typically costs $500 to $3,000, depending on how far the mold has spread. Light surface growth on the coil runs $500 to $900, a full system with contaminated ductwork runs $1,200 to $3,000, and severe cases needing duct replacement go higher."
 pubDate: 2026-07-31
+updatedDate: 2026-11-06
 category: "Costs & Buying Guides"
 tags: ["mold removal", "cost", "remediation", "florida", "pricing"]
 featured: false
@@ -17,6 +18,12 @@ faq:
     answer: "The same $500 to $3,000 as the rest of South Florida. A condo with a closet air handler and growth caught on the coil sits near the low end; an older house with long attic flex runs that have to be replaced, or a newer two system home out west, sits near the top. Growth over 10 square feet needs a Florida licensed mold remediator, so ask for the licence number before paying anyone."
   - question: "How do I know if a mold removal quote is fair?"
     answer: "A fair quote follows a camera inspection you were shown, itemizes the work, and lands in the $500 to $3,000 range for a typical home. Be careful with quotes given over the phone before anyone has looked inside your system."
+  - question: "Do I need mold removal or just an HVAC cleaning?"
+    answer: "If the camera shows a dirty, damp coil and drain pan but no visible growth on the cabinet or in the ducts, an HVAC cleaning at $200 to $450 per system is usually the job. Mold removal pricing, $500 to $3,000, applies when there is visible growth to contain, remove and treat."
+  - question: "Does air duct mold removal cost more in Miami than in Tampa or Sarasota?"
+    answer: "No. The range is $500 to $3,000 across Florida. What changes is the housing: a condo closet system with growth caught on the coil sits near the low end anywhere, and a large home with two systems or contaminated attic flex sits near the top."
+  - question: "Will a UV light get rid of mold already in my ducts?"
+    answer: "No. A UV-C lamp on the coil, $300 to $700 installed, helps stop new growth on the coil. It does not reach the ducts or remove existing growth, so it comes after the cleaning, not instead of it."
 ---
 
 Air duct mold removal in Florida costs **$500 to $3,000** for most homes. The number depends almost entirely on one thing: how far the mold has traveled from where it started. Here is the honest breakdown, what moves the price up, and how to tell a real quote from an inflated one.
@@ -74,9 +81,28 @@ Palm Beach County prices land in the same **$500 to $3,000** range as the rest o
 
 One thing that matters more than the price: Florida licenses mold remediation under chapter 468 of the Florida Statutes, and growth covering more than 10 square feet in total needs a licensed mold remediator. Ductwork reaches that size quickly, since a single 8 inch run has about two square feet of inside surface per foot of length. Before you pay anyone in Palm Beach County to "remove mold" from your ducts, ask for their state mold remediator licence number and check it. We are a duct cleaning company, not a mold remediator: we clean and sanitize systems to the NADCA source-removal standard at our published price, and when what we find is past that line, we say so and tell you who to call.
 
+## Mold removal or an HVAC cleaning: which one are you pricing?
+
+Not every musty smell is a mold removal job, and the difference is a few hundred dollars. If the camera shows a dirty, damp coil, a slimy drain pan and a caked blower wheel, but no growth on the cabinet walls or inside the ducts, the job is an [HVAC cleaning](/services/hvac-cleaning/) of the coil, blower, cabinet and drain line, at $200 to $450 per system. If the ducts are dusty but free of growth, it is a standard air duct cleaning at $300 to $600 per system. Mold removal pricing applies when there is visible growth that has to be contained, removed and treated, on the coil and cabinet or in the runs themselves.
+
+The useful question to ask any company is which of the three the photos show, and why. If the answer is mold removal, the photos should show growth, not just dark dust on a wet coil.
+
+## Air duct mold removal cost in Miami, Fort Lauderdale, Tampa and Sarasota
+
+The range is the same $500 to $3,000 across the state. What changes from one area to the next is the housing, and the housing decides where in that range a job lands.
+
+- **Miami.** Condo towers in Brickell and downtown usually have a closet air handler with short duct runs, and growth caught early on the coil sits at the low end. Single family homes in the suburbs, with attic air handlers and long flex runs, are where full system jobs happen. Both are covered on our [Miami air duct cleaning and mold removal](/service-areas/miami/) page.
+- **Fort Lauderdale.** Canal front homes take in coastal moisture through every door and slider, so the moisture source is often the house rather than the equipment. A job here should come with a humidity plan, or it tends to be repeated. See [air duct mold removal in Fort Lauderdale](/service-areas/fort-lauderdale/).
+- **Tampa.** The bungalows in Hyde Park were built long before central air, so their ductwork was added later, and access to the air handler and runs is the thing to ask about on the quote. A larger home in New Tampa with two systems is close to two jobs. More on [duct and mold work in Tampa](/service-areas/tampa/).
+- **Sarasota and Bradenton.** Barrier island condos on Siesta Key and Longboat Key sit in Gulf humidity and salt air all year, which keeps the coil wet and the moisture source close. On the mainland, homes along the Manatee River carry the same load. See our [Sarasota](/service-areas/sarasota/) and [Bradenton](/service-areas/bradenton/) pages.
+
+## Will a UV light replace mold removal?
+
+No, but it can keep you from paying for mold removal twice. A UV-C lamp aimed at the evaporator coil, $300 to $700 installed, keeps a coil that is wet nearly every day from growing a new colony. It does not reach inside the ducts, it does nothing to growth that is already there, and it does not fix the humidity. The order that works is removal first, then the moisture fix, then a lamp if the coil is where growth keeps starting.
+
 ## Testing: needed or not?
 
-Air quality testing costs $200 to $500 and is genuinely useful in two cases: someone in the house has unexplained symptoms, or there is a dispute about whether mold is present. For a system with visible growth and a musty smell, testing mostly confirms what the camera already showed. We will tell you which case you are in rather than adding it by default. If you do want it, see what [indoor air quality testing measures](/blog/what-indoor-air-quality-testing-measures/).
+Our air quality visit costs $200 to $500: humidity readings room by room, a camera inspection of the coil and ducts, and a photo report. It is worth it when someone in the house has unexplained symptoms or the smell has no obvious source. We do not take samples or name the species; if you need mold identified, that is a licensed mold assessor's work in Florida, and we will tell you so. For a system with visible growth and a musty smell, the camera usually shows enough on its own, and we will tell you which case you are in rather than adding it by default. If you do want it, see what [indoor air quality testing measures](/blog/what-indoor-air-quality-testing-measures/).
 
 ## The bottom line
 

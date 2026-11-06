@@ -3,7 +3,7 @@ title: "Ductos de la campana de cocina: cada cuánto limpiarlos"
 description: "La grasa acumulada en el ducto de la campana es un riesgo de incendio distinto al del secador. Cada cuánto limpiarlo en una casa y en un negocio."
 answer: "En una casa, el filtro del extractor de cocina se limpia cada 1 a 3 meses y el ducto de salida se revisa y limpia una vez al año. Si cocina a diario con mucha grasa o fritura, acorte esos plazos a la mitad."
 pubDate: 2026-07-08
-updatedDate: 2026-10-02
+updatedDate: 2026-11-06
 category: "Limpieza de Ductos"
 tags: ["cocina", "extractor", "ventilación", "grasa", "Florida"]
 featured: false
@@ -16,6 +16,12 @@ faq:
     answer: "No. El extractor de cocina tiene su propio ducto que lleva grasa y humo al exterior. Los ductos del aire acondicionado mueven el aire de toda la casa y se limpian por separado."
   - question: "¿Quién limpia los ductos de ventilación de cocinas comerciales?"
     answer: "Los sistemas de campana de restaurantes los atienden empresas especializadas en limpieza de campanas bajo la norma NFPA 96, un servicio distinto a la limpieza de ductos residencial."
+  - question: "¿Puede el extractor de la cocina descargar en el ático?"
+    answer: "No. Si el extractor tiene ducto, el código exige que descargue al exterior. Un ducto que termina en el ático mete vapor y grasa sobre el aislamiento, y eso lo corrige un contratista, no una limpieza."
+  - question: "¿Por qué huele a comida cuando enciendo el aire acondicionado?"
+    answer: "Porque la grasa y el humo que el extractor no sacó los aspiró el retorno del aire acondicionado. Cambie el filtro del aire; si el olor sigue, los retornos y los ductos necesitan limpieza, que cuesta entre 300 y 600 dólares por sistema."
+  - question: "¿El microondas sobre la estufa saca el aire afuera?"
+    answer: "Depende de cómo se instaló. Si tiene un filtro de carbón detrás de la rejilla de arriba, está recirculando el aire a la cocina, y ese filtro se reemplaza cada 3 a 6 meses."
 ---
 
 ## Respuesta rápida
@@ -51,6 +57,32 @@ Muchos apartamentos y condominios en Florida tienen extractores de recirculació
 ## Cocinas comerciales: otro mundo, otra norma
 
 Los restaurantes y cocinas comerciales funcionan con sistemas de campana y extracción que acumulan grasa a un ritmo completamente distinto, y su limpieza está regulada por la norma NFPA 96, con frecuencias que van desde mensual hasta anual según el volumen de cocina. Ese es un servicio especializado de limpieza de campanas. Si lo que necesita su negocio es la limpieza de los ductos del aire acondicionado (oficinas, comedores, áreas de clientes), ahí sí lo cubrimos con nuestra [limpieza de ductos comercial](/es/servicios/commercial-air-duct-cleaning/).
+
+## Lo que usted mismo puede limpiar, paso a paso
+
+1. **Apague el extractor desde el interruptor o el breaker** antes de meter las manos en la campana.
+2. **Saque los filtros metálicos y déjelos en remojo** de 15 a 20 minutos en agua bien caliente con desengrasante. Después se cepillan y se enjuagan. Si la grasa ya está dura y oscura y no sale con el remojo, sale más a cuenta comprar filtros nuevos.
+3. **Limpie el interior de la campana y las aspas** con un paño y desengrasante. No use solventes inflamables encima de la estufa.
+4. **Mire el primer tramo del ducto con una linterna** por la abertura donde estaban los filtros. Una película fina es normal. Una capa que se puede raspar con la uña ya es trabajo para un profesional.
+5. **Encienda el extractor y salga a la rejilla exterior.** La compuerta debe abrirse con el aire. Si no se mueve, está pegada con grasa o tapada por afuera.
+
+Lo que no conviene es meterse usted con varillas o productos cáusticos en un ducto largo: la grasa que se suelta y no sale termina acumulada en el siguiente codo.
+
+## Adónde debe descargar el extractor (y adónde no)
+
+Si su extractor tiene ducto, el código de construcción exige que ese ducto descargue al exterior, nunca dentro del ático, entre pisos o en un hueco de la pared. En casas remodeladas a veces aparece un ducto que termina suelto en el ático en vez de salir por el techo o la pared. En Florida eso es un problema doble: el vapor de la cocina moja el aislamiento de un ático que ya tiene calor y humedad de sobra, y la grasa se va depositando justo encima de la cocina. Si al revisar el suyo no encuentra la salida afuera, la corrección la hace un contratista; no es algo que se arregle limpiando.
+
+El microondas sobre la estufa merece una nota aparte. Muchos modelos se pueden instalar para sacar el aire afuera o para recircularlo, y en muchas cocinas quedó recirculando. Si el suyo tiene un filtro de carbón detrás de la rejilla de arriba, está recirculando, y ese filtro se reemplaza cada 3 a 6 meses igual que en una campana sin ducto.
+
+## Cuando la grasa de la cocina llega al aire acondicionado
+
+Un extractor que no saca bien deja más grasa y humo flotando dentro de la casa, y el retorno del aire acondicionado lo aspira. Las señales son concretas: la rejilla de retorno más cercana a la cocina tiene un polvo pegajoso que no sale con un plumero, el filtro del aire se pone marrón antes de tiempo, o al encender el aire huele a la fritura de anoche.
+
+Eso ya no se resuelve en la campana. Primero cambie el filtro del aire. Si el olor y la pelusa pegajosa siguen, hay que limpiar los retornos y los ductos. Nuestra [limpieza de ductos de aire acondicionado](/es/servicios/air-duct-cleaning/) cuesta entre 300 y 600 dólares por sistema e incluye los ductos de suministro y de retorno, el ventilador del equipo y la cara accesible de la serpentina. La campana y su ducto quedan fuera de esa visita, pero son justamente la causa que conviene corregir para que el retorno no se vuelva a ensuciar.
+
+## Dónde trabajamos
+
+Hacemos [limpieza de ductos en Miami](/es/areas-de-servicio/miami/), en [Tampa](/es/areas-de-servicio/tampa/), en [Orlando](/es/areas-de-servicio/orlando/) y en [Cape Coral](/es/areas-de-servicio/cape-coral/), en casas y condominios, entre otras ciudades de Florida.
 
 ## Lo esencial
 
