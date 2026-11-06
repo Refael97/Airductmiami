@@ -185,7 +185,7 @@ const SHARED = {
     successTitle: 'You got it!',
   },
   es: {
-    trust: ['Cotización gratis', 'Servicio en la misma semana', 'Licencia y seguro', 'Expertos locales de Florida'],
+    trust: ['Cotización gratis', 'Servicio en la misma semana', 'Asegurados', 'Expertos locales de Florida'],
     name: 'Su nombre',
     phone: 'Teléfono',
     zip: 'Código postal',
@@ -216,16 +216,13 @@ const asideSrc = hasImage(aside) ? `/images/${aside.file}` : null;
     </button>
 
     <div class="promo-content" id="promo-content">
-      <div class="promo-brand">
-        <img src="/logo.svg" alt="" width="42" height="42" loading="lazy" />
-        <span class="promo-brand-word">Florida <em>Breeze</em><small>Air Duct</small></span>
-      </div>
-
-      <h2 class="promo-headline" id="promo-title">
-        {OFFER.headline1}{' '}<span class="hl">{OFFER.headline2}</span>{' '}{OFFER.headline3}
+      {/* Logo, headline, sub and body removed 6 November 2026 at the owner's
+          request: on a phone they pushed the phone field, the ZIP and the
+          send button below the bottom of the card. The headline stays for
+          screen readers only, because the dialog is labelled by it. */}
+      <h2 class="visually-hidden" id="promo-title">
+        {OFFER.headline1} {OFFER.headline2} {OFFER.headline3}
       </h2>
-      <p class="promo-sub">{OFFER.sub}</p>
-      <p class="promo-body">{OFFER.body}</p>
 
       <ul class="promo-trust">
         <li>
