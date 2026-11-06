@@ -22,7 +22,7 @@ interface Props {
 const { lang, current = Astro.url.pathname } = Astro.props;
 const es = lang === 'es';
 
-const AREAS = ['kendall', 'miami', 'tampa', 'st-petersburg', 'sanford', 'port-charlotte', 'pembroke-pines', 'orlando', 'hialeah', 'fort-lauderdale'];
+const AREAS = ['kendall', 'pembroke-pines', 'miami', 'homestead', 'tampa', 'st-petersburg', 'sanford', 'port-charlotte', 'hialeah', 'orlando', 'fort-lauderdale', 'pompano-beach'];
 const SERVICES = ['garage-door-spring-replacement', 'garage-door-opener-repair', 'garage-door-opener-installation', 'emergency-garage-door-repair', 'hurricane-rated-garage-door-installation', 'new-garage-door-installation'];
 const GUIDES = es
   ? [
@@ -30,12 +30,18 @@ const GUIDES = es
       { slug: 'costo-cambio-resortes-puerta-garaje', title: 'Cuánto cuesta cambiar los resortes' },
       { slug: 'costo-instalacion-motor-puerta-garaje', title: 'Cuánto cuesta instalar un motor' },
       { slug: 'costo-puerta-garaje-para-huracanes', title: 'Cuánto cuesta una puerta para huracanes' },
+      { slug: 'puerta-garaje-cierra-y-vuelve-a-abrir', title: 'La puerta del garaje cierra y vuelve a abrir' },
+      { slug: 'motor-puerta-garaje-dejo-de-funcionar', title: 'El motor de la puerta del garaje dejó de funcionar' },
+      { slug: 'puerta-garaje-no-cierra', title: 'La puerta del garaje no cierra' },
     ]
   : [
       { slug: 'garage-door-repair-cost-florida', title: 'Garage door repair cost in Florida' },
       { slug: 'garage-door-spring-replacement-cost', title: 'Garage door spring replacement cost' },
       { slug: 'garage-door-opener-installation-cost', title: 'Garage door opener installation cost' },
       { slug: 'hurricane-rated-garage-door-cost', title: 'Hurricane rated garage door cost' },
+      { slug: 'garage-door-closes-then-reopens', title: 'Garage door closes then reopens' },
+      { slug: 'garage-door-opener-quit-working', title: 'Garage door opener quit working' },
+      { slug: 'garage-door-wont-close', title: 'Garage door will not close' },
     ];
 
 const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);

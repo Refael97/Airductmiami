@@ -25,7 +25,7 @@ interface Props {
 const { lang = 'en', current = Astro.url.pathname } = Astro.props;
 const es = lang === 'es';
 
-const AREAS_EN = ['miami', 'west-palm-beach', 'kissimmee', 'sarasota', 'naples', 'coconut-creek', 'hialeah-gardens', 'homestead', 'kendall', 'st-petersburg', 'clearwater', 'tampa', 'orlando', 'cape-coral'];
+const AREAS_EN = ['miami', 'sarasota', 'west-palm-beach', 'tampa', 'bradenton', 'fort-lauderdale', 'coconut-creek', 'kissimmee', 'naples', 'homestead', 'st-petersburg', 'hialeah-gardens', 'kendall', 'orlando'];
 const AREAS_ES = ['cape-coral', 'tampa', 'orlando', 'hialeah', 'lakeland', 'miami', 'hialeah-gardens', 'kissimmee', 'west-palm-beach', 'kendall'];
 const SERVICES = ['air-duct-cleaning', 'dryer-vent-cleaning', 'mold-remediation', 'hvac-cleaning', 'air-duct-sanitizing', 'attic-insulation'];
 const GUIDES_EN = [
@@ -33,12 +33,16 @@ const GUIDES_EN = [
   { slug: 'dryer-vent-cleaning-cost', title: 'What dryer vent cleaning costs' },
   { slug: 'air-duct-mold-removal-cost', title: 'What air duct mold removal costs' },
   { slug: 'attic-insulation-cooling-costs', title: 'Attic insulation and your cooling bill' },
+  { slug: 'black-mold-air-vents', title: 'Black mold on your air vents' },
 ];
 const GUIDES_ES = [
   { slug: 'costo-limpieza-ductos-florida', title: 'Cuánto cuesta limpiar los ductos en Florida' },
   { slug: 'costo-limpieza-ventila-secadora', title: 'Cuánto cuesta limpiar la ventila de la secadora' },
   { slug: 'costo-eliminacion-moho-ductos', title: 'Cuánto cuesta eliminar el moho de los ductos' },
   { slug: 'aislamiento-atico-costos-enfriamiento', title: 'El aislamiento del ático y su factura de aire' },
+  { slug: 'secadora-huele-a-quemado', title: 'La secadora huele a quemado' },
+  { slug: 'moho-negro-en-ventilas', title: 'Moho negro en las ventilas' },
+  { slug: 'limpieza-ductos-ventilacion-cocina', title: 'Limpieza del ducto de ventilación de la cocina' },
 ];
 
 const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
