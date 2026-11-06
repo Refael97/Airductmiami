@@ -656,6 +656,22 @@ export const cityBatchB: CityContent[] = [
           "Cleaning costs $100 to $200. If we find foil hose or a crushed section inside a wall, replacing it with rigid metal duct costs $200 to $600, and we tell you before doing it.",
         ],
       },
+      {
+        heading: "The older streets toward Military Trail",
+        body: [
+          "Greenacres was founded in the 1920s and grew slowly for decades, and its eastern end, toward Military Trail and Lake Worth Road, still has streets of small single storey block houses from the 1950s to the 1970s. In most of them the laundry is a utility room off the carport or at the back of the garage, with the dryer a few feet from an outside wall.",
+          "Many of those carports have since been closed in as a bedroom or a family room. The dryer stayed where it was, but the wall it vents through may now have a new window a couple of feet from the hood, or the hood now opens under the roof of a new back porch. Exhaust that should clear the house drifts against the glass and comes back in whenever the window is open.",
+          "The code puts the termination at least 3 feet from any opening into the house, and in these homes the fix is usually to move the hood along the same wall or out the other side of the utility room, a short rigid run. That costs $200 to $600. If the hood is already in a sound spot and only clogged, cleaning is $100 to $200.",
+        ],
+      },
+      {
+        heading: "A new dryer and the old hose",
+        body: [
+          "Greenacres households replace dryers often, many of them bought on sale and delivered by a crew with a full day of drops ahead. The crew connects the new machine to whatever was behind the old one, and if that was a foil or white vinyl hose, it usually goes straight back on.",
+          "Vinyl hose is not allowed for a dryer, and foil hose that is not listed for dryers crushes and tears. Delivery crews also push the new dryer flat against the wall, and a modern dryer is often deeper than the one it replaced, so the hose folds behind it and the new machine dries slower than the old one did. Plenty of owners take that as a sign the new dryer is weak.",
+          "If a dryer you just had delivered is slower than you expected, look behind it before calling the store. We replace the hose with a listed one sized to the space, check the wall connection and the run beyond it, and read airflow at the hood. A cleaning that includes a new transition hose costs $100 to $200, and work on the wall or the hood beyond that is $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -671,6 +687,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "En las casas adosadas cerca de Jog Road y Melaleuca Lane el cuarto de lavado casi siempre está en el segundo piso y el ducto sale por el ático a una salida en el techo. En los apartamentos sale por una pared exterior desde un clóset del pasillo.",
           "Según la Administración de Bomberos de Estados Unidos, hay unos 2,900 incendios de secadoras en hogares cada año en el país, y la causa principal, en cerca de un tercio de los casos, es no limpiarlas. La limpieza cuesta de $100 a $200, y cambiar manguera de aluminio o un tramo aplastado por ducto rígido cuesta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Las calles más viejas hacia Military Trail",
+        body: [
+          "Greenacres se fundó en los años veinte y creció despacio durante décadas, y su parte este, hacia Military Trail y Lake Worth Road, todavía tiene calles de casitas de bloque de un piso de los cincuenta a los setenta. En casi todas la lavandería es un cuarto junto al carport o al fondo del garaje, con la secadora a pocos pies de una pared exterior.",
+          "Muchos de esos carports se cerraron para hacer un cuarto o una sala. La secadora se quedó donde estaba, pero en la pared por donde sale ahora puede haber una ventana nueva a dos pies de la tapa, o la tapa quedó debajo del techo de un portal nuevo. El aire que debería alejarse de la casa se pega al vidrio y vuelve a entrar cada vez que se abre la ventana.",
+          "El código pide que la salida quede a por lo menos 3 pies de cualquier abertura de la casa, y aquí casi siempre se resuelve moviendo la tapa por la misma pared o sacando el ducto de secadora por el otro lado del cuarto, un tramo rígido y corto. Ese trabajo tiene un precio de $200 a $600. Si la tapa ya está bien puesta y solo está tapada, la limpieza cuesta de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Secadora nueva, manguera vieja",
+        body: [
+          "En Greenacres las familias cambian la secadora con frecuencia, muchas veces comprada en oferta y entregada por un equipo con un día lleno de entregas. Ellos conectan la máquina nueva a lo que había detrás de la vieja, y si era una manguera de aluminio o de vinil blanco, casi siempre la vuelven a poner.",
+          "La manguera de vinil no está permitida para secadoras, y la de aluminio que no está aprobada para secadora se aplasta y se rompe. Además empujan la secadora nueva contra la pared, y como las de ahora suelen ser más profundas que la anterior, la manguera se dobla detrás y la máquina nueva seca más lento que la vieja. Mucha gente piensa entonces que la secadora salió mala.",
+          "Si la secadora que le acaban de entregar seca más lento de lo que esperaba, mire detrás antes de llamar a la tienda. Cambiamos la manguera por una aprobada y del largo justo, revisamos la conexión en la pared y el resto de la ventila de secadora, y medimos el aire en la salida. La limpieza con manguera nueva cuesta de $100 a $200, y lo que haya que hacer en la pared o en la tapa, de $200 a $600. Estamos cerca de usted en Greenacres.",
         ],
       },
     ],
@@ -869,6 +901,22 @@ export const cityBatchB: CityContent[] = [
           "Cleaning costs $100 to $200 per run. A cracked cap, a seized damper or a section of crushed duct in the attic falls in the $200 to $600 repair range, quoted before we start.",
         ],
       },
+      {
+        heading: "Towers on the bay and the beach road",
+        body: [
+          "Bonita Bay's high rises on Estero Bay, and the condo buildings on Bonita Beach and along Hickory Boulevard, put a large share of Bonita's dryers several floors above salt water. Each unit's duct runs from a laundry closet across the ceiling to a louver or hood on the balcony wall or the face of the building.",
+          "On the Gulf and bay sides those louvers face spray and wind all year, and their dampers corrode faster than any hood at ground level. Salt crust on the blades and lint behind them close the opening a little more each season. In a summer storm, wind driven rain can push past a damper that no longer seats and run back along the duct toward the closet, and a water mark on the ceiling near the laundry is the sign.",
+          "The building usually controls the outside face, so these are best done as a building, in the quiet months when the service elevator is free, priced per unit with a reading for every owner. A single owner can still book a cleaning from inside the unit for $100 to $200, and a louver reachable from the balcony can be replaced for $200 to $600.",
+        ],
+      },
+      {
+        heading: "Along the Imperial River after a flood",
+        body: [
+          "The Imperial River has flooded the neighbourhoods along its banks more than once, after Irma in 2017 and again with Ian in 2022, and the older homes near Old 41 and downtown Bonita took the worst of it. Many of those houses are single storey, with the dryer hood low on an outside wall, below the line the water reached.",
+          "A dryer vent that has been under floodwater keeps the evidence. Silt settles along the bottom of the duct and dries into a crust, the damper jams on grit, and lint that lands on that rough surface sticks instead of moving on. If the laundry room was not gutted after the flood, the duct may never have been looked at, because the dryer still started once the power came back.",
+          "If your house took water, have the run cleaned end to end and the hood replaced if the damper no longer swings freely. We read airflow before and after, so you know whether the duct is clear or a section has to be replaced. Cleaning costs $100 to $200, and replacing a silted section or the hood costs $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -883,6 +931,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "La temporada en Bonita trae visitas, y las visitas traen toallas de playa, toallas de piscina y sábanas. Una secadora que casi no se usa en verano puede trabajar dos o tres veces al día de enero a abril.",
           "El mejor momento para limpiar es octubre o noviembre, antes de ese movimiento. La limpieza cuesta de $100 a $200 por ducto, y una tapa rota, una aleta trabada o un tramo aplastado en el ático cuesta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Torres en la bahía y en la playa",
+        body: [
+          "Las torres de Bonita Bay frente a Estero Bay, y los condominios de Bonita Beach y de Hickory Boulevard, ponen buena parte de las secadoras de Bonita varios pisos encima del agua salada. El ducto de secadora de cada unidad va desde el clóset por el techo hasta una rejilla o tapa en la pared del balcón o en la fachada.",
+          "Del lado del Golfo y de la bahía esas rejillas reciben brisa con sal todo el año, y la aleta se corroe más rápido que cualquier tapa a nivel del suelo. La costra de sal en las láminas y la pelusa detrás van cerrando la salida un poco más cada temporada. En una tormenta de verano, la lluvia con viento puede pasar una aleta que ya no cierra y correr por el ducto hacia el clóset; una mancha de agua en el techo cerca de la lavandería es la señal.",
+          "El edificio normalmente controla la fachada, así que conviene hacerlo como edificio, en los meses tranquilos cuando el elevador de servicio está libre, con precio por unidad y una medida para cada dueño. Un dueño solo puede pedir la limpieza de ventila de secadora desde adentro por $100 a $200, y una rejilla que se alcanza desde el balcón se cambia por $200 a $600.",
+        ],
+      },
+      {
+        heading: "Junto al Imperial River después de una inundación",
+        body: [
+          "El Imperial River se ha desbordado más de una vez sobre los barrios de sus orillas, después de Irma en 2017 y otra vez con Ian en 2022, y las casas más viejas cerca de Old 41 y del centro de Bonita fueron las que más sufrieron. Muchas son de un piso, con la tapa de la secadora baja en una pared exterior, por debajo de donde llegó el agua.",
+          "Una ventila que estuvo bajo el agua guarda las huellas. El fango se asienta en el fondo del ducto y se seca como costra, la aleta se traba con la arenilla, y la pelusa que cae en esa superficie áspera se pega en vez de seguir. Si la lavandería no se desbarató después de la inundación, quizás nadie miró el ducto, porque la secadora prendió en cuanto volvió la luz.",
+          "Si a su casa le entró agua, pida limpiar el tramo completo y cambiar la tapa si la aleta ya no se mueve libre. Medimos el aire antes y después, para que sepa si el ducto quedó limpio o hay que cambiar un tramo. La limpieza tiene un precio de $100 a $200, y cambiar un tramo con fango o la tapa, de $200 a $600. Estamos cerca de usted en Bonita Springs.",
         ],
       },
     ],
@@ -959,6 +1023,22 @@ export const cityBatchB: CityContent[] = [
           "Cleaning costs $100 to $200 per run. Rebuilding a storm repaired section in rigid metal duct, or replacing a cap, costs $200 to $600, quoted before we start.",
         ],
       },
+      {
+        heading: "Pelican Preserve, Gateway and the snowbird calendar",
+        body: [
+          "Pelican Preserve, a large 55 and over community in east Fort Myers, and Gateway and the other golf communities nearby are full of owners who spend the summer up north. The houses are mostly single storey with the laundry inside, between the garage and the kitchen, and the dryer duct goes up through the attic to a tile roof.",
+          "A house closed from May to November puts no air through its dryer duct for six months. In an attic that runs far hotter than the outdoors, the tape on the joints dries and lets go, and a plastic roof cap whose flap is stuck open becomes a dry, sheltered spot for wasps and nesting birds right through the rainy season.",
+          "The best plan is a cleaning when you come back in the fall, before the grandchildren and the guest room laundry. If you would rather it were done before you arrive, your house watch service or the community's management can let us in, and we send you the readings. Cleaning costs $100 to $200, and a new roof cap or a reattached attic joint costs $200 to $600.",
+        ],
+      },
+      {
+        heading: "River District towers on the Caloosahatchee",
+        body: [
+          "Downtown Fort Myers, the River District, has several condo towers and newer apartment buildings along the Caloosahatchee, with units stacked twenty or more floors above First Street and the riverfront. Each unit vents its dryer from a closet across the ceiling to a louver on the outside wall.",
+          "The river side of those buildings takes the wind, and a louver whose damper sits partly open can let a strong gust push back into the duct. When that happens, lint that should leave the building gets pushed back along the run, and an owner on a high floor finds the closet warm and the dryer slow on a breezy day and fine on a still one. Height also means every louver is out of reach from anywhere except the balcony or the building's own equipment.",
+          "We clean from the closet, clear the louver from the balcony where one is beside it, and leave management a reading for each unit when the building schedules several at once. A single unit cleaning costs $100 to $200, and replacing a louver that no longer closes is $200 to $600 where it can be reached.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -973,6 +1053,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "En muchas casas viejas la lavandería está en un cuarto junto al carport o en el garaje, con la salida por la pared de bloque. Si la salida queda debajo del techo del carport, la pelusa se pega al techo en vez de salir. Esa pelusa gris es señal de que la salida está restringida, y además está al lado del carro.",
           "La limpieza cuesta de $100 a $200 por ducto. Rehacer en metal rígido un tramo armado después del huracán, o cambiar una tapa, cuesta de $200 a $600, y le damos el precio antes de empezar.",
+        ],
+      },
+      {
+        heading: "Pelican Preserve, Gateway y el calendario de los snowbirds",
+        body: [
+          "Pelican Preserve, una comunidad grande para mayores de 55 en el este de Fort Myers, y Gateway y las otras comunidades de golf cercanas están llenas de dueños que pasan el verano en el norte. Las casas son casi todas de un piso, con la lavandería adentro entre el garaje y la cocina, y el ducto de secadora sube por el ático hasta un techo de tejas.",
+          "Una casa cerrada de mayo a noviembre no mueve aire por el ducto en seis meses. En un ático mucho más caliente que la calle, la cinta de las uniones se seca y se suelta, y una tapa de plástico con la aleta trabada abierta se vuelve un rincón seco y protegido para avispas y pájaros durante toda la temporada de lluvias.",
+          "Lo mejor es limpiar cuando usted regresa en el otoño, antes de que lleguen los nietos y la ropa del cuarto de visitas. Si prefiere tenerlo listo antes de llegar, su servicio de vigilancia de la casa o la administración nos abre, y le mandamos las medidas. La limpieza de ventila de secadora tiene un precio de $100 a $200, y una tapa nueva en el techo o una unión del ático vuelta a fijar cuesta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Torres del River District sobre el Caloosahatchee",
+        body: [
+          "El centro de Fort Myers, el River District, tiene varias torres de condominio y edificios de apartamentos nuevos frente al Caloosahatchee, con unidades a veinte pisos o más sobre First Street y el río. Cada unidad saca la secadora desde un clóset por el techo hasta una rejilla en la pared exterior.",
+          "El lado del río recibe el viento, y una rejilla con la aleta medio abierta deja que una ráfaga fuerte empuje hacia adentro del ducto. Cuando pasa, la pelusa que debería salir regresa por el tramo, y el dueño de un piso alto nota el clóset caliente y la secadora lenta los días de brisa, y normal los días tranquilos. Por la altura, además, ninguna rejilla se alcanza si no es desde el balcón o con el equipo del edificio.",
+          "Limpiamos desde el clóset, despejamos la rejilla desde el balcón cuando queda al lado, y le dejamos a la administración una medida por unidad cuando el edificio programa varias juntas. La limpieza de una unidad cuesta de $100 a $200, y cambiar una rejilla que ya no cierra, de $200 a $600 cuando se puede alcanzar. Atendemos cerca de usted en todo Fort Myers.",
         ],
       },
     ],
@@ -1049,6 +1145,22 @@ export const cityBatchB: CityContent[] = [
           "Cleaning costs $100 to $200. Moving a vent out of the lanai, or replacing a hood and a section of duct, costs $200 to $600.",
         ],
       },
+      {
+        heading: "Duplexes: two dryers, one building",
+        body: [
+          "Cape Coral has a great many duplexes, especially in the older southeast and central parts of the city: single storey block buildings with two homes side by side, often owned by one landlord who rents both halves. Each side has its own laundry, usually in a garage or a utility closet, venting through the end or side wall.",
+          "The two halves age differently. One tenant dries a load a day, the other three a week, and the landlord hears about it only when one side's dryer gives up. Because the hoods are often on the same side of the building a few feet apart, it is easy to clean one and miss the other, or to assume the cleaner looking hood belongs to the busier unit.",
+          "For duplex owners we do both halves in one visit, read airflow at each hood with that side's dryer running, and label the readings by unit, so you know which side to watch. Each run is $100 to $200. A hood that has lost its damper or cracked in the sun is replaced for $200 to $600, quoted before we start.",
+        ],
+      },
+      {
+        heading: "Pool homes rented for the winter",
+        body: [
+          "Winter in Cape Coral brings visitors who rent canal and pool homes for a week, a month or the whole season, and many owners use their own house for only part of the year. A vacation home on a canal works its dryer in bursts, busiest from January to April, with several loads of sheets, bath towels and pool towels at every changeover.",
+          "Pool towels are the heavy part. They are thick, they shed, and they come in damp, so the dryer runs long and hot. A run already slowed by lint gets worse quickly, and the house manager usually hears about it from the cleaning crew as a turnaround that took too long. Through the quiet summer the hood sits unused, which is when nests appear.",
+          "We suggest a cleaning in December, ahead of the season, and a quick check after Easter when the bookings thin. We can coordinate with the property manager so the owner does not have to be there, and the readings go to both. Cleaning costs $100 to $200 per run, and replacing a hood corroded by the canal air costs $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1064,6 +1176,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "En algunas casas remodeladas la lavandería se pasó adentro y la nueva ventila termina en el lanai, debajo de la malla. La pelusa y la humedad caen en un espacio cubierto, al lado de las puertas corredizas, y en la piscina.",
           "La salida tiene que quedar a por lo menos 3 pies de cualquier abertura de la casa, y las corredizas cuentan. La limpieza cuesta de $100 a $200, y sacar la ventila del lanai o cambiar una salida y un tramo de ducto cuesta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Dúplex: dos secadoras en un mismo edificio",
+        body: [
+          "En Cape Coral hay muchísimos dúplex, sobre todo en las partes más viejas del sureste y del centro: edificios de bloque de un piso con dos viviendas una al lado de la otra, muchas veces de un mismo dueño que alquila las dos. Cada lado tiene su lavandería, casi siempre en el garaje o en un clóset, con la salida por la pared del costado o del fondo.",
+          "Los dos lados no envejecen igual. Un inquilino seca una carga diaria y el otro tres por semana, y el dueño se entera solo cuando la secadora de un lado se rinde. Como las tapas muchas veces quedan del mismo lado del edificio, a pocos pies una de otra, es fácil limpiar una y olvidar la otra, o pensar que la tapa más limpia es la del lado que más lava.",
+          "Para dueños de dúplex hacemos los dos lados en una visita, medimos el aire en cada tapa con la secadora de ese lado prendida y marcamos las medidas por unidad, para que sepa cuál vigilar. La limpieza de ventila de secadora tiene un precio de $100 a $200 por tramo. Una tapa sin aleta o rajada por el sol se cambia por $200 a $600, cotizado antes de empezar.",
+        ],
+      },
+      {
+        heading: "Casas con piscina alquiladas en invierno",
+        body: [
+          "El invierno en Cape Coral trae visitantes que alquilan casas con piscina en los canales por una semana, un mes o toda la temporada, y muchos dueños usan la casa solo parte del año. Una casa de alquiler trabaja la secadora a rachas, más que nada de enero a abril, con varias cargas de sábanas, toallas de baño y toallas de piscina en cada cambio de huéspedes.",
+          "Las toallas de piscina son lo más pesado. Son gruesas, sueltan mucha pelusa y llegan húmedas, así que la secadora trabaja largo y caliente. Un ducto de secadora que ya estaba lento empeora rápido, y el administrador casi siempre se entera por el equipo de limpieza, porque el cambio de huéspedes tardó demasiado. En el verano tranquilo la tapa se queda sin uso, y ahí aparecen los nidos.",
+          "Recomendamos limpiar en diciembre, antes de la temporada, y revisar después de Semana Santa, cuando bajan las reservas. Podemos coordinar con el administrador para que el dueño no tenga que venir, y las medidas les llegan a los dos. La limpieza cuesta de $100 a $200 por tramo, y cambiar una tapa corroída por el aire del canal, de $200 a $600. Si busca el servicio cerca de usted en Cape Coral, hay citas en la semana.",
         ],
       },
     ],
@@ -1140,6 +1268,22 @@ export const cityBatchB: CityContent[] = [
           "Near the Gulf and the bay, salt reaches every outside hood, and dampers seize either open or closed. Cleaning costs $100 to $200 per run, and repair or replacement costs $200 to $600.",
         ],
       },
+      {
+        heading: "Golden Gate and East Naples: a Naples address outside the city",
+        body: [
+          "Most people with a Naples address do not live in the city of Naples. Golden Gate City, built from the 1960s on, is block houses, duplexes and small apartment buildings on a tight grid. Golden Gate Estates beyond it is houses on lots of an acre or more, with wells and long driveways. East Naples, along US 41 and Davis Boulevard, mixes older block houses with newer communities.",
+          "Out in the Estates the house sits far from its neighbours and close to everything else: wasps, tree frogs, rats from the pines and palmettos, and fine sand in the air. A wall hood whose flap has broken becomes a nesting spot within a season, and lint mixed with dust packs into a solid block. In Golden Gate City, a dryer added to a duplex or a converted garage often vents through a hole that nobody sealed.",
+          "The price is the same as in the city: $100 to $200 to clean, and $200 to $600 to replace a hood, seal a wall penetration or rebuild a short run. Tell us when you book if you are in the Estates, so we know to look for the house number at the end of the drive.",
+        ],
+      },
+      {
+        heading: "Rebuilt and raised after Ian",
+        body: [
+          "Hurricane Ian's surge in 2022 flooded much of Old Naples, Aqualane Shores, Port Royal and the low streets near Naples Bay. Many of the houses that flooded have since been torn down, and the homes replacing them are built higher, on raised foundations or with the living floor well above the street, and often two or three storeys tall.",
+          "Height changes the dryer vent. With the laundry on an upper floor beside the bedrooms, the duct may climb through the house to the roof, or run across to an outside wall high above the garden. A long vertical run collects lint at the bottom elbow, and a duct that ends two floors up on a wall facing the Gulf takes salt and wind and cannot be reached without a tall ladder or a lift.",
+          "On a house still being built, ask where the dryer vent will end before the drywall goes up, and keep the run as short and straight as the plan allows. Once you are living there, a first cleaning and airflow reading after a year or two shows how the run performs. Cleaning costs $100 to $200, and a corroded hood or a section that needs changing costs $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1154,6 +1298,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "Muchos dueños están en Naples de noviembre a abril. El verano es el mejor momento para hacer un edificio: los ascensores de servicio están libres, quien no está puede dejar la llave en la recepción y las ventilas quedan limpias antes de la temporada.",
           "En las casas de Old Naples, The Moorings y Park Shore los ductos son cortos, por la pared o por un techo bajo. Las casas grandes de Port Royal tienen ductos largos y a veces dos lavanderías. La limpieza cuesta de $100 a $200 por ducto, y la reparación o el cambio de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Golden Gate y East Naples: dirección de Naples, fuera de la ciudad",
+        body: [
+          "La mayoría de la gente con dirección de Naples no vive dentro de la ciudad de Naples. Golden Gate City, construida desde los años sesenta, es casas de bloque, dúplex y edificios pequeños de apartamentos en una cuadrícula apretada. Más allá, Golden Gate Estates son casas en terrenos de un acre o más, con pozo y entradas largas. East Naples, por la US 41 y Davis Boulevard, mezcla casas de bloque viejas con comunidades nuevas.",
+          "En los Estates la casa queda lejos de los vecinos y cerca de todo lo demás: avispas, ranitas, ratas de los pinos y los palmitos, y arena fina en el aire. Una tapa de pared con la aleta rota se vuelve nido en una temporada, y la pelusa con polvo se compacta como un bloque. En Golden Gate City, una secadora añadida en un dúplex o en un garaje convertido muchas veces sale por un hueco que nadie selló.",
+          "El precio es el mismo que en la ciudad: de $100 a $200 la limpieza de ventila de secadora, y de $200 a $600 cambiar una tapa, sellar el paso por la pared o rehacer un ducto de secadora corto. Si está en los Estates, díganos al pedir la cita, así buscamos el número de la casa al final de la entrada. También ahí estamos cerca de usted.",
+        ],
+      },
+      {
+        heading: "Casas reconstruidas y más altas después de Ian",
+        body: [
+          "La marejada del huracán Ian en 2022 inundó gran parte de Old Naples, Aqualane Shores, Port Royal y las calles bajas cerca de Naples Bay. Muchas de las casas que se inundaron ya se tumbaron, y las nuevas se construyen más altas, sobre bases elevadas o con el piso de la casa muy por encima de la calle, y muchas veces de dos o tres pisos.",
+          "La altura cambia la ventila. Con la lavandería en un piso alto junto a los cuartos, el ducto puede subir por dentro de la casa hasta el techo, o atravesar hasta una pared exterior muy por encima del jardín. Un tramo vertical largo junta pelusa en el codo de abajo, y una salida dos pisos arriba en una pared frente al Golfo recibe sal y viento y no se alcanza sin una escalera alta o una plataforma.",
+          "Si la casa todavía se está construyendo, pregunte dónde va a terminar la ventila antes de que pongan el drywall, y pida el recorrido más corto y derecho que permita el plano. Ya viviendo en ella, una primera limpieza con medida de flujo de aire al año o a los dos muestra cómo trabaja. La limpieza cuesta de $100 a $200, y una tapa corroída o un tramo que haya que cambiar tiene un precio de $200 a $600.",
         ],
       },
     ],
@@ -1230,6 +1390,22 @@ export const cityBatchB: CityContent[] = [
           "For a house, cleaning costs $100 to $200 and repair or rerouting costs $200 to $600. A cap packed with debris that has to be cut out is quoted before we book.",
         ],
       },
+      {
+        heading: "Winter Park Pines: mid century ranches and the gable hood",
+        body: [
+          "Winter Park Pines and the neighbourhoods around it, north and east of the old centre, are mostly single storey ranch houses from the 1950s and 1960s, many with an attached garage or carport. The washer and dryer usually stand in the garage or in a laundry room behind it.",
+          "Where the dryer backs onto an outside wall, the run is a few feet long. Where it does not, the duct often goes up through the garage ceiling and leaves through the gable end high on the house, or through a roof jack on the shingles. A gable hood ten or twelve feet up is where most of the lint ends up and where nobody ever looks, and on some houses it sits only inches from the louver that ventilates the attic, so part of the exhaust goes straight back inside.",
+          "We clean from the garage and from a ladder at the gable, read airflow at the hood, and check that the termination is not feeding the attic. Where the hood sits beside the attic louver, moving it a few feet along the wall is a short repair at $200 to $600. Cleaning the run is $100 to $200.",
+        ],
+      },
+      {
+        heading: "Cold mornings and a damp attic duct",
+        body: [
+          "Central Florida gets real winter mornings, with nights in the forties and now and then a frost, and that is when households dry the most sweaters, blankets and heavy bedding. Hot, wet exhaust leaving the dryer meets a metal duct that has cooled overnight in an unheated attic, and some of the moisture condenses on the inside of the pipe.",
+          "In a short, well pitched run, that water dries off. In a long run with a dip in it, or a section of flexible duct sagging between trusses, it collects in the low spot, wets the lint and holds it there. Over a few winters that becomes a damp plug, and water can drip from a loose joint onto the ceiling of the room below.",
+          "The cure is a run that is short, rigid and pitched slightly toward the outside so condensation drains out at the hood, with the sags taken out. We look at the attic section from the hatch where it is safe to reach, clean the run and read airflow before and after. Cleaning costs $100 to $200, and replacing a sagging section with rigid metal costs $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1244,6 +1420,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "Muchas casas de Winter Park se han ampliado más de una vez. La lavandería pasó del porche o del garaje a un cuarto nuevo o al segundo piso, y la ventila se alargó en vez de cambiarle la ruta. Encontramos ductos con un tramo viejo, uno nuevo y una unión sin sellar entre los dos.",
           "La reparación es ducto de metal rígido de 4 pulgadas por la ruta segura más corta, con cinta de aluminio en las uniones. La limpieza cuesta de $100 a $200 y la reparación o el cambio de ruta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Winter Park Pines: casas de los cincuenta y la salida alta en el hastial",
+        body: [
+          "Winter Park Pines y los barrios de alrededor, al norte y al este del centro viejo, son casi todo casas de un piso de los años cincuenta y sesenta, muchas con garaje o carport pegado. La lavadora y la secadora suelen estar en el garaje o en un cuarto de lavar detrás.",
+          "Si la secadora está contra una pared exterior, el tramo mide unos pocos pies. Si no, el ducto de secadora sube por el techo del garaje y sale por la pared alta del triángulo del techo, o por una salida entre las tejas de asfalto. Una tapa a diez o doce pies de altura es donde se queda casi toda la pelusa y donde nadie mira nunca, y en algunas casas queda a pocas pulgadas de la rejilla que ventila el ático, así que parte del aire vuelve a entrar.",
+          "Limpiamos desde el garaje y desde una escalera en la pared alta, medimos el aire en la tapa y revisamos que la salida no esté soplando hacia el ático. Si la tapa está al lado de la rejilla del ático, moverla unos pies por la misma pared es una reparación corta con un precio de $200 a $600. La limpieza de ventila de secadora cuesta de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Mañanas frías y un ducto húmedo en el ático",
+        body: [
+          "En la Florida central el invierno se siente, con noches de cuarenta grados y alguna helada de vez en cuando, y es cuando más se secan suéteres, frazadas y ropa de cama gruesa. El aire caliente y mojado que sale de la secadora llega a un ducto de metal que se enfrió de noche en un ático sin calefacción, y parte de esa humedad se condensa por dentro.",
+          "En un tramo corto y con buena inclinación, esa agua se seca sola. En un tramo largo con una parte hundida, o con un pedazo de ducto flexible colgando entre las cerchas, el agua se junta en lo bajo, moja la pelusa y la deja pegada. Después de unos inviernos eso es un tapón húmedo, y puede gotear por una unión floja al techo del cuarto de abajo.",
+          "La solución es un tramo corto, rígido y con una leve caída hacia afuera, para que el agua salga por la tapa, sin partes colgando. Revisamos el tramo del ático desde la entrada cuando se puede llegar con seguridad, limpiamos y medimos el aire antes y después. La limpieza cuesta de $100 a $200, y cambiar un tramo colgado por metal rígido, de $200 a $600. Estamos cerca de usted en Winter Park.",
         ],
       },
     ],
@@ -1320,6 +1512,22 @@ export const cityBatchB: CityContent[] = [
           "Cleaning costs $100 to $200 per run, and repair or replacement costs $200 to $600. A vacation home with two laundry rooms, or a manager with several houses, gets a quote before booking.",
         ],
       },
+      {
+        heading: "Celebration and its design rules",
+        body: [
+          "Celebration, built by Disney in the 1990s just south of US 192, was planned around a pattern book that sets how the outside of each house should look, and its associations still review exterior changes. The homes range from townhomes and cottages to large two storey houses, many with the laundry upstairs and the vent through the roof or a side wall.",
+          "A dryer vent seems too small to matter, but a hood on the front of a house, a cap on a roof slope you can see from the street, or a change of colour all count as exterior changes. Cleaning needs no approval. Replacing a hood with a different style, moving a termination to a new wall or adding a roof cap usually does, and work done without it can be sent back.",
+          "When a Celebration vent needs more than a cleaning, we give you the details the review will ask for: what the termination is now, where the new one would go, and its size and finish. Once it is approved, the work is $200 to $600. Cleaning a run as it stands costs $100 to $200.",
+        ],
+      },
+      {
+        heading: "Manufactured homes along US 192",
+        body: [
+          "Osceola County has a large number of manufactured home communities, many of them along US 192 and the roads around Kissimmee, and many of their residents are retirees or winter visitors. In a manufactured home the dryer sits in a closet or utility room, and the duct usually goes down through the floor and out under the home.",
+          "That is where the trouble starts. The exhaust is supposed to be carried all the way past the skirting to the outside, and plenty of runs stop short, blowing lint and damp air into the space under the home. There it soaks the insulation under the floor, rusts the frame and draws in rodents. A length of flexible hose lying on the ground under the home fills with lint and, after a rain, with water.",
+          "We go in through the skirting access where it is safe, trace the duct from the floor outward, and finish it at a proper hood with a damper outside the skirting. That repair is $200 to $600. A cleaning on a run that already ends outside is $100 to $200, and winter residents can book it the week they arrive, before the first heavy laundry.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1334,6 +1542,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "En Buenaventura Lakes y Kissimmee Bay la mayoría son casas de una planta de los ochenta y noventa, con la lavandería en el garaje o en un clóset y la ventila por la pared del costado. Para una familia, una limpieza al año suele bastar.",
           "Trabajamos también sábados de 9am a 5pm y domingos de 10am a 4pm. La limpieza cuesta de $100 a $200 por ducto y la reparación o el cambio de $200 a $600. Si usted administra varias casas, le damos el precio antes de agendar.",
+        ],
+      },
+      {
+        heading: "Celebration y sus reglas de diseño",
+        body: [
+          "Celebration, construida por Disney en los años noventa justo al sur de la US 192, se planificó con un manual que dice cómo debe verse el exterior de cada casa, y sus asociaciones todavía revisan los cambios por fuera. Hay desde townhouses y casitas hasta casas grandes de dos pisos, muchas con la lavandería arriba y la salida por el techo o por una pared lateral.",
+          "La ventila de secadora parece muy pequeña para importar, pero una tapa en el frente de la casa, una salida en la parte del techo que se ve desde la calle o un cambio de color cuentan como cambios exteriores. La limpieza no necesita permiso. Cambiar la tapa por otro estilo, mover la salida a otra pared o poner una salida nueva en el techo casi siempre sí, y un trabajo hecho sin aprobación puede tener que deshacerse.",
+          "Cuando la ventila en Celebration necesita algo más que limpieza, le damos los datos que pide la revisión: cómo es la salida ahora, dónde iría la nueva, su tamaño y su acabado. Ya aprobado, el trabajo tiene un precio de $200 a $600. La limpieza del ducto tal como está cuesta de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Casas móviles por la US 192",
+        body: [
+          "En el condado de Osceola hay muchísimas comunidades de casas móviles y prefabricadas, muchas por la US 192 y las calles alrededor de Kissimmee, con bastantes residentes retirados o que vienen solo en invierno. En estas casas la secadora está en un clóset o cuarto de lavar, y el ducto de secadora casi siempre baja por el piso y sale por debajo de la casa.",
+          "Ahí empieza el problema. El aire tiene que llegar hasta afuera, más allá del faldón, y muchos ductos se quedan cortos y botan la pelusa y la humedad debajo de la casa. Allí se moja el aislante del piso, se oxida el chasis y llegan los ratones. Una manguera tirada en la tierra debajo de la casa se llena de pelusa y, cuando llueve, de agua.",
+          "Entramos por la abertura del faldón cuando es seguro, seguimos el ducto desde el piso hacia afuera y lo terminamos en una tapa con aleta fuera del faldón. Esa reparación cuesta de $200 a $600. La limpieza de ventila de secadora en un tramo que ya sale afuera cuesta de $100 a $200, y si usted viene en invierno puede pedirla la semana que llega. Atendemos cerca de usted en Kissimmee y sus alrededores.",
         ],
       },
     ],
@@ -1410,6 +1634,22 @@ export const cityBatchB: CityContent[] = [
           "Cleaning costs $100 to $200 per run. Repairing a crushed attic section or rerouting a run that is too long costs $200 to $600.",
         ],
       },
+      {
+        heading: "Lake Nona: new houses, upstairs laundries",
+        body: [
+          "Lake Nona, in the southeast of the city near the airport, has grown fast, with large planned neighbourhoods of two storey homes and townhomes, most of them built in the last fifteen years. The laundry is usually on the second floor by the bedrooms, and the dryer duct runs through the floor framing or up into the attic and out to a roof cap or a high side wall.",
+          "In new construction we often find the duct routed around obstacles instead of straight out: up, across a ceiling, down a chase and out, with four or five turns along the way. The first couple of years hide it, because a new run is clean. As lint builds, a duct with that many bends restricts faster than a straight one, and the slowdown usually shows around year two or three.",
+          "A first cleaning a couple of years in, with the airflow reading, tells you how your particular run behaves. Some builder routes need only one elbow changed or a section shortened to work properly for years. Cleaning costs $100 to $200, and a reroute or shortened section costs $200 to $600, quoted before any work.",
+        ],
+      },
+      {
+        heading: "College Park and Delaney Park bungalows: under the floor",
+        body: [
+          "Many of the 1920s and 1930s bungalows in College Park and Delaney Park sit on raised foundations with a crawl space underneath, a common way to build in Central Florida before slab floors took over. When a washer and dryer were added later, often on a back porch that was closed in, the easiest way out was down through the floor.",
+          "So the duct runs under the house, along the joists in the crawl space, to a hood in the foundation wall or the skirting. Down there it is dark, damp and full of whatever lives under old houses. Foil hose sags into the dirt, joints separate and blow lint under the floor, and a hood at ground level gets buried in mulch and oak leaves.",
+          "Lint and moisture blown into a crawl space are bad for the floor framing and draw pests, so a disconnected run there is worth fixing promptly. We reach it from the access opening where it is safe, replace soft hose with rigid metal hung from the joists and pitched toward the hood, and set the hood clear of the soil. That is $200 to $600. Cleaning a sound run costs $100 to $200.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1424,6 +1664,22 @@ export const cityBatchB: CityContent[] = [
         body: [
           "Una carga que necesita dos ciclos, la parte de arriba de la secadora muy caliente, el cuarto de lavado que se pone caliente y húmedo, un olor a quemado al arrancar. Con cualquiera de esas, vale la pena medir antes de llamar al técnico de la secadora.",
           "En los apartamentos la ventila es de la propiedad y se pide por la administración, y los edificios completos se cobran por unidad. En una casa, la limpieza cuesta de $100 a $200 por ducto y la reparación o el cambio de ruta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Lake Nona: casas nuevas, lavandería arriba",
+        body: [
+          "Lake Nona, en el sureste de la ciudad cerca del aeropuerto, ha crecido rapidísimo con barrios planificados de casas de dos pisos y townhouses, casi todos de los últimos quince años. La lavandería suele estar en el segundo piso junto a los cuartos, y el ducto de secadora pasa por el entrepiso o sube al ático y sale por el techo o por una pared alta.",
+          "En construcción nueva muchas veces encontramos el ducto dando vueltas en vez de salir derecho: sube, cruza un techo, baja por un hueco y sale, con cuatro o cinco curvas en el camino. Los primeros años no se nota, porque un ducto nuevo está limpio. Cuando la pelusa se acumula, un tramo con tantas curvas se tapa más rápido que uno derecho, y la ropa empieza a tardar más al segundo o tercer año.",
+          "Una primera limpieza de ventila de secadora a los dos o tres años, con la medida del flujo de aire, le dice cómo se porta su tramo. A veces basta cambiar un codo o acortar un pedazo para que funcione bien por años. La limpieza tiene un precio de $100 a $200, y cambiar el recorrido o acortar un tramo, de $200 a $600, cotizado antes de empezar. Estamos cerca de usted en Lake Nona y todo Orlando.",
+        ],
+      },
+      {
+        heading: "Bungalows de College Park y Delaney Park: por debajo del piso",
+        body: [
+          "Muchos bungalows de los años veinte y treinta en College Park y Delaney Park están levantados del suelo, con un espacio debajo del piso, como se construía en la Florida central antes de que llegaran las casas sobre losa. Cuando se añadió la lavadora y la secadora, muchas veces en un portal de atrás que se cerró, lo más fácil fue sacar la ventila por el piso.",
+          "Así el ducto corre por debajo de la casa, entre las vigas, hasta una tapa en la base de la casa o en el faldón. Allá abajo está oscuro, húmedo y lleno de lo que vive debajo de las casas viejas. La manguera de aluminio se cuelga hasta la tierra, las uniones se separan y botan pelusa bajo el piso, y una tapa a ras del suelo queda enterrada en mantillo y hojas de roble.",
+          "La pelusa y la humedad debajo del piso dañan la madera y atraen plagas, así que un ducto suelto allí hay que arreglarlo pronto. Llegamos por la abertura de acceso cuando es seguro, cambiamos la manguera por metal rígido colgado de las vigas y con caída hacia la tapa, y dejamos la tapa por encima de la tierra. Ese arreglo va de $200 a $600. La limpieza de un tramo en buen estado cuesta de $100 a $200.",
         ],
       },
     ],

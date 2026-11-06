@@ -159,6 +159,22 @@ export const cityBatchA: CityContent[] = [
           "Salt is constant there. We check that the damper closes every time, because a flap stuck open lets wet ocean air sit in the duct all night.",
         ],
       },
+      {
+        heading: "Hollywood Beach in winter, and the unit that sat closed all summer",
+        body: [
+          "From November to April the condo buildings along the Broadwalk and A1A fill with winter residents, a good number of them from Quebec and the northeast, and many lock the unit and fly home when the heat arrives. For five or six months nobody runs the dryer, and the duct sits full of still, damp air a block from the ocean.",
+          "What we find when they return is seldom a big plug of lint. More often the damper has corroded in place, a mud dauber has built inside the hood, or the lint left from last season has soaked up humidity and set like felt against the duct wall. The first load of sheets takes two cycles, and the owner blames a dryer that spent the summer switched off.",
+          "The simple routine is to book the cleaning the week you arrive, before the guests and the beach towels. If the unit is empty, a key left with the front desk or a neighbour lets us do it beforehand, with the airflow readings left at the office for you. Cleaning is $100 to $200 a unit, and a corroded hood, where the association lets us replace it, falls in the $200 to $600 repair range.",
+        ],
+      },
+      {
+        heading: "Emerald Hills and Hollywood Hills: a laundry room in the middle of the house",
+        body: [
+          "West of Interstate 95, Hollywood Hills and Emerald Hills are mostly single storey block houses from the 1950s to the 1970s, the Emerald Hills ones larger and set along the golf course. In many of them the laundry is a small utility room between the kitchen and the garage, with no outside wall of its own.",
+          "So the dryer duct has to find a way out. It rises through the ceiling, crosses the attic and leaves through the roof, a high side wall, or the far wall of the garage. On the floor plan the dryer looks ten feet from daylight. In the attic the run is often twice that, with an elbow at the top of the rise, one or two on the way across and another at the exit.",
+          "That is why a house with a clean lint screen and a new dryer can still need two cycles. We read the airflow where the duct ends, clean from the utility room and from outside, and read it again. If the second number stays low, the route is the problem, and a shorter one through the garage wall usually costs $200 to $600. A cleaning on its own is $100 to $200.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -173,6 +189,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "El código permite hasta 35 pies de ducto, menos 2.5 pies por cada codo de 45 grados y 5 pies por cada codo de 90, salvo que el fabricante de la secadora permita más. Medimos su ventila y le decimos si cumple.",
           "Si no cumple, buscamos una salida más cerca con ducto rígido de 4 pulgadas y uniones selladas con cinta de aluminio. Las reparaciones cuestan de $200 a $600 y la limpieza de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Hollywood Beach en invierno: el apartamento que pasó el verano cerrado",
+        body: [
+          "De noviembre a abril los edificios del Broadwalk y de la A1A se llenan de residentes de invierno, muchos de Quebec y del noreste, y en cuanto llega el calor cierran el apartamento y se van. Durante cinco o seis meses nadie usa la secadora, y el ducto de secadora se queda lleno de aire húmedo y quieto a una cuadra del mar.",
+          "Cuando regresan, casi nunca encontramos un tapón grande de pelusa. Lo normal es una aleta que la sal dejó trabada, un nido de avispa de barro dentro de la tapa, o la pelusa de la temporada pasada, que chupó humedad y quedó pegada como fieltro a la pared del ducto. La primera carga de sábanas necesita dos ciclos y uno le echa la culpa a la secadora.",
+          "Lo práctico es pedir la limpieza de ventila de secadora la misma semana que usted llega, antes de las visitas y de las toallas de playa. Si el apartamento está vacío, puede dejar la llave en la recepción o con un vecino y la hacemos antes, con las medidas de flujo de aire en la oficina. El precio es de $100 a $200 por unidad, y cambiar una tapa corroída, si la asociación lo permite, cuesta de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Emerald Hills y Hollywood Hills: el cuarto de lavar en el medio de la casa",
+        body: [
+          "Al oeste de la I-95, Hollywood Hills y Emerald Hills son casi todo casas de bloque de un piso, de los años cincuenta a los setenta; las de Emerald Hills son más grandes y quedan junto al campo de golf. En muchas, la lavandería es un cuartico entre la cocina y el garaje, sin ninguna pared que dé para afuera.",
+          "Entonces el ducto tiene que buscar salida: sube por el techo del cuarto, cruza el ático y sale por el techo, por una pared lateral alta o por el fondo del garaje. En el plano parece que la secadora está a diez pies de la calle, pero en el ático el tramo suele medir el doble, con un codo arriba, uno o dos por el camino y otro en la salida.",
+          "Por eso una casa con el filtro limpio y secadora nueva puede seguir necesitando dos ciclos. Medimos el aire donde termina el ducto, limpiamos desde adentro y desde afuera, y volvemos a medir. Si el número sigue bajo, el problema es el recorrido, y una salida más corta por la pared del garaje cuesta de $200 a $600. Si busca este servicio cerca de usted en Hollywood, la limpieza sola cuesta de $100 a $200.",
         ],
       },
     ],
@@ -376,6 +408,22 @@ export const cityBatchA: CityContent[] = [
           "The US Fire Administration puts failure to clean as the leading cause of home dryer fires, about a third of the roughly 2,900 each year. Cleaning costs $100 to $200, and a two storey roof run takes a little longer than a garage wall run.",
         ],
       },
+      {
+        heading: "Townhomes and villas off Sample Road and Wiles Road",
+        body: [
+          "Coral Springs has a good number of townhome and villa communities along Sample Road, Wiles Road and University Drive, most of them from the 1980s and 1990s. Where the laundry closet sits upstairs on an outside wall, the duct goes straight through it, and the hood ends up on the second floor above a front walk, a patio or the entry of the unit next door.",
+          "A hood up there is out of sight and out of reach for the owner. Lint the damper cannot push clear drifts onto the stucco and the walk below, and the grey streak under the hood is often the first thing anyone notices. The termination also has to stay at least 3 feet from doors and windows, the neighbour's included, and some of these hoods do not.",
+          "The outside walls usually belong to the association, so a hood that needs moving or replacing goes to the board first. Cleaning does not. When a community books a whole row, we work down the building with one ladder setup, price it per unit and label each owner's readings by address. A single townhome cleaning costs $100 to $200.",
+        ],
+      },
+      {
+        heading: "Upstairs laundry: when the shortest way out is sideways",
+        body: [
+          "In the two storey houses of Turtle Run and the later sections of the city, builders sent most upstairs dryer ducts through the roof, even where the laundry room sits against an outside wall. On paper the roof is a straight shot. In practice the duct climbs into the attic, turns, runs between the trusses to wherever the roofer wanted the cap, and turns again to meet it.",
+          "Where the laundry wall faces outside, a side wall exit at second floor height can cut that run to a few feet with a single elbow. Less length and fewer bends mean more air at the hood, a dryer that finishes on the first cycle, and a termination you can see from the yard. It also takes the roof out of every future cleaning.",
+          "A new wall opening changes the outside of the house, so most associations want an application showing the colour and position of the hood, and the old roof opening has to be closed by a roofer. We give you the measurements and hood details for that application. The reroute itself is $200 to $600, and cleaning the existing roof run in the meantime is $100 to $200.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -397,6 +445,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "La ropa sale húmeda después de un ciclo completo, la secadora se siente muy caliente por fuera o el cuarto de lavar huele a quemado. En una casa de dos pisos, otra señal es no sentir aire en la salida del techo con la secadora prendida.",
           "Según la Administración de Incendios de Estados Unidos, la falta de limpieza es la causa principal de los incendios de secadoras en casas, cerca de un tercio de ellos.",
+        ],
+      },
+      {
+        heading: "Townhouses y villas por Sample Road y Wiles Road",
+        body: [
+          "En Coral Springs hay muchas comunidades de townhouses y villas por Sample Road, Wiles Road y University Drive, la mayoría de los ochenta y los noventa. Cuando el clóset de lavar está arriba y pegado a una pared exterior, el ducto sale derecho por esa pared, y la tapa queda en el segundo piso, encima de la entrada, de un patio o de la puerta del vecino.",
+          "Allá arriba nadie la ve ni la alcanza. La pelusa que la aleta no logra botar se pega al estuco y cae en la acera, y esa mancha gris debajo de la tapa suele ser la primera señal. Además la salida tiene que quedar a por lo menos 3 pies de puertas y ventanas, también las del vecino, y algunas no cumplen.",
+          "Las paredes de afuera normalmente son de la asociación, así que mover o cambiar una tapa pasa primero por la junta. La limpieza no necesita permiso. Si la comunidad pide una fila completa, trabajamos el edificio de corrido con precio por unidad y le dejamos a cada dueño sus medidas con su dirección. La limpieza de ventila de secadora en un townhouse cuesta de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Lavandería arriba: a veces la salida más corta es por el lado",
+        body: [
+          "En las casas de dos pisos de Turtle Run y de las secciones más nuevas de la ciudad, los constructores sacaron casi todos los ductos de la lavandería de arriba por el techo, aunque el cuarto esté pegado a una pared exterior. El ducto de secadora sube al ático, dobla, corre entre las cerchas hasta donde el techero quiso poner la salida y vuelve a doblar para llegar a ella.",
+          "Si la pared de la lavandería da para afuera, una salida lateral en el segundo piso puede dejar el recorrido en pocos pies con un solo codo. Menos largo y menos curvas quieren decir más aire, ropa seca en un ciclo y una tapa que usted ve desde el patio, sin que nadie tenga que subir al techo en cada limpieza.",
+          "Una abertura nueva cambia el exterior de la casa, y casi todas las asociaciones piden una solicitud con el color y la posición de la tapa; el hueco viejo del techo lo debe cerrar un techero. Le damos las medidas y los datos de la tapa para esa solicitud. El precio del cambio es de $200 a $600, y mientras tanto la limpieza del ducto actual cuesta de $100 a $200. Estamos cerca de usted en todo Coral Springs.",
         ],
       },
     ],
@@ -472,6 +536,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200 for a typical home. Rerouting a long run in rigid metal is $200 to $600, and we quote it before starting.",
         ],
       },
+      {
+        heading: "Apartments in Plantation Midtown",
+        body: [
+          "Plantation Midtown, the business district along Broward Boulevard and Pine Island Road, has filled in with large rental apartment communities, most with a washer and dryer in every unit. The dryer ducts run from a laundry closet through the ceiling to an outside wall, and on the top floor some of them go up through the roof instead.",
+          "Turnover is the natural moment to clean them. Between one lease and the next the apartment is empty, the closet is clear and the dryer can be pulled out without moving anyone's belongings. A vent cleaned during the make ready gives the next tenant a clean start, and a property that adds it to the move out list rarely gets a work order for clothes that will not dry.",
+          "For property managers we clean by building, priced per unit and quoted for the community, and the report lists each apartment's airflow before and after, so the units that need repair rather than cleaning stand out. A tenant who wants their own unit done can book it at $100 to $200 and pass the readings to the leasing office.",
+        ],
+      },
+      {
+        heading: "Jacaranda: villas and townhomes from the 1970s and 1980s",
+        body: [
+          "Jacaranda, in west Plantation, was laid out as a planned community around a golf course and lakes, with single family homes beside villa, townhome and condo sections, each with its own association. Much of it went up in the 1970s and 1980s, so the dryer ducts in many units are now around forty years old.",
+          "In the villas and townhomes the laundry is usually a closet off the kitchen or the garage, and the duct rises into the attic to a cap on a low slope roof. Original ducts of that age were often thin galvanized pipe with screwed joints. Where they have rusted along the bottom seam, lint catches on the rough patch and moisture finds the gap, and some were already patched with foil hose during a dryer swap.",
+          "The roofs in these sections are usually maintained by the association, which matters when a cap needs replacing, and many associations reroof a whole section at once. If yours is about to, ask for the dryer cap to go back as a proper dryer cap with a damper. Cleaning is $100 to $200, and replacing a rusted section or the cap runs $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -493,6 +573,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "En Lauderdale West y en los condominios junto a las avenidas principales los ductos son más cortos, pero la tapa exterior casi siempre es área común. En esos casos coordinamos con la asociación antes de cambiar nada afuera.",
           "Si la junta quiere limpiar todo el edificio, cobramos por unidad y damos una sola cotización.",
+        ],
+      },
+      {
+        heading: "Apartamentos en Plantation Midtown",
+        body: [
+          "Plantation Midtown, la zona de negocios por Broward Boulevard y Pine Island Road, se ha llenado de comunidades grandes de apartamentos de alquiler, casi todos con lavadora y secadora dentro. El ducto de secadora va desde el clóset por el techo hasta una pared exterior, y en el último piso algunos suben y salen por el techo del edificio.",
+          "El mejor momento para limpiarlos es entre un inquilino y otro. El apartamento está vacío, el clóset despejado, y la secadora se puede sacar sin mover las cosas de nadie. Una ventila limpia al preparar la unidad le da al próximo inquilino un buen comienzo, y la propiedad que lo incluye en la lista de salida casi nunca recibe quejas de ropa que no seca.",
+          "Para administradores trabajamos por edificio, con precio por unidad y una cotización para toda la comunidad, y el informe trae el flujo de aire de cada apartamento antes y después, así se ve cuáles necesitan reparación y no solo limpieza. Si usted es inquilino y quiere la limpieza de ventila de secadora en su unidad, el precio es de $100 a $200 y le dejamos las medidas para la oficina.",
+        ],
+      },
+      {
+        heading: "Jacaranda: villas y townhouses de los setenta y ochenta",
+        body: [
+          "Jacaranda, en el oeste de Plantation, se planificó alrededor de un campo de golf y de lagos, con casas de una familia junto a secciones de villas, townhouses y condominios, cada una con su asociación. Casi todo se construyó en los setenta y ochenta, así que muchos ductos tienen ya unos cuarenta años.",
+          "En las villas y los townhouses la lavandería suele estar en un clóset junto a la cocina o al garaje, y el ducto sube al ático hasta una salida en un techo de poca inclinación. Los ductos originales de esa época muchas veces eran de tubo galvanizado fino con uniones atornilladas. Donde se oxidaron por la costura de abajo, la pelusa se agarra a lo áspero y la humedad entra por la rendija; algunos ya tienen parches de manguera de aluminio de algún cambio de secadora.",
+          "Los techos de esas secciones casi siempre los mantiene la asociación, y muchas cambian el techo de toda una sección de una vez. Si le toca pronto, pida que la salida de la secadora vuelva a ser una tapa de secadora con aleta. La limpieza cuesta de $100 a $200, y cambiar un tramo oxidado o la tapa tiene un precio de $200 a $600. Trabajamos cerca de usted en todo Plantation.",
         ],
       },
     ],
@@ -568,6 +664,22 @@ export const cityBatchA: CityContent[] = [
           "Most townhouse associations handle roof access through a manager. Cleaning itself is $100 to $200 per unit.",
         ],
       },
+      {
+        heading: "Twenty years on in Sunset Lakes and Monarch Lakes",
+        body: [
+          "Much of west Miramar, including Sunset Lakes, Monarch Lakes and Riviera Isles, was built from the late 1990s through the 2000s. Many of those houses are now twenty years old or close to it, and plenty have never had the dryer duct cleaned past the hose behind the machine.",
+          "At that age the original parts tend to give out together. The plastic roof cap has baked through twenty summers and its damper hinge cracks, so the flap hangs open or stays shut. The tape on the attic joints has dried out and lifted. None of it shows from the laundry room, and the dryer simply takes a few minutes longer each year until a load of towels needs a second round.",
+          "A first full cleaning on a house that age is worth doing properly from both ends, with the cap opened and the attic section checked from the hatch where it can be reached safely. Cleaning is $100 to $200. Where the cap or a joint has failed, the repair is $200 to $600, and in a gated community we register at the gate before the visit.",
+        ],
+      },
+      {
+        heading: "Big households, comforters and the dryer that never rests",
+        body: [
+          "Plenty of Miramar homes hold large or multigenerational families, and the laundry keeps the household's pace: school uniforms, work uniforms, bedding for several bedrooms and towels every day. Comforters and heavy blankets are the hardest loads of all, because they hold water and keep the dryer running hot for an hour or more.",
+          "Long hot cycles push more lint down the duct and keep it warm while it settles. In a house drying every day we often find the run badly restricted well before the one year mark, with the heaviest build up at the first elbow and packed behind the damper. The family notices only that drying takes longer, and in a busy house that tends to get absorbed rather than reported.",
+          "We set the interval on the reading, not the calendar. The airflow before cleaning shows how much the run lost since the last visit, so the next booking can be six months, nine or a year, whichever your house actually needs. Each cleaning is $100 to $200, and a home with two laundry areas is quoted per run before we book.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -588,6 +700,22 @@ export const cityBatchA: CityContent[] = [
         heading: "Townhouses",
         body: [
           "En las filas de townhouses las salidas del techo están juntas y se parecen. Prendemos la secadora y medimos el flujo para confirmar cuál es la suya antes de limpiar.",
+        ],
+      },
+      {
+        heading: "Veinte años después en Sunset Lakes y Monarch Lakes",
+        body: [
+          "Gran parte del oeste de Miramar, con Sunset Lakes, Monarch Lakes y Riviera Isles, se construyó entre finales de los noventa y los dos mil. Muchas de esas casas ya tienen unos veinte años, y en bastantes nadie ha limpiado el ducto de secadora más allá de la manguera de atrás.",
+          "A esa edad las piezas de fábrica empiezan a fallar juntas. La tapa de plástico del techo lleva veinte veranos al sol y la bisagra de la aleta se raja, así que la aleta se queda abierta o no abre. La cinta de las uniones del ático se secó y se despegó. Desde la lavandería no se ve nada; la secadora solo tarda unos minutos más cada año, hasta que las toallas necesitan otro ciclo.",
+          "La primera limpieza de ventila de secadora en una casa de esa edad vale la pena hacerla bien, por los dos extremos, abriendo la tapa del techo y revisando el tramo del ático desde la entrada cuando se puede llegar con seguridad. La limpieza cuesta de $100 a $200; si la tapa o una unión falló, la reparación tiene un precio de $200 a $600. En comunidades con garita avisamos en la entrada antes de llegar.",
+        ],
+      },
+      {
+        heading: "Familias grandes, edredones y una secadora que no descansa",
+        body: [
+          "Muchas casas de Miramar tienen familias grandes o varias generaciones bajo el mismo techo, y la lavandería va al ritmo de la casa: uniformes del colegio y del trabajo, sábanas de varios cuartos y toallas todos los días. Los edredones y las colchas gruesas son lo más pesado, porque guardan agua y tienen la secadora trabajando caliente una hora o más.",
+          "Los ciclos largos y calientes mandan más pelusa al ducto y la mantienen tibia mientras se asienta. En una casa que seca todos los días muchas veces encontramos el tramo muy tapado antes de cumplir el año, con lo peor en el primer codo y detrás de la aleta. La familia solo nota que la ropa tarda más, y en una casa ocupada eso se aguanta en vez de reportarse.",
+          "Por eso fijamos cada cuánto limpiar según la medida, no según el calendario. El flujo de aire antes de limpiar muestra cuánto perdió el tramo desde la última visita, y así la próxima cita puede ser a los seis meses, a los nueve o al año. Cada limpieza tiene un precio de $100 a $200, y si la casa tiene dos lavanderías se cotiza cada tramo antes de la cita. Hay citas cerca de usted en todo Miramar.",
         ],
       },
     ],
@@ -663,6 +791,22 @@ export const cityBatchA: CityContent[] = [
           "For rental owners we can clean every year on a set month and report the airflow readings. Cleaning is $100 to $200 per dryer, and we quote multiple properties together.",
         ],
       },
+      {
+        heading: "Horse properties and the barn dryer",
+        body: [
+          "Davie still calls itself a western town, and on the acreage along Orange Drive and in the ranch sections plenty of properties keep horses. Saddle pads, horse blankets, leg wraps and barn towels go through a dryer every week, often a second, older dryer in the garage or the barn kept for that work so the house dryer stays clean.",
+          "Barn laundry is hard on a vent. Horse hair, hay dust and shavings come off in the drum and get past the lint screen, and the second dryer usually vents through the garage or barn wall with whatever duct was at hand, often foil hose. A hood near the ground out there also faces mud, wasps and the odd rat looking for a warm hole.",
+          "Treat that dryer as the one most likely to need attention. Clear the screen every load, shake the worst of the hair off outside, and have the run cleaned twice a year if it works every week. Replacing foil hose with rigid metal and a hood that closes is $200 to $600, and cleaning is $100 to $200 per dryer, so two dryers on one property are priced as two runs.",
+        ],
+      },
+      {
+        heading: "Pine Island Ridge and the condo villages",
+        body: [
+          "Pine Island Ridge, off Pine Island Road, is a large community of condo buildings, villas and townhomes built around a golf course in the 1970s and 1980s, run through a number of separate associations. Other condo villages in Davie follow the same pattern: low rise buildings, a laundry closet in each unit, and a short duct to an outside wall.",
+          "In the condo buildings the hood sits on the face of the building above a walkway or a parking row. A hood on the second or third floor needs a ladder, and the association usually wants to know who is going up and when. Ground floor owners often have the shortest runs and the best numbers in the building, while the units at the ends of a floor can have an extra bend or two.",
+          "Many residents here are retired and some live elsewhere part of the year, so an outside hood can go a long time without anyone looking at it. Associations that book a building at once get one access plan and every unit's readings on a single sheet, priced per unit. A single unit costs $100 to $200 to clean, and a hood that has lost its damper is replaced, with the board's approval, for $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -684,6 +828,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "Cuando una casa se amplió, a veces la ventila vieja sigue en la pared o en el techo, abierta y sin uso. Para los animales es una entrada directa al ático.",
           "Si la encontramos, le explicamos cómo sellarla bien, por fuera y por dentro. Es un trabajo pequeño y evita que vuelvan los nidos.",
+        ],
+      },
+      {
+        heading: "Caballos y la secadora del establo",
+        body: [
+          "Davie todavía se presenta como pueblo del oeste, y en los terrenos grandes por Orange Drive y en las zonas de ranchos muchas propiedades tienen caballos. Mantillas, mantas de caballo, vendas y toallas del establo pasan por la secadora todas las semanas, muchas veces una secadora vieja que se deja en el garaje o en el establo solo para eso.",
+          "Esa ropa castiga la ventila. El pelo de caballo, el polvo del heno y la viruta se sueltan en el tambor y pasan el filtro, y esa segunda secadora casi siempre bota el aire por la pared del garaje o del establo con el ducto que hubiera a mano, muchas veces manguera de aluminio. Una tapa cerca del suelo, en el campo, además recibe barro, avispas y alguna rata buscando un hueco caliente.",
+          "Esa es la secadora que más atención necesita. Limpie el filtro en cada carga, sacuda el pelo afuera antes de meter la ropa y haga la limpieza de ventila de secadora dos veces al año si se usa cada semana. Cambiar la manguera de aluminio por ducto rígido con una tapa que cierre cuesta de $200 a $600, y la limpieza tiene un precio de $100 a $200 por secadora.",
+        ],
+      },
+      {
+        heading: "Pine Island Ridge y los condominios",
+        body: [
+          "Pine Island Ridge, junto a Pine Island Road, es una comunidad grande de edificios de condominio, villas y townhouses alrededor de un campo de golf, construida en los setenta y ochenta y dividida en varias asociaciones. Otros condominios de Davie siguen el mismo patrón: edificios bajos, un clóset de lavar en cada unidad y un ducto de secadora corto hasta la pared de afuera.",
+          "En esos edificios la tapa queda en la fachada, encima de un pasillo o de los parqueos. Si está en el segundo o tercer piso hace falta escalera, y la asociación normalmente quiere saber quién sube y a qué hora. Los de planta baja suelen tener los tramos más cortos y las mejores medidas del edificio; las unidades en las puntas de cada piso pueden tener uno o dos codos más.",
+          "Muchos vecinos están retirados y algunos pasan parte del año fuera, así que una tapa puede estar mucho tiempo sin que nadie la mire. Si la asociación pide el edificio completo, hay un solo plan de acceso y las medidas de todas las unidades en una hoja, con precio por unidad. Una unidad sola cuesta de $100 a $200, y cambiar una tapa sin aleta, con permiso de la junta, de $200 a $600. Estamos cerca de usted en Davie.",
         ],
       },
     ],
@@ -759,6 +919,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200 a dryer for a house, and condo units fall in the same range before any building quote.",
         ],
       },
+      {
+        heading: "Hoods that open onto the walkway",
+        body: [
+          "Many of Coconut Creek's older low rise condo buildings, Wynmoor among them, are reached by open walkways along the front of each floor. Where a unit has its own dryer, the duct often takes the shortest route out through the front wall, and the hood ends up on that walkway a few feet from the front door, sometimes beside the kitchen window of the unit next door.",
+          "That placement has consequences you can see. Lint gathers on the railing and the floor under the hood, warm damp air drifts past the neighbours' doors, and a damper that sticks open lets wind driven rain blow straight into the duct. The code wants a dryer termination at least 3 feet from any door or window that opens, and a hood beside a jalousie window often misses that.",
+          "Moving a hood on a common walkway is the association's call, because the wall is common element. What an owner can do is keep the run clean and the damper free, and bring the board the measurements if the hood sits too close to an opening. Cleaning is $100 to $200 a unit, and a new hood, once approved, is $200 to $600.",
+        ],
+      },
+      {
+        heading: "Newer townhomes near The Promenade and Lyons Road",
+        body: [
+          "The newer parts of Coconut Creek, near The Promenade at Coconut Creek and along Lyons Road, include townhome and apartment communities built well after the condo era. Most of the townhomes are two storeys with the laundry closet upstairs by the bedrooms, and the dryer duct either goes through the outside wall at second floor height or up through the roof.",
+          "Whose job the vent is depends on what you live in. In a townhome you usually own the duct while the association maintains the roof and the outside walls, so a cap or hood replacement may need its sign off. In a rental apartment the property maintains all of it. In both, the outside end is the part nobody checks, and in a newer building the first restriction often shows up there, at a cap or hood whose damper has gone stiff.",
+          "A first cleaning a few years in tells you how quickly your household loads the run. We measure at the outside end, clean from the closet and from outside, and give you both numbers. Cleaning costs $100 to $200, and a cap or hood replacement costs $200 to $600, quoted before we start.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -780,6 +956,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "En Winston Park y en las calles más nuevas, la lavandería suele estar junto al garaje con una salida corta por la pared, o arriba con salida en el techo. Se limpian una vez al año, como en cualquier casa.",
           "Si su salida está en el techo, la pelusa se junta en la tapa y no se ve desde abajo. Medimos el flujo afuera para saber cómo está antes de limpiar.",
+        ],
+      },
+      {
+        heading: "Tapas que salen al pasillo",
+        body: [
+          "Muchos edificios de condominio bajos y más viejos de Coconut Creek, entre ellos los de Wynmoor, tienen pasillos abiertos por el frente de cada piso. Cuando la unidad tiene secadora propia, el ducto de secadora toma el camino más corto por la pared del frente, y la tapa queda en ese pasillo, a pocos pies de la puerta y a veces junto a la ventana de la cocina del vecino.",
+          "Eso se nota. La pelusa se junta en la baranda y en el piso debajo de la tapa, el aire caliente y húmedo pasa por delante de las puertas de los vecinos, y una aleta trabada abierta deja que la lluvia con viento entre directo al ducto. El código pide que la salida quede a por lo menos 3 pies de cualquier puerta o ventana que abra, y una tapa al lado de una ventana de persianas muchas veces no cumple.",
+          "Mover una tapa en un pasillo común le toca a la asociación, porque esa pared es área común. Lo que el dueño sí puede hacer es mantener el ducto limpio y la aleta suelta, y llevarle las medidas a la junta si la tapa está muy cerca de una ventana. La limpieza de ventila de secadora cuesta de $100 a $200 por unidad, y una tapa nueva, ya aprobada, de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Townhouses nuevos cerca de The Promenade y Lyons Road",
+        body: [
+          "La parte más nueva de Coconut Creek, cerca de The Promenade at Coconut Creek y por Lyons Road, tiene comunidades de townhouses y apartamentos construidas mucho después de los condominios. Casi todos los townhouses son de dos pisos con el clóset de lavar arriba, junto a los cuartos, y el ducto sale por la pared exterior a la altura del segundo piso o sube por el techo.",
+          "A quién le toca la ventila depende de dónde vive. En un townhouse normalmente el ducto es suyo y la asociación mantiene el techo y las paredes de afuera, así que cambiar una tapa puede necesitar su permiso. En un apartamento de alquiler todo lo mantiene la propiedad. En los dos casos, la punta de afuera es lo que nadie revisa, y en un edificio nuevo la primera obstrucción suele aparecer allí, en una tapa con la aleta dura.",
+          "Una primera limpieza a los pocos años le dice qué tan rápido su casa llena el ducto. Medimos afuera, limpiamos desde el clóset y desde la salida, y le damos los dos números. El precio de la limpieza es de $100 a $200, y cambiar una tapa cuesta de $200 a $600, cotizado antes de empezar. Si busca el servicio cerca de usted en Coconut Creek, hay citas en la semana.",
         ],
       },
     ],
@@ -855,6 +1047,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200. Repairing a separated attic joint or replacing a damaged section with rigid metal is $200 to $600, quoted after we have seen it.",
         ],
       },
+      {
+        heading: "Bonaventure: the older corner of Weston",
+        body: [
+          "Bonaventure, in the northeast corner of Weston, was developed in the 1970s, long before the city was incorporated, and its housing mix is different from the rest of town: condo buildings, villas and townhomes around the golf courses, with single family streets alongside. Many residents are retired, and a fair number spend part of the year elsewhere.",
+          "The ducts there are forty years old or more. In the condo buildings they run from a closet across the ceiling to an outside wall; in the villas they often rise through a low roof. Original galvanized pipe of that age rusts at the seams, and many runs were extended or patched with foil during later dryer swaps. A unit that has changed hands several times can have three generations of duct in one ceiling.",
+          "Bonaventure's associations each set their own rules for contractors and for exterior work, and a hood or cap on a common wall or roof is theirs to approve. We clean the owner's run, read airflow at the outside end and give the board the numbers when a hood needs replacing. Cleaning is $100 to $200 a unit, and replacing a rusted section is $200 to $600.",
+        ],
+      },
+      {
+        heading: "Indian Trace and Savanna: the garage wall and the sprinklers",
+        body: [
+          "Not every Weston house vents through the roof. In the single storey homes of Indian Trace, Savanna and the other early sections, the laundry often sits in the garage or a room beside it, and the duct goes a few feet straight out the side wall into the strip between the house and the property line.",
+          "That side strip is where Weston's careful landscaping meets the dryer hood. Irrigation heads set to water the hedge also soak the hood and the damper, and wet lint packs into the louvers far faster than dry lint would. Mulch gets banked against the wall and the hedge is trimmed to touch the house. A hood that is wet several mornings a week can be half closed by the end of a rainy summer.",
+          "Turn or adjust the sprinkler head that hits the hood, keep the hedge a foot or so back, and check that the flap moves when the dryer runs. On a short garage run, cleaning is quick and costs $100 to $200. If the damper has rusted or the hood has cracked from being knocked by trimmers, a replacement in the colour your association allows is $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -876,6 +1084,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "Casi todas las comunidades de Weston tienen entrada con garita. Al hacer la cita, avísenos si hay que dejar nuestro nombre en la entrada o si la asociación pide algún documento para trabajar en el techo.",
           "Estamos asegurados. Si la administración pide prueba del seguro antes de la visita, díganos con tiempo.",
+        ],
+      },
+      {
+        heading: "Bonaventure: la esquina más vieja de Weston",
+        body: [
+          "Bonaventure, en la esquina noreste de Weston, se construyó en los años setenta, mucho antes de que Weston fuera ciudad, y no se parece al resto: edificios de condominio, villas y townhouses alrededor de los campos de golf, con calles de casas de una familia al lado. Muchos vecinos están retirados y bastantes pasan parte del año en otro lugar.",
+          "Esos ductos tienen cuarenta años o más. En los condominios van desde el clóset por el techo hasta una pared exterior; en las villas muchas veces suben por un techo bajo. El tubo galvanizado de esa época se oxida en las costuras, y muchos tramos se alargaron o se remendaron con manguera de aluminio en algún cambio de secadora. Una unidad que ha cambiado de dueño varias veces puede tener tres ductos distintos en el mismo techo.",
+          "Cada asociación de Bonaventure tiene sus reglas para contratistas y para trabajos por fuera, y la tapa en una pared o techo común la aprueba ella. Nosotros limpiamos el ducto de secadora del dueño, medimos el aire en la salida y le damos los números a la junta si hay que cambiar la tapa. La limpieza cuesta de $100 a $200 por unidad, y cambiar un tramo oxidado tiene un precio de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Indian Trace y Savanna: la pared del garaje y los aspersores",
+        body: [
+          "No todas las casas de Weston sacan la secadora por el techo. En las casas de un piso de Indian Trace, Savanna y las primeras secciones, la lavandería suele estar en el garaje o en un cuarto al lado, y el ducto sale unos pies derecho por la pared lateral, al pasillo entre la casa y la cerca.",
+          "Ese pasillo es donde el jardín bien cuidado de Weston se encuentra con la ventila de secadora. El aspersor que riega el seto también moja la tapa y la aleta, y la pelusa mojada se compacta en las rejillas mucho más rápido que la seca. El mantillo se amontona contra la pared y el seto se poda hasta tocar la casa. Una tapa que amanece mojada varias veces por semana puede estar medio cerrada al final de un verano de lluvias.",
+          "Gire o ajuste el aspersor que le da a la tapa, deje el seto a un pie de la pared y fíjese que la aleta se mueva con la secadora prendida. En un tramo corto de garaje la limpieza es rápida y cuesta de $100 a $200. Si la aleta se oxidó o la tapa se rajó con la podadora, cambiarla por una del color que permite su asociación cuesta de $200 a $600. Atendemos cerca de usted en todo Weston.",
         ],
       },
     ],
@@ -951,6 +1175,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200. A new hood or a replaced section is repair work in the $200 to $600 range.",
         ],
       },
+      {
+        heading: "Cresthaven garages: the dryer that vents into the garage",
+        body: [
+          "Cresthaven and the streets around it are largely single storey block houses from the 1960s, most with the washer and dryer at the back of the garage. Where the dryer stands against an inside wall, a previous owner sometimes skipped the hole through the block and fitted a plastic indoor lint box, or simply left the hose pointing at the garage door.",
+          "A garage is not outside. The exhaust carries the moisture from every load, so the garage turns into a steam room: tools rust, the door springs and the opener corrode, and fine lint settles on the water heater and on everything stored on the shelves. A dryer that exhausts into a closed garage also runs hotter, because the air around it is already warm and wet.",
+          "The fix is a short rigid run through the nearest outside wall, or across the garage ceiling to it, ending in a hood with a damper at least 3 feet from the garage door opening and any window. It is usually one visit at $200 to $600. If the dryer already vents outside and only needs clearing, cleaning is $100 to $200.",
+        ],
+      },
+      {
+        heading: "Beach towers with a shared dryer riser",
+        body: [
+          "Some of the older towers on Pompano's beach, along A1A and Pompano Beach Boulevard, were not built with a separate duct from every dryer to the outside. Instead each unit's dryer connects to a vertical riser shared by the stack of units above and below, which runs to the roof and in some buildings has a booster fan at the top to keep the air moving.",
+          "In those buildings your part of the run is short: the transition hose and the branch from the closet to the riser. Everything after that belongs to the association. Lint from a whole stack collects in the riser, and if the fan at the top stops, every dryer on that stack slows at once. When several neighbours above and below complain in the same month, look at the riser before the units.",
+          "We clean the unit section and tell you plainly what we can and cannot reach from your closet. For associations, the risers and roof terminations are cleaned as a building job, quoted per unit, and each unit section is $100 to $200. Repair inside a unit, such as replacing a crushed branch above the closet ceiling, is $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -972,6 +1212,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "En Harbor Village y Garden Isles las casas dan al agua y reciben la sal y el viento de las tormentas. Después de una tormenta revisamos si la tapa se aflojó, si la aleta tiene escombros o si la salida del techo se levantó.",
           "Una ventila que queda abierta después de una tormenta deja entrar lluvia además de aire, y la pelusa mojada se pega como cemento.",
+        ],
+      },
+      {
+        heading: "Garajes en Cresthaven: la secadora que bota el aire adentro",
+        body: [
+          "Cresthaven y las calles de alrededor son casi todo casas de bloque de un piso de los años sesenta, con la lavadora y la secadora al fondo del garaje. Cuando la secadora queda contra una pared interior, algún dueño anterior a veces no abrió el hueco en el bloque y puso una cajita de plástico para la pelusa, o dejó la manguera apuntando a la puerta del garaje.",
+          "El garaje no es afuera. Cada carga suelta su humedad allí, y el garaje se vuelve un baño de vapor: las herramientas se oxidan, los resortes de la puerta y el motor se corroen, y la pelusa fina cae sobre el calentador de agua y todo lo guardado en las repisas. Además la secadora trabaja más caliente, porque el aire que la rodea ya está caliente y húmedo.",
+          "La solución es un ducto de secadora rígido y corto por la pared exterior más cercana, o por el techo del garaje hasta ella, con una tapa con aleta a por lo menos 3 pies de la puerta del garaje y de cualquier ventana. Normalmente es una sola visita con un precio de $200 a $600. Si la secadora ya sale afuera y solo hay que limpiarla, la limpieza cuesta de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Torres en la playa con ducto vertical compartido",
+        body: [
+          "Algunas torres viejas de la playa de Pompano, por la A1A y Pompano Beach Boulevard, no se hicieron con un ducto propio para cada secadora. Cada unidad se conecta a un ducto vertical compartido con los apartamentos de arriba y de abajo, que sube hasta el techo, y en algunos edificios tiene un extractor arriba para mantener el aire en movimiento.",
+          "En esos edificios su parte es corta: la manguera de atrás y el tramo desde el clóset hasta el ducto vertical. De ahí en adelante es de la asociación. La pelusa de toda la columna se junta allí, y si el extractor de arriba se para, todas las secadoras de esa columna se ponen lentas a la vez. Si varios vecinos de arriba y de abajo se quejan el mismo mes, hay que mirar el ducto compartido antes que las unidades.",
+          "Limpiamos su tramo y le decimos claro qué alcanzamos y qué no desde su clóset. Para asociaciones, los ductos verticales y las salidas del techo se limpian como trabajo del edificio, con precio por unidad, y la limpieza de ventila de secadora de cada unidad cuesta de $100 a $200. Una reparación adentro, como cambiar un tramo aplastado en el techo del clóset, cuesta de $200 a $600. Estamos cerca de usted en Pompano Beach.",
         ],
       },
     ],
@@ -1175,6 +1431,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200. For condo associations we price per unit and quote the building.",
         ],
       },
+      {
+        heading: "North Beach and Normandy Isles: the shared laundry room",
+        body: [
+          "North Beach and Normandy Isles hold many of the city's 1940s and 1950s garden apartment buildings, two and three storeys around a courtyard, a good number of them now inside historic districts. Most were built with one laundry room on the ground floor, and that is still where the building's dryers are.",
+          "A shared laundry room puts several dryers in a small space, each venting through the nearest wall, and sometimes two of them into a single hood. They run all day for the whole building, and nobody owns the problem until a resident says a load came out wet. The vents often end in the courtyard or the narrow passage between buildings, under someone's window.",
+          "For owners and managers of these buildings we clean every dryer's run in one visit and give a reading for each, which shows which machine is losing air at the vent and which is simply worn out. Each run is priced at $100 to $200. Where two dryers share one hood, giving each its own termination is repair work at $200 to $600.",
+        ],
+      },
+      {
+        heading: "After the concrete restoration",
+        body: [
+          "Since the state tightened its condo inspection rules in 2022, many Miami Beach associations along Collins Avenue and West Avenue have been through balcony and facade restoration. Crews chip, patch and repaint the outside walls, and the dryer louvers on those walls get taped over, painted or swapped while the work goes on.",
+          "When the scaffolding comes down, not every louver comes back right. We find dampers painted shut, louvers sealed with caulk around their blades, tape still across the opening, and new louvers with a fine screen behind them that catches lint within weeks. The owner notices a dryer that suddenly needs two cycles and rarely connects it to the work on the facade.",
+          "If your building has just finished its restoration and your dryer has slowed since, tell management and have the run checked. We clean from the closet, clear the louver from the balcony where it can be reached, and give management the airflow reading to pass to its contractor. Cleaning is $100 to $200 a unit, and replacing a screened louver reachable from the balcony is $200 to $600.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1189,6 +1461,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "En las calles que se inundan con la marea alta, una tapa a un pie del suelo puede quedar bajo el agua. El agua y la pelusa forman una pasta difícil de sacar. A veces conviene subir la salida.",
           "En las islas la sal daña la bisagra de la aleta en pocos años. La limpieza cuesta de $100 a $200 y una reparación de $200 a $600.",
+        ],
+      },
+      {
+        heading: "North Beach y Normandy Isles: la lavandería del edificio",
+        body: [
+          "North Beach y Normandy Isles tienen muchos de los edificios de apartamentos de los años cuarenta y cincuenta de la ciudad, de dos y tres pisos alrededor de un patio, y bastantes están hoy dentro de distritos históricos. Casi todos se hicieron con una sola lavandería en la planta baja, y allí siguen las secadoras del edificio.",
+          "En esa lavandería compartida hay varias secadoras en poco espacio, cada una saliendo por la pared más cercana, y a veces dos con una misma tapa. Trabajan todo el día para todo el edificio, y nadie se hace cargo hasta que un vecino dice que la ropa salió mojada. Las salidas suelen dar al patio o al pasillo estrecho entre edificios, debajo de la ventana de alguien.",
+          "Para dueños y administradores limpiamos el ducto de secadora de cada máquina en una sola visita y le damos una medida a cada una, así se sabe cuál pierde aire por la ventila y cuál está gastada. Cada tramo tiene un precio de $100 a $200. Si dos secadoras comparten una tapa, darle a cada una su propia salida es una reparación de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Después de la restauración del concreto",
+        body: [
+          "Desde que el estado endureció las inspecciones de condominios en 2022, muchas asociaciones de Miami Beach por Collins Avenue y West Avenue han pasado por la restauración de balcones y fachadas. Los obreros pican, resanan y pintan las paredes de afuera, y las rejillas de las secadoras en esas paredes se tapan con cinta, se pintan o se cambian mientras dura la obra.",
+          "Cuando quitan el andamio, no todas las rejillas quedan bien. Encontramos aletas pegadas con pintura, rejillas selladas con silicona entre las láminas, cinta todavía tapando la boca, y rejillas nuevas con una malla fina detrás que se llena de pelusa en pocas semanas. El dueño ve que la secadora de pronto necesita dos ciclos y casi nunca lo relaciona con la obra de la fachada.",
+          "Si su edificio acaba de terminar la restauración y la secadora está más lenta, avise a la administración y pida revisar la ventila de secadora. Limpiamos desde el clóset, despejamos la rejilla desde el balcón cuando se alcanza, y le damos a la administración la medida del flujo de aire para su contratista. La limpieza cuesta de $100 a $200 por unidad. Si busca el servicio cerca de usted en Miami Beach, hay citas en la semana.",
         ],
       },
     ],
@@ -1391,6 +1679,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200 whichever kind of Gables home you have.",
         ],
       },
+      {
+        heading: "Apartments and condos downtown and near the university",
+        body: [
+          "Downtown Coral Gables, along Ponce de Leon Boulevard and around Miracle Mile, has filled with mid rise and high rise apartment and condo buildings, and the streets near the University of Miami hold a mix of apartments and houses rented to students and staff. Units in the newer buildings almost all have their own washer and dryer in a closet.",
+          "In those closets the duct runs across the ceiling to a louver on an outside wall, often over a balcony or on a facade facing a busy street. The city's attention to appearance reaches the buildings too, so louvers tend to be tight, flush and painted to match, and a decorative louver passes less air than a plain hood. Student rentals add the other half of the problem: several people drying in one unit and nobody watching the lint screen.",
+          "For managers we work through a building per unit, with a reading for each apartment. For landlords near campus, a cleaning in the summer between leases is the simplest habit. Cleaning is $100 to $200 a unit, and replacing a louver or a crushed ceiling section is $200 to $600.",
+        ],
+      },
+      {
+        heading: "Cocoplum and Gables by the Sea: salt off the bay",
+        body: [
+          "The waterfront neighbourhoods in the south of the city, Cocoplum, Gables by the Sea and Gables Estates, sit on canals that open to Biscayne Bay, and the air off the bay carries salt across every yard. A dryer hood there wears out long before the duct behind it, and the damper hinge is what goes first.",
+          "A damper stuck partly open lets humid air sit in the duct after every load, where it meets warm lint and turns it into a damp mat at the outlet. A hood that has lost its flap also lets lizards and iguanas in, and iguanas are a common sight along these canals. On a large house with a long run, that last foot at the hood can be the main restriction in the whole system.",
+          "We replace failing hoods with heavier metal ones that have a gravity damper and no screen. Because Coral Gables reviews visible exterior changes, we fit the new hood in the old one's position with a similar finish where we can, and if it has to move, you check with the city first. Hood replacement is $200 to $600, and cleaning is $100 to $200.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1405,6 +1709,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "En Cocoplum, Gables Estates y Gables by the Sea la lavandería suele estar lejos de la pared exterior. El código permite 35 pies, menos 2.5 por cada codo de 45 grados y 5 por cada codo de 90, salvo que el fabricante permita más.",
           "Si su ducto se pasa, limpiarlo solo ayuda por un tiempo. Le mostramos las medidas y le damos el precio de una ruta más corta, de $200 a $600. La limpieza cuesta de $100 a $200.",
+        ],
+      },
+      {
+        heading: "Apartamentos y condominios en el downtown y cerca de la universidad",
+        body: [
+          "El downtown de Coral Gables, por Ponce de Leon Boulevard y alrededor de Miracle Mile, se ha llenado de edificios de apartamentos y condominios de mediana y gran altura, y las calles cerca de la Universidad de Miami mezclan apartamentos y casas alquiladas a estudiantes y empleados. En los edificios nuevos casi todas las unidades tienen lavadora y secadora en un clóset.",
+          "Desde ese clóset el ducto de secadora cruza el techo hasta una rejilla en la pared exterior, muchas veces sobre un balcón o en una fachada que da a una calle con tráfico. El cuidado de la ciudad por la apariencia llega también a los edificios: las rejillas suelen ser cerradas, a ras de la pared y pintadas del mismo color, y una rejilla decorativa deja pasar menos aire que una tapa sencilla. En los alquileres de estudiantes se suma lo otro: varias personas secando en la misma unidad y nadie pendiente del filtro.",
+          "Para administradores trabajamos el edificio por unidad, con una medida para cada apartamento. Para dueños cerca de la universidad, lo más fácil es limpiar en el verano, entre un contrato y otro. La limpieza de ventila de secadora cuesta de $100 a $200 por unidad, y cambiar una rejilla o un tramo aplastado en el techo tiene un precio de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Cocoplum y Gables by the Sea: la sal de la bahía",
+        body: [
+          "Los barrios frente al agua en el sur de la ciudad, Cocoplum, Gables by the Sea y Gables Estates, están sobre canales que salen a la bahía de Biscayne, y el aire de la bahía lleva sal a todos los patios. La tapa de la secadora se gasta mucho antes que el ducto de atrás, y la bisagra de la aleta es lo primero que falla.",
+          "Una aleta trabada medio abierta deja que el aire húmedo se quede en el ducto después de cada carga, donde se junta con la pelusa tibia y forma una capa mojada en la salida. Una tapa sin aleta además deja entrar lagartijas e iguanas, que abundan en estos canales. En una casa grande con un tramo largo, ese último pie en la tapa puede ser la peor obstrucción de todo el recorrido.",
+          "Cambiamos las tapas gastadas por otras de metal más grueso, con aleta que cierra por su peso y sin malla. Como Coral Gables revisa los cambios que se ven desde afuera, ponemos la tapa nueva en el mismo sitio y con un acabado parecido cuando se puede; si hay que moverla, consulte primero con la ciudad. Cambiar la tapa cuesta de $200 a $600 y la limpieza de $100 a $200. Estamos cerca de usted en Coral Gables.",
         ],
       },
     ],
@@ -1480,6 +1800,22 @@ export const cityBatchA: CityContent[] = [
           "Cleaning is $100 to $200. Replacing a mixed run with rigid metal on a shorter path is $200 to $600 and is quoted after inspection.",
         ],
       },
+      {
+        heading: "New two storey homes on old ranch lots",
+        body: [
+          "Across Pinecrest, original ranch houses from the 1950s and 1960s are being torn down and replaced by large two storey homes that fill more of the lot. In the new houses the laundry usually moves upstairs beside the bedrooms, often in the middle of the plan, and the dryer duct rises into the attic and leaves through the roof or a high side wall.",
+          "A new house is no guarantee of a good run. On fast builds we find ducts routed around trusses and air handler platforms instead of taking the short way, transition hoses already flattened by a dryer pushed in on move in day, and roof caps chosen to match the tile rather than for airflow. The first sign usually comes a year or two in, when a load of towels needs another round.",
+          "If you have just moved into a new Pinecrest home, a first cleaning and an airflow reading at about a year gives you a baseline for the run, and points out any builder fault while it may still be covered. Cleaning is $100 to $200. Correcting a crushed hose, a poor cap or a needlessly long route is $200 to $600.",
+        ],
+      },
+      {
+        heading: "Buying an older Pinecrest house",
+        body: [
+          "When a Pinecrest house that has been in one family for decades comes on the market, the dryer vent is one of the things nobody has touched in years. A home inspection report usually gives it a single line, a foil hose or a hood that does not close, and leaves the new owner to work out what that line means.",
+          "The best time to deal with it is the gap between closing and moving in. The laundry room is empty, the dryer can be pulled without shifting anything, and if the run needs rerouting through a wall or the attic, there is no household to work around. It is also the moment to find out whether an old vent from a previous laundry location was ever sealed, or simply left open in the attic.",
+          "We trace the run from end to end, read airflow at the outside, and give you a plain account of what is sound and what should change. Cleaning is $100 to $200. Rebuilding an old, mixed run in rigid metal is $200 to $600, quoted before any work starts, so you can plan it alongside the rest of the move.",
+        ],
+      },
     ],
     depthEs: [
       {
@@ -1501,6 +1837,22 @@ export const cityBatchA: CityContent[] = [
         body: [
           "Cuando una unión se suelta en el ático, la secadora bota pelusa y aire húmedo sobre el aislamiento. Eso no se ve desde la casa, pero se nota en que la ropa tarda más y el cuarto de lavar se calienta.",
           "Revisamos cada unión que se puede alcanzar y la sellamos con cinta de aluminio, nunca con tornillos, porque los tornillos atrapan pelusa.",
+        ],
+      },
+      {
+        heading: "Casas nuevas de dos pisos en lotes de ranchos viejos",
+        body: [
+          "En todo Pinecrest se están tumbando casas de un piso de los cincuenta y sesenta para levantar casas grandes de dos pisos que ocupan más del terreno. En las casas nuevas la lavandería casi siempre sube al segundo piso junto a los cuartos, muchas veces en el centro de la casa, y el ducto de secadora sube al ático y sale por el techo o por una pared alta.",
+          "Que la casa sea nueva no garantiza un buen recorrido. En obras rápidas encontramos ductos que dan la vuelta a las cerchas y a la plataforma del aire acondicionado en vez de ir por lo corto, mangueras de transición aplastadas el día de la mudanza, y tapas de techo escogidas para que combinen con la teja y no por el aire que dejan pasar. La primera señal suele llegar al año o a los dos, cuando las toallas necesitan otra vuelta.",
+          "Si usted acaba de mudarse a una casa nueva en Pinecrest, una primera limpieza de ventila de secadora con medida de flujo de aire al año le da un punto de partida y señala cualquier falla del constructor mientras quizás todavía esté cubierta. Limpiar el tramo cuesta de $100 a $200. Arreglar una manguera aplastada, una tapa mala o un recorrido demasiado largo tiene un precio de $200 a $600.",
+        ],
+      },
+      {
+        heading: "Si va a comprar una casa vieja en Pinecrest",
+        body: [
+          "Cuando sale a la venta una casa de Pinecrest que estuvo décadas en la misma familia, la ventila de la secadora es de las cosas que nadie ha tocado en años. El informe de inspección normalmente le dedica una línea, manguera de aluminio o tapa que no cierra, y deja que el nuevo dueño averigüe qué significa.",
+          "El mejor momento para atenderla es entre el cierre y la mudanza. La lavandería está vacía, la secadora se saca sin mover nada, y si hay que cambiar el recorrido por una pared o por el ático, no hay familia viviendo alrededor. También es el momento de saber si una salida vieja, de cuando la lavandería estaba en otro lugar, se selló alguna vez o quedó abierta en el ático.",
+          "Seguimos el ducto de punta a punta, medimos el aire afuera y le explicamos claro qué está bien y qué conviene cambiar. Una limpieza sencilla sale en $100 a $200. Rehacer un tramo viejo y mezclado en metal rígido cuesta de $200 a $600, con el precio dado antes de empezar, para que lo planifique junto con la mudanza. Atendemos cerca de usted en todo Pinecrest.",
         ],
       },
     ],
