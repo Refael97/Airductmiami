@@ -18,6 +18,10 @@ faq:
     answer: "Sí. Los sensores van a unas seis pulgadas del piso, justo donde corre el agua por debajo del sello inferior en un aguacero fuerte. El agua sobre el lente dispersa el haz, y mojarse una y otra vez corroe las terminales del cable hasta ponerlas verdes. Si la puerta se porta mal después de cada tormenta y bien a la mañana siguiente, la respuesta son los sensores."
   - question: "¿Una puerta que no cierra es un problema de seguridad esta noche?"
     answer: "Sí. Un garaje abierto es una casa abierta. Si no logra bajarla con el método de mantener el botón apretado, jale la liberación manual y ciérrela a mano, luego corra el pasador manual o ponga una prensa en el riel. Tratamos una puerta trabada abierta como llamada del mismo día."
+  - question: "¿Puedo poner sensores de otra marca en mi motor?"
+    answer: "Por lo general no. Los sensores se comunican con la tarjeta del motor de una forma propia de cada fabricante, y un par que no es compatible deja la puerta sin cerrar. Compre sensores hechos para la marca de su motor o pídanos que llevemos el par correcto. Un par nuevo instalado es una reparación de motor de $95 a $300."
+  - question: "¿Por qué la puerta cierra si dejo apretado el botón de pared, pero no con el control?"
+    answer: "Porque mantener el botón apretado anula los sensores en la mayoría de los motores. Si así cierra y con el control no, el problema está casi seguro en los sensores: algo cruza el haz, están desalineados, les da el sol o el cable falla. El motor, los límites y el resorte están haciendo su trabajo."
 ---
 
 ## Empiece por los sensores, porque casi siempre son los sensores
@@ -79,6 +83,37 @@ Jale la liberación manual con la puerta cerrada y mueva la puerta con la mano, 
 | Resortes desbalanceados | La puerta no se sostiene a media altura | $150 a $350 por resorte |
 
 Cada cifra es la misma de nuestra [página de precios](/es/precios/), y cada una es un precio desde para una puerta sencilla estándar en condiciones normales.
+
+## Cómo realinear los sensores usted mismo
+
+Si una luz del sensor parpadea o está apagada y los lentes están limpios, la alineación se corrige en unos minutos sin herramientas especiales.
+
+1. Deje la puerta abierta y desconecte el motor, para que nadie la active mientras trabaja.
+2. Afloje un poco la tuerca de mariposa o el tornillo que sujeta el sensor a su soporte, lo justo para que el ojo gire con la mano.
+3. Mueva despacio el sensor cuya luz no está fija hasta que la luz quede encendida sin parpadear. Muchas veces son milímetros.
+4. Apriete otra vez y confirme que la luz siguió fija, porque al apretar el ojo se mueve.
+5. Conecte el motor, cierre con el control y pase una escoba frente al haz mientras la puerta baja. Debe detenerse y regresar.
+
+Dos detalles ayudan. Los dos sensores deben quedar a la misma altura, y un hilo tenso de un lado al otro le muestra si uno quedó más alto. Y si el soporte está doblado o flojo, el sensor se va a mover otra vez con la vibración de la puerta, así que enderécelo o cámbielo antes de alinear.
+
+## Cuándo conviene cambiar el par en vez de alinearlo
+
+Un sensor alineado que vuelve a fallar cada semana ya está diciendo algo. Estos son los casos en que cambiamos el par completo:
+
+- El lente se puso opaco o amarillento por años de sol.
+- La carcasa está cuarteada y le entra agua o insectos.
+- Las terminales tienen corrosión verde que regresa aunque se limpien.
+- Uno de los dos no enciende ninguna luz aunque el cable esté bueno.
+
+Los sensores tienen que ser compatibles con la marca del motor; un par genérico que no corresponde no va a funcionar. Cambiarlos es una visita de [reparación de motor](/es/servicios/garage-door-opener-repair/) de $95 a $300. Si el motor pasa de quince años y además falla en otras cosas, le cotizamos al lado un [motor nuevo](/es/servicios/garage-door-opener-installation/), que trae sensores nuevos de fábrica.
+
+## El garaje que también es bodega
+
+En muchas casas de Florida el garaje guarda de todo menos el carro, y eso causa más puertas que no cierran de lo que la gente cree. Cajas apiladas junto al riel, una bicicleta colgada que roza el sensor, la hielera o el equipo de la piscina que alguien deja en el vano. Si la puerta no cierra solo algunos días, mire qué cambió de lugar antes de pensar en una pieza. Deje libre un pie a cada lado del vano a la altura de los sensores y muchas de estas fallas desaparecen.
+
+## Qué le preguntamos por teléfono
+
+Para darle un precio sin adivinar le preguntamos tres cosas: qué hacen las dos luces de los sensores, si la puerta baja algo antes de regresar o no se mueve, y si cierra cuando deja apretado el botón de pared. Con eso sabemos si llevamos sensores, si es un ajuste de mantenimiento o si hay que revisar resortes y rieles, y el número sale de la [página de precios](/es/precios/). Llegamos el mismo día a [Hialeah](/es/areas-de-servicio/hialeah/), [Kendall](/es/areas-de-servicio/kendall/) y [Pembroke Pines](/es/areas-de-servicio/pembroke-pines/).
 
 ## Si la puerta quedó trabada abierta esta noche
 

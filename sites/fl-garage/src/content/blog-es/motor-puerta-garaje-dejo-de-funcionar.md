@@ -20,6 +20,10 @@ faq:
     answer: "Sí, y en Florida pasa seguido. El rayo no tiene que pegarle a la casa. Un pico de voltaje en la línea se lleva el transformador o la tarjeta lógica, y el equipo queda muerto con el contacto vivo. Un supresor de picos para el contacto del motor es un seguro barato, y lo instalamos en cada trabajo si nos lo pide."
   - question: "¿Mi motor nuevo debe traer respaldo de batería?"
     answer: "En Florida, sí. Agrega $60 a $150 y significa que la puerta sigue abriendo y cerrando durante el apagón después de una tormenta, que es justo cuando necesita sacar el carro o cerrar la casa. Además le evita usar la liberación manual a oscuras."
+  - question: "Mi motor se apaga después de varios ciclos y a la hora vuelve a funcionar. ¿Está fallando?"
+    answer: "Casi siempre es la protección térmica, que corta el motor cuando se calienta de más y lo deja trabajar otra vez al enfriarse. En un garaje caliente de Florida pasa después de muchos ciclos seguidos. Si ocurre seguido, revise el balance de la puerta, porque un resorte cansado obliga al motor a trabajar de más. Si la puerta está bien, el capacitor o el motor se están desgastando."
+  - question: "Tengo respaldo de batería y el motor quedó muerto después del apagón. ¿Qué reviso?"
+    answer: "Primero la batería: muchos equipos pitan o muestran un indicador cuando ya no carga, y una batería de varios años en un garaje caliente puede agotarse en horas. Revise también el GFCI y el interruptor. Si el contacto está vivo, la batería está bien y el equipo sigue sin luces, el pico al regresar la corriente pudo dañar la tarjeta lógica."
 ---
 
 ## Primero saque su carro
@@ -91,6 +95,32 @@ Una buena parte de los motores a los que nos llaman no falló. **Falló la puert
 Un motor no está diseñado para levantar una puerta de garaje. Los resortes levantan la puerta. El motor le da el empujón a una puerta balanceada y la sostiene en su lugar. Cuando un resorte se cansa, la puerta se pone pesada y el motor empieza a hacer un trabajo para el que nunca fue hecho. Pela engranes, quema capacitores y se sobrecalienta.
 
 **La prueba de treinta segundos.** Cierre la puerta. Jale el cordón de liberación. Levántela a mano hasta la cintura y suéltela. Si se queda: la puerta está balanceada y el problema es su motor. Si se cae o se dispara hacia arriba: el resorte está mal y el motor es el síntoma. Haga esto antes de gastar en cualquier motor. La [puerta que abre lento](/es/blog/puerta-garaje-abre-lento/) es la etapa anterior de ese mismo problema.
+
+## Muere en la tarde y revive en la noche
+
+Hay un patrón que confunde mucho: el motor deja de responder después de varios ciclos seguidos en una tarde caliente, y una hora después vuelve a funcionar como si nada.
+
+Eso suele ser la protección térmica. Los motores traen un protector que corta la corriente al bobinado cuando se calienta de más y la devuelve cuando se enfría. En un garaje de Florida que pasa de 100°F por la tarde, el motor empieza el día caliente, y unos cuantos ciclos seguidos, los niños entrando y saliendo o alguien probando la puerta una y otra vez, lo llevan al corte.
+
+Una vez de vez en cuando no es una falla. Si pasa seguido, el motor está trabajando de más, y la razón casi siempre es la puerta: un resorte cansado, rodillos secos o bisagras oxidadas. Haga la prueba de treinta segundos de arriba antes de culpar al equipo. Si la puerta está balanceada y aun así se corta con pocos ciclos, el capacitor o el bobinado se están yendo, y eso es [reparación de motor](/es/servicios/garage-door-opener-repair/) o cambio según la edad.
+
+## Después de un apagón largo
+
+Las tormentas que tumban la luz un día o dos dejan su propio tipo de falla.
+
+**El respaldo de batería se agotó.** Un equipo con batería sigue trabajando durante el apagón, pero la batería no es eterna. Muchos modelos pitan o encienden un indicador cuando la batería está baja o ya no carga, y una batería que lleva varios veranos en un garaje caliente puede no aguantar ni un día. Si el motor quedó muerto al regresar la corriente y tiene respaldo, revise primero la batería y su conector.
+
+**El regreso de la corriente.** El pico al restablecerse el servicio castiga la tarjeta igual que un rayo. Si el apagón fue largo y el equipo quedó muerto con el contacto vivo, sospeche de la tarjeta lógica o del transformador.
+
+**La puerta quedó suelta.** Si usó la liberación manual durante el apagón, la puerta sigue desconectada hasta que el carro se vuelva a enganchar.
+
+## Cuántos años tiene su motor
+
+La edad decide casi toda conversación de reparar contra cambiar, y mucha gente no la sabe, sobre todo si compró la casa con el motor puesto. Busque la etiqueta en la carcasa, casi siempre atrás o a un lado, con el modelo y el número de serie. Muchos fabricantes ponen ahí la fecha de fabricación o la codifican en el número de serie. El color del botón Learn también da una pista de la generación, como explicamos en [cómo programar el control remoto](/es/blog/como-programar-control-remoto/). Con modelo y edad le decimos de antemano si la pieza todavía existe o si conviene más un [motor nuevo](/es/servicios/garage-door-opener-installation/).
+
+## Lo que conviene decirnos por teléfono
+
+Con tres datos le damos un rango antes de mandar a nadie: cuál de las tres muertes de arriba tiene, la marca y la edad aproximada del equipo, y si la puerta pesa a mano. Casi siempre eso basta para saber si es reparación, resorte o equipo nuevo, y el número sale de la misma lista de la [página de precios](/es/precios/). Atendemos el mismo día desde [Hialeah](/es/areas-de-servicio/hialeah/) y [Miami](/es/areas-de-servicio/miami/) hasta el norte del estado.
 
 ## Fallas, revisiones y costos
 

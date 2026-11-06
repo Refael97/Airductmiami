@@ -20,6 +20,10 @@ faq:
     answer: "Desconecte el motor del contacto del techo y use la liberación manual, o use el botón de bloqueo de la consola de pared si su equipo lo tiene, que desactiva todos los controles remotos y teclados. Cualquiera de las dos asegura el garaje de inmediato y no cuesta nada. Cierre también con llave la puerta que va del garaje a la casa."
   - question: "¿Un motor inteligente evita que la puerta se abra sola?"
     answer: "Un motor nuevo reemplaza de golpe el radio de código fijo, el cableado cansado y la tarjeta vieja, lo que elimina casi todas las causas de esta lista. Además, la alerta al teléfono de un equipo inteligente le avisa en el momento en que la puerta se mueve, así que si algo la activa otra vez usted se entera en segundos y no a la mañana siguiente."
+  - question: "Vendí mi carro y no borré los botones HomeLink. ¿Qué hago?"
+    answer: "Borre la memoria del motor dejando apretado el botón Learn unos seis segundos y vuelva a programar los controles, el teclado y el carro que tiene ahora. Así el carro vendido deja de abrir su puerta. La próxima vez, borre los botones antes de entregar el carro: en la mayoría de los vehículos se dejan apretados los dos botones de los extremos unos 20 segundos."
+  - question: "¿Cómo sé si la puerta se abrió sola o se regresó al cerrar?"
+    answer: "Por el momento en que pasa. Si la encuentra abierta poco después de haberla cerrado, y nunca horas más tarde, lo más probable es que bajó, tocó el piso y se regresó por los sensores o por el límite de fuerza. Quédese mirando la próxima vez que la cierre. Si se abre horas después sin que nadie la toque, la causa es otra de esta lista."
 ---
 
 ## Empiece por tomárselo en serio
@@ -81,6 +85,33 @@ Va al final porque es la menos frecuente, pero Florida produce más de estas que
 Los síntomas que apuntan hacia allá: la puerta opera con todas las pilas de los controles fuera y la consola de pared desconectada, y el motor hace otras cosas raras, como encender las luces sin motivo o arrancar un momento cuando regresa la corriente después de un apagón.
 
 En un equipo viejo, compare el precio de la tarjeta contra un motor nuevo antes de decidir. Nuestra guía sobre [el motor que dejó de funcionar](/es/blog/motor-puerta-garaje-dejo-de-funcionar/) explica esa decisión.
+
+## Seis: alguien que sí tiene un control
+
+Antes de buscar una falla electrónica, haga la lista de quién puede abrir esa puerta legítimamente. Sale más seguido de lo que parece.
+
+**Un carro que ya no es suyo.** Los botones HomeLink del espejo siguen programados cuando el carro se vende o se entrega en el concesionario. Si cambió de carro hace poco y no borró esos botones, el nuevo dueño tiene un control de su casa. Bórrelos antes de entregar cualquier carro, y si ya lo entregó, borre la memoria del motor y vuelva a programar lo que tiene.
+
+**Un familiar o alguien de confianza.** El control de repuesto que le dio a su mamá, el teclado cuya clave conoce el jardinero, el control que dejó el dueño anterior en una gaveta. Un botón oprimido sin querer en un bolsillo o una cartera abre la puerta igual que uno oprimido a propósito.
+
+**La aplicación de un motor inteligente.** Si su equipo se maneja desde el teléfono, revise en la aplicación quién tiene acceso y el historial de movimientos. Muchas aplicaciones registran la hora y el usuario de cada apertura, y eso termina la investigación en un minuto. Revise también si alguien programó un horario.
+
+La solución para todo este grupo es la misma: borre la memoria del motor dejando el botón Learn apretado unos seis segundos, programe solo los controles que tiene en la mano y cambie la clave del teclado. Los pasos están en nuestra guía sobre [cómo programar el control remoto](/es/blog/como-programar-control-remoto/).
+
+## A veces no se abrió: no terminó de cerrar
+
+Una parte de las llamadas por una puerta que se abre sola son en realidad una puerta que bajó, tocó el piso y se regresó mientras el dueño ya iba manejando. Desde la calle parece que se abrió sola, pero es el monitor de fuerza o los sensores rechazando el cierre. La señal es que siempre pasa justo después de cerrarla, nunca horas después. Si ese es su caso, la guía que le toca es la de [la puerta que cierra y vuelve a abrir](/es/blog/puerta-garaje-cierra-y-vuelve-a-abrir/), y la costumbre que lo previene es mirar la puerta hasta que quede abajo antes de irse.
+
+## Lleve un registro una semana
+
+Cuando la causa no aparece con las pruebas de arriba, el patrón la delata. Anote la hora de cada apertura, si llovió ese día, quién estaba en la casa y qué carros estaban afuera.
+
+- Aperturas que coinciden con la llegada de un vecino apuntan a código fijo.
+- Aperturas después de cada aguacero apuntan al teclado exterior.
+- Aperturas a cualquier hora, sin patrón y con todo desconectado, apuntan a la tarjeta.
+- Aperturas que coinciden con su propio horario de salida apuntan a un control dentro de la casa o del carro.
+
+Con ese registro en la mano, la visita de [reparación de motor](/es/servicios/garage-door-opener-repair/) es corta y el diagnóstico deja de ser una adivinanza. Si la respuesta es cambiar el equipo, la [instalación de motor](/es/servicios/garage-door-opener-installation/) va de $275 a $600 e incluye controles nuevos de código rodante. Lo hacemos el mismo día en [Kendall](/es/areas-de-servicio/kendall/), [Orlando](/es/areas-de-servicio/orlando/) y el resto del estado.
 
 ## Causas, revisiones y costos
 

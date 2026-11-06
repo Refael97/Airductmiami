@@ -18,6 +18,10 @@ faq:
     answer: "Un rebote a media bajada es cosa de los sensores de seguridad, no del límite. Algo está cruzando el haz, un sensor quedó fuera de línea o el cable de uno de ellos está fallando. El rebote que ocurre solo después de que la puerta toca el piso es el monitor de fuerza y casi siempre el límite de bajada."
   - question: "¿Es peligrosa una puerta que se regresa cada vez?"
     answer: "El rebote en sí es el sistema de seguridad trabajando. Lo peligroso es el arreglo al que recurre la gente, que es subir la fuerza hasta que la puerta se quede abajo. Y una puerta que pasa el día abierta porque no cierra es un problema de seguridad y, en temporada de tormentas, un problema estructural, así que conviene revisarla en vez de convivir con ella."
+  - question: "¿Cómo sé que la puerta quedó segura después del ajuste?"
+    answer: "Con la prueba de la tabla. Ponga una tabla de 2x4 acostada en el centro del vano y cierre la puerta. Al tocarla, la puerta debe detenerse y regresar en uno o dos segundos. Después pase una escoba frente a un sensor mientras baja, y también debe regresar. Si falla cualquiera de las dos, no use la puerta hasta corregirla."
+  - question: "¿Por qué empezó justo después de instalar un motor nuevo?"
+    answer: "Casi siempre porque los límites de recorrido o el aprendizaje de fuerza quedaron incompletos, o porque el motor aprendió la fuerza con una puerta desbalanceada. Se corrige repitiendo la programación de límites y fuerza con la puerta en buen estado. Si la puerta pesa a mano, primero hay que arreglar el resorte."
 ---
 
 ## Qué está pensando el motor
@@ -73,6 +77,32 @@ Si se atora en algún punto, la resistencia es real, y subir la fuerza solo sign
 | Tarjeta lógica leyendo mal la fuerza | Todo lo anterior salió bien, equipo viejo y muy caliente | Reparación de motor, o un [motor nuevo](/es/servicios/garage-door-opener-installation/) de $275 a $600 si la tarjeta no vale la pena |
 
 Todos son precios desde, para una puerta sencilla estándar. La lista completa está en la [página de precios](/es/precios/).
+
+## La prueba de la tabla después de cualquier ajuste
+
+Cada vez que alguien toca el límite o la fuerza, nosotros incluidos, la puerta tiene que pasar esta prueba. Usted la puede repetir en casa en un minuto.
+
+Ponga una tabla de 2x4 acostada en el piso, en el centro del vano, justo donde baja la puerta. Cierre con el botón de pared. Cuando el borde de abajo toque la tabla, la puerta debe detenerse y regresar hacia arriba en uno o dos segundos. Si se queda aplastando la tabla, o el motor sigue empujando, la fuerza o el límite quedaron mal y la puerta no es segura para nadie que pase debajo.
+
+La segunda mitad de la prueba es el ojo eléctrico. Con la puerta bajando, pase una caja de cartón o una escoba frente a uno de los sensores. La puerta debe detenerse y regresar sin tocar nada.
+
+Fíjese en lo que busca. Una puerta que dejó de rebotar al tocar el piso pero que tampoco rebota contra la tabla no quedó arreglada, quedó peligrosa. El ajuste correcto es una puerta que llega al piso, sella, y aun así se regresa contra un obstáculo de pulgada y media.
+
+## Cuando empezó después de un cambio
+
+Muchas de estas llamadas tienen un antes y un después claro, y decírnoslo por teléfono casi resuelve el diagnóstico.
+
+**Motor nuevo.** Un motor recién instalado necesita que se le programen los límites de recorrido y, en la mayoría de los modelos actuales, que haga un ciclo completo para aprender la fuerza que pide la puerta. Si ese paso quedó a medias, o la puerta estaba desbalanceada cuando el motor aprendió, la puerta se regresa desde el primer día. Nuestra [instalación de motor](/es/servicios/garage-door-opener-installation/) incluye ese ajuste y la prueba de la tabla antes de irnos.
+
+**Sello inferior nuevo.** Un sello más alto o más grueso que el anterior cambia el punto donde la puerta toca el piso. Se corrige ajustando el límite de bajada, la causa más fácil de esta página.
+
+**Piso o entrada nuevos.** Una capa de epoxi, losetas o un pavimento nuevo frente al garaje sube el punto donde la puerta encuentra el piso. Lo vemos lo mismo en [Hialeah](/es/areas-de-servicio/hialeah/) que en [Pembroke Pines](/es/areas-de-servicio/pembroke-pines/) cuando alguien remodela el garaje.
+
+**Resorte cambiado.** Un resorte nuevo con más tensión que el cansado que había cambia cuánto pesa la puerta para el motor. Un equipo que aprendió la fuerza con el resorte viejo puede quedar mal calibrado, y se resuelve repitiendo el aprendizaje.
+
+## Qué esperar de la visita
+
+Cuando la causa es un ajuste, la visita es corta: revisamos sensores, sello, balance y rieles, ajustamos límite y fuerza, y hacemos la prueba de la tabla con usted presente. Una pieza mala se cotiza por escrito antes de tocarla, con los rangos de la [página de precios](/es/precios/). Si la falla está dentro del motor, la [reparación de motor](/es/servicios/garage-door-opener-repair/) va de $95 a $300. Llegamos el mismo día a [Kendall](/es/areas-de-servicio/kendall/) y al resto del sur de Florida.
 
 ## Lo único que no debe hacer
 

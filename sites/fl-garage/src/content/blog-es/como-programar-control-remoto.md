@@ -18,6 +18,10 @@ faq:
     answer: "No. El motor guarda los controles en una memoria que sobrevive un apagón, así que una puerta que ignora el control después de una tormenta tiene otro problema. Revise la pila del control y luego revise si el botón de pared funciona. Si nada funciona, la tarjeta lógica pudo haber recibido una descarga por un rayo, que es común en Florida. Si solo falla el control, casi siempre es la pila o el receptor."
   - question: "Mi control no programa. ¿Ahora qué?"
     answer: "Pruebe primero con una pila nueva, y luego confirme que está oprimiendo Learn una vez y no dejándolo apretado, porque dejarlo seis segundos borra todos los controles en lugar de agregar uno. Si ya los borró, vuelva a programar cada control y cada teclado de la casa. Si aun así falla, el control o el receptor del motor ya no sirve."
+  - question: "¿Tengo que volver a programar el control si le cambio la pila?"
+    answer: "No. El código del control queda guardado en la memoria del motor, no en la pila, así que el control sigue funcionando apenas tenga una pila nueva. Si después del cambio no funciona, revise que la pila sea del tipo correcto y que haya quedado bien puesta, con el lado positivo hacia donde lo marca el compartimiento."
+  - question: "Perdí un control. ¿Puedo borrar solo ese?"
+    answer: "En la mayoría de los motores no. Hay que borrar toda la memoria dejando el botón Learn apretado unos seis segundos y después volver a programar cada control, teclado y botón del carro que siga en la casa. Toma unos diez minutos y es lo que conviene hacer el mismo día en que se pierde o se roba un control."
 ---
 
 Programar un control remoto toma dos minutos una vez que sabe dónde está el botón. La mayoría de la gente que nos llama por esto lleva rato parada frente al control de pared oprimiendo cosas, y el botón que necesita está en el techo. Así funciona en todas las marcas comunes, qué le hace el clima de Florida a los teclados y a los motores, y cómo distinguir un problema de programación de un receptor muerto.
@@ -97,6 +101,28 @@ Vaya en este orden.
 **¿El control es de la generación correcta?** Compárelo con la tabla de colores del botón Learn de arriba. Un motor Security+ 2.0 no va a aprender un control viejo de código fijo, por más veces que lo intente.
 
 **¿Una tormenta se llevó el receptor?** Florida recibe más rayos que cualquier otro estado, y una descarga por la línea eléctrica o por el cableado del control de pared mata tarjetas lógicas. El patrón normal es que la puerta servía bien antes de la tormenta y después ningún control programa, o el botón de pared funciona y nada más. Si ningún control programa, incluido uno que usted sabe que sirve, y el control de pared sigue moviendo la puerta con normalidad, el receptor de radio falló. En casi todas las unidades eso significa tarjeta lógica. La [reparación de motor](/es/servicios/garage-door-opener-repair/) cuesta de $95 a $300, y en un motor de más de quince años ese precio conviene compararlo con una unidad nueva. Un supresor de picos en el contacto del motor es un seguro barato, y nuestra guía sobre [un motor que dejó de funcionar](/es/blog/motor-puerta-garaje-dejo-de-funcionar/) cubre el caso de la descarga.
+
+## Varios controles, dos puertas y un control perdido
+
+**Programe cada control por separado.** El motor aprende un control a la vez. Si en la casa hay cuatro controles, repita la secuencia del botón Learn cuatro veces, uno por uno, y pruebe cada uno antes de pasar al siguiente.
+
+**Garaje con dos puertas y dos motores.** Un control de tres botones puede manejar las dos puertas, pero cada botón se programa en su propio motor. Oprima Learn en el motor de la izquierda y el botón uno del control; después Learn en el motor de la derecha y el botón dos. Si programa el mismo botón en los dos motores, las dos puertas van a abrir juntas, que es la queja que más oímos en casas con dos puertas sencillas.
+
+**Se perdió un control o se lo robaron del carro.** En la mayoría de los motores no se puede borrar un solo control. La salida es borrar toda la memoria con el botón Learn apretado unos seis segundos y volver a programar los controles y el teclado que siguen en la casa. Hágalo el mismo día, porque un control robado de un carro estacionado afuera viaja muchas veces junto con el registro del carro en la guantera, y ese papel trae la dirección de la casa.
+
+**Cambiar la pila no borra nada.** El código queda guardado en la memoria del motor, no en la pila del control. Cambie la pila y siga usándolo sin volver a programar.
+
+## Cuando el carro no quiere aprender
+
+Los botones HomeLink del espejo o del techo del carro son la parte que más llamadas genera, porque hay dos aprendizajes y cualquiera de los dos puede fallar sin aviso. Si el indicador del carro nunca pasa a parpadeo rápido, el carro no logró copiar el control. Si pasa a parpadeo rápido pero la puerta no abre, faltó el paso del botón Learn en el motor, o se acabaron los 30 segundos antes de oprimir el botón del carro. Escribimos una guía completa para ese caso: [el HomeLink del carro no programa la puerta del garaje](/es/blog/homelink-no-programa-puerta-garaje/).
+
+## Cuando conviene dejar de pelear con los controles
+
+Hay un punto en que programar ya no es el problema. Un motor viejo cuyo receptor solo acepta controles de una generación que casi no se vende, o una casa donde cada miembro de la familia pierde un control al año, se resuelve mejor de otra forma.
+
+Un [motor nuevo](/es/servicios/garage-door-opener-installation/) trae receptor y controles actuales, compatibles con los carros recientes. Un motor inteligente agrega el teléfono como control, lo que en una casa de alquiler o con muchos visitantes evita repartir controles y le permite ver quién abrió y cuándo. Y si lo único que falló es el receptor del equipo que ya tiene, la [reparación de motor](/es/servicios/garage-door-opener-repair/) casi siempre sale más barata que cambiar todo. Los precios de cada opción están abajo y en la página de precios.
+
+Hacemos este trabajo el mismo día en [Miami](/es/areas-de-servicio/miami/), [Hialeah](/es/areas-de-servicio/hialeah/) y [Tampa](/es/areas-de-servicio/tampa/), y en el resto del estado. Si nos llama, tenga a mano el color del botón Learn y la marca del motor: con eso sabemos qué control llevar.
 
 ## Un pendiente de seguridad ya que está arriba
 
