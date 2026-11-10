@@ -63,6 +63,10 @@ const dias = ['Lunes a viernes', 'Sábado', 'Domingo'];
  </select>
  </label>
  <label>Mensaje<textarea name="message" rows="4"></textarea></label>
+<label class="consent">
+<input type="checkbox" name="contact_consent" value="yes" />
+<span>Acepto que Florida Breeze Air Duct me llame y me envíe mensajes de texto al número indicado sobre mi cotización y mi cita, incluso con tecnología automatizada y voz artificial o pregrabada (IA). El consentimiento no es condición de compra. Pueden aplicar tarifas de mensajes y datos. Responda STOP para cancelar. <a href="/es/privacidad/">Política de privacidad</a>.</span>
+</label>
  <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Solicitar cotización gratis</button>
  </form>
  </div>
@@ -88,6 +92,8 @@ const dias = ['Lunes a viernes', 'Sábado', 'Domingo'];
   .form-note { font-size: 0.82rem; color: var(--c-muted); background: var(--c-bg-alt); padding: 0.6rem 0.8rem; border-radius: var(--radius-sm); }
   .quote-form { display: grid; gap: 0.9rem; }
   .quote-form label { display: grid; gap: 0.3rem; font-weight: 600; font-size: 0.9rem; color: var(--c-ink); }
+  .quote-form label.consent { display: flex; align-items: flex-start; gap: 0.6rem; font-weight: 400; font-size: 0.8rem; line-height: 1.45; color: var(--c-muted); }
+  .quote-form label.consent input { width: auto; margin-top: 0.2rem; flex: none; padding: 0; }
   .quote-form input, .quote-form select, .quote-form textarea {
     font: inherit; padding: 0.65rem 0.8rem; border: 1px solid var(--c-line);
     border-radius: var(--radius-sm); background: #fff; color: var(--c-ink);

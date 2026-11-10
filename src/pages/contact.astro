@@ -66,6 +66,10 @@ const description = `Contact ${business.name} for a free air duct or dryer vent 
             </select>
           </label>
           <label>Message<textarea name="message" rows="4"></textarea></label>
+          <label class="consent">
+            <input type="checkbox" name="contact_consent" value="yes" />
+            <span>I agree that Florida Breeze Air Duct may call and text me at the number above about my quote and appointment, including with automated technology and artificial or prerecorded voice (AI). Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to opt out. <a href="/privacy/">Privacy Policy</a>.</span>
+          </label>
           <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Request Free Quote</button>
         </form>
       </div>
@@ -91,6 +95,8 @@ const description = `Contact ${business.name} for a free air duct or dryer vent 
   .form-note { font-size: 0.82rem; color: var(--c-muted); background: var(--c-bg-alt); padding: 0.6rem 0.8rem; border-radius: var(--radius-sm); }
   .quote-form { display: grid; gap: 0.9rem; }
   .quote-form label { display: grid; gap: 0.3rem; font-weight: 600; font-size: 0.9rem; color: var(--c-ink); }
+  .quote-form label.consent { display: flex; align-items: flex-start; gap: 0.6rem; font-weight: 400; font-size: 0.8rem; line-height: 1.45; color: var(--c-muted); }
+  .quote-form label.consent input { width: auto; margin-top: 0.2rem; flex: none; padding: 0; }
   .quote-form input, .quote-form select, .quote-form textarea {
     font: inherit; padding: 0.65rem 0.8rem; border: 1px solid var(--c-line);
     border-radius: var(--radius-sm); background: #fff; color: var(--c-ink);
