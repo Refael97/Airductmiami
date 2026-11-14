@@ -3,11 +3,13 @@ title: "¿Su aire acondicionado gotea o tira agua? Causas y qué hacer"
 description: "Por qué el aire acondicionado gotea o pierde agua: la manejadora, el split que tira agua por delante, la máquina exterior y las rejillas que sudan. Qué es normal y qué no."
 answer: "Un aire acondicionado gotea casi siempre por el drenaje de condensado tapado con algas y suciedad, algo muy común en Florida. Otras causas son el filtro sucio que congela la serpentina, la bandeja oxidada o mal nivelada y las fugas en ductos que condensan humedad."
 pubDate: 2026-07-13
-updatedDate: 2026-10-02
+updatedDate: 2026-11-14
 category: "Eficiencia del Aire Acondicionado"
 tags: ["goteo", "condensado", "drenaje", "serpentina", "Florida"]
 featured: false
 faq:
+  - question: "¿Por qué sale agua de mi aire acondicionado?"
+    answer: "Porque el aire acondicionado le saca humedad al aire, y esa agua tiene que salir de la casa por un tubo de drenaje. Si sale afuera, por el tubito de PVC, es normal. Si aparece adentro, casi siempre el drenaje está tapado con algas, el filtro sucio congeló la serpentina o un ducto está sudando en el ático. Apague el equipo si ve agua activa y revise el filtro y la línea de drenaje antes de volver a encenderlo."
   - question: "¿Por qué gotea agua mi aire acondicionado?"
     answer: "La causa número uno es la línea de drenaje de condensado tapada con algas y suciedad. Le siguen el filtro sucio que congela la serpentina y, al descongelarse, desborda la bandeja, y la bandeja de condensado oxidada o desnivelada."
   - question: "¿Puedo destapar yo mismo la línea de drenaje?"
@@ -31,6 +33,23 @@ faq:
 ## Respuesta rápida
 
 Si su aire acondicionado gotea agua, en Florida la causa es casi siempre la misma: la **línea de drenaje de condensado tapada**. El sistema le saca litros de agua al aire húmedo todos los días, y esa agua sale por un tubito de PVC que se tapa con algas, moho y suciedad. Cuando se tapa, la bandeja se desborda y aparecen el charco, la mancha en el techo o el agua bajando por la pared. Las otras causas frecuentes son un filtro sucio que congela la serpentina, una bandeja oxidada y ductos con fugas que "sudan". Lo importante: el goteo casi nunca se arregla solo, y el agua estancada cría moho en 24 a 48 horas.
+
+## ¿Por qué sale agua de mi aire acondicionado?
+
+Sale agua porque su aire acondicionado, además de enfriar, seca el aire. Esa humedad se convierte en agua sobre la serpentina y tiene que salir de la casa por un tubo. **Si el agua sale afuera, todo está bien. Si sale adentro, algo en ese camino está fallando**, y casi siempre es el drenaje tapado, un filtro sucio o un ducto que suda.
+
+Para saber cuál es, fíjese en dónde aparece el agua, porque cada lugar apunta a una causa distinta:
+
+| Dónde ve el agua | Lo más probable |
+| --- | --- |
+| En el piso alrededor de la manejadora o en su clóset | Drenaje tapado o bandeja que se desborda |
+| En una mancha del techo debajo del ático | Bandeja del ático llena, ducto que suda o ducto suelto |
+| Saliendo por una rejilla o goteando de su borde | Condensación en la rejilla o en el ducto de atrás |
+| Por el frente de un split o lanzada por el ventilador | Manguera de drenaje del split tapada, unidad sucia o desnivelada |
+| Por un tubo que sale encima de una ventana o del alero | Aviso del drenaje de emergencia: el drenaje principal está tapado |
+| Junto a la máquina de afuera | Normalmente es la salida del condensado y está bien |
+
+Si el agua está cayendo cerca de un tomacorriente, de una lámpara o de un panel eléctrico, apague el breaker del aire antes de tocar nada. Y si una mancha del techo ya se ve abombada, ponga un balde debajo y no se pare justo abajo: ese yeso mojado puede ceder de golpe.
 
 ## De dónde sale tanta agua
 
@@ -72,6 +91,16 @@ En modo frío, el agua junto a la unidad de afuera casi siempre es la salida del
 
 Una rejilla que gotea casi nunca es el drenaje: es condensación. El aire que sale a 55 grados se encuentra con aire caliente y húmedo alrededor de la rejilla o del ducto en el ático, y el vapor se vuelve agua en la superficie. Pasa sobre todo cuando el ducto del ático perdió aislamiento, cuando la bota de la rejilla no está sellada al techo, o cuando el termostato está muy bajo en un día de mucha humedad. La explicación completa está en la guía de [condensación en los ductos](/es/blog/condensacion-ductos-florida/).
 
+## Si cae agua de un tubo encima de una ventana
+
+Muchas casas en Florida tienen la manejadora en el ático. Debajo de ella hay una segunda bandeja, la de emergencia, con su propio tubo que sale por la pared, casi siempre encima de una ventana o por el alero, justo donde usted lo vea. Ese tubo está seco cuando todo funciona. **Si empieza a gotear, no es un problema nuevo: es el aviso de que el drenaje principal está tapado** y el agua ya está cayendo en la bandeja de emergencia. Es el momento barato para atenderlo. Si lo ignora, la bandeja de emergencia se llena, se oxida o se tapa también, y el agua termina en el techo de la sala.
+
+Si el aire se apaga solo en pleno calor y la bandeja tiene agua, el interruptor de flotador hizo su trabajo. No lo desconecte: destape el drenaje.
+
+## El aire acondicionado de ventana que pierde agua adentro
+
+Un equipo de ventana bota el agua por atrás, hacia afuera, y por eso se instala con una inclinación leve hacia el exterior. Si quedó derecho o inclinado hacia adentro, el agua de la bandeja corre hacia la casa y gotea por el frente. Corregir la inclinación lo resuelve casi siempre. Si la inclinación está bien y sigue goteando, el orificio de drenaje de la bandeja está tapado con suciedad o algas.
+
 ## Por qué gotea más en verano
 
 El aire de Florida en julio carga mucha más humedad que en enero, y el aire acondicionado saca más agua por día. Una línea de drenaje con un poco de baba adentro alcanza a desaguar en invierno y se rebalsa en verano. Por eso el primer goteo del año casi siempre aparece con los primeros días de calor fuerte.
@@ -86,6 +115,18 @@ El aire de Florida en julio carga mucha más humedad que en enero, y el aire aco
 ## Cuándo el goteo es aviso de algo más grande
 
 Si el goteo vuelve cada pocas semanas, si el clóset de la manejadora ya huele a humedad o si aparecieron [manchas negras en las ventilas](/es/blog/moho-negro-en-ventilas/), el agua ya hizo trabajo silencioso: moho en la serpentina, en la bandeja o en el arranque de los ductos. En ese punto la solución no es solo destapar el tubo, sino limpiar el sistema donde el moho se instaló. Nuestra [limpieza del aire acondicionado](/es/servicios/hvac-cleaning/) incluye la serpentina, la bandeja y la línea de drenaje, y si el moho ya avanzó por los ductos lo resolvemos con la [eliminación de moho en ductos](/es/servicios/mold-remediation/).
+
+## Qué arreglamos nosotros y qué le toca a otro técnico
+
+- **Drenaje, bandeja y serpentina sucios:** es nuestra [limpieza del aire acondicionado](/es/servicios/hvac-cleaning/), que incluye la serpentina, la turbina, el gabinete de la manejadora y la línea de drenaje. Cuesta de $200 a $450 por manejadora, y le damos el precio antes de agendar.
+- **Ductos que sudan o están sueltos en el ático:** la [reparación y el sellado de ductos](/es/servicios/air-duct-repair/) reconecta los tramos, repone el aislamiento y sella las botas de las rejillas. Se cotiza según el alcance, de $250 a $2,000 o más, después de revisar el ático.
+- **Moho que el agua ya dejó en la serpentina o en los ductos:** es la [eliminación de moho en ductos](/es/servicios/mold-remediation/), de $500 a $3,000 o más según la gravedad, y de $500 a $900 si el crecimiento sigue solo en la serpentina y la bandeja.
+- **Refrigerante bajo, bandeja perforada que hay que cambiar, bomba de condensado dañada o un equipo mal dimensionado:** eso le toca a un técnico de aire acondicionado. Si lo encontramos, se lo decimos con fotos.
+- **Techo, drywall o piso mojados:** son otro oficio, y el moho en paredes es en Florida un trabajo aparte con licencia propia que no tocamos.
+
+## Dónde trabajamos
+
+Atendemos aires acondicionados que gotean en [Miami](/es/areas-de-servicio/miami/), [Hialeah](/es/areas-de-servicio/hialeah/), [Tampa](/es/areas-de-servicio/tampa/), [Orlando](/es/areas-de-servicio/orlando/), [Lakeland](/es/areas-de-servicio/lakeland/) y [Cape Coral](/es/areas-de-servicio/cape-coral/), entre otras ciudades de Florida.
 
 ## Lo esencial
 

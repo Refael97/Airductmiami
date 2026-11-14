@@ -6,7 +6,10 @@ pubDate: 2025-03-18
 category: "Mold & Humidity"
 tags: ["uv light", "uv-c", "coil", "mold prevention", "florida"]
 featured: false
+updatedDate: 2026-11-14
 faq:
+  - question: "My evaporator coil keeps growing mold, would UV light stop it?"
+    answer: "Usually yes, for the surface the lamp can see. A UV-C lamp aimed at the coil keeps new growth from taking hold on the lit face of the coil and the drain pan below it, which is where most repeat coil mold grows. It does not remove the growth that is already there, and it does not fix why the coil stays wet, so get the growth off the coil first and check humidity and the drain. In Florida a coil UV light runs $300 to $700 installed. Removing mold confined to the coil and pan is $500 to $900, and a coil that is dirty rather than moldy is a $200 to $450 cleaning."
   - question: "Does a UV light kill mold?"
     answer: "Yes. UV-C light destroys the DNA of mold spores on surfaces it shines on directly and continuously, which is why a lamp mounted at the AC coil keeps that surface mold free. It does not remove existing mold colonies deeper in the ducts, which need physical cleaning."
   - question: "Will a UV light kill black mold?"
@@ -20,6 +23,20 @@ faq:
 ---
 
 UV-C lights really do stop mold in your AC, but only where the light actually reaches. Installed directly at the evaporator coil, a germicidal UV-C lamp continuously kills the mold and bacteria growing on that cold, wet surface, which is exactly where Florida AC systems grow mold in the first place. Understanding what UV-C can and cannot do helps you use it as the powerful tool it is rather than expecting it to do the whole job.
+
+## My evaporator coil keeps growing mold, would UV light stop it?
+
+Usually yes, on the part of the coil the lamp can see. A UV-C lamp mounted to shine on the coil keeps new mold from establishing on the lit face of the coil and on the drain pan under it, and that is where repeat growth almost always starts. **What it will not do is remove growth that is already there or fix the reason the coil stays wet.** Clean first, then light, then deal with the moisture.
+
+The order matters because UV-C works on what it reaches. A coil already coated in slime and dust shades itself: the light kills the top layer and the growth underneath carries on. That is why the job runs in this sequence:
+
+1. **Get the growth off the coil and clear the drain.** Mold confined to the coil and the drain pan is removed as part of our [air duct mold removal](/services/mold-remediation/), at $500 to $900 for coil-only growth. A coil that is dirty and slimy rather than moldy, with a sluggish drain, is an [AC and HVAC system cleaning](/services/hvac-cleaning/): coil, blower wheel, cabinet and condensate line for $200 to $450 per air handler. The camera decides which one it is, and you see the photos before anything is priced.
+2. **Fit the lamp at the coil.** A [UV light installation](/services/uv-light-installation/) costs $300 to $700 installed in Florida, and the bulb is replaced about once a year.
+3. **Find out why the coil keeps growing mold this fast.** If the coil is fouling again within weeks of a cleaning, something is feeding it. The usual suspects are a drain pan that holds standing water, a drain line that backs up, a filter that does not seal so dust coats the wet coil, and a house sitting above 60 percent relative humidity.
+
+That third step is the one a lamp cannot do for you. Our [indoor air quality check](/services/indoor-air-quality-testing/) takes humidity readings room by room and puts a camera on the coil, the blower and the ducts, so you know whether the growth stopped at the coil or went further. It is a visual inspection and a set of readings, not a lab test: we do not take samples or name a species. If the camera shows growth that has spread past the coil into the blower or the ducts, the removal job grows with it, priced by severity from $500 to $3,000 and up, and no lamp replaces it. Mold in the drywall, the framing or the insulation around the system is separate licensed work in Florida, and we tell you so.
+
+A last point on what to expect. A lamp that is working shows up as a coil that stays clean between cleanings and a musty smell at startup that does not come back. If neither happens within a couple of months, the bulb may be aimed at the wrong face of the coil, the coil may never have been cleaned underneath it, or the humidity problem is bigger than the coil.
 
 ## How UV-C light kills mold
 

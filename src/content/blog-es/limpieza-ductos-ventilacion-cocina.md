@@ -3,7 +3,7 @@ title: "Ductos de la campana de cocina: cada cuánto limpiarlos"
 description: "La grasa acumulada en el ducto de la campana es un riesgo de incendio distinto al del secador. Cada cuánto limpiarlo en una casa y en un negocio."
 answer: "En una casa, el filtro del extractor de cocina se limpia cada 1 a 3 meses y el ducto de salida se revisa y limpia una vez al año. Si cocina a diario con mucha grasa o fritura, acorte esos plazos a la mitad."
 pubDate: 2026-07-08
-updatedDate: 2026-11-06
+updatedDate: 2026-11-14
 category: "Limpieza de Ductos"
 tags: ["cocina", "extractor", "ventilación", "grasa", "Florida"]
 featured: false
@@ -27,6 +27,24 @@ faq:
 ## Respuesta rápida
 
 En una cocina de casa, la regla práctica es simple: el filtro metálico del extractor se limpia cada 1 a 3 meses, y el ducto que lleva el aire al exterior se revisa y limpia una vez al año. Si en su casa se fríe mucho, se cocina a diario para una familia grande o nota que el extractor ya no arrastra el humo como antes, acorte esos plazos a la mitad. Un ducto de cocina saturado de grasa arrastra menos aire, deja olores impregnados en la casa y, en el peor de los casos, se convierte en combustible para un incendio.
+
+## ¿Con qué frecuencia se deben limpiar los conductos de ventilación de la cocina?
+
+En una casa, el conducto de ventilación de la cocina se limpia **una vez al año**, y el filtro de la campana **cada 1 a 3 meses**. Si en su casa se fríe a diario o se cocina para muchas personas, limpie el conducto **cada seis meses**. En un restaurante la frecuencia no la decide el dueño: la fija la norma NFPA 96 según el tipo de cocina.
+
+La tabla de abajo resume los casos más comunes. Use la fila que se parezca más a su cocina, y si duda entre dos, quédese con la más frecuente.
+
+| Tipo de cocina | Conducto hasta afuera | Filtro de la campana |
+| --- | --- | --- |
+| Casa donde se cocina poco o se usa más el microondas | Revisión una vez al año; limpieza cada 1 a 2 años | Cada 3 meses |
+| Casa con cocina diaria normal | Una vez al año | Cada 1 a 2 meses |
+| Casa donde se fríe a diario, familia grande o mucho guiso y plancha | Cada 6 meses | Cada mes |
+| Cocina comercial de volumen bajo, como la de una iglesia o un campamento de temporada | Una vez al año (NFPA 96) | Lo fija el plan del servicio de campanas |
+| Restaurante o cocina comercial de volumen moderado | Cada 6 meses (NFPA 96) | Lo fija el plan del servicio de campanas |
+| Cocina de alto volumen: 24 horas, parrilla, wok o mucha fritura | Cada 3 meses (NFPA 96) | Lo fija el plan del servicio de campanas |
+| Cocina con leña o carbón | Cada mes (NFPA 96) | Lo fija el plan del servicio de campanas |
+
+Dos detalles cambian el plazo en una casa. Si el conducto es largo, sube por el ático o tiene varios codos, la grasa se queda en esas curvas y conviene adelantar la limpieza. Y si el extractor recircula (no tiene salida al exterior), no hay conducto que limpiar: lo que se cambia es el filtro de carbón, cada 3 a 6 meses.
 
 ## Por qué la cocina merece su propio calendario de limpieza
 

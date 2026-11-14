@@ -3,11 +3,15 @@ title: "Secadora con olor a quemado: apáguela y haga esto"
 description: "Desconéctela ahora mismo. Las causas en orden de urgencia, qué revisar antes de volver a usarla y cuándo el olor avisa de un ducto tapado."
 answer: "Si la secadora huele a quemado, deténgala de inmediato y desconéctela. La causa más común es pelusa acumulada tocando el elemento de calor o un ducto de salida tapado que sobrecalienta la máquina. No la use de nuevo hasta identificar el origen del olor."
 pubDate: 2026-07-14
-updatedDate: 2026-11-06
+updatedDate: 2026-11-14
 category: "Seguridad del Secador"
 tags: ["secadora", "olor a quemado", "pelusa", "seguridad", "incendio"]
 featured: false
 faq:
+  - question: "¿Secadora con olor a quemado?"
+    answer: "Apáguela y desconéctela ahora mismo, y no la vuelva a usar hasta saber de dónde viene el olor. En la mayoría de los casos es pelusa: acumulada dentro de la máquina contra el elemento de calor, o tapando el ducto de salida y obligando a la secadora a trabajar sobrecalentada. Si ve humo o llamas, no abra la puerta de la secadora, salga de la casa y llame al 911. Con la máquina fría, revise el hueco del filtro de pelusa, la manguera de atrás y la salida exterior: si afuera el aire sale débil, el ducto es el primer sospechoso, y limpiarlo cuesta entre 100 y 200 dólares."
+  - question: "¿Por qué mi secadora saca mucho humo o vapor?"
+    answer: "Casi siempre es vapor y no humo: la ropa mojada suelta mucha agua, y si el ducto de salida está tapado, aplastado o desconectado, ese vapor se queda en el cuarto de lavado en vez de salir de la casa. El humo de verdad es gris u oscuro y huele a quemado, y eso es una emergencia: no abra la puerta, salga y llame al 911. El vapor es blanco, no huele a nada y deja gotas en las paredes, el techo o la ventana. Una nube blanca saliendo por la campana de afuera es normal, sobre todo en mañanas frescas; lo que no es normal es ver vapor dentro de la casa o detrás de la secadora."
   - question: "¿Es peligroso usar la secadora si huele a quemado?"
     answer: "Sí. El olor a quemado indica calor donde no debe haberlo, casi siempre pelusa contra el elemento calefactor o un ducto tapado. Apáguela, desconéctela y no la use hasta encontrar la causa."
   - question: "¿Por qué mi secadora huele a quemado solo a veces?"
@@ -54,6 +58,10 @@ Si la causa es pelusa, hay dos frentes y conviene atacar ambos. El interior de l
 - Limpie el ducto de salida al menos una vez al año, y cada 6 meses si son familia grande o tienen mascotas.
 - Revise que la campana exterior abra libre y no esté cubierta con malla.
 - No seque de noche ni al salir de casa: una secadora trabajando sin nadie despierto es el peor escenario de un incendio de pelusa.
+
+## ¿Humo o vapor? Cómo distinguirlos
+
+Mucha gente llega a esta página porque vio salir "humo" de la secadora. La mayoría de las veces es vapor: la ropa mojada suelta agua, y si el ducto de salida está tapado o se soltó detrás del equipo, ese vapor se queda en el cuarto de lavado. **El vapor es blanco, no huele a nada y deja gotas en las paredes o la ventana. El humo es gris u oscuro, huele a quemado y no moja.** Si es humo, no abra la puerta de la secadora, salga de la casa y llame al 911. Si es vapor, la secadora le está diciendo que el aire no sale por donde debe. Lo explicamos paso a paso en la guía de [humo o vapor saliendo de la secadora](/es/blog/sale-humo-o-vapor-de-la-secadora/).
 
 ## Si la secadora es nueva o es de gas
 
