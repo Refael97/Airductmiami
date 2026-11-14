@@ -32,6 +32,23 @@ export const cityDepthEsExtra: Record<string, { heading: string; body: string[] 
         'Si tiene alguna de las tres, la limpieza tiene sentido. Si no tiene ninguna y el olor se va en un día con el aire corriendo, probablemente basta con cambiar el filtro y destapar la línea de drenaje. Para el próximo verano lo que más ayuda no es una temperatura en el termostato sino la humedad: un medidor de pocos dólares en la sala le dice si la casa se mantuvo por debajo de 60 por ciento mientras usted no estaba, y si alguien de confianza lo mira una vez al mes, sabrá a tiempo si algo falló.',
       ],
     },
+    /* 14 de noviembre de 2026: dos bloques más. Los de arriba ya dan el precio por tipo de casa y el olor al regresar. */
+    {
+      heading: "Limpieza de rejillas y ventilas del aire acondicionado en Cape Coral: qué incluye",
+      body: [
+        "Cuando alguien en Cape Coral busca limpieza de ventilas o de rejillas del aire, casi siempre está mirando las rejillas del techo: manchas grises, puntitos oscuros, óxido en las aletas. La rejilla es lo único que se ve y lo más chico del trabajo. Detrás están la caja de la rejilla, el ramal, el tronco, el pleno y la manejadora, y nuestra limpieza cubre todo eso con presión negativa y con cada rejilla tapada, más la turbina del ventilador y la cara del serpentín. Lavar solo las rejillas deja la fuente donde estaba.",
+        "En un lote con canal, las rejillas de metal cerca del agua se oxidan en las aletas y manchan el techo alrededor. Una rejilla oxidada se lava y se vuelve a poner, pero no queda nueva, así que le decimos cuáles vale la pena cambiar. Las compuertas y las tapas de afuera que ya no cierran se fotografían, porque un ducto limpio detrás de una compuerta trabada no se queda limpio.",
+        "Para el día de la visita, despeje el garaje alrededor de la manejadora y quite muebles de debajo de las rejillas del techo. Son dos técnicos, de dos a cuatro horas por sistema, y al final recorremos la casa con usted con las fotos del antes y el después.",
+      ],
+    },
+    {
+      heading: "Reparación de ductos en Cape Coral: cómo debe cotizarse y cuánto cuesta",
+      body: [
+        "Desde Ian, a mucha gente en Cape Coral le han cotizado ductos desde la puerta. Una cotización de reparación tiene que basarse en dos cosas: una prueba de presión y una mirada adentro. Tapamos las rejillas, presurizamos el sistema con un ventilador de prueba calibrado y leemos la fuga, y después metemos la cámara en el tronco y en los peores tramos. Así usted tiene una cifra de cuánto aire se pierde y fotos de dónde, antes de cualquier precio.",
+        "Lo que sigue casi siempre es una de cuatro cosas. El flexible que se empapó en 2022 y se secó en su lugar se corta y se cambia. Un retorno que es solo una rejilla hacia la pared del pasillo recibe un camino sellado hasta la manejadora. Las uniones que el calor del ático soltó se rehacen con correa y masilla. Y las piezas galvanizadas que la sal perforó se cambian. Los tramos nuevos van con aislamiento R-6 a R-8 y bien colgados.",
+        "El precio depende del alcance: desde 250 dólares por unas uniones hasta más de 2,000 por un ático de flexible nuevo, y la prueba se repite al final para que vea el cambio en números. Si además hace falta limpiar, la reparación va primero.",
+      ],
+    },
   ],
 
   tampa: [
@@ -407,6 +424,224 @@ export const cityDepthEsExtra: Record<string, { heading: string; body: string[] 
         'Muchas familias de Coral Springs agendan en horario escolar, y tiene sentido. La máquina suena como una aspiradora de taller durante toda la visita, las rejillas de los cuartos se quitan para lavarlas, y la manguera pasa por la puerta principal. Con la casa vacía en la mañana, el trabajo de un sistema, de dos a cuatro horas con dos técnicos, se termina antes de la salida de la escuela.',
         'Lo que hay que preparar es poco: despejar el clóset o el espacio del garaje alrededor de la manejadora, quitar camas de mascotas y juguetes de encima de las rejillas, y avisar si hay un perro que tenga que quedarse en un cuarto. Usted está al principio para decirnos qué cuartos tienen polvo u olor, y al final para el recorrido con las fotos.',
         'Si su asociación pide aviso de contratistas, se lo damos con tiempo, y como el trabajo se hace desde adentro, por las rejillas y el pleno, no cambia nada del exterior. La ventila de secadora, que en estas casas sube al ático y sale por el techo, se limpia en la misma visita por 100 a 200 dólares, con la manguera de atrás incluida. Si un tramo de treinta años se ve aplastado o roto, se lo enseñamos antes de cambiar nada.',
+      ],
+    },
+  ],
+
+  /*
+   * 14 de noviembre de 2026, quinta ola: once ciudades nuevas en este archivo
+   * y dos bloques más para Cape Coral. En el informe de Search Console del
+   * dueño (las 1,000 consultas principales) las consultas en español hacen
+   * clic 15 veces más que las inglesas, y las que convierten son de precio y
+   * de cercanía: "limpieza de ductos de aire acondicionado cerca de mí" y
+   * "... precio". Cada ciudad lleva el precio según el tipo de vivienda y un
+   * ángulo local que su depthEs no tenía. Escrito por ciudad.
+   */
+  "north-miami": [
+    {
+      heading: "¿Cuánto cuesta la limpieza de ductos de aire acondicionado en North Miami?",
+      body: [
+        "El precio es de 300 a 600 dólares por sistema, y en North Miami lo decide el tipo de vivienda. Una casa de bloque de una planta en Griffing Park, Sunkist Grove o Cloverleaf casi siempre tiene una sola manejadora, en un clóset del pasillo o en el garaje, entre ocho y doce rejillas y un ático bajo. Queda en la mitad baja del rango. Lo que la sube es el ático: llevar la manguera hasta cada rejilla debajo de un techo de poca pendiente toma más tiempo de lo que dice el conteo.",
+        "Un dúplex casi siempre son dos sistemas, uno por lado, cada uno con su manejadora y su termostato, y cada uno lleva su precio. Si usted es el dueño, lo más práctico es hacer los dos en la misma visita, entre un inquilino y otro, con los cuartos vacíos. Un apartamento sobre Biscayne Boulevard, con la manejadora en un clóset y tramos cortos, queda en la parte baja, y si la cámara muestra los ductos limpios y el olor viene del serpentín, le cotizamos la limpieza del equipo, de 200 a 450 dólares, en lugar de la de ductos.",
+        "Si el pleno es de cartón de fibra de vidrio y ya está soltando fibra, no se cepilla más fuerte: se fotografía y su reemplazo se cotiza como reparación de ductos. Usted tiene cada número antes de que pongamos fecha.",
+      ],
+    },
+    {
+      heading: "Limpieza de ductos después de remodelar la casa en North Miami",
+      body: [
+        "Muchas casas de los cincuenta y sesenta en North Miami se están remodelando ahora: se levanta la cerámica o la alfombra que tapaba el terrazo, se pule el terrazo, se abren paredes para cambiar la electricidad y se rehace la cocina. Todo eso levanta un polvo muy fino, y en una casa con un solo retorno en el pasillo, esa rejilla es la abertura más cercana a la obra.",
+        "Si el aire corre mientras trabajan, el retorno jala ese polvo, el filtro no da abasto, y lo que pasa se queda en el serpentín, en el ventilador y en los tramos. Lo más barato es protegerse antes de empezar: apagar el equipo los días de más polvo, tapar con plástico el retorno y las rejillas, y cambiar el filtro en cuanto terminen los pisos.",
+        "La limpieza va al final de la obra, cuando ya no se lija nada. Limpiar los ductos con los trabajadores todavía adentro es pagar dos veces. Es la visita normal, de 300 a 600 dólares por sistema, con fotos del antes y el después. Y si la remodelación movió una pared o agregó un cuarto, díganoslo al llamar: una rejilla que ahora da a un clóset, o un cuarto nuevo sin retorno, se arregla mejor mientras el techo sigue abierto.",
+      ],
+    },
+  ],
+
+  "north-miami-beach": [
+    {
+      heading: "Precio de la limpieza de ductos de aire acondicionado en North Miami Beach, según su casa",
+      body: [
+        "Una casa de bloque de una planta en Fulford o en Highland Village, con una manejadora y un retorno en el pasillo, es un sistema y casi siempre queda en la mitad baja de los 300 a 600 dólares. Los tramos son cortos y las rejillas no son muchas, pero el ático es bajo, y si el pleno o el tronco siguen siendo de cartón de fibra de vidrio, el trabajo toma más tiempo. Ese material se limpia con cepillos suaves y con cuidado, no con las cabezas rotativas que se usan en lámina y en flexible, porque un cepillo duro rompe la superficie que se quiere limpiar.",
+        "Las casas sobre el agua en Eastern Shores son más grandes, y muchas tienen un cuarto o un segundo piso agregado después, así que dos sistemas es lo común. Cada uno se cotiza aparte, y usted tiene los dos números antes de agendar. Los apartamentos y condominios de la calle 163 y del Intracoastal quedan en la parte baja, y en muchos lo que conviene es la limpieza del serpentín y la bandeja, de 200 a 450 dólares, en lugar de los ductos.",
+        "La desinfección, de 75 a 200 dólares, solo se ofrece después de una limpieza y solo cuando hay una razón. La ventila de secadora, de 100 a 200 dólares, se puede hacer en la misma visita.",
+      ],
+    },
+    {
+      heading: "Ducto de cartón de fibra de vidrio: ¿se limpia o se cambia?",
+      body: [
+        "Muchas casas de North Miami Beach recibieron el aire central con plenos, y a veces troncos completos, de cartón de fibra de vidrio: paneles rígidos con papel de aluminio por fuera y fibra desnuda por dentro. En buen estado es un ducto perfectamente bueno. La pregunta es cómo está después de cincuenta o sesenta años, y la cámara lo contesta antes de cotizar.",
+        "El que se puede limpiar tiene la cara interior lisa y firme, las uniones sanas y la cinta de afuera todavía pegada. El que hay que cambiar muestra fibra expuesta y deshilachada, una superficie oscura y picada en las curvas donde el aire pega más fuerte, uniones que se abren, o una parte blanda donde le cayó agua de una bandeja de arriba. Cepillar un cartón erosionado solo suelta más fibra al aire, así que paramos, tomamos la foto y se lo decimos.",
+        "El reemplazo se cotiza como reparación de ductos, según el alcance, desde 250 hasta más de 2,000 dólares, después de una prueba de presión. Un solo pleno queda en la parte baja de ese rango y un tronco completo por un ático bajo queda más arriba. Si pronto le van a cambiar la manejadora, pídale al contratista de aire que cambie el pleno con el equipo afuera, y limpie los ramales después.",
+      ],
+    },
+  ],
+
+  aventura: [
+    {
+      heading: "¿Cuánto cuesta limpiar los ductos de aire acondicionado de un apartamento en Aventura?",
+      body: [
+        "Casi todos los apartamentos de Aventura tienen una manejadora en un clóset y tramos cortos, así que casi todos son un sistema en la parte baja de los 300 a 600 dólares. Las unidades más grandes, los penthouses y los apartamentos unidos en las torres de Turnberry, Williams Island o Porto Vita, a veces tienen dos manejadoras, una para los cuartos y otra para la sala, y cada una lleva su propio renglón.",
+        "Como hay tan poco ducto, en Aventura la pregunta útil es qué trabajo le conviene. Si la cámara muestra los tramos limpios y el problema está en el serpentín, la bandeja y la turbina del ventilador, la limpieza del equipo, de 200 a 450 dólares, cubre justo esas piezas, y eso es lo que le recomendamos. Si los tramos sobre el techo traen polvo y grasa de la cocina, lo que pasa cuando el retorno queda cerca de la cocina, entonces la limpieza completa es la indicada, y ya incluye el ventilador y la cara del serpentín. Le damos una recomendación y un precio, no los dos sumados.",
+        "Si aparece moho visible en el serpentín o dentro del ducto, se cotiza aparte como eliminación de moho en ductos, de 500 a más de 3,000 dólares según cuánto se ha extendido, y usted decide.",
+      ],
+    },
+    {
+      heading: "Si usted pasa el verano fuera de Aventura: cómo dejar hecha la limpieza",
+      body: [
+        "Muchos dueños en Aventura no están entre mayo y noviembre, y el mejor momento para limpiar es unas semanas antes de volver, no la semana en que llegan y sienten el olor. No hace falta que usted esté.",
+        "Lo que sí hace falta se arregla con el edificio. Mandamos el certificado de seguro a la administración, reservamos el elevador de servicio para un día de semana dentro del horario del edificio, y coordinamos la entrada con la recepción o con quien tenga su llave. Usted nos dice el número de la unidad, cuántas manejadoras tiene y dónde está el clóset, y el precio queda acordado por teléfono antes de agendar, así que nadie tiene que aprobar un número en la puerta.",
+        "Antes de ese día hay que vaciar el clóset de la manejadora si se ha usado para guardar cosas, porque el equipo se trabaja de frente y el filtro desde abajo. Un sistema de clóset toma una mañana. El recorrido final se hace con quien nos abrió, y las fotos del antes y el después se le pueden mandar también a usted. Si el termostato se quedó alto todo el verano, pídanos anotar cómo estaba la bandeja de drenaje, para que el próximo verano no deshaga el trabajo.",
+      ],
+    },
+  ],
+
+  pinecrest: [
+    {
+      heading: "Reparación de ductos de aire acondicionado en Pinecrest: cómo se mide y cuánto cuesta",
+      body: [
+        "La reparación empieza con un número y no con una suposición. Se tapan todas las rejillas del sistema, un ventilador de prueba calibrado presuriza los ductos, y la lectura dice cuánto aire se pierde antes de llegar a los cuartos. En una casa de dos o tres sistemas cada uno se prueba por separado, porque la fuga detrás del cuarto caliente casi siempre es de un solo sistema. Después entra la cámara para ver por dónde se va el aire.",
+        "En Pinecrest lo que se encuentra sigue a las casas. En los tramos largos y horizontales de una casa ancha de una planta, lo común son collarines zafados de su pieza, tramos colgados con muy pocas correas y descolgados entre las vigas, y cubiertas rotas donde alguien se arrastró encima para llegar al otro lado del ático. En una ampliación, muchas veces es un tramo nuevo del tamaño correcto, desde el tronco, en lugar del ramal sacado del ducto más cercano. Las uniones se rehacen con correa metálica y masilla, no con cinta, y la prueba se repite al final para que usted tenga las dos cifras.",
+        "El precio depende del alcance: desde 250 dólares por unas uniones hasta más de 2,000 por un sistema de flexible nuevo, siempre antes de empezar. Nosotros no vendemos ni instalamos equipos de aire, así que si los ductos salen sellados y el cuarto sigue caliente, se lo decimos para que lo revise un contratista de aire acondicionado.",
+      ],
+    },
+    {
+      heading: "Precio de la limpieza de ductos en Pinecrest: casa original, casa reconstruida o casita de la piscina",
+      body: [
+        "La limpieza de ductos de aire acondicionado cuesta de 300 a 600 dólares por sistema. Una casa original de los cincuenta o sesenta, de una planta, con un sistema para la casa y quizás otro para la ampliación, queda en la parte media de ese rango por sistema, porque los tramos de ático son largos.",
+        "Las casas nuevas que se construyeron donde antes había una casa vieja son otro caso. Son de dos plantas, muchas veces con tres sistemas, y su primera limpieza casi siempre es para sacar el polvo de la obra. Cada sistema lleva su precio, y usted decide con cuál empezar. La casita de la piscina suele tener su propio equipo pequeño, que se cotiza aparte.",
+        "En una casa con ventanas de impacto, la ventilación también cuenta. Un extractor de baño que descarga en el ático en lugar de afuera moja los ductos de arriba, y una entrada de aire fresco con la compuerta trabada mete humedad al retorno todo el día. Eso lo revisa nuestra inspección de calidad del aire, de 200 a 500 dólares, con lecturas de humedad cuarto por cuarto y fotos. No tomamos muestras ni mandamos nada a laboratorio.",
+      ],
+    },
+  ],
+
+  "cutler-bay": [
+    {
+      heading: "¿Cuánto cuesta la limpieza de ductos en Cutler Bay? Casa vieja, casa de Lakes by the Bay o townhouse",
+      body: [
+        "La limpieza de ductos de aire acondicionado en Cutler Bay cuesta de 300 a 600 dólares por sistema. Las casas más viejas de una planta en Cutler Ridge, Saga Bay y Bel Aire casi siempre tienen una manejadora, en un clóset del pasillo o en el garaje, con los ductos en un ático bajo. Quedan en la mitad baja del rango, salvo que el ático sea difícil o que el sistema nunca se haya limpiado.",
+        "Lakes by the Bay se construyó después de Andrew, y sus casas son más grandes, muchas de dos plantas. Unas tienen un solo sistema para los dos pisos y otras un segundo equipo para arriba. Cada sistema se cotiza aparte, y el de arriba, en un clóset o en el ático, es la parte más lenta del día. Los townhouses y los condominios cerca de Old Cutler Road casi siempre son un equipo de clóset con tramos cortos, en la parte baja.",
+        "Lo que sube cualquier precio es lo que encuentra la cámara. Si la casa tomó agua en una tormenta, el aislamiento que se empapó se cambia como reparación de ductos, desde 250 dólares según el alcance. Le enseñamos la foto y el precio antes de hacer nada más que la limpieza.",
+      ],
+    },
+    {
+      heading: "Olor del aire acondicionado después de un apagón en Cutler Bay",
+      body: [
+        "Después de una tormenta Cutler Bay puede pasar días sin luz, y las llamadas que siguen son por el olor cuando vuelve el aire. Casi siempre hay dos causas. La primera es el equipo apagado en pleno calor: el serpentín y la bandeja se quedan mojados sin nada que los seque, y lo que crece ahí es lo primero que manda el ventilador. La segunda es el garaje.",
+        "En muchas casas de aquí la manejadora está en el garaje, sobre una plataforma de retorno o en un clóset con la rejilla del retorno hacia el garaje. Si la plataforma o las uniones del gabinete no están selladas, el sistema jala parte de su aire del garaje, que durante un apagón es donde están la gasolina, el generador y el carro. Un generador portátil va afuera y lejos de puertas y ventanas, nunca dentro del garaje aunque la puerta esté abierta, y una alarma de monóxido de carbono de baterías cerca de los cuartos vale la pena en cualquier caso.",
+        "Sellar la plataforma o el gabinete es reparación de ductos, desde 250 dólares, y en estas casas suele ser lo más útil. Si el olor viene del serpentín y la bandeja, la limpieza del equipo cuesta de 200 a 450 dólares. Si está en los ductos, la limpieza es de 300 a 600 por sistema. Primero miramos y le decimos cuál es.",
+      ],
+    },
+  ],
+
+  doral: [
+    {
+      heading: "Limpieza de ductos de aire acondicionado en Doral: precio para apartamento, townhouse o casa",
+      body: [
+        "En Doral el precio es de 300 a 600 dólares por sistema. Un apartamento en un edificio de Downtown Doral o de CityPlace Doral casi siempre tiene la manejadora en un clóset y tramos cortos, y queda en la parte baja. Una casa en Doral Isles, Islands at Doral o Costa del Sol tiene más rejillas y uno o dos sistemas, y cada uno queda hacia la mitad o la parte alta del rango.",
+        "En las casas de Doral Park y en las calles que ya existían antes de que Doral se hiciera ciudad en 2003, la cámara busca además flexible descolgado y uniones sueltas. Un tramo zafado de su collarín no se limpia, se cotiza como reparación. Y si lo que hay es olor y los ductos se ven limpios, lo que le cotizamos es la limpieza del serpentín y la bandeja, de 200 a 450 dólares.",
+        "Mucha gente en Doral alquila. Si usted es el dueño, el mejor momento es entre un inquilino y otro, con la unidad vacía y el clóset libre, y las fotos del antes y el después quedan para el expediente del próximo contrato. Si usted es el inquilino y siente olor al prender el aire, eso viene de una superficie mojada adentro del equipo, y le toca resolverlo al dueño.",
+      ],
+    },
+    {
+      heading: "Limpieza de ductos para oficinas y almacenes en Doral",
+      body: [
+        "Doral es una de las zonas de almacenes y logística más grandes del condado, a pocos minutos del aeropuerto, y buena parte del trabajo comercial aquí no es el almacén sino la oficina que está adentro: el mezzanine, la oficina del frente, el showroom o el comedor, cada uno con su propio equipo.",
+        "Esos espacios cargan un polvo particular. El tráfico de montacargas, el cartón y las paletas levantan polvo que llega a una oficina cuyo retorno muchas veces es una rejilla de techo a pocos pasos de la puerta del almacén. El filtro se llena rápido, los ductos sobre el falso techo reciben lo que pasa, y el personal nota polvo en los escritorios y un olor a encierro que vuelve al día siguiente de la limpieza.",
+        "El trabajo comercial se cotiza por local y no por rejilla, después de una visita, porque el número de equipos, el acceso a los ductos sobre el techo y lo que tienen adentro cambian el precio. Usted recibe el alcance y el precio por escrito antes de agendar, y el trabajo se hace fuera del horario para que la oficina siga abierta. Si aparece algo fuera de lo acordado, se le avisa antes de hacer nada extra.",
+      ],
+    },
+  ],
+
+  miramar: [
+    {
+      heading: "¿Cuánto cuesta la limpieza de ductos en Miramar? Lado este y lado oeste",
+      body: [
+        "La limpieza de ductos de aire acondicionado en Miramar cuesta de 300 a 600 dólares por sistema, y el lado de la ciudad dice bastante. En Historic Miramar, al este de University Drive, la casa típica es de una planta en un lote chico, con una manejadora y tramos cortos. Queda en la mitad baja del rango, y el tiempo se va en un ático apretado más que en muchas rejillas.",
+        "Al oeste del turnpike, en Riviera Isles, Vizcaya, Silver Lakes, Monarch Lakes y Sunset Lakes, las casas son más nuevas y más grandes, casi todas de dos plantas. Unas tienen un solo sistema para los dos pisos y otras un segundo equipo en un clóset de arriba. Un sistema queda hacia la mitad del rango, y dos sistemas son dos precios, los dos antes de agendar. El de arriba casi siempre toma más tiempo, porque se trabaja en un espacio apretado debajo de la parte más caliente del ático.",
+        "Un tramo descolgado pero entero se limpia. Un tramo zafado del collarín o con la cubierta rota es reparación, según el alcance, desde 250 dólares. La ventila de secadora, que en las casas del oeste muchas veces sube hasta el techo, cuesta de 100 a 200 dólares en la misma visita.",
+      ],
+    },
+    {
+      heading: "Humo, polvo y el filtro en el oeste de Miramar",
+      body: [
+        "Los barrios del oeste de Miramar llegan hasta la US 27, y más allá empiezan los Everglades. En una primavera seca, el humo de los incendios de maleza de allá puede pasar días encima de Sunset Lakes y Silver Lakes, y las partículas del humo son mucho más finas que el polvo normal de una casa. Súmele el polvo de las obras que fueron avanzando hacia el oeste en los dos mil, y los filtros de ese lado han trabajado más de lo que dice la edad de las casas.",
+        "Cuánto de eso llega a los ductos lo decide el retorno. Si el filtro entra justo en su ranura y la ranura está sellada, casi todo se queda ahí. Si hay un hueco alrededor del filtro, o la caja del retorno está abierta a la pared, el sistema jala aire por un lado del filtro y lo manda directo al serpentín. Un filtro que se pone gris en dos semanas con humo está haciendo su trabajo. Uno que sigue blanco mientras los muebles se llenan de polvo está siendo esquivado.",
+        "Para casi todas las casas de Miramar el filtro correcto es MERV 8 a 11. Con humo, ventanas cerradas, el aire corriendo y filtro nuevo cuando pase. Si la casa olió a humo por dentro, una limpieza después de la temporada seca saca lo que se asentó.",
+      ],
+    },
+  ],
+
+  "palm-beach-gardens": [
+    {
+      heading: "Precio de la limpieza de ductos de aire acondicionado en Palm Beach Gardens: casa de club, villa o condominio",
+      body: [
+        "El precio es de 300 a 600 dólares por sistema. Las casas grandes de PGA National, BallenIsles, Mirasol y Old Palm suelen tener dos o tres sistemas, y cada uno se cotiza por separado, así que una casa de tres sistemas recibe tres números, todos antes de agendar. Cuántas rejillas tiene cada uno, y si la manejadora está en el garaje, en un clóset o en el ático, decide dónde cae cada uno.",
+        "No todo dentro de los clubes es una casa grande. Las villas, las coach homes y las casas en grupo de PGA National y de los otros clubes casi siempre son un sistema con la manejadora en un clóset o en el garaje, y quedan hacia la mitad baja. Los condominios y apartamentos cerca de Downtown at the Gardens y de PGA Boulevard son un equipo de clóset con tramos cortos, en la parte baja, y en muchos conviene más la limpieza del serpentín y la bandeja, de 200 a 450 dólares.",
+        "Si la cámara encuentra flexible zafado o roto, eso es reparación, desde 250 dólares según el alcance. Si encuentra moho en el serpentín o dentro de los ductos, es eliminación de moho en ductos, de 500 a más de 3,000 dólares. Usted decide cada renglón antes de que se haga.",
+      ],
+    },
+    {
+      heading: "Manejadora en el ático en Palm Beach Gardens: la bandeja, el flotador y el techo de abajo",
+      body: [
+        "En muchas casas de dos plantas de Palm Beach Gardens la manejadora de arriba está sobre una plataforma en el ático, y eso cambia lo que tiene que cubrir la limpieza. Una manejadora en el garaje que se desborda moja el piso. Una en el ático que se desborda moja un techo.",
+        "Un equipo en el ático debe tener una bandeja secundaria debajo del gabinete, con un flotador que apaga el sistema cuando se junta agua, o una línea de drenaje aparte que termina donde usted la pueda ver, muchas veces un tubito encima de una ventana o en el alero. Si de ahí gotea agua, el drenaje principal está tapado y el sistema le está avisando antes de que el agua llegue al techo. En la limpieza revisamos las dos bandejas, destapamos la línea principal y comprobamos que el flotador sube sin trabarse.",
+        "Como el ático está más fresco en la mañana, el sistema de arriba casi siempre se hace primero, y la entrada suele ser una trampilla en el techo de un clóset, así que conviene tener ese clóset despejado. Si lo que necesita atención es el serpentín y las bandejas, la limpieza del equipo cuesta de 200 a 450 dólares.",
+      ],
+    },
+  ],
+
+  wellington: [
+    {
+      heading: "¿Cuánto cuesta la limpieza de ductos de aire acondicionado en Wellington?",
+      body: [
+        "De 300 a 600 dólares por sistema. Una casa de una planta con la manejadora en el garaje, común en Binks Forest y en las partes más viejas de la villa, queda hacia la mitad baja, salvo que el sistema lleve muchos años sin limpiarse. Las casas de dos plantas de Olympia y de las comunidades más nuevas muchas veces tienen dos sistemas, y cada uno lleva su precio.",
+        "Las casas grandes de Palm Beach Polo y del Equestrian Preserve pueden tener tres o más sistemas, además de una casa de huéspedes, y cada sistema tiene su número. Puede empezar por el que sirve la sala y la cocina y dejar los demás para después. Las villas y condominios dentro de Palm Beach Polo y de los otros clubes suelen ser un solo equipo y quedan en la parte baja.",
+        "Dentro del rango, una casa al lado de un establo o de un corral junta más polvo en el retorno que una frente al lago, y un sistema que ha pasado varias temporadas sin limpiarse toma más tiempo. La ventila de secadora, de 100 a 200 dólares, se hace en la misma visita, y usted tiene cada número antes de agendar.",
+      ],
+    },
+    {
+      heading: "Casas de huéspedes y cuartos del personal de las caballerizas en Wellington",
+      body: [
+        "Muchas propiedades ecuestres de Wellington tienen un segundo lugar para vivir: una casa de huéspedes, un apartamento encima del establo o los cuartos donde vive el personal que cuida los caballos, que se usan de diciembre a abril y se cierran el resto del año. Esos sistemas viven al revés que la casa principal: apagados o con el termostato alto en los meses más húmedos, y después cuatro meses trabajando duro.",
+        "Un sistema que pasa el verano parado, en un terreno drenado encima de un manto freático alto, vuelve con el serpentín húmedo, la bandeja con costra o sin secarse nunca, y un olor la primera noche que corre. El momento de atenderlo es antes de la temporada, en noviembre o a principios de diciembre, no cuando ya llegó la gente.",
+        "Si es un sistema con ductos y hay polvo en los tramos, es la limpieza completa, de 300 a 600 dólares. Si es un equipo pequeño y el problema está en el serpentín y la bandeja, es la limpieza del equipo, de 200 a 450. Si los cuartos tienen un equipo de pared sin ductos, eso no lo limpiamos, y se lo decimos en lugar de mandarle una cuadrilla.",
+      ],
+    },
+  ],
+
+  "lehigh-acres": [
+    {
+      heading: "¿Cuánto cuesta la limpieza de ductos de aire acondicionado en Lehigh Acres?",
+      body: [
+        "De 300 a 600 dólares por sistema, y casi todas las casas aquí son de un solo sistema, así que es un solo precio. Una casa de bloque vieja, en un lote de mediados de siglo, es chica, con la manejadora en el garaje o en un cuarto de servicio y tramos cortos, y queda en la mitad baja del rango.",
+        "Una casa del auge de los dos mil, en Westminster, cerca de Mirror Lakes o en las calles nuevas que salen de Lee Boulevard, es más grande, con más rejillas y tramos tendidos deprisa por el ático. Queda hacia la mitad, y más arriba si nunca se ha limpiado, que en esas casas es lo normal: el escombro de la obra muchas veces sigue adentro.",
+        "Dos cosas van en su propio renglón. Un retorno que se resolvió con el hueco debajo de las puertas, o una caja de retorno abierta a la pared, necesita un camino de regreso propio, y eso es reparación de ductos, desde 250 dólares después de una prueba de presión. Y una ranura de filtro con hueco deja pasar el polvo de los lotes vacíos, así que se sella primero o la limpieza no dura. Si la casa es de renta, el precio y las fotos son los mismos aunque el dueño viva en otro estado.",
+      ],
+    },
+    {
+      heading: "Ratas en los ductos en Lehigh Acres: qué limpiamos y qué no",
+      body: [
+        "Con tanto terreno abierto entre las calles, que se metan ratas y ratones al ático es una llamada común en Lehigh Acres, y los ductos son donde hacen el daño sin que nadie lo vea. El flexible es fácil de morder, su aislamiento les sirve de nido, y una plataforma de retorno con un hueco es una entrada directa al aire de la casa.",
+        "Desde adentro las señales son un olor en una o dos rejillas que empeora cuando corre el aire, excremento o pedacitos de aislamiento en una rejilla, ruido arriba del techo al anochecer, o un cuarto que de pronto se calienta porque mordieron un tramo. La cámara lo encuentra rápido: cubiertas rotas, nidos detrás de las rejillas y basura en el retorno.",
+        "Nosotros hacemos la parte del ducto. Se saca lo contaminado con presión negativa, los tramos mordidos o sucios se cambian como reparación, desde 250 dólares según el alcance, y aquí la desinfección, de 75 a 200 dólares después de la limpieza, sí tiene una razón clara. Lo que no hacemos es poner trampas ni cerrar las entradas en el techo y los aleros. Eso es trabajo del control de plagas y va primero, porque limpiar el ducto mientras los animales siguen entrando solo les deja espacio para el próximo nido.",
+      ],
+    },
+  ],
+
+  "miami-lakes": [
+    {
+      heading: "¿Cuánto cuesta la limpieza de ductos de aire acondicionado en Miami Lakes?",
+      body: [
+        "De 300 a 600 dólares por sistema, y las tres épocas de vivienda del pueblo caen en partes distintas del rango. Las casas de una planta de los sesenta y setenta alrededor de los lagos originales, en Loch Lomond o cerca de Lake Sarah, casi siempre son un sistema con retorno en el pasillo y pocas rejillas, y quedan en la mitad baja. Sus áticos son bajos, y si el equipo se cambió sobre el ducto original, las cajas de las rejillas piden más tiempo del que dice el conteo.",
+        "Las casas más grandes de los ochenta y noventa son más a menudo de dos plantas, y algunas tienen un segundo sistema para arriba, cada uno con su precio. Los townhouses y apartamentos cerca de Main Street y del Town Center casi siempre son un equipo de clóset con tramos cortos, en la parte baja, y si la cámara muestra los ductos limpios y el serpentín sucio, le cotizamos la limpieza del serpentín y la bandeja, de 200 a 450 dólares.",
+        "La desinfección, de 75 a 200 dólares, solo después de una limpieza y solo con una razón. Usted tiene cada renglón antes de agendar, y nada se agrega en la puerta.",
+      ],
+    },
+    {
+      heading: "Limpieza de rejillas del aire en Miami Lakes: el retorno del pasillo y lo que hay detrás",
+      body: [
+        "Casi todas las casas de Miami Lakes tienen una rejilla de retorno grande en el pasillo, muchas veces con el filtro justo detrás, y es la que la gente quiere limpiar cuando llama: aletas grises, un filtro tapado a fin de mes y polvo en el techo alrededor. Lavar la rejilla toma diez minutos. Lo que hay detrás es lo que decide si el trabajo sirve.",
+        "Por eso abrimos ese retorno antes que nada. Si detrás hay solo el hueco dentro de la pared, entre la madera de la estructura, y no una caja forrada, la solución es forrarlo, con lámina o con cartón de ducto sellado en cada borde, y asegurarse de que el filtro asiente en un marco sin hueco alrededor. Eso es reparación de ductos, desde 250 dólares según el alcance, y casi siempre es trabajo de una mañana. Limpiar un sistema que sigue jalando de la pared solo vuelve a empezar la cuenta.",
+        "Después vienen las rejillas del techo, que se quitan, se lavan y se vuelven a poner, y la caja detrás de cada una se limpia a mano, todo dentro de la limpieza de 300 a 600 dólares por sistema. El filtro del retorno debe ser MERV 8 a 11 y de la medida exacta, porque uno de una medida menos deja pasar aire por los bordes.",
       ],
     },
   ],

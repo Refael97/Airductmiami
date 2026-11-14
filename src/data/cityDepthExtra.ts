@@ -672,4 +672,247 @@ export const cityDepthExtra: Record<string, { heading: string; body: string[] }[
       ],
     },
   ],
+
+  /*
+   * Added 14 November 2026, wave 5: twelve English city pages that had never
+   * been given extra depth and were sitting at positions 7 to 25 in the owner's
+   * Search Console export (top 1,000 queries): "air duct cleaning north miami",
+   * "air duct cleaning north miami beach", "air duct cleaning aventura", "air
+   * duct cleaning pinecrest", "air duct repair pinecrest" and "home ventilation
+   * services pinecrest", "air duct cleaning cutler bay", "air duct cleaning
+   * doral", "air duct cleaning miramar fl" and "duct cleaning miramar", "air
+   * duct cleaning palm beach gardens", "air duct cleaning wellington", "duct
+   * cleaning lehigh acres", "air duct cleaning cape coral", "ac vent cleaning
+   * cape coral fl" and "air duct repair company cape coral fl", and Miami
+   * Lakes. Each pair answers the price by type of home and one local question
+   * the existing depth did not cover. Written per city.
+   */
+  "north-miami": [
+    {
+      heading: "Air duct cleaning in North Miami: what it costs for a house, a duplex or a condo",
+      body: [
+        "Air duct cleaning in North Miami is $300 to $600 per system, and the type of home sets most of where it lands. A single storey block house in Griffing Park, Sunkist Grove or Cloverleaf usually has one air handler in a hallway closet or the garage, eight to twelve registers and a shallow attic. It sits in the lower half of the range, and what moves it up is the attic: getting a hose to every boot under a low pitched roof is slow work.",
+        "A duplex is two systems more often than one, because each side normally has its own air handler and thermostat. Each is priced on its own line, and an owner can have both done on the same visit, ideally between tenants when the rooms are empty. The larger houses on Keystone Point and in Sans Souci Estates are where a second system, for an addition or an upstairs, is most likely.",
+        "An apartment or condo along Biscayne Boulevard, with a closet air handler and short runs above the ceiling, sits at the bottom. If the camera shows clean ducts and the smell is coming from the coil, the AC and HVAC system cleaning at $200 to $450 is the better job, and that is what we quote. Where the plenum is old duct board that has started to shed, we photograph it and quote its replacement as duct repair rather than brush it harder.",
+      ],
+    },
+    {
+      heading: "Duct cleaning after a renovation in North Miami: terrazzo, drywall and the hallway return",
+      body: [
+        "Many of the fifties and sixties houses in North Miami are being renovated now, and the work follows a pattern. The tile or carpet laid over the original terrazzo comes up, the terrazzo is ground and polished, walls are opened for new wiring, and the kitchen is gutted. Every one of those jobs makes fine dust, and in a house with one central return in the hallway, that grille is the closest opening to all of it.",
+        "If the system runs during the work, the return pulls the dust past a filter that was never meant for that load, and much of it settles on the coil, in the blower and along the supply runs. Dry polishing throws a very fine stone powder that settles in the low points and stays there. The cheapest protection comes before the work starts: switch the system off on the dustiest days, cover the return and the supply grilles with plastic, and change the filter as soon as the floors are finished.",
+        "The cleaning belongs at the end of the renovation, once the last sanding is done. A duct cleaned while the drywall crew is still working is a duct cleaned twice. It is the ordinary visit at the ordinary price, $300 to $600 per system, with photos before and after. If the renovation moved a wall or added a room, tell us when you call: a supply that now feeds a closet, or a room with no way back to the return, is easier to fix while the ceiling is open.",
+      ],
+    },
+  ],
+
+  "north-miami-beach": [
+    {
+      heading: "Air duct cleaning in North Miami Beach: the price for each type of home",
+      body: [
+        "The range is $300 to $600 per system, and the common homes in North Miami Beach fall into it in a predictable way.",
+        "A single storey block house in Fulford or Highland Village, with one air handler and a hallway return, is one system and usually sits in the lower half. The runs in those attics are short and the register count is modest, but the attics are shallow, and a house whose plenum or trunk is still the original duct board takes longer. That material is cleaned with soft brushes and care, not with the rotary heads used on sheet metal and flex, because a hard brush tears the surface it is meant to clean.",
+        "The waterfront houses in Eastern Shores are larger, and many have had a room or a second floor added since they were built, so two systems is common there. Each is priced separately, and you hear both numbers before booking. Condo and apartment units along NE 163rd Street and the Intracoastal sit at the bottom of the range, and for many of them the coil and drain pan cleaning at $200 to $450 is the right job instead of the ducts.",
+        "Sanitizing, at $75 to $200, is offered only after a cleaning and only with a reason for it. The dryer vent is $100 to $200 on the same visit, with the hose behind the machine included.",
+      ],
+    },
+    {
+      heading: "Duct board in North Miami Beach: when to clean it and when to replace it",
+      body: [
+        "Many North Miami Beach houses from the fifties and sixties got central air with plenums, and sometimes whole trunks, made of fibreglass duct board: rigid panels with a foil face on the outside and bare fibreglass inside. Board in good condition is a perfectly good duct. The question is what shape it is in after fifty or sixty years, and the camera answers that before anyone quotes.",
+        "Board that can be cleaned has a smooth, firm inner surface, sound seams and foil tape that still holds on the outside. Board that should be replaced shows exposed, fraying fibre, a darkened and pitted surface where the air hits it hardest at the turns, seams opening along their length, or a soft patch where water got in from a leaking pan above it. Brushing eroded board only puts more fibre into the air, so at that point we stop, photograph it and tell you.",
+        "Replacement is quoted as duct repair, priced on scope from $250 to $2,000 and up after a pressure test. A single supply plenum sits toward the lower part of that range, and a whole trunk through a shallow attic sits higher. If a new air handler is going in soon, ask the HVAC contractor to replace the plenum while the old unit is out, which is easier then, and have the branches cleaned afterwards. If the board is sound, you hear that too, and it is cleaned like any other duct.",
+      ],
+    },
+  ],
+
+  aventura: [
+    {
+      heading: "Air duct cleaning in Aventura condos: what it costs and what you are paying for",
+      body: [
+        "Most Aventura units have one closet air handler and short runs, so most are one system at the lower end of $300 to $600. Larger units, the penthouses and combined units in the towers around Turnberry, Williams Island and Porto Vita, sometimes run two air handlers, one for the bedrooms and one for the living space, and each of those is its own line on the quote.",
+        "Because there is so little duct, the useful question in Aventura is which job to buy. If the camera finds the supply runs clean and the trouble is in the coil, the drain pan and the blower wheel, our AC and HVAC system cleaning at $200 to $450 covers exactly those parts, and it is the honest recommendation. If the runs above the ceiling are carrying dust and kitchen grease, which happens when the return sits near the kitchen, the full duct cleaning is the job, and it includes the blower and the coil face anyway. You get one recommendation and one price, not both stacked on top of each other.",
+        "Two other lines come up here. Sanitizing at $75 to $200 follows a cleaning only when there is a reason for it. Visible growth found at the coil or inside the ducts is quoted as air duct mold removal, priced on severity from $500 to $3,000 and up, and you decide before anything is done. The in unit dryer run is $100 to $200 and has its own Aventura page.",
+      ],
+    },
+    {
+      heading: "Booking duct cleaning in Aventura while you are out of town",
+      body: [
+        "A good share of Aventura owners are away between May and November, and the best time to have the unit cleaned is a few weeks before they come back, not the week they arrive and notice the smell. None of it needs you to be there.",
+        "What it does need is arranging through the building. We send the certificate of insurance to the management office, book the service elevator for a weekday inside the building's working hours, and arrange entry through the front desk or whoever holds your key. Tell us the unit number, how many air handlers it has and where the closet is, and the price is agreed by phone before anything is scheduled, so nobody has to approve a number at the door.",
+        "Before the day, the air handler closet has to be emptied if it has been used for storage, which in a condo it often has, because the unit is worked from the front and the filter grille from below. A single closet system takes a morning. The walkthrough is done with whoever let us in, and the before and after photos of the coil, the pan and the supply runs can be sent to you as well. If the thermostat was left high all summer, ask us to note the state of the drain pan and the setting it was on, so the next summer does not undo the work before you are back.",
+      ],
+    },
+  ],
+
+  pinecrest: [
+    {
+      heading: "Air duct repair in Pinecrest: what gets tested and what gets fixed",
+      body: [
+        "Air duct repair in Pinecrest starts with a number rather than a guess. Every register on the system is sealed, a calibrated test fan pressurises the ducts, and the reading shows how much air the system loses before it reaches a room. In a house with two or three systems each one is tested on its own, because the leak behind a hot bedroom usually belongs to one system and not the others. A camera then goes in to find where the air is going.",
+        "The findings follow the houses. On the long horizontal runs of a wide ranch house, the usual repairs are collars pulled off their fittings, runs hung on too few straps and sagging between the joists, and jackets torn where someone crawled over them to reach the far side of the attic. On an addition, the repair is often a new, properly sized run from the trunk to replace a branch tapped off the nearest duct. Reconnected joints get metal straps and mastic rather than tape, new runs go in at R-6 to R-8, and the test is run again afterwards so you have both figures.",
+        "Repair is priced on scope, from $250 to $2,000 and up, with the price before any work. Where a system needs repair and cleaning both, the repair goes first. We do not sell or install air conditioning equipment, so when the test shows tight ducts and the room is still hot, we tell you the equipment is the next thing for an HVAC contractor to check. Pinecrest has its own duct repair page further down.",
+      ],
+    },
+    {
+      heading: "Home ventilation services in Pinecrest: exhaust, fresh air and where the air really goes",
+      body: [
+        "Ventilation in a large Pinecrest house is more than the air conditioning. It is every path air takes in and out: the bathroom and kitchen exhaust, the dryer vent, the fresh air intake some newer houses have on the return, and the gaps the system pulls through when nobody meant it to. In a house rebuilt or fitted with impact windows, those paths matter more, because the tighter house no longer leaks enough to hide a problem.",
+        "Three things turn up most often. Bathroom exhaust fans whose duct ends in the attic rather than at a roof or soffit outlet, which puts shower moisture straight onto the attic ducts. A fresh air intake whose damper has stuck open, letting humid outdoor air into the return around the clock. And a kitchen hood that recirculates instead of venting outside, sending cooking grease to the nearest return.",
+        "Our indoor air quality check, at $200 to $500, traces those paths: humidity read room by room, including the guest wing and the pool house, a camera on the ducts and each air handler, and a photo report of every exhaust that does not end outside. We do not take air samples or send anything to a lab. Rerouting an exhaust or fitting a dehumidifier or fresh air unit is work for an HVAC contractor, and we say so rather than sell you a cleaning in its place.",
+      ],
+    },
+  ],
+
+  "cutler-bay": [
+    {
+      heading: "Air duct cleaning in Cutler Bay: what it costs in Saga Bay, Lakes by the Bay or a townhome",
+      body: [
+        "Air duct cleaning in Cutler Bay is $300 to $600 per system, and the housing here splits into clear types. The older single storey houses in Cutler Ridge, Saga Bay and Bel Aire usually have one air handler, in a hallway closet or the garage, with the ducts in a low attic. They sit in the lower half of the range unless the attic is hard to move through or the system has never been cleaned.",
+        "Lakes by the Bay went up after Andrew, and its houses are larger, many of them two storey. Some run one system for both floors and some have a second air handler for the upstairs. Each system is priced on its own, and the upstairs one, in a closet or the attic, is usually the slower half of the day. Townhomes and the condos off Old Cutler Road are typically one closet unit with short runs, toward the bottom of the range.",
+        "What moves any of them up is what the camera finds. A house that took water in a storm and kept its ducts has them opened first, and insulation that was soaked is replaced as duct repair, priced on scope from $250 to $2,000 and up. Growth inside the air handler or the ducts is quoted as air duct mold removal, from $500 to $3,000 and up. You see the photos and the price before anything beyond the cleaning is done.",
+      ],
+    },
+    {
+      heading: "AC smell after a power outage in Cutler Bay: the garage, the generator and the return",
+      body: [
+        "After a storm, Cutler Bay can go days without power, and the calls that follow are about a smell when the air comes back on. Two things cause most of them. The first is the system sitting off in summer heat: the coil and the pan stay wet with nothing drying them, and what grows there is the first thing the blower sends out. The second is the garage.",
+        "In many houses here the air handler sits in the garage, on a return platform or in a closet with its return grille on the garage side. If the platform or the cabinet seams are not sealed, the system draws part of its air from the garage, which during an outage is where the fuel cans, the generator and the car are. That is a comfort problem on a normal day and a safety problem after a storm. A portable generator belongs outdoors and well away from doors and windows, never in the garage even with the door open, and a battery carbon monoxide alarm near the bedrooms is worth having whatever else you do.",
+        "Sealing a leaking return platform or cabinet is duct repair, quoted on scope from $250, and in these houses it is often the most useful thing we do. If the smell after an outage comes from the coil and the pan, the AC and HVAC system cleaning at $200 to $450 covers them. If it is in the ducts, the cleaning is $300 to $600 per system. We look first and tell you which.",
+      ],
+    },
+  ],
+
+  doral: [
+    {
+      heading: "Air duct cleaning in Doral: price for an apartment, a townhome or a house",
+      body: [
+        "Air duct cleaning in Doral is priced per system, $300 to $600, and most homes in the city are one of three types. An apartment in a mid-rise around Downtown Doral or CityPlace Doral usually has a closet air handler and short runs, and it sits at the bottom of the range. A townhome is often two systems, one per floor, each priced on its own. A single family house in Doral Isles, Islands at Doral or Costa del Sol has more registers and one or two systems, which puts each one toward the middle or the top.",
+        "In the newest buildings the first cleaning is mostly removing what the construction left, and it is the one where the difference shows most. In the older houses of Doral Park and the streets built before the city incorporated in 2003, the camera is also looking for sagging flex and joints that have let go, and a run that is off its collar is quoted as repair rather than cleaned. If the complaint is a smell and the ducts look clean, the coil and pan cleaning at $200 to $450 is the job instead.",
+        "Many Doral homes are rented, and for an owner the useful version of this is the turnover visit: the unit is empty, the closet is clear, and the before and after photos of the coil and ducts go in the file for the next lease. The price is the same, and you have it before we book.",
+      ],
+    },
+    {
+      heading: "Commercial duct cleaning in Doral: offices, showrooms and the office inside the warehouse",
+      body: [
+        "Doral is one of the busiest warehouse and logistics districts in Miami-Dade, a short drive from the airport, and much of its commercial work is not the warehouse at all but the office inside one: a mezzanine or front office, a showroom, a training room or a break room, each on its own rooftop or split system.",
+        "Those spaces collect a particular load. Forklift traffic, cardboard and pallet dust from the floor travel into an office whose return is often a ceiling grille a few feet from the warehouse door. The filter loads fast, the ducts above the drop ceiling take the overflow, and staff notice dust on the desks and a stale smell that comes back the day after the cleaners have been.",
+        "Commercial work is quoted per site rather than per register, after a walkthrough, because the number of systems, how the ducts are reached above the ceiling and what is inside them all move the price. You get the scope and the price in writing before anything is booked. The work is scheduled after hours so the office stays open, and if the crew finds something outside the agreed scope, you hear about it before any extra work is done. For a showroom or office with its own small system, the price can be as simple as a house: one system, one figure.",
+      ],
+    },
+  ],
+
+  miramar: [
+    {
+      heading: "Duct cleaning in Miramar FL: what it costs on the east side and the west side",
+      body: [
+        "Duct cleaning in Miramar is $300 to $600 per system, and which side of the city the house is on is a fair guide to where it lands. In Historic Miramar, east of University Drive, the typical house is single storey on a small lot with one air handler and short runs. It sits in the lower half of the range, and the time goes into a tight attic rather than a long register count.",
+        "West of the turnpike, in Riviera Isles, Vizcaya, Silver Lakes, Monarch Lakes and Sunset Lakes, the houses are newer and larger, most of them two storey. Some run a single system for both floors, with a long trunk up to the second floor, and some have a second air handler in an upstairs closet. A single system house sits around the middle, and two systems are two prices, both given before we book. The upstairs closet unit usually takes longer, worked in a tight space under the hottest part of the attic.",
+        "In either half, a sagging run that is still whole is cleaned. A run that has separated at its collar, or a jacket split open in the attic, is repair, priced on scope from $250 to $2,000 and up. The dryer vent, which in the west side houses often runs up to the roof, is $100 to $200 on the same visit, and Miramar has its own dryer vent page.",
+      ],
+    },
+    {
+      heading: "Air duct cleaning in western Miramar: smoke, dust and the filter slot",
+      body: [
+        "Miramar's western neighbourhoods run out to US 27, and past it is the Everglades. In a dry spring, smoke from brush and muck fires out there can drift east over Sunset Lakes and Silver Lakes for days, and smoke particles are far finer than ordinary house dust. Add the dust from the building that moved west through the two thousands, and filters on this side have carried more than the age of the houses suggests.",
+        "What decides how much of that reaches the ducts is the return. If the filter fits its slot and the slot is sealed, most of it stops there. If there is a gap around the filter, or the return box is open to the wall or the closet behind it, the system pulls air around the filter and sends it straight to the coil and the supply runs. A filter that turns grey in a couple of weeks during a smoky spell is doing its job. A filter that stays white while dust gathers on the furniture is being bypassed.",
+        "A MERV 8 to 11 filter is right for most Miramar systems, and a higher rating than the system was built for can starve it of air. During smoke, keep the windows shut, let the system run, and change the filter once the air clears. If the house smelled of smoke indoors, a cleaning after the dry season removes what settled in the ducts and on the coil, at $300 to $600 per system, and sealing a leaking return box is quoted as repair.",
+      ],
+    },
+  ],
+
+  "palm-beach-gardens": [
+    {
+      heading: "Air duct cleaning in Palm Beach Gardens: price for a golf community house, a villa or a condo",
+      body: [
+        "Air duct cleaning in Palm Beach Gardens is $300 to $600 per system. The large houses in PGA National, BallenIsles, Mirasol and Old Palm usually run two or three systems, and each is priced on its own, so a three system house gets three figures, all given before we book. The register count on each one, and whether its air handler is in the garage, a closet or the attic, decides where in the range it falls.",
+        "Not everything inside the golf communities is a large house. The villas, coach homes and cluster homes in PGA National and the other clubs are typically one system with a closet or garage air handler and a modest register count, and they sit toward the lower half. Condos and apartments around Downtown at the Gardens and along PGA Boulevard are usually one closet unit with short runs, at the bottom of the range, and for many of them the coil and drain pan cleaning at $200 to $450 is the more useful job.",
+        "The city's older streets, from its first decades after it was incorporated in 1959, are mostly one system on original or once replaced ductwork, and there the price depends more on what the camera finds than on the size of the house. Flex that has separated or torn is repair, quoted on scope from $250, and growth on the coil or inside the ducts is air duct mold removal, from $500 to $3,000 and up. You decide on each line before anything is done.",
+      ],
+    },
+    {
+      heading: "Air handler in the attic in Palm Beach Gardens: the drain pan, the float switch and the ceiling below",
+      body: [
+        "In a lot of two storey Gardens houses the upstairs air handler sits on a platform in the attic, and that changes what a cleaning has to cover. An air handler in a garage that overflows wets a slab. One in the attic that overflows wets a ceiling.",
+        "An attic unit should sit in a secondary pan under the cabinet, with a float switch that shuts the system off when water collects, or a separate drain line that ends somewhere you will see it. That line is often a short pipe above a window or at the soffit. If water drips from it, the main drain is blocked and the system is telling you so before the water reaches the ceiling. On a cleaning we check both pans, flush the main line and make sure the float lifts freely.",
+        "The work takes longer than in a garage. The attic is coolest in the morning, so the upstairs system is usually done first, and the access is often a hatch in a closet ceiling, which means a clear path to and through that closet. If the coil and the pans are what need attention, the AC and HVAC system cleaning at $200 to $450 covers them. If the ducts need it too, the duct cleaning at $300 to $600 includes the blower wheel and the coil face.",
+      ],
+    },
+  ],
+
+  wellington: [
+    {
+      heading: "Air duct cleaning in Wellington: price for a single storey house, a two system house or an estate",
+      body: [
+        "Air duct cleaning in Wellington is $300 to $600 per system. A single storey house with one air handler in the garage, common in Binks Forest and the older parts of the village, sits toward the lower half unless the system has gone a long time without a cleaning. The two storey houses in Olympia and across the newer communities are often two systems, each priced separately, and the upstairs one usually takes longer.",
+        "The large estate houses in Palm Beach Polo and around the Equestrian Preserve can run three or more systems, plus a guest house, and each system has its own figure. You can start with the one serving the main living space and do the others later. Villas and condos inside Palm Beach Polo and the other clubs are usually one closet or garage unit and sit toward the bottom of the range.",
+        "Within the range, a house next to a barn or a paddock carries more dust in its returns than one on a lake lot, and a system that has been through several seasons without a cleaning takes longer to bring back. Growth on the coil or in the ducts is quoted as air duct mold removal, from $500 to $3,000 and up, and the dryer vent is $100 to $200 on the same visit. Every line is given before we book.",
+      ],
+    },
+    {
+      heading: "Guest houses and grooms' quarters in Wellington: the system that only runs in season",
+      body: [
+        "Many Wellington equestrian properties have a second place to live on them: a guest house, an apartment over the barn, or grooms' quarters used from December to April and closed the rest of the year. Those systems lead the opposite life to the main house. They sit off or set high through the wettest months, then run hard for four months once the property fills up.",
+        "A system that sits idle through a Wellington summer, on land kept drained over a high water table, comes back with a damp coil, a drain pan that has either crusted over or never dried, and a smell the first evening it runs. The time to deal with it is before the season, in November or early December, not after the first rider has moved in. A cleaning then means the quarters start the season with the summer's dust and growth already gone.",
+        "Whether that visit is a duct cleaning or a coil cleaning depends on what we find. A ducted system with dust in its runs gets the full cleaning at $300 to $600. A small unit where the trouble is the coil and the pan gets the AC and HVAC system cleaning at $200 to $450. If the quarters run a ductless wall unit, that is outside what we clean, and we tell you so rather than send a crew.",
+      ],
+    },
+  ],
+
+  "lehigh-acres": [
+    {
+      heading: "Duct cleaning in Lehigh Acres: what it costs for an older block house or a boom era house",
+      body: [
+        "Duct cleaning in Lehigh Acres is $300 to $600 per system, and almost every house here is one system, so it is one price. Where it falls depends on which Lehigh the house belongs to. An older block house on a mid-century lot is small, with one air handler in the garage or a utility room and short runs, and it sits in the lower half of the range.",
+        "A house from the two thousands boom, in Westminster, around Mirror Lakes or on the newer streets off Lee Boulevard, is larger, with more registers and runs laid the fast way through the attic. It sits around the middle, and higher if it has never been cleaned, which in a boom house is common: the debris from the build is often still in the system.",
+        "Two things are priced on their own lines rather than folded into the cleaning. A return that was solved with a gap under the doors, or a return box open to the wall, needs a proper path back to the air handler, and that is duct repair, quoted on scope from $250 after a pressure test. A filter slot that leaks lets the open-lot dust straight past the filter, so it is sealed first or the cleaning will not last. Many Lehigh houses are rentals, and the price and the photos are the same whether the owner lives down the street or out of state. The dryer vent, $100 to $200, has its own Lehigh Acres page.",
+      ],
+    },
+    {
+      heading: "Rodents in the ducts in Lehigh Acres: what we clean and what we do not",
+      body: [
+        "With so much open land between the streets, rats and mice moving into the attic is a common Lehigh Acres call, and the duct system is where they do their damage out of sight. Flex duct is soft enough to chew, its insulation makes good nesting, and a return plenum or air handler platform with a gap in it is an easy way into the airstream.",
+        "From inside the house the signs are a smell at one or two registers that gets worse when the system runs, droppings or insulation fragments at a grille, scratching above the ceiling in the evening, or a room that suddenly runs hot because a run has been chewed open. The camera usually finds it quickly: torn jackets, nests at the boots and debris gathered in the return.",
+        "What we do is the duct side. Contaminated debris is removed under negative air, chewed or fouled runs are replaced as duct repair, priced on scope from $250 to $2,000 and up, and this is one of the cases where sanitizing, at $75 to $200 after the cleaning, has a clear reason. What we do not do is trapping or closing the entry points in the roof and soffits. That is pest control's work, and it comes first, because cleaning a duct while the animals still have a way in only clears space for the next nest.",
+      ],
+    },
+  ],
+
+  "cape-coral": [
+    {
+      heading: "AC vent cleaning in Cape Coral FL: what it covers and what it costs by type of home",
+      body: [
+        "AC vent cleaning, air vent cleaning and air duct cleaning are the same job in Cape Coral: the supply and return ducts, the grilles and the boots behind them, the trunk and plenums, the blower wheel and the coil face, all cleaned under negative air with every register sealed. Cleaning only the grilles you can see leaves the source where it was.",
+        "The price is $300 to $600 per system. A single storey house from the seventies or eighties in the southeast Cape, with a floor level air handler and short runs, is usually one system toward the bottom. The larger two thousands houses toward Sandoval and Burnt Store carry more registers and sometimes a second system for the upstairs, each priced on its own. Condos at Cape Harbour and Tarpon Point, and the duplexes found all over the city, are one closet or garage unit per home and sit toward the lower end.",
+        "On a canal lot the vents themselves often show the salt. Steel grilles near the water rust at the louvers and stain the ceiling around them, and a rusted grille can be washed but not made new, so we tell you which are worth replacing. Seized dampers and exterior hoods are photographed, since a clean duct behind a stuck damper does not stay clean. The dryer vent, which here often runs from the garage across the attic to the roof, is $100 to $200 and has its own Cape Coral page.",
+      ],
+    },
+    {
+      heading: "Choosing an air duct repair company in Cape Coral: what the quote should be based on",
+      body: [
+        "Since Ian, plenty of Cape Coral owners have been quoted duct work from a doorway. A duct repair quote should rest on two things: a pressure test and a look inside. We seal the registers, pressurise the system with a calibrated test fan and read the leakage, then put a camera into the trunk and the worst runs. That gives a figure for how much air is lost and photos of where, before any price is given.",
+        "The repairs that follow are usually one of four here. Flex that was soaked in 2022 and dried in place is cut out and replaced, not cleaned. A return that is just a grille into a hallway wall cavity is given a sealed path back to the air handler. Collars and joints that have let go in the attic heat are reconnected with straps and mastic. And galvanized fittings eaten by salt are replaced where the camera shows rust through. New runs go in at R-6 to R-8 and are hung on proper supports.",
+        "Repair is priced on scope, from $250 for a few joints to $2,000 and up for an attic of new flex, and the test is run again afterwards so you see the change as a number. Repair goes before any cleaning. We do not sell air conditioning equipment, so if the ducts test tight and a room is still warm, we tell you the equipment is the next thing for an HVAC contractor to check. Cape Coral has its own duct repair page further down.",
+      ],
+    },
+  ],
+
+  "miami-lakes": [
+    {
+      heading: "Air duct cleaning in Miami Lakes: price for an older house, a two storey house or a townhome",
+      body: [
+        "Air duct cleaning in Miami Lakes is $300 to $600 per system, and the town's three eras of housing land in three different parts of that range. The single storey houses of the sixties and seventies around the original lakes, in Loch Lomond and around Lake Sarah, are usually one system with a hallway return and a modest register count, and they sit in the lower half. Their attics are low, and a house whose equipment has been replaced on the original ducting often needs more time at the boots than the count suggests.",
+        "The larger houses from the eighties and nineties are more often two storey, and some have a second system for the upstairs, each priced separately. The townhomes and apartments around Main Street and the Town Center are typically one closet unit with short runs, at the bottom of the range, and if the camera shows clean ducts and a dirty coil, the coil and drain pan cleaning at $200 to $450 is the job we quote.",
+        "Sanitizing, at $75 to $200, is offered only after a cleaning and only with a reason. Growth found on the coil or inside the ducts is air duct mold removal, from $500 to $3,000 and up. You hear every line before the visit is booked, and nothing is added at the door.",
+      ],
+    },
+    {
+      heading: "AC vent cleaning in Miami Lakes: the hallway return and what sits behind it",
+      body: [
+        "Most Miami Lakes houses have one large return grille in the hallway, often with the filter right behind it, and it is the vent people mean when they call about AC vent cleaning: grey louvers, a filter caked by the end of the month, and dust on the ceiling around it. Washing the grille takes ten minutes. What is behind it decides whether the job means anything.",
+        "So we open that return before anything else. If it is a bare stud cavity rather than a lined box, the fix is to line it, with sheet metal or duct board sealed at every edge, and to make sure the filter sits in a frame with no gap around it. That is duct repair, quoted on scope from $250, and it is usually a morning's work. Cleaning a system that keeps drawing from the wall only resets the clock.",
+        "Then the supply vents. Ceiling grilles in Miami Lakes show the canopy too: a grey ring around the louvers from fine dust carried in the air, and in the houses nearest the lakes, spots of mildew where the cold air meets damp room air. Each grille comes off, is washed and refitted, and the boot behind it is cleaned by hand as part of the duct cleaning at $300 to $600 per system. Filters at a return grille should be MERV 8 to 11 and the right size to the quarter inch, because a filter one size small lets air around its edges.",
+      ],
+    },
+  ],
 };
