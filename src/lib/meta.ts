@@ -36,6 +36,11 @@ export const PRICES = {
 /** Roughly what Google renders before truncating. */
 export const LIMITS = { title: 60, description: 155 } as const;
 
+/** The first candidate that fits the limit whole, else the last one, fitted. */
+export function firstFit(candidates: string[], limit: number = LIMITS.title): string {
+  return candidates.find((c) => c.length <= limit) ?? fit(candidates[candidates.length - 1], limit);
+}
+
 /**
  * Trims to a limit on a word boundary. Nothing here should ever hit this in
  * normal use; it exists so a long city name cannot silently ship a title
@@ -120,7 +125,13 @@ export interface CityMetaInput {
  * tracker polling the result, not people passing it over.
  */
 const CITY_TITLE: Record<string, string> = {
-  'Fort Myers': `Duct Cleaning Fort Myers, FL | $${PRICES.ductLow} to $${PRICES.ductHigh}, Priced First`,
+  /* 15 Nov 2026: "air duct cleaning fort myers" 311 impressions at 13.5 and the
+     title said only "Duct Cleaning". The full phrase still contains the old one. */
+  /* "ac vent cleaning deerfield beach fl" 339 impressions at 9.7, not in the
+     title or H1 (owner's export, 15 Nov). Dryer vent stays first: it is the
+     page's converting service. */
+  'Deerfield Beach': `Dryer Vent, AC Vent & Duct Cleaning in Deerfield Beach, FL`,
+  'Fort Myers': `Air Duct Cleaning Fort Myers, FL | $${PRICES.ductLow} to $${PRICES.ductHigh}`,
   'St. Petersburg': `Air Duct Cleaning Services in St. Petersburg, FL | From $${PRICES.ductLow}`,
 };
 
@@ -170,7 +181,16 @@ export function cityMeta({ name, county, hasDryerPage = false }: CityMetaInput) 
 
 /** City page meta, Spanish. Written for the language, not translated. */
 export function cityMetaEs({ name, county }: CityMetaInput) {
-  const title = fit(`Limpieza de Ductos en ${name}, FL | Desde $${PRICES.ductLow}`, LIMITS.title);
+  /* 15 November 2026, from the owner's Search Console export: the two best
+     converting queries on the whole site are "limpieza de ductos de aire
+     acondicionado cerca de mi" (6 clicks) and "... precio" (4 clicks), and
+     "aire acondicionado" was in the description but not in the title. The
+     full phrase leads; the price stays in the description when it does not fit. */
+  const title = firstFit([
+    `Limpieza de Ductos de Aire Acondicionado en ${name}, FL`,
+    `Limpieza de Ductos de Aire Acondicionado en ${name}`,
+    `Limpieza de Ductos en ${name}, FL | Desde $${PRICES.ductLow}`,
+  ]);
   const description = fit(
     `Limpieza de ductos de aire acondicionado en ${name}: precio desde $${PRICES.ductLow}, ventila de secadora desde $${PRICES.ventLow}. ` +
       `Precio antes de agendar. Norma NADCA.`,
@@ -217,7 +237,13 @@ export function regionMetaEs(name: string) {
  * description and on the page itself.
  */
 export function dryerVentCityMeta({ name, county }: CityMetaInput) {
-  const title = fit(`Dryer Vent Cleaning in ${name}, FL | From $${PRICES.ventLow}`, LIMITS.title);
+  /* "dryer duct cleaning boynton beach" 195 impressions, "... delray beach"
+     150: half the searchers say duct, not vent (owner's export, 15 Nov). */
+  const title = firstFit([
+    `Dryer Vent & Duct Cleaning in ${name}, FL | From $${PRICES.ventLow}`,
+    `Dryer Vent & Duct Cleaning in ${name}, FL`,
+    `Dryer Vent Cleaning in ${name}, FL | From $${PRICES.ventLow}`,
+  ]);
   const description = fit(
     `Dryer vent cleaning in ${name}, ${county} from $${PRICES.ventLow}; repair and new dryer duct ` +
       `installation $200 to $600. Price before we book.`,
@@ -243,7 +269,14 @@ export function dryerVentCityMeta({ name, county }: CityMetaInput) {
  * would be the bait pricing the site argues against everywhere else.
  */
 export function ductRepairCityMeta({ name, county }: CityMetaInput) {
-  const title = fit(`Air Duct Repair in ${name}, FL | Leaks and Sealing`, LIMITS.title);
+  /* "ductwork repair bradenton" 224 impressions, "ductwork repair sarasota"
+     138 at 9.7, "air duct sealing deerfield beach fl" 125 (owner's export,
+     15 Nov): the page never said ductwork. */
+  const title = firstFit([
+    `Air Duct & Ductwork Repair in ${name}, FL | Duct Sealing`,
+    `Air Duct & Ductwork Repair in ${name}, FL`,
+    `Air Duct Repair in ${name}, FL | Leaks and Sealing`,
+  ]);
   const description = fit(
     `Duct repair and sealing in ${name}, ${county}. We find the failures, show you them, ` +
       `and quote repair alongside replacement. Airflow tested before and after.`,
