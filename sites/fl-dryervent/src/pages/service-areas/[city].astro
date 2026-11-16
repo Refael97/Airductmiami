@@ -72,6 +72,26 @@ const guides = await guidesForCity();
         </table>
         <p class="footnote">You get the figure for your vent before we book. If what we find changes it, you hear that before any extra work starts.</p>
 
+        {/* 16 Nov 2026: Search Console, 28 days. Most city pages are shown for
+            "dryer vent installation near me", "dryer duct installation near me",
+            "dryer duct repair near me" and "dryer duct replacement near me" at
+            positions 12 to 18, with no section that said those words. */}
+        <h2>Dryer vent installation, dryer duct repair and replacement in {city.name}</h2>
+        <p>
+          When cleaning is not enough, the fix is usually the duct itself. In {city.name} we replace foil and vinyl
+          hose inside the walls and attic with rigid metal duct, reconnect joints that have pulled apart in the wall or attic,
+          and reroute a run that is too long or has too many elbows for the dryer to push through. A new dryer vent
+          installation or a dryer duct replacement is ${PRICE.workLow} to ${PRICE.workHigh}, quoted after we have seen the run.
+          See <a href="/services/dryer-vent-installation/">dryer vent installation</a> and
+          <a href="/services/dryer-vent-repair/">dryer vent repair</a> for what each job includes.
+        </p>
+        <p>
+          Apartments, condos and townhomes in {city.name} often share a riser or a roof cap with the units around them, so the
+          work is scheduled with the association; see <a href="/services/condo-and-apartment-dryer-vents/">condo and apartment
+          dryer vents</a>. Laundromats, salons and buildings with a laundry room are handled under
+          <a href="/services/commercial-dryer-vent-cleaning/">commercial dryer vent cleaning</a>.
+        </p>
+
         {city.neighborhoods.length > 0 && (
           <>
             <h2>Where in {city.name} we work</h2>

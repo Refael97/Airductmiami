@@ -25,7 +25,11 @@ interface Props {
 const { lang = 'en', current = Astro.url.pathname } = Astro.props;
 const es = lang === 'es';
 
-const AREAS_EN = ['miami', 'sarasota', 'west-palm-beach', 'tampa', 'bradenton', 'fort-lauderdale', 'coconut-creek', 'kissimmee', 'naples', 'homestead', 'st-petersburg', 'hialeah-gardens', 'kendall', 'orlando'];
+/* 16 Nov 2026: Boca Raton, Boynton Beach, Delray Beach and Pompano Beach added.
+   In the owner's Search Console export they hold 1,772, 1,755, 1,377 and 524
+   impressions at positions 15 to 30 with no clicks: Google already shows them,
+   they need the internal links to climb onto page one. */
+const AREAS_EN = ['miami', 'sarasota', 'west-palm-beach', 'tampa', 'bradenton', 'fort-lauderdale', 'boca-raton', 'boynton-beach', 'delray-beach', 'pompano-beach', 'coconut-creek', 'kissimmee', 'naples', 'homestead', 'st-petersburg', 'hialeah-gardens', 'kendall', 'orlando'];
 const AREAS_ES = ['cape-coral', 'tampa', 'orlando', 'hialeah', 'lakeland', 'miami', 'hialeah-gardens', 'kissimmee', 'west-palm-beach', 'kendall'];
 const SERVICES = ['air-duct-cleaning', 'dryer-vent-cleaning', 'mold-remediation', 'hvac-cleaning', 'air-duct-sanitizing', 'attic-insulation'];
 const GUIDES_EN = [
