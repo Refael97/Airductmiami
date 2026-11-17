@@ -188,10 +188,17 @@ const siteSchema = [localBusinessSchema(site), websiteSchema(site)];
       // The popup is excluded because it submits over fetch, stays on the
       // page and reports its own generate_lead; without this its note would
       // sit in storage and fire on some unrelated visit to /thank-you/ later.
+      //
+      // Netlify strips data-netlify from the deployed HTML when it registers
+      // the form, so on the live site that attribute is never there and no
+      // form left a note: every non-popup lead went uncounted. The hidden
+      // form-name input survives the deploy, so a form counts if it has
+      // either one (17 Nov 2026, approved by the owner).
       var LEAD_KEY = 'fbLeadPending';
       document.addEventListener('submit', function (e) {
         var f = e.target;
-        if (!f || f.id === 'promo-form' || !f.hasAttribute('data-netlify')) return;
+        if (!f || f.id === 'promo-form') return;
+        if (!f.hasAttribute('data-netlify') && !f.querySelector('input[name="form-name"]')) return;
         function val(name) {
           var el = f.querySelector('[name="' + name + '"]');
           return el && el.value ? String(el.value).slice(0, 60) : '';

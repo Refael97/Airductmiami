@@ -4,6 +4,7 @@ One line per change: date, what, why, what to watch. Newest first.
 
 | Date | Change | Why | Watch |
 |---|---|---|---|
+| 2026-11-17 | Air duct: lead counting fixed (owner approved). The thank-you note is now left by any form with a hidden form-name input, not only by forms that still carry data-netlify | Netlify strips data-netlify on deploy, so on the live site no form except the popup reported generate_lead or the Google Ads conversion. Tested with the attribute stripped: before 0 events, after generate_lead + conversion | generate_lead count in GA4 from 18 Nov; compare with Netlify form submissions |
 | 2026-11-17 | Air duct: city page repair section names duct sealing and links to the repair page with that anchor; 18 ledger rows judged | "duct sealing lakeland fl" 51 impressions at 17 and Deerfield, Naples variants: the city pages never said duct sealing. Judgements: EN city pages moved from about 26 to 18.7 on average, ES city pages 6.8 to 5.3 | duct sealing {city} on the repair pages by 8 Dec |
 | 2026-11-16 | Wave 6: 12 EN + 6 ES air duct city pages deepened; dryer city pages get an installation and duct repair section; four cities added to the related links | Positions 10 to 30 with no clicks in the owner's export and in GSC | ledger rows of 16 Nov |
 | 2026-11-15 | Keywords from the owner's export placed in titles, H1s and first paragraphs (ES "ductos de aire acondicionado", ductwork repair, dryer duct, Fort Myers, Deerfield) | The searched phrases were missing from titles | ledger rows of 15 Nov |
