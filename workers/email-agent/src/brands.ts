@@ -30,7 +30,7 @@ export const BRANDS: Record<string, Brand> = {
     name: 'Florida Breeze Air Duct',
     domain: 'floridabreezeairduct.com',
     defaultFrom: 'info@floridabreezeairduct.com',
-    phone: '(813) 300-1379',
+    phone: '(813) 492-5351',
     site: 'https://floridabreezeairduct.com',
     hours: 'Monday to Friday 8am to 7pm, Saturday 9am to 5pm, Sunday 10am to 4pm, Eastern time',
     area: 'All of Florida, mainly South Florida (Miami-Dade, Broward, Palm Beach), Tampa Bay, Central and Southwest Florida',

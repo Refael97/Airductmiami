@@ -65,8 +65,8 @@ export const business: BusinessInfo = {
   tagline: "Florida's Trusted Air Duct & Dryer Vent Cleaning Experts",
   description:
     'Florida Breeze Air Duct provides professional air duct cleaning, dryer vent cleaning, and indoor air quality services across Florida. NADCA-standard equipment, insured technicians, and same-week appointments statewide.',
-  phone: '(813) 300-1379',
-  phoneHref: '+18133001379',
+  phone: '(813) 492-5351',
+  phoneHref: '+18134925351',
   email: 'info@floridabreezeairduct.com', // TODO: confirm inbox exists
   address: {
     street: '123 Biscayne Blvd, Suite 100', // TODO
