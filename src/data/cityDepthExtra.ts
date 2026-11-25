@@ -223,6 +223,17 @@ export const cityDepthExtra: Record<string, { heading: string; body: string[] }[
         "If you are not sure which you have, describe it when you call. We would rather tell you that a coil cleaning will do than book a duct cleaning that never touches the cause.",
       ],
     },
+    /* 25 Nov 2026: "air duct cleaning shore acres" 83 impressions at 10.5 in
+       the 28 days to 22 Nov, no clicks. The page named Shore Acres in passing
+       only; this block answers the neighborhood search directly. */
+    {
+      heading: "Air duct cleaning in Shore Acres, St. Petersburg",
+      body: [
+        "Air duct cleaning in Shore Acres starts with one question the rest of St. Petersburg rarely gets: did this house take water. Shore Acres sits low on the water in the northeast of the city, and many of its ranch houses had water inside during the 2024 storm surge. Where it reached the air handler closet or the ducts, cleaning is not the job.",
+        "Flex duct and ductboard that sat in floodwater hold it in the insulation and the jacket, and no brush or vacuum gets it out. Those runs are replaced, and the air handler is judged on its own. We open a run, photograph what is inside and tell you which parts can be cleaned and which cannot, before any price is agreed.",
+        "A Shore Acres house that stayed dry, or one that has already been rebuilt, is an ordinary visit: $300 to $600 per system, every supply and return under negative air, the blower wheel and the face of the coil, two to four hours. After a rebuild, the useful time to book it is once the drywall and the floors are finished, because the dust from that work is exactly what ends up in the new ducts.",
+      ],
+    },
   ],
 
   /*
